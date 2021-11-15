@@ -1,2 +1,1 @@
-# 11ty-foundation
-11ty starter kit 
+# The new eslint.org
