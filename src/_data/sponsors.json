@@ -1,0 +1,87 @@
+{
+    "featured": [{
+            "name": "Google Chrome",
+            "image": "chrome.png",
+            "url": ""
+        },
+        {
+            "name": "AirBnb",
+            "image": "airbnb.png",
+            "url": ""
+        },
+        {
+            "name": "Salesforce",
+            "image": "salesforce.png",
+            "url": ""
+        },
+        {
+            "name": "American Express",
+            "image": "american-express.png",
+            "url": ""
+        },
+        {
+            "name": "Automattic",
+            "image": "automattic.png",
+            "url": ""
+        },
+        {
+        "name": "Liftoff",
+        "image": "liftoff.png",
+        "url": ""
+    },
+    {
+            "name": "Netlify",
+            "image": "netlify.png",
+            "url": ""
+        },
+        {
+            "name": "1Password",
+            "image": "1password.png",
+            "url": ""
+        }
+
+    ],
+    "platinum": [{
+        "name": "Automattic",
+        "image": "automattic.png",
+        "url": ""
+    }],
+    "gold": [{
+            "name": "Google Chrome",
+            "image": "chrome.png",
+            "url": ""
+        },
+        {
+            "name": "AirBnb",
+            "image": "airbnb.png",
+            "url": ""
+        },
+        {
+            "name": "Salesforce",
+            "image": "salesforce.png",
+            "url": ""
+        },
+        {
+            "name": "American Express",
+            "image": "american-express.png",
+            "url": ""
+        }
+    ],
+    "silver": [{
+        "name": "Liftoff",
+        "image": "liftoff.png",
+        "url": ""
+    }],
+    "bronze": [],
+    "technology": [{
+            "name": "Netlify",
+            "image": "netlify.png",
+            "url": ""
+        },
+        {
+            "name": "1Password",
+            "image": "1password.png",
+            "url": ""
+        }
+    ]
+}

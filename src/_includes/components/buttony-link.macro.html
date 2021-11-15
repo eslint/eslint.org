@@ -1,0 +1,13 @@
+{%- macro buttonyLink(params) -%}
+    <a href="{{ params.url }}"
+        class="c-btn
+                {% if params.type == 'primary' %} c-btn--primary {% endif %}
+                {% if params.type == 'secondary' %} c-btn--secondary {% endif %}
+                {% if params.type == 'ghost' %} c-btn--ghost {% endif %}">
+        {%- if params.text -%}
+            {{ params.text }}
+        {%- else -%}
+            This is a button
+        {%- endif -%}
+    </a>
+{%- endmacro -%}

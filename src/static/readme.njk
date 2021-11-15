@@ -1,0 +1,29 @@
+---
+layout: false
+permalink: false
+eleventyExcludeFromCollections: true
+---
+
+This folder is where the static assets will live.
+These assets are ones that should live in the root folder of the site.
+
+
+## Static files
+- favicon
+- serviceworker.js
+- manifest.webmanifest or manifest.json
+- sitemap.xml
+- robots.txt
+
+## Make sure 11ty copies these to the root of the output folder, not to a `/static` subfolder of it (which it does by default)
+These assets are moved to the root of the output folder `_site` by configuring eleventy in `.eleventy.js`:
+
+```
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({ static: "/" })
+}
+```
+
+## Resources:
+- [Setup social sharing previews, SEO, and favicons on Eleventy](https://obsolete29.com/posts/ogp-seo-favicons-eleventy/) — includes templates for sitemap and robots
+- [Create a sitemap.xml with Eleventy](https://www.belter.io/eleventy-sitemap/)

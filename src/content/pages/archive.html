@@ -1,0 +1,20 @@
+---
+title: Articles Archive
+layout: layouts/main.html
+permalink: /archive/
+eleventyExcludeFromCollections: true
+hook: "archive-page"
+---
+
+<h1> {{ title }} </h1>
+<p>All published articles.</p>
+
+<section aria-label="Articles" class="articles-collection">
+    {% for item in collections.blog-posts %}
+    <article class="articles-collection__item">
+        <h2 class="articles__collection__item__title"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+        <p class="articles__collection__item__publish-date">Published on {{ item.data.date | readableDate }} </p>
+        <p  class="articles__collection__item__teaser">{{ item.data.teaser }} </p>
+    </article>
+    {% endfor %}
+</section>
