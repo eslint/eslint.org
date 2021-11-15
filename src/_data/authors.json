@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "name": "Nicholas Zakas",
+            "title": "Createor of ESLint",
+            "photo": "nicholas-zakas.jpg",
+            "handle": "@slicknet",
+            "handleURL": "https://github.com/slicknet",
+            "bio": "Human who codes. Creator of <a href='https://eslint.org'>@geteslint</a>. Author. Speaker. Advisor. Coach. Real estate investor. Blog at @humanwhocodes. INFJ. Semicolons and tabs.",
+            "twitterURL": "https://twitter.com/slicknet",
+            "githubURL": "https://github.com/slicknet"
+        },
+        {
+            "name": "Brandon Mills",
+            "title": "Technical Steering Committee",
+            "photo": "brandon-mills.jpg",
+            "handle": "@btmills",
+            "handleURL": "",
+            "bio": "TBD",
+            "twitterURL": "",
+            "githubURL": ""
+        }
+    ]
+}

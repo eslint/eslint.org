@@ -1,0 +1,50 @@
+.c-custom-select {
+    --icon: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%3Cpath%20fill%3D%22%23777%22%20d%3D%22M9.914%2011.086l-2.829%202.829%208.914%208.914%208.914-8.914-2.828-2.828-6.086%206.086z%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A");
+    --border-color: currentColor;
+    --color: inherit;
+    --box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+    --border-radius: 0;
+    --background-color: #fff;
+    --gradient-background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+    --outline-color: hsl(265, 50%, 50%);
+    --padding: .5em;
+    --margin: 0;
+}
+
+.c-custom-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: var(--margin);
+    padding: var(--padding);
+    padding-right: calc(var(--padding) * 3);
+    font: inherit;
+    color: var(--color);
+    line-height: 1.3;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+    background-image: var(--icon), var(--gradient-background);
+    background-repeat: no-repeat, repeat;
+    background-position: right calc(var(--padding) * 1.5) top 50%, 0 0;
+    background-size: 1em auto, 100%;
+}
+
+.c-custom-select::-ms-expand {
+    display: none;
+}
+
+.c-custom-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--outline-color);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+}
+
+.c-custom-select:focus:not(:focus-visible) {
+    box-shadow: none;
+}

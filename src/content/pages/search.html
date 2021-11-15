@@ -1,0 +1,24 @@
+---
+layout: layouts/main.html
+permalink: /search/
+title: Search
+desc: Search sarasoueidan.com
+cover: /assets/images/site-cover.jpg
+eleventyExcludeFromCollections: true
+
+tags: ['nav']
+navLabel: Search
+
+eleventyNavigation:
+  key: Search
+  order: 8
+  linkID: search-link
+---
+
+
+<form action="https://www.google.com/search" method="get" class="search">
+  <input type="hidden" name="q" id="q" value="site:https://sarasoueidan.com">
+  <label for="search-str">Search <small></label>
+  <input type="text" name="q" id="search-str"></p>
+  <button type="submit" class="submit">Search with Google</button>
+</form>
