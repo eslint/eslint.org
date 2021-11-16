@@ -150,14 +150,14 @@
   --space-xl-3xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
   --space-xl-4xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-4xl-max) - var(--fc-xl-min)) * var(--fluid-bp)); }
 
-/* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1440,16,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1280,16,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 :root {
   --fluid-min-width: 320;
-  --fluid-max-width: 1440;
+  --fluid-max-width: 1280;
   --fluid-screen: 100vw;
   --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) / (var(--fluid-max-width) - var(--fluid-min-width))); }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   :root {
     --fluid-screen: calc(var(--fluid-max-width) * 1px); } }
 
@@ -312,7 +312,7 @@ main {
     outline: none; }
 
 .content-container {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: var(--space-xl-3xl) 0; }
 
@@ -454,8 +454,17 @@ ol {
     transition: outline-offset .15s linear;
     outline-offset: 3px; } }
 
-.c-btn,
 button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+
+.c-btn {
   background: none;
   border: none;
   font: inherit;
