@@ -1,19 +1,26 @@
-.c-btn,
 button {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    line-height: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-btn {
     background: none;
     border: none;
     font: inherit;
     cursor: pointer;
     line-height: inherit;
-
     font-weight: 500;
     font-size: var(--step-0);
-
     display: inline-flex;
     padding: .75em 1.125em;
     align-items: center;
     justify-content: center;
-    // text-align: center;
     border-radius: var(--border-radius);
 
     transition: background-color .2s linear,
