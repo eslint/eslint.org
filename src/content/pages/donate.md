@@ -25,7 +25,7 @@ hook: "donate-page"
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3" id="latest-posts-label">Ways to donate</h2>
+            <h2 class="section-title h3">Ways to donate</h2>
             <p class="section-supporting-text fs-step-0">
                 Here’s how you can donate.
             </p>
@@ -84,7 +84,7 @@ hook: "donate-page"
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3" id="latest-posts-label">How the money is used</h2>
+            <h2 class="section-title h3">How the money is used</h2>
             <p class="section-supporting-text fs-step-0">
                 The ESLint project uses donated money to benefit the project and the ESLint community as a whole. In general, we spend money on these areas each month.
             </p>
@@ -116,13 +116,18 @@ hook: "donate-page"
                 <img src="../../assets/images/money-spenditure-graph.svg" alt="DESCRIPTION HERE">
             </div>
         </div>
+        <footer class="section-foot center-text">
+            <p class="section-supporting-text">
+                Additionally, from time to time we use the funds to pay contractors to work on things that are important to the project and where the team doesn’t have the time or expertise to complete the work on their own. For example, we recently hired a designer and developer to redesign this website. We ensure that we spend less than we take in each month so we can save for such projects.
+            </p>
+        </footer>
     </div>
 </section>
 
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3" id="latest-posts-label">Donation tiers</h2>
+            <h2 class="section-title h3">Donation tiers</h2>
             <p class="section-supporting-text fs-step-0">
                 While we accept donations of any size, we do have a tier system with different rewards at each level.
             </p>

@@ -1,0 +1,56 @@
+---
+layout: layouts/main.html
+permalink: sponsors.html
+eleventyExcludeFromCollections: true
+hook: "sponsors-page"
+---
+
+<div class="section hero">
+    <div class="content-container">
+        <div>
+            <h1 class="section-title h2">Sponsors</h1>
+            <p class="section-supporting-text">
+                171 companies, organizations, and individuals are currently contributing $13137.84 each month to support ESLint's ongoing maintenance and development.
+            </p>
+            <div class="eslint-actions">
+                <a href="/" class="c-btn c-btn--primary">Become a sponsor</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="donations">
+    <div class="content-container divider">
+        <div class="section-head center-text">
+            <h2 class="section-title h3">Recent one-time donations</h2>
+            <p class="section-supporting-text fs-step-0">
+                We also receive a lot of one-time contributions from fantastic people. Here are some recent ones from OpenCollective and GitHub.
+            </p>
+        </div>
+        <div class="grid">
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="content-container divider">
+        <div class="section-head center-text">
+            <h2 class="section-title h3">All backers</h2>
+            <p class="section-supporting-text fs-step-0">
+                We have 380+ backers across our platforms. Thank you for supporting ESLint.
+            </p>
+        </div>
+        <div class="grid">
+            <ul role="list" class="sponsors span-1-12">
+                {% for item in sponsors.backers %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <img src="../../assets/images/sponsors/backers/{{ item.image }}" alt="{{ item.name }} logo" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

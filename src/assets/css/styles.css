@@ -321,6 +321,14 @@ main {
   max-width: 768px;
   margin: 0 auto var(--space-l-2xl); }
 
+.section-foot {
+  margin-top: var(--space-l-2xl); }
+  .section-foot .section-supporting-text {
+    text-align: center;
+    font-size: var(--step--1);
+    max-width: 768px;
+    margin: 0 auto; }
+
 .section-title {
   margin-bottom: 1rem; }
 

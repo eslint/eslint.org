@@ -132,7 +132,7 @@ eleventyExcludeFromCollections: true
                 <div class="card__content">
                     <div class="badge-group">
                         <span class="blog-post__category">
-                            {{ item.data.category }}
+                            <span class="visually-hidden">Published under:</span> {{ item.data.category }}
                         </span>
                         <span class="blog-post__reading-time">
                             {{ item.templateContent | readingTime }} read
@@ -196,8 +196,8 @@ eleventyExcludeFromCollections: true
             <p class="section-supporting-text fs-step-0">
                 We receive $134,363 / year in donations from 600 backers.
             </p>
-
-            <div class="grid">
+        </div>
+        <div class="grid">
                 <ul role="list" class="sponsors span-4-9">
                     {% for item in sponsors.featured %}
                     <li>
@@ -225,6 +225,5 @@ eleventyExcludeFromCollections: true
                     <a href="/sponsors.html#donations" class="c-btn c-btn--secondary span-6-7">View more donations</a>
                 </div>
             </div>
-        </div>
     </div>
 </section>

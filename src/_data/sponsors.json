@@ -25,11 +25,11 @@
             "url": ""
         },
         {
-        "name": "Liftoff",
-        "image": "liftoff.png",
-        "url": ""
-    },
-    {
+            "name": "Liftoff",
+            "image": "liftoff.png",
+            "url": ""
+        },
+        {
             "name": "Netlify",
             "image": "netlify.png",
             "url": ""
@@ -81,6 +81,132 @@
         {
             "name": "1Password",
             "image": "1password.png",
+            "url": ""
+        }
+    ],
+    "backers": [{
+            "name": "Brandon Mills",
+            "image": "brandon-mills.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "toru-nagashima.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "toru-nagashima.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "toru-nagashima.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "toru-nagashima.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "toru-nagashima.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "nicholas-zakas.jpg",
+            "url": ""
+        },
+        {
+            "name": "nicholas zakas",
+            "image": "toru-nagashima.jpg",
             "url": ""
         }
     ]
