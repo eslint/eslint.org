@@ -45,7 +45,7 @@ pagination:
             <div class="card__content">
                 <div class="badge-group">
                         <span class="blog-post__category">
-                            {{ item.data.category }}
+                            <span class="visually-hidden">Published under:</span> {{ item.data.category }}
                         </span>
                         <span class="blog-post__reading-time">
                             {{ item.templateContent | readingTime }} read
