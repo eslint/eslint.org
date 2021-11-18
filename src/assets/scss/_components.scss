@@ -197,9 +197,8 @@
 
     font-size: var(--step-0);
 
-    @media all and (min-width: 640px) {
+    @media all and (min-width: 640px) {}
 
-    }
     // flex: 1;
 }
 
@@ -408,7 +407,7 @@
 .feature {
     padding: 2rem 0;
 
-    &:not(:last-of-type){
+    &:not(:last-of-type) {
         border-bottom: 1px solid var(--divider-color);
     }
 
@@ -438,9 +437,7 @@
     }
 }
 
-.features-wrapper {
-
-}
+.features-wrapper {}
 
 
 .features-image {
@@ -493,7 +490,7 @@
 
     li {
         display: inline-block;
-        margin:  0 1.5rem 1.5rem;
+        margin: 0 1.5rem 1.5rem;
 
         a {
             display: inline-block;
@@ -506,12 +503,78 @@
     }
 }
 
+// DONATIONS
+
+.featured-donations-title {
+    font-size: inherit;
+    color: inherit;
+    font: inherit;
+    text-align: center;
+    margin-top: var(--space-l-2xl);
+}
+
+ul.featured-donations-list {
+    margin-top: var(--space-l-2xl);
+
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+
+    @media all and (min-width: 1023px) {
+        display: grid;
+        margin-bottom: 0;
+        overflow: initial;
+    }
+
+    .sponsors-page & {
+        @media all and (min-width: 1023px) {
+            grid-gap: 3rem 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+    }
+}
+
+.featured-donations-list .featured-donations-item {
+    font-size: var(--step--1);
+    flex: none;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background-color: var(--color-neutral-50);
+    margin-bottom: .5rem;
+
+    display: grid;
+    grid-gap: 1.5rem 2rem;
+
+    @media all and (max-width: 1023px) {
+        max-width: 250px;
+        margin-right: 1rem;
+    }
+
+
+    @media all and (min-width: 1023px) {
+        // display: grid;
+        // grid-gap: 1.5rem 2rem;
+        align-items: center;
+        grid-template-columns: auto 1fr auto;
+    }
+}
+
+.featured-donations-item__title {
+    color: var(--headings-color);
+    font-weight: 500;
+}
+
+.featured-donations-item__title,
+.featured-donations-item__desc {
+    margin-bottom: 0;
+}
+
 
 // donation plans on donate page
 
-.donation-plans {
-
-}
+.donation-plans {}
 
 .donation-plan {
     border: 1px solid var(--border-color);
@@ -519,9 +582,7 @@
     margin-bottom: 2rem;
 
     &:first-of-type() {
-        @media all and (max-width: 768px) {
-
-        }
+        @media all and (max-width: 768px) {}
     }
 
 

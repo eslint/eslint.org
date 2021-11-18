@@ -22,14 +22,29 @@ hook: "sponsors-page"
 <section id="donations">
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3">Recent one-time donations</h2>
+            <h2 class="section-title h3" id="recent-donations">Recent one-time donations</h2>
             <p class="section-supporting-text fs-step-0">
                 We also receive a lot of one-time contributions from fantastic people. Here are some recent ones from OpenCollective and GitHub.
             </p>
         </div>
-        <div class="grid">
+            <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
+                {% for item in donations.items %}
+                <li class="donations-item">
+                    <!-- <a href="{{ item.url }}" class="donations-item__logo"> -->
+                    <img class="donations-item__logo" src="../../assets/images/sponsors/{{ item.image }}" width="40" height="40" alt="{{ item.sponsorName }} logo" />
+                    <!-- </a> -->
 
-        </div>
+                    <div class="donations-item__content">
+                        <p class="donations-item__title">{{ item.donationType }}</p>
+                        <p class="donations-item__desc">Credit from {{ item.sponsorName }} to ESLint • {{ item.date | readableDate }}</p>
+                    </div>
+
+                    <div class="donations-item__amount">
+                        + {{ item.amount }}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
     </div>
 </section>
 
