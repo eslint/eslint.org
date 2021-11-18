@@ -268,6 +268,7 @@
     }
 }
 
+
 .person__photo {
     display: block;
     /* default avatar size */
@@ -395,25 +396,38 @@
 
 
 /* Homepage Features Section */
-.eslint-feature {
+.features-wrapper.grid {
+    align-items: center;
+}
+
+.features {
+    border-left: 4px solid var(--color-neutral-100);
+    padding-left: 1.5rem;
+}
+
+.feature {
     padding: 2rem 0;
 
     &:not(:last-of-type){
         border-bottom: 1px solid var(--divider-color);
     }
+
+    .donate-page & {
+        border-bottom: none;
+    }
 }
 
-.eslint-feature__title {
+.feature__title {
     font-size: var(--step-1);
     font-family: var(--text-font);
     margin-bottom: .5rem;
 }
 
-.eslint-feature__description {
+.feature__description {
     margin-bottom: 1.25rem;
 }
 
-.eslint-feature__details-link {
+.feature__details-link {
     display: flex;
     gap: .5rem;
     align-items: center;
@@ -424,17 +438,24 @@
     }
 }
 
-.eslint-features-wrapper {
+.features-wrapper {
 
 }
 
 
-.eslint-features-image {
+.features-image {
     display: none;
+
+    img {
+        margin: 2rem auto;
+    }
 
     @media all and (min-width: 1023px) {
         display: block;
+    }
 
+    .donate-page & {
+        display: block;
     }
 }
 
