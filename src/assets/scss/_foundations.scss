@@ -88,16 +88,16 @@ main {
 }
 
 .content-container {
-    max-width: 1280px;
+    max-width: 1320px;
     margin: 0 auto;
-    padding: var(--space-xl-3xl) 0;
+    padding: var(--space-xl-3xl) 1rem;
 }
 
 section,
 .section,
 .site-footer,
 .site-header {
-    padding: 0 1rem;
+    // padding: 0 1rem;
 }
 
 .section-head {
