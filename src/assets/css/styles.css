@@ -245,8 +245,8 @@ small, caption, cite, figcaption {
   color: var(--color-accent); }
 
 ::selection {
-  background-color: var(--color-highlight);
-  color: #000; }
+  background-color: var(--color-brand);
+  color: #fff; }
 
 [role="region"] {
   padding: 5px;
@@ -672,11 +672,14 @@ a.c-btn {
     .eslint-install-code code input {
       all: unset;
       min-width: 26ch; }
+      .eslint-install-code code input::selection {
+        background-color: #fff;
+        color: var(--body-text-color); }
 
 .eslint-install-code__btn .c-icon {
   color: var(--color-neutral-500); }
 
-.eslint-install-code__btn:hover .c-icon {
+.eslint-install-code__btn:hover .c-icon, .eslint-install-code__btn:focus .c-icon, .eslint-install-code__btn:active .c-icon {
   color: var(--color-brand); }
 
 .eslint-versions {

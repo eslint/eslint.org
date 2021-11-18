@@ -83,6 +83,10 @@
         input {
             all: unset;
             min-width: 26ch;
+            &::selection {
+                background-color: #fff;
+                color: var(--body-text-color);
+            }
         }
     }
 }
@@ -92,7 +96,7 @@
         color: var(--color-neutral-500);
     }
 
-    &:hover {
+    &:hover, &:focus, &:active {
         .c-icon {
             color: var(--color-brand);
         }

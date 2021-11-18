@@ -4,7 +4,8 @@ const copyBtn = document.getElementById('copyBtn')
     copyBtn.removeAttribute('hidden');
 
     copyBtn.onclick = () => {
-        copyText.select(); // Selects the text inside the input
-        document.execCommand('copy'); // Simply copies the selected text to clipboard
+        copyText.select();
+        document.execCommand('copy');
+        this.focus();
     }
 })();
