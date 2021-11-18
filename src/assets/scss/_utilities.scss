@@ -25,6 +25,7 @@
 
 .center-text {
     text-align: center;
+    grid-column: 1 / -1;
 }
 
 .text-dark {
@@ -113,6 +114,10 @@
 
 .span-4-9 {
     grid-column: 4 / 10;
+}
+
+.span-3-10 {
+    grid-column: 3 / 11;
 }
 
 .span-6-7 {

@@ -2,59 +2,67 @@
   "items": [
     {
       "sponsorName": "Chrome",
-      "image": "",
-      "donationDescription": "One-time financial contribution to ESLint",
-      "donationType": "",
-      "date": ""
+      "image": "chrome.png",
+      "donationDescription": "",
+      "donationType": "One-time financial contribution to ESLint",
+      "date": "2021-01-01",
+      "amount": "50.00 USD"
     },
     {
-      "sponsorName": "Will I get a record of my donations?",
-      "image": "",
-      "donationDescription": "One-time financial contribution to ESLint",
-      "donationType": "",
-      "date": ""
+      "sponsorName": "Jellypepper",
+      "image": "jellypepper.png",
+      "donationDescription": "",
+      "donationType": "One-time financial contribution to ESLint",
+      "date": "2021-01-01",
+      "amount": "50.00 USD"
     },
     {
-      "sponsorName": "Is my donation tax deductible?",
-      "image": "",
-      "donationDescription": "One-time financial contribution to ESLint",
-      "donationType": "",
-      "date": ""
+      "sponsorName": "Jellypepper",
+      "image": "jellypepper.png",
+      "donationDescription": "",
+      "donationType": "One-time financial contribution to ESLint",
+      "date": "2021-01-01",
+      "amount": "50.00 USD"
     },
     {
-      "sponsorName": "Who decides how the money is distributed?",
-      "image": "",
-      "donationDescription": "One-time financial contribution to ESLint",
-      "donationType": "",
-      "date": ""
+      "sponsorName": "Jellypepper",
+      "image": "jellypepper.png",
+      "donationDescription": "",
+      "donationType": "One-time financial contribution to ESLint",
+      "date": "2021-01-01",
+      "amount": "50.00 USD"
     },
     {
-        "sponsorName": "Can I see how the money is being used?",
-        "image": "",
-        "donationDescription": "One-time financial contribution to ESLint",
-        "donationType": "",
-        "date": ""
+        "sponsorName": "Jellypepper",
+        "image": "jellypepper.png",
+        "donationDescription": "",
+        "donationType": "One-time financial contribution to ESLint",
+        "date": "2021-01-01",
+        "amount": "50.00 USD"
     },
     {
-        "sponsorName": "Can I cancel my recurring donation at any time?",
-        "image": "",
-        "donationDescription": "One-time financial contribution to ESLint",
-        "donationType": "",
-        "date": ""
+        "sponsorName": "Jellypepper",
+        "image": "jellypepper.png",
+        "donationDescription": "",
+        "donationType": "One-time financial contribution to ESLint",
+        "date": "2021-01-01",
+        "amount": "50.00 USD"
     },
     {
-        "sponsorName": "How long does it take for my logo to appear on the homepage, GitHub, and npm package?",
-        "image": "",
-        "donationDescription": "One-time financial contribution to ESLint",
-        "donationType": "",
-        "date": ""
+        "sponsorName": "Jellypepper",
+        "image": "jellypepper.png",
+        "donationDescription": "",
+        "donationType": "One-time financial contribution to ESLint",
+        "date": "2021-01-01",
+        "amount": "50.00 USD"
     },
     {
-        "sponsorName": "Where do the logo and URL come from?",
-        "image": "",
-        "donationDescription": "One-time financial contribution to ESLint",
-        "donationType": "",
-        "date": ""
+        "sponsorName": "Jellypepper",
+        "image": "jellypepper.png",
+        "donationDescription": "",
+        "donationType": "One-time financial contribution to ESLint",
+        "date": "2021-01-01",
+        "amount": "50.00 USD"
     }
   ]
 }
