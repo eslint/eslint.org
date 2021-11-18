@@ -312,15 +312,9 @@ main {
     outline: none; }
 
 .content-container {
-  max-width: 1280px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: var(--space-xl-3xl) 0; }
-
-section,
-.section,
-.site-footer,
-.site-header {
-  padding: 0 1rem; }
+  padding: var(--space-xl-3xl) 1rem; }
 
 .section-head .section-supporting-text {
   text-align: center;
@@ -478,6 +472,12 @@ button {
   justify-content: center;
   border-radius: var(--border-radius);
   transition: background-color .2s linear, border-color .2s linear; }
+  .c-btn svg {
+    color: inherit; }
+
+.c-btn--block {
+  display: flex;
+  width: 100%; }
 
 a.c-btn {
   text-decoration: none; }
@@ -490,7 +490,8 @@ a.c-btn {
 
 .c-btn--secondary {
   background-color: var(--secondary-button-background-color);
-  color: var(--secondary-button-text-color); }
+  color: var(--secondary-button-text-color);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.1); }
   .c-btn--secondary:hover {
     background-color: var(--secondary-button-hover-color); }
 
@@ -500,13 +501,13 @@ a.c-btn {
     border-color: var(--color-brand); }
 
 .site-header {
-  padding: .75rem 1rem;
+  padding: .75rem 0;
   border-top: 4px solid var(--color-brand);
   border-bottom: 1px solid var(--divider-color); }
   .site-header .content-container {
     display: grid;
     align-items: start;
-    padding: 0; }
+    padding: 0 1rem; }
     @media all and (min-width: 640px) {
       .site-header .content-container {
         justify-content: space-between; } }
@@ -551,7 +552,7 @@ a.c-btn {
 
 .footer-legal-section {
   font-size: var(--step--1);
-  padding: 2rem 0; }
+  padding: 2rem 1rem; }
 
 .copyright {
   max-width: 1100px;
@@ -640,7 +641,7 @@ a.c-btn {
   background-color: var(--color-neutral-25); }
 
 .hero--display .content-container {
-  padding: var(--space-xl-4xl) 0; }
+  padding: var(--space-xl-4xl) 1rem; }
 
 .hero--display .section-title {
   margin-bottom: 1.5rem; }
@@ -876,7 +877,7 @@ a.c-btn {
 .people-list {
   display: grid;
   grid-gap: 3rem 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
 
 /* homepage metrics section */
 .metrics {
@@ -963,6 +964,47 @@ a.c-btn {
     .sponsors.sponsors li img {
       display: block;
       max-height: 3rem; }
+
+.donation-plan {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem; }
+
+.donation-plan__header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  grid-gap: 1.5rem;
+  padding: 2rem 2rem 1.5rem; }
+  @media all and (max-width: 640px) {
+    .donation-plan__header img {
+      width: 3rem; } }
+
+ul.donation-plan__features {
+  padding: 2rem; }
+  ul.donation-plan__features li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center; }
+    ul.donation-plan__features li::before {
+      content: url(../../assets/images/icons/features-list-icon.svg);
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: .75rem; }
+
+.donation-plan__platform-name {
+  margin-bottom: .25rem;
+  font-size: var(--step-2); }
+
+.donation-plan__description {
+  margin-bottom: 0; }
+
+.donation-plan__footer {
+  padding: 2rem; }
+  .donation-plan__footer .c-btn {
+    align-items: start; }
+    .donation-plan__footer .c-btn svg {
+      margin-top: .25rem; }
 
 .site-nav {
   display: flex;
@@ -1065,6 +1107,83 @@ a.c-btn {
 
 .c-accordion [aria-hidden="false"] {
   display: block !important; }
+
+#carbonads * {
+  margin: initial;
+  padding: initial; }
+
+#carbonads {
+  display: block;
+  margin: 0 24px;
+  padding: .6em;
+  font-size: 16px;
+  line-height: 1.35;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #fafafa;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1); }
+
+.jumbotron #carbonads {
+  border: solid 1px rgba(111, 102, 153, 0.6);
+  background-color: rgba(179, 179, 179, 0.15); }
+
+#carbonads a {
+  font-weight: 500;
+  color: inherit; }
+
+#carbonads a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+.jumbotron #carbonads a {
+  color: #eee; }
+
+.jumbotron #carbonads a:hover {
+  color: #ccc; }
+
+#carbonads span {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+
+#carbonads .carbon-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 130px; }
+
+#carbonads .carbon-img img {
+  display: block; }
+
+#carbonads .carbon-text {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left; }
+
+#carbonads .carbon-poweredby {
+  display: block;
+  margin-top: 10px;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 320px) and (max-width: 759px) {
+  #carbonads {
+    margin-top: 0;
+    font-size: 12px; }
+  #carbonads .carbon-wrap {
+    display: flex;
+    flex-direction: row;
+    max-width: 330px; }
+  #carbonads .carbon-text {
+    margin: 0 0 14px 10px;
+    font-size: 14px;
+    text-align: left; }
+  #carbonads .carbon-poweredby {
+    position: absolute;
+    bottom: 0;
+    left: 142px;
+    font-size: 8px; } }
 
 /* Visually hide text while keeping it accessible */
 /* Support includes IE9+ */

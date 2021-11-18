@@ -1,12 +1,12 @@
 .site-header {
-    padding: .75rem 1rem;
+    padding: .75rem 0;
     border-top: 4px solid var(--color-brand);
     border-bottom: 1px solid var(--divider-color);
 
     .content-container {
         display: grid;
         align-items: start;
-        padding: 0;
+        padding: 0 1rem;
 
         @media all and (min-width: 640px) {
             justify-content: space-between;

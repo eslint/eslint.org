@@ -11,7 +11,7 @@
 
 .hero--display {
     .content-container {
-        padding: var(--space-xl-4xl) 0;
+        padding: var(--space-xl-4xl) 1rem;
     }
 
     .section-title {
@@ -357,7 +357,7 @@
 .people-list {
     display: grid;
     grid-gap: 3rem 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 /* homepage metrics section */
@@ -482,6 +482,79 @@
         img {
             display: block;
             max-height: 3rem;
+        }
+    }
+}
+
+
+// donation plans on donate page
+
+.donation-plans {
+
+}
+
+.donation-plan {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+
+    &:first-of-type() {
+        @media all and (max-width: 768px) {
+
+        }
+    }
+
+
+}
+
+.donation-plan__header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    grid-gap: 1.5rem;
+    padding: 2rem 2rem 1.5rem;
+
+    img {
+        @media all and (max-width: 640px) {
+            width: 3rem;
+        }
+    }
+}
+
+ul.donation-plan__features {
+    padding: 2rem;
+
+    li {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: url(../../assets/images/icons/features-list-icon.svg);
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: .75rem;
+        }
+    }
+}
+
+.donation-plan__platform-name {
+    margin-bottom: .25rem;
+    font-size: var(--step-2);
+}
+
+.donation-plan__description {
+    margin-bottom: 0;
+}
+
+.donation-plan__footer {
+    padding: 2rem;
+
+    .c-btn {
+        align-items: start;
+
+        svg {
+            margin-top: .25rem;
         }
     }
 }

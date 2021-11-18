@@ -11,12 +11,15 @@ pagination:
 ---
 
 <div class="section hero">
-    <div class="content-container">
-        <div>
+    <div class="content-container grid">
+        <div class="span-1-7">
             <h1 class="section-title h2">Resources and insights</h1>
             <p class="section-supporting-text">
                 The latest industry news, interviews, technologies, and resources.
             </p>
+        </div>
+        <div class="span-11-12">
+            carbon ad here
         </div>
     </div>
 </div>
@@ -40,14 +43,14 @@ pagination:
                 <img src="../../assets/images/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}cover.png{%- endif -%}" width="420" height="240" alt="{{ item.data.coverAlt }}" />
             </a>
             <div class="card__content">
-                <div class="card__meta">
-                    <span class="blog-post__category">
-                        {{ item.data.category }}
-                    </span>
-                    <span class="blog-post__reading-time">
-                        {{ item.templateContent | readingTime }} read
-                    </span>
-                </div>
+                <div class="badge-group">
+                        <span class="blog-post__category">
+                            {{ item.data.category }}
+                        </span>
+                        <span class="blog-post__reading-time">
+                            {{ item.templateContent | readingTime }} read
+                        </span>
+                    </div>
 
                 <h3 class="card__title">
                     <a href="{{ item.url }}">{{ item.data.title }}</a>
