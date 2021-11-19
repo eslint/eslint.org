@@ -64,14 +64,14 @@ eleventyExcludeFromCollections: true
     </div>
 </section>
 
-<section class="features-section">
+<section class="section features-section">
     <div class="content-container">
-        <div class="section-head center-text">
+        <header class="section-head center-text">
             <h2 class="section-title h3">The pluggable linting utility for JavaScript and JSX</h2>
             <p class="section-supporting-text fs-step-0">
                 ESLint is an open source project that helps developers find and fix problems with their code. It's the #1 JavaScript linter by downloads on NPM, with over 6.5 million per week.
             </p>
-        </div>
+        </header>
         <div class="section-body features-wrapper grid">
             <div class="features span-1-5">
                 <article class="feature">
@@ -116,12 +116,12 @@ eleventyExcludeFromCollections: true
 
 <section>
     <div class="content-container divider">
-        <div class="section-head center-text">
+        <header class="section-head center-text">
             <h2 class="section-title h3" id="latest-posts-label">Latest posts</h2>
             <p class="section-supporting-text fs-step-0">
                 Thoughts, stories and release notes from the ESLint community
             </p>
-        </div>
+        </header>
         <div class="blog-posts focusable" role="region" tabindex="0" aria-labelledby="latest-posts-label">
             {% set posts = collections.blog | limitTo(6) %}
             {%- for item in posts -%}
@@ -166,12 +166,12 @@ eleventyExcludeFromCollections: true
 
 <section>
     <div class="content-container divider">
-        <div class="section-head center-text">
+        <header class="section-head center-text">
             <h2 class="section-title h3">Welcome to the community</h2>
             <p class="section-supporting-text fs-step-0">
                 ESLint is the #1 JavaScript linter by downloads on npm (over 6.5M downloads / week) and is used at companies like Microsoft, Airbnb, Netflix, and Facebook.
             </p>
-        </div>
+        </header>
         <div class="metrics center-text">
             <div class="metrics__item">
                 <span class="metrics__value">5.7M</span>
@@ -191,57 +191,61 @@ eleventyExcludeFromCollections: true
 
 <section>
     <div class="content-container divider">
-        <div class="section-head center-text">
+        <header class="section-head center-text">
             <h2 class="section-title h3">Sponsored by fantastic people</h2>
             <p class="section-supporting-text fs-step-0">
                 We receive $134,363 / year in donations from 600 backers.
             </p>
+        </header>
+        <div class="grid">
+            <ul role="list" class="sponsors span-4-9">
+                {% for item in sponsors.featured %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <img src="../../assets/images/sponsors/{{ item.image }}" alt="{{ item.name }} logo" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="center-text"><a href="/sponsors.html" class="c-btn c-btn--primary">View all sponsors</a></div>
         </div>
         <div class="grid">
-                <ul role="list" class="sponsors span-4-9">
-                    {% for item in sponsors.featured %}
-                    <li>
-                        <a href="{{ item.url }}">
-                            <img src="../../assets/images/sponsors/{{ item.image }}" alt="{{ item.name }} logo" />
-                        </a>
+            <div class="span-3-10">
+                <h3 class="featured-donations-title span-5-8" id="recent-donations">Recent one-time-donations</h3>
+
+                <ul role="list" class="featured-donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
+                    {% for item in donations.items %}
+                    <li class="featured-donations-item">
+                        <!-- <a href="{{ item.url }}" class="featured-donations-item__logo"> -->
+                        <img class="featured-donations-item__logo" src="../../assets/images/sponsors/{{ item.image }}" width="40" height="40" alt="{{ item.sponsorName }} logo" />
+                        <!-- </a> -->
+
+                        <div class="featured-donations-item__content">
+                            <p class="featured-donations-item__title">{{ item.donationType }}</p>
+                            <p class="featured-donations-item__desc">Credit from {{ item.sponsorName }} to ESLint • {{ item.date | readableDate }}</p>
+                        </div>
+
+                        <div class="featured-donations-item__amount">
+                            + {{ item.amount }}
+                        </div>
                     </li>
                     {% endfor %}
                 </ul>
-                <div class="center-text"><a href="/sponsors.html" class="c-btn c-btn--primary">View all sponsors</a></div>
             </div>
-            <div class="grid">
-                <div class="span-3-10">
-                    <h3 class="featured-donations-title span-5-8" id="recent-donations">Recent one-time-donations</h3>
-
-                    <ul role="list" class="featured-donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
-                        {% for item in donations.items %}
-                        <li class="featured-donations-item">
-                                <!-- <a href="{{ item.url }}" class="featured-donations-item__logo"> -->
-                                    <img class="featured-donations-item__logo" src="../../assets/images/sponsors/{{ item.image }}" width="40" height="40" alt="{{ item.sponsorName }} logo" />
-                                <!-- </a> -->
-
-                                <div class="featured-donations-item__content">
-                                    <p class="featured-donations-item__title">{{ item.donationType }}</p>
-                                    <p class="featured-donations-item__desc">Credit from {{ item.sponsorName }} to ESLint • {{ item.date | readableDate }}</p>
-                                </div>
-
-                                <div class="featured-donations-item__amount">
-                                    + {{ item.amount }}
-                                </div>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="center-text">
-                    <a href="/sponsors.html#donations" class="c-btn c-btn--secondary">View all donations</a>
-                </div>
+            <div class="center-text">
+                <a href="/sponsors.html#donations" class="c-btn c-btn--secondary">View all donations</a>
             </div>
+        </div>
     </div>
 </section>
 
 
-<section>
+<section aria-labelledby="testimonials-section-label">
+    <h2 id="testimonials-section-label" hidden>Testimonials</h2>
     <div class="content-container">
         {% include 'components/testimonials-slider.html' %}
     </div>
 </section>
+
+
+<script src="../../assets/js/slider.js"></script>
