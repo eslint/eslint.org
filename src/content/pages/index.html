@@ -199,10 +199,10 @@ eleventyExcludeFromCollections: true
         </header>
         <div class="grid">
             <ul role="list" class="sponsors span-4-9">
-                {% for item in sponsors.featured %}
+                {% for item in sponsors.featured | limitTo() %}
                 <li>
                     <a href="{{ item.url }}">
-                        <img src="../../assets/images/sponsors/{{ item.image }}" alt="{{ item.name }} logo" />
+                        <img src="../../assets/images/sponsors/{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
                     </a>
                 </li>
                 {% endfor %}
