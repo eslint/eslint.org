@@ -50,7 +50,7 @@
     <img class="person__photo" src="../../assets/images/people/{% if params.photo %}{{ params.photo }} {% else %}_placeholder-avatar.svg{% endif %}" width="56" height="56" alt="{{ params.name }}">
     <div class="person__details">
         <div class="person__name">{{ params.name }}</div>
-        <a href="{{ params.handleURL}}" class="person__handle">{{ params.handle }}</a>
+        <a href="{{ params.handleURL}}" class="person__title">{{ params.handle }}</a>
     </div>
 </div>
 {%- endmacro -%}
