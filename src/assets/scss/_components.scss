@@ -278,6 +278,7 @@
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    object-fit: cover;
 
     .member & {
         width: 5rem;
@@ -319,7 +320,7 @@
     }
 }
 
-.person__handle {
+.person__title {
     text-decoration: none;
     color: var(--color-brand);
     display: block;
