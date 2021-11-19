@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sponsorName": "Chrome",
+      "image": "chrome.png",
+      "donationDescription": "",
+      "donationType": "One-time financial contribution to ESLint",
+      "date": "2021-01-01",
+      "amount": "50.00 USD"
+    },
+    {
+      "sponsorName": "Jellypepper",
+      "image": "jellypepper.png",
+      "donationDescription": "",
+      "donationType": "One-time financial contribution to ESLint",
+      "date": "2021-01-01",
+      "amount": "50.00 USD"
+    },
+    {
+      "sponsorName": "Jellypepper",
+      "image": "jellypepper.png",
+      "donationDescription": "",
+      "donationType": "One-time financial contribution to ESLint",
+      "date": "2021-01-01",
+      "amount": "50.00 USD"
+    },
+    {
+      "sponsorName": "Jellypepper",
+      "image": "jellypepper.png",
+      "donationDescription": "",
+      "donationType": "One-time financial contribution to ESLint",
+      "date": "2021-01-01",
+      "amount": "50.00 USD"
+    },
+    {
+        "sponsorName": "Jellypepper",
+        "image": "jellypepper.png",
+        "donationDescription": "",
+        "donationType": "One-time financial contribution to ESLint",
+        "date": "2021-01-01",
+        "amount": "50.00 USD"
+    },
+    {
+        "sponsorName": "Jellypepper",
+        "image": "jellypepper.png",
+        "donationDescription": "",
+        "donationType": "One-time financial contribution to ESLint",
+        "date": "2021-01-01",
+        "amount": "50.00 USD"
+    },
+    {
+        "sponsorName": "Jellypepper",
+        "image": "jellypepper.png",
+        "donationDescription": "",
+        "donationType": "One-time financial contribution to ESLint",
+        "date": "2021-01-01",
+        "amount": "50.00 USD"
+    },
+    {
+        "sponsorName": "Jellypepper",
+        "image": "jellypepper.png",
+        "donationDescription": "",
+        "donationType": "One-time financial contribution to ESLint",
+        "date": "2021-01-01",
+        "amount": "50.00 USD"
+    }
+  ]
+}

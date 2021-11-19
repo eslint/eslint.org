@@ -1,0 +1,20 @@
+[build]
+  publish = "_site"
+  command = "npx @11ty/eleventy"
+  # or it could say: command = "npm run build"
+
+
+# fix avif loading in Firefox
+# Source: https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/
+[[headers]]
+  for = "*.avif"
+  [headers.values]
+    Content-Type = "image/avif"
+    Content-Disposition = "inline"
+
+# opt this site out of Google’s FLoC Network
+# Learn more / Source: https://paramdeo.com/blog/opting-your-website-out-of-googles-floc-network
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()"

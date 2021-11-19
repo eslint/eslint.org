@@ -1,0 +1,113 @@
+{
+    "committee": [
+        {
+            "name": "Nicholas Zakas",
+            "photo": "nicholas-zakas.jpg",
+            "handle": "@slicknet",
+            "handleURL": "https://github.com/slicknet",
+            "bio": "Human who codes. Creator of <a href='https://eslint.org'>@geteslint</a>. Author. Speaker. Advisor. Coach. Real estate investor. Blog at @humanwhocodes. INFJ. Semicolons and tabs.",
+            "twitterURL": "https://twitter.com/slicknet",
+            "githubURL": "https://github.com/slicknet"
+        },
+        {
+            "name": "Brandon Mills",
+            "photo": "brandon-mills.jpg",
+            "handle": "@btmills",
+            "handleURL": "",
+            "bio": "TBD",
+            "twitterURL": "",
+            "githubURL": ""
+        },
+        {
+            "name": "Milos Djermanovic",
+            "photo": "milos-djermanovic.jpg",
+            "handle": "@mdjermanovic",
+            "handleURL": "",
+            "bio": "TBD",
+            "twitterURL": "",
+            "githubURL": ""
+        }
+    ],
+    "reviewers": [
+        {
+            "name": "Toru Nagashima",
+            "photo": "toru-nagashima.jpg",
+            "handle": "@mysticatea",
+            "handleURL": "",
+            "bio": "TBD",
+            "twitterURL": "",
+            "githubURL": ""
+        },
+        {
+            "name": "薛定谔的猫",
+            "photo": "aladdin-add.jpg",
+            "handle": "@aladdin-add",
+            "handleURL": "",
+            "bio": "TBD",
+            "twitterURL": "",
+            "githubURL": ""
+        }
+    ],
+    "committers": [
+        {
+            "name": "Toru Nagashima",
+            "photo": "toru-nagashima.jpg",
+            "handle": "@mysticatea",
+            "handleURL": "",
+            "bio": "TBD",
+            "twitterURL": "",
+            "githubURL": ""
+        },
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "alumni": [
+        {
+            "name": "Alumni #1",
+            "photo": "brandon-mills.jpg",
+            "handle": "@lcroft",
+            "handleURL": "https://github.com/lcroft"
+        },
+        {
+            "name": "Alumni #2",
+            "photo": "brandon-mills.jpg",
+            "handle": "@lcroft",
+            "handleURL": "https://github.com/lcroft"
+        },
+        {
+            "name": "Alumni #3",
+            "photo": "brandon-mills.jpg",
+            "handle": "@lcroft",
+            "handleURL": "https://github.com/lcroft"
+        },
+        {
+            "name": "Alumni #4",
+            "photo": "brandon-mills.jpg",
+            "handle": "@lcroft",
+            "handleURL": "https://github.com/lcroft"
+        },
+        {
+            "name": "Alumni #5",
+            "photo": "brandon-mills.jpg",
+            "handle": "@lcroft",
+            "handleURL": "https://github.com/lcroft"
+        },
+        {
+            "name": "Alumni #6",
+            "photo": "brandon-mills.jpg",
+            "handle": "@lcroft",
+            "handleURL": "https://github.com/lcroft"
+        },
+        {
+            "name": "Alumni #7",
+            "photo": "brandon-mills.jpg",
+            "handle": "@lcroft",
+            "handleURL": "https://github.com/lcroft"
+        },
+        {},
+        {}
+    ]
+}

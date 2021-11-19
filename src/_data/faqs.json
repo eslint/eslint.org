@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "q": "Who receives the money that is donated?",
+      "a": "All contributions, whether donated through <a href='https://opencollective.com'>Open Collective</a> or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+    },
+    {
+      "q": "Will I get a record of my donations?",
+      "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+    },
+    {
+      "q": "Is my donation tax deductible?",
+      "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+    },
+    {
+      "q": "Who decides how the money is distributed?",
+      "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+    },
+    {
+        "q": "Can I see how the money is being used?",
+        "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+    },
+    {
+        "q": "Can I cancel my recurring donation at any time?",
+        "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+    },
+    {
+        "q": "How long does it take for my logo to appear on the homepage, GitHub, and npm package?",
+        "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+    },
+    {
+        "q": "Where do the logo and URL come from?",
+        "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+    }
+  ]
+}

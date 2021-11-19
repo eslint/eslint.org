@@ -1,0 +1,167 @@
+---
+layout: layouts/main.html
+permalink: sponsors.html
+eleventyExcludeFromCollections: true
+hook: "sponsors-page"
+---
+
+<div class="section hero">
+    <div class="content-container">
+        <div>
+            <h1 class="section-title h2">Sponsors</h1>
+            <p class="section-supporting-text">
+                171 companies, organizations, and individuals are currently contributing $13137.84 each month to support ESLint's ongoing maintenance and development.
+            </p>
+            <div class="eslint-actions">
+                <a href="/" class="c-btn c-btn--primary">Become a sponsor</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section">
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">Platinum Sponsors</h2>
+                <p>
+                    Become a platinum sponsor with a monthly donation of $2000 (providing 40 hours of maintenance and development) and get 2 hours of dedicated support (remote support available through chat or screen-sharing) per month as well as your Open Collective avatar image (large) on our README on GitHub and on the home page of eslint.org. We will also tweet a thank you from our Twitter account (over 20,000 followers). Please contact the ESLint team to schedule support sessions.
+                </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--platinum">
+                {% for item in sponsors.platinum %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">Gold Sponsors</h2>
+                <p>
+                    Become a gold sponsor with a monthly donation of $1000 (providing 20 hours of maintenance and development) and get your Open Collective avatar image (large) on our README on GitHub and the front page of eslint.org. We will also tweet a thank you from our Twitter account (over 20,000 followers).
+                </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--gold">
+                {% for item in sponsors.gold %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">Silver Sponsors</h2>
+                <p>
+                    Become a silver sponsor with a monthly donation of $500 (providing 10 hours of maintenance and development) and get your Open Collective avatar image on our README on GitHub and the front page of eslint.org.
+                </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--silver">
+                {% for item in sponsors.silver %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">Bronze Sponsors</h2>
+                <p>
+                    Become a bronze sponsor with a monthly donation of $20 (providing four hours of maintenance and development) and get your Open Collective avatar image on our README on GitHub and the front page of eslint.org.
+                </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--bronze">
+                {% for item in sponsors.bronze %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">Technology Sponsors</h2>
+                <p>
+                    Technology sponsors allow us to use their products and services for free as part of a contribution to the open source ecosystem and our work.
+                </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--technology">
+                {% for item in sponsors.technology %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="donations">
+    <div class="content-container divider">
+        <div class="section-head center-text">
+            <h2 class="section-title h3" id="recent-donations">Recent one-time donations</h2>
+            <p class="section-supporting-text fs-step-0">
+                We also receive a lot of one-time contributions from fantastic people. Here are some recent ones from OpenCollective and GitHub.
+            </p>
+        </div>
+        <!-- <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
+                {% for item in donations.items %}
+                <li class="donations-item">
+                    <img class="donations-item__logo" src="../../assets/images/sponsors/{{ item.image }}" width="40" height="40" alt="{{ item.sponsorName }} logo" />
+
+                    <div class="donations-item__content">
+                        <p class="donations-item__title">{{ item.donationType }}</p>
+                        <p class="donations-item__desc">Credit from {{ item.sponsorName }} to ESLint • {{ item.date | readableDate }}</p>
+                    </div>
+
+                    <div class="donations-item__amount">
+                        + {{ item.amount }}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul> -->
+    </div>
+</section>
+
+<section>
+    <div class="content-container divider">
+        <div class="section-head center-text">
+            <h2 class="section-title h3">All backers</h2>
+            <p class="section-supporting-text fs-step-0">
+                We have 380+ backers across our platforms. Thank you for supporting ESLint.
+            </p>
+        </div>
+        <div class="grid">
+            <ul role="list" class="sponsors span-1-12 sponsors--backers">
+                {% for item in sponsors.backers %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <img src="{{ item.image }}" width="48" height="48" alt="{{ item.name }}" title="{{ item.name }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

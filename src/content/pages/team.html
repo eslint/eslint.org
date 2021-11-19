@@ -1,0 +1,154 @@
+---
+layout: /layouts/main.html
+title: Meet our team — ESLint
+permalink: /team/
+hook: "team-page"
+---
+
+{%- from 'components/person.macro.html' import member, contributor %}
+
+<section class="section hero">
+    <div class="content-container grid">
+        <div class="span-1-7">
+            <h1 class="section-title">Meet our team</h1>
+            <p class="section-supporting-text">
+                These are the people who build and maintain ESLint.
+            </p>
+        </div>
+        <div class="span-11-12">
+            carbon ad here
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="content-container grid">
+        <div class="span-1-4">
+            <h2 class="section-title">Technical Steering Committee</h2>
+            <p class="section-supporting-text">
+                The people who manage releases, review feature requests, and meet regularly to ensure ESLint is properly maintained.
+            </p>
+        </div>
+        <ul role="list" class="span-6-12 people-list">
+            {% for item in team.committee %}
+                {% set itemPhoto = item.photo %}
+                {% set itemName = item.name %}
+                {% set itemHandle = item.handle %}
+                {% set itemHandleURL = item.handleURL %}
+                {% set itemBio = item.bio | safe %}
+                {% set itemTwitterURL = item.twitterURL %}
+                {% set itemGithubURL = item.githubURL %}
+
+                <li>
+                    {{ member({
+                        photo: itemPhoto,
+                        name: itemName,
+                        handle: itemHandle,
+                        handleURL: itemHandleURL,
+                        bio: itemBio,
+                        twitterURL: itemTwitterURL,
+                        githubURL: itemGithubURL
+                    }) }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <div class="content-container grid">
+        <div class="span-1-4">
+            <h2 class="section-title">Reviewers</h2>
+            <p class="section-supporting-text">
+                The people who review and implement new features.
+            </p>
+        </div>
+        <ul role="list" class="span-6-12 people-list">
+            {% for item in team.reviewers %}
+                {% set itemPhoto = item.photo %}
+                {% set itemName = item.name %}
+                {% set itemHandle = item.handle %}
+                {% set itemHandleURL = item.handleURL %}
+                {% set itemBio = item.bio | safe %}
+                {% set itemTwitterURL = item.twitterURL %}
+                {% set itemGithubURL = item.githubURL %}
+
+                <li>
+                    {{ member({
+                        photo: itemPhoto,
+                        name: itemName,
+                        handle: itemHandle,
+                        handleURL: itemHandleURL,
+                        bio: itemBio,
+                        twitterURL: itemTwitterURL,
+                        githubURL: itemGithubURL
+                    }) }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <div class="content-container grid">
+        <div class="span-1-4">
+            <h2 class="section-title">Committers</h2>
+            <p class="section-supporting-text">
+                The people who review and fix bugs and help triage issues.
+            </p>
+        </div>
+        <ul role="list" class="span-6-12 people-list">
+            {% for item in team.committers %}
+                {% set itemPhoto = item.photo %}
+                {% set itemName = item.name %}
+                {% set itemHandle = item.handle %}
+                {% set itemHandleURL = item.handleURL %}
+                {% set itemBio = item.bio | safe %}
+                {% set itemTwitterURL = item.twitterURL %}
+                {% set itemGithubURL = item.githubURL %}
+
+                <li>
+                    {{ member({
+                        photo: itemPhoto,
+                        name: itemName,
+                        handle: itemHandle,
+                        handleURL: itemHandleURL,
+                        bio: itemBio,
+                        twitterURL: itemTwitterURL,
+                        githubURL: itemGithubURL
+                    }) }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="content-container grid">
+        <div class="span-1-4">
+            <h2 class="section-title">Alumni</h2>
+            <p class="section-supporting-text">
+                Former TSC members and committers who previously helped maintain ESLint.
+            </p>
+        </div>
+        <ul role="list" class="span-6-12 people-list">
+            {% for item in team.alumni %}
+                {% set itemPhoto = item.photo %}
+                {% set itemName = item.name %}
+                {% set itemHandle = item.handle %}
+                {% set itemHandleURL = item.handleURL %}
+
+                <li>
+                    {{ contributor({
+                        photo: itemPhoto,
+                        name: itemName,
+                        handle: itemHandle,
+                        handleURL: itemHandleURL
+                    }) }}
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</section>

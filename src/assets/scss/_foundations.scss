@@ -1,0 +1,301 @@
+::marker {
+    color: var(--color-accent);
+}
+
+::selection {
+    background-color: var(--color-brand);
+    color: #fff;
+}
+
+[role="region"] {
+    padding: 5px;
+    margin: -5px;
+}
+
+*:focus {
+    outline: 3px solid transparent;
+}
+
+.js-focus-visible *:focus:not(.focus-visible) {
+    outline: 1px solid transparent;
+    box-shadow: none;
+}
+
+*:focus:not(:focus-visible) {
+    outline: 1px solid transparent;
+    box-shadow: none;
+}
+
+*.focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    accent-color: var(--color-brand);
+    background-color: var(--color-brand);
+    height: 100%;
+    font-family: var(--text-font);
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+}
+
+#skip-link {
+    position: fixed;
+    top: -30em;
+    left: 0;
+    right: auto;
+    z-index: 999;
+    transition: top .1s linear;
+
+    &:focus {
+        outline: 2px solid transparent;
+        top: 2px;
+    }
+
+    &:focus-visible {
+        outline: 2px solid transparent;
+        top: 2px;
+    }
+}
+
+main {
+    flex: 1;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.content-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: var(--space-xl-3xl) 1rem;
+}
+
+
+.section-head {
+    .section-supporting-text {
+        text-align: center;
+        max-width: 768px;
+        margin: 0 auto var(--space-l-2xl);
+    }
+}
+
+.section-foot {
+    margin-top: var(--space-l-2xl);
+    .section-supporting-text {
+        text-align: center;
+        font-size: var(--step--1);
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+.section-title {
+    margin-bottom: 1rem;
+}
+
+.section-supporting-text {
+    font-size: var(--step-1);
+}
+
+
+code,
+pre {
+    font-family: var(--mono-font);
+}
+
+code {
+    color: var(--color-brand);
+
+    pre & {
+        color: unset;
+    }
+}
+
+.c-icon {
+    color: var(--icon-color);
+    flex: none;
+    transition: all .2s linear;
+
+    @media (-ms-high-contrast: active) {
+        color: windowText;
+    }
+
+    @media (forced-colors: active) {
+        color: canvasText;
+    }
+}
+
+.c-btn,
+a {
+    .c-icon:hover {
+        color: var(--color-brand);
+    }
+}
+
+a {
+    color: var(--color-brand);
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+
+
+    .side-header & {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+svg {
+    flex: none;
+}
+
+p {
+    margin: 0 0 1.5em;
+
+    :matches(nav, .posts-collection) & {
+        margin-bottom: .75em;
+    }
+}
+
+
+ul,
+ol {
+    margin-top: 0;
+
+    li {
+        margin: 0 0 .75em;
+    }
+}
+
+ul[role="list"] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+    }
+}
+
+figure {
+    margin-bottom: 4rem;
+
+    img {
+        margin-bottom: 1rem;
+    }
+
+    figcaption {
+        color: var(--grey);
+    }
+}
+
+
+
+// img::after {
+//     content: "Broken image:"" "attr(alt);
+//     font-size: 1rem;
+//     font-family: -apple-system,
+//         BlinkMacSystemFont,
+//         "Segoe UI",
+//         Roboto,
+//         Helvetica,
+//         Arial,
+//         sans-serif,
+//         "Apple Color Emoji",
+//         "Segoe UI Emoji",
+//         "Segoe UI Symbol";
+//     text-align: center;
+//     color: #777;
+//     position: absolute;
+//     left: 0;
+//     z-index: 2;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     visibility: visible;
+//     width: 100%;
+//     padding: .6em .3em;
+//     background-color: #fff;
+//     border: 1px dashed currentColor;
+//     border-radius: 4px;
+//     background-color: #eee;
+// }
+
+img {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+
+    /* rarely do we display bullets for lists in navigation */
+    ol,
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &.c-toc {
+
+        ul,
+        ol {
+            padding-left: 2rem;
+        }
+    }
+}
+
+
+ol {
+    list-style: decimal-leading-zero;
+    font-feature-settings: "tnum";
+}
+
+
+.video {
+    width: 90%;
+    max-width: 1400px;
+    margin: 2em auto;
+
+    iframe {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    *:focus-visible,
+    *.focus-visible {
+        transition: outline-offset .15s linear;
+        outline-offset: 3px;
+    }
+}
