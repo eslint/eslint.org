@@ -1,113 +1,202 @@
 {
-    "committee": [
+    "tsc": [
         {
-            "name": "Nicholas Zakas",
-            "photo": "nicholas-zakas.jpg",
-            "handle": "@slicknet",
-            "handleURL": "https://github.com/slicknet",
-            "bio": "Human who codes. Creator of <a href='https://eslint.org'>@geteslint</a>. Author. Speaker. Advisor. Coach. Real estate investor. Blog at @humanwhocodes. INFJ. Semicolons and tabs.",
-            "twitterURL": "https://twitter.com/slicknet",
-            "githubURL": "https://github.com/slicknet"
+            "username": "nzakas",
+            "name": "Nicholas C. Zakas",
+            "website": "https://humanwhocodes.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/38546?v=4"
         },
         {
+            "username": "btmills",
             "name": "Brandon Mills",
-            "photo": "brandon-mills.jpg",
-            "handle": "@btmills",
-            "handleURL": "",
-            "bio": "TBD",
-            "twitterURL": "",
-            "githubURL": ""
+            "website": "https://bmills.net",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4"
         },
         {
+            "username": "mdjermanovic",
             "name": "Milos Djermanovic",
-            "photo": "milos-djermanovic.jpg",
-            "handle": "@mdjermanovic",
-            "handleURL": "",
-            "bio": "TBD",
-            "twitterURL": "",
-            "githubURL": ""
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/44349756?v=4"
+        }
+    ],
+    "alumni": [
+        {
+            "username": "alberto",
+            "name": "alberto",
+            "website": "http://www.sharpbites.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/72561?v=4"
+        },
+        {
+            "username": "BYK",
+            "name": "Burak Yigit Kaya",
+            "website": "http://byk.im",
+            "avatar_url": "https://avatars.githubusercontent.com/u/126780?v=4"
+        },
+        {
+            "username": "lo1tuma",
+            "name": "Mathias Schreck",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/169170?v=4"
+        },
+        {
+            "username": "michaelficarra",
+            "name": "Michael Ficarra",
+            "website": "https://justgrahamthings.tumblr.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/218840?v=4"
+        },
+        {
+            "username": "xjamundx",
+            "name": "Jamund Ferguson",
+            "website": "http://www.jamund.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/246143?v=4"
+        },
+        {
+            "username": "platinumazure",
+            "name": "Kevin Partington",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4"
+        },
+        {
+            "username": "mikesherov",
+            "name": "Mike Sherov",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/364532?v=4"
+        },
+        {
+            "username": "hzoo",
+            "name": "Henry Zhu",
+            "website": "https://henryzoo.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/588473?v=4"
+        },
+        {
+            "username": "vitorbal",
+            "name": "Vitor Balocco",
+            "website": "https://twitter.com/vitorbal",
+            "avatar_url": "https://avatars.githubusercontent.com/u/626038?v=4"
+        },
+        {
+            "username": "qfox",
+            "name": "Alexej Yaroshevich",
+            "website": "http://about.me/yaroshevich",
+            "avatar_url": "https://avatars.githubusercontent.com/u/677518?v=4"
+        },
+        {
+            "username": "JamesHenry",
+            "name": "James Henry",
+            "website": "https://jameshenry.blog",
+            "avatar_url": "https://avatars.githubusercontent.com/u/900523?v=4"
+        },
+        {
+            "username": "markelog",
+            "name": "Oleg Gaidarenko",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/945528?v=4"
+        },
+        {
+            "username": "faceleg",
+            "name": "Michael Robinson",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1000759?v=4"
+        },
+        {
+            "username": "ilyavolodin",
+            "name": "Ilya Volodin",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1380062?v=4"
+        },
+        {
+            "username": "soda0289",
+            "name": "Reyad Attiyat",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2373964?v=4"
+        },
+        {
+            "username": "VictorHom",
+            "name": "Victor Hom",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3211873?v=4"
+        },
+        {
+            "username": "IanVS",
+            "name": "Ian VanSchooten",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4616705?v=4"
+        },
+        {
+            "username": "gyandeeps",
+            "name": "Gyandeep Singh",
+            "website": "https://gyandeeps.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5554486?v=4"
+        },
+        {
+            "username": "kaicataldo",
+            "name": "Kai Cataldo",
+            "website": "kaicataldo.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7041728?v=4"
+        },
+        {
+            "username": "not-an-aardvark",
+            "name": "Teddy Katz",
+            "website": "https://blog.teddykatz.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11638619?v=4"
+        },
+        {
+            "username": "pedrottimark",
+            "name": "Mark Pedrotti",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11862657?v=4"
         }
     ],
     "reviewers": [
         {
+            "username": "mysticatea",
             "name": "Toru Nagashima",
-            "photo": "toru-nagashima.jpg",
-            "handle": "@mysticatea",
-            "handleURL": "",
-            "bio": "TBD",
-            "twitterURL": "",
-            "githubURL": ""
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1937871?v=4"
         },
         {
-            "name": "薛定谔的猫",
-            "photo": "aladdin-add.jpg",
-            "handle": "@aladdin-add",
-            "handleURL": "",
-            "bio": "TBD",
-            "twitterURL": "",
-            "githubURL": ""
+            "username": "aladdin-add",
+            "name": "唯然",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/13050025?v=4"
         }
     ],
     "committers": [
         {
-            "name": "Toru Nagashima",
-            "photo": "toru-nagashima.jpg",
-            "handle": "@mysticatea",
-            "handleURL": "",
-            "bio": "TBD",
-            "twitterURL": "",
-            "githubURL": ""
-        },
-        {},
-        {},
-        {},
-        {},
-        {}
-    ],
-    "alumni": [
-        {
-            "name": "Alumni #1",
-            "photo": "brandon-mills.jpg",
-            "handle": "@lcroft",
-            "handleURL": "https://github.com/lcroft"
+            "username": "brettz9",
+            "name": "Brett Zamir",
+            "website": "http://brett-zamir.me",
+            "avatar_url": "https://avatars.githubusercontent.com/u/20234?v=4"
         },
         {
-            "name": "Alumni #2",
-            "photo": "brandon-mills.jpg",
-            "handle": "@lcroft",
-            "handleURL": "https://github.com/lcroft"
+            "username": "bmish",
+            "name": "Bryan Mishkin",
+            "website": "http://www.linkedin.com/in/bmish",
+            "avatar_url": "https://avatars.githubusercontent.com/u/698306?v=4"
         },
         {
-            "name": "Alumni #3",
-            "photo": "brandon-mills.jpg",
-            "handle": "@lcroft",
-            "handleURL": "https://github.com/lcroft"
+            "username": "g-plane",
+            "name": "Pig Fang",
+            "website": "https://gplane.win",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17216317?v=4"
         },
         {
-            "name": "Alumni #4",
-            "photo": "brandon-mills.jpg",
-            "handle": "@lcroft",
-            "handleURL": "https://github.com/lcroft"
+            "username": "anikethsaha",
+            "name": "Anix",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/26347874?v=4"
         },
         {
-            "name": "Alumni #5",
-            "photo": "brandon-mills.jpg",
-            "handle": "@lcroft",
-            "handleURL": "https://github.com/lcroft"
+            "username": "yeonjuan",
+            "name": "YeonJuan",
+            "website": "https://github.com/yeonjuan/dev-blog",
+            "avatar_url": "https://avatars.githubusercontent.com/u/41323220?v=4"
         },
         {
-            "name": "Alumni #6",
-            "photo": "brandon-mills.jpg",
-            "handle": "@lcroft",
-            "handleURL": "https://github.com/lcroft"
-        },
-        {
-            "name": "Alumni #7",
-            "photo": "brandon-mills.jpg",
-            "handle": "@lcroft",
-            "handleURL": "https://github.com/lcroft"
-        },
-        {},
-        {}
+            "username": "snitin315",
+            "name": "Nitin Kumar",
+            "website": "https://snitin315.dev/",
+            "avatar_url": "https://avatars.githubusercontent.com/u/46647141?v=4"
+        }
     ]
 }
