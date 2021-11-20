@@ -22,7 +22,9 @@
     }
 
     a[data-current="true"] {
+
         color: var(--link-color);
+
         text-decoration: underline;
     }
 }

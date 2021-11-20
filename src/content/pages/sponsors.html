@@ -105,7 +105,9 @@ hook: "sponsors-page"
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--technology">
-                {% for item in sponsors.technology %}
+
+                {% for item in techsponsors %}
+
                 <li>
                     <a href="{{ item.url }}">
                         <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />

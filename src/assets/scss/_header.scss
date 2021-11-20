@@ -1,6 +1,8 @@
 .site-header {
     padding: .75rem 0;
+
     border-top: 4px solid var(--link-color);
+
     border-bottom: 1px solid var(--divider-color);
 
     .content-container {
@@ -19,11 +21,13 @@
         transition: color .2s linear;
 
         &:hover {
+
             color: var(--link-color);
         }
 
         &[aria-current] {
             color: var(--link-color);
+
             text-decoration: underline;
         }
     }
