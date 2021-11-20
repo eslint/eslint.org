@@ -6,7 +6,7 @@
 
 .hero {
     border-bottom: 1px solid var(--divider-color);
-    background-color: var(--color-neutral-25);
+    background-color: var(--hero-background-color);
 }
 
 .hero--display {
@@ -310,7 +310,7 @@
         text-decoration: none;
 
         &:hover {
-            color: var(--color-brand);
+            color: var(--link-color);
         }
     }
 }
@@ -319,9 +319,14 @@
     font-weight: 500;
     color: var(--headings-color);
     font-size: 1.125rem;
+
+    .member & {
+        font-size: var(--step-1);
+    }
 }
 
-.person__title {
+.person__title,
+.person__handle {
     text-decoration: none;
     color: var(--link-color);
     display: block;
@@ -331,7 +336,7 @@
         color: inherit;
 
         &:hover {
-            color: var(--color-brand);
+            color: var(--link-color);
         }
 
         // make the whole item clickable by overlaying a pseudo-element on top
@@ -406,7 +411,7 @@
 }
 
 .features {
-    border-left: 4px solid var(--color-neutral-100);
+    border-left: 4px solid var(--tab-border-color);
     padding-left: 1.5rem;
 }
 
@@ -588,7 +593,7 @@ ul.featured-donations-list {
     flex: none;
     border-radius: var(--border-radius);
     padding: 1rem;
-    background-color: var(--color-neutral-50);
+    background-color: var(--donation-background-color);
     margin-bottom: .5rem;
 
     display: grid;

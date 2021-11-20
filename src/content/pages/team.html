@@ -67,8 +67,8 @@ hook: "team-page"
             {% for item in team.reviewers %}
                 {% set itemPhoto = item.avatar_url %}
                 {% set itemName = item.name %}
-                {% set itemHandle = item.handle %}
-                {% set itemHandleURL = item.handleURL %}
+                {% set itemHandle = item.username %}
+                {% set itemHandleURL = item.website %}
                 {% set itemBio = item.bio | safe %}
                 {% set itemTwitterURL = item.twitterURL %}
                 {% set itemGithubURL = item.githubURL %}
