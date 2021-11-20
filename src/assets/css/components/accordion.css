@@ -1,10 +1,12 @@
 .c-accordion__heading {
   font-size: var(--step-1);
   font-size: 1.125rem;
-  font-family: var(--text-font); }
+  font-family: var(--text-font);
+  color: var(--headings-color); }
   .accordion-js .c-accordion__heading {
     margin: 0; }
   .c-accordion__heading > button {
+    color: inherit;
     cursor: pointer;
     display: flex;
     align-items: baseline;
