@@ -107,19 +107,6 @@
   --footer-background-color: var(--color-neutral-25);
   --donation-background-color: var(--color-neutral-50); }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-background-color: var(--color-neutral-900);
-    --body-text-color: var(--color-neutral-400);
-    --headings-color: #fff;
-    --link-color: var(--color-primary-500);
-    --divider-color: var(--color-neutral-600);
-    --border-color: var(--color-neutral-500);
-    --tab-border-color: var(--color-neutral-800);
-    --donation-background-color: var(--color-neutral-800);
-    --hero-background-color: var(--color-neutral-800);
-    --footer-background-color: var(--color-neutral-800); } }
-
 /* @link https://utopia.fyi/space/calculator?c=320,16,1.125,1440,16,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|8,l-2xl|xl-3xl|xl-4xl */
 :root {
   --fc-3xs-min: (var(--fc-s-min) * 0.25);
