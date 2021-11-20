@@ -1,7 +1,7 @@
 <!-- default person -->
 {%- macro member(params) -%}
 <div class="person member {% if params.type == 'author' %} member--author {% endif %}">
-    <img class="person__photo" src="../../assets/images/people/{% if params.photo %}{{ params.photo }} {% else %}_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="80" height="80">
+    <img class="person__photo" src="{% if params.photo %}{{ params.photo }} {% else %}../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="80" height="80">
     <div class="person__details">
         <div class="person__name">
             {% if params.name %}{{ params.name }}{% else %} Awesome McPerson {% endif %}
@@ -47,7 +47,7 @@
 <!-- has avatar, name, and handle only -->
 {%- macro contributor(params) -%}
 <div class="person contributor {% if params.type == 'author' %} contributor--author {% endif %}">
-    <img class="person__photo" src="../../assets/images/people/{% if params.photo %}{{ params.photo }} {% else %}_placeholder-avatar.svg{% endif %}" width="56" height="56" alt="{{ params.name }}">
+    <img class="person__photo" src="{% if params.photo %}{{ params.photo }} {% else %}../../assets/images/people/_placeholder-avatar.svg{% endif %}" width="56" height="56" alt="{{ params.name }}">
     <div class="person__details">
         <div class="person__name">{{ params.name }}</div>
         <a href="{{ params.handleURL}}" class="person__title">{{ params.handle }}</a>

@@ -30,10 +30,10 @@ hook: "team-page"
             </p>
         </div>
         <ul role="list" class="span-6-12 people-list">
-            {% for item in team.committee %}
-                {% set itemPhoto = item.photo %}
+            {% for item in team.tsc %}
+                {% set itemPhoto = item.avatar_url %}
                 {% set itemName = item.name %}
-                {% set itemHandle = item.handle %}
+                {% set itemHandle = item.username %}
                 {% set itemHandleURL = item.handleURL %}
                 {% set itemBio = item.bio | safe %}
                 {% set itemTwitterURL = item.twitterURL %}
@@ -65,7 +65,7 @@ hook: "team-page"
         </div>
         <ul role="list" class="span-6-12 people-list">
             {% for item in team.reviewers %}
-                {% set itemPhoto = item.photo %}
+                {% set itemPhoto = item.avatar_url %}
                 {% set itemName = item.name %}
                 {% set itemHandle = item.handle %}
                 {% set itemHandleURL = item.handleURL %}
@@ -99,9 +99,9 @@ hook: "team-page"
         </div>
         <ul role="list" class="span-6-12 people-list">
             {% for item in team.committers %}
-                {% set itemPhoto = item.photo %}
+                {% set itemPhoto = item.avatar_url %}
                 {% set itemName = item.name %}
-                {% set itemHandle = item.handle %}
+                {% set itemHandle = item.username %}
                 {% set itemHandleURL = item.handleURL %}
                 {% set itemBio = item.bio | safe %}
                 {% set itemTwitterURL = item.twitterURL %}
@@ -134,9 +134,9 @@ hook: "team-page"
         </div>
         <ul role="list" class="span-6-12 people-list">
             {% for item in team.alumni %}
-                {% set itemPhoto = item.photo %}
+                {% set itemPhoto = item.avatar_url %}
                 {% set itemName = item.name %}
-                {% set itemHandle = item.handle %}
+                {% set itemHandle = item.username %}
                 {% set itemHandleURL = item.handleURL %}
 
                 <li>
