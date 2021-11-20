@@ -88,9 +88,7 @@
   --border-color: var(--color-neutral-300);
   --border-radius: .5rem;
   --divider-color: var(--color-neutral-200);
-
   --primary-button-background-color: var(--color-primary-800);
-
   --primary-button-hover-color: var(--color-primary-900);
   --primary-button-text-color: #fff;
   --secondary-button-background-color: var(--color-primary-50);
@@ -99,7 +97,6 @@
   --ghost-button-background-color: var(--color-primary-50);
   --ghost-button-text-color: var(--color-brand);
   --border-color: var(--color-neutral-300);
-
   --tab-border-color: var(--color-neutral-100);
   --body-background-color: #fff;
   --body-text-color: var(--color-neutral-500);
@@ -109,7 +106,6 @@
   --hero-background-color: var(--color-neutral-25);
   --footer-background-color: var(--color-neutral-25);
   --donation-background-color: var(--color-neutral-50); }
-
 
 /* @link https://utopia.fyi/space/calculator?c=320,16,1.125,1440,16,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|8,l-2xl|xl-3xl|xl-4xl */
 :root {
@@ -366,12 +362,10 @@ code {
 
 .c-btn .c-icon:hover,
 a .c-icon:hover {
-
   color: var(--link-color); }
 
 a {
   color: var(--link-color);
-
   display: inline-flex;
   gap: .5rem;
   align-items: center; }
@@ -500,9 +494,7 @@ a.c-btn {
 
 .site-header {
   padding: .75rem 0;
-
   border-top: 4px solid var(--link-color);
-
   border-bottom: 1px solid var(--divider-color); }
   .site-header .content-container {
     display: grid;
@@ -516,11 +508,9 @@ a.c-btn {
     color: inherit;
     transition: color .2s linear; }
     .site-header a:not(.c-btn):hover {
-
       color: var(--link-color); }
     .site-header a:not(.c-btn)[aria-current] {
       color: var(--link-color);
-
       text-decoration: underline; }
 
 .logo-link {
@@ -533,9 +523,7 @@ a.c-btn {
 
 .site-footer {
   text-align: center;
-
   background-color: var(--footer-background-color);
-
   border-top: 1px solid var(--divider-color); }
 
 .footer-cta .logo {
@@ -642,9 +630,7 @@ a.c-btn {
 
 .hero {
   border-bottom: 1px solid var(--divider-color);
-
   background-color: var(--hero-background-color); }
-
 
 .hero--display .content-container {
   padding: var(--space-xl-4xl) 1rem; }
@@ -849,14 +835,11 @@ a.c-btn {
   color: inherit;
   text-decoration: none; }
   .person__bio a:hover {
-
     color: var(--link-color); }
-
 
 .person__name {
   font-weight: 500;
   color: var(--headings-color);
-
   font-size: 1.125rem; }
   .member .person__name {
     font-size: var(--step-1); }
@@ -875,7 +858,6 @@ a.c-btn {
       color: var(--link-color); }
     .contributor--author .person__title::after, .contributor--author
     .person__handle::after {
-
       content: "";
       display: block;
       position: absolute;
@@ -929,9 +911,7 @@ a.c-btn {
   align-items: center; }
 
 .features {
-
   border-left: 4px solid var(--tab-border-color);
-
   padding-left: 1.5rem; }
 
 .feature {
@@ -1050,9 +1030,7 @@ ul.featured-donations-list {
   flex: none;
   border-radius: var(--border-radius);
   padding: 1rem;
-
   background-color: var(--donation-background-color);
-
   margin-bottom: .5rem;
   display: grid;
   grid-gap: 1.5rem 2rem; }
@@ -1132,9 +1110,7 @@ ul.donation-plan__features {
     justify-self: flex-end;
     align-self: flex-end; }
   .site-nav a[data-current="true"] {
-
     color: var(--link-color);
-
     text-decoration: underline; }
 
 .site-nav-toggle {
@@ -1161,14 +1137,12 @@ ul.donation-plan__features {
 .c-accordion__heading {
   font-size: var(--step-1);
   font-size: 1.125rem;
-
   font-family: var(--text-font);
   color: var(--headings-color); }
   .accordion-js .c-accordion__heading {
     margin: 0; }
   .c-accordion__heading > button {
     color: inherit;
-
     cursor: pointer;
     display: flex;
     align-items: baseline;

@@ -199,7 +199,6 @@ eleventyExcludeFromCollections: true
         </header>
         <div class="grid">
             <ul role="list" class="sponsors span-4-9">
-
                 {% for sponsor in sponsors.gold | limitTo() %}
                 <li>
                     <a href="{{ sponsor.url }}">
@@ -207,12 +206,10 @@ eleventyExcludeFromCollections: true
                     </a>
                 </li>
                 {% endfor %}
-            </ul>
-            <ul role="list" class="sponsors span-4-9">
                 {% for sponsor in techsponsors | limitTo() %}
                 <li>
                     <a href="{{ sponsor.url }}">
-                        <img src="{{ sponsor.image }}" 
+                        <img src="{{ sponsor.image }}"
                             alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}"
                             title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}"
                         />
