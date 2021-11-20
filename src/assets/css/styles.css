@@ -507,7 +507,7 @@ a.c-btn {
 
 .site-header {
   padding: .75rem 0;
-  border-top: 4px solid var(--color-brand);
+  border-top: 4px solid var(--link-color);
   border-bottom: 1px solid var(--divider-color); }
   .site-header .content-container {
     display: grid;
@@ -521,9 +521,9 @@ a.c-btn {
     color: inherit;
     transition: color .2s linear; }
     .site-header a:not(.c-btn):hover {
-      color: var(--color-brand); }
+      color: var(--link-color); }
     .site-header a:not(.c-btn)[aria-current] {
-      color: var(--color-brand);
+      color: var(--link-color);
       text-decoration: underline; }
 
 .logo-link {
