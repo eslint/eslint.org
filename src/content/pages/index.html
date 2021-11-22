@@ -226,19 +226,18 @@ eleventyExcludeFromCollections: true
                 <h3 class="featured-donations-title span-5-8" id="recent-donations">Recent one-time-donations</h3>
 
                 <ul role="list" class="featured-donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
-                    {% for item in donations.items %}
+                    {% for donation in donations %}
                     <li class="featured-donations-item">
                         <!-- <a href="{{ item.url }}" class="featured-donations-item__logo"> -->
-                        <img class="featured-donations-item__logo" src="../../assets/images/sponsors/{{ item.image }}" width="40" height="40" alt="{{ item.sponsorName }} logo" />
+                        <img class="featured-donations-item__logo" src="{{ donation.image }}" width="40" height="40" alt="{{ donation.name }} logo" />
                         <!-- </a> -->
 
                         <div class="featured-donations-item__content">
-                            <p class="featured-donations-item__title">{{ item.donationType }}</p>
-                            <p class="featured-donations-item__desc">Credit from {{ item.sponsorName }} to ESLint • {{ item.date | readableDate }}</p>
+                            <p class="featured-donations-item__title">{{ donation.frequency }}</p>
+                            <p class="featured-donations-item__desc">Credit from {{ donation.name }} to ESLint • {{ donation.date | readableDate }}</p>
                         </div>
-
                         <div class="featured-donations-item__amount">
-                            + {{ item.amount }}
+                            + ${{ donation.amount }}
                         </div>
                     </li>
                     {% endfor %}
