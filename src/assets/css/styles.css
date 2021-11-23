@@ -744,7 +744,7 @@ a.c-btn {
     width: 100%;
     border-radius: var(--border-radius);
     object-fit: cover;
-    aspect-ratio: 3 / 2; }
+    aspect-ratio: 7 / 4; }
 
 .card__content {
   flex: 1;
