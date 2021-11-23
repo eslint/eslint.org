@@ -676,12 +676,14 @@ a.c-btn {
   max-width: 100%; }
   .eslint-install-code code {
     color: inherit; }
-    .eslint-install-code code input {
-      all: unset;
-      min-width: 26ch; }
-      .eslint-install-code code input::selection {
-        background-color: #fff;
-        color: var(--body-text-color); }
+  .eslint-install-code input {
+    all: unset;
+    min-width: 26ch;
+    color: inherit;
+    font-family: var(--mono-font); }
+    .eslint-install-code input::selection {
+      background-color: #fff;
+      color: var(--body-text-color); }
 
 .eslint-install-code__btn .c-icon {
   color: var(--color-neutral-500); }

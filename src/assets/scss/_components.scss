@@ -82,13 +82,18 @@
     code {
         color: inherit;
 
-        input {
-            all: unset;
-            min-width: 26ch;
-            &::selection {
-                background-color: #fff;
-                color: var(--body-text-color);
-            }
+
+    }
+
+    input {
+        all: unset;
+        min-width: 26ch;
+        color: inherit;
+        font-family: var(--mono-font);
+
+        &::selection {
+            background-color: #fff;
+            color: var(--body-text-color);
         }
     }
 }
