@@ -127,12 +127,92 @@ hook: "donate-page"
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3">Donation tiers</h2>
+            <h2 class="section-title h3" id="donation-tiers-label">Donation tiers</h2>
             <p class="section-supporting-text fs-step-0">
                 While we accept donations of any size, we do have a tier system with different rewards at each level.
             </p>
         </div>
+        <ol class="donation-tiers" aria-labelledby="donation-tiers-label" role="list">
+            <li class="donation-tiers__item">
+                <h3 class="donation-tiers__title">
+                    <span>Platinum Sponsor </span>
+                    <span class="donation-tiers__title__value">$2000+</span>
+                    <span class="donation-tiers__title__freq">per month</span>
+                </h3>
+                <div class="donation-tiers__item__description">
+                    2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
+                </div>
+                <a href="#" class="c-btn c-btn--primary c-btn--block">Get started</a>
+            </li>
+            <li class="donation-tiers__item">
+                <h3 class="donation-tiers__title">
+                    <span>Gold Sponsor </span>
+                    <span class="donation-tiers__title__value">$1000–1999</span>
+                    <span class="donation-tiers__title__freq">per month</span>
+                </h3>
+                <div class="donation-tiers__item__description">
+                    Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
+                </div>
+                <a href="#" class="c-btn c-btn--primary c-btn--block">Get started</a>
+            </li>
+            <li class="donation-tiers__item">
+                <h3 class="donation-tiers__title">
+                    <span>Silver Sponsor </span>
+                    <span class="donation-tiers__title__value">$500–999</span>
+                    <span class="donation-tiers__title__freq">per month</span>
+                </h3>
+                <div class="donation-tiers__item__description">
+                    Third highest logo placement on homepage and readme.
+                </div>
+                <a href="#" class="c-btn c-btn--primary c-btn--block">Get started</a>
+            </li>
+            <li class="donation-tiers__item">
+                <h3 class="donation-tiers__title">
+                    <span>Bronze Sponsor </span>
+                    <span class="donation-tiers__title__value">$200–499</span>
+                    <span class="donation-tiers__title__freq">per month</span>
+                </h3>
+                <div class="donation-tiers__item__description">
+                    Fourth highest logo placement on homepage and readme.
+                </div>
+                <a href="#" class="c-btn c-btn--primary c-btn--block">Get started</a>
+            </li>
+        </ol>
     </div>
+</section>
+
+<section>
+    <div class="content-container divider">
+        <div class="section-head center-text">
+            <h2 class="section-title h3" hidden>Testimonials</h2>
+        </div>
+<div class="c-slider c-slider--testimonials">
+    <div class="c-slider__slides-container">
+                <div class="c-slider__slides-wrapper">
+{% for item in testimonials.items %}
+<div class="c-slider__slide">
+                        <blockquote class="c-slider__testimonial span-1-6">
+                            <div class="c-slider__testimonial__content">
+                                <p>
+                                    {{ item.text }}
+                                </p>
+                            </div>
+                            <footer class="c-slider__testimonial__footer">
+                                <cite class="person contributor">
+                                    <img class="person__photo" src="../../assets/images/people/testimonials/small/{{ item.image }}" width="48" height="48" alt="{{ item.name }}">
+                                    <div class="person__details">
+                                        <span class="c-slider__testimonial__author person__name">{{ item.name }}</span>
+                                        <span class="c-slider__testimonial__author-role person__title">{{ item.title }}</span>
+                                    </div>
+                                </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+{% endfor %}
+ </div>
+</div>
+</div>
+</div>
 </section>
 
 {% include "components/faqs-accordion.html" %}
