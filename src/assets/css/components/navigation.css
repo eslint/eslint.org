@@ -16,7 +16,7 @@
     justify-self: flex-end;
     align-self: flex-end; }
   .site-nav a[data-current="true"] {
-    color: var(--color-brand);
+    color: var(--link-color);
     text-decoration: underline; }
 
 .site-nav-toggle {

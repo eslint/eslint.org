@@ -313,11 +313,7 @@
 .person__name {
     font-weight: 500;
     color: var(--headings-color);
-    font-size: var(--step-1);
-
-    .member & {
-        font-size: var(--step-1);
-    }
+    font-size: 1.125rem;
 }
 
 .person__title {

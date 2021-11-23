@@ -319,7 +319,7 @@ main {
 .content-container {
   max-width: 1320px;
   margin: 0 auto;
-  padding: var(--space-xl-3xl) 1rem; }
+  padding: var(--space-xl-3xl) calc(1rem + 1vw); }
 
 .section-head .section-supporting-text {
   text-align: center;
@@ -499,7 +499,8 @@ a.c-btn {
   .site-header .content-container {
     display: grid;
     align-items: start;
-    padding: 0 1rem; }
+    padding-top: 0;
+    padding-bottom: 0; }
     @media all and (min-width: 640px) {
       .site-header .content-container {
         justify-content: space-between; } }
@@ -551,7 +552,8 @@ a.c-btn {
   margin: 0 auto; }
 
 .footer-social-section {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -841,8 +843,6 @@ a.c-btn {
   font-weight: 500;
   color: var(--headings-color);
   font-size: 1.125rem; }
-  .member .person__name {
-    font-size: var(--step-1); }
 
 .person__title {
   text-decoration: none;
