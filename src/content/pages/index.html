@@ -233,7 +233,7 @@ eleventyExcludeFromCollections: true
 
                         <div class="featured-donations-item__content">
                             <p class="featured-donations-item__title">{{ item.donationType }}</p>
-                            <p class="featured-donations-item__desc">Credit from {{ item.sponsorName }} to ESLint • {{ item.date | readableDate }}</p>
+                            <p class="featured-donations-item__desc">Credit from {{ item.sponsorName }} to ESLint • {{ item.date | readableDateFromISO }}</p>
                         </div>
 
                         <div class="featured-donations-item__amount">

@@ -2,6 +2,7 @@
   font-size: var(--step-1);
   font-size: 1.125rem;
   font-family: var(--text-font);
+  color: var(--headings-color);
   color: var(--headings-color); }
   .accordion-js .c-accordion__heading {
     margin: 0; }
