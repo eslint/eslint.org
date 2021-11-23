@@ -223,10 +223,10 @@ eleventyExcludeFromCollections: true
         </div>
         <div class="grid">
             <div class="span-3-10">
-                <h3 class="featured-donations-title span-5-8" id="recent-donations">Recent one-time-donations</h3>
+                <h3 class="featured-donations-title span-5-8" id="recent-donations">Recent One-time Donations</h3>
 
                 <ul role="list" class="featured-donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
-                    {% for donation in donations %}
+                    {% for donation in donations | limitTo(10) %}
                     <li class="featured-donations-item">
                         <!-- <a href="{{ item.url }}" class="featured-donations-item__logo"> -->
                         <img class="featured-donations-item__logo" src="{{ donation.image }}" width="40" height="40" alt="{{ donation.name }} logo" />
@@ -237,7 +237,7 @@ eleventyExcludeFromCollections: true
                             <p class="featured-donations-item__desc">Credit from {{ donation.name }} to ESLint • {{ donation.date | readableDate }}</p>
                         </div>
                         <div class="featured-donations-item__amount">
-                            + ${{ donation.amount }}
+                            + {{ donation.amount | dollars }}
                         </div>
                     </li>
                     {% endfor %}
