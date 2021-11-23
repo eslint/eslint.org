@@ -4,13 +4,18 @@
     font-family: var(--text-font);
     color: var(--headings-color);
 
+    color: var(--headings-color);
+
+
     .accordion-js & {
         margin: 0;
 
     }
 
     >button {
+
         color: inherit;
+
         cursor: pointer;
         display: flex;
         align-items: baseline;
