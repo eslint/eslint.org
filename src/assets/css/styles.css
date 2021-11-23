@@ -847,8 +847,6 @@ a.c-btn {
   font-weight: 500;
   color: var(--headings-color);
   font-size: 1.125rem; }
-  .member .person__name {
-    font-size: var(--step-1); }
 
 .person__title,
 .person__handle {
@@ -1183,6 +1181,7 @@ ul.donation-plan__features {
   font-size: var(--step-1);
   font-size: 1.125rem;
   font-family: var(--text-font);
+  color: var(--headings-color);
   color: var(--headings-color); }
   .accordion-js .c-accordion__heading {
     margin: 0; }

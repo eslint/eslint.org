@@ -151,12 +151,16 @@ code {
 .c-btn,
 a {
     .c-icon:hover {
+
         color: var(--link-color);
+
     }
 }
 
 a {
+
     color: var(--link-color);
+
     display: inline-flex;
     gap: .5rem;
     align-items: center;
