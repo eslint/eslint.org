@@ -125,22 +125,23 @@ hook: "sponsors-page"
                 We also receive a lot of one-time contributions from fantastic people. Here are some recent ones from OpenCollective and GitHub.
             </p>
         </div>
-        <!-- <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
-                {% for item in donations.items %}
+        <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
+
+                {% for donation in donations | limitTo(50) %}
                 <li class="donations-item">
-                    <img class="donations-item__logo" src="../../assets/images/sponsors/{{ item.image }}" width="40" height="40" alt="{{ item.sponsorName }} logo" />
+                    <img class="donations-item__logo" src="{{ donation.image }}" width="40" height="40" alt="{{ donation.name }} logo" />
 
                     <div class="donations-item__content">
-                        <p class="donations-item__title">{{ item.donationType }}</p>
-                        <p class="donations-item__desc">Credit from {{ item.sponsorName }} to ESLint • {{ item.date | readableDate }}</p>
+                        <p class="donations-item__title">{{ donation.type }}</p>
+                        <p class="donations-item__desc">Credit from {{ donation.name }} to ESLint • {{ donation.date | readableDate }}</p>
                     </div>
 
                     <div class="donations-item__amount">
-                        + {{ item.amount }}
+                        + {{ donation.amount | dollars }}
                     </div>
                 </li>
                 {% endfor %}
-            </ul> -->
+            </ul>
     </div>
 </section>
 

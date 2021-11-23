@@ -71,6 +71,13 @@ module.exports = function(eleventyConfig) {
         return result;
     })
 
+    eleventyConfig.addFilter('dollars', value => {
+        return new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD"
+        }).format(value);
+    });
+
     /*****************************************************************************************
      *  Plugins
      * ***************************************************************************************/
