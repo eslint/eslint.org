@@ -28,9 +28,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("sortByPageOrder", function(values) {
         return values.slice().sort((a, b) => a.data.order - b.data.order);
     });
-    /* Format dates. Source: https://11ty.rocks/eleventyjs/dates/ */
+
     eleventyConfig.addFilter("readableDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+        return DateTime.fromJSDate(dateObj).toFormat('dd MMM, yyyy');
+    });
+
+    eleventyConfig.addFilter("readableDateFromISO", (ISODate) => {
+        return DateTime.fromISO(ISODate).toUTC().toLocaleString(DateTime.DATE_MED);
     });
 
     eleventyConfig.addFilter("past", function(date) {
