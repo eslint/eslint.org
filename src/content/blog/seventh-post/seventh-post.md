@@ -1,9 +1,10 @@
 ---
 title: Number 7
 date: 2020-03-02
-author: Brandon Mills
-authorImage: brandon-mills.jpg
+author: btmills
 teaser: We just pushed ESLint v8.0.0, which is a major release upgrade of ESLint. This release adds some new features and fixes several bugs found in the previous release.
+categories:
+    - API Changes
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure totam natus hic doloribus neque modi quibusdam, ullam suscipit vero nihil? Minus corporis velit, eveniet a consectetur porro sequi quia.

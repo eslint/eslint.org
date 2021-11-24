@@ -2,12 +2,11 @@
 title: ESLint v8.0.0 released
 date: 2021-01-01
 featured: true
-author: Nicholas Zakas
-authorImage: nicholas-zakas.jpg
+author: nzakas
 teaser: We just pushed ESLint v8.0.0, which is a major release upgrade of ESLint. This release adds some new features and fixes several bugs found in the previous release.
 cover: fancy-cover.jpg
 coverAlt: cover alt text here if any
-category:
+categories:
     - Roadmap
 ---
 

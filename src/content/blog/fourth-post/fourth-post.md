@@ -1,10 +1,9 @@
 ---
 title: This is a blog post with a longer title that will wrap
 date: 2020-02-01
-author: Brandon Mills
-authorImage: brandon-mills.jpg
+author: nzakas
 teaser: We just pushed ESLint v8.0.0, which is a major release upgrade of ESLint. This release adds some new features and fixes several bugs found in the previous release.
-category:
+categories:
     - Roadmap
 ---
 
