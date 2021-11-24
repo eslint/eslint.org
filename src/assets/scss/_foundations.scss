@@ -90,7 +90,7 @@ main {
 .content-container {
     max-width: 1320px;
     margin: 0 auto;
-    padding: var(--space-xl-3xl) 1rem;
+    padding: var(--space-xl-3xl) calc(1rem + 1vw);
 }
 
 
@@ -151,12 +151,16 @@ code {
 .c-btn,
 a {
     .c-icon:hover {
-        color: var(--color-brand);
+
+        color: var(--link-color);
+
     }
 }
 
 a {
-    color: var(--color-brand);
+
+    color: var(--link-color);
+
     display: inline-flex;
     gap: .5rem;
     align-items: center;

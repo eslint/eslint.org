@@ -97,7 +97,10 @@
 
     // elevations
 
-    //todo: add them to buttons
+    // todo: add elevations and add them to buttons
+    --shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.1),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+
 
 
     /* Tier 2 variables */
@@ -106,7 +109,7 @@
     --border-radius: .5rem;
     --divider-color: var(--color-neutral-200);
 
-    --primary-button-background-color: var(--color-brand);
+    --primary-button-background-color: var(--color-primary-800);
     --primary-button-hover-color: var(--color-primary-900);
     --primary-button-text-color: #fff;
     --secondary-button-background-color: var(--color-primary-50);
@@ -116,19 +119,36 @@
     --ghost-button-text-color: var(--color-brand);
 
     --border-color: var(--color-neutral-300);
+    --tab-border-color: var(--color-neutral-100);
 
     --body-background-color: #fff;
     --body-text-color: var(--color-neutral-500);
     --headings-color: var(--color-neutral-900);
     --icon-color: var(--color-neutral-400);
+    --link-color: var(--color-primary-800);
+
+    --hero-background-color: var(--color-neutral-25);
+    --footer-background-color: var(--color-neutral-25);
+    --donation-background-color: var(--color-neutral-50);
 }
 
 
 @media (prefers-color-scheme: dark) {
-    // :root {
-    //     --body-background-color: var(--color-neutral-900);
-    //     --body-text-color: var(--color-neutral-400);
-    // }
+    :root {
+        // --body-background-color: var(--color-neutral-900);
+        // --body-text-color: var(--color-neutral-400);
+        // --headings-color: #fff;
+        // --link-color: var(--color-primary-500);
+        // --divider-color: var(--color-neutral-600);
+        // --border-color: var(--color-neutral-500);
+
+        // --tab-border-color: var(--color-neutral-800);
+
+        // --donation-background-color: var(--color-neutral-800);
+
+        // --hero-background-color: var(--color-neutral-800);
+        // --footer-background-color: var(--color-neutral-800);
+    }
 }
 
 /* @link https://utopia.fyi/space/calculator?c=320,16,1.125,1440,16,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|8,l-2xl|xl-3xl|xl-4xl */
