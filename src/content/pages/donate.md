@@ -16,7 +16,7 @@ hook: "donate-page"
                 <a href="/" class="c-btn c-btn--primary">Become a sponsor</a>
             </div>
         </div>
-        <div class="span-11-12">
+        <div class="span-10-12">
             carbon ad here
         </div>
     </div>
