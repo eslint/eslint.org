@@ -1,24 +1,77 @@
 {
-    "items": [
-        {
-            "name": "Nicholas Zakas",
-            "title": "Createor of ESLint",
-            "photo": "nicholas-zakas.jpg",
-            "handle": "@slicknet",
-            "handleURL": "https://github.com/slicknet",
-            "bio": "Human who codes. Creator of <a href='https://eslint.org'>@geteslint</a>. Author. Speaker. Advisor. Coach. Real estate investor. Blog at @humanwhocodes. INFJ. Semicolons and tabs.",
-            "twitterURL": "https://twitter.com/slicknet",
-            "githubURL": "https://github.com/slicknet"
+    "kaicataldo": {
+            "github": "kaicataldo",
+            "name": "Kai Cataldo",
+            "website": "kaicataldo.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7041728?v=4",
+            "twitter": "kaicataldo"
+    },
+    "mdjermanovic": {
+            "github": "mdjermanovic",
+            "name": "Milos Djermanovic",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/44349756?v=4"
         },
-        {
+    "btmills": {
+            "github": "btmills",
             "name": "Brandon Mills",
-            "title": "Technical Steering Committee",
-            "photo": "brandon-mills.jpg",
-            "handle": "@btmills",
-            "handleURL": "",
-            "bio": "TBD",
-            "twitterURL": "",
-            "githubURL": ""
+            "website": "https://bmills.net",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4"
+        },
+    "nzakas": {
+            "github": "nzakas",
+            "name": "Nicholas C. Zakas",
+            "website": "https://humanwhocodes.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/38546?v=4"
+        },
+    "not-an-aardvark": {
+            "github": "not-an-aardvark",
+            "name": "Teddy Katz",
+            "website": "https://blog.teddykatz.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11638619?v=4"
+        },
+    "ilyavolodin": {
+            "github": "ilyavolodin",
+            "name": "Ilya Volodin",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1380062?v=4"
+        },
+    "platinumazure": {
+            "github": "platinumazure",
+            "name": "Kevin Partington",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4"
+        },
+    "mysticatea": {
+            "github": "mysticatea",
+            "name": "Toru Nagashima",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1937871?v=4"
+        },
+    "hzoo": {
+            "github": "hzoo",
+            "name": "Henry Zhu",
+            "website": "https://henryzoo.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/588473?v=4"
+        },
+    
+    "gyandeeps": {
+            "github": "gyandeeps",
+            "name": "Gyandeep Singh",
+            "website": "https://gyandeeps.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5554486?v=4"
+        },
+    "vitorbal": {
+            "github": "vitorbal",
+            "twitter": "vitorbal",
+            "name": "Vitor Balocco",
+            "website": "https://twitter.com/vitorbal",
+            "avatar_url": "https://avatars.githubusercontent.com/u/626038?v=4"
+        },
+    "IanVS": {
+            "github": "IanVS",
+            "name": "Ian VanSchooten",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4616705?v=4"
         }
-    ]
 }
