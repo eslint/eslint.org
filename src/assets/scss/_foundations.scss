@@ -47,6 +47,7 @@ html {
     background-color: var(--color-brand);
     height: 100%;
     font-family: var(--text-font);
+    overflow-x: hidden;
 }
 
 body {
@@ -88,7 +89,7 @@ main {
 }
 
 .content-container {
-    max-width: 1320px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: var(--space-xl-3xl) calc(1rem + 1vw);
 }
@@ -293,10 +294,6 @@ ol {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
-
     *:focus-visible,
     *.focus-visible {
         transition: outline-offset .15s linear;

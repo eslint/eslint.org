@@ -57,7 +57,7 @@
   .c-slider__slides-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem; } }
+    grid-gap: 0 2rem; } }
 
 .c-slider__slide {
   width: 100%;
@@ -82,11 +82,11 @@
 .c-slider--testimonials .c-slider__testimonial__content {
   font-size: var(--step-1);
   margin: 0 auto; }
-  .c-slider--testimonials .c-slider__testimonial__content p:last-of-type() {
+  .c-slider--testimonials .c-slider__testimonial__content p:last-of-type {
     margin-bottom: 0; }
 
 .c-slider--testimonials .c-slider__testimonial__footer {
-  margin-top: 3rem;
+  margin-top: var(--space-l-xl);
   margin-bottom: 3rem; }
 
 .c-slider--testimonials .c-slider__testimonial__footer cite {

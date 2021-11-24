@@ -90,7 +90,7 @@
     @media all and (min-width: 1023px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 0 2rem;
     }
 }
 
@@ -134,13 +134,13 @@
         font-size: var(--step-1);
         margin: 0 auto;
 
-        p:last-of-type() {
+        p:last-of-type {
             margin-bottom: 0;
         }
     }
 
     .c-slider__testimonial__footer {
-        margin-top: 3rem;
+        margin-top: var(--space-l-xl);
         margin-bottom: 3rem;
     }
 
