@@ -48,11 +48,50 @@
     display: inline-flex;
     align-items: center;
     margin-left: .5rem;
+    margin-right: -10px;
 
     @media all and (min-width: 640px) {
         display: none;
     }
+
+    svg {
+        width: 40px;
+        height: 40px;
+        color: inherit;
+        fill: none;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    #ham-top,
+    #ham-middle,
+    #ham-bottom {
+        transition: all .2s linear;
+    }
+
+    #ham-top {
+        transform-origin: 30px 37px;
+    }
+
+    #ham-bottom {
+        transform-origin: 30px 63px;
+    }
+
+    &[aria-expanded="true"] {
+        #ham-middle {
+            opacity: 0;
+        }
+        #ham-top {
+
+            transform: rotate(41deg);
+        }
+        #ham-bottom {
+            transform: rotate(-41deg);
+        }
+    }
 }
+
 
 
 @media all and (min-width: 640px) {

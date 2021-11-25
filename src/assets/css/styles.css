@@ -1170,10 +1170,33 @@ ul.donation-plan__features {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  margin-left: .5rem; }
+  margin-left: .5rem;
+  margin-right: -10px; }
   @media all and (min-width: 640px) {
     .site-nav-toggle {
       display: none; } }
+  .site-nav-toggle svg {
+    width: 40px;
+    height: 40px;
+    color: inherit;
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round; }
+  .site-nav-toggle #ham-top,
+  .site-nav-toggle #ham-middle,
+  .site-nav-toggle #ham-bottom {
+    transition: all .2s linear; }
+  .site-nav-toggle #ham-top {
+    transform-origin: 30px 37px; }
+  .site-nav-toggle #ham-bottom {
+    transform-origin: 30px 63px; }
+  .site-nav-toggle[aria-expanded="true"] #ham-middle {
+    opacity: 0; }
+  .site-nav-toggle[aria-expanded="true"] #ham-top {
+    transform: rotate(41deg); }
+  .site-nav-toggle[aria-expanded="true"] #ham-bottom {
+    transform: rotate(-41deg); }
 
 @media all and (min-width: 640px) {
   .site-nav {
