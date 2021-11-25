@@ -1005,56 +1005,6 @@ a.c-btn {
 .sponsors.sponsors--technology img {
   max-height: 3rem; }
 
-.featured-donations-title {
-  font-size: inherit;
-  color: inherit;
-  font: inherit;
-  text-align: center;
-  margin-top: var(--space-l-2xl); }
-
-ul.featured-donations-list {
-  margin-top: var(--space-l-2xl);
-  overflow-x: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  margin-bottom: 2rem; }
-  @media all and (min-width: 1023px) {
-    ul.featured-donations-list {
-      display: grid;
-      margin-bottom: 0;
-      overflow: initial; } }
-  @media all and (min-width: 1023px) {
-    .sponsors-page ul.featured-donations-list {
-      grid-gap: 3rem 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); } }
-
-.featured-donations-list .featured-donations-item {
-  font-size: var(--step--1);
-  flex: none;
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  background-color: var(--donation-background-color);
-  margin-bottom: .5rem;
-  display: grid;
-  grid-gap: 1.5rem 2rem; }
-  @media all and (max-width: 1023px) {
-    .featured-donations-list .featured-donations-item {
-      max-width: 250px;
-      margin-right: 1rem; } }
-  @media all and (min-width: 1023px) {
-    .featured-donations-list .featured-donations-item {
-      align-items: center;
-      grid-template-columns: auto 1fr auto; } }
-
-.featured-donations-item__title {
-  color: var(--headings-color);
-  font-weight: 500; }
-
-.featured-donations-item__title,
-.featured-donations-item__desc {
-  margin-bottom: 0; }
-
 .donation-plan {
   border: 1px solid var(--divider-color);
   border-radius: var(--border-radius);
@@ -1134,6 +1084,14 @@ ul.donation-plan__features {
 .donation-tiers__item__description {
   justify-self: baseline;
   margin-bottom: 2rem; }
+
+.donation-tiers--others {
+  text-align: center;
+  margin-top: var(--space-l-2xl); }
+  .donation-tiers--others p {
+    margin-bottom: .5rem; }
+  .donation-tiers--others .c-btn {
+    margin-top: 1rem; }
 
 .site-nav {
   display: flex;
@@ -1377,6 +1335,76 @@ ul.donation-plan__features {
     .js-slider .c-slider__testimonial__img {
       display: none; } }
 
+.donations-title {
+  font-size: inherit;
+  color: inherit;
+  font: inherit;
+  text-align: center;
+  margin-top: var(--space-l-2xl); }
+
+ul.donations-list {
+  margin-top: var(--space-l-2xl);
+  display: grid;
+  grid-gap: 1.5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  margin-bottom: 0;
+  overflow: initial;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-bottom: 2rem; }
+  @media all and (min-width: 1023px) {
+    ul.donations-list {
+      overflow: initial;
+      display: grid;
+      grid-gap: 1.5rem 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      margin-bottom: 0; } }
+
+.donations-item {
+  display: flex; }
+
+.donation {
+  width: 100%;
+  font-size: var(--step--1);
+  flex: none;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  background-color: var(--donation-background-color);
+  margin-bottom: .5rem;
+  display: grid;
+  grid-gap: 1.5rem 2rem;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr; }
+  @media all and (max-width: 1023px) {
+    .homepage .donation {
+      width: 250px;
+      margin-right: 1rem; } }
+  @media all and (min-width: 1023px) {
+    .donation {
+      align-items: center;
+      grid-template-columns: auto 1fr auto; } }
+
+.donation__sponsor-name {
+  color: var(--headings-color);
+  font-weight: 500; }
+
+.donation__content {
+  grid-column: 1 / -1; }
+
+.donation__amount {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  justify-self: end; }
+
+.donation__sponsor-name,
+.donation__date {
+  margin-bottom: 0; }
+
+.donation__sponsor-logo {
+  border-radius: var(--border-radius); }
+
 #carbonads * {
   margin: initial;
   padding: initial; }
@@ -1551,6 +1579,12 @@ ul.donation-plan__features {
   color: inherit;
   font: inherit; }
 
+.color-brand {
+  color: var(--link-color); }
+
+.font-weight-medium {
+  font-weight: 500; }
+
 .center-text {
   text-align: center;
   grid-column: 1 / -1; }
@@ -1631,6 +1665,9 @@ ul.donation-plan__features {
 
 .span-5-8 {
   grid-column: 5 / 9; }
+
+.span-10-12 {
+  grid-column: 10 / 13; }
 
 .span-11-12 {
   grid-column: 11 / 13; }

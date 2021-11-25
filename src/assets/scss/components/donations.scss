@@ -1,0 +1,104 @@
+// DONATIONS
+
+.donations-title {
+    font-size: inherit;
+    color: inherit;
+    font: inherit;
+    text-align: center;
+    margin-top: var(--space-l-2xl);
+}
+
+ul.donations-list {
+    margin-top: var(--space-l-2xl);
+
+
+
+    // @media all and (min-width: 1023px) {
+        // overflow: initial;
+        display: grid;
+        grid-gap: 1.5rem 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        margin-bottom: 0;
+        overflow: initial;
+    // }
+
+    // .homepage & {
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+
+        @media all and (min-width: 1023px) {
+            overflow: initial;
+            display: grid;
+            grid-gap: 1.5rem 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            margin-bottom: 0;
+        }
+    // }
+}
+
+.donations-item {
+    display: flex;
+}
+
+.donation {
+    width: 100%;
+    font-size: var(--step--1);
+    flex: none;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background-color: var(--donation-background-color);
+    margin-bottom: .5rem;
+    display: grid;
+    grid-gap: 1.5rem 2rem;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+
+    .homepage & {
+        // grid-template-columns: auto 1fr auto;
+
+        @media all and (max-width: 1023px) {
+            width: 250px;
+            margin-right: 1rem;
+        }
+    }
+
+    @media all and (min-width: 1023px) {
+        align-items: center;
+        grid-template-columns: auto 1fr auto;
+    }
+}
+
+.donation__sponsor-name {
+    color: var(--headings-color);
+    font-weight: 500;
+}
+
+.donation__content {
+    grid-column: 1 / -1;
+
+    .homepage & {
+        // grid-column: 2 / 3;
+    }
+}
+
+.donation__amount {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    justify-self: end;
+
+    .homepage & {
+        // grid-column: 3 / 4;
+    }
+}
+
+.donation__sponsor-name,
+.donation__date {
+    margin-bottom: 0;
+}
+
+.donation__sponsor-logo {
+    border-radius: var(--border-radius);
+}

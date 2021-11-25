@@ -178,6 +178,11 @@ hook: "donate-page"
                 <a href="#" class="c-btn c-btn--primary c-btn--block">Get started</a>
             </li>
         </ol>
+        <div class="donation-tiers--others">
+            <p class="color-brand font-weight-medium">All others ($1-199 per month)</p>
+            <p>Listed on our sponsors page</p>
+            <a href="" class="c-btn c-btn--secondary">Get started</a>
+        </div>
     </div>
 </section>
 

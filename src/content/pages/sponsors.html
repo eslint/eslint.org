@@ -5,6 +5,8 @@ eleventyExcludeFromCollections: true
 hook: "sponsors-page"
 ---
 
+{%- from 'components/donation.macro.html' import donationItem %}
+
 <div class="section hero">
     <div class="content-container">
         <div>
@@ -122,25 +124,28 @@ hook: "sponsors-page"
 <section id="donations">
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3" id="recent-donations">Recent one-time donations</h2>
+            <h2 class="section-title h3" id="donations-label">Recent one-time donations</h2>
             <p class="section-supporting-text fs-step-0">
                 We also receive a lot of one-time contributions from fantastic people. Here are some recent ones from OpenCollective and GitHub.
             </p>
         </div>
-        <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
+        <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
 
                 {% for donation in donations | limitTo(50) %}
                 <li class="donations-item">
-                    <img class="donations-item__logo" src="{{ donation.image }}" width="40" height="40" alt="{{ donation.name }} logo" />
+                    {% set donation_image = donation.image %}
+                    {% set donation_name = donation.name %}
+                    {% set donation_type = donation.type %}
+                    {% set donation_amount = donation.amount | dollars %}
+                    {% set donation_date = donation.date | readableDateFromISO %}
 
-                    <div class="donations-item__content">
-                        <p class="donations-item__title">{{ donation.type }}</p>
-                        <p class="donations-item__desc">Credit from {{ donation.name }} to ESLint • {{ donation.date | readableDate }}</p>
-                    </div>
-
-                    <div class="donations-item__amount">
-                        + {{ donation.amount | dollars }}
-                    </div>
+                    {{ donationItem({
+                        image: donation_image,
+                        name: donation_name,
+                        type: donation_type,
+                        amount: donation_amount,
+                        date: donation_date
+                    }) }}
                 </li>
                 {% endfor %}
             </ul>
