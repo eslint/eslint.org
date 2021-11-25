@@ -13,6 +13,22 @@
         @media all and (min-width: 768px) {
             font-size: var(--step-0);
         }
+
+        &[data-open="false"] {
+            display: none;
+
+            @media all and (min-width: 640px) {
+                display: flex;
+            }
+        }
+
+        &[data-open="true"] {
+            display: block;
+
+            @media all and (min-width: 640px) {
+                display: flex;
+            }
+        }
     }
 
     .flexer {
@@ -22,9 +38,7 @@
     }
 
     a[data-current="true"] {
-
         color: var(--link-color);
-
         text-decoration: underline;
     }
 }

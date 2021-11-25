@@ -1148,6 +1148,16 @@ ul.donation-plan__features {
     @media all and (min-width: 768px) {
       .site-nav ul {
         font-size: var(--step-0); } }
+    .site-nav ul[data-open="false"] {
+      display: none; }
+      @media all and (min-width: 640px) {
+        .site-nav ul[data-open="false"] {
+          display: flex; } }
+    .site-nav ul[data-open="true"] {
+      display: block; }
+      @media all and (min-width: 640px) {
+        .site-nav ul[data-open="true"] {
+          display: flex; } }
   .site-nav .flexer {
     display: flex;
     justify-self: flex-end;
