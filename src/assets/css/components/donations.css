@@ -7,11 +7,6 @@
 
 ul.donations-list {
   margin-top: var(--space-l-2xl);
-  display: grid;
-  grid-gap: 1.5rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  margin-bottom: 0;
-  overflow: initial;
   overflow-x: auto;
   display: flex;
   flex-wrap: nowrap;

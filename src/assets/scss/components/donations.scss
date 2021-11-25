@@ -11,17 +11,6 @@
 ul.donations-list {
     margin-top: var(--space-l-2xl);
 
-
-
-    // @media all and (min-width: 1023px) {
-        // overflow: initial;
-        display: grid;
-        grid-gap: 1.5rem 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        margin-bottom: 0;
-        overflow: initial;
-    // }
-
     // .homepage & {
         overflow-x: auto;
         display: flex;
@@ -35,6 +24,11 @@ ul.donations-list {
             grid-gap: 1.5rem 2rem;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
             margin-bottom: 0;
+
+
+            // display: block;
+            // columns: 4 250px;
+            // column-gap: 40px;
         }
     // }
 }
