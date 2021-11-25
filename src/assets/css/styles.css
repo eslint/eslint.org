@@ -1403,6 +1403,9 @@ ul.donations-list {
   margin-bottom: 0; }
 
 .donation__sponsor-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
   border-radius: var(--border-radius); }
 
 #carbonads * {
