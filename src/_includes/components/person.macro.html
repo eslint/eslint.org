@@ -6,7 +6,7 @@
         <div class="person__name">
             {% if params.name %}{{ params.name }}{% else %} Awesome McPerson {% endif %}
         </div>
-        <a href="{{ params.handleURL}}" class="person__handle">
+        <a href="https://github.com/{{ params.handle}}" class="person__handle">
 
             @{{ params.handle }}
 
@@ -52,7 +52,7 @@
     <img class="person__photo" src="{% if params.photo %}{{ params.photo }} {% else %}_placeholder-avatar.svg{% endif %}" width="56" height="56" alt="{{ params.name }}">
     <div class="person__details">
         <div class="person__name">{{ params.name }}</div>
-      <a href="{{ params.handleURL}}" class="person__title">@{{ params.handle }}</a>
+      <a href="https://github.com/{{ params.handle}}" class="person__title">@{{ params.handle }}</a>
     </div>
 </div>
 {%- endmacro -%}

@@ -134,16 +134,22 @@
 }
 
 .blog-posts {
-    overflow-x: auto;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     display: flex;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
     align-items: flex-start;
     margin-bottom: var(--space-l-2xl);
+    max-width: 100%;
+
+    scroll-snap-type: x mandatory;
+    // scroll-padding: 1rem;
 
     @media all and (min-width: 1200px) {
         display: grid;
         grid-gap: 3rem 2rem;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        overflow: initial;
     }
 }
 
@@ -151,13 +157,14 @@
 .card {
     text-align: left;
     align-self: stretch;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     flex: none;
+    scroll-snap-align: start;
 
     @media all and (max-width: 1199px) {
-        max-width: 250px;
-        margin-right: 1rem;
+        max-width: 230px;
+        margin-right: 2rem;
     }
 }
 
@@ -709,9 +716,13 @@ ul.donation-plan__features {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-gap: 2rem;
-    padding: 2rem;
+    // padding: 2rem;
     box-shadow: var(--shadow-lg);
     border-radius: var(--border-radius);
+
+    .c-btn--block:not(:last-of-type) {
+        margin-bottom: 1rem;
+    }
 }
 
 .donation-tiers__title {

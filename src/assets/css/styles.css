@@ -287,7 +287,8 @@ html {
   accent-color: var(--color-brand);
   background-color: var(--color-brand);
   height: 100%;
-  font-family: var(--text-font); }
+  font-family: var(--text-font);
+  overflow-x: hidden; }
 
 body {
   position: relative;
@@ -319,7 +320,7 @@ main {
     outline: none; }
 
 .content-container {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: var(--space-xl-3xl) calc(1rem + 1vw); }
 
@@ -435,8 +436,6 @@ ol {
     height: auto; }
 
 @media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth; }
   *:focus-visible,
   *.focus-visible {
     transition: outline-offset .15s linear;
@@ -710,27 +709,31 @@ a.c-btn {
     margin-right: .5rem; }
 
 .blog-posts {
-  overflow-x: auto;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   display: flex;
-  flex-wrap: nowrap;
   align-items: flex-start;
-  margin-bottom: var(--space-l-2xl); }
+  margin-bottom: var(--space-l-2xl);
+  max-width: 100%;
+  scroll-snap-type: x mandatory; }
   @media all and (min-width: 1200px) {
     .blog-posts {
       display: grid;
       grid-gap: 3rem 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); } }
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      overflow: initial; } }
 
 .card {
   text-align: left;
   align-self: stretch;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  flex: none; }
+  flex: none;
+  scroll-snap-align: start; }
   @media all and (max-width: 1199px) {
     .card {
-      max-width: 250px;
-      margin-right: 1rem; } }
+      max-width: 230px;
+      margin-right: 2rem; } }
 
 .card--featured {
   display: flex;
@@ -1107,9 +1110,10 @@ ul.donation-plan__features {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-gap: 2rem;
-  padding: 2rem;
   box-shadow: var(--shadow-lg);
   border-radius: var(--border-radius); }
+  .donation-tiers__item .c-btn--block:not(:last-of-type) {
+    margin-bottom: 1rem; }
 
 .donation-tiers__title {
   margin: 0;
@@ -1332,7 +1336,7 @@ ul.donation-plan__features {
   .c-slider__slides-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem; } }
+    grid-gap: 0 2rem; } }
 
 .c-slider__slide {
   width: 100%;
@@ -1357,11 +1361,11 @@ ul.donation-plan__features {
 .c-slider--testimonials .c-slider__testimonial__content {
   font-size: var(--step-1);
   margin: 0 auto; }
-  .c-slider--testimonials .c-slider__testimonial__content p:last-of-type() {
+  .c-slider--testimonials .c-slider__testimonial__content p:last-of-type {
     margin-bottom: 0; }
 
 .c-slider--testimonials .c-slider__testimonial__footer {
-  margin-top: 3rem;
+  margin-top: var(--space-l-xl);
   margin-bottom: 3rem; }
 
 .c-slider--testimonials .c-slider__testimonial__footer cite {
