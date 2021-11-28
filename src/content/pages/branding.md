@@ -46,6 +46,14 @@ hook: "branding-page"
                 <a href="" class="c-btn c-btn--secondary">Download PNG</a>
             </div>
         </div>
+        <div class="span-8-12" style="align-self: stretch">
+            <div class="brand__logo">
+                <div class="brand__logo__img">
+                    <img src="../../assets/images/logo/eslint-logo-color.svg" alt="ESLint logo">
+                </div>
+                <img class="brand__logo__colors" src="../../assets/images/logo/brand-colors.svg" alt="Brand colors: #f2f4f7, #101828, #4b32c3">
+            </div>
+        </div>
     </div>
     <div class="content-container grid">
         <div class="span-1-6">

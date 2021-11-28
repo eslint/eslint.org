@@ -6,8 +6,8 @@
 @import "_header.scss";
 @import "_footer.scss";
 @import "_forms.scss";
-
-@import "_components.scss";
+@import "_forms.scss";
+@import "_branding.scss";
 
 @import "components/navigation.scss";
 @import "components/toc.scss";
@@ -17,7 +17,4 @@
 @import "components/slider.scss";
 
 @import "_carbon-ads.scss";
-
-@import "_carbon-ads.scss";
-
 @import "_utilities.scss";
