@@ -5,6 +5,8 @@ eleventyExcludeFromCollections: true
 hook: "branding-page"
 ---
 
+{%- from 'components/swatch.macro.html' import swatch %}
+
 <section class="section hero">
     <div class="content-container grid">
         <div class="span-1-7">
@@ -46,7 +48,7 @@ hook: "branding-page"
                 <a href="" class="c-btn c-btn--secondary">Download PNG</a>
             </div>
         </div>
-        <div class="span-8-12" style="align-self: stretch">
+        <div class="span-8-12">
             <div class="brand__logo">
                 <div class="brand__logo__img">
                     <img src="../../assets/images/logo/eslint-logo-color.svg" alt="ESLint logo">
@@ -64,6 +66,34 @@ hook: "branding-page"
             <p>
                 The primary "brand" color is used across all interactive elements such as buttons, links, inputs, etc. It is derived from our logo. We use the two existing colours to create a unique primary tonal range.        
             </p>
+        </div>
+        <div class="span-8-12">
+            <div class="brand__palette">
+                <h3 id="brand-colors-label" hidden>Brand Palette</h3>
+                <ul class="swatches" aria-labelledby="brand-colors-label" role="region" tabindex="0">
+                {% for color in palette.primary %}
+                    {% set colordesc = color.description %}
+                    {% set colorval = color.value %}
+<li class="swatches__item">
+                        {{ swatch({
+                            desc: colordesc,
+                            val: colorval
+                        }) }}
+                    </li>
+                {% endfor %}                    
+
+                    {% for color in palette.neutral %}
+                    {% set colordesc = color.description %}
+                    {% set colorval = color.value %}
+<li class="swatches__item">
+                        {{ swatch({
+                            desc: colordesc,
+                            val: colorval
+                        }) }}
+                    </li>
+                {% endfor %}  
+</ul> 
+            </div>
         </div>
     </div>
 </section>
