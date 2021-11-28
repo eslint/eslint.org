@@ -418,9 +418,6 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0; }
-  nav.c-toc ul,
-  nav.c-toc ol {
-    padding-left: 2rem; }
 
 ol {
   list-style: decimal-leading-zero;
