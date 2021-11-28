@@ -103,7 +103,9 @@
         color: var(--color-neutral-500);
     }
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         .c-icon {
             color: var(--color-brand);
         }
@@ -712,6 +714,7 @@ ul.donation-plan__features {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 2rem;
 }
+
 .donation-tiers__item {
     display: grid;
     grid-template-rows: auto 1fr auto;
