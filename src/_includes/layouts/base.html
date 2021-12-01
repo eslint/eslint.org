@@ -16,7 +16,6 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
     <link rel="manifest" href="/manifest.webmanifest">
-    <!-- <meta name="theme-color" content="#fff">  already defined in the Webmanifest file -->
 
     <!-- social sharing previews. Make sure every page template has title, desc, and cover url -->
     <!-- Open graph -->
@@ -35,7 +34,6 @@
     <meta name="twitter:image" content="{{ cover }}">
     <meta name="twitter:creator" content="@geteslint">
 
-
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
 
     <script type="module">
@@ -46,7 +44,6 @@
 
     <link rel="preload" href="{{ '/assets/fonts/SpaceGrotesk-Medium-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/Inter-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
-    <!-- <link rel="preload" href="{{ '/assets/fonts/Inter-SemiBold-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin> -->
     <link rel="preload" href="{{ '/assets/fonts/SpaceMono-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 
 
@@ -69,16 +66,6 @@
             font-weight: 400;
             font-display: swap;
         }
-
-        /* Inter for body text */
-
-        /* @font-face {
-            font-family: "Inter";
-            src: url("{{ '/assets/fonts/Inter-SemiBold-subset.woff2' | url }}") format("woff2"),
-            url("{{ '/assets/fonts/Inter-SemiBold-subset.zopfli.woff' | url }}") format("woff");
-            font-weight: 500;
-            font-display: swap;
-        } */
 
         /* Space Mono for code snippets */
 
