@@ -1214,6 +1214,28 @@ ul.donation-plan__features {
     .site-nav .flexer {
       order: 1; } }
 
+nav.c-pagination ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+nav.c-pagination li {
+  margin: var(--item-margin); }
+  nav.c-pagination li a {
+    display: block;
+    text-decoration: none;
+    padding: var(--item-padding);
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    font: var(--font); }
+    nav.c-pagination li a[aria-current] {
+      background: var(--active-background-color);
+      color: var(--active-text-color); }
+
 .c-accordion__heading {
   font-size: var(--step-1);
   font-size: 1.125rem;
