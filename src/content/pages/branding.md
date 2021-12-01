@@ -44,8 +44,8 @@ hook: "branding-page"
                 The ESLint logomark can also be used in isolation, without the ESLint wordmark though where possible, using both is preferred
             </p>
             <div class="eslint-actions">
-                <a href="" class="c-btn c-btn--secondary">Download SVG</a>
-                <a href="" class="c-btn c-btn--secondary">Download PNG</a>
+                <a download href="../../assets/images/logo/eslint-logo-color.svg" class="c-btn c-btn--secondary">Download SVG</a>
+                <a download href="../../assets/images/logo/eslint-logo-color.png" class="c-btn c-btn--secondary">Download PNG</a>
             </div>
         </div>
         <div class="span-8-12">
