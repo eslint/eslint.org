@@ -1,0 +1,11 @@
+{%- macro swatch(params) -%}
+<figure class="swatch" role="figure" aria-label="{{ params.desc }}">
+    <figcaption>
+        <span class="swatch__description">{{ params.desc }}</span>
+        <span class="swatch__value">{{ params.val }}</span>
+    </figcaption>
+    <svg width="3em" height="3em" aria-label="{{ params.val }}">
+        <rect fill="{{ params.val }}" width="100%" height="100%" />
+    </svg>
+</figure>
+{%- endmacro -%}
