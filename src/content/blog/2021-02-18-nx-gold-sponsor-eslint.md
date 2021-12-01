@@ -6,7 +6,10 @@ tags:
   - Open Collective
   - Sponsors
   - Backers
-author: nzakas
+categories:
+  - Sponsorships
+authors: 
+  - nzakas
 ---
 
 <p class="text-center">

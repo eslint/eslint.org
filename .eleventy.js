@@ -33,6 +33,10 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toFormat('dd MMM, yyyy');
     });
 
+    eleventyConfig.addFilter("blogPermalinkDate", (dateObj) => {
+        return DateTime.fromJSDate(dateObj).toFormat('yyyy/MM');
+    });
+
     eleventyConfig.addFilter("readableDateFromISO", (ISODate) => {
         return DateTime.fromISO(ISODate).toUTC().toLocaleString(DateTime.DATE_MED);
     });

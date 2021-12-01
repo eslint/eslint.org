@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "The inception of ESLint"
-teaser: The story of how one bug at work spawned the pluggable linter.
+teaser: In 2013, Nicholas C. Zakas ran into a bug at work that was difficult to catch with existing tooling. What followed was the creation of ESLint.
 categories:
 - Storytime
-author: nzakas
+authors:
+- nzakas
 original:
   url: https://humanwhocodes.com/blog/2018/02/the-inception-of-eslint/
   date: 2018-02-27

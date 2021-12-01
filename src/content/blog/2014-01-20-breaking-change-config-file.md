@@ -1,14 +1,16 @@
 ---
 title: Breaking change to ESLint config files
+layout: post
 tags:
   - breaking change
   - config file
-authors: nzakas, kaicataldo
+authors:
+  - nzakas
 ---
 
 In previous versions of ESLint, it was possible to use JavaScript files as configuration files on the command line, such as:
 
-```
+```bash
 eslint -c config.js file-to-lint.js
 ```
 
