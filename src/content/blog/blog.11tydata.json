@@ -1,5 +1,4 @@
 {
-    "layout": "layouts/blog-post.html",
-    "tags": ["blog-posts"],
-    "permalink": "/blog/{{ page.fileSlug }}/"
+  "layout": "post",
+  "permalink": "blog/{{ page.date | dateFormat: \"yyyy/MM\" }}/{{ page.fileSlug }}.html"
 }
