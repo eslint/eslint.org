@@ -1104,14 +1104,23 @@ ul.donation-plan__features {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+  margin: 0;
+  padding: 0; }
 
 .donation-tiers__item {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-gap: 2rem;
+  padding: 2rem;
   box-shadow: var(--shadow-lg);
   border-radius: var(--border-radius); }
+  @media all and (max-width: 640px) {
+    .donation-tiers__item {
+      padding: 0; } }
+  .donation-tiers__item .c-btn {
+    text-align: center;
+    font-size: .875rem; }
   .donation-tiers__item .c-btn--block:not(:last-of-type) {
     margin-bottom: 1rem; }
 
