@@ -418,9 +418,6 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0; }
-  nav.c-toc ul,
-  nav.c-toc ol {
-    padding-left: 2rem; }
 
 ol {
   list-style: decimal-leading-zero;
@@ -460,13 +457,17 @@ button {
   font-weight: 500;
   font-size: var(--step-0);
   display: inline-flex;
-  padding: .75em 1.125em;
+  padding: .75rem 1.125rem;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
   transition: background-color .2s linear, border-color .2s linear; }
   .c-btn svg {
     color: inherit; }
+
+.c-btn--large {
+  font-size: 1.125rem;
+  padding: 1rem 1.75rem; }
 
 .c-btn--block {
   display: flex;
@@ -1139,6 +1140,59 @@ ul.donation-plan__features {
   justify-self: baseline;
   margin-bottom: 2rem; }
 
+@media all and (max-width: 1023px) {
+  .brand__logo {
+    margin: var(--space-l-2xl) 0; } }
+
+.brand__logo__img {
+  background-color: var(--color-neutral-100);
+  height: 100%;
+  min-height: calc(310px + 5vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem; }
+
+.swatches {
+  margin-top: var(--space-l-2xl);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  list-style: none; }
+  @media all and (min-width: 1023px) {
+    .swatches {
+      display: grid;
+      margin: 0;
+      overflow: initial;
+      grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+      grid-gap: 2rem .5rem; } }
+
+.swatch {
+  min-width: 105px;
+  margin: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 1rem;
+  overflow: hidden; }
+  .swatch svg {
+    display: block;
+    max-width: 100%;
+    width: 124px;
+    height: 80px; }
+  .swatch figcaption {
+    display: block;
+    padding: .75rem; }
+    .swatch figcaption span {
+      display: block; }
+
+.swatch__description {
+  color: var(--headings-color);
+  font-weight: 500; }
+
 .site-nav {
   display: flex;
   flex-direction: column;
@@ -1413,83 +1467,6 @@ ul.donation-plan__features {
   @media all and (max-width: 1023px) {
     .js-slider .c-slider__testimonial__img {
       display: none; } }
-
-#carbonads * {
-  margin: initial;
-  padding: initial; }
-
-#carbonads {
-  display: block;
-  margin: 0 24px;
-  padding: .6em;
-  font-size: 16px;
-  line-height: 1.35;
-  overflow: hidden;
-  border-radius: 4px;
-  background-color: #fafafa;
-  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1); }
-
-.jumbotron #carbonads {
-  border: solid 1px rgba(111, 102, 153, 0.6);
-  background-color: rgba(179, 179, 179, 0.15); }
-
-#carbonads a {
-  font-weight: 500;
-  color: inherit; }
-
-#carbonads a:hover {
-  text-decoration: none;
-  color: inherit; }
-
-.jumbotron #carbonads a {
-  color: #eee; }
-
-.jumbotron #carbonads a:hover {
-  color: #ccc; }
-
-#carbonads span {
-  display: block;
-  position: relative;
-  overflow: hidden; }
-
-#carbonads .carbon-wrap {
-  display: flex;
-  flex-direction: column;
-  max-width: 130px; }
-
-#carbonads .carbon-img img {
-  display: block; }
-
-#carbonads .carbon-text {
-  margin-top: 10px;
-  font-size: 14px;
-  text-align: left; }
-
-#carbonads .carbon-poweredby {
-  display: block;
-  margin-top: 10px;
-  font-size: 10px;
-  line-height: 1;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
-
-@media only screen and (min-width: 320px) and (max-width: 759px) {
-  #carbonads {
-    margin-top: 0;
-    font-size: 12px; }
-  #carbonads .carbon-wrap {
-    display: flex;
-    flex-direction: row;
-    max-width: 330px; }
-  #carbonads .carbon-text {
-    margin: 0 0 14px 10px;
-    font-size: 14px;
-    text-align: left; }
-  #carbonads .carbon-poweredby {
-    position: absolute;
-    bottom: 0;
-    left: 142px;
-    font-size: 8px; } }
 
 #carbonads * {
   margin: initial;

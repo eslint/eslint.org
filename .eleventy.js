@@ -119,7 +119,7 @@ module.exports = function(eleventyConfig) {
      * ***************************************************************************************/
     // take everything in the static/ directory and copy it to the root of your build directory (e.g. static/favicon.svg to _site/favicon.svg).
     eleventyConfig.addPassthroughCopy({
-        "static": "/"
+        "./src/static": "/"
     });
     // copy all assets
     eleventyConfig.addPassthroughCopy('./src/assets/');
