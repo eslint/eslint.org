@@ -1078,7 +1078,7 @@ ul.featured-donations-list {
 ul.donation-plan__features li {
   margin-bottom: 1rem;
   display: flex;
-  align-items: center; }
+  align-items: start; }
   ul.donation-plan__features li::before {
     content: url(../../assets/images/icons/features-list-icon.svg);
     width: 1.5rem;

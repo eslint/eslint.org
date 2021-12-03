@@ -673,7 +673,7 @@ ul.donation-plan__features {
     li {
         margin-bottom: 1rem;
         display: flex;
-        align-items: center;
+        align-items: start;
 
         &::before {
             content: url(../../assets/images/icons/features-list-icon.svg);
