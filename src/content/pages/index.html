@@ -228,7 +228,7 @@ eleventyExcludeFromCollections: true
                 <h3 class="donations-title span-5-8" id="donations-label">Recent One-time Donations</h3>
 
                 <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
-                    {% for donation in donations | limitTo(10) %}
+                    {% for donation in donations | limitTo(6) %}
                     <li class="donations-item">
                         {% set donation_image = donation.image %}
                         {% set donation_name = donation.name %}
