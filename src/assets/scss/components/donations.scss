@@ -10,22 +10,11 @@
 
 ul.donations-list {
     margin-top: var(--space-l-2xl);
-
-    overflow-x: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-
-    @media all and (min-width: 1023px) {
-        overflow: initial;
         display: grid;
         grid-gap: 0 2rem;
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         margin-bottom: 0;
-
         align-items: stretch;
-    }
 
     .donations-item {
         display: flex;
@@ -49,11 +38,6 @@ ul.donations-list {
     grid-template-rows: auto 1fr 0;
     align-items: end;
 
-    @media all and (max-width: 1023px) {
-        width: 250px;
-        margin-right: 1rem;
-    }
-
     @media all and (min-width: 1023px) {
         align-items: center;
         grid-template-columns: auto 1fr auto;
@@ -73,6 +57,7 @@ ul.donations-list {
     grid-column: 3 / 4;
     grid-row: 1;
     justify-self: end;
+    white-space: nowrap;
 }
 
 .donation__sponsor-name,
