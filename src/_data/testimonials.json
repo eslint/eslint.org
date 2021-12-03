@@ -4,25 +4,25 @@
             "name": "Addy Osmani",
             "title": "Senior Staff Eng. Manager, Chrome",
             "image": "addy-osmani.jpg",
-            "text": "ESLint has been critical in helping developers write high-quality JavaScript for years. We love that it catches common issues early and often. With a high level of extensibility, ESLint's ability to let teams enforce custom rules that work for them has been excellent for open-source projects and more."
-        },
-        {
-            "name": "Addy Osmani",
-            "title": "Senior Staff Eng. Manager, Chrome",
-            "image": "addy-osmani.jpg",
-            "text": "ESLint has been critical in helping developers write high-quality JavaScript for years. "
-        },
-        {
-            "name": "Addy Osmani",
-            "title": "Senior Staff Eng. Manager, Chrome",
-            "image": "addy-osmani.jpg",
             "text": "ESLint has been critical in helping developers write high-quality JavaScript for years. We love that it catches common issues early and often. With a high level of extensibility, ESLint's ability to let teams enforce custom rules that work for them has been excellent for open-source projects and more. Chrome is happy to sponsor ESLint to help web developers write consistently high-quality code. It's an essential piece of the modern web development toolkit."
         },
         {
-            "name": "Addy Osmani",
-            "title": "Senior Staff Eng. Manager, Chrome",
-            "image": "addy-osmani.jpg",
-            "text": "ESLint has been critical in helping developers write high-quality JavaScript for years. We love that it catches common issues early and often. With a high level of extensibility, ESLint's ability to let teams enforce custom rules that work for them has been excellent for open-source projects and more. Chrome is happy to sponsor ESLint to help web developers write consistently high-quality code. It's an essential piece of the modern web development toolkit."
+            "name": "Jeff Cross",
+            "title": "Co-founder and Principal Architect, Nx",
+            "image": "jeff-cross.jpg",
+            "text": "Nx uses ESLint to enforce code quality, library boundaries, and project visibility constraints. ESLint makes Nx more powerful, so on behalf of the Nx.dev community, we're proud to do our part and sponsor ESLint's continued success!"
+        },
+        {
+            "name": "Médédé Raymond KPATCHAA",
+            "title": "Technical Architect, Salesforce",
+            "image": "medede-kpatchaa.jpg",
+            "text": "ESLint is an extremely useful tool for any JavaScript project. This tool allows us to set up consistent code formatting rules adopted by the whole team from the beginning of the project, greatly facilitates code reviews, and makes it easy to integrate new developers into the team. I know I am not alone in appreciating its flexibility and ease-of-use."
+        },
+        {
+            "name": "Duane O'Brien",
+            "title": "Head of Open Source, Indeed",
+            "image": "duane-obrien.jpg",
+            "text": "Most JavaScript projects directly or transitively depend on ESLint. An Indeed employee nominated ESLint to receive a donation from the FOSS Contributor Fund, and their colleagues clearly agreed. We're happy to support the open source technologies that allow us to develop, protect, and maintain the digital infrastructure that supports our products and helps people get jobs."
         }
     ]
 }

@@ -45,7 +45,7 @@ pagination:
             <div class="card__content">
                 <div class="badge-group">
                         <span class="blog-post__category">
-                            <span class="visually-hidden">Published under:</span> {{ item.data.category }}
+                            <span class="visually-hidden">Published under:</span> {{ item.data.categories }}
                         </span>
                         <span class="blog-post__reading-time">
                             {{ item.templateContent | readingTime }} read
@@ -59,9 +59,9 @@ pagination:
                     {{ item.data.teaser }}
                 </p>
                 <div class="card__footer">
-                    <img class="blog-post__author-photo" src="../../assets/images/people/{{ item.data.authorImage }}" alt="{{ item.data.author }}">
+                    <img class="blog-post__author-photo" src="{{ authors[item.data.author].avatar_url }}" alt="{{ authors[item.data.author].name }}">
                     <div class="blog-post__author__details">
-                        <div class="blog-post__author-name">{{ item.data.author }}</div>
+                        <div class="blog-post__author-name">{{ authors[item.data.author].name }}</div>
                         <span class="blog-post__publish-date">{{ item.data.date | readableDate }}</span>
                     </div>
                 </div>

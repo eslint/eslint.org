@@ -47,6 +47,7 @@ html {
     background-color: var(--color-brand);
     height: 100%;
     font-family: var(--text-font);
+    overflow-x: hidden;
 }
 
 body {
@@ -88,7 +89,7 @@ main {
 }
 
 .content-container {
-    max-width: 1320px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: var(--space-xl-3xl) calc(1rem + 1vw);
 }
@@ -234,21 +235,12 @@ img {
 }
 
 nav {
-
     /* rarely do we display bullets for lists in navigation */
     ol,
     ul {
         list-style: none;
         margin: 0;
         padding: 0;
-    }
-
-    &.c-toc {
-
-        ul,
-        ol {
-            padding-left: 2rem;
-        }
     }
 }
 
@@ -272,10 +264,6 @@ ol {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
-
     *:focus-visible,
     *.focus-visible {
         transition: outline-offset .15s linear;

@@ -31,8 +31,8 @@ eleventyExcludeFromCollections: true
                 <span class="visually-hidden" id="copy-update" aria-live="polite" aria-atomic="true"></span>
             </div>
             <div class="eslint-actions">
-                <a href="/" class="c-btn c-btn--primary">Get Started</a>
-                <a href="/" class="c-btn c-btn--secondary">Become a sponsor</a>
+                <a href="/" class="c-btn c-btn--primary c-btn--large">Get Started</a>
+                <a href="/sponsors.html" class="c-btn c-btn--secondary c-btn--large">Become a sponsor</a>
             </div>
         </div>
 
@@ -202,14 +202,14 @@ eleventyExcludeFromCollections: true
         </header>
         <div class="grid">
             <ul role="list" class="sponsors span-4-9">
-                {% for sponsor in sponsors.gold | limitTo() %}
+                {% for sponsor in sponsors.gold %}
                 <li>
                     <a href="{{ sponsor.url }}">
                         <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
                     </a>
                 </li>
                 {% endfor %}
-                {% for sponsor in techsponsors | limitTo() %}
+                {% for sponsor in techsponsors %}
                 <li>
                     <a href="{{ sponsor.url }}">
                         <img src="{{ sponsor.image }}"
@@ -262,5 +262,21 @@ eleventyExcludeFromCollections: true
     </div>
 </section>
 
+
+<script>
+    (function() {
+    const copyBtn = document.getElementById('copyBtn');
+    const copyText = document.getElementById('code-snippet');
+    const liveRegion = document.getElementById('copy-update');
+    copyBtn.removeAttribute('hidden');
+
+    copyBtn.onclick = () => {
+        copyText.select();
+        document.execCommand('copy');
+        liveRegion.innerHTML = "Installation code copied to clipboard."
+        this.focus();
+    }
+})();
+</script>
 <script src="../../assets/js/hammer.min.js"></script>
 <script src="../../assets/js/slider.js"></script>

@@ -287,7 +287,8 @@ html {
   accent-color: var(--color-brand);
   background-color: var(--color-brand);
   height: 100%;
-  font-family: var(--text-font); }
+  font-family: var(--text-font);
+  overflow-x: hidden; }
 
 body {
   position: relative;
@@ -319,7 +320,7 @@ main {
     outline: none; }
 
 .content-container {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: var(--space-xl-3xl) calc(1rem + 1vw); }
 
@@ -426,9 +427,6 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0; }
-  nav.c-toc ul,
-  nav.c-toc ol {
-    padding-left: 2rem; }
 
 ol {
   list-style: decimal-leading-zero;
@@ -444,8 +442,6 @@ ol {
     height: auto; }
 
 @media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth; }
   *:focus-visible,
   *.focus-visible {
     transition: outline-offset .15s linear;
@@ -470,13 +466,17 @@ button {
   font-weight: 500;
   font-size: var(--step-0);
   display: inline-flex;
-  padding: .75em 1.125em;
+  padding: .75rem 1.125rem;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
   transition: background-color .2s linear, border-color .2s linear; }
   .c-btn svg {
     color: inherit; }
+
+.c-btn--large {
+  font-size: 1.125rem;
+  padding: 1rem 1.75rem; }
 
 .c-btn--block {
   display: flex;
@@ -719,27 +719,31 @@ a.c-btn {
     margin-right: .5rem; }
 
 .blog-posts {
-  overflow-x: auto;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   display: flex;
-  flex-wrap: nowrap;
   align-items: flex-start;
-  margin-bottom: var(--space-l-2xl); }
+  margin-bottom: var(--space-l-2xl);
+  max-width: 100%;
+  scroll-snap-type: x mandatory; }
   @media all and (min-width: 1200px) {
     .blog-posts {
       display: grid;
       grid-gap: 3rem 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); } }
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      overflow: initial; } }
 
 .card {
   text-align: left;
   align-self: stretch;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  flex: none; }
+  flex: none;
+  scroll-snap-align: start; }
   @media all and (max-width: 1199px) {
     .card {
-      max-width: 250px;
-      margin-right: 1rem; } }
+      max-width: 230px;
+      margin-right: 2rem; } }
 
 .card--featured {
   display: flex;
@@ -1030,17 +1034,15 @@ a.c-btn {
     .donation-plan__header img {
       width: 3rem; } }
 
-ul.donation-plan__features {
-  padding: 2rem; }
-  ul.donation-plan__features li {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center; }
-    ul.donation-plan__features li::before {
-      content: url(../../assets/images/icons/features-list-icon.svg);
-      width: 1.5rem;
-      height: 1.5rem;
-      margin-right: .75rem; }
+ul.donation-plan__features li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; }
+  ul.donation-plan__features li::before {
+    content: url(../../assets/images/icons/features-list-icon.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .75rem; }
 
 .donation-plan__platform-name {
   margin-bottom: .25rem;
@@ -1049,26 +1051,50 @@ ul.donation-plan__features {
 .donation-plan__description {
   margin-bottom: 0; }
 
+.donation-plan__footer .c-btn {
+  align-items: start; }
+  .donation-plan__footer .c-btn svg {
+    margin-top: .25rem; }
+
+ul.donation-plan__features,
 .donation-plan__footer {
   padding: 2rem; }
-  .donation-plan__footer .c-btn {
-    align-items: start; }
-    .donation-plan__footer .c-btn svg {
-      margin-top: .25rem; }
+
+.donation-plan__header {
+  padding: 2rem 2rem 1.5rem; }
+
+@media all and (max-width: 640px) {
+  ul.donation-plan__features,
+  .donation-plan__footer {
+    padding: 2rem 1rem; }
+  .donation-plan__header {
+    padding: 2rem 1rem 1.5rem; } }
 
 .donation-tiers {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+  margin: 0;
+  padding: 0; }
 
 .donation-tiers__item {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-gap: 2rem;
   padding: 2rem;
+  margin-bottom: 2rem;
   box-shadow: var(--shadow-lg);
-  border-radius: var(--border-radius); }
+  border-radius: var(--border-radius);
+  border: 1px solid var(--divider-color); }
+  @media all and (max-width: 640px) {
+    .donation-tiers__item {
+      padding: 2rem 1rem; } }
+  .donation-tiers__item .c-btn {
+    text-align: center;
+    font-size: .875rem; }
+  .donation-tiers__item .c-btn--block:not(:last-of-type) {
+    margin-bottom: 1rem; }
 
 .donation-tiers__title {
   margin: 0;
@@ -1094,6 +1120,7 @@ ul.donation-plan__features {
   justify-self: baseline;
   margin-bottom: 2rem; }
 
+
 .donation-tiers--others {
   text-align: center;
   margin-top: var(--space-l-2xl); }
@@ -1101,6 +1128,60 @@ ul.donation-plan__features {
     margin-bottom: .5rem; }
   .donation-tiers--others .c-btn {
     margin-top: 1rem; }
+
+@media all and (max-width: 1023px) {
+  .brand__logo {
+    margin: var(--space-l-2xl) 0; } }
+
+.brand__logo__img {
+  background-color: var(--color-neutral-100);
+  height: 100%;
+  min-height: calc(310px + 5vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem; }
+
+.swatches {
+  margin-top: var(--space-l-2xl);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  list-style: none; }
+  @media all and (min-width: 1023px) {
+    .swatches {
+      display: grid;
+      margin: 0;
+      overflow: initial;
+      grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+      grid-gap: 2rem .5rem; } }
+
+.swatch {
+  min-width: 105px;
+  margin: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 1rem;
+  overflow: hidden; }
+  .swatch svg {
+    display: block;
+    max-width: 100%;
+    width: 124px;
+    height: 80px; }
+  .swatch figcaption {
+    display: block;
+    padding: .75rem; }
+    .swatch figcaption span {
+      display: block; }
+
+.swatch__description {
+  color: var(--headings-color);
+  font-weight: 500; }
+
 
 .site-nav {
   display: flex;
@@ -1115,6 +1196,16 @@ ul.donation-plan__features {
     @media all and (min-width: 768px) {
       .site-nav ul {
         font-size: var(--step-0); } }
+    .site-nav ul[data-open="false"] {
+      display: none; }
+      @media all and (min-width: 640px) {
+        .site-nav ul[data-open="false"] {
+          display: flex; } }
+    .site-nav ul[data-open="true"] {
+      display: block; }
+      @media all and (min-width: 640px) {
+        .site-nav ul[data-open="true"] {
+          display: flex; } }
   .site-nav .flexer {
     display: flex;
     justify-self: flex-end;
@@ -1127,10 +1218,33 @@ ul.donation-plan__features {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  margin-left: .5rem; }
+  margin-left: .5rem;
+  margin-right: -10px; }
   @media all and (min-width: 640px) {
     .site-nav-toggle {
       display: none; } }
+  .site-nav-toggle svg {
+    width: 40px;
+    height: 40px;
+    color: inherit;
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round; }
+  .site-nav-toggle #ham-top,
+  .site-nav-toggle #ham-middle,
+  .site-nav-toggle #ham-bottom {
+    transition: all .2s linear; }
+  .site-nav-toggle #ham-top {
+    transform-origin: 30px 37px; }
+  .site-nav-toggle #ham-bottom {
+    transform-origin: 30px 63px; }
+  .site-nav-toggle[aria-expanded="true"] #ham-middle {
+    opacity: 0; }
+  .site-nav-toggle[aria-expanded="true"] #ham-top {
+    transform: rotate(41deg); }
+  .site-nav-toggle[aria-expanded="true"] #ham-bottom {
+    transform: rotate(-41deg); }
 
 @media all and (min-width: 640px) {
   .site-nav {
@@ -1266,7 +1380,7 @@ ul.donation-plan__features {
   .c-slider__slides-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem; } }
+    grid-gap: 0 2rem; } }
 
 .c-slider__slide {
   width: 100%;
@@ -1291,11 +1405,11 @@ ul.donation-plan__features {
 .c-slider--testimonials .c-slider__testimonial__content {
   font-size: var(--step-1);
   margin: 0 auto; }
-  .c-slider--testimonials .c-slider__testimonial__content p:last-of-type() {
+  .c-slider--testimonials .c-slider__testimonial__content p:last-of-type {
     margin-bottom: 0; }
 
 .c-slider--testimonials .c-slider__testimonial__footer {
-  margin-top: 3rem;
+  margin-top: var(--space-l-xl);
   margin-bottom: 3rem; }
 
 .c-slider--testimonials .c-slider__testimonial__footer cite {
@@ -1402,83 +1516,6 @@ ul.donations-list {
   height: 2.5rem;
   object-fit: cover;
   border-radius: var(--border-radius); }
-
-#carbonads * {
-  margin: initial;
-  padding: initial; }
-
-#carbonads {
-  display: block;
-  margin: 0 24px;
-  padding: .6em;
-  font-size: 16px;
-  line-height: 1.35;
-  overflow: hidden;
-  border-radius: 4px;
-  background-color: #fafafa;
-  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1); }
-
-.jumbotron #carbonads {
-  border: solid 1px rgba(111, 102, 153, 0.6);
-  background-color: rgba(179, 179, 179, 0.15); }
-
-#carbonads a {
-  font-weight: 500;
-  color: inherit; }
-
-#carbonads a:hover {
-  text-decoration: none;
-  color: inherit; }
-
-.jumbotron #carbonads a {
-  color: #eee; }
-
-.jumbotron #carbonads a:hover {
-  color: #ccc; }
-
-#carbonads span {
-  display: block;
-  position: relative;
-  overflow: hidden; }
-
-#carbonads .carbon-wrap {
-  display: flex;
-  flex-direction: column;
-  max-width: 130px; }
-
-#carbonads .carbon-img img {
-  display: block; }
-
-#carbonads .carbon-text {
-  margin-top: 10px;
-  font-size: 14px;
-  text-align: left; }
-
-#carbonads .carbon-poweredby {
-  display: block;
-  margin-top: 10px;
-  font-size: 10px;
-  line-height: 1;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
-
-@media only screen and (min-width: 320px) and (max-width: 759px) {
-  #carbonads {
-    margin-top: 0;
-    font-size: 12px; }
-  #carbonads .carbon-wrap {
-    display: flex;
-    flex-direction: row;
-    max-width: 330px; }
-  #carbonads .carbon-text {
-    margin: 0 0 14px 10px;
-    font-size: 14px;
-    text-align: left; }
-  #carbonads .carbon-poweredby {
-    position: absolute;
-    bottom: 0;
-    left: 142px;
-    font-size: 8px; } }
 
 #carbonads * {
   margin: initial;

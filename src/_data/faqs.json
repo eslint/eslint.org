@@ -6,31 +6,35 @@
     },
     {
       "q": "Will I get a record of my donations?",
-      "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+      "a": "Yes. If you donate through Open Collective, you will receive a PDF receipt via email; if you donate through GitHub, the donation will appear on your receipt or invoice."
     },
     {
       "q": "Is my donation tax deductible?",
-      "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+      "a": "No. Even though the Open Source Collective is a 501(c)(3) non-profit organization, the IRS doesn't consider development of open source software to be a charitable activity and therefore doesn’t grant tax-exempt status."
     },
     {
       "q": "Who decides how the money is distributed?",
-      "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+      "a": "The TSC makes all decisions regarding who receives the money and how much is distributed."
     },
     {
         "q": "Can I see how the money is being used?",
-        "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+        "a": "Yes. By going to our Open Collective page, you can see every expense that has been submitted and paid. All transactions are completely open and publicly visible."
     },
     {
         "q": "Can I cancel my recurring donation at any time?",
-        "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+        "a": "Yes. There is no long-term commitment. You can cancel your donation at any time by logging into either Open Collective or GitHub sponsors."
     },
     {
         "q": "How long does it take for my logo to appear on the homepage, GitHub, and npm package?",
-        "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+        "a": "The logos on the homepage and GitHub are automatically updated every day so it should take no longer than 24 hours to appear. The logos on the npm package are only updated when we publish a new release, which is typically every two weeks. However, major releases often take several months to complete and during that time logos on the npm package will not be updated."
     },
     {
-        "q": "Where do the logo and URL come from?",
-        "a": "All contributions, whether donated through Open Collective or GitHub, are received by the Open Source Collective, which is a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal host for ESLint and keeps track of all donations."
+        "q": "Where do my logo and URL come from?",
+        "a": "We pull the logo and URL from your Open Collective or GitHub profiles, depending on which site you used to donate. You can update these at any time from within Open Collective or GitHub and those changes will be reflected on the homepage and GitHub README within 24 hours. We aren't able to manually override logos or URLs on the site."
+    },
+    {
+        "q": "Is it possible to make a one-time donation?",
+        "a": "Yes. The easiest way to make a one-time donation is through Open Collective, which allows any amount. GitHub one-time donations may have a limit on the amount you can donate.."
     }
   ]
 }
