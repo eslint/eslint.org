@@ -15,21 +15,6 @@
             justify-content: space-between;
         }
     }
-
-    a:not(.c-btn) {
-        text-decoration: none;
-        color: inherit;
-        transition: color .2s linear;
-
-        &:hover {
-            color: var(--link-color);
-        }
-
-        &[aria-current] {
-            color: var(--link-color);
-            text-decoration: underline;
-        }
-    }
 }
 
 

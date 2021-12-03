@@ -506,15 +506,6 @@ a.c-btn {
     @media all and (min-width: 640px) {
       .site-header .content-container {
         justify-content: space-between; } }
-  .site-header a:not(.c-btn) {
-    text-decoration: none;
-    color: inherit;
-    transition: color .2s linear; }
-    .site-header a:not(.c-btn):hover {
-      color: var(--link-color); }
-    .site-header a:not(.c-btn)[aria-current] {
-      color: var(--link-color);
-      text-decoration: underline; }
 
 .logo-link {
   display: inline-flex;
@@ -1241,9 +1232,16 @@ ul.donation-plan__features,
     display: flex;
     justify-self: flex-end;
     align-self: flex-end; }
-  .site-nav a[data-current="true"] {
+  .site-nav a:not(.c-btn) {
+    text-decoration: none;
+    color: inherit;
+    transition: color .2s linear; }
+    .site-nav a:not(.c-btn):hover {
+      color: var(--link-color); }
+  .site-nav a:not(.c-btn)[data-current="true"] {
     color: var(--link-color);
-    text-decoration: underline; }
+    text-decoration: none;
+    font-weight: 500; }
 
 .site-nav-toggle {
   cursor: pointer;
