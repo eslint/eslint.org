@@ -229,6 +229,16 @@ hook: "donate-page"
                         </a>
                 </div>
             </li>
+            <li class="donation-tiers__item all-others">
+                <h3 class="donation-tiers__title">
+                    <span>All others </span>
+                    <span class="donation-tiers__title__value">($1–199</span>
+                    <span class="donation-tiers__title__freq">per month)</span>
+                </h3>
+                <div class="donation-tiers__item__description">
+                    Listed on our sponsors page
+                </div>
+            </li>
         </ol>
     </div>
 </section>

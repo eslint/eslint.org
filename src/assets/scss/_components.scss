@@ -755,6 +755,13 @@ ul.donation-plan__features,
     .c-btn--block:not(:last-of-type) {
         margin-bottom: 1rem;
     }
+
+    &.all-others {
+        all: inherit;
+        display: block;
+        grid-column: -1 / 1;
+        text-align: center;
+    }
 }
 
 .donation-tiers__title {
@@ -769,17 +776,34 @@ ul.donation-plan__features,
         display: block;
         margin-bottom: .5rem;
     }
+
+    .all-others & {
+        margin-bottom: .5rem;
+
+        span {
+            font-weight: 500;
+            display: inline;
+        }
+    }
 }
 
 .donation-tiers__title__value {
     color: var(--headings-color);
     font-size: var(--step-3);
     font-family: var(--display-font);
+
+    .all-others & {
+        all: inherit;
+    }
 }
 
 .donation-tiers__title__freq {
     color: var(--body-text-color);
     font-weight: 400;
+
+    .all-others & {
+        all: inherit;
+    }
 }
 
 .donation-tiers__item__description {
