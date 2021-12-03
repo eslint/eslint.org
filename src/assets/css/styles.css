@@ -1075,17 +1075,15 @@ ul.featured-donations-list {
     .donation-plan__header img {
       width: 3rem; } }
 
-ul.donation-plan__features {
-  padding: 2rem; }
-  ul.donation-plan__features li {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center; }
-    ul.donation-plan__features li::before {
-      content: url(../../assets/images/icons/features-list-icon.svg);
-      width: 1.5rem;
-      height: 1.5rem;
-      margin-right: .75rem; }
+ul.donation-plan__features li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; }
+  ul.donation-plan__features li::before {
+    content: url(../../assets/images/icons/features-list-icon.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .75rem; }
 
 .donation-plan__platform-name {
   margin-bottom: .25rem;
@@ -1094,25 +1092,48 @@ ul.donation-plan__features {
 .donation-plan__description {
   margin-bottom: 0; }
 
+.donation-plan__footer .c-btn {
+  align-items: start; }
+  .donation-plan__footer .c-btn svg {
+    margin-top: .25rem; }
+
+ul.donation-plan__features,
 .donation-plan__footer {
   padding: 2rem; }
-  .donation-plan__footer .c-btn {
-    align-items: start; }
-    .donation-plan__footer .c-btn svg {
-      margin-top: .25rem; }
+
+.donation-plan__header {
+  padding: 2rem 2rem 1.5rem; }
+
+@media all and (max-width: 640px) {
+  ul.donation-plan__features,
+  .donation-plan__footer {
+    padding: 2rem 1rem; }
+  .donation-plan__header {
+    padding: 2rem 1rem 1.5rem; } }
 
 .donation-tiers {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+  margin: 0;
+  padding: 0; }
 
 .donation-tiers__item {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-gap: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
   box-shadow: var(--shadow-lg);
-  border-radius: var(--border-radius); }
+  border-radius: var(--border-radius);
+  border: 1px solid var(--divider-color); }
+  @media all and (max-width: 640px) {
+    .donation-tiers__item {
+      padding: 2rem 1rem; } }
+  .donation-tiers__item .c-btn {
+    text-align: center;
+    font-size: .875rem; }
   .donation-tiers__item .c-btn--block:not(:last-of-type) {
     margin-bottom: 1rem; }
 
