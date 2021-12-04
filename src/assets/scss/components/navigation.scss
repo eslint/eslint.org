@@ -37,9 +37,20 @@
         align-self: flex-end;
     }
 
-    a[data-current="true"] {
+    a:not(.c-btn) {
+        text-decoration: none;
+        color: inherit;
+        transition: color .2s linear;
+
+        &:hover {
+            color: var(--link-color);
+        }
+    }
+
+    a:not(.c-btn)[data-current="true"] {
         color: var(--link-color);
-        text-decoration: underline;
+        text-decoration: none;
+        font-weight: 500;
     }
 }
 

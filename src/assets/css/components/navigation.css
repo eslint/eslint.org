@@ -25,9 +25,16 @@
     display: flex;
     justify-self: flex-end;
     align-self: flex-end; }
-  .site-nav a[data-current="true"] {
+  .site-nav a:not(.c-btn) {
+    text-decoration: none;
+    color: inherit;
+    transition: color .2s linear; }
+    .site-nav a:not(.c-btn):hover {
+      color: var(--link-color); }
+  .site-nav a:not(.c-btn)[data-current="true"] {
     color: var(--link-color);
-    text-decoration: underline; }
+    text-decoration: none;
+    font-weight: 500; }
 
 .site-nav-toggle {
   cursor: pointer;

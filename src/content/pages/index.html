@@ -1,5 +1,5 @@
 ---
-layout: layouts/main.html
+layout: main.html
 permalink: /
 title: Find and fix problems in your JavaScript code — ESLint
 cover: /assets/images/site-cover.jpg
@@ -128,6 +128,13 @@ eleventyExcludeFromCollections: true
         <div class="blog-posts focusable" role="region" tabindex="0" aria-labelledby="latest-posts-label">
             {% set posts = collections.blog | limitTo(6) %}
             {%- for item in posts -%}
+
+                <!-- temporary until I can go through and update all the posts-->
+                {% set author = item.data.author %}
+                {% if not author %}
+                {% set author = item.data.authors[0] %}
+                {% endif %}
+
             <article class='card blog-post {%- if item.data.featured == "true" -%} card--featured {%- endif -%}'>
                 <a href="{{ item.url }}" class="card__cover">
                     <img src="../../assets/images/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}cover.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
@@ -149,10 +156,10 @@ eleventyExcludeFromCollections: true
                         {{ item.data.teaser }}
                     </p>
                     <div class="card__footer">
-                        <img class="blog-post__author-photo" src="../../assets/images/people/{{ item.data.authorImage }}" alt="{{ item.data.author }}">
+                        <img class="blog-post__author-photo" src="{{ authors[author].avatar_url }}" alt="{{ authors[author].name }}">
                         <div class="blog-post__author__details">
-                            <div class="blog-post__author-name">{{ item.data.author }}</div>
-                            <span class="blog-post__publish-date">{{ item.data.date | readableDate }}</span>
+                            <div class="blog-post__author-name">{{ authors[author].name }}</div>
+                            <span class="blog-post__publish-date">{{ item.date | readableDate }}</span>
                         </div>
                     </div>
                 </div>

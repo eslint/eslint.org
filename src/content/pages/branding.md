@@ -1,5 +1,5 @@
 ---
-layout: layouts/main.html
+layout: main.html
 permalink: /branding/
 eleventyExcludeFromCollections: true
 hook: "branding-page"

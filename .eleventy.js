@@ -33,6 +33,10 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toFormat('dd MMM, yyyy');
     });
 
+    eleventyConfig.addFilter("blogPermalinkDate", (dateObj) => {
+        return DateTime.fromJSDate(dateObj).toFormat('yyyy/MM');
+    });
+
     eleventyConfig.addFilter("readableDateFromISO", (ISODate) => {
         return DateTime.fromISO(ISODate).toUTC().toLocaleString(DateTime.DATE_FULL);
     });
@@ -172,7 +176,7 @@ module.exports = function(eleventyConfig) {
         dir: {
             input: "src",
             includes: "_includes",
-            // layouts: "layouts",
+            layouts: "_includes/layouts",
             data: "_data",
             output: "_site"
         }
