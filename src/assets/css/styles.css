@@ -695,8 +695,10 @@ a.c-btn {
 
 .eslint-versions-col {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
+  flex-direction: column; }
+  @media all and (min-width: 1023px) {
+    .eslint-versions-col {
+      align-items: flex-end; } }
 
 .eslint-versions {
   margin-top: 3rem;
