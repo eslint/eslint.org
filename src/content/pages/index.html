@@ -3,9 +3,12 @@ layout: layouts/main.html
 permalink: /
 title: Find and fix problems in your JavaScript code — ESLint
 cover: /assets/images/site-cover.jpg
+hook: "homepage"
 
 eleventyExcludeFromCollections: true
 ---
+
+{%- from 'components/donation.macro.html' import donationItem %}
 
 <section class="section hero hero--display">
     <div class="content-container grid">
@@ -222,22 +225,24 @@ eleventyExcludeFromCollections: true
         </div>
         <div class="grid">
             <div class="span-3-10">
-                <h3 class="featured-donations-title span-5-8" id="recent-donations">Recent One-time Donations</h3>
+                <h3 class="donations-title span-5-8" id="donations-label">Recent One-time Donations</h3>
 
-                <ul role="list" class="featured-donations-list focusable" role="region" tabindex="0" aria-labelledby="recent-donations">
-                    {% for donation in donations | limitTo(10) %}
-                    <li class="featured-donations-item">
-                        <!-- <a href="{{ item.url }}" class="featured-donations-item__logo"> -->
-                        <img class="featured-donations-item__logo" src="{{ donation.image }}" width="40" height="40" alt="{{ donation.name }} logo" />
-                        <!-- </a> -->
+                <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
+                    {% for donation in donations | limitTo(6) %}
+                    <li class="donations-item">
+                        {% set donation_image = donation.image %}
+                        {% set donation_name = donation.name %}
+                        {% set donation_type = donation.type %}
+                        {% set donation_amount = donation.amount | dollars %}
+                        {% set donation_date = donation.date | readableDateFromISO %}
 
-                        <div class="featured-donations-item__content">
-                            <p class="featured-donations-item__title">{{ donation.frequency }}</p>
-                            <p class="featured-donations-item__desc">Credit from {{ donation.name }} to ESLint • {{ donation.date | readableDate }}</p>
-                        </div>
-                        <div class="featured-donations-item__amount">
-                            + {{ donation.amount | dollars }}
-                        </div>
+                        {{ donationItem({
+                            image: donation_image,
+                            name: donation_name,
+                            type: donation_type,
+                            amount: donation_amount,
+                            date: donation_date
+                        }) }}
                     </li>
                     {% endfor %}
                 </ul>

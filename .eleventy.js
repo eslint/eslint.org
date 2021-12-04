@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter("readableDateFromISO", (ISODate) => {
-        return DateTime.fromISO(ISODate).toUTC().toLocaleString(DateTime.DATE_MED);
+        return DateTime.fromISO(ISODate).toUTC().toLocaleString(DateTime.DATE_FULL);
     });
 
     eleventyConfig.addFilter("past", function(date) {

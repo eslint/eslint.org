@@ -23,6 +23,14 @@
     font: inherit;
 }
 
+.color-brand {
+    color: var(--link-color);
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
 .center-text {
     text-align: center;
     grid-column: 1 / -1;
@@ -133,7 +141,9 @@
 }
 
 
-
+.span-10-12 {
+    grid-column: 10 / 13;
+}
 
 .span-11-12 {
     grid-column: 11 / 13;
