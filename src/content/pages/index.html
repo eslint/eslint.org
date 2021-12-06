@@ -126,7 +126,7 @@ eleventyExcludeFromCollections: true
             </p>
         </header>
         <div class="blog-posts focusable" role="region" tabindex="0" aria-labelledby="latest-posts-label">
-            {% set posts = collections.blog | limitTo(6) %}
+            {% set posts = collections.blog | limitTo(3) %}
             {%- for item in posts -%}
 
                 <!-- temporary until I can go through and update all the posts-->

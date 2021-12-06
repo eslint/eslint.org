@@ -680,7 +680,7 @@ a.c-btn {
     color: inherit; }
   .eslint-install-code input {
     all: unset;
-    min-width: 26ch;
+    min-width: 30ch;
     color: inherit;
     font-family: var(--mono-font); }
     .eslint-install-code input::selection {
@@ -710,19 +710,11 @@ a.c-btn {
     margin-right: .5rem; }
 
 .blog-posts {
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  display: flex;
-  align-items: flex-start;
   margin-bottom: var(--space-l-2xl);
-  max-width: 100%;
-  scroll-snap-type: x mandatory; }
-  @media all and (min-width: 1200px) {
-    .blog-posts {
-      display: grid;
-      grid-gap: 3rem 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      overflow: initial; } }
+  display: grid;
+  grid-gap: 3rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  overflow: initial; }
 
 .card {
   text-align: left;
@@ -730,11 +722,10 @@ a.c-btn {
   display: inline-flex;
   flex-direction: column;
   flex: none;
-  scroll-snap-align: start; }
-  @media all and (max-width: 1199px) {
+  margin-bottom: 2rem; }
+  @media all and (min-width: 640px) {
     .card {
-      max-width: 230px;
-      margin-right: 2rem; } }
+      margin-bottom: 0; } }
 
 .card--featured {
   display: flex;
