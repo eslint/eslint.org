@@ -1125,7 +1125,6 @@ ul.donation-plan__features,
   justify-self: baseline;
   margin-bottom: 2rem; }
 
-
 .donation-tiers--others {
   text-align: center;
   margin-top: var(--space-l-2xl); }
@@ -1186,7 +1185,6 @@ ul.donation-plan__features,
 .swatch__description {
   color: var(--headings-color);
   font-weight: 500; }
-
 
 .site-nav {
   display: flex;
