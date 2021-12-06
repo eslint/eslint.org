@@ -693,6 +693,13 @@ a.c-btn {
 .eslint-install-code__btn:hover .c-icon, .eslint-install-code__btn:focus .c-icon, .eslint-install-code__btn:active .c-icon {
   color: var(--color-brand); }
 
+.eslint-versions-col {
+  display: flex;
+  flex-direction: column; }
+  @media all and (min-width: 1023px) {
+    .eslint-versions-col {
+      align-items: flex-end; } }
+
 .eslint-versions {
   margin-top: 3rem;
   display: inline-flex;
