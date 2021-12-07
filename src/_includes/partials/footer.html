@@ -60,9 +60,17 @@
             </ul>
         </nav>
 
+
+
         <div role="region" class="language-switcher" aria-labelledby="language-switcher-label">
             <span id="language-switcher-label" hidden>Language Switcher</span>
-            Language
+            <button class="dw-toggle" id="dw-toggle">
+    Language</span>
+</button>
+
+<div class="dw-panel" id="dw-panel">
+languages here
+</div>
         </div>
     </div>
     <div class="content-container footer-legal-section">
@@ -83,3 +91,26 @@
         </nav>
     </div>
 </footer>
+
+
+ <script>
+            var dw_toggle = document.getElementById("dw-toggle"),
+    dw_panel = document.getElementById("dw-panel"),
+    ariaState = dw_toggle.getAttribute("aria-expanded");
+
+// if the attribute is not set..
+if (ariaState === null) {
+    // panel is not expanded by default
+    dw_toggle.setAttribute("aria-expanded", "false");
+}
+
+dw_toggle.addEventListener("click", togglePanel, false);
+
+function togglePanel() {
+    let currentState = dw_toggle.getAttribute("aria-expanded"),
+        // if it's true, set it to false, and vice versa
+        newState = currentState === "true" ? "false" : "true";
+
+    dw_toggle.setAttribute("aria-expanded", newState);
+}
+        </script>

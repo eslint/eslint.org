@@ -1,0 +1,18 @@
+.dw-toggle {
+  display: none;
+  /* style it to look like a link if you'd like */
+  font: inherit;
+  background: none;
+  padding: 0;
+  border: none; }
+
+.dw-toggle[aria-expanded] {
+  display: flex;
+  align-items: center; }
+
+.dw-toggle[aria-expanded="false"] + .dw-panel {
+  display: none;
+  font-size: 1em; }
+
+.dw-toggle[aria-expanded="true"] + .dw-panel {
+  display: block; }

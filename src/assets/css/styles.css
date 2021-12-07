@@ -1125,7 +1125,6 @@ ul.donation-plan__features,
   justify-self: baseline;
   margin-bottom: 2rem; }
 
-
 .donation-tiers--others {
   text-align: center;
   margin-top: var(--space-l-2xl); }
@@ -1186,7 +1185,6 @@ ul.donation-plan__features,
 .swatch__description {
   color: var(--headings-color);
   font-weight: 500; }
-
 
 .site-nav {
   display: flex;
@@ -1528,6 +1526,25 @@ ul.donations-list {
   height: 2.5rem;
   object-fit: cover;
   border-radius: var(--border-radius); }
+
+.dw-toggle {
+  display: none;
+  /* style it to look like a link if you'd like */
+  font: inherit;
+  background: none;
+  padding: 0;
+  border: none; }
+
+.dw-toggle[aria-expanded] {
+  display: flex;
+  align-items: center; }
+
+.dw-toggle[aria-expanded="false"] + .dw-panel {
+  display: none;
+  font-size: 1em; }
+
+.dw-toggle[aria-expanded="true"] + .dw-panel {
+  display: block; }
 
 #carbonads * {
   margin: initial;
