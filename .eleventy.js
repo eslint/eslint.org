@@ -1,5 +1,4 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const pluginTOC = require('eleventy-plugin-nesting-toc');
 const readingTime = require('eleventy-plugin-reading-time');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
