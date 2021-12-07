@@ -37,5 +37,7 @@
     text-decoration: none; }
     .languages-list a[aria-current="true"] {
       font-weight: 500; }
+      .languages-list a[aria-current="true"]:hover {
+        color: inherit; }
     .languages-list a:hover {
       color: var(--link-color); }

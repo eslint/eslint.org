@@ -46,6 +46,10 @@
 
          &[aria-current="true"] {
              font-weight: 500;
+
+             &:hover {
+                 color: inherit;
+             }
          }
 
          &:hover {
