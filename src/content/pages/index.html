@@ -117,7 +117,7 @@ eleventyExcludeFromCollections: true
     </div>
 </section>
 
-<section>
+<section aria-labelledby="latest-posts-label">
     <div class="content-container divider">
         <header class="section-head center-text">
             <h2 class="section-title h3" id="latest-posts-label">Latest posts</h2>
@@ -125,7 +125,7 @@ eleventyExcludeFromCollections: true
                 Thoughts, stories and release notes from the ESLint community
             </p>
         </header>
-        <div class="blog-posts focusable" role="region" tabindex="0" aria-labelledby="latest-posts-label">
+        <div class="blog-posts">
             {% set posts = collections.blog | limitTo(3) %}
             {%- for item in posts -%}
 
