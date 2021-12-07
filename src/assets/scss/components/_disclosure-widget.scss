@@ -1,0 +1,23 @@
+.dw-toggle {
+    width: 100%;
+}
+
+.dw-toggle__chevron {
+    margin-left: auto;
+    transition: transform .1s linear;
+    // display: none;
+}
+
+.dw-toggle[aria-expanded] {
+    display: flex;
+
+    .dw-toggle__chevron {
+        // display: block;
+    }
+}
+
+.dw-toggle[aria-expanded="true"] {
+    .dw-toggle__chevron {
+        transform: rotate(180deg);
+    }
+}

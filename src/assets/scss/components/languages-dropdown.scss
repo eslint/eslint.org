@@ -1,22 +1,57 @@
-.dw-toggle {
-    display: none;
-    /* style it to look like a link if you'd like */
-    font: inherit;
-    background: none;
+.language-switcher {
+    display: inline-flex;
+    position: relative;
+    min-width: 13rem;
     padding: 0;
-    border: none;
 }
 
-.dw-toggle[aria-expanded] {
-    display: flex;
-    align-items: center;
+.language-switcher__toggle {
+    color: inherit;
+    width: 100%;
+
+    &:hover {
+        border-color: var(--border-color);
+        color: var(--headings-color);
+    }
 }
 
-.dw-toggle[aria-expanded="false"]+.dw-panel {
+
+.language-switcher__dropdown {
+    padding: 1.25rem 1.125rem .75rem;
+    background-color: inherit;
+    z-index: 1;
+    text-align: left;
+    background-color: var(--body-background-color);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    margin-top: -.5rem;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: inherit;
+        display: block;
+        width: 100%;
+        padding: .25rem .1rem;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--link-color);
+        }
+    }
+}
+
+.language-switcher__toggle[aria-expanded="false"]+.language-switcher__dropdown {
     display: none;
-    font-size: 1em;
+
 }
 
-.dw-toggle[aria-expanded="true"]+.dw-panel {
-    display: block;
+.language-switcher__toggle[aria-expanded="true"]+.language-switcher__dropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
 }

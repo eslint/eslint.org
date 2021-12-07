@@ -455,7 +455,8 @@ button {
   line-height: inherit;
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  gap: .5rem; }
 
 .c-btn {
   background: none;
@@ -577,9 +578,6 @@ a.c-btn {
       align-items: center; }
       .eslint-social ul li a {
         display: flex; }
-
-.language-switcher {
-  display: inline-flex; }
 
 .c-custom-select {
   --icon: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%3Cpath%20fill%3D%22%23777%22%20d%3D%22M9.914%2011.086l-2.829%202.829%208.914%208.914%208.914-8.914-2.828-2.828-6.086%206.086z%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A");
@@ -1528,23 +1526,60 @@ ul.donations-list {
   border-radius: var(--border-radius); }
 
 .dw-toggle {
-  display: none;
-  /* style it to look like a link if you'd like */
-  font: inherit;
-  background: none;
-  padding: 0;
-  border: none; }
+  width: 100%; }
+
+.dw-toggle__chevron {
+  margin-left: auto;
+  transition: transform .1s linear; }
 
 .dw-toggle[aria-expanded] {
-  display: flex;
-  align-items: center; }
+  display: flex; }
 
-.dw-toggle[aria-expanded="false"] + .dw-panel {
-  display: none;
-  font-size: 1em; }
+.dw-toggle[aria-expanded="true"] .dw-toggle__chevron {
+  transform: rotate(180deg); }
 
-.dw-toggle[aria-expanded="true"] + .dw-panel {
-  display: block; }
+.language-switcher {
+  display: inline-flex;
+  position: relative;
+  min-width: 13rem;
+  padding: 0; }
+
+.language-switcher__toggle {
+  color: inherit;
+  width: 100%; }
+  .language-switcher__toggle:hover {
+    border-color: var(--border-color);
+    color: var(--headings-color); }
+
+.language-switcher__dropdown {
+  padding: 1.25rem 1.125rem .75rem;
+  background-color: inherit;
+  z-index: 1;
+  text-align: left;
+  background-color: var(--body-background-color);
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  margin-top: -.5rem; }
+  .language-switcher__dropdown ul {
+    margin: 0;
+    padding: 0; }
+  .language-switcher__dropdown a {
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: .25rem .1rem;
+    text-decoration: none; }
+    .language-switcher__dropdown a:hover {
+      color: var(--link-color); }
+
+.language-switcher__toggle[aria-expanded="false"] + .language-switcher__dropdown {
+  display: none; }
+
+.language-switcher__toggle[aria-expanded="true"] + .language-switcher__dropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%; }
 
 #carbonads * {
   margin: initial;
