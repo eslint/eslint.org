@@ -37,8 +37,8 @@ hook: "team-page"
 
 
                 {% set itemBio = item.bio | safe %}
-                {% set itemTwitterURL = item.twitterURL %}
-                {% set itemGithubURL = item.githubURL %}
+                {% set itemTwitter = item.twitter_username %}
+                {% set itemGitHub = item.github_username %}
 
                 <li>
                     {{ member({
@@ -47,8 +47,8 @@ hook: "team-page"
                         handle: itemHandle,
                         handleURL: itemHandleURL,
                         bio: itemBio,
-                        twitterURL: itemTwitterURL,
-                        githubURL: itemGithubURL
+                        twitter: itemTwitter,
+                        github: itemGitHub
                     }) }}
                 </li>
             {% endfor %}
@@ -72,8 +72,8 @@ hook: "team-page"
                 {% set itemHandle = item.username %}
 
                 {% set itemBio = item.bio | safe %}
-                {% set itemTwitterURL = item.twitterURL %}
-                {% set itemGithubURL = item.githubURL %}
+                {% set itemTwitter = item.twitter_username %}
+                {% set itemGitHub = item.github_username %}
 
                 <li>
                     {{ member({
@@ -82,8 +82,8 @@ hook: "team-page"
                         handle: itemHandle,
                         handleURL: itemHandleURL,
                         bio: itemBio,
-                        twitterURL: itemTwitterURL,
-                        githubURL: itemGithubURL
+                        twitter: itemTwitter,
+                        github: itemGitHub
                     }) }}
                 </li>
             {% endfor %}
@@ -107,9 +107,9 @@ hook: "team-page"
 
 
                 {% set itemBio = item.bio | safe %}
-                {% set itemTwitterURL = item.twitterURL %}
-                {% set itemGithubURL = item.githubURL %}
-
+                {% set itemTwitter = item.twitter_username %}
+                {% set itemGitHub = item.github_username %}
+                
                 <li>
                     {{ member({
                         photo: itemPhoto,
@@ -117,8 +117,8 @@ hook: "team-page"
                         handle: itemHandle,
                         handleURL: itemHandleURL,
                         bio: itemBio,
-                        twitterURL: itemTwitterURL,
-                        githubURL: itemGithubURL
+                        twitter: itemTwitter,
+                        github: itemGitHub
                     }) }}
                 </li>
             {% endfor %}
