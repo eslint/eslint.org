@@ -44,6 +44,10 @@
          padding: .25rem .1rem;
          text-decoration: none;
 
+         &[aria-current="true"] {
+             font-weight: 500;
+         }
+
          &:hover {
              color: var(--link-color);
          }

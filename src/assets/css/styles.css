@@ -1589,6 +1589,8 @@ button .dw-toggle__chevron {
     width: 100%;
     padding: .25rem .1rem;
     text-decoration: none; }
+    .languages-list a[aria-current="true"] {
+      font-weight: 500; }
     .languages-list a:hover {
       color: var(--link-color); }
 
