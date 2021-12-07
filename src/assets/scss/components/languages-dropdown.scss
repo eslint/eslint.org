@@ -18,7 +18,6 @@
 
 .language-switcher__dropdown {
     padding: 1.25rem 1.125rem .75rem;
-    background-color: inherit;
     z-index: 1;
     text-align: left;
     background-color: var(--body-background-color);
@@ -43,11 +42,6 @@
             color: var(--link-color);
         }
     }
-}
-
-.language-switcher__toggle[aria-expanded="false"]+.language-switcher__dropdown {
-    display: none;
-
 }
 
 .language-switcher__toggle[aria-expanded="true"]+.language-switcher__dropdown {

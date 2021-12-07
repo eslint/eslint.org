@@ -39,7 +39,8 @@
             element.setAttribute("aria-expanded", "false");
         }
 
-        element.addEventListener("click", function() {
+        element.addEventListener("click", function(e) {
+            e.preventDefault(); // ensures links enhanced to buttons don't fire
             let currentState = this.getAttribute("aria-expanded"),
                 newState = currentState === "true" ? "false" : "true";
 
@@ -54,4 +55,22 @@
     });
 
 
+})();
+
+/* language switcher disclosure widget enhancement */
+(function() {
+    var languages_toggle = document.getElementById("languages-toggle");
+
+        // enhance it into a button
+        languages_toggle.setAttribute('role', 'button');
+
+        // add space bar functionality so it behaves like a button
+        languages_toggle.addEventListener('keydown', function(e){
+            if(e.keyCode == 32) {
+                let currentState = this.getAttribute("aria-expanded"),
+                newState = currentState === "true" ? "false" : "true";
+
+                this.setAttribute("aria-expanded", newState);
+            }
+        });
 })();

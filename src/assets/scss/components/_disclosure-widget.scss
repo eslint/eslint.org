@@ -2,18 +2,34 @@
     width: 100%;
 }
 
+.dw-panel {
+    display: none;
+}
+
+.dw-toggle[aria-expanded="false"]+.dw-panel {
+    display: none;
+}
+
+.dw-toggle[aria-expanded="true"]+.dw-panel {
+    display: block;
+}
+
+
 .dw-toggle__chevron {
     margin-left: auto;
     transition: transform .1s linear;
-    // display: none;
+    display: none;
+}
+
+a[role="button"],
+button {
+    .dw-toggle__chevron {
+        display: block;
+    }
 }
 
 .dw-toggle[aria-expanded] {
     display: flex;
-
-    .dw-toggle__chevron {
-        // display: block;
-    }
 }
 
 .dw-toggle[aria-expanded="true"] {

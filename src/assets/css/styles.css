@@ -1528,9 +1528,23 @@ ul.donations-list {
 .dw-toggle {
   width: 100%; }
 
+.dw-panel {
+  display: none; }
+
+.dw-toggle[aria-expanded="false"] + .dw-panel {
+  display: none; }
+
+.dw-toggle[aria-expanded="true"] + .dw-panel {
+  display: block; }
+
 .dw-toggle__chevron {
   margin-left: auto;
-  transition: transform .1s linear; }
+  transition: transform .1s linear;
+  display: none; }
+
+a[role="button"] .dw-toggle__chevron,
+button .dw-toggle__chevron {
+  display: block; }
 
 .dw-toggle[aria-expanded] {
   display: flex; }
@@ -1553,7 +1567,6 @@ ul.donations-list {
 
 .language-switcher__dropdown {
   padding: 1.25rem 1.125rem .75rem;
-  background-color: inherit;
   z-index: 1;
   text-align: left;
   background-color: var(--body-background-color);
@@ -1572,9 +1585,6 @@ ul.donations-list {
     text-decoration: none; }
     .language-switcher__dropdown a:hover {
       color: var(--link-color); }
-
-.language-switcher__toggle[aria-expanded="false"] + .language-switcher__dropdown {
-  display: none; }
 
 .language-switcher__toggle[aria-expanded="true"] + .language-switcher__dropdown {
   position: absolute;
