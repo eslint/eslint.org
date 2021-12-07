@@ -9,7 +9,9 @@
 
 
 /* blog categories */
-.categories {}
+.categories {
+    margin-bottom: 2rem;
+}
 
 .categories__title {
     // color: var(--link-color);
@@ -48,7 +50,6 @@
     overflow: initial;
 }
 
-
 .card {
     text-align: left;
     align-self: stretch;
@@ -61,11 +62,24 @@
         margin-bottom: 0;
     }
 
-    &:first-of-type {
-        grid-column: 1 / -1;
 
-        display: flex;
-        flex-wrap: wrap;
+}
+
+.card:first-of-type {
+    grid-column: 1 / -1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card__cover {
+        flex: 3 1 400px;
+        outline: 1px solid;
+        margin-right: 2rem;
+    }
+
+    .card__content {
+        flex: 3 1 200px;
     }
 }
 
