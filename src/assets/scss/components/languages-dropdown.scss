@@ -33,27 +33,27 @@
     width: 100%;
 }
 
- .languages-list {
-     margin: 0;
-     padding: 0;
+.languages-list {
+    margin: 0;
+    padding: 0;
 
-     a {
-         color: inherit;
-         display: block;
-         width: 100%;
-         padding: .25rem .1rem;
-         text-decoration: none;
+    a {
+        color: inherit;
+        display: block;
+        width: 100%;
+        padding: .25rem .1rem;
+        text-decoration: none;
 
-         &[aria-current="true"] {
-             font-weight: 500;
+        &[aria-current="true"] {
+            font-weight: 500;
 
-             &:hover {
-                 color: inherit;
-             }
-         }
+            &:hover {
+                color: inherit;
+            }
+        }
 
-         &:hover {
-             color: var(--link-color);
-         }
-     }
- }
+        &:hover {
+            color: var(--link-color);
+        }
+    }
+}
