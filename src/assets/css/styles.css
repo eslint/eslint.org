@@ -1741,6 +1741,12 @@ ul.donations-list {
 .span-8-12 {
   grid-column: 8 / 13; }
 
+.span-10-12 {
+  grid-column: 10 / 13; }
+
+.span-11-12 {
+  grid-column: 11 / 13; }
+
 .span-4-9 {
   grid-column: 4 / 10; }
 
@@ -1752,9 +1758,3 @@ ul.donations-list {
 
 .span-5-8 {
   grid-column: 5 / 9; }
-
-.span-10-12 {
-  grid-column: 10 / 13; }
-
-.span-11-12 {
-  grid-column: 11 / 13; }

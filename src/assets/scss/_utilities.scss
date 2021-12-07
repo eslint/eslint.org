@@ -115,7 +115,6 @@
     grid-column: 4 / 13;
 }
 
-
 .span-6-12 {
     grid-column: 6 / 13;
 }
@@ -126,6 +125,14 @@
 
 .span-8-12 {
     grid-column: 8 / 13;
+}
+
+.span-10-12 {
+    grid-column: 10 / 13;
+}
+
+.span-11-12 {
+    grid-column: 11 / 13;
 }
 
 .span-4-9 {
@@ -142,13 +149,4 @@
 
 .span-5-8 {
     grid-column: 5 / 9;
-}
-
-
-.span-10-12 {
-    grid-column: 10 / 13;
-}
-
-.span-11-12 {
-    grid-column: 11 / 13;
 }
