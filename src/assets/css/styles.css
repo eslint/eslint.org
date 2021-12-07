@@ -100,6 +100,7 @@
   --ghost-button-text-color: var(--color-brand);
   --border-color: var(--color-neutral-300);
   --tab-border-color: var(--color-neutral-100);
+  --lightest-background-color: var(--color-neutral-50);
   --body-background-color: #fff;
   --body-text-color: var(--color-neutral-500);
   --headings-color: var(--color-neutral-900);
@@ -1094,7 +1095,7 @@ ul.donation-plan__features,
   grid-column: 1 / 3; }
 
 .blog-main {
-  grid-column: 4 / 13; }
+  grid-column: 3 / 13; }
 
 /* blog categories */
 .categories {
@@ -1115,6 +1116,7 @@ ul.donation-plan__features,
 
 .categories__list__item a[aria-current="page"] {
   color: var(--link-color);
+  background-color: var(--lightest-background-color);
   font-weight: 500; }
 
 /* blog posts list */
@@ -1130,6 +1132,7 @@ ul.donation-plan__features,
   align-self: stretch;
   display: inline-flex;
   flex-direction: column;
+  gap: 2rem;
   flex: none;
   margin-bottom: 2rem; }
   @media all and (min-width: 640px) {
@@ -1143,8 +1146,7 @@ ul.donation-plan__features,
   flex-wrap: wrap; }
   .card:first-of-type .card__cover {
     flex: 3 1 400px;
-    outline: 1px solid;
-    margin-right: 2rem; }
+    outline: 1px solid; }
   .card:first-of-type .card__content {
     flex: 3 1 200px; }
 
@@ -1153,11 +1155,11 @@ ul.donation-plan__features,
   flex-wrap: wrap; }
 
 .card__cover {
-  display: block;
-  margin-bottom: 2rem; }
+  display: block; }
   .card__cover img {
     display: block;
     width: 100%;
+    height: 100%;
     border-radius: var(--border-radius);
     object-fit: cover;
     aspect-ratio: 7 / 4; }
