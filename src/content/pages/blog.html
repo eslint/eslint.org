@@ -30,17 +30,7 @@ pagination:
 
         </form> -->
 
-        <nav aria-labelledby="blog-categories-nav-label" class="categories">
-            <h2 class="categories__title" id="blog-categories-nav-label">Blog categories</h2>
-            <ul role="list" class="categories__list">
-                <li class="categories__list__item"><a href="" aria-current="page">Everything</a></li>
-                <li class="categories__list__item"><a href="">Release Notes</a></li>
-                <li class="categories__list__item"><a href="">Roadmap</a></li>
-                <li class="categories__list__item"><a href="">Sponsors</a></li>
-                <li class="categories__list__item"><a href="">Technical Notes</a></li>
-                <li class="categories__list__item"><a href="">Guest Posts</a></li>
-            </ul>
-        </nav>
+        {% include 'partials/blog-categories.html' %}
     </aside>
 
     <div class="span-4-12">
@@ -60,13 +50,13 @@ pagination:
                 </a>
                 <div class="card__content">
                     <div class="badge-group">
-                            <span class="blog-post__category">
-                                <span class="visually-hidden">Published under:</span> {{ item.data.categories }}
-                            </span>
-                            <span class="blog-post__reading-time">
-                                {{ item.templateContent | readingTime }} read
-                            </span>
-                        </div>
+                        <span class="blog-post__category">
+                            <span class="visually-hidden">Published under:</span> {{ item.data.categories }}
+                        </span>
+                        <span class="blog-post__reading-time">
+                            {{ item.templateContent | readingTime }} read
+                        </span>
+                    </div>
 
                     <h3 class="card__title">
                         <a href="{{ item.url }}">{{ item.data.title }}</a>

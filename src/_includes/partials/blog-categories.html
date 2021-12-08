@@ -1,0 +1,18 @@
+<nav aria-labelledby="blog-categories-nav-label" class="categories">
+    <h2 class="categories__title" id="blog-categories-nav-label">Blog categories</h2>
+    <ul role="list" class="categories__list">
+        {% for category in collections.blogCategories %}
+        {% if loop.first %}<ul role="list" class="categories__list">{% endif %}
+            <li class="categories__list__item">
+                <a href="/blog/category/{{ category.slug }}">{{ category.title }} ({{ category.totalItems }})</a>
+            </li>
+            {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
+        <li class="categories__list__item"><a href="" aria-current="page">OI Everything</a></li>
+        <!-- <li class="categories__list__item"><a href="">Release Notes</a></li>
+                <li class="categories__list__item"><a href="">Roadmap</a></li>
+                <li class="categories__list__item"><a href="">Sponsors</a></li>
+                <li class="categories__list__item"><a href="">Technical Notes</a></li>
+                <li class="categories__list__item"><a href="">Guest Posts</a></li> -->
+    </ul>
+</nav>
