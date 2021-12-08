@@ -36,24 +36,49 @@
 .languages-list {
     margin: 0;
     padding: 0;
+    font-size: var(--step-0);
+
+    li {
+        margin: 0;
+
+        &:last-of-type a {
+            border-bottom: 0;
+        }
+    }
 
     a {
         color: inherit;
         display: block;
         width: 100%;
-        padding: .25rem .1rem;
+        padding: .75rem .1rem;
         text-decoration: none;
+
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        border-bottom: 1px solid var(--divider-color);
 
         &[aria-current="true"] {
             font-weight: 500;
+            color: var(--link-color);
 
-            &:hover {
-                color: inherit;
-            }
+            // &:hover {
+            //     color: inherit;
+            // }
         }
 
         &:hover {
             color: var(--link-color);
         }
     }
+}
+
+.languages-section .flag {
+    font-size: 2em;
+}
+
+.languages-section .languages-list {
+    font-size: var(--step-1);
+    border-left: 4px solid var(--tab-border-color);
+    padding-left: 1rem;
 }

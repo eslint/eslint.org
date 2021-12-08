@@ -16,7 +16,7 @@ hook: "languages-page"
     </div>
 </div>
 
-<section class="section">
+<section class="languages-section section">
     <div class="content-container">
         <nav aria-labelledby="languages-label">
             {% include 'partials/languages-list.html' %}
