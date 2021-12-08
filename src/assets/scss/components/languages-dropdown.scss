@@ -1,7 +1,7 @@
 .language-switcher {
     display: inline-flex;
     position: relative;
-    min-width: 13rem;
+    min-width: 15rem;
     padding: 0;
 }
 
@@ -25,6 +25,8 @@
     border-top: none;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     margin-top: -.5rem;
+    max-height: 180px;
+    overflow-y: auto;
 }
 
 .language-switcher__toggle[aria-expanded="true"]+.language-switcher__dropdown {
