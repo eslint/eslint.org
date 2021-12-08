@@ -1166,14 +1166,10 @@ ul.donation-plan__features,
 .card__content {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.card__meta {
-  margin-bottom: 1rem; }
+  flex-direction: column; }
 
 .card__title {
-  margin-bottom: .75rem; }
+  margin-bottom: .5rem; }
   .card__title a {
     color: inherit;
     text-decoration: none; }
@@ -1188,7 +1184,8 @@ ul.donation-plan__features,
   justify-self: flex-end;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: .75rem; }
+  grid-gap: .75rem;
+  margin-top: auto; }
 
 .blog-post__author-photo {
   width: 2.5rem;

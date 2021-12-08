@@ -105,15 +105,15 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 
-.card__meta {
-    margin-bottom: 1rem;
-}
+// .card__meta {
+//     margin-bottom: 1rem;
+// }
 
 .card__title {
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
 
     a {
         color: inherit;
@@ -135,6 +135,8 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: .75rem;
+
+    margin-top: auto;
 }
 
 .blog-post__author-photo {
