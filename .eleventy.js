@@ -115,28 +115,22 @@ module.exports = function(eleventyConfig) {
      *  Collections
      * ***************************************************************************************/
 
-    eleventyConfig.addCollection("blog", function(collection) {
-        return collection.getFilteredByGlob("./src/content/blog/**/*.md").filter((item) => {
-            return !item.data.draft && item.date <= now;
-        }).reverse();
-    });
-
     eleventyConfig.addCollection(
-    "blogposts",
-    require("./src/_11ty/collections/blogposts.js")
-  );
+        "blogposts",
+        require("./src/_11ty/collections/blogposts.js")
+    );
 
-  // blogposts unique categories
-  eleventyConfig.addCollection(
-    "blogCategories",
-    require("./src/_11ty/collections/blogpostsCategories.js")
-  );
+    // blogposts unique categories
+    eleventyConfig.addCollection(
+        "blogCategories",
+        require("./src/_11ty/collections/blogpostsCategories.js")
+    );
 
-  // blogposts by categories
-  eleventyConfig.addCollection(
-    "blogpostsByCategories",
-    require("./src/_11ty/collections/blogpostsByCategories.js")
-  );
+    // blogposts by categories
+    eleventyConfig.addCollection(
+        "blogpostsByCategories",
+        require("./src/_11ty/collections/blogpostsByCategories.js")
+    );
 
     /*****************************************************************************************
      *  Shortcodes

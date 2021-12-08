@@ -126,7 +126,7 @@ eleventyExcludeFromCollections: true
             </p>
         </header>
         <div class="blog-posts">
-            {% set posts = collections.blog | limitTo(3) %}
+            {% set posts = collections.blogposts | limitTo(3) %}
             {%- for item in posts -%}
 
                 <!-- temporary until I can go through and update all the posts-->
