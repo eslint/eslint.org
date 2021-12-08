@@ -1,0 +1,38 @@
+---
+layout: main.html
+pagination:
+  data: collections.blogpostsByCategories
+  size: 1
+  alias: currentCategory
+permalink: /blog/category/{{ currentCategory.slug }}/index.html
+---
+
+{% block content %}
+  <h1>{{ currentCategory.title }}</h1>
+
+  {% for post in currentCategory.items %}
+    {% if loop.first %}<ul>{% endif %}
+      <li>
+        <article>
+          <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+        </article>
+      </li>
+    {% if loop.last %}</ul>{% endif %}
+  {% endfor %}
+
+  {% if currentCategory.totalPages > 1 %}
+    <nav>
+      <ul>
+        {% if currentCategory.hrefs.previous %}
+          <li><a href="/blog/category/{{ currentCategory.hrefs.first }}">First</a></li>
+          <li><a href="/blog/category/{{ currentCategory.hrefs.previous }}">Previous</a></li>
+        {% endif %}
+        {% if currentCategory.hrefs.next %}
+          <li><a href="/blog/category/{{ currentCategory.hrefs.next }}">Next</a></li>
+          <li><a href="/blog/category/{{ currentCategory.hrefs.last }}">Last</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  {% endif %}
+
+{% endblock %}
