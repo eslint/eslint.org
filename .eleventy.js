@@ -67,13 +67,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(pluginRss);
     // add IDs to the headers
     const markdownIt = require('markdown-it');
-    const markdownItAnchor = require('markdown-it-anchor');
+
     eleventyConfig.setLibrary("md",
         markdownIt({
             html: true,
             linkify: true,
             typographer: true,
-        }).use(markdownItAnchor, {})
+
+        }).disable('code')
     );
 
 

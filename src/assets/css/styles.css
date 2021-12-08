@@ -1143,7 +1143,8 @@ ul.donation-plan__features,
   grid-column: 1 / -1;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl-2xl); }
   .card:first-of-type .card__cover {
     flex: 3 1 400px; }
   .card:first-of-type .card__content {
