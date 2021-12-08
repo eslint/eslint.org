@@ -2,13 +2,14 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const slugify = require("slugify");
+
 
 const {
     DateTime
 } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-
     let now = new Date();
 
     /*****************************************************************************************
@@ -20,6 +21,18 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter('jsonify', function(variable) {
         return JSON.stringify(variable);
+    });
+
+    eleventyConfig.addFilter('slugify', function(str) {
+        if (!str) {
+            return;
+        }
+
+        return slugify(str, {
+            lower: true,
+            strict: true,
+            remove: /["]/g,
+        });
     });
     /* order collection by the order specified in the front matter */
     eleventyConfig.addFilter("sortByPageOrder", function(values) {
