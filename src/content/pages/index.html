@@ -137,12 +137,12 @@ eleventyExcludeFromCollections: true
 
             <article class='card blog-post {%- if item.data.featured == "true" -%} card--featured {%- endif -%}'>
                 <a href="{{ item.url }}" class="card__cover">
-                    <img src="../../assets/images/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}cover.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
+                    <img src="./../../../assets/images/blog-covers/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}{{ item.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
                 </a>
                 <div class="card__content">
                     <div class="badge-group">
                         <span class="blog-post__category">
-                            <span class="visually-hidden">Published under:</span> {{ item.data.category }}
+                            <span class="visually-hidden">Published under:</span> {{ item.data.categories }}
                         </span>
                         <span class="blog-post__reading-time">
                             {{ item.templateContent | readingTime }} read
