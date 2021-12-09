@@ -1,10 +1,14 @@
 <nav aria-labelledby="blog-categories-nav-label" class="categories">
     <h2 class="categories__title" id="blog-categories-nav-label">Blog categories</h2>
     <ul role="list" class="categories__list">
-        <li class="categories__list__item"><a href="" aria-current="page">Everything</a></li>
+        {% set blogURL = '/blog/' | url %}
+        <li class="categories__list__item"><a href="/blog/" {{ helpers.getLinkActiveState(blogURL, page.url) | safe }}>Everything</a></li>
         {% for category in collections.blogCategories %}
             <li class="categories__list__item">
-                <a href="/blog/category/{{ category.slug }}">{{ category.title }}</a>
+
+                {% set itemURL = ['/blog/category/', category.slug] | join %}
+
+                <a href="/blog/category/{{ category.slug }}" {{ helpers.setActiveCategory(itemURL, page.url) | safe }} >{{ category.title }}</a>
             </li>
         {% endfor %}
         </ul>

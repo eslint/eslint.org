@@ -8,7 +8,7 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
 ---
 
 {% block content %}
-  <h1>{{ currentCategory.title }}</h1>
+  <h2 hidden>{{ currentCategory.title }}</h2>
 
   {% for post in currentCategory.items %}
     {% if loop.first %}<ul>{% endif %}
