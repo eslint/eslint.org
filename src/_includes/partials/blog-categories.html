@@ -2,7 +2,7 @@
     <h2 class="categories__title" id="blog-categories-nav-label">Blog categories</h2>
     <ul role="list" class="categories__list">
         {% set blogURL = '/blog/' | url %}
-        <li class="categories__list__item"><a href="/blog/" {{ helpers.getLinkActiveState(blogURL, page.url) | safe }}>Everything</a></li>
+        <li class="categories__list__item"><a href="/blog/" {{ helpers.setBlogActiveState(blogURL, page.url) | safe }}>Everything</a></li>
         {% for category in collections.blogCategories %}
             <li class="categories__list__item">
 
