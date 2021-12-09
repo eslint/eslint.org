@@ -1124,7 +1124,7 @@ ul.donation-plan__features,
   margin-bottom: var(--space-l-2xl);
   display: grid;
   grid-gap: 3rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   overflow: initial; }
 
 .card {
@@ -1262,6 +1262,7 @@ ul.donation-plan__features,
     transition: color .2s linear; }
     .site-nav a:not(.c-btn):hover {
       color: var(--link-color); }
+  .site-nav a:not(.c-btn)[data-current="page"],
   .site-nav a:not(.c-btn)[data-current="true"] {
     color: var(--link-color);
     text-decoration: none;

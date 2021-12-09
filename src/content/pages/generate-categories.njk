@@ -9,16 +9,53 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
 
 {% block content %}
   <h2 hidden>{{ currentCategory.title }}</h2>
-
+    <div class="blog-posts">
   {% for post in currentCategory.items %}
-    {% if loop.first %}<ul>{% endif %}
+    {# {% if loop.first %}<ul>{% endif %}
       <li>
         <article>
           <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
         </article>
       </li>
-    {% if loop.last %}</ul>{% endif %}
+    {% if loop.last %}</ul>{% endif %} #}
+
+                <!-- temporary until I can go through an update all the posts-->
+            {% set author = post.data.author %}
+            {% if not author %}
+            {% set author = post.data.authors[0] %}
+            {% endif %}
+
+            <article class='card blog-post {%- if post.data.featured == "true" -%} card--featured {%- endif -%}'>
+                <a href="{{ post.url }}" class="card__cover">
+                    <img src="./../../../assets/images/blog-covers/{%- if post.data.cover -%}{{ post.data.cover }}{%- else -%}{{ post.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ post.data.title }}" />
+                </a>
+                <div class="card__content">
+                    <div class="badge-group">
+                        <span class="blog-post__category">
+                            <span class="visually-hidden">Published under:</span> {{ post.data.categories }}
+                        </span>
+                        <span class="blog-post__reading-time">
+                            {{ post.templateContent | readingTime }} read
+                        </span>
+                    </div>
+
+                    <h3 class="card__title">
+                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    </h3>
+                    <p class="card__teaser">
+                        {{ post.data.teaser }}
+                    </p>
+                    <div class="card__footer">
+                        <img class="blog-post__author-photo" src="{{ authors[author].avatar_url }}" alt="{{ authors[author].name }}">
+                        <div class="blog-post__author__details">
+                            <div class="blog-post__author-name">{{ authors[author].name }}</div>
+                            <span class="blog-post__publish-date">{{ post.date | readableDate }}</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
   {% endfor %}
+  </div>
 
   {% if currentCategory.totalPages > 1 %}
     <nav>

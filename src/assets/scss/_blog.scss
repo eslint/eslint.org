@@ -47,7 +47,7 @@
     margin-bottom: var(--space-l-2xl);
     display: grid;
     grid-gap: 3rem 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     overflow: initial;
 }
 

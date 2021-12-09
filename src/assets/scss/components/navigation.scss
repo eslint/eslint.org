@@ -47,6 +47,7 @@
         }
     }
 
+    a:not(.c-btn)[data-current="page"],
     a:not(.c-btn)[data-current="true"] {
         color: var(--link-color);
         text-decoration: none;

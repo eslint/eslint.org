@@ -31,6 +31,7 @@
     transition: color .2s linear; }
     .site-nav a:not(.c-btn):hover {
       color: var(--link-color); }
+  .site-nav a:not(.c-btn)[data-current="page"],
   .site-nav a:not(.c-btn)[data-current="true"] {
     color: var(--link-color);
     text-decoration: none;
