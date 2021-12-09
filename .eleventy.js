@@ -1,9 +1,7 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const pluginTOC = require('eleventy-plugin-nesting-toc');
 const readingTime = require('eleventy-plugin-reading-time');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const moment = require("moment");
 
 const {
     DateTime
@@ -39,17 +37,6 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("readableDateFromISO", (ISODate) => {
         return DateTime.fromISO(ISODate).toUTC().toLocaleString(DateTime.DATE_FULL);
-    });
-
-    eleventyConfig.addFilter("past", function(date) {
-        var todayDate = moment();
-        postDate = moment(date, "YYYY-MM-DD");
-        return todayDate.isAfter(postDate);
-    });
-    eleventyConfig.addFilter("future", function(date) {
-        var todayDate = moment();
-        postDate = moment(date, "YYYY-MM-DD");
-        return !todayDate.isAfter(postDate);
     });
 
     // squash. Source: https://github.com/philhawksworth/hawksworx.com/blob/8c96ba2541c8fd6fe6f521cdb5e17848c231636c/src/site/_filters/squash.js
@@ -93,13 +80,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(readingTime);
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginRss);
-    eleventyConfig.addPlugin(pluginTOC, {
-        tags: ['h2', 'h3', 'h4'],
-        wrapper: 'nav', // Element to put around the root `ol`
-        wrapperClass: 'c-toc', // Class for the element around the root `ol`
-        headingText: '', // Optional text to show in heading above the wrapper element
-        headingTag: 'h2' // Heading tag when showing heading above the wrapper element
-    });
     // add IDs to the headers
     const markdownIt = require('markdown-it');
     const markdownItAnchor = require('markdown-it-anchor');

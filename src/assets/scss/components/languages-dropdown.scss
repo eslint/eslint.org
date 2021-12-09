@@ -56,17 +56,13 @@
         text-decoration: none;
 
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: auto 1fr auto;
         align-items: center;
         border-bottom: 1px solid var(--divider-color);
 
         &[aria-current="true"] {
             font-weight: 500;
             color: var(--link-color);
-
-            // &:hover {
-            //     color: inherit;
-            // }
         }
 
         &:hover {
