@@ -10,16 +10,10 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
 {% block content %}
   <h2 hidden>{{ currentCategory.title }}</h2>
     <div class="blog-posts">
-  {% for post in currentCategory.items %}
-    {# {% if loop.first %}<ul>{% endif %}
-      <li>
-        <article>
-          <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
-        </article>
-      </li>
-    {% if loop.last %}</ul>{% endif %} #}
 
-                <!-- temporary until I can go through an update all the posts-->
+  {% for post in currentCategory.items %}
+
+            <!-- temporary until I can go through an update all the posts-->
             {% set author = post.data.author %}
             {% if not author %}
             {% set author = post.data.authors[0] %}
@@ -27,7 +21,7 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
 
             <article class='card blog-post {%- if post.data.featured == "true" -%} card--featured {%- endif -%}'>
                 <a href="{{ post.url }}" class="card__cover">
-                    <img src="./../../../assets/images/blog-covers/{%- if post.data.cover -%}{{ post.data.cover }}{%- else -%}{{ post.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ post.data.title }}" />
+                    <img src="./../../../../assets/images/blog-covers/{%- if post.data.cover -%}{{ post.data.cover }}{%- else -%}{{ post.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ post.data.title }}" />
                 </a>
                 <div class="card__content">
                     <div class="badge-group">

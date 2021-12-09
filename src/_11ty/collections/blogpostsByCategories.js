@@ -7,7 +7,7 @@ module.exports = function (collection) {
   // target collection
   const blogposts = collection.getFilteredByGlob(
     "./src/content/blog/*.md"
-  );
+  ).reverse();
   // unique categories in target collection
   const blogpostsCategories = getCollectionCategories(blogposts);
   // paginated collection by categories
