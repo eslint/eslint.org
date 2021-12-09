@@ -23,8 +23,8 @@ module.exports = {
     setBlogActiveState: function(itemUrl, pageUrl) {
         let response = '';
 
-        if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-            response += ' aria-current="page" ';
+        if (itemUrl === pageUrl || pageUrl.indexOf('/blog/page/') >= 0 ) {
+            response = ' aria-current="page" ';
         }
 
         return response;
