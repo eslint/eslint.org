@@ -1133,8 +1133,7 @@ ul.donation-plan__features,
   display: inline-flex;
   flex-direction: column;
   gap: 2rem;
-  flex: none;
-  margin-bottom: 2rem; }
+  flex: none; }
   @media all and (min-width: 640px) {
     .card {
       margin-bottom: 0; } }
