@@ -100,6 +100,7 @@
   --ghost-button-text-color: var(--color-brand);
   --border-color: var(--color-neutral-300);
   --tab-border-color: var(--color-neutral-100);
+  --lightest-background-color: var(--color-neutral-50);
   --body-background-color: #fff;
   --body-text-color: var(--color-neutral-500);
   --headings-color: var(--color-neutral-900);
@@ -716,100 +717,6 @@ a.c-btn {
   .eslint-versions .c-icon {
     margin-right: .5rem; }
 
-.blog-posts {
-  margin-bottom: var(--space-l-2xl);
-  display: grid;
-  grid-gap: 3rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  overflow: initial; }
-
-.card {
-  text-align: left;
-  align-self: stretch;
-  display: inline-flex;
-  flex-direction: column;
-  flex: none;
-  margin-bottom: 2rem; }
-  @media all and (min-width: 640px) {
-    .card {
-      margin-bottom: 0; } }
-
-.card--featured {
-  display: flex;
-  flex-wrap: wrap; }
-
-.card__cover {
-  display: block;
-  margin-bottom: 2rem; }
-  .card__cover img {
-    display: block;
-    width: 100%;
-    border-radius: var(--border-radius);
-    object-fit: cover;
-    aspect-ratio: 7 / 4; }
-
-.card__content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.card__meta {
-  margin-bottom: 1rem; }
-
-.card__title {
-  margin-bottom: .75rem; }
-  .card__title a {
-    color: inherit;
-    text-decoration: none; }
-    .card__title a:hover {
-      color: var(--color-brand); }
-
-.card__teaser {
-  margin-bottom: 2rem;
-  font-size: var(--step-0); }
-
-.card__footer {
-  justify-self: flex-end;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: .75rem; }
-
-.blog-post__author-photo {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%; }
-
-.blog-post__author-name {
-  font-size: var(--step--1);
-  line-height: 1.5;
-  font-weight: 500;
-  color: var(--headings-color); }
-
-.blog-post__publish-date {
-  font-size: var(--step--1);
-  line-height: 1.5; }
-
-.blog-post__category {
-  background-color: #fff;
-  border-radius: 1rem; }
-
-.card .badge-group {
-  margin-bottom: 1rem; }
-
-.badge-group {
-  background-color: var(--color-primary-50);
-  color: var(--color-brand);
-  border-radius: 1rem;
-  display: inline-flex;
-  padding: .25rem;
-  font-size: var(--step--1);
-  flex: none;
-  align-self: flex-start; }
-  .badge-group span {
-    display: inline-flex;
-    padding: 0.125rem .5rem; }
-
 /* PERSON */
 .person {
   position: relative; }
@@ -1184,6 +1091,143 @@ ul.donation-plan__features,
   color: var(--headings-color);
   font-weight: 500; }
 
+.blog-sidebar {
+  grid-column: 1 / 4; }
+
+.blog-main {
+  grid-column: 4 / 13; }
+
+/* blog categories */
+.categories {
+  margin-bottom: 2rem; }
+
+.categories__title {
+  font-size: var(--step--1);
+  font-family: var(--text-font); }
+
+.categories__list__item a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: .625rem .875rem;
+  font-size: var(--step-0); }
+  .categories__list__item a:hover {
+    color: var(--link-color); }
+
+.categories__list__item a[aria-current="page"] {
+  color: var(--link-color);
+  background-color: var(--lightest-background-color);
+  font-weight: 500; }
+
+/* blog posts list */
+.blog-posts {
+  margin-bottom: var(--space-l-2xl);
+  display: grid;
+  grid-gap: 3rem 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  overflow: initial; }
+
+.card {
+  text-align: left;
+  align-self: stretch;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: none; }
+  @media all and (min-width: 640px) {
+    .card {
+      margin-bottom: 0; } }
+
+.blog-page .card:first-of-type {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl-2xl); }
+  .blog-page .card:first-of-type .card__cover {
+    flex: 3 1 400px; }
+  .blog-page .card:first-of-type .card__content {
+    flex: 3 1 200px; }
+
+.card--featured {
+  display: flex;
+  flex-wrap: wrap; }
+
+.card__cover {
+  display: block; }
+  .card__cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    aspect-ratio: 7 / 4; }
+
+.card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+
+.card__title {
+  margin-bottom: .5rem; }
+  .card__title a {
+    color: inherit;
+    text-decoration: none; }
+    .card__title a:hover {
+      color: var(--color-brand); }
+
+.card__teaser {
+  margin-bottom: 2rem;
+  font-size: var(--step-0); }
+
+.card__footer {
+  justify-self: flex-end;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: .75rem;
+  margin-top: auto; }
+
+.blog-post__author-photo {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%; }
+
+.blog-post__author-name {
+  font-size: var(--step--1);
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--headings-color); }
+
+.blog-post__publish-date {
+  font-size: var(--step--1);
+  line-height: 1.5; }
+
+.blog-post__category {
+  background-color: #fff;
+  border-radius: 1rem; }
+
+.card .badge-group {
+  margin-bottom: 1rem; }
+
+.badge-group {
+  background-color: var(--color-primary-50);
+  color: var(--color-brand);
+  border-radius: 1rem;
+  display: inline-flex;
+  padding: .25rem;
+  font-size: var(--step--1);
+  flex: none;
+  align-self: flex-start; }
+  .badge-group span {
+    display: inline-flex;
+    padding: 0.125rem .5rem; }
+
+/* individual post page */
+.post__meta {
+  color: var(--link-color);
+  font-weight: 500;
+  margin-bottom: 1rem; }
+
 .site-nav {
   display: flex;
   flex-direction: column;
@@ -1217,6 +1261,7 @@ ul.donation-plan__features,
     transition: color .2s linear; }
     .site-nav a:not(.c-btn):hover {
       color: var(--link-color); }
+  .site-nav a:not(.c-btn)[data-current="page"],
   .site-nav a:not(.c-btn)[data-current="true"] {
     color: var(--link-color);
     text-decoration: none;
@@ -1688,6 +1733,9 @@ ul.donations-list {
 .span-1-12 {
   grid-column: 1 / -1; }
 
+.span-4-12 {
+  grid-column: 4 / 13; }
+
 .span-6-12 {
   grid-column: 6 / 13; }
 
@@ -1696,6 +1744,12 @@ ul.donations-list {
 
 .span-8-12 {
   grid-column: 8 / 13; }
+
+.span-10-12 {
+  grid-column: 10 / 13; }
+
+.span-11-12 {
+  grid-column: 11 / 13; }
 
 .span-4-9 {
   grid-column: 4 / 10; }
@@ -1708,9 +1762,3 @@ ul.donations-list {
 
 .span-5-8 {
   grid-column: 5 / 9; }
-
-.span-10-12 {
-  grid-column: 10 / 13; }
-
-.span-11-12 {
-  grid-column: 11 / 13; }

@@ -1,0 +1,37 @@
+---
+layout: base.html
+---
+{% include "partials/header.html" %}
+
+
+<main id="main" tabindex="-1">
+    <div class="section hero">
+        <div class="content-container grid">
+            <div class="span-1-7">
+                <h1 class="section-title h2">Resources and insights</h1>
+                <p class="section-supporting-text">
+                    The latest industry news, interviews, technologies, and resources.
+                </p>
+            </div>
+            <div class="span-11-12">
+                carbon ad here
+            </div>
+        </div>
+    </div>
+    <div class="content-container grid">
+        <aside class="span-1-3">
+            <!-- <form action="" role="search">
+
+            </form> -->
+
+            {% include 'partials/blog-categories.html' %}
+        </aside>
+
+        <div class="span-4-12">
+            {{ content | safe }}
+        </div>
+    </div>
+
+</main>
+
+{% include "partials/footer.html" %}

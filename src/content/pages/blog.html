@@ -6,7 +6,7 @@ permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber
 
 pagination:
     alias: blogPosts
-    data: collections.blog
+    data: collections.blogposts
     size: 9
 ---
 
@@ -24,32 +24,32 @@ pagination:
     </div>
 </div>
 
-<!-- <form action="" role="search">
+<div class="content-container grid">
+    <aside class="span-1-3">
+        <!-- <form action="" role="search">
 
-</form> -->
+        </form> -->
 
-<!-- <nav aria-labelledby="blog-categories-nav-label">
-    <h2 class="h6" id="blog-categories-nav-label">Blog categories</h2>
-</nav> -->
+        {% include 'partials/blog-categories.html' %}
+    </aside>
 
-<div class="content-container">
-    <section aria-labelledby="blog-posts-label" class="blog-posts">
-        <span id="blog-posts-label" hidden>Blog posts</span>
-        {% set postItems = pagination.items %}
-        {% for item in postItems %}
+    <div class="span-4-12">
+        <div class="blog-posts">
+            {% set postItems = pagination.items %}
+            {% for item in postItems %}
 
-        <!-- temporary until I can go through an update all the posts-->
-        {% set author = item.data.author %}
-        {% if not author %}
-        {% set author = item.data.authors[0] %}
-        {% endif %}
+            <!-- temporary until I can go through an update all the posts-->
+            {% set author = item.data.author %}
+            {% if not author %}
+            {% set author = item.data.authors[0] %}
+            {% endif %}
 
-        <article class='card blog-post {%- if item.data.featured == "true" -%} card--featured {%- endif -%}'>
-            <a href="{{ item.url }}" class="card__cover">
-                <img src="../../assets/images/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}cover.png{%- endif -%}" width="420" height="240" alt="{{ item.data.coverAlt }}" />
-            </a>
-            <div class="card__content">
-                <div class="badge-group">
+            <article class='card blog-post {%- if item.data.featured == "true" -%} card--featured {%- endif -%}'>
+                <a href="{{ item.url }}" class="card__cover">
+                    <img src="./../../../assets/images/blog-covers/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}{{ item.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
+                </a>
+                <div class="card__content">
+                    <div class="badge-group">
                         <span class="blog-post__category">
                             <span class="visually-hidden">Published under:</span> {{ item.data.categories }}
                         </span>
@@ -58,24 +58,25 @@ pagination:
                         </span>
                     </div>
 
-                <h3 class="card__title">
-                    <a href="{{ item.url }}">{{ item.data.title }}</a>
-                </h3>
-                <p class="card__teaser">
-                    {{ item.data.teaser }}
-                </p>
-                <div class="card__footer">
-                    <img class="blog-post__author-photo" src="{{ authors[author].avatar_url }}" alt="{{ authors[author].name }}">
-                    <div class="blog-post__author__details">
-                        <div class="blog-post__author-name">{{ authors[author].name }}</div>
-                        <span class="blog-post__publish-date">{{ item.date | readableDate }}</span>
+                    <h3 class="card__title">
+                        <a href="{{ item.url }}">{{ item.data.title }}</a>
+                    </h3>
+                    <p class="card__teaser">
+                        {{ item.data.teaser }}
+                    </p>
+                    <div class="card__footer">
+                        <img class="blog-post__author-photo" src="{{ authors[author].avatar_url }}" alt="{{ authors[author].name }}">
+                        <div class="blog-post__author__details">
+                            <div class="blog-post__author-name">{{ authors[author].name }}</div>
+                            <span class="blog-post__publish-date">{{ item.date | readableDate }}</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        {% endfor %}
-    </section>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
 

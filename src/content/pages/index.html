@@ -117,7 +117,7 @@ eleventyExcludeFromCollections: true
     </div>
 </section>
 
-<section>
+<section aria-labelledby="latest-posts-label">
     <div class="content-container divider">
         <header class="section-head center-text">
             <h2 class="section-title h3" id="latest-posts-label">Latest posts</h2>
@@ -125,8 +125,8 @@ eleventyExcludeFromCollections: true
                 Thoughts, stories and release notes from the ESLint community
             </p>
         </header>
-        <div class="blog-posts focusable" role="region" tabindex="0" aria-labelledby="latest-posts-label">
-            {% set posts = collections.blog | limitTo(3) %}
+        <div class="blog-posts">
+            {% set posts = collections.blogposts | limitTo(3) %}
             {%- for item in posts -%}
 
                 <!-- temporary until I can go through and update all the posts-->
@@ -137,12 +137,12 @@ eleventyExcludeFromCollections: true
 
             <article class='card blog-post {%- if item.data.featured == "true" -%} card--featured {%- endif -%}'>
                 <a href="{{ item.url }}" class="card__cover">
-                    <img src="../../assets/images/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}cover.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
+                    <img src="./../../../assets/images/blog-covers/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}{{ item.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
                 </a>
                 <div class="card__content">
                     <div class="badge-group">
                         <span class="blog-post__category">
-                            <span class="visually-hidden">Published under:</span> {{ item.data.category }}
+                            <span class="visually-hidden">Published under:</span> {{ item.data.categories }}
                         </span>
                         <span class="blog-post__reading-time">
                             {{ item.templateContent | readingTime }} read
