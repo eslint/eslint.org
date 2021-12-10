@@ -28,7 +28,10 @@
 
 
         {%- for pageEntry in pagination.pages %}
-        <li><a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}><span class="visually-hidden">Page</span> {{ loop.index }}</a></li>
+        {% if page.url == pagination.hrefs[ loop.index0 ] %}
+        <span>Page {{ loop.index }} of {{ loop.length }}</span>
+        <!-- <li><a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}><span class="visually-hidden">Page</span> {{ loop.index }}</a></li> -->
+        {% endif %}
         {%- endfor %}
     </ul>
 </nav>
