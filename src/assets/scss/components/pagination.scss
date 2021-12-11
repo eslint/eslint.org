@@ -5,102 +5,19 @@ nav.c-pagination {
         color: inherit;
     }
 
-    .c-pagination__current {
-
-    }
-
-    .pagination__next {
-        order: 1;
-        margin: .5em;
-        display: flex;
-        margin-left: auto;
-
-
-        li {
-            margin: 0;
-            margin-left: .5em;
-        }
-    }
-
-    .pagination__previous {
-        margin: .5em;
-        display: flex;
-        margin-right: auto;
-
-        li {
-            margin: 0;
-            margin-right: .5em;
-        }
-    }
-
-    li {
-        margin: .5em;
-
-        &.ellipsis {
-            display: inline-flex;
-            align-items: center;
-            color: var(--color-brand-core);
-        }
-
-        .pagination__next &,
-        .pagination__previous & {
-            a {
-                padding: var(--spacer-small) var(--spacer);
-            }
-        }
-
-        @media all and (max-width: 640px) {
-            &:nth-child(n+3) {
-                display: none;
-            }
-
-            &[data-current] {
-                display: block;
-            }
-
-            &.ellipsis {
-                display: inline-flex;
-                align-items: center;
-                line-height: 0;
-            }
-        }
-
-        a {
-            display: block;
-            text-decoration: none;
-            display: inline-flex;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            justify-content: space-between;
-            font-size: var(--step--1);
-            font-weight: 500;
-            border-radius: var(--button-radius);
-            line-height: 1.5;
-            padding: var(--spacer-x-small) var(--spacer);
-            background: #fff;
-            color: var(--color-brand-core);
-            border: 1px solid var(--color-neutral-30);
-
-            &[aria-disabled="true"],
-            &[aria-disabled="true"]:hover {
-                color: var(--color-neutral-30);
-                border: 1px solid var(--color-neutral-20);
-            }
-
-            &:hover {
-                color: var(--focus-outline-color);
-            }
-
-            &:active {
-                border-color: var(--focus-outline-color);
-            }
-
-            // &[aria-current] {
-            //     color: var(--link-color);
-            //     font-weight: 500;
-            // }
-        }
-
+    a {
+        color: var(--headings-color);
+        text-decoration: none;
     }
 }
+
+.c-pagination__item {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: .5rem .875rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-pagination__current {}

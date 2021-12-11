@@ -52,17 +52,19 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
 </div>
 
 
-<nav>
-    <span class="c-pagination__item c-pagination__current">Page {{ currentCategory.currentPage }} of {{ currentCategory.totalPages }}</span>
+<nav class="c-pagination" aria-labelledby="pagination-label">
+    <h2 id="pagination-label" hidden>Pagination</h2>
+
+    <span class="c-pagination__current">Page {{ currentCategory.currentPage }} of {{ currentCategory.totalPages }}</span>
 
     {% if currentCategory.totalPages > 1 %}
         {% if currentCategory.hrefs.previous %}
-        <a href="/blog/category/{{ currentCategory.hrefs.first }}">First</a>
-        <a href="/blog/category/{{ currentCategory.hrefs.previous }}">Previous</a>
+        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.first }}">First</a>
+        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.previous }}">Previous</a>
         {% endif %}
         {% if currentCategory.hrefs.next %}
-        <a href="/blog/category/{{ currentCategory.hrefs.next }}">Next</a>
-        <a href="/blog/category/{{ currentCategory.hrefs.last }}">Last</a>
+        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.next }}">Next</a>
+        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.last }}">Last</a>
         {% endif %}
     </ul>
     {% endif %}

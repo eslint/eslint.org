@@ -3,27 +3,26 @@
 
     {%- for pageEntry in pagination.pages %}
     {% if page.url == pagination.hrefs[ loop.index0 ] %}
-    <span class="c-pagination__item c-pagination__current">Page {{ loop.index }} of {{ loop.length }}</span>
+    <span class="c-pagination__current">Page {{ loop.index }} of {{ loop.length }}</span>
     {% endif %}
     {%- endfor %}
-    <div class="c-pagination__item c-pagination__previous">
         {% if pagination.href.previous %}
-            <a class="" href="{{ pagination.href.previous }}">Previous</a>
-        {% else %}Previous{% endif %}
-    </div>
-    <div class="c-pagination__item c-pagination__first">
+            <a class="c-pagination__item" href="{{ pagination.href.previous }}">Previous</a>
+            {% else %}
+            <a role="link" aria-disabled="true">Previous</a>
+        {% endif %}
         {% if page.url != pagination.href.first %}
-            <a class="" href="{{ pagination.href.first }}">First</a>
-        {% else %} First{% endif %}
-    </div>
-    <div class="c-pagination__item c-pagination__next">
+            <a class="c-pagination__item" href="{{ pagination.href.first }}">First</a>
+            {% else %}
+            <a role="link" aria-disabled="true">First</a>
+        {% endif %}
         {% if pagination.href.next %}
-            <a class="" href="{{ pagination.href.next }}">Next</a>
-        {% else %}Next{% endif %}
-    </div>
-    <div class="c-pagination__item c-pagination__last">
+            <a class="c-pagination__item" href="{{ pagination.href.next }}">Next</a>
+            {% else %}<a role="link" aria-disabled="true">Next</a>
+        {% endif %}
         {% if page.url != pagination.href.last %}
-            <a class="" href="{{ pagination.href.last }}">Last</a>
-        {% else %}Last{% endif %}
-    </div>
+            <a class="c-pagination__item" href="{{ pagination.href.last }}">Last</a>
+            {% else %}
+            <a role="link" aria-disabled="true">Last</a>
+        {% endif %}
 </nav>
