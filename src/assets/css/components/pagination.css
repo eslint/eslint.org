@@ -1,73 +1,60 @@
-nav.c-pagination svg {
-  color: inherit; }
-
-nav.c-pagination ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between; }
-  @media all and (max-width: 640px) {
-    nav.c-pagination ul {
-      justify-content: center; } }
-
-nav.c-pagination .pagination__next {
-  order: 1;
-  margin: .5em;
-  display: flex;
-  margin-left: auto; }
-  nav.c-pagination .pagination__next li {
-    margin: 0;
-    margin-left: .5em; }
-
-nav.c-pagination .pagination__previous {
-  margin: .5em;
-  display: flex;
-  margin-right: auto; }
-  nav.c-pagination .pagination__previous li {
-    margin: 0;
-    margin-right: .5em; }
-
-nav.c-pagination li {
-  margin: .5em; }
-  nav.c-pagination li.ellipsis {
-    display: inline-flex;
-    align-items: center;
-    color: var(--color-brand-core); }
-  .pagination__next nav.c-pagination li a,
-  .pagination__previous nav.c-pagination li a {
-    padding: var(--spacer-small) var(--spacer); }
-  @media all and (max-width: 640px) {
-    nav.c-pagination li:nth-child(n+3) {
-      display: none; }
-    nav.c-pagination li[data-current] {
-      display: block; }
+nav.c-pagination {
+  display: flex; }
+  nav.c-pagination svg {
+    color: inherit; }
+  nav.c-pagination .pagination__next {
+    order: 1;
+    margin: .5em;
+    display: flex;
+    margin-left: auto; }
+    nav.c-pagination .pagination__next li {
+      margin: 0;
+      margin-left: .5em; }
+  nav.c-pagination .pagination__previous {
+    margin: .5em;
+    display: flex;
+    margin-right: auto; }
+    nav.c-pagination .pagination__previous li {
+      margin: 0;
+      margin-right: .5em; }
+  nav.c-pagination li {
+    margin: .5em; }
     nav.c-pagination li.ellipsis {
       display: inline-flex;
       align-items: center;
-      line-height: 0; } }
-  nav.c-pagination li a {
-    display: block;
-    text-decoration: none;
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-    font-size: var(--step--1);
-    font-weight: 500;
-    border-radius: var(--button-radius);
-    line-height: 1.5;
-    padding: var(--spacer-x-small) var(--spacer);
-    background: #fff;
-    color: var(--color-brand-core);
-    border: 1px solid var(--color-neutral-30); }
-    nav.c-pagination li a[aria-disabled="true"], nav.c-pagination li a[aria-disabled="true"]:hover {
-      color: var(--color-neutral-30);
-      border: 1px solid var(--color-neutral-20); }
-    nav.c-pagination li a:hover {
-      color: var(--focus-outline-color); }
-    nav.c-pagination li a:active {
-      border-color: var(--focus-outline-color); }
+      color: var(--color-brand-core); }
+    .pagination__next nav.c-pagination li a,
+    .pagination__previous nav.c-pagination li a {
+      padding: var(--spacer-small) var(--spacer); }
+    @media all and (max-width: 640px) {
+      nav.c-pagination li:nth-child(n+3) {
+        display: none; }
+      nav.c-pagination li[data-current] {
+        display: block; }
+      nav.c-pagination li.ellipsis {
+        display: inline-flex;
+        align-items: center;
+        line-height: 0; } }
+    nav.c-pagination li a {
+      display: block;
+      text-decoration: none;
+      display: inline-flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      font-size: var(--step--1);
+      font-weight: 500;
+      border-radius: var(--button-radius);
+      line-height: 1.5;
+      padding: var(--spacer-x-small) var(--spacer);
+      background: #fff;
+      color: var(--color-brand-core);
+      border: 1px solid var(--color-neutral-30); }
+      nav.c-pagination li a[aria-disabled="true"], nav.c-pagination li a[aria-disabled="true"]:hover {
+        color: var(--color-neutral-30);
+        border: 1px solid var(--color-neutral-20); }
+      nav.c-pagination li a:hover {
+        color: var(--focus-outline-color); }
+      nav.c-pagination li a:active {
+        border-color: var(--focus-outline-color); }

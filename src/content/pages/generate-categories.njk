@@ -51,19 +51,22 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
     {% endfor %}
 </div>
 
-{% if currentCategory.totalPages > 1 %}
+
 <nav>
-    <ul>
+    <span class="c-pagination__item c-pagination__current">Page {{ currentCategory.currentPage }} of {{ currentCategory.totalPages }}</span>
+
+    {% if currentCategory.totalPages > 1 %}
         {% if currentCategory.hrefs.previous %}
-        <li><a href="/blog/category/{{ currentCategory.hrefs.first }}">First</a></li>
-        <li><a href="/blog/category/{{ currentCategory.hrefs.previous }}">Previous</a></li>
+        <a href="/blog/category/{{ currentCategory.hrefs.first }}">First</a>
+        <a href="/blog/category/{{ currentCategory.hrefs.previous }}">Previous</a>
         {% endif %}
         {% if currentCategory.hrefs.next %}
-        <li><a href="/blog/category/{{ currentCategory.hrefs.next }}">Next</a></li>
-        <li><a href="/blog/category/{{ currentCategory.hrefs.last }}">Last</a></li>
+        <a href="/blog/category/{{ currentCategory.hrefs.next }}">Next</a>
+        <a href="/blog/category/{{ currentCategory.hrefs.last }}">Last</a>
         {% endif %}
     </ul>
+    {% endif %}
 </nav>
-{% endif %}
+
 
 {% endblock %}

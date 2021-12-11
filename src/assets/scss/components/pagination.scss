@@ -1,22 +1,11 @@
 nav.c-pagination {
+    display: flex;
 
     svg {
         color: inherit;
     }
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-between;
-
-        @media all and (max-width: 640px) {
-            justify-content: center;
-        }
+    .c-pagination__current {
 
     }
 
@@ -107,11 +96,10 @@ nav.c-pagination {
                 border-color: var(--focus-outline-color);
             }
 
-            &[aria-current] {
-                // background: var(--color-brand-core);
-                // border-color: var(--color-brand-core);
-                // color: #fff;
-            }
+            // &[aria-current] {
+            //     color: var(--link-color);
+            //     font-weight: 500;
+            // }
         }
 
     }

@@ -1,56 +1,29 @@
 <nav class="c-pagination" aria-labelledby="pagination-label">
-    <h2 id="pagination-label" class="visually-hidden">Pagination</h2>
-    <span id="t-page" hidden>Page</span>
-    <span id="t-break" hidden>:</span>
+    <h2 id="pagination-label" hidden>Pagination</h2>
 
-    <ul>
-        <li>
-        {% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>
-        {% else %}First{% endif %}
-    </li>
-    <li>
-        {% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>
+    {%- for pageEntry in pagination.pages %}
+    {% if page.url == pagination.hrefs[ loop.index0 ] %}
+    <span class="c-pagination__item c-pagination__current">Page {{ loop.index }} of {{ loop.length }}</span>
+    {% endif %}
+    {%- endfor %}
+    <div class="c-pagination__item c-pagination__previous">
+        {% if pagination.href.previous %}
+            <a class="" href="{{ pagination.href.previous }}">Previous</a>
+        {% else %}Previous{% endif %}
+    </div>
+    <div class="c-pagination__item c-pagination__first">
+        {% if page.url != pagination.href.first %}
+            <a class="" href="{{ pagination.href.first }}">First</a>
+        {% else %} First{% endif %}
+    </div>
+    <div class="c-pagination__item c-pagination__next">
+        {% if pagination.href.next %}
+            <a class="" href="{{ pagination.href.next }}">Next</a>
+        {% else %}Next{% endif %}
+    </div>
+    <div class="c-pagination__item c-pagination__last">
+        {% if page.url != pagination.href.last %}
+            <a class="" href="{{ pagination.href.last }}">Last</a>
         {% else %}Last{% endif %}
-    </li>
-        <div class="pagination__previous">
-            <li>
-                    {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" id="t-page-previous" aria-labelledby="t-page-previous t-page">Previous</a>
-            {% else %}Previous{% endif %}
-            </li>
-        </div>
-        <div class="pagination__next">
-            <li>
-                <!-- <a role="link" aria-disabled="true"><span class="visually-hidden">Next</span> </a> -->
-                {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>
-            {% else %}Next{% endif %}
-            </li>
-        </div>
-
-
-        {%- for pageEntry in pagination.pages %}
-        {% if page.url == pagination.hrefs[ loop.index0 ] %}
-        <span>Page {{ loop.index }} of {{ loop.length }}</span>
-        <!-- <li><a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}><span class="visually-hidden">Page</span> {{ loop.index }}</a></li> -->
-        {% endif %}
-        {%- endfor %}
-    </ul>
+    </div>
 </nav>
-
-<!--
-
-    <nav aria-label="Pagination" class="c-pagination">
-
-    <ul>
-        <li><a href="" id="t-page-next" aria-labelledby="t-page-next t-page t-break t-page t-page-3">Next</a></li>
-        <li><a href="" id="t-page-previous"
-                aria-labelledby="t-page-previous t-page t-break t-page t-page-3">Previous</a></li>
-        <li><a href="#" id="t-page-1" aria-labelledby="t-page t-page-1">1</a></li>
-        <li><a href="#" id="t-page-2" aria-labelledby="t-page t-page-2" aria-current="true">2</a></li>
-        <li><a href="#" id="t-page-3" aria-labelledby="t-page t-page-3">3</a></li>
-        <li><a href="#" id="t-page-4" aria-labelledby="t-page t-page-4">4</a></li>
-        <li><a href="#" id="t-page-5" aria-labelledby="t-page t-page-5">5</a></li>
-        <li><a href="#" id="t-page-6" aria-labelledby="t-page t-page-6">6</a></li>
-        <li><a href="#" id="t-page-7" aria-labelledby="t-page t-page-7">7</a></li>
-    </ul>
-</nav>
--->
