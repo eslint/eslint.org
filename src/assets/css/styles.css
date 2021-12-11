@@ -1124,9 +1124,10 @@ ul.donation-plan__features,
 .blog-posts {
   margin-bottom: var(--space-l-2xl);
   display: grid;
-  grid-gap: 3rem 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  overflow: initial; }
+  grid-gap: 3rem 2rem; }
+  @media all and (min-width: 640px) {
+    .blog-posts {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
 
 .card {
   text-align: left;
@@ -1135,30 +1136,26 @@ ul.donation-plan__features,
   flex-direction: column;
   gap: 2rem;
   flex: none; }
-  @media all and (min-width: 640px) {
-    .card {
-      margin-bottom: 0; } }
 
-.blog-page .card:first-of-type {
+.blog-page .card:first-of-type,
+.card--featured {
   grid-column: 1 / -1;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: var(--space-xl-2xl); }
-  .blog-page .card:first-of-type .card__cover {
+  .blog-page .card:first-of-type .card__cover,
+  .card--featured .card__cover {
     flex: 3 1 400px; }
-  .blog-page .card:first-of-type .card__content {
+  .blog-page .card:first-of-type .card__content,
+  .card--featured .card__content {
     flex: 3 1 200px; }
-
-.card--featured {
-  display: flex;
-  flex-wrap: wrap; }
 
 .card__cover {
   display: block; }
   .card__cover img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     border-radius: var(--border-radius);
     object-fit: cover;
@@ -1316,7 +1313,7 @@ nav.c-pagination {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem; }
+  gap: 1rem; }
   nav.c-pagination svg {
     color: inherit; }
   nav.c-pagination a {
