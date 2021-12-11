@@ -55,18 +55,21 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
 <nav class="c-pagination" aria-labelledby="pagination-label">
     <h2 id="pagination-label" hidden>Pagination</h2>
 
-    <span class="c-pagination__current">Page {{ currentCategory.currentPage }} of {{ currentCategory.totalPages }}</span>
+    <span class="c-pagination__item c-pagination__current">Page {{ currentCategory.currentPage }} of {{ currentCategory.totalPages }}</span>
 
     {% if currentCategory.totalPages > 1 %}
-        {% if currentCategory.hrefs.previous %}
-        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.first }}">First</a>
-        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.previous }}">Previous</a>
-        {% endif %}
-        {% if currentCategory.hrefs.next %}
-        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.next }}">Next</a>
-        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.last }}">Last</a>
-        {% endif %}
-    </ul>
+        <div class="c-pagination__prev">
+            {% if currentCategory.hrefs.previous %}
+            <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.first }}">First</a>
+            <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.previous }}">Previous</a>
+            {% endif %}
+        </div>
+        <div class="c-pagination__next">
+            {% if currentCategory.hrefs.next %}
+            <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.next }}">Next</a>
+            <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.last }}">Last</a>
+            {% endif %}
+        </div>
     {% endif %}
 </nav>
 

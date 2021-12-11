@@ -1,5 +1,8 @@
 nav.c-pagination {
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem; }
   nav.c-pagination svg {
     color: inherit; }
   nav.c-pagination a {
@@ -12,4 +15,35 @@ nav.c-pagination {
   padding: .5rem .875rem;
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  line-height: 1;
+  gap: .5rem;
+  transition: all .1s linear; }
+  .c-pagination__item:hover {
+    border-color: var(--link-color); }
+  .c-pagination__item[aria-disabled] {
+    color: var(--body-text-color);
+    border-color: var(--divider-color); }
+    .c-pagination__item[aria-disabled]:hover {
+      border-color: var(--divider-color); }
+
+.c-pagination__prev {
+  order: 1;
+  display: flex;
+  gap: .5rem; }
+
+.c-pagination__current {
+  order: 2; }
+
+.c-pagination__next {
+  order: 3;
+  display: flex;
+  gap: .5rem; }
+
+.c-pagination__current {
+  border: none; }
+  @media all and (max-width: 640px) {
+    .c-pagination__current {
+      display: flex;
+      order: 1;
+      flex: 0 1 9999px; } }
