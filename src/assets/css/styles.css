@@ -1155,7 +1155,7 @@ ul.donation-plan__features,
   display: block; }
   .card__cover img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     border-radius: var(--border-radius);
     object-fit: cover;
@@ -1358,6 +1358,17 @@ nav.c-pagination {
       display: flex;
       order: 1;
       flex: 0 1 9999px; } }
+
+@media all and (max-width: 640px) {
+  .c-pagination__item__text {
+    /* visually-hide */
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; } }
 
 .c-accordion__heading {
   font-size: var(--step-1);

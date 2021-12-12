@@ -7,37 +7,37 @@
     {% endif %}
     {%- endfor %}
     <div class="c-pagination__prev">
+        {% if page.url != pagination.href.first %}
+        <a class="c-pagination__item" href="{{ pagination.href.first }}">First</a>
+        {% else %}
+        <a class="c-pagination__item" role="link" aria-disabled="true">First</a>
+        {% endif %}
         {% if pagination.href.previous %}
         <a class="c-pagination__item" href="{{ pagination.href.previous }}">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
-            Previous</a>
+            <span class="c-pagination__item__text">Previous</span></a>
         {% else %}
         <a class="c-pagination__item" role="link" aria-disabled="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            Previous</a>
+            <span class="c-pagination__item__text">Previous</span></a>
         {% endif %}
-        {% if page.url != pagination.href.first %}
-        <a class="c-pagination__item" href="{{ pagination.href.first }}">First</a>
-        {% else %}
-        <a class="c-pagination__item" role="link" aria-disabled="true">First</a>
-        {% endif %}
+
     </div>
     <div class="c-pagination__next">
         {% if pagination.href.next %}
         <a class="c-pagination__item" href="{{ pagination.href.next }}">
-
-            Next
+            <span class="c-pagination__item__text">Next</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg></a>
         {% else %}<a class="c-pagination__item" role="link" aria-disabled="true">
 
-            Next
+            <span class="c-pagination__item__text">Next</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg></a>

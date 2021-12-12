@@ -66,3 +66,16 @@ nav.c-pagination {
         flex: 0 1 9999px;
     }
 }
+
+.c-pagination__item__text {
+    @media all and (max-width: 640px) {
+        /* visually-hide */
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+    }
+}
