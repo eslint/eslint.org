@@ -8,6 +8,7 @@
 .language-switcher__toggle {
     color: inherit;
     width: 100%;
+    background-color: var(--body-background-color);
 
     &:hover {
         border-color: var(--border-color);
@@ -17,21 +18,22 @@
 
 
 .language-switcher__dropdown {
-    padding: 1.25rem 1.125rem .75rem;
+    padding: .75rem 1.125rem;
     z-index: 1;
     text-align: left;
     background-color: var(--body-background-color);
     border: 1px solid var(--border-color);
-    border-top: none;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-    margin-top: -.5rem;
-    max-height: 150px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    // margin-top: -.5rem;
+    max-height: 400px;
     overflow-y: auto;
 }
 
 .language-switcher__toggle[aria-expanded="true"]+.language-switcher__dropdown {
     position: absolute;
-    top: 100%;
+    top: calc(100% + .5rem);
     width: 100%;
 }
 
