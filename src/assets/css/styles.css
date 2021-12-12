@@ -1597,8 +1597,7 @@ button .dw-toggle__chevron {
     width: 100%;
     padding: .75rem .1rem;
     text-decoration: none;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
     align-items: center;
     border-bottom: 1px solid var(--divider-color); }
     .languages-list a[aria-current="true"] {
