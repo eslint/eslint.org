@@ -1581,7 +1581,14 @@ button .dw-toggle__chevron {
 
 .language-switcher__toggle[aria-expanded="true"] + .language-switcher__dropdown {
   position: absolute;
-  top: calc(100% + .5rem);
+  width: 100%; }
+
+.language-switcher__toggle[aria-expanded="true"] + .language-switcher__dropdown[data-pos-bottom] {
+  top: calc(100% + .5rem); }
+
+.language-switcher__toggle[aria-expanded="true"] + .language-switcher__dropdown[data-pos-top] {
+  position: absolute;
+  bottom: calc(100% + .5rem);
   width: 100%; }
 
 .languages-list {

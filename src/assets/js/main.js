@@ -59,8 +59,18 @@
 
 /* language switcher disclosure widget enhancement */
 (function() {
-    var languages_toggle = document.getElementById("languages-toggle");
+    var languages_toggle = document.getElementById("languages-toggle"),
+        languages_dropdown = document.getElementById("languages-dropdown"),
+        toggleRect = languages_toggle.getBoundingClientRect(),
+        spaceBelow = window.innerHeight - toggleRect.bottom,
+        dropdownHeight = languages_dropdown.offsetHeight;
 
+        if(spaceBelow < dropdownHeight) languages_dropdown.setAttribute('data-pos-top', '');
+        else languages_dropdown.setAttribute('data-pos-top', '');
+
+        console.log(spaceBelow);
+
+        languages_dropdown.removeAttribute('hidden');
         // enhance it into a button
         languages_toggle.setAttribute('role', 'button');
 

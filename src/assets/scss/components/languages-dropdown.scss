@@ -26,14 +26,22 @@
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
     overflow: hidden;
-    // margin-top: -.5rem;
     max-height: 400px;
     overflow-y: auto;
 }
 
 .language-switcher__toggle[aria-expanded="true"]+.language-switcher__dropdown {
     position: absolute;
+    width: 100%;
+}
+
+.language-switcher__toggle[aria-expanded="true"]+.language-switcher__dropdown[data-pos-bottom] {
     top: calc(100% + .5rem);
+}
+
+.language-switcher__toggle[aria-expanded="true"]+.language-switcher__dropdown[data-pos-top] {
+    position: absolute;
+    bottom: calc(100% + .5rem);
     width: 100%;
 }
 
@@ -56,9 +64,6 @@
         width: 100%;
         padding: .75rem .1rem;
         text-decoration: none;
-
-        // display: grid;
-        // grid-template-columns: auto auto auto;
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--divider-color);
