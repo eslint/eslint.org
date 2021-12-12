@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: main.html
+layout: blog.html
 hook: "blog-page"
 permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
 
@@ -10,30 +10,7 @@ pagination:
     size: 9
 ---
 
-<div class="section hero">
-    <div class="content-container grid">
-        <div class="span-1-7">
-            <h1 class="section-title h2">Resources and insights</h1>
-            <p class="section-supporting-text">
-                The latest industry news, interviews, technologies, and resources.
-            </p>
-        </div>
-        <div class="span-11-12">
-            carbon ad here
-        </div>
-    </div>
-</div>
 
-<div class="content-container grid">
-    <aside class="span-1-3">
-        <!-- <form action="" role="search">
-
-        </form> -->
-
-        {% include 'partials/blog-categories.html' %}
-    </aside>
-
-    <div class="span-4-12">
         <div class="blog-posts">
             {% set postItems = pagination.items %}
             {% for item in postItems %}
@@ -76,8 +53,3 @@ pagination:
 
             {% endfor %}
         </div>
-    </div>
-    <div class="span-4-12">
-        {% include "components/pagination.html" %}
-    </div>
-</div>
