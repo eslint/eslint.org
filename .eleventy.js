@@ -2,13 +2,13 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const slugify = require("slugify");
 
 const {
     DateTime
 } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-
     let now = new Date();
 
     /*****************************************************************************************
@@ -21,8 +21,19 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('jsonify', function(variable) {
         return JSON.stringify(variable);
     });
-    /* order collection by the order specified in the front matter (useful for course content)
-       hat tip: https://www.martinjc.com/blog/posts/2020-10-19-course-notes-with-eleventy/ */
+
+    eleventyConfig.addFilter('slugify', function(str) {
+        if (!str) {
+            return;
+        }
+
+        return slugify(str, {
+            lower: true,
+            strict: true,
+            remove: /["]/g,
+        });
+    });
+    /* order collection by the order specified in the front matter */
     eleventyConfig.addFilter("sortByPageOrder", function(values) {
         return values.slice().sort((a, b) => a.data.order - b.data.order);
     });
@@ -38,33 +49,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("readableDateFromISO", (ISODate) => {
         return DateTime.fromISO(ISODate).toUTC().toLocaleString(DateTime.DATE_FULL);
     });
-
-    // squash. Source: https://github.com/philhawksworth/hawksworx.com/blob/8c96ba2541c8fd6fe6f521cdb5e17848c231636c/src/site/_filters/squash.js
-    // info: https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/
-    eleventyConfig.addFilter("squash", function(text) {
-        var content = new String(text);
-
-        // all lower case, please
-        var content = content.toLowerCase();
-
-        // remove all html elements and new lines
-        var re = /(&lt;.*?&gt;)/gi;
-        var plain = unescape(content.replace(re, ''));
-
-        // remove duplicated words
-        var words = plain.split(' ');
-        var deduped = [...(new Set(words))];
-        var dedupedStr = deduped.join(' ')
-
-        // remove short and less meaningful words
-        var result = dedupedStr.replace(/\b(\.|\,|the|a|an|and|am|you|I|to|if|of|off|me|my|on|in|it|is|at|as|we|do|be|has|but|was|so|no|not|or|up|for)\b/gi, '');
-        //remove newlines, and punctuation
-        result = result.replace(/\.|\,|\?|-|—|\n/g, '');
-        //remove repeated spaces
-        result = result.replace(/[ ]{2,}/g, ' ');
-
-        return result;
-    })
 
     eleventyConfig.addFilter('dollars', value => {
         return new Intl.NumberFormat("en-US", {
@@ -82,13 +66,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(pluginRss);
     // add IDs to the headers
     const markdownIt = require('markdown-it');
-    const markdownItAnchor = require('markdown-it-anchor');
+
     eleventyConfig.setLibrary("md",
         markdownIt({
             html: true,
             linkify: true,
             typographer: true,
-        }).use(markdownItAnchor, {})
+
+        }).disable('code')
     );
 
 
@@ -130,11 +115,22 @@ module.exports = function(eleventyConfig) {
      *  Collections
      * ***************************************************************************************/
 
-    eleventyConfig.addCollection("blog", function(collection) {
-        return collection.getFilteredByGlob("./src/content/blog/**/*.md").filter((item) => {
-            return !item.data.draft && item.date <= now;
-        }).reverse();
-    });
+    eleventyConfig.addCollection(
+        "blogposts",
+        require("./src/_11ty/collections/blogposts.js")
+    );
+
+    // blogposts unique categories
+    eleventyConfig.addCollection(
+        "blogCategories",
+        require("./src/_11ty/collections/blogpostsCategories.js")
+    );
+
+    // blogposts by categories
+    eleventyConfig.addCollection(
+        "blogpostsByCategories",
+        require("./src/_11ty/collections/blogpostsByCategories.js")
+    );
 
     /*****************************************************************************************
      *  Shortcodes

@@ -7,13 +7,17 @@ hook: "blog-post-page"
 
 <main id="main" tabindex="-1">
     <div class="section hero">
-        <div class="content-container">
-            <div>
+        <div class="content-container grid">
+            <div class="span-1-7">
+                <p class="post__meta">Published {{ page.date | readableDate }} under <a href="/blog/category/{{ categories[0] | slugify }}">{{ categories  }}</a></p>
                 <h1 class="section-title h2">{{title}}</h1>
                 <p class="section-supporting-text">
                     {{teaser}}
                 </p>
             </div>
+            <div class="span-11-12">
+            carbon ad here
+        </div>
         </div>
     </div>
     <div class="content-container">
@@ -22,5 +26,7 @@ hook: "blog-post-page"
 
     </div>
 </main>
+
+{% include "partials/from-the-blog.html" %}
 
 {% include "partials/footer.html" %}
