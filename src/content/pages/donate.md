@@ -8,7 +8,7 @@ hook: "donate-page"
 <div class="section hero">
     <div class="content-container grid">
         <div class="span-1-7">
-            <h1 class="section-title h2">Donate</h1>
+            <h1 class="section-title">Donate</h1>
             <p class="section-supporting-text">
                 ESLint relies on donations for ongoing maintenance and development. There are currently 525 companies, organizations, and individuals donating $15,000 each month to help us out.
             </p>

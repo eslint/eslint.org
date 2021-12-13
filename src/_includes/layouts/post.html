@@ -1,6 +1,6 @@
 ---
 layout: base.html
-hook: "blog-post-page"
+hook: "post blog-post-page"
 ---
 
 {% include "partials/header.html" %}
@@ -10,7 +10,7 @@ hook: "blog-post-page"
         <div class="content-container grid">
             <div class="span-1-7">
                 <p class="post__meta">Published {{ page.date | readableDate }} under <a href="/blog/category/{{ categories[0] | slugify }}">{{ categories  }}</a></p>
-                <h1 class="section-title h2">{{title}}</h1>
+                <h1 class="section-title">{{title}}</h1>
                 <p class="section-supporting-text">
                     {{teaser}}
                 </p>
@@ -20,9 +20,13 @@ hook: "blog-post-page"
         </div>
         </div>
     </div>
-    <div class="content-container">
-
-        {{ content | safe }}
+    <div class="content-container grid">
+        <aside class="span-1-3">
+            meta
+        </aside>
+        <div class="span-4-12">
+            {{ content | safe }}
+        </div>
 
     </div>
 </main>
