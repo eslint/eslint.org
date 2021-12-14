@@ -10,9 +10,9 @@ hook: "post blog-post-page"
         <div class="content-container grid">
             <div class="span-1-7">
                 <p class="post__meta">Published {{ page.date | readableDate }} under <a href="/blog/category/{{ categories[0] | slugify }}">{{ categories  }}</a></p>
-                <h1 class="section-title">{{title}}</h1>
+                <h1 class="section-title">{{ title }}</h1>
                 <p class="section-supporting-text">
-                    {{teaser}}
+                    {{ teaser }}
                 </p>
             </div>
             <div class="span-11-12">

@@ -356,6 +356,11 @@ code,
 pre {
   font-family: var(--mono-font); }
 
+code {
+  color: var(--link-color); }
+  pre code {
+    color: unset; }
+
 .c-icon {
   color: var(--icon-color);
   flex: none;

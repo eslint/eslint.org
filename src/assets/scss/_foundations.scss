@@ -128,10 +128,10 @@ pre {
 }
 
 code {
-    // color: var(--color-brand);
+    color: var(--link-color);
 
     pre & {
-        // color: unset;
+        color: unset;
     }
 }
 
