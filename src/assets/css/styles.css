@@ -1383,7 +1383,11 @@ ul.tag-list {
   font-weight: 500;
   margin-bottom: 1rem; }
 
-.post__sidebar-module__title {
+.post__sidebar-module {
+  margin-bottom: 2rem; }
+
+.post__sidebar-module__title.post__sidebar-module__title {
+  margin-top: 0;
   color: inherit;
   font-family: inherit;
   font-size: var(--step-0);
@@ -1917,6 +1921,9 @@ ul.donations-list {
 
 .span-4-11 {
   grid-column: 4 / 11; }
+
+.span-5-12 {
+  grid-column: 5 / 12; }
 
 .span-3-10 {
   grid-column: 3 / 11; }

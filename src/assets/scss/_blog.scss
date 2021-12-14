@@ -207,10 +207,11 @@ ul.tag-list {
 }
 
 .post__sidebar-module {
-
+    margin-bottom: 2rem;
 }
 
-.post__sidebar-module__title {
+.post__sidebar-module__title.post__sidebar-module__title {
+    margin-top: 0;
     color: inherit;
     font-family: inherit;
     font-size: var(--step-0);
