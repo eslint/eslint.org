@@ -222,6 +222,12 @@ h5, .post
 h6 {
   margin-top: 3rem;
   margin-bottom: 1.5rem; }
+  .post h2:first-of-type, .post
+  h3:first-of-type, .post
+  h4:first-of-type, .post
+  h5:first-of-type, .post
+  h6:first-of-type {
+    margin-top: 0; }
 
 h6,
 .h6 {
