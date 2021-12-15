@@ -21,7 +21,7 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
 
     <article class='card blog-post {%- if post.data.featured == "true" -%} card--featured {%- endif -%}'>
         <a href="{{ post.url }}" class="card__cover">
-            <img src="./../../../../assets/images/blog-covers/{%- if post.data.cover -%}{{ post.data.cover }}{%- else -%}{{ post.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ post.data.title }}" />
+            <img src="./../../../assets/images/blog-covers/{%- if post.data.image -%}{{ post.data.image }}{%- else -%}{{ post.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ post.data.title }}" />
         </a>
         <div class="card__content">
             <div class="badge-group">
