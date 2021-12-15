@@ -215,6 +215,15 @@ ul[role="list"] {
     }
 }
 
+ol {
+    list-style: decimal;
+
+    &::marker {
+        color: var(--link-color);
+    }
+}
+
+
 figure {
     margin-bottom: 4rem;
 

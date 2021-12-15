@@ -422,6 +422,11 @@ ul[role="list"] {
   ul[role="list"] li {
     margin: 0; }
 
+ol {
+  list-style: decimal; }
+  ol::marker {
+    color: var(--link-color); }
+
 figure {
   margin-bottom: 4rem; }
   figure img {
