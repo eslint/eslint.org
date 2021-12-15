@@ -25,28 +25,29 @@ hook: "post blog-post-page"
             <div class="post__sidebar-module divider">
                 <h2 class="post__sidebar-module__title">Contributors</h2>
             </div>
+
+            {% if tags %}
             <div class="post__sidebar-module divider">
-                {% if tags %}
                 <h2 class="post__sidebar-module__title">Tags</h2>
                 <ul role="list" class="tag-list">
                     {% for tag in tags %}
                     <li class="tag-list__item">{{ tag }}</li>
                     {% endfor %}
                 </ul>
-                {% endif %}
             </div>
+            {% endif %}
 
             <div class="post__sidebar-module divider">
                 <h2 class="post__sidebar-module__title">Share</h2>
                 {% include "components/post-share.html" %}
             </div>
 
+            {% if original %}
             <div class="post__sidebar-module">
-                {% if original %}
                 <h2 class="post__sidebar-module__title">Source</h2>
                 <p class="text-dark">Originally Posted at <a href="{{ original.url }}">{{ original.site.name }}</a> on {{ original.date | readableDate }} </p>
-                {% endif %}
             </div>
+            {% endif %}
 
         </aside>
         <div class="span-5-12">
