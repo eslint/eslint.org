@@ -42,7 +42,10 @@ hook: "post blog-post-page"
             </div>
 
             <div class="post__sidebar-module">
+                {% if original %}
                 <h2 class="post__sidebar-module__title">Source</h2>
+                <p class="text-dark">Originally Posted at <a href="{{ original.url }}">{{ original.site.name }}</a> on {{ original.date | readableDate }} </p>
+                {% endif %}
             </div>
 
         </aside>
