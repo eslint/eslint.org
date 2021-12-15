@@ -1378,7 +1378,14 @@ ul.donation-plan__features,
 
 /* individual post page */
 .post__sidebar {
-  grid-row: 1; }
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  align-items: start; }
+  @media all and (max-width: 1023px) {
+    .post__sidebar {
+      margin-top: 4rem; } }
 
 ul.tag-list {
   display: flex;
