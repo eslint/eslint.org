@@ -225,6 +225,12 @@ ul.tag-list {
 
 
 .post__sidebar-module {
+    border-bottom: 1px solid var(--divider-color);
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
     .person.contributor {
         margin-bottom: 1.5rem;
 

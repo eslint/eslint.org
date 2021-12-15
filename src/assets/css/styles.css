@@ -1410,10 +1410,14 @@ ul.tag-list {
   font-size: var(--step-0);
   margin-bottom: 1.5rem; }
 
-.post__sidebar-module .person.contributor {
-  margin-bottom: 1.5rem; }
-  .post__sidebar-module .person.contributor:last-of-type {
-    margin-bottom: 0; }
+.post__sidebar-module {
+  border-bottom: 1px solid var(--divider-color); }
+  .post__sidebar-module:last-of-type {
+    border-bottom: none; }
+  .post__sidebar-module .person.contributor {
+    margin-bottom: 1.5rem; }
+    .post__sidebar-module .person.contributor:last-of-type {
+      margin-bottom: 0; }
 
 /* from the blog section */
 .from-the-blog__title {

@@ -1,5 +1,5 @@
 <aside class="span-1-3 post__sidebar">
-            <div class="post__sidebar-module divider">
+            <div class="post__sidebar-module">
                 <h2 class="post__sidebar-module__title">Contributors</h2>
                 {% for author in authors %}
                 {{ contributor({
@@ -11,7 +11,7 @@
             </div>
 
             {% if tags %}
-            <div class="post__sidebar-module divider">
+            <div class="post__sidebar-module">
                 <h2 class="post__sidebar-module__title">Tags</h2>
                 <ul role="list" class="tag-list">
                     {% for tag in tags %}
@@ -21,7 +21,7 @@
             </div>
             {% endif %}
 
-            <div class="post__sidebar-module divider">
+            <div class="post__sidebar-module">
                 <h2 class="post__sidebar-module__title">Share</h2>
                 {% include "components/post-share.html" %}
             </div>
