@@ -263,9 +263,6 @@ h1,
 small, caption, cite, figcaption {
   font-size: var(--step--1); }
 
-::marker {
-  color: var(--color-accent); }
-
 ::selection {
   background-color: var(--color-brand);
   color: #fff; }
@@ -424,7 +421,7 @@ ul[role="list"] {
 
 ol {
   list-style: decimal; }
-  ol::marker {
+  ol li::marker {
     color: var(--link-color); }
 
 figure {

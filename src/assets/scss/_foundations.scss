@@ -1,7 +1,3 @@
-::marker {
-    color: var(--color-accent);
-}
-
 ::selection {
     background-color: var(--color-brand);
     color: #fff;
@@ -218,7 +214,7 @@ ul[role="list"] {
 ol {
     list-style: decimal;
 
-    &::marker {
+    li::marker {
         color: var(--link-color);
     }
 }
