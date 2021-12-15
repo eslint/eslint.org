@@ -60,10 +60,8 @@ nav.c-pagination {
 .c-pagination__current {
     border: none;
 
-    @media all and (max-width: 640px) {
-        display: flex;
-        order: 1;
-        flex: 0 1 9999px;
+    @media all and (max-width: 480px) {
+        display: none;
     }
 }
 
