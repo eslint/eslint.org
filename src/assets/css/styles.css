@@ -1391,8 +1391,7 @@ ul.donation-plan__features,
 ul.tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
-  margin-bottom: 2rem; }
+  gap: .5rem; }
 
 .tag-list__item {
   background-color: var(--lightest-background-color);
