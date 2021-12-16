@@ -1425,6 +1425,9 @@ ul.tag-list {
     margin-bottom: 1.5rem; }
     .post__sidebar-module .person.contributor:last-of-type {
       margin-bottom: 0; }
+  .post__sidebar-module .person__photo {
+    width: 3rem;
+    height: 3rem; }
 
 /* from the blog section */
 .from-the-blog__title {
