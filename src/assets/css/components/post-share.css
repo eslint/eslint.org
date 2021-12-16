@@ -10,9 +10,10 @@
   display: inline-flex;
   align-items: center;
   color: var(--icon-color); }
-  .c-share__btn:first-of-type {
-    color: var(--dark-icon-color); }
   .c-share__btn:hover, .c-share__btn:focus {
     color: var(--headings-color); }
   .c-share__btn svg {
     color: inherit; }
+
+button.c-share__btn {
+  color: var(--dark-icon-color); }

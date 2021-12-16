@@ -13,10 +13,6 @@
     align-items: center;
     color: var(--icon-color);
 
-    &:first-of-type {
-        color: var(--dark-icon-color);
-    }
-
     &:hover, &:focus {
         color: var(--headings-color);
     }
@@ -24,4 +20,8 @@
     svg {
         color: inherit;
     }
+}
+
+button.c-share__btn {
+    color: var(--dark-icon-color);
 }

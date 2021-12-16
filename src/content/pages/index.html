@@ -278,7 +278,9 @@ eleventyExcludeFromCollections: true
 
     copyBtn.onclick = () => {
         copyText.select();
-        document.execCommand('copy');
+        // document.execCommand('copy');
+        navigator.clipboard.writeText(copyText.value);
+        // alert("Copied to clipboard");
         liveRegion.innerHTML = "Installation code copied to clipboard."
         this.focus();
     }

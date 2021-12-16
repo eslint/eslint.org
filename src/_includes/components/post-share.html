@@ -1,12 +1,14 @@
 <div class="c-share">
-    <a href="" class="c-share__btn">
+    <button onclick="copyPageURLToClipboard();" class="c-share__btn" id="post-url-share-btn" hidden>
         <span class="visually-hidden">Share on: </span>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" role="img" aria-label="Link">
             <path d="M8.3335 10.8333C8.69138 11.3118 9.14796 11.7077 9.67229 11.9941C10.1966 12.2806 10.7764 12.4509 11.3724 12.4936C11.9683 12.5363 12.5665 12.4503 13.1263 12.2415C13.6861 12.0327 14.1944 11.7059 14.6168 11.2833L17.1168 8.78335C17.8758 7.9975 18.2958 6.94499 18.2863 5.85251C18.2768 4.76002 17.8386 3.71497 17.0661 2.94243C16.2935 2.1699 15.2485 1.7317 14.156 1.7222C13.0635 1.71271 12.011 2.13269 11.2252 2.89168L9.79183 4.31668M11.6668 9.16668C11.309 8.68824 10.8524 8.29236 10.328 8.0059C9.80371 7.71943 9.22391 7.54908 8.62796 7.5064C8.032 7.46372 7.43384 7.54971 6.87405 7.75853C6.31425 7.96735 5.8059 8.29412 5.3835 8.71668L2.8835 11.2167C2.12451 12.0025 1.70453 13.055 1.71402 14.1475C1.72352 15.24 2.16172 16.2851 2.93426 17.0576C3.70679 17.8301 4.75184 18.2683 5.84433 18.2778C6.93681 18.2873 7.98932 17.8673 8.77517 17.1083L10.2002 15.6833" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-    </a>
+    </button>
 
-    <a href="" class="c-share__btn">
+    <span class="visually-hidden" aria-live="polite" aria-atomic="true" id="ctc-announcement"></span>
+
+    <a class="c-share__btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text={{ title | URIencode }}&url=https://eslint.org{{ page.url | URIencode }}">
         <span class="visually-hidden">Share on: </span>
         <svg width="20" height="20" viewBox="0 0 24 25" fill="none" role="img" aria-label="Twitter">
             <path d="M24 4.70918C23.1 5.10918 22.2 5.40918 21.2 5.50918C22.2 4.90918 23 3.90918 23.4 2.80918C22.4 3.40918 21.4 3.80918 20.3 4.00918C19.4 3.00918 18.1 2.40918 16.7 2.40918C14 2.40918 11.8 4.60918 11.8 7.30918C11.8 7.70918 11.8 8.10918 11.9 8.40918C7.7 8.20918 4.1 6.20918 1.7 3.20918C1.2 4.00918 1 4.80918 1 5.70918C1 7.40918 1.9 8.90918 3.2 9.80918C2.4 9.80918 1.6 9.60918 1 9.20918C1 9.20918 1 9.20918 1 9.30918C1 11.7092 2.7 13.7092 4.9 14.1092C4.5 14.2092 4.1 14.3092 3.6 14.3092C3.3 14.3092 3 14.3092 2.7 14.2092C3.3 16.2092 5.1 17.6092 7.3 17.6092C5.6 18.9092 3.5 19.7092 1.2 19.7092C0.8 19.7092 0.4 19.7092 0 19.6092C2.2 21.0092 4.8 21.8092 7.5 21.8092C16.6 21.8092 21.5 14.3092 21.5 7.80918C21.5 7.60918 21.5 7.40918 21.5 7.20918C22.5 6.50918 23.3 5.60918 24 4.70918Z" fill="currentColor" />
@@ -14,18 +16,33 @@
     </a>
 
 
-    <a href="" class="c-share__btn">
+    <a class="c-share__btn" target="_blank" rel="noopener" href="http://www.facebook.com/sharer/sharer.php?u=https://eslint.org{{ page.url | URIencode }}">
         <span class="visually-hidden">Share on: </span>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" role="img" aria-label="Facebook">
             <path d="M20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 14.9912 3.65684 19.1283 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3084 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.95 6.5625 11.5625 7.3334 11.5625 8.125V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3432 19.1283 20 14.9912 20 10Z" fill="currentColor" />
         </svg>
     </a>
 
-    <a href="" class="c-share__btn">
+    <a class="c-share__btn" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?mini=true&url=https://eslint.org{{ page.url | URIencode }}&title={{ title | URIencode }}">
         <span class="visually-hidden">Share on: </span>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" role="img" aria-label="LinkedIn">
             <path d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42187 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043V17.043Z" fill="currentColor" />
         </svg></a>
-
-
 </div>
+
+<script>
+        var shareBtn = document.getElementById('post-url-share-btn');
+        shareBtn.removeAttribute('hidden');
+
+        function copyPageURLToClipboard() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url);
+            announceCopyToSRs();
+            // alert("Page URL copied to clipboard");
+        }
+
+        function announceCopyToSRs() {
+            var announcement_region = document.getElementById('ctc-announcement');
+            announcement_region.innerHTML = 'Page URL copied to clipboard.'
+        }
+    </script>
