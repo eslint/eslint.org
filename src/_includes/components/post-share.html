@@ -38,6 +38,7 @@
             const url = window.location.href;
             navigator.clipboard.writeText(url);
             announceCopyToSRs();
+            shareBtn.setAttribute('data-copied', 'true');
             // alert("Page URL copied to clipboard");
         }
 

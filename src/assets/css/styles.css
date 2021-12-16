@@ -846,7 +846,10 @@ a.c-btn {
   color: var(--color-neutral-500); }
 
 .eslint-install-code__btn:hover .c-icon, .eslint-install-code__btn:focus .c-icon, .eslint-install-code__btn:active .c-icon {
-  color: var(--color-brand); }
+  color: var(--link-color); }
+
+.eslint-install-code__btn[data-copied="true"] .c-icon {
+  color: var(--link-color); }
 
 .eslint-versions-col {
   display: flex;
@@ -1861,6 +1864,8 @@ ul.donations-list {
 
 button.c-share__btn {
   color: var(--dark-icon-color); }
+  button.c-share__btn[data-copied="true"] {
+    color: var(--link-color); }
 
 #carbonads * {
   margin: initial;

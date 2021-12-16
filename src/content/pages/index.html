@@ -283,6 +283,7 @@ eleventyExcludeFromCollections: true
         // alert("Copied to clipboard");
         liveRegion.innerHTML = "Installation code copied to clipboard."
         this.focus();
+        copyBtn.setAttribute('data-copied', 'true');
     }
 })();
 </script>

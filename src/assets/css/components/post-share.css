@@ -17,3 +17,5 @@
 
 button.c-share__btn {
   color: var(--dark-icon-color); }
+  button.c-share__btn[data-copied="true"] {
+    color: var(--link-color); }

@@ -105,7 +105,13 @@
     &:focus,
     &:active {
         .c-icon {
-            color: var(--color-brand);
+            color: var(--link-color);
+        }
+    }
+
+    &[data-copied="true"] {
+        .c-icon {
+            color: var(--link-color);
         }
     }
 }
