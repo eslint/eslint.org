@@ -65,6 +65,7 @@ a.c-btn {
 }
 
 .c-btn--ghost {
+    color: var(--body-text-color);
     border: 1px solid var(--border-color);
 
     &:hover {

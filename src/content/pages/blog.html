@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: main.html
+layout: blog.html
 hook: "blog-page"
 permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
 
@@ -30,10 +30,7 @@ pagination:
 
         </form> -->
 
-        {% include 'partials/blog-categories.html' %}
-    </aside>
 
-    <div class="span-4-12">
         <div class="blog-posts">
             {% set postItems = pagination.items %}
             {% for item in postItems %}
@@ -76,8 +73,3 @@ pagination:
 
             {% endfor %}
         </div>
-    </div>
-</div>
-
-
-{% include "components/pagination.html" %}
