@@ -14,17 +14,32 @@
     margin-bottom: 1rem;
     border-radius: var(--border-radius);
 
-    &[data-light] {
+    &[data-theme="light"] {
         background-color: var(--color-neutral-100);
     }
 
-    &[data-brand] {
+    &[data-theme="brand"] {
         background-color: var(--color-brand);
     }
 
-    &[data-dark] {
+    &[data-theme="dark"] {
         background-color: var(--color-neutral-900);
     }
+}
+
+.brand__logo__colors {
+    display: flex;
+    align-items: center;
+}
+
+.brand__logo__colors__btn {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-left: .75rem;
+    margin-inline-start: .75rem;
+    background-color: var(--background-color);
+    border-radius: 50%;
 }
 
 .swatches {

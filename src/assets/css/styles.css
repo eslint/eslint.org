@@ -1137,12 +1137,25 @@ ul.donation-plan__features,
   justify-content: center;
   margin-bottom: 1rem;
   border-radius: var(--border-radius); }
-  .brand__logo__img[data-light] {
+  .brand__logo__img[data-theme="light"] {
     background-color: var(--color-neutral-100); }
-  .brand__logo__img[data-brand] {
+  .brand__logo__img[data-theme="brand"] {
     background-color: var(--color-brand); }
-  .brand__logo__img[data-dark] {
+  .brand__logo__img[data-theme="dark"] {
     background-color: var(--color-neutral-900); }
+
+.brand__logo__colors {
+  display: flex;
+  align-items: center; }
+
+.brand__logo__colors__btn {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-left: .75rem;
+  margin-inline-start: .75rem;
+  background-color: var(--background-color);
+  border-radius: 50%; }
 
 .swatches {
   margin-top: var(--space-l-2xl);
@@ -1879,7 +1892,6 @@ button.c-share__btn {
   .alert--tip .alert__learn-more {
     color: var(--color-success-700); }
 
-
 /* PERSON */
 .person {
   position: relative; }
@@ -2099,6 +2111,9 @@ button.c-share__btn {
 
 .divider {
   border-bottom: 1px solid var(--divider-color); }
+
+.fs-step--1 {
+  font-size: .875rem; }
 
 .fs-step-0 {
   font-size: var(--step-0); }
