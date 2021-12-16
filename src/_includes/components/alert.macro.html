@@ -1,28 +1,26 @@
-<!-- {%- macro alert(params) -%}
-    <div role="note" class="alert
-                {% if params.type == 'warning' %} alert--warning {% endif %}
-                {% if params.type == 'important' %} alert--important {% endif %}
-                {% if params.type == 'tip' %} alert--tip {% endif %}">
-
-        {% if params.type == 'warning' %}
+{%- macro warning(params) -%}
+    <div role="note" class="alert alert--warning">
             <img src="" alt="">
             Warning
 
             <div class="alert__text">{{ params.text }}</div>
-        {% endif %}
+    </div>
+{%- endmacro -%}
 
-        {% if params.type == 'important' %}
+{%- macro important(params) -%}
+    <div role="note" class="alert alert--important">
             <img src="" alt="">
             Important
 
             <div class="alert__text">{{ params.text }}</div>
-        {% endif %}
+    </div>
+{%- endmacro -%}
 
-        {% if params.type == 'tip' %}
+{%- macro tip(params) -%}
+    <div role="note" class="alert alert--tip">
             <img src="" alt="">
-            Tip
+            Warning
 
             <div class="alert__text">{{ params.text }}</div>
-        {% endif %}
     </div>
-{%- endmacro -%} -->
+{%- endmacro -%}
