@@ -23,3 +23,42 @@
     }
   }
 })();
+
+
+/* ALERTS */
+
+/* element.closest() polyfill */
+
+if (!Element.prototype.matches) {
+  Element.prototype.matches =
+    Element.prototype.msMatchesSelector ||
+    Element.prototype.webkitMatchesSelector;
+}
+
+if (!Element.prototype.closest) {
+  Element.prototype.closest = function(s) {
+    var el = this;
+
+    do {
+      if (Element.prototype.matches.call(el, s)) return el;
+      el = el.parentElement || el.parentNode;
+    } while (el !== null && el.nodeType === 1);
+    return null;
+  };
+}
+
+
+function removeParent(e) {
+    parent = e.target.closest('.alert');
+    parent.remove();
+}
+
+(function() {
+  var alert_btn = document.querySelectorAll('.alert__remove-btn');
+
+    alert_btn.forEach((button) => {
+        button.removeAttribute('hidden');
+        button.addEventListener('click', removeParent, false);
+    })
+
+})();
