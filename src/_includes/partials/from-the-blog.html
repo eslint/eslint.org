@@ -1,5 +1,57 @@
-<section>
+<section aria-labelledby="more-posts-label" class="from-the-blog">
     <div class="content-container">
-        <h2>From the blog</h2>
+        <div class="from-the-blog__top grid grid--center-items">
+            <header class="section-head span-1-7 ">
+                <h2 class="from-the-blog__title" id="more-posts-label">From the blog</h2>
+                <p class="">
+                    The latest industry news, interviews, technologies, and resources.
+                </p>
+            </header>
+            <div class="span-11-12"><a href="/blog/" class="c-btn c-btn--primary c-btn--block from-the-blog__more">View all posts</a></div>
+        </div>
+
+        <div class="blog-posts">
+        {% set posts = collections.blogposts | limitTo(4) %}
+        {%- for item in posts -%}
+
+        {% if item.url !== page.url %}
+
+        {% set author = item.data.author %}
+        {% if not author %}
+        {% set author = item.data.authors[0] %}
+        {% endif %}
+
+        <article class='card blog-post {%- if item.data.featured == "true" -%} card--featured {%- endif -%}'>
+            <a href="{{ item.url }}" class="card__cover">
+                <img src="./../../../assets/images/blog-covers/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}{{ item.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
+            </a>
+            <div class="card__content">
+                <div class="badge-group">
+                    <span class="blog-post__category">
+                        <span class="visually-hidden">Published under:</span> {{ item.data.categories }}
+                    </span>
+                    <span class="blog-post__reading-time">
+                        {{ item.templateContent | readingTime }} read
+                    </span>
+                </div>
+
+                <h3 class="card__title">
+                    <a href="{{ item.url }}">{{ item.data.title }}</a>
+                </h3>
+                <p class="card__teaser">
+                    {{ item.data.teaser }}
+                </p>
+                <div class="card__footer">
+                    <img class="blog-post__author-photo" src="{{ authors[author].avatar_url }}" alt="{{ authors[author].name }}">
+                    <div class="blog-post__author__details">
+                        <div class="blog-post__author-name">{{ authors[author].name }}</div>
+                        <span class="blog-post__publish-date">{{ item.date | readableDate }}</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </div>
     </div>
 </section>
