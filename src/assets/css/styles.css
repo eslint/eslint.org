@@ -899,6 +899,9 @@ a.c-btn {
     /* in the context of a blog post page */
     width: 3rem;
     height: 3rem; }
+  .post__sidebar-module .person__photo {
+    width: 3rem;
+    height: 3rem; }
 
 .person__bio a {
   color: inherit;
@@ -911,7 +914,8 @@ a.c-btn {
   color: var(--headings-color);
   font-size: 1.125rem; }
   .post__sidebar-module .person__name {
-    font-size: var(--step-0); }
+    font-size: var(--step-0);
+    font-weight: 400; }
 
 .person__title,
 .person__handle {
@@ -1425,9 +1429,6 @@ ul.tag-list {
     margin-bottom: 1.5rem; }
     .post__sidebar-module .person.contributor:last-of-type {
       margin-bottom: 0; }
-  .post__sidebar-module .person__photo {
-    width: 3rem;
-    height: 3rem; }
 
 /* from the blog section */
 .from-the-blog__title {

@@ -184,6 +184,11 @@
         width: 3rem;
         height: 3rem;
     }
+
+    .post__sidebar-module & {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 .person__bio {
@@ -204,6 +209,7 @@
 
     .post__sidebar-module & {
         font-size: var(--step-0);
+        font-weight: 400;
     }
 }
 
