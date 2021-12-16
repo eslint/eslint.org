@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
      * ***************************************************************************************/
     eleventyConfig.addFilter("limitTo", function(arr, limit) {
         return arr.slice(0, limit);
-    } );
+    });
 
     eleventyConfig.addFilter('jsonify', function(variable) {
         return JSON.stringify(variable);
@@ -63,7 +63,9 @@ module.exports = function(eleventyConfig) {
      * ***************************************************************************************/
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(readingTime);
-    eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(syntaxHighlight, {
+        alwaysWrapLineHighlights: true,
+    });
     eleventyConfig.addPlugin(pluginRss);
     // add IDs to the headers
     const markdownIt = require('markdown-it');

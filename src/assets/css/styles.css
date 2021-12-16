@@ -215,6 +215,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-weight: 500; }
 
+.post h2, .post
+h3, .post
+h4, .post
+h5, .post
+h6 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem; }
+  .post h2:first-of-type, .post
+  h3:first-of-type, .post
+  h4:first-of-type, .post
+  h5:first-of-type, .post
+  h6:first-of-type {
+    margin-top: 0; }
+
 h6,
 .h6 {
   font-size: var(--step-0); }
@@ -248,9 +262,6 @@ h1,
 
 small, caption, cite, figcaption {
   font-size: var(--step--1); }
-
-::marker {
-  color: var(--color-accent); }
 
 ::selection {
   background-color: var(--color-brand);
@@ -349,7 +360,7 @@ pre {
   font-family: var(--mono-font); }
 
 code {
-  color: var(--color-brand); }
+  color: var(--link-color); }
   pre code {
     color: unset; }
 
@@ -408,6 +419,11 @@ ul[role="list"] {
   ul[role="list"] li {
     margin: 0; }
 
+ol {
+  list-style: decimal; }
+  ol li::marker {
+    color: var(--link-color); }
+
 figure {
   margin-bottom: 4rem; }
   figure img {
@@ -429,10 +445,6 @@ nav {
     margin: 0;
     padding: 0; }
 
-ol {
-  list-style: decimal-leading-zero;
-  font-feature-settings: "tnum"; }
-
 .video {
   width: 90%;
   max-width: 1400px;
@@ -447,6 +459,144 @@ ol {
   *.focus-visible {
     transition: outline-offset .15s linear;
     outline-offset: 3px; } }
+
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  background: none;
+  text-shadow: 0 1px white;
+  font-family: var(--mono-font), Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc; }
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #b3d4fc; }
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none; } }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  overflow: auto;
+  background-color: var(--lightest-background-color); }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: var(--lightest-background-color); }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #999; }
+
+.token.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #9a6e3a;
+  background: rgba(255, 255, 255, 0.5); }
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a; }
+
+.token.function,
+.token.class-name {
+  color: #DD4A68; }
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+pre {
+  counter-reset: lineNumber; }
+
+code .highlight-line:before {
+  -webkit-user-select: none;
+  color: var(--icon-color);
+  content: counter(lineNumber);
+  counter-increment: lineNumber;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  margin-right: 1.2em;
+  padding-right: 1.2em;
+  text-align: right;
+  width: 2.4em; }
 
 button {
   border: none;
@@ -757,6 +907,8 @@ a.c-btn {
   font-weight: 500;
   color: var(--headings-color);
   font-size: 1.125rem; }
+  .post__sidebar-module .person__name {
+    font-size: var(--step-0); }
 
 .person__title,
 .person__handle {
@@ -1224,10 +1376,68 @@ ul.donation-plan__features,
     padding: 0.125rem .5rem; }
 
 /* individual post page */
+.post__sidebar {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  align-items: start; }
+  @media all and (max-width: 1023px) {
+    .post__sidebar {
+      margin-top: 4rem; } }
+
+ul.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 2rem; }
+
+.tag-list__item {
+  background-color: var(--lightest-background-color);
+  color: var(--link-color);
+  font-weight: 500;
+  border-radius: 1rem;
+  font-size: var(--step--1);
+  padding: .125rem .625rem; }
+
 .post__meta {
   color: var(--link-color);
   font-weight: 500;
   margin-bottom: 1rem; }
+
+.post__sidebar-module {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem; }
+
+.post__sidebar-module__title.post__sidebar-module__title {
+  margin-top: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: var(--step-0);
+  margin-bottom: 1.5rem; }
+
+.post__sidebar-module {
+  border-bottom: 1px solid var(--divider-color); }
+  .post__sidebar-module:last-of-type {
+    border-bottom: none; }
+  .post__sidebar-module .person.contributor {
+    margin-bottom: 1.5rem; }
+    .post__sidebar-module .person.contributor:last-of-type {
+      margin-bottom: 0; }
+
+/* from the blog section */
+.from-the-blog__title {
+  margin-bottom: 1rem;
+  font-family: var(--text-font); }
+
+.from-the-blog__more {
+  margin-bottom: 2rem; }
+
+.from-the-blog__top {
+  margin-bottom: var(--space-l-2xl); }
+
+.from-the-blog .blog-posts {
+  grid-column: 1 / -1; }
 
 .site-nav {
   display: flex;
@@ -1813,6 +2023,12 @@ ul.donations-list {
 
 .span-4-9 {
   grid-column: 4 / 10; }
+
+.span-4-11 {
+  grid-column: 4 / 11; }
+
+.span-5-12 {
+  grid-column: 5 / 12; }
 
 .span-3-10 {
   grid-column: 3 / 11; }
