@@ -63,9 +63,11 @@
 
 // })();
 (function(){
-    var logo_theme_btn = document.querySelectorAll('.brand__logo__colors__btn'),
+    var logo_theme_buttons = document.querySelector('.brand__logo__colors'),
+        logo_theme_btn = document.querySelectorAll('.brand__logo__colors__btn'),
         logo_container = document.querySelector('.brand__logo__img');
 
+    logo_theme_buttons.removeAttribute('hidden');
     logo_theme_btn.forEach((button) => {
 
         button.addEventListener('click', function() {

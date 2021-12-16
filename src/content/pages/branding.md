@@ -74,7 +74,7 @@ hook: "branding-page"
                         <path d="M196.449 43.7102C195.104 43.7102 194.025 43.3179 193.213 42.5334C192.428 41.7208 192.036 40.6281 192.036 39.2551V26.9406H186.614V22.9479H192.036V16.2652H196.869V22.9479H202.837V26.9406H196.869V38.4566C196.869 39.2971 197.262 39.7174 198.046 39.7174H202.207V43.7102H196.449Z" fill="#101828" class="logo-component" />
                     </svg>
                 </div>
-                <div class="brand__logo__colors">
+                <div class="brand__logo__colors" hidden>
                     <span class="fs-step--1">Background: </span> 
                     <button aria-pressed="true" class="brand__logo__colors__btn" data-color="#f2f4f7" data-theme="light"  style="--background-color: #f2f4f7" aria-label="#f2f4f7"></button>
                     <button aria-pressed="false" class="brand__logo__colors__btn" data-color="#101828" data-theme="dark" style="--background-color: #101828" aria-label="#101828"></button>
