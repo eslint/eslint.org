@@ -1,0 +1,27 @@
+
+.c-share {
+    display: flex;
+    gap: .75rem;
+}
+
+.c-share__btn {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-xs);
+    border: 1px solid var(--border-color);
+    padding: .75rem;
+    display: inline-flex;
+    align-items: center;
+    color: var(--icon-color);
+
+    &:first-of-type {
+        color: var(--dark-icon-color);
+    }
+
+    &:hover, &:focus {
+        color: var(--headings-color);
+    }
+
+    svg {
+        color: inherit;
+    }
+}

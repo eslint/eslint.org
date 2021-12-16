@@ -85,6 +85,7 @@
   --spacer-8x: 8rem;
   --shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.1),
     0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+  --shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
   /* Tier 2 variables */
   --color-brand: var(--color-primary-800);
   --border-color: var(--color-neutral-300);
@@ -105,6 +106,7 @@
   --body-text-color: var(--color-neutral-500);
   --headings-color: var(--color-neutral-900);
   --icon-color: var(--color-neutral-400);
+  --dark-icon-color: var(--color-neutral-700);
   --link-color: var(--color-primary-800);
   --hero-background-color: var(--color-neutral-25);
   --footer-background-color: var(--color-neutral-25);
@@ -389,7 +391,8 @@ a {
     text-decoration: none; }
 
 svg {
-  flex: none; }
+  flex: none;
+  transition: color .1s linear; }
 
 p {
   margin: 0 0 1.5em; }
@@ -1380,7 +1383,6 @@ ul.donation-plan__features,
   grid-row: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
   align-items: start; }
   @media all and (max-width: 1023px) {
     .post__sidebar {
@@ -1839,6 +1841,25 @@ ul.donations-list {
   height: 2.5rem;
   object-fit: cover;
   border-radius: var(--border-radius); }
+
+.c-share {
+  display: flex;
+  gap: .75rem; }
+
+.c-share__btn {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-xs);
+  border: 1px solid var(--border-color);
+  padding: .75rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--icon-color); }
+  .c-share__btn:first-of-type {
+    color: var(--dark-icon-color); }
+  .c-share__btn:hover, .c-share__btn:focus {
+    color: var(--headings-color); }
+  .c-share__btn svg {
+    color: inherit; }
 
 #carbonads * {
   margin: initial;
