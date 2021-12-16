@@ -1135,7 +1135,8 @@ ul.donation-plan__features,
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius); }
   .brand__logo__img[data-light] {
     background-color: var(--color-neutral-100); }
   .brand__logo__img[data-brand] {
