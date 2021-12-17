@@ -40,9 +40,9 @@ pagination:
                         {{ item.data.teaser }}
                     </p>
                     <div class="card__footer">
-                        <img class="blog-post__author-photo" src="{{ authors[author].avatar_url }}" alt="{{ authors[author].name }}">
+                        <img class="blog-post__author-photo" src="{{ all_authors[author].avatar_url }}" alt="{{ all_authors[author].name }}">
                         <div class="blog-post__author__details">
-                            <div class="blog-post__author-name">{{ authors[author].name }}</div>
+                            <div class="blog-post__author-name">{{ all_authors[author].name }}</div>
                             <span class="blog-post__publish-date">{{ item.date | readableDate }}</span>
                         </div>
                     </div>

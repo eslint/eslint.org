@@ -37,6 +37,15 @@ module.exports = function(eleventyConfig) {
             remove: /["]/g,
         });
     });
+
+    eleventyConfig.addFilter('URIencode', function(str) {
+        if (!str) {
+            return;
+        }
+
+        return encodeURI(str);
+    });
+
     /* order collection by the order specified in the front matter */
     eleventyConfig.addFilter("sortByPageOrder", function(values) {
         return values.slice().sort((a, b) => a.data.order - b.data.order);
@@ -143,11 +152,6 @@ module.exports = function(eleventyConfig) {
         "blogpostsByCategories",
         require("./src/_11ty/collections/blogpostsByCategories.js")
     );
-
-    /*****************************************************************************************
-     *  Shortcodes
-     * ***************************************************************************************/
-
 
 
     return {

@@ -1,0 +1,21 @@
+.c-share {
+  display: flex;
+  gap: .75rem; }
+
+.c-share__btn {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-xs);
+  border: 1px solid var(--border-color);
+  padding: .75rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--icon-color); }
+  .c-share__btn:hover, .c-share__btn:focus {
+    color: var(--headings-color); }
+  .c-share__btn svg {
+    color: inherit; }
+
+button.c-share__btn {
+  color: var(--dark-icon-color); }
+  button.c-share__btn[data-copied="true"] {
+    color: var(--link-color); }
