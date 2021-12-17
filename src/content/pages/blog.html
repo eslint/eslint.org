@@ -9,28 +9,6 @@ pagination:
     data: collections.blogposts
     size: 9
 ---
-
-<div class="section hero">
-    <div class="content-container grid">
-        <div class="span-1-7">
-            <h1 class="section-title">Resources and insights</h1>
-            <p class="section-supporting-text">
-                The latest industry news, interviews, technologies, and resources.
-            </p>
-        </div>
-        <div class="span-11-12">
-            carbon ad here
-        </div>
-    </div>
-</div>
-
-<div class="content-container grid">
-    <aside class="span-1-3">
-        <!-- <form action="" role="search">
-
-        </form> -->
-
-
         <div class="blog-posts">
             {% set postItems = pagination.items %}
             {% for item in postItems %}
@@ -43,7 +21,7 @@ pagination:
 
             <article class='card blog-post {%- if item.data.featured == "true" -%} card--featured {%- endif -%}'>
                 <a href="{{ item.url }}" class="card__cover">
-                    <img src="./../../../assets/images/blog-covers/{%- if item.data.image -%}{{ item.data.image }}{%- else -%}{{ item.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
+                    <img src="./../../../assets/images/blog-covers/{%- if item.data.cover -%}{{ item.data.cover }}{%- else -%}{{ item.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
                 </a>
                 <div class="card__content">
                     <div class="badge-group">

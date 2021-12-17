@@ -2,7 +2,10 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginTOC = require('eleventy-plugin-nesting-toc');
 const slugify = require("slugify");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require('markdown-it-anchor');
 
 
 const {
@@ -75,17 +78,23 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight, {
         alwaysWrapLineHighlights: true,
     });
-    eleventyConfig.addPlugin(pluginRss);
-    // add IDs to the headers
-    const markdownIt = require('markdown-it');
+    eleventyConfig.addPlugin(pluginTOC, {
+        tags: ['h2', 'h3', 'h4'],
+        wrapper: 'nav', // Element to put around the root `ol`
+        wrapperClass: 'c-toc', // Class for the element around the root `ol`
+        headingText: '', // Optional text to show in heading above the wrapper element
+        headingTag: 'h2' // Heading tag when showing heading above the wrapper element
+    });
 
+    eleventyConfig.addPlugin(pluginRss);
+
+    // add IDs to the headers
     eleventyConfig.setLibrary("md",
         markdownIt({
             html: true,
             linkify: true,
             typographer: true,
-
-        }).disable('code')
+        }).use(markdownItAnchor, {})
     );
 
 
