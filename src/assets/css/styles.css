@@ -1354,6 +1354,11 @@ ul.tag-list {
   .post__sidebar-module:last-of-type {
     border-bottom: none; }
 
+.post__author-bios {
+  padding-top: var(--space-m);
+  margin-top: var(--space-m);
+  border-top: 1px solid var(--divider-color); }
+
 /* from the blog section */
 .from-the-blog__title {
   margin-bottom: 1rem;

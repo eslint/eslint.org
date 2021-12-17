@@ -230,6 +230,12 @@ ul.tag-list {
     }
 }
 
+// author bios
+.post__author-bios {
+    padding-top: var(--space-m);
+    margin-top: var(--space-m);
+    border-top: 1px solid var(--divider-color);
+}
 
 /* from the blog section */
 
