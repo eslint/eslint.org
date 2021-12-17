@@ -34,7 +34,9 @@ hook: "post blog-post-page"
             {{ member({
                         photo: all_authors[author].avatar_url,
                         name: all_authors[author].name,
-                        handle: all_authors[author].github
+                        handle: all_authors[author].username,
+                        github: all_authors[author].github_username,
+                        twitter: all_authors[author].twitter_username
                     }) }}
             {% endfor %}
         </div>
