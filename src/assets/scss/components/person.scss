@@ -1,0 +1,117 @@
+/* PERSON */
+
+.person {
+    position: relative;
+
+    &.contributor {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: start;
+        gap: .75rem;
+    }
+}
+
+
+.person__photo {
+    display: block;
+    /* default avatar size */
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+    .member & {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .contributor & {
+        /* smaller avatar size */
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .author & {
+        /* in the context of a blog post page */
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .post__sidebar-module & {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.person__bio {
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--link-color);
+        }
+    }
+}
+
+.person__name {
+    font-weight: 500;
+    color: var(--headings-color);
+    font-size: 1.125rem;
+
+    .post__sidebar-module & {
+        font-size: var(--step-0);
+        font-weight: 400;
+    }
+}
+
+
+.person__title,
+.person__handle {
+    text-decoration: none;
+    color: var(--link-color);
+    display: block;
+    margin-bottom: .5rem;
+
+    .contributor--author & {
+        color: inherit;
+
+        &:hover {
+            color: var(--link-color);
+        }
+
+        // make the whole item clickable by overlaying a pseudo-element on top
+        // only applicable to authors under "contributors" (left sidebar) in blog post pages
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.post__sidebar-module .person__title {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.person__social-links {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+}

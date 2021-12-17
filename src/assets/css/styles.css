@@ -441,13 +441,11 @@ img {
   max-width: 100%;
   height: auto; }
 
-nav {
-  /* rarely do we display bullets for lists in navigation */ }
-  nav ol,
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
+nav ol,
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 .video {
   width: 90%;
@@ -874,81 +872,6 @@ a.c-btn {
     padding-right: 1rem; }
   .eslint-versions .c-icon {
     margin-right: .5rem; }
-
-/* PERSON */
-.person {
-  position: relative; }
-  .person.contributor {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: start;
-    gap: .75rem; }
-
-.person__photo {
-  display: block;
-  /* default avatar size */
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  object-fit: cover; }
-  .member .person__photo {
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 1.25rem; }
-  .contributor .person__photo {
-    /* smaller avatar size */
-    width: 3.5rem;
-    height: 3.5rem; }
-  .author .person__photo {
-    /* in the context of a blog post page */
-    width: 3rem;
-    height: 3rem; }
-  .post__sidebar-module .person__photo {
-    width: 3rem;
-    height: 3rem; }
-
-.person__bio a {
-  color: inherit;
-  text-decoration: none; }
-  .person__bio a:hover {
-    color: var(--link-color); }
-
-.person__name {
-  font-weight: 500;
-  color: var(--headings-color);
-  font-size: 1.125rem; }
-  .post__sidebar-module .person__name {
-    font-size: var(--step-0);
-    font-weight: 400; }
-
-.person__title,
-.person__handle {
-  text-decoration: none;
-  color: var(--link-color);
-  display: block;
-  margin-bottom: .5rem; }
-  .contributor--author .person__title, .contributor--author
-  .person__handle {
-    color: inherit; }
-    .contributor--author .person__title:hover, .contributor--author
-    .person__handle:hover {
-      color: var(--link-color); }
-    .contributor--author .person__title::after, .contributor--author
-    .person__handle::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-
-.person__social-links ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 1rem; }
 
 /* team page */
 .people-list {
@@ -1865,7 +1788,6 @@ ul.donations-list {
   object-fit: cover;
   border-radius: var(--border-radius); }
 
-
 .c-share {
   display: flex;
   gap: .75rem; }
@@ -1942,17 +1864,88 @@ button.c-share__btn {
   .alert--tip .alert__learn-more {
     color: var(--color-success-700); }
 
-.alert__remove-btn {
-  position: absolute;
-  right: 1rem;
-  top: 1rem; }
-  .alert--warning .alert__remove-btn svg {
-    color: var(--color-rose-700); }
-  .alert--important .alert__remove-btn svg {
-    color: var(--color-warning-700); }
-  .alert--tip .alert__remove-btn svg {
-    color: var(--color-success-700); }
+/* PERSON */
+.person {
+  position: relative; }
+  .person.contributor {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: .75rem; }
 
+.person__photo {
+  display: block;
+  /* default avatar size */
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover; }
+  .member .person__photo {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.25rem; }
+  .contributor .person__photo {
+    /* smaller avatar size */
+    width: 3.5rem;
+    height: 3.5rem; }
+  .author .person__photo {
+    /* in the context of a blog post page */
+    width: 3rem;
+    height: 3rem; }
+  .post__sidebar-module .person__photo {
+    width: 3rem;
+    height: 3rem; }
+
+.person__bio a {
+  color: inherit;
+  text-decoration: none; }
+  .person__bio a:hover {
+    color: var(--link-color); }
+
+.person__name {
+  font-weight: 500;
+  color: var(--headings-color);
+  font-size: 1.125rem; }
+  .post__sidebar-module .person__name {
+    font-size: var(--step-0);
+    font-weight: 400; }
+
+.person__title,
+.person__handle {
+  text-decoration: none;
+  color: var(--link-color);
+  display: block;
+  margin-bottom: .5rem; }
+  .contributor--author .person__title, .contributor--author
+  .person__handle {
+    color: inherit; }
+    .contributor--author .person__title:hover, .contributor--author
+    .person__handle:hover {
+      color: var(--link-color); }
+    .contributor--author .person__title::after, .contributor--author
+    .person__handle::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+.post__sidebar-module .person__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.person__social-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem; }
 
 #carbonads * {
   margin: initial;

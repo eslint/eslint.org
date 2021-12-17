@@ -29,8 +29,14 @@ hook: "post blog-post-page"
             {{ content | safe }}
         </div>
 
-        <div class="post__author-bios">
-
+        <div class="post__author-bios span-5-12">
+            {% for author in authors %}
+            {{ member({
+                        photo: all_authors[author].avatar_url,
+                        name: all_authors[author].name,
+                        handle: all_authors[author].github
+                    }) }}
+            {% endfor %}
         </div>
 
         {% include 'partials/post-sidebar.html' %}
