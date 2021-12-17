@@ -2,42 +2,58 @@
 
 .person {
     position: relative;
+}
 
-    &.contributor {
+.person--contributor {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: .75rem;
+}
+
+//bottom of blog post
+.person--author {
+
+    margin-bottom: 3rem;
+
+    @media all and (min-width: 680px) {
         display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: start;
-        gap: .75rem;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 3rem;
     }
 }
 
+.person--author__info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: .75rem;
+}
 
 .person__photo {
     display: block;
-    /* default avatar size */
-    width: 5rem;
-    height: 5rem;
     border-radius: 50%;
     object-fit: cover;
+    flex: none;
+    max-width: initial;
 
-    .member & {
+    &.person__photo--large {
         width: 5rem;
         height: 5rem;
         margin-bottom: 1.25rem;
     }
 
-    .contributor & {
-        /* smaller avatar size */
+    &.person__photo--medium {
         width: 3.5rem;
         height: 3.5rem;
     }
 
-    .author & {
-        /* in the context of a blog post page */
+    &.person__photo--small {
         width: 3rem;
         height: 3rem;
     }
 
+    /* contributor in the post sidebar */
     .post__sidebar-module & {
         width: 3rem;
         height: 3rem;
@@ -46,9 +62,6 @@
 
 .person__bio {
     a {
-        color: inherit;
-        text-decoration: none;
-
         &:hover {
             color: var(--link-color);
         }
@@ -60,50 +73,41 @@
     color: var(--headings-color);
     font-size: 1.125rem;
 
-    .post__sidebar-module & {
+    .post & {
         font-size: var(--step-0);
-        font-weight: 400;
     }
 }
 
 
-.person__title,
 .person__handle {
     text-decoration: none;
     color: var(--link-color);
     display: block;
     margin-bottom: .5rem;
 
-    .contributor--author & {
+    .post & {
         color: inherit;
 
         &:hover {
             color: var(--link-color);
         }
+    }
 
-        // make the whole item clickable by overlaying a pseudo-element on top
-        // only applicable to authors under "contributors" (left sidebar) in blog post pages
+    .post__sidebar-module & {
         &::after {
             content: "";
-            display: block;
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            right: 0;
+            bottom: 0;
         }
     }
 }
 
-.post__sidebar-module .person__title {
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
+.person__title {
+    display: block;
+    margin-bottom: .5rem;
 }
 
 .person__social-links {
