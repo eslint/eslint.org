@@ -1,6 +1,15 @@
 .rules-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+
+    .rules-category {
+        margin: 0;
+    }
+
+    .rules-category__description {
+        flex: 1 1 60ch;
+    }
 }
 
 .rules-category {
@@ -10,11 +19,11 @@
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem;
-}
+    margin: 1.5rem 0;
+    border-radius: var(--border-radius);
+    background-color: var(--lightest-background-color);
 
-.rules-category__icon {
-
-}
-.rules-categories .rules-category__description {
-    flex: 1 1 60ch;
+    p {
+        margin: 0;
+    }
 }
