@@ -41,7 +41,7 @@ button.c-share__btn {
     position: absolute;
     top: calc(100% + .5rem);
     background-color: var(--lightest-background-color);
-    transition: opacity 1s linear 4s;
+    transition: opacity 1s linear 3s;
 
     &[data-fades-out] {
         opacity: 0;

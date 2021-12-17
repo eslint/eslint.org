@@ -31,7 +31,7 @@ eleventyExcludeFromCollections: true
                     <input type="text" id="code-snippet" value="npm install eslint --save-dev" aria-readonly="true" readonly tabindex="-1">
 
                 </div>
-                <span id="eslint-install-code__announcement" class="eslint-install-code__announcement visually-hidden" aria-live="polite" aria-atomic="true"></span>
+                <span id="eslint-install-code__announcement" class="eslint-install-code__announcement" aria-live="polite" aria-atomic="true"></span>
             </div>
             <div class="eslint-actions">
                 <a href="/" class="c-btn c-btn--primary c-btn--large">Get Started</a>
@@ -288,7 +288,7 @@ eleventyExcludeFromCollections: true
                 copyBtn.removeAttribute('data-copied');
                 announcement_region.innerHTML = "";
                 announcement_region.removeAttribute('data-fades-out');
-            }, 5000);
+            }, 4000);
         }
     })();
 </script>

@@ -128,7 +128,7 @@
     position: absolute;
     top: 100%;
     background-color: var(--lightest-background-color);
-    transition: opacity 1s linear 4s;
+    transition: opacity 1s linear 3s;
 
     &[data-fades-out] {
         opacity: 0;
