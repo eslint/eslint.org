@@ -3,15 +3,11 @@
         <h2 class="post__sidebar-module__title">Contributors</h2>
         {% for author in authors %}
         {{ contributor({
-                        photo: all_authors[author].avatar_url,
-                        name: all_authors[author].name,
-                        handle: all_authors[author].github
-                    }) }}
+            photo: all_authors[author].avatar_url,
+            name: all_authors[author].name,
+            handle: all_authors[author].github
+        }) }}
         {% endfor %}
-    </div>
-
-    <div class="post-sidebar__module">
-        {% include 'partials/toc.html' %}
     </div>
 
     {% if tags %}

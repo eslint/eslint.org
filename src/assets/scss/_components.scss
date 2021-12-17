@@ -67,6 +67,10 @@
     }
 }
 
+.eslint-install-code-wrapper {
+    position: relative;
+}
+
 .eslint-install-code {
     display: inline-flex;
     align-items: center;
@@ -113,6 +117,21 @@
         .c-icon {
             color: var(--link-color);
         }
+    }
+}
+
+.eslint-install-code__announcement {
+    font-size: .875rem;
+    padding: .25rem .75rem;
+    border-radius: var(--border-radius);
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: var(--lightest-background-color);
+    transition: opacity 1s linear 4s;
+
+    &[data-fades-out] {
+        opacity: 0;
     }
 }
 
