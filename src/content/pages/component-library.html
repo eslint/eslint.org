@@ -6,6 +6,7 @@ tags: ['nav']
 
 {%- from 'components/buttony-link.macro.html' import buttonyLink %}
 {%- from 'components/alert.macro.html' import warning, tip, important %}
+{%- from 'components/rules-categories.macro.html' import extends, fix, suggestions %}
 {%- from 'components/person.macro.html' import member, contributor %}
 
 
@@ -31,4 +32,16 @@ tags: ['nav']
         text: "Remember to share your changes with the team.",
         url: "/"
     }) }}
+</div>
+
+<div class="content-container">
+    <div class="rules-categories">
+        {{ extends() }}
+        {{ fix() }}
+        {{ suggestions() }}
+    </div>
+
+    {{ extends() }}
+    {{ fix() }}
+    {{ suggestions() }}
 </div>
