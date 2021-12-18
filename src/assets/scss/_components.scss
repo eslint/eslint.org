@@ -126,8 +126,7 @@
     border-radius: var(--border-radius);
     display: block;
     position: absolute;
-    top: 100%;
-    background-color: var(--lightest-background-color);
+    top: calc(100% + .5rem);
     transition: opacity 1s linear 3s;
 
     &[data-fades-out] {

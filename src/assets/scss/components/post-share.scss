@@ -35,12 +35,11 @@ button.c-share__btn {
 .ctc-announcement {
     flex: 1 1 999px;
     font-size: .875rem;
-    padding: .25rem .75rem;
+    padding: .25rem .5rem;
     border-radius: var(--border-radius);
     display: block;
     position: absolute;
     top: calc(100% + .5rem);
-    background-color: var(--lightest-background-color);
     transition: opacity 1s linear 3s;
 
     &[data-fades-out] {

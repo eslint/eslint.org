@@ -859,8 +859,7 @@ a.c-btn {
   border-radius: var(--border-radius);
   display: block;
   position: absolute;
-  top: 100%;
-  background-color: var(--lightest-background-color);
+  top: calc(100% + .5rem);
   transition: opacity 1s linear 3s; }
   .eslint-install-code__announcement[data-fades-out] {
     opacity: 0; }
@@ -1905,12 +1904,11 @@ button.c-share__btn {
 .ctc-announcement {
   flex: 1 1 999px;
   font-size: .875rem;
-  padding: .25rem .75rem;
+  padding: .25rem .5rem;
   border-radius: var(--border-radius);
   display: block;
   position: absolute;
   top: calc(100% + .5rem);
-  background-color: var(--lightest-background-color);
   transition: opacity 1s linear 3s; }
   .ctc-announcement[data-fades-out] {
     opacity: 0; }
