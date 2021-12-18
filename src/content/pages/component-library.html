@@ -1,6 +1,6 @@
 ---
 layout: main.html
-permalink: /component-library/
+permalink: component-library.html
 tags: ['nav']
 ---
 
@@ -10,23 +10,28 @@ tags: ['nav']
 {%- from 'components/person.macro.html' import member, contributor %}
 
 
-<div class="content-container">
-    {{ buttonyLink({ type: "primary", text: "Primary Button", url:"/" }) }}
-    {{ buttonyLink({ type: "secondary", text: "Secondary Button", url:"/" }) }}
-    {{ buttonyLink({ type: "ghost", text: "Ghost Button", url:"/" }) }}
-</div>
+{{ buttonyLink({ type: "primary", text: "Primary Button", url:"/" }) }}
+{{ buttonyLink({ type: "secondary", text: "Secondary Button", url:"/" }) }}
+{{ buttonyLink({ type: "ghost", text: "Ghost Button", url:"/" }) }}
 
+{#
+{{ alert({
+    type: "warning",
+    text: "This rule was removed in version 7.1.2.",
+    url: "/"
+}) }}
 
-<div class="content-container">
-    {{ warning({
-        text: "This rule was removed in version 7.1.2.",
-        url: "/"
-    }) }}
+{{ alert({
+    type: "important",
+    text: "This rule is deprecated and will be removed in future versions.",
+    url: "/"
+}) }}
 
-        {{ tip({
-        text: "This rule is deprecated and will be removed in future versions.",
-        url: "/"
-    }) }}
+{{ alert({
+    type: "tip",
+    text: "Remember to share your changes with the team.",
+    url: "/"
+}) }} #}
 
         {{ important({
         text: "Remember to share your changes with the team.",
