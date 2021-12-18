@@ -225,11 +225,11 @@ h5, .post
 h6 {
   margin-top: 3rem;
   margin-bottom: 1.5rem; }
-  .post h2:first-of-type, .post
-  h3:first-of-type, .post
-  h4:first-of-type, .post
-  h5:first-of-type, .post
-  h6:first-of-type {
+  .post h2:first-child, .post
+  h3:first-child, .post
+  h4:first-child, .post
+  h5:first-child, .post
+  h6:first-child {
     margin-top: 0; }
 
 h6,
@@ -873,81 +873,6 @@ a.c-btn {
   .eslint-versions .c-icon {
     margin-right: .5rem; }
 
-/* PERSON */
-.person {
-  position: relative; }
-  .person.contributor {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: start;
-    gap: .75rem; }
-
-.person__photo {
-  display: block;
-  /* default avatar size */
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  object-fit: cover; }
-  .member .person__photo {
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 1.25rem; }
-  .contributor .person__photo {
-    /* smaller avatar size */
-    width: 3.5rem;
-    height: 3.5rem; }
-  .author .person__photo {
-    /* in the context of a blog post page */
-    width: 3rem;
-    height: 3rem; }
-  .post__sidebar-module .person__photo {
-    width: 3rem;
-    height: 3rem; }
-
-.person__bio a {
-  color: inherit;
-  text-decoration: none; }
-  .person__bio a:hover {
-    color: var(--link-color); }
-
-.person__name {
-  font-weight: 500;
-  color: var(--headings-color);
-  font-size: 1.125rem; }
-  .post__sidebar-module .person__name {
-    font-size: var(--step-0);
-    font-weight: 400; }
-
-.person__title,
-.person__handle {
-  text-decoration: none;
-  color: var(--link-color);
-  display: block;
-  margin-bottom: .5rem; }
-  .contributor--author .person__title, .contributor--author
-  .person__handle {
-    color: inherit; }
-    .contributor--author .person__title:hover, .contributor--author
-    .person__handle:hover {
-      color: var(--link-color); }
-    .contributor--author .person__title::after, .contributor--author
-    .person__handle::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-
-.person__social-links ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 1rem; }
-
 /* team page */
 .people-list {
   display: grid;
@@ -1386,10 +1311,7 @@ ul.donation-plan__features,
 
 /* individual post page */
 .post__sidebar {
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  align-items: start; }
+  grid-row: 1; }
   @media all and (max-width: 1023px) {
     .post__sidebar {
       margin-top: 4rem; } }
@@ -1415,6 +1337,13 @@ ul.tag-list {
 .post__sidebar-module {
   padding-bottom: 2rem;
   margin-bottom: 2rem; }
+  .post__sidebar-module:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+
+@media all and (max-width: 1023px) {
+  .post__sidebar-module.post-contributors {
+    display: none; } }
 
 .post__sidebar-module__title.post__sidebar-module__title {
   margin: 0;
@@ -1428,6 +1357,11 @@ ul.tag-list {
   border-bottom: 1px solid var(--divider-color); }
   .post__sidebar-module:last-of-type {
     border-bottom: none; }
+
+.post__author-bios {
+  padding-top: var(--space-m);
+  margin-top: var(--space-m);
+  border-top: 1px solid var(--divider-color); }
 
 /* from the blog section */
 .from-the-blog__title {
@@ -1938,6 +1872,90 @@ button.c-share__btn {
     color: var(--color-warning-700); }
   .alert--tip .alert__learn-more {
     color: var(--color-success-700); }
+
+
+/* PERSON */
+.person {
+  position: relative; }
+
+.person--contributor {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: .75rem; }
+
+.person--author {
+  margin-bottom: 3rem; }
+  @media all and (min-width: 680px) {
+    .person--author {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 3rem; } }
+
+.person--author__info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: .75rem; }
+
+.person__photo {
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+  max-width: initial;
+  /* contributor in the post sidebar */ }
+  .person__photo.person__photo--large {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.25rem; }
+  .person__photo.person__photo--medium {
+    width: 3.5rem;
+    height: 3.5rem; }
+  .person__photo.person__photo--small {
+    width: 3rem;
+    height: 3rem; }
+  .post__sidebar-module .person__photo {
+    width: 3rem;
+    height: 3rem; }
+
+.person__bio a:hover {
+  color: var(--link-color); }
+
+.person__name {
+  font-weight: 500;
+  color: var(--headings-color);
+  font-size: 1.125rem; }
+  .post .person__name {
+    font-size: var(--step-0); }
+
+.person__handle {
+  text-decoration: none;
+  color: var(--link-color);
+  display: block;
+  margin-bottom: .5rem; }
+  .post .person__handle {
+    color: inherit; }
+    .post .person__handle:hover {
+      color: var(--link-color); }
+  .post__sidebar-module .person__handle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.person__title {
+  display: block;
+  margin-bottom: .5rem; }
+
+.person__social-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem; }
 
 .rules-categories {
   display: grid;

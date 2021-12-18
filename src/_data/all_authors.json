@@ -19,10 +19,14 @@
             "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4"
         },
     "nzakas": {
-            "github": "nzakas",
+            "username": "nzakas",
             "name": "Nicholas C. Zakas",
             "website": "https://humanwhocodes.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/38546?v=4"
+            "avatar_url": "https://avatars.githubusercontent.com/u/38546?v=4",
+            "bio": "Nicholas C. Zakas is a principal architect at Box, as well as an author and speaker. He worked at Yahoo! for almost five years, where he was front-end tech lead for the Yahoo! homepage and a contributor to the YUI library. He is the author of Maintainable JavaScript (O’Reilly, 2012), Professional JavaScript for Web Developers (Wrox, 2012), High Performance JavaScript (O’Reilly, 2010), and Professional Ajax (Wrox, 2007). Nicholas is a strong advocate for development best practices including progressive enhancement, accessibility, performance, scalability, and maintainability. He blogs regularly at https://www.nczonline.net and can be found on Twitter via <a href=\"\">@slicknet</a>.",
+            "twitter_username": "slicknet",
+            "github_username": "nzakas",
+            "location": "Mountain View, CA"
         },
     "not-an-aardvark": {
             "github": "not-an-aardvark",
@@ -54,7 +58,7 @@
             "website": "https://henryzoo.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/588473?v=4"
         },
-    
+
     "gyandeeps": {
             "github": "gyandeeps",
             "name": "Gyandeep Singh",

@@ -1,20 +1,18 @@
 <!-- default person -->
 {%- macro member(params) -%}
-<div class="person member {% if params.type == 'author' %} member--author {% endif %}">
-    <img class="person__photo" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="80" height="80">
+<div class="person person--member">
+    <img class="person__photo person__photo--large" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="80" height="80">
     <div class="person__details">
         <div class="person__name">
-            {% if params.name %}{{ params.name }}{% else %} Awesome McPerson {% endif %}
+            {{ params.name }}
         </div>
         <a href="https://github.com/{{ params.handle}}" class="person__handle">
-
             @{{ params.handle }}
-
         </a>
 
         <div class="person__bio">
             <p>
-                {{ params.bio }}
+                {{ params.bio | safe }}
             </p>
         </div>
 
@@ -48,11 +46,58 @@
 
 <!-- has avatar, name, and handle only -->
 {%- macro contributor(params) -%}
-<div class="person contributor {% if params.type == 'author' %} contributor--author {% endif %}">
-    <img class="person__photo" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" width="56" height="56" alt="{{ params.name }}">
+<div class="person person--contributor">
+    <img class="person__photo person__photo--medium" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" width="56" height="56" alt="{{ params.name }}">
     <div class="person__details">
         <div class="person__name">{{ params.name }}</div>
-      <a href="https://github.com/{{ params.handle}}" class="person__title">@{{ params.handle }}</a>
+      <a href="https://github.com/{{ params.handle}}" class="person__handle">@{{ params.handle }}</a>
+    </div>
+</div>
+{%- endmacro -%}
+
+{%- macro postAuthor(params) -%}
+<div class="person person--author">
+    <div class="person--author__info">
+        <img class="person__photo person__photo--small" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="48" height="48">
+        <div class="person__details">
+            <div class="person__name">
+                {{ params.name }}
+            </div>
+            {% if params.title %}
+            <span class="person__title"> {{ params.title }} </span>
+            {% else %}
+            <a href="https://github.com/{{ params.handle}}" class="person__title">
+                @{{ params.handle }}
+            </a>
+            {% endif %}
+            <div class="person__social-links">
+                <ul>
+                    {% if params.twitter %}
+                    <li>
+                        <a href="https://twitter.com/{{ params.twitter }}">
+                            <svg width="20" height="20" viewBox="0 0 24 25" role="img" aria-label="Twitter">
+                                <path d="M24 4.70918C23.1 5.10918 22.2 5.40918 21.2 5.50918C22.2 4.90918 23 3.90918 23.4 2.80918C22.4 3.40918 21.4 3.80918 20.3 4.00918C19.4 3.00918 18.1 2.40918 16.7 2.40918C14 2.40918 11.8 4.60918 11.8 7.30918C11.8 7.70918 11.8 8.10918 11.9 8.40918C7.7 8.20918 4.1 6.20918 1.7 3.20918C1.2 4.00918 1 4.80918 1 5.70918C1 7.40918 1.9 8.90918 3.2 9.80918C2.4 9.80918 1.6 9.60918 1 9.20918C1 9.20918 1 9.20918 1 9.30918C1 11.7092 2.7 13.7092 4.9 14.1092C4.5 14.2092 4.1 14.3092 3.6 14.3092C3.3 14.3092 3 14.3092 2.7 14.2092C3.3 16.2092 5.1 17.6092 7.3 17.6092C5.6 18.9092 3.5 19.7092 1.2 19.7092C0.8 19.7092 0.4 19.7092 0 19.6092C2.2 21.0092 4.8 21.8092 7.5 21.8092C16.6 21.8092 21.5 14.3092 21.5 7.80918C21.5 7.60918 21.5 7.40918 21.5 7.20918C22.5 6.50918 23.3 5.60918 24 4.70918Z" fill="#98A2B3" />
+                            </svg>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if params.github %}
+                    <li>
+                        <a href="https://github.com/{{ params.github }}">
+                            <svg width="20" height="20" viewBox="0 0 25 24" role="img" aria-label="Github">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.147461C5.9 0.147461 0.5 5.54746 0.5 12.1475C0.5 17.4475 3.9 21.9475 8.7 23.5475C9.3 23.6475 9.5 23.2475 9.5 22.9475C9.5 22.6475 9.5 21.9475 9.5 20.9475C6.2 21.6475 5.5 19.3475 5.5 19.3475C5 17.9475 4.2 17.5475 4.2 17.5475C3 16.8475 4.2 16.8475 4.2 16.8475C5.4 16.9475 6 18.0475 6 18.0475C7.1 19.8475 8.8 19.3475 9.5 19.0475C9.6 18.2475 9.9 17.7475 10.3 17.4475C7.6 17.1475 4.8 16.1475 4.8 11.5475C4.8 10.2475 5.3 9.14746 6 8.34746C6 7.94746 5.5 6.74746 6.2 5.14746C6.2 5.14746 7.2 4.84746 9.5 6.34746C10.5 6.04746 11.5 5.94746 12.5 5.94746C13.5 5.94746 14.5 6.04746 15.5 6.34746C17.8 4.74746 18.8 5.14746 18.8 5.14746C19.5 6.84746 19 8.04746 18.9 8.34746C19.7 9.14746 20.1 10.2475 20.1 11.5475C20.1 16.1475 17.3 17.1475 14.6 17.4475C15 17.8475 15.4 18.5475 15.4 19.6475C15.4 21.2475 15.4 22.5475 15.4 22.9475C15.4 23.2475 15.6 23.6475 16.2 23.5475C21 21.9475 24.4 17.4475 24.4 12.1475C24.5 5.54746 19.1 0.147461 12.5 0.147461Z" fill="#98A2B3" />
+                            </svg>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="person__bio">
+        <p>
+            {{ params.bio | safe }}
+        </p>
     </div>
 </div>
 {%- endmacro -%}

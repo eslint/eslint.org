@@ -5,7 +5,7 @@ hook: "post blog-post-page"
 
 {% include "partials/header.html" %}
 
-{%- from 'components/person.macro.html' import member, contributor %}
+{%- from 'components/person.macro.html' import member, contributor, postAuthor %}
 
 <main id="main" tabindex="-1">
     <div class="section hero">
@@ -29,8 +29,18 @@ hook: "post blog-post-page"
             {{ content | safe }}
         </div>
 
-        <div class="post__author-bios">
-
+        <div class="post__author-bios span-5-12">
+            {% for author in authors %}
+                {{ postAuthor({
+                    photo: all_authors[author].avatar_url,
+                    name: all_authors[author].name,
+                    title: "Creator of ESLint",
+                    handle: all_authors[author].username,
+                    github: all_authors[author].github_username,
+                    twitter: all_authors[author].twitter_username,
+                    bio: all_authors[author].bio
+                }) }}
+            {% endfor %}
         </div>
 
         {% include 'partials/post-sidebar.html' %}
