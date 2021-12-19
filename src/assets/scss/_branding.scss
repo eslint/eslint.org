@@ -56,8 +56,18 @@
         padding: .25rem .75rem;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
+        &::before {
+            display: block;
+        }
+    }
+
+    &:focus-visible {
+        &::before {
+            display: block;
+        }
+    }
+    &.focus-visible {
         &::before {
             display: block;
         }
