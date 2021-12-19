@@ -1,7 +1,9 @@
 
 .c-share {
     display: flex;
+    flex-wrap: wrap;
     gap: .75rem;
+    position: relative;
 }
 
 .c-share__btn {
@@ -27,5 +29,21 @@ button.c-share__btn {
 
     &[data-copied="true"] {
         color: var(--link-color);
+    }
+}
+
+.ctc-announcement {
+    flex: 1 1 999px;
+    font-size: .875rem;
+    font-size: var(--step--1);
+    padding: .25rem;
+    border-radius: var(--border-radius);
+    display: block;
+    position: absolute;
+    top: 100%;
+    transition: opacity 1s linear 3s;
+
+    &[data-fades-out] {
+        opacity: 0;
     }
 }

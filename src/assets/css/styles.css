@@ -819,6 +819,9 @@ a.c-btn {
     .eslint-actions {
       flex-direction: row; } }
 
+.eslint-install-code-wrapper {
+  position: relative; }
+
 .eslint-install-code {
   display: inline-flex;
   align-items: center;
@@ -849,6 +852,18 @@ a.c-btn {
 
 .eslint-install-code__btn[data-copied="true"] .c-icon {
   color: var(--link-color); }
+
+.eslint-install-code__announcement {
+  font-size: .875rem;
+  padding: .25rem .75rem;
+  font-size: var(--step--1);
+  border-radius: var(--border-radius);
+  display: block;
+  position: absolute;
+  top: calc(100% + .5rem);
+  transition: opacity 1s linear 3s; }
+  .eslint-install-code__announcement[data-fades-out] {
+    opacity: 0; }
 
 .eslint-versions-col {
   display: flex;
@@ -1799,7 +1814,9 @@ ul.donations-list {
 
 .c-share {
   display: flex;
-  gap: .75rem; }
+  flex-wrap: wrap;
+  gap: .75rem;
+  position: relative; }
 
 .c-share__btn {
   border-radius: var(--border-radius);
@@ -1818,6 +1835,19 @@ button.c-share__btn {
   color: var(--dark-icon-color); }
   button.c-share__btn[data-copied="true"] {
     color: var(--link-color); }
+
+.ctc-announcement {
+  flex: 1 1 999px;
+  font-size: .875rem;
+  font-size: var(--step--1);
+  padding: .25rem;
+  border-radius: var(--border-radius);
+  display: block;
+  position: absolute;
+  top: 100%;
+  transition: opacity 1s linear 3s; }
+  .ctc-announcement[data-fades-out] {
+    opacity: 0; }
 
 .alert {
   position: relative;
