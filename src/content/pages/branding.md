@@ -49,12 +49,7 @@ hook: "branding-page"
             </div>
         </div>
         <div class="span-8-12">
-            <div class="brand__logo">
-                <div class="brand__logo__img">
-                    <img src="../../assets/images/logo/eslint-logo-color.svg" alt="ESLint logo">
-                </div>
-                <img class="brand__logo__colors" src="../../assets/images/logo/brand-colors.svg" alt="Brand colors: #f2f4f7, #101828, #4b32c3">
-            </div>
+            {% include 'partials/branding-logo.html' %}
         </div>
     </div>
     <div class="content-container grid">
@@ -64,35 +59,35 @@ hook: "branding-page"
                 ESLint’s colour palette can speak to our brand in ways that are every bit as powerful as copy and logos. They not only affect how our design looks, but can go as far as to elicit emotion and reflect the personality of the ESLint brand.
             </p>
             <p>
-                The primary "brand" color is used across all interactive elements such as buttons, links, inputs, etc. It is derived from our logo. We use the two existing colours to create a unique primary tonal range.        
+                The primary "brand" color is used across all interactive elements such as buttons, links, inputs, etc. It is derived from our logo. We use the two existing colours to create a unique primary tonal range.
             </p>
         </div>
         <div class="span-8-12">
             <div class="brand__palette">
                 <h3 id="brand-colors-label" hidden>Brand Palette</h3>
                 <ul class="swatches" aria-labelledby="brand-colors-label" role="region" tabindex="0">
-                {% for color in palette.primary %}
+                    {% for color in palette.primary %}
                     {% set colordesc = color.description %}
                     {% set colorval = color.value %}
-<li class="swatches__item">
+                    <li class="swatches__item">
                         {{ swatch({
                             desc: colordesc,
                             val: colorval
                         }) }}
                     </li>
-                {% endfor %}                    
+                    {% endfor %}
 
                     {% for color in palette.neutral %}
                     {% set colordesc = color.description %}
                     {% set colorval = color.value %}
-<li class="swatches__item">
+                    <li class="swatches__item">
                         {{ swatch({
                             desc: colordesc,
                             val: colorval
                         }) }}
                     </li>
-                {% endfor %}  
-</ul> 
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>

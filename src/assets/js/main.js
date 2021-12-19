@@ -62,3 +62,24 @@
 //     })
 
 // })();
+(function(){
+    var logo_theme_buttons = document.querySelector('.brand__logo__colors'),
+        logo_theme_btn = document.querySelectorAll('.brand__logo__colors__btn'),
+        logo_container = document.querySelector('.brand__logo__img');
+
+    logo_theme_buttons.removeAttribute('hidden');
+    logo_theme_btn.forEach((button) => {
+
+        button.addEventListener('click', function() {
+            btn_theme = button.getAttribute('data-theme');
+            unsetOtherButtons();
+            button.setAttribute('aria-pressed', 'true');
+            logo_container.setAttribute('data-theme', btn_theme);
+        })
+    })
+
+    function unsetOtherButtons() {
+        currentButton = document.querySelector('.brand__logo__colors__btn[aria-pressed="true"]');
+        currentButton.setAttribute('aria-pressed', "false");
+    }
+})();

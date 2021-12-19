@@ -155,7 +155,9 @@ a {
 }
 
 a {
+
     color: var(--link-color);
+
     display: inline-flex;
     gap: .5rem;
     align-items: center;
@@ -239,6 +241,7 @@ img {
 }
 
 nav {
+    /* rarely do we display bullets for lists in navigation */
     ol,
     ul {
         list-style: none;
