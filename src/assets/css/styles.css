@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   /* Tier 1 variables */
   --color-neutral-25: #FCFCFD;
@@ -2087,6 +2088,8 @@ button.c-share__btn {
     .languages-list a[aria-current="true"] {
       font-weight: 500;
       color: var(--link-color); }
+      .languages-list a[aria-current="true"]::after {
+        content: "✔️"; }
     .languages-list a:hover {
       color: var(--link-color); }
 

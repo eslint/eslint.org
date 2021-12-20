@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .language-switcher {
   display: inline-flex;
   position: relative;
@@ -56,6 +57,8 @@
     .languages-list a[aria-current="true"] {
       font-weight: 500;
       color: var(--link-color); }
+      .languages-list a[aria-current="true"]::after {
+        content: "✔️"; }
     .languages-list a:hover {
       color: var(--link-color); }
 
