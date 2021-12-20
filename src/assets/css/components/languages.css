@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .switcher--language {
-  display: inline-flex;
+  display: inline-grid;
   position: relative;
   min-width: 15rem;
   padding: 0; }

@@ -1,49 +1,9 @@
 .switcher--language {
-    display: inline-flex;
+    display: inline-grid;
     position: relative;
     min-width: 15rem;
     padding: 0;
 }
-
-// .switcher--language__toggle {
-//     color: inherit;
-//     width: 100%;
-//     background-color: var(--body-background-color);
-
-//     &:hover {
-//         border-color: var(--border-color);
-//         color: var(--headings-color);
-//     }
-// }
-
-
-// .switcher--language__dropdown {
-//     padding: .75rem 1.125rem;
-//     z-index: 1;
-//     text-align: left;
-//     background-color: var(--body-background-color);
-//     border: 1px solid var(--border-color);
-//     border-radius: var(--border-radius);
-//     box-shadow: var(--shadow-lg);
-//     overflow: hidden;
-//     max-height: 400px;
-//     overflow-y: auto;
-// }
-
-// .switcher--language__toggle[aria-expanded="true"]+.switcher--language__dropdown {
-//     position: absolute;
-//     width: 100%;
-// }
-
-// .switcher--language__toggle[aria-expanded="true"]+.switcher--language__dropdown[data-pos-bottom] {
-//     top: calc(100% + .5rem);
-// }
-
-// .switcher--language__toggle[aria-expanded="true"]+.switcher--language__dropdown[data-pos-top] {
-//     position: absolute;
-//     bottom: calc(100% + .5rem);
-//     width: 100%;
-// }
 
 .languages-list {
     margin: 0;

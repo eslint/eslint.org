@@ -745,7 +745,6 @@ a.c-btn {
   display: block;
   width: 100%;
   max-width: 100%;
-  margin: var(--margin);
   padding: .625rem .875rem;
   padding-right: calc(.875rem * 3);
   font: inherit;
@@ -763,7 +762,10 @@ a.c-btn {
 label {
   display: flex;
   align-items: center;
-  font-size: .875rem; }
+  font-size: .875rem;
+  margin-bottom: .25rem; }
+  label .c-icon {
+    margin-right: .8rem; }
 
 .logo {
   display: inline-block;
@@ -2013,7 +2015,7 @@ button.c-share__btn {
     margin: 0; }
 
 .switcher--language {
-  display: inline-flex;
+  display: inline-grid;
   position: relative;
   min-width: 15rem;
   padding: 0; }

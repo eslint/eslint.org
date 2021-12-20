@@ -6,7 +6,6 @@
     display: block;
     width: 100%;
     max-width: 100%;
-    margin: var(--margin);
     padding: .625rem .875rem;
     padding-right: calc(.875rem * 3);
     font: inherit;
@@ -18,21 +17,17 @@
     background-color: var(--body-background-color);
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.60938L10 12.6094L15 7.60938' stroke='%23667085' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"),linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
     background-repeat: no-repeat, repeat;
-    background-position: right calc(.875rem * 1.5) top 50%,
-    0 0;
+    background-position: right calc(.875rem * 1.5) top 50%, 0 0;
     background-size: 1em auto, 100%;
 }
-
-// .c-custom-select::-ms-expand {
-//     display: none;
-// }
-
-// .c-custom-select:focus:not(:focus-visible) {
-//     box-shadow: none;
-// }
 
 label {
     display: flex;
     align-items: center;
     font-size: .875rem;
+    margin-bottom: .25rem;
+
+    .c-icon {
+        margin-right: .8rem;
+    }
 }
