@@ -1,6 +1,19 @@
 <a href="/languages/">Change language</a>
 
-<div role="region" class="language-switcher" aria-labelledby="language-switcher-label">
-        <span id="language-switcher-label" hidden>Language Switcher</span>
-        Language
+<div role="region" class="switcher switcher--language" aria-labelledby="language-switcher-label">
+    <span id="language-switcher-label" hidden>Language Switcher</span>
+    <div class="infobox visually-hidden" id="language-infobox">
+        Selecting a language will take you to the ESLint Web site in that language.
+    </div>
+
+    <label class="switcher__label" for="language-select">Change Language</label>
+    <select name="language selector" id="language-select" aria-describedby="language-infobox" class="switcher__select">
+        {% for language in languages.items %}
+        <option value="{{ language.locale }}"
+                data-url="{{ language.url }}"
+                {% if config.lang == language.locale %} selected {% endif %}>
+            <span class="flag">{{ language.flag }}</span> {{ language.name }}
+        </option>
+        {% endfor %}
+    </select>
 </div>
