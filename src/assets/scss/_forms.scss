@@ -22,12 +22,9 @@
 }
 
 label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-size: .875rem;
     margin-bottom: .25rem;
-
-    .c-icon {
-        margin-right: .8rem;
-    }
+    gap: .5rem;
 }
