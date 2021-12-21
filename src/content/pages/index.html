@@ -132,41 +132,29 @@ eleventyExcludeFromCollections: true
             {% set posts = collections.blogposts | limitTo(3) %}
             {%- for item in posts -%}
 
-            <!-- temporary until I can go through and update all the posts-->
+            <!-- temporary until I can go through an update all the posts-->
             {% set author = item.data.author %}
             {% if not author %}
             {% set author = item.data.authors[0] %}
             {% endif %}
 
-            <article class='card blog-post {%- if item.data.featured == "true" -%} card--featured {%- endif -%}'>
-                <a href="{{ item.url }}" class="card__cover">
-                    <img src="./../../../assets/images/blog-covers/{%- if item.data.image -%}{{ item.data.image }}{%- else -%}{{ item.data.categories[0] | slugify }}.png{%- endif -%}" width="420" height="240" alt="{{ item.data.title }}" />
-                </a>
-                <div class="card__content">
-                    <div class="badge-group">
-                        <span class="blog-post__category">
-                            <span class="visually-hidden">Published under:</span> {{ item.data.categories }}
-                        </span>
-                        <span class="blog-post__reading-time">
-                            {{ item.templateContent | readingTime }} read
-                        </span>
-                    </div>
+            {% set author_image = all_authors[author].avatar_url %}
+            {% set author_name = all_authors[author].name %}
+            {% set reading_time = item.templateContent | readingTime %}
 
-                    <h3 class="card__title">
-                        <a href="{{ item.url }}">{{ item.data.title }}</a>
-                    </h3>
-                    <p class="card__teaser">
-                        {{ item.data.teaser }}
-                    </p>
-                    <div class="card__footer">
-                        <img class="blog-post__author-photo" src="{{ all_authors[author].avatar_url }}" alt="{{ all_authors[author].name }}">
-                        <div class="blog-post__author__details">
-                            <div class="blog-post__author-name">{{ all_authors[author].name }}</div>
-                            <span class="blog-post__publish-date">{{ item.date | readableDate }}</span>
-                        </div>
-                    </div>
-                </div>
-            </article>
+            {{ card({
+                postAuthor: author,
+                authorImage: author_image,
+                authorName: author_name,
+                featured: item.data.featured,
+                url: item.url,
+                image: item.data.image,
+                category: item.data.categories[0],
+                title: item.data.title,
+                readingTime: reading_time,
+                teaser: item.data.teaser,
+                date: item.date
+            }) }}
             {% endfor %}
         </div>
 
