@@ -7,6 +7,8 @@ pagination:
 permalink: /blog/category/{{ currentCategory.slug }}/index.html
 ---
 
+{%- from 'components/card.macro.html' import card %}
+
 {% block content %}
 <h2 hidden>{{ currentCategory.title }}</h2>
 <div class="blog-posts">
@@ -21,7 +23,7 @@ permalink: /blog/category/{{ currentCategory.slug }}/index.html
 
             {% set author_image = all_authors[author].avatar_url %}
             {% set author_name = all_authors[author].name %}
-            {% set reading_time = item.templateContent | readingTime %}
+            {% set reading_time = post.templateContent | readingTime %}
 
             {{ card({
                 postAuthor: author,
