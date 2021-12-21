@@ -91,3 +91,10 @@
 .language-switcher {
     display: inline-flex;
 }
+
+
+.docs-footer {
+    .eslint-social, .copyright {
+        margin-bottom: 2rem;
+    }
+}
