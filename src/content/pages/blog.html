@@ -12,42 +12,22 @@ pagination:
 
 {%- from 'components/card.macro.html' import card %}
 
-<div class="section hero">
-    <div class="content-container grid">
-        <div class="span-1-7">
-            <h1 class="section-title">Resources and insights</h1>
-            <p class="section-supporting-text">
-                The latest industry news, interviews, technologies, and resources.
-            </p>
-        </div>
-        <div class="span-11-12">
-            carbon ad here
-        </div>
-    </div>
-</div>
 
-<div class="content-container grid">
-    <aside class="span-1-3">
-        <!-- <form action="" role="search">
+<div class="blog-posts">
+    {% set postItems = pagination.items %}
+    {% for item in postItems %}
 
-        </form> -->
+    <!-- temporary until I can go through an update all the posts-->
+    {% set author = item.data.author %}
+    {% if not author %}
+    {% set author = item.data.authors[0] %}
+    {% endif %}
 
+    {% set author_image = all_authors[author].avatar_url %}
+    {% set author_name = all_authors[author].name %}
+    {% set reading_time = item.templateContent | readingTime %}
 
-        <div class="blog-posts">
-            {% set postItems = pagination.items %}
-            {% for item in postItems %}
-
-            <!-- temporary until I can go through an update all the posts-->
-            {% set author = item.data.author %}
-            {% if not author %}
-            {% set author = item.data.authors[0] %}
-            {% endif %}
-
-            {% set author_image = all_authors[author].avatar_url %}
-            {% set author_name = all_authors[author].name %}
-            {% set reading_time = item.templateContent | readingTime %}
-
-            {{ card({
+    {{ card({
                 postAuthor: author,
                 authorImage: author_image,
                 authorName: author_name,
@@ -61,5 +41,5 @@ pagination:
                 date: item.date
             }) }}
 
-            {% endfor %}
-        </div>
+    {% endfor %}
+</div>
