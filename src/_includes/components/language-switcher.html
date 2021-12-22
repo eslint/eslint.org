@@ -11,9 +11,9 @@
         Change Language</label>
     <select name="language selector" id="language-select" aria-describedby="language-infobox" class="c-custom-select switcher__select auto-switcher">
         {% for language in languages.items %}
-        <option value="{{ language.locale }}"
+        <option value="{{ language.code }}"
                 data-url="{{ language.url }}"
-                {% if config.lang == language.locale %} selected {% endif %}>
+                {% if config.lang == language.code %} selected {% endif %}>
             {{ language.flag }} {{ language.name }}
         </option>
         {% endfor %}
