@@ -1,7 +1,8 @@
+
 {% macro card(params) %}
 <article class='card blog-post {%- if params.featured == "true" -%} card--featured {%- endif -%}'>
     <a href="{{ params.url }}" class="card__cover">
-        <img src="./../../../assets/images/blog-covers/{%- if params.image -%}{{ params.image }}{%- else -%}{{ params.category |slugify  }}.png{%- endif -%}" width="420" height="240" alt="{{ params.title }}" />
+        <img src="./../../../assets/images/blog-covers/{%- if params.image -%}{{ params.image }}{%- elseif params.category -%}{{ params.category |slugify  }}{% else %}sponsorships{%- endif -%}.png" width="420" height="240" alt="{{ params.title }}" />
     </a>
     <div class="card__content">
         <div class="badge-group">
@@ -14,13 +15,14 @@
         </div>
 
         <h3 class="card__title">
-            <a href="{{ params.url }}">{{ params.title }}</a>
+            <a href="{{ params.url }}">
+                {{ params.title }}</a>
         </h3>
         <p class="card__teaser">
             {{ params.teaser }}
         </p>
         <div class="card__footer">
-            <img class="blog-post__author-photo" src="{{ params.authorImage }}" alt="{{ params.authorName }}">
+            <img class="blog-post__author-photo" src="{% if params.authorImage %}{{ params.authorImage }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.authorName }}">
             <div class="blog-post__author__details">
                 <div class="blog-post__author-name">{{ params.authorName }}</div>
                 <span class="blog-post__publish-date">{{ params.date | readableDate }}</span>

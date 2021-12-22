@@ -8,6 +8,7 @@ tags: ['nav']
 {%- from 'components/alert.macro.html' import warning, tip, important %}
 {%- from 'components/rules-categories.macro.html' import extends, fix, suggestions %}
 {%- from 'components/person.macro.html' import member, contributor %}
+{%- from 'components/card.macro.html' import card %}
 
 
 <div class="content-container">
@@ -48,4 +49,15 @@ tags: ['nav']
 
 <div class="content-container">
     {% include 'partials/branding-logo.html' %}
+</div>
+
+<div class="content-container">
+    {{ card({
+        title: "Demo post title",
+        teaser: "This is a short description to demo what the card component will look like in the pattern library.",
+        authorName: "Happy McPerson",
+        category: "Sponsorships",
+        readingTime: "5 min"
+
+    }) }}
 </div>
