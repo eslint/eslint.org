@@ -1546,16 +1546,15 @@ nav.c-pagination {
   display: flex;
   gap: .5rem; }
 
-.c-pagination__current {
-  order: 2; }
-
 .c-pagination__next {
   order: 3;
   display: flex;
   gap: .5rem; }
 
 .c-pagination__current {
-  border: none; }
+  border: none;
+  order: 2;
+  margin: auto; }
   @media all and (max-width: 480px) {
     .c-pagination__current {
       display: none; } }
