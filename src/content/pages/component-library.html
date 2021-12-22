@@ -53,8 +53,19 @@ tags: ['nav']
 
 <div class="content-container">
     {{ card({
-        title: "Demo post title",
+        title: "This is a featured post",
         featured: "true",
+        teaser: "This is a short description to demo what the card component will look like in the pattern library.",
+        authorName: "Happy McPerson",
+        category: "Sponsorships",
+        readingTime: "5 min",
+        date: "02-03-2020"
+    }) }}
+</div>
+
+<div class="content-container">
+    {{ card({
+        title: "Just a post",
         teaser: "This is a short description to demo what the card component will look like in the pattern library.",
         authorName: "Happy McPerson",
         category: "Sponsorships",
