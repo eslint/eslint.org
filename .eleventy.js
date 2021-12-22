@@ -49,7 +49,10 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter("readableDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toFormat('dd MMM, yyyy');
+        //turn it into a JS Date string
+        date = new Date(dateObj);
+        //pass it to luxon for formatting
+        return DateTime.fromJSDate(date).toFormat('dd MMM, yyyy');
     });
 
     eleventyConfig.addFilter("blogPermalinkDate", (dateObj) => {
