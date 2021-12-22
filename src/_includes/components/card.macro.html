@@ -1,6 +1,6 @@
 
 {% macro card(params) %}
-<article class='card blog-post {%- if params.featured == "true" -%} card--featured {%- endif -%}'>
+<article class='card {% if params.featured == "true" %} card--featured {% endif %}'>
     <a href="{{ params.url }}" class="card__cover">
         <img src="./../../../assets/images/blog-covers/{%- if params.image -%}{{ params.image }}{%- elseif params.category -%}{{ params.category |slugify  }}{% else %}sponsorships{%- endif -%}.png" width="420" height="240" alt="{{ params.title }}" />
     </a>

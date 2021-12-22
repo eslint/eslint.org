@@ -1324,8 +1324,7 @@ ul.donation-plan__features,
   justify-self: flex-end;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: .75rem;
-  margin-top: auto; }
+  grid-gap: .75rem; }
 
 .blog-post__author-photo {
   width: 2.5rem;
