@@ -67,11 +67,17 @@
             const select = element.querySelector('select');
 
             select.addEventListener('change', function() {
-                var selected = this.options[this.selectedIndex],
-                    text = selected.text;
+                var selected = this.options[this.selectedIndex];
                 url = selected.getAttribute('data-url');
 
                 window.location.href =  url;
+            })
+
+            select.addEventListener('click', function(e) {
+                var selected = this.options[this.selectedIndex];
+                url = selected.getAttribute('data-url');
+                if( url == window.location.href) return;
+                else window.location.href =  url;
             })
         });
     }
