@@ -17,11 +17,13 @@ pagination:
     {% set postItems = pagination.items %}
     {% for item in postItems %}
 
+
     <!-- temporary until I can go through an update all the posts-->
     {% set author = item.data.author %}
     {% if not author %}
     {% set author = item.data.authors[0] %}
     {% endif %}
+
 
     {% set author_image = all_authors[author].avatar_url %}
     {% set author_name = all_authors[author].name %}
@@ -40,6 +42,5 @@ pagination:
                 teaser: item.data.teaser,
                 date: item.date
             }) }}
-
     {% endfor %}
 </div>
