@@ -72,13 +72,6 @@
 
                 window.location.href =  url;
             })
-
-            select.addEventListener('click', function(e) {
-                var selected = this.options[this.selectedIndex];
-                url = selected.getAttribute('data-url');
-                if( url == window.location.href) return;
-                else window.location.href =  url;
-            })
         });
     }
 

@@ -2013,6 +2013,10 @@ button.c-share__btn {
   .rules-category p {
     margin: 0; }
 
+@media all and (max-width: 640px) {
+  .switcher__label {
+    justify-content: center; } }
+
 .switcher--language {
   display: inline-grid;
   position: relative;
