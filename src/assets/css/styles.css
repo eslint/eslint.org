@@ -721,19 +721,6 @@ a.c-btn {
       flex-direction: row;
       justify-content: space-between; } }
 
-.eslint-social-icons {
-  display: inline-flex; }
-  .eslint-social-icons ul {
-    margin: 0;
-    padding: 0; }
-    .eslint-social-icons ul li {
-      padding: 1rem;
-      margin: 0;
-      display: inline-flex;
-      align-items: center; }
-      .eslint-social-icons ul li a {
-        display: flex; }
-
 .language-switcher {
   display: inline-flex; }
 
@@ -2076,6 +2063,19 @@ button.c-share__btn {
   font-size: var(--step-1);
   border-left: 4px solid var(--tab-border-color);
   padding-left: 1rem; }
+
+.eslint-social-icons {
+  display: inline-flex; }
+  .eslint-social-icons ul {
+    margin: 0;
+    padding: 0; }
+    .eslint-social-icons ul li {
+      padding: 1rem;
+      margin: 0;
+      display: inline-flex;
+      align-items: center; }
+      .eslint-social-icons ul li a {
+        display: flex; }
 
 #carbonads * {
   margin: initial;
