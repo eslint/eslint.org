@@ -1,0 +1,12 @@
+.eslint-social-icons {
+  display: inline-flex; }
+  .eslint-social-icons ul {
+    margin: 0;
+    padding: 0; }
+    .eslint-social-icons ul li {
+      padding: 1rem;
+      margin: 0;
+      display: inline-flex;
+      align-items: center; }
+      .eslint-social-icons ul li a {
+        display: flex; }
