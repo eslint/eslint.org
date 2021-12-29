@@ -100,7 +100,7 @@ module.exports = function(eleventyConfig) {
             linkify: true,
             typographer: true,
 
-        }).disable('code')
+        }).use(markdownItAnchor, {})
     );
 
 
