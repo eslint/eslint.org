@@ -1,15 +1,16 @@
-.rules-categories {
+.rule-categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem; }
-  .rules-categories .rules-category {
+  .rule-categories .rule-category {
     margin: 0;
     padding: 0;
-    background: none; }
-  .rules-categories .rules-category__description {
+    background: none;
+    border: none; }
+  .rule-categories .rule-category__description {
     flex: 1 1 60ch; }
 
-.rules-category {
+.rule-category {
   font-size: var(--step--1);
   display: flex;
   flex-wrap: wrap;
@@ -18,6 +19,7 @@
   padding: 1rem;
   margin: 1.5rem 0;
   border-radius: var(--border-radius);
+  border: 1px solid var(--divider-color);
   background-color: var(--lightest-background-color); }
-  .rules-category p {
+  .rule-category p {
     margin: 0; }

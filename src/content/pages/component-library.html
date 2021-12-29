@@ -6,7 +6,7 @@ tags: ['nav']
 
 {%- from 'components/buttony-link.macro.html' import buttonyLink %}
 {%- from 'components/alert.macro.html' import warning, tip, important %}
-{%- from 'components/rules-categories.macro.html' import extends, fix, suggestions %}
+{%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
 {%- from 'components/person.macro.html' import member, contributor %}
 {%- from 'components/card.macro.html' import card %}
 
@@ -24,24 +24,25 @@ tags: ['nav']
         url: "/"
     }) }}
 
-        {{ tip({
+    {{ tip({
         text: "This rule is deprecated and will be removed in future versions.",
         url: "/"
     }) }}
 
-        {{ important({
+    {{ important({
         text: "Remember to share your changes with the team.",
         url: "/"
     }) }}
 </div>
 
 <div class="content-container">
-    <div class="rules-categories">
-        {{ extends() }}
-        {{ fix() }}
-        {{ suggestions() }}
-    </div>
-
+    {{ ruleCategories({
+        extends: true,
+        fix: true,
+        suggestions: true
+    }) }}
+</div>
+<div class="content-container">
     {{ extends() }}
     {{ fix() }}
     {{ suggestions() }}
