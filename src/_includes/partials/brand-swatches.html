@@ -1,0 +1,23 @@
+<h3 id="brand-colors-label" hidden>Brand Palette</h3>
+<ul class="swatches" aria-labelledby="brand-colors-label">
+    {%- for color in palette.primary -%}
+    {%- set colordesc = color.description -%}
+    {%- set colorval = color.value -%}
+    <li class="swatches__item">
+        {{ swatch({
+            desc: colordesc,
+            val: colorval
+        }) }}
+    </li>
+    {%- endfor -%}
+    {%- for color in palette.neutral -%}
+    {%- set colordesc = color.description -%}
+    {%- set colorval = color.value -%}
+    <li class="swatches__item">
+        {{ swatch({
+            desc: colordesc,
+            val: colorval
+        }) }}
+    </li>
+    {%- endfor -%}
+</ul>
