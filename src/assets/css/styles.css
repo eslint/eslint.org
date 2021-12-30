@@ -721,21 +721,25 @@ a.c-btn {
       flex-direction: row;
       justify-content: space-between; } }
 
-.eslint-social {
-  display: inline-flex; }
-  .eslint-social ul {
-    margin: 0;
-    padding: 0; }
-    .eslint-social ul li {
-      padding: 1rem;
-      margin: 0;
-      display: inline-flex;
-      align-items: center; }
-      .eslint-social ul li a {
-        display: flex; }
-
 .language-switcher {
   display: inline-flex; }
+
+.docs-footer {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: baseline; }
+  .docs-footer .copyright p {
+    margin: 0; }
+  .docs-footer .docs-socials-and-legal {
+    flex: 1 0 35ch;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .docs-footer .docs-switcher {
+    flex: 0 0 240px; }
 
 .c-custom-select {
   -moz-appearance: none;
@@ -1500,6 +1504,25 @@ ul.tag-list {
     .site-nav .flexer {
       order: 1; } }
 
+.c-toc ol {
+  margin: 0; }
+  .c-toc ol li {
+    margin-bottom: .25rem; }
+  .c-toc ol li::before {
+    content: "└";
+    margin-right: .5rem;
+    color: var(--icon-color); }
+
+.c-toc a {
+  text-decoration: none;
+  color: var(--headings-color); }
+
+.c-toc__label.c-toc__label {
+  font-size: var(--step-0);
+  color: var(--body-text-color);
+  font-family: var(--text-font);
+  margin-bottom: .5rem; }
+
 nav.c-pagination {
   display: flex;
   justify-content: space-between;
@@ -2019,7 +2042,9 @@ button.c-share__btn {
 
 @media all and (max-width: 640px) {
   .switcher__label {
-    justify-content: center; } }
+    justify-content: center; }
+    .docs-footer .switcher__label {
+      justify-content: flex-start; } }
 
 .switcher--language {
   display: inline-grid;
@@ -2059,6 +2084,19 @@ button.c-share__btn {
   font-size: var(--step-1);
   border-left: 4px solid var(--tab-border-color);
   padding-left: 1rem; }
+
+.eslint-social-icons {
+  display: inline-flex; }
+  .eslint-social-icons ul {
+    margin: 0;
+    padding: 0; }
+    .eslint-social-icons ul li {
+      padding: 1rem;
+      margin: 0;
+      display: inline-flex;
+      align-items: center; }
+      .eslint-social-icons ul li a {
+        display: flex; }
 
 #carbonads * {
   margin: initial;
