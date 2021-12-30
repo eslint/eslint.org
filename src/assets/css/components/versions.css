@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .versions-list {
   margin: 0;
   padding: 0;
@@ -15,6 +16,11 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--divider-color); }
+    .versions-list a[data-current="true"] {
+      font-weight: 500;
+      color: var(--link-color); }
+      .versions-list a[data-current="true"]::after {
+        content: "✔️"; }
     .versions-list a:hover {
       background-color: var(--lightest-background-color); }
 
