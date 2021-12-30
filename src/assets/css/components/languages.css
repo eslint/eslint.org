@@ -1,11 +1,5 @@
-@charset "UTF-8";
-.switcher--language {
-  display: inline-grid;
-  position: relative;
-  min-width: 15rem;
-  padding: 0; }
 
-.languages-list, .versions-list {
+.languages-list {
   margin: 0;
   padding: 0;
   font-size: var(--step-0); }

@@ -1,8 +1,19 @@
 
 {% macro card(params) %}
 <article class='card {% if params.featured == "true" %} card--featured {% endif %}'>
+    {%- if params.image -%}
+    {% set imageName =  params.image %}
+    {%- elseif params.category -%}
+    {% set imageName =  params.category | slugify %}
+    {% else %}
+    {% set imageName =  'sponsorships' %}
+    {% endif %}
+
+    {% set img = ['/assets/images/blog-covers/', imageName, '.png'] | join  %}
+
     <a href="{{ params.url }}" class="card__cover">
-        <img src="./../../../assets/images/blog-covers/{%- if params.image -%}{{ params.image }}{%- elseif params.category -%}{{ params.category |slugify  }}{% else %}sponsorships{%- endif -%}.png" width="420" height="240" alt="{{ params.title }}" />
+        <img src="{{ img | url }}"
+                width="420" height="240" alt="{{ params.title }}" />
     </a>
     <div class="card__content">
         <div class="badge-group">
