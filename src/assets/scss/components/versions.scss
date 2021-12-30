@@ -21,10 +21,14 @@
         align-items: center;
         border-bottom: 1px solid var(--divider-color);
 
-        // &[data-current="true"] {
-        //     font-weight: 500;
-        //     color: var(--link-color);
-        // }
+        &[data-current="true"] {
+            font-weight: 500;
+            color: var(--link-color);
+
+            &::after {
+                content: "✔️";
+            }
+        }
 
         &:hover {
             background-color: var(--lightest-background-color);
