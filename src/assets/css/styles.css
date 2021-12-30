@@ -1156,6 +1156,7 @@ ul.donation-plan__features,
   display: inline-block;
   width: 1rem;
   height: 1rem;
+  flex: none;
   margin-left: .75rem;
   margin-inline-start: .75rem;
   background-color: var(--background-color);
