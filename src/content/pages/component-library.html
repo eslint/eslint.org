@@ -59,6 +59,10 @@ tags: ['nav']
 </div>
 
 <div class="content-container">
+    {% include 'components/version-switcher.html' %}
+</div>
+
+<div class="content-container">
     {{ card({
         title: "This is a featured post",
         featured: "true",
