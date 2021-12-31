@@ -2,13 +2,12 @@
 layout: post
 title: What's coming in ESLint v8.0.0
 tags:
-  - Major Release
-  - Breaking Changes
+  - major
+  - breaking changes
+authors:
+  - nzakas
 categories:
   - API Changes
-authors: 
-  - nzakas
-
 ---
 
 Last week, the Technical Steering Committee (TSC) met to finalize the features for ESLint v8.0.0. This feature set had not yet been locked down even as v8.0.0 work began and so this represented an important milestone that allows us to focus on getting this next major release shipped. You can see everything that is planned for v8.0.0 on our [project board](https://github.com/eslint/eslint/projects/8).
