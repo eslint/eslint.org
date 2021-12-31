@@ -1297,12 +1297,13 @@ ul.donation-plan__features,
   display: flex;
   flex-direction: column; }
 
-.card__title {
+.card .card__title {
+  margin-top: 0;
   margin-bottom: .5rem; }
-  .card__title a {
+  .card .card__title a {
     color: inherit;
     text-decoration: none; }
-    .card__title a:hover {
+    .card .card__title a:hover {
       color: var(--color-brand); }
 
 .card__teaser {

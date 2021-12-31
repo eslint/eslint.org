@@ -101,7 +101,8 @@
     flex-direction: column;
 }
 
-.card__title {
+.card .card__title {
+    margin-top: 0;
     margin-bottom: .5rem;
 
     a {
