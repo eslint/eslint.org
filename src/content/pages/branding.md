@@ -16,7 +16,7 @@ hook: "branding-page"
             </p>
         </div>
         <div class="span-11-12">
-            carbon ad here
+                {% include "partials/carbon-ad.html" %}
         </div>
     </div>
 </section>
