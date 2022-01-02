@@ -58,6 +58,7 @@
     display: inline-flex;
     align-items: center;
     gap: 1rem;
+    background-color: var(--lightest-background-color);
     border-radius: var(--border-radius);
     border: 1px solid var(--divider-color);
     padding: .75rem 1.25rem .75rem 1rem;
@@ -65,9 +66,18 @@
     margin-top: 1.5rem;
     overflow-x: auto;
     max-width: 100%;
+    color: var(--headings-color);
+
+    [data-theme="dark"] {
+        background-color: var(--color-neutral-700);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--color-neutral-700);
+    }
 
     code {
-        color: inherit;
+        color: var(--headings-color);
     }
 
     input {
@@ -85,7 +95,7 @@
 
 .eslint-install-code__btn {
     .c-icon {
-        color: var(--color-neutral-500);
+        color: var(--body-text-color);
     }
 
     &:hover,
@@ -161,8 +171,8 @@
 /* homepage metrics section */
 
 .metrics {
-    background-color: var(--color-primary-50);
-    color: var(--color-brand);
+    background-color: var(--lightest-background-color);
+    color: var(--link-color);
     font-size: 1.125rem;
     // padding: var(--space-xl-3xl);
     border-radius: var(--border-radius);
@@ -170,6 +180,13 @@
 
     @media all and (min-width: 768px) {
         display: flex;
+    }
+
+    [data-theme="dark"] {
+        color: var(--color-primary-400);
+    }
+    @media (prefers-color-scheme: dark) {
+        color: var(--color-primary-400);
     }
 }
 

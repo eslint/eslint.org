@@ -31,7 +31,7 @@ ul.donations-list {
     flex: none;
     border-radius: var(--border-radius);
     padding: 1rem;
-    background-color: var(--donation-background-color);
+    background-color: var(--lightest-background-color);
     display: grid;
     grid-gap: 1.5rem 2rem;
     grid-template-columns: auto 1fr 0;

@@ -82,7 +82,7 @@
 (function() {
     var light_theme_toggle = document.getElementById('light-theme-toggle'),
         dark_theme_toggle = document.getElementById('dark-theme-toggle'),
-        theme = 'light';
+        theme = '';
     document.documentElement.setAttribute('data-theme', theme);
 
     // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
