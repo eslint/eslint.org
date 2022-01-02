@@ -1,0 +1,5 @@
+button[aria-pressed="true"] .c-icon {
+  color: var(--link-color); }
+
+button[aria-pressed="false"] .c-icon {
+  color: var(--icon-color); }
