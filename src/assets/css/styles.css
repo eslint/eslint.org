@@ -778,7 +778,8 @@ label {
   background-color: var(--hero-background-color); }
 
 .hero--display .content-container {
-  padding: var(--space-xl-4xl) calc(1rem + 1vw); }
+  padding: var(--space-xl-4xl) calc(1rem + 1vw);
+  align-items: center; }
 
 .hero--display .section-title {
   margin-bottom: 1.5rem; }
