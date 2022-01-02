@@ -3,11 +3,6 @@
     color: #fff;
 }
 
-[role="region"] {
-    padding: 5px;
-    margin: -5px;
-}
-
 *:focus {
     outline: 3px solid transparent;
 }
@@ -23,12 +18,12 @@
 }
 
 *.focus-visible {
-    outline: 2px solid var(--link-color);
+    outline: 2px solid var(--outline-color);
     outline-offset: 3px;
 }
 
 *:focus-visible {
-    outline: 2px solid var(--link-color);
+    outline: 2px solid var(--outline-color);
     outline-offset: 3px;
 }
 
@@ -146,22 +141,18 @@ code {
 }
 
 .c-btn,
+button,
 a {
     .c-icon:hover {
-
         color: var(--link-color);
-
     }
 }
 
 a {
-
     color: var(--link-color);
-
     display: inline-flex;
     gap: .5rem;
     align-items: center;
-
 
     .side-header & {
         color: inherit;

@@ -3,3 +3,6 @@ button[aria-pressed="true"] .c-icon {
 
 button[aria-pressed="false"] .c-icon {
   color: var(--icon-color); }
+
+.theme-switcher__button:hover .c-icon {
+  color: var(--link-color); }

@@ -9,3 +9,9 @@ button[aria-pressed="false"] {
         color: var(--icon-color);
     }
 }
+
+.theme-switcher__button:hover {
+    .c-icon {
+        color: var(--link-color);
+    }
+}

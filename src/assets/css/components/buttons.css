@@ -53,4 +53,4 @@ a.c-btn {
   color: var(--body-text-color);
   border: 1px solid var(--border-color); }
   .c-btn--ghost:hover {
-    border-color: var(--color-brand); }
+    border-color: var(--link-color); }

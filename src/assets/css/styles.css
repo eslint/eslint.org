@@ -80,7 +80,8 @@
     --tab-border-color: var(--color-neutral-800);
     --lightest-background-color: var(--color-neutral-800);
     --hero-background-color: var(--color-neutral-800);
-    --footer-background-color: var(--color-neutral-800); } }
+    --footer-background-color: var(--color-neutral-800);
+    --outline-color: #fff; } }
 
 [data-theme="light"] {
   /* Tier 2 variables */
@@ -96,7 +97,8 @@
   --dark-icon-color: var(--color-neutral-500);
   --link-color: var(--color-primary-800);
   --hero-background-color: var(--color-neutral-25);
-  --footer-background-color: var(--color-neutral-25); }
+  --footer-background-color: var(--color-neutral-25);
+  --outline-color: var(--color-brand); }
 
 html[data-theme="dark"] {
   --icon-color: var(--color-neutral-700);
@@ -111,7 +113,8 @@ html[data-theme="dark"] {
   --lighter-background-color: var(--color-neutral-800);
   --lightest-background-color: var(--color-neutral-800);
   --hero-background-color: var(--color-neutral-800);
-  --footer-background-color: var(--color-neutral-800); }
+  --footer-background-color: var(--color-neutral-800);
+  --outline-color: #fff; }
 
 /* @link https://utopia.fyi/space/calculator?c=320,16,1.125,1440,16,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|8,l-2xl|xl-3xl|xl-4xl */
 :root {
@@ -315,10 +318,6 @@ figcaption {
   background-color: var(--color-brand);
   color: #fff; }
 
-[role="region"] {
-  padding: 5px;
-  margin: -5px; }
-
 *:focus {
   outline: 3px solid transparent; }
 
@@ -331,11 +330,11 @@ figcaption {
   box-shadow: none; }
 
 *.focus-visible {
-  outline: 2px solid var(--link-color);
+  outline: 2px solid var(--outline-color);
   outline-offset: 3px; }
 
 *:focus-visible {
-  outline: 2px solid var(--link-color);
+  outline: 2px solid var(--outline-color);
   outline-offset: 3px; }
 
 *,
@@ -424,6 +423,7 @@ code {
       color: canvasText; } }
 
 .c-btn .c-icon:hover,
+button .c-icon:hover,
 a .c-icon:hover {
   color: var(--link-color); }
 
@@ -1344,7 +1344,7 @@ a.c-btn {
   color: var(--body-text-color);
   border: 1px solid var(--border-color); }
   .c-btn--ghost:hover {
-    border-color: var(--color-brand); }
+    border-color: var(--link-color); }
 
 .card {
   text-align: left;
@@ -2188,6 +2188,15 @@ button.c-share__btn {
 .swatch__description {
   color: var(--headings-color);
   font-weight: 500; }
+
+button[aria-pressed="true"] .c-icon {
+  color: var(--link-color); }
+
+button[aria-pressed="false"] .c-icon {
+  color: var(--icon-color); }
+
+.theme-switcher__button:hover .c-icon {
+  color: var(--link-color); }
 
 #carbonads * {
   margin: initial;

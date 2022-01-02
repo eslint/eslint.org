@@ -5,7 +5,7 @@ permalink: /donate/
 hook: "donate-page"
 ---
 
-<svg style="visually-hidden" aria-hidden="true">
+<svg style="display: none;" aria-hidden="true">
     <symbol viewBox="0 0 24 24" id="feature-check">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <rect width="24" height="24" rx="12" fill="var(--lightest-background-color)" />

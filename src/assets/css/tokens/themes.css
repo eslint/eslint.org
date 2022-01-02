@@ -79,7 +79,8 @@
     --tab-border-color: var(--color-neutral-800);
     --lightest-background-color: var(--color-neutral-800);
     --hero-background-color: var(--color-neutral-800);
-    --footer-background-color: var(--color-neutral-800); } }
+    --footer-background-color: var(--color-neutral-800);
+    --outline-color: #fff; } }
 
 [data-theme="light"] {
   /* Tier 2 variables */
@@ -95,7 +96,8 @@
   --dark-icon-color: var(--color-neutral-500);
   --link-color: var(--color-primary-800);
   --hero-background-color: var(--color-neutral-25);
-  --footer-background-color: var(--color-neutral-25); }
+  --footer-background-color: var(--color-neutral-25);
+  --outline-color: var(--color-brand); }
 
 html[data-theme="dark"] {
   --icon-color: var(--color-neutral-700);
@@ -110,4 +112,5 @@ html[data-theme="dark"] {
   --lighter-background-color: var(--color-neutral-800);
   --lightest-background-color: var(--color-neutral-800);
   --hero-background-color: var(--color-neutral-800);
-  --footer-background-color: var(--color-neutral-800); }
+  --footer-background-color: var(--color-neutral-800);
+  --outline-color: #fff; }

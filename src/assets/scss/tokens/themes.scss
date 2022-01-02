@@ -89,6 +89,7 @@
         --lightest-background-color: var(--color-neutral-800);
         --hero-background-color: var(--color-neutral-800);
         --footer-background-color: var(--color-neutral-800);
+        --outline-color: #fff;
     }
 }
 
@@ -110,13 +111,13 @@
 
     --hero-background-color: var(--color-neutral-25);
     --footer-background-color: var(--color-neutral-25);
+    --outline-color: var(--color-brand);
 }
 
 
 
 
 html[data-theme="dark"] {
-    // --icon-color: var(--color-neutral-400);
     --icon-color: var(--color-neutral-700);
     --body-background-color: var(--color-neutral-900);
     --body-text-color: var(--color-neutral-400);
@@ -131,4 +132,5 @@ html[data-theme="dark"] {
     --lightest-background-color: var(--color-neutral-800);
     --hero-background-color: var(--color-neutral-800);
     --footer-background-color: var(--color-neutral-800);
+    --outline-color: #fff;
 }
