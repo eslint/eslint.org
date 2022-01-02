@@ -373,8 +373,6 @@
     &:first-of-type() {
         @media all and (max-width: 768px) {}
     }
-
-
 }
 
 .donation-plan__header {
@@ -397,8 +395,7 @@ ul.donation-plan__features {
         display: flex;
         align-items: start;
 
-        &::before {
-            content: url(../../assets/images/icons/features-list-icon.svg);
+        .c-icon {
             width: 1.5rem;
             height: 1.5rem;
             margin-right: .75rem;

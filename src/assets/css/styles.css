@@ -243,7 +243,7 @@ body {
   line-height: 1.5; }
 
 .eyebrow {
-  color: var(--color-brand);
+  color: var(--link-color);
   font-size: 1rem;
   font-weight: 500;
   display: block;
@@ -1029,8 +1029,7 @@ ul.donation-plan__features li {
   margin-bottom: 1rem;
   display: flex;
   align-items: start; }
-  ul.donation-plan__features li::before {
-    content: url(../../assets/images/icons/features-list-icon.svg);
+  ul.donation-plan__features li .c-icon {
     width: 1.5rem;
     height: 1.5rem;
     margin-right: .75rem; }
