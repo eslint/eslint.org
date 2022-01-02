@@ -646,15 +646,13 @@ code .highlight-line:before {
   display: inline-flex;
   justify-self: start;
   flex: none;
+  place-content: center;
   grid-column: 1 / -1;
   grid-row: 1;
   padding: .5rem 0; }
 
-.logo {
-  display: inline-flex;
-  place-content: center; }
-
 .logo svg {
+  display: block;
   width: 100%;
   max-width: 100px;
   height: auto; }
@@ -748,11 +746,6 @@ label {
   font-size: .875rem;
   margin-bottom: .25rem;
   gap: .5rem; }
-
-.logo {
-  display: inline-block;
-  width: 100px;
-  height: auto; }
 
 .hero {
   border-bottom: 1px solid var(--divider-color);
