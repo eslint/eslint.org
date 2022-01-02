@@ -74,41 +74,22 @@
     --color-brand: var(--color-primary-800);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        // --icon-color: var(--color-neutral-400);
-        --icon-color: var(--color-neutral-700);
-        --body-background-color: var(--color-neutral-900);
-        --body-text-color: var(--color-neutral-400);
-        --headings-color: #fff;
-        --link-color: var(--color-primary-500);
-        --divider-color: var(--color-neutral-600);
-        --border-color: var(--color-neutral-500);
-        --icon-color: var(--body-text-color);
-        --tab-border-color: var(--color-neutral-800);
-        --lightest-background-color: var(--color-neutral-800);
-        --hero-background-color: var(--color-neutral-800);
-        --footer-background-color: var(--color-neutral-800);
-        --outline-color: #fff;
-    }
-}
 
-[data-theme="light"]{
-    /* Tier 2 variables */
-    --border-color: var(--color-neutral-300);
-    --divider-color: var(--color-neutral-200);
-
-    --border-color: var(--color-neutral-300);
-    --lighter-background-color: var(--color-neutral-100);
-    --lightest-background-color: var(--color-neutral-50);
-
+html[data-theme="light"] {
     --body-background-color: #fff;
     --body-text-color: var(--color-neutral-500);
     --headings-color: var(--color-neutral-900);
+
+    --border-color: var(--color-neutral-300);
+    --divider-color: var(--color-neutral-200);
+
+
     --icon-color: var(--color-neutral-400);
     --dark-icon-color: var(--color-neutral-500);
     --link-color: var(--color-primary-800);
 
+    --lighter-background-color: var(--color-neutral-100);
+    --lightest-background-color: var(--color-neutral-50);
     --hero-background-color: var(--color-neutral-25);
     --footer-background-color: var(--color-neutral-25);
     --outline-color: var(--color-brand);
@@ -118,17 +99,18 @@
 
 
 html[data-theme="dark"] {
-    --icon-color: var(--color-neutral-700);
     --body-background-color: var(--color-neutral-900);
     --body-text-color: var(--color-neutral-400);
     --headings-color: #fff;
-    --link-color: var(--color-primary-500);
+
     --divider-color: var(--color-neutral-600);
     --border-color: var(--color-neutral-500);
+
     --icon-color: var(--body-text-color);
     --dark-icon-color: #fff;
-    --lighter-background-color: var(--color-neutral-800);
+    --link-color: var(--color-primary-500);
 
+    --lighter-background-color: var(--color-neutral-800);
     --lightest-background-color: var(--color-neutral-800);
     --hero-background-color: var(--color-neutral-800);
     --footer-background-color: var(--color-neutral-800);
