@@ -86,13 +86,13 @@
   --border-color: var(--color-neutral-300);
   --divider-color: var(--color-neutral-200);
   --border-color: var(--color-neutral-300);
-  --tab-border-color: var(--color-neutral-100);
+  --lighter-background-color: var(--color-neutral-100);
   --lightest-background-color: var(--color-neutral-50);
   --body-background-color: #fff;
   --body-text-color: var(--color-neutral-500);
   --headings-color: var(--color-neutral-900);
   --icon-color: var(--color-neutral-400);
-  --dark-icon-color: var(--color-neutral-700);
+  --dark-icon-color: var(--color-neutral-500);
   --link-color: var(--color-primary-800);
   --hero-background-color: var(--color-neutral-25);
   --footer-background-color: var(--color-neutral-25); }
@@ -106,8 +106,8 @@ html[data-theme="dark"] {
   --divider-color: var(--color-neutral-600);
   --border-color: var(--color-neutral-500);
   --icon-color: var(--body-text-color);
-  --tab-border-color: var(--color-neutral-800);
-  --donation-background-color: var(--color-neutral-800);
-  --lightest-background-color: var(--color-neutral-700);
+  --dark-icon-color: #fff;
+  --lighter-background-color: var(--color-neutral-800);
+  --lightest-background-color: var(--color-neutral-800);
   --hero-background-color: var(--color-neutral-800);
   --footer-background-color: var(--color-neutral-800); }

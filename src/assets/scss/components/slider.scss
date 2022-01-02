@@ -6,6 +6,7 @@
 
 .c-slider__paddleNav {
 
+
     @media all and (min-width: 1023px) {
         margin-top: -4rem;
         position: relative;
@@ -18,15 +19,15 @@
         height: 3.5rem;
         border: 2px solid transparent;
         border-radius: 50%;
-        border-color: var(--color-neutral-200);
+        border-color: var(--divider-color);
         line-height: 0;
-        background-color: #fff;
+        background-color: var(--lighter-background-color);
 
         svg {
             display: block;
             width: 100%;
-            color: inherit;
             transition: color .1s linear;
+            color: var(--dark-icon-color);
         }
 
         &[aria-disabled="true"] {
@@ -37,7 +38,7 @@
 
         &:hover {
             svg {
-                color: var(--color--brand);
+                color: var(--link-color);
             }
         }
 
@@ -53,8 +54,8 @@
 
         &:focus,
         &:active {
-            outline: 1px solid transparent;
-            border-color: var(--color-brand);
+            // outline: 1px solid transparent;
+            border-color: var(--link-color);
         }
 
         &[aria-disabled="true"]:focus {

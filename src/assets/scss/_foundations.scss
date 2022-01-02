@@ -23,12 +23,12 @@
 }
 
 *.focus-visible {
-    outline: 2px solid var(--color-brand);
+    outline: 2px solid var(--link-color);
     outline-offset: 3px;
 }
 
 *:focus-visible {
-    outline: 2px solid var(--color-brand);
+    outline: 2px solid var(--link-color);
     outline-offset: 3px;
 }
 
@@ -39,8 +39,8 @@
 }
 
 html {
-    accent-color: var(--color-brand);
-    background-color: var(--color-brand);
+    accent-color: var(--link-color);
+    background-color: var(--link-color);
     height: 100%;
     font-family: var(--text-font);
     overflow-x: hidden;
