@@ -26,3 +26,14 @@
     grid-row: 1;
     padding: .5rem 0;
 }
+
+.logo {
+    display: inline-flex;
+    place-content: center;
+}
+
+.logo svg {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}

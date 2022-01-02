@@ -82,14 +82,15 @@
 (function() {
     var light_theme_toggle = document.getElementById('light-theme-toggle'),
         dark_theme_toggle = document.getElementById('dark-theme-toggle'),
-        theme = '';
+        theme = 'light';
     document.documentElement.setAttribute('data-theme', theme);
 
-    // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    //     document.documentElement.setAttribute('data-theme', theme);
-    // }
-    // window.localStorage.setItem("theme", "light");
-    // const theme = window.localStorage.getItem("theme");
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+
+    window.localStorage.setItem("theme", "light");
+    var theme = window.localStorage.getItem("theme");
 
     var enableToggle = function(btn) {
         btn.setAttribute("aria-pressed", "true");
