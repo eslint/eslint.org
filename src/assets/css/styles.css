@@ -559,11 +559,12 @@ pre[class*="language-"] {
   padding: 1.5rem;
   margin: 1.5rem 0;
   overflow: auto;
-  background-color: var(--lightest-background-color); }
+  background-color: var(--color-neutral-50);
+  border-radius: var(--border-radius); }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: var(--lightest-background-color); }
+  background: var(--color-neutral-50); }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
