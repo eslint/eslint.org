@@ -1042,9 +1042,9 @@ ul.donation-plan__features li {
   margin-bottom: 0; }
 
 .donation-plan__footer .c-btn {
-  align-items: start; }
+  align-items: c; }
   .donation-plan__footer .c-btn svg {
-    margin-top: .25rem; }
+    margin-top: -.1rem; }
 
 ul.donation-plan__features,
 .donation-plan__footer {
