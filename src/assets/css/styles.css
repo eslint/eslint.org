@@ -759,6 +759,8 @@ input {
   font: inherit;
   font-size: 1rem;
   display: block;
+  min-width: 0;
+  width: 100%;
   max-width: 100%;
   background-color: var(--body-background-color);
   color: inherit; }
