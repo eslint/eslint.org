@@ -2,7 +2,7 @@
 layout: base.html
 ---
 
-{% include "partials/header.html" %}
+{% include "partials/docs-header.html" %}
 
 <div class="docs-wrapper grid">
     <div class="docs-left-sidebar">
@@ -11,14 +11,13 @@ layout: base.html
     </div>
 
     <div class="docs-content">
-        <div class="docs-right-sidebar">
-            {% include 'components/docs-toc.html' %}
-        </div>
-
         <main id="main" tabindex="-1" class="docs-main">
             {{ content | safe }}
         </main>
 
-        {% include "partials/docs-footer.html" %}
+        <div class="docs-right-sidebar">
+            {% include 'components/docs-toc.html' %}
+            {% include "partials/docs-footer.html" %}
+        </div>
     </div>
 </div>

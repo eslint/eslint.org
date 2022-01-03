@@ -5,7 +5,8 @@
 
     border-bottom: 1px solid var(--divider-color);
 
-    .content-container {
+    .content-container,
+    .docs-wrapper {
         display: grid;
         align-items: start;
         padding-top: 0;

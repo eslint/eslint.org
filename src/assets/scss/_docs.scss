@@ -1,19 +1,34 @@
 .docs-wrapper {
-    margin: 0 auto;
     padding: calc(1rem + 1vw);
     flex: 1;
+
+    &.grid {
+        align-items: stretch;
+    }
 }
 .docs-left-sidebar {
-    grid-row: 1;
     grid-column: 1 / 4;
 }
 
 .docs-content {
-    grid-row: 1;
     grid-column: 4 / 13;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 2rem;
+}
+
+.docs-main {
+    grid-column: 1 / 7;
 }
 
 .docs-right-sidebar {
-    grid-row: 1;
-    grid-column: 10 / 13;
+    grid-column: 7 / 9;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.docs-toc {
+    flex: 1;
 }
