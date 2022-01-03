@@ -299,6 +299,9 @@ figcaption {
   background-color: var(--color-brand);
   color: #fff; }
 
+:target {
+  background-color: var(--lighter-background-color); }
+
 *:focus {
   outline: 3px solid transparent; }
 
@@ -686,7 +689,7 @@ code .highlight-line:before {
   max-width: 1100px;
   margin: 0 auto; }
 
-.footer-social-section {
+.footer-middle {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
@@ -694,7 +697,7 @@ code .highlight-line:before {
   align-items: center;
   gap: 2rem; }
   @media all and (min-width: 640px) {
-    .footer-social-section {
+    .footer-middle {
       flex-direction: row;
       justify-content: space-between; } }
 
@@ -1537,18 +1540,19 @@ a.c-btn {
     .site-nav .flexer {
       order: 1; } }
 
-.c-toc ol {
-  margin: 0; }
-  .c-toc ol li {
-    margin-bottom: .25rem; }
-  .c-toc ol li::before {
-    content: "└";
-    margin-right: .5rem;
-    color: var(--icon-color); }
-
-.c-toc a {
-  text-decoration: none;
-  color: var(--headings-color); }
+.c-toc {
+  margin: 2rem 0; }
+  .c-toc ol {
+    margin: 0; }
+    .c-toc ol li {
+      margin-bottom: .25rem; }
+    .c-toc ol li::before {
+      content: "└";
+      margin-right: .5rem;
+      color: var(--icon-color); }
+  .c-toc a {
+    text-decoration: none;
+    color: var(--headings-color); }
 
 .c-toc__label.c-toc__label {
   font-size: var(--step-0);

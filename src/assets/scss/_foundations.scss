@@ -3,6 +3,10 @@
     color: #fff;
 }
 
+:target {
+    background-color: var(--lighter-background-color);
+}
+
 *:focus {
     outline: 3px solid transparent;
 }
