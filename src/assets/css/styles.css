@@ -2087,6 +2087,26 @@ button.c-share__btn {
   .rule-category p {
     margin: 0; }
 
+.rule {
+  border-radius: var(--border-radius);
+  background-color: var(--lightest-background-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: .5rem 0; }
+  .rule p {
+    margin: 0; }
+
+.rule__name {
+  font-weight: 500;
+  font-size: .875rem;
+  margin-bottom: .25rem; }
+
+.rule__description {
+  font-size: var(--step--1); }
+
 @media all and (max-width: 640px) {
   .switcher__label {
     justify-content: center; }
