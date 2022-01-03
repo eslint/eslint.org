@@ -669,7 +669,7 @@ code .highlight-line:before {
   border-top: 1px solid var(--divider-color); }
 
 .footer-cta .logo {
-  margin: 2.5rem; }
+  margin-bottom: 2.5rem; }
 
 .footer-cta .section-supporting-text {
   margin-bottom: 2.5rem; }
