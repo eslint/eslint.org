@@ -4,15 +4,16 @@
     ul {
         margin: 0;
         padding: 0;
+        margin-left: -1rem;
 
         li {
-            padding: 1rem;
             margin: 0;
             display: inline-flex;
             align-items: center;
 
             a {
                 display: flex;
+                padding: 1rem;
             }
         }
     }

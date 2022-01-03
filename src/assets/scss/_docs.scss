@@ -14,16 +14,16 @@
     grid-column: 4 / 13;
 
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: 1fr 240px;
     grid-gap: 2rem;
 }
 
 .docs-main {
-    grid-column: 1 / 7;
+    grid-column: 1 / 2;
 }
 
 .docs-right-sidebar {
-    grid-column: 7 / 9;
+    grid-column: 2 / 3;
 
     display: flex;
     flex-direction: column;

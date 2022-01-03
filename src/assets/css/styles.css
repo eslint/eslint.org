@@ -717,12 +717,12 @@ code .highlight-line:before {
   .docs-footer .copyright p {
     margin: 0; }
   .docs-footer .docs-socials-and-legal {
-    flex: 1 0 240px;
+    flex: 1 1 240px;
     display: flex;
     flex-direction: column;
     gap: 1rem; }
   .docs-footer .docs-switcher {
-    flex: 0 0 240px; }
+    flex: 1 1 240px; }
 
 .c-custom-select {
   -moz-appearance: none;
@@ -732,6 +732,7 @@ code .highlight-line:before {
   display: block;
   width: 100%;
   max-width: 100%;
+  min-width: 0px;
   padding: .625rem .875rem;
   padding-right: calc(.875rem * 3);
   font: inherit;
@@ -1300,14 +1301,14 @@ ul.tag-list {
 .docs-content {
   grid-column: 4 / 13;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 1fr 240px;
   grid-gap: 2rem; }
 
 .docs-main {
-  grid-column: 1 / 7; }
+  grid-column: 1 / 2; }
 
 .docs-right-sidebar {
-  grid-column: 7 / 9;
+  grid-column: 2 / 3;
   display: flex;
   flex-direction: column; }
 
@@ -2215,14 +2216,15 @@ button.c-share__btn {
   display: inline-flex; }
   .eslint-social-icons ul {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    margin-left: -1rem; }
     .eslint-social-icons ul li {
-      padding: 1rem;
       margin: 0;
       display: inline-flex;
       align-items: center; }
       .eslint-social-icons ul li a {
-        display: flex; }
+        display: flex;
+        padding: 1rem; }
 
 .swatches {
   margin: 0;
