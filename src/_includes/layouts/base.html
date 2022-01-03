@@ -91,20 +91,9 @@
             });
         }
     </script>
-    <!-- <link rel="stylesheet" href="{{ '/assets/js/themes.js' | url }}"> -->
-    <script>
-        /* theme toggle buttons */
-        (function() {
-                let theme = window.localStorage.getItem("theme");
-                document.documentElement.setAttribute('data-theme', theme);
+    <script src="{{ '/assets/js/themes.js' | url }}"></script>
 
-                if(!theme) document.documentElement.setAttribute('data-theme', 'light');
-
-                var switcher = document.getElementById('js-theme-switcher');
-                if(switcher !== null) switcher.removeAttribute('hidden');
-        });
-    </script>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | url }}">
 </head>
 
 <body class="{{ hook }}">
