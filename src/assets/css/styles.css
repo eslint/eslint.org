@@ -762,17 +762,6 @@ input {
   max-width: 100%;
   background-color: var(--body-background-color);
   color: inherit; }
-  input:focus {
-    outline: 3px solid transparent; }
-  .js-focus-visible input:focus:not(.focus-visible) {
-    outline: 1px solid transparent;
-    box-shadow: none; }
-  input:focus:not(:focus-visible) {
-    outline: 1px solid transparent;
-    box-shadow: none; }
-  input:focus-visible {
-    outline: 2px solid var(--outline-color);
-    outline-offset: 3px; }
 
 .hero {
   border-bottom: 1px solid var(--divider-color);

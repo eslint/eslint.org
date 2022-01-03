@@ -46,28 +46,4 @@ input {
 
     background-color: var(--body-background-color);
     color: inherit;
-
-    &:focus {
-        outline: 3px solid transparent;
-    }
-
-    .js-focus-visible &:focus:not(.focus-visible) {
-        outline: 1px solid transparent;
-        box-shadow: none;
-    }
-
-    &:focus:not(:focus-visible) {
-        outline: 1px solid transparent;
-        box-shadow: none;
-    }
-
-    // &.focus-visible {
-    //     outline: 2px solid var(--outline-color);
-    //     outline-offset: 3px;
-    // }
-
-    &:focus-visible {
-        outline: 2px solid var(--outline-color);
-        outline-offset: 3px;
-    }
 }
