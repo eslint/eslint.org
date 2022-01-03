@@ -2,11 +2,11 @@
 {% macro card(params) %}
 <article class='card {% if params.featured == "true" %} card--featured {% endif %}'>
     {%- if params.image -%}
-    {% set imageName =  params.image %}
+        {% set imageName =  params.image %}
     {%- elseif params.category -%}
-    {% set imageName =  [params.category | slugify, '.png' ] | join %}
+        {% set imageName =  [params.category | slugify, '.png' ] | join %}
     {% else %}
-    {% set imageName =  'sponsorships.png' %}
+        {% set imageName =  'sponsorships.png' %}
     {% endif %}
 
     {% set img = ['/assets/images/blog-covers/', imageName] | join  %}

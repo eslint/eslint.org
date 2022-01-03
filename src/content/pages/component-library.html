@@ -53,8 +53,25 @@ tags: ['nav']
 
 <div class="content-container">
     {{ rule({
-        name: "for-direction",
-        description: 'Enforce "for" loop update clause moving the counter in the right direction.'
+        name: "getter-return",
+        deprecated: true,
+        description: 'Enforce `return` statements in getters.',
+        categories: {
+            extends: true,
+            fix: false,
+            suggestions: false
+        }
+    }) }}
+
+    {{ rule({
+        name: "getter-return",
+        deprecated: false,
+        description: 'Enforce `return` statements in getters.',
+        categories: {
+            extends: true,
+            fix: false,
+            suggestions: false
+        }
     }) }}
 </div>
 
