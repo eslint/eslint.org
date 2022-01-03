@@ -89,8 +89,10 @@
     }
 
     var switcher = document.getElementById('js-theme-switcher');
-    let theme = window.localStorage.getItem("theme") || 'light';
+    let theme = window.localStorage.getItem("theme");
     document.documentElement.setAttribute('data-theme', theme);
+
+    if(!theme) document.documentElement.setAttribute('data-theme', 'light');
 
     if(switcher !== null) {
         switcher.removeAttribute('hidden');

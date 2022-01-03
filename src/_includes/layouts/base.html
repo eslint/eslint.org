@@ -95,8 +95,10 @@
     <script>
         /* theme toggle buttons */
         (function() {
-                let theme = window.localStorage.getItem("theme") || 'light';
+                let theme = window.localStorage.getItem("theme");
                 document.documentElement.setAttribute('data-theme', theme);
+
+                if(!theme) document.documentElement.setAttribute('data-theme', 'light');
 
                 var switcher = document.getElementById('js-theme-switcher');
                 if(switcher !== null) switcher.removeAttribute('hidden');
