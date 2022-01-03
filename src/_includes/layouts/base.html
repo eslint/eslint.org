@@ -95,14 +95,12 @@
     <script>
         /* theme toggle buttons */
         (function() {
-            var switcher = document.getElementById('js-theme-switcher');
-            switcher.removeAttribute('hidden');
+                let theme = window.localStorage.getItem("theme") || 'light';
+                document.documentElement.setAttribute('data-theme', theme);
 
-            // var light_theme_toggle = document.getElementById('light-theme-toggle'),
-                // dark_theme_toggle = document.getElementById('dark-theme-toggle'),
-              let  theme = window.localStorage.getItem("theme") || 'light';
-
-            document.documentElement.setAttribute('data-theme', theme);
+                var switcher = document.getElementById('js-theme-switcher');
+                if(switcher !== null) switcher.removeAttribute('hidden');
+        });
     </script>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
 </head>
