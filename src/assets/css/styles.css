@@ -364,6 +364,10 @@ main {
   margin: 0 auto;
   padding: var(--space-xl-3xl) calc(1rem + 1vw); }
 
+.docs-content-container {
+  margin: 0 auto;
+  padding: calc(1rem + 1vw); }
+
 .section-head .section-supporting-text {
   text-align: center;
   max-width: 768px;

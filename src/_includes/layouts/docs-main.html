@@ -4,10 +4,17 @@ layout: base.html
 
 {% include "partials/header.html" %}
 
-{% include 'components/docs-toc.html' %}
+<div class="docs-content-container">
+    <div class="docs-left-sidebar">
+        {% include 'components/search.html' %}
+        {% include 'partials/docs-index.html' %}
+    </div>
 
-<main id="main" tabindex="-1">
-    {{ content | safe }}
-</main>
+    {% include 'components/docs-toc.html' %}
 
-{% include "partials/docs-footer.html" %}
+    <main id="main" tabindex="-1">
+        {{ content | safe }}
+    </main>
+
+    {% include "partials/docs-footer.html" %}
+</div>
