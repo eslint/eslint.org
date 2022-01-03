@@ -29,7 +29,8 @@
 }
 
 .logo svg {
-    display: block;
+    display: inline-block;
+    margin-bottom: -4px;
     width: 100%;
     max-width: 100px;
     height: auto;
