@@ -35,10 +35,10 @@
         logo_theme_btn.forEach((button) => {
 
             button.addEventListener('click', function() {
-                btn_theme = button.getAttribute('data-theme');
+                btn_theme = button.getAttribute('data-brand-theme');
                 unsetOtherButtons();
                 button.setAttribute('aria-pressed', 'true');
-                logo_container.setAttribute('data-theme', btn_theme);
+                logo_container.setAttribute('data-brand-theme', btn_theme);
             })
         })
     }

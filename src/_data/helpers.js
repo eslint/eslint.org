@@ -41,6 +41,13 @@ module.exports = {
         }
 
         return response;
+    },
+    excludeThis: function(arr, pageUrl) {
+        var newArray = [];
+        arr.forEach(item => {
+            if(item.url !== pageUrl) newArray.push(item);
+        });
+        return newArray;
     }
 
 };

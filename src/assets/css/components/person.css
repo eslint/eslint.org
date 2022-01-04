@@ -28,6 +28,7 @@
   object-fit: cover;
   flex: none;
   max-width: initial;
+  margin-bottom: .875rem;
   /* contributor in the post sidebar */ }
   .person__photo.person__photo--large {
     width: 5rem;

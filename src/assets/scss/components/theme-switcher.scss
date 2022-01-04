@@ -1,0 +1,39 @@
+
+.theme-switcher__button {
+    .theme-switcher__icon {
+        color: var(--icon-color);
+    }
+    &:hover {
+        .theme-switcher__icon {
+            color: var(--link-color);
+        }
+    }
+}
+
+.theme-switcher__button[aria-pressed="true"] {
+    .theme-switcher__icon {
+        color: var(--link-color);
+    }
+    &:hover {
+        .theme-switcher__icon {
+            color: var(--link-color);
+        }
+    }
+}
+
+.theme-switcher__button[aria-pressed="false"] {
+    .theme-switcher__icon {
+        color: var(--icon-color);
+    }
+    &:hover {
+        .theme-switcher__icon {
+            color: var(--link-color);
+        }
+    }
+}
+
+.theme-switcher__button:hover {
+    .theme-switcher__icon {
+        color: var(--link-color);
+    }
+}

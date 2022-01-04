@@ -1,4 +1,7 @@
-<div class="c-toc">
-    <h2 class="c-toc__label">Table of Contents:</h2>
+<nav class="docs-toc c-toc" aria-labelledby="toc-label">
+    <aside>
+        {%- include 'partials/carbon-ad.html' -%}
+    </aside>
+    <h2 class="c-toc__label" id="toc-label">Table of Contents:</h2>
     {{ content | toc | safe }}
-</div>
+</nav>

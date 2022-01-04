@@ -11,7 +11,7 @@
         </div>
 
         <div class="blog-posts">
-        {% set posts = collections.blogposts | limitTo(4) %}
+        {%- set posts = helpers.excludeThis(collections.blogposts, page.url) | limitTo(3) -%}
         {%- for item in posts -%}
 
         {% if item.url !== page.url %}

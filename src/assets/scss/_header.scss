@@ -5,7 +5,8 @@
 
     border-bottom: 1px solid var(--divider-color);
 
-    .content-container {
+    .content-container,
+    .docs-wrapper {
         display: grid;
         align-items: start;
         padding-top: 0;
@@ -17,12 +18,20 @@
     }
 }
 
-
 .logo-link {
     display: inline-flex;
     justify-self: start;
     flex: none;
+    place-content: center;
     grid-column: 1 / -1;
     grid-row: 1;
     padding: .5rem 0;
+}
+
+.logo svg {
+    display: inline-block;
+    margin-bottom: -4px;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
 }

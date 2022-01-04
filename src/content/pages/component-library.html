@@ -6,9 +6,10 @@ tags: ['nav']
 
 {%- from 'components/buttony-link.macro.html' import buttonyLink %}
 {%- from 'components/alert.macro.html' import warning, tip, important %}
-{%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
 {%- from 'components/person.macro.html' import member, contributor %}
 {%- from 'components/card.macro.html' import card %}
+{%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
+{%- from 'components/rule.macro.html' import rule %}
 
 
 <div class="content-container">
@@ -48,6 +49,30 @@ tags: ['nav']
     {{ extends() }}
     {{ fix() }}
     {{ suggestions() }}
+</div>
+
+<div class="content-container">
+    {{ rule({
+        name: "getter-return",
+        deprecated: true,
+        description: 'Enforce `return` statements in getters.',
+        categories: {
+            extends: true,
+            fix: true,
+            suggestions: false
+        }
+    }) }}
+
+    {{ rule({
+        name: "getter-return",
+        deprecated: false,
+        description: 'Enforce `return` statements in getters.',
+        categories: {
+            extends: true,
+            fix: false,
+            suggestions: false
+        }
+    }) }}
 </div>
 
 <div class="content-container">

@@ -78,17 +78,22 @@
     </style>
     <script>
         if ("fonts" in document) {
-                var InterSemiBold = new FontFace("Inter", "url({{ '/assets/fonts/Inter-SemiBold-subset.woff2' | url }}) format('woff2'), url({{ '/assets/fonts/Inter-SemiBold-subset.zopfli.woff' | url }}) format('woff')", { weight: "500", style: "normal" });
+            var InterSemiBold = new FontFace("Inter", "url({{ '/assets/fonts/Inter-SemiBold-subset.woff2' | url }}) format('woff2'), url({{ '/assets/fonts/Inter-SemiBold-subset.zopfli.woff' | url }}) format('woff')", {
+                weight: "500",
+                style: "normal"
+            });
 
 
-                Promise.all([InterSemiBold.load()]).then(function (fonts) {
-                    fonts.forEach(function (font) {
-                        document.fonts.add(font);
-                    });
+            Promise.all([InterSemiBold.load()]).then(function(fonts) {
+                fonts.forEach(function(font) {
+                    document.fonts.add(font);
                 });
-            }
+            });
+        }
     </script>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
+    <script src="{{ '/assets/js/themes.js' | url }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | url }}">
 </head>
 
 <body class="{{ hook }}">

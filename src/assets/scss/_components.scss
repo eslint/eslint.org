@@ -1,9 +1,3 @@
-.logo {
-    display: inline-block;
-    width: 100px;
-    height: auto;
-}
-
 .hero {
     border-bottom: 1px solid var(--divider-color);
 
@@ -14,6 +8,7 @@
 .hero--display {
     .content-container {
         padding: var(--space-xl-4xl) calc(1rem + 1vw);
+        align-items: center;
     }
 
     .section-title {
@@ -58,6 +53,7 @@
     display: inline-flex;
     align-items: center;
     gap: 1rem;
+    background-color: var(--lightest-background-color);
     border-radius: var(--border-radius);
     border: 1px solid var(--divider-color);
     padding: .75rem 1.25rem .75rem 1rem;
@@ -65,9 +61,18 @@
     margin-top: 1.5rem;
     overflow-x: auto;
     max-width: 100%;
+    color: var(--headings-color);
+
+    [data-theme="dark"] & {
+        background-color: var(--color-neutral-700);
+    }
+
+    // @media (prefers-color-scheme: dark) {
+    //     background-color: var(--color-neutral-700);
+    // }
 
     code {
-        color: inherit;
+        color: var(--headings-color);
     }
 
     input {
@@ -85,7 +90,7 @@
 
 .eslint-install-code__btn {
     .c-icon {
-        color: var(--color-neutral-500);
+        color: var(--body-text-color);
     }
 
     &:hover,
@@ -161,16 +166,22 @@
 /* homepage metrics section */
 
 .metrics {
-    background-color: var(--color-primary-50);
-    color: var(--color-brand);
+    background-color: var(--lightest-background-color);
+    color: var(--link-color);
     font-size: 1.125rem;
-    // padding: var(--space-xl-3xl);
     border-radius: var(--border-radius);
     padding: var(--space-l-2xl);
 
     @media all and (min-width: 768px) {
         display: flex;
     }
+
+    [data-theme="dark"] & {
+        color: var(--color-primary-400);
+    }
+    // @media (prefers-color-scheme: dark) {
+    //     color: var(--color-primary-400);
+    // }
 }
 
 .metrics__item {
@@ -198,9 +209,7 @@
 }
 
 .features {
-
-    border-left: 4px solid var(--tab-border-color);
-
+    border-left: 4px solid var(--lighter-background-color);
     padding-left: 1.5rem;
 }
 
@@ -359,8 +368,6 @@
     &:first-of-type() {
         @media all and (max-width: 768px) {}
     }
-
-
 }
 
 .donation-plan__header {
@@ -383,8 +390,7 @@ ul.donation-plan__features {
         display: flex;
         align-items: start;
 
-        &::before {
-            content: url(../../assets/images/icons/features-list-icon.svg);
+        .c-icon {
             width: 1.5rem;
             height: 1.5rem;
             margin-right: .75rem;
@@ -403,10 +409,10 @@ ul.donation-plan__features {
 
 .donation-plan__footer {
     .c-btn {
-        align-items: start;
+        align-items: c;
 
         svg {
-            margin-top: .25rem;
+            margin-top: -.1rem;
         }
     }
 }
