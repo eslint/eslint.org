@@ -1830,7 +1830,10 @@ nav.c-pagination {
       align-items: center; } }
 
 .js-slider .c-slider__testimonial__img {
-  display: block; }
+  display: block;
+  border-radius: var(--border-radius);
+  max-height: 550px;
+  object-fit: cover; }
   @media all and (max-width: 1023px) {
     .js-slider .c-slider__testimonial__img {
       display: none; } }

@@ -206,6 +206,9 @@
 
     .c-slider__testimonial__img {
         display: block;
+        border-radius: var(--border-radius);
+        max-height: 550px;
+        object-fit: cover;
 
         @media all and (max-width: 1023px) {
             display: none;
