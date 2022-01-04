@@ -1802,11 +1802,9 @@ nav.c-pagination {
 .js-slider .c-slider__slides-container {
   overflow: hidden; }
 
-.js-slider .person__photo {
-  margin-bottom: .875rem; }
-  @media all and (min-width: 1023px) {
-    .js-slider .person__photo {
-      display: none; } }
+@media all and (min-width: 1023px) {
+  .js-slider .person__photo {
+    display: none; } }
 
 .js-slider .c-slider__slides-wrapper {
   width: 100%;
@@ -2015,6 +2013,7 @@ button.c-share__btn {
   object-fit: cover;
   flex: none;
   max-width: initial;
+  margin-bottom: .875rem;
   /* contributor in the post sidebar */ }
   .person__photo.person__photo--large {
     width: 5rem;

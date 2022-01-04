@@ -106,11 +106,9 @@
 .js-slider .c-slider__slides-container {
   overflow: hidden; }
 
-.js-slider .person__photo {
-  margin-bottom: .875rem; }
-  @media all and (min-width: 1023px) {
-    .js-slider .person__photo {
-      display: none; } }
+@media all and (min-width: 1023px) {
+  .js-slider .person__photo {
+    display: none; } }
 
 .js-slider .c-slider__slides-wrapper {
   width: 100%;
