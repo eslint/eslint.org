@@ -172,6 +172,11 @@
     }
 
     .person__photo {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        margin-bottom: .875rem;
+
         @media all and (min-width: 1023px) {
             display: none;
         }
