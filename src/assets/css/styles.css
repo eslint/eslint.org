@@ -2385,7 +2385,8 @@ button.c-share__btn {
 .text {
   font-size: inherit;
   color: inherit;
-  font: inherit; }
+  font: inherit;
+  margin: 0; }
 
 .color-brand {
   color: var(--link-color); }
