@@ -324,7 +324,7 @@ hook: "donate-page"
                             </div>
                             <footer class="c-slider__testimonial__footer">
                                 <cite class="person contributor">
-                                    <img class="person__photo" src="../../assets/images/people/testimonials/small/{{ item.image }}" width="48" height="48" alt="{{ item.name }}">
+                                    <img class="person__photo person__photo--small" src="../../assets/images/people/testimonials/small/{{ item.image }}" width="48" height="48" alt="{{ item.name }}">
                                     <div class="person__details">
                                         <span class="c-slider__testimonial__author person__name">{{ item.name }}</span>
                                         <span class="c-slider__testimonial__author-role person__title">{{ item.title }}</span>
