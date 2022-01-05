@@ -2578,7 +2578,8 @@ button.c-share__btn {
   color: var(--headings-color); }
 
 .divider {
-  border-bottom: 1px solid var(--divider-color); }
+  border-bottom: 1px solid var(--divider-color);
+  border-block-end: 1px solid var(--divider-color); }
 
 .fs-step--1 {
   font-size: .875rem; }
