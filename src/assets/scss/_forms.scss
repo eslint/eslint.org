@@ -10,7 +10,7 @@
     padding: .625rem .875rem;
     padding-right: calc(.875rem * 3);
     font: inherit;
-    // color: var(--color-neutral-500);
+    color: var(--body-text-color);
     color: inherit;
     line-height: 1.3;
     border: 1px solid var(--border-color);
@@ -45,7 +45,7 @@ label,
 input {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    padding: .75rem .875rem;
+    padding: .625rem .875rem;
     font: inherit;
     font-size: 1rem;
     display: block;
