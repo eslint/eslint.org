@@ -1,8 +1,7 @@
 .hero {
     border-bottom: 1px solid var(--divider-color);
-
+    border-block-end: 1px solid var(--divider-color);
     background-color: var(--hero-background-color);
-
 }
 
 .hero--display {
@@ -13,6 +12,7 @@
 
     .section-title {
         margin-bottom: 1.5rem;
+        margin-block-end: 1.5rem;
     }
 
     .section-supporting-text {
@@ -24,6 +24,7 @@
     .eslint-actions {
         font-size: var(--step-1);
         margin-top: 3rem;
+        margin-block-start: 3rem;
     }
 }
 
@@ -59,6 +60,7 @@
     padding: .75rem 1.25rem .75rem 1rem;
     white-space: nowrap;
     margin-top: 1.5rem;
+    margin-block-start: 1.5rem;
     overflow-x: auto;
     max-width: 100%;
     color: var(--headings-color);
@@ -116,6 +118,7 @@
     display: block;
     position: absolute;
     top: calc(100% + .5rem);
+    offset-block-start: calc(100% + .5rem);
     transition: opacity 1s linear 3s;
 
     &[data-fades-out] {
@@ -134,6 +137,7 @@
 
 .eslint-versions {
     margin-top: 3rem;
+    margin-block-start: 3rem;
     display: inline-flex;
     flex-direction: column;
 
@@ -142,16 +146,24 @@
         padding: .25em 0;
         margin-bottom: .5em;
         padding-right: 1rem;
+        border-block-end: 1px solid var(--divider-color);
+        padding: .25em 0;
+        margin-block-end: .5em;
+        padding-inline-end: 1rem;
     }
 
     dd {
         margin-left: 0;
         margin-bottom: 1rem;
         padding-right: 1rem;
+        margin-inline-start: 0;
+        margin-block-end: 1rem;
+        padding-inline-end: 1rem;
     }
 
     .c-icon {
         margin-right: .5rem;
+        margin-inline-end: .5rem;
     }
 }
 
@@ -193,6 +205,7 @@
     font-family: var(--mono-font);
     flex: 9999;
     margin-bottom: .75rem;
+    margin-block-end: .75rem;
 }
 
 
@@ -204,6 +217,8 @@
 .features {
     border-left: 4px solid var(--lighter-background-color);
     padding-left: 1.5rem;
+    border-inline-start: 4px solid var(--lighter-background-color);
+    padding-inline-start: 1.5rem;
 }
 
 .feature {
@@ -211,10 +226,12 @@
 
     &:not(:last-of-type) {
         border-bottom: 1px solid var(--divider-color);
+        border-block-end: 1px solid var(--divider-color);
     }
 
     .donate-page & {
         border-bottom: none;
+        border-block-end: none;
     }
 }
 
@@ -222,10 +239,12 @@
     font-size: var(--step-1);
     font-family: var(--text-font);
     margin-bottom: .5rem;
+    margin-block-end: .5rem;
 }
 
 .feature__description {
     margin-bottom: 1.25rem;
+    margin-block-end: 1.25rem;
 }
 
 .feature__details-link {
@@ -259,7 +278,6 @@
 }
 
 
-
 /* alert */
 .alert {
     display: grid;
@@ -289,18 +307,19 @@
 .sponsors.sponsors {
     text-align: center;
     margin-bottom: var(--space-m-l);
+    margin-block-end: var(--space-m-l);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     @media all and (max-width: 1023px) {
         margin-top: 2.5rem;
+        margin-block-start: 2.5rem;
     }
 
     li {
         display: inline-block;
         margin: 0 .75rem 1.5rem;
-        // flex: 1;
 
         a {
             display: block;
@@ -380,6 +399,7 @@
 ul.donation-plan__features {
     li {
         margin-bottom: 1rem;
+        margin-block-start: 1rem;
         display: flex;
         align-items: start;
 
@@ -387,17 +407,20 @@ ul.donation-plan__features {
             width: 1.5rem;
             height: 1.5rem;
             margin-right: .75rem;
+            margin-inline-end: .75rem;
         }
     }
 }
 
 .donation-plan__platform-name {
     margin-bottom: .25rem;
+    margin-block-end: .25rem;
     font-size: var(--step-2);
 }
 
 .donation-plan__description {
     margin-bottom: 0;
+    margin-block-end: 0;
 }
 
 .donation-plan__footer {
@@ -406,6 +429,7 @@ ul.donation-plan__features {
 
         svg {
             margin-top: -.1rem;
+            margin-block-start: -.1rem;
         }
     }
 }
@@ -447,6 +471,7 @@ ul.donation-plan__features,
     grid-gap: 2rem;
     padding: 2rem;
     margin-bottom: 2rem;
+    margin-block-end: 2rem;
     box-shadow: var(--shadow-lg);
     border-radius: var(--border-radius);
     border: 1px solid var(--divider-color);
@@ -462,6 +487,7 @@ ul.donation-plan__features,
 
     .c-btn--block:not(:last-of-type) {
         margin-bottom: 1rem;
+        margin-block-end: 1rem;
     }
 
     &.all-others {
@@ -483,10 +509,12 @@ ul.donation-plan__features,
     span {
         display: block;
         margin-bottom: .5rem;
+        margin-block-end: .5rem;
     }
 
     .all-others & {
         margin-bottom: .5rem;
+        margin-block-end: .5rem;
 
         span {
             font-weight: 500;
@@ -517,17 +545,21 @@ ul.donation-plan__features,
 .donation-tiers__item__description {
     justify-self: baseline;
     margin-bottom: 2rem;
+    margin-block-end: 2rem;
 }
 
 .donation-tiers--others {
     text-align: center;
     margin-top: var(--space-l-2xl);
+    margin-block-start: var(--space-l-2xl);
 
     p {
         margin-bottom: .5rem;
+        margin-block-end: .5rem;
     }
 
     .c-btn {
         margin-top: 1rem;
+        margin-block-start: 1rem;
     }
 }

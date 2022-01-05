@@ -9,6 +9,7 @@ body {
     font-weight: 500;
     display: block;
     margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
 }
 
 h1,
@@ -20,6 +21,7 @@ h6 {
     font-family: var(--display-font);
     color: var(--headings-color);
     margin-top: 0;
+    margin-block-start: 0;
     font-weight: 500;
 }
 
@@ -32,8 +34,12 @@ h6 {
         margin-top: 3rem;
         margin-bottom: 1.5rem;
 
+        margin-block-start: 3rem;
+        margin-block-end: 1.5rem;
+
         &:first-child {
             margin-top: 0;
+            margin-block-start: 0;
         }
     }
 }

@@ -61,17 +61,23 @@ body {
     top: -30em;
     left: 0;
     right: auto;
+    offset-block-start: -30em;
+    offset-inline-start: 0;
+    offset-inline-end: auto;
+
     z-index: 999;
     transition: top .1s linear;
 
     &:focus {
         outline: 2px solid transparent;
         top: 2px;
+        offset-block-start: 2px;
     }
 
     &:focus-visible {
         outline: 2px solid transparent;
         top: 2px;
+        offset-block-start: 2px;
     }
 }
 
@@ -90,8 +96,6 @@ main {
 }
 
 
-
-
 .section-head {
     .section-supporting-text {
         text-align: center;
@@ -102,6 +106,8 @@ main {
 
 .section-foot {
     margin-top: var(--space-l-2xl);
+    margin-block-start: var(--space-l-2xl);
+
     .section-supporting-text {
         text-align: center;
         font-size: var(--step--1);
@@ -112,6 +118,7 @@ main {
 
 .section-title {
     margin-bottom: 1rem;
+    margin-block-end: 1rem;
 }
 
 .section-supporting-text {
@@ -176,6 +183,7 @@ p {
 
     :matches(nav, .posts-collection) & {
         margin-bottom: .75em;
+        margin-block-end: .75em;
     }
 }
 
@@ -193,6 +201,7 @@ h6 {
 ul,
 ol {
     margin-top: 0;
+    margin-block-start: 0;
 
     li {
         margin: 0 0 .75em;
@@ -220,9 +229,11 @@ ol {
 
 figure {
     margin-bottom: 4rem;
+    margin-block-end: 4rem;
 
     img {
         margin-bottom: 1rem;
+        margin-block-end: 1rem;
     }
 
     figcaption {
