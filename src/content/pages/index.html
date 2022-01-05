@@ -203,14 +203,14 @@ eleventyExcludeFromCollections: true
                 {% for sponsor in sponsors.gold %}
                 <li>
                     <a href="{{ sponsor.url }}">
-                        <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" width="48" height="48" />
+                        <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" width="48" height="48" loading="lazy" />
                     </a>
                 </li>
                 {% endfor %}
                 {% for sponsor in techsponsors %}
                 <li>
                     <a href="{{ sponsor.url }}">
-                        <img src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" width="48" height="48" />
+                        <img src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" width="48" height="48" loading="lazy" />
 
                     </a>
                 </li>
