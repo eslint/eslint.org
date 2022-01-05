@@ -5,6 +5,7 @@
   padding: 1rem;
   gap: .75rem;
   margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem;
   align-items: start;
   font-size: .875rem;
   border-radius: var(--border-radius); }
@@ -18,11 +19,13 @@
 .alert__icon {
   color: inherit;
   position: relative;
-  top: 2px; }
+  top: 2px;
+  offset-block-start: 2px; }
 
 .alert__type {
   font-weight: 500;
-  margin-bottom: .25rem; }
+  margin-bottom: .25rem;
+  margin-block-end: .25rem; }
 
 .alert--warning {
   color: var(--color-rose-600); }
@@ -44,7 +47,8 @@
 
 .alert__learn-more {
   font-weight: 500;
-  margin-top: .75rem; }
+  margin-top: .75rem;
+  margin-block-start: .75rem; }
   .alert--warning .alert__learn-more {
     color: var(--color-rose-700); }
   .alert--important .alert__learn-more {

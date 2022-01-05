@@ -1,8 +1,17 @@
-.theme-switcher__button .theme-switcher__icon {
-  color: var(--icon-color); }
-
-.theme-switcher__button:hover .theme-switcher__icon {
-  color: var(--link-color); }
+.theme-switcher__button {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-xs);
+  border: 1px solid var(--border-color);
+  padding: .625rem .875rem;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  width: 40px;
+  height: 40px; }
+  .theme-switcher__button .theme-switcher__icon {
+    color: var(--icon-color); }
+  .theme-switcher__button:hover .theme-switcher__icon {
+    color: var(--link-color); }
 
 .theme-switcher__button[aria-pressed="true"] .theme-switcher__icon {
   color: var(--link-color); }

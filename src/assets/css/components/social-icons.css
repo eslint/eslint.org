@@ -3,7 +3,8 @@
   .eslint-social-icons ul {
     margin: 0;
     padding: 0;
-    margin-left: -1rem; }
+    margin-left: -1rem;
+    margin-inline-start: -1rem; }
     .eslint-social-icons ul li {
       margin: 0;
       display: inline-flex;

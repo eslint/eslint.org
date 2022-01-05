@@ -4,18 +4,12 @@
     font-family: var(--text-font);
     color: var(--headings-color);
 
-    color: var(--headings-color);
-
-
     .accordion-js & {
         margin: 0;
-
     }
 
     >button {
-
         color: inherit;
-
         cursor: pointer;
         display: flex;
         align-items: baseline;
@@ -33,9 +27,11 @@
         border: none;
         transition: outline 0.1s linear;
         margin-bottom: 2rem;
+        margin-block-end: 2rem;
 
         &[aria-expanded="true"] {
             margin-bottom: 0;
+            margin-block-end: 0;
         }
 
         svg {
@@ -47,18 +43,23 @@
 
 .c-accordion__panel {
     margin-bottom: 4rem; // no-js fallback
+    margin-block-end: 4rem;
 
     .accordion-js & {
         margin-bottom: 0;
+        margin-block-end: 0;
         padding: .5rem 0;
         padding-right: 3rem;
+        padding-inline-end: 3rem;
 
         &[aria-hidden="true"] {
             margin-bottom: 0;
+            margin-block-end: 0;
         }
 
         &[aria-hidden="false"] {
             margin-bottom: 2rem;
+            margin-block-end: 2rem;
         }
     }
 }
@@ -68,9 +69,9 @@
     display: block !important; // to override aria-hidden
     width: 0.75rem;
     height: 0.5rem;
-    // outline: 1px solid red;
     transform-origin: 50% 50%;
     margin-left: 3rem;
+    margin-inline-start: 3rem;
     transition: all 0.1s linear;
     color: var(--color-neutral-400);
 }

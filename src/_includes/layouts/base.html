@@ -83,7 +83,6 @@
                 style: "normal"
             });
 
-
             Promise.all([InterSemiBold.load()]).then(function(fonts) {
                 fonts.forEach(function(font) {
                     document.fonts.add(font);
@@ -94,6 +93,7 @@
     <script src="{{ '/assets/js/themes.js' | url }}"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/print.css' | url }}" media="print">
 </head>
 
 <body class="{{ hook }}">
