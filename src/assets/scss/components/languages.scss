@@ -20,6 +20,7 @@
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--divider-color);
+        border-block-end: 1px solid var(--divider-color);
 
         &[aria-current="true"] {
             font-weight: 500;
@@ -44,4 +45,6 @@
     font-size: var(--step-1);
     border-left: 4px solid var(--tab-border-color);
     padding-left: 1rem;
+    border-inline-start: 4px solid var(--tab-border-color);
+    padding-inline-start: 1rem;
 }

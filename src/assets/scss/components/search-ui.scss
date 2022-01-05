@@ -8,6 +8,7 @@
 
 .search__input {
     padding-left: 2.5rem;
+    padding-inline-start: 2.5rem;
     outline-offset: 1px;
 }
 
@@ -15,6 +16,8 @@
     color: var(--body-text-color);
     position: absolute;
     top: 50%;
+    offset-block-start: 50%;
     transform: translateY(-50%);
     left: .75rem;
+    offset-inline-start: .75rem;
 }
