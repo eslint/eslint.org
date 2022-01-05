@@ -1,3 +1,20 @@
-.search-ui {
-    // width: 100%;
+.search {
+
+}
+
+.search__input-wrapper {
+    position: relative;
+}
+
+.search__input {
+    padding-left: 2.5rem;
+    outline-offset: 1px;
+}
+
+.search__icon {
+    color: var(--body-text-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: .75rem;
 }

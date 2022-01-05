@@ -1308,7 +1308,8 @@ ul.tag-list {
   grid-gap: 2rem; }
 
 .docs-main {
-  grid-column: 1 / 2; }
+  grid-column: 1 / 2;
+  padding: var(--space-l-xl); }
 
 .docs-right-sidebar {
   grid-column: 2 / 3;
@@ -1633,6 +1634,20 @@ nav.c-pagination {
     position: absolute;
     width: 1px;
     white-space: nowrap; } }
+
+.search__input-wrapper {
+  position: relative; }
+
+.search__input {
+  padding-left: 2.5rem;
+  outline-offset: 1px; }
+
+.search__icon {
+  color: var(--body-text-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: .75rem; }
 
 .c-accordion__heading {
   font-size: var(--step-1);
