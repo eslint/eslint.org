@@ -729,7 +729,7 @@ code .highlight-line:before {
   flex-direction: column;
   align-items: center;
   gap: 2rem; }
-  @media all and (min-width: 640px) {
+  @media all and (min-width: 768px) {
     .footer-middle {
       flex-direction: row;
       justify-content: space-between; } }
@@ -2364,12 +2364,14 @@ button.c-share__btn {
   padding-inline-start: 1rem; }
 
 .eslint-social-icons {
-  display: inline-flex; }
+  margin-bottom: -1rem;
+  margin-block-end: -1rem; }
   .eslint-social-icons ul {
     margin: 0;
     padding: 0;
     margin-left: -1rem;
-    margin-inline-start: -1rem; }
+    margin-inline-start: -1rem;
+    display: inline-flex; }
     .eslint-social-icons ul li {
       margin: 0;
       display: inline-flex;
@@ -2426,13 +2428,15 @@ button.c-share__btn {
 
 .theme-switcher__buttons {
   display: flex;
-  gap: .25rem; }
+  gap: .25rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--body-background-color); }
 
 .theme-switcher__button {
   flex: 0;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-xs);
-  border: 1px solid var(--border-color);
   padding: .625rem .875rem;
   display: inline-flex;
   align-items: center;
@@ -2462,10 +2466,18 @@ button.c-share__btn {
 .switcher--language {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  flex-wrap: wrap;
+  gap: .25rem .5rem;
   position: relative;
   min-width: 15rem;
   padding: 0; }
+
+.switcher--language .label__text {
+  flex: 1 0 10ch; }
+
+.switcher--language .switcher__select {
+  min-width: 15rem;
+  flex: 1 0 15rem; }
 
 #carbonads * {
   margin: initial;

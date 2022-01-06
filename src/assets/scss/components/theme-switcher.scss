@@ -8,13 +8,16 @@
 .theme-switcher__buttons {
     display: flex;
     gap: .25rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--body-background-color);
 }
 
 .theme-switcher__button {
     flex: 0;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-xs);
-    border: 1px solid var(--border-color);
+    // border: 1px solid var(--border-color);
     padding: .625rem .875rem;
     display: inline-flex;
     align-items: center;

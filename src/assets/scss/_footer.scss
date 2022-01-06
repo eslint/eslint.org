@@ -59,7 +59,7 @@
     align-items: center;
     gap: 2rem;
 
-    @media all and (min-width: 640px) {
+    @media all and (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
     }
