@@ -1,5 +1,17 @@
 
+.theme-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.theme-switcher__buttons {
+    display: flex;
+    gap: .25rem;
+}
+
 .theme-switcher__button {
+    flex: 0;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-xs);
     border: 1px solid var(--border-color);

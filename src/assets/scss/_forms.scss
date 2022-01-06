@@ -24,22 +24,18 @@
     background-size: 1em auto, 100%;
 }
 
-label,
-.label {
+.label__text.label__text {
     display: block;
+    display: flex;
     font-size: .875rem;
     color: inherit;
-}
-
-.label__text.label__text {
+    align-items: center;
+    gap: .5rem;
     font-size: .875rem;
     font-family: var(--text-font);
     color: inherit;
     font-weight: 400;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
     margin-bottom: .25rem;
     margin-block-end: .25rem;
 }
@@ -52,9 +48,8 @@ input {
     font-size: 1rem;
     display: block;
     min-width: 0;
-    width: 100%;
+    // width: 100%;
     max-width: 100%;
-
     background-color: var(--body-background-color);
     color: inherit;
 }
