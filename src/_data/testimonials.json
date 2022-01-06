@@ -23,6 +23,12 @@
             "title": "Head of Open Source, Indeed",
             "image": "duane-obrien.jpg",
             "text": "Most JavaScript projects directly or transitively depend on ESLint. An Indeed employee nominated ESLint to receive a donation from the FOSS Contributor Fund, and their colleagues clearly agreed. We're happy to support the open source technologies that allow us to develop, protect, and maintain the digital infrastructure that supports our products and helps people get jobs."
+        },
+        {
+            "name": "Gajus Kuizinas",
+            "title": "Co-Founder / CTO, Contra",
+            "image": "gajus.jpg",
+            "text": "ESLint plays a major role in helping us create a safe and consistent experience across a growing number of codebases and engineers. We are grateful for all the open-source projects that are helping us build Contra, and ESLint is the first of many open-source projects that we are committed to back."
         }
     ]
 }
