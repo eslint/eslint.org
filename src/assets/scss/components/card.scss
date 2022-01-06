@@ -16,7 +16,7 @@
 
     @media all and (min-width: 1023px) {
         margin-bottom: var(--space-xl-2xl);
-
+        margin-block-end: var(--space-xl-2xl);
     }
 
     .card__cover {
@@ -50,6 +50,8 @@
 .card .card__title {
     margin-top: 0;
     margin-bottom: .5rem;
+    margin-block-start: 0;
+    margin-block-end: .5rem;
 
     a {
         color: inherit;
@@ -63,6 +65,7 @@
 
 .card__teaser {
     margin-bottom: 2rem;
+    margin-block-end: 2rem;
     font-size: var(--step-0);
 }
 
@@ -71,8 +74,6 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: .75rem;
-
-    // margin-top: auto;
 }
 
 .blog-post__author-photo {
@@ -100,6 +101,7 @@
 
 .card .badge-group {
     margin-bottom: 1rem;
+    margin-block-end: 1rem;
 }
 
 .badge-group {

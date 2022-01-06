@@ -3,7 +3,8 @@
   color: inherit;
   font: inherit;
   text-align: center;
-  margin-top: var(--space-l-2xl); }
+  margin-top: var(--space-l-2xl);
+  margin-block-start: var(--space-l-2xl); }
 
 ul.donations-list {
   margin-top: var(--space-l-2xl);
@@ -11,10 +12,12 @@ ul.donations-list {
   grid-gap: 0 2rem;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   margin-bottom: 0;
+  margin-block-end: 0;
   align-items: stretch; }
   ul.donations-list .donations-item {
     display: flex;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    margin-block-end: 2rem; }
 
 .donation {
   width: 100%;
@@ -49,7 +52,8 @@ ul.donations-list {
 
 .donation__sponsor-name,
 .donation__date {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-block-end: 0; }
 
 .donation__sponsor-logo {
   width: 2.5rem;

@@ -21,6 +21,7 @@
     font-size: inherit;
     color: inherit;
     font: inherit;
+    font-family: var(--text-font);
     margin: 0;
 }
 
@@ -43,6 +44,7 @@
 
 .divider {
     border-bottom: 1px solid var(--divider-color);
+    border-block-end: 1px solid var(--divider-color);
 }
 
 .fs-step--1 {

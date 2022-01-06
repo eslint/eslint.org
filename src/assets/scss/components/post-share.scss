@@ -41,6 +41,7 @@ button.c-share__btn {
     display: block;
     position: absolute;
     top: 100%;
+    offset-block-start: 100%;
     transition: opacity 1s linear 3s;
 
     &[data-fades-out] {

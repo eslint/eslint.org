@@ -13,8 +13,8 @@
 
 //bottom of blog post
 .person--author {
-
     margin-bottom: 3rem;
+    margin-block-end: 3rem;
 
     @media all and (min-width: 680px) {
         display: grid;
@@ -37,11 +37,13 @@
     flex: none;
     max-width: initial;
     margin-bottom: .875rem;
+    margin-block-end: .875rem;
 
     &.person__photo--large {
         width: 5rem;
         height: 5rem;
         margin-bottom: 1.25rem;
+        margin-block-end: 1.25rem;
     }
 
     &.person__photo--medium {
@@ -85,6 +87,7 @@
     color: var(--link-color);
     display: block;
     margin-bottom: .5rem;
+    margin-block-end: .5rem;
 
     .post & {
         color: inherit;
@@ -102,6 +105,11 @@
             left: 0;
             right: 0;
             bottom: 0;
+
+            offset-block-start: 0;
+            offset-block-end: 0;
+            offset-inline-start: 0;
+            offset-inline-end: 0;
         }
     }
 }
@@ -109,6 +117,7 @@
 .person__title {
     display: block;
     margin-bottom: .5rem;
+    margin-block-end: .5rem;
 }
 
 .person__social-links {

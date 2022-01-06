@@ -1,5 +1,15 @@
 
 .theme-switcher__button {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-xs);
+    border: 1px solid var(--border-color);
+    padding: .625rem .875rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+
     .theme-switcher__icon {
         color: var(--icon-color);
     }

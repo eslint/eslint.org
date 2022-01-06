@@ -59,6 +59,7 @@
     font-weight: 500;
     font-size: .875rem;
     margin-bottom: .25rem;
+    margin-block-end: .25rem;
 }
 .rule__description {
     font-size: var(--step--1);
@@ -83,6 +84,7 @@
     display: inline-block;
     font-weight: normal;
     margin-left: .5rem;
+    margin-inline-start: .5rem;
     font-size: var(--step--1);
     padding: 0 .5rem;
 }

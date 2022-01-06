@@ -1,16 +1,19 @@
 .c-toc {
     margin-bottom: 2rem;
+    margin-block-end: 2rem;
 
     ol {
         margin: 0;
 
         li {
             margin-bottom: .25rem;
+            margin-block-end: .25rem;
         }
 
         li::before {
             content: "└";
             margin-right: .5rem;
+            margin-inline-end: .5rem;
             color: var(--icon-color);
         }
     }
@@ -26,4 +29,5 @@
     color: var(--body-text-color);
     font-family: var(--text-font);
     margin-bottom: .5rem;
+    margin-block-end: .5rem;
 }
