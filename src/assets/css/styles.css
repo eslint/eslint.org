@@ -2492,6 +2492,8 @@ button.c-share__btn {
   overflow: hidden;
   border-radius: 4px;
   background-color: var(--body-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1); }
 
 .jumbotron #carbonads {
