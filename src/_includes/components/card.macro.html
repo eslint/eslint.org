@@ -8,10 +8,10 @@
     {% else %}
         {% set imageName =  'sponsorships.png' %}
     {% endif %}
-    {% set blogUrl = params.url | replace('.html', '') %}
+
     {% set img = ['/assets/images/blog-covers/', imageName] | join  %}
 
-    <a href="{{ blogUrl }}" class="card__cover">
+    <a href="{{ params.url }}" class="card__cover">
         <img src="{{ img | url }}"
                 width="420" height="240" alt="{{ params.title }}" />
     </a>
@@ -26,7 +26,7 @@
         </div>
 
         <h3 class="card__title">
-            <a href="{{ blogUrl }}">
+            <a href="{{ params.url }}">
                 {{ params.title }}</a>
         </h3>
         <p class="card__teaser">
