@@ -88,6 +88,10 @@
         grid-gap: 2rem;
         align-items: start;
     }
+
+    .hero & {
+        align-items: center;
+    }
 }
 
 .grid--center-items {

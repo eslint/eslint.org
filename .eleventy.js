@@ -6,6 +6,7 @@ const pluginTOC = require('eleventy-plugin-nesting-toc');
 const slugify = require("slugify");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require('markdown-it-anchor');
+const Image = require("@11ty/eleventy-img")
 
 const {
     DateTime

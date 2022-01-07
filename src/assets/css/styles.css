@@ -2627,6 +2627,9 @@ button.c-share__btn {
     grid-gap: 2rem;
     align-items: start; } }
 
+.hero .grid {
+  align-items: center; }
+
 .grid--center-items {
   align-items: center; }
 
