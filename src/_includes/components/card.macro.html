@@ -33,7 +33,7 @@
             {{ params.teaser }}
         </p>
         <div class="card__footer">
-            <img class="blog-post__author-photo" src="{% if params.authorImage %}{{ params.authorImage }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.authorName }}">
+            <img class="blog-post__author-photo" src="{% if params.authorImage %}{{ params.authorImage }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.authorName }}" width="40" height="40">
             <div class="blog-post__author__details">
                 <div class="blog-post__author-name">{{ params.authorName }}</div>
                 <span class="blog-post__publish-date">{{ params.date | readableDate }}</span>
