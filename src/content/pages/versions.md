@@ -7,11 +7,14 @@ hook: "versions-page"
 
 <div class="section hero">
     <div class="content-container">
-        <div>
+        <div class="span-1-7 content-container">
             <h1 class="section-title h2" id="versions-label">ESLint Versions</h1>
             <p class="section-supporting-text">
                 Choose the documentation version
             </p>
+        </div>
+        <div class="span-11-12">
+                {% include "partials/carbon-ad.html" %}
         </div>
     </div>
 </div>

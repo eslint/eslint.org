@@ -9,7 +9,7 @@ hook: "branding-page"
 
 <section class="section hero">
     <div class="content-container grid">
-        <div class="span-1-7">
+        <div class="span-1-7 content-container">
             <h1 class="section-title">Branding</h1>
             <p class="section-supporting-text">
                 How to use our logo

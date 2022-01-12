@@ -9,7 +9,7 @@ hook: "team-page"
 
 <section class="section hero">
     <div class="content-container grid">
-        <div class="span-1-7">
+        <div class="span-1-7 content-container">
             <h1 class="section-title">Meet our team</h1>
             <p class="section-supporting-text">
                 These are the people who build and maintain ESLint.
@@ -109,7 +109,7 @@ hook: "team-page"
                 {% set itemBio = item.bio | safe %}
                 {% set itemTwitter = item.twitter_username %}
                 {% set itemGitHub = item.github_username %}
-                
+
                 <li>
                     {{ member({
                         photo: itemPhoto,

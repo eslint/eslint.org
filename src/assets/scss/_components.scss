@@ -2,13 +2,19 @@
     border-bottom: 1px solid var(--divider-color);
     border-block-end: 1px solid var(--divider-color);
     background-color: var(--hero-background-color);
+
+    .content-container {
+        padding: var(--space-xl-4xl) 0;
+    }
+
+    > .content-container {
+        padding: 0 calc(1rem + 1vw);
+        padding-bottom: 0;
+        align-items: center;
+    }
 }
 
 .hero--display {
-    .content-container {
-        padding: var(--space-xl-4xl) calc(1rem + 1vw);
-        align-items: center;
-    }
 
     .section-title {
         margin-bottom: 1.5rem;
