@@ -162,7 +162,7 @@ hook: "donate-page"
                 </article>
             </div>
             <div class="features-image span-7-12">
-                <img src="../../assets/images/money-spenditure-graph.svg" alt="DESCRIPTION HERE" width="590" height="680" loading="lazy">
+                <img src="../../assets/images/money-spenditure-graph.svg" alt="Graph visually representing approximate percentages of how the money is used and distributed between Team Development, Contributor Pool, Dependencies, Community Projects, and support systems." width="590" height="680" loading="lazy">
             </div>
         </div>
         <footer class="section-foot center-text">
