@@ -20,13 +20,12 @@
         var light_theme_toggle = document.getElementById('light-theme-toggle'),
             dark_theme_toggle = document.getElementById('dark-theme-toggle');
 
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // get any previously-chosen themes
+        var theme = window.localStorage.getItem("theme");
+        if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.documentElement.setAttribute('data-theme', 'dark');
         }
-
-        // window.localStorage.setItem("theme", theme);
-        var theme = window.localStorage.getItem("theme");
-        if(theme) document.documentElement.setAttribute('data-theme', theme);
+        else if (theme) document.documentElement.setAttribute('data-theme', theme);
 
         if (theme == "light") {
             enableToggle(light_theme_toggle);
