@@ -333,7 +333,12 @@ figcaption {
   background-color: var(--color-brand);
   color: #fff; }
 
-:target {
+h1:target,
+h2:target,
+h3:target,
+h4:target,
+h5:target,
+h6:target {
   background-color: var(--lighter-background-color); }
 
 *:focus {
@@ -1408,8 +1413,12 @@ ul.tag-list {
 .docs-wrapper {
   padding: calc(1rem + 1vw);
   flex: 1; }
-  .docs-wrapper.grid {
-    align-items: stretch; }
+  @media all and (min-width: 1023px) {
+    .docs-wrapper {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 2rem;
+      align-items: stretch; } }
 
 .docs-left-sidebar {
   grid-column: 1 / 5;
