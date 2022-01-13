@@ -5,14 +5,19 @@
 .c-toc ol {
   margin: 0; }
   .c-toc ol li {
+    position: relative;
     margin-bottom: .25rem;
     margin-block-end: .25rem;
-    display: flex; }
+    padding-left: 1rem;
+    padding-inline-start: 1rem; }
+    .c-toc ol li > ol {
+      margin-top: .25rem; }
   .c-toc ol li::before {
     content: "└";
-    margin-right: .5rem;
-    margin-inline-end: .5rem;
-    color: var(--icon-color); }
+    color: var(--icon-color);
+    position: absolute;
+    left: -.4rem;
+    offset-inline-start: -.4rem; }
 
 .c-toc a {
   text-decoration: none;

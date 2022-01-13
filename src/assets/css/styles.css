@@ -408,6 +408,14 @@ main {
   main:target {
     outline: none; }
 
+hr {
+  border: none;
+  border-top: 1px solid var(--divider-color);
+  border-block-start: 1px solid var(--divider-color);
+  background: none;
+  height: 0;
+  margin: 2rem 0; }
+
 .content-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -1423,12 +1431,12 @@ ul.tag-list {
   @media all and (min-width: 1023px) {
     .docs-wrapper {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      grid-template-columns: 1fr 4fr;
       grid-gap: 2rem;
       align-items: stretch; } }
 
 .docs-left-sidebar {
-  grid-column: 1 / 5;
+  grid-column: 1 / 2;
   border-right: 1px solid var(--divider-color);
   padding-right: calc(1rem + 1vw);
   display: grid;
@@ -1437,9 +1445,9 @@ ul.tag-list {
   align-items: start; }
 
 .docs-content {
-  grid-column: 5 / 13;
+  grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 1fr 240px;
+  grid-template-columns: 4fr 1fr;
   grid-gap: 2rem; }
 
 .docs-main {
@@ -1453,6 +1461,24 @@ ul.tag-list {
 
 .docs-toc {
   flex: 1; }
+
+.docs-edit-link {
+  border-top: 1px solid var(--divider-color);
+  padding-top: 1.5rem;
+  padding-block-start: 1.5rem;
+  margin-top: 3rem;
+  margin-block-start: 3rem; }
+  .docs-edit-link a {
+    color: var(--link-color);
+    text-decoration: none;
+    background-color: var(--docs-lightest-background-color);
+    font-weight: 500;
+    font-size: var(--step-0);
+    display: inline-flex;
+    padding: .75rem 1.125rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius); }
 
 button {
   border: none;
@@ -1708,14 +1734,19 @@ a.c-btn {
 .c-toc ol {
   margin: 0; }
   .c-toc ol li {
+    position: relative;
     margin-bottom: .25rem;
     margin-block-end: .25rem;
-    display: flex; }
+    padding-left: 1rem;
+    padding-inline-start: 1rem; }
+    .c-toc ol li > ol {
+      margin-top: .25rem; }
   .c-toc ol li::before {
     content: "└";
-    margin-right: .5rem;
-    margin-inline-end: .5rem;
-    color: var(--icon-color); }
+    color: var(--icon-color);
+    position: absolute;
+    left: -.4rem;
+    offset-inline-start: -.4rem; }
 
 .c-toc a {
   text-decoration: none;

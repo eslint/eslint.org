@@ -8,16 +8,23 @@
         margin: 0;
 
         li {
+            position: relative;
             margin-bottom: .25rem;
             margin-block-end: .25rem;
-            display: flex;
+            padding-left: 1rem;
+            padding-inline-start: 1rem;
+
+            > ol {
+                margin-top: .25rem;
+            }
         }
 
         li::before {
             content: "└";
-            margin-right: .5rem;
-            margin-inline-end: .5rem;
             color: var(--icon-color);
+            position: absolute;
+            left: -.4rem;
+            offset-inline-start: -.4rem;
         }
     }
 

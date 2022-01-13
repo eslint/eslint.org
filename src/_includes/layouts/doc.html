@@ -13,7 +13,12 @@ layout: base.html
 
     <div class="docs-content">
         <main id="main" tabindex="-1" class="docs-main">
+
             {{ content | safe }}
+
+            <div class="docs-edit-link">
+                <a href="{{ edit_link }}">Edit this page</a>
+            </div>
         </main>
 
         <div class="docs-right-sidebar">
