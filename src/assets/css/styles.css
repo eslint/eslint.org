@@ -302,6 +302,33 @@ cite,
 figcaption {
   font-size: var(--step--1); }
 
+.docs-main h6,
+.docs-main .h6 {
+  font-size: var(--step-0); }
+
+.docs-main h5,
+.docs-main .h5 {
+  font-size: var(--step-0); }
+
+.docs-main h4,
+.docs-main .h4 {
+  font-size: var(--step-1); }
+
+.docs-main h3,
+.docs-main .h3 {
+  font-size: var(--step-2);
+  line-height: 1.2; }
+
+.docs-main h2,
+.docs-main .h2 {
+  font-size: var(--step-3);
+  line-height: 1.2; }
+
+.docs-main h1,
+.docs-main .h1 {
+  font-size: var(--step-4);
+  line-height: 1.2; }
+
 ::selection {
   background-color: var(--color-brand);
   color: #fff; }
