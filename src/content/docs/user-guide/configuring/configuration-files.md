@@ -8,13 +8,25 @@ edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/configurin
 
 # Configuration Files
 
-* [Configuration File Formats](#configuration-file-formats)
-* [Using Configuration Files](#using-configuration-files)
-* [Adding Shared Settings](#adding-shared-settings)
-* [Cascading and Hierarchy](#cascading-and-hierarchy)
-* [Extending Configuration Files](#extending-configuration-files)
-* [Configuration Based on Glob Patterns](#configuration-based-on-glob-patterns)
-* [Personal Configuration Files](#personal-configuration-files-deprecated)
+- [Configuration Files](#configuration-files)
+  - [Configuration File Formats](#configuration-file-formats)
+  - [Using Configuration Files](#using-configuration-files)
+    - [Comments in configuration files](#comments-in-configuration-files)
+  - [Adding Shared Settings](#adding-shared-settings)
+  - [Cascading and Hierarchy](#cascading-and-hierarchy)
+  - [Extending Configuration Files](#extending-configuration-files)
+    - [Using a shareable configuration package](#using-a-shareable-configuration-package)
+    - [Using `eslint:recommended`](#using-eslintrecommended)
+    - [Using a configuration from a plugin](#using-a-configuration-from-a-plugin)
+    - [Using a configuration file](#using-a-configuration-file)
+    - [Using `"eslint:all"`](#using-eslintall)
+  - [Configuration Based on Glob Patterns](#configuration-based-on-glob-patterns)
+    - [How do overrides work?](#how-do-overrides-work)
+    - [Relative glob patterns](#relative-glob-patterns)
+    - [Specifying target files to lint](#specifying-target-files-to-lint)
+  - [Personal Configuration Files (deprecated)](#personal-configuration-files-deprecated)
+    - [How does ESLint find personal configuration files?](#how-does-eslint-find-personal-configuration-files)
+    - [How do personal configuration files behave?](#how-do-personal-configuration-files-behave)
 
 ## Configuration File Formats
 
@@ -402,7 +414,7 @@ Here is how overrides work in a configuration file:
 
 ### Relative glob patterns
 
-```pt
+```python
 project-root
 ├── app
 │   ├── lib

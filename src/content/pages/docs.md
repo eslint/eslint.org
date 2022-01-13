@@ -1,5 +1,5 @@
 ---
-layout: docs-main.html
+layout: doc.html
 title: Docs
 permalink: /docs/
 hook: "docs-page"

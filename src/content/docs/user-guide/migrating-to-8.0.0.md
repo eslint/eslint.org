@@ -75,7 +75,7 @@ With this configuration, the rule would ignore the third element in the array be
 
 **To address:** Change your rule configuration so that there are only two elements in the array, and the second element is either a string or an object, such as:
 
-```jsonc
+```json
 {
     "comma-dangle": ["error", "never"],
     // or
