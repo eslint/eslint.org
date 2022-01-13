@@ -2,6 +2,11 @@
 title: Working with Plugins
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/developer-guide/working-with-plugins.md
+eleventyNavigation:
+    key: working with plugings
+    parent: developer guide
+    title: Working with Plugins
+    order: 5
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

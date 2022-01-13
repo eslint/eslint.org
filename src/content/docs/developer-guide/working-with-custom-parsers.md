@@ -2,6 +2,11 @@
 title: Working with Custom Parsers
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/developer-guide/working-with-custom-parsers.md
+eleventyNavigation:
+    key: working with custom parsers
+    parent: developer guide
+    title: Working with Custom Parsers
+    order: 7
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

@@ -2,6 +2,11 @@
 title: Working with Rules
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/developer-guide/working-with-rules.md
+eleventyNavigation:
+    key: working with rules
+    parent: developer guide
+    title: Working with Rules
+    order: 4
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->
