@@ -1387,7 +1387,11 @@ ul.tag-list {
 .docs-left-sidebar {
   grid-column: 1 / 5;
   border-right: 1px solid var(--divider-color);
-  padding-right: calc(1rem + 1vw); }
+  padding-right: calc(1rem + 1vw);
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-gap: 2rem 0;
+  align-items: start; }
 
 .docs-content {
   grid-column: 5 / 13;
@@ -2498,6 +2502,8 @@ button.c-share__btn {
   margin: 0; }
   .docs-index__item ul ul {
     padding-left: .75rem; }
+  .docs-index__item[data-has-children] > a {
+    margin-bottom: .5rem; }
 
 .docs-index > ul > .docs-index__item--top > a {
   color: var(--body-text-color);

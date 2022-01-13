@@ -12,6 +12,8 @@
   margin: 0; }
   .docs-index__item ul ul {
     padding-left: .75rem; }
+  .docs-index__item[data-has-children] > a {
+    margin-bottom: .5rem; }
 
 .docs-index > ul > .docs-index__item--top > a {
   color: var(--body-text-color);

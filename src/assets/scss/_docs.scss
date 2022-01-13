@@ -10,6 +10,11 @@
     grid-column: 1 / 5;
     border-right: 1px solid var(--divider-color);
     padding-right: calc(1rem + 1vw);
+
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-gap: 2rem 0;
+    align-items: start;
 }
 
 .docs-content {
