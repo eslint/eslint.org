@@ -6,7 +6,8 @@
   margin: 0; }
   .c-toc ol li {
     margin-bottom: .25rem;
-    margin-block-end: .25rem; }
+    margin-block-end: .25rem;
+    display: flex; }
   .c-toc ol li::before {
     content: "└";
     margin-right: .5rem;
