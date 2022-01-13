@@ -1,0 +1,23 @@
+.docs-index {
+    a {
+        text-decoration: none;
+        display: block;
+        padding: .5rem .75rem;
+        color: var(--headings-color);
+    }
+}
+
+.docs-index__item {
+    margin: 0;
+    ul ul {
+        padding-left: .75rem;
+    }
+}
+
+.docs-index > ul > .docs-index__item--top > a {
+    color: var(--body-text-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .875rem;
+    font-weight: 500;
+}

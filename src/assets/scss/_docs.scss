@@ -7,11 +7,13 @@
     }
 }
 .docs-left-sidebar {
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
+    border-right: 1px solid var(--divider-color);
+    padding-right: calc(1rem + 1vw);
 }
 
 .docs-content {
-    grid-column: 4 / 13;
+    grid-column: 5 / 13;
 
     display: grid;
     grid-template-columns: 1fr 240px;

@@ -1,20 +1,21 @@
 @charset "UTF-8";
-.c-toc {
-  margin-bottom: 2rem;
-  margin-block-end: 2rem; }
-  .c-toc ol {
-    margin: 0; }
-    .c-toc ol li {
-      margin-bottom: .25rem;
-      margin-block-end: .25rem; }
-    .c-toc ol li::before {
-      content: "└";
-      margin-right: .5rem;
-      margin-inline-end: .5rem;
-      color: var(--icon-color); }
-  .c-toc a {
-    text-decoration: none;
-    color: var(--headings-color); }
+.docs-toc {
+  margin: 2rem 0; }
+
+.c-toc ol {
+  margin: 0; }
+  .c-toc ol li {
+    margin-bottom: .25rem;
+    margin-block-end: .25rem; }
+  .c-toc ol li::before {
+    content: "└";
+    margin-right: .5rem;
+    margin-inline-end: .5rem;
+    color: var(--icon-color); }
+
+.c-toc a {
+  text-decoration: none;
+  color: var(--headings-color); }
 
 .c-toc__label.c-toc__label {
   font-size: var(--step-0);

@@ -1,7 +1,7 @@
 {% set navPages = collections.docs | eleventyNavigation %}
 {% macro renderNavListItem(entry) -%}
-<li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
-  <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+<li class="docs-index__item docs-index__item--top">
+  <a href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
 {%- if entry.children.length -%}
   <ul>
     {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
@@ -10,6 +10,8 @@
 </li>
 {%- endmacro %}
 
-<ul>
-{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
-</ul>
+<nav class="docs-index">
+    <ul class="docs-index__list">
+    {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+    </ul>
+</nav>
