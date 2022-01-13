@@ -12,12 +12,15 @@
   margin: 0; }
   .docs-index__item ul ul {
     padding-left: .75rem; }
-  .docs-index__item[data-has-children] > a {
+  .docs-index__item[data-has-children] {
     margin-bottom: .5rem; }
 
-.docs-index > ul > .docs-index__item--top > a {
-  color: var(--body-text-color);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: .875rem;
-  font-weight: 500; }
+.docs-index > ul > .docs-index__item--top {
+  margin-top: 1.5rem;
+  margin-block-start: 1.5rem; }
+  .docs-index > ul > .docs-index__item--top > a {
+    color: var(--icon-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .875rem;
+    font-weight: 500; }
