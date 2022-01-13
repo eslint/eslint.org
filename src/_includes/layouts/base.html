@@ -45,6 +45,16 @@
     <link rel="preload" href="{{ '/assets/fonts/Inter-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/SpaceMono-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 
+    <script>
+        (function(){
+            var theme = window.localStorage.getItem("theme");
+            if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+            else if (theme) document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
 
     <style>
         /* Space Grotesk for headings */

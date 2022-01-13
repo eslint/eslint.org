@@ -67,6 +67,21 @@
   --ghost-button-text-color: var(--color-brand);
   --color-brand: var(--color-primary-800); }
 
+@media (prefers-color-scheme: dark) {
+  --body-background-color: var(--color-neutral-900);
+  --body-text-color: var(--color-neutral-300);
+  --headings-color: #fff;
+  --divider-color: var(--color-neutral-600);
+  --border-color: var(--color-neutral-500);
+  --icon-color: var(--body-text-color);
+  --dark-icon-color: #fff;
+  --link-color: var(--color-primary-400);
+  --lighter-background-color: var(--color-neutral-800);
+  --lightest-background-color: var(--color-neutral-800);
+  --hero-background-color: var(--color-neutral-800);
+  --footer-background-color: var(--color-neutral-800);
+  --outline-color: #fff; }
+
 html[data-theme="light"] {
   --body-background-color: #fff;
   --body-text-color: var(--color-neutral-500);
