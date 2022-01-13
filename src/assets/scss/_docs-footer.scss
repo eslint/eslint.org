@@ -17,7 +17,14 @@
         gap: 1rem;
     }
 
-    .docs-switcher {
+    .docs-switchers {
         flex: 1 1 240px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .theme-switcher, .language-switcher {
+            flex: 1 1 240px;
+        }
     }
 }

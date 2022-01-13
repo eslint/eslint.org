@@ -92,6 +92,10 @@ main {
     &:focus {
         outline: none;
     }
+
+    &:target {
+        outline: none;
+    }
 }
 
 .content-container {
