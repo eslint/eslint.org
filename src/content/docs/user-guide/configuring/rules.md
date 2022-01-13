@@ -2,6 +2,11 @@
 title: Rules
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/configuring/rules.md
+eleventyNavigation:
+    key: configuring rules
+    parent: configuring
+    title: Configuring Rules
+    order: 3
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

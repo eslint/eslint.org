@@ -1,6 +1,11 @@
 ---
 title: Documentation
 layout: doc
+eleventyNavigation:
+    key: formatters
+    parent: user guide
+    title: Formatters
+    order: 5
 ---
 # ESLint Formatters
 
@@ -10,17 +15,22 @@ You can specify a formatter using the `--format` or `-f` flag on the command lin
 
 The built-in formatter options are:
 
-* [checkstyle](#checkstyle)
-* [compact](#compact)
-* [html](#html)
-* [jslint-xml](#jslint-xml)
-* [json-with-metadata](#json-with-metadata)
-* [json](#json)
-* [junit](#junit)
-* [stylish](#stylish)
-* [tap](#tap)
-* [unix](#unix)
-* [visualstudio](#visualstudio)
+- [ESLint Formatters](#eslint-formatters)
+  - [Example Source](#example-source)
+    - [`fullOfProblems.js`](#fullofproblemsjs)
+    - [`.eslintrc`:](#eslintrc)
+  - [Output Examples](#output-examples)
+    - [checkstyle](#checkstyle)
+    - [compact](#compact)
+    - [html](#html)
+    - [jslint-xml](#jslint-xml)
+    - [json-with-metadata](#json-with-metadata)
+    - [json](#json)
+    - [junit](#junit)
+    - [stylish](#stylish)
+    - [tap](#tap)
+    - [unix](#unix)
+    - [visualstudio](#visualstudio)
 
 ## Example Source
 

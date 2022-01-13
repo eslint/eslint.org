@@ -2,6 +2,11 @@
 title: Configuration Files
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/configuring/configuration-files.md
+eleventyNavigation:
+    key: configuration files
+    parent: configuring
+    title: Configuration Files
+    order: 1
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

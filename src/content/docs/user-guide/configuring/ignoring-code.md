@@ -2,17 +2,23 @@
 title: Ignoring Code
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/configuring/ignoring-code.md
+eleventyNavigation:
+    key: ignoring code
+    parent: configuring
+    title: Ignoring Code
+    order: 5
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->
 
 # Ignoring Code
 
-* [`ignorePatterns` in Config Files](#ignorepatterns-in-config-files)
-* [The `.eslintignore` File](#the-eslintignore-file)
-* [Using an Alternate File](#using-an-alternate-file)
-* [Using eslintIgnore in package.json](#using-eslintignore-in-packagejson)
-* [Ignored File Warnings](#ignored-file-warnings)
+- [Ignoring Code](#ignoring-code)
+  - [`ignorePatterns` in Config Files](#ignorepatterns-in-config-files)
+  - [The `.eslintignore` File](#the-eslintignore-file)
+  - [Using an Alternate File](#using-an-alternate-file)
+  - [Using eslintIgnore in package.json](#using-eslintignore-in-packagejson)
+  - [Ignored File Warnings](#ignored-file-warnings)
 
 ## `ignorePatterns` in Config Files
 
