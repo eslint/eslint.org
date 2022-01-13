@@ -92,6 +92,7 @@ html[data-theme="light"] {
   --link-color: var(--color-primary-800);
   --lighter-background-color: var(--color-neutral-100);
   --lightest-background-color: var(--color-neutral-50);
+  --docs-lightest-background-color: var(--color-primary-50);
   --hero-background-color: var(--color-neutral-25);
   --footer-background-color: var(--color-neutral-25);
   --outline-color: var(--color-brand); }
@@ -107,6 +108,7 @@ html[data-theme="dark"] {
   --link-color: var(--color-primary-400);
   --lighter-background-color: var(--color-neutral-800);
   --lightest-background-color: var(--color-neutral-800);
+  --docs-lightest-background-color: var(--color-primary-800);
   --hero-background-color: var(--color-neutral-800);
   --footer-background-color: var(--color-neutral-800);
   --outline-color: #fff; }

@@ -2,6 +2,11 @@
 title: Configuring ESLint
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/configuring/README.md
+eleventyNavigation:
+    key: configuring
+    parent: user guide
+    title: Configuring
+    order: 2
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

@@ -5,6 +5,7 @@
 @import "tokens/ui.scss";
 
 @import "_typography.scss";
+@import "_docs-typography.scss";
 @import "_foundations.scss";
 @import "_prism-syntax-highlighter.scss";
 @import "_header.scss";
@@ -35,6 +36,7 @@
 @import "components/swatches.scss";
 @import "components/theme-switcher.scss";
 @import "components/language-switcher.scss";
+@import "components/docs-index.scss";
 
 @import "_carbon-ads.scss";
 

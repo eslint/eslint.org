@@ -2,6 +2,11 @@
 title: Command Line Interface
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/command-line-interface.md
+eleventyNavigation:
+    key: command line interface
+    parent: user guide
+    title: Command Line Interface
+    order: 3
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->
@@ -242,7 +247,7 @@ This option has the same effect as `--fix` with one difference: the fixes are no
 
 Because the default formatter does not output the fixed code, you'll have to use another one (e.g. `json`) to get the fixes. Here's an example of this pattern:
 
-```sh
+```shell
 getSomeText | eslint --stdin --fix-dry-run --format=json
 ```
 
@@ -259,7 +264,7 @@ This option allows you to specify the type of fixes to apply when using either `
 
 You can specify one or more fix type on the command line. Here are some examples:
 
-```sh
+```shell
 eslint --fix --fix-type suggestion .
 eslint --fix --fix-type suggestion --fix-type problem .
 eslint --fix --fix-type suggestion,layout .

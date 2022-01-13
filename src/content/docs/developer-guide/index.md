@@ -2,6 +2,10 @@
 title: Developer Guide
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/developer-guide/README.md
+eleventyNavigation:
+    key: developer guide 
+    title: Developer Guide 
+    order: 2
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

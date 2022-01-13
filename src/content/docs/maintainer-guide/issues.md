@@ -2,6 +2,11 @@
 title: Managing Issues
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/maintainer-guide/issues.md
+eleventyNavigation:
+    key: managing issues
+    parent: maintainer guide 
+    title: Managing Issues
+    order: 1
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

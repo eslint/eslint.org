@@ -2,6 +2,11 @@
 title: Reviewing Pull Requests
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/maintainer-guide/pullrequests.md
+eleventyNavigation:
+    key: reviewing pull requests
+    parent: maintainer guide 
+    title: Reviewing Pull Requests
+    order: 2
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

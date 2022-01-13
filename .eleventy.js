@@ -160,6 +160,10 @@ module.exports = function(eleventyConfig) {
         require("./src/_11ty/collections/blogpostsByCategories.js")
     );
 
+    eleventyConfig.addCollection("docs", function(collection) {
+        return collection.getFilteredByGlob("./src/content/docs/**/**/*.md");
+    });
+
 
     return {
         // When a passthrough file is modified, rebuild the pages:

@@ -2,6 +2,11 @@
 title: Integrations
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/integrations.md
+eleventyNavigation:
+    key: integrations
+    parent: user guide
+    title: Integrations
+    order: 6
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

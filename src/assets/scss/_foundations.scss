@@ -3,7 +3,12 @@
     color: #fff;
 }
 
-:target {
+h1:target,
+h2:target,
+h3:target,
+h4:target,
+h5:target,
+h6:target {
     background-color: var(--lighter-background-color);
 }
 
@@ -87,6 +92,19 @@ main {
     &:focus {
         outline: none;
     }
+
+    &:target {
+        outline: none;
+    }
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--divider-color);
+    border-block-start: 1px solid var(--divider-color);
+    background: none;
+    height: 0;
+    margin: 2rem 0;
 }
 
 .content-container {

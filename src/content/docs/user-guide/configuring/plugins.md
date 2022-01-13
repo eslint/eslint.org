@@ -2,15 +2,24 @@
 title: Plugins
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/configuring/plugins.md
+eleventyNavigation:
+    key: configuring plugins
+    parent: configuring
+    title: Configuring Plugins
+    order: 4
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->
 
 # Plugins
 
-* [Specifying Parser](#specifying-parser)
-* [Specifying Processor](#specifying-processor)
-* [Configuring Plugins](#configuring-plugins)
+- [Plugins](#plugins)
+  - [Specifying Parser](#specifying-parser)
+  - [Specifying Processor](#specifying-processor)
+  - [Configuring Plugins](#configuring-plugins)
+    - [Naming convention](#naming-convention)
+      - [Include a plugin](#include-a-plugin)
+      - [Use a plugin](#use-a-plugin)
 
 ## Specifying Parser
 

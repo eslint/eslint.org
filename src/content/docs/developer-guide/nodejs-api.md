@@ -2,6 +2,11 @@
 title: Node.js API
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/developer-guide/nodejs-api.md
+eleventyNavigation:
+    key: node.js api
+    parent: developer guide
+    title: Node.js API
+    order: 9
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

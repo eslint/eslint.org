@@ -2,6 +2,11 @@
 title: Getting Started with ESLint
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/getting-started.md
+eleventyNavigation:
+    key: getting started 
+    parent: user guide
+    title: Getting Started
+    order: 1
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->
@@ -20,7 +25,7 @@ Prerequisites: [Node.js](https://nodejs.org/en/) (`^12.22.0`, `^14.17.0`, or `>=
 
 You can install ESLint using npm or yarn:
 
-```sh
+```shell
 npm install eslint --save-dev
 
 # or
@@ -30,7 +35,7 @@ yarn add eslint --dev
 
 You should then set up a configuration file, and the easiest way to do that is to use the `--init` flag:
 
-```sh
+```shell
 $ npx eslint --init
 
 # or
@@ -42,7 +47,7 @@ $ yarn run eslint --init
 
 After that, you can run ESLint on any file or directory like this:
 
-```sh
+```shell
 $ npx eslint yourfile.js
 
 # or

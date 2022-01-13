@@ -2,6 +2,11 @@
 title: Unit Tests
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/developer-guide/unit-tests.md
+eleventyNavigation:
+    key: run the tests
+    parent: developer guide
+    title: Run the Tests
+    order: 3
 
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->

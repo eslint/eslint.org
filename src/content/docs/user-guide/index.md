@@ -2,7 +2,10 @@
 title: User Guide
 layout: doc
 edit_link: https://github.com/eslint/eslint/edit/main/docs/user-guide/README.md
-
+eleventyNavigation:
+    key: user guide 
+    title: User Guide 
+    order: 1
 ---
 <!-- Note: No pull requests accepted for this file. See README.md in the root directory for details. -->
 
