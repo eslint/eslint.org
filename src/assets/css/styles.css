@@ -2522,7 +2522,7 @@ button.c-share__btn {
   display: block;
   padding: .5rem .75rem;
   color: var(--headings-color); }
-  .docs-index a[aria-current="true"] {
+  .docs-index a:hover, .docs-index a[aria-current="true"] {
     background-color: var(--docs-lightest-background-color);
     color: var(--link-color); }
 
