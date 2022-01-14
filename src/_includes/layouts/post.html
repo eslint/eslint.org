@@ -4,24 +4,27 @@ hook: "post blog-post-page"
 ---
 
 {% include "partials/header.html" %}
-
+{%- from 'components/hero.html' import hero %}
 {%- from 'components/person.macro.html' import member, contributor, postAuthor %}
 
 <main id="main" tabindex="-1">
-    <div class="section hero">
-        <div class="content-container grid">
-            <div class="span-1-7">
-                <p class="post__meta">Published {{ page.date | readableDate }} under <a href="/blog/category/{{ categories[0] | slugify }}">{{ categories  }}</a></p>
-                <h1 class="section-title">{{ title }}</h1>
-                <p class="section-supporting-text">
-                    {{ teaser }}
-                </p>
-            </div>
-            <div class="span-11-12">
-                {% include "partials/carbon-ad.html" %}
-            </div>
-        </div>
-    </div>
+
+    {% set hero_title = title %}
+    {% set hero_supporting_text = teaser %}
+    {% set hero_date = page.date | readableDate %}
+    {% set hero_category = categories %}
+    {% set hero_category_url = categories[0] | slugify %}
+
+    {{ hero({
+        title: hero_title,
+        supporting_text: hero_supporting_text,
+        post: {
+            date: hero_date,
+            category: hero_category,
+            categoryURL: hero_category_url
+        }
+    }) }}
+
     <div class="content-container grid">
 
         <div class="span-5-12">
