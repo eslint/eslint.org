@@ -24,6 +24,32 @@
     }
 })();
 
+(function() {
+    var index_trigger = document.getElementById("index-toggle"),
+        index = document.getElementById("js-index-list"),
+        body = document.getElementsByTagName("body")[0],
+        open = false;
+
+    index_trigger.removeAttribute("hidden");
+    index_trigger.setAttribute("aria-expanded", "false");
+    index.setAttribute("data-open", "false");
+
+    index.setAttribute("data-open", "false");
+    index_trigger.addEventListener("click", toggleindex, false);
+
+    function toggleindex(e) {
+        if (!open) {
+            this.setAttribute("aria-expanded", "true");
+            index.setAttribute("data-open", "true");
+            open = true;
+        } else {
+            this.setAttribute("aria-expanded", "false");
+            index.setAttribute("data-open", "false");
+            open = false;
+        }
+    }
+})();
+
 /* branding logo theme switcher */
 (function() {
     var logo_theme_buttons = document.querySelector('.brand__logo__colors'),
