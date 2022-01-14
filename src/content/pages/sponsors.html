@@ -6,24 +6,18 @@ hook: "sponsors-page"
 ---
 
 {%- from 'components/donation.macro.html' import donationItem %}
+{%- from 'components/hero.html' import hero %}
 
-<div class="section hero">
-    <div class="content-container grid">
-        <div class="span-1-7 content-container">
-            <h1 class="section-title">Sponsors</h1>
-            <p class="section-supporting-text">
-                171 companies, organizations, and individuals are currently contributing $13137.84 each month to support ESLint's
-                ongoing maintenance and development.
-            </p>
-            <div class="eslint-actions">
-                <a href="/donate/" class="c-btn c-btn--primary">Become a sponsor</a>
-            </div>
-        </div>
-        <div class="span-11-12">
-            {% include "partials/carbon-ad.html" %}
-        </div>
-    </div>
-</div>
+
+
+{{ hero({
+    title: "Sponsors",
+    supporting_text: "171 companies, organizations, and individuals are currently contributing $13137.84 each month to support ESLint's ongoing maintenance and development.",
+    buttons: {
+        primaryText: "Become a sponsor",
+        primaryURL: "/donate/"
+    }
+}) }}
 
 <section class="section">
     <div class="content-container grid grid--center-items">

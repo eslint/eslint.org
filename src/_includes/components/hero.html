@@ -1,0 +1,21 @@
+{%- macro hero(params) -%}
+<div class="section hero">
+    <div class="content-container grid">
+        <div class="span-1-7 content-container">
+            <h1 class="section-title">{{ params.title }}</h1>
+            <p class="section-supporting-text">
+                {{ params.supporting_text | safe }}
+            </p>
+            {% if params.buttons %}
+            <div class="eslint-actions">
+                <a href="{{ params.buttons.primaryURL }}" class="c-btn c-btn--primary">{{ params.buttons.primaryText }}</a>
+            </div>
+
+            {% endif %}
+        </div>
+        <div class="span-11-12">
+            {% include "partials/carbon-ad.html" %}
+        </div>
+    </div>
+</div>
+{%- endmacro -%}

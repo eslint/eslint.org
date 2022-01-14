@@ -873,10 +873,13 @@ input {
 .hero {
   border-bottom: 1px solid var(--divider-color);
   border-block-end: 1px solid var(--divider-color);
-  background-color: var(--hero-background-color); }
+  background-color: var(--hero-background-color);
+  min-height: calc(285px + var(--space-xl-4xl)); }
   .hero .content-container {
-    padding: var(--space-xl-4xl) 0; }
+    padding: var(--space-xl-4xl) 0;
+    margin: 0; }
   .hero > .content-container {
+    margin: 0 auto;
     padding: 0 calc(1rem + 1vw);
     padding-bottom: 0;
     align-items: center; }
@@ -2732,8 +2735,8 @@ button.c-share__btn {
   padding: initial; }
 
 #carbonads {
-  display: block;
-  margin: 0 24px;
+  display: inline-block;
+  margin: 0;
   padding: .6em;
   font-size: 16px;
   line-height: 1.35;
@@ -2743,6 +2746,8 @@ button.c-share__btn {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1); }
+  .docs-main #carbonads {
+    margin: 0 0 2rem; }
 
 .jumbotron #carbonads {
   border: solid 1px rgba(111, 102, 153, 0.6);

@@ -5,19 +5,13 @@ permalink: /languages/
 hook: "languages-page"
 ---
 
-<div class="section hero">
-    <div class="content-container grid">
-        <div class="span-1-7 content-container">
-            <h1 class="section-title h2" id="languages-label">Languages</h1>
-            <p class="section-supporting-text">
-                Choose your language.
-            </p>
-        </div>
-        <div class="span-11-12">
-                {% include "partials/carbon-ad.html" %}
-        </div>
-    </div>
-</div>
+{%- from 'components/hero.html' import hero %}
+
+
+{{ hero({
+    title: "Languages",
+    supporting_text: "Choose your language"
+}) }}
 
 <section class="languages-section section">
     <div class="content-container">

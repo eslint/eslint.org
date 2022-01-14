@@ -2,12 +2,15 @@
     border-bottom: 1px solid var(--divider-color);
     border-block-end: 1px solid var(--divider-color);
     background-color: var(--hero-background-color);
+    min-height: calc(285px + var(--space-xl-4xl));
 
     .content-container {
         padding: var(--space-xl-4xl) 0;
+        margin: 0;
     }
 
     > .content-container {
+        margin: 0 auto;
         padding: 0 calc(1rem + 1vw);
         padding-bottom: 0;
         align-items: center;
