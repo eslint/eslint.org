@@ -51,8 +51,6 @@
   background-color: var(--lightest-background-color);
   color: inherit;
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.1); }
-  .docs-index-toggle:hover {
-    background-color: var(--secondary-button-hover-color); }
   @media all and (min-width: 1023px) {
     .docs-index-toggle {
       display: none; } }

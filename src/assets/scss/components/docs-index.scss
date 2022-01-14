@@ -77,10 +77,6 @@
     // color: var(--link-color);
     // background-color: var(--docs-lightest-background-color);
 
-    &:hover {
-        background-color: var(--secondary-button-hover-color);
-    }
-
     @media all and (min-width: 1023px) {
         display: none;
     }
