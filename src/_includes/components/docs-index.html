@@ -1,16 +1,16 @@
 {% set navPages = collections.docs | eleventyNavigation %}
 {% macro renderNavListItem(entry) -%}
-<li class="docs-index__item docs-index__item--top" {% if entry.children.length %}data-has-children="true" {% endif %}>
+<li class="docs-index__item" {% if entry.children.length %}data-has-children {% endif %}>
     <a href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="true" {% endif %}>{{ entry.title }}</a>
     {%- if entry.children.length -%}
-    <ul>
+    <ul data-child-list>
         {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
     </ul>
     {%- endif -%}
 </li>
 {%- endmacro %}
 
-<nav class="docs-index">
+<nav class="docs-index" id="docs-index">
     <button class="docs-index-toggle" aria-label="Index" id="index-toggle" hidden>
         Index
         <svg width="20" height="20" viewBox="20 20 60 60">

@@ -50,6 +50,7 @@
     }
 })();
 
+
 (function() {
     var switchers = document.querySelectorAll('.switcher'),
         fallbacks = document.querySelectorAll('.switcher-fallback');
@@ -74,3 +75,108 @@
         });
     }
 })();
+
+
+
+// add utilities
+var util = {
+    keyCodes: {
+        UP: 38,
+        DOWN: 40,
+        LEFT: 37,
+        RIGHT: 39,
+        HOME: 36,
+        END: 35,
+        ENTER: 13,
+        SPACE: 32,
+        DELETE: 46,
+        TAB: 9,
+    },
+
+    generateID: function (base) {
+        return base + Math.floor(Math.random() * 999);
+    },
+
+    getDirectChildren: function (elm, selector) {
+        return Array.prototype.filter.call(elm.children, function (child) {
+            return child.matches(selector);
+        });
+    },
+};
+
+(function (w, doc, undefined) {
+    var CollapsibleIndexOptions = {
+        allCollapsed: false,
+        icon:
+            '<svg class="index-icon" width="12" height="8" aria-hidden="true" focusable="false" viewBox="0 0 12 8"><g fill="none"><path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z"/><path d="M-6-8h24v24h-24z"/></g></svg>',
+    };
+    var CollapsibleIndex = function (inst, options) {
+        var _options = Object.assign(CollapsibleIndexOptions, options);
+        var el = inst;
+        var indexToggles = el.querySelectorAll(".docs-index > ul > .docs-index__item > a"); // only top-most level
+        var indexPanels = el.querySelectorAll(".docs-index > ul > .docs-index__item>[data-child-list]"); // the list
+        var accID = util.generateID("c-index-");
+
+        var init = function () {
+            el.classList.add("index-js");
+
+            setupindexToggles(indexToggles);
+            setupindexPanels(indexPanels);
+        };
+
+
+        var setupindexToggles = function (indexToggles) {
+            Array.from(indexToggles).forEach(function (item, index) {
+                var $this = item;
+
+                $this.setAttribute('role', 'button');
+                $this.setAttribute("id", accID + "__item-" + index);
+                $this.innerHTML += _options.icon;
+
+                if(_options.allCollapsed) $this.setAttribute("aria-expanded", "false");
+                else $this.setAttribute("aria-expanded", "true");
+
+                $this.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    togglePanel($this);
+                });
+            });
+        };
+
+        var setupindexPanels = function (indexPanels) {
+            Array.from(indexPanels).forEach(function (item, index) {
+                let $this = item;
+
+                $this.setAttribute("id", accID + "__list-" + index);
+                $this.setAttribute(
+                    "aria-labelledby",
+                    accID + "__item-" + index
+                );
+                if(_options.allCollapsed) $this.setAttribute("aria-hidden", "true");
+                else $this.setAttribute("aria-hidden", "false");
+            });
+        };
+
+        var togglePanel = function (toggleButton) {
+            var thepanel = toggleButton.nextElementSibling;
+
+            if (toggleButton.getAttribute("aria-expanded") == "true") {
+                toggleButton.setAttribute("aria-expanded", "false");
+                thepanel.setAttribute("aria-hidden", "true");
+            } else {
+                toggleButton.setAttribute("aria-expanded", "true");
+                thepanel.setAttribute("aria-hidden", "false");
+            }
+        };
+
+
+        init.call(this);
+        return this;
+    }; // CollapsibleIndex()
+
+    w.CollapsibleIndex = CollapsibleIndex;
+})(window, document);
+
+// init
+var index = document.getElementById('docs-index');
+index = new CollapsibleIndex(index, { allCollapsed: false });
