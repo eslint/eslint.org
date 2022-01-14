@@ -113,7 +113,7 @@ var util = {
     var CollapsibleIndex = function (inst, options) {
         var _options = Object.assign(CollapsibleIndexOptions, options);
         var el = inst;
-        var indexToggles = el.querySelectorAll(".docs-index > ul > .docs-index__item > a"); // only top-most level
+        var indexToggles = el.querySelectorAll(".docs-index > ul > .docs-index__item[data-has-children] > a"); // only top-most level
         var indexPanels = el.querySelectorAll(".docs-index > ul > .docs-index__item>[data-child-list]"); // the list
         var accID = util.generateID("c-index-");
 
