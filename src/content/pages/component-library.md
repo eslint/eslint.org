@@ -4,20 +4,24 @@ permalink: /component-library/
 tags: ['nav']
 ---
 
-{%- from 'components/buttony-link.macro.html' import buttonyLink %}
+
 {%- from 'components/alert.macro.html' import warning, tip, important %}
 {%- from 'components/person.macro.html' import member, contributor %}
 {%- from 'components/card.macro.html' import card %}
 {%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
 {%- from 'components/rule.macro.html' import rule %}
+{%- from 'components/buttony-link.macro.html' import buttonyLink %}
 
 
 <div class="content-container">
-    {{ buttonyLink({ type: "primary", text: "Primary Button", url:"/" }) }}
-    {{ buttonyLink({ type: "secondary", text: "Secondary Button", url:"/" }) }}
-    {{ buttonyLink({ type: "ghost", text: "Ghost Button", url:"/" }) }}
+    {{ buttonyLink({ type: "primary", text: "Primary Button", url:"#" }) }}
+    {{ buttonyLink({ type: "secondary", text: "Secondary Button", url:"#" }) }}
+    {{ buttonyLink({ type: "ghost", text: "Ghost Button", url:"#" }) }}
 </div>
 
+<div class="content-container">
+    {% include 'components/code-tabs.html' %}
+</div>
 
 <div class="content-container">
     {{ warning({
@@ -109,3 +113,6 @@ tags: ['nav']
         date: "02-03-2020"
     }) }}
 </div>
+
+
+<script src="{{ '/assets/js/tabs.js' | url }}"></script>

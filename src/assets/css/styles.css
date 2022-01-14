@@ -466,6 +466,9 @@ code {
   pre code {
     color: unset; }
 
+p:empty {
+  margin: 0; }
+
 .c-icon {
   color: var(--icon-color);
   flex: none;
@@ -2602,6 +2605,44 @@ button.c-share__btn {
     letter-spacing: 1px;
     font-size: .875rem;
     font-weight: 500; }
+
+.c-tabs pre {
+  margin-top: 0; }
+
+.js-tabs .c-tabs__tablist {
+  display: flex;
+  justify-content: start; }
+
+.c-tabs__tab {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  font-weight: 500;
+  font-size: var(--step-0);
+  display: inline-flex;
+  padding: .75rem 1.125rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  transition: background-color .2s linear, border-color .2s linear; }
+  .c-tabs__tab:hover {
+    background-color: var(--secondary-button-hover-color); }
+  .c-tabs__tab[aria-selected="true"] {
+    background-color: var(--secondary-button-background-color);
+    color: var(--secondary-button-text-color); }
+
+.c-tabs__tabpanel {
+  margin-bottom: 2rem; }
+  .js-tabs .c-tabs__tabpanel {
+    margin-bottom: 0; }
+
+.c-tabs__tabpanel__title {
+  margin-bottom: 1.5rem; }
+
+.js-tabs .c-tabs__tabpanel__title {
+  display: none; }
 
 #carbonads * {
   margin: initial;
