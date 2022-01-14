@@ -49,3 +49,28 @@
         }
     }
 })();
+
+(function() {
+    var switchers = document.querySelectorAll('.switcher'),
+        fallbacks = document.querySelectorAll('.switcher-fallback');
+
+    if(fallbacks != null) {
+        fallbacks.forEach(el => {
+            el.setAttribute('hidden', '');
+        });
+    }
+
+    if (switchers != null) {
+        switchers.forEach(element => {
+            element.removeAttribute('hidden');
+            const select = element.querySelector('select');
+
+            select.addEventListener('change', function() {
+                var selected = this.options[this.selectedIndex];
+                url = selected.getAttribute('data-url');
+
+                window.location.href =  url;
+            })
+        });
+    }
+})();

@@ -68,11 +68,14 @@
     font-weight: 500;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    // background-color: var(--docs-lightest-background-color);
+    background-color: var(--lightest-background-color);
+    color: inherit;
 
-    background-color: var(--secondary-button-background-color);
-    color: var(--secondary-button-text-color);
+    // background-color: var(--secondary-button-background-color);
+    // color: var(--secondary-button-text-color);
     box-shadow: 0 1px 2px rgba(16, 24, 40, 0.1);
+    // color: var(--link-color);
+    // background-color: var(--docs-lightest-background-color);
 
     &:hover {
         background-color: var(--secondary-button-hover-color);
