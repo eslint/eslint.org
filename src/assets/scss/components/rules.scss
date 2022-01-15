@@ -120,6 +120,36 @@ a.rule__name {
 
 /* related rules */
 
-.related-rules__list {
+.related-rules {
 
+}
+
+.related-rules__list {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.related-rules__list__item {
+
+    // svg {
+    //     color: inherit;
+    // }
+
+    a {
+        text-decoration: none;
+        color: var(--headings-color);
+        padding: .625rem;
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--divider-color);
+        border-radius: var(--border-radius);
+        background-color: var(--lightest-background-color);
+
+        &:hover {
+            color: var(--link-color);
+            background-color: var(--lighter-background-color);
+        }
+    }
 }

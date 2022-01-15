@@ -84,7 +84,20 @@ tags: ['nav']
 
 <div class="content-container">
     {{ related_rules({
-
+        items: [
+            {
+                url: "#",
+                rule_name: "no-extra-semi"
+            },
+            {
+                url: "#",
+                rule_name: "no-unexpected-multiline"
+            },
+            {
+                url: "#",
+                rule_name: "semi-spacing"
+            }
+        ]
     }) }}
 </div>
 

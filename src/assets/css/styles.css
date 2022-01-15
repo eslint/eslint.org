@@ -2421,6 +2421,25 @@ a.rule__name {
   opacity: .25; }
 
 /* related rules */
+.related-rules__list {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: start; }
+
+.related-rules__list__item a {
+  text-decoration: none;
+  color: var(--headings-color);
+  padding: .625rem;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--divider-color);
+  border-radius: var(--border-radius);
+  background-color: var(--lightest-background-color); }
+  .related-rules__list__item a:hover {
+    color: var(--link-color);
+    background-color: var(--lighter-background-color); }
+
 .languages-list {
   margin: 0;
   padding: 0;
