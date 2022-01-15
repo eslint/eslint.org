@@ -2427,6 +2427,9 @@ a.rule__name {
   flex-wrap: wrap;
   justify-content: start; }
 
+.related-rules__list__item svg {
+  color: inherit; }
+
 .related-rules__list__item a {
   text-decoration: none;
   color: var(--headings-color);
