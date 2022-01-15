@@ -2353,7 +2353,8 @@ button.c-share__btn {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  margin: .5rem 0; }
+  margin: .5rem 0;
+  position: relative; }
   .rule p:last-of-type {
     margin: 0; }
 
@@ -2368,6 +2369,15 @@ button.c-share__btn {
   font-size: .875rem;
   margin-bottom: .25rem;
   margin-block-end: .25rem; }
+  .rule__name::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    offset-block-start: 0;
+    left: 0;
+    offset-inline-start: 0; }
 
 .rule__description {
   font-size: var(--step--1); }

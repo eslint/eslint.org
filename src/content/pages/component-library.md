@@ -58,6 +58,7 @@ tags: ['nav']
 <div class="content-container">
     {{ rule({
         name: "getter-return",
+        url: "#",
         deprecated: true,
         description: 'Enforce `return` statements in getters.',
         categories: {
@@ -69,6 +70,7 @@ tags: ['nav']
 
     {{ rule({
         name: "getter-return",
+        url: "#",
         deprecated: false,
         description: 'Enforce `return` statements in getters.',
         categories: {
