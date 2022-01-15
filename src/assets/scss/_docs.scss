@@ -30,7 +30,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .docs-main {
@@ -41,6 +41,8 @@
 }
 
 .docs-right-sidebar {
+    padding-top: var(--space-l-xl);
+    padding-block-start: var(--space-l-xl);
     grid-column: 2 / 3;
 
     display: flex;
