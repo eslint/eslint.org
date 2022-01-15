@@ -75,6 +75,14 @@
     }
 }
 
+a.rule__name {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .rule__description {
     font-size: var(--step--1);
 }

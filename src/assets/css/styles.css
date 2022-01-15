@@ -2379,6 +2379,11 @@ button.c-share__btn {
     left: 0;
     offset-inline-start: 0; }
 
+a.rule__name {
+  text-decoration: none; }
+  a.rule__name:hover {
+    text-decoration: underline; }
+
 .rule__description {
   font-size: var(--step--1); }
 

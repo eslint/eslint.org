@@ -1,12 +1,13 @@
 {%- macro rule(params) -%}
 <article class="rule {% if params.deprecated == true %}rule--deprecated{% endif %}">
     <div class="rule__content">
-        <a href="{{ params.url }}" class="rule__name">{{ params.name }}</a>
         {%- if params.deprecated == true -%}
         <p class="rule__name">
             {{ params.name }}
              <span class="rule__status">deprecated</span>
         </p>
+        {% else %}
+        <a href="{{ params.url }}" class="rule__name">{{ params.name }}</a>
         {%- endif -%}
         <p class="rule__description">{{ params.description }}</p>
     </div>
