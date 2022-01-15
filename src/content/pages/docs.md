@@ -4,10 +4,12 @@ title: Docs
 permalink: /docs/
 hook: "docs-page"
 ---
-
 # Docs
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rerum suscipit sint laborum autem alias esse? Corrupti quidem numquam, atque in fugiat fuga ut, deserunt placeat maxime sapiente debitis voluptates?
+
+{% include 'components/code-tabs.html' %}
+
 ## heading 2
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius assumenda tenetur, impedit cumque dolore ipsam debitis quas iure enim qui culpa nisi vero, accusantium, optio et adipisci nihil quia!
 

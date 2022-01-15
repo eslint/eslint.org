@@ -157,6 +157,10 @@ code {
     }
 }
 
+p:empty {
+    margin: 0;
+}
+
 .c-icon {
     color: var(--icon-color);
     flex: none;

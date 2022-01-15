@@ -1,0 +1,60 @@
+.c-tabs {
+    pre {
+        margin-top: 0;
+    }
+}
+
+.c-tabs__tablist {
+    .js-tabs & {
+        display: flex;
+        justify-content: start;
+    }
+}
+
+.c-tabs__tab {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    line-height: inherit;
+    font-weight: 500;
+    font-size: var(--step-0);
+    display: inline-flex;
+    padding: .75rem 1.125rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+
+    transition: background-color .2s linear,
+    border-color .2s linear;
+
+
+
+    &:hover {
+        background-color: var(--secondary-button-hover-color);
+    }
+
+    &[aria-selected="true"] {
+        background-color: var(--secondary-button-background-color);
+        color: var(--secondary-button-text-color);
+    }
+}
+
+.c-tabs__tabpanel {
+    margin-bottom: 2rem;
+
+    .js-tabs & {
+        margin-bottom: 0;
+    }
+}
+
+
+.c-tabs__tabpanel__title {
+    margin-bottom: 1.5rem;
+}
+
+// when the js is enabled, the tabpanels are labelled by their tabs
+// you may choose to hide or keep the headings inside of them visible
+.js-tabs .c-tabs__tabpanel__title {
+    display: none;
+}
