@@ -248,8 +248,11 @@ ol {
     }
 }
 
-.docs-main ul {
-    margin: 2rem 0;
+.docs-main ul,
+.post-main ul,
+.docs-main ol,
+.post-main ol {
+    margin: 1rem 0;
 }
 
 ul[role="list"] {

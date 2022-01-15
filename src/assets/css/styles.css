@@ -263,27 +263,37 @@ h6 {
   margin-block-start: 0;
   font-weight: 500; }
 
-.post main h2, .docs-wrapper h2, .post main
-h3, .docs-wrapper
-h3, .post main
-h4, .docs-wrapper
-h4, .post main
-h5, .docs-wrapper
-h5, .post main
-h6, .docs-wrapper
+.post-main h2,
+.docs-main h2, .post-main
+h3,
+.docs-main
+h3, .post-main
+h4,
+.docs-main
+h4, .post-main
+h5,
+.docs-main
+h5, .post-main
+h6,
+.docs-main
 h6 {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   margin-block-start: 3rem;
   margin-block-end: 1.5rem; }
-  .post main h2:first-child, .docs-wrapper h2:first-child, .post main
-  h3:first-child, .docs-wrapper
-  h3:first-child, .post main
-  h4:first-child, .docs-wrapper
-  h4:first-child, .post main
-  h5:first-child, .docs-wrapper
-  h5:first-child, .post main
-  h6:first-child, .docs-wrapper
+  .post-main h2:first-child,
+  .docs-main h2:first-child, .post-main
+  h3:first-child,
+  .docs-main
+  h3:first-child, .post-main
+  h4:first-child,
+  .docs-main
+  h4:first-child, .post-main
+  h5:first-child,
+  .docs-main
+  h5:first-child, .post-main
+  h6:first-child,
+  .docs-main
   h6:first-child {
     margin-top: 0;
     margin-block-start: 0; }
@@ -538,8 +548,11 @@ ol {
   ol li {
     margin: 0 0 .75em; }
 
-.docs-main ul {
-  margin: 2rem 0; }
+.docs-main ul,
+.post-main ul,
+.docs-main ol,
+.post-main ol {
+  margin: 1rem 0; }
 
 ul[role="list"] {
   list-style: none;
@@ -1475,6 +1488,7 @@ ul.tag-list {
   grid-row: 1 / 2;
   padding: calc(1rem + 1vw) 0;
   padding-right: calc(1rem + 1vw);
+  padding-inline-end: calc(1rem + 1vw);
   display: grid;
   grid-auto-rows: max-content;
   grid-gap: 1.5rem 0;
@@ -1485,11 +1499,11 @@ ul.tag-list {
       border-right: 1px solid var(--divider-color); } }
 
 .docs-content {
-  padding: calc(1rem + 1vw) 0;
+  padding: calc(2rem + 1vw) 0;
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 1fr minmax(240px, 1fr);
-  grid-gap: 2rem; }
+  grid-template-columns: 3fr minmax(240px, 1fr);
+  grid-gap: 4rem; }
 
 .docs-main {
   padding-top: var(--space-l-xl);
@@ -1497,11 +1511,9 @@ ul.tag-list {
   grid-column: 1 / 2; }
   @media all and (min-width: 1023px) {
     .docs-main {
-      padding: 0 4rem; } }
+      padding: 0 2rem; } }
 
 .docs-right-sidebar {
-  padding-top: var(--space-l-xl);
-  padding-block-start: var(--space-l-xl);
   grid-column: 2 / 3;
   display: flex;
   flex-direction: column; }
