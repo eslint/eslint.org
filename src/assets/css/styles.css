@@ -539,6 +539,10 @@ ol {
   ol li::marker {
     color: var(--link-color); }
 
+p:empty {
+  margin: 0;
+  display: none; }
+
 figure {
   margin-bottom: 4rem;
   margin-block-end: 4rem; }
