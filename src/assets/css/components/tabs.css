@@ -23,8 +23,8 @@
   .c-tabs__tab:hover {
     background-color: var(--secondary-button-hover-color); }
   .c-tabs__tab[aria-selected="true"] {
-    background-color: var(--secondary-button-background-color);
-    color: var(--secondary-button-text-color); }
+    color: var(--link-color);
+    background-color: var(--docs-lightest-background-color); }
 
 .c-tabs__tabpanel {
   margin-bottom: 2rem; }

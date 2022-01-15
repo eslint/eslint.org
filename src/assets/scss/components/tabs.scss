@@ -36,8 +36,8 @@
     }
 
     &[aria-selected="true"] {
-        background-color: var(--secondary-button-background-color);
-        color: var(--secondary-button-text-color);
+        color: var(--link-color);
+        background-color: var(--docs-lightest-background-color);
     }
 }
 
