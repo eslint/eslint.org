@@ -8,6 +8,7 @@
 .c-tabs__tab {
   background: none;
   border: none;
+  color: inherit;
   font: inherit;
   cursor: pointer;
   line-height: inherit;

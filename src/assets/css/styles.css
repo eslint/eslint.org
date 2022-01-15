@@ -68,6 +68,9 @@
   --color-brand: var(--color-primary-800); }
 
 @media (prefers-color-scheme: dark) {
+  --secondary-button-background-color: var(--color-neutral-700);
+  --secondary-button-hover-color: var(--color-neutral-800);
+  --secondary-button-text-color: var(--body-text-color);
   --body-background-color: var(--color-neutral-900);
   --body-text-color: var(--color-neutral-300);
   --headings-color: #fff;
@@ -78,6 +81,25 @@
   --link-color: var(--color-primary-400);
   --lighter-background-color: var(--color-neutral-800);
   --lightest-background-color: var(--color-neutral-800);
+  --hero-background-color: var(--color-neutral-800);
+  --footer-background-color: var(--color-neutral-800);
+  --outline-color: #fff; }
+
+html[data-theme="dark"] {
+  --secondary-button-background-color: var(--color-neutral-700);
+  --secondary-button-hover-color: var(--color-neutral-800);
+  --secondary-button-text-color: var(--body-text-color);
+  --body-background-color: var(--color-neutral-900);
+  --body-text-color: var(--color-neutral-300);
+  --headings-color: #fff;
+  --divider-color: var(--color-neutral-600);
+  --border-color: var(--color-neutral-500);
+  --icon-color: var(--body-text-color);
+  --dark-icon-color: #fff;
+  --link-color: var(--color-primary-400);
+  --lighter-background-color: var(--color-neutral-800);
+  --lightest-background-color: var(--color-neutral-800);
+  --docs-lightest-background-color: var(--color-neutral-800);
   --hero-background-color: var(--color-neutral-800);
   --footer-background-color: var(--color-neutral-800);
   --outline-color: #fff; }
@@ -97,22 +119,6 @@ html[data-theme="light"] {
   --hero-background-color: var(--color-neutral-25);
   --footer-background-color: var(--color-neutral-25);
   --outline-color: var(--color-brand); }
-
-html[data-theme="dark"] {
-  --body-background-color: var(--color-neutral-900);
-  --body-text-color: var(--color-neutral-300);
-  --headings-color: #fff;
-  --divider-color: var(--color-neutral-600);
-  --border-color: var(--color-neutral-500);
-  --icon-color: var(--body-text-color);
-  --dark-icon-color: #fff;
-  --link-color: var(--color-primary-400);
-  --lighter-background-color: var(--color-neutral-800);
-  --lightest-background-color: var(--color-neutral-800);
-  --docs-lightest-background-color: var(--color-primary-800);
-  --hero-background-color: var(--color-neutral-800);
-  --footer-background-color: var(--color-neutral-800);
-  --outline-color: #fff; }
 
 /* @link https://utopia.fyi/space/calculator?c=320,16,1.125,1440,16,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|8,l-2xl|xl-3xl|xl-4xl */
 :root {
@@ -2410,6 +2416,7 @@ a.rule__name {
 .rule__categories__type[aria-hidden="true"] {
   opacity: .25; }
 
+/* related rules */
 .languages-list {
   margin: 0;
   padding: 0;
@@ -2710,6 +2717,7 @@ a.rule__name {
 .c-tabs__tab {
   background: none;
   border: none;
+  color: inherit;
   font: inherit;
   cursor: pointer;
   line-height: inherit;
