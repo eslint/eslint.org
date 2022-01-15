@@ -2,7 +2,7 @@
 <article class="rule {% if params.deprecated == true %}rule--deprecated{% endif %}">
     <div class="rule__content">
         <p class="rule__name">
-            {{ params.name }}
+            <a href="{{ params.url }}">{{ params.name }}</a>
             {%- if params.deprecated == true -%} <span class="rule__status">deprecated</span> {%- endif -%}
         </p>
         <p class="rule__description">{{ params.description }}</p>
