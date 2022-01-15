@@ -2,6 +2,8 @@
     <aside>
         {%- include 'partials/carbon-ad.html' -%}
     </aside>
+    {% if content | toc | safe %}
     <h2 class="c-toc__label" id="toc-label">Table of Contents:</h2>
     {{ content | toc | safe }}
+    {% endif %}
 </nav>
