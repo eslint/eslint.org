@@ -44,10 +44,11 @@ h6:target {
 
 html {
     accent-color: var(--link-color);
-    background-color: var(--link-color);
+    // background-color: var(--link-color);
     height: 100%;
     font-family: var(--text-font);
     overflow-x: hidden;
+    caret-color: var(--color-brand);
 }
 
 body {

@@ -400,10 +400,10 @@ h6:target {
 
 html {
   accent-color: var(--link-color);
-  background-color: var(--link-color);
   height: 100%;
   font-family: var(--text-font);
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  caret-color: var(--color-brand); }
 
 body {
   position: relative;
@@ -1473,6 +1473,10 @@ ul.tag-list {
 .from-the-blog .blog-posts {
   grid-column: 1 / -1; }
 
+.docs {
+  max-width: 1700px;
+  margin: 0 auto; }
+
 .docs-wrapper {
   padding: 0 calc(1rem + 1vw);
   flex: 1; }
@@ -1882,7 +1886,8 @@ nav.c-pagination {
 .search__input {
   padding-left: 2.5rem;
   padding-inline-start: 2.5rem;
-  outline-offset: 1px; }
+  outline-offset: 1px;
+  width: 100%; }
 
 .search__icon {
   color: var(--body-text-color);
