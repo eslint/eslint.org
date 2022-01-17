@@ -109,7 +109,7 @@ html[data-theme="dark"] {
   --link-color: var(--color-primary-400);
   --lighter-background-color: var(--color-neutral-800);
   --lightest-background-color: var(--color-neutral-800);
-  --docs-lightest-background-color: var(--color-primary-800);
+  --docs-lightest-background-color: var(--color-neutral-800);
   --hero-background-color: var(--color-neutral-800);
   --footer-background-color: var(--color-neutral-800);
   --outline-color: #fff; }
@@ -403,7 +403,7 @@ html {
   height: 100%;
   font-family: var(--text-font);
   overflow-x: hidden;
-  caret-color: var(--color-brand); }
+  caret-color: var(--link-color); }
 
 body {
   position: relative;
@@ -1483,7 +1483,7 @@ ul.tag-list {
   @media all and (min-width: 1023px) {
     .docs-wrapper {
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: minmax(350px, 1fr) minmax(0, 3fr);
       grid-gap: 2rem;
       align-items: stretch; } }
 
@@ -1506,7 +1506,7 @@ ul.tag-list {
   padding: calc(2rem + 1vw) 0;
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 3fr minmax(240px, 1fr);
+  grid-template-columns: minmax(0, 3fr) minmax(240px, 1fr);
   grid-gap: 4rem; }
 
 .docs-main {
