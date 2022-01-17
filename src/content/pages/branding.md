@@ -6,20 +6,13 @@ hook: "branding-page"
 ---
 
 {%- from 'components/swatch.macro.html' import swatch %}
+{%- from 'components/hero.html' import hero %}
 
-<section class="section hero">
-    <div class="content-container grid">
-        <div class="span-1-7">
-            <h1 class="section-title">Branding</h1>
-            <p class="section-supporting-text">
-                How to use our logo
-            </p>
-        </div>
-        <div class="span-11-12">
-                {% include "partials/carbon-ad.html" %}
-        </div>
-    </div>
-</section>
+
+{{ hero({
+    title: "Branding",
+    supporting_text: "How to use our logo"
+}) }}
 
 <section class="section">
     <div class="content-container grid">

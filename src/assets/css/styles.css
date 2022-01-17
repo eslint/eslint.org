@@ -870,29 +870,6 @@ input {
   background-color: var(--body-background-color);
   color: inherit; }
 
-.hero {
-  border-bottom: 1px solid var(--divider-color);
-  border-block-end: 1px solid var(--divider-color);
-  background-color: var(--hero-background-color); }
-
-.hero--display .content-container {
-  padding: var(--space-xl-4xl) calc(1rem + 1vw);
-  align-items: center; }
-
-.hero--display .section-title {
-  margin-bottom: 1.5rem;
-  margin-block-end: 1.5rem; }
-
-.hero--display .section-supporting-text {
-  margin: 0;
-  font-size: var(--step-1);
-  text-align: left; }
-
-.hero--display .eslint-actions {
-  font-size: var(--step-1);
-  margin-top: 3rem;
-  margin-block-start: 3rem; }
-
 .problems {
   display: inline-block;
   position: relative; }
@@ -2523,6 +2500,34 @@ button.c-share__btn {
   color: var(--headings-color);
   font-weight: 500; }
 
+.hero {
+  border-bottom: 1px solid var(--divider-color);
+  border-block-end: 1px solid var(--divider-color);
+  background-color: var(--hero-background-color);
+  min-height: calc(285px + var(--space-xl-4xl)); }
+  .hero .content-container {
+    padding: var(--space-xl-4xl) 0;
+    margin: 0; }
+  .hero > .content-container {
+    margin: 0 auto;
+    padding: 0 calc(1rem + 1vw);
+    padding-bottom: 0;
+    align-items: center; }
+
+.hero--homepage .section-title {
+  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem; }
+
+.hero--homepage .section-supporting-text {
+  margin: 0;
+  font-size: var(--step-1);
+  text-align: left; }
+
+.hero--homepage .eslint-actions {
+  font-size: var(--step-1);
+  margin-top: 3rem;
+  margin-block-start: 3rem; }
+
 .theme-switcher {
   display: inline-flex;
   align-items: center;
@@ -2730,8 +2735,8 @@ button.c-share__btn {
   padding: initial; }
 
 #carbonads {
-  display: block;
-  margin: 0 24px;
+  display: inline-block;
+  margin: 0;
   padding: .6em;
   font-size: 16px;
   line-height: 1.35;
@@ -2741,6 +2746,8 @@ button.c-share__btn {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1); }
+  .docs-main #carbonads {
+    margin: 0 0 2rem; }
 
 .jumbotron #carbonads {
   border: solid 1px rgba(111, 102, 153, 0.6);

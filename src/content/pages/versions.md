@@ -5,16 +5,13 @@ permalink: /versions/
 hook: "versions-page"
 ---
 
-<div class="section hero">
-    <div class="content-container">
-        <div>
-            <h1 class="section-title h2" id="versions-label">ESLint Versions</h1>
-            <p class="section-supporting-text">
-                Choose the documentation version
-            </p>
-        </div>
-    </div>
-</div>
+{%- from 'components/hero.html' import hero %}
+
+
+{{ hero({
+    title: "ESLint Versions",
+    supporting_text: "Choose the documentation version"
+}) }}
 
 <section class="versions-section section">
     <div class="content-container">

@@ -5,16 +5,13 @@ permalink: /languages/
 hook: "languages-page"
 ---
 
-<div class="section hero">
-    <div class="content-container">
-        <div>
-            <h1 class="section-title h2" id="languages-label">Languages</h1>
-            <p class="section-supporting-text">
-                Choose your language.
-            </p>
-        </div>
-    </div>
-</div>
+{%- from 'components/hero.html' import hero %}
+
+
+{{ hero({
+    title: "Languages",
+    supporting_text: "Choose your language"
+}) }}
 
 <section class="languages-section section">
     <div class="content-container">
