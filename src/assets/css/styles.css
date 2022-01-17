@@ -400,6 +400,7 @@ h6:target {
 
 html {
   accent-color: var(--link-color);
+  background-color: var(--body-background-color);
   height: 100%;
   font-family: var(--text-font);
   overflow-x: hidden;
