@@ -10,6 +10,7 @@ tags: ['nav']
 {%- from 'components/card.macro.html' import card %}
 {%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
 {%- from 'components/rule.macro.html' import rule %}
+{%- from 'components/related-rules.macro.html' import related_rules %}
 {%- from 'components/buttony-link.macro.html' import buttonyLink %}
 
 
@@ -58,6 +59,7 @@ tags: ['nav']
 <div class="content-container">
     {{ rule({
         name: "getter-return",
+        url: "#",
         deprecated: true,
         description: 'Enforce `return` statements in getters.',
         categories: {
@@ -69,6 +71,7 @@ tags: ['nav']
 
     {{ rule({
         name: "getter-return",
+        url: "#",
         deprecated: false,
         description: 'Enforce `return` statements in getters.',
         categories: {
@@ -76,6 +79,25 @@ tags: ['nav']
             fix: false,
             suggestions: false
         }
+    }) }}
+</div>
+
+<div class="content-container">
+    {{ related_rules({
+        items: [
+            {
+                url: "#",
+                rule_name: "no-extra-semi"
+            },
+            {
+                url: "#",
+                rule_name: "no-unexpected-multiline"
+            },
+            {
+                url: "#",
+                rule_name: "semi-spacing"
+            }
+        ]
     }) }}
 </div>
 

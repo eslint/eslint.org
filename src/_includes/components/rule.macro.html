@@ -1,21 +1,25 @@
 {%- macro rule(params) -%}
 <article class="rule {% if params.deprecated == true %}rule--deprecated{% endif %}">
     <div class="rule__content">
+        {%- if params.deprecated == true -%}
         <p class="rule__name">
             {{ params.name }}
-            {%- if params.deprecated == true -%} <span class="rule__status">deprecated</span> {%- endif -%}
+             <span class="rule__status">deprecated</span>
         </p>
+        {%- else -%}
+        <a href="{{ params.url }}" class="rule__name">{{ params.name }}</a>
+        {%- endif -%}
         <p class="rule__description">{{ params.description }}</p>
     </div>
     <div class="rule__categories">
         <span class="visually-hidden">Categories:</span>
-        <p class="rule__categories__type" {% if params.categories.extends == false %}aria-hidden="true"{% endif %}>
+        <p class="rule__categories__type" {% if params.categories.extends == false %}aria-hidden="true"{%- endif -%}>
             ✅ <span class="visually-hidden">Extends</span>
         </p>
-        <p class="rule__categories__type" {% if params.categories.fix == false %}aria-hidden="true"{% endif %}>
+        <p class="rule__categories__type" {% if params.categories.fix == false %}aria-hidden="true"{%- endif -%}>
             🛠 <span class="visually-hidden">Fix</span>
         </p>
-        <p class="rule__categories__type" {% if params.categories.suggestions == false %}aria-hidden="true"{% endif %}>
+        <p class="rule__categories__type" {% if params.categories.suggestions == false %}aria-hidden="true"{%- endif -%}>
             💡 <span class="visually-hidden">Suggestions</span>
         </p>
     </div>

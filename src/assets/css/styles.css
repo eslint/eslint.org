@@ -68,6 +68,9 @@
   --color-brand: var(--color-primary-800); }
 
 @media (prefers-color-scheme: dark) {
+  --secondary-button-background-color: var(--color-neutral-700);
+  --secondary-button-hover-color: var(--color-neutral-800);
+  --secondary-button-text-color: var(--body-text-color);
   --body-background-color: var(--color-neutral-900);
   --body-text-color: var(--color-neutral-300);
   --headings-color: #fff;
@@ -78,6 +81,25 @@
   --link-color: var(--color-primary-400);
   --lighter-background-color: var(--color-neutral-800);
   --lightest-background-color: var(--color-neutral-800);
+  --hero-background-color: var(--color-neutral-800);
+  --footer-background-color: var(--color-neutral-800);
+  --outline-color: #fff; }
+
+html[data-theme="dark"] {
+  --secondary-button-background-color: var(--color-neutral-700);
+  --secondary-button-hover-color: var(--color-neutral-800);
+  --secondary-button-text-color: var(--body-text-color);
+  --body-background-color: var(--color-neutral-900);
+  --body-text-color: var(--color-neutral-300);
+  --headings-color: #fff;
+  --divider-color: var(--color-neutral-600);
+  --border-color: var(--color-neutral-500);
+  --icon-color: var(--body-text-color);
+  --dark-icon-color: #fff;
+  --link-color: var(--color-primary-400);
+  --lighter-background-color: var(--color-neutral-800);
+  --lightest-background-color: var(--color-neutral-800);
+  --docs-lightest-background-color: var(--color-neutral-800);
   --hero-background-color: var(--color-neutral-800);
   --footer-background-color: var(--color-neutral-800);
   --outline-color: #fff; }
@@ -97,22 +119,6 @@ html[data-theme="light"] {
   --hero-background-color: var(--color-neutral-25);
   --footer-background-color: var(--color-neutral-25);
   --outline-color: var(--color-brand); }
-
-html[data-theme="dark"] {
-  --body-background-color: var(--color-neutral-900);
-  --body-text-color: var(--color-neutral-300);
-  --headings-color: #fff;
-  --divider-color: var(--color-neutral-600);
-  --border-color: var(--color-neutral-500);
-  --icon-color: var(--body-text-color);
-  --dark-icon-color: #fff;
-  --link-color: var(--color-primary-400);
-  --lighter-background-color: var(--color-neutral-800);
-  --lightest-background-color: var(--color-neutral-800);
-  --docs-lightest-background-color: var(--color-primary-800);
-  --hero-background-color: var(--color-neutral-800);
-  --footer-background-color: var(--color-neutral-800);
-  --outline-color: #fff; }
 
 /* @link https://utopia.fyi/space/calculator?c=320,16,1.125,1440,16,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|8,l-2xl|xl-3xl|xl-4xl */
 :root {
@@ -532,6 +538,10 @@ ol {
   list-style: decimal; }
   ol li::marker {
     color: var(--link-color); }
+
+p:empty {
+  margin: 0;
+  display: none; }
 
 figure {
   margin-bottom: 4rem;
@@ -2330,7 +2340,8 @@ button.c-share__btn {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  margin: .5rem 0; }
+  margin: .5rem 0;
+  position: relative; }
   .rule p:last-of-type {
     margin: 0; }
 
@@ -2345,6 +2356,20 @@ button.c-share__btn {
   font-size: .875rem;
   margin-bottom: .25rem;
   margin-block-end: .25rem; }
+  .rule__name::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    offset-block-start: 0;
+    left: 0;
+    offset-inline-start: 0; }
+
+a.rule__name {
+  text-decoration: none; }
+  a.rule__name:hover {
+    text-decoration: underline; }
 
 .rule__description {
   font-size: var(--step--1); }
@@ -2371,6 +2396,29 @@ button.c-share__btn {
 
 .rule__categories__type[aria-hidden="true"] {
   opacity: .25; }
+
+/* related rules */
+.related-rules__list {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: start; }
+
+.related-rules__list__item svg {
+  color: inherit; }
+
+.related-rules__list__item a {
+  text-decoration: none;
+  color: var(--headings-color);
+  padding: .625rem;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--divider-color);
+  border-radius: var(--border-radius);
+  background-color: var(--lightest-background-color); }
+  .related-rules__list__item a:hover {
+    color: var(--link-color);
+    background-color: var(--lighter-background-color); }
 
 .languages-list {
   margin: 0;
@@ -2615,45 +2663,6 @@ button.c-share__btn {
     font-size: .875rem;
     font-weight: 500; }
 
-
-.c-tabs pre {
-  margin-top: 0; }
-
-.js-tabs .c-tabs__tablist {
-  display: flex;
-  justify-content: start; }
-
-.c-tabs__tab {
-  background: none;
-  border: none;
-  font: inherit;
-  cursor: pointer;
-  line-height: inherit;
-  font-weight: 500;
-  font-size: var(--step-0);
-  display: inline-flex;
-  padding: .75rem 1.125rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  transition: background-color .2s linear, border-color .2s linear; }
-  .c-tabs__tab:hover {
-    background-color: var(--secondary-button-hover-color); }
-  .c-tabs__tab[aria-selected="true"] {
-    background-color: var(--secondary-button-background-color);
-    color: var(--secondary-button-text-color); }
-
-.c-tabs__tabpanel {
-  margin-bottom: 2rem; }
-  .js-tabs .c-tabs__tabpanel {
-    margin-bottom: 0; }
-
-.c-tabs__tabpanel__title {
-  margin-bottom: 1.5rem; }
-
-.js-tabs .c-tabs__tabpanel__title {
-  display: none; }
-
 /* Styles for the accordion icon */
 .index-js .index-icon {
   display: block !important;
@@ -2729,6 +2738,44 @@ button.c-share__btn {
   .docs-index-toggle[aria-expanded="true"] #ham-bottom {
     transform: rotate(-41deg); }
 
+.c-tabs pre {
+  margin-top: 0; }
+
+.js-tabs .c-tabs__tablist {
+  display: flex;
+  justify-content: start; }
+
+.c-tabs__tab {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  font-weight: 500;
+  font-size: var(--step-0);
+  display: inline-flex;
+  padding: .75rem 1.125rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  transition: background-color .2s linear, border-color .2s linear; }
+  .c-tabs__tab:hover {
+    background-color: var(--secondary-button-hover-color); }
+  .c-tabs__tab[aria-selected="true"] {
+    color: var(--link-color);
+    background-color: var(--docs-lightest-background-color); }
+
+.c-tabs__tabpanel {
+  margin-bottom: 2rem; }
+  .js-tabs .c-tabs__tabpanel {
+    margin-bottom: 0; }
+
+.c-tabs__tabpanel__title {
+  margin-bottom: 1.5rem; }
+
+.js-tabs .c-tabs__tabpanel__title {
+  display: none; }
 
 #carbonads * {
   margin: initial;
