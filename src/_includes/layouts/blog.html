@@ -2,22 +2,16 @@
 layout: base.html
 ---
 {% include "partials/header.html" %}
+{%- from 'components/hero.html' import hero %}
 
 
 <main id="main" tabindex="-1">
-    <div class="section hero">
-        <div class="content-container grid">
-            <div class="span-1-7">
-                <h1 class="section-title h2">News and Updates</h1>
-                <p class="section-supporting-text">
-                    The latest ESLint news, case studies, tutorials, and resources.
-                </p>
-            </div>
-            <div class="span-11-12">
-                {% include "partials/carbon-ad.html" %}
-            </div>
-        </div>
-    </div>
+
+    {{ hero({
+        title: "News and Updates",
+        supporting_text: "The latest ESLint news, case studies, tutorials, and resources."
+    }) }}
+
     <div class="content-container grid">
         <aside class="span-1-3">
             <!-- <form action="" role="search">

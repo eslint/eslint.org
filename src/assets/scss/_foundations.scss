@@ -274,6 +274,10 @@ ol {
     }
 }
 
+p:empty {
+    margin: 0;
+    display: none;
+}
 
 figure {
     margin-bottom: 4rem;

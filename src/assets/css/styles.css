@@ -68,6 +68,9 @@
   --color-brand: var(--color-primary-800); }
 
 @media (prefers-color-scheme: dark) {
+  --secondary-button-background-color: var(--color-neutral-700);
+  --secondary-button-hover-color: var(--color-neutral-800);
+  --secondary-button-text-color: var(--body-text-color);
   --body-background-color: var(--color-neutral-900);
   --body-text-color: var(--color-neutral-300);
   --headings-color: #fff;
@@ -567,6 +570,10 @@ ol {
   ol li::marker {
     color: var(--link-color); }
 
+p:empty {
+  margin: 0;
+  display: none; }
+
 figure {
   margin-bottom: 4rem;
   margin-block-end: 4rem; }
@@ -903,29 +910,6 @@ input {
   max-width: 100%;
   background-color: var(--body-background-color);
   color: inherit; }
-
-.hero {
-  border-bottom: 1px solid var(--divider-color);
-  border-block-end: 1px solid var(--divider-color);
-  background-color: var(--hero-background-color); }
-
-.hero--display .content-container {
-  padding: var(--space-xl-4xl) calc(1rem + 1vw);
-  align-items: center; }
-
-.hero--display .section-title {
-  margin-bottom: 1.5rem;
-  margin-block-end: 1.5rem; }
-
-.hero--display .section-supporting-text {
-  margin: 0;
-  font-size: var(--step-1);
-  text-align: left; }
-
-.hero--display .eslint-actions {
-  font-size: var(--step-1);
-  margin-top: 3rem;
-  margin-block-start: 3rem; }
 
 .problems {
   display: inline-block;
@@ -2400,7 +2384,8 @@ button.c-share__btn {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  margin: .5rem 0; }
+  margin: .5rem 0;
+  position: relative; }
   .rule p:last-of-type {
     margin: 0; }
 
@@ -2415,6 +2400,20 @@ button.c-share__btn {
   font-size: .875rem;
   margin-bottom: .25rem;
   margin-block-end: .25rem; }
+  .rule__name::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    offset-block-start: 0;
+    left: 0;
+    offset-inline-start: 0; }
+
+a.rule__name {
+  text-decoration: none; }
+  a.rule__name:hover {
+    text-decoration: underline; }
 
 .rule__description {
   font-size: var(--step--1); }
@@ -2441,6 +2440,29 @@ button.c-share__btn {
 
 .rule__categories__type[aria-hidden="true"] {
   opacity: .25; }
+
+/* related rules */
+.related-rules__list {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: start; }
+
+.related-rules__list__item svg {
+  color: inherit; }
+
+.related-rules__list__item a {
+  text-decoration: none;
+  color: var(--headings-color);
+  padding: .625rem;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--divider-color);
+  border-radius: var(--border-radius);
+  background-color: var(--lightest-background-color); }
+  .related-rules__list__item a:hover {
+    color: var(--link-color);
+    background-color: var(--lighter-background-color); }
 
 .languages-list {
   margin: 0;
@@ -2569,6 +2591,34 @@ button.c-share__btn {
 .swatch__description {
   color: var(--headings-color);
   font-weight: 500; }
+
+.hero {
+  border-bottom: 1px solid var(--divider-color);
+  border-block-end: 1px solid var(--divider-color);
+  background-color: var(--hero-background-color);
+  min-height: calc(285px + var(--space-xl-4xl)); }
+  .hero .content-container {
+    padding: var(--space-xl-4xl) 0;
+    margin: 0; }
+  .hero > .content-container {
+    margin: 0 auto;
+    padding: 0 calc(1rem + 1vw);
+    padding-bottom: 0;
+    align-items: center; }
+
+.hero--homepage .section-title {
+  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem; }
+
+.hero--homepage .section-supporting-text {
+  margin: 0;
+  font-size: var(--step-1);
+  text-align: left; }
+
+.hero--homepage .eslint-actions {
+  font-size: var(--step-1);
+  margin-top: 3rem;
+  margin-block-start: 3rem; }
 
 .theme-switcher {
   display: inline-flex;
@@ -2740,6 +2790,7 @@ button.c-share__btn {
 .c-tabs__tab {
   background: none;
   border: none;
+  color: inherit;
   font: inherit;
   cursor: pointer;
   line-height: inherit;
@@ -2754,8 +2805,8 @@ button.c-share__btn {
   .c-tabs__tab:hover {
     background-color: var(--secondary-button-hover-color); }
   .c-tabs__tab[aria-selected="true"] {
-    background-color: var(--secondary-button-background-color);
-    color: var(--secondary-button-text-color); }
+    color: var(--link-color);
+    background-color: var(--docs-lightest-background-color); }
 
 .c-tabs__tabpanel {
   margin-bottom: 2rem; }
@@ -2773,8 +2824,8 @@ button.c-share__btn {
   padding: initial; }
 
 #carbonads {
-  display: block;
-  margin: 0 24px;
+  display: inline-block;
+  margin: 0;
   padding: .6em;
   font-size: 16px;
   line-height: 1.35;
@@ -2784,6 +2835,8 @@ button.c-share__btn {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1); }
+  .docs-main #carbonads {
+    margin: 0 0 2rem; }
 
 .jumbotron #carbonads {
   border: solid 1px rgba(111, 102, 153, 0.6);
