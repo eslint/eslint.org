@@ -1310,6 +1310,7 @@ ul.donation-plan__features,
   display: inline-block;
   width: 1rem;
   height: 1rem;
+  padding: 0;
   flex: none;
   margin-left: .75rem;
   margin-inline-start: .75rem;

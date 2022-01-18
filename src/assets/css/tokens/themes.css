@@ -100,7 +100,6 @@ html[data-theme="light"] {
   --footer-background-color: var(--color-neutral-25);
   --outline-color: var(--color-brand); }
 
-
 html[data-theme="dark"] {
   --body-background-color: var(--color-neutral-900);
   --body-text-color: var(--color-neutral-300);
