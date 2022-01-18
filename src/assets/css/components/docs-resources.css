@@ -1,0 +1,31 @@
+.resource {
+  display: flex;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--divider-color);
+  background-color: var(--lightest-background-color);
+  align-items: center;
+  overflow: hidden; }
+
+.resource__img {
+  flex: 0 1 75px;
+  height: 100%;
+  width: auto;
+  object-fit: cover; }
+
+.resource__content {
+  flex: 1;
+  padding: .75rem; }
+
+.resource__title {
+  text-decoration: none;
+  color: var(--headings-color);
+  font-weight: 500;
+  margin-bottom: .125rem; }
+
+.resource__domain {
+  color: var(--body-text-color);
+  font-size: .875rem; }
+
+.resource__icon {
+  color: var(--headings-color);
+  margin: 1rem; }

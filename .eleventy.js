@@ -6,7 +6,19 @@ const pluginTOC = require('eleventy-plugin-nesting-toc');
 const slugify = require("slugify");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require('markdown-it-anchor');
-const Image = require("@11ty/eleventy-img")
+const Image = require("@11ty/eleventy-img");
+const fetch = require("node-fetch");
+
+
+// const metascraper = require('metascraper')([
+//   require('metascraper-image')(),
+//   require('metascraper-logo')(),
+//   require('metascraper-publisher')(),
+//   require('metascraper-title')(),
+//   require('metascraper-url')()
+// ])
+
+// const got = require('got');
 
 const {
     DateTime
@@ -42,7 +54,6 @@ module.exports = function(eleventyConfig) {
         if (!str) {
             return;
         }
-
         return encodeURI(str);
     });
 
@@ -107,39 +118,43 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addWatchTarget("./src/assets/");
 
-    /* Shortcodes */
+    /*****************************************************************************************
+     *  Shortcodes
+     * ***************************************************************************************/
 
-    eleventyConfig.addShortcode("resource", function(url) {
-        const link = encodeURI(url);
-        let domain = (new URL(url));
-        domain = domain.hostname;
-        const host = domain.hostname.replace('www.','');
-        const avatar = `https://v1.indieweb-avatar.11ty.dev/${link}`;
-        const img = `<img src="${avatar}" width="75" height="75" lazyload="true" alt="Avatar image for ${ host }" decoding="async"/>`;
+    eleventyConfig.addNunjucksShortcode("resource", function(url) {
+        const encodedURL = encodeURIComponent(url);
+        const the_url = (new URL(url)); // same as url
+        const domain = the_url.hostname;
+        const encodedDomain = encodeURIComponent(domain);
+        // const stripped_domain = domain.replace('www.','');
+        const avatar = `https://v1.indieweb-avatar.11ty.dev/${encodedURL}`;
+        const img = `<img class="resource__img" style="object-fit: cover;" src="${avatar}" width="75" height="75" lazyload="true" alt="Avatar image for ${ domain } " decoding="async"/>`;
 
-        const getTitle = (url) => {
-        return fetch(`https://crossorigin.me/${url}`)
-            .then((response) => response.text())
-            .then((html) => {
-            const doc = new DOMParser().parseFromString(html, "text/html");
-            const title = doc.querySelectorAll('title')[0];
-            return title.innerText;
-            });
-        };
+        // const getTitle = (url) => {
+        // return fetch(url)
+        //     .then((response) => response.text())
+        //     .then((html) => {
+        //     const doc = new DOMParser().parseFromString(html, "text/html");
+        //     const title = doc.querySelectorAll('title')[0];
+        //     return title.innerText;
+        //     });
+        // };
 
-        const title = getTitle(url);
+        // const title = getTitle(url);
 
-        return
-        `<article class="resource">
-            ${ img }
-            <div class="resource__urls">
-                <a href="url" class="resource__title"> ${title} </a>
+        return `
+        <article class="resource">${ img }
+            <div class="resource__content">
+                <a href="${url}" class="resource__title"> title here </a><br>
                 <span class="resource__domain"> ${ domain }</span>
             </div>
             <svg class="c-icon resource__icon" width="13" height="12" viewBox="0 0 13 12" fill="none">
             <path d="M1.5 11L11.5 1M11.5 1H1.5M11.5 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-        </article>`
+        </article>`;
+
+        // return img;
     });
 
     /*****************************************************************************************
