@@ -75,9 +75,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    --secondary-button-background-color: var(--color-neutral-700);
-    --secondary-button-hover-color: var(--color-neutral-800);
-    --secondary-button-text-color: var(--body-text-color);
+    // --secondary-button-background-color: var(--color-neutral-700);
+    // --secondary-button-hover-color: var(--color-neutral-800);
+    // --secondary-button-text-color: var(--body-text-color);
 
     --body-background-color: var(--color-neutral-900);
     --body-text-color: var(--color-neutral-300);
@@ -122,9 +122,9 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --secondary-button-background-color: var(--color-neutral-700);
-    --secondary-button-hover-color: var(--color-neutral-800);
-    --secondary-button-text-color: var(--headings-color);
+    // --secondary-button-background-color: var(--color-neutral-800);
+    // --secondary-button-hover-color: var(--color-neutral-800);
+    // --secondary-button-text-color: var(--link-color);
 
     --body-background-color: var(--color-neutral-900);
     --body-text-color: var(--color-neutral-300);
