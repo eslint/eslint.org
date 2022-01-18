@@ -107,6 +107,41 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addWatchTarget("./src/assets/");
 
+    /* Shortcodes */
+
+    eleventyConfig.addShortcode("resource", function(url) {
+        const link = encodeURI(url);
+        let domain = (new URL(url));
+        domain = domain.hostname;
+        const host = domain.hostname.replace('www.','');
+        const avatar = `https://v1.indieweb-avatar.11ty.dev/${link}`;
+        const img = `<img src="${avatar}" width="75" height="75" lazyload="true" alt="Avatar image for ${ host }" decoding="async"/>`;
+
+        const getTitle = (url) => {
+        return fetch(`https://crossorigin.me/${url}`)
+            .then((response) => response.text())
+            .then((html) => {
+            const doc = new DOMParser().parseFromString(html, "text/html");
+            const title = doc.querySelectorAll('title')[0];
+            return title.innerText;
+            });
+        };
+
+        const title = getTitle(url);
+
+        return
+        `<article class="resource">
+            ${ img }
+            <div class="resource__urls">
+                <a href="url" class="resource__title"> ${title} </a>
+                <span class="resource__domain"> ${ domain }</span>
+            </div>
+            <svg class="c-icon resource__icon" width="13" height="12" viewBox="0 0 13 12" fill="none">
+            <path d="M1.5 11L11.5 1M11.5 1H1.5M11.5 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </article>`
+    });
+
     /*****************************************************************************************
      *  File PassThroughs
      * ***************************************************************************************/
