@@ -6,7 +6,8 @@ const pluginTOC = require('eleventy-plugin-nesting-toc');
 const slugify = require("slugify");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require('markdown-it-anchor');
-const Image = require("@11ty/eleventy-img")
+const Image = require("@11ty/eleventy-img");
+const path = require('path');
 
 const {
     DateTime
@@ -163,6 +164,41 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("docs", function(collection) {
         return collection.getFilteredByGlob("./src/content/docs/**/**/*.md");
     });
+
+
+    // --- START, eleventy-img
+    function imageShortcode(src, alt, sizes = "(max-width: 768px) 100vw, 50vw") {
+        // console.log(`Generating image(s) from:  ${src}`)
+        let options = {
+            widths: [600, 900, 1500],
+            formats: ["webp", "jpeg"],
+            urlPath: "/assets/images/",
+            outputDir: "./_site/assets/images/",
+            filenameFormat: function(id, src, width, format, options) {
+                const extension = path.extname(src)
+                const name = path.basename(src, extension)
+                return `${name}-${width}w.${format}`
+            }
+        }
+        // for convenience, you only need to use the image's name in the shortcode,
+        // and this will handle appending the full path to it
+        var fullSrc = path.join('./src/assets/images/', src);
+
+        // generate images
+        Image(fullSrc, options)
+
+        let imageAttributes = {
+            alt,
+            sizes,
+            loading: "lazy",
+            decoding: "async",
+        }
+        // get metadata
+        metadata = Image.statsSync(fullSrc, options)
+        return Image.generateHTML(metadata, imageAttributes)
+    }
+    eleventyConfig.addShortcode("image", imageShortcode)
+    // --- END, eleventy-img
 
 
     return {
