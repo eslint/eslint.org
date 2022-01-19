@@ -238,15 +238,19 @@
 
     img {
         margin: 2rem auto;
+
+        .donate-page & {
+            overflow: hidden;
+            display: block;
+            border-radius: var(--border-radius);
+        }
     }
 
     @media all and (min-width: 1023px) {
         display: block;
     }
 
-    .donate-page & {
-        display: block;
-    }
+
 }
 
 

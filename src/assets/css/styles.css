@@ -1084,11 +1084,13 @@ input {
   display: none; }
   .features-image img {
     margin: 2rem auto; }
+    .donate-page .features-image img {
+      overflow: hidden;
+      display: block;
+      border-radius: var(--border-radius); }
   @media all and (min-width: 1023px) {
     .features-image {
       display: block; } }
-  .donate-page .features-image {
-    display: block; }
 
 /* alert */
 .alert {
@@ -2826,7 +2828,7 @@ a.rule__name {
 
 #carbonads {
   display: inline-block;
-  margin: 0;
+  margin: 2rem 0;
   padding: .6em;
   font-size: 16px;
   line-height: 1.35;
