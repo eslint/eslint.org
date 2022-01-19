@@ -95,9 +95,10 @@
         </div>
     </div>
     <div class="person__bio">
-        <p>
-            {{ params.bio | safe }}
-        </p>
+        {% set bio_url = ['partials/author_bios/', params.handle, '.md' ] | join %}
+
+        {% set bio %}{% include bio_url %}{% endset %}
+        {{ bio | markdown | safe }}
     </div>
 </div>
 {%- endmacro -%}
