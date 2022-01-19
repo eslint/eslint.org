@@ -168,7 +168,8 @@ module.exports = function(eleventyConfig) {
 
     // START, eleventy-img
     function imageShortcode(src, alt, cls, sizes = "(max-width: 768px) 100vw, 50vw") {
-        // console.log(`Generating image(s) from:  ${src}`)
+        const source = src;
+        console.log(`Generating image(s) from:  ${src}`)
         let options = {
             widths: [600, 900, 1500],
             formats: ["webp", "jpeg"],
@@ -180,9 +181,21 @@ module.exports = function(eleventyConfig) {
                 return `${name}-${width}w.${format}`
             }
         }
-        // for convenience, you only need to use the image's name in the shortcode,
-        // and this will handle appending the full path to it
-        var fullSrc = path.join('./src/assets/images/', src);
+
+        function getSRC() {
+            if (source.indexOf("http://") == 0 || source.indexOf("https://") == 0) {
+                return source;
+            } else {
+                // for convenience, you only need to use the image's name in the shortcode,
+                // and this will handle appending the full path to it
+                src = path.join('./src/assets/images/', source);
+                return src;
+            }
+
+        }
+
+        var fullSrc = getSRC();
+
 
         // generate images
         Image(fullSrc, options)
