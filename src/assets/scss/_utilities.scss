@@ -1,3 +1,13 @@
+/* layout grid */
+.grid {
+    @media all and (min-width: 1023px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 2rem;
+        align-items: start;
+    }
+}
+
 /* Visually hide text while keeping it accessible */
 /* Support includes IE9+ */
 
@@ -77,21 +87,6 @@
 
 .fs-step-6 {
     font-size: var(--step-6);
-}
-
-
-/* layout grid */
-.grid {
-    @media all and (min-width: 1023px) {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 2rem;
-        align-items: start;
-    }
-
-    .hero & {
-        align-items: center;
-    }
 }
 
 .grid--center-items {
