@@ -191,12 +191,9 @@ module.exports = function(eleventyConfig) {
                 src = path.join('./src/assets/images/', source);
                 return src;
             }
-
         }
 
         var fullSrc = getSRC();
-
-
         // generate images
         Image(fullSrc, options)
 

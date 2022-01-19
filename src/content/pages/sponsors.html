@@ -111,7 +111,7 @@ hook: "sponsors-page"
                 {% for item in techsponsors %}
 
                 <li>
-                    <a href="{{ item.url }}">
+                    <a href="{{ item.url | url }}">
                         <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
                     </a>
                 </li>

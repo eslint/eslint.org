@@ -22,7 +22,7 @@
 
     }
 
-    img {
+    picture, img {
         display: block;
         height: auto;
         max-height: 3rem;
@@ -30,32 +30,32 @@
 }
 
 .sponsors.sponsors--backers {
-    img {
+    picture, img {
         border-radius: 50%;
     }
 }
 
 .sponsors.sponsors--platinum {
-    img {
+    picture, img {
         max-height: 8rem;
     }
 }
 
 .sponsors.sponsors--gold {
-    img {
+    picture, img {
         max-height: 6rem;
     }
 }
 
 .sponsors.sponsors--silver {
-    img {
+    picture, img {
         max-height: 8rem;
     }
 }
 
 .sponsors.sponsors--bronze,
 .sponsors.sponsors--technology {
-    img {
+    picture, img {
         max-height: 3rem;
     }
 }
