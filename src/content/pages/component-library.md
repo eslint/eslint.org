@@ -12,6 +12,21 @@ tags: ['nav']
 {%- from 'components/rule.macro.html' import rule %}
 {%- from 'components/related-rules.macro.html' import related_rules %}
 {%- from 'components/buttony-link.macro.html' import buttonyLink %}
+{%- from 'components/hero.html' import hero %}
+
+
+<div class="content-container">
+    {{ hero({
+        title: "Sponsors",
+        supporting_text: "171 companies, organizations, and individuals are currently contributing $13137.84 each month to support ESLint's ongoing maintenance and development.",
+        buttons: {
+            primary: {
+                primaryText: "Become a sponsor",
+                primaryURL: "/donate/"
+            }
+        }
+    }) }}
+</div>
 
 
 <div class="content-container">
