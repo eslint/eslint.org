@@ -120,15 +120,14 @@ module.exports = function(eleventyConfig) {
      *  Shortcodes
      * ***************************************************************************************/
 
-    eleventyConfig.addNunjucksShortcode("resource", function(url) {
-        const encodedURL = encodeURIComponent(url);
-        const the_url = (new URL(url)); // same as url
-        const domain = the_url.hostname;
-        const encodedDomain = encodeURIComponent(domain);
-        // const stripped_domain = domain.replace('www.','');
-        const avatar = `https://v1.indieweb-avatar.11ty.dev/${encodedURL}`;
-        const img = `<img class="resource__img" style="object-fit: cover;" src="${avatar}" width="75" height="75" lazyload="true" alt="Avatar image for ${ domain } " decoding="async"/>`;
-
+    eleventyConfig.addNunjucksShortcode("resource", function(link) {
+        // const encodedURL = encodeURIComponent(url);
+        // const the_url = (new URL(url)); // same as url
+        // const domain = the_url.hostname;
+        // const encodedDomain = encodeURIComponent(domain);
+        // // const stripped_domain = domain.replace('www.','');
+        // const avatar = `https://v1.indieweb-avatar.11ty.dev/${encodedURL}`;
+        // const img = `<img class="resource__img" style="object-fit: cover;" src="${avatar}" width="75" height="75" lazyload="true" alt="Avatar image for ${ domain } " decoding="async"/>`;
         // const getTitle = (url) => {
         // return fetch(url)
         //     .then((response) => response.text())
@@ -138,21 +137,29 @@ module.exports = function(eleventyConfig) {
         //     return title.innerText;
         //     });
         // };
-
         // const title = getTitle(url);
-
-        return `
-        <article class="resource">${ img }
-            <div class="resource__content">
-                <a href="${url}" class="resource__title"> title here </a><br>
-                <span class="resource__domain"> ${ domain }</span>
-            </div>
-            <svg class="c-icon resource__icon" width="13" height="12" viewBox="0 0 13 12" fill="none">
-            <path d="M1.5 11L11.5 1M11.5 1H1.5M11.5 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </article>`;
-
         // return img;
+
+        async function getMetadata() {
+            const { body: html, url } = await got(link);
+            const metadata = await metascraper({ html, url });
+            console.log(metadata);
+            return metadata;
+        }
+
+        // return `<article class="resource">${ resource.image }
+        //     <div class="resource__content">
+        //         <a href="${resource.url}" class="resource__title"> ${ resource.title } </a><br>
+        //         <span class="resource__domain"> ${ resource.publisher }</span>
+        //     </div>
+        //     <svg class="c-icon resource__icon" width="13" height="12" viewBox="0 0 13 12" fill="none">
+        //     <path d="M1.5 11L11.5 1M11.5 1H1.5M11.5 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        //     </svg>
+        // </article>`;
+
+        return false;
+
+
     });
 
     /*****************************************************************************************
