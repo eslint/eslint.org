@@ -12,8 +12,11 @@
     {% set img = ['/assets/images/blog-covers/', imageName] | join  %}
 
     <a href="{{ params.url }}" class="card__cover">
-        <img src="{{ img | url }}"
-                width="420" height="240" alt="{{ params.title }}" />
+        <!-- <img src="{{ img | url }}"
+                width="420" height="240" alt="{{ params.title }}" loading="lazy" decoding="async" /> -->
+        {% set image_path = ["/blog-covers/", imageName] | join %}
+        {% set image_alt = params.title %}
+        {% image image_path, params.title %}
     </a>
     <div class="card__content">
         <div class="badge-group">

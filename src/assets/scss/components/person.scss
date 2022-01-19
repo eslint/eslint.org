@@ -129,3 +129,11 @@
         gap: 1rem;
     }
 }
+
+
+/* team page */
+.people-list {
+    display: grid;
+    grid-gap: 3rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
