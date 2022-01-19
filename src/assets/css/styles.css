@@ -2580,8 +2580,10 @@ a.rule__name {
 .hero {
   border-bottom: 1px solid var(--divider-color);
   border-block-end: 1px solid var(--divider-color);
-  background-color: var(--hero-background-color);
-  min-height: calc(285px + var(--space-xl-4xl)); }
+  background-color: var(--hero-background-color); }
+  @media all and (min-width: 800px) {
+    .hero {
+      min-height: calc(285px + var(--space-xl-4xl)); } }
   .hero .content-container {
     padding: var(--space-xl-4xl) 0;
     margin: 0; }
@@ -2804,6 +2806,10 @@ a.rule__name {
 .js-tabs .c-tabs__tabpanel__title {
   display: none; }
 
+@media all and (max-width: 800px) {
+  .hero-ad {
+    display: none !important; } }
+
 #carbonads * {
   margin: initial;
   padding: initial; }
@@ -2822,6 +2828,9 @@ a.rule__name {
   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1); }
   .docs-main #carbonads {
     margin: 0 0 2rem; }
+  @media all and (max-width: 800px) {
+    #carbonads {
+      display: none !important; } }
 
 .jumbotron #carbonads {
   border: solid 1px rgba(111, 102, 153, 0.6);

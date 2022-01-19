@@ -2,7 +2,11 @@
     border-bottom: 1px solid var(--divider-color);
     border-block-end: 1px solid var(--divider-color);
     background-color: var(--hero-background-color);
-    min-height: calc(285px + var(--space-xl-4xl));
+
+    @media all and (min-width: 800px) {
+        // when the ad is displayed
+        min-height: calc(285px + var(--space-xl-4xl));
+    }
 
     .content-container {
         padding: var(--space-xl-4xl) 0;

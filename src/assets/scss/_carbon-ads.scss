@@ -1,3 +1,9 @@
+.hero-ad {
+     @media all and (max-width: 800px) {
+         display: none !important;
+     }
+}
+
 #carbonads * {
     margin: initial;
     padding: initial;
@@ -19,6 +25,10 @@
 
     .docs-main & {
         margin: 0 0 2rem;
+    }
+
+    @media all and (max-width: 800px) {
+        display: none !important;
     }
 }
 

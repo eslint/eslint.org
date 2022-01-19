@@ -1,8 +1,10 @@
 .hero {
   border-bottom: 1px solid var(--divider-color);
   border-block-end: 1px solid var(--divider-color);
-  background-color: var(--hero-background-color);
-  min-height: calc(285px + var(--space-xl-4xl)); }
+  background-color: var(--hero-background-color); }
+  @media all and (min-width: 800px) {
+    .hero {
+      min-height: calc(285px + var(--space-xl-4xl)); } }
   .hero .content-container {
     padding: var(--space-xl-4xl) 0;
     margin: 0; }
