@@ -166,7 +166,7 @@ module.exports = function(eleventyConfig) {
     });
 
 
-    // --- START, eleventy-img
+    // START, eleventy-img
     function imageShortcode(src, alt, cls, sizes = "(max-width: 768px) 100vw, 50vw") {
         // console.log(`Generating image(s) from:  ${src}`)
         let options = {
@@ -199,7 +199,7 @@ module.exports = function(eleventyConfig) {
         return Image.generateHTML(metadata, imageAttributes)
     }
     eleventyConfig.addShortcode("image", imageShortcode)
-    // --- END, eleventy-img
+    // END, eleventy-img
 
 
     return {
