@@ -17,7 +17,13 @@
                         </cite>
                     </footer>
                 </blockquote>
-                <img class="c-slider__testimonial__img span-8-12" width="480" height="530" src="../../assets/images/people/testimonials/large/{{ item.image }}" alt="{{ item.name }}" loading="lazy" decoding="async" />
+                <div class="span-8-12">
+                    <div class="c-slider__testimonial__img">
+                        {% set image_file = ["/people/testimonials/large/", item.image] | join %}
+                        {% set image_alt = item.name %}
+                        {% image image_file, image_alt %}
+                    </div>
+                </div>
             </div>
             {%- endfor -%}
         </div>
