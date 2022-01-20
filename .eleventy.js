@@ -7,7 +7,6 @@ const slugify = require("slugify");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require('markdown-it-anchor');
 const Image = require("@11ty/eleventy-img");
-const fetch = require("node-fetch");
 const metascraper = require('metascraper')([
     require('metascraper-image')(),
     require('metascraper-logo')(),
