@@ -1,8 +1,30 @@
+.hero .grid {
+    @media all and (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+    }
+
+    .span-1-7 {
+        grid-column: 1 / 2;
+    }
+
+    .span-10-12 {
+        grid-column: 2 / 3;
+        justify-self: end;
+    }
+}
+
 .hero {
     border-bottom: 1px solid var(--divider-color);
     border-block-end: 1px solid var(--divider-color);
     background-color: var(--hero-background-color);
-    min-height: calc(285px + var(--space-xl-4xl));
+
+    @media all and (min-width: 800px) {
+        // when the ad is displayed
+        min-height: calc(285px + var(--space-xl-4xl));
+    }
 
     .content-container {
         padding: var(--space-xl-4xl) 0;

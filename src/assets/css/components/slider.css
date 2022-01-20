@@ -138,7 +138,9 @@
   display: block;
   border-radius: var(--border-radius);
   max-height: 550px;
-  object-fit: cover; }
+  overflow: hidden; }
   @media all and (max-width: 1023px) {
     .js-slider .c-slider__testimonial__img {
       display: none; } }
+  .js-slider .c-slider__testimonial__img img {
+    object-fit: cover; }

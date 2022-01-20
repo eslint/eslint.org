@@ -206,6 +206,52 @@ module.exports = function(eleventyConfig) {
     });
 
 
+    // START, eleventy-img
+    function imageShortcode(src, alt, cls, sizes = "(max-width: 768px) 100vw, 50vw") {
+        const source = src;
+        console.log(`Generating image(s) from:  ${src}`)
+        let options = {
+            widths: [600, 900, 1500],
+            formats: ["webp", "jpeg"],
+            urlPath: "/assets/images/",
+            outputDir: "./_site/assets/images/",
+            filenameFormat: function(id, src, width, format, options) {
+                const extension = path.extname(src)
+                const name = path.basename(src, extension)
+                return `${name}-${width}w.${format}`
+            }
+        }
+
+        function getSRC() {
+            if (source.indexOf("http://") == 0 || source.indexOf("https://") == 0) {
+                return source;
+            } else {
+                // for convenience, you only need to use the image's name in the shortcode,
+                // and this will handle appending the full path to it
+                src = path.join('./src/assets/images/', source);
+                return src;
+            }
+        }
+
+        var fullSrc = getSRC();
+        // generate images
+        Image(fullSrc, options)
+
+        let imageAttributes = {
+            alt,
+            class: cls,
+            sizes,
+            loading: "lazy",
+            decoding: "async",
+        }
+        // get metadata
+        metadata = Image.statsSync(fullSrc, options)
+        return Image.generateHTML(metadata, imageAttributes)
+    }
+    eleventyConfig.addShortcode("image", imageShortcode)
+    // END, eleventy-img
+
+
     return {
         passthroughFileCopy: true,
 

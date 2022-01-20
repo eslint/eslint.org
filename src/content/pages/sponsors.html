@@ -9,7 +9,6 @@ hook: "sponsors-page"
 {%- from 'components/hero.html' import hero %}
 
 
-
 {{ hero({
     title: "Sponsors",
     supporting_text: "171 companies, organizations, and individuals are currently contributing $13137.84 each month to support ESLint's ongoing maintenance and development.",
@@ -34,7 +33,7 @@ hook: "sponsors-page"
                 {% for item in sponsors.platinum %}
                 <li>
                     <a href="{{ item.url }}">
-                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -53,7 +52,7 @@ hook: "sponsors-page"
                 {% for item in sponsors.gold %}
                 <li>
                     <a href="{{ item.url }}">
-                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -72,7 +71,7 @@ hook: "sponsors-page"
                 {% for item in sponsors.silver %}
                 <li>
                     <a href="{{ item.url }}">
-                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -91,7 +90,7 @@ hook: "sponsors-page"
                 {% for item in sponsors.bronze %}
                 <li>
                     <a href="{{ item.url }}">
-                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -111,8 +110,8 @@ hook: "sponsors-page"
                 {% for item in techsponsors %}
 
                 <li>
-                    <a href="{{ item.url }}">
-                        <img src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    <a href="{{ item.url | url }}">
+                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -165,7 +164,7 @@ hook: "sponsors-page"
                 {% for item in sponsors.backers %}
                 <li>
                     <a href="{{ item.url }}">
-                        <img src="{{ item.image }}" width="48" height="48" alt="{{ item.name }}" title="{{ item.name }}" />
+                        <img loading="lazy" decoding="async" src="{{ item.image }}" width="48" height="48" alt="{{ item.name }}" title="{{ item.name }}" />
                     </a>
                 </li>
                 {% endfor %}

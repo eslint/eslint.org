@@ -2,6 +2,7 @@
 layout: main.html
 permalink: /
 title: Find and fix problems in your JavaScript code — ESLint
+desc: ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
 cover: /assets/images/site-cover.jpg
 hook: "homepage"
 
@@ -114,7 +115,7 @@ eleventyExcludeFromCollections: true
             </div>
 
             <div class="features-image span-7-12">
-                <img src="../../assets/images/eslint-features-img.png" alt="Screenshot of a Visual Studio code window with ESLint in action: underlining ESLint error in the editor." width="590" height="560">
+                {% image "eslint-features-img.png", "Screenshot of a Visual Studio code window with ESLint in action: underlining ESLint error in the editor." %}
             </div>
         </div>
     </div>
@@ -202,14 +203,14 @@ eleventyExcludeFromCollections: true
                 {% for sponsor in sponsors.gold %}
                 <li>
                     <a href="{{ sponsor.url }}">
-                        <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" width="48" height="48" loading="lazy" />
+                        <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" width="48" height="48" loading="lazy" decoding="async" />
                     </a>
                 </li>
                 {% endfor %}
                 {% for sponsor in techsponsors %}
                 <li>
                     <a href="{{ sponsor.url }}">
-                        <img src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" width="48" height="48" loading="lazy" />
+                        <img src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" width="48" height="48" loading="lazy" decoding="async" />
 
                     </a>
                 </li>
