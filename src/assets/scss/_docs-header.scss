@@ -5,22 +5,6 @@
     border-block-start: 4px solid var(--link-color);
     border-block-end: 1px solid var(--divider-color);
 
-    .content-container {
-        display: grid;
-        align-items: start;
-        padding-top: 0;
-        padding-bottom: 0;
-
-        padding-block-start: 0;
-        padding-block-end: 0;
-
-        @media all and (min-width: 680px) {
-            justify-content: space-between;
-        }
-    }
-}
-
-.site-header {
     .docs-wrapper {
         display: grid;
         align-items: start;

@@ -203,10 +203,6 @@ a {
 
 a {
     color: var(--link-color);
-    // display: inline-flex;
-    // flex-wrap: wrap;
-    // gap: .5rem;
-    // align-items: center;
 
     .side-header & {
         color: inherit;
