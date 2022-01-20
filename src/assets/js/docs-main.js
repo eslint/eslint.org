@@ -19,6 +19,8 @@
             nav_trigger.addEventListener("click", togglenav, false);
         } else {
             nav.setAttribute("data-open", "true");
+            nav_trigger.setAttribute("hidden", "");
+            nav_trigger.setAttribute("aria-expanded", "true");
         }
 
     }
