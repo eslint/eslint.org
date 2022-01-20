@@ -2194,6 +2194,7 @@ button.c-share__btn {
   margin-block-end: 1.5rem;
   align-items: start;
   font-size: .875rem;
+  background-color: #fff;
   border-radius: var(--border-radius); }
   .alert.alert--warning {
     border: 1px solid var(--color-rose-300); }
