@@ -9,12 +9,13 @@ const markdownItAnchor = require('markdown-it-anchor');
 const Image = require("@11ty/eleventy-img");
 const fetch = require("node-fetch");
 const metascraper = require('metascraper')([
-  require('metascraper-image')(),
-  require('metascraper-logo')(),
-  require('metascraper-logo-favicon')(),
-  require('metascraper-publisher')(),
-  require('metascraper-title')(),
-  require('metascraper-url')()
+    require('metascraper-image')(),
+    require('metascraper-logo')(),
+    require('metascraper-logo-favicon')(),
+    require('metascraper-publisher')(),
+    require('metascraper-title')(),
+    require('metascraper-description')(),
+    require('metascraper-url')()
 ]);
 const got = require('got');
 
@@ -119,24 +120,29 @@ module.exports = function(eleventyConfig) {
     /**********************************************************************
      *  Shortcodes
      * ********************************************************************/
-        eleventyConfig.addNunjucksAsyncShortcode("link", async function (link) {
-    const { body: html, url } = await got(link);
-    const metadata = await metascraper({ html, url });
+    eleventyConfig.addNunjucksAsyncShortcode("link", async function(link) {
+        const { body: html, url } = await got(link);
+        const metadata = await metascraper({ html, url });
+        console.log(metadata);
 
-    return `
+        const encodedURL = encodeURIComponent(link);
+        const the_url = (new URL(link)); // same as url
+        const domain = the_url.hostname;
+
+        return `
         <article class="resource">
             <div class="resource__image">
-                <img class="resource__img" width="75" height="75" src="${metadata.logo}" alt="Avatar image for ${metadata.publisher}" />
+                <img class="resource__img" width="75" height="75" src="${metadata.logo}" alt="Avatar image for ${domain}" />
             </div>
             <div class="resource__content">
                 <a href="${metadata.url}" class="resource__title"> ${metadata.title} </a><br>
-                <span class="resource__domain"> ${metadata.publisher}</span>
+                <span class="resource__domain"> ${domain}</span>
             </div>
             <svg class="c-icon resource__icon" width="13" height="12" viewBox="0 0 13 12" fill="none">
             <path d="M1.5 11L11.5 1M11.5 1H1.5M11.5 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </article>`;
-  });
+    });
 
 
     /*****************************************************************************************

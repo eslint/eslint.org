@@ -6,7 +6,11 @@
   align-items: stretch;
   overflow: hidden;
   margin-bottom: .5rem;
-  margin-block-end: .5rem; }
+  margin-block-end: .5rem;
+  position: relative;
+  transition: all .2s linear; }
+  .resource:hover {
+    background-color: var(--lighter-background-color); }
 
 .resource__image {
   flex: 1 1 5rem;
@@ -28,8 +32,19 @@
   color: var(--headings-color);
   font-weight: 500;
   margin-bottom: .125rem; }
+  .resource__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    offset-inline-start: 0;
+    top: 0;
+    block-inline-start: 0;
+    width: 100%;
+    height: 100%; }
 
-.resource__domain {
+.resource__domain,
+.resource__domain a {
+  text-decoration: none;
   color: var(--body-text-color);
   font-size: .875rem; }
 

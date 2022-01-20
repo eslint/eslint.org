@@ -17,6 +17,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius assumend
 
 {% link "https://github.com/microlinkhq/metascraper" %}
 
+{% link "https://blog.izs.me/2010/12/an-open-letter-to-javascript-leaders-regarding/" %}
+
 {% link "https://humanwhocodes.com/blog/2021/12/making-open-source-project-sponsor-ready-accepting-sponsorships/" %}
 
 ### heading 3

@@ -38,6 +38,7 @@
     "dependencies": {
         "got": "^11.8.3",
         "metascraper": "^5.25.7",
+        "metascraper-description": "^5.25.7",
         "metascraper-image": "^5.25.7",
         "metascraper-logo": "^5.25.7",
         "metascraper-logo-favicon": "^5.25.7",
