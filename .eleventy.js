@@ -123,7 +123,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addNunjucksAsyncShortcode("link", async function(link) {
         const { body: html, url } = await got(link);
         const metadata = await metascraper({ html, url });
-        console.log(metadata);
 
         const encodedURL = encodeURIComponent(link);
         const the_url = (new URL(link)); // same as url
@@ -209,7 +208,7 @@ module.exports = function(eleventyConfig) {
     // START, eleventy-img
     function imageShortcode(src, alt, cls, sizes = "(max-width: 768px) 100vw, 50vw") {
         const source = src;
-        console.log(`Generating image(s) from:  ${src}`)
+        // console.log(`Generating image(s) from:  ${src}`)
         let options = {
             widths: [600, 900, 1500],
             formats: ["webp", "jpeg"],

@@ -2829,7 +2829,6 @@ a.rule__name {
 .js-tabs .c-tabs__tabpanel__title {
   display: none; }
 
-
 .resource {
   display: flex;
   border-radius: var(--border-radius);
@@ -2888,7 +2887,6 @@ a.rule__name {
 @media all and (max-width: 800px) {
   .hero-ad {
     display: none; } }
-
 
 #carbonads * {
   margin: initial;
