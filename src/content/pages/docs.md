@@ -14,9 +14,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rerum suscip
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius assumenda tenetur, impedit cumque dolore ipsam debitis quas iure enim qui culpa nisi vero, accusantium, optio et adipisci nihil quia!
 
 
-{% resource "https://github.com/microlinkhq/metascraper" %}
+{% link "https://github.com/microlinkhq/metascraper" %}
 
-{% resource "https://sarasoueidan.com/blog/focus-indicators" %}
+{% link "https://sarasoueidan.com/blog/focus-indicators" %}
+
+{% link "https://humanwhocodes.com/blog/2021/12/making-open-source-project-sponsor-ready-accepting-sponsorships/" %}
 
 ### heading 3
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate veritatis eveniet eos tempora quidem totam error. Earum dicta, officia rem cumque autem distinctio fugiat, dolorum nemo, laboriosam cum nobis!

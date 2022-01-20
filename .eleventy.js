@@ -117,44 +117,33 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addWatchTarget("./src/assets/");
 
-    /*****************************************************************************************
+    /**********************************************************************
      *  Shortcodes
-     * ***************************************************************************************/
+     * ********************************************************************/
 
-    eleventyConfig.addNunjucksShortcode("resource", function(link) {
-        // const encodedURL = encodeURIComponent(url);
-        // const the_url = (new URL(url)); // same as url
-        // const domain = the_url.hostname;
-        // const encodedDomain = encodeURIComponent(domain);
-        // // const stripped_domain = domain.replace('www.','');
-        // const avatar = `https://v1.indieweb-avatar.11ty.dev/${encodedURL}`;
-        // const img = `<img class="resource__img" style="object-fit: cover;" src="${avatar}" width="75" height="75" lazyload="true" alt="Avatar image for ${ domain } " decoding="async"/>`;
-        // const getTitle = (url) => {
-        // return fetch(url)
-        //     .then((response) => response.text())
-        //     .then((html) => {
-        //     const doc = new DOMParser().parseFromString(html, "text/html");
-        //     const title = doc.querySelectorAll('title')[0];
-        //     return title.innerText;
-        //     });
-        // };
-        // const title = getTitle(url);
-        // return img;
+    eleventyConfig.addShortcode("link", function(link) {
+        let encodedURL = encodeURIComponent(link);
+        let the_url = (new URL(link));
+        let domain = the_url.hostname;
 
         async function getMetadata() {
-            var { body: html, url } = await got(link);
-            var metadata = await metascraper({ html, url });
-            console.log(metadata);
+            const { body: html, url } = await got(link);
+            const metadata = await metascraper({ html, url });
+            // console.log(metadata);
             return metadata;
         }
-
+        let resource = {};
         (async() => {
-            resource = await getMetadata();
-            console.log(resource);
+            meta = await getMetadata();
+            resource = meta;
+            // console.log(resource);
         })();
 
-        return `<article class="resource">
-                <div class="resource__image"><img class="resource__img" width="75" height="75" src="${ resource.logo }" alt="Avatar image for ${ resource.publisher }" /></div>
+        return `
+        <article class="resource">
+            <div class="resource__image">
+                <img class="resource__img" width="75" height="75" src="${ resource.logo }" alt="Avatar image for ${ resource.publisher }" />
+            </div>
             <div class="resource__content">
                 <a href="${resource.url}" class="resource__title"> ${ resource.title } </a><br>
                 <span class="resource__domain"> ${ resource.publisher }</span>
@@ -169,30 +158,33 @@ module.exports = function(eleventyConfig) {
     /*****************************************************************************************
      *  File PassThroughs
      * ***************************************************************************************/
-    // take everything in the static/ directory and copy it to the root of your build directory (e.g. static/favicon.svg to _site/favicon.svg).
+
     eleventyConfig.addPassthroughCopy({
         "./src/static": "/"
     });
-    // copy all assets
+
     eleventyConfig.addPassthroughCopy('./src/assets/');
-    // copy all images inside individual post folders into the _site/assets/images folder
+
     eleventyConfig.addPassthroughCopy({
         './src/content/**/*.png': "/assets/images"
     });
+
     eleventyConfig.addPassthroughCopy({
         './src/content/**/*.jpg': "/assets/images"
     });
+
     eleventyConfig.addPassthroughCopy({
         './src/content/**/*.jpeg': "/assets/images"
     });
+
     eleventyConfig.addPassthroughCopy({
         './src/content/**/*.svg': "/assets/images"
     });
-    // copy all videos inside individual post folders into a _site/assets/videos folder
+
     eleventyConfig.addPassthroughCopy({
         './src/content/**/*.mp4': "/assets/videos"
     });
-    // copy all documents inside individual post folders into the _site/assets/documents folder
+
     eleventyConfig.addPassthroughCopy({
         './src/content/**/*.pdf': "/assets/documents"
     });
@@ -225,16 +217,12 @@ module.exports = function(eleventyConfig) {
 
 
     return {
-        // When a passthrough file is modified, rebuild the pages:
         passthroughFileCopy: true,
 
-        // tell Eleventy that markdown files, data files and HTML files should be processed by Nunjucks. That means that we can now use .html files instead of having to use .njk files
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
 
-        // Set custom directories for input, output, includes, and data
-        // These are the defaults. You'll need to restart your dev server for any changes in this file to take effect.
         dir: {
             input: "src",
             includes: "_includes",
