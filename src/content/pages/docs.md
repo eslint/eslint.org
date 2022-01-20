@@ -13,10 +13,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rerum suscip
 ## heading 2
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius assumenda tenetur, impedit cumque dolore ipsam debitis quas iure enim qui culpa nisi vero, accusantium, optio et adipisci nihil quia!
 
+{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript" %}
 
 {% link "https://github.com/microlinkhq/metascraper" %}
-
-{% link "https://sarasoueidan.com/blog/focus-indicators" %}
 
 {% link "https://humanwhocodes.com/blog/2021/12/making-open-source-project-sponsor-ready-accepting-sponsorships/" %}
 

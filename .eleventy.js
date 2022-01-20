@@ -121,15 +121,15 @@ module.exports = function(eleventyConfig) {
      *  Shortcodes
      * ********************************************************************/
 
-    eleventyConfig.addShortcode("link", function(link) {
+    eleventyConfig.addNunjucksShortcode("link", function(link) {
         let encodedURL = encodeURIComponent(link);
         let the_url = (new URL(link));
         let domain = the_url.hostname;
 
         async function getMetadata() {
             const { body: html, url } = await got(link);
-            const metadata = await metascraper({ html, url });
-            // console.log(metadata);
+            let metadata = await metascraper({ html, url });
+            console.log(metadata);
             return metadata;
         }
         (async() => {
