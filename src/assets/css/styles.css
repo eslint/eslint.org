@@ -2827,18 +2827,22 @@ a.rule__name {
   border-radius: var(--border-radius);
   border: 1px solid var(--divider-color);
   background-color: var(--lightest-background-color);
-  align-items: center;
+  align-items: stretch;
   overflow: hidden; }
 
-.resource__img {
-  flex: 0 1 75px;
-  height: 100%;
-  width: auto;
-  object-fit: cover; }
+.resource__image {
+  flex: 1 1 25%;
+  overflow: hidden; }
+  .resource__image img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .resource__content {
   flex: 1;
-  padding: .75rem; }
+  padding: .75rem;
+  align-self: center; }
 
 .resource__title {
   text-decoration: none;
@@ -2852,7 +2856,8 @@ a.rule__name {
 
 .resource__icon {
   color: var(--headings-color);
-  margin: 1rem; }
+  margin: 1rem;
+  align-self: center; }
 
 #carbonads * {
   margin: initial;
