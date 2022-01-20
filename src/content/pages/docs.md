@@ -16,6 +16,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius assumend
 
 {% resource "https://github.com/microlinkhq/metascraper" %}
 
+{% resource "https://sarasoueidan.com/blog/focus-indicators" %}
+
 ### heading 3
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate veritatis eveniet eos tempora quidem totam error. Earum dicta, officia rem cumque autem distinctio fugiat, dolorum nemo, laboriosam cum nobis!
 

@@ -11,6 +11,7 @@ const fetch = require("node-fetch");
 const metascraper = require('metascraper')([
   require('metascraper-image')(),
   require('metascraper-logo')(),
+  require('metascraper-logo-favicon')(),
   require('metascraper-publisher')(),
   require('metascraper-title')(),
   require('metascraper-url')()
@@ -141,25 +142,19 @@ module.exports = function(eleventyConfig) {
         // return img;
 
         async function getMetadata() {
-            const { body: html, url } = await got(link);
-            const metadata = await metascraper({ html, url });
+            var { body: html, url } = await got(link);
+            var metadata = await metascraper({ html, url });
             console.log(metadata);
             return metadata;
         }
 
-        var reosurce;
-        // Call start
         (async() => {
-        console.log('before start');
-
-        resource = await getMetadata();
-
-        console.log('after start');
-        console.log(resource);
+            resource = await getMetadata();
+            console.log(resource);
         })();
 
         return `<article class="resource">
-                <div class="resource__image"><img class="resource__img" width="75" height="75" src="${ resource.image }" alt="Avatar image for ${ resource.pubisher }" /></div>
+                <div class="resource__image"><img class="resource__img" width="75" height="75" src="${ resource.logo }" alt="Avatar image for ${ resource.publisher }" /></div>
             <div class="resource__content">
                 <a href="${resource.url}" class="resource__title"> ${ resource.title } </a><br>
                 <span class="resource__domain"> ${ resource.publisher }</span>
@@ -168,9 +163,6 @@ module.exports = function(eleventyConfig) {
             <path d="M1.5 11L11.5 1M11.5 1H1.5M11.5 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </article>`;
-
-        // return false;
-
 
     });
 

@@ -2828,19 +2828,22 @@ a.rule__name {
   border: 1px solid var(--divider-color);
   background-color: var(--lightest-background-color);
   align-items: stretch;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: .5rem;
+  margin-block-end: .5rem; }
 
 .resource__image {
-  flex: 1 1 25%;
+  flex: 1 1 5rem;
+  max-width: 5rem;
   overflow: hidden; }
   .resource__image img {
     display: block;
     height: 100%;
     width: 100%;
-    object-fit: cover; }
+    object-fit: contain; }
 
 .resource__content {
-  flex: 1;
+  flex: 4;
   padding: .75rem;
   align-self: center; }
 
