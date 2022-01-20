@@ -95,10 +95,11 @@
         </div>
     </div>
     <div class="person__bio">
-        {% set bio_url = ['partials/author_bios/', params.handle, '.md' ] | join %}
+        <!-- uncomment once all authors have bios as partials -->
+        <!-- {% set bio_url = ['partials/author_bios/', params.handle, '.md' ] | join %}
 
         {% set bio %}{% include bio_url %}{% endset %}
-        {{ bio | markdown | safe }}
+        {{ bio | markdown | safe }} -->
     </div>
 </div>
 {%- endmacro -%}
