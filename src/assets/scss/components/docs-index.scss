@@ -6,6 +6,8 @@
         justify-content: space-between;
         align-items: center;
         padding: .5rem .75rem;
+        margin-left: -.75rem;
+        margin-inline-start: -.75rem;
         color: var(--headings-color);
 
         &:hover,

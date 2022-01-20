@@ -9,7 +9,7 @@
 
     @media all and (min-width: 1023px) {
         display: grid;
-        grid-template-columns: minmax(350px, 1fr) minmax(0, 3fr);
+        grid-template-columns: minmax(300px, 1fr) minmax(0, 3fr);
         grid-gap: 2rem;
         align-items: stretch;
     }
@@ -38,9 +38,12 @@
     padding: calc(2rem + 1vw) 0;
     grid-column: 2 / 3;
 
-    display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(240px, 1fr);
-    grid-gap: 4rem;
+    @media all and (min-width: 800px) {
+        display: grid;
+        grid-template-columns: minmax(0, 3fr) minmax(230px, 1fr);
+        grid-gap: 4rem;
+    }
+
 }
 
 .docs-main {
