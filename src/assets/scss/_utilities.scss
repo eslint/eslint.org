@@ -27,6 +27,12 @@
     display: none !important;
 }
 
+.mobile-only {
+    @media all and (min-width: 1023px) {
+        display: none;
+    }
+}
+
 .text {
     font-size: inherit;
     color: inherit;

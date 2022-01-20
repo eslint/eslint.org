@@ -2937,6 +2937,10 @@ a.rule__name {
 [hidden] {
   display: none !important; }
 
+@media all and (min-width: 1023px) {
+  .mobile-only {
+    display: none; } }
+
 .text {
   font-size: inherit;
   color: inherit;
