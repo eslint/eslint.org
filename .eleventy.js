@@ -16,7 +16,6 @@ const metascraper = require('metascraper')([
   require('metascraper-title')(),
   require('metascraper-url')()
 ]);
-
 const got = require('got');
 
 const {
@@ -120,38 +119,25 @@ module.exports = function(eleventyConfig) {
     /**********************************************************************
      *  Shortcodes
      * ********************************************************************/
+        eleventyConfig.addNunjucksAsyncShortcode("link", async function (link) {
+    const { body: html, url } = await got(link);
+    const metadata = await metascraper({ html, url });
 
-    eleventyConfig.addNunjucksShortcode("link", function(link) {
-        let encodedURL = encodeURIComponent(link);
-        let the_url = (new URL(link));
-        let domain = the_url.hostname;
-
-        async function getMetadata() {
-            const { body: html, url } = await got(link);
-            let metadata = await metascraper({ html, url });
-            console.log(metadata);
-            return metadata;
-        }
-        (async() => {
-            metadata = await getMetadata();
-            // console.log(metadata);
-        })();
-
-        return `
+    return `
         <article class="resource">
             <div class="resource__image">
-                <img class="resource__img" width="75" height="75" src="${ metadata.logo }" alt="Avatar image for ${ metadata.publisher }" />
+                <img class="resource__img" width="75" height="75" src="${metadata.logo}" alt="Avatar image for ${metadata.publisher}" />
             </div>
             <div class="resource__content">
-                <a href="${metadata.url}" class="resource__title"> ${ metadata.title } </a><br>
-                <span class="resource__domain"> ${ metadata.publisher }</span>
+                <a href="${metadata.url}" class="resource__title"> ${metadata.title} </a><br>
+                <span class="resource__domain"> ${metadata.publisher}</span>
             </div>
             <svg class="c-icon resource__icon" width="13" height="12" viewBox="0 0 13 12" fill="none">
             <path d="M1.5 11L11.5 1M11.5 1H1.5M11.5 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </article>`;
+  });
 
-    });
 
     /*****************************************************************************************
      *  File PassThroughs
