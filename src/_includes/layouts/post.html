@@ -7,7 +7,7 @@ hook: "post blog-post-page"
 {%- from 'components/hero.html' import hero %}
 {%- from 'components/person.macro.html' import member, contributor, postAuthor %}
 
-<main id="main" tabindex="-1">
+<main id="main"  class="post-main" tabindex="-1">
 
     {% set hero_title = title %}
     {% set hero_supporting_text = teaser %}
