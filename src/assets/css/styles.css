@@ -2853,12 +2853,13 @@ a.rule__name {
 .resource__image {
   flex: 1 1 5rem;
   max-width: 5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: .25rem; }
   .resource__image img {
     display: block;
     height: 100%;
     width: 100%;
-    object-fit: contain; }
+    object-fit: cover; }
 
 .resource__content {
   flex: 4;

@@ -21,12 +21,13 @@
     flex: 1 1 5rem;
     max-width: 5rem;
     overflow: hidden;
+    padding: .25rem;
 
     img {
         display: block;
         height: 100%;
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 
