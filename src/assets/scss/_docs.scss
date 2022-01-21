@@ -50,7 +50,9 @@
     padding-top: var(--space-l-xl);
     padding-block-start: var(--space-l-xl);
 
-    grid-column: 1 / 2;
+    // grid-column: 1 / 2;
+
+    flex: 1 1 65ch;
 
     @media all and (min-width: 1023px) {
         padding: 0 2rem;
@@ -65,6 +67,8 @@
 
     display: flex;
     flex-direction: column;
+
+    flex: 1 1 200px;
 }
 
 .docs-toc {

@@ -7,7 +7,7 @@
              <span class="rule__status">deprecated</span>
         </p>
         {%- else -%}
-        <a href="{{ params.url }}" class="rule__name">{{ params.name }}</a>
+        <a href="/rules/ {{ params.name }}" class="rule__name">{{ params.name }}</a>
         {%- endif -%}
         <p class="rule__description">{{ params.description }}</p>
     </div>
