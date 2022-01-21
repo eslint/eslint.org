@@ -16,6 +16,11 @@
         margin-block-start: 0;
         align-items: center;
         display: flex; } }
+    .site-nav ul[data-open="false"] {
+      display: none; }
+    @media all and (min-width: 680px) {
+      .site-nav ul[data-open="true"] {
+        display: flex; } }
   .site-nav .flexer {
     display: flex;
     justify-self: flex-end;
