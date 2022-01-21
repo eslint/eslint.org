@@ -43,6 +43,10 @@ button {
 
 a.c-btn {
     text-decoration: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
 }
 
 .c-btn--primary {
