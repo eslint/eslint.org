@@ -1152,15 +1152,15 @@ ul.tag-list {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   padding: calc(1rem + 1vw) 0;
-  padding-right: calc(1rem + 1vw);
-  padding-inline-end: calc(1rem + 1vw);
   display: grid;
   grid-auto-rows: max-content;
   align-items: start; }
   @media all and (min-width: 1023px) {
     .docs-left-sidebar {
       border-right: 1px solid var(--divider-color);
-      border-right: 1px solid var(--divider-color); } }
+      border-right: 1px solid var(--divider-color);
+      padding-right: calc(1rem + 1vw);
+      padding-inline-end: calc(1rem + 1vw); } }
 
 .docs-content {
   padding: calc(2rem + 1vw) 0;
