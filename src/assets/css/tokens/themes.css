@@ -64,7 +64,21 @@
   --secondary-button-text-color: var(--color-brand);
   --ghost-button-background-color: var(--color-primary-50);
   --ghost-button-text-color: var(--color-brand);
-  --color-brand: var(--color-primary-800); }
+  --color-brand: var(--color-primary-800);
+  --body-background-color: #fff;
+  --body-text-color: var(--color-neutral-500);
+  --headings-color: var(--color-neutral-900);
+  --border-color: var(--color-neutral-300);
+  --divider-color: var(--color-neutral-200);
+  --icon-color: var(--color-neutral-400);
+  --dark-icon-color: var(--color-neutral-500);
+  --link-color: var(--color-primary-800);
+  --lighter-background-color: var(--color-neutral-100);
+  --lightest-background-color: var(--color-neutral-50);
+  --docs-lightest-background-color: var(--color-primary-50);
+  --hero-background-color: var(--color-neutral-25);
+  --footer-background-color: var(--color-neutral-25);
+  --outline-color: var(--color-brand); }
 
 @media (prefers-color-scheme: dark) {
   --secondary-button-background-color: var(--color-neutral-700);
