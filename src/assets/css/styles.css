@@ -1507,6 +1507,12 @@ a.c-btn {
     text-decoration: none;
     font-weight: 500; }
 
+@media all and (min-width: 1023px) {
+  .docs-nav-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
 .docs-nav-panel[data-open="false"] {
   display: none; }
 

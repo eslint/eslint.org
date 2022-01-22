@@ -55,6 +55,12 @@
     // flex-direction: column;
     // justify-content: center;
 
+    @media all and (min-width: 1023px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     &[data-open="false"] {
         display: none;
     }
