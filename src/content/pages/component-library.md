@@ -11,7 +11,7 @@ tags: ['nav']
 {%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
 {%- from 'components/rule.macro.html' import rule %}
 {%- from 'components/related-rules.macro.html' import related_rules %}
-{%- from 'components/buttony-link.macro.html' import buttonyLink %}
+{%- from 'components/button.macro.html' import button %}
 {%- from 'components/hero.html' import hero %}
 
 
@@ -30,9 +30,9 @@ tags: ['nav']
 
 
 <div class="content-container">
-    {{ buttonyLink({ type: "primary", text: "Primary Button", url:"#" }) }}
-    {{ buttonyLink({ type: "secondary", text: "Secondary Button", url:"#" }) }}
-    {{ buttonyLink({ type: "ghost", text: "Ghost Button", url:"#" }) }}
+    {{ button({ el: "button", type: "primary" }) }}
+    {{ button({ type: "secondary", text: "Secondary Button", url:"#" }) }}
+    {{ button({ type: "ghost", text: "Ghost Button", url:"#" }) }}
 </div>
 
 <div class="content-container">
