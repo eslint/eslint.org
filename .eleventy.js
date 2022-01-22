@@ -86,6 +86,15 @@ module.exports = function(eleventyConfig) {
         }).format(value);
     });
 
+    // parse markdown from includes, used for author bios
+    // Source: https://github.com/11ty/eleventy/issues/658
+    eleventyConfig.addFilter('markdown', function(value) {
+        let markdown = require('markdown-it')({
+            html: true
+        });
+        return markdown.render(value);
+    });
+
     /*****************************************************************************************
      *  Plugins
      * ***************************************************************************************/

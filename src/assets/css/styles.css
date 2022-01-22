@@ -551,6 +551,10 @@ ol {
   ul li,
   ol li {
     margin: 0 0 .75em; }
+  .person__bio ul, .person__bio
+  ol {
+    padding-left: 1.5rem;
+    padding-inline-start: 1.5rem; }
 
 .docs-main ul,
 .post-main ul,
