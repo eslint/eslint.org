@@ -31,6 +31,10 @@ tags: ['nav']
 
 <div class="content-container">
     {{ button({ behavior: "action", type: "primary" }) }}
+    {{ button({ behavior: "action", text: "I perform an action", type: "secondary" }) }}
+    {{ button({ behavior: "action", text: "I perform an action", type: "ghost" }) }}
+    <br><br>
+    {{ button({ type: "primary", text: "I link somewhere", url: "#" }) }}
     {{ button({ type: "secondary", text: "Secondary Button", url:"#" }) }}
     {{ button({ type: "ghost", text: "Ghost Button", url:"#" }) }}
 </div>
