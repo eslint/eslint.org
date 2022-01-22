@@ -104,6 +104,7 @@ a.rule__name {
   color: var(--headings-color);
   padding: .625rem;
   display: inline-flex;
+  gap: .5rem;
   align-items: center;
   border: 1px solid var(--divider-color);
   border-radius: var(--border-radius);
