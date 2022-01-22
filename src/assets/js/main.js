@@ -4,12 +4,26 @@
         body = document.getElementsByTagName("body")[0],
         open = false;
 
-    nav_trigger.removeAttribute("hidden");
-    nav_trigger.setAttribute("aria-expanded", "false");
-    nav.setAttribute("data-open", "false");
+    if (matchMedia) {
+        const mq = window.matchMedia("(max-width: 680px)");
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+    }
 
-    nav.setAttribute("data-open", "false");
-    nav_trigger.addEventListener("click", togglenav, false);
+    // media query change
+    function WidthChange(mq) {
+        if (mq.matches) {
+            nav.setAttribute("data-open", "false");
+            nav_trigger.removeAttribute("hidden");
+            nav_trigger.setAttribute("aria-expanded", "false");
+            nav_trigger.addEventListener("click", togglenav, false);
+        } else {
+            nav.setAttribute("data-open", "true");
+            nav_trigger.setAttribute("hidden", "");
+            nav_trigger.setAttribute("aria-expanded", "true");
+        }
+
+    }
 
     function togglenav(e) {
         if (!open) {

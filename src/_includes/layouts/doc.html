@@ -10,9 +10,11 @@ layout: docs-base.html
 
 <div class="docs-wrapper">
     <div class="docs-left-sidebar">
-        {% include 'components/version-switcher.html' %}
-        {% include 'components/search.html' %}
-        {% include 'components/docs-index.html' %}
+        <div class="desktop-only">
+            {% include 'components/version-switcher.html' %}
+            {% include 'components/search.html' %}
+        </div>
+            {% include 'components/docs-index.html' %}
     </div>
 
     <div class="docs-content">

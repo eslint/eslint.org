@@ -23,14 +23,14 @@
     @media all and (min-width: 1023px) {
         border-right: 1px solid var(--divider-color);
         border-right: 1px solid var(--divider-color);
+        padding-right: calc(1rem + 1vw);
+        padding-inline-end: calc(1rem + 1vw);
     }
 
-    padding-right: calc(1rem + 1vw);
-    padding-inline-end: calc(1rem + 1vw);
+
 
     display: grid;
     grid-auto-rows: max-content;
-    grid-gap: 1.5rem 0;
     align-items: start;
 }
 
