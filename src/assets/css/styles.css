@@ -2644,7 +2644,9 @@ a.rule__name {
       color: var(--link-color); }
 
 .languages-section .flag {
-  font-size: 2em; }
+  font-size: 2em;
+  margin-right: .5rem;
+  margin-inline-end: .5rem; }
 
 .languages-section .languages-list {
   font-size: var(--step-1);
