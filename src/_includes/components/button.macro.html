@@ -1,5 +1,5 @@
-{%- macro button(el="a", params) -%}
-    {%- if params.el == "button" -%}
+{%- macro button(behavior="link", params) -%}
+    {%- if params.behavior == "action" -%}
     <button type="button" class="c-btn
                 {% if params.type == 'primary' %} c-btn--primary {%- endif -%}
                 {% if params.type == 'secondary' %} c-btn--secondary {%- endif -%}

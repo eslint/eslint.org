@@ -30,7 +30,7 @@ tags: ['nav']
 
 
 <div class="content-container">
-    {{ button({ el: "button", type: "primary" }) }}
+    {{ button({ behavior: "action", type: "primary" }) }}
     {{ button({ type: "secondary", text: "Secondary Button", url:"#" }) }}
     {{ button({ type: "ghost", text: "Ghost Button", url:"#" }) }}
 </div>
