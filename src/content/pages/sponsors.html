@@ -24,9 +24,9 @@ hook: "sponsors-page"
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4">Platinum Sponsors</h2>
-                <p>
-                    Become a platinum sponsor with a monthly donation of $2000 (providing 40 hours of maintenance and development) and get 2 hours of dedicated support (remote support available through chat or screen-sharing) per month as well as your Open Collective avatar image (large) on our README on GitHub and on the home page of eslint.org. We will also tweet a thank you from our Twitter account (over 20,000 followers). Please contact the ESLint team to schedule support sessions.
-                </p>
+            <p>
+                Become a platinum sponsor with a monthly donation of $2000 (providing 40 hours of maintenance and development) and get 2 hours of dedicated support (remote support available through chat or screen-sharing) per month as well as your Open Collective avatar image (large) on our README on GitHub and on the home page of eslint.org. We will also tweet a thank you from our Twitter account (over 20,000 followers). Please contact the ESLint team to schedule support sessions.
+            </p>
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--platinum">
@@ -43,9 +43,9 @@ hook: "sponsors-page"
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4">Gold Sponsors</h2>
-                <p>
-                    Become a gold sponsor with a monthly donation of $1000 (providing 20 hours of maintenance and development) and get your Open Collective avatar image (large) on our README on GitHub and the front page of eslint.org. We will also tweet a thank you from our Twitter account (over 20,000 followers).
-                </p>
+            <p>
+                Become a gold sponsor with a monthly donation of $1000 (providing 20 hours of maintenance and development) and get your Open Collective avatar image (large) on our README on GitHub and the front page of eslint.org. We will also tweet a thank you from our Twitter account (over 20,000 followers).
+            </p>
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--gold">
@@ -62,9 +62,9 @@ hook: "sponsors-page"
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4">Silver Sponsors</h2>
-                <p>
-                    Become a silver sponsor with a monthly donation of $500 (providing 10 hours of maintenance and development) and get your Open Collective avatar image on our README on GitHub and the front page of eslint.org.
-                </p>
+            <p>
+                Become a silver sponsor with a monthly donation of $500 (providing 10 hours of maintenance and development) and get your Open Collective avatar image on our README on GitHub and the front page of eslint.org.
+            </p>
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--silver">
@@ -81,9 +81,9 @@ hook: "sponsors-page"
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4">Bronze Sponsors</h2>
-                <p>
-                    Become a bronze sponsor with a monthly donation of $20 (providing four hours of maintenance and development) and get your Open Collective avatar image on our README on GitHub and the front page of eslint.org.
-                </p>
+            <p>
+                Become a bronze sponsor with a monthly donation of $20 (providing four hours of maintenance and development) and get your Open Collective avatar image on our README on GitHub and the front page of eslint.org.
+            </p>
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--bronze">
@@ -100,9 +100,9 @@ hook: "sponsors-page"
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4">Technology Sponsors</h2>
-                <p>
-                    Technology sponsors allow us to use their products and services for free as part of a contribution to the open source ecosystem and our work.
-                </p>
+            <p>
+                Technology sponsors allow us to use their products and services for free as part of a contribution to the open source ecosystem and our work.
+            </p>
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--technology">
@@ -130,24 +130,24 @@ hook: "sponsors-page"
         </div>
         <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
 
-                {% for donation in donations | limitTo(50) %}
-                <li class="donations-item">
-                    {% set donation_image = donation.image %}
-                    {% set donation_name = donation.name %}
-                    {% set donation_type = donation.type %}
-                    {% set donation_amount = donation.amount | dollars %}
-                    {% set donation_date = donation.date | readableDateFromISO %}
+            {% for donation in donations | limitTo(50) %}
+            <li class="donations-item">
+                {% set donation_image = donation.image %}
+                {% set donation_name = donation.name %}
+                {% set donation_type = donation.type %}
+                {% set donation_amount = donation.amount | dollars %}
+                {% set donation_date = donation.date | readableDateFromISO %}
 
-                    {{ donationItem({
+                {{ donationItem({
                         image: donation_image,
                         name: donation_name,
                         type: donation_type,
                         amount: donation_amount,
                         date: donation_date
                     }) }}
-                </li>
-                {% endfor %}
-            </ul>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </section>
 
