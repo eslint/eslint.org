@@ -12,6 +12,7 @@ button {
   background: none;
   border: none;
   font: inherit;
+  font-family: var(--text-font);
   cursor: pointer;
   line-height: inherit;
   font-weight: 500;
