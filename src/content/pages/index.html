@@ -267,7 +267,6 @@ eleventyExcludeFromCollections: true
 
         copyBtn.onclick = () => {
             copyText.select();
-            // document.execCommand('copy');
             navigator.clipboard.writeText(copyText.value);
             announcement_region.innerHTML = "Copied to clipboard.";
             this.focus();
@@ -281,5 +280,3 @@ eleventyExcludeFromCollections: true
         }
     })();
 </script>
-<script src="../../assets/js/hammer.min.js"></script>
-<script src="../../assets/js/slider.js"></script>

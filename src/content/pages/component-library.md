@@ -1,6 +1,7 @@
 ---
 layout: main.html
 permalink: /component-library/
+hook: "component-library"
 ---
 
 {% from 'components/hero.html' import hero %}
@@ -199,6 +200,3 @@ permalink: /component-library/
         }) }}
     </div>
 </div>
-
-<script src="{{ '/assets/js/tabs.js' | url }}"></script>
-<script src="{{ '/assets/js/accordion.js' | url }}"></script>

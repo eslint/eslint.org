@@ -335,15 +335,3 @@ hook: "donate-page"
 </section>
 
 {% include "components/faqs.html" %}
-
-
-
-
-
-
-
-
-
-
-
-<script src="{{ '/assets/js/accordion.js' | url }}"></script>
