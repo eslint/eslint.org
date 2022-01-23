@@ -6,7 +6,7 @@ hook: "component-library"
 
 {% from 'components/hero.html' import hero %}
 {% from 'components/related-rules.macro.html' import related_rules %}
-{% from 'components/person.macro.html' import member, contributor, author %}
+{% from 'components/person.macro.html' import member, contributor, post_author %}
 {% from 'components/button.macro.html' import button %}
 {% from 'components/alert.macro.html' import warning, tip, important %}
 {% from 'components/rule-categories.macro.html' import ruleCategories, recommended, fixable, hasSuggestions %}
@@ -30,7 +30,7 @@ hook: "component-library"
         }) }}
     </div>
     <div class="span-7-12">
-        {{ author({
+        {{ post_author({
                 name: "Name LastName",
                 title: "Creator of a popular framework",
                 handle: "myHandle",

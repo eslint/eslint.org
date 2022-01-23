@@ -56,7 +56,7 @@
 {%- endmacro -%}
 
 <!-- post author -->
-{%- macro author(params) -%}
+{%- macro post_author(params) -%}
 <div class="person person--author">
     <div class="person--author__details">
         <img class="person__photo person__photo--small" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="48" height="48">

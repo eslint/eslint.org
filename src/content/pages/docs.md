@@ -27,7 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolore natus fugit
 ## Related rules 
 
 {{ related_rules({
-        items: [
+        rules: [
             {
                 url: "#",
                 rule_name: "no-extra-semi"
