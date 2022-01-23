@@ -1224,6 +1224,25 @@ ul.tag-list {
     justify-content: center;
     border-radius: var(--border-radius); }
 
+pre[class^="language-"] {
+  position: relative; }
+
+.c-btn--playground {
+  color: var(--link-color);
+  text-decoration: none;
+  background-color: var(--docs-lightest-background-color);
+  font-weight: 500;
+  font-family: var(--text-font);
+  font-size: var(--step-0);
+  display: inline-flex;
+  padding: .75rem 1.125rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem; }
+
 button {
   border: none;
   background: none;

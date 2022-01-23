@@ -90,6 +90,19 @@
     }
 })();
 
+// add "Open in Playground" button to code blocks
+(function() {
+    let blocks = document.querySelectorAll('pre[class*="language-"]');
+    console.log(blocks);
+    blocks.forEach(function(block) {
+        let button = document.createElement("a");
+            button.classList.add('c-btn--playground');
+            button.setAttribute("href", "#");
+            button.innerText = "Open in Playground";
+        block.appendChild(button);
+    });
+})();
+
 
 
 // add utilities
