@@ -50,6 +50,7 @@ permalink: /component-library/
         }
     }) }}
 </div>
+
 <div class="content-container grid">
     <div class="span-7-12">
         {{ button({ behavior: "action", type: "primary" }) }}
@@ -62,6 +63,7 @@ permalink: /component-library/
         {{ button({ type: "ghost", text: "Ghost Button", url:"#" }) }}
     </div>
 </div>
+
 <div class="content-container grid">
     <div class="span-7-12">
         {% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript" %}
@@ -70,6 +72,7 @@ permalink: /component-library/
         {% link "https://humanwhocodes.com/blog/2021/12/making-open-source-project-sponsor-ready-accepting-sponsorships/" %}
     </div>
 </div>
+
 <div class="content-container grid">
     <div class="span-7-12">{% include 'components/code-tabs.html' %}</div>
 </div>
@@ -94,6 +97,7 @@ permalink: /component-library/
         }) }}
     </div>
 </div>
+
 <div class="content-container grid">
     <div class="span-7-12">
         {{ ruleCategories({
@@ -108,6 +112,7 @@ permalink: /component-library/
         {{ hasSuggestions() }}
     </div>
 </div>
+
 <div class="content-container grid">
     <div class="span-7-12">
         {{ rule({
@@ -134,6 +139,7 @@ permalink: /component-library/
         }) }}
     </div>
 </div>
+
 <div class="content-container grid">
     <div class="span-7-12">
         {{ related_rules({
@@ -154,6 +160,7 @@ permalink: /component-library/
         }) }}
     </div>
 </div>
+
 <div class="content-container grid">
     <div class="span-7-12">{% include 'partials/branding-logo.html' %}</div>
 </div>
@@ -194,4 +201,4 @@ permalink: /component-library/
 </div>
 
 <script src="{{ '/assets/js/tabs.js' | url }}"></script>
-<script src="{{ 'assets/js/accordion.js' | url }}"></script>
+<script src="{{ '/assets/js/accordion.js' | url }}"></script>
