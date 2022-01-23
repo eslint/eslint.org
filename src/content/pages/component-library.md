@@ -4,6 +4,8 @@ permalink: /component-library/
 hook: "component-library"
 ---
 
+{% from 'components/_component.njk' import component %}
+
 {% from 'components/hero.html' import hero %}
 {% from 'components/related-rules.macro.html' import related_rules %}
 {% from 'components/person.macro.html' import member, contributor, post_author %}
@@ -12,6 +14,11 @@ hook: "component-library"
 {% from 'components/rule-categories.macro.html' import ruleCategories, recommended, fixable, hasSuggestions %}
 {% from 'components/rule.macro.html' import rule %}
 {% from 'components/card.macro.html' import card %}
+
+{{ component('button', {
+    behavior: "action", 
+    type: "primary"
+}) }}
 
 <div class="content-container grid">
     <div class="span-7-12">
