@@ -5,7 +5,7 @@ permalink: /docs/
 hook: "docs-page"
 ---
 
-{%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
+{%- from 'components/rule-categories.macro.html' import ruleCategories, extend, fix, suggestions %}
 {%- from 'components/rule.macro.html' import rule %}
 {%- from 'components/related-rules.macro.html' import related_rules %}
 # Docs

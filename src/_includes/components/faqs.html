@@ -7,13 +7,7 @@
             </p>
         </div>
         <div class="span-6-12">
-            <div data-accordion class="c-accordion">
-                {%- for item in faqs.items -%}
-                <h3 data-accordion-heading class="c-accordion__heading">{{ item.q }}</h3>
-                <div data-accordion-panel class="c-accordion__panel">{{ item.a | safe }}
-                </div>
-                {% endfor -%}
-            </div>
+            {% include 'components/accordion.html' %}
         </div>
     </div>
 </section>

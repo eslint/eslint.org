@@ -334,7 +334,7 @@ hook: "donate-page"
     </div>
 </section>
 
-{% include "components/faqs-accordion.html" %}
+{% include "components/faqs.html" %}
 
 
 

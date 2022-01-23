@@ -2429,7 +2429,7 @@ button.c-share__btn {
       grid-template-columns: 1fr 2fr;
       grid-gap: 3rem; } }
 
-.person--author__info {
+.person--author__details {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: start;
