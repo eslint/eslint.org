@@ -1216,8 +1216,9 @@ ul.tag-list {
 pre[class^="language-"] {
   position: relative; }
 
-.c-btn--playground {
+.c-btn.c-btn--playground {
   position: absolute;
+  font-size: var(--step--1);
   bottom: .5rem;
   right: .5rem;
   offset-blcok-end: .5rem;
@@ -1243,7 +1244,7 @@ button {
   font-weight: 500;
   font-size: var(--step-0);
   display: inline-flex;
-  padding: .75rem 1.125rem;
+  padding: .75em 1.125em;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
@@ -1253,7 +1254,7 @@ button {
 
 .c-btn--large {
   font-size: 1.125rem;
-  padding: 1rem 1.75rem; }
+  padding: .88em 1.5em; }
 
 .c-btn--block {
   display: flex;
@@ -2965,7 +2966,8 @@ a.rule__name {
     transform: rotate(-41deg); }
 
 .c-tabs pre {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-block-start: 0; }
 
 .js-tabs .c-tabs__tablist {
   display: flex;
@@ -2989,16 +2991,19 @@ a.rule__name {
   .c-tabs__tab:hover {
     background-color: var(--secondary-button-hover-color); }
   .c-tabs__tab[aria-selected="true"] {
-    color: var(--link-color);
-    background-color: var(--docs-lightest-background-color); }
+    color: var(--link-color); }
 
 .c-tabs__tabpanel {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-block-end: 2rem;
+  background-color: var(--color-neutral-50); }
   .js-tabs .c-tabs__tabpanel {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-block-end: 0; }
 
 .c-tabs__tabpanel__title {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem; }
 
 .js-tabs .c-tabs__tabpanel__title {
   display: none; }

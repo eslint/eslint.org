@@ -1,6 +1,7 @@
 .c-tabs {
     pre {
         margin-top: 0;
+        margin-block-start: 0;
     }
 }
 
@@ -37,21 +38,25 @@
 
     &[aria-selected="true"] {
         color: var(--link-color);
-        background-color: var(--docs-lightest-background-color);
+        // background-color: var(--docs-lightest-background-color);
     }
 }
 
 .c-tabs__tabpanel {
     margin-bottom: 2rem;
+    margin-block-end: 2rem;
+    background-color: var(--color-neutral-50);
 
     .js-tabs & {
         margin-bottom: 0;
+        margin-block-end: 0;
     }
 }
 
 
 .c-tabs__tabpanel__title {
     margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
 }
 
 // when the js is enabled, the tabpanels are labelled by their tabs

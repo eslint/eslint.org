@@ -87,8 +87,9 @@ pre[class^="language-"] {
     position: relative;
 }
 
-.c-btn--playground {
+.c-btn.c-btn--playground {
     position: absolute;
+    font-size: var(--step--1);
     bottom: .5rem;
     right: .5rem;
     offset-blcok-end: .5rem;
