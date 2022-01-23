@@ -13,13 +13,13 @@
     </div>
     <div class="rule__categories">
         <span class="visually-hidden">Categories:</span>
-        <p class="rule__categories__type" {% if params.categories.extends == false %}aria-hidden="true"{%- endif -%}>
+        <p class="rule__categories__type" {% if params.categories.recommended == false %}aria-hidden="true"{%- endif -%}>
             ✅ <span class="visually-hidden">Extends</span>
         </p>
-        <p class="rule__categories__type" {% if params.categories.fix == false %}aria-hidden="true"{%- endif -%}>
+        <p class="rule__categories__type" {% if params.categories.fixable == false %}aria-hidden="true"{%- endif -%}>
             🛠 <span class="visually-hidden">Fix</span>
         </p>
-        <p class="rule__categories__type" {% if params.categories.suggestions == false %}aria-hidden="true"{%- endif -%}>
+        <p class="rule__categories__type" {% if params.categories.hasSuggestions == false %}aria-hidden="true"{%- endif -%}>
             💡 <span class="visually-hidden">Suggestions</span>
         </p>
     </div>
