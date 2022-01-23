@@ -35,7 +35,6 @@ h6 {
     .docs-main & {
         margin-top: 3rem;
         margin-bottom: 1.5rem;
-
         margin-block-start: 3rem;
         margin-block-end: 1.5rem;
 
@@ -54,12 +53,12 @@ h6,
 
 h5,
 .h5 {
-    font-size: var(--step-1); // 20
+    font-size: var(--step-1);
 }
 
 h4,
 .h4 {
-    font-size: var(--step-2); // 24
+    font-size: var(--step-2);
 }
 
 h3,

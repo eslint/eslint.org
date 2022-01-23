@@ -85,6 +85,14 @@
 
 pre[class^="language-"] {
     position: relative;
+
+    &[data-correct] {
+
+    }
+
+    &[data-incorrect] {
+
+    }
 }
 
 .c-btn.c-btn--playground {

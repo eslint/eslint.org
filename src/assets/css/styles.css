@@ -225,34 +225,33 @@ html[data-theme="dark"] {
   --step-6: calc(((var(--f-6-min) / 16) * 1rem) + (var(--f-6-max) - var(--f-6-min)) * var(--fluid-bp)); }
 
 :root {
-  --mono-font: "Space Mono",
-        monospace;
+  --mono-font: "Space Mono", monospace;
   --text-font: "Inter",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol";
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            "Apple Color Emoji",
+            "Segoe UI Emoji",
+            "Segoe UI Symbol";
   --display-font: "Space Grotesk",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol"; }
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            "Apple Color Emoji",
+            "Segoe UI Emoji",
+            "Segoe UI Symbol"; }
 
 :root {
   --shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.1),
-        0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+                 0px 4px 6px -2px rgba(16, 24, 40, 0.05);
   --shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
   --border-radius: .5rem; }
 
@@ -788,17 +787,6 @@ code .highlight-line:before {
       .site-header .content-container {
         justify-content: space-between; } }
 
-.site-header .docs-wrapper {
-  display: grid;
-  align-items: start;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-block-start: 0;
-  padding-block-end: 0; }
-  @media all and (min-width: 1024px) {
-    .site-header .docs-wrapper {
-      justify-content: space-between; } }
-
 .logo-link {
   display: inline-flex;
   justify-self: start;
@@ -897,9 +885,6 @@ code .highlight-line:before {
     .footer-middle {
       flex-direction: row;
       justify-content: space-between; } }
-
-.language-switcher {
-  display: inline-flex; }
 
 .docs-footer {
   display: flex;
@@ -2861,6 +2846,9 @@ a.rule__name {
   min-width: 15rem;
   flex: 1 0 15rem; }
 
+.language-switcher {
+  display: inline-flex; }
+
 .docs-index a {
   border-radius: var(--border-radius);
   text-decoration: none;
@@ -3152,7 +3140,6 @@ a.rule__name {
     left: 142px;
     font-size: 8px; } }
 
-/* layout grid */
 @media all and (min-width: 1023px) {
   .grid {
     display: grid;
@@ -3160,8 +3147,6 @@ a.rule__name {
     grid-gap: 2rem;
     align-items: start; } }
 
-/* Visually hide text while keeping it accessible */
-/* Support includes IE9+ */
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
@@ -3169,8 +3154,7 @@ a.rule__name {
   overflow: hidden;
   position: absolute;
   width: 1px;
-  white-space: nowrap;
-  /* Why we need this rule: https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe */ }
+  white-space: nowrap; }
 
 [hidden] {
   display: none !important; }
