@@ -1,6 +1,6 @@
-{% -macro related_rules(params) -%}
+{%- macro related_rules(params) -%}
 <ul class="related-rules__list" role="list">
-    {%- for item in params.items -%}
+    {%- for item in params.rules -%}
     <li class="related-rules__list__item">
         <a href="{{ item.url }}">
             <span>{{ item.rule_name }}</span>
