@@ -16,11 +16,15 @@ hook: "component-library"
 {% from 'components/card.macro.html' import card %}
 
 {{ component('button', {
-    behavior: "action", 
+    behavior: "action",
     type: "primary"
 }) }}
 
 <div class="content-container grid">
+    <div class="span-1-6">
+        <h2>Person</h2>
+        There are three variations of a "person" component on the site.
+    </div>
     <div class="span-7-12">
         {{ member({
                 name: "Name LastName",
@@ -36,7 +40,7 @@ hook: "component-library"
                 handle: "myHandle"
         }) }}
     </div>
-    <div class="span-7-12">
+    <div class="span-6-12">
         {{ post_author({
                 name: "Name LastName",
                 title: "Creator of a popular framework",
@@ -60,6 +64,10 @@ hook: "component-library"
 </div>
 
 <div class="content-container grid">
+    <div class="span-1-6">
+        <h2>Buttons</h2>
+        There are three types of buttons: primary, secondary, and "ghost". To render the proper element, a `behavior` key is provided, which takes either a `action` or a `link` value. `link` is the default, which will render an <code>&lt;a&gt;</code> tag that looks like a button. The `action` behavior implies that it is a button _that performs an action_ and is therefore rendered as a `&lt;button type="button"&gt;`.
+    </div>
     <div class="span-7-12">
         {{ button({ behavior: "action", type: "primary" }) }}
         {{ button({ behavior: "action", text: "I perform an action", type: "secondary" }) }}
@@ -73,6 +81,10 @@ hook: "component-library"
 </div>
 
 <div class="content-container grid">
+    <div class="span-1-6">
+        <h2>Link Card View</h2>
+        Links can be rendered as cards by using the `link` shortcode. The only required parameter is the URL you wish to scrape for metadata.
+    </div>
     <div class="span-7-12">
         {% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript" %}
         {% link "https://github.com/microlinkhq/metascraper" %}
@@ -86,6 +98,10 @@ hook: "component-library"
 </div>
 
 <div class="content-container grid">
+    <div class="span-1-6">
+        <h2>Accordion</h2>
+        The accordion is a partial that will pull data (Qs and As) from a global data file.
+    </div>
     <div class="span-7-12">{% include 'components/accordion.html' %}</div>
 </div>
 
