@@ -1,5 +1,10 @@
 .docs-toc {
     margin: 2rem 0;
+
+
+    @media all and (max-width: 800px) {
+        display: none;
+    }
 }
 
 .c-toc {

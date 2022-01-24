@@ -1197,8 +1197,7 @@ ul.tag-list {
   border-top: 1px solid var(--divider-color);
   padding-top: 1.5rem;
   padding-block-start: 1.5rem;
-  margin-top: 3rem;
-  margin-block-start: 3rem; }
+  margin: 3rem 0; }
 
 pre[class^="language-"] {
   position: relative; }
@@ -1562,6 +1561,9 @@ a.c-btn {
 
 .docs-toc {
   margin: 2rem 0; }
+  @media all and (max-width: 800px) {
+    .docs-toc {
+      display: none; } }
 
 .c-toc ol {
   margin: 0; }
