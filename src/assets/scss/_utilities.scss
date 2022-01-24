@@ -1,4 +1,3 @@
-/* layout grid */
 .grid {
     @media all and (min-width: 1023px) {
         display: grid;
@@ -7,9 +6,6 @@
         align-items: start;
     }
 }
-
-/* Visually hide text while keeping it accessible */
-/* Support includes IE9+ */
 
 .visually-hidden {
     clip: rect(0 0 0 0);
@@ -20,7 +16,6 @@
     position: absolute;
     width: 1px;
     white-space: nowrap;
-    /* Why we need this rule: https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe */
 }
 
 [hidden] {

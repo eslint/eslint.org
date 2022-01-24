@@ -2,10 +2,9 @@
 layout: doc.html
 title: Docs
 permalink: /docs/
-hook: "docs-page"
 ---
 
-{%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
+{%- from 'components/rule-categories.macro.html' import ruleCategories, recommended, fixable, hasSuggestions %}
 {%- from 'components/rule.macro.html' import rule %}
 {%- from 'components/related-rules.macro.html' import related_rules %}
 # Docs
@@ -28,7 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolore natus fugit
 ## Related rules 
 
 {{ related_rules({
-        items: [
+        rules: [
             {
                 url: "#",
                 rule_name: "no-extra-semi"

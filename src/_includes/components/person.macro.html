@@ -55,24 +55,25 @@
 </div>
 {%- endmacro -%}
 
-{%- macro postAuthor(params) -%}
+<!-- post author -->
+{%- macro post_author(params) -%}
 <div class="person person--author">
-    <div class="person--author__info">
+    <div class="person--author__details">
         <img class="person__photo person__photo--small" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="48" height="48">
         <div class="person__details">
             <div class="person__name">
                 {{ params.name }}
             </div>
-            {% if params.title %}
+            {%- if params.title -%}
             <span class="person__title"> {{ params.title }} </span>
-            {% else %}
+            {%- else -%}
             <a href="https://github.com/{{ params.handle}}" class="person__title">
                 @{{ params.handle }}
             </a>
-            {% endif %}
+            {%- endif -%}
             <div class="person__social-links">
                 <ul>
-                    {% if params.twitter %}
+                    {%- if params.twitter -%}
                     <li>
                         <a href="https://twitter.com/{{ params.twitter }}">
                             <svg width="20" height="20" viewBox="0 0 24 25" role="img" aria-label="Twitter">
@@ -80,8 +81,8 @@
                             </svg>
                         </a>
                     </li>
-                    {% endif %}
-                    {% if params.github %}
+                    {%- endif -%}
+                    {%- if params.github -%}
                     <li>
                         <a href="https://github.com/{{ params.github }}">
                             <svg width="20" height="20" viewBox="0 0 25 24" role="img" aria-label="Github">
@@ -89,13 +90,14 @@
                             </svg>
                         </a>
                     </li>
-                    {% endif %}
+                    {%- endif -%}
                 </ul>
             </div>
         </div>
     </div>
     <div class="person__bio">
-        bio from partial here
+        <!-- bio from partial here; remove line below when the partial include is added -->
+       {{ params.bio }}
     </div>
 </div>
 {%- endmacro -%}

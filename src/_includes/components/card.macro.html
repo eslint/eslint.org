@@ -1,5 +1,4 @@
-
-{% macro card(params) %}
+{%- macro card(params) -%}
 <article class='card {% if params.featured == "true" %} card--featured {% endif %}'>
     {%- if params.image -%}
         {% set imageName =  params.image %}
@@ -44,4 +43,4 @@
         </div>
     </div>
 </article>
-{% endmacro %}
+{%- endmacro -%}

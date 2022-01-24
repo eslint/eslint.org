@@ -1,6 +1,9 @@
 @charset "UTF-8";
 .docs-toc {
   margin: 2rem 0; }
+  @media all and (max-width: 800px) {
+    .docs-toc {
+      display: none; } }
 
 .c-toc ol {
   margin: 0; }

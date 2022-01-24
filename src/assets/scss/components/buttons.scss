@@ -13,12 +13,13 @@ button {
     background: none;
     border: none;
     font: inherit;
+    font-family: var(--text-font);
     cursor: pointer;
     line-height: inherit;
     font-weight: 500;
     font-size: var(--step-0);
     display: inline-flex;
-    padding: .75rem 1.125rem;
+    padding: .75em 1.125em;
     align-items: center;
     justify-content: center;
     border-radius: var(--border-radius);
@@ -33,7 +34,7 @@ button {
 
 .c-btn--large {
     font-size: 1.125rem;
-    padding: 1rem 1.75rem;
+    padding: .88em 1.5em;
 }
 
 .c-btn--block {

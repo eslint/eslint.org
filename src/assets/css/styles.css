@@ -65,7 +65,21 @@
   --secondary-button-text-color: var(--color-brand);
   --ghost-button-background-color: var(--color-primary-50);
   --ghost-button-text-color: var(--color-brand);
-  --color-brand: var(--color-primary-800); }
+  --color-brand: var(--color-primary-800);
+  --body-background-color: #fff;
+  --body-text-color: var(--color-neutral-500);
+  --headings-color: var(--color-neutral-900);
+  --border-color: var(--color-neutral-300);
+  --divider-color: var(--color-neutral-200);
+  --icon-color: var(--color-neutral-400);
+  --dark-icon-color: var(--color-neutral-500);
+  --link-color: var(--color-primary-800);
+  --lighter-background-color: var(--color-neutral-100);
+  --lightest-background-color: var(--color-neutral-50);
+  --docs-lightest-background-color: var(--color-primary-50);
+  --hero-background-color: var(--color-neutral-25);
+  --footer-background-color: var(--color-neutral-25);
+  --outline-color: var(--color-brand); }
 
 @media (prefers-color-scheme: dark) {
   --secondary-button-background-color: var(--color-neutral-700);
@@ -211,34 +225,33 @@ html[data-theme="dark"] {
   --step-6: calc(((var(--f-6-min) / 16) * 1rem) + (var(--f-6-max) - var(--f-6-min)) * var(--fluid-bp)); }
 
 :root {
-  --mono-font: "Space Mono",
-        monospace;
+  --mono-font: "Space Mono", monospace;
   --text-font: "Inter",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol";
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            "Apple Color Emoji",
+            "Segoe UI Emoji",
+            "Segoe UI Symbol";
   --display-font: "Space Grotesk",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol"; }
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            "Apple Color Emoji",
+            "Segoe UI Emoji",
+            "Segoe UI Symbol"; }
 
 :root {
   --shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.1),
-        0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+                 0px 4px 6px -2px rgba(16, 24, 40, 0.05);
   --shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
   --border-radius: .5rem; }
 
@@ -774,17 +787,6 @@ code .highlight-line:before {
       .site-header .content-container {
         justify-content: space-between; } }
 
-.site-header .docs-wrapper {
-  display: grid;
-  align-items: start;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-block-start: 0;
-  padding-block-end: 0; }
-  @media all and (min-width: 1024px) {
-    .site-header .docs-wrapper {
-      justify-content: space-between; } }
-
 .logo-link {
   display: inline-flex;
   justify-self: start;
@@ -883,9 +885,6 @@ code .highlight-line:before {
     .footer-middle {
       flex-direction: row;
       justify-content: space-between; } }
-
-.language-switcher {
-  display: inline-flex; }
 
 .docs-footer {
   display: flex;
@@ -1148,14 +1147,15 @@ ul.tag-list {
   @media all and (min-width: 1023px) {
     .docs-wrapper {
       display: grid;
-      grid-template-columns: minmax(300px, 1fr) minmax(0, 3fr);
-      grid-gap: 2rem;
+      grid-template-columns: minmax(250px, 1fr) minmax(0, 3.5fr);
+      grid-gap: 0rem;
       align-items: stretch; } }
 
 .docs-left-sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   padding: calc(1rem + 1vw) 0;
+  font-size: .875rem;
   display: grid;
   grid-auto-rows: max-content;
   align-items: start; }
@@ -1167,17 +1167,17 @@ ul.tag-list {
       padding-inline-end: calc(1rem + 1vw); } }
 
 .docs-content {
-  padding: calc(2rem + 1vw) 0;
   grid-column: 2 / 3; }
   @media all and (min-width: 800px) {
     .docs-content {
       display: grid;
       grid-template-columns: minmax(0, 3fr) minmax(230px, 1fr);
-      grid-gap: 4rem; } }
+      grid-gap: 2rem; } }
+  @media all and (min-width: 1023px) {
+    .docs-content {
+      padding: calc(2rem + 1vw) 0; } }
 
 .docs-main {
-  padding-top: var(--space-l-xl);
-  padding-block-start: var(--space-l-xl);
   flex: 1 1 65ch; }
   @media all and (min-width: 1023px) {
     .docs-main {
@@ -1190,25 +1190,25 @@ ul.tag-list {
   flex: 1 1 200px; }
 
 .docs-toc {
-  flex: 1; }
+  flex: 1;
+  align-self: center; }
 
 .docs-edit-link {
   border-top: 1px solid var(--divider-color);
   padding-top: 1.5rem;
   padding-block-start: 1.5rem;
-  margin-top: 3rem;
-  margin-block-start: 3rem; }
-  .docs-edit-link a {
-    color: var(--link-color);
-    text-decoration: none;
-    background-color: var(--docs-lightest-background-color);
-    font-weight: 500;
-    font-size: var(--step-0);
-    display: inline-flex;
-    padding: .75rem 1.125rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--border-radius); }
+  margin: 3rem 0; }
+
+pre[class^="language-"] {
+  position: relative; }
+
+.c-btn.c-btn--playground {
+  position: absolute;
+  font-size: var(--step--1);
+  bottom: .5rem;
+  right: .5rem;
+  offset-blcok-end: .5rem;
+  offset-inline-end: .5rem; }
 
 button {
   border: none;
@@ -1224,12 +1224,13 @@ button {
   background: none;
   border: none;
   font: inherit;
+  font-family: var(--text-font);
   cursor: pointer;
   line-height: inherit;
   font-weight: 500;
   font-size: var(--step-0);
   display: inline-flex;
-  padding: .75rem 1.125rem;
+  padding: .75em 1.125em;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
@@ -1239,7 +1240,7 @@ button {
 
 .c-btn--large {
   font-size: 1.125rem;
-  padding: 1rem 1.75rem; }
+  padding: .88em 1.5em; }
 
 .c-btn--block {
   display: flex;
@@ -1493,6 +1494,12 @@ a.c-btn {
     text-decoration: none;
     font-weight: 500; }
 
+@media all and (min-width: 1023px) {
+  .docs-nav-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
 .docs-nav-panel[data-open="false"] {
   display: none; }
 
@@ -1554,6 +1561,9 @@ a.c-btn {
 
 .docs-toc {
   margin: 2rem 0; }
+  @media all and (max-width: 800px) {
+    .docs-toc {
+      display: none; } }
 
 .c-toc ol {
   margin: 0; }
@@ -1665,6 +1675,7 @@ nav.c-pagination {
 .c-accordion__heading {
   font-size: var(--step-1);
   font-size: 1.125rem;
+  font-weight: 600;
   font-family: var(--text-font);
   color: var(--headings-color); }
   .accordion-js .c-accordion__heading {
@@ -2408,7 +2419,7 @@ button.c-share__btn {
       grid-template-columns: 1fr 2fr;
       grid-gap: 3rem; } }
 
-.person--author__info {
+.person--author__details {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: start;
@@ -2594,6 +2605,7 @@ a.rule__name {
   color: var(--headings-color);
   padding: .625rem;
   display: inline-flex;
+  gap: .5rem;
   align-items: center;
   border: 1px solid var(--divider-color);
   border-radius: var(--border-radius);
@@ -2629,7 +2641,9 @@ a.rule__name {
       color: var(--link-color); }
 
 .languages-section .flag {
-  font-size: 2em; }
+  font-size: 2em;
+  margin-right: .5rem;
+  margin-inline-end: .5rem; }
 
 .languages-section .languages-list {
   font-size: var(--step-1);
@@ -2836,6 +2850,9 @@ a.rule__name {
   min-width: 15rem;
   flex: 1 0 15rem; }
 
+.language-switcher {
+  display: inline-flex; }
+
 .docs-index a {
   border-radius: var(--border-radius);
   text-decoration: none;
@@ -2941,7 +2958,8 @@ a.rule__name {
     transform: rotate(-41deg); }
 
 .c-tabs pre {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-block-start: 0; }
 
 .js-tabs .c-tabs__tablist {
   display: flex;
@@ -2965,16 +2983,19 @@ a.rule__name {
   .c-tabs__tab:hover {
     background-color: var(--secondary-button-hover-color); }
   .c-tabs__tab[aria-selected="true"] {
-    color: var(--link-color);
-    background-color: var(--docs-lightest-background-color); }
+    color: var(--link-color); }
 
 .c-tabs__tabpanel {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-block-end: 2rem;
+  background-color: var(--color-neutral-50); }
   .js-tabs .c-tabs__tabpanel {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-block-end: 0; }
 
 .c-tabs__tabpanel__title {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem; }
 
 .js-tabs .c-tabs__tabpanel__title {
   display: none; }
@@ -3123,7 +3144,6 @@ a.rule__name {
     left: 142px;
     font-size: 8px; } }
 
-/* layout grid */
 @media all and (min-width: 1023px) {
   .grid {
     display: grid;
@@ -3131,8 +3151,6 @@ a.rule__name {
     grid-gap: 2rem;
     align-items: start; } }
 
-/* Visually hide text while keeping it accessible */
-/* Support includes IE9+ */
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
@@ -3140,8 +3158,7 @@ a.rule__name {
   overflow: hidden;
   position: absolute;
   width: 1px;
-  white-space: nowrap;
-  /* Why we need this rule: https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe */ }
+  white-space: nowrap; }
 
 [hidden] {
   display: none !important; }

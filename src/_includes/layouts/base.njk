@@ -46,12 +46,11 @@
     <link rel="preload" href="{{ '/assets/fonts/SpaceMono-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 
     <script>
-        (function(){
+        (function() {
             var theme = window.localStorage.getItem("theme");
             if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 document.documentElement.setAttribute('data-theme', 'dark');
-            }
-            else if (theme) document.documentElement.setAttribute('data-theme', theme);
+            } else if (theme) document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
 
@@ -103,7 +102,6 @@
     <script src="{{ '/assets/js/themes.js' | url }}"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | url }}" media="print">
 </head>
 
 <body class="{{ hook }}">
@@ -115,6 +113,17 @@
     <script src="{{ '/assets/js/focus-visible.js' | url }}"></script>
     <script src="{{ '/assets/js/main.js' | url }}"></script>
 
+    {%- if hook == "homepage" -%}
+    <script src="../../assets/js/hammer.min.js"></script>
+    <script src="../../assets/js/slider.js"></script>
+    {%- endif -%}
+
+    {%- if (hook == "donate-page") or (hook == "component-library") -%}
+    <script src="{{ '/assets/js/accordion.js' | url }}"></script>
+    {%- endif -%}
+    {%- if hook == "component-library" -%}
+    <script src="{{ '/assets/js/tabs.js' | url }}"></script>
+    {%- endif -%}
 </body>
 
 </html>

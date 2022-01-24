@@ -1,12 +1,13 @@
 ---
-layout: docs-base.html
+layout: docs-base.njk
 ---
 
-{% include "partials/docs-header.html" %}
-
-{%- from 'components/rule-categories.macro.html' import ruleCategories, extends, fix, suggestions %}
+{%- from 'components/rule-categories.macro.html' import ruleCategories, recommended, fixable, hasSuggestions %}
 {%- from 'components/rule.macro.html' import rule %}
 {%- from 'components/related-rules.macro.html' import related_rules %}
+
+
+{% include "partials/docs-header.html" %}
 
 <div class="docs-wrapper">
     <div class="docs-left-sidebar">
@@ -19,12 +20,11 @@ layout: docs-base.html
 
     <div class="docs-content">
         <main id="main" tabindex="-1" class="docs-main">
-            <!-- <h1>{{ title }}</h1> -->
 
             {{ content | safe }}
 
             <div class="docs-edit-link">
-                <a href="{{ edit_link }}">Edit this page</a>
+                <a href="{{ edit_link }}" class="c-btn c-btn--secondary">Edit this page</a>
             </div>
         </main>
 

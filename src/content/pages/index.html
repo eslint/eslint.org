@@ -37,7 +37,7 @@ eleventyExcludeFromCollections: true
                 </div>
                 <div class="eslint-actions">
                     <a href="/" class="c-btn c-btn--primary c-btn--large">Get Started</a>
-                    <a href="/sponsors.html" class="c-btn c-btn--secondary c-btn--large">Become a sponsor</a>
+                    <a href="/sponsors/" class="c-btn c-btn--secondary c-btn--large">Become a sponsor</a>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@ eleventyExcludeFromCollections: true
     </div>
 </section>
 
-<section aria-labelledby="latest-posts-label">
+<section>
     <div class="content-container divider">
         <header class="section-head center-text">
             <h2 class="section-title h3" id="latest-posts-label">Latest posts</h2>
@@ -251,7 +251,7 @@ eleventyExcludeFromCollections: true
 
 
 <section aria-labelledby="testimonials-section-label">
-    <h2 id="testimonials-section-label" hidden>Testimonials</h2>
+    <h2 class="visually-hidden">Testimonials</h2>
     <div class="content-container">
         {% include 'components/testimonials-slider.html' %}
     </div>
@@ -267,7 +267,6 @@ eleventyExcludeFromCollections: true
 
         copyBtn.onclick = () => {
             copyText.select();
-            // document.execCommand('copy');
             navigator.clipboard.writeText(copyText.value);
             announcement_region.innerHTML = "Copied to clipboard.";
             this.focus();
@@ -281,5 +280,3 @@ eleventyExcludeFromCollections: true
         }
     })();
 </script>
-<script src="../../assets/js/hammer.min.js"></script>
-<script src="../../assets/js/slider.js"></script>

@@ -334,16 +334,4 @@ hook: "donate-page"
     </div>
 </section>
 
-{% include "components/faqs-accordion.html" %}
-
-
-
-
-
-
-
-
-
-
-
-<script src="{{ '/assets/js/accordion.js' | url }}"></script>
+{% include "components/faqs.html" %}
