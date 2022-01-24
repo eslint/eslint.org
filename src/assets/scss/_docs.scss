@@ -50,8 +50,6 @@
     padding-top: var(--space-l-xl);
     padding-block-start: var(--space-l-xl);
 
-    // grid-column: 1 / 2;
-
     flex: 1 1 65ch;
 
     @media all and (min-width: 1023px) {
@@ -61,8 +59,6 @@
 
 
 .docs-right-sidebar {
-    // padding-top: var(--space-l-xl);
-    // padding-block-start: var(--space-l-xl);
     grid-column: 2 / 3;
 
     display: flex;
