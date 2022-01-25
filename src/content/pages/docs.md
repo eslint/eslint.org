@@ -11,6 +11,25 @@ permalink: /docs/
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rerum suscipit sint laborum autem alias esse? Corrupti quidem numquam, atque in fugiat fuga ut, deserunt placeat maxime sapiente debitis voluptates?
 
+Correct usage: 
+
+<div class="code-block" data-correct>
+<pre class="language-js"><code>
+function() {
+    const another = [];
+}
+</code></pre>
+</div>
+
+Incorrect usage:
+
+<div class="code-block" data-incorrect>
+<pre class="language-js"><code>
+    function() {
+        const something = {};
+    }
+</code></pre>
+</div>
 ## heading 2
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius assumenda tenetur, impedit cumque dolore ipsam debitis quas iure enim qui culpa nisi vero, accusantium, optio et adipisci nihil quia!
 
