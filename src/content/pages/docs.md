@@ -14,8 +14,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rerum suscip
 Correct usage: 
 
 <div class="code-block" data-correct>
-<pre class="language-js"><code>
-function() {
+<pre class="language-js">
+<code>function() {
     const another = [];
 }
 </code></pre>
@@ -24,8 +24,8 @@ function() {
 Incorrect usage:
 
 <div class="code-block" data-incorrect>
-<pre class="language-js"><code>
-function() {
+<pre class="language-js">
+<code>function() {
     const something = {};
 }
 </code></pre>
