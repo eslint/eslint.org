@@ -25,9 +25,9 @@ Incorrect usage:
 
 <div class="code-block" data-incorrect>
 <pre class="language-js"><code>
-    function() {
-        const something = {};
-    }
+function() {
+    const something = {};
+}
 </code></pre>
 </div>
 ## heading 2
