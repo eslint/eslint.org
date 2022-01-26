@@ -14,7 +14,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rerum suscip
 
 Correct usage: 
 
-<div class="code-block" data-correct>
+<div data-correct-code>
 
 ```js
 function() {
@@ -26,7 +26,7 @@ function() {
 
 Incorrect usage:
 
-<div class="code-block" data-incorrect>
+<div data-incorrect-code>
 
 ```js
 function() {
