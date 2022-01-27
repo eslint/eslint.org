@@ -112,4 +112,8 @@ div[data-incorrect-code] {
     right: .5rem;
     offset-blcok-end: .5rem;
     offset-inline-end: .5rem;
+
+    @media all and (max-width: 768px) {
+        display: none;
+    }
 }

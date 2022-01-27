@@ -1224,6 +1224,9 @@ div[data-incorrect-code]::after {
   right: .5rem;
   offset-blcok-end: .5rem;
   offset-inline-end: .5rem; }
+  @media all and (max-width: 768px) {
+    .c-btn.c-btn--playground {
+      display: none; } }
 
 button {
   border: none;
@@ -3030,7 +3033,7 @@ a.rule__name {
     background-color: var(--lighter-background-color); }
 
 .resource__image {
-  flex: 1 1 5.5rem;
+  flex: 1 0 5.5rem;
   max-width: 5.5rem;
   overflow: hidden;
   padding: .25rem; }
