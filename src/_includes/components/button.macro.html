@@ -1,3 +1,12 @@
+<!--
+    Parameters:
+        behavior ("link" or "action")
+            if the behavior is "link":
+                url (where the link goes)
+        type (primary, secondary, or ghost)
+        text (the button text)
+-->
+
 {%- macro button(behavior="link", params) -%}
     {%- if params.behavior == "action" -%}
     <button type="button" class="c-btn

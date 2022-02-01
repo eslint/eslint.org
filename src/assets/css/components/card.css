@@ -5,6 +5,8 @@
   flex-direction: column;
   gap: 2rem;
   flex: none; }
+  .card > p {
+    margin: 0; }
 
 .blog-page .card:first-of-type,
 .card--featured {

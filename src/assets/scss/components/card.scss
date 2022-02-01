@@ -5,6 +5,10 @@
     flex-direction: column;
     gap: 2rem;
     flex: none;
+
+    > p {
+        margin: 0;
+    }
 }
 
 .blog-page .card:first-of-type,

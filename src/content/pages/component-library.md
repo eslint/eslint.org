@@ -1,6 +1,6 @@
 ---
-layout: main.html
-permalink: /component-library/
+layout: components.html
+permalink: /component-library/index.html
 hook: "component-library"
 ---
 
@@ -8,47 +8,13 @@ hook: "component-library"
 
 {% from 'components/hero.html' import hero %}
 {% from 'components/related-rules.macro.html' import related_rules %}
-{% from 'components/person.macro.html' import member, contributor, post_author %}
-{% from 'components/button.macro.html' import button %}
+{% from 'components/profile.macro.html' import member, contributor, post_author %}
+
 {% from 'components/alert.macro.html' import warning, tip, important %}
 {% from 'components/rule-categories.macro.html' import ruleCategories, recommended, fixable, hasSuggestions %}
 {% from 'components/rule.macro.html' import rule %}
-{% from 'components/card.macro.html' import card %}
 
-{{ component('button', {
-    behavior: "action",
-    type: "primary"
-}) }}
 
-<div class="content-container grid">
-    <div class="span-1-6">
-        <h2>Person</h2>
-        There are three variations of a "person" component on the site.
-    </div>
-    <div class="span-7-12">
-        {{ member({
-                name: "Name LastName",
-                handle: "myHandle",
-                bio: "This is a short bio",
-                twitter: "twitter",
-                github: "github"
-        }) }}
-    </div>
-    <div class="span-7-12">
-        {{ contributor({
-                name: "Name LastName",
-                handle: "myHandle"
-        }) }}
-    </div>
-    <div class="span-6-12">
-        {{ post_author({
-                name: "Name LastName",
-                title: "Creator of a popular framework",
-                handle: "myHandle",
-                bio:  "This is a longer biography which would typically go at the bottom of a blog post. It is included as a markdown partial, providing more flexibility for the type of content that does in it."
-        }) }}
-    </div>
-</div>
 
 <div class="content-container">
     {{ hero({
@@ -63,22 +29,6 @@ hook: "component-library"
     }) }}
 </div>
 
-<div class="content-container grid">
-    <div class="span-1-6">
-        <h2>Buttons</h2>
-        There are three types of buttons: primary, secondary, and "ghost". To render the proper element, a `behavior` key is provided, which takes either a `action` or a `link` value. `link` is the default, which will render an <code>&lt;a&gt;</code> tag that looks like a button. The `action` behavior implies that it is a button _that performs an action_ and is therefore rendered as a `&lt;button type="button"&gt;`.
-    </div>
-    <div class="span-7-12">
-        {{ button({ behavior: "action", type: "primary" }) }}
-        {{ button({ behavior: "action", text: "I perform an action", type: "secondary" }) }}
-        {{ button({ behavior: "action", text: "I perform an action", type: "ghost" }) }}
-    </div>
-    <div class="span-7-12">
-        {{ button({ type: "primary", text: "I link somewhere", url: "#" }) }}
-        {{ button({ type: "secondary", text: "Secondary Button", url:"#" }) }}
-        {{ button({ type: "ghost", text: "Ghost Button", url:"#" }) }}
-    </div>
-</div>
 
 <div class="content-container grid">
     <div class="span-1-6">
@@ -97,13 +47,6 @@ hook: "component-library"
     <div class="span-7-12">{% include 'components/code-tabs.html' %}</div>
 </div>
 
-<div class="content-container grid">
-    <div class="span-1-6">
-        <h2>Accordion</h2>
-        The accordion is a partial that will pull data (Qs and As) from a global data file.
-    </div>
-    <div class="span-7-12">{% include 'components/accordion.html' %}</div>
-</div>
 
 <div class="content-container grid">
     <div class="span-7-12">
@@ -195,31 +138,4 @@ hook: "component-library"
 
 <div class="content-container grid">
     <div class="span-7-12">{% include 'components/version-switcher.html' %}</div>
-</div>
-
-<div class="content-container grid">
-    <div class="span-1-6">
-        <h2>Card</h2>
-    </div>
-    <div class="span-7-12">
-        {{ card({
-            title: "Just a post",
-            teaser: "This is a short description to demo what the card component will look like in the pattern library.",
-            authorName: "Happy McPerson",
-            category: "Sponsorships",
-            readingTime: "5 min",
-            date: "02-03-2020"
-        }) }}
-    </div>
-    <div class="span-1-12">
-        {{ card({
-            title: "This is a featured post",
-            featured: "true",
-            teaser: "This is a short description to demo what the card component will look like in the pattern library.",
-            authorName: "Happy McPerson",
-            category: "Sponsorships",
-            readingTime: "5 min",
-            date: "02-03-2020"
-        }) }}
-    </div>
 </div>

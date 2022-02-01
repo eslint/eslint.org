@@ -1,22 +1,22 @@
-<!-- default person -->
+<!-- default profile -->
 {%- macro member(params) -%}
-<div class="person person--member">
-    <img class="person__photo person__photo--large" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="80" height="80">
-    <div class="person__details">
-        <div class="person__name">
+<div class="profile profile--member">
+    <img class="profile__photo profile__photo--large" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="80" height="80">
+    <div class="profile__details">
+        <div class="profile__name">
             {{ params.name }}
         </div>
-        <a href="https://github.com/{{ params.handle}}" class="person__handle">
+        <a href="https://github.com/{{ params.handle}}" class="profile__handle">
             @{{ params.handle }}
         </a>
 
-        <div class="person__bio">
+        <div class="profile__bio">
             <p>
                 {{ params.bio | safe }}
             </p>
         </div>
 
-        <div class="person__social-links">
+        <div class="profile__social-links">
             <ul>
                 {% if params.twitter %}
                 <li>
@@ -46,32 +46,32 @@
 
 <!-- has avatar, name, and handle only -->
 {%- macro contributor(params) -%}
-<div class="person person--contributor">
-    <img class="person__photo person__photo--medium" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" width="56" height="56" alt="{{ params.name }}">
-    <div class="person__details">
-        <div class="person__name">{{ params.name }}</div>
-      <a href="https://github.com/{{ params.handle}}" class="person__handle">@{{ params.handle }}</a>
+<div class="profile profile--contributor">
+    <img class="profile__photo profile__photo--medium" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" width="56" height="56" alt="{{ params.name }}">
+    <div class="profile__details">
+        <div class="profile__name">{{ params.name }}</div>
+      <a href="https://github.com/{{ params.handle}}" class="profile__handle">@{{ params.handle }}</a>
     </div>
 </div>
 {%- endmacro -%}
 
 <!-- post author -->
 {%- macro post_author(params) -%}
-<div class="person person--author">
-    <div class="person--author__details">
-        <img class="person__photo person__photo--small" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="48" height="48">
-        <div class="person__details">
-            <div class="person__name">
+<div class="profile profile--author">
+    <div class="profile--author__details">
+        <img class="profile__photo profile__photo--small" src="{% if params.photo %}{{ params.photo }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.name }}" width="48" height="48">
+        <div class="profile__details">
+            <div class="profile__name">
                 {{ params.name }}
             </div>
             {%- if params.title -%}
-            <span class="person__title"> {{ params.title }} </span>
+            <span class="profile__title"> {{ params.title }} </span>
             {%- else -%}
-            <a href="https://github.com/{{ params.handle}}" class="person__title">
+            <a href="https://github.com/{{ params.handle}}" class="profile__title">
                 @{{ params.handle }}
             </a>
             {%- endif -%}
-            <div class="person__social-links">
+            <div class="profile__social-links">
                 <ul>
                     {%- if params.twitter -%}
                     <li>
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="person__bio">
+    <div class="profile__bio">
         <!-- bio from partial here; remove line below when the partial include is added -->
        {{ params.bio }}
     </div>

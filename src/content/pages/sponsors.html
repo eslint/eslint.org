@@ -134,14 +134,12 @@ hook: "sponsors-page"
             <li class="donations-item">
                 {% set donation_image = donation.image %}
                 {% set donation_name = donation.name %}
-                {% set donation_type = donation.type %}
                 {% set donation_amount = donation.amount | dollars %}
                 {% set donation_date = donation.date | readableDateFromISO %}
 
                 {{ donationItem({
                         image: donation_image,
                         name: donation_name,
-                        type: donation_type,
                         amount: donation_amount,
                         date: donation_date
                     }) }}
