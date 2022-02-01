@@ -3,11 +3,11 @@
     display: inline-flex;
     align-items: center;
     gap: .5rem;
+    position: relative;
 }
 
 .theme-switcher__buttons {
     display: flex;
-    gap: .25rem;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     background-color: var(--body-background-color);
@@ -15,9 +15,7 @@
 
 .theme-switcher__button {
     flex: 0;
-    border-radius: var(--border-radius);
     box-shadow: var(--shadow-xs);
-    // border: 1px solid var(--border-color);
     padding: .625rem .875rem;
     display: inline-flex;
     align-items: center;
@@ -25,9 +23,20 @@
     width: 40px;
     height: 40px;
 
+    &:first-of-type {
+        border-right: .5px solid var(--border-color);
+        border-inline-end: .5px solid var(--border-color);
+    }
+
+    &:last-of-type {
+        border-left: .5px solid var(--border-color);
+        border-inline-start: .5px solid var(--border-color);
+    }
+
     .theme-switcher__icon {
         color: var(--icon-color);
     }
+
     &:hover {
         .theme-switcher__icon {
             color: var(--link-color);
