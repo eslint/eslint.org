@@ -334,4 +334,4 @@ hook: "donate-page"
     </div>
 </section>
 
-{% include "components/faqs.html" %}
+{% include "partials/faqs.html" %}
