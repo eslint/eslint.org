@@ -6,7 +6,7 @@ hook: "branding-page"
 ---
 
 {%- from 'components/swatch.macro.html' import swatch %}
-{%- from 'components/hero.html' import hero %}
+{%- from 'components/hero.macro.html' import hero %}
 
 
 {{ hero({

@@ -6,28 +6,13 @@ hook: "component-library"
 
 {% from 'components/_component.njk' import component %}
 
-{% from 'components/hero.html' import hero %}
+
 {% from 'components/related-rules.macro.html' import related_rules %}
 {% from 'components/profile.macro.html' import member, contributor, post_author %}
 
 {% from 'components/alert.macro.html' import warning, tip, important %}
 {% from 'components/rule-categories.macro.html' import ruleCategories, recommended, fixable, hasSuggestions %}
 {% from 'components/rule.macro.html' import rule %}
-
-
-
-<div class="content-container">
-    {{ hero({
-        title: "Sponsors",
-        supporting_text: "171 companies, organizations, and individuals are currently contributing $13137.84 each month to support ESLint's ongoing maintenance and development.",
-        buttons: {
-            primary: {
-                primaryText: "Become a sponsor",
-                primaryURL: "/donate/"
-            }
-        }
-    }) }}
-</div>
 
 
 <div class="content-container grid">
