@@ -8,8 +8,12 @@ The card component is used to create blog post listings.
 
 To use the component, call the `card()` macro and provide the parameters required.
 
+<br>
+<br>
+<br>
+
 {{ card({
-    title: "Just a post",
+    title: "The post title",
     teaser: "This is a short description to demo what the card component will look like in the pattern library.",
     authorName: "Happy McPerson",
     category: "Sponsorships",
@@ -20,9 +24,12 @@ To use the component, call the `card()` macro and provide the parameters require
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
 
 {{ card({
-    title: "This is a featured post that requires more horizontal space",
+    title: "This is a featured post",
     featured: "true",
     teaser: "This is a short description to demo what the card component will look like in the pattern library.",
     authorName: "The Author Name",
