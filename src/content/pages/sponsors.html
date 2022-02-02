@@ -8,10 +8,14 @@ hook: "sponsors-page"
 {%- from 'components/donation.macro.html' import donationItem %}
 {%- from 'components/hero.html' import hero %}
 
+{% set supporting_text = "BACKER_COUNT companies, organizations, and individuals are currently contributing MONTHLY_DONATIONS each
+month to support ESLint's ongoing maintenance and development." %}
+{% set monthly_donations = sponsors.totals.monthlyDonations | dollars %}
+{% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.backerCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
 
 {{ hero({
     title: "Sponsors",
-    supporting_text: "171 companies, organizations, and individuals are currently contributing $13137.84 each month to support ESLint's ongoing maintenance and development.",
+    supporting_text: supporting_text,
     buttons: {
         primary: {
             primaryText: "Become a sponsor",
@@ -30,10 +34,13 @@ hook: "sponsors-page"
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--platinum">
-                {% for item in sponsors.platinum %}
+                {% for sponsor in sponsors.platinum %}                
                 <li>
-                    <a href="{{ item.url }}">
-                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    {% set sponsor_amount = sponsor.monthlyDonation / 100 %}
+                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month"
+                            title="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month" />
                     </a>
                 </li>
                 {% endfor %}
@@ -49,10 +56,13 @@ hook: "sponsors-page"
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--gold">
-                {% for item in sponsors.gold %}
+                {% for sponsor in sponsors.gold %}
                 <li>
-                    <a href="{{ item.url }}">
-                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    {% set sponsor_amount = sponsor.monthlyDonation / 100 %}
+                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month"
+                            title="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month" />
                     </a>
                 </li>
                 {% endfor %}
@@ -68,10 +78,13 @@ hook: "sponsors-page"
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--silver">
-                {% for item in sponsors.silver %}
+                {% for sponsor in sponsors.silver %}
                 <li>
-                    <a href="{{ item.url }}">
-                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    {% set sponsor_amount = sponsor.monthlyDonation / 100 %}
+                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month"
+                            title="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month" />
                     </a>
                 </li>
                 {% endfor %}
@@ -87,10 +100,13 @@ hook: "sponsors-page"
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--bronze">
-                {% for item in sponsors.bronze %}
+                {% for sponsor in sponsors.bronze %}
                 <li>
-                    <a href="{{ item.url }}">
-                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    {% set sponsor_amount = sponsor.monthlyDonation / 100 %}
+                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month"
+                            title="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month" />
                     </a>
                 </li>
                 {% endfor %}
@@ -107,11 +123,11 @@ hook: "sponsors-page"
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--technology">
 
-                {% for item in techsponsors %}
+                {% for sponsor in techsponsors %}
 
                 <li>
-                    <a href="{{ item.url | url }}">
-                        <img loading="lazy" decoding="async" src="{{ item.image }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" height="64"/>
                     </a>
                 </li>
                 {% endfor %}
@@ -156,7 +172,7 @@ hook: "sponsors-page"
         <div class="section-head center-text">
             <h2 class="section-title h3">All backers</h2>
             <p class="section-supporting-text fs-step-0">
-                We have 380+ backers across our platforms. Thank you for supporting ESLint.
+                We have {{ sponsors.backers | length }} backers across our platforms. Thank you for supporting ESLint.
             </p>
         </div>
         <div class="grid">
