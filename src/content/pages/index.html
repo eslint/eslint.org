@@ -126,7 +126,7 @@ eleventyExcludeFromCollections: true
         <header class="section-head center-text">
             <h2 class="section-title h3" id="latest-posts-label">Latest posts</h2>
             <p class="section-supporting-text fs-step-0">
-                Thoughts, stories and release notes from the ESLint community
+                News, stories, and release notes from the ESLint community
             </p>
         </header>
         <div class="blog-posts">
@@ -195,28 +195,30 @@ eleventyExcludeFromCollections: true
         <header class="section-head center-text">
             <h2 class="section-title h3">Sponsored by fantastic people</h2>
             <p class="section-supporting-text fs-step-0">
-                We receive $134,363 / year in donations from 600 backers.
+                We receive {{ sponsors.totals.annualDonations | dollars }} / year in donations from {{ sponsors.totals.backerCount }} backers.
             </p>
         </header>
         <div class="grid">
             <ul role="list" class="sponsors span-4-9">
-                {% for sponsor in sponsors.gold %}
-                <li>
-                    <a href="{{ sponsor.url }}">
-                        <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" width="48" height="48" loading="lazy" decoding="async" />
-                    </a>
-                </li>
+                {% for tier in ['platinum', 'gold', 'silver', 'bronze'] %}
+                    {% for sponsor in sponsors[tier] %}
+                        {% set sponsor_amount = sponsor.monthlyDonation / 100 %}
+                    <li>
+                        <a href="{{ sponsor.url }}">
+                            <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month" height="48" loading="lazy" decoding="async" />
+                        </a>
+                    </li>
+                    {% endfor %}
                 {% endfor %}
                 {% for sponsor in techsponsors %}
                 <li>
                     <a href="{{ sponsor.url }}">
                         <img src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" width="48" height="48" loading="lazy" decoding="async" />
-
                     </a>
                 </li>
                 {% endfor %}
             </ul>
-            <div class="center-text"><a href="/sponsors.html" class="c-btn c-btn--primary">View all sponsors</a></div>
+            <div class="center-text"><a href="/sponsors/" class="c-btn c-btn--primary">View all sponsors</a></div>
         </div>
         <div class="grid">
             <div class="span-3-10">
@@ -243,7 +245,7 @@ eleventyExcludeFromCollections: true
                 </ul>
             </div>
             <div class="center-text">
-                <a href="/sponsors.html#donations" class="c-btn c-btn--secondary">View all donations</a>
+                <a href="/sponsors/#donations" class="c-btn c-btn--secondary">View all donations</a>
             </div>
         </div>
     </div>
