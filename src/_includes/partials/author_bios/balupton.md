@@ -1,0 +1,1 @@
+Alive since 1989, coder since 1998, JavaScript & PHP since 2005, JavaScript & Node.js since 2010, philosophy since 2017. Founder @bevry.

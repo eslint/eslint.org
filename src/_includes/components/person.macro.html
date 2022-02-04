@@ -96,8 +96,10 @@
         </div>
     </div>
     <div class="person__bio">
-        <!-- bio from partial here; remove line below when the partial include is added -->
-       {{ params.bio }}
+        {% set bio_url = ['partials/author_bios/', params.handle, '.md' ] | join %}
+
+        {% set bio %}{% include bio_url %}{% endset %}
+        {{ bio | markdown | safe }}
     </div>
 </div>
 {%- endmacro -%}
