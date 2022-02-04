@@ -11,7 +11,7 @@ hook: "sponsors-page"
 {% set supporting_text = "BACKER_COUNT companies, organizations, and individuals are currently contributing MONTHLY_DONATIONS each
 month to support ESLint's ongoing maintenance and development." %}
 {% set monthly_donations = sponsors.totals.monthlyDonations | dollars %}
-{% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.backerCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
+{% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.sponsorCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
 
 {{ hero({
     title: "Sponsors",
@@ -177,10 +177,14 @@ month to support ESLint's ongoing maintenance and development." %}
         </div>
         <div class="grid">
             <ul role="list" class="sponsors span-1-12 sponsors--backers">
-                {% for item in sponsors.backers %}
+                {% for sponsor in sponsors.backers %}
                 <li>
-                    <a href="{{ item.url }}">
-                        <img loading="lazy" decoding="async" src="{{ item.image }}" width="48" height="48" alt="{{ item.name }}" title="{{ item.name }}" />
+                    {% set sponsor_amount = sponsor.monthlyDonation / 100 %}
+                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="48" width="48"
+                            onerror="this.src = '/assets/images/people/_placeholder-avatar.svg'"
+                            alt="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month"
+                            title="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month" />
                     </a>
                 </li>
                 {% endfor %}
