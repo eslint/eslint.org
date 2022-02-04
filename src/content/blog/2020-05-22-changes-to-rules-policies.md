@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Changes to our rules policies
+teaser: "We've recently made some changes to our rule policies that we're happy to share with you."
 tags:
   - rules
   - policies
 authors:
   - nzakas
-  - btmills
 categories:
   - Policy Updates
 ---
