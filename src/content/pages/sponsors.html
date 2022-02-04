@@ -1,5 +1,6 @@
 ---
 layout: main.html
+title: Sponsors
 permalink: /sponsors/
 eleventyExcludeFromCollections: true
 hook: "sponsors-page"
@@ -14,7 +15,7 @@ month to support ESLint's ongoing maintenance and development." %}
 {% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.sponsorCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
 
 {{ hero({
-    title: "Sponsors",
+    title: title,
     supporting_text: supporting_text,
     buttons: {
         primary: {

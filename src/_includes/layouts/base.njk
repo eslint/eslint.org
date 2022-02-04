@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {% set page_title = [title, " - ESLint - Pluggable JavaScript Linter"] | join %}
+    {% set cover_image = "/icon.svg" %}
+    {% set cover_image_alt = "ESLint logo" %}
+    {% set page_desc = "A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease." %}
+
     <!-- SEO -->
-    <title>{{ title }}</title>
-    <meta name="description" content="{{ desc }}">
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_desc }}">
     {%- if original -%}
     <link rel="canonical" href="{{ original.url }}">
     {%- else -%}
@@ -23,19 +28,20 @@
 
     <!-- social sharing previews. Make sure every page template has title, desc, and cover url -->
     <!-- Open graph -->
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:description" content="{{ desc }}">
-    <meta property="og:image" content="{{ cover }}" />
-    <meta property="og:image:alt" content="{{ coverAlt }}">
-    <meta property="og:locale" content="en_GB">
+
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_desc }}">
+    <meta property="og:image" content="{{ cover_image }}" />
+    <meta property="og:image:alt" content="{{ cover_image_alt }}">
+    <meta property="og:locale" content="{{ config.lang }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
     <!-- Twitter -->
-    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:title" content="{{ page_title }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@geteslint">
-    <meta name="twitter:description" content="{{ desc }}">
-    <meta name="twitter:image" content="{{ cover }}">
+    <meta name="twitter:description" content="{{ page_desc }}">
+    <meta name="twitter:image" content="{{ cover_image }}">
     <meta name="twitter:creator" content="@geteslint">
 
 
