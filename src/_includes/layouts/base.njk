@@ -9,7 +9,8 @@
     <!-- SEO -->
     <title>{{ title }}</title>
     <meta name="description" content="{{ desc }}">
-    {%- if original -%} <link rel="canonical" href="{{ original.url }}">
+    {%- if original -%}
+    <link rel="canonical" href="{{ original.url }}">
     {%- else -%}
     <link rel="canonical" href="https://eslint.org{{ page.url | url }}">
     {%- endif -%}
