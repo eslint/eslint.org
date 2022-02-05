@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Indeed donates $10,000 to ESLint
-teaser: Indeed has donated $10,000 from its FOSS Contributor Fund for ESLint's maintenance and development.
-image: sponsorship-indeed.png
+teaser: "We are happy to announce that Indeed has donated $10,000 to ESLint, as part of their FOSS Contributor Fund. It is an honor to be supported by Indeed. We are grateful to the head of Open Source, Duane O'Brien, and the employees who contributed to and nominated ESLint."
 tags:
   - Open Source
   - Funding
@@ -15,12 +14,10 @@ categories:
   - Sponsorships
 ---
 
-<!-- <p class="text-center">
+<p class="text-center">
     <a href="https://indeed.com/" title="Indeed" rel="noopener nofollow" target="_blank"><img class="lazyload" width="200" data-src="/assets/img/logos/indeed.svg" alt="Indeed" src="/assets/img/logos/indeed.svg"></a>
     <a href="https://eslint.org/" title="ESLint" target="_blank"><img class="lazyload" width="200" data-src="/assets/img/logo.svg" alt="ESLint" src="/assets/img/logo.svg"></a>
-</p> -->
-
-![Indeed Donates to ESLint](/assets/images/blog-covers/sponsorship-indeed.png)
+</p>
 
 We are happy to share that [Indeed](https://indeed.com) has donated $10,000 to the ESLint project as part of their [FOSS Contributor Fund](https://engineering.indeedblog.com/blog/2019/07/foss-fund-six-months-in/). The FOSS Contributor Fund is a unique idea, where all Indeed employees may nominate an open source project to receive a one-time donation, and any employee who has contributed to an open source project during that month gets to vote on the nominees. We are honored to be one of the projects that Indeed employees chose to support.
 

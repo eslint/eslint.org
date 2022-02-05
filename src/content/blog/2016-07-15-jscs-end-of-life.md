@@ -1,13 +1,12 @@
 ---
 layout: post
 title: JSCS End of Life
+teaser: "JSCS has reached its end of life and its developers will now work on ESLint. We share what this means for JSCS and how we plan to facilitate the switch from JSCS to ESLint. Meanwhile, we recommend to wait for most compatibility work to be complete before switching."
 tags:
   - jscs
   - end of life
 authors:
   - nzakas
-  - not-an-aardvark
-  - kaicataldo
 categories:
   - Announcements
 ---

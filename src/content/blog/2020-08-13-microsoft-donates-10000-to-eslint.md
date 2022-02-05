@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Microsoft donates $10,000 to ESLint as first FOSS Fund recipient
-teaser: The Microsoft FOSS Fund has awarded ESLint $10,000 to help with maintenance and development.
-image: sponsorship-microsoft.png
+teaser: "We are happy to announce that Microsoft has donated $10,000 to ESLint, as part of their FOSS Contributor Fund. It is an honor to be supported by Microsoft and to be their first recipient. We are grateful to the software engineers, Jan Pilzer and Steve Faulkner, for nominating ESLint, and the employees who voted for us."
 tags:
   - Open Source
   - Funding
@@ -15,13 +14,10 @@ categories:
   - Sponsorships
 ---
 
-<!-- <p class="text-center">
+<p class="text-center">
     <a href="https://www.microsoft.com/" title="Microsoft" rel="noopener nofollow" target="_blank"><img class="lazyload" width="170" data-src="/assets/img/logos/microsoft.png" alt="Microsoft" src="/assets/img/logos/microsoft.png"></a>
     <a href="https://eslint.org/" title="ESLint" target="_blank"><img class="lazyload" width="200" data-src="/assets/img/logo.svg" alt="ESLint" src="/assets/img/logo.svg"></a>
-</p> -->
-
-![Microsoft Donates to ESLint](/assets/images/blog-covers/sponsorship-microsoft.png)
-
+</p>
 
 We are happy to share that [Microsoft](https://microsoft.com) has donated $10,000 to the ESLint project as part of their [FOSS Fund](https://opensource.microsoft.com/ecosystem/). Similar to the [Indeed FOSS Contributor Fund](https://eslint.org/blog/2019/09/indeed-donates-10000-to-eslint) and [Salesforce FOSS Contributor Fund](https://eslint.org/blog/2020/08/salesforce-donates-10000-to-eslint), the Microsoft FOSS Fund donates $10,000 to qualifying open source projects each quarter. Microsoft employees who have contributed to an open source project that is both used by Microsoft and not an official Microsoft project may nominate and vote on potential project recipients. ESLint is honored to be the first recipient from the Microsoft FOSS Fund!
 
