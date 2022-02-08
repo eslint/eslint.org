@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 {% include "partials/header.html" %}
-{%- from 'components/hero.html' import hero %}
+{%- from 'components/hero.macro.html' import hero %}
 
 <main id="main" tabindex="-1">
     {{ hero({

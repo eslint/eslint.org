@@ -210,6 +210,10 @@ module.exports = function(eleventyConfig) {
     );
 
 
+    eleventyConfig.addCollection("library", function(collection) {
+        return collection.getFilteredByGlob("./src/content/library/**/*.md");
+    });
+
     // START, eleventy-img
     function imageShortcode(src, alt, cls, sizes = "(max-width: 768px) 100vw, 50vw") {
         const source = src;

@@ -1,29 +1,29 @@
 /* PERSON */
-.person {
+.profile {
   position: relative; }
 
-.person--contributor {
+.profile--contributor {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: start;
   gap: .75rem; }
 
-.person--author {
+.profile--author {
   margin-bottom: 3rem;
   margin-block-end: 3rem; }
   @media all and (min-width: 680px) {
-    .person--author {
+    .profile--author {
       display: grid;
       grid-template-columns: 1fr 2fr;
       grid-gap: 3rem; } }
 
-.person--author__details {
+.profile--author__details {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: start;
   gap: .75rem; }
 
-.person__photo {
+.profile__photo {
   display: block;
   border-radius: 50%;
   object-fit: cover;
@@ -32,42 +32,42 @@
   margin-bottom: .875rem;
   margin-block-end: .875rem;
   /* contributor in the post sidebar */ }
-  .person__photo.person__photo--large {
+  .profile__photo.profile__photo--large {
     width: 5rem;
     height: 5rem;
     margin-bottom: 1.25rem;
     margin-block-end: 1.25rem; }
-  .person__photo.person__photo--medium {
+  .profile__photo.profile__photo--medium {
     width: 3.5rem;
     height: 3.5rem; }
-  .person__photo.person__photo--small {
+  .profile__photo.profile__photo--small {
     width: 3rem;
     height: 3rem; }
-  .post__sidebar-module .person__photo {
+  .post__sidebar-module .profile__photo {
     width: 3rem;
     height: 3rem; }
 
-.person__bio a:hover {
+.profile__bio a:hover {
   color: var(--link-color); }
 
-.person__name {
+.profile__name {
   font-weight: 500;
   color: var(--headings-color);
   font-size: 1.125rem; }
-  .post .person__name {
+  .post .profile__name {
     font-size: var(--step-0); }
 
-.person__handle {
+.profile__handle {
   text-decoration: none;
   color: var(--link-color);
   display: block;
   margin-bottom: .5rem;
   margin-block-end: .5rem; }
-  .post .person__handle {
+  .post .profile__handle {
     color: inherit; }
-    .post .person__handle:hover {
+    .post .profile__handle:hover {
       color: var(--link-color); }
-  .post__sidebar-module .person__handle::after {
+  .post__sidebar-module .profile__handle::after {
     content: "";
     position: absolute;
     top: 0;
@@ -79,12 +79,12 @@
     offset-inline-start: 0;
     offset-inline-end: 0; }
 
-.person__title {
+.profile__title {
   display: block;
   margin-bottom: .5rem;
   margin-block-end: .5rem; }
 
-.person__social-links ul {
+.profile__social-links ul {
   margin: 0;
   padding: 0;
   list-style: none;

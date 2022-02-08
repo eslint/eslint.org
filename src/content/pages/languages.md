@@ -5,7 +5,7 @@ permalink: /languages/
 hook: "languages-page"
 ---
 
-{%- from 'components/hero.html' import hero %}
+{%- from 'components/hero.macro.html' import hero %}
 
 
 {{ hero({

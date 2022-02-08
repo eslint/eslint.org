@@ -1,6 +1,9 @@
 .eslint-social-icons {
-    margin-bottom: -1rem;
-    margin-block-end: -1rem;
+
+    @media all and (max-width: 1023px) {
+        margin-bottom: -1rem;
+        margin-block-end: -1rem;
+    }
 
     ul {
         margin: 0;

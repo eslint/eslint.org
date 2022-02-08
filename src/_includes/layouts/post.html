@@ -5,10 +5,10 @@ hook: "post blog-post-page"
 
 {% include "partials/header.html" %}
 
-{%- from 'components/person.macro.html' import member, contributor, post_author %}
+{%- from 'components/profile.macro.html' import member, contributor, post_author %}
 
 <main id="main"  class="post-main" tabindex="-1">
-{%- from 'components/hero.html' import hero %}
+{%- from 'components/hero.macro.html' import hero %}
     {% set hero_title = title %}
     {% set hero_supporting_text = teaser %}
     {% set hero_date = page.date | readableDate %}

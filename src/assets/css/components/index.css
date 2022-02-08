@@ -1,0 +1,15 @@
+.index__item {
+  margin: 0; }
+  .index__item a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: .625rem .875rem;
+    font-size: var(--step-0);
+    border-radius: var(--border-radius); }
+    .index__item a:hover {
+      color: var(--link-color); }
+  .index__item a[aria-current="page"] {
+    color: var(--link-color);
+    background-color: var(--lightest-background-color);
+    font-weight: 500; }

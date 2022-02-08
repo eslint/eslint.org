@@ -1,0 +1,38 @@
+---
+layout: base.njk
+hook: "component-library"
+---
+
+{% include "partials/header.html" %}
+
+{% from 'components/hero.macro.html' import hero %}
+
+{{ hero({
+        title: "ESLint Components",
+        supporting_text: "Components used across this site."
+    })
+}}
+
+<div class="content-container grid">
+    <div class="span-1-3">
+        <nav class="index">
+            <ul id="index__list">
+                {% for item in collections.library %}
+                <li class="index__item">
+                    <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url,
+                    page.url) | safe }}>{{ item.data.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+
+    <div class="span-4-12">
+        <main id="main" tabindex="-1" class="post-main">
+            <h1>{{ title }}</h1>
+            {{ content | safe }}
+        </main>
+    </div>
+</div>
+
+{% include "partials/footer.html" %}

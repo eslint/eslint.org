@@ -7,10 +7,15 @@
 .c-slider__paddleNav {
 
     @media all and (min-width: 1023px) {
-        margin-top: -4rem;
-        margin-block-start: -4rem;
+        margin-top: -2rem;
+        margin-block-start: -2rem;
         position: relative;
         z-index: 2;
+
+        .homepage & {
+            margin-top: -4rem;
+            margin-block-start: -4rem;
+        }
     }
 
     .c-slider__paddleNav__prev,

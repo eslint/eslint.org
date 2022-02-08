@@ -7,7 +7,7 @@ hook: "sponsors-page"
 ---
 
 {%- from 'components/donation.macro.html' import donationItem %}
-{%- from 'components/hero.html' import hero %}
+{%- from 'components/hero.macro.html' import hero %}
 
 {% set supporting_text = "BACKER_COUNT companies, organizations, and individuals are currently contributing MONTHLY_DONATIONS each
 month to support ESLint's ongoing maintenance and development." %}
@@ -151,14 +151,12 @@ month to support ESLint's ongoing maintenance and development." %}
             <li class="donations-item">
                 {% set donation_image = donation.image %}
                 {% set donation_name = donation.name %}
-                {% set donation_type = donation.type %}
                 {% set donation_amount = donation.amount | dollars %}
                 {% set donation_date = donation.date | readableDateFromISO %}
 
                 {{ donationItem({
                         image: donation_image,
                         name: donation_name,
-                        type: donation_type,
                         amount: donation_amount,
                         date: donation_date
                     }) }}

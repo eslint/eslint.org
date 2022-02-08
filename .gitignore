@@ -10,6 +10,7 @@ lerna-debug.log*
 
 # Eleventy output (public site)
 _site/
+src/assets/css/**
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
