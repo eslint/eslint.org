@@ -9,7 +9,7 @@ hook: "languages-page"
 
 
 {{ hero({
-    title: "Languages",
+    title: title,
     supporting_text: "Choose your language"
 }) }}
 

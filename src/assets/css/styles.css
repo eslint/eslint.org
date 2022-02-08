@@ -2370,7 +2370,8 @@ button.c-share__btn {
 .theme-switcher {
   display: inline-flex;
   align-items: center;
-  gap: .5rem; }
+  gap: .5rem;
+  position: relative; }
 
 .theme-switcher-label.theme-switcher-label {
   font-size: inherit;
@@ -2381,14 +2382,12 @@ button.c-share__btn {
 
 .theme-switcher__buttons {
   display: flex;
-  gap: .25rem;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   background-color: var(--body-background-color); }
 
 .theme-switcher__button {
   flex: 0;
-  border-radius: var(--border-radius);
   box-shadow: var(--shadow-xs);
   padding: .625rem .875rem;
   display: inline-flex;
@@ -2396,6 +2395,12 @@ button.c-share__btn {
   margin: 0;
   width: 40px;
   height: 40px; }
+  .theme-switcher__button:first-of-type {
+    border-right: 0.5px solid var(--border-color);
+    border-inline-end: 0.5px solid var(--border-color); }
+  .theme-switcher__button:last-of-type {
+    border-left: 0.5px solid var(--border-color);
+    border-inline-start: 0.5px solid var(--border-color); }
   .theme-switcher__button .theme-switcher__icon {
     color: var(--icon-color); }
   .theme-switcher__button:hover .theme-switcher__icon {

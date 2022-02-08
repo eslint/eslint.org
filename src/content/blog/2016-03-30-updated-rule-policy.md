@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Updated Rule Policy
+teaser: "We've recently made some changes to our rule policy that we're happy to share with you."
 tags:
   - information
   - rules
 authors:
   - nzakas
-  - not-an-aardvark
-  - kaicataldo
 categories:
   - Policy Updates
 ---

@@ -209,10 +209,6 @@ module.exports = function(eleventyConfig) {
         require("./src/_11ty/collections/blogpostsByCategories.js")
     );
 
-    eleventyConfig.addCollection("docs", function(collection) {
-        return collection.getFilteredByGlob("./src/content/docs/**/**/*.md");
-    });
-
 
     eleventyConfig.addCollection("library", function(collection) {
         return collection.getFilteredByGlob("./src/content/library/**/*.md");

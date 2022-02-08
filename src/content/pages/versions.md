@@ -9,7 +9,7 @@ hook: "versions-page"
 
 
 {{ hero({
-    title: "ESLint Versions",
+    title: title,
     supporting_text: "Choose the documentation version"
 }) }}
 

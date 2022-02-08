@@ -1,5 +1,6 @@
 ---
 layout: main.html
+title: Branding
 permalink: /branding/
 eleventyExcludeFromCollections: true
 hook: "branding-page"
@@ -10,7 +11,7 @@ hook: "branding-page"
 
 
 {{ hero({
-    title: "Branding",
+    title: title,
     supporting_text: "How to use our logo"
 }) }}
 
