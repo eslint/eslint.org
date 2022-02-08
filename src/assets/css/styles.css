@@ -3210,7 +3210,7 @@ a.rule__name {
   .desktop-only {
     display: none; } }
 
-.text {
+.text.text {
   font-size: inherit;
   color: inherit;
   font: inherit;
