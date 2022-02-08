@@ -3,6 +3,13 @@
   align-items: center;
   gap: .5rem; }
 
+.theme-switcher-label {
+  font-size: inherit;
+  color: inherit;
+  font: inherit;
+  font-family: var(--text-font);
+  margin: 0; }
+
 .theme-switcher__buttons {
   display: flex;
   gap: .25rem;
