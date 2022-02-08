@@ -1,0 +1,21 @@
+{
+    "github": "https://github.com/eslint/eslint",
+    "twitter": "https://twitter.com/geteslint",
+    "chat": "https://eslint.org/chat",
+    "group": "https://groups.google.com/group/eslint",
+
+    "blog": "/blog",
+    "docs": "https://eslint.org/docs",
+    "playground": "https://eslint.org/demo",
+    "getStarted": "https://eslint.org/docs/user-guide/getting-started",
+    "sponsors": "/sponsors",
+    "branding": "/branding",
+    "store": "https://eslint.threadless.com",
+    "team": "/team",
+
+    "donate": {
+        "landingPage": "/donate",
+        "openCollective": "https://opencollective.com/eslint",
+        "githubSponsors": "https://github.com/sponsors/eslint"
+    }
+}

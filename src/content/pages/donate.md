@@ -19,7 +19,7 @@ hook: "donate-page"
         </svg>
     </symbol>
     <symbol viewBox="0 0 21 20" id="gh">
-        <svg width="21" height="20" viewBox="0 0 21 20" aria-label="Github">
+        <svg width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2495 0C4.6123 0 0 4.6123 0 10.2495C0 14.7764 2.90404 18.62 7.00386 19.9866C7.51634 20.072 7.68716 19.7304 7.68716 19.4741C7.68716 19.2179 7.68716 18.62 7.68716 17.7659C4.86854 18.3638 4.27065 16.3993 4.27065 16.3993C3.84358 15.2035 3.16028 14.8618 3.16028 14.8618C2.13532 14.264 3.16028 14.264 3.16028 14.264C4.18523 14.3494 4.69771 15.2889 4.69771 15.2889C5.63725 16.8263 7.08927 16.3993 7.68716 16.143C7.77257 15.4597 8.02881 15.0327 8.37047 14.7764C6.06432 14.5202 3.67276 13.6661 3.67276 9.73707C3.67276 8.6267 4.09982 7.68716 4.69771 7.00386C4.69771 6.66221 4.27065 5.63725 4.86854 4.27065C4.86854 4.27065 5.72267 4.01441 7.68716 5.2956C8.54129 5.03936 9.39542 4.95395 10.2495 4.95395C11.1037 4.95395 11.9578 5.03936 12.8119 5.2956C14.7764 3.92899 15.6306 4.27065 15.6306 4.27065C16.2285 5.72267 15.8014 6.74762 15.716 7.00386C16.3993 7.68716 16.7409 8.6267 16.7409 9.73707C16.7409 13.6661 14.3494 14.5202 12.0432 14.7764C12.3849 15.1181 12.7265 15.716 12.7265 16.6555C12.7265 18.0221 12.7265 19.1325 12.7265 19.4741C12.7265 19.7304 12.8973 20.072 13.4098 19.9866C17.5096 18.62 20.4137 14.7764 20.4137 10.2495C20.4991 4.6123 15.8868 0 10.2495 0Z" fill="currentColor" />
         </svg>
     </symbol>
@@ -28,10 +28,20 @@ hook: "donate-page"
 
 {%- from 'components/hero.macro.html' import hero %}
 
+{% set supporting_text = "ESLint relies on donations for ongoing maintenance and development. There are currently BACKER_COUNT companies, organizations, and individuals are donating MONTHLY_DONATIONS each
+month to help us out." %}
+{% set monthly_donations = sponsors.totals.monthlyDonations | dollars %}
+{% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.sponsorCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
 
 {{ hero({
     title: "Donate",
-    supporting_text: "ESLint relies on donations for ongoing maintenance and development. There are currently 525 companies, organizations, and individuals donating $15,000 each month to help us out."
+    supporting_text: supporting_text,
+    buttons: {
+        primary: {
+            primaryText: "See Our Sponsors",
+            primaryURL: "/sponsors/"
+        }
+    }
 }) }}
 
 <section>
@@ -48,10 +58,15 @@ hook: "donate-page"
                     <img src="../../assets/images/icons/opencollective-img.svg" width="64" height="64" alt="Open Collective" />
                     <div class="donation-plan__platform">
                         <h3 class="donation-plan__platform-name">Open Collective</h3>
-                        <p class="donation-plan__description">Our most popular plan for small teams.</p>
+                        <p class="donation-plan__description">Our most popular plan for companies.</p>
                     </div>
                 </header>
                 <ul role="list" class="donation-plan__features divider">
+                    <li>
+                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
+                            <use xlink:href="#feature-check"></use>
+                        </svg>
+                        Donate directly to a 501(c)(3) non-profit.</li>
                     <li>
                         <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
                             <use xlink:href="#feature-check"></use>
@@ -61,21 +76,21 @@ hook: "donate-page"
                         <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
                             <use xlink:href="#feature-check"></use>
                         </svg>
-                        Pay by credit card, bank transfer, or PayPalSet up open source funds to donate to multiple projects</li>
+                        Pay by credit card, bank transfer, or PayPal</li>
+                    <li>
+                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
+                            <use xlink:href="#feature-check"></use>
+                        </svg>
+                        Set up an open source fund to donate to multiple projects</li>
                     <li>
                         <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
                             <use xlink:href="#feature-check"></use>
                         </svg>
                         Available in most countries
                     </li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        Requires signing up for Open Collective</li>
                 </ul>
                 <footer class="donation-plan__footer">
-                    <a href="https://opencollective.com/eslint" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg width="21" height="20" viewBox="0 0 21 20" aria-label="Open Collective">
                             <use xlink:href="#oc"></use>
                         </svg>
@@ -84,13 +99,18 @@ hook: "donate-page"
             </article>
             <article class="donation-plan span-7-12">
                 <header class="donation-plan__header divider">
-                    <img src="../../assets/images/icons/github-img.svg" width="64" height="64" alt="Github Sponsors" />
+                    <img src="../../assets/images/icons/github-img.svg" width="64" height="64" alt="GitHub Sponsors" />
                     <div class="donation-plan__platform">
-                        <h3 class="donation-plan__platform-name">Github Sponsors</h3>
+                        <h3 class="donation-plan__platform-name">GitHub Sponsors</h3>
                         <p class="donation-plan__description">Advanced features and reporting.</p>
                     </div>
                 </header>
                 <ul role="list" class="donation-plan__features divider">
+                    <li>
+                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
+                            <use xlink:href="#feature-check"></use>
+                        </svg>
+                        Donate through GitHub billing</li>
                     <li>
                         <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
                             <use xlink:href="#feature-check"></use>
@@ -113,11 +133,11 @@ hook: "donate-page"
                         Use your existing GitHub login</li>
                 </ul>
                 <footer class="donation-plan__footer">
-                    <a href="https://github.com/sponsors/eslint" class="c-btn c-btn--primary c-btn--block">
-                        <svg width="21" height="20" viewBox="0 0 21 20" aria-label="Github">
+                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                        <svg width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
-                        Contribute on Github</a>
+                        Contribute on GitHub</a>
                 </footer>
             </article>
         </div>
@@ -186,17 +206,17 @@ hook: "donate-page"
                     2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
                 </div>
                 <div>
-                    <a href="#" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="#" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="Github" width="21" height="20" viewBox="0 0 21 20" aria-label="Github">
+                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
-                        Donate <span class="visually-hidden">on Github</span>
+                        Donate <span class="visually-hidden">on GitHub</span>
                     </a>
                 </div>
             </li>
@@ -210,17 +230,17 @@ hook: "donate-page"
                     Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
                 </div>
                 <div>
-                    <a href="#" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="#" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="Github" width="21" height="20" viewBox="0 0 21 20" aria-label="Github">
+                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
-                        Donate <span class="visually-hidden">on Github</span>
+                        Donate <span class="visually-hidden">on GitHub</span>
                     </a>
                 </div>
             </li>
@@ -234,17 +254,17 @@ hook: "donate-page"
                     Third highest logo placement on homepage and readme.
                 </div>
                 <div>
-                    <a href="#" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="#" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="Github" width="21" height="20" viewBox="0 0 21 20" aria-label="Github">
+                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
-                        Donate <span class="visually-hidden">on Github</span>
+                        Donate <span class="visually-hidden">on GitHub</span>
                     </a>
                 </div>
             </li>
@@ -258,17 +278,17 @@ hook: "donate-page"
                     Fourth highest logo placement on homepage and readme.
                 </div>
                 <div>
-                    <a href="#" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="#" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="Github" width="21" height="20" viewBox="0 0 21 20" aria-label="Github">
+                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
-                        Donate <span class="visually-hidden">on Github</span>
+                        Donate <span class="visually-hidden">on GitHub</span>
                     </a>
                 </div>
             </li>
@@ -282,17 +302,17 @@ hook: "donate-page"
                     Listed on our sponsors page
                 </div>
                 <div>
-                    <a href="#" class="c-btn c-btn--secondary">
+                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--secondary">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="#" class="c-btn c-btn--secondary">
-                        <svg role="img" aria-label="Github" width="21" height="20" viewBox="0 0 21 20" aria-label="Github">
+                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--secondary">
+                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
-                        Donate <span class="visually-hidden">on Github</span>
+                        Donate <span class="visually-hidden">on GitHub</span>
                     </a>
                 </div>
             </li>
