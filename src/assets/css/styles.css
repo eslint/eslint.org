@@ -1879,11 +1879,19 @@ ul.donations-list {
   object-fit: cover;
   border-radius: var(--border-radius); }
 
+.donation-plans.grid {
+  align-items: stretch; }
+
 .donation-plan {
   border: 1px solid var(--divider-color);
   border-radius: var(--border-radius);
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow-lg); }
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column; }
+  @media all and (max-width: 1023px) {
+    .donation-plan {
+      margin-bottom: 2rem;
+      margin-block-end: 2rem; } }
 
 .donation-plan__header {
   display: grid;
@@ -1895,16 +1903,18 @@ ul.donations-list {
     .donation-plan__header img {
       width: 3rem; } }
 
-ul.donation-plan__features li {
-  margin-bottom: 1rem;
-  margin-block-start: 1rem;
-  display: flex;
-  align-items: start; }
-  ul.donation-plan__features li .c-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: .75rem;
-    margin-inline-end: .75rem; }
+ul.donation-plan__features {
+  flex: 1; }
+  ul.donation-plan__features li {
+    margin-bottom: 1rem;
+    margin-block-start: 1rem;
+    display: flex;
+    align-items: start; }
+    ul.donation-plan__features li .c-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: .75rem;
+      margin-inline-end: .75rem; }
 
 .donation-plan__platform-name {
   margin-bottom: .25rem;
