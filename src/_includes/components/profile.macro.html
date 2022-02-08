@@ -6,7 +6,7 @@
         <div class="profile__name">
             {{ params.name }}
         </div>
-        <a href="https://github.com/{{ params.handle}}" class="profile__handle">
+        <a href="https://github.com/{{ params.github}}" class="profile__handle">
             @{{ params.handle }}
         </a>
 
@@ -67,7 +67,7 @@
             {%- if params.title -%}
             <span class="profile__title"> {{ params.title }} </span>
             {%- else -%}
-            <a href="https://github.com/{{ params.handle}}" class="profile__title">
+            <a href="https://github.com/{{ params.github}}" class="profile__title">
                 @{{ params.handle }}
             </a>
             {%- endif -%}

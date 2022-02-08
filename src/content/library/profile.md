@@ -15,10 +15,9 @@ The parameters required for each are shown in the following example:
 <!-- then use a macro -->
 { { member({
     name: "Name LastName",
-    handle: "myHandle",
     bio: "This is a member's biography. An example of a member is a team member on the team page.",
-    twitter: "twitter",
-    github: "github"
+    twitter: "twitterUsername",
+    github: "githubUsername"
 }) } }
 
 { { contributor({
@@ -27,10 +26,11 @@ The parameters required for each are shown in the following example:
 }) } }
 
 { { post_author({
-    name: "Name LastName",
+    name: "Nicholas Zakas",
     title: "Creator of a popular framework",
-    handle: "myHandle",
-    bio:  "This is a longer biography which would typically go at the bottom of a blog post. It is included as a markdown partial, providing more flexibility for the type of content that does in it."
+    handle: "nzakas",
+    twitter: "twitterHandle",
+    github: "githubHandle"
 }) } }
 ```
 
@@ -38,7 +38,7 @@ The parameters required for each are shown in the following example:
 
 {{ contributor({
     name: "Name LastName",
-    handle: "myHandle"
+    handle: "username"
 }) }}
 
 <br>
@@ -47,7 +47,7 @@ The parameters required for each are shown in the following example:
 
 {{ member({
     name: "Name LastName",
-    handle: "myHandle",
+    handle: "username",
     bio: "This is a short bio",
     twitter: "twitter",
     github: "github"
@@ -58,8 +58,9 @@ The parameters required for each are shown in the following example:
 <br>
 
 {{ post_author({
-    name: "Author Name",
+    name: "Nicholas Zakas",
     title: "Creator of a popular framework",
-    handle: "myHandle",
-    bio:  "This is a longer biography which would typically go at the bottom of a blog post. It is included as a markdown partial, providing more flexibility for the type of content that does in it."
+    handle: "nzakas",
+    twitter: "nzakas",
+    github: "nzakas"
 }) }}
