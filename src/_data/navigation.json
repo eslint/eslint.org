@@ -2,23 +2,28 @@
   "items": [
     {
       "text": "Team",
+      "link": "team",
       "url": "/team/"
     },
     {
       "text": "Blog",
+      "link": "blog",
       "url": "/blog/"
     },
     {
       "text": "Docs",
-      "url": "https://docs.eslint.org"
+      "link": "docs",
+      "url": "https://eslint.org/docs"
     },
     {
       "text": "Store",
+      "link": "store",
       "url": "https://eslint.threadless.com"
     },
     {
       "text": "Playground",
-      "url": "https://playground.eslint.org"
+      "link": "playground",
+      "url": "https://eslint.org/demo"
     }
   ]
 }
