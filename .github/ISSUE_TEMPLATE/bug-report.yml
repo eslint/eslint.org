@@ -1,0 +1,48 @@
+name: "\U0001F41E Report a problem"
+description: "Report a problem on one or more pages on the site"
+title: "Bug: (fill in)"
+labels:
+  - bug
+  - "repro:needed"
+body:
+- type: markdown
+  attributes:
+    value: By opening an issue, you agree to abide by the [Open JS Foundation Code of Conduct](https://eslint.org/conduct).
+- type: textarea
+  attributes:
+    label: URL(s)
+    description: |
+      Please tell us which URL(s) have a problem:
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: What did you do?
+    description: |
+      You can use Markdown in this field.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: What did you expect to happen?
+    description: |
+      You can use Markdown in this field.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: What actually happened?
+    description: |
+      You can use Markdown in this field.
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: Participation
+    options:
+      - label: I am willing to submit a pull request for this issue.
+        required: false
+- type: textarea
+  attributes:
+    label: Additional comments
+    description: Is there anything else that's important for the team to know?
