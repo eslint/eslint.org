@@ -12,7 +12,7 @@ hook: "post blog-post-page"
     {% set hero_title = title %}
     {% set hero_supporting_text = teaser %}
     {% set hero_date = page.date | readableDate %}
-    {% set hero_category = page.categories %}
+    {% set hero_category = categories[0] %}
     {% set hero_category_url = categories[0] | slugify %}
 
     {{ hero({
