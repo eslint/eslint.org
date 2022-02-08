@@ -4,10 +4,13 @@
 
 @media all and (min-width: 1023px) {
   .c-slider__paddleNav {
-    margin-top: -4rem;
-    margin-block-start: -4rem;
+    margin-top: -2rem;
+    margin-block-start: -2rem;
     position: relative;
-    z-index: 2; } }
+    z-index: 2; }
+    .homepage .c-slider__paddleNav {
+      margin-top: -4rem;
+      margin-block-start: -4rem; } }
 
 .c-slider__paddleNav .c-slider__paddleNav__prev,
 .c-slider__paddleNav .c-slider__paddleNav__next {

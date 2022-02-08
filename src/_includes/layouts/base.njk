@@ -113,7 +113,7 @@
     <script src="{{ '/assets/js/focus-visible.js' | url }}"></script>
     <script src="{{ '/assets/js/main.js' | url }}"></script>
 
-    {%- if hook == "homepage" -%}
+    {%- if (hook == "homepage") or (hook == "component-library") -%}
     <script src="../../assets/js/hammer.min.js"></script>
     <script src="../../assets/js/slider.js"></script>
     {%- endif -%}
