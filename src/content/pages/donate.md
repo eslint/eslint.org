@@ -156,19 +156,19 @@ month to help us out." %}
             <div class="features span-1-5">
                 <article class="feature">
                     <h3 class="feature__title">Team Development</h3>
-                    <p class="feature__description">We pay our team members an hourly rate based on their seniority, currently $60 USD/hour for TSC members and Reviewers and $30 USD/hour for committers.</p>
+                    <p class="feature__description">We pay our team members an hourly rate based on their seniority, currently {{ budget.hourlyRateTSC | dollars }} USD/hour for TSC members and Reviewers and {{ budget.hourlyRate |dollars }} USD/hour for committers.</p>
                 </article>
                 <article class="feature">
                     <h3 class="feature__title">Contributor Pool</h3>
-                    <p class="feature__description">We set aside $1,500 USD each month to pay outside contributors who have made significant contributions to the project. Contributions include submitting code, writing documentation, answering questions in our Discord server, and more. This money is allocated each month by the TSC.</p>
+                    <p class="feature__description">We set aside {{ budget.contributorPool | dollars }} USD each month to pay outside contributors who have made significant contributions to the project. Contributions include submitting code, writing documentation, answering questions in our Discord server, and more. This money is allocated each month by the TSC.</p>
                 </article>
                 <article class="feature">
                     <h3 class="feature__title">Dependencies</h3>
-                    <p class="feature__description">We set aside $1,000 USD each month to help support our dependencies. We believe that open source projects who are lucky enough to get funded have a responsibility to help support the smaller projects they rely on.</p>
+                    <p class="feature__description">We set aside {{ budget.dependencies | dollars }} USD each month to help support our dependencies. We believe that open source projects who are lucky enough to get funded have a responsibility to help support the smaller projects they rely on.</p>
                 </article>
                 <article class="feature">
                     <h3 class="feature__title">Community Projects</h3>
-                    <p class="feature__description">We set aside $1,000 USD each month to help support plugins, parsers, and other projects that are of benefit to the ESLint ecosystem as a whole. We believe the strength of the project is in its ecosystem and we want to ensure important projects remain well-maintained.</p>
+                    <p class="feature__description">We set aside {{ budget.community | dollars }} USD each month to help support plugins, parsers, and other projects that are of benefit to the ESLint ecosystem as a whole. We believe the strength of the project is in its ecosystem and we want to ensure important projects remain well-maintained.</p>
                 </article>
                 <article class="feature">
                     <h3 class="feature__title">Support Systems</h3>
