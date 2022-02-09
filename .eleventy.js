@@ -63,20 +63,37 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("readableDate", (dateObj) => {
         //turn it into a JS Date string
-        date = new Date(dateObj);
+        const date = new Date(dateObj);
         //pass it to luxon for formatting
         return DateTime.fromJSDate(date).toFormat('dd MMM, yyyy');
     });
 
     eleventyConfig.addFilter("blogPermalinkDate", (dateObj) => {
         //turn it into a JS Date string
-        date = new Date(dateObj);
+        const date = new Date(dateObj);
         //pass it to luxon for formatting
         return DateTime.fromJSDate(dateObj).toFormat('yyyy/MM');
     });
 
-    eleventyConfig.addFilter("readableDateFromISO", (ISODate) => {
-        return DateTime.fromISO(ISODate).toUTC().toLocaleString(DateTime.DATE_FULL);
+    eleventyConfig.addFilter("shortDateFromISO", isoDate => {
+        return DateTime.fromISO(isoDate).toFormat('d MMM');
+    });
+
+    eleventyConfig.addFilter("shortNumber", number => {
+
+        if (number >= 1000000) {
+            return (number / 1000000).toFixed(1) + "M";
+        }
+
+        if (number >= 1000) {
+            return (number / 1000).toFixed(1) + "K";
+        }
+
+        return number.toString();
+    });
+
+    eleventyConfig.addFilter("readableDateFromISO", (isoDate) => {
+        return DateTime.fromISO(isoDate).toUTC().toLocaleString(DateTime.DATE_FULL);
     });
 
     eleventyConfig.addFilter('dollars', value => {
