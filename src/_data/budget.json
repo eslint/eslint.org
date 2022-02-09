@@ -1,0 +1,8 @@
+{
+    "hourlyRateTSC": 80,
+    "hourlyRate": 50,
+
+    "contributorPool": 1000,
+    "dependencies": 1000,
+    "community": 1000
+}
