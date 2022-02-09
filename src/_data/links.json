@@ -13,9 +13,10 @@
     "store": "https://eslint.threadless.com",
     "team": "/team",
 
-    "donate": {
-        "landingPage": "/donate",
-        "openCollective": "https://opencollective.com/eslint",
-        "githubSponsors": "https://github.com/sponsors/eslint"
-    }
+    "configuring": "https://eslint.org/docs/user-guide/configuring/",
+    "fixProblems": "https://eslint.org/docs/user-guide/command-line-interface#fixing-problems",
+
+    "donate": "/donate",
+    "openCollective": "https://opencollective.com/eslint",
+    "githubSponsors": "https://github.com/sponsors/eslint"
 }
