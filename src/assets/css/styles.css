@@ -2075,6 +2075,7 @@ ul.donation-plan__features,
   box-shadow: var(--shadow-xs);
   border: 1px solid var(--border-color);
   padding: .75rem;
+  margin: 0;
   display: inline-flex;
   align-items: center;
   color: var(--icon-color); }
