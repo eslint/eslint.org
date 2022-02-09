@@ -12,8 +12,9 @@
     <ul id="nav-list">
         {% for item in navigation.items %}
         <li>
-            <a href="{{ links[item.link] }}" {{ helpers.getLinkActiveState(item.url,
-            page.url) | safe }}>{{ item.text }}</a>
+            {% set itemLink = links[item.link] %}
+            <a href="{{ itemLink }}" {{ helpers.getLinkActiveState(itemLink,
+            page.url) | safe }} {% if item.target %}target="_blank"{% endif %}>{{ item.text }}</a>
         </li>
         {% endfor %}
     </ul>

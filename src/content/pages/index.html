@@ -36,8 +36,8 @@ eleventyExcludeFromCollections: true
                     <span id="eslint-install-code__announcement" class="eslint-install-code__announcement" aria-live="polite" aria-atomic="true"></span>
                 </div>
                 <div class="eslint-actions">
-                    <a href="/" class="c-btn c-btn--primary c-btn--large">Get Started</a>
-                    <a href="/sponsors/" class="c-btn c-btn--secondary c-btn--large">Become a sponsor</a>
+                    <a href="{{ links.getStarted }}" target="_blank" class="c-btn c-btn--primary c-btn--large">Get Started</a>
+                    <a href="{{ links.donate.landingPage }}" class="c-btn c-btn--secondary c-btn--large">Become a Sponsor</a>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@ eleventyExcludeFromCollections: true
                 <article class="feature">
                     <h3 class="feature__title">Find issues</h3>
                     <p class="feature__description">ESLint statically analyzes your code to quickly find problems. ESLint is built into most text editors and you can run ESLint as part of your continuous integration pipeline.</p>
-                    <a href="/" class="feature__details-link">
+                    <a href="{{ links.getStarted }}" class="feature__details-link">
                         Learn more <span class="visually-hidden">about finding issues with ESLint</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                             <path d="M4.16667 9.99996H15.8333M15.8333 9.99996L10 4.16663M15.8333 9.99996L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -95,7 +95,7 @@ eleventyExcludeFromCollections: true
                 <article class="feature">
                     <h3 class="feature__title">Fix problems automatically</h3>
                     <p class="feature__description">Many problems ESLint finds can be automatically fixed. ESLint fixes are syntax-aware so you won't experience errors introduced by traditional find-and-replace algorithms.</p>
-                    <a href="/" class="feature__details-link">
+                    <a href="{{ links.fixProblems }}" target="_blank" class="feature__details-link">
                         Learn more <span class="visually-hidden">about fixing problems automatically with ESLint</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                             <path d="M4.16667 9.99996H15.8333M15.8333 9.99996L10 4.16663M15.8333 9.99996L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -103,10 +103,10 @@ eleventyExcludeFromCollections: true
                     </a>
                 </article>
                 <article class="feature">
-                    <h3 class="feature__title">Customize rules</h3>
+                    <h3 class="feature__title">Configure everything</h3>
                     <p class="feature__description">Preprocess code, use custom parsers, and write your own rules that work alongside ESLint's built-in rules. Customize ESLint to work exactly the way you need it for your project.</p>
-                    <a href="/" class="feature__details-link">
-                        Learn more <span class="visually-hidden">about customizing rules in ESLint</span>
+                    <a href="{{ links.configuring }}" target="_blank" class="feature__details-link">
+                        Learn more <span class="visually-hidden">about configuring ESLint</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                             <path d="M4.16667 9.99996H15.8333M15.8333 9.99996L10 4.16663M15.8333 9.99996L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg></a>

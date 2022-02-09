@@ -13,6 +13,9 @@
     "store": "https://eslint.threadless.com",
     "team": "/team",
 
+    "configuring": "https://eslint.org/docs/user-guide/configuring/",
+    "fixProblems": "https://eslint.org/docs/user-guide/command-line-interface#fixing-problems",
+
     "donate": {
         "landingPage": "/donate",
         "openCollective": "https://opencollective.com/eslint",
