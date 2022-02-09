@@ -79,16 +79,27 @@ ul.donations-list {
 
 // donation plans on donate page
 
-.donation-plans {}
+.donation-plans {
+    &.grid {
+        align-items: stretch;
+    }
+}
 
 .donation-plan {
     border: 1px solid var(--divider-color);
     border-radius: var(--border-radius);
-    margin-bottom: 2rem;
     box-shadow: var(--shadow-lg);
+
+    display: flex;
+    flex-direction: column;
 
     &:first-of-type() {
         @media all and (max-width: 768px) {}
+    }
+
+    @media all and (max-width: 1023px) {
+        margin-bottom: 2rem;
+        margin-block-end: 2rem;
     }
 }
 
@@ -107,6 +118,8 @@ ul.donations-list {
 }
 
 ul.donation-plan__features {
+    flex: 1;
+
     li {
         margin-bottom: 1rem;
         margin-block-start: 1rem;
