@@ -1515,7 +1515,7 @@ nav.c-pagination {
   background-color: var(--lightest-background-color);
   border-radius: var(--border-radius);
   border: 1px solid var(--divider-color);
-  padding: .75rem 1.25rem .75rem 1rem;
+  padding: 0.75rem 1.25rem 0.75rem calc(.5rem + 1vw);
   white-space: nowrap;
   margin-top: 1.5rem;
   margin-block-start: 1.5rem;
@@ -1535,14 +1535,14 @@ nav.c-pagination {
       background-color: #fff;
       color: var(--body-text-color); }
 
-.eslint-install-code__btn .c-icon {
-  color: var(--body-text-color); }
-
-.eslint-install-code__btn:hover .c-icon, .eslint-install-code__btn:focus .c-icon, .eslint-install-code__btn:active .c-icon {
-  color: var(--link-color); }
-
-.eslint-install-code__btn[data-copied="true"] .c-icon {
-  color: var(--link-color); }
+.eslint-install-code__btn {
+  padding: 0; }
+  .eslint-install-code__btn .c-icon {
+    color: var(--body-text-color); }
+  .eslint-install-code__btn:hover .c-icon, .eslint-install-code__btn:focus .c-icon, .eslint-install-code__btn:active .c-icon {
+    color: var(--link-color); }
+  .eslint-install-code__btn[data-copied="true"] .c-icon {
+    color: var(--link-color); }
 
 .eslint-install-code__announcement {
   font-size: .875rem;

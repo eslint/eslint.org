@@ -26,7 +26,7 @@
     background-color: var(--lightest-background-color);
     border-radius: var(--border-radius);
     border: 1px solid var(--divider-color);
-    padding: .75rem 1.25rem .75rem 1rem;
+    padding: .75rem 1.25rem .75rem calc(.5rem + 1vw);
     white-space: nowrap;
     margin-top: 1.5rem;
     margin-block-start: 1.5rem;
@@ -37,10 +37,6 @@
     [data-theme="dark"] & {
         background-color: var(--color-neutral-700);
     }
-
-    // @media (prefers-color-scheme: dark) {
-    //     background-color: var(--color-neutral-700);
-    // }
 
     code {
         color: var(--headings-color);
@@ -60,6 +56,8 @@
 }
 
 .eslint-install-code__btn {
+    padding: 0;
+
     .c-icon {
         color: var(--body-text-color);
     }
