@@ -90,7 +90,7 @@ month to help us out." %}
                     </li>
                 </ul>
                 <footer class="donation-plan__footer">
-                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg width="21" height="20" viewBox="0 0 21 20" aria-label="Open Collective">
                             <use xlink:href="#oc"></use>
                         </svg>
@@ -133,7 +133,7 @@ month to help us out." %}
                         Use your existing GitHub login</li>
                 </ul>
                 <footer class="donation-plan__footer">
-                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
@@ -206,13 +206,13 @@ month to help us out." %}
                     2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
                 </div>
                 <div>
-                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
@@ -230,13 +230,13 @@ month to help us out." %}
                     Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
                 </div>
                 <div>
-                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
@@ -254,13 +254,13 @@ month to help us out." %}
                     Third highest logo placement on homepage and readme.
                 </div>
                 <div>
-                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
@@ -278,13 +278,13 @@ month to help us out." %}
                     Fourth highest logo placement on homepage and readme.
                 </div>
                 <div>
-                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
@@ -302,13 +302,13 @@ month to help us out." %}
                     Listed on our sponsors page
                 </div>
                 <div>
-                    <a href="{{ links.donate.openCollective }}" target="_blank" class="c-btn c-btn--secondary">
+                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--secondary">
                         <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
                             <use xlink:href="#oc"></use>
                         </svg>
                         Donate <span class="visually-hidden">on Open Collective</span>
                     </a>
-                    <a href="{{ links.donate.githubSponsors }}" target="_blank" class="c-btn c-btn--secondary">
+                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--secondary">
                         <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>

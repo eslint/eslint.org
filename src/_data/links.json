@@ -16,9 +16,7 @@
     "configuring": "https://eslint.org/docs/user-guide/configuring/",
     "fixProblems": "https://eslint.org/docs/user-guide/command-line-interface#fixing-problems",
 
-    "donate": {
-        "landingPage": "/donate",
-        "openCollective": "https://opencollective.com/eslint",
-        "githubSponsors": "https://github.com/sponsors/eslint"
-    }
+    "donate": "/donate",
+    "openCollective": "https://opencollective.com/eslint",
+    "githubSponsors": "https://github.com/sponsors/eslint"
 }
