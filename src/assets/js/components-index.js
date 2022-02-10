@@ -4,7 +4,7 @@
         body = document.getElementsByTagName("body")[0],
         open = false;
 
-    if (index_trigger && index && matchMedia) {
+    if (matchMedia) {
         const mq = window.matchMedia("(max-width: 1023px)");
         mq.addListener(WidthChange);
         WidthChange(mq);
@@ -14,24 +14,22 @@
         initIndex();
     }
 
+    function toggleindex(e) {
+        if (!open) {
+            this.setAttribute("aria-expanded", "true");
+            index.setAttribute("data-open", "true");
+            open = true;
+        } else {
+            this.setAttribute("aria-expanded", "false");
+            index.setAttribute("data-open", "false");
+            open = false;
+        }
+    }
+
     function initIndex() {
         index_trigger.removeAttribute("hidden");
         index_trigger.setAttribute("aria-expanded", "false");
         index.setAttribute("data-open", "false");
-
-        index.setAttribute("data-open", "false");
         index_trigger.addEventListener("click", toggleindex, false);
-
-        function toggleindex(e) {
-            if (!open) {
-                this.setAttribute("aria-expanded", "true");
-                index.setAttribute("data-open", "true");
-                open = true;
-            } else {
-                this.setAttribute("aria-expanded", "false");
-                index.setAttribute("data-open", "false");
-                open = false;
-            }
-        }
     }
 })();
