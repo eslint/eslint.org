@@ -2343,19 +2343,19 @@ button.c-share__btn {
   color: var(--headings-color);
   font-weight: 500; }
 
-@media all and (min-width: 800px) {
-  .hero .grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 2rem;
-    align-items: center; } }
-
-.hero .grid .span-1-7 {
-  grid-column: 1 / 2; }
-
-.hero .grid .span-10-12 {
-  grid-column: 2 / 3;
-  justify-self: end; }
+.hero .grid {
+  width: 100%; }
+  @media all and (min-width: 800px) {
+    .hero .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 2rem;
+      align-items: center; } }
+  .hero .grid .span-1-7 {
+    grid-column: 1 / 2; }
+  .hero .grid .span-10-12 {
+    grid-column: 2 / 3;
+    justify-self: end; }
 
 .hero {
   border-bottom: 1px solid var(--divider-color);

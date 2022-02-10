@@ -1,4 +1,6 @@
 .hero .grid {
+    width: 100%;
+
     @media all and (min-width: 800px) {
         display: grid;
         grid-template-columns: 2fr 1fr;
