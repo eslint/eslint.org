@@ -166,5 +166,6 @@ async function fetchBlogAuthors() {
 
     await fs.writeFile(teamFilename, JSON.stringify(team, null, "    "), { encoding: "utf8" });
     await fs.writeFile(authorsFilename, JSON.stringify(authors, null, "    "), { encoding: "utf8" });
+
     console.log("Fetch Team Data: Success");
 })();
