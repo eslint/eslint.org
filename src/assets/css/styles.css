@@ -363,22 +363,22 @@ h5:target,
 h6:target {
   background-color: var(--lighter-background-color); }
 
-*.focus-visible {
-  outline: 2px solid var(--outline-color);
-  outline-offset: 3px; }
-
-.js-focus-visible *:focus:not(.focus-visible) {
-  outline: 1px solid transparent;
-  box-shadow: none; }
-
 *:focus {
-  outline: 3px solid transparent; }
+  outline: none; }
 
 *:focus-visible {
   outline: 2px solid var(--outline-color);
   outline-offset: 3px; }
 
+*.focus-visible {
+  outline: 2px solid var(--outline-color);
+  outline-offset: 3px; }
+
 *:focus:not(:focus-visible) {
+  outline: 1px solid transparent;
+  box-shadow: none; }
+
+.js-focus-visible *:focus:not(.focus-visible) {
   outline: 1px solid transparent;
   box-shadow: none; }
 
@@ -441,7 +441,6 @@ hr {
 
 .content-container {
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
   padding: var(--space-xl-3xl) calc(1rem + 1vw); }
 
@@ -476,6 +475,7 @@ code {
     color: unset; }
 
 p:empty {
+  display: none;
   margin: 0; }
 
 .c-icon {
@@ -507,7 +507,8 @@ a .c-icon:hover {
   color: var(--link-color); }
 
 a {
-  color: var(--link-color); }
+  color: var(--link-color);
+  transition: color .1s linear; }
   .side-header a {
     color: inherit;
     text-decoration: none; }
@@ -587,12 +588,6 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0; }
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance: none; }
 
 .video {
   width: 90%;
