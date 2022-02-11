@@ -76,7 +76,7 @@ eleventyExcludeFromCollections: true
         <header class="section-head center-text">
             <h2 class="section-title h3">The pluggable linting utility for JavaScript and JSX</h2>
             <p class="section-supporting-text fs-step-0">
-                ESLint is an open source project that helps developers find and fix problems with their code. It's the #1 JavaScript linter by downloads on NPM, with over 6.5 million per week.
+                ESLint is an open source project that helps developers find and fix problems with their code. It's the #1 JavaScript linter by downloads on NPM, with over {{ stats.weeklyDownloads | shortNumber }} million per week.
             </p>
         </header>
         <div class="section-body features-wrapper grid">
@@ -170,7 +170,7 @@ eleventyExcludeFromCollections: true
         <header class="section-head center-text">
             <h2 class="section-title h3">Welcome to the community</h2>
             <p class="section-supporting-text fs-step-0">
-                ESLint is the #1 JavaScript linter by downloads on npm (over 6.5M downloads / week) and is used at companies like Microsoft, Airbnb, Netflix, and Facebook.
+                ESLint is the #1 JavaScript linter by downloads on npm (over {{ stats.weeklyDownloads | shortNumber }} downloads / week) and is used at companies like Microsoft, Airbnb, Netflix, and Facebook.
             </p>
         </header>
         <div class="metrics center-text">
