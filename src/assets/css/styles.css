@@ -441,6 +441,7 @@ hr {
 
 .content-container {
   width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   padding: var(--space-xl-3xl) calc(1rem + 1vw); }
 
