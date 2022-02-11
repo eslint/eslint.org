@@ -14,6 +14,7 @@
         "build:eleventy": "npx @11ty/eleventy",
         "fetch:team": "node tools/fetch-team-data.js",
         "fetch:stats": "node tools/fetch-stats.js",
+        "fetch:sponsors": "node tools/fetch-sponsors.js",
         "fetch": "npm-run-all --parallel fetch:*",
         "start": "npm-run-all build:sass --parallel watch:*  --parallel images",
         "build": "npm-run-all build:sass --parallel build:*   --parallel images"
