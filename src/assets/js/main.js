@@ -38,7 +38,6 @@
     }
 })();
 
-
 /* branding logo theme switcher */
 (function() {
     var logo_theme_buttons = document.querySelector('.brand__logo__colors'),

@@ -91,7 +91,9 @@
     padding-right: 1rem;
     margin-inline-start: 0;
     margin-block-end: 1rem;
-    padding-inline-end: 1rem; }
+    padding-inline-end: 1rem;
+    display: flex;
+    align-items: center; }
   .eslint-versions .c-icon {
     margin-right: .5rem;
     margin-inline-end: .5rem; }
