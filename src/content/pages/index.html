@@ -202,7 +202,7 @@ eleventyExcludeFromCollections: true
             <ul role="list" class="sponsors span-4-9">
                 {% for tier in ['platinum', 'gold', 'silver', 'bronze'] %}
                     {% for sponsor in sponsors[tier] %}
-                        {% set sponsor_amount = sponsor.monthlyDonation / 100 %}
+                        {% set sponsor_amount = sponsor.monthlyDonation %}
                     <li>
                         <a href="{{ sponsor.url }}">
                             <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month" height="48" loading="lazy" decoding="async" />
