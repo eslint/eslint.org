@@ -3,20 +3,25 @@
   if (!(window.CSS && CSS.supports('color', 'var(--fake-var)'))) {
     return;
   }
+  const media = window.matchMedia('(max-width: 600px)');
+
+  // check if we're on mobile - set initial styles and return out
+  if (media.matches) {
+    gsap.set('.anim', {
+      autoAlpha: 1,
+    });
+    gsap.set('.anim__word', {
+      '--scale': 0,
+    });
+    return;
+  }
+
   gsap.registerPlugin(Flip);
 
-  const media = window.matchMedia('(min-width: 600px)');
   const words = document.querySelectorAll('.anim__word');
   const text = document.querySelector('.anim__text');
-  let speed;
+  let speed = 800;
   let state;
-
-  // speed for 'mask' adjusted for different screen sizes.
-  if (media.matches) {
-    speed = 800;
-  } else {
-    speed = 500;
-  }
 
   //   initial visual state
   gsap.set('.anim', {
