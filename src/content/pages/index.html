@@ -17,7 +17,9 @@ eleventyExcludeFromCollections: true
         <div class="span-1-7 content-container">
             <div class="">
                 <div class="section-head">
-                    <h1 class="section-title h0">Find and fix <span class="problems">problems</span> in your JavaScript code.</h1>
+                    <h1 class="visually-hidden">{{title}}</h1>
+
+                    {% include 'components/header-animation.njk' %}
                     <p class="section-supporting-text">
                         ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
                     </p>
