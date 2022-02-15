@@ -13,17 +13,12 @@ h6:target {
 }
 
 *:focus {
-    outline: 3px solid transparent;
+    outline: none;
 }
 
-.js-focus-visible *:focus:not(.focus-visible) {
-    outline: 1px solid transparent;
-    box-shadow: none;
-}
-
-*:focus:not(:focus-visible) {
-    outline: 1px solid transparent;
-    box-shadow: none;
+*:focus-visible {
+    outline: 2px solid var(--outline-color);
+    outline-offset: 3px;
 }
 
 *.focus-visible {
@@ -31,9 +26,14 @@ h6:target {
     outline-offset: 3px;
 }
 
-*:focus-visible {
-    outline: 2px solid var(--outline-color);
-    outline-offset: 3px;
+*:focus:not(:focus-visible) {
+    outline: 1px solid transparent;
+    box-shadow: none;
+}
+
+.js-focus-visible *:focus:not(.focus-visible) {
+    outline: 1px solid transparent;
+    box-shadow: none;
 }
 
 *,
@@ -160,6 +160,7 @@ code {
 }
 
 p:empty {
+    display: none;
     margin: 0;
 }
 
@@ -205,6 +206,7 @@ a {
 
 a {
     color: var(--link-color);
+    transition: color .1s linear;
 
     .side-header & {
         color: inherit;
@@ -246,7 +248,7 @@ ol {
         margin: 0 0 .75em;
     }
 
-    .person__bio  & {
+    .person__bio & {
         padding-left: 1.5rem;
         padding-inline-start: 1.5rem;
     }
@@ -304,6 +306,7 @@ img {
 }
 
 nav {
+
     /* rarely do we display bullets for lists in navigation */
     ol,
     ul {
@@ -311,13 +314,6 @@ nav {
         margin: 0;
         padding: 0;
     }
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-    -webkit-appearance: none;
 }
 
 
@@ -334,6 +330,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+
     *:focus-visible,
     *.focus-visible {
         transition: outline-offset .15s linear;

@@ -364,23 +364,23 @@ h6:target {
   background-color: var(--lighter-background-color); }
 
 *:focus {
-  outline: 3px solid transparent; }
+  outline: none; }
 
-.js-focus-visible *:focus:not(.focus-visible) {
-  outline: 1px solid transparent;
-  box-shadow: none; }
-
-*:focus:not(:focus-visible) {
-  outline: 1px solid transparent;
-  box-shadow: none; }
+*:focus-visible {
+  outline: 2px solid var(--outline-color);
+  outline-offset: 3px; }
 
 *.focus-visible {
   outline: 2px solid var(--outline-color);
   outline-offset: 3px; }
 
-*:focus-visible {
-  outline: 2px solid var(--outline-color);
-  outline-offset: 3px; }
+*:focus:not(:focus-visible) {
+  outline: 1px solid transparent;
+  box-shadow: none; }
+
+.js-focus-visible *:focus:not(.focus-visible) {
+  outline: 1px solid transparent;
+  box-shadow: none; }
 
 *,
 *::before,
@@ -476,6 +476,7 @@ code {
     color: unset; }
 
 p:empty {
+  display: none;
   margin: 0; }
 
 .c-icon {
@@ -507,7 +508,8 @@ a .c-icon:hover {
   color: var(--link-color); }
 
 a {
-  color: var(--link-color); }
+  color: var(--link-color);
+  transition: color .1s linear; }
   .side-header a {
     color: inherit;
     text-decoration: none; }
@@ -588,12 +590,6 @@ nav {
     margin: 0;
     padding: 0; }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance: none; }
-
 .video {
   width: 90%;
   max-width: 1400px;
@@ -609,16 +605,8 @@ input[type="search"]::-webkit-search-results-decoration {
     transition: outline-offset .15s linear;
     outline-offset: 3px; } }
 
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
 code[class*="language-"],
 pre[class*="language-"] {
-  color: black;
-  background: none;
-  text-shadow: 0 1px white;
   font-family: var(--mono-font), Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1em;
   text-align: left;
@@ -635,20 +623,6 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none; }
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #b3d4fc; }
-
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #b3d4fc; }
-
 @media print {
   code[class*="language-"],
   pre[class*="language-"] {
@@ -656,16 +630,19 @@ code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-  position: relative;
   padding: 1.5rem;
   margin: 1.5rem 0;
   overflow: auto;
   background-color: var(--color-neutral-50);
-  border-radius: var(--border-radius); }
+  border-radius: var(--border-radius);
+  background-color: var(--lightest-background-color);
+  color: var(--color-neutral-900); }
+  [data-theme="dark"] pre[class*="language-"] {
+    color: var(--color-neutral-100); }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: var(--color-neutral-50); }
+  background-color: var(--lightest-background-color); }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
@@ -677,22 +654,15 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: slategray; }
-
-.token.punctuation {
-  color: #999; }
+  color: #6E7F8E; }
+  [data-theme="dark"] .token.comment, [data-theme="dark"]
+  .token.prolog, [data-theme="dark"]
+  .token.doctype, [data-theme="dark"]
+  .token.cdata {
+    color: #8E9FAE; }
 
 .token.namespace {
   opacity: .7; }
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: #905; }
 
 .token.selector,
 .token.attr-name,
@@ -700,29 +670,12 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #690; }
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-  color: #9a6e3a;
-  background: rgba(255, 255, 255, 0.5); }
+  color: var(--link-color); }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: #07a; }
-
-.token.function,
-.token.class-name {
-  color: #DD4A68; }
-
-.token.regex,
-.token.important,
-.token.variable {
-  color: #e90; }
+  color: var(--link-color); }
 
 .token.important,
 .token.bold {
