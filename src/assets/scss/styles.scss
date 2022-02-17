@@ -4,30 +4,31 @@
 @import "tokens/typography.scss";
 @import "tokens/ui.scss";
 
-@import "_typography.scss";
 @import "_foundations.scss";
-@import "_prism-syntax-highlighter.scss";
+@import "_syntax-highlighter.scss";
 @import "_header.scss";
 @import "_footer.scss";
 @import "_forms.scss";
 @import "_branding.scss";
 @import "_blog.scss";
+@import "_homepage.scss";
+@import "_versions.scss";
+@import "_sponsors.scss";
 
 @import "components/buttons.scss";
 @import "components/card.scss";
 @import "components/navigation.scss";
-@import "components/toc.scss";
 @import "components/pagination.scss";
 @import "components/search.scss";
+@import "_homepage.scss";
 @import "components/accordion.scss";
-@import "components/homepage.scss";
 @import "components/slider.scss";
 @import "components/donations.scss";
-@import "components/sponsors.scss";
+
 @import "components/post-share.scss";
 @import "components/profile.scss";
 @import "components/languages.scss";
-@import "components/versions.scss";
+
 @import "components/social-icons.scss";
 @import "components/swatches.scss";
 @import "components/hero.scss";
