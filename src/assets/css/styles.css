@@ -82,9 +82,6 @@
   --outline-color: var(--color-brand); }
 
 @media (prefers-color-scheme: dark) {
-  --secondary-button-background-color: var(--color-neutral-700);
-  --secondary-button-hover-color: var(--color-neutral-800);
-  --secondary-button-text-color: var(--body-text-color);
   --body-background-color: var(--color-neutral-900);
   --body-text-color: var(--color-neutral-300);
   --headings-color: #fff;
@@ -95,6 +92,7 @@
   --link-color: var(--color-primary-400);
   --lighter-background-color: var(--color-neutral-800);
   --lightest-background-color: var(--color-neutral-800);
+  --docs-lightest-background-color: var(--color-neutral-800);
   --hero-background-color: var(--color-neutral-800);
   --footer-background-color: var(--color-neutral-800);
   --outline-color: #fff; }
@@ -819,10 +817,8 @@ code .highlight-line:before {
   background-size: 1em auto, 100%; }
 
 .label__text.label__text {
-  display: block;
   display: flex;
   font-size: .875rem;
-  color: inherit;
   align-items: center;
   gap: .5rem;
   font-size: .875rem;
