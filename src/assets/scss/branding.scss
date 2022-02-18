@@ -11,8 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // margin-bottom: 1rem;
-    // margin-block-end: 1rem;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
 
     &[data-brand-theme="light"] {
@@ -40,7 +38,6 @@
 
 .brand__logo__colors__btn {
     display: inline-block;
-    // border: 1px solid #fff;
     width: 1.25rem;
     height: 1.25rem;
     padding: 0;
