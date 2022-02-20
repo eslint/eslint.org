@@ -1,4 +1,4 @@
-@supports(--css: variables) {
+@supports (--css: variables) {
   /* only hide text if browser supports CSS vars (will be animating) */
   .anim {
     opacity: 0;
@@ -51,8 +51,7 @@
     z-index: -1;
   }
 
-  &__svg {
-    content: '';
+  &__dropdown {
     position: absolute;
     top: 101%;
     width: 150%;
@@ -63,8 +62,13 @@
     z-index: 2;
   }
 
+  &__dropdown-img {
+    position: relative;
+    box-shadow: var(--shadow-lg);
+  }
+
   @media only screen and (min-width: 405px) {
-    &__svg {
+    &__dropdown {
       width: 120%;
       left: -10%;
     }
@@ -77,7 +81,7 @@
     z-index: 999;
   }
 
-  &__cursorDOM {
+  &__cursor {
     width: 40px;
     height: 40px;
     width: clamp(30px, 5vw, 50px);
@@ -86,6 +90,13 @@
     border: solid 1px hsl(0, 0%, 60%);
     background-color: hsl(0, 0%, 85%);
     opacity: 0.6;
+  }
+
+  &__cursor--end {
+    position: absolute;
+    bottom: -5%;
+    left: 30%;
+    opacity: 0;
   }
 }
 
