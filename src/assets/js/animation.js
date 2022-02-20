@@ -4,6 +4,15 @@
     return;
   }
 
+  // motion check, hooray for accessible animation
+  const animationIsOk = window.matchMedia(
+    '(prefers-reduced-motion: no-preference)'
+  ).matches;
+
+  if (!animationIsOk) {
+    return;
+  }
+
   // add the image based on theme
   const image = document.querySelector('.anim__dropdown-img');
   if (document.documentElement.dataset.theme == 'dark') {

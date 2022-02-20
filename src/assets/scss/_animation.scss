@@ -1,20 +1,22 @@
 @supports (--css: variables) {
-  /* only hide text if browser supports CSS vars (will be animating) */
-  .anim {
-    opacity: 0;
-  }
+  @media (prefers-reduced-motion: no-preference) {
+    /* only hide text if browser supports CSS vars and user allows animation */
+    .anim {
+      opacity: 0;
+    }
 
-  .anim__word:after {
-    content: '';
-    position: absolute;
-    background-color: var(--hero-background-color);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scaleX(var(--scale));
-    transform-origin: center right;
-    z-index: 999;
+    .anim__word:after {
+      content: '';
+      position: absolute;
+      background-color: var(--hero-background-color);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleX(var(--scale));
+      transform-origin: center right;
+      z-index: 999;
+    }
   }
 }
 
