@@ -1066,20 +1066,21 @@ ul.tag-list {
   grid-column: 1 / -1; }
 
 @supports (--css: variables) {
-  /* only hide text if browser supports CSS vars (will be animating) */
-  .anim {
-    opacity: 0; }
-  .anim__word:after {
-    content: '';
-    position: absolute;
-    background-color: var(--hero-background-color);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scaleX(var(--scale));
-    transform-origin: center right;
-    z-index: 999; } }
+  @media (prefers-reduced-motion: no-preference) {
+    /* only hide text if browser supports CSS vars and user allows animation */
+    .anim {
+      opacity: 0; }
+    .anim__word:after {
+      content: '';
+      position: absolute;
+      background-color: var(--hero-background-color);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleX(var(--scale));
+      transform-origin: center right;
+      z-index: 999; } } }
 
 .anim__word {
   display: inline-block;
@@ -1109,8 +1110,7 @@ ul.tag-list {
   opacity: var(--squiggle-opacity);
   z-index: -1; }
 
-.anim__svg {
-  content: '';
+.anim__dropdown {
   position: absolute;
   top: 101%;
   width: 150%;
@@ -1120,8 +1120,12 @@ ul.tag-list {
   visibility: hidden;
   z-index: 2; }
 
+.anim__dropdown-img {
+  position: relative;
+  box-shadow: var(--shadow-lg); }
+
 @media only screen and (min-width: 405px) {
-  .anim__svg {
+  .anim__dropdown {
     width: 120%;
     left: -10%; } }
 
@@ -1131,7 +1135,7 @@ ul.tag-list {
   right: -100px;
   z-index: 999; }
 
-.anim__cursorDOM {
+.anim__cursor {
   width: 40px;
   height: 40px;
   width: clamp(30px, 5vw, 50px);
@@ -1140,6 +1144,12 @@ ul.tag-list {
   border: solid 1px #999999;
   background-color: #d9d9d9;
   opacity: 0.6; }
+
+.anim__cursor--end {
+  position: absolute;
+  bottom: -5%;
+  left: 30%;
+  opacity: 0; }
 
 .no-js .anim__word:after {
   animation: fallback-hide 0.01s ease-out 0.5s forwards; }
