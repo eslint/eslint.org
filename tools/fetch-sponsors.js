@@ -73,28 +73,7 @@ function getTierSlug(monthlyDonation) {
  */
 async function fetchOpenCollectiveData() {
 
-    let offset = 0;
     const endpoint = "https://api.opencollective.com/graphql/v2";
-    const transactionsSubquery = offset => `
-        transactions(type: CREDIT, limit: 100, offset: ${offset}) {
-            totalCount
-            nodes {
-              id
-              fromAccount {
-                name
-                website
-                imageUrl
-              }
-              updatedAt
-              amount {
-                value
-              }
-              order {
-                frequency
-              }
-            }
-          }
-    `;
 
     const query = `{
         account(slug: "eslint") {
@@ -118,8 +97,30 @@ async function fetchOpenCollectiveData() {
               }
             }
           }
-          ${ transactionsSubquery(0) }
         }
+        donations: orders(
+            account: { slug: "eslint" }
+            frequency: ONETIME
+            status: PAID
+            limit: 50
+          ) {
+            totalCount
+            nodes {
+              id
+              updatedAt
+              frequency
+              status
+              amount {
+                value
+                currency
+              }
+              fromAccount {
+                name
+                website
+                imageUrl
+              }
+            }
+          }
       }`;
 
     const { body: result } = await request(endpoint, {
@@ -140,38 +141,17 @@ async function fetchOpenCollectiveData() {
         tier: order.tier ? order.tier.slug : null
     }));
 
-    const donations = [];
-    let i = 0;
-
-    do {
-        donations.push(...payload.data.account.transactions.nodes
-            .filter(transaction => transaction.order.frequency === "ONETIME")
-            .filter(transaction => !knownOneTimers.has(transaction.fromAccount.name))
-            .map(transaction => ({
-                id: transaction.id,
-                name: transaction.fromAccount.name,
-                url: transaction.fromAccount.website,
-                image: transaction.fromAccount.imageUrl,
-                amount: transaction.amount.value,
-                date: transaction.updatedAt,
-                source: "opencollective"
-            })));
-
-        if (donations.length >= MAX_DONATIONS) {
-            break;
-        }
-
-        // if we reach here then we need more data
-        const { body: result } = await request(endpoint, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ query: `{ account(slug: "eslint") { ${transactionsSubquery(100 * i)} } }` })
-        });
-
-        payload = await result.json();
-
-        i++;
-    } while (i < 5)
+    const donations = payload.data.donations.nodes
+        .filter(transaction => !knownOneTimers.has(transaction.fromAccount.name))
+        .map(transaction => ({
+            id: transaction.id,
+            name: transaction.fromAccount.name,
+            url: transaction.fromAccount.website,
+            image: transaction.fromAccount.imageUrl,
+            amount: transaction.amount.value,
+            date: transaction.updatedAt,
+            source: "opencollective"
+        }));
 
     return {
         sponsors,
