@@ -1761,7 +1761,8 @@ a.c-btn {
   .site-nav a:not(.c-btn) {
     text-decoration: none;
     color: inherit;
-    transition: color .2s linear; }
+    transition: color .2s linear;
+    display: block; }
     .site-nav a:not(.c-btn):hover {
       color: var(--link-color); }
   .site-nav a:not(.c-btn)[data-current="page"],
