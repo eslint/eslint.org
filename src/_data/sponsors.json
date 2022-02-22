@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147948,
-        "monthlyDonations": 12329,
-        "sponsorCount": 179
+        "annualDonations": 148100.04,
+        "monthlyDonations": 12341.67,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -147,7 +147,7 @@
         {
             "name": "Practice Ignition",
             "image": "https://avatars.githubusercontent.com/u/5753491?v=4",
-            "url": "https://www.practiceignition.com",
+            "url": "https://www.ignitionapp.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -235,8 +235,8 @@
         },
         {
             "name": "Paul Foryt",
-            "image": "https://avatars.githubusercontent.com/u/7229568?u=83de695a7883740cb9e882150bc2618da0395771&v=4",
-            "url": "http://www.goforyt.com",
+            "image": "https://avatars.githubusercontent.com/u/7229568?u=479eec3115957259c1a11cc5093d2b3244d94e6c&v=4",
+            "url": "https://foryt.com",
             "monthlyDonation": 25,
             "source": "github",
             "tier": "backer"
@@ -421,9 +421,9 @@
             "tier": "backer"
         },
         {
-            "name": "Kamal Mukkamala",
+            "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?v=4",
-            "url": "https://kamalnrf.com",
+            "url": "https://github.com/Kamalnrf",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1081,17 +1081,17 @@
             "tier": "backer"
         },
         {
-            "name": "Maarten Van Hoof",
-            "image": "https://avatars.githubusercontent.com/u/2543633?u=b4bd36605dd71a3213acdb5d9d2ff27216d9c7a4&v=4",
-            "url": "mrtnvh.com",
+            "name": "Dan",
+            "image": "https://avatars.githubusercontent.com/u/2481552?v=4",
+            "url": "https://danminkevitch.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
         },
         {
-            "name": "Andrew LeTourneau",
-            "image": "https://avatars.githubusercontent.com/u/2807807?v=4",
-            "url": "https://andyletourneau.com",
+            "name": "Maarten Van Hoof",
+            "image": "https://avatars.githubusercontent.com/u/2543633?u=b4bd36605dd71a3213acdb5d9d2ff27216d9c7a4&v=4",
+            "url": "mrtnvh.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1212,6 +1212,14 @@
             "name": "Roman Eckert",
             "image": "https://avatars.githubusercontent.com/u/9392031?u=18c737b16bba6a4373b9b2dc63f7609819dfb5bb&v=4",
             "url": "https://github.com/romaneckert",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "mizdra",
+            "image": "https://avatars.githubusercontent.com/u/9639995?u=dd5dac271b000f6c7883880c1796ce2a95a971b2&v=4",
+            "url": "https://mizdra.net",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1361,6 +1369,14 @@
             "tier": "backer"
         },
         {
+            "name": "tera_ny",
+            "image": "https://avatars.githubusercontent.com/u/33125821?u=e2911b49e3bf868390ded98f56a4ef0843eb812b&v=4",
+            "url": "https://zenn.dev/tera_ny",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Jonas Wanner",
             "image": "https://avatars.githubusercontent.com/u/38656104?u=a4130fab0577a0a2eaa5d667114ccd2e7207aeb4&v=4",
             "url": "https://wanner.work",
@@ -1432,6 +1448,15 @@
             "totalDonations": 118,
             "source": "opencollective",
             "tier": "backer"
+        },
+        {
+            "name": "Matt Welke",
+            "url": "https://mattwelke.com",
+            "image": "https://images.opencollective.com/mattwelke/avatar.png",
+            "monthlyDonation": 2.67,
+            "totalDonations": 2.67,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Shunfan Du",
