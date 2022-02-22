@@ -1940,7 +1940,7 @@ nav.c-pagination {
   border: 1px solid var(--divider-color);
   position: rekative;
   top: .25rem;
-  max-height: 50vh;
+  max-height: 400px;
   overflow-y: auto; }
   @media all and (min-width: 1023px) {
     .search .search-results {
