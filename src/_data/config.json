@@ -1,5 +1,6 @@
 {
     "lang": "en",
     "locale": "en-US",
-    "version": "7.26.0"
+    "version": "7.26.0",
+    "hostname": "eslint.org"
 }
