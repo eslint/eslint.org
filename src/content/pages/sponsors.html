@@ -37,7 +37,7 @@ month to support ESLint's ongoing maintenance and development." %}
             <ul role="list" class="sponsors sponsors--platinum">
                 {% for sponsor in sponsors.platinum %}                
                 <li>
-                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
                             title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
@@ -58,7 +58,7 @@ month to support ESLint's ongoing maintenance and development." %}
             <ul role="list" class="sponsors sponsors--gold">
                 {% for sponsor in sponsors.gold %}
                 <li>
-                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
                             title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
@@ -79,7 +79,7 @@ month to support ESLint's ongoing maintenance and development." %}
             <ul role="list" class="sponsors sponsors--silver">
                 {% for sponsor in sponsors.silver %}
                 <li>
-                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
                             title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
@@ -100,7 +100,7 @@ month to support ESLint's ongoing maintenance and development." %}
             <ul role="list" class="sponsors sponsors--bronze">
                 {% for sponsor in sponsors.bronze %}
                 <li>
-                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
                             title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
@@ -123,7 +123,7 @@ month to support ESLint's ongoing maintenance and development." %}
                 {% for sponsor in techsponsors %}
 
                 <li>
-                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" height="64"/>
                     </a>
                 </li>
@@ -174,7 +174,7 @@ month to support ESLint's ongoing maintenance and development." %}
             <ul role="list" class="sponsors span-1-12 sponsors--backers">
                 {% for sponsor in sponsors.backers %}
                 <li>
-                    <a href="{{ sponsor.url | url }}" rel="nofollow noopener sponsored">
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="48" width="48"
                             onerror="this.src = '/assets/images/people/_placeholder-avatar.svg'"
                             alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
