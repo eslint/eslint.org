@@ -47,6 +47,7 @@
         "undici": "^4.13.0"
     },
     "dependencies": {
+        "algoliasearch": "^4.12.1",
         "got": "^11.8.3",
         "metascraper": "^5.25.7",
         "metascraper-description": "^5.25.7",

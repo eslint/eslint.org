@@ -1,106 +1,124 @@
-// simple button click event handler
-function btnHandler(selector, callback) {
-    var btn = document.querySelector(selector);
-    if (!btn) {
-        return;
-    }
-    btn.addEventListener('click', function(event) {
-        event.preventDefault();
-        callback();
-    }, false);
+/**
+ * @fileoverview Search functionality
+ * @author Nicholas C. Zakas
+ */
+
+//-----------------------------------------------------------------------------
+// Imports
+//-----------------------------------------------------------------------------
+
+import algoliasearch from "./algoliasearch.js";
+
+//-----------------------------------------------------------------------------
+// Initialization
+//-----------------------------------------------------------------------------
+
+// search
+const client = algoliasearch('L633P0C2IR', 'bb6bbd2940351f3afc18844a6b06a6e8');
+const index = client.initIndex('eslint');
+
+// page
+const resultsElement = document.querySelector('#search-results');
+const resultsLiveRegion = document.querySelector('#search-results-announcement');
+const searchInput = document.querySelector('#search');
+const searchClearBtn = document.querySelector('#search__clear-btn');
+
+//-----------------------------------------------------------------------------
+// Helpers
+//-----------------------------------------------------------------------------
+
+/**
+ * Executes a search against the Algolia index.
+ * @param {string} query The search query to execute.
+ * @returns {Promise<Array<object>>} The search results.
+ */
+function fetchSearchResults(query) {
+    return index.search(query, {
+        // facetFilters: ["tags:docs"]
+    }).then(({ hits }) => hits);
 }
 
-(function() {
+/**
+ * Removes any current search results from the display.
+ * @returns {void}
+ */
+function clearSearchResults() {
+    while (resultsElement.firstChild) {
+        resultsElement.removeChild(resultsElement.firstChild);
+    }
+    resultsElement.innerHTML = "";
+    searchClearBtn.setAttribute('hidden', '');
+}
 
-    var searchIndex = null;
-    var searchUI = document.querySelector('.search-ui');
-    var resultsUI = document.querySelector('.search-results');
-    var searchInput = document.querySelector('#search-str');
-    var searchLink = document.getElementById('search-link');
+/**
+ * Displays the given search results in the page.
+ * @param {Array<object>} results The search results to display.
+ * @returns {void}
+ */
+function displaySearchResults(results) {
 
-    // searchLink.setAttribute('hidden', '');
-    // searchUI.removeAttribute('hidden');
+    clearSearchResults();
 
+    if (results.length) {
 
-    // clear the current results
-    var clearResults = function() {
-        while (resultsUI.firstChild) {
-            resultsUI.removeChild(resultsUI.firstChild);
+        const list = document.createElement("ul");
+        list.setAttribute('role', 'list');
+        list.classList.add('search-results__list');
+        resultsElement.append(list);
+        resultsElement.setAttribute('data-results', 'true');
+
+        for (const result of results) {
+            const listItem = document.createElement('li');
+            listItem.classList.add('search-results__item');
+            listItem.innerHTML = `
+                <h2 class="search-results__item__title"><a href="${result.url}">${result.hierarchy.lvl0}</a></h2>
+                <p class="search-results__item__context">${result._highlightResult.hierarchy.lvl0.value}</p>
+            `.trim();
+            list.append(listItem);
         }
+        searchClearBtn.removeAttribute('hidden');
+
+    } else {
+        resultsLiveRegion.innerHTML = "No results found.";
+        resultsElement.innerHTML = "No results found.";
+        resultsElement.setAttribute('data-results', 'false');
+        searchClearBtn.setAttribute('hidden', '');
     }
 
-    // search and display
-    var find = function(str) {
+}
 
-        str = str.toLowerCase();
-        // look for matches in the JSON
-        var results = [];
-        for (var item in searchIndex) {
-            var found = searchIndex[item].text.indexOf(str);
+//-----------------------------------------------------------------------------
+// Event Handlers
+//-----------------------------------------------------------------------------
 
-            if (found != -1) {
-                results.push(searchIndex[item])
+// listen for input changes
+searchInput.addEventListener('keyup', function (e) {
+    const query = searchInput.value;
 
-            }
-        }
+    if(query.length) searchClearBtn.removeAttribute('hidden');
+    else searchClearBtn.setAttribute('hidden', '');
 
-        // build and insert the new result entries
-        clearResults();
-        for (var item in results) {
-            var listItem = document.createElement('li');
-            var link = document.createElement('a');
-            link.textContent = results[item].title;
-            link.setAttribute('href', results[item].url);
-            listItem.appendChild(link);
-            resultsUI.appendChild(listItem);
-        }
+    if (query.length > 2) {
+        fetchSearchResults(query)
+            .then(displaySearchResults)
+            .catch(clearSearchResults);
+
+        document.addEventListener('click', function(e) {
+            if(e.target !== resultsElement) clearSearchResults();
+        });
+    } else {
+        clearSearchResults();
     }
+});
 
-    // searchInput.addEventListener('focus', function(event) {
-    //     // get the data
-    //     fetch('/search.json').then(function(response) {
-    //         return response.json();
-    //     }).then(function(response) {
-    //         searchIndex = response.search;
-    //     });
-    //     // listen for input changes
-    //     this.addEventListener('keyup', function(event) {
-    //         console.log('typing');
-    //         var str = searchInput.value
-    //         if (str.length > 2) {
-    //             find(str);
-    //         } else {
-    //             clearResults();
-    //         }
-    //     });
-    // })
+resultsElement.addEventListener('keydown', function(e) {
+    if(e.key === "Escape") {
+        clearSearchResults();
+    }
+}, true);
 
-
-    // add an event listenrer for a click on the search link
-      btnHandler('#search-link', function(){
-
-        // get the data
-        fetch('/search.json').then(function(response) {
-          return response.json();
-        }).then(function(response) {
-
-          searchIndex = response.search;
-
-        });
-
-        searchUI.toggleAttribute('hidden');
-        searchInput.focus();
-
-        // listen for input changes
-        searchInput.addEventListener('keyup', function(event) {
-          var str = searchInput.value;
-          if(str.length > 2) {
-            find(str);
-          } else {
-            clearResults();
-          }
-        });
-
-      });
-
-})();
+searchClearBtn.addEventListener('click', function(e) {
+    searchInput.value = '';
+    searchInput.focus();
+    clearSearchResults();
+});

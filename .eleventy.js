@@ -204,6 +204,10 @@ module.exports = function(eleventyConfig) {
         './src/content/**/*.pdf': "/assets/documents"
     });
 
+    eleventyConfig.addPassthroughCopy({
+        './node_modules/algoliasearch/dist/algoliasearch-lite.esm.browser.js': "/assets/js/algoliasearch.js"
+    });
+
 
     /*****************************************************************************************
      *  Collections
