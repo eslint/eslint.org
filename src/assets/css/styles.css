@@ -1887,7 +1887,7 @@ nav.c-pagination {
   height: 0; }
 
 .search {
-  margin: 1rem 0;
+  margin: 0 0 2rem 0;
   position: relative; }
 
 .search__input-wrapper,
