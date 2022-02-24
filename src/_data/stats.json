@@ -1,11 +1,11 @@
 {
-    "currentVersion": "v8.0.1",
-    "currentVersionDate": "2013-02-27T19:35:32Z",
-    "nextVersion": "v8.1.0",
-    "nextVersionDate": "2013-02-27T19:35:32Z",
-    "lastCommitDate": "2013-02-27T19:35:32Z",
-    "projectDependents": 6880847,
-    "packageDependents": 381716,
-    "weeklyDownloads": 23265782,
-    "stars": 19985
+    "currentVersion": "v8.8.0",
+    "currentVersionDate": "2022-01-28T21:13:56Z",
+    "currentVersionIsPrerelease": false,
+    "stars": 19990,
+    "lastCommitDate": "2022-02-10T07:04:42Z",
+    "projectDependents": 6894509,
+    "weeklyDownloads": 23532573,
+    "nextVersion": "v8.9.0",
+    "nextVersionDate": "2022-02-12"
 }

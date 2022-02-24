@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% set page_title = [title, " - ESLint - Pluggable JavaScript Linter"] | join %}
-    {% set cover_image = "/icon.svg" %}
+    {% set cover_image = "https://new.eslint.org/icon-512.png" %}
     {% set cover_image_alt = "ESLint logo" %}
     {% set page_desc = "A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease." %}
 
@@ -110,7 +110,9 @@
         }
     </script>
     <script src="{{ '/assets/js/themes.js' | url }}"></script>
-
+    {%- if (hook == "blog-page") -%}
+    <script type="module" src="{{ '/assets/js/search.js' | url }}"></script>
+    {%- endif -%}
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | url }}">
 </head>
 
@@ -139,6 +141,7 @@
     {%- endif -%}
     {%- if hook == "component-library" -%}
     <script src="{{ '/assets/js/tabs.js' | url }}"></script>
+    <script src="{{ '/assets/js/components-index.js' | url }}"></script>
     {%- endif -%}
 </body>
 

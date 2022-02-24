@@ -8,7 +8,7 @@
 
 {%- macro donationItem(params) -%}
 <div class="donation">
-    <img class="donation__sponsor-logo" src="{{ params.image }}" width="40" height="40" alt="{{ params.name }}" />
+    <img class="donation__sponsor-logo" src="{{ params.image }}" width="40" height="40" alt="{{ params.name }}" onerror="this.src = '/assets/images/people/_placeholder-avatar.svg'" />
 
     <div class="donation__content">
         <p class="donation__sponsor-name">{{ params.name }}</p>
