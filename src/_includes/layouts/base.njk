@@ -54,6 +54,7 @@
     <link rel="preload" href="{{ '/assets/fonts/SpaceGrotesk-Medium-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/Inter-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/SpaceMono-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com/">
 
     <script>
         (function() {
@@ -124,10 +125,11 @@
     <script src="{{ '/assets/js/css-vars-ponyfill@2.js' | url }}"></script>
     <script src="{{ '/assets/js/focus-visible.js' | url }}"></script>
     <script src="{{ '/assets/js/main.js' | url }}"></script>
+    {% include 'partials/analytics.html' %}
 
     {%- if (hook == "homepage") or (hook == "component-library") -%}
-    <script src="../../assets/js/hammer.min.js"></script>
-    <script src="../../assets/js/slider.js"></script>
+    <script src="{{ 'assets/js/hammer.min.js' | url }}"></script>
+    <script src="{{ 'assets/js/slider.js' | url }}"></script>
     {%- endif -%}
 
     {%- if (hook == "donate-page") or (hook == "component-library") -%}
