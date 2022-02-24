@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% set page_title = [title, " - ESLint - Pluggable JavaScript Linter"] | join %}
-    {% set cover_image = "https://new.eslint.org/icon-512.png" %}
+    {% set cover_image = ["https://", config.hostname, "/icon-512.png"] | join %}
     {% set cover_image_alt = "ESLint logo" %}
     {% set page_desc = "A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease." %}
 
@@ -17,7 +17,7 @@
     {%- if original -%}
     <link rel="canonical" href="{{ original.url }}">
     {%- else -%}
-    <link rel="canonical" href="https://eslint.org{{ page.url | url }}">
+    <link rel="canonical" href="https://{{ config.hostname }}{{ page.url | url }}">
     {%- endif -%}
 
     <!-- favicon -->
