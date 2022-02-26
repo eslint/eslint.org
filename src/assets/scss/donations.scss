@@ -116,6 +116,13 @@ ul.donations-list {
     }
 }
 
+.donation-plan__github-logo {
+    [data-theme="dark"] & {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
 ul.donation-plan__features {
     flex: 1;
 

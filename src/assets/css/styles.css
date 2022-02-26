@@ -1358,6 +1358,10 @@ ul.donations-list {
     .donation-plan__header img {
       width: 3rem; } }
 
+[data-theme="dark"] .donation-plan__github-logo {
+  -webkit-filter: invert(100%);
+  filter: invert(100%); }
+
 ul.donation-plan__features {
   flex: 1; }
   ul.donation-plan__features li {
