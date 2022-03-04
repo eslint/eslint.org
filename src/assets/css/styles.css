@@ -2536,8 +2536,8 @@ button.c-share__btn {
   display: inline-flex;
   align-items: center;
   margin: 0;
-  width: 40px;
-  height: 40px; }
+  gap: .25rem;
+  color: inherit; }
   .theme-switcher__button:first-of-type {
     border-right: 0.5px solid var(--border-color);
     border-inline-end: 0.5px solid var(--border-color); }
@@ -2549,11 +2549,12 @@ button.c-share__btn {
   .theme-switcher__button:hover .theme-switcher__icon {
     color: var(--link-color); }
 
-.theme-switcher__button[aria-pressed="true"] .theme-switcher__icon {
+.theme-switcher__button[aria-pressed="true"] {
   color: var(--link-color); }
-
-.theme-switcher__button[aria-pressed="true"]:hover .theme-switcher__icon {
-  color: var(--link-color); }
+  .theme-switcher__button[aria-pressed="true"] .theme-switcher__icon {
+    color: var(--link-color); }
+  .theme-switcher__button[aria-pressed="true"]:hover .theme-switcher__icon {
+    color: var(--link-color); }
 
 .theme-switcher__button[aria-pressed="false"] .theme-switcher__icon {
   color: var(--icon-color); }
