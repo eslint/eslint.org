@@ -26,6 +26,11 @@
         display: block;
         height: auto;
         max-height: 3rem;
+
+        [data-theme="dark"] & {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+        }
     }
 }
 
