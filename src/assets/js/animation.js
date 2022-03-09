@@ -13,14 +13,6 @@
     return;
   }
 
-  // add the image based on theme
-  const image = document.querySelector('.anim__dropdown-img');
-  if (document.documentElement.dataset.theme == 'dark') {
-    image.src = '/assets/images/dropdown--dark.png';
-  } else {
-    image.src = '/assets/images/dropdown--light.png';
-  }
-
   gsap.registerPlugin(Flip);
 
   const media = window.matchMedia('(min-width: 600px)');
@@ -38,9 +30,6 @@
 
   //   initial visual state
   gsap.set('.anim', {
-    autoAlpha: 1,
-  });
-  gsap.set('.anim__svg', {
     autoAlpha: 1,
   });
   gsap.set('.anim__dropdown', {
