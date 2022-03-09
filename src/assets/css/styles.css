@@ -774,7 +774,7 @@ code .highlight-line:before {
     left: -10%; } }
 
 .anim__cursorCont {
-  position: fixed;
+  position: absolute;
   top: -100px;
   right: -100px;
   z-index: 999; }
@@ -794,6 +794,14 @@ code .highlight-line:before {
   bottom: -5%;
   left: 30%;
   opacity: 0; }
+
+[data-theme='dark'] .anim__dropdown-img--dark,
+[data-theme='light'] .anim__dropdown-img--light {
+  display: block; }
+
+[data-theme='dark'] .anim__dropdown-img--light,
+[data-theme='light'] .anim__dropdown-img--dark {
+  display: none; }
 
 .no-js .anim__word:after {
   animation: fallback-hide 0.01s ease-out 0.5s forwards; }
