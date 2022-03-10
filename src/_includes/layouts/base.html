@@ -127,6 +127,12 @@
     <script src="{{ '/assets/js/main.js' | url }}"></script>
     {% include 'partials/analytics.html' %}
 
+    {%- if (hook == "homepage") -%}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/Flip.min.js"></script>
+    <script src="../../assets/js/animation.js"></script>
+    {%- endif -%}
+
     {%- if (hook == "homepage") or (hook == "component-library") -%}
     <script src="{{ 'assets/js/hammer.min.js' | url }}"></script>
     <script src="{{ 'assets/js/slider.js' | url }}"></script>
