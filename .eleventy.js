@@ -1,3 +1,12 @@
+/**
+ * @fileoverview Eleventy Configuration File
+ * @author Nicholas C. Zakas
+ */
+
+//-----------------------------------------------------------------------------
+// Requirements
+//-----------------------------------------------------------------------------
+
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -18,13 +27,30 @@ const metascraper = require('metascraper')([
 ]);
 const got = require('got');
 const path = require('path');
-
+const fs = require("fs");
+const yaml = require("js-yaml");
 const {
     DateTime
 } = require("luxon");
 
-module.exports = function(eleventyConfig) {
-    let now = new Date();
+//-----------------------------------------------------------------------------
+// Data
+//-----------------------------------------------------------------------------
+
+const SITES_DIR = path.resolve(__dirname, "src/_data/sites");
+
+//-----------------------------------------------------------------------------
+// Eleventy Config
+//-----------------------------------------------------------------------------
+
+module.exports = eleventyConfig => {
+
+    // Load site-specific data
+    const siteName = process.env.SITE_NAME || "en";
+    eleventyConfig.addGlobalData("site_name", siteName);
+
+    // Support YAML data files
+    eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
 
     /*****************************************************************************************
      *  Filters
@@ -142,6 +168,7 @@ module.exports = function(eleventyConfig) {
 
 
     eleventyConfig.addWatchTarget("./src/assets/");
+    eleventyConfig.addWatchTarget("./src/content/pages/");
 
     /**********************************************************************
      *  Shortcodes

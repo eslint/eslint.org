@@ -1,10 +1,8 @@
 <section class="faqs section">
     <div class="content-container grid">
         <div class="span-1-4">
-            <h2 class="section-title" id="faqs-section-label">Frequently Asked Questions</h2>
-            <p class="section-supporting-text">
-                Everything you need to know about the product and billing. Can’t find the answer you’re looking for? Please chat to our friendly team.
-            </p>
+            <h2 class="section-title" id="faqs-section-label">{{ site.donate_page.faq.title }}</h2>
+            <p class="section-supporting-text">{{ site.donate_page.faq.description | markdown }}</p>
         </div>
         <div class="span-6-12">
             {% include 'components/accordion.html' %}
