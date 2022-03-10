@@ -99,7 +99,7 @@ month to help us out." %}
             </article>
             <article class="donation-plan span-7-12">
                 <header class="donation-plan__header divider">
-                    <img src="../../assets/images/icons/github-img.svg" width="64" height="64" alt="GitHub Sponsors" />
+                    <img src="../../assets/images/icons/github-img.svg" width="64" height="64" alt="GitHub Sponsors" class="donation-plan__github-logo"/>
                     <div class="donation-plan__platform">
                         <h3 class="donation-plan__platform-name">GitHub Sponsors</h3>
                         <p class="donation-plan__description">Advanced features and reporting.</p>
