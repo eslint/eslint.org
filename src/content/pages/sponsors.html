@@ -34,12 +34,15 @@ hook: "sponsors-page"
         </div>
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--platinum">
-                {% for sponsor in sponsors.platinum %}                
+                {% for sponsor in sponsors.platinum %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
-                            alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
-                            title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -56,11 +59,14 @@ hook: "sponsors-page"
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--gold">
                 {% for sponsor in sponsors.gold %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
-                            alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
-                            title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -77,11 +83,14 @@ hook: "sponsors-page"
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--silver">
                 {% for sponsor in sponsors.silver %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
-                            alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
-                            title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -98,11 +107,14 @@ hook: "sponsors-page"
         <div class="span-7-12">
             <ul role="list" class="sponsors sponsors--bronze">
                 {% for sponsor in sponsors.bronze %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
-                            alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
-                            title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
                     </a>
                 </li>
                 {% endfor %}
@@ -120,10 +132,10 @@ hook: "sponsors-page"
             <ul role="list" class="sponsors sponsors--technology">
 
                 {% for sponsor in techsponsors %}
-
+                    {% set sponsor_title = site.sponsors_page.tech_sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("TECH", sponsor.donation | capitalize) %}
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" height="64"/>
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="64"/>
                     </a>
                 </li>
                 {% endfor %}
