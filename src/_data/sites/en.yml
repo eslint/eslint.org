@@ -1,0 +1,339 @@
+#------------------------------------------------------------------------------
+# English Site Details
+# The primary ESLint site that is hosted at eslint.org
+# Author: Nicholas C. Zakas
+#------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------
+# Global Settings
+#------------------------------------------------------------------------------
+
+language:
+  code: en
+  flag: 🇺🇸
+  name: English (US)
+locale: en-US
+hostname: new.eslint.org
+
+#------------------------------------------------------------------------------
+# Analytics
+#------------------------------------------------------------------------------
+
+google_analytics:
+  code: "UA-60915033-1"
+
+#------------------------------------------------------------------------------
+# Ads
+#------------------------------------------------------------------------------
+
+carbon_ads:
+  serve: CESDV2QM
+  placement: eslintorg
+
+#------------------------------------------------------------------------------
+# Shared
+#------------------------------------------------------------------------------
+
+shared:
+  get_started: Get Started
+  become_a_sponsor: Become a Sponsor
+
+#------------------------------------------------------------------------------
+# Navigation
+#------------------------------------------------------------------------------
+
+navigation:
+- text: Team
+  link: team
+- text: Blog
+  link: blog
+- text: Docs
+  link: docs
+- text: Store
+  link: store
+  target: _blank
+- text: Playground
+  link: playground
+  target: _blank
+
+#------------------------------------------------------------------------------
+# Homepage
+#------------------------------------------------------------------------------
+
+homepage:
+  description: >
+    ESLint statically analyzes your code to quickly find problems. It is built
+    into most text editors and you can run ESLint as part of your continuous 
+    integration pipeline.
+  
+  install:
+    title: ESLint quick install code
+    copy: Copy installation code to clipboard
+  
+  versions:
+    title: ESLint Versions
+    latest: Latest Version
+    upcoming: Upcoming Version
+    development: Development
+    dateline: <span class="text-dark">VERSION</span> on DATE
+
+  explainer:
+    image:
+      src: eslint-features-img.png
+      alt: "Screenshot of a Visual Studio code window with ESLint in action: underlining ESLint error in the editor."
+    title: The pluggable linting utility for JavaScript and JSX
+    description: >
+      ESLint is an open source project that helps you find and fix problems 
+      with your JavaScript code. It doesn't matter if you're writing JavaScript in 
+      the browser or on the server, with or without a framework, ESLint can help 
+      your code live its best life.
+    features:
+    - title: Find issues
+      description: >
+        ESLint statically analyzes your code to quickly find problems. ESLint is 
+        built into most text editors and you can run ESLint as part of your 
+        continuous integration pipeline.
+      learn_more:
+        link: getStarted 
+        text: >
+          Learn more <span class="visually-hidden">about finding issues with ESLint</span>
+    - title: Fix problems automatically
+      description: >
+        Many problems ESLint finds can be automatically fixed. ESLint fixes are 
+        syntax-aware so you won't experience errors introduced by traditional 
+        find-and-replace algorithms.
+      learn_more:
+        link: fixProblems 
+        text: >
+          Learn more <span class="visually-hidden">about fixing problems automatically with ESLint</span>
+    - title: Configure everything
+      description: >
+        Preprocess code, use custom parsers, and write your own rules that work 
+        alongside ESLint's built-in rules. Customize ESLint to work exactly the 
+        way you need it for your project.
+      learn_more:
+        link: configuring
+        text: >
+          Learn more <span class="visually-hidden">about configuring ESLint</span>
+
+
+#------------------------------------------------------------------------------
+# Blog Page
+#------------------------------------------------------------------------------
+
+blog_page:
+  title: News and Updates
+  description: The latest ESLint news, case studies, tutorials, and resources.
+  search:
+    title: Search
+    hint: Results will be shown and updated as you type.
+    clear: Clear Search
+  categories:
+    title: Categories
+    everything: Everything
+  pagination:
+    title: Pagination
+    first_page: First
+    next_page: Next
+    previous_page: Previous
+    last_page: Last
+    status: Page PAGE_NUMBER of TOTAL_PAGE_COUNT
+
+#------------------------------------------------------------------------------
+# Team Page
+#------------------------------------------------------------------------------
+
+team_page:
+  title: Meet our Team
+  description: >
+    These are the people who build and maintain ESLint.
+  tsc:
+    title: Technical Steering Committee
+    description: >
+      The people who manage releases, review feature requests, and meet
+      regularly to ensure ESLint is properly maintained.   
+  reviewers:
+    title: Reviewers
+    description: >
+      The people who review and implement new features.
+  committers:
+    title: Committers
+    description: >
+      The people who review and fix bugs and help triage issues.
+  alumni:
+    title: Alumni
+    description: >
+      Former team members who previously helped maintain ESLint.
+
+#------------------------------------------------------------------------------
+# Sponsors Page
+#------------------------------------------------------------------------------
+
+sponsors_page:
+  title: Sponsors
+  description: >
+    BACKER_COUNT companies, organizations, and individuals are currently
+    contributing MONTHLY_DONATIONS each month to support ESLint's ongoing
+    maintenance and development.
+  hero:
+    cta:
+      text: Become a Sponsor
+      url: /donate
+  tiers:
+    platinum:
+      title: Platinum Sponsors
+      description: >
+        Become a platinum sponsor with a monthly donation of $2000 USD (providing
+        40 hours of maintenance and development) and get 2 hours of dedicated 
+        support (remote support available through chat or screen-sharing) per 
+        month as well as your Open Collective or GitHub avatar image on our 
+        README on GitHub and on the home page of eslint.org. We will also 
+        tweet a thank you from our Twitter account (over 20,000 followers). 
+        Please contact the ESLint team to schedule support sessions. 
+    gold:
+      title: Gold Sponsors
+      description: >
+        Become a gold sponsor with a monthly donation of $1000 USD (providing 20 
+        hours of maintenance and development) and get your Open Collective 
+        or GitHub avatar image on our README on GitHub and the front page of 
+        eslint.org. We will also tweet a thank you from our Twitter account 
+        (over 20,000 followers). 
+    silver:
+      title: Silver Sponsors
+      description: >
+        Become a silver sponsor with a monthly donation of $500 USD (providing 10 
+        hours of maintenance and development) and get your Open Collective 
+        or GitHub avatar image on our README on GitHub and the front page 
+        of eslint.org.
+    bronze:
+      title: Bronze Sponsors
+      description: >
+        Become a bronze sponsor with a monthly donation of $200 USD (providing four 
+        hours of maintenance and development) and get your Open Collective
+        or GitHub avatar image on our README on GitHub and the front page of
+        eslint.org.
+    technology:
+      title: Technology Sponsors
+      description: >
+        Technology sponsors allow us to use their products and services for 
+        free as part of a contribution to the open source ecosystem and our work.
+    backers:
+      title: All backers
+      description: >
+        Backers provide monthly contributions to help maintain ESLint. 
+  
+  recent_donations:
+    title: Recent one-time donations
+    description: >
+      We also receive a lot of one-time contributions from fantastic people.
+      Here are some recent ones from OpenCollective and GitHub. 
+    
+#------------------------------------------------------------------------------
+# Donate Page
+#------------------------------------------------------------------------------
+
+donate_page:
+  title: Donate
+  description: >
+    ESLint relies on donations for ongoing maintenance and development.
+    There are currently BACKER_COUNT companies, organizations, and individuals
+    are donating MONTHLY_DONATIONS each month to help us out.
+  hero:
+    cta:
+      text: See our Sponsors
+      url: /sponsors
+  donation_options:
+    title: Ways to donate
+    subtitle: We accept donations through the following sites.
+  testimonials:
+    title: testimonials
+    items:
+    - name: Addy Osmani
+      title: Senior Staff Eng. Manager, Chrome
+      image: addy-osmani.jpg
+      text: >
+        ESLint has been critical in helping developers write high-quality JavaScript
+        for years. We love that it catches common issues early and often. With a high
+        level of extensibility, ESLint's ability to let teams enforce custom rules that
+        work for them has been excellent for open-source projects and more. Chrome is
+        happy to sponsor ESLint to help web developers write consistently high-quality
+        code. It's an essential piece of the modern web development toolkit.
+    - name: Jeff Cross
+      title: Co-founder and Principal Architect, Nx
+      image: jeff-cross.jpg
+      text: >
+        Nx uses ESLint to enforce code quality, library boundaries, and project visibility
+        constraints. ESLint makes Nx more powerful, so on behalf of the Nx.dev community,
+        we're proud to do our part and sponsor ESLint's continued success!
+    - name: Médédé Raymond KPATCHAA
+      title: Technical Architect, Salesforce
+      image: medede-kpatchaa.jpg
+      text: >
+        ESLint is an extremely useful tool for any JavaScript project. This tool allows
+        us to set up consistent code formatting rules adopted by the whole team from the
+        beginning of the project, greatly facilitates code reviews, and makes it easy
+        to integrate new developers into the team. I know I am not alone in appreciating
+        its flexibility and ease-of-use.
+    - name: Duane O'Brien
+      title: Head of Open Source, Indeed
+      image: duane-obrien.jpg
+      text: >
+        Most JavaScript projects directly or transitively depend on ESLint. An Indeed
+        employee nominated ESLint to receive a donation from the FOSS Contributor Fund,
+        and their colleagues clearly agreed. We're happy to support the open source technologies
+        that allow us to develop, protect, and maintain the digital infrastructure that
+        supports our products and helps people get jobs.
+    - name: Gajus Kuizinas
+      title: Co-Founder / CTO, Contra
+      image: gajus.jpg
+      text: >
+        ESLint plays a major role in helping us create a safe and consistent experience
+        across a growing number of codebases and engineers. We are grateful for all the
+        open-source projects that are helping us build Contra, and ESLint is the first
+        of many open-source projects that we are committed to back.
+
+
+  faq:
+    title: Frequently Asked Questions
+    description: Everything you need to know about the product and billing. Can’t find the answer you’re looking for? Please chat to our friendly team.
+    items:
+    - q: Who receives the money that is donated?
+      a: All contributions, whether donated through <a href='https://opencollective.com'>Open
+        Collective</a> or GitHub, are received by the Open Source Collective, which is
+        a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal
+        host for ESLint and keeps track of all donations.
+    - q: Will I get a record of my donations?
+      a: Yes. If you donate through Open Collective, you will receive a PDF receipt via
+        email; if you donate through GitHub, the donation will appear on your receipt
+        or invoice.
+    - q: Is my donation tax deductible?
+      a: No. Even though the Open Source Collective is a 501(c)(3) non-profit organization,
+        the IRS doesn't consider development of open source software to be a charitable
+        activity and therefore doesn’t grant tax-exempt status.
+    - q: Who decides how the money is distributed?
+      a: The TSC makes all decisions regarding who receives the money and how much is
+        distributed.
+    - q: Can I see how the money is being used?
+      a: Yes. By going to our Open Collective page, you can see every expense that has
+        been submitted and paid. All transactions are completely open and publicly visible.
+    - q: Can I cancel my recurring donation at any time?
+      a: Yes. There is no long-term commitment. You can cancel your donation at any time
+        by logging into either Open Collective or GitHub sponsors.
+    - q: How long does it take for my logo to appear on the homepage, GitHub, and npm
+        package?
+      a: The logos on the homepage and GitHub are automatically updated every day so it
+        should take no longer than 24 hours to appear. The logos on the npm package are
+        only updated when we publish a new release, which is typically every two weeks.
+        However, major releases often take several months to complete and during that
+        time logos on the npm package will not be updated.
+    - q: Where do my logo and URL come from?
+      a: We pull the logo and URL from your Open Collective or GitHub profiles, depending
+        on which site you used to donate. You can update these at any time from within
+        Open Collective or GitHub and those changes will be reflected on the homepage
+        and GitHub README within 24 hours. We aren't able to manually override logos or
+        URLs on the site.
+    - q: Is it possible to make a one-time donation?
+      a: Yes. The easiest way to make a one-time donation is through Open Collective,
+        which allows any amount. GitHub one-time donations may have a limit on the amount
+        you can donate.

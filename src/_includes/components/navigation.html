@@ -10,7 +10,7 @@
         </button>
     </div>
     <ul id="nav-list">
-        {% for item in navigation.items %}
+        {% for item in site.navigation %}
         <li>
             {% set itemLink = links[item.link] %}
             <a href="{{ itemLink }}" {{ helpers.getLinkActiveState(itemLink,

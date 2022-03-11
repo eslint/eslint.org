@@ -28,18 +28,17 @@ hook: "donate-page"
 
 {%- from 'components/hero.macro.html' import hero %}
 
-{% set supporting_text = "ESLint relies on donations for ongoing maintenance and development. There are currently BACKER_COUNT companies, organizations, and individuals are donating MONTHLY_DONATIONS each
-month to help us out." %}
+{% set supporting_text = site.donate_page.description %}
 {% set monthly_donations = sponsors.totals.monthlyDonations | dollars %}
 {% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.sponsorCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
 
 {{ hero({
-    title: "Donate",
+    title: site.donate_page.title,
     supporting_text: supporting_text,
     buttons: {
         primary: {
-            primaryText: "See Our Sponsors",
-            primaryURL: "/sponsors/"
+            primaryText: site.donate_page.hero.cta.text,
+            primaryURL: site.donate_page.hero.cta.url
         }
     }
 }) }}
@@ -47,9 +46,9 @@ month to help us out." %}
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3">Ways to donate</h2>
+            <h2 class="section-title h3">{{ site.donate_page.donation_options.title }}</h2>
             <p class="section-supporting-text fs-step-0">
-                Here’s how you can donate.
+                {{ site.donate_page.donation_options.subtitle }}
             </p>
         </div>
         <div class="donation-plans grid">
@@ -323,12 +322,12 @@ month to help us out." %}
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3" hidden>Testimonials</h2>
+            <h2 class="section-title h3" hidden>{{ site.donate_page.testimonials.title }}</h2>
         </div>
         <div class="c-slider c-slider--testimonials">
             <div class="c-slider__slides-container">
                 <div class="c-slider__slides-wrapper">
-                    {%- for item in testimonials.items -%}
+                    {%- for item in site.donate_page.testimonials.items -%}
                     <div class="c-slider__slide">
                         <blockquote class="c-slider__testimonial span-1-6">
                             <div class="c-slider__testimonial__content">

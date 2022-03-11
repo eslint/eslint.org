@@ -9,8 +9,7 @@ hook: "sponsors-page"
 {%- from 'components/donation.macro.html' import donationItem %}
 {%- from 'components/hero.macro.html' import hero %}
 
-{% set supporting_text = "BACKER_COUNT companies, organizations, and individuals are currently contributing MONTHLY_DONATIONS each
-month to support ESLint's ongoing maintenance and development." %}
+{% set supporting_text = site.sponsors_page.description %}
 {% set monthly_donations = sponsors.totals.monthlyDonations | dollars %}
 {% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.sponsorCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
 
@@ -19,8 +18,8 @@ month to support ESLint's ongoing maintenance and development." %}
     supporting_text: supporting_text,
     buttons: {
         primary: {
-            primaryText: "Become a sponsor",
-            primaryURL: "/donate/"
+            primaryText: site.sponsors_page.hero.cta.text,
+            primaryURL: site.sponsors_page.hero.cta.url
         }
     }
 }) }}
@@ -28,9 +27,9 @@ month to support ESLint's ongoing maintenance and development." %}
 <section class="section">
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
-            <h2 class="section-title h4">Platinum Sponsors</h2>
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.platinum.title }}</h2>
             <p>
-                Become a platinum sponsor with a monthly donation of $2000 (providing 40 hours of maintenance and development) and get 2 hours of dedicated support (remote support available through chat or screen-sharing) per month as well as your Open Collective avatar image (large) on our README on GitHub and on the home page of eslint.org. We will also tweet a thank you from our Twitter account (over 20,000 followers). Please contact the ESLint team to schedule support sessions.
+                {{ site.sponsors_page.tiers.platinum.description }}
             </p>
         </div>
         <div class="span-7-12">
@@ -49,9 +48,9 @@ month to support ESLint's ongoing maintenance and development." %}
     </div>
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
-            <h2 class="section-title h4">Gold Sponsors</h2>
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.gold.title }}</h2>
             <p>
-                Become a gold sponsor with a monthly donation of $1000 (providing 20 hours of maintenance and development) and get your Open Collective avatar image (large) on our README on GitHub and the front page of eslint.org. We will also tweet a thank you from our Twitter account (over 20,000 followers).
+                {{ site.sponsors_page.tiers.gold.description }}
             </p>
         </div>
         <div class="span-7-12">
@@ -70,9 +69,9 @@ month to support ESLint's ongoing maintenance and development." %}
     </div>
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
-            <h2 class="section-title h4">Silver Sponsors</h2>
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.silver.title }}</h2>
             <p>
-                Become a silver sponsor with a monthly donation of $500 (providing 10 hours of maintenance and development) and get your Open Collective avatar image on our README on GitHub and the front page of eslint.org.
+                {{ site.sponsors_page.tiers.silver.description }}
             </p>
         </div>
         <div class="span-7-12">
@@ -91,9 +90,9 @@ month to support ESLint's ongoing maintenance and development." %}
     </div>
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
-            <h2 class="section-title h4">Bronze Sponsors</h2>
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.bronze.title }}</h2>
             <p>
-                Become a bronze sponsor with a monthly donation of $20 (providing four hours of maintenance and development) and get your Open Collective avatar image on our README on GitHub and the front page of eslint.org.
+                {{ site.sponsors_page.tiers.bronze.description }}
             </p>
         </div>
         <div class="span-7-12">
@@ -112,9 +111,9 @@ month to support ESLint's ongoing maintenance and development." %}
     </div>
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
-            <h2 class="section-title h4">Technology Sponsors</h2>
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.technology.title }}</h2>
             <p>
-                Technology sponsors allow us to use their products and services for free as part of a contribution to the open source ecosystem and our work.
+                {{ site.sponsors_page.tiers.technology.description }}
             </p>
         </div>
         <div class="span-7-12">
@@ -136,9 +135,9 @@ month to support ESLint's ongoing maintenance and development." %}
 <section id="donations">
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3" id="donations-label">Recent one-time donations</h2>
+            <h2 class="section-title h3" id="donations-label">{{ site.sponsors_page.recent_donations.title }}</h2>
             <p class="section-supporting-text fs-step-0">
-                We also receive a lot of one-time contributions from fantastic people. Here are some recent ones from OpenCollective and GitHub.
+                {{ site.sponsors_page.recent_donations.description }}
             </p>
         </div>
         <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
@@ -165,9 +164,9 @@ month to support ESLint's ongoing maintenance and development." %}
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3">All backers</h2>
+            <h2 class="section-title h3">{{ site.sponsors_page.tiers.backers.title }}</h2>
             <p class="section-supporting-text fs-step-0">
-                We have {{ sponsors.backers | length }} backers across our platforms. Thank you for supporting ESLint.
+                {{ site.sponsors_page.tiers.backers.description }}
             </p>
         </div>
         <div class="grid">

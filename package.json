@@ -20,7 +20,7 @@
         "build": "npm-run-all build:sass --parallel build:*   --parallel images"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^0.11.1",
+        "@11ty/eleventy": "^1.0.0",
         "@11ty/eleventy-img": "^1.0.0",
         "@11ty/eleventy-navigation": "^0.3.2",
         "@11ty/eleventy-plugin-rss": "^1.1.1",
@@ -36,6 +36,7 @@
         "gray-matter": "^4.0.3",
         "imagemin": "^8.0.1",
         "imagemin-cli": "^7.0.0",
+        "js-yaml": "^3.14.1",
         "markdown-it": "^12.2.0",
         "markdown-it-anchor": "^8.1.2",
         "node-sass": "^6.0.1",

@@ -1,6 +1,6 @@
 ---
 layout: main.html
-title: Meet our team
+title: Meet our Team
 permalink: /team/
 hook: "team-page"
 ---
@@ -10,16 +10,16 @@ hook: "team-page"
 
 
 {{ hero({
-    title: title,
-    supporting_text: "These are the people who build and maintain ESLint."
+    title: site.team_page.title,
+    supporting_text: site.team_page.description
 }) }}
 
 <section class="section">
     <div class="content-container grid">
         <div class="span-1-4">
-            <h2 class="section-title">Technical Steering Committee</h2>
+            <h2 class="section-title">{{ site.team_page.tsc.title }}</h2>
             <p class="section-supporting-text">
-                The people who manage releases, review feature requests, and meet regularly to ensure ESLint is properly maintained.
+                {{ site.team_page.tsc.description }}
             </p>
         </div>
         <ul role="list" class="span-6-12 people-list">
@@ -52,9 +52,9 @@ hook: "team-page"
 <section class="section">
     <div class="content-container grid">
         <div class="span-1-4">
-            <h2 class="section-title">Reviewers</h2>
+            <h2 class="section-title">{{ site.team_page.reviewers.title }}</h2>
             <p class="section-supporting-text">
-                The people who review and implement new features.
+                {{ site.team_page.reviewers.description }}
             </p>
         </div>
         <ul role="list" class="span-6-12 people-list">
@@ -87,9 +87,9 @@ hook: "team-page"
 <section class="section">
     <div class="content-container grid">
         <div class="span-1-4">
-            <h2 class="section-title">Committers</h2>
+            <h2 class="section-title">{{ site.team_page.committers.title }}</h2>
             <p class="section-supporting-text">
-                The people who review and fix bugs and help triage issues.
+                {{ site.team_page.committers.description }}
             </p>
         </div>
         <ul role="list" class="span-6-12 people-list">
@@ -123,9 +123,9 @@ hook: "team-page"
 <section class="section">
     <div class="content-container grid">
         <div class="span-1-4">
-            <h2 class="section-title">Alumni</h2>
+            <h2 class="section-title">{{ site.team_page.alumni.title }}</h2>
             <p class="section-supporting-text">
-                Former TSC members and committers who previously helped maintain ESLint.
+                {{ site.team_page.alumni.description }}
             </p>
         </div>
         <ul role="list" class="span-6-12 people-list">
