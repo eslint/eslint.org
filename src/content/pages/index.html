@@ -81,48 +81,30 @@ eleventyExcludeFromCollections: true
 <section class="section features-section">
     <div class="content-container">
         <header class="section-head center-text">
-            <h2 class="section-title h3">The pluggable linting utility for JavaScript and JSX</h2>
+            <h2 class="section-title h3">{{ site.homepage.explainer.title }}</h2>
             <p class="section-supporting-text fs-step-0">
-                ESLint is an open source project that helps developers find and fix problems with their JavaScript code. It doesn't matter if you're writing JavaScript in the browser or on the server, with or without a framework, ESLint can help your code live its best life.
+                {{ site.homepage.explainer.description }}
             </p>
         </header>
         <div class="section-body features-wrapper grid">
             <div class="features span-1-5">
+                {%- for feature in site.homepage.explainer.features -%}
                 <article class="feature">
-                    <h3 class="feature__title">Find issues</h3>
-                    <p class="feature__description">ESLint statically analyzes your code to quickly find problems. ESLint is built into most text editors and you can run ESLint as part of your continuous integration pipeline.</p>
-                    <a href="{{ links.getStarted }}" class="feature__details-link">
-                        Learn more <span class="visually-hidden">about finding issues with ESLint</span>
+                    <h3 class="feature__title">{{ feature.title }}</h3>
+                    <p class="feature__description">{{ feature.description }}</p>
+                    <a href="{{ links[feature.learn_more.link] }}" class="feature__details-link">
+                        {{ feature.learn_more.text | safe }}
                         <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                             <path d="M4.16667 9.99996H15.8333M15.8333 9.99996L10 4.16663M15.8333 9.99996L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
 
                     </a>
                 </article>
-                <article class="feature">
-                    <h3 class="feature__title">Fix problems automatically</h3>
-                    <p class="feature__description">Many problems ESLint finds can be automatically fixed. ESLint fixes are syntax-aware so you won't experience errors introduced by traditional find-and-replace algorithms.</p>
-                    <a href="{{ links.fixProblems }}" target="_blank" class="feature__details-link">
-                        Learn more <span class="visually-hidden">about fixing problems automatically with ESLint</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-                            <path d="M4.16667 9.99996H15.8333M15.8333 9.99996L10 4.16663M15.8333 9.99996L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </article>
-                <article class="feature">
-                    <h3 class="feature__title">Configure everything</h3>
-                    <p class="feature__description">Preprocess code, use custom parsers, and write your own rules that work alongside ESLint's built-in rules. Customize ESLint to work exactly the way you need it for your project.</p>
-                    <a href="{{ links.configuring }}" target="_blank" class="feature__details-link">
-                        Learn more <span class="visually-hidden">about configuring ESLint</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-                            <path d="M4.16667 9.99996H15.8333M15.8333 9.99996L10 4.16663M15.8333 9.99996L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></a>
-
-                </article>
+                {%- endfor -%}
             </div>
 
             <div class="features-image span-7-12">
-                {% image "eslint-features-img.png", "Screenshot of a Visual Studio code window with ESLint in action: underlining ESLint error in the editor." %}
+                {% image site.homepage.explainer.image.src, site.homepage.explainer.image.alt %}
             </div>
         </div>
     </div>

@@ -15,6 +15,12 @@ To start a local copy of the website, run:
 npm start
 ```
 
+To start a local copy of a foreign language website, specify the `ESLINT_SITE_NAME` environment variable equal to the name of the site, such as:
+
+```shell
+ESLINT_SITE_NAME=es npm start
+```
+
 ## License
 
 Apache 2.0

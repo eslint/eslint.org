@@ -46,7 +46,7 @@ const SITES_DIR = path.resolve(__dirname, "src/_data/sites");
 module.exports = eleventyConfig => {
 
     // Load site-specific data
-    const siteName = process.env.SITE_NAME || "en";
+    const siteName = process.env.ESLINT_SITE_NAME || "en";
     eleventyConfig.addGlobalData("site_name", siteName);
 
     // Support YAML data files

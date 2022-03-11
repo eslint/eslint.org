@@ -17,6 +17,21 @@ locale: en-US
 hostname: new.eslint.org
 
 #------------------------------------------------------------------------------
+# Analytics
+#------------------------------------------------------------------------------
+
+google_analytics:
+  code: "UA-60915033-1"
+
+#------------------------------------------------------------------------------
+# Ads
+#------------------------------------------------------------------------------
+
+carbon_ads:
+  serve: CESDV2QM
+  placement: eslintorg
+
+#------------------------------------------------------------------------------
 # Shared
 #------------------------------------------------------------------------------
 
@@ -51,16 +66,58 @@ homepage:
     ESLint statically analyzes your code to quickly find problems. It is built
     into most text editors and you can run ESLint as part of your continuous 
     integration pipeline.
+  
   install:
     title: ESLint quick install code
     copy: Copy installation code to clipboard
+  
   versions:
     title: ESLint Versions
     latest: Latest Version
     upcoming: Upcoming Version
     development: Development
     dateline: <span class="text-dark">VERSION</span> on DATE
-    
+
+  explainer:
+    image:
+      src: eslint-features-img.png
+      alt: "Screenshot of a Visual Studio code window with ESLint in action: underlining ESLint error in the editor."
+    title: The pluggable linting utility for JavaScript and JSX
+    description: >
+      ESLint is an open source project that helps you find and fix problems 
+      with your JavaScript code. It doesn't matter if you're writing JavaScript in 
+      the browser or on the server, with or without a framework, ESLint can help 
+      your code live its best life.
+    features:
+    - title: Find issues
+      description: >
+        ESLint statically analyzes your code to quickly find problems. ESLint is 
+        built into most text editors and you can run ESLint as part of your 
+        continuous integration pipeline.
+      learn_more:
+        link: getStarted 
+        text: >
+          Learn more <span class="visually-hidden">about finding issues with ESLint</span>
+    - title: Fix problems automatically
+      description: >
+        Many problems ESLint finds can be automatically fixed. ESLint fixes are 
+        syntax-aware so you won't experience errors introduced by traditional 
+        find-and-replace algorithms.
+      learn_more:
+        link: fixProblems 
+        text: >
+          Learn more <span class="visually-hidden">about fixing problems automatically with ESLint</span>
+    - title: Configure everything
+      description: >
+        Preprocess code, use custom parsers, and write your own rules that work 
+        alongside ESLint's built-in rules. Customize ESLint to work exactly the 
+        way you need it for your project.
+      learn_more:
+        link: configuring
+        text: >
+          Learn more <span class="visually-hidden">about configuring ESLint</span>
+
+
 #------------------------------------------------------------------------------
 # Blog Page
 #------------------------------------------------------------------------------
