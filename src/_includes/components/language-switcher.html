@@ -1,14 +1,14 @@
 <div class="language-switcher">
-    <a href="/languages/" class="switcher-fallback">Change language</a>
+    <a href="/languages/" class="switcher-fallback">{{ site.footer.language_switcher.change_language }}</a>
     <div hidden role="region" class="switcher switcher--language" aria-labelledby="language-switcher-label" id="language-switcher">
-        <span id="language-switcher-label" hidden>Language Selector</span>
+        <span id="language-switcher-label" hidden>{{ site.footer.language_switcher.title }}</span>
         <div class="infobox visually-hidden" id="language-infobox">
-            Selecting a language will take you to the ESLint Web site in that language.
+            {{ site.footer.language_switcher.description }}
         </div>
 
         <label class="switcher__label" for="language-select">
             <span class="label__text">
-                Language
+                {{ site.footer.language_switcher.language }}
             </span>
         </label>
         <select name="language selector" id="language-select" aria-describedby="language-infobox" class="c-custom-select switcher__select">

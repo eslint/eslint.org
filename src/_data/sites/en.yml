@@ -38,6 +38,12 @@ carbon_ads:
 shared:
   get_started: Get Started
   become_a_sponsor: Become a Sponsor
+  eslint_logo_alt: ESLint logo
+  description: >
+    A pluggable and configurable linter tool for identifying and reporting on
+    patterns in JavaScript. Maintain your code quality with ease.
+  title_format: PAGE_TITLE - ESLint - Pluggable JavaScript Linter
+  skip_to_content: Skip to main content
 
 #------------------------------------------------------------------------------
 # Navigation
@@ -65,13 +71,112 @@ footer:
   title: Ready to fix your JavaScript code?
   description: Install from npm or start donating today.
   secondary: Secondary
+  social_icons:
+    title: Social Media
+    twitter: Twitter
+    chat: Discord
+    mailing_list: Google Group
+    github: GitHub
+  theme_switcher:
+    title: Theme Switcher
+    light: Light
+    dark: Dark
+  language_switcher:
+    title: Language Switcher
+    description: Selecting a language will take you to the ESLint website in that language.
+    change_language: Change Language
+    language: Language
+  copyright: >
+    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint 
+    contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS 
+    Foundation</a> has registered trademarks and uses trademarks.  For a list of 
+    trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please 
+    see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> 
+    and <a href="https://trademark-list.openjsf.org">Trademark List</a>.  
+    Trademarks and logos not indicated on the 
+    <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation 
+    trademarks</a> are trademarks&trade; or registered&reg; trademarks of 
+    their respective holders. Use of them does not imply any affiliation with 
+    or endorsement by them.
+  links:
+    open_jsf: The OpenJS Foundation
+    terms: Terms of Use
+    privacy: Privacy Policy
+    bylaws: OpenJS Foundation Bylaws
+    trademark: Trademark Policy
+    trademark_list: Trademark List
+    cookies: Cookie Policy
 
+#------------------------------------------------------------------------------
+# 404 Page
+#------------------------------------------------------------------------------
+
+404_page:
+  title: 404 error
+  subtitle: Page not found
+  description: Sorry, the page you are looking for doesn't exist or has been moved.
+  actions:
+    back_to_home: Back to homepage
+    browse_docs: Browse the docs
+
+#------------------------------------------------------------------------------
+# Branding Page
+#------------------------------------------------------------------------------
+
+branding_page:
+  title: Branding
+  description: How to use our logo
+  sections:
+    name:
+      title: Name
+      description: >
+        ESLint must be written with a capital E, S and L when used, as “ES” stands 
+        for ECMAScript and “L” being the start of the world “Lint”.
+    logo:
+      title: Logo
+      description:
+        - >
+          The ESLint logo can be placed on various backgrounds, provided it has
+          enough vertical and horizontal padding.
+        - >
+          Double the size of the inner hexagon created by the gap to get an idea 
+          how much space the logo should have between the logo and wordmark, as 
+          well as around the logo itself.
+        - >
+          Our logo is versatile - you can use it on various brand colours, making 
+          use of opacity on non-white backgrounds to emulate the lighter colour.
+          The ESLint logomark can also be used in isolation, without the ESLint 
+          wordmark though where possible, using both is preferred.
+      download_svg: Download SVG
+      download_png: Download PNG
+      change_background: "Change Background:"
+    color_palette:
+      title: Color Palette
+      description:
+        - >
+          ESLint’s colour palette can speak to our brand in ways that are every 
+          bit as powerful as copy and logos. They not only affect how our design 
+          looks, but can go as far as to elicit emotion and reflect the 
+          personality of the ESLint brand.
+        - >
+          The primary "brand" color is used across all interactive elements such 
+          as buttons, links, inputs, etc. It is derived from our logo. We use the 
+          two existing colors to create a unique primary tonal range.
+      brand_palette: Brand Palette
+      colors:
+        primary: Primary
+        white: White
+        neutral: Neutral
+  actions:
+    back_to_home: Back to homepage
+    browse_docs: Browse the docs
 
 #------------------------------------------------------------------------------
 # Homepage
 #------------------------------------------------------------------------------
 
 homepage:
+  title: Find and fix problems in your JavaScript code
   description: >
     ESLint statically analyzes your code to quickly find problems. It is built
     into most text editors and you can run ESLint as part of your continuous 
@@ -456,3 +561,11 @@ donate_page:
       a: Yes. The easiest way to make a one-time donation is through Open Collective,
         which allows any amount. GitHub one-time donations may have a limit on the amount
         you can donate.
+
+#------------------------------------------------------------------------------
+# Languages Page
+#------------------------------------------------------------------------------
+
+languages_page:
+  title: Languages
+  choose_language: Choose your language

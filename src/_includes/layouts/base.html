@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% set page_title = [title, " - ESLint - Pluggable JavaScript Linter"] | join %}
+    {% if title %}
+        {% set page_title = title %}
+    {% else %}
+        {% set page_title = site[hook].title %}
+    {% endif %}
+
+    {% set page_title = site.shared.title_format | replace("PAGE_TITLE", page_title) %}
     {% set cover_image = ["https://", site.hostname, "/icon-512.png" ] | join %}
-    {% set cover_image_alt = "ESLint logo" %}
-    {% set page_desc = "A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease." %}
+    {% set cover_image_alt = site.shared.eslint_logo_alt %}
+    {% set page_desc = site.shared.description %}
 
     <!-- SEO -->
     <title>{{ page_title }}</title>
@@ -111,14 +117,14 @@
         }
     </script>
     <script src="{{ '/assets/js/themes.js' | url }}"></script>
-    {%- if (hook == "blog-page") -%}
+    {%- if (hook == "blog_page") -%}
     <script type="module" src="{{ '/assets/js/search.js' | url }}"></script>
     {%- endif -%}
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | url }}">
 </head>
 
-<body class="{{ hook }}">
-    <a href="#main" class="c-btn c-btn--primary" id="skip-link">Skip to main content</a>
+<body class="{{ hook | replace('_', '-') }}">
+    <a href="#main" class="c-btn c-btn--primary" id="skip-link">{{ site.shared.skip_to_content }}</a>
 
     {{ content | safe }}
 
@@ -133,15 +139,15 @@
     <script src="../../assets/js/animation.js"></script>
     {%- endif -%}
 
-    {%- if (hook == "homepage") or (hook == "component-library") -%}
+    {%- if (hook == "homepage") or (hook == "component_library") -%}
     <script src="{{ 'assets/js/hammer.min.js' | url }}"></script>
     <script src="{{ 'assets/js/slider.js' | url }}"></script>
     {%- endif -%}
 
-    {%- if (hook == "donate-page") or (hook == "component-library") -%}
+    {%- if (hook == "donate_page") or (hook == "component_library") -%}
     <script src="{{ '/assets/js/accordion.js' | url }}"></script>
     {%- endif -%}
-    {%- if hook == "component-library" -%}
+    {%- if hook == "component_library" -%}
     <script src="{{ '/assets/js/tabs.js' | url }}"></script>
     <script src="{{ '/assets/js/components-index.js' | url }}"></script>
     {%- endif -%}
