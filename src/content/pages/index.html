@@ -17,8 +17,11 @@ eleventyExcludeFromCollections: true
             <div class="">
                 <div class="section-head">
                     <h1 class="visually-hidden">{{title}}</h1>
-
-                    {% include 'components/header-animation.njk' %}
+                    {% if site.homepage.animation.enabled %}
+                        {% include 'components/header-animation.njk' %}
+                    {% else %}
+                        <h1 class="section-title">{{ site.homepage.title }}</h1>
+                    {% endif %}
                     <p class="section-supporting-text">
                         {{ site.homepage.description }}
                     </p>

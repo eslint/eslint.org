@@ -182,6 +182,12 @@ homepage:
     into most text editors and you can run ESLint as part of your continuous 
     integration pipeline.
   
+  animation:
+    enabled: true
+    text: Find and fix problems in your JavaScript code
+    highlight_word: problems
+    wrong_word: problmes
+
   install:
     title: ESLint quick install code
     copy: Copy installation code to clipboard

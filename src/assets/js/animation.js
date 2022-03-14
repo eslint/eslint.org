@@ -39,7 +39,7 @@
     opacity: 0,
     yPercent: -10,
   });
-  text.innerText = 'problmes';
+  text.innerText = ANIMATION_WRONG_WORD;
 
   //  GSAP timeline
   let tl = gsap.timeline({ delay: 0.3 });
