@@ -58,6 +58,16 @@ navigation:
   target: _blank
 
 #------------------------------------------------------------------------------
+# Footer
+#------------------------------------------------------------------------------
+
+footer:
+  title: Ready to fix your JavaScript code?
+  description: Install from npm or start donating today.
+  secondary: Secondary
+
+
+#------------------------------------------------------------------------------
 # Homepage
 #------------------------------------------------------------------------------
 
@@ -70,6 +80,7 @@ homepage:
   install:
     title: ESLint quick install code
     copy: Copy installation code to clipboard
+    copied: Copied to clipboard.
   
   versions:
     title: ESLint Versions
@@ -116,7 +127,28 @@ homepage:
         link: configuring
         text: >
           Learn more <span class="visually-hidden">about configuring ESLint</span>
+  blog:
+    view_all_posts: View all posts
 
+  stats:
+    title: Welcome to the community
+    description: >
+      ESLint is the #1 JavaScript linter by downloads on npm (over DOWNLOAD_COUNT 
+      downloads / week) and is used at companies like Microsoft, Airbnb, Netflix, 
+      and Facebook.
+    dependents: Dependents
+    weekly_downloads: Weekly Downloads
+    stars: Stars
+  
+  sponsors:
+    title: Sponsored by fantastic people
+    description: >
+      We receive ANNUAL_DONATIONS / year in donations from SPONSOR_COUNT sponsors.
+    view_all_sponsors: View all sponsors
+
+  donations:
+    title: Recent One-time Donations
+    view_all_donations: View all donations
 
 #------------------------------------------------------------------------------
 # Blog Page
@@ -229,6 +261,9 @@ sponsors_page:
       We also receive a lot of one-time contributions from fantastic people.
       Here are some recent ones from OpenCollective and GitHub. 
     
+  sponsor_title: SPONSOR_NAME is donating AMOUNT each month
+  tech_sponsor_title: TECH provided by SPONSOR_NAME
+
 #------------------------------------------------------------------------------
 # Donate Page
 #------------------------------------------------------------------------------

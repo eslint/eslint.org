@@ -4,14 +4,14 @@
             {% include "components/logo.html" %}
 
             <div class="section-head centered">
-                <h2 class="section-title h3">Ready to fix your JavaScript code?</h2>
+                <h2 class="section-title h3">{{ site.footer.title }}</h2>
                 <p class="section-supporting-text">
-                    Install from npm or start donating today.
+                    {{ site.footer.description }}
                 </p>
             </div>
             <div class="eslint-actions">
-                <a href="{{ links.getStarted }}" target="_blank" class="c-btn c-btn--primary">Get Started</a>
-                <a href="{{ links.donate }}" class="c-btn c-btn--secondary donate-link">Become a Sponsor</a>
+                <a href="{{ links.getStarted }}" target="_blank" class="c-btn c-btn--primary">{{ site.shared.get_started }}</a>
+                <a href="{{ links.donate }}" class="c-btn c-btn--secondary donate-link">{{ site.shared.become_a_sponsor }}</a>
             </div>
         </section>
     </div>
@@ -25,7 +25,7 @@
             <p>Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS Foundation</a> has registered trademarks and uses trademarks.  For a list of trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> and <a href="https://trademark-list.openjsf.org">Trademark List</a>.  Trademarks and logos not indicated on the <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation trademarks</a> are trademarks&trade; or registered&reg; trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</p>
         </div>
         <nav aria-labelledby="footer-legal-links-label" class="footer-legal-links">
-            <h2 id="footer-legal-links-label" hidden>Secondary</h2>
+            <h2 id="footer-legal-links-label" hidden>{{ site.footer.secondary }}</h2>
             <ul>
                 <li><a href="/branding/">Branding</a></li>
                 <li><a href="https://openjsf.org/">The OpenJS Foundation</a></li>
