@@ -1,0 +1,55 @@
+name: "\U0001F4DD Offer to Translate"
+description: "Use this form to offer to translate the website into another language"
+title: "Translate to (fill in)"
+labels:
+  - enhancement
+body:
+- type: markdown
+  attributes:
+    value: By opening an issue, you agree to abide by the [Open JS Foundation Code of Conduct](https://eslint.org/conduct).
+- type: input
+  attributes:
+    label: What language do you want to translate the website into?
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: What is the language code for the language?
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: What is the locale code for the language?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: What help will you need?
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: Implementation Checklist
+    description: |
+      The roadmap to release. Some items must be completed by the ESLint team.
+    options:
+      - label: Create new site file
+        required: false
+      - label: Set up Netlify project
+        required: false
+      - label: Register new domain name
+        required: false
+      - label: Set up Google Analytics
+        required: false
+      - label: Set up Carbon Ads
+        required: false
+- type: checkboxes
+  attributes:
+    label: Participation
+    options:
+      - label: I am willing to submit a pull request for this change.
+        required: false
+- type: textarea
+  attributes:
+    label: Additional comments
+    description: Is there anything else that's important for the team to know?
