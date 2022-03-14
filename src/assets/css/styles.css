@@ -1133,6 +1133,9 @@ ul.tag-list {
 .from-the-blog .blog-posts {
   grid-column: 1 / -1; }
 
+.homepage {
+  overflow-x: hidden; }
+
 .problems {
   display: inline-block;
   position: relative; }
