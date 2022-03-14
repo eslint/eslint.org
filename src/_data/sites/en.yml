@@ -281,6 +281,90 @@ donate_page:
   donation_options:
     title: Ways to donate
     subtitle: We accept donations through the following sites.
+    open_collective:
+      title: Open Collective
+      subtitle: Our most popular plan for companies.
+      cta:
+        text: Contribute on Open Collective
+      items:
+        - text: Donate directly to a 501(c)(3) non-profit
+        - text: One-time and recurring donations
+        - text: Pay by credit card, bank transfer, or PayPal
+        - text: Set up an open source fund to donate to multiple projects
+        - text: Available in most countries
+    github_sponsors:
+      title: GitHub Sponsors
+      subtitle: Advanced features and reporting.
+      cta:
+        text: Contribute on GitHub
+      items:
+        - text: Donate through GitHub billing
+        - text: One-time and recurring donations
+        - text: Pay by credit card or use your existing billing relationship with GitHub (including invoicing)
+        - text: Show a “sponsor” badge on your GitHub profile
+        - text: Use your existing GitHub login
+  budget:
+    title: How the money is used
+    subtitle: >
+      The ESLint project uses donated money to benefit the project and the ESLint community as a whole.
+      In general, we spend money on these areas each month.
+    items:
+      - name: Team Development
+        text: >
+          We pay our team members an hourly rate based on their seniority, currently HOURLY_RATE_TSC USD/hour
+          for TSC members and Reviewers and HOURLY_RATE_COMMITERS USD/hour for committers.
+      - name: Contributor Pool
+        text: >
+          We set aside CONTRIBUTOR_POOL_BUDGET USD each month to pay outside contributors who have made significant
+          contributions to the project. Contributions include submitting code, writing documentation,
+          answering questions in our Discord server, and more. This money is allocated each month by the TSC.
+      - name: Dependencies
+        text: >
+          We set aside DEPENDENCIES_BUDGET USD each month to help support our dependencies.
+          We believe that open source projects who are lucky enough to get funded
+          have a responsibility to help support the smaller projects they rely on.
+      - name: Community Projects
+        text: >
+          We set aside COMMUNITY_BUDGET USD each month to help support plugins, parsers,
+          and other projects that are of benefit to the ESLint ecosystem as a whole.
+          We believe the strength of the project is in its ecosystem and we want
+          to ensure important projects remain well-maintained.
+      - name: Support Systems
+        text: >
+          We used a small amount each month to pay for software the team uses to help manage 
+          the project, which includes things like Google Workspace and cloud storage.
+    footer:
+      text: >
+        Additionally, from time to time we use the funds to pay contractors to work on things
+        that are important to the project and where the team doesn’t have the time or expertise
+        to complete the work on their own. For example, we recently hired a designer and developer
+        to redesign this website. We ensure that we spend less than we take in each month so we
+        can save for such projects.
+  donation_tiers:
+    title: Donation tiers
+    subtitle: While we accept donations of any size, we do have a tier system with different rewards at each level.
+    cta:
+      open_collective_text: >
+        Donate <span class="visually-hidden">on Open Collective</span>
+      github_sponsors_text: > 
+        Donate <span class="visually-hidden">on GitHub</span>
+    items:
+      - name: Platinum Sponsor
+        amount: $2000+
+        frequency: per month
+        text: 2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
+      - name: Gold Sponsor
+        amount: $1000–1999
+        frequency: per month
+        text: Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
+      - name: Silver Sponsor
+        amount: $500–999
+        frequency: per month
+        text: Third highest logo placement on homepage and readme.
+      - name: Bronze Sponsor
+        amount: $200–499
+        frequency: per month
+        text: Fourth highest logo placement on homepage and readme.
   testimonials:
     title: testimonials
     items:
