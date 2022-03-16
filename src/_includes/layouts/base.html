@@ -8,6 +8,8 @@
 
     {% if title %}
         {% set page_title = title %}
+    {% elseif currentCategory %}
+        {% set page_title = currentCategory.title %}    
     {% else %}
         {% set page_title = site[hook].title %}
     {% endif %}
