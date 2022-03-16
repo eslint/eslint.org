@@ -282,6 +282,7 @@ blog_page:
     previous_page: Previous
     last_page: Last
     status: Page PAGE_NUMBER of TOTAL_PAGE_COUNT
+  from_the_blog: From the blog
 
 #------------------------------------------------------------------------------
 # Team Page
