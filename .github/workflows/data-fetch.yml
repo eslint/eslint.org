@@ -24,7 +24,7 @@ jobs:
     - name: Fetch sponsor data
       run: npm run fetch:sponsors
       env:
-        ESLINT_DATA_FETCH_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
+        ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
 
     - name: Setup Git
       run: |
