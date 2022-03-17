@@ -1,0 +1,35 @@
+name: Data Fetch
+
+on:
+  schedule:
+  - cron: "0 0 * * *" # Every day at midnight
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+
+    - name: Fetch team data
+      run: npm run fetch:team
+      env:
+        ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
+
+    - name: Fetch project stats
+      run: npm run fetch:stats
+      env:
+        ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
+      
+    - name: Fetch sponsor data
+      run: npm run fetch:sponsors
+      env:
+        ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
+
+    - name: Setup Git
+      run: |
+        git config user.name "GitHub Actions Bot"
+        git config user.email "<eslint@googlegroups.com>"
+    
+    - name: Save updated files
+      run: ./tools/commit-data.sh
