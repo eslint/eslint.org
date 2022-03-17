@@ -10,7 +10,7 @@ else
 	echo "Data changed!"
 
 	# commit the result
-	git add _data/
+	git add src/_data/
 	git commit -m "chore: Update remote data"
 
 	# push back to source control
