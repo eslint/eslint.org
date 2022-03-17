@@ -19,7 +19,7 @@ jobs:
     - name: Fetch project stats
       run: npm run fetch:stats
       env:
-        ESLINT_DATA_FETCH_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
+        ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
       
     - name: Fetch sponsor data
       run: npm run fetch:sponsors
