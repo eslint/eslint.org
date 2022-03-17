@@ -14,7 +14,7 @@ jobs:
     - name: Fetch team data
       run: npm run fetch:team
       env:
-        ESLINT_DATA_FETCH_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
+        ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
 
     - name: Fetch project stats
       run: npm run fetch:stats
