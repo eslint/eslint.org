@@ -11,6 +11,12 @@ jobs:
     - name: Check out repo
       uses: actions/checkout@v2
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+
+    - name: Install npm packages
+      run: npm ci
+
     - name: Fetch team data
       run: npm run fetch:team
       env:
