@@ -69,56 +69,54 @@ navigation:
 #------------------------------------------------------------------------------
 
 footer:
-  title: Ready to fix your JavaScript code?
-  description: Install from npm or start donating today.
-  secondary: Secondary
+  title: Prêts à corriger votre code JavaScript ?
+  description: Installez l'outil avec npm ou faites un don dès maintenant.
+  secondary: Secondaire
   social_icons:
-    title: Social Media
+    title: Réseaux Sociaux
     twitter: Twitter
     chat: Discord
     mailing_list: Google Group
     github: GitHub
   theme_switcher:
-    title: Theme Switcher
+    title: Thèmes
     light: Light
     dark: Dark
   language_switcher:
-    title: Language Switcher
-    description: Selecting a language will take you to the ESLint website in that language.
-    change_language: Change Language
-    language: Language
+    title: Langues
+    description: Sélectionner une langue chargera le site d'ESLint avec la traduction correspondante.
+    change_language: Changer de Langue
+    language: Langue
   copyright: >
-    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint 
-    contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS 
-    Foundation</a> has registered trademarks and uses trademarks.  For a list of 
-    trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please 
-    see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> 
-    and <a href="https://trademark-list.openjsf.org">Trademark List</a>.  
-    Trademarks and logos not indicated on the 
-    <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation 
-    trademarks</a> are trademarks&trade; or registered&reg; trademarks of 
-    their respective holders. Use of them does not imply any affiliation with 
-    or endorsement by them.
+    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> et les
+    contributeurs d'ESLint. Tous droits réservés.
+    L'<a href="https://openjsf.org">OpenJS Foundation</a> a des marques enregistrées et des marques déposées.
+    Pour voir une liste des marques déposées de l'<a href="https://openjsf.org">OpenJS Foundation</a>,
+    veuillez lire notre <a href="https://trademark-policy.openjsf.org">politique de marques déposées</a> 
+    et notre <a href="https://trademark-list.openjsf.org">liste de marques déposées</a>.
+    Toutes marques et logos non présents sur la <a href="https://trademark-list.openjsf.org">liste des marques
+    déposées de l'OpenJS Foundation</a> sont des marques déposées&trade; ou enregistrées&reg; de
+    leurs propriétaires respectifs. Leur usage n'implique aucune affiliation ou approbation de leur part.
   links:
-    open_jsf: The OpenJS Foundation
-    terms: Terms of Use
-    privacy: Privacy Policy
-    bylaws: OpenJS Foundation Bylaws
-    trademark: Trademark Policy
-    trademark_list: Trademark List
-    cookies: Cookie Policy
+    open_jsf: OpenJS Foundation
+    terms: Conditions Générales d'Utilisation
+    privacy: Politique de Confidentialité
+    bylaws: Statuts de l'OpenJS Foundation
+    trademark: Politique de Marques Déposées
+    trademark_list: Liste de Marques Déposées
+    cookies: Règles Relatives aux Cookies
 
 #------------------------------------------------------------------------------
 # 404 Page
 #------------------------------------------------------------------------------
 
 404_page:
-  title: 404 error
-  subtitle: Page not found
-  description: Sorry, the page you are looking for doesn't exist or has been moved.
+  title: Erreur 404
+  subtitle: Page introuvable
+  description: Nous sommes désolés, la page que vous cherchez n'existe pas ou a été déplacée.
   actions:
-    back_to_home: Back to homepage
-    browse_docs: Browse the docs
+    back_to_home: Retourner à l'accueil
+    browse_docs: Parcourir la documentation
 
 #------------------------------------------------------------------------------
 # Branding Page
