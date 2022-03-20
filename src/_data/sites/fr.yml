@@ -123,52 +123,53 @@ footer:
 #------------------------------------------------------------------------------
 
 branding_page:
-  title: Branding
-  description: How to use our logo
+  title: Identité
+  description: Comment utiliser notre logo
   sections:
     name:
-      title: Name
+      title: Nom
       description: >
-        ESLint must be written with a capital E, S and L when used, as “ES” stands 
-        for ECMAScript and “L” being the start of the world “Lint”.
+        ESLint doit s'écrire avec un E, un S et un L majuscules, avec "ES" pour
+        ECMAScript et "L" pour le début du mot "Lint".
     logo:
       title: Logo
       description:
         - >
-          The ESLint logo can be placed on various backgrounds, provided it has
-          enough vertical and horizontal padding.
+          Le logo d'ESLint peut être placé sur différents arrière-plans,
+          en supposant qu'il y ait suffisamment de marges intérieures à la verticale
+          et à l'horizontale.
         - >
-          Double the size of the inner hexagon created by the gap to get an idea 
-          how much space the logo should have between the logo and wordmark, as 
-          well as around the logo itself.
+          Prenez le double de la taille de l'hexagone intérieur délimité par l'espace vide
+          pour avoir une idée de l'espace nécessaire entre le logo et le titre,
+          ainsi qu'autour du logo lui-même.
         - >
-          Our logo is versatile - you can use it on various brand colours, making 
-          use of opacity on non-white backgrounds to emulate the lighter colour.
-          The ESLint logomark can also be used in isolation, without the ESLint 
-          wordmark though where possible, using both is preferred.
-      download_svg: Download SVG
-      download_png: Download PNG
-      change_background: "Change Background:"
+          Notre logo est versatile : vous pouvez l'utiliser sur différentes déclinaisons de couleurs,
+          en tirant parti de l'opacité sur les arrière-plans sombres pour imiter une couleur plus claire.
+          Le logo peut aussi être utilisé seul, sans le nom ESLint. Utiliser les deux ensemble
+          est cependant préférable quand cela est possible.
+      download_png: Télécharger en PNG
+      change_background: "Modifier l'arrière-plan:"
     color_palette:
-      title: Color Palette
+      title: Palette de Couleurs
       description:
         - >
-          ESLint’s colour palette can speak to our brand in ways that are every 
-          bit as powerful as copy and logos. They not only affect how our design 
-          looks, but can go as far as to elicit emotion and reflect the 
-          personality of the ESLint brand.
+          La palette de couleurs d'ESLint peut représenter notre marque de manière
+          aussi efficace que nos textes et nos logos. Non seulement elles ont un
+          impact sur notre design visuel, mais elles peuvent également susciter
+          l'émotion et refléter la personnalité du nom ESLint.
         - >
-          The primary "brand" color is used across all interactive elements such 
-          as buttons, links, inputs, etc. It is derived from our logo. We use the 
-          two existing colors to create a unique primary tonal range.
-      brand_palette: Brand Palette
+          La couleur primaire de la marque est utilisée sur tous les éléments
+          interactifs comme les boutons, les liens hypertextes, les champs de saisie, etc.
+          Elle est dérivée de notre logo. Nous utilisons les deux couleurs existantes
+          pour créer une série de tons uniques.
+      brand_palette: Notre palette
       colors:
-        primary: Primary
-        white: White
-        neutral: Neutral
+        primary: Primaire
+        white: Blanc
+        neutral: Neutre
   actions:
-    back_to_home: Back to homepage
-    browse_docs: Browse the docs
+    back_to_home: Retourner à l'accueil
+    browse_docs: Parcourir la documentation
 
 #------------------------------------------------------------------------------
 # Homepage
