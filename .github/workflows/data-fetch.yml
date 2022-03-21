@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-node@v2
 
     - name: Install npm packages
-      run: npm ci
+      run: npm install
 
     - name: Fetch team data
       run: npm run fetch:team
