@@ -193,7 +193,7 @@ homepage:
     latest: Última versión
     upcoming: Próxima versión
     development: Desarrollo
-    dateline: <span class="text-dark">VERSION</span> on DATE
+    dateline: <span class="text-dark">VERSION</span> en DATE
 
   explainer:
     image:
