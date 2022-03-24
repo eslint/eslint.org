@@ -10,3 +10,6 @@
 
 # Internal Redirects
 /docs/*                             https://eslint.org/docs/:splat 302!
+
+# Translation Blog Redirects
+https://es.eslint.org/blog/*        https://new.eslint.org/blog/:splat 302!
