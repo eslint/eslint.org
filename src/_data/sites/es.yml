@@ -180,7 +180,7 @@ homepage:
   animation:
     enabled: true
     text: Encuentra y arregla problemas en su código Javascript
-    highlight_word: problems
+    highlight_word: problemas
     wrong_word: problmes
 
   install:

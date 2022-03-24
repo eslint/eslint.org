@@ -1710,6 +1710,12 @@ a.c-btn {
   margin: initial;
   padding: initial; }
 
+.carbon-wrapper {
+  height: 290px; }
+  @media all and (max-width: 800px) {
+    .carbon-wrapper {
+      display: none !important; } }
+
 #carbonads {
   display: inline-block;
   margin: 2rem 0;
