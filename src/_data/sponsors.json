@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136508.04,
-        "monthlyDonations": 11375.67,
-        "sponsorCount": 184
+        "annualDonations": 136568.04,
+        "monthlyDonations": 11380.67,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -488,6 +488,15 @@
             "tier": "backer"
         },
         {
+            "name": "Sufi Meditation",
+            "url": "https://www.zikir.com",
+            "image": "https://images.opencollective.com/sufi-meditation/74935dc/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Gian Carlos Figueroa",
             "url": null,
             "image": "https://images.opencollective.com/gian-carlos-figueroa/avatar.png",
@@ -555,7 +564,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 45,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1172,7 +1181,7 @@
         {
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
-            "url": "https://medium.com/@mattiaerre",
+            "url": "https://mattiaerre.medium.com/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
