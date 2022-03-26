@@ -139,7 +139,7 @@
         '--scale': 1,
         ease: 'sine.out',
         onComplete: () => {
-          text.innerText = 'problems';
+          text.innerText = ANIMATION_CORRECT_WORD;
         },
       },
       '<+=0.1'

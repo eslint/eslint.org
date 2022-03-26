@@ -1,5 +1,8 @@
 <div class="anim">
-  <script>const ANIMATION_WRONG_WORD = "{{ site.homepage.animation.wrong_word }}";</script>
+  <script>
+    const ANIMATION_WRONG_WORD = "{{ site.homepage.animation.wrong_word }}";
+    const ANIMATION_CORRECT_WORD = "{{ site.homepage.animation.highlight_word }}";
+  </script>
   {% set words = site.homepage.animation.text.split(' ') %}
   <div class="anim__cursorCont" aria-hidden="true">
     <div class="anim__cursor anim__cursor--start"></div>
