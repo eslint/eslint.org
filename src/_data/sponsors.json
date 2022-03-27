@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136568.04,
-        "monthlyDonations": 11380.67,
-        "sponsorCount": 185
+        "annualDonations": 136508.04,
+        "monthlyDonations": 11375.67,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -623,15 +623,6 @@
             "tier": "backer"
         },
         {
-            "name": "Ayush Sachdeva",
-            "url": null,
-            "image": "https://images.opencollective.com/ayush000/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 75,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Nathan Friedly",
             "url": "http://www.nfriedly.com",
             "image": "https://images.opencollective.com/nfriedly/c7be1d5/avatar.png",
@@ -1012,7 +1003,7 @@
         },
         {
             "name": "Andrey",
-            "image": "https://avatars.githubusercontent.com/u/967317?u=cb59b08ee99dfe8aa4f314ee06a664a17e8963f1&v=4",
+            "image": "https://avatars.githubusercontent.com/u/967317?u=fb495d4c27fea36310fabd6089e91ac9472254f0&v=4",
             "url": "https://akv.io",
             "monthlyDonation": 5,
             "source": "github",
