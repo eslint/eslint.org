@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136508.04,
-        "monthlyDonations": 11375.67,
-        "sponsorCount": 184
+        "annualDonations": 136568.04,
+        "monthlyDonations": 11380.67,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -869,6 +869,14 @@
             "name": "Oliver Steele",
             "image": "https://avatars.githubusercontent.com/u/674?v=4",
             "url": "https://code.osteele.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Stephen Way",
+            "image": "https://avatars.githubusercontent.com/u/38894?u=238da37f0ac3df4e7ab79d1de7c453646cb7ba3a&v=4",
+            "url": "http://stephenway.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
