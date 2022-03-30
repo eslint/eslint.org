@@ -95,6 +95,14 @@
             font-weight: 400;
             font-display: swap;
         }
+        /* Noto Color Emoji for emoji fallbacks in Chromium */
+        @font-face {
+            font-family: "Noto Colo Emoji";
+            src: url("{{ '/assets/fonts/NotoColorEmoji-subset.woff2' | url }}") format("woff2"),
+            url("{{ '/assets/fonts/NotoColorEmoji-subset.zopfli.woff' | url }}") format("woff");
+            font-weight: normal;
+            font-display: swap;
+        }
     </style>
     <script>
         if ("fonts" in document) {

@@ -234,7 +234,8 @@ html[data-theme="dark"] {
             sans-serif,
             "Apple Color Emoji",
             "Segoe UI Emoji",
-            "Segoe UI Symbol";
+            "Segoe UI Symbol",
+            "Noto Color Emoji";
   --display-font: "Space Grotesk",
             -apple-system,
             BlinkMacSystemFont,
@@ -245,7 +246,8 @@ html[data-theme="dark"] {
             sans-serif,
             "Apple Color Emoji",
             "Segoe UI Emoji",
-            "Segoe UI Symbol"; }
+            "Segoe UI Symbol",
+            "Noto Color Emoji"; }
 
 :root {
   --shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.1),
