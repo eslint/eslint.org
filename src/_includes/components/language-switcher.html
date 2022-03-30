@@ -16,7 +16,7 @@
             <option value="{{ language.code }}"
                     data-url="{{ language.url }}"
                     {% if config.lang == language.code %} selected {% endif %}>
-                {{ language.flag }} {{ language.name }}
+                <img src="/assets/images/flags/{{ language.flag }}.svg" alt="" width="24" height="20"> {{ language.name }}
             </option>
             {% endfor %}
         </select>

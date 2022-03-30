@@ -1,24 +1,24 @@
 {
     "items": [{
-            "flag": "🇺🇸",
+            "flag": "us",
             "code": "en",
             "name": "English (US)",
             "url": "https://eslint.org"
         },
         {
-            "flag": "🇯🇵",
+            "flag": "jp",
             "code": "jp",
             "name": "Japenese – 日本語",
             "url": "https://jp.eslint.org"
         },
         {
-            "flag": "🇫🇷",
+            "flag": "fr",
             "code": "fr",
             "name": "Français",
             "url": "https://fr.eslint.org"
         },
         {
-            "flag": "🇨🇳",
+            "flag": "cn",
             "code": "cn",
             "name": "Chinese - 中文",
             "url": "https://cn.eslint.org"
