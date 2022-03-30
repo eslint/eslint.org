@@ -1,7 +1,6 @@
 ---
 layout: main.html
 permalink: /
-title: Find and fix problems in your JavaScript code
 desc: ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
 cover: /assets/images/site-cover.jpg
 hook: "homepage"
@@ -18,8 +17,11 @@ eleventyExcludeFromCollections: true
             <div class="">
                 <div class="section-head">
                     <h1 class="visually-hidden">{{title}}</h1>
-
-                    {% include 'components/header-animation.njk' %}
+                    {% if site.homepage.animation.enabled %}
+                        {% include 'components/header-animation.njk' %}
+                    {% else %}
+                        <h1 class="section-title">{{ site.homepage.title }}</h1>
+                    {% endif %}
                     <p class="section-supporting-text">
                         {{ site.homepage.description }}
                     </p>
@@ -44,7 +46,9 @@ eleventyExcludeFromCollections: true
             </div>
         </div>
         <div class="span-10-12 eslint-versions-col">
-            {% include "partials/carbon-ad.html" %}
+            <div class="carbon-wrapper">
+                {% include "partials/carbon-ad.html" %}
+            </div>
             <dl class="eslint-versions" aria-labelledby="eslint-versions-title">
                 <span id="eslint-versions-title" hidden>{{ site.homepage.versions.title }}</span>
                 <dt>{{ site.homepage.versions.latest }}</dt>
@@ -115,9 +119,9 @@ eleventyExcludeFromCollections: true
 <section>
     <div class="content-container divider">
         <header class="section-head center-text">
-            <h2 class="section-title h3" id="latest-posts-label">Latest posts</h2>
+            <h2 class="section-title h3" id="latest-posts-label">{{ site.blog_page.title }}</h2>
             <p class="section-supporting-text fs-step-0">
-                News, stories, and release notes from the ESLint community
+                {{ site.blog_page.description }}
             </p>
         </header>
         <div class="blog-posts">
@@ -151,7 +155,7 @@ eleventyExcludeFromCollections: true
         </div>
 
         <div class="center-text">
-            <a href="/blog/" class="c-btn c-btn--primary">View all posts</a>
+            <a href="/blog/" class="c-btn c-btn--primary">{{ site.homepage.blog.view_all_posts }}</a>
         </div>
     </div>
 </section>
@@ -159,23 +163,25 @@ eleventyExcludeFromCollections: true
 <section>
     <div class="content-container divider">
         <header class="section-head center-text">
-            <h2 class="section-title h3">Welcome to the community</h2>
+            <h2 class="section-title h3">{{ site.homepage.stats.title }}</h2>
+            {% set download_count = stats.weeklyDownloads | shortNumber %}
+            {% set stats_desc = site.homepage.stats.description | replace("DOWNLOAD_COUNT", download_count) %}
             <p class="section-supporting-text fs-step-0">
-                ESLint is the #1 JavaScript linter by downloads on npm (over {{ stats.weeklyDownloads | shortNumber }} downloads / week) and is used at companies like Microsoft, Airbnb, Netflix, and Facebook.
+                {{ stats_desc }}
             </p>
         </header>
         <div class="metrics center-text">
             <div class="metrics__item">
                 <span class="metrics__value">{{ stats.projectDependents | shortNumber }}</span>
-                <span>Dependents</span>
+                <span>{{ site.homepage.stats.dependents }}</span>
             </div>
             <div class="metrics__item">
                 <span class="metrics__value">{{ stats.weeklyDownloads | shortNumber }}</span>
-                <span>Weekly downloads</span>
+                <span>{{ site.homepage.stats.weekly_downloads }}</span>
             </div>
             <div class="metrics__item">
                 <span class="metrics__value">{{ stats.stars | shortNumber }}</span>
-                <span>Stars</span>
+                <span>{{ site.homepage.stats.stars }}</span>
             </div>
         </div>
     </div>
@@ -184,9 +190,11 @@ eleventyExcludeFromCollections: true
 <section>
     <div class="content-container divider">
         <header class="section-head center-text">
-            <h2 class="section-title h3">Sponsored by fantastic people</h2>
+            <h2 class="section-title h3">{{ site.homepage.sponsors.title }}</h2>
+            {% set annual_donations = sponsors.totals.annualDonations | dollars %}
+            {% set sponsors_desc = site.homepage.sponsors.description | replace("ANNUAL_DONATIONS", annual_donations) | replace("SPONSOR_COUNT", sponsors.totals.sponsorCount) %}
             <p class="section-supporting-text fs-step-0">
-                We receive {{ sponsors.totals.annualDonations | dollars }} / year in donations from {{ sponsors.totals.sponsorCount }} sponsors.
+                {{ sponsors_desc }}
             </p>
         </header>
         <div class="grid">
@@ -194,26 +202,28 @@ eleventyExcludeFromCollections: true
                 {% for tier in ['platinum', 'gold', 'silver', 'bronze'] %}
                     {% for sponsor in sponsors[tier] %}
                         {% set sponsor_amount = sponsor.monthlyDonation %}
+                        {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
                     <li>
                         <a href="{{ sponsor.url }}" class="sponsor-link" rel="nofollow noopen sponsored" target="_blank">
-                            <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }} is donating {{ sponsor_amount | dollars }} each month" height="48" loading="lazy" decoding="async" />
+                            <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="48" loading="lazy" decoding="async" />
                         </a>
                     </li>
                     {% endfor %}
                 {% endfor %}
                 {% for sponsor in techsponsors %}
                 <li>
+                    {% set sponsor_title = site.sponsors_page.tech_sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("TECH", sponsor.donation | capitalize) %}
                     <a href="{{ sponsor.url }}">
-                        <img src="{{ sponsor.image }}" alt="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" title="{{ sponsor.donation | capitalize }} provided by {{ sponsor.name }}" width="48" height="48" loading="lazy" decoding="async" />
+                        <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" width="48" height="48" loading="lazy" decoding="async" />
                     </a>
                 </li>
                 {% endfor %}
             </ul>
-            <div class="center-text"><a href="/sponsors/" class="c-btn c-btn--primary">View all sponsors</a></div>
+            <div class="center-text"><a href="/sponsors/" class="c-btn c-btn--primary">{{ site.homepage.sponsors.view_all_sponsors }}</a></div>
         </div>
         <div class="grid">
             <div class="span-3-10">
-                <h3 class="donations-title span-5-8" id="donations-label">Recent One-time Donations</h3>
+                <h3 class="donations-title span-5-8" id="donations-label">{{ site.homepage.donations.title }}</h3>
 
                 <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
                     {% for donation in donations | limitTo(6) %}
@@ -236,7 +246,7 @@ eleventyExcludeFromCollections: true
                 </ul>
             </div>
             <div class="center-text">
-                <a href="/sponsors/#donations" class="c-btn c-btn--secondary">View all donations</a>
+                <a href="/sponsors/#donations" class="c-btn c-btn--secondary">{{ site.homepage.donations.view_all_donations }}</a>
             </div>
         </div>
     </div>
@@ -261,7 +271,7 @@ eleventyExcludeFromCollections: true
         copyBtn.onclick = () => {
             copyText.select();
             navigator.clipboard.writeText(copyText.value);
-            announcement_region.innerHTML = "Copied to clipboard.";
+            announcement_region.innerHTML = "{{ site.homepage.install.copied }}";
             this.focus();
             copyBtn.setAttribute('data-copied', 'true');
 

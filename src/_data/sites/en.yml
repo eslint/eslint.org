@@ -38,6 +38,12 @@ carbon_ads:
 shared:
   get_started: Get Started
   become_a_sponsor: Become a Sponsor
+  eslint_logo_alt: ESLint logo
+  description: >
+    A pluggable and configurable linter tool for identifying and reporting on
+    patterns in JavaScript. Maintain your code quality with ease.
+  title_format: PAGE_TITLE - ESLint - Pluggable JavaScript Linter
+  skip_to_content: Skip to main content
 
 #------------------------------------------------------------------------------
 # Navigation
@@ -58,18 +64,134 @@ navigation:
   target: _blank
 
 #------------------------------------------------------------------------------
+# Footer
+#------------------------------------------------------------------------------
+
+footer:
+  title: Ready to fix your JavaScript code?
+  description: Install from npm or start donating today.
+  secondary: Secondary
+  social_icons:
+    title: Social Media
+    twitter: Twitter
+    chat: Discord
+    mailing_list: Google Group
+    github: GitHub
+  theme_switcher:
+    title: Theme Switcher
+    light: Light
+    dark: Dark
+  language_switcher:
+    title: Language Switcher
+    description: Selecting a language will take you to the ESLint website in that language.
+    change_language: Change Language
+    language: Language
+  copyright: >
+    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint 
+    contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS 
+    Foundation</a> has registered trademarks and uses trademarks.  For a list of 
+    trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please 
+    see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> 
+    and <a href="https://trademark-list.openjsf.org">Trademark List</a>.  
+    Trademarks and logos not indicated on the 
+    <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation 
+    trademarks</a> are trademarks&trade; or registered&reg; trademarks of 
+    their respective holders. Use of them does not imply any affiliation with 
+    or endorsement by them.
+  links:
+    open_jsf: The OpenJS Foundation
+    terms: Terms of Use
+    privacy: Privacy Policy
+    bylaws: OpenJS Foundation Bylaws
+    trademark: Trademark Policy
+    trademark_list: Trademark List
+    cookies: Cookie Policy
+
+#------------------------------------------------------------------------------
+# 404 Page
+#------------------------------------------------------------------------------
+
+404_page:
+  title: 404 error
+  subtitle: Page not found
+  description: Sorry, the page you are looking for doesn't exist or has been moved.
+  actions:
+    back_to_home: Back to homepage
+    browse_docs: Browse the docs
+
+#------------------------------------------------------------------------------
+# Branding Page
+#------------------------------------------------------------------------------
+
+branding_page:
+  title: Branding
+  description: How to use our logo
+  sections:
+    name:
+      title: Name
+      description: >
+        ESLint must be written with a capital E, S and L when used, as “ES” stands 
+        for ECMAScript and “L” being the start of the word “Lint”.
+    logo:
+      title: Logo
+      description:
+        - >
+          The ESLint logo can be placed on various backgrounds, provided it has
+          enough vertical and horizontal padding.
+        - >
+          Double the size of the inner hexagon created by the gap to get an idea 
+          how much space the logo should have between the logo and wordmark, as 
+          well as around the logo itself.
+        - >
+          Our logo is versatile - you can use it on various brand colours, making 
+          use of opacity on non-white backgrounds to emulate the lighter colour.
+          The ESLint logomark can also be used in isolation, without the ESLint 
+          wordmark though where possible, using both is preferred.
+      download_svg: Download SVG
+      download_png: Download PNG
+      change_background: "Change Background:"
+    color_palette:
+      title: Color Palette
+      description:
+        - >
+          ESLint’s colour palette can speak to our brand in ways that are every 
+          bit as powerful as copy and logos. They not only affect how our design 
+          looks, but can go as far as to elicit emotion and reflect the 
+          personality of the ESLint brand.
+        - >
+          The primary "brand" color is used across all interactive elements such 
+          as buttons, links, inputs, etc. It is derived from our logo. We use the 
+          two existing colors to create a unique primary tonal range.
+      brand_palette: Brand Palette
+      colors:
+        primary: Primary
+        white: White
+        neutral: Neutral
+  actions:
+    back_to_home: Back to homepage
+    browse_docs: Browse the docs
+
+#------------------------------------------------------------------------------
 # Homepage
 #------------------------------------------------------------------------------
 
 homepage:
+  title: Find and fix problems in your JavaScript code
   description: >
     ESLint statically analyzes your code to quickly find problems. It is built
     into most text editors and you can run ESLint as part of your continuous 
     integration pipeline.
   
+  animation:
+    enabled: true
+    text: Find and fix problems in your JavaScript code
+    highlight_word: problems
+    wrong_word: problmes
+
   install:
     title: ESLint quick install code
     copy: Copy installation code to clipboard
+    copied: Copied to clipboard.
   
   versions:
     title: ESLint Versions
@@ -116,7 +238,28 @@ homepage:
         link: configuring
         text: >
           Learn more <span class="visually-hidden">about configuring ESLint</span>
+  blog:
+    view_all_posts: View all posts
 
+  stats:
+    title: Welcome to the community
+    description: >
+      ESLint is the #1 JavaScript linter by downloads on npm (over DOWNLOAD_COUNT 
+      downloads / week) and is used at companies like Microsoft, Airbnb, Netflix, 
+      and Facebook.
+    dependents: Dependents
+    weekly_downloads: Weekly Downloads
+    stars: Stars
+  
+  sponsors:
+    title: Sponsored by fantastic people
+    description: >
+      We receive ANNUAL_DONATIONS / year in donations from SPONSOR_COUNT sponsors.
+    view_all_sponsors: View all sponsors
+
+  donations:
+    title: Recent One-time Donations
+    view_all_donations: View all donations
 
 #------------------------------------------------------------------------------
 # Blog Page
@@ -139,6 +282,7 @@ blog_page:
     previous_page: Previous
     last_page: Last
     status: Page PAGE_NUMBER of TOTAL_PAGE_COUNT
+  from_the_blog: From the blog
 
 #------------------------------------------------------------------------------
 # Team Page
@@ -229,6 +373,9 @@ sponsors_page:
       We also receive a lot of one-time contributions from fantastic people.
       Here are some recent ones from OpenCollective and GitHub. 
     
+  sponsor_title: SPONSOR_NAME is donating AMOUNT each month
+  tech_sponsor_title: TECH provided by SPONSOR_NAME
+
 #------------------------------------------------------------------------------
 # Donate Page
 #------------------------------------------------------------------------------
@@ -246,6 +393,90 @@ donate_page:
   donation_options:
     title: Ways to donate
     subtitle: We accept donations through the following sites.
+    open_collective:
+      title: Open Collective
+      subtitle: Our most popular plan for companies.
+      cta:
+        text: Contribute on Open Collective
+      items:
+        - text: Donate directly to a 501(c)(3) non-profit
+        - text: One-time and recurring donations
+        - text: Pay by credit card, bank transfer, or PayPal
+        - text: Set up an open source fund to donate to multiple projects
+        - text: Available in most countries
+    github_sponsors:
+      title: GitHub Sponsors
+      subtitle: Advanced features and reporting.
+      cta:
+        text: Contribute on GitHub
+      items:
+        - text: Donate through GitHub billing
+        - text: One-time and recurring donations
+        - text: Pay by credit card or use your existing billing relationship with GitHub (including invoicing)
+        - text: Show a “sponsor” badge on your GitHub profile
+        - text: Use your existing GitHub login
+  budget:
+    title: How the money is used
+    subtitle: >
+      The ESLint project uses donated money to benefit the project and the ESLint community as a whole.
+      In general, we spend money on these areas each month.
+    items:
+      - name: Team Development
+        text: >
+          We pay our team members an hourly rate based on their seniority, currently HOURLY_RATE_TSC USD/hour
+          for TSC members and Reviewers and HOURLY_RATE_COMMITERS USD/hour for committers.
+      - name: Contributor Pool
+        text: >
+          We set aside CONTRIBUTOR_POOL_BUDGET USD each month to pay outside contributors who have made significant
+          contributions to the project. Contributions include submitting code, writing documentation,
+          answering questions in our Discord server, and more. This money is allocated each month by the TSC.
+      - name: Dependencies
+        text: >
+          We set aside DEPENDENCIES_BUDGET USD each month to help support our dependencies.
+          We believe that open source projects who are lucky enough to get funded
+          have a responsibility to help support the smaller projects they rely on.
+      - name: Community Projects
+        text: >
+          We set aside COMMUNITY_BUDGET USD each month to help support plugins, parsers,
+          and other projects that are of benefit to the ESLint ecosystem as a whole.
+          We believe the strength of the project is in its ecosystem and we want
+          to ensure important projects remain well-maintained.
+      - name: Support Systems
+        text: >
+          We used a small amount each month to pay for software the team uses to help manage 
+          the project, which includes things like Google Workspace and cloud storage.
+    footer:
+      text: >
+        Additionally, from time to time we use the funds to pay contractors to work on things
+        that are important to the project and where the team doesn’t have the time or expertise
+        to complete the work on their own. For example, we recently hired a designer and developer
+        to redesign this website. We ensure that we spend less than we take in each month so we
+        can save for such projects.
+  donation_tiers:
+    title: Donation tiers
+    subtitle: While we accept donations of any size, we do have a tier system with different rewards at each level.
+    cta:
+      open_collective_text: >
+        Donate <span class="visually-hidden">on Open Collective</span>
+      github_sponsors_text: > 
+        Donate <span class="visually-hidden">on GitHub</span>
+    items:
+      - name: Platinum Sponsor
+        amount: $2000+
+        frequency: per month
+        text: 2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
+      - name: Gold Sponsor
+        amount: $1000–1999
+        frequency: per month
+        text: Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
+      - name: Silver Sponsor
+        amount: $500–999
+        frequency: per month
+        text: Third highest logo placement on homepage and readme.
+      - name: Bronze Sponsor
+        amount: $200–499
+        frequency: per month
+        text: Fourth highest logo placement on homepage and readme.
   testimonials:
     title: testimonials
     items:
@@ -337,3 +568,11 @@ donate_page:
       a: Yes. The easiest way to make a one-time donation is through Open Collective,
         which allows any amount. GitHub one-time donations may have a limit on the amount
         you can donate.
+
+#------------------------------------------------------------------------------
+# Languages Page
+#------------------------------------------------------------------------------
+
+languages_page:
+  title: Languages
+  choose_language: Choose your language

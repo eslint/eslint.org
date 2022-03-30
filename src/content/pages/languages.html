@@ -1,16 +1,15 @@
 ---
 layout: main.html
-title: Languages
 permalink: /languages/
-hook: "languages-page"
+hook: "languages_page"
 ---
 
 {%- from 'components/hero.macro.html' import hero %}
 
 
 {{ hero({
-    title: title,
-    supporting_text: "Choose your language"
+    title: site.languages_page.title,
+    supporting_text: site.languages_page.choose_language
 }) }}
 
 <section class="languages-section section">

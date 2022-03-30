@@ -1,8 +1,7 @@
 ---
 layout: main.html
-title: Donate
 permalink: /donate/
-hook: "donate-page"
+hook: "donate_page"
 ---
 
 <svg style="display: none;" aria-hidden="true">
@@ -56,87 +55,64 @@ hook: "donate-page"
                 <header class="donation-plan__header divider">
                     <img src="../../assets/images/icons/opencollective-img.svg" width="64" height="64" alt="Open Collective" />
                     <div class="donation-plan__platform">
-                        <h3 class="donation-plan__platform-name">Open Collective</h3>
-                        <p class="donation-plan__description">Our most popular plan for companies.</p>
+                        <h3 class="donation-plan__platform-name">
+                            {{ site.donate_page.donation_options.open_collective.title }}
+                        </h3>
+                        <p class="donation-plan__description">
+                            {{ site.donate_page.donation_options.open_collective.subtitle }}
+                        </p>
                     </div>
                 </header>
                 <ul role="list" class="donation-plan__features divider">
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        Donate directly to a 501(c)(3) non-profit.</li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        One-time and recurring donations</li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        Pay by credit card, bank transfer, or PayPal</li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        Set up an open source fund to donate to multiple projects</li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        Available in most countries
-                    </li>
+                    {%- for item in site.donate_page.donation_options.open_collective.items -%}
+                        <li>
+                            <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24"
+                                class="c-icon donation-plan__features__icon">
+                                <use xlink:href="#feature-check"></use>
+                            </svg>
+                            {{ item.text }}
+                        </li>
+                    {%- endfor -%}
                 </ul>
                 <footer class="donation-plan__footer">
                     <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg width="21" height="20" viewBox="0 0 21 20" aria-label="Open Collective">
                             <use xlink:href="#oc"></use>
                         </svg>
-                        Contribute on Open Collective</a>
+                        {{ site.donate_page.donation_options.open_collective.cta.text }}
+                    </a>
                 </footer>
             </article>
             <article class="donation-plan span-7-12">
                 <header class="donation-plan__header divider">
                     <img src="../../assets/images/icons/github-img.svg" width="64" height="64" alt="GitHub Sponsors" class="donation-plan__github-logo"/>
                     <div class="donation-plan__platform">
-                        <h3 class="donation-plan__platform-name">GitHub Sponsors</h3>
-                        <p class="donation-plan__description">Advanced features and reporting.</p>
+                        <h3 class="donation-plan__platform-name">
+                            {{ site.donate_page.donation_options.github_sponsors.title }}
+                        </h3>
+                        <p class="donation-plan__description">
+                            {{ site.donate_page.donation_options.github_sponsors.subtitle }}
+                        </p>
                     </div>
                 </header>
                 <ul role="list" class="donation-plan__features divider">
+                    {%- for item in site.donate_page.donation_options.github_sponsors.items -%}
                     <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
+                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24"
+                            class="c-icon donation-plan__features__icon">
                             <use xlink:href="#feature-check"></use>
                         </svg>
-                        Donate through GitHub billing</li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        One-time and recurring donations</li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        Pay by credit card or use your existing billing relationship with GitHub (including invoicing)</li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        Show a “sponsor” badge on your GitHub profile</li>
-                    <li>
-                        <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="c-icon donation-plan__features__icon">
-                            <use xlink:href="#feature-check"></use>
-                        </svg>
-                        Use your existing GitHub login</li>
+                        {{ item.text }}
+                    </li>
+                    {%- endfor -%}
                 </ul>
                 <footer class="donation-plan__footer">
                     <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
                         <svg width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
                             <use xlink:href="#gh"></use>
                         </svg>
-                        Contribute on GitHub</a>
+                        {{ site.donate_page.donation_options.github_sponsors.cta.text }}
+                    </a>
                 </footer>
             </article>
         </div>
@@ -146,33 +122,25 @@ hook: "donate-page"
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3">How the money is used</h2>
+            <h2 class="section-title h3">{{ site.donate_page.budget.title }}</h2>
             <p class="section-supporting-text fs-step-0">
-                The ESLint project uses donated money to benefit the project and the ESLint community as a whole. In general, we spend money on these areas each month.
+                {{ site.donate_page.budget.subtitle }}
             </p>
         </div>
         <div class="section-body features-wrapper grid">
             <div class="features span-1-5">
-                <article class="feature">
-                    <h3 class="feature__title">Team Development</h3>
-                    <p class="feature__description">We pay our team members an hourly rate based on their seniority, currently {{ budget.hourlyRateTSC | dollars }} USD/hour for TSC members and Reviewers and {{ budget.hourlyRate |dollars }} USD/hour for committers.</p>
-                </article>
-                <article class="feature">
-                    <h3 class="feature__title">Contributor Pool</h3>
-                    <p class="feature__description">We set aside {{ budget.contributorPool | dollars }} USD each month to pay outside contributors who have made significant contributions to the project. Contributions include submitting code, writing documentation, answering questions in our Discord server, and more. This money is allocated each month by the TSC.</p>
-                </article>
-                <article class="feature">
-                    <h3 class="feature__title">Dependencies</h3>
-                    <p class="feature__description">We set aside {{ budget.dependencies | dollars }} USD each month to help support our dependencies. We believe that open source projects who are lucky enough to get funded have a responsibility to help support the smaller projects they rely on.</p>
-                </article>
-                <article class="feature">
-                    <h3 class="feature__title">Community Projects</h3>
-                    <p class="feature__description">We set aside {{ budget.community | dollars }} USD each month to help support plugins, parsers, and other projects that are of benefit to the ESLint ecosystem as a whole. We believe the strength of the project is in its ecosystem and we want to ensure important projects remain well-maintained.</p>
-                </article>
-                <article class="feature">
-                    <h3 class="feature__title">Support Systems</h3>
-                    <p class="feature__description">We used a small amount each month to pay for software the team uses to help manage the project, which includes things like Google Workspace and cloud storage.</p>
-                </article>
+                {%- for item in site.donate_page.budget.items -%}
+                    {% set tsc_hourly_rate = budget.hourlyRateTSC | dollars %}
+                    {% set commiters_hourly_rate = budget.hourlyRate |dollars %}
+                    {% set contributor_pool_budget = budget.contributorPool | dollars %}
+                    {% set dependencies_budget = budget.dependencies | dollars %}
+                    {% set community_budget = budget.community | dollars %}
+                    {% set feature_desc = item.text | replace("HOURLY_RATE_TSC", tsc_hourly_rate) | replace("HOURLY_RATE_COMMITERS", commiters_hourly_rate) | replace("CONTRIBUTOR_POOL_BUDGET", contributor_pool_budget) | replace("DEPENDENCIES_BUDGET", dependencies_budget) | replace("COMMUNITY_BUDGET", community_budget) %}
+                    <article class="feature">
+                        <h3 class="feature__title"> {{item.name}} </h3>
+                        <p class="feature__description"> {{feature_desc}} </p>
+                    </article>
+                {%- endfor -%}
             </div>
             <div class="features-image span-7-12">
                 <img src="/assets/images/chart.svg" alt="Graph visually representing approximate percentages of how the money is used and distributed between Team Development, Contributor Pool, Dependencies, Community Projects, and support systems.">
@@ -180,7 +148,7 @@ hook: "donate-page"
         </div>
         <footer class="section-foot center-text">
             <p class="section-supporting-text">
-                Additionally, from time to time we use the funds to pay contractors to work on things that are important to the project and where the team doesn’t have the time or expertise to complete the work on their own. For example, we recently hired a designer and developer to redesign this website. We ensure that we spend less than we take in each month so we can save for such projects.
+                {{ site.donate_page.budget.footer.text }}
             </p>
         </footer>
     </div>
@@ -189,132 +157,38 @@ hook: "donate-page"
 <section>
     <div class="content-container divider">
         <div class="section-head center-text">
-            <h2 class="section-title h3" id="donation-tiers-label">Donation tiers</h2>
+            <h2 class="section-title h3" id="donation-tiers-label">{{ site.donate_page.donation_tiers.title }}</h2>
             <p class="section-supporting-text fs-step-0">
-                While we accept donations of any size, we do have a tier system with different rewards at each level.
+                {{ site.donate_page.donation_tiers.subtitle }}
             </p>
         </div>
         <ol class="donation-tiers" aria-labelledby="donation-tiers-label" role="list">
-            <li class="donation-tiers__item">
-                <h3 class="donation-tiers__title">
-                    <span>Platinum Sponsor </span>
-                    <span class="donation-tiers__title__value">$2000+</span>
-                    <span class="donation-tiers__title__freq">per month</span>
-                </h3>
-                <div class="donation-tiers__item__description">
-                    2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
-                </div>
-                <div>
-                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
-                            <use xlink:href="#oc"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on Open Collective</span>
-                    </a>
-                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
-                            <use xlink:href="#gh"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on GitHub</span>
-                    </a>
-                </div>
-            </li>
-            <li class="donation-tiers__item">
-                <h3 class="donation-tiers__title">
-                    <span>Gold Sponsor </span>
-                    <span class="donation-tiers__title__value">$1000–1999</span>
-                    <span class="donation-tiers__title__freq">per month</span>
-                </h3>
-                <div class="donation-tiers__item__description">
-                    Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
-                </div>
-                <div>
-                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
-                            <use xlink:href="#oc"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on Open Collective</span>
-                    </a>
-                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
-                            <use xlink:href="#gh"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on GitHub</span>
-                    </a>
-                </div>
-            </li>
-            <li class="donation-tiers__item">
-                <h3 class="donation-tiers__title">
-                    <span>Silver Sponsor </span>
-                    <span class="donation-tiers__title__value">$500–999</span>
-                    <span class="donation-tiers__title__freq">per month</span>
-                </h3>
-                <div class="donation-tiers__item__description">
-                    Third highest logo placement on homepage and readme.
-                </div>
-                <div>
-                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
-                            <use xlink:href="#oc"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on Open Collective</span>
-                    </a>
-                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
-                            <use xlink:href="#gh"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on GitHub</span>
-                    </a>
-                </div>
-            </li>
-            <li class="donation-tiers__item">
-                <h3 class="donation-tiers__title">
-                    <span>Bronze Sponsor </span>
-                    <span class="donation-tiers__title__value">$200–499</span>
-                    <span class="donation-tiers__title__freq">per month</span>
-                </h3>
-                <div class="donation-tiers__item__description">
-                    Fourth highest logo placement on homepage and readme.
-                </div>
-                <div>
-                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
-                            <use xlink:href="#oc"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on Open Collective</span>
-                    </a>
-                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
-                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
-                            <use xlink:href="#gh"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on GitHub</span>
-                    </a>
-                </div>
-            </li>
-            <li class="donation-tiers__item all-others">
-                <h3 class="donation-tiers__title">
-                    <span>All others </span>
-                    <span class="donation-tiers__title__value">($1–199</span>
-                    <span class="donation-tiers__title__freq">per month)</span>
-                </h3>
-                <div class="donation-tiers__item__description">
-                    Listed on our sponsors page
-                </div>
-                <div>
-                    <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--secondary">
-                        <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
-                            <use xlink:href="#oc"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on Open Collective</span>
-                    </a>
-                    <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--secondary">
-                        <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
-                            <use xlink:href="#gh"></use>
-                        </svg>
-                        Donate <span class="visually-hidden">on GitHub</span>
-                    </a>
-                </div>
-            </li>
+            {%- for item in site.donate_page.donation_tiers.items -%}
+                <li class="donation-tiers__item">
+                    <h3 class="donation-tiers__title">
+                        <span> {{item.name}} </span>
+                        <span class="donation-tiers__title__value">{{item.amount}}</span>
+                        <span class="donation-tiers__title__freq">{{item.frequency}}</span>
+                    </h3>
+                    <div class="donation-tiers__item__description">
+                        {{item.text}}
+                    </div>
+                    <div>
+                        <a href="{{ links.openCollective }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                            <svg role="img" aria-label="Open Collective" width="21" height="20" viewBox="0 0 21 20">
+                                <use xlink:href="#oc"></use>
+                            </svg>
+                            {{ site.donate_page.donation_tiers.cta.open_collective_text | safe }}
+                        </a>
+                        <a href="{{ links.githubSponsors }}" target="_blank" class="c-btn c-btn--primary c-btn--block">
+                            <svg role="img" aria-label="GitHub" width="21" height="20" viewBox="0 0 21 20" aria-label="GitHub">
+                                <use xlink:href="#gh"></use>
+                            </svg>
+                            {{ site.donate_page.donation_tiers.cta.github_sponsors_text | safe }}
+                        </a>
+                    </div>
+                </li>
+            {%- endfor -%}        
         </ol>
     </div>
 </section>

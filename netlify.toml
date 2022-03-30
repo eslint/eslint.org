@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "npm run fetch && npm run build"
+  command = "npm run build"
 
 # fix avif loading in Firefox
 # Source: https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/

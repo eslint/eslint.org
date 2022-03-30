@@ -1,7 +1,9 @@
-<h3 id="brand-colors-label" hidden>Brand Palette</h3>
+<h3 id="brand-colors-label" hidden>{{ site.branding_page.sections.color_palette.brand_palette}}</h3>
 <ul class="swatches" aria-labelledby="brand-colors-label">
     {%- for color in palette.primary -%}
-    {%- set colordesc = color.description -%}
+    {%- set colordesc = color.description 
+        | replace('Primary', site.branding_page.sections.color_palette.colors.primary) 
+        | replace('White', site.branding_page.sections.color_palette.colors.white) -%}
     {%- set colorval = color.value -%}
     <li class="swatches__item">
         {{ swatch({
@@ -11,7 +13,7 @@
     </li>
     {%- endfor -%}
     {%- for color in palette.neutral -%}
-    {%- set colordesc = color.description -%}
+    {%- set colordesc = color.description | replace('Neutral', site.branding_page.sections.color_palette.colors.neutral) -%}
     {%- set colorval = color.value -%}
     <li class="swatches__item">
         {{ swatch({
