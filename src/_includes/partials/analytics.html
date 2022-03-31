@@ -1,28 +1,24 @@
 <!--<br>-->
 {% if site.google_analytics.code %}
-<script id="analytics">
-    // Initialize Google Analytics
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    /* eslint-enable */
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7DGPHY308T"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    window.ga("create", "{{ site.google_analytics.code }}", "{{ site.hostname }}");
-    window.ga("send", "pageview");
+    gtag('config', '{{ site.google_analytics.code }}');
 
     // track clicks to "Donate"
     document.querySelectorAll("a.donate-link").forEach(
         el => el.addEventListener("click",
-            () => window.ga("send", "event", "Donate Link", "click", el.title || ""))
+            () => gtag("event", "donate_click"))
     );
 
     // track clicks on sponsor logos
     document.querySelectorAll("a.sponsor-link").forEach(
         el => el.addEventListener("click",
-            () => window.ga("send", "event", "Sponsor Link", "click", el.title || ""))
+            () => gtag("event", "sponsor_click", el.href || ""))
     );
 </script>
 {% endif %}
