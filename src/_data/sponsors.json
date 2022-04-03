@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134148,
-        "monthlyDonations": 11179,
-        "sponsorCount": 183
+        "annualDonations": 134292,
+        "monthlyDonations": 11191,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -240,6 +240,15 @@
             "totalDonations": 35,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "MFB Technologies",
+            "url": "https://mfbtech.com",
+            "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
+            "monthlyDonation": 10,
+            "totalDonations": 10,
+            "source": "opencollective",
+            "tier": "backer"
         },
         {
             "name": "Chayan Chawra",
@@ -1496,6 +1505,15 @@
             "image": "https://images.opencollective.com/sudharaka-palamakumbura/03b6087/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 22,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
+            "name": "Kostas Bariotis",
+            "url": "https://kostasbariotis.com",
+            "image": "https://images.opencollective.com/konmpar/6f12288/avatar.png",
+            "monthlyDonation": 2,
+            "totalDonations": 38,
             "source": "opencollective",
             "tier": null
         },
