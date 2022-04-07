@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136752,
-        "monthlyDonations": 11396,
-        "sponsorCount": 187
+        "annualDonations": 136692,
+        "monthlyDonations": 11391,
+        "sponsorCount": 186
     },
     "platinum": [
         {
@@ -1309,14 +1309,6 @@
             "name": "Daniil Orain",
             "image": "https://avatars.githubusercontent.com/u/13982759?u=2e68ef5c601f388ddd3dff25ed3473c5f7019990&v=4",
             "url": "https://github.com/ungarson",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Mauricio Vuljevas",
-            "image": "https://avatars.githubusercontent.com/u/14046897?u=f61f7ef8bcaeacde726b0010c05acc1378c79e89&v=4",
-            "url": "https://www.mvuljevas.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
