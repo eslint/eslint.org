@@ -34,7 +34,7 @@ const searchClearBtn = document.querySelector('#search__clear-btn');
  */
 function fetchSearchResults(query) {
     return index.search(query, {
-        // facetFilters: ["tags:docs"]
+        filters: "blog"
     }).then(({ hits }) => hits);
 }
 
