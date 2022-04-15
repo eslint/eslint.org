@@ -34,7 +34,7 @@ const searchClearBtn = document.querySelector('#search__clear-btn');
  */
 function fetchSearchResults(query) {
     return index.search(query, {
-        // facetFilters: ["tags:docs"]
+        facetFilters: ["tags:blog"]
     }).then(({ hits }) => hits);
 }
 
@@ -71,8 +71,8 @@ function displaySearchResults(results) {
             const listItem = document.createElement('li');
             listItem.classList.add('search-results__item');
             listItem.innerHTML = `
-                <h2 class="search-results__item__title"><a href="${result.url}">${result.hierarchy.lvl0}</a></h2>
-                <p class="search-results__item__context">${result._highlightResult.hierarchy.lvl0.value}</p>
+                <h2 class="search-results__item__title"><a href="${result.url}">${result.hierarchy.lvl1}</a></h2>
+                <p class="search-results__item__context">${result._highlightResult.hierarchy.lvl1.value}</p>
             `.trim();
             list.append(listItem);
         }
