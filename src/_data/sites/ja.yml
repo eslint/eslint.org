@@ -69,23 +69,23 @@ navigation:
 
 footer:
   title: JavaScriptのコードを修正する準備はできましたか？
-  description: npmからインストール。それとも今日から寄付を開始する
+  description: npmからインストール。または今日から寄付を開始する。
   secondary: Secondary
   social_icons:
     title: ソーシャルメディア
     twitter: ツイッター
     chat: ディスコード
-    mailing_list: グッグルグループ
+    mailing_list: Google グループ
     github: ギットハブ
   theme_switcher:
     title: 配色モード切り替え
     light: 通常
     dark: ダーク
   language_switcher:
-    title: 国語切り替え
-    description: 国語を選択すると、eslintの当国語ページへ移動いたします
-    change_language: 国語の変更
-    language: 国語
+    title: 言語切替え
+    description: 言語を選択すると、その言語のeslintウェブサイトへ移動します
+    change_language: 言語の変更
+    language: 言語
   copyright: >
     Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint 
     contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS 
@@ -130,19 +130,19 @@ branding_page:
     name:
       title: 名前
       description: >
-        ESLint を書くと、E,SとLは大文字を使用して下さい。「ES」はECMAScriptの省略とLは「lint」の頭字です。
+        ESLint を書くときは、E,SとLは大文字を使用して下さい。「ES」はECMAScriptの略称、Lは「lint」の頭文字です。
     logo:
       title: ロゴ
       description:
         - >
           ESLintのロゴは、様々な背景に配置することができます。十分な縦・横のパディングが必要です。
         - >
-          隙間からできる内側の六角形の大きさを2倍にすると、ロゴとワードマークの間、およびロゴのスペースを
-          どの程度確保する必要があるとは想像できます。
+          隙間からなる内側の六角形の大きさの2倍が、ロゴとワードマークの間隔、およびロゴの周囲の余白の
+          大きさの目安になります。
         - >
-          我々のロゴは汎用性があります。様々なブランドカラーに使用することができ、白以外の背景では不透明度を利用
-          して明るい色を模倣することができます。可能であれESLintのロゴとワードマークを両方を使用のは望ましいです。
-          でもESLintのロゴは、ESLintのワードマークを付けずに単独で使用することもできます。
+          我々のロゴは汎用性があります。様々なブランドカラーに使用することができ、白以外の背景では透過させることで
+          明るい色を模倣することができます。ESLintのロゴは、ワードマークを付けずに単独で使用することもできますが、
+          可能であればESLintのロゴとワードマークの両方を使用することが望ましいです。
       download_svg: SVG ダウンロード
       download_png: PNG ダウンロード
       change_background: "背景色の変更"
@@ -150,15 +150,15 @@ branding_page:
       title: カラーパレット
       description:
         - >
-          ESLintのカラーパレットはブランドを表す為にはロゴと文言と同じ力が持っております。
+          ロゴや文言と同じくらい、ESLintのカラーパレットにはブランドを表す力があります。
           デザインの見た目に影響を与えるだけでなく、感情を呼び起こし、
-          ESLintブランドの個性を反映させることができるのです。
+          ESLintブランドの個性を反映することができるのです。
         - >
           第一のブランドカラーはボタン、リンク、入力コンポネントなどすべてのインタラクティブな要素で使用されます。
           ロゴに由来しています。既存の2色を使って、独自の一次色調を作り出しています。
       brand_palette: ブランド　パレット
       colors:
-        primary: 原色
+        primary: プライマリ
         white: 白色
         neutral: ニュートラル色
   actions:
@@ -182,8 +182,8 @@ homepage:
     wrong_word: problmes
 
   install:
-    title: ESLint 早速インストールコード
-    copy: インストールコードをコピーします
+    title: ESLint インストールコマンド
+    copy: インストールコマンドをコピーします
     copied: コピーしました
 
   versions:
@@ -206,15 +206,15 @@ homepage:
       - title: 間違いを探す
         description: >
           ESLintは、コードを静的に解析し、問題を迅速に発見します。ESLintは ほとんどのテキストエディタに組み込まれており、
-          ESLintを継続的インテグレーションパイプラインに含まれますことができます。
+          ESLintをCIパイプライン内で実行することもできます。
         learn_more:
           link: getStarted
           text: >
-            <span class="visually-hidden">ESLintで間違い探しについて</span>もっと知りたい
+            <span class="visually-hidden">ESLintで間違いを探す方法について</span>もっと知りたい
       - title: 自動的に修正する
         description: >
           ESLintが発見した問題のほとんどは、自動的に修正することができます。
-          ESLintが 構文を意識しているため他の「検索切替」アルゴリズムの反対にエラーは追加しません。
+          ESLintは構文を意識して修正を行うため、従来の置換ベースのコード修正アルゴリズムのように新しいエラーを生み出すことはありません。
         learn_more:
           link: fixProblems
           text: >
@@ -222,11 +222,11 @@ homepage:
       - title: Configure everything
         description: >
           コードの前処理、カスタムパーサーの使用、ESLintの組み込みルールと一緒に動作する独自のルールを作成することができます。
-          プロジェクトの必要なことと完璧に合わせるようにESLint をカスタマイズして、正確に動作させることができます。
+          プロジェクトで必要な形に合わせてESLintをカスタマイズすることができます。
         learn_more:
           link: configuring
           text: >
-            <span class="visually-hidden">ESLintをカスタマイズするについて</span>もっと知りたい
+            <span class="visually-hidden">ESLintのカスタマイズについて</span>もっと知りたい
   blog:
     view_all_posts: 全てのブログポストを見る
 
@@ -236,8 +236,8 @@ homepage:
       ESLintは、npmでのダウンロード数でNo.1のJavaScriptリンターです（DOWNLOAD_COUNT以上）。
       Microsoft、Airbnb、Netflix, Facebookなどの企業で使用されています。
     dependents: ディペンデンツ
-    weekly_downloads: 一週間ダウンロード数
-    stars: 星印
+    weekly_downloads: 週間ダウンロード数
+    stars: スター
 
   sponsors:
     title: 素晴らしい人々によって支えられている
@@ -246,7 +246,7 @@ homepage:
     view_all_sponsors: スポンサーの皆様を見る
 
   donations:
-    title: 最近の一時金について
+    title: 最近の寄付
     view_all_donations: 全ての寄付を見る
 
 #------------------------------------------------------------------------------
@@ -258,7 +258,7 @@ blog_page:
   description: ESLintの最新ニュース、ケーススタディ、チュートリアル、リソースなどをご紹介します。
   search:
     title: 検索
-    hint: Results will be shown and updated as you type.
+    hint: キーワードを入力するとリアルタイムに検索結果が表示されます。
     clear: 検索の解除
   categories:
     title: カテゴリー一覧
@@ -269,7 +269,7 @@ blog_page:
     next_page: 次
     previous_page: 前
     last_page: 最後
-    status: TOTAL_PAGE_COUNT 合計ページの PAGE_NUMBER ページ
+    status: TOTAL_PAGE_COUNT ページ中の PAGE_NUMBER ページ目
 
 #------------------------------------------------------------------------------
 # Team Page
@@ -304,8 +304,8 @@ team_page:
 sponsors_page:
   title: スポンサー様
   description: >
-    BACKER_COUNT 企業、団体、個人は、現在、以下のような活動を行っています。
-    ESLintの継続的な維持・発展を支援するために、毎月MONTHLY_DONATIONSを寄付しています。
+    現在、BACKER_COUNT の企業、団体、個人が
+    ESLintの継続的な維持・発展を支援するために、毎月総額MONTHLY_DONATIONSの寄付をしています。
   hero:
     cta:
       text: スポンサーになる
@@ -322,26 +322,23 @@ sponsors_page:
     gold:
       title: ゴールドスポンサー
       description: >
-        毎月1000ドルの寄付で、ゴルドスポンサーとなり、20時間のメンテナンスと開発に貢献します。
-        ゴルドスポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
+        毎月1000ドルの寄付で、ゴールドスポンサーとなり、20時間のメンテナンスと開発に貢献します。
+        ゴールドスポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
         また フォロワー数2万人以上のeslintのTwitterアカウントからお礼をツイートします。
-        サポートセッションをご希望の方は、ESLintチームまでご連絡ください。
     silver:
       title: シルバースポンサー
       description: >
-        毎月500ドルの寄付で、ゴルドスポンサーとなり、10時間のメンテナンスと開発に貢献します。
-        ゴルドスポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
+        毎月500ドルの寄付で、シルバースポンサーとなり、10時間のメンテナンスと開発に貢献します。
+        シルバースポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
     bronze:
       title: ブロンズスポンサー
       description: >
-        毎月200ドルの寄付で、ゴルドスポンサーとなり、4時間のメンテナンスと開発に貢献します。
-        ゴルドスポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
+        毎月200ドルの寄付で、ブロンズスポンサーとなり、4時間のメンテナンスと開発に貢献します。
+        ブロンズスポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
     #--ISSUE WITH THE TRANSLATION HERE ... TO DO ----------------------------------------------------------------------------
     technology:
       title: テクノロジースポンサー
       description: >
-        Technology sponsors allow us to use their products and services for 
-        free as part of a contribution to the open source ecosystem and our work.
         技術スポンサーはオープンソースのエコシステムと私たちの仕事への貢献の一環として、製品・サービスを無償で使わせていただいています。
     #--END OF ISSUE WITH THE TRANSLATION ----------------------------------------------------------------------------
     backers:
@@ -369,7 +366,7 @@ donate_page:
     現在、BACKER_COUNTの企業・団体・個人が、毎月MONTHLY_DONATIONSを寄付してくれています。
   hero:
     cta:
-      text: 弊社のスポンサーを見ます
+      text: スポンサーを見る
       url: /sponsors
   donation_options:
     title: 寄付方法
@@ -381,7 +378,7 @@ donate_page:
         text: Open Collectiveを通じて寄付をします。
       items:
         - text: 501(c)(3)非営利団体に直接寄付をする
-        - text: 1時的の寄付と定期的な寄付
+        - text: 一時的な寄付と定期的な寄付
         - text: クレジットカード、銀行振り込み、PayPalで支払います
         - text: オープンソースファンドを設立し、複数のプロジェクトに寄付をします
         - text: ほとんどの国で利用できます
@@ -393,7 +390,7 @@ donate_page:
       items:
         - text: GitHub billingで寄付をする
         - text: 一時的な寄付と定期的な寄付
-        - text: クレジットカードでのお支払い、またはGitHubとの既存の課金関係（請求書発行を含む）をご利用いただけます。
+        - text: クレジットカードでのお支払い、またはGitHubの既存の課金方法（請求書発行を含む）をご利用いただけます。
         - text: GitHub プロフィールに "sponsor" バッジを表示する
         - text: 既存のGitHubログインを使用できます
   budget:
@@ -404,22 +401,22 @@ donate_page:
     items:
       - name: チーム開発
         text: >
-          チームメンバーには年功序列で時給が支払われ、現在はTSCメンバーとレビュアーの時給はHOURLY_RATE_TSC USDとなっています。
+          チームメンバーには貢献期間の長さに応じて時給が支払われ、現在はTSCメンバーとレビュアーの時給はHOURLY_RATE_TSC USDとなっています。
           コミッターの時給はHOURLY_RATE_COMMITERS USDとなっています.
       - name: 貢献者プール
         text: >
           私たちは毎月CONTRIBUTOR_POOL_BUDGET USDを、プロジェクトに多大な貢献をした外部貢献者への支払いに充てています。
           貢献には、コードの提出、ドキュメントの作成、Discordサーバでの質問への回答などが含まれます。このお金はTSCによって毎月配分されます。
-      - name: ディペンデンシー
+      - name: 依プロジェクト
         text: >
-          私たちは毎月DEPENDENCIES_BUDGET USDを積み立て、依存関係をサポートするために役立てています。
-          私たちは、資金を得るのに十分な幸運に恵まれたオープンソースプロジェクトは は、自分たちが依存している小規模な
-          プロジェクトを支援する責任があります。
+          私たちは毎月DEPENDENCIES_BUDGET USDを積み立て、ESLintが依存する他のプロジェクトをサポートするために役立てています。
+          私たちは、資金を得るのに十分な幸運に恵まれたオープンソースプロジェクトは、自分たちが依存している小規模な
+          プロジェクトを支援する責任があると考えます。
       - name: コミュニティ・プロジェクト
         text: >
           私たちは毎月COMMUNITY_BUDGET USDを確保して、プラグインやパーサー、その他ESLintのエコシステム全体にとって有益なプロジェクト
-          をサポートするために役立てています。私たちは、プロジェクトの強さはそのエコシステムにあると信じています。
-          重要なプロジェクトが確実に維持されるようにするためです。
+          をサポートするために役立てています。私たちは、プロジェクトの強さはそのエコシステムにあると信じており、
+          重要なプロジェクトが確実に維持され続けることを望んでいます。
       - name: サポートシステム
         text: >
           Google Workspaceやクラウドストレージなど、チームがプロジェクトを管理するために使用するソフトウェアの費用として、
@@ -428,7 +425,7 @@ donate_page:
       text: >
         また、時々、この資金を使用して、請負業者に以下の作業を依頼することがあります：プロジェクトにとって重要で、チームには時間や専門知識がなくて
         自分たちの手で完成できない。例えば、最近、このウェブサイトのリニューアルの為にデザイナーと開発者を雇いました。
-        そのようなプロジェクトのために貯蓄をすることができるため、我々は毎月の支出を収入より少なくするよう心がけています。
+        そのようなプロジェクトのために貯蓄をすることができるよう、我々は毎月の支出を収入より少なくするよう心がけています。
   donation_tiers:
     title: 寄付のティアシステム
     subtitle: 寄付の規模は問いませんが、レベルごとに異なる報酬を設定するティアシステムを導入しています。
@@ -462,7 +459,7 @@ donate_page:
         image: addy-osmani.jpg
         text: >
           長年にわたりESLintは、開発者が高品質のJavaScriptを書くために重要な役割を担っています。
-          よくある問題を早期に、そして頻繁にキャッチしてくれるのが素晴らしいだと思います。
+          よくある問題を早期に、そして頻繁にキャッチしてくれることが素晴らしいです。
           高い拡張性を持つESLintは、チームが自分たちに合ったカスタムルールを実施できるため、
           オープンソースプロジェクトなどでも優れた効果を発揮しています。
           ChromeはESLintのスポンサーとして、ウェブ開発者が一貫して高品質のコードを書けるよう支援できることを嬉しく思っています。
@@ -472,21 +469,20 @@ donate_page:
         image: jeff-cross.jpg
         text: >
           NxはESLintをコード品質、ライブラリ境界、およびプロジェクトの可視性を強制する為に使用してます。
-          ESLintはNxをより強力にするので、Nx.devコミュニティを代表して、ESLintの継続的な成功のためにスポンサーになって、
-          とても嬉しくを感じます。
+          ESLintはNxをより強力にするので、Nx.devコミュニティを代表して、ESLintの継続的な成功のためにスポンサーになることを嬉しく思います。
       - name: Médédé Raymond KPATCHAA
         title: Technical Architect, Salesforce
         image: medede-kpatchaa.jpg
         text: >
           ESLintは、どんなJavaScriptプロジェクトにも使える非常に便利なツールです。
-          このツールを使うとプロジェクトの初期段階から決定されましたコードフォーマットルールを設定できます。
-          コードレビューが非常に容易になり、また、簡単に 新しい開発者がチームに溶け込めるように。    
+          このツールを使うとプロジェクトの初期段階から一貫したコードフォーマットルールを設定でき、
+          コードレビューが非常に容易になり、また、新しい開発者がチームに簡単に溶け込めるようなります。
           私を含めて私多くの開発者からESLintの柔軟性と使いやすさが好まれてます。
       - name: Duane O'Brien
         title: Head of Open Source, Indeed
         image: duane-obrien.jpg
         text: >
-          ほとんどのJavaScriptプロジェクトは、直接または過渡的にESLintに依存しています。
+          ほとんどのJavaScriptプロジェクトは、直接または間接的にESLintに依存しています。
           Indeedの社員がFOSS Contributor Fundから寄付を受けるためにESLintを推薦し、その同僚も明らかに同意しています。
           オープンソースの技術は我々の製品を支え、人々の就職を支援するデジタルインフラを開発し、保護し、維持することを可能にするものです。
           そのオープンソース技術を支援できることを嬉しく思っています。
@@ -516,10 +512,10 @@ donate_page:
           オープンソースコレクティブは501(c)(3)非営利団体ですが、IRSは、オープンソースソフトウェアの開発を慈善事業と
           見なしていません。そのため、非課税措置の対象となりません。
       - q: お金の分配は誰が決めるのですか？
-        a: TSCは、誰がどれだけお金を受け取るかをすべて決定します。
+        a: TSCが、誰がどれだけお金を受け取るかをすべて決定します。
       - q: お金の使い道を確認することはできますか？
         a:
-          できます。Yes. Open Collectiveのページでは、申請・決済されたすべての経費を確認することができます。
+          できます。Open Collectiveのページでは、申請・決済されたすべての経費を確認することができます。
           すべての取引は完全にオープンで、一般に公開されています。
       - q: 定期的な寄付をいつでもキャンセルできますか？
         a:
@@ -527,16 +523,16 @@ donate_page:
           ログインしてからキャンセルができます。
       - q: ロゴがホームページ、GitHub、npmパッケージに表示されるまでには、どれくらいの時間がかかりますか？
         a:
-          ホームページとGitHubのロゴは毎日自動的に更新されますので から24時間以内に表示されるはずです。
-          npmパッケージのロゴは は、通常2週間ごとに行われる新しいリリースの公開時にのみ更新されます。
-          ただし、メジャーリリースは数ヶ月かかることが多いので、その間は のロゴは更新されません。
+          ホームページとGitHubのロゴは毎日自動的に更新されますので、24時間以内に表示されるはずです。
+          npmパッケージのロゴは、通常2週間ごとに行われる新しいリリースの公開時にのみ更新されます。
+          ただし、メジャーリリースは数ヶ月かかることが多いので、その間はnpmパッケージのロゴは更新されません。
       - q: ロゴとURLはどこから来ているのですか？
         a:
           ロゴとURLは、寄付を行ったサイトに応じて、Open CollectiveまたはGitHubのプロフィールから取得します。Open CollectiveやGitHubからいつでも更新することができ、
           24時間以内にホームページとGitHubのREADMEに反映されます。サイト上のロゴやURLを手動で上書きすることはできません。
       - q: 一時的な寄付はできますか？
         a:
-          Open Collectiveを利用することは一時的な寄付をする最も簡単な方法。任意の金額を寄付することができます。
+          Open Collectiveを利用することが一時的な寄付をする最も簡単な方法です。任意の金額を寄付することができます。
           GitHubの一時的な寄付は、金額に制限がある場合があります。
 
 #------------------------------------------------------------------------------
@@ -544,5 +540,5 @@ donate_page:
 #------------------------------------------------------------------------------
 
 languages_page:
-  title: 国語
-  choose_language: 国語の設定
+  title: 言語
+  choose_language: 言語の設定
