@@ -1,6 +1,6 @@
 # The New eslint.org
 
-This repository contains the source code for the ESLint website (<https://eslint.org>). 
+This repository contains the source code for the ESLint website (<https://eslint.org>).
 
 ## Developer Setup
 
@@ -36,4 +36,4 @@ The ESLint team will create a new domain name, set up analytics and ads, and oth
 
 ## License
 
-Apache 2.0
+[Apache 2.0](LICENSE)
