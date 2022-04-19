@@ -114,7 +114,7 @@ footer:
 404_page:
   title: 404エラー
   subtitle: ページが見つかりません
-  description: 申し訳ございませんが、お探しのページは、移動または消除された可能性があります。
+  description: 申し訳ございませんが、お探しのページは移動または削除された可能性があります。
   actions:
     back_to_home: ホームページへ
     browse_docs: ドキュメンテーションを読む
@@ -130,7 +130,7 @@ branding_page:
     name:
       title: 名前
       description: >
-        ESLint を書くときは、E,SとLは大文字を使用して下さい。「ES」はECMAScriptの略称、Lは「int」の頭文字です。
+        ESLint を書くときは、EとSとLは大文字を使用して下さい。「ES」はECMAScriptの略称、Lは「Lint」の頭文字です。
     logo:
       title: ロゴ
       description:
@@ -154,7 +154,7 @@ branding_page:
           デザインの見た目に影響を与えるだけでなく、感情を呼び起こし、
           ESLintブランドの個性を反映することができるのです。
         - >
-          第一のブランドカラーはボタン、リンク、入力コンポネントなどすべてのインタラクティブな要素で使用されます。
+          ブランドの中心となるカラーはボタン、リンク、入力コンポーネントなど、すべてのインタラクティブな要素で使用されます。
           ロゴに由来しています。既存の2色を使って、独自の一次色調を作り出しています。
       brand_palette: ブランド　パレット
       colors:
@@ -200,8 +200,8 @@ homepage:
     title: The pluggable linting utility for JavaScript and JSX
     description: >
       ESLintは、あなたのJavaScriptコードの問題を発見し、修正することを支援するオープンソースプロジェクトです。
-      ブラウザでJavaScriptを書いているか、サーバで書いているか、フレームワークを使っているか、使っていないかに関係なく、
-      ESLintは以下のことを支援します。あなたのコードが最高の状態で生きられるように。
+      ブラウザのためか、サーバのためか、フレームワークを使用しているかに関わらず、ESLintはあなたのコードが
+      良い状態になるように支援します。
     features:
       - title: 間違いを探す
         description: >
@@ -293,7 +293,7 @@ team_page:
     description: >
       バグをレビューして修正し、問題のトリアージを支援する人々
   alumni:
-    title: 同窓会
+    title: アルムナイ
     description: >
       以前、ESLintの保守を手伝っていた元チームメンバー
 
@@ -405,7 +405,7 @@ donate_page:
         text: >
           私たちは毎月CONTRIBUTOR_POOL_BUDGET USDを、プロジェクトに多大な貢献をした外部貢献者への支払いに充てています。
           貢献には、コードの提出、ドキュメントの作成、Discordサーバでの質問への回答などが含まれます。このお金はTSCによって毎月配分されます。
-      - name: 依プロジェクト
+      - name: 依存プロジェクト
         text: >
           私たちは毎月DEPENDENCIES_BUDGET USDを積み立て、ESLintが依存する他のプロジェクトをサポートするために役立てています。
           私たちは、資金を得るのに十分な幸運に恵まれたオープンソースプロジェクトは、自分たちが依存している小規模な
@@ -436,19 +436,19 @@ donate_page:
       - name: プラチナスポンサー
         amount: $2000+
         frequency: 毎月
-        text: 2時間のサポート、ホームページとReadmeへの最高レベルのロゴ掲載。その上に、Gold Tierの内容の全て。
+        text: 2時間のサポート、ホームページとReadmeの最上段にロゴを掲載。さらに、Gold Tierの全ての内容を提供します。
       - name: ゴールドスポンサー
         amount: $1000–1999
         frequency: 毎月
-        text: トップページとreadmeに2番目に高いロゴの掲載、弊社Twitterアカウント（2万人のフォロワー）からのお礼のツイート、お礼のブログ記事を掲載します。
+        text: トップページとreadmeの2段目にロゴを掲載、弊社Twitterアカウント（2万人のフォロワー）からのお礼のツイート、お礼のブログ記事を掲載します。
       - name: シルバースポンサー
         amount: $500–999
         frequency: 毎月
-        text: トップページとReadmeに3番目に高いロゴを掲載。
+        text: トップページとReadmeに3段目にロゴを掲載。
       - name: ブロンズスポンサー
         amount: $200–499
         frequency: 毎月
-        text: トップページとReadmeに4番目に高いロゴを掲載。
+        text: トップページとReadmeの4段目にロゴを掲載。
   testimonials:
     title: testimonials
     items:
@@ -475,7 +475,7 @@ donate_page:
           ESLintは、どんなJavaScriptプロジェクトにも使える非常に便利なツールです。
           このツールを使うとプロジェクトの初期段階から一貫したコードフォーマットルールを設定でき、
           コードレビューが非常に容易になり、また、新しい開発者がチームに簡単に溶け込めるようなります。
-          私を含めて私多くの開発者からESLintの柔軟性と使いやすさが好まれてます。
+          私を含めて多くの開発者からESLintの柔軟性と使いやすさが好まれてます。
       - name: Duane O'Brien
         title: Head of Open Source, Indeed
         image: duane-obrien.jpg
@@ -524,7 +524,7 @@ donate_page:
           ホームページとGitHubのロゴは毎日自動的に更新されますので、24時間以内に表示されるはずです。
           npmパッケージのロゴは、通常2週間ごとに行われる新しいリリースの公開時にのみ更新されます。
           ただし、メジャーリリースは数ヶ月かかることが多いので、その間はnpmパッケージのロゴは更新されません。
-      - q: ロゴとURLはどこから来ているのですか？
+      - q: ロゴとURLはどこから取得されますか？
         a:
           ロゴとURLは、寄付を行ったサイトに応じて、Open CollectiveまたはGitHubのプロフィールから取得します。Open CollectiveやGitHubからいつでも更新することができ、
           24時間以内にホームページとGitHubのREADMEに反映されます。サイト上のロゴやURLを手動で上書きすることはできません。
