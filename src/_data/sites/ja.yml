@@ -21,15 +21,15 @@ hostname: ja.eslint.org
 #------------------------------------------------------------------------------
 
 google_analytics:
-  code: "UA-60915033-1"
+  code: ""
 
 #------------------------------------------------------------------------------
 # Ads
 #------------------------------------------------------------------------------
 
 carbon_ads:
-  serve: CESDV2QM
-  placement: eslintorg
+  serve: ""
+  placement: ""
 
 #------------------------------------------------------------------------------
 # Shared
@@ -73,17 +73,17 @@ footer:
   secondary: Secondary
   social_icons:
     title: ソーシャルメディア
-    twitter: ツイッター
-    chat: ディスコード
+    twitter: Twitter
+    chat: Discord
     mailing_list: Google グループ
-    github: ギットハブ
+    github: GitHub
   theme_switcher:
     title: 配色モード切り替え
     light: 通常
     dark: ダーク
   language_switcher:
     title: 言語切替え
-    description: 言語を選択すると、その言語のeslintウェブサイトへ移動します
+    description: 言語を選択すると、その言語のESLintウェブサイトへ移動します
     change_language: 言語の変更
     language: 言語
   copyright: >
@@ -130,7 +130,7 @@ branding_page:
     name:
       title: 名前
       description: >
-        ESLint を書くときは、E,SとLは大文字を使用して下さい。「ES」はECMAScriptの略称、Lは「lint」の頭文字です。
+        ESLint を書くときは、E,SとLは大文字を使用して下さい。「ES」はECMAScriptの略称、Lは「int」の頭文字です。
     logo:
       title: ロゴ
       description:
@@ -160,7 +160,7 @@ branding_page:
       colors:
         primary: プライマリ
         white: 白色
-        neutral: ニュートラル色
+        neutral: ニュートラル
   actions:
     back_to_home: ホームページへ
     browse_docs: ドキュメンテーションを読む
@@ -316,31 +316,29 @@ sponsors_page:
       description: >
         毎月2000ドルの寄付で、プラチナスポンサーとなり、40時間のメンテナンスと開発に貢献します。
         2時間の専属サポートサービスをもらえます。サポートはチャットや画面共有による遠隔サポートの形でできます。
-        プラチナスポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
-        また フォロワー数2万人以上のeslintのTwitterアカウントからお礼をツイートします。
+        プラチナスポンサーのアバター画像はESLintのREADMEとeslint.orgのトップページに記載いたします。
+        また フォロワー数2万人以上のESLintのTwitterアカウントからお礼をツイートします。
         サポートセッションをご希望の方は、ESLintチームまでご連絡ください。
     gold:
       title: ゴールドスポンサー
       description: >
         毎月1000ドルの寄付で、ゴールドスポンサーとなり、20時間のメンテナンスと開発に貢献します。
-        ゴールドスポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
-        また フォロワー数2万人以上のeslintのTwitterアカウントからお礼をツイートします。
+        ゴールドスポンサーのアバター画像はESLintのREADMEとeslint.orgのトップページに記載いたします。
+        また フォロワー数2万人以上のESLintのTwitterアカウントからお礼をツイートします。
     silver:
       title: シルバースポンサー
       description: >
         毎月500ドルの寄付で、シルバースポンサーとなり、10時間のメンテナンスと開発に貢献します。
-        シルバースポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
+        シルバースポンサーのアバター画像はESLintのREADMEとeslint.orgのトップページに記載いたします。
     bronze:
       title: ブロンズスポンサー
       description: >
         毎月200ドルの寄付で、ブロンズスポンサーとなり、4時間のメンテナンスと開発に貢献します。
-        ブロンズスポンサーのアバター画像はeslintのREADMEとeslint.orgのトップページに記載いたします。
-    #--ISSUE WITH THE TRANSLATION HERE ... TO DO ----------------------------------------------------------------------------
+        ブロンズスポンサーのアバター画像はESLintのREADMEとeslint.orgのトップページに記載いたします。
     technology:
       title: テクノロジースポンサー
       description: >
         技術スポンサーはオープンソースのエコシステムと私たちの仕事への貢献の一環として、製品・サービスを無償で使わせていただいています。
-    #--END OF ISSUE WITH THE TRANSLATION ----------------------------------------------------------------------------
     backers:
       title: バッカー
       description: >
