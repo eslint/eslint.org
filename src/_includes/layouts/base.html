@@ -65,12 +65,10 @@
     <link rel="preconnect" href="https://www.googletagmanager.com/">
 
     <script>
-        (function() {
-            var theme = window.localStorage.getItem("theme");
+            let theme = window.localStorage.getItem("theme");
             if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 document.documentElement.setAttribute('data-theme', 'dark');
             } else if (theme) document.documentElement.setAttribute('data-theme', theme);
-        })();
     </script>
 
 
