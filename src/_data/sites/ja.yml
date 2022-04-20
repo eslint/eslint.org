@@ -400,7 +400,7 @@ donate_page:
       - name: チーム開発
         text: >
           チームメンバーには貢献期間の長さに応じて時給が支払われ、現在はTSCメンバーとレビュアーの時給はHOURLY_RATE_TSC USDとなっています。
-          コミッターの時給はHOURLY_RATE_COMMITERS USDとなっています.
+          コミッターの時給はHOURLY_RATE_COMMITERS USDとなっています。
       - name: 貢献者プール
         text: >
           私たちは毎月CONTRIBUTOR_POOL_BUDGET USDを、プロジェクトに多大な貢献をした外部貢献者への支払いに充てています。
