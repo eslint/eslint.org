@@ -163,7 +163,7 @@ branding_page:
         neutral: ニュートラル
   actions:
     back_to_home: ホームページへ
-    browse_docs: ドキュメンテーションを読む
+    browse_docs: ドキュメントを読む
 
 #------------------------------------------------------------------------------
 # Homepage
