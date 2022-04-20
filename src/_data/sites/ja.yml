@@ -436,7 +436,7 @@ donate_page:
       - name: プラチナスポンサー
         amount: $2000+
         frequency: 毎月
-        text: 2時間のサポート、ホームページとReadmeの最上段にロゴを掲載。さらに、Gold Tierの全ての内容を提供します。
+        text: 2時間のサポート、ホームページとREADMEの最上段にロゴを掲載。さらに、Gold Tierの全ての内容を提供します。
       - name: ゴールドスポンサー
         amount: $1000–1999
         frequency: 毎月
