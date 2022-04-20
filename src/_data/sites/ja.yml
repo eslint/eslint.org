@@ -54,7 +54,7 @@ navigation:
     link: team
   - text: ブログ
     link: blog
-  - text: ドキュメンテーション
+  - text: ドキュメント
     link: docs
   - text: ストアー
     link: store
