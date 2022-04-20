@@ -235,7 +235,7 @@ homepage:
     description: >
       ESLintは、npmでのダウンロード数でNo.1のJavaScriptリンターです（DOWNLOAD_COUNT以上）。
       Microsoft、Airbnb、Netflix, Facebookなどの企業で使用されています。
-    dependents: ディペンデンツ
+    dependents: 依存関係
     weekly_downloads: 週間ダウンロード数
     stars: スター
 
