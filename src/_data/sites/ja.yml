@@ -444,7 +444,7 @@ donate_page:
       - name: シルバースポンサー
         amount: $500–999
         frequency: 毎月
-        text: トップページとReadmeに3段目にロゴを掲載。
+        text: トップページとREADMEに3段目にロゴを掲載。
       - name: ブロンズスポンサー
         amount: $200–499
         frequency: 毎月
