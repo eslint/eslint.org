@@ -176,7 +176,7 @@ homepage:
     ほとんどのテキストエディタに組み込まれており、CIパイプラインの一部としてESLintを実行することができます。
 
   animation:
-    enabled: true
+    enabled: false
     text: Find and fix problems in your JavaScript code
     highlight_word: problems
     wrong_word: problmes
