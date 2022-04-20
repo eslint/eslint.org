@@ -448,7 +448,7 @@ donate_page:
       - name: ブロンズスポンサー
         amount: $200–499
         frequency: 毎月
-        text: トップページとReadmeの4段目にロゴを掲載。
+        text: トップページとREADMEの4段目にロゴを掲載。
   testimonials:
     title: testimonials
     items:
