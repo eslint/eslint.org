@@ -67,7 +67,7 @@ navigation:
 #------------------------------------------------------------------------------
 
 footer:
-  title: 准备修复您的JavaScript代码?
+  title: 准备修复您的 JavaScript 代码?
   description: 从 npm 安装或者开始捐赠。
   secondary: Secondary
   social_icons:
@@ -82,7 +82,7 @@ footer:
     dark: 深色
   language_switcher:
     title: 语言切换
-    description: 选择一种语言将带你进入该语言的ESLint网站。
+    description: 切换到你所选择语言版本对应的 ESLint 网站。
     change_language: 更改语言
     language: 语言
   copyright: >
@@ -129,14 +129,14 @@ branding_page:
     name:
       title: 名称
       description: >
-        ESLint 在使用时必须大写E、S、L，因为 ES 代表 ECMAScript，L 是单词 Lint 的首字母。
+        ESLint 在使用时必须大写 E、S、L，因为 ES 代表 ECMAScript，L 是单词 Lint 的首字母。
     logo:
       title: Logo
       description:
         - >
-          ESLint logo可以放置在各种背景上，只要有足够的垂直和水平填充。
+          ESLint logo 可以放置在各种背景上，只要有足够的垂直和水平填充。
         - >
-          将由间隙创建的内六边形的大小加倍，以了解logo和文字符号之间以及logo周围应该有多少空间。
+          将由间隙创建的内六边形的大小加倍，以了解 logo 和文字符号之间以及 logo 周围应该有多少空间。
         - >
           我们的商标有多种用途-你可以在各种品牌的颜色使用它，利用非白色背景的不透明度来模拟较浅的颜色。
           也可以单独使用 logo ，而不使用 ESLint 文字符号，但如果可能的话，最好同时使用。
@@ -150,7 +150,7 @@ branding_page:
           ESLint的调色可以用与拷贝和 logo 一样来表达我们的品牌。
           它们不仅影响我们的设计外观，而且还能引发情感并反映 ESLint 品牌的个性。
         - >
-          主“品牌”颜色用于所有交互元素，例如按钮，链接，输入等。它源自我们的logo。
+          主“品牌”颜色用于所有交互元素，例如按钮，链接，输入等。它源自我们的 logo。
           我们使用现有的两种颜色来创建一个独特的主色范围。
       brand_palette: 品牌调色
       colors:
@@ -192,10 +192,10 @@ homepage:
   explainer:
     image:
       src: eslint-features-img.png
-      alt: "使用 ESLint 的Visual Studio Code 窗口截图: 编辑器中的 ESLint 错误标注为下划线。"
+      alt: "使用 ESLint 的 Visual Studio Code 窗口截图：编辑器中的 ESLint 错误标注为下划线。"
     title: 插件式 JavaScript/JSX 代码检查工具
     description: >
-      ESLint是一个开源项目，可以帮助你发现和修复JavaScript代码中的问题。
+      ESLint 是一个开源项目，可以帮助你发现和修复 JavaScript 代码中的问题。
       不论您的 JavaScript 是在浏览器还是在服务器，是否使用框架，ESLint 都可以帮助您的代码变得更好。
     features:
     - title: 发现问题
@@ -226,16 +226,16 @@ homepage:
   stats:
     title: 欢迎来到社区
     description: >
-      ESLint 是 npm 下载量排名第一的 JavaScript linter(超过 DOWNLOAD_COUNT 次下载/星期)，
+      ESLint 是 npm 下载量排名第一的 JavaScript linter（超过 DOWNLOAD_COUNT 次下载/周），
       被微软、Airbnb、Netflix、Facebook 等公司使用。
-    dependents: Dependents
+    dependents: 依赖
     weekly_downloads: 每周下载
     stars: Stars
   
   sponsors:
     title: 由杰出人士赞助
     description: >
-      我们收到 ANNUAL_DONATIONS/年 的捐赠，来自 SPONSOR_COUNT 个赞助商。
+      我们每年收到来自 SPONSOR_COUNT 个赞助商 ANNUAL_DONATIONS 的捐赠。
     view_all_sponsors: 查看所有赞助者
 
   donations:
@@ -248,7 +248,7 @@ homepage:
 
 blog_page:
   title: 新闻和更新
-  description: 最新的ESLint新闻，案例研究，教程和资源。
+  description: 最新的 ESLint 新闻，案例研究，教程和资源。
   search:
     title: 搜索
     hint: 在您输入时搜索结果将显示和更新。
@@ -276,7 +276,7 @@ team_page:
   tsc:
     title: 技术指导委员会
     description: >
-      管理发布、审查特性请求、定期开会以确保ESLint得到正确维护的人。
+      管理发布、审查特性请求、定期开会以确保 ESLint 得到正确维护的人。
   reviewers:
     title: 审阅人
     description: >
@@ -284,11 +284,11 @@ team_page:
   committers:
     title: 提交人
     description: >
-      审查和修复bug并帮助分类问题的人。
+      审查和修复 bug 并帮助分类问题的人。
   alumni:
     title: 前成员
     description: >
-      以前帮助维护ESLint的前团队成员。
+      曾帮助维护 ESLint 的前团队成员。
 
 #------------------------------------------------------------------------------
 # Sponsors Page
@@ -297,7 +297,7 @@ team_page:
 sponsors_page:
   title: 赞助
   description: >
-    目前共 BACKER_COUNT 个公司、组织和个人在赞助 MONTHLY_DONATIONS /月，以支持 ESLint 的持续维护和开发。
+    目前每月有 BACKER_COUNT 个公司、组织或个人赞助了 MONTHLY_DONATIONS 以支持 ESLint 的持续维护和开发。
   hero:
     cta:
       text: 开始赞助
@@ -306,27 +306,27 @@ sponsors_page:
     platinum:
       title: 白金赞助商
       description: >
-        每月捐赠 $2000 美元，即可成为白金赞助商（支持40小时的维护和开发）。
-        您将得到2小时的专门支持（远程支持可以通过聊天或者分享自己电脑屏幕）。
-        您的 Open Collective 或 GitHub 头像会在我们 GitHub README 和 eslint.org 的主页。
-        我们也会通过我们的Twitter账户(超过2万名粉丝)向您表示感谢。
+        每月捐赠 2000 美元，即可成为白金赞助商（支持 40 小时的维护和开发）。
+        您将得到 2 小时的专门支持（可以通过聊天或者屏幕共享提供远程支持）。
+        您的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
+        我们也会通过我们的 Twitter 账户（超过 2 万名粉丝）向您表示感谢。
         请联系 ESLint 团队安排支持事宜。
     gold:
       title: 金牌赞助商
       description: >
-        每月捐赠 $1000 美元，即可成为金牌赞助商（支持20小时的维护和开发）。
-        您的 Open Collective 或 GitHub 头像会在我们 GitHub README 和 eslint.org 的主页。
-        我们也会通过我们的Twitter账户(超过2万名粉丝)向您表示感谢。
+        每月捐赠 1000 美元，即可成为金牌赞助商（支持 20 小时的维护和开发）。
+        您的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
+        我们也会通过我们的 Twitter 账户（超过 2 万名粉丝）向您表示感谢。
     silver:
       title: 银牌赞助商
       description: >
-        每月捐赠 $500 美元，即可成为银牌赞助商（支持10小时的维护和开发）。
-        您的 Open Collective 或 GitHub 头像会在我们 GitHub README 和 eslint.org 的主页。
+        每月捐赠 500 美元，即可成为银牌赞助商（支持 10 小时的维护和开发）。
+        您的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
     bronze:
       title: 青铜赞助商
       description: >
-        每月捐赠 $200 美元，即可成为青铜赞助商（支持4小时的维护和开发）。
-        您的 Open Collective 或 GitHub 头像会在我们 GitHub README 和 eslint.org 的主页。
+        每月捐赠 200 美元，即可成为青铜赞助商（支持 4 小时的维护和开发）。
+        您的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
     technology:
       title: 技术赞助商
       description: >
@@ -342,7 +342,7 @@ sponsors_page:
       我们也收到了许多来自杰出人士的一次性捐赠。
       以下是来自 OpenCollective 和 GitHub 的一些最新捐赠。
     
-  sponsor_title: SPONSOR_NAME 正在赞助 AMOUNT / 月。
+  sponsor_title: SPONSOR_NAME 正在赞助 AMOUNT /月。
   tech_sponsor_title: TECH 由 SPONSOR_NAME 支持。
 
 #------------------------------------------------------------------------------
@@ -352,7 +352,7 @@ sponsors_page:
 donate_page:
   title: 捐赠
   description: >
-    ESLint依靠捐赠来进行持续的维护和开发。
+    ESLint 依靠捐赠来进行持续的维护和开发。
     目前，有 BACKER_COUNT 个公司、组织和个人捐赠 MONTHLY_DONATIONS/月 来帮助我们。
   hero:
     cta:
@@ -367,7 +367,7 @@ donate_page:
       cta:
         text: 通过 Open Collective 捐赠
       items:
-        - text: 直接向501(c)(3)非盈利机构捐款
+        - text: 直接向 501(c)(3) 非盈利机构捐款
         - text: 一次性和经常性捐赠
         - text: 通过信用卡、银行转账或 PayPal 支付
         - text: 建立一个开源基金，捐赠给多个项目
@@ -390,11 +390,11 @@ donate_page:
     items:
       - name: 团队开发
         text: >
-          我们根据团队成员的资历按小时支付工资。目前TSC成员和审阅人为HOURLY_RATE_TSC美元/小时，提交者为HOURLY_RATE_COMMITERS美元/小时。
+          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅人 为HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。
       - name: 贡献者
         text: >
-          我们每个月留出CONTRIBUTOR_POOL_BUDGET美元来支付对项目做出重大贡献的外部贡献者。
-          贡献包括提交代码、编写文档、在我们的Discord服务器上回答问题等等。这笔钱由TSC每月分配。
+          我们每个月留出 CONTRIBUTOR_POOL_BUDGET 美元来支付对项目做出重大贡献的外部贡献者。
+          贡献包括提交代码、编写文档、在我们的 Discord 服务器上回答问题等等。这笔钱由 TSC 每月分配。
       - name: 依赖
         text: >
           我们每个月留出 DEPENDENCIES_BUDGET 美元来帮助支持我们的依赖。
@@ -415,9 +415,9 @@ donate_page:
     subtitle: 虽然我们接受任何大小的捐赠，但我们确实有一个等级系统，每个等级都有不同的奖励。
     cta:
       open_collective_text: >
-        捐赠 <span class="visually-hidden">通过 Open Collective</span>
+        <span class="visually-hidden">通过 Open Collective</span> 捐赠
       github_sponsors_text: > 
-        捐赠 <span class="visually-hidden">通过 GitHub</span>
+        <span class="visually-hidden">通过 GitHub</span> 捐赠
     items:
       - name: 白金赞助商
         amount: $2000+
@@ -439,35 +439,35 @@ donate_page:
     title: 推荐书
     items:
     - name: Addy Osmani
-      title: Senior Staff Eng. Manager, Chrome
+      title: Chrome 高级职员、经理
       image: addy-osmani.jpg
       text: >
         ESLint 多年来一直在帮助开发者编写高质量 JavaScript 方面发挥着关键作用。
-        我们喜欢它能及时发现常见问题。有了高度扩展性，ESLint让团队执行自定义规则
-        的能力在开源项目和其他项目中非常出色。Chrome很乐意赞助ESLint来帮助 web
+        我们喜欢它能及时发现常见问题。有了高度扩展性，ESLint 让团队执行自定义规则
+        的能力在开源项目和其他项目中非常出色。Chrome 很乐意赞助 ESLint 来帮助 web
         开发者编写始终如一的高质量代码。它是现代 web 开发工具包的重要组成部分。
     - name: Jeff Cross
-      title: Co-founder and Principal Architect, Nx
+      title: Nx 联合创始人、首席架构师
       image: jeff-cross.jpg
       text: >
         Nx 使用 ESLint 来改善代码质量、库边界和项目可见性约束。ESLint 使 Nx 更强大，
         所以代表 Nx.dev 社区，我们很自豪能做我们的一部分，并赞助ESLint的持续成功!
     - name: Médédé Raymond KPATCHAA
-      title: Technical Architect, Salesforce
+      title: Salesforce 技术架构师
       image: medede-kpatchaa.jpg
       text: >
         ESLint 对于任何 JavaScript 项目都是一个非常有用的工具。该工具允许我们建立整个团队
         从项目开始就采用的一致的代码格式规则，极大地促进了代码审查，并使新开发人员很容易集成
         到团队中。我知道我不是唯一一个欣赏它的灵活性和易用性的人。
     - name: Duane O'Brien
-      title: Head of Open Source, Indeed
+      title: Indeed 开源主管
       image: duane-obrien.jpg
       text: >
         大多数 JavaScript 项目直接或间接依赖于 ESLint。一名 Indeed 员工提名 ESLint 接受来自
-        FOSS贡献者基金的捐赠，他们的同事明确表示同意。我们很高兴支持开源技术，使我们能够开发、保护
+        FOSS 贡献者基金的捐赠，他们的同事明确表示同意。我们很高兴支持开源技术，使我们能够开发、保护
         和维护数字基础设施，支持我们的产品并帮助人们获得工作。
     - name: Gajus Kuizinas
-      title: Co-Founder / CTO, Contra
+      title: Contra 联合创始人、首席技术官
       image: gajus.jpg
       text: >
         ESLint 在帮助我们在越来越多的代码库和工程师之间创建安全和一致的体验方面扮演着重要的角色。
@@ -479,32 +479,32 @@ donate_page:
     description: 你需要知道的关于产品和账单的一切。找不到你想要的答案？请与我们友好的团队联系。
     items:
     - q: 谁接受捐赠的钱?
-      a: 所有的捐赠，无论是通过<a href='https://opencollective.com'>Open Collective</a> 或 GitHub捐赠的，
-        都是由501(c)(3)非盈利组织 Open Source Collective 接收的。Open Source Collective 充当ESLint的财务主体，
+      a: 所有的捐赠，无论是通过 <a href='https://opencollective.com'>Open Collective</a> 或 GitHub 捐赠的，
+        都是由 501(c)(3) 非盈利组织 Open Source Collective 接收的。Open Source Collective 充当 ESLint 的财务主体，
         并跟踪所有捐赠。
     - q: 我会得到我的捐款记录吗?
-      a: 是的。如果您通过Open Collective进行捐赠，您将通过电子邮件收到PDF收据;
-        如果您通过GitHub捐赠，捐赠将出现在您的收据或发票。
+      a: 是的。如果您通过 Open Collective 进行捐赠，您将通过电子邮件收到 PDF 收据;
+        如果您通过 GitHub 捐赠，捐赠将出现在您的收据或发票。
     - q: 我的捐赠税可否扣除?
-      a: 不。尽管 Open Source Collective 是一个501(c)(3)非盈利组织，美国国税局并不认为开源软件的
+      a: 不。尽管 Open Source Collective 是个 501(c)(3) 非盈利组织，美国国税局并不认为开源软件的
         开发是一项慈善活动，因此不授予免税地位。
     - q: 谁来决定钱如何分配?
       a: TSC 负责所有关于谁获得资金以及分配多少资金的决定。
     - q: 我能看到钱是怎么用的吗?
-      a: 是的。通过进入我们的Open Collective页面，您可以看到已经提交和支付的每一笔费用。
+      a: 是的。通过访问我们的 Open Collective 页面，您可以查看每笔已提交或支付的费用。
         所有的交易都是开放和公开的。
     - q: 我可以在任何时候取消我的重复捐赠吗?
       a: 是的。没有长期承诺。您可以在任何时候通过登录到 Open Collective 或 GitHub 赞助商取消您的捐赠。
-    - q: 我的 logo 需要多长时间才能出现在主页，GitHub和npm包上?
-      a: 主页和 GitHub 上的徽标每天都会自动更新，所以它应该不会超过24小时出现。npm 包上的标识只有在我们发布新版本时才会更新，
+    - q: 我的 logo 需要多长时间才能出现在主页，GitHub 和 npm 包上?
+      a: 主页和 GitHub 上的徽标每天都会自动更新，所以它应该不会超过 24 小时出现。npm 包上的标识只有在我们发布新版本时才会更新，
         通常是每两周更新一次。然而，主要发布通常需要几个月的时间才能完成，在这段时间内 npm 包上的 logo 不会更新。
     - q: 我的 logo 和 URL 来自哪里?
       a: 我们从你的 Open Collective 或 GitHub 档案中提取 logo 和 URL，这取决于您过去捐赠的网站。
-        你可以在任何时候从 Open Collective 或 GitHub 更新这些，这些变化将在24小时内反映在主页和 GitHub README。
+        你可以在任何时候从 Open Collective 或 GitHub 更新这些，这些变化将在 24 小时内反映在主页和 GitHub README。
         我们无法手动覆盖网站上的 logo 或 url。
     - q: 可以一次性捐款吗?
       a: 是的。一次性捐赠最简单的方式是通过 Open Collective，它允许任何金额。
-        GitHub的一次性捐赠可能对您捐赠的数量有限制。
+        GitHub 的一次性捐赠可能对您捐赠的数额有所限制。
 
 #------------------------------------------------------------------------------
 # Languages Page
