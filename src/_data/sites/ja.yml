@@ -177,7 +177,7 @@ homepage:
 
   animation:
     enabled: false
-    text: Find and fix problems in your JavaScript code
+    text: JavaScriptコードの問題点の発見と修正
     highlight_word: problems
     wrong_word: problmes
 
