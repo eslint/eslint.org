@@ -14,7 +14,7 @@ language:
   flag: 🇨🇳
   name: 简体中文
 locale: zh-cn
-hostname: zh-cn.eslint.org
+hostname: new.cn.eslint.org
 
 #------------------------------------------------------------------------------
 # Analytics
