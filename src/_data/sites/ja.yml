@@ -172,7 +172,7 @@ branding_page:
 homepage:
   title: 解析対象のJavaScriptコードにおける問題発見と解消
   description: >
-    ESLintはコードを静的に解析し、問題を迅速に発見します。
+    ESLintはコードを静的に解析し、迅速に問題を発見します。
     ほとんどのテキストエディタに組み込まれており、CIパイプラインの一部としてESLintを実行することができます。
 
   animation:
