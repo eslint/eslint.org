@@ -11,5 +11,9 @@
 # Internal Redirects
 /docs/*                             https://eslint.org/docs/:splat 302!
 
+# Proxied Endpoints
+/play/*                             https://play-eslint.netlify.app/:splat 200!
+
 # Translation Blog Redirects
 https://es.eslint.org/blog/*        https://new.eslint.org/blog/:splat 302!
+https://ja.eslint.org/blog/*        https://new.eslint.org/blog/:splat 302!
