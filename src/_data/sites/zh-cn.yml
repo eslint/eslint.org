@@ -174,8 +174,8 @@ homepage:
   animation:
     enabled: true
     text: 检测和修复 JavaScript 代码中的问题。
-    highlight_word: 问题
-    wrong_word: problmes(TODO)
+    highlight_word: problems
+    wrong_word: problmes
 
   install:
     title: 快速安装 ESLint
@@ -353,10 +353,10 @@ donate_page:
   title: 捐赠
   description: >
     ESLint 依靠捐赠来进行持续的维护和开发。
-    目前，有 BACKER_COUNT 个公司、组织和个人捐赠 MONTHLY_DONATIONS/月 来帮助我们。
+    目前有 BACKER_COUNT 个公司、组织和个人捐赠 MONTHLY_DONATIONS/月来帮助我们。
   hero:
     cta:
-      text: 看到我们的赞助商
+      text: 查看我们的赞助商
       url: /sponsors
   donation_options:
     title: 捐赠方式
@@ -390,7 +390,7 @@ donate_page:
     items:
       - name: 团队开发
         text: >
-          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅人 为HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。
+          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅人为 HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。
       - name: 贡献者
         text: >
           我们每个月留出 CONTRIBUTOR_POOL_BUDGET 美元来支付对项目做出重大贡献的外部贡献者。
@@ -482,11 +482,11 @@ donate_page:
       a: 所有的捐赠，无论是通过 <a href='https://opencollective.com'>Open Collective</a> 或 GitHub 捐赠的，
         都是由 501(c)(3) 非盈利组织 Open Source Collective 接收的。Open Source Collective 充当 ESLint 的财务主体，
         并跟踪所有捐赠。
-    - q: 我会得到我的捐款记录吗?
+    - q: 我会收到我的捐款记录吗?
       a: 是的。如果您通过 Open Collective 进行捐赠，您将通过电子邮件收到 PDF 收据;
         如果您通过 GitHub 捐赠，捐赠将出现在您的收据或发票。
     - q: 我的捐赠税可否扣除?
-      a: 不。尽管 Open Source Collective 是个 501(c)(3) 非盈利组织，美国国税局并不认为开源软件的
+      a: 不。尽管 Open Source Collective 是个 501(c)(3) 非盈利组织，但美国国税局并不认为开源软件的
         开发是一项慈善活动，因此不授予免税地位。
     - q: 谁来决定钱如何分配?
       a: TSC 负责所有关于谁获得资金以及分配多少资金的决定。
@@ -497,7 +497,7 @@ donate_page:
       a: 是的。没有长期承诺。您可以在任何时候通过登录到 Open Collective 或 GitHub 赞助商取消您的捐赠。
     - q: 我的 logo 需要多长时间才能出现在主页，GitHub 和 npm 包上?
       a: 主页和 GitHub 上的徽标每天都会自动更新，所以它应该不会超过 24 小时出现。npm 包上的标识只有在我们发布新版本时才会更新，
-        通常是每两周更新一次。然而，主要发布通常需要几个月的时间才能完成，在这段时间内 npm 包上的 logo 不会更新。
+        通常是每两周更新一次。然而，主要版本发布通常需要几个月的时间才能完成，在这段时间内 npm 包上的 logo 不会更新。
     - q: 我的 logo 和 URL 来自哪里?
       a: 我们从你的 Open Collective 或 GitHub 档案中提取 logo 和 URL，这取决于您过去捐赠的网站。
         你可以在任何时候从 Open Collective 或 GitHub 更新这些，这些变化将在 24 小时内反映在主页和 GitHub README。
