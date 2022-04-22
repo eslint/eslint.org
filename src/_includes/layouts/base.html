@@ -8,6 +8,8 @@
 
     {% if title %}
         {% set page_title = title %}
+    {% elseif currentCategory %}
+        {% set page_title = currentCategory.title %}    
     {% else %}
         {% set page_title = site[hook].title %}
     {% endif %}
@@ -60,7 +62,7 @@
     <link rel="preload" href="{{ '/assets/fonts/SpaceGrotesk-Medium-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/Inter-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/SpaceMono-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preconnect" href="https://www.google-analytics.com/">
+    <link rel="preconnect" href="https://www.googletagmanager.com/">
 
     <script>
         (function() {

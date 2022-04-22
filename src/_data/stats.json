@@ -1,11 +1,11 @@
 {
-    "currentVersion": "v8.8.0",
-    "currentVersionDate": "2022-01-28T21:13:56Z",
+    "currentVersion": "v8.13.0",
+    "currentVersionDate": "2022-04-08T21:27:57Z",
     "currentVersionIsPrerelease": false,
-    "stars": 19990,
-    "lastCommitDate": "2022-02-10T07:04:42Z",
-    "projectDependents": 6894509,
-    "weeklyDownloads": 23532573,
-    "nextVersion": "v8.9.0",
-    "nextVersionDate": "2022-02-12"
+    "stars": 20392,
+    "lastCommitDate": "2022-04-21T00:36:31Z",
+    "projectDependents": 7795062,
+    "weeklyDownloads": 21858431,
+    "nextVersion": "v8.14.0",
+    "nextVersionDate": "2022-04-22"
 }

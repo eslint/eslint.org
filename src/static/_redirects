@@ -1,0 +1,15 @@
+# Netlify Redirect Rules
+# https://www.netlify.com/docs/redirects/
+
+# External Redirects
+/cla                                https://cla.js.foundation/eslint/eslint 302!
+/conduct                            https://code-of-conduct.openjsf.org/ 302!
+/chat/tsc-meetings                  https://discord.gg/3brqTzJ 302!
+/chat/help                          https://discord.gg/nJdtBaF 302!
+/chat                               https://discord.gg/8szcydm 302!
+
+# Internal Redirects
+/docs/*                             https://eslint.org/docs/:splat 302!
+
+# Translation Blog Redirects
+https://es.eslint.org/blog/*        https://new.eslint.org/blog/:splat 302!

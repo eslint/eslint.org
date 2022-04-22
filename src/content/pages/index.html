@@ -46,7 +46,9 @@ eleventyExcludeFromCollections: true
             </div>
         </div>
         <div class="span-10-12 eslint-versions-col">
-            {% include "partials/carbon-ad.html" %}
+            <div class="carbon-wrapper">
+                {% include "partials/carbon-ad.html" %}
+            </div>
             <dl class="eslint-versions" aria-labelledby="eslint-versions-title">
                 <span id="eslint-versions-title" hidden>{{ site.homepage.versions.title }}</span>
                 <dt>{{ site.homepage.versions.latest }}</dt>

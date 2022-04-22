@@ -21,7 +21,7 @@ hostname: new.eslint.org
 #------------------------------------------------------------------------------
 
 google_analytics:
-  code: "UA-60915033-1"
+  code: "G-7DGPHY308T"
 
 #------------------------------------------------------------------------------
 # Ads
@@ -131,7 +131,7 @@ branding_page:
       title: Name
       description: >
         ESLint must be written with a capital E, S and L when used, as “ES” stands 
-        for ECMAScript and “L” being the start of the world “Lint”.
+        for ECMAScript and “L” being the start of the word “Lint”.
     logo:
       title: Logo
       description:
@@ -282,6 +282,7 @@ blog_page:
     previous_page: Previous
     last_page: Last
     status: Page PAGE_NUMBER of TOTAL_PAGE_COUNT
+  from_the_blog: From the blog
 
 #------------------------------------------------------------------------------
 # Team Page
