@@ -290,26 +290,26 @@ blog_page:
 #------------------------------------------------------------------------------
 
 team_page:
-  title: Meet our Team
+  title: Rencontrez notre Équipe
   description: >
-    These are the people who build and maintain ESLint.
+    Voici les personnes qui ont créé et qui maintiennent ESLint.
   tsc:
     title: Technical Steering Committee
     description: >
-      The people who manage releases, review feature requests, and meet
-      regularly to ensure ESLint is properly maintained.   
+      Les personnes en charge des releases, de traiter les demandes de fonctionnalités
+      et qui se rencontrent régulièrement afin de s'assurer qu'ESLint est maintenu correctement.
   reviewers:
     title: Reviewers
     description: >
-      The people who review and implement new features.
+      Les personnes en charge de revoir et implémenter les nouvelles fonctionnalités.
   committers:
     title: Committers
     description: >
-      The people who review and fix bugs and help triage issues.
+      Les personnes en charge de revoir et corriger les bugs, ainsi que trier les tickets.
   alumni:
-    title: Alumni
+    title: Anciens Membres
     description: >
-      Former team members who previously helped maintain ESLint.
+      Les anciens membres de l'équipe qui ont aidé à maintenir ESLint.
 
 #------------------------------------------------------------------------------
 # Sponsors Page
