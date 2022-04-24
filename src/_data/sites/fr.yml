@@ -267,23 +267,23 @@ homepage:
 #------------------------------------------------------------------------------
 
 blog_page:
-  title: News and Updates
-  description: The latest ESLint news, case studies, tutorials, and resources.
+  title: Actualités et Mises à Jour
+  description: Les dernières actualités à propos d'ESLint, les cas d'étude, les tutoriels et autres ressources.
   search:
-    title: Search
-    hint: Results will be shown and updated as you type.
-    clear: Clear Search
+    title: Rechercher
+    hint: Les résultats s'afficheront et seront mis à jour pendant que vous écrivez.
+    clear: Effacer la Recherche
   categories:
-    title: Categories
-    everything: Everything
+    title: Catégories
+    everything: Tout
   pagination:
     title: Pagination
-    first_page: First
-    next_page: Next
-    previous_page: Previous
-    last_page: Last
-    status: Page PAGE_NUMBER of TOTAL_PAGE_COUNT
-  from_the_blog: From the blog
+    first_page: Première page
+    next_page: Page suivante
+    previous_page: Page précédente
+    last_page: Dernière page
+    status: Page PAGE_NUMBER sur TOTAL_PAGE_COUNT
+  from_the_blog: Sur le blog
 
 #------------------------------------------------------------------------------
 # Team Page
