@@ -176,90 +176,91 @@ branding_page:
 #------------------------------------------------------------------------------
 
 homepage:
-  title: Find and fix problems in your JavaScript code
+  title: Trouvez et corrigez les erreurs de votre code JavaScript
   description: >
-    ESLint statically analyzes your code to quickly find problems. It is built
-    into most text editors and you can run ESLint as part of your continuous 
-    integration pipeline.
+    ESLint analyse votre code de manière statique pour y trouver des erreurs
+    rapidement. La plupart des éditeurs de texte le supportent et vous pouvez
+    aussi l'exécuter au sein de votre chaîne d'intégration continue.
   
   animation:
     enabled: true
-    text: Find and fix problems in your JavaScript code
-    highlight_word: problems
-    wrong_word: problmes
+    text: Trouvez et corrigez les erreurs de votre code JavaScript
+    highlight_word: erreurs
+    wrong_word: errurs
 
   install:
-    title: ESLint quick install code
-    copy: Copy installation code to clipboard
-    copied: Copied to clipboard.
+    title: Comment installer ESLint
+    copy: Copier la commande d'installation dans le presse-papier
+    copied: Copié dans le presse-papier.
   
   versions:
-    title: ESLint Versions
-    latest: Latest Version
-    upcoming: Upcoming Version
-    development: Development
-    dateline: <span class="text-dark">VERSION</span> on DATE
+    title: Versions d'ESLint
+    latest: Dernière Version
+    upcoming: Prochaine Version
+    development: Développement
+    dateline: <span class="text-dark">VERSION</span> du DATE
 
   explainer:
     image:
       src: eslint-features-img.png
-      alt: "Screenshot of a Visual Studio code window with ESLint in action: underlining ESLint error in the editor."
-    title: The pluggable linting utility for JavaScript and JSX
+      alt: "Capture d'écran de Visual Studio Code avec ESLint en train de souligner une erreur dans l'éditeur."
+    title: Le correcteur extensible pour JavaScript et le JSX
     description: >
-      ESLint is an open source project that helps you find and fix problems 
-      with your JavaScript code. It doesn't matter if you're writing JavaScript in 
-      the browser or on the server, with or without a framework, ESLint can help 
-      your code live its best life.
+      ESLint est un projet libre qui vous aide à trouver et corriger les erreurs
+      de votre code JavaScript. Peu importe si vous écrivez votre JavaScript pour
+      les navigateurs ou les serveurs, avec ou sans framework : ESLint permettra
+      à votre code de vivre sa meilleure vie.
     features:
-    - title: Find issues
+    - title: Repérez les erreurs
       description: >
-        ESLint statically analyzes your code to quickly find problems. ESLint is 
-        built into most text editors and you can run ESLint as part of your 
-        continuous integration pipeline.
+        ESLint analyse votre code de manière statique pour y trouver des erreurs
+        rapidement. La plupart des éditeurs de texte le supportent et vous pouvez
+        aussi l'exécuter au sein de votre chaîne d'intégration continue.
       learn_more:
         link: getStarted 
         text: >
-          Learn more <span class="visually-hidden">about finding issues with ESLint</span>
-    - title: Fix problems automatically
+          En savoir plus sur <span class="visually-hidden">comment repérer les erreurs avec ESLint</span>
+    - title: Corrigez les erreurs automatiquement
       description: >
-        Many problems ESLint finds can be automatically fixed. ESLint fixes are 
-        syntax-aware so you won't experience errors introduced by traditional 
-        find-and-replace algorithms.
+        Beaucoup des erreurs trouvées par ESLint peuvent être corrigées automatiquement.
+        Les correctifs qu'ESLint applique respectent la syntaxe afin de ne pas
+        introduire d'autres erreurs comme le font les algorithmes habituels de
+        remplacement de texte.
       learn_more:
         link: fixProblems 
         text: >
-          Learn more <span class="visually-hidden">about fixing problems automatically with ESLint</span>
-    - title: Configure everything
+          En savoir plus sur <span class="visually-hidden">la correction automatique des erreurs avec ESLint</span>
+    - title: Entièrement configurable
       description: >
-        Preprocess code, use custom parsers, and write your own rules that work 
-        alongside ESLint's built-in rules. Customize ESLint to work exactly the 
-        way you need it for your project.
+        Prétraitez votre code, intégrez vos propres parseurs et écrivez vos règles
+        qui seront exécutés aux côtés de celles présentes nativement dans ESLint.
+        Personnalisez ESLint pour un fonctionnement sur mesure au sein de votre projet.
       learn_more:
         link: configuring
         text: >
-          Learn more <span class="visually-hidden">about configuring ESLint</span>
+          En savoir plus sur <span class="visually-hidden">comment configurer ESLint</span>
   blog:
-    view_all_posts: View all posts
+    view_all_posts: Voir tous les articles
 
   stats:
-    title: Welcome to the community
+    title: Bienvenue dans la communauté
     description: >
-      ESLint is the #1 JavaScript linter by downloads on npm (over DOWNLOAD_COUNT 
-      downloads / week) and is used at companies like Microsoft, Airbnb, Netflix, 
-      and Facebook.
-    dependents: Dependents
-    weekly_downloads: Weekly Downloads
-    stars: Stars
+      ESLint est le premier correcteur JavaScript en nombre de téléchargements sur npm
+      (plus de DOWNLOAD_COUNT téléchargments par semaine) et il est utilisé par
+      des entreprises comme Microsoft, Airbnb, Netflix et Facebook.
+    dependents: Projets Dépendants
+    weekly_downloads: Téléchargements Hebdomadaires
+    stars: Favoris sur GitHub
   
   sponsors:
-    title: Sponsored by fantastic people
+    title: Sponsorisé par des personnes fantastiques
     description: >
-      We receive ANNUAL_DONATIONS / year in donations from SPONSOR_COUNT sponsors.
-    view_all_sponsors: View all sponsors
+      Nous recevons ANNUAL_DONATIONS par an en dons de SPONSOR_COUNT sponsors.
+    view_all_sponsors: Voir tous les sponsors
 
   donations:
-    title: Recent One-time Donations
-    view_all_donations: View all donations
+    title: Dons Uniques Récents
+    view_all_donations: Voir tous les dons
 
 #------------------------------------------------------------------------------
 # Blog Page
