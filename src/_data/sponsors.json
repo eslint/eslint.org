@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136692,
-        "monthlyDonations": 11391,
-        "sponsorCount": 186
+        "annualDonations": 136632,
+        "monthlyDonations": 11386,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -1468,14 +1468,6 @@
             "name": "Cretia",
             "image": "https://avatars.githubusercontent.com/u/79467215?v=4",
             "url": "https://www.cretia.app",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Noisy Pigeon, Inc.",
-            "image": "https://avatars.githubusercontent.com/u/93450426?v=4",
-            "url": "https://noisypigeon.inc",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
