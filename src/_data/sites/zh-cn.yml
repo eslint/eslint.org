@@ -172,7 +172,7 @@ homepage:
     您也可以运行 ESLint 作为持续集成管道的一部分。
   
   animation:
-    enabled: true
+    enabled: false
     text: 检测和修复 JavaScript 代码中的问题。
     highlight_word: problems
     wrong_word: problmes
