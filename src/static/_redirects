@@ -17,3 +17,4 @@
 # Translation Blog Redirects
 https://es.eslint.org/blog/*        https://new.eslint.org/blog/:splat 302!
 https://ja.eslint.org/blog/*        https://new.eslint.org/blog/:splat 302!
+https://new.cn.eslint.org/blog/*        https://new.eslint.org/blog/:splat 302!
