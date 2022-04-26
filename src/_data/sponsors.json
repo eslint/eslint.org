@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136632,
-        "monthlyDonations": 11386,
-        "sponsorCount": 185
+        "annualDonations": 136476,
+        "monthlyDonations": 11373,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -480,15 +480,6 @@
             "tier": "backer"
         },
         {
-            "name": "Drake Costa",
-            "url": null,
-            "image": "https://images.opencollective.com/drake-costa/avatar.png",
-            "monthlyDonation": 8,
-            "totalDonations": 100,
-            "source": "opencollective",
-            "tier": null
-        },
-        {
             "name": "Sentry",
             "image": "https://avatars.githubusercontent.com/u/1396951?v=4",
             "url": "https://sentry.io",
@@ -564,7 +555,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 50,
+            "totalDonations": 55,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1252,14 +1243,6 @@
             "name": "mizdra",
             "image": "https://avatars.githubusercontent.com/u/9639995?u=dd5dac271b000f6c7883880c1796ce2a95a971b2&v=4",
             "url": "https://mizdra.net",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": null,
-            "image": "https://avatars.githubusercontent.com/u/9804406?u=73e86ea54cd440dfc5bb3b56f2e390d94e210299&v=4",
-            "url": "maharramoff.github.io",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
