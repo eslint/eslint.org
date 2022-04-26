@@ -387,40 +387,40 @@ sponsors_page:
 #------------------------------------------------------------------------------
 
 donate_page:
-  title: Donate
+  title: Faire un don
   description: >
-    ESLint relies on donations for ongoing maintenance and development.
-    There are currently BACKER_COUNT companies, organizations, and individuals
-    are donating MONTHLY_DONATIONS each month to help us out.
+    ESLint dépend des dons pour la maintenance et le développement continu.
+    Actuellement, BACKER_COUNT entreprises, organisations et particuliers
+    donnent MONTHLY_DONATIONS chaque mois pour nous aider.
   hero:
     cta:
-      text: See our Sponsors
+      text: Voir nos Sponsors
       url: /sponsors
   donation_options:
-    title: Ways to donate
-    subtitle: We accept donations through the following sites.
+    title: De multiples façons de donner
+    subtitle: Nous acceptons les dons via les plateformes suivantes.
     open_collective:
       title: Open Collective
-      subtitle: Our most popular plan for companies.
+      subtitle: Notre plan le plus populaire pour les entreprises.
       cta:
-        text: Contribute on Open Collective
+        text: Contribuer sur Open Collective
       items:
-        - text: Donate directly to a 501(c)(3) non-profit
-        - text: One-time and recurring donations
-        - text: Pay by credit card, bank transfer, or PayPal
-        - text: Set up an open source fund to donate to multiple projects
-        - text: Available in most countries
+        - text: Faire un don directement à une organisation à but non lucratif 501(c)(3)
+        - text: Dons ponctuels et récurrents
+        - text: Payer par carte de crédit, virement bancaire ou PayPal
+        - text: Créer un fonds open source pour faire un don à plusieurs projets
+        - text: Disponible dans la plupart des pays
     github_sponsors:
       title: GitHub Sponsors
-      subtitle: Advanced features and reporting.
+      subtitle: Fonctionnalités et rapports avancés.
       cta:
-        text: Contribute on GitHub
+        text: Contribuer sur GitHub
       items:
-        - text: Donate through GitHub billing
-        - text: One-time and recurring donations
-        - text: Pay by credit card or use your existing billing relationship with GitHub (including invoicing)
-        - text: Show a “sponsor” badge on your GitHub profile
-        - text: Use your existing GitHub login
+        - text: Faire un don via la facturation GitHub
+        - text: Dons ponctuels et récurrents
+        - text: Payer par carte de crédit ou utiliser votre moyen de paiement GitHub actuel (y compris celui de votre facturation)
+        - text: Afficher un badge 'sponsor' sur votre profil GitHub
+        - text: Utiliser votre identifiant GitHub actuel
   budget:
     title: How the money is used
     subtitle: >
