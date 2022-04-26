@@ -5,4 +5,7 @@ eleventyExcludeFromCollections: true
 ---
 Sitemap: https://{{ site.hostname }}/sitemap.xml
 User-agent: *
+
+{% if "new." in site.hostname %}
 Disallow: /
+{% endif %}
