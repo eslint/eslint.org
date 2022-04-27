@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 136476,
-        "monthlyDonations": 11373,
+        "annualDonations": 136416,
+        "monthlyDonations": 11368,
         "sponsorCount": 183
     },
     "platinum": [
@@ -443,14 +443,6 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?v=4",
             "url": "https://github.com/Kamalnrf",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "cvermand",
-            "image": "https://avatars.githubusercontent.com/u/33010418?u=92fcf1932c437d7d7909c0df3552c5efad5467d9&v=4",
-            "url": "https://github.com/bidoubiwa",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1248,6 +1240,14 @@
             "tier": "backer"
         },
         {
+            "name": null,
+            "image": "https://avatars.githubusercontent.com/u/9804406?u=73e86ea54cd440dfc5bb3b56f2e390d94e210299&v=4",
+            "url": "maharramoff.github.io",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "James Ives",
             "image": "https://avatars.githubusercontent.com/u/10888441?u=61f6af1b0be0b5e9a15908ef45168b9242798486&v=4",
             "url": "https://jamesiv.es",
@@ -1272,7 +1272,7 @@
             "tier": "backer"
         },
         {
-            "name": "Dallas Baker",
+            "name": "Dallas X",
             "image": "https://avatars.githubusercontent.com/u/13825473?u=a9b26c71274e523a309e2e38fb9fb7b74a1bc13c&v=4",
             "url": "blog.sheldyn.io",
             "monthlyDonation": 5,
