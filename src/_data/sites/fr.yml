@@ -422,42 +422,42 @@ donate_page:
         - text: Afficher un badge 'sponsor' sur votre profil GitHub
         - text: Utiliser votre identifiant GitHub actuel
   budget:
-    title: How the money is used
+    title: Comment l'argent est utilisé
     subtitle: >
-      The ESLint project uses donated money to benefit the project and the ESLint community as a whole.
-      In general, we spend money on these areas each month.
+      Le projet ESLint utilise l'argent donné au profit du projet et de la communauté ESLint dans son ensemble.
+      En général, nous investissons de l'argent dans ces domaines chaque mois.
     items:
-      - name: Team Development
+      - name: Développement de l'équipe
         text: >
-          We pay our team members an hourly rate based on their seniority, currently HOURLY_RATE_TSC USD/hour
-          for TSC members and Reviewers and HOURLY_RATE_COMMITERS USD/hour for committers.
-      - name: Contributor Pool
+          Nous payons les membres de notre équipe un taux horaire basé sur leur ancienneté, actuellement HOURLY_RATE_TSC USD/heure
+          pour les membres du comité de pilotage technique et les relecteurs, et HOURLY_RATE_COMMITERS USD/heure pour les contributeurs.
+      - name: Contributeurs
         text: >
-          We set aside CONTRIBUTOR_POOL_BUDGET USD each month to pay outside contributors who have made significant
-          contributions to the project. Contributions include submitting code, writing documentation,
-          answering questions in our Discord server, and more. This money is allocated each month by the TSC.
-      - name: Dependencies
+          Nous réservons CONTRIBUTOR_POOL_BUDGET USD chaque mois pour payer les contributeurs externes qui ont apporté des contributions
+          importantes au projet. Les contributions incluent la soumission de code, la rédaction de documentation, la réponse aux questions
+          sur notre serveur Discord, et plus encore. Cet argent est attribué chaque mois par le comité de pilotage technique.
+      - name: Dépendances
         text: >
-          We set aside DEPENDENCIES_BUDGET USD each month to help support our dependencies.
-          We believe that open source projects who are lucky enough to get funded
-          have a responsibility to help support the smaller projects they rely on.
-      - name: Community Projects
+          Nous réservons DEPENDENCIES_BUDGET USD chaque mois pour aider à financer nos dépendances.
+          Nous pensons que les projets open source qui ont la chance d'être financés ont la responsabilité
+          de soutenir les petits projets sur lesquels ils reposent.
+      - name: Projets communautaires
         text: >
-          We set aside COMMUNITY_BUDGET USD each month to help support plugins, parsers,
-          and other projects that are of benefit to the ESLint ecosystem as a whole.
-          We believe the strength of the project is in its ecosystem and we want
-          to ensure important projects remain well-maintained.
-      - name: Support Systems
+          Nous réservons COMMUNITY_BUDGET USD chaque mois pour aider à financer les plugins, les parseurs,
+          et les autres projets qui profitent à l'écosystème ESLint dans son ensemble.
+          Nous croyons que la force du projet réside dans son écosystème et nous voulons
+          nous assurer que les projets importants restent bien maintenus.
+      - name: Licences
         text: >
-          We used a small amount each month to pay for software the team uses to help manage 
-          the project, which includes things like Google Workspace and cloud storage.
+          Nous utilisons également une petite partie des dons chaque mois pour payer les logiciels que l'équipe utilise pour aider à gérer
+          le projet, ce qui inclut des éléments tels que Google Workspace et le stockage dans le cloud.
     footer:
       text: >
-        Additionally, from time to time we use the funds to pay contractors to work on things
-        that are important to the project and where the team doesn’t have the time or expertise
-        to complete the work on their own. For example, we recently hired a designer and developer
-        to redesign this website. We ensure that we spend less than we take in each month so we
-        can save for such projects.
+        De plus, de temps en temps, nous utilisons les fonds pour payer des entrepreneurs pour travailler sur des choses
+        qui sont importantes pour le projet et où l'équipe n'a pas le temps ou l'expertise
+        pour terminer le travail par elle-même. Par exemple, nous avons récemment embauché un concepteur et un développeur
+        pour repenser ce site Web. Nous nous assurons de dépenser moins que ce que nous encaissons chaque mois
+        afin de pouvoir économiser pour de tels projets.
   donation_tiers:
     title: Donation tiers
     subtitle: While we accept donations of any size, we do have a tier system with different rewards at each level.
