@@ -1,8 +1,8 @@
 ---
 #------------------------------------------------------------------------------
-# English Site Details
+# Hindi Site Details
 # The primary ESLint site that is hosted at eslint.org
-# Author: Nicholas C. Zakas
+# Author: Nitin Kumar
 #------------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ carbon_ads:
 #------------------------------------------------------------------------------
 
 shared:
-  get_started: शुरू हो जाओ
+  get_started: शुरू करें
   become_a_sponsor: एक प्रायोजक बनें
   eslint_logo_alt: ESLint प्रतीक चिन्ह
   description: >
@@ -138,10 +138,8 @@ branding_page:
         - >
           लोगो और वर्डमार्क के साथ-साथ लोगो के आस-पास कितनी जगह होनी चाहिए, इसका अंदाजा लगाने के लिए गैप द्वारा बनाए गए आंतरिक षट्भुज के आकार को दोगुना करें।
         - >
-          Our logo is versatile - you can use it on various brand colours, making 
-          use of opacity on non-white backgrounds to emulate the lighter colour.
-          The ESLint logomark can also be used in isolation, without the ESLint 
-          wordmark though where possible, using both is preferred.
+          हमारा लोगो बहुमुखी है। इसका उपयोग विभिन्न प्रकार के ब्रांड रंगों के लिए किया जा सकता है और चमकीले रंगों की नकल करने के लिए गैर-सफेद पृष्ठभूमि पर पारदर्शी हो सकता है।
+          ESLint लोगो को बिना लॉगोटाइप के अकेले उपयोग किया जा सकता है, लेकिन यदि संभव हो तो ESLint लोगो और लॉगोटाइप दोनों का उपयोग करना बेहतर है।
       download_svg: SVG डाउनलोड करें
       download_png: PNG डाउनलोड करें
       change_background: "Background बदलें:"
@@ -168,9 +166,7 @@ branding_page:
 homepage:
   title: अपने JavaScript कोड में समस्याओं का पता लगाएं और उन्हें ठीक करें
   description: >
-    ESLint statically analyzes your code to quickly find problems. It is built
-    into most text editors and you can run ESLint as part of your continuous 
-    integration pipeline.
+    ESLint आपके कोड का सांख्यिकीय रूप से विश्लेषण करता है और जल्दी से समस्याओं का पता लगाता है। अधिकांश text editor में निर्मित, आप अपनी CI पाइपलाइन के भाग के रूप में ESLint चला सकते हैं।
 
   animation:
     enabled: false
@@ -349,102 +345,96 @@ sponsors_page:
 #------------------------------------------------------------------------------
 
 donate_page:
-  title: Donate
+  title: दान करें
   description: >
-    ESLint relies on donations for ongoing maintenance and development.
-    There are currently BACKER_COUNT companies, organizations, and individuals
-    are donating MONTHLY_DONATIONS each month to help us out.
+    ESLint चल रहे रखरखाव और विकास के लिए दान पर निर्भर करता है।
+     वर्तमान में BACKER_COUNT कंपनियां, संगठन और व्यक्ति 
+     हमारी मदद करने के लिए हर महीने MONTHLY_DONATIONS दान कर रहे हैं।
   hero:
     cta:
-      text: See our Sponsors
+      text: हमारे प्रायोजक देखें
       url: /sponsors
   donation_options:
-    title: Ways to donate
-    subtitle: We accept donations through the following sites.
+    title: दान करने के तरीके
+    subtitle: हम निम्नलिखित साइटों के माध्यम से दान स्वीकार करते हैं।
     open_collective:
       title: Open Collective
-      subtitle: Our most popular plan for companies.
+      subtitle: निगमों के लिए सबसे लोकप्रिय योजना
       cta:
-        text: Contribute on Open Collective
+        text: Open Collective के माध्यम से योगदान करें
       items:
-        - text: Donate directly to a 501(c)(3) non-profit
-        - text: One-time and recurring donations
-        - text: Pay by credit card, bank transfer, or PayPal
-        - text: Set up an open source fund to donate to multiple projects
-        - text: Available in most countries
+        - text: 501(c)(3) गैर-लाभकारी संस्थाओं को प्रत्यक्ष दान
+        - text: अस्थायी और नियमित दान
+        - text: आप क्रेडिट कार्ड, बैंक हस्तांतरण, PayPal द्वारा भुगतान कर सकते हैं
+        - text: एक ओपन सोर्स फंड लॉन्च करके कई परियोजनाओं के लिए दान संभव है
+        - text: अधिकांश देशों में उपलब्ध
     github_sponsors:
       title: GitHub Sponsors
-      subtitle: Advanced features and reporting.
+      subtitle: उन्नत सुविधाएँ और रिपोर्ट
       cta:
-        text: Contribute on GitHub
+        text: GitHub के माध्यम से योगदान करें
       items:
-        - text: Donate through GitHub billing
-        - text: One-time and recurring donations
-        - text: Pay by credit card or use your existing billing relationship with GitHub (including invoicing)
-        - text: Show a “sponsor” badge on your GitHub profile
-        - text: Use your existing GitHub login
+        - text: GitHub को भुगतान द्वारा दान
+        - text: अस्थायी और नियमित दान
+        - text: आप क्रेडिट कार्ड से भुगतान कर सकते हैं या मौजूदा GitHub बिलिंग विधियों (चालान सहित) का उपयोग कर सकते हैं
+        - text: अपने GitHub प्रोफ़ाइल पर "sponsor" बैज दिखाएं
+        - text: अपने मौजूदा GitHub लॉगिन का उपयोग करें
   budget:
-    title: How the money is used
+    title: धन का उपयोग
     subtitle: >
-      The ESLint project uses donated money to benefit the project and the ESLint community as a whole.
-      In general, we spend money on these areas each month.
+      ESLint परियोजना, परियोजना और ESLint समुदाय को समग्र रूप से लाभान्वित करने के लिए दान किए गए धन का उपयोग करती है।
+      सामान्य तौर पर, हम हर महीने निम्नलिखित क्षेत्रों पर पैसा खर्च करते हैं।
     items:
-      - name: Team Development
+      - name: टीम विकास
         text: >
           We pay our team members an hourly rate based on their seniority, currently HOURLY_RATE_TSC USD/hour
           for TSC members and Reviewers and HOURLY_RATE_COMMITERS USD/hour for committers.
       - name: Contributor Pool
         text: >
-          We set aside CONTRIBUTOR_POOL_BUDGET USD each month to pay outside contributors who have made significant
-          contributions to the project. Contributions include submitting code, writing documentation,
-          answering questions in our Discord server, and more. This money is allocated each month by the TSC.
-      - name: Dependencies
+          हम महत्वपूर्ण योगदान देने वाले बाहरी योगदानकर्ताओं को भुगतान करने के लिए प्रत्येक माह CONTRIBUTOR_POOL_BUDGET USD अलग रखते हैं।
+          योगदान में कोड सबमिट करना, दस्तावेज़ लिखना, डिस्कॉर्ड सर्वर पर सवालों के जवाब देना, और बहुत कुछ शामिल हैं। यह पैसा टीएससी द्वारा मासिक रूप से वितरित किया जाएगा।
+      - name: निर्भर परियोजनाएं
         text: >
-          We set aside DEPENDENCIES_BUDGET USD each month to help support our dependencies.
-          We believe that open source projects who are lucky enough to get funded
-          have a responsibility to help support the smaller projects they rely on.
-      - name: Community Projects
+          हम अपनी निर्भरता का समर्थन करने में सहायता के लिए प्रत्येक माह DEPENDENCIES_BUDGET USD अलग रखते हैं।
+          हमारा मानना है कि ओपन-सोर्स प्रोजेक्ट्स, जो वित्त पोषित होने के लिए भाग्यशाली हैं, उन्हें छोटी परियोजनाओं का समर्थन करने में मदद करने की ज़िम्मेदारी है जिन पर वे निर्भर हैं।
+      - name: सामुदायिक परियोजना
         text: >
-          We set aside COMMUNITY_BUDGET USD each month to help support plugins, parsers,
-          and other projects that are of benefit to the ESLint ecosystem as a whole.
-          We believe the strength of the project is in its ecosystem and we want
-          to ensure important projects remain well-maintained.
-      - name: Support Systems
+          हम प्लगइन्स, पार्सर्स और अन्य परियोजनाओं के लिए हर महीने COMMUNITY_BUDGET USD सुरक्षित करते हैं जो पूरे ESLint पारिस्थितिकी तंत्र के लिए फायदेमंद हैं।
+          हम मानते हैं कि परियोजना की ताकत इसके पारिस्थितिकी तंत्र में निहित है, हमें उम्मीद है कि महत्वपूर्ण परियोजनाओं को बनाए रखा जाएगा।
+      - name: समर्थन प्रणाली
         text: >
-          We used a small amount each month to pay for software the team uses to help manage 
-          the project, which includes things like Google Workspace and cloud storage.
+          हम हर महीने एक छोटी राशि का उपयोग उस सॉफ़्टवेयर के भुगतान के लिए करते हैं जिसका उपयोग टीम प्रबंधन में सहायता के लिए करती है जिसमें Google Workspace और cloud storage जैसी चीज़ें शामिल हैं।
     footer:
       text: >
-        Additionally, from time to time we use the funds to pay contractors to work on things
-        that are important to the project and where the team doesn’t have the time or expertise
-        to complete the work on their own. For example, we recently hired a designer and developer
-        to redesign this website. We ensure that we spend less than we take in each month so we
-        can save for such projects.
+        इसके अतिरिक्त, समय-समय पर हम ठेकेदारों को परियोजना के लिए महत्वपूर्ण चीजों पर काम करने के लिए भुगतान करने के लिए धन का उपयोग करते हैं
+        जहां टीम के पास काम को खुद पूरा करने के लिए समय या विशेषज्ञता नहीं है।
+        उदाहरण के लिए, हमने हाल ही में एक डिज़ाइनर और डेवलपर को इस वेबसाइट को फिर से डिजाइन करने के लिए काम पर रखा है।
+        हम यह सुनिश्चित करते हैं कि हम हर महीने जितना धन अर्जित करते हैं उससे कम खर्च करें ताकि हम ऐसी परियोजनाओं के लिए बचत कर सकें।
   donation_tiers:
-    title: Donation tiers
-    subtitle: While we accept donations of any size, we do have a tier system with different rewards at each level.
+    title: दान स्तरीय प्रणाली
+    subtitle: हालाँकि हम किसी भी आकार का दान स्वीकार करते हैं, हमारे पास प्रत्येक स्तर पर अलग-अलग पुरस्कारों के साथ एक स्तरीय प्रणाली है।
     cta:
       open_collective_text: >
-        Donate <span class="visually-hidden">on Open Collective</span>
+        <span class="visually-hidden">Open Collective</span> पर दान करें
       github_sponsors_text: >
-        Donate <span class="visually-hidden">on GitHub</span>
+        <span class="visually-hidden">GitHub</span> पर दान करें
     items:
       - name: Platinum Sponsor
         amount: $2000+
-        frequency: per month
-        text: 2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
+        frequency: प्रति माह
+        text: 2 घंटे का समर्थन, होमपेज और README के शीर्ष पर लोगो पोस्ट किया गया। इसके अलावा, यह Gold Tier की सभी सामग्री प्रदान करता है।
       - name: Gold Sponsor
         amount: $1000–1999
-        frequency: per month
-        text: Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
+        frequency: प्रति माह
+        text: लोगो को शीर्ष पृष्ठ पर और README की दूसरी पंक्ति पर पोस्ट किया जाएगा, और हमारे (ESLint) ट्विटर अकाउंट (20,000 फॉलोअर्स) से धन्यवाद ट्वीट और धन्यवाद ब्लॉग लेख पोस्ट किए जाएंगे।
       - name: Silver Sponsor
         amount: $500–999
-        frequency: per month
-        text: Third highest logo placement on homepage and readme.
+        frequency: प्रति माह
+        text: लोगो को शीर्ष पृष्ठ और README की तीसरी पंक्ति पर पोस्ट किया जाएगा।
       - name: Bronze Sponsor
         amount: $200–499
-        frequency: per month
-        text: Fourth highest logo placement on homepage and readme.
+        frequency: प्रति माह
+        text: लोगो को शीर्ष पृष्ठ और README की चौथी पंक्ति पर पोस्ट किया जाएगा।
   testimonials:
     title: testimonials
     items:
@@ -452,104 +442,80 @@ donate_page:
         title: Senior Staff Eng. Manager, Chrome
         image: addy-osmani.jpg
         text: >
-          ESLint has been critical in helping developers write high-quality JavaScript
-          for years. We love that it catches common issues early and often. With a high
-          level of extensibility, ESLint's ability to let teams enforce custom rules that
-          work for them has been excellent for open-source projects and more. Chrome is
-          happy to sponsor ESLint to help web developers write consistently high-quality
-          code. It's an essential piece of the modern web development toolkit.
+          कई वर्षों से ESLint ने उच्च गुणवत्ता वाली JavaScript लिखने के लिए डेवलपर्स के लिए एक महत्वपूर्ण भूमिका निभाई है। सामान्य समस्याओं को जल्दी और अक्सर पकड़ना बहुत फायदेमंद होता है।
+          ESLint टीमों को उनके अनुरूप कस्टम नियम लागू करने की अनुमति देता है। यह ओपन सोर्स प्रोजेक्ट्स में भी बहुत प्रभावी है। ESLint के प्रायोजक के रूप में, क्रोम वेब डेवलपर्स को लगातार उच्च गुणवत्ता कोड लिखने में मदद करने में प्रसन्न है।
+          यह आधुनिक वेब विकास टूलकिट का एक अभिन्न अंग है।
       - name: Jeff Cross
         title: Co-founder and Principal Architect, Nx
         image: jeff-cross.jpg
         text: >
-          Nx uses ESLint to enforce code quality, library boundaries, and project visibility
-          constraints. ESLint makes Nx more powerful, so on behalf of the Nx.dev community,
-          we're proud to do our part and sponsor ESLint's continued success!
+          Nx कोड गुणवत्ता, पुस्तकालय सीमाओं और परियोजना दृश्यता को लागू करने के लिए ESLint का उपयोग करता है। ESLint Nx को अधिक शक्तिशाली बनाता है, इसलिए Nx.dev समुदाय की ओर से,
+          हमें अपनी भूमिका निभाने और ESLint की निरंतर सफलता को प्रायोजित करने पर गर्व है!
       - name: Médédé Raymond KPATCHAA
         title: Technical Architect, Salesforce
         image: medede-kpatchaa.jpg
         text: >
-          ESLint is an extremely useful tool for any JavaScript project. This tool allows
-          us to set up consistent code formatting rules adopted by the whole team from the
-          beginning of the project, greatly facilitates code reviews, and makes it easy
-          to integrate new developers into the team. I know I am not alone in appreciating
-          its flexibility and ease-of-use.
+          ESLint किसी भी JavaScript प्रोजेक्ट के लिए एक बहुत ही उपयोगी टूल है। यह उपकरण आपको अपने प्रोजेक्ट की शुरुआत से ही लगातार कोड स्वरूपण नियम निर्धारित करने की अनुमति देता है, इस्से कोड समीक्षा बहुत आसान हो जाएगी और नए डेवलपर आसानी से अपनी टीम के अनुकूल हो सकेंगे।
+          मुझे पता है कि मैं इसके लचीलेपन और उपयोग में आसानी की सराहना करने वाला अकेला नहीं हूं।
       - name: Duane O'Brien
         title: Head of Open Source, Indeed
         image: duane-obrien.jpg
         text: >
-          Most JavaScript projects directly or transitively depend on ESLint. An Indeed
-          employee nominated ESLint to receive a donation from the FOSS Contributor Fund,
-          and their colleagues clearly agreed. We're happy to support the open source technologies
-          that allow us to develop, protect, and maintain the digital infrastructure that
-          supports our products and helps people get jobs.
+          अधिकांश जावास्क्रिप्ट प्रोजेक्ट सीधे या संक्रमणीय रूप से ESLint पर निर्भर करते हैं। एक वर्तमान कर्मचारी
+          ने FOSS Contributor Fund से दान प्राप्त करने के लिए ESLint को नामांकित किया,
+          और उनके सहयोगी स्पष्ट रूप से सहमत थे। ओपन सोर्स टेक्नोलॉजी हमें डिजिटल इंफ्रास्ट्रक्चर को विकसित करने,
+          संरक्षित करने और बनाए रखने में सक्षम बनाती है जो हमारे उत्पादों को रेखांकित करती है और लोगों को रोजगार
+          खोजने में मदद करती है। हमें ओपन सोर्स टेक्नोलॉजी का समर्थन करने में सक्षम होने की खुशी है।
       - name: Gajus Kuizinas
         title: Co-Founder / CTO, Contra
         image: gajus.jpg
         text: >
-          ESLint plays a major role in helping us create a safe and consistent experience
-          across a growing number of codebases and engineers. We are grateful for all the
-          open-source projects that are helping us build Contra, and ESLint is the first
-          of many open-source projects that we are committed to back.
+          ESLint लगातार बढ़ते कोड बेस और इंजीनियरों के लिए एक सुरक्षित और सुसंगत अनुभव प्रदान करने में एक प्रमुख भूमिका निभाता है।
+          हम उन सभी ओपन सोर्स प्रोजेक्ट्स के आभारी हैं जिन्होंने Contra बनाने में मदद की है और ESLint कई ओपन सोर्स प्रोजेक्ट्स में
+          से पहला है जिसका हम समर्थन करने का वादा करते हैं।
 
   faq:
-    title: Frequently Asked Questions
-    description: Everything you need to know about the product and billing. Can’t find the answer you’re looking for? Please chat to our friendly team.
+    title: सामान्य प्रश्न
+    description: उत्पादों और बिलिंग के बारे में सभी जानकारी। आप जिस उत्तर की तलाश कर रहे हैं वह नहीं मिल रहा है? आप हमारी दोस्ताना टीम के साथ भी चैट कर सकते हैं।
     items:
-      - q: Who receives the money that is donated?
+      - q: दान किया गया धन कौन प्राप्त करेगा?
+        a: सभी योगदान, चाहे वह <a href='https://opencollective.com'>Open
+          Collective</a> के माध्यम से दान किया गया हो या GitHub के माध्यम से, Open Source Collective द्वारा प्राप्त किए जाते हैं, जो एक 501 (c) (3) गैर-लाभकारी संगठन है।
+          Open Source Collective, ESLint के लिए एक वित्तीय मेजबान के रूप में कार्य करता है और सभी दान का ट्रैक रखता है।
+      - q: क्या दान रसीद जारी करना संभव है?
+        a: हां। यदि आपने ओपन कलेक्टिव के साथ दान किया है, तो हम आपको एक पीडीएफ रसीद भेजेंगे। यदि आप GitHub के माध्यम से दान करते हैं, तो दान आपकी रसीद पर दिखाई देगा।
+      - q: क्या मेरा दान कर कटौती योग्य है?
         a:
-          All contributions, whether donated through <a href='https://opencollective.com'>Open
-          Collective</a> or GitHub, are received by the Open Source Collective, which is
-          a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal
-          host for ESLint and keeps track of all donations.
-      - q: Will I get a record of my donations?
+          नहीं, भले ही Open Source Collective एक 501 (c) (3) गैर-लाभकारी संगठन है,
+          IRS ओपन सोर्स सॉफ्टवेयर के विकास को धर्मार्थ गतिविधि नहीं मानता और इसलिए कर-मुक्त स्थिति प्रदान नहीं करता है।
+      - q: धन के वितरण का निर्णय कौन करता है ?
+        a: TSC तय करती है कि किसे कितना पैसा मिलेगा।
+      - q: क्या यह जांचना संभव है कि पैसा कैसे खर्च किया जाता है?
         a:
-          Yes. If you donate through Open Collective, you will receive a PDF receipt via
-          email; if you donate through GitHub, the donation will appear on your receipt
-          or invoice.
-      - q: Is my donation tax deductible?
+          हां। हमारे Open Collective पेज पर जाकर, आप हर उस खर्च को देख सकते हैं जिसे
+          जमा किया गया और भुगतान किया गया। सभी लेनदेन पूरी तरह से खुले और सार्वजनिक रूप से दृश्यमान हैं।
+      - q: क्या मैं अपना आवर्ती दान किसी भी समय रद्द कर सकता हूँ?
+        a: हां। कोई दीर्घकालिक प्रतिबद्धता नहीं है। आप किसी भी समय Open Collective या GitHub Sponsors में लॉग इन करके अपना दान रद्द कर सकते हैं।
+      - q: लोगो को मुखपृष्ठ, GitHub, और npm पैकेज पर प्रदर्शित होने में कितना समय लगता है?
         a:
-          No. Even though the Open Source Collective is a 501(c)(3) non-profit organization,
-          the IRS doesn't consider development of open source software to be a charitable
-          activity and therefore doesn’t grant tax-exempt status.
-      - q: Who decides how the money is distributed?
+          होमपेज और गिटहब पर लोगो हर दिन स्वचालित रूप से अपडेट होते हैं, इसलिए यह प्रकट होने में 24 घंटे से अधिक समय नहीं लगना चाहिए।
+          npm पैकेज पर लोगो केवल तभी अपडेट किया जाता है जब हम एक नई रिलीज़ प्रकाशित करते हैं, जो आमतौर पर हर दो सप्ताह में होती है।
+          हालाँकि, प्रमुख रिलीज़ को पूरा होने में अक्सर कई महीने लग जाते हैं और उस दौरान
+          npm पैकेज पर टाइम लोगो अपडेट नहीं किया जाएगा।
+      - q: मेरा लोगो और URL कहाँ से आता है?
         a:
-          The TSC makes all decisions regarding who receives the money and how much is
-          distributed.
-      - q: Can I see how the money is being used?
+          आपके द्वारा दान की गई साइट के आधार पर लोगो और URL आपके Open Collective या GitHub प्रोफ़ाइल से लिया जाएगा।
+          इसे ओपन कलेक्टिव या गिटहब से किसी भी समय अपडेट किया जा सकता है और 24 घंटे के भीतर होमपेज और GitHub README में दिखाई देगा।
+          हम अपनी साइट पर लोगो या URL को मैन्युअल रूप से अधिलेखित नहीं कर सकते।
+      - q: क्या एकमुश्त दान करना संभव है?
         a:
-          Yes. By going to our Open Collective page, you can see every expense that has
-          been submitted and paid. All transactions are completely open and publicly visible.
-      - q: Can I cancel my recurring donation at any time?
-        a:
-          Yes. There is no long-term commitment. You can cancel your donation at any time
-          by logging into either Open Collective or GitHub sponsors.
-      - q:
-          How long does it take for my logo to appear on the homepage, GitHub, and npm
-          package?
-        a:
-          The logos on the homepage and GitHub are automatically updated every day so it
-          should take no longer than 24 hours to appear. The logos on the npm package are
-          only updated when we publish a new release, which is typically every two weeks.
-          However, major releases often take several months to complete and during that
-          time logos on the npm package will not be updated.
-      - q: Where do my logo and URL come from?
-        a:
-          We pull the logo and URL from your Open Collective or GitHub profiles, depending
-          on which site you used to donate. You can update these at any time from within
-          Open Collective or GitHub and those changes will be reflected on the homepage
-          and GitHub README within 24 hours. We aren't able to manually override logos or
-          URLs on the site.
-      - q: Is it possible to make a one-time donation?
-        a:
-          Yes. The easiest way to make a one-time donation is through Open Collective,
-          which allows any amount. GitHub one-time donations may have a limit on the amount
-          you can donate.
+          हां। एकमुश्त दान करने का सबसे आसान तरीका ओपन Open Collective का उपयोग करना है। आप कोई भी राशि दान कर सकते हैं।
+          GitHub पर अस्थायी दान की एक सीमित राशि हो सकती है।
 
 #------------------------------------------------------------------------------
 # Languages Page
 #------------------------------------------------------------------------------
 
 languages_page:
-  title: Languages
-  choose_language: Choose your language
+  title: भाषाएं
+  choose_language: अपनी भाषा चुनिए
