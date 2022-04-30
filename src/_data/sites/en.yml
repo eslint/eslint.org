@@ -443,7 +443,7 @@ donate_page:
           to ensure important projects remain well-maintained.
       - name: Support Systems
         text: >
-          We used a small amount each month to pay for software the team uses to help manage 
+          We use a small amount each month to pay for software the team uses to help manage 
           the project, which includes things like Google Workspace and cloud storage.
     footer:
       text: >
