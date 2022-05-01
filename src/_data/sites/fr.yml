@@ -318,64 +318,69 @@ team_page:
 sponsors_page:
   title: Sponsors
   description: >
-    BACKER_COUNT companies, organizations, and individuals are currently
-    contributing MONTHLY_DONATIONS each month to support ESLint's ongoing
-    maintenance and development.
+    BACKER_COUNT entreprises, organismes et individus contribuent actuellement
+    à hauteur de MONTHLY_DONATIONS chaque mois afin de soutenir ESLint dans
+    sa maintenance et son développement continu.
   hero:
     cta:
-      text: Become a Sponsor
+      text: Devenez Sponsor
       url: /donate
   tiers:
     platinum:
-      title: Platinum Sponsors
+      title: Sponsors Platinum
       description: >
-        Become a platinum sponsor with a monthly donation of $2000 USD (providing
-        40 hours of maintenance and development) and get 2 hours of dedicated 
-        support (remote support available through chat or screen-sharing) per 
-        month as well as your Open Collective or GitHub avatar image on our 
-        README on GitHub and on the home page of eslint.org. We will also 
-        tweet a thank you from our Twitter account (over 20,000 followers). 
-        Please contact the ESLint team to schedule support sessions. 
+        Vous pouvez devenir sponsor Platinum avec un don mensuel de 2000$ (fournissant
+        un équivalent de 40 heures de maintenance et de développement) et obtenir
+        2 heures de support dédié (support à distance possible par discussion
+        instantanée ou partage d'écran) par mois, ainsi que votre photo de profil
+        Open Collective ou GitHub ajoutée sur le README de notre dépôt GitHub et
+        sur la page d'accueil de eslint.org. Nous posterons également un tweet
+        de remerciement depuis notre compte Twitter (plus de 20000 abonnés).
+        Merci d'entrer en contact avec l'équipe d'ESLint pour planifier vos
+        sessions de support.
     gold:
-      title: Gold Sponsors
+      title: Sponsors Or
       description: >
-        Become a gold sponsor with a monthly donation of $1000 USD (providing 20 
-        hours of maintenance and development) and get your Open Collective 
-        or GitHub avatar image on our README on GitHub and the front page of 
-        eslint.org. We will also tweet a thank you from our Twitter account 
-        (over 20,000 followers). 
+        Vous pouvez devenir sponsor Or avec un don mensuel de 1000$ (fournissant
+        un équivalent de 20 heures de maintenance et de développement) et ajouter
+        votre photo de profil Open Collective ou GitHub sur le README de notre
+        dépôt GitHub et sur la page d'accueil de eslint.org. Nous posterons
+        également un tweet de remerciement depuis notre compte Twitter (plus de
+        20000 abonnés).
     silver:
-      title: Silver Sponsors
+      title: Sponsors Argent
       description: >
-        Become a silver sponsor with a monthly donation of $500 USD (providing 10 
-        hours of maintenance and development) and get your Open Collective 
-        or GitHub avatar image on our README on GitHub and the front page 
-        of eslint.org.
+        Vous pouvez devenir sponsor Argent avec un don mensuel de 500$ (fournissant
+        un équivalent de 10 heures de maintenance et de développement) et ajouter
+        votre photo de profil Open Collective ou GitHub sur le README de notre
+        dépôt GitHub et sur la page d'accueil de eslint.org.
     bronze:
-      title: Bronze Sponsors
+      title: Sponsors Bronze
       description: >
-        Become a bronze sponsor with a monthly donation of $200 USD (providing four 
-        hours of maintenance and development) and get your Open Collective
-        or GitHub avatar image on our README on GitHub and the front page of
-        eslint.org.
+        Vous pouvez devenir sponsor Bronze avec un don mensuel de 200$ (fournissant
+        un équivalent de 4 heures de maintenance et de développement) et ajouter
+        votre photo de profil Open Collective ou GitHub sur le README de notre
+        dépôt GitHub et sur la page d'accueil de eslint.org.
     technology:
-      title: Technology Sponsors
+      title: Sponsors Technologiques
       description: >
-        Technology sponsors allow us to use their products and services for 
-        free as part of a contribution to the open source ecosystem and our work.
+        Les sponsors technologiques contribuent à l'écosystème open source et
+        notre travail en nous permettant d'utiliser leurs produits et leurs
+        services gratuitement.
     backers:
-      title: All backers
+      title: Les soutiens
       description: >
-        Backers provide monthly contributions to help maintain ESLint. 
+        Nos soutiens contribuent tous les mois à nous aider pour la maintenance
+        d'ESLint.
   
   recent_donations:
-    title: Recent one-time donations
+    title: Dons uniques récents
     description: >
-      We also receive a lot of one-time contributions from fantastic people.
-      Here are some recent ones from OpenCollective and GitHub. 
+      Nous recevons également beaucoup de contributions uniques de la part de
+      gens fantastiques. En voici quelques-unes d'Open Collective et GitHub.
     
-  sponsor_title: SPONSOR_NAME is donating AMOUNT each month
-  tech_sponsor_title: TECH provided by SPONSOR_NAME
+  sponsor_title: SPONSOR_NAME fait don de AMOUNT chaque mois
+  tech_sponsor_title: TECH fourni par SPONSOR_NAME
 
 #------------------------------------------------------------------------------
 # Donate Page
