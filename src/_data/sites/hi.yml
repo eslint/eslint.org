@@ -102,9 +102,9 @@ footer:
     terms: उपयोग की शर्तें
     privacy: गोपनीयता नीति
     bylaws: OpenJS Foundation Bylaws
-    trademark: Trademark नीति
-    trademark_list: Trademark सूची
-    cookies: Cookie नीति
+    trademark: ट्रेडमार्क नीति
+    trademark_list: ट्रेडमार्क सूची
+    cookies: कुकी नीति
 
 #------------------------------------------------------------------------------
 # 404 Page
@@ -123,7 +123,7 @@ footer:
 #------------------------------------------------------------------------------
 
 branding_page:
-  title: Branding
+  title: ब्रांडिंग
   description: हमारे लोगो का उपयोग कैसे करें
   sections:
     name:
@@ -134,7 +134,7 @@ branding_page:
       title: Logo
       description:
         - >
-          ESLint लोगो को विभिन्न backgound में रखा जा सकता है, बशर्ते इसमें पर्याप्त लंबवत और क्षैतिज पैडिंग हो।
+          ESLint लोगो को विभिन्न background में रखा जा सकता है, बशर्ते इसमें पर्याप्त लंबवत और क्षैतिज पैडिंग हो।
         - >
           लोगो और वर्डमार्क के साथ-साथ लोगो के आस-पास कितनी जगह होनी चाहिए, इसका अंदाजा लगाने के लिए गैप द्वारा बनाए गए आंतरिक षट्भुज के आकार को दोगुना करें।
         - >
@@ -387,8 +387,9 @@ donate_page:
     items:
       - name: टीम विकास
         text: >
-          We pay our team members an hourly rate based on their seniority, currently HOURLY_RATE_TSC USD/hour
-          for TSC members and Reviewers and HOURLY_RATE_COMMITERS USD/hour for committers.
+          हम अपनी टीम के सदस्यों को उनकी वरिष्ठता के आधार पर एक घंटे की दर से भुगतान करते हैं,
+          वर्तमान में, हम TSC सदस्यों और समीक्षकों के लिए HOURLY_RATE_TSC USD/घंटा और कमिटर्स के लिए
+          HOURLY_RATE_COMMITERS USD/घंटे का भुगतान करते हैं।
       - name: Contributor Pool
         text: >
           हम महत्वपूर्ण योगदान देने वाले बाहरी योगदानकर्ताओं को भुगतान करने के लिए प्रत्येक माह CONTRIBUTOR_POOL_BUDGET USD अलग रखते हैं।
@@ -436,7 +437,7 @@ donate_page:
         frequency: प्रति माह
         text: लोगो को शीर्ष पृष्ठ और README की चौथी पंक्ति पर पोस्ट किया जाएगा।
   testimonials:
-    title: testimonials
+    title: प्रशंसापत्र
     items:
       - name: Addy Osmani
         title: Senior Staff Eng. Manager, Chrome
