@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136152,
-        "monthlyDonations": 11346,
-        "sponsorCount": 178
+        "annualDonations": 136176,
+        "monthlyDonations": 11348,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -1454,6 +1454,15 @@
             "image": "https://images.opencollective.com/sudharaka-palamakumbura/03b6087/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 24,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
+            "name": "Kostas Bariotis",
+            "url": "https://kostasbariotis.com",
+            "image": "https://images.opencollective.com/konmpar/6f12288/avatar.png",
+            "monthlyDonation": 2,
+            "totalDonations": 42,
             "source": "opencollective",
             "tier": null
         },
