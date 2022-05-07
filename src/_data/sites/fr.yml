@@ -259,7 +259,7 @@ homepage:
     view_all_sponsors: Voir tous les sponsors
 
   donations:
-    title: Dons Uniques Récents
+    title: Dons Ponctuels Récents
     view_all_donations: Voir tous les dons
 
 #------------------------------------------------------------------------------
@@ -294,7 +294,7 @@ team_page:
   description: >
     Voici les personnes qui ont créé et qui maintiennent ESLint.
   tsc:
-    title: Technical Steering Committee
+    title: Comité de pilotage technique (TSC)
     description: >
       Les personnes en charge des releases, de traiter les demandes de fonctionnalités
       et qui se rencontrent régulièrement afin de s'assurer qu'ESLint est maintenu correctement.
@@ -374,9 +374,9 @@ sponsors_page:
         d'ESLint.
   
   recent_donations:
-    title: Dons uniques récents
+    title: Dons ponctuels récents
     description: >
-      Nous recevons également beaucoup de contributions uniques de la part de
+      Nous recevons également beaucoup de contributions ponctuels de la part de
       gens fantastiques. En voici quelques-unes d'Open Collective et GitHub.
     
   sponsor_title: SPONSOR_NAME fait don de AMOUNT chaque mois
@@ -550,7 +550,7 @@ donate_page:
         501(c)(3), le développement de logiciels libres n'est pas considéré comme
         une activité caritative et ne donne pas droit à des réductions d'impôts.
     - q: Qui décide de la façon dont l'argent est distribué ?
-      a: Le TSC est responsable de chaque décision concernant le choix des bénéficiaires
+      a: Le comité de pilotage technique (TSC) est responsable de chaque décision concernant le choix des bénéficiaires
         et des montants distribués.
     - q: Puis-je voir comment l'argent est utilisé ?
       a: Oui. En allant sur notre page Open Collective, vous pouvez voir toutes les
@@ -576,10 +576,10 @@ donate_page:
         seront appliquées à la page d'accueil et au README sur GitHub dans les 24
         heures suivantes. Nous n'avons pas la possibilité de remplacer manuellement
         les logos et les URL sur le site.
-    - q: Puis-je faire un don unique ?
-      a: Oui. Le moyen le plus simple de faire un don unique est de passer par
+    - q: Puis-je faire un don ponctuel ?
+      a: Oui. Le moyen le plus simple de faire un don ponctuel est de passer par
         Open Collective qui autorise n'importe quel montant. GitHub peut imposer
-        des limites sur les montants autorisés pour les dons uniques.
+        des limites sur les montants autorisés pour les dons ponctuels.
 
 #------------------------------------------------------------------------------
 # Languages Page
