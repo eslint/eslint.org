@@ -286,14 +286,5 @@
         "amount": 5,
         "date": "2021-09-26T19:05:10.764Z",
         "source": "opencollective"
-    },
-    {
-        "id": "3k0exgzn-m8yj64rk-l57p5wao-9r7b4dlv",
-        "name": "Oliver Tacke",
-        "url": null,
-        "image": "https://images.opencollective.com/guest-cfbe3557/avatar.png",
-        "amount": 10,
-        "date": "2021-09-21T09:37:10.725Z",
-        "source": "opencollective"
     }
 ]
