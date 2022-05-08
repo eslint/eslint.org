@@ -12,7 +12,6 @@
 
     // media query change
     function WidthChange(mq) {
-        console.log('add listener working as expected');
         if (mq.matches) {
             nav.setAttribute("data-open", "false");
             nav_trigger.removeAttribute("hidden");
