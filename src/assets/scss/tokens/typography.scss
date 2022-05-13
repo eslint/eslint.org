@@ -63,7 +63,6 @@
             Arial,
             sans-serif,
             "Apple Color Emoji",
-            "Twemoji Country Flags",
             "Segoe UI Emoji",
             "Segoe UI Symbol";
     --display-font: "Space Grotesk",
@@ -77,4 +76,8 @@
             "Apple Color Emoji",
             "Segoe UI Emoji",
             "Segoe UI Symbol";
+}
+
+.win {
+    font-family: "Twemoji Country Flags";
 }
