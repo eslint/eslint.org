@@ -8,9 +8,9 @@ categories:
   - Sponsorships
 ---
 
-<p class="text-center">
-    <a href="https://contra.com" title="Contra" rel="noopener nofollow" target="_blank"><img class="lazyload" width="170" data-src="/assets/img/logos/contra.jpg" alt="Contra" src="/assets/img/logos/contra.jpg"></a>
-    <a href="https://eslint.org/" title="ESLint" target="_blank"><img class="lazyload" width="200" data-src="/assets/img/logo.svg" alt="ESLint" src="/assets/img/logo.svg"></a>
+<p class="justify-center flex">
+    <a href="https://contra.com" title="Contra" rel="noopener nofollow" target="_blank"><img class="lazyload" width="170" data-src="/assets/images/logo/contra.jpeg" alt="Contra" src="/assets/images/logo/contra.jpeg"></a>
+    <a href="https://eslint.org/" title="ESLint" target="_blank"><img class="lazyload" width="200" data-src="/assets/images/logo/eslint-logo.svg" alt="ESLint" src="/assets/images/logo/eslint-logo.svg"></a>
 </p>
 
 We are happy to share that [Contra](https://contra.com/) has become an ESLint gold sponsor, donating $1,000 each month for the ongoing maintenance and development of ESLint! Contra is a professional network built around independent work, allowing designers, developers, and more, to live and work the way they want.
