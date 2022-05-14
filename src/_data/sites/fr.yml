@@ -459,76 +459,85 @@ donate_page:
         pour repenser ce site Web. Nous nous assurons de dépenser moins que ce que nous encaissons chaque mois
         afin de pouvoir économiser pour de tels projets.
   donation_tiers:
-    title: Donation tiers
-    subtitle: While we accept donations of any size, we do have a tier system with different rewards at each level.
+    title: Paliers de dons
+    subtitle: Nous acceptons les dons de n'importe quel montant, mais nous proposons également un système de paliers avec des récompenses différentes à chaque niveau.
     cta:
       open_collective_text: >
-        Donate <span class="visually-hidden">on Open Collective</span>
+        Faire un don <span class="visually-hidden">sur Open Collective</span>
       github_sponsors_text: > 
-        Donate <span class="visually-hidden">on GitHub</span>
+        Faire un don <span class="visually-hidden">sur GitHub</span>
     items:
-      - name: Platinum Sponsor
-        amount: $2000+
-        frequency: per month
-        text: 2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
-      - name: Gold Sponsor
-        amount: $1000–1999
-        frequency: per month
-        text: Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
-      - name: Silver Sponsor
-        amount: $500–999
-        frequency: per month
-        text: Third highest logo placement on homepage and readme.
-      - name: Bronze Sponsor
-        amount: $200–499
-        frequency: per month
-        text: Fourth highest logo placement on homepage and readme.
+      - name: Sponsor Platinum
+        amount: 2000 $ et plus
+        frequency: par mois
+        text: 2 heures de support, placement de logo tout en haut sur la page d'accueil et sur le README, et inclut les récompenses Or.
+      - name: Sponsor Or
+        amount: De 1000 à 1999 $
+        frequency: par mois
+        text: Placement de logo sous la catégorie Platinum sur la page d'accueil et sur le README, un tweet de remerciements depuis notre compte Twitter (20000 abonnés) et un post de remerciements sur notre blog.
+      - name: Sponsor Argent
+        amount: De 500 à 999 $
+        frequency: par mois
+        text: Placement de logo sous la catégorie Or sur la page d'accueil et sur le README.
+      - name: Sponsor Bronze
+        amount: De 200 à 499 $
+        frequency: par mois
+        text: Placement de logo sous la catégorie Argent sur la page d'accueil et sur le README.
   testimonials:
-    title: testimonials
+    title: Témoignages
     items:
     - name: Addy Osmani
-      title: Senior Staff Eng. Manager, Chrome
+      title: Senior Staff Engineering Manager, Chrome
       image: addy-osmani.jpg
       text: >
-        ESLint has been critical in helping developers write high-quality JavaScript
-        for years. We love that it catches common issues early and often. With a high
-        level of extensibility, ESLint's ability to let teams enforce custom rules that
-        work for them has been excellent for open-source projects and more. Chrome is
-        happy to sponsor ESLint to help web developers write consistently high-quality
-        code. It's an essential piece of the modern web development toolkit.
+        ESLint joue un rôle crucial pour aider les développeurs à écrire du code
+        JavaScript de bonne qualité depuis des années. Nous apprécions sa capacité
+        à repérer des problèmes courants souvent dès leur écriture. Grâce à sa
+        modularité, ESLint permet aux différentes équipes d'écrire leurs propres
+        règles et a eu un impact très positif sur les projets open source entre autres.
+        L'équipe derrière Chrome est heureuse de sponsoriser ESLint afin d'aider
+        les développeurs web à écrire du code de bonne qualité de manière consistente.
+        C'est un élément essentiel à compter parmi ses outils quand on travaille
+        sur du développement web moderne.
     - name: Jeff Cross
-      title: Co-founder and Principal Architect, Nx
+      title: Co-fondateur / Principal Architect, Nx
       image: jeff-cross.jpg
       text: >
-        Nx uses ESLint to enforce code quality, library boundaries, and project visibility
-        constraints. ESLint makes Nx more powerful, so on behalf of the Nx.dev community,
-        we're proud to do our part and sponsor ESLint's continued success!
+        Nx utilise ESLint pour assurer une certaine qualité de code, une séparation
+        claire des bibliothèques utilisées et pour respecter les contraintes de
+        visibilité du projet. ESLint rend Nx encore meilleur, donc de la part de
+        la communauté Nx.dev, nous sommes fiers de faire notre part en sponsorisant
+        ESLint sur le long terme !
     - name: Médédé Raymond KPATCHAA
       title: Technical Architect, Salesforce
       image: medede-kpatchaa.jpg
       text: >
-        ESLint is an extremely useful tool for any JavaScript project. This tool allows
-        us to set up consistent code formatting rules adopted by the whole team from the
-        beginning of the project, greatly facilitates code reviews, and makes it easy
-        to integrate new developers into the team. I know I am not alone in appreciating
-        its flexibility and ease-of-use.
+        ESLint est un outil extrêmement utile pour tous les projets basés sur JavaScript.
+        Cet outil nous permet de mettre en place des règles de formatage choisies
+        par toute l'équipe au début d'un projet, facilite grandement les revues de code,
+        et rend les projets plus accessibles aux nouveaux développeurs de l'équipe.
+        Je suis loin d'être le seul à apprécier sa flexibilité et sa simplicité d'usage.
     - name: Duane O'Brien
       title: Head of Open Source, Indeed
       image: duane-obrien.jpg
       text: >
-        Most JavaScript projects directly or transitively depend on ESLint. An Indeed
-        employee nominated ESLint to receive a donation from the FOSS Contributor Fund,
-        and their colleagues clearly agreed. We're happy to support the open source technologies
-        that allow us to develop, protect, and maintain the digital infrastructure that
-        supports our products and helps people get jobs.
+        La plupart des projets en JavaScript dépendent directement ou non d'ESLint.
+        Un⸱e employé⸱e chez Indeed a nominé ESLint en tant que bénéficiaire de notre
+        Fonds de Contribution pour les Logiciels Libres et Open Source, et ses
+        collègues ont bien sûr accepté. Nous sommes heureux d'apporter notre soutien
+        aux technologies open source qui nous permettent de développer, protéger,
+        et maintenir l'infrastructure qui supporte nos produits et aide les gens
+        à trouver du travail.
     - name: Gajus Kuizinas
-      title: Co-Founder / CTO, Contra
+      title: Co-fondateur / CTO, Contra
       image: gajus.jpg
       text: >
-        ESLint plays a major role in helping us create a safe and consistent experience
-        across a growing number of codebases and engineers. We are grateful for all the
-        open-source projects that are helping us build Contra, and ESLint is the first
-        of many open-source projects that we are committed to back.
+        ESLint joue un rôle majeur dans la création d'une expérience de développement
+        sécurisée et consistente pour un nombre de projets et d'ingénieurs qui
+        grandit de jour en jour. Nous sommes reconnaissants envers tous les projets
+        open source qui nous aident à développer Contra, et ESLint est le premier
+        d'une très longue liste de projets open source que nous nous sommes engagés à
+        soutenir.
 
 
   faq:
