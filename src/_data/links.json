@@ -6,7 +6,7 @@
 
     "blog": "/blog",
     "docs": "https://eslint.org/docs",
-    "playground": "https://eslint.org/demo",
+    "playground": "/play",
     "getStarted": "https://eslint.org/docs/user-guide/getting-started",
     "sponsors": "/sponsors",
     "branding": "/branding",
