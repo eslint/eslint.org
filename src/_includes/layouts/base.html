@@ -123,9 +123,6 @@
                 });
             });
         }
-        if (/windows/i.test(navigator.userAgent)) {
-            document.body.classList.add('win')
-        }
     </script>
     <script src="{{ '/assets/js/themes.js' | url }}"></script>
     {%- if (hook == "blog_page") -%}
@@ -139,6 +136,11 @@
 
     {{ content | safe }}
 
+    <script>
+        if (/windows/i.test(navigator.userAgent)) {
+            document.getElementById("language-select").classList.add("win")
+        }
+    </script>
     <script src="{{ '/assets/js/css-vars-ponyfill@2.js' | url }}"></script>
     <script src="{{ '/assets/js/focus-visible.js' | url }}"></script>
     <script src="{{ '/assets/js/main.js' | url }}"></script>
