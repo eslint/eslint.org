@@ -15,10 +15,10 @@ eleventyExcludeFromCollections: true
 /chat                               https://discord.gg/8szcydm 302!
 
 # Internal Redirects
-/docs/*                             https://eslint.org/docs/:splat 302!
 /demo/*                             /play/:splat 302!
 
 # Proxied Endpoints
+/docs/*                             https://docs-eslint.netlify.app/:splat 200!
 /play/*                             https://play-eslint.netlify.app/:splat 200!
 
 {% if site.language.code != "en" %}
