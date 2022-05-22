@@ -33,10 +33,12 @@ nav.c-pagination {
     &[aria-disabled] {
         color: var(--body-text-color);
         border-color: var(--divider-color);
+        cursor: not-allowed;
 
         &:hover {
             border-color: var(--divider-color);
         }
+
     }
 }
 
