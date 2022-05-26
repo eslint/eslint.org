@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 114696,
-        "monthlyDonations": 9558,
-        "sponsorCount": 179
+        "annualDonations": 114636,
+        "monthlyDonations": 9553,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -537,7 +537,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 55,
+            "totalDonations": 60,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1288,14 +1288,6 @@
             "name": "Jordan",
             "image": "https://avatars.githubusercontent.com/u/17376090?u=4fb9a453df8d83b3f80edd16612991be1338d7cd&v=4",
             "url": "djmm.me",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Solomon Gugsa",
-            "image": "https://avatars.githubusercontent.com/u/18420937?u=f30f430bd3fe58e00242741e5f0506572935864d&v=4",
-            "url": "https://github.com/soulsolomon",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
