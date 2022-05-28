@@ -14,7 +14,7 @@ language:
   flag: 🇫🇷
   name: French
 locale: fr-FR
-hostname: new.eslint.org
+hostname: fr.eslint.org
 
 #------------------------------------------------------------------------------
 # Analytics
