@@ -2,7 +2,7 @@ const slugify = require("slugify");
 
 /**
  *
- * @param {Sring} str string to slugify
+ * @param {String} str string to slugify
  * @returns slugified string
  */
 const strToSlug = (str) => {
