@@ -79,5 +79,16 @@
 }
 
 .win {
-    font-family: "Twemoji Country Flags" !important;
+    --text-font: "Inter",
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            "Twemoji Country Flags" /* Windows needs this */
+            "Apple Color Emoji",
+            "Segoe UI Emoji",
+            "Segoe UI Symbol";
 }
