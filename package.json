@@ -20,7 +20,7 @@
         "fetch:sponsors": "node tools/fetch-sponsors.js",
         "fetch": "npm-run-all --parallel fetch:*",
         "start": "npm-run-all --parallel watch:* images",
-        "build": "npm-run-all --parallel build:* images"
+        "build": "npm-run-all build:* images"
     },
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
