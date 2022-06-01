@@ -375,7 +375,7 @@ donate_page:
       cta:
         text: Open Collectiveを通じた寄付
       items:
-        - text: 501(c)(3)非営利団体への直接寄付
+        - text: 501(c)(6)非営利団体への直接寄付
         - text: 一時的な寄付と定期的な寄付
         - text: クレジットカード、銀行振り込み、PayPalで支払い可能
         - text: オープンソースファンドを立ち上げることで、複数プロジェクトへの寄付が可能
@@ -499,7 +499,7 @@ donate_page:
       - q: 寄付されたお金は誰が受け取るのですか？
         a:
           <a href='https://opencollective.com'>Open Collective</a>またはGitHubを通じての寄付であろうと、
-          すべての寄付は、501(c)(3)の非営利団体であるOpen Source Collectiveによって受け取られます。
+          すべての寄付は、501(c)(6)の非営利団体であるOpen Source Collectiveによって受け取られます。
           The Open Source CollectiveはESLintの財政的なホストとして、すべての寄付を記録しています。
       - q: 寄付の領収書の発行はできますか?
         a:
@@ -507,7 +507,7 @@ donate_page:
           領収書または請求書に記載されます。
       - q: 寄付金の税額控除は受けられますか?
         a:
-          Open Source Collectiveは501(c)(3)の非営利団体ですが、IRSは、オープンソースソフトウェアの開発を慈善事業と
+          Open Source Collectiveは501(c)(6)の非営利団体ですが、IRSは、オープンソースソフトウェアの開発を慈善事業と
           見なしていません。そのため、非課税措置の対象となりません。
       - q: お金の分配は誰が決めるのですか？
         a: TSCが、誰がどれだけお金を受け取るかをすべて決定します。

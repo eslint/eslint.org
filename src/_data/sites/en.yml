@@ -399,7 +399,7 @@ donate_page:
       cta:
         text: Contribute on Open Collective
       items:
-        - text: Donate directly to a 501(c)(3) non-profit
+        - text: Donate directly to a 501(c)(6) non-profit
         - text: One-time and recurring donations
         - text: Pay by credit card, bank transfer, or PayPal
         - text: Set up an open source fund to donate to multiple projects
@@ -532,14 +532,14 @@ donate_page:
     - q: Who receives the money that is donated?
       a: All contributions, whether donated through <a href='https://opencollective.com'>Open
         Collective</a> or GitHub, are received by the Open Source Collective, which is
-        a 501(c)(3) non-profit organization. The Open Source Collective acts as a fiscal
+        a 501(c)(6) non-profit organization. The Open Source Collective acts as a fiscal
         host for ESLint and keeps track of all donations.
     - q: Will I get a record of my donations?
       a: Yes. If you donate through Open Collective, you will receive a PDF receipt via
         email; if you donate through GitHub, the donation will appear on your receipt
         or invoice.
     - q: Is my donation tax deductible?
-      a: No. Even though the Open Source Collective is a 501(c)(3) non-profit organization,
+      a: No. Even though the Open Source Collective is a 501(c)(6) non-profit organization,
         the IRS doesn't consider development of open source software to be a charitable
         activity and therefore doesn’t grant tax-exempt status.
     - q: Who decides how the money is distributed?

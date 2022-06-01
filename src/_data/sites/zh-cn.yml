@@ -367,7 +367,7 @@ donate_page:
       cta:
         text: 通过 Open Collective 捐赠
       items:
-        - text: 直接向 501(c)(3) 非盈利机构捐款
+        - text: 直接向 501(c)(6) 非盈利机构捐款
         - text: 一次性和经常性捐赠
         - text: 通过信用卡、银行转账或 PayPal 支付
         - text: 建立一个开源基金，捐赠给多个项目
@@ -480,13 +480,13 @@ donate_page:
     items:
     - q: 谁接受捐赠的钱?
       a: 所有的捐赠，无论是通过 <a href='https://opencollective.com'>Open Collective</a> 或 GitHub 捐赠的，
-        都是由 501(c)(3) 非盈利组织 Open Source Collective 接收的。Open Source Collective 充当 ESLint 的财务主体，
+        都是由 501(c)(6) 非盈利组织 Open Source Collective 接收的。Open Source Collective 充当 ESLint 的财务主体，
         并跟踪所有捐赠。
     - q: 我会收到我的捐款记录吗?
       a: 是的。如果您通过 Open Collective 进行捐赠，您将通过电子邮件收到 PDF 收据;
         如果您通过 GitHub 捐赠，捐赠将出现在您的收据或发票。
     - q: 我的捐赠税可否扣除?
-      a: 不。尽管 Open Source Collective 是个 501(c)(3) 非盈利组织，但美国国税局并不认为开源软件的
+      a: 不。尽管 Open Source Collective 是个 501(c)(6) 非盈利组织，但美国国税局并不认为开源软件的
         开发是一项慈善活动，因此不授予免税地位。
     - q: 谁来决定钱如何分配?
       a: TSC 负责所有关于谁获得资金以及分配多少资金的决定。

@@ -405,7 +405,7 @@ donate_page:
       cta:
         text: Contribuer sur Open Collective
       items:
-        - text: Faire un don directement à une organisation à but non lucratif 501(c)(3)
+        - text: Faire un don directement à une organisation à but non lucratif 501(c)(6)
         - text: Dons ponctuels et récurrents
         - text: Payer par carte de crédit, virement bancaire ou PayPal
         - text: Créer un fonds open source pour faire un don à plusieurs projets
@@ -548,7 +548,7 @@ donate_page:
       a: Toutes les contributions, qu'elles soient envoyées par le biais
         d'<a href='https://opencollective.com'>Open Collective</a> ou de GitHub,
         sont perçues par l'Open Source Collective, qui est un organisme à but non
-        lucratif 501(c)(3). L'Open Source Collective sert d'entité fiscale pour
+        lucratif 501(c)(6). L'Open Source Collective sert d'entité fiscale pour
         ESLint et prend en charge le suivi de chaque don.
     - q: Puis-je avoir une trace de mes dons ?
       a: Oui. Si vous faites un don via Open Collective, vous recevrez un reçu
@@ -556,7 +556,7 @@ donate_page:
         sur votre reçu ou votre facture.
     - q: Mon don sera-t-il déductible de mes impôts ?
       a: Non. Même si l'Open Source Collective est un organisme à but non lucratif
-        501(c)(3), le développement de logiciels libres n'est pas considéré comme
+        501(c)(6), le développement de logiciels libres n'est pas considéré comme
         une activité caritative et ne donne pas droit à des réductions d'impôts.
     - q: Qui décide de la façon dont l'argent est distribué ?
       a: Le comité de pilotage technique (TSC) est responsable de chaque décision concernant le choix des bénéficiaires
