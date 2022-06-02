@@ -13,7 +13,7 @@
         "images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
         "watch:sass": "sass --watch src/assets/scss:src/assets/css",
         "watch:eleventy": "eleventy --serve --port=2022",
-        "build:sass": "sass src/assets/scss:src/assets/css",
+        "build:sass": "sass --no-source-map --style=compressed src/assets/scss:src/assets/css",
         "build:eleventy": "npx @11ty/eleventy",
         "fetch:team": "node tools/fetch-team-data.js",
         "fetch:stats": "node tools/fetch-stats.js",
