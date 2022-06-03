@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 116976,
-        "monthlyDonations": 9748,
-        "sponsorCount": 179
+        "annualDonations": 116820,
+        "monthlyDonations": 9735,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -649,15 +649,6 @@
             "tier": "backer"
         },
         {
-            "name": "Justin Noel",
-            "url": "https://justinnoel.dev",
-            "image": "https://images.opencollective.com/justinnoel/7c4d721/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 115,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "David Johnston",
             "url": "https://blacksheepcode.com",
             "image": "https://images.opencollective.com/blacksheepcode/976d69a/avatar.png",
@@ -992,14 +983,6 @@
             "name": "Zhigang Fang",
             "image": "https://avatars.githubusercontent.com/u/1057756?u=15c3cdff1c715ac27bbc63ccb8f0a1c27eeb3784&v=4",
             "url": "https://reily.app",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Peter Hozák",
-            "image": "https://avatars.githubusercontent.com/u/1087670?u=5a6738983bae1f3a10243aa603a5e9caa641d93d&v=4",
-            "url": "http://peter.hozak.info/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1420,15 +1403,6 @@
             "totalDonations": 14.01,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Will McAuliff",
-            "url": null,
-            "image": "https://images.opencollective.com/womcauliff/2be6f36/avatar.png",
-            "monthlyDonation": 3,
-            "totalDonations": 130,
-            "source": "opencollective",
-            "tier": "backer"
         },
         {
             "name": "Shunfan Du",
