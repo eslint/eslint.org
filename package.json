@@ -19,7 +19,7 @@
         "fetch:stats": "node tools/fetch-stats.js",
         "fetch:sponsors": "node tools/fetch-sponsors.js",
         "fetch": "npm-run-all --parallel fetch:*",
-        "start": "npm-run-all --parallel watch:* images",
+        "start": "npm-run-all build:sass --parallel watch:* images",
         "build": "npm-run-all build:sass build:eleventy images"
     },
     "devDependencies": {
