@@ -5,10 +5,7 @@
     "main": "index.js",
     "keywords": [],
     "author": "",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/eslint/new.eslint.org.git"
-    },
+    "repository": "eslint/new.eslint.org",
     "funding": "https://opencollective.com/eslint",
     "bugs": "https://github.com/eslint/new.eslint.org/issues/",
     "engines": {
