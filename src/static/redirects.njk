@@ -17,11 +17,28 @@ eleventyExcludeFromCollections: true
 # Internal Redirects
 /demo/*                             /play/:splat 302!
 
-# Proxied Endpoints
-/docs/*                             https://docs-eslint.netlify.app/:splat 200!
+{% if site.language.code == "en" %}
+
+# Old-Style Docs to New-Style Docs
+/docs/rules/*                       /docs/latest/rules/:splat 301!
+/docs/user-guide/*                  /docs/latest/user-guide/:splat 301!
+/docs/maintainer-guide/*            /docs/latest/maintainer-guide/:splat 301!
+/docs/developer-guide/*             /docs/latest/developer-guide/:splat 301!
+
+# Version-Specific Docs
+/docs/head/*                        https://docs-eslint.netlify.app/:splat 200!
+/docs/latest/*                      https://latest--docs-eslint.netlify.app/:splat 200!
+/docs/*                             /docs/latest/:splat 301!
+
+# Playground
 /play/*                             https://play-eslint.netlify.app/:splat 200!
 
-{% if site.language.code != "en" %}
-# Translation Blog Redirects
-https://{{ site.hostname }}/blog/*      https://eslint.org/blog/:splat 302!
+{% else %}
+
+# Translated Sites Back to English Site
+/blog/*                             https://eslint.org/blog/:splat 302!
+/docs/*                             https://eslint.org/docs/:splat 302!
+/demo/*                             https://eslint.org/play/:splat 302!
+/play/*                             https://eslint.org/play/:splat 302!
+
 {% endif %}
