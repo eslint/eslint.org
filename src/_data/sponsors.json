@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 116880,
-        "monthlyDonations": 9740,
+        "annualDonations": 116940,
+        "monthlyDonations": 9745,
         "sponsorCount": 177
     },
     "platinum": [
@@ -386,6 +386,14 @@
             "name": "Bryan Mishkin",
             "image": "https://avatars.githubusercontent.com/u/698306?v=4",
             "url": "http://www.linkedin.com/in/bmish",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Gavin Lloyd",
+            "image": "https://avatars.githubusercontent.com/u/744538?u=0a08af9abb9fbf841382190be47f67a679bee4fa&v=4",
+            "url": "gavinhungry.com",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1014,7 +1022,7 @@
         },
         {
             "name": "Will Sams",
-            "image": "https://avatars.githubusercontent.com/u/1405154?u=0d1446a2d645cdffaca60004bf53fa8ed92cfaf5&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1405154?u=4c57d879edac9241e22801e897fd62be3c46fca2&v=4",
             "url": "http://samswebs.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1208,14 +1216,6 @@
             "name": "mizdra",
             "image": "https://avatars.githubusercontent.com/u/9639995?u=dd5dac271b000f6c7883880c1796ce2a95a971b2&v=4",
             "url": "https://mizdra.net",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": null,
-            "image": "https://avatars.githubusercontent.com/u/9804406?u=73e86ea54cd440dfc5bb3b56f2e390d94e210299&v=4",
-            "url": "maharramoff.github.io",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
