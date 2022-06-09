@@ -2,6 +2,7 @@
 layout: post
 title: Salesforce donates $10,000 to ESLint
 teaser: "We are happy to announce that Salesforce has donated $10,000 to ESLint, as part of their FOSS Contributor Fund. It is an honor to be supported by Salesforce. We are grateful to the technical architect, Médédé Raymond Kpatchaa, for nominating ESLint, and the employees who voted for us."
+image: sponsorship-salesforce.png
 tags:
   - Open Source
   - Funding
@@ -14,10 +15,7 @@ categories:
   - Sponsorships
 ---
 
-<p class="text-center">
-    <a href="https://www.salesforce.com/" title="Salesforce" rel="noopener nofollow" target="_blank"><img class="lazyload" width="200" data-src="/assets/img/logos/salesforce.png" alt="Salesforce" src="/assets/img/logos/salesforce.png"></a>
-    <a href="https://eslint.org/" title="ESLint" target="_blank"><img class="lazyload" width="200" data-src="/assets/img/logo.svg" alt="ESLint" src="/assets/img/logo.svg"></a>
-</p>
+![Salesforce Donates to ESLint](/assets/images/blog-covers/sponsorship-salesforce.png)
 
 We are happy to share that [Salesforce](https://salesforce.com) has donated $10,000 to the ESLint project as part of their [FOSS Contributor Fund](https://engineering.salesforce.com/announcing-the-first-foss-contributor-fund-recipient-60a295201497). The FOSS Contributor Fund donates $10,000 to qualifying open source projects each quarter. Salesforce employees who have contributed to an open source project nominate and vote on potential project recipients. For this quarter, ESLint was selected as the recipient. (Read about it on the [Salesforce Blog][salesforce-post], too.)
 

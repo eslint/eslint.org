@@ -2,6 +2,7 @@
 layout: post
 title: 'Funding ESLint''s Future: An Update'
 teaser: "We are happy to announce that we are currently sponsored at over $7,000 per month. In the last quarter, since the launch of the ESLint Collective, numerous sponsors have reached out. We are humbled that so many have contributed to raise funds to help support the team developing ESLint."
+image: sponsorship-funding2.png
 tags:
   - Open Source
   - Funding
@@ -14,17 +15,13 @@ categories:
   - Sponsorships
 ---
 
+![GitKraken, Badoo, Salesforce donate to ESLint](/assets/images/blog-covers/sponsorship-funding2.png)
+
 Back in February, we [announced](https://eslint.org/blog/2019/02/funding-eslint-future) the creation of the [ESLint Collective](https://opencollective.com/eslint) to raise funds for the ongoing maintenance and development of ESLint. At the time, we were grateful to have both [Facebook Open Source](https://code.facebook.com/projects/) and [Airbnb](https://airbnb.com) as our first two gold sponsors, each donating $1,000 per month.
 
 In the past three months, we are happy to share that our monthly donations have reached over $7,000, 35% of the way towards our $20,000 goal. That's an amazing achievement in such a short amount of time, and we are humbled that so many have reached out to support ESLint.
 
 ## Introducing our latest sponsors
-
-<p class="text-center">
-    <a href="https://www.gitkraken.com/" title="GitKraken" rel="noopener nofollow" target="_blank"><img class="lazyload gold-sponsor" data-src="https://images.opencollective.com/proxy/images/?src=https%3A%2F%2Flogo.clearbit.com%2Fgitkraken.com&amp;height=96" alt="GitKraken" src="https://images.opencollective.com/proxy/images/?src=https%3A%2F%2Flogo.clearbit.com%2Fgitkraken.com&amp;height=96"></a>
-    <a href="https://badoo.com/team?utm_source=eslint" title="Badoo" rel="noopener nofollow" target="_blank"><img class="lazyload gold-sponsor" data-src="https://images.opencollective.com/proxy/images/?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Fbbdb9cc0-3b5d-11e9-9537-ad85092287b8.png&amp;height=96" alt="Badoo" src="https://images.opencollective.com/proxy/images/?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Fbbdb9cc0-3b5d-11e9-9537-ad85092287b8.png&amp;height=96"></a>
-    <a href="http://salesforce.com" title="Salesforce" rel="noopener nofollow" target="_blank"><img class="lazyload gold-sponsor" data-src="https://images.opencollective.com/proxy/images/?src=https%3A%2F%2Flogo.clearbit.com%2Fsalesforce.com&amp;height=96" alt="Salesforce" src="https://images.opencollective.com/proxy/images/?src=https%3A%2F%2Flogo.clearbit.com%2Fsalesforce.com&amp;height=96"></a>
-</p>
 
 We are happy to share that the following sponsors have joined the ESLint Collective at the gold sponsor level, donating $1,000 or more per month:
 

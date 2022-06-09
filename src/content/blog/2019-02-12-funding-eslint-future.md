@@ -2,6 +2,7 @@
 layout: post
 title: Funding ESLint's Future
 teaser: "With ESLint being an important part of the JS ecosystem, we are happy to announce the launch of the ESLint Collective. We share what this means and our goals and plans, and we introduce our first sponsors. Thanks to the ESLint community, we can make ESLint's development more sustainable."
+image: sponsorship-funding.png
 tags:
   - Open Source
   - Funding
@@ -14,6 +15,9 @@ categories:
   - Sponsorships
 ---
 
+![Facebook and Airbnb donate to ESLint](/assets/images/blog-covers/sponsorship-funding.png)
+
+
 June 2019 will mark six years since ESLint was first released. What began as a side project for a very narrow use case has grown into the most popular JavaScript linter in the world, with over 6.5 million npm downloads *every week*. ESLint is now used by both large companies and individual developers to help find and fix problems with JavaScript code every day. In addition, ESLint has been flexible enough to work with languages derived from JavaScript, such as [Flow](https://www.npmjs.com/package/eslint-plugin-flowtype) and [TypeScript](https://typescript-eslint.io), and even helps mobile developers by linting [React Native](https://www.npmjs.com/package/eslint-plugin-react-native).
 
 All of this means that ESLint has become an important part of the JavaScript ecosystem. It's a tool that the JavaScript community depends on and expects to be available, performant, and secure. These expectations are currently being met by an all-volunteer team who spends their free time during lunch breaks, nights, and weekends maintaining ESLint. And while that has worked well for normal maintenance, it's grown difficult to deal with more involved issues such as roadmap planning and security issues.
@@ -21,8 +25,6 @@ All of this means that ESLint has become an important part of the JavaScript eco
 In short, we've realized that in order for ESLint to continue to grow and evolve, we need to get more organized and set up a way to fund ESLint's development going forward.
 
 ## The ESLint Collective
-
-<p class="text-center"><a href="https://opencollective.com/eslint"><img src="/assets/img/posts/eslint-collective.png" alt="ESLint Collective Logo" style="max-width: 100%"></a><br><a href="https://opencollective.com/eslint" class="btn btn-default">Become a Sponsor</a></p>
 
 Today, we are happy to announce the [ESLint Collective](https://opencollective.com/eslint) on Open Collective. Open Collective is a secure way for people to sustain and support open source projects. The funds taken in and paid out are publicly available on each collective's page, so there is 100% transparency around the money a collective uses. Open Collective has already helped other JavaScript ecosystem projects such as [Webpack](https://opencollective.com/webpack) and [Babel](https://opencollective.com/babel) to fund their ongoing development, and the ESLint team is happy to join them on what has proven to be a great option for open source sustainability.
 
@@ -50,16 +52,7 @@ In order to achieve everything we have in mind, we believe that we will need $20
 
 ## Introducing our first sponsors
 
-<p class="text-center">
-    <a href="https://facebook.com"><img src="/assets/img/logos/facebook.png" alt="Facebook" height="96"></a>
-    <a href="https://airbnb.com"><img src="/assets/img/logos/airbnb.png" alt="Airbnb" height="96"></a>
-</p>
-
 We're also excited to announce our first sponsors. [Facebook](https://facebook.com) and [Airbnb](https://airbnb.com) have both pledged $1,000 per month to support ESLint.
-
-<p class="text-center">
-    <a href="https://frontendmasters.com"><img src="https://static.frontendmasters.com/assets/fm/js/frontendmasters.0e71088726.svg" alt="Frontend Masters" height="32"></a>
-</p>
 
 Additionally, [Frontend Masters](https://frontendmasters.com) has donated $200 to support ESLint.
 

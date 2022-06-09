@@ -2,6 +2,7 @@
 layout: post
 title: Google Chrome becomes ESLint gold sponsor
 teaser: "We are happy to announce that Google Chrome is a gold sponsor of ESLint. It is an honor to be supported by Google Chrome. We are grateful to Addy Osmani, Senior Staff Engineering Manager, for recommending us for the sponsorship, and to the Chrome team."
+image: sponsorship-chrome.png
 tags:
   - Open Source
   - Funding
@@ -14,10 +15,7 @@ categories:
   - Sponsorships
 ---
 
-<p class="text-center">
-    <a href="https://www.google.com/chrome" title="Google Chrome" rel="noopener nofollow" target="_blank"><img class="lazyload" width="170" data-src="/assets/img/logos/chrome.svg" alt="Google Chrome" src="/assets/img/logos/chrome.svg"></a>
-    <a href="https://eslint.org/" title="ESLint" target="_blank"><img class="lazyload" width="200" data-src="/assets/img/logo.svg" alt="ESLint" src="/assets/img/logo.svg"></a>
-</p>
+![Chrome Donates to ESLint](/assets/images/blog-covers/sponsorship-chrome.png)
 
 We are happy to share that [Google Chrome](https://www.google.com/chrome/) has become an ESLint gold sponsor sponsor, donating $1,000 each month for the ongoing maintenance and development of ESLint! The Chrome team is well known for supporting web developers around the world through not just developing the browser, but also through resources like [web.dev](https://web.dev), where they document and explain the latest web technologies.
 

@@ -2,6 +2,7 @@
 layout: post
 title: Nx becomes ESLint gold sponsor
 teaser: "We are happy to announce that Nx is a gold sponsor of ESLint. It is an honor to be supported by Nx. We are grateful to Jeff Cross, Co-founder and Principal Architect, and Victor Savkin, Co-founder, and to the Nx team."
+image: sponsorship-nx.png
 tags:
   - Open Source
   - Funding
@@ -14,10 +15,7 @@ categories:
   - Sponsorships
 ---
 
-<p class="text-center">
-    <a href="https://nx.dev" title="Nx" rel="noopener nofollow" target="_blank"><img class="lazyload" width="170" data-src="/assets/img/logos/nx.svg" alt="Nx" src="/assets/img/logos/nx.svg"></a>
-    <a href="https://eslint.org/" title="ESLint" target="_blank"><img class="lazyload" width="200" data-src="/assets/img/logo.svg" alt="ESLint" src="/assets/img/logo.svg"></a>
-</p>
+![Nx Donates to ESLint](/assets/images/blog-covers/sponsorship-nx.png)
 
 We are happy to share that [Nx](https://nx.dev/) has become an ESLint gold sponsor, donating $1,000 each month for the ongoing maintenance and development of ESLint! Nx is a front-end focused set of tools for working with web applications, with a special focus on monorepo setups.
 
