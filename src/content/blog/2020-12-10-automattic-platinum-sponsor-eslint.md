@@ -2,6 +2,7 @@
 layout: post
 title: Automattic becomes ESLint's first platinum sponsor
 teaser: "We are happy to announce that Automattic is the first platinum sponsor of ESLint. It is an honor to be supported by Automattic. We are grateful to the engineers using ESLint, and specially to Sarah Gooding of WPTavern for covering ESLint in her article about funding open source projects."
+image: sponsorship-automattic.png
 tags:
   - Open Source
   - Funding
@@ -14,9 +15,7 @@ categories:
   - Sponsorships
 ---
 
-<p class="text-center" style="margin-top: 100px; margin-bottom: 100px">
-    <a href="https://automattic.com/" title="Automattic" rel="noopener nofollow" target="_blank"><img class="lazyload" width="400" data-src="/assets/img/logos/automattic.svg" alt="Indeed" src="/assets/img/logos/automattic.svg"></a>
-</p>
+![Automattic Donates to ESLint](/assets/images/blog-covers/sponsorship-automattic.png)
 
 We are happy to share that [Automattic](https://automattic.com) has become ESLint's first platinum sponsor, donating $2,000 each month for the ongoing maintenance and development of ESLint! Automattic is the company behind <a href="https://wordpress.com">WordPress.com</a>, <a href="https://woocommerce.com">WooCommerce</a>, <a href="https://jetpack.com">Jetpack</a>, <a href="https://simplenote.com/">Simplenote</a>, <a href="https://longreads.com/">Longreads</a>, <a href="https://vaultpress.com/">VaultPress</a>, <a href="https://akismet.com/">Akismet</a>, <a href="https://en.gravatar.com/">Gravatar</a>, <a href="https://crowdsignal.com/">Crowdsignal</a>, <a href="https://cloudup.com/">Cloudup</a>, <a href="https://www.tumblr.com">Tumblr</a>, and more. Further, Automattic believes  in open source and makes a lot of their work [public on GitHub](https://github.com/Automattic) and available via the GPL.
 
