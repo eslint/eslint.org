@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117120,
-        "monthlyDonations": 9760,
-        "sponsorCount": 179
+        "annualDonations": 105120,
+        "monthlyDonations": 8760,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -38,14 +38,6 @@
             "name": "American Express",
             "image": "https://avatars.githubusercontent.com/u/3853301?v=4",
             "url": "https://americanexpress.io",
-            "monthlyDonation": 1000,
-            "source": "github",
-            "tier": "gold-sponsor"
-        },
-        {
-            "name": "Substack",
-            "image": "https://avatars.githubusercontent.com/u/53023767?v=4",
-            "url": "https://substack.com/",
             "monthlyDonation": 1000,
             "source": "github",
             "tier": "gold-sponsor"
@@ -1311,7 +1303,7 @@
         {
             "name": "Montana Mendy",
             "image": "https://avatars.githubusercontent.com/u/20936398?u=779c1b16d6ba4a1f49a695233d5b2ecefad591c1&v=4",
-            "url": "https://github.com/Montana",
+            "url": "https://www.chachi.blog",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
