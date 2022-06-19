@@ -57,30 +57,6 @@
         document.documentElement.classList.add("enhanced");
         document.documentElement.classList.remove('no-js');
     </script>
- 
-    <style>
-
-        .no-js #nav-toggle {
-            display: none !important;
-        }
-        .no-js #copyBtn{
-            display: none !important;
-        }
-        @media all and (min-width: 680px) {
-            .enhanced #nav-toggle{
-                display: none;
-            }
-        }
-        @media all and (max-width: 679px) {
-            .no-js #nav-list {
-                display: block !important;
-            }
-            .enhanced #nav-list{
-                display: none;
-            }
-        }
-
-    </style>
 
     <link rel="preload" href="{{ '/assets/fonts/SpaceGrotesk-Medium-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/Inter-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>

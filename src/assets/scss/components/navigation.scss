@@ -129,6 +129,6 @@
 
 @media (max-width: 679px) {
     #nav-list[data-open="true"] {
-        display: block;
+        display: block !important;
     }
 }
