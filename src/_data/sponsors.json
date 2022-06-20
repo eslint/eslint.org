@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105120,
-        "monthlyDonations": 8760,
-        "sponsorCount": 178
+        "annualDonations": 105060,
+        "monthlyDonations": 8755,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -1400,14 +1400,6 @@
             "name": "Team-Avalon",
             "image": "https://avatars.githubusercontent.com/u/78931833?v=4",
             "url": "opencollective.com/limasol",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Cretia",
-            "image": "https://avatars.githubusercontent.com/u/79467215?v=4",
-            "url": "https://www.cretia.app",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
