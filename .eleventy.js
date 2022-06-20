@@ -307,6 +307,15 @@ module.exports = eleventyConfig => {
     eleventyConfig.addShortcode("image", imageShortcode)
     // END, eleventy-img
 
+    /*
+     * Do not generate sitemap and sitemap index files for translation sites because we're
+     * always deploying all pages, and the sitemap would include them, but only a few pages
+     * can actually be accessed on translation sites while most URLs (e.g., blog posts)
+     * are redirecting to the English site.
+     */
+    if (siteName !== "en") {
+        eleventyConfig.ignores.add("src/static/sitemap*");
+    }
 
     return {
         passthroughFileCopy: true,
