@@ -14,7 +14,7 @@ language:
   flag: 🇺🇸
   name: English (US)
 locale: en-US
-hostname: new.eslint.org
+hostname: eslint.org
 
 #------------------------------------------------------------------------------
 # Analytics
