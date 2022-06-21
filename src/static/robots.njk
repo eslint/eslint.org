@@ -3,8 +3,7 @@ layout: false
 permalink: robots.txt
 eleventyExcludeFromCollections: true
 ---
-{% if site.language.code == "en" %}
 Sitemap: https://{{ site.hostname }}/sitemap-index.xml
-{% endif %}
+
 User-agent: *
 {% if "new." in site.hostname %}Disallow: /{% endif %}

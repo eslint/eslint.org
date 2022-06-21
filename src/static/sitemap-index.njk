@@ -7,7 +7,9 @@ eleventyExcludeFromCollections: true
     <sitemap>
         <loc>{{ ["https://", site.hostname, "/sitemap.xml"] | join }}</loc>
     </sitemap>
+    {% if site.language.code == "en" %}
     <sitemap>
         <loc>{{ ["https://", site.hostname, "/docs/latest/sitemap.xml"] | join }}</loc>
-    </sitemap>    
+    </sitemap>
+    {% endif %}
 </sitemapindex>
