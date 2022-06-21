@@ -3,9 +3,7 @@ layout: false
 permalink: robots.txt
 eleventyExcludeFromCollections: true
 ---
-Sitemap: https://{{ site.hostname }}/sitemap.xml
-User-agent: *
+Sitemap: https://{{ site.hostname }}/sitemap-index.xml
 
-{% if "new." in site.hostname %}
-Disallow: /
-{% endif %}
+User-agent: *
+{% if "new." in site.hostname %}Disallow: /{% endif %}

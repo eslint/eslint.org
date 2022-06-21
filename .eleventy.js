@@ -307,7 +307,6 @@ module.exports = eleventyConfig => {
     eleventyConfig.addShortcode("image", imageShortcode)
     // END, eleventy-img
 
-
     return {
         passthroughFileCopy: true,
 
