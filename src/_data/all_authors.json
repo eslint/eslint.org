@@ -1,4 +1,15 @@
 {
+    "eslintbot": {
+        "username": "eslintbot",
+        "name": "ESLint Bot",
+        "title": "Friendly Automation Bot",
+        "website": "https://eslint.org",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13383618?v=4",
+        "bio": "I help the ESLint team do things automatically.",
+        "twitter_username": "geteslint",
+        "github_username": "eslintbot",
+        "location": "Mountain View, CA"
+    },
     "nzakas": {
         "username": "nzakas",
         "name": "Nicholas C. Zakas",
