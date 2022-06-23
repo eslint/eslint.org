@@ -5,9 +5,9 @@
     "main": "index.js",
     "keywords": [],
     "author": "",
-    "repository": "eslint/new.eslint.org",
+    "repository": "eslint/eslint.org",
     "funding": "https://opencollective.com/eslint",
-    "bugs": "https://github.com/eslint/new.eslint.org/issues/",
+    "bugs": "https://github.com/eslint/eslint.org/issues/",
     "engines": {
         "node": "16.14.0"
     },

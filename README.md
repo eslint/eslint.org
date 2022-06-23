@@ -23,7 +23,7 @@ ESLINT_SITE_NAME=es npm start
 
 ## Translations
 
-If you'd like to add a new translation of this website, please [open an issue](https://github.com/eslint/new.eslint.org/issues/new/choose) first.
+If you'd like to add a new translation of this website, please [open an issue](https://github.com/eslint/eslint.org/issues/new/choose) first.
 
 In order to create a new translation:
 
