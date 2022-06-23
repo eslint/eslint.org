@@ -29,17 +29,17 @@ pagination:
     {% set reading_time = item.templateContent | readingTime %}
 
     {{ card({
-                postAuthor: author,
-                authorImage: author_image,
-                authorName: author_name,
-                featured: item.data.featured,
-                url: item.url,
-                image: item.data.image,
-                category: item.data.categories[0],
-                title: item.data.title,
-                readingTime: reading_time,
-                teaser: item.data.teaser,
-                date: item.date
-            }) }}
+        postAuthor: author,
+        authorImage: author_image,
+        authorName: author_name,
+        featured: item.data.featured,
+        url: item.url,
+        image: item.data.image,
+        category: item.data.categories[0],
+        title: item.data.title,
+        readingTime: reading_time,
+        teaser: item.data.teaser,
+        date: item.date
+    }) }}
     {% endfor %}
 </div>

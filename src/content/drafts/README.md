@@ -23,7 +23,7 @@ Not sure if your idea is suitable for the ESLint blog? Stop by the [#blog](https
 ## How to submit a blog post
 
 1. Fork this repository.
-1. Create a new file in the `drafts` folder. Please do not include a date in the filename. (`my-great-blog-post.md` not `2022-06-30-my-great-blog-post.md`) The ESLint team will publish your post at a later date. Please see the existing blog posts in `src/content/blog` to include the correct frontmatter in your post.
+1. Create a new file in the `src/content/drafts` folder. Please do not include a date in the filename. (`my-great-blog-post.md` not `2022-06-30-my-great-blog-post.md`) The ESLint team will publish your post at a later date. Please see the existing blog posts in `src/content/blog` to include the correct frontmatter in your post.
 1. If you have any images, add them to `src/assets/images/blog/XXXX` where `XXXX` is the current year.
 1. Run `node tools/add-author.js username`, where `username` is your GitHub username. This will put all of the information from your GitHub profile for use in the site.
 1. Edit your bio in `_includes/partials/author_bios/username.md` (where `username` is your GitHub username). This file can contain Markdown to embed in the blog post.
@@ -36,6 +36,10 @@ Not sure if your idea is suitable for the ESLint blog? Stop by the [#blog](https
 **Do I need to write the whole blog post first?**
 
 Yes. We can't give feedback on partial posts. If you're not sure whether or not the post is appropriate for the blog, please stop by the [#blog](https://eslint.org/chat/blog) channel on Discord and ask the team.
+
+**How can I preview my blog post?**
+
+When you run `npm start`, a local website will start up. Your post will be the top one on `/blog`. This preview works only locally and in the Netlify deploy preview; it will not show up on the live site until it has been scheduled.
 
 **How will I get paid?**
 
