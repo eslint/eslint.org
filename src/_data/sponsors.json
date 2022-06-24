@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105120,
-        "monthlyDonations": 8760,
-        "sponsorCount": 178
+        "annualDonations": 105180,
+        "monthlyDonations": 8765,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -1070,7 +1070,7 @@
         },
         {
             "name": "Maarten Van Hoof",
-            "image": "https://avatars.githubusercontent.com/u/2543633?u=59f1fc94537c9dfcf0be851e599215baa876559d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2543633?u=877bea1d5cbf861c347b1db16e9e23a3cf7b8a5c&v=4",
             "url": "mrtnvh.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1319,7 +1319,7 @@
         {
             "name": "Mikl Wolfe",
             "image": "https://avatars.githubusercontent.com/u/22719398?u=d2398fc4f4278f20b87d771b52910e40d22d5250&v=4",
-            "url": "simplydark.net",
+            "url": "mikl.io",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1376,6 +1376,14 @@
             "name": "Brock Davis",
             "image": "https://avatars.githubusercontent.com/u/42578556?u=845e14d22f8ca63d4745baf4df2f54f548796ec6&v=4",
             "url": "https://github.com/brockneedscoffee",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Sara Gerion",
+            "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
+            "url": "https://github.com/saragerion",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
