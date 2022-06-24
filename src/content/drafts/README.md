@@ -43,7 +43,7 @@ When you run `npm start`, a local website will start up. Your post will be the t
 
 **How will I get paid?**
 
-You will be paid through [Open Collective](https://opencollective.org). Open Collective uses PayPal and Wise to initiate payments. We cannot make payments in any other way.
+You will be paid through [Open Collective](https://opencollective.com/eslint). Open Collective uses PayPal and Wise to initiate payments. We cannot make payments in any other way. You will receive instructions once your post is merged. 
 
 **Can I still submit a post even if I can't be paid?**
 
