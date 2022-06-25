@@ -18,6 +18,8 @@
     {% set cover_image = ["https://", site.hostname, "/icon-512.png" ] | join %}
     {% set cover_image_alt = site.shared.eslint_logo_alt %}
     {% set page_desc = site.shared.description %}
+    {% set relative_page_url = page.url | url %}
+    {% set page_url = ["https://", site.hostname, relative_page_url ] | join %}
 
     <!-- SEO -->
     <title>{{ page_title }}</title>
@@ -25,7 +27,7 @@
     {%- if original -%}
     <link rel="canonical" href="{{ original.url }}">
     {%- else -%}
-    <link rel="canonical" href="https://{{ site.hostname }}{{ page.url | url }}">
+    <link rel="canonical" href="{{ page_url }}">
     {%- endif -%}
 
     <!-- favicon -->
