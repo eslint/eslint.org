@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105180,
-        "monthlyDonations": 8765,
-        "sponsorCount": 179
+        "annualDonations": 111900,
+        "monthlyDonations": 9325,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -44,6 +44,14 @@
         }
     ],
     "silver": [
+        {
+            "name": "GitHub",
+            "image": "https://avatars.githubusercontent.com/u/9919?v=4",
+            "url": "https://github.com/about",
+            "monthlyDonation": 550,
+            "source": "github",
+            "tier": "silver-sponsor"
+        },
         {
             "name": "Liftoff",
             "url": "https://liftoff.io/",
@@ -1077,6 +1085,14 @@
             "tier": "backer"
         },
         {
+            "name": "Daniel Lindegren",
+            "image": "https://avatars.githubusercontent.com/u/2631623?u=6e15a32c8bc8370d6fbdbbebda3563161e0eb20d&v=4",
+            "url": "https://dlindegren.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Roberto Arosemena Elizondo",
             "image": "https://avatars.githubusercontent.com/u/3158040?u=dff0b6074392afaef0d7041f79b218cae8053da8&v=4",
             "url": "https://github.com/arosemena",
@@ -1216,6 +1232,14 @@
             "name": "Roman Eckert",
             "image": "https://avatars.githubusercontent.com/u/9392031?u=18c737b16bba6a4373b9b2dc63f7609819dfb5bb&v=4",
             "url": "https://github.com/romaneckert",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Kyle Holmberg",
+            "image": "https://avatars.githubusercontent.com/u/9523719?u=fdddf99ddb809fcb0af5926ea1d5be3272021df5&v=4",
+            "url": "https://kylemh.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
