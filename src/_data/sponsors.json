@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111900,
-        "monthlyDonations": 9325,
-        "sponsorCount": 182
+        "annualDonations": 111960,
+        "monthlyDonations": 9330,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -570,7 +570,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 60,
+            "totalDonations": 65,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1416,6 +1416,14 @@
             "name": "Andrea Mazzucchelli",
             "image": "https://avatars.githubusercontent.com/u/60042277?u=ae98af9bebf42b3137986d38d38b5d1dfd609be8&v=4",
             "url": "https://www.linkedin.com/in/andrea-m-0b40051bb",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Shu Nonaka",
+            "image": "https://avatars.githubusercontent.com/u/63281006?u=10c6cc4308629456b2bad0d1e63a69d40f194447&v=4",
+            "url": "https://github.com/CasheeeewNuts",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
