@@ -1,1 +1,1 @@
-Engineer on [relay.dev](https://relay.dev) at Meta | Made [webamp.org](https://webamp.org)
+Engineer working on [Relay](https://relay.dev) at Meta, side project enthusiast, creator of [Webamp](https://webamp.org) and the [Winamp Skin Museum](https://skins.webamp.org).
