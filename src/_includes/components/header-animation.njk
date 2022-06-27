@@ -7,11 +7,11 @@
   <div class="anim__cursorCont" aria-hidden="true">
     <div class="anim__cursor anim__cursor--start"></div>
   </div>
-  <h1 class="section-title h0 anim__title" aria-hidden="true">
-
+  <h1 class="section-title h0 anim__title">
+	<span class="visually-hidden">{{ site.homepage.animation.text }}</span>
     {% for word in words %}
       {% if word == site.homepage.animation.highlight_word %}
-        <span class="anim__word anim__problems">
+        <span class="anim__word anim__problems" aria-hidden="true">
           <span class="anim__text">{{ word }}</span>
           <div class="anim__dropdown">
             <img class="anim__dropdown-img anim__dropdown-img--dark" src="/assets/images/dropdown--dark.png" alt="" />
@@ -20,7 +20,7 @@
           </div>
         </span>
       {% else %}
-        <span class="anim__word">{{ word }}</span>
+        <span class="anim__word" aria-hidden="true">{{ word }}</span>
       {% endif %}
     {% endfor %}
   </h1>
