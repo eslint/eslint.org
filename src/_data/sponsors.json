@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111960,
-        "monthlyDonations": 9330,
-        "sponsorCount": 183
+        "annualDonations": 112020,
+        "monthlyDonations": 9335,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -500,6 +500,15 @@
             "url": "https://sentry.io",
             "monthlyDonation": 8,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Realmoneycasinoonline.ca",
+            "url": "https://www.realmoneycasinoonline.ca",
+            "image": "https://images.opencollective.com/realmoneycasinoonlineca/a6fd7e5/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
