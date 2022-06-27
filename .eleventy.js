@@ -52,6 +52,13 @@ module.exports = eleventyConfig => {
     // Support YAML data files
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
 
+    // filter our draft posts in production only
+    const CONTEXT = process.env.CONTEXT;
+
+    if (CONTEXT && CONTEXT !== "deploy-preview") {
+        eleventyConfig.ignores.add("src/content/drafts/");
+    }
+
     /*****************************************************************************************
      *  Filters
      * ***************************************************************************************/
