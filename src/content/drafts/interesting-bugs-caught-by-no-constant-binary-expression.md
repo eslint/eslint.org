@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interesting Bugs Caught by no-constant-binary-expression 
+title: Interesting bugs caught by no-constant-binary-expression 
 teaser: "A new rule that catches a surprisingly wide variety of logic bugs."
 authors:
   - captbaritone
