@@ -100,7 +100,7 @@ footer:
     terms: Termos de uso
     privacy: Política de privacidade
     bylaws: Estatutos da OpenJS Foundation
-    trademark: Política de arcas registradas
+    trademark: Política de marcas registradas
     trademark_list: Lista de marcas registradas
     cookies: Política de Cookies
 
@@ -111,7 +111,7 @@ footer:
 404_page:
   title: Erro 404
   subtitle: Página não encontrada
-  description: Desculpe, a página que está buscando náo existe ou foi movida.
+  description: Desculpe, a página que está buscando não existe ou foi movida.
   actions:
     back_to_home: Voltar a página inicial
     browse_docs: Navegar pela documentação
@@ -155,7 +155,7 @@ branding_page:
           poderosas quanto logotipos e marcas. Ela não só afeta nosso design como
           pode provocar emoções e refletir a personalidade da marca ESLint.
         - >
-          A cor primária da marca é usara em todos os elementos interativos como 
+          A cor primária da marca é usada em todos os elementos interativos como 
           botões, links, inputs, etc. É derivada de nosso logo. Nós usamos 
           duas cores existentes para criar uma gama tonal primária singular.
       brand_palette: Paleta da marca
@@ -219,7 +219,7 @@ homepage:
       description: >
         Vários problemas que o ESLint encontra podem ser automaticamente corrigidos.
         As correções do ESLint são conscientes da sintaxe então você não terá problemas
-        típicos introduzidos pelos tradicinais algoritmos de econtrar e substituir.
+        típicos introduzidos pelos tradicionais algoritmos de econtrar e substituir.
       learn_more:
         link: fixProblems 
         text: >
@@ -312,8 +312,8 @@ team_page:
 sponsors_page:
   title: Patrocinadores
   description: >
-    BACKER_COUNT empresas, organizações e indivíduos individuals estão atualmente
-    conrtibuindo MONTHLY_DONATIONS mensalmente para apoiar a manutenção e desenvolvimento
+    BACKER_COUNT empresas, organizações e indivíduos estão atualmente
+    contribuindo com MONTHLY_DONATIONS mensalmente para apoiar a manutenção e desenvolvimento
     atual do ESLint.
   hero:
     cta:
@@ -329,7 +329,7 @@ sponsors_page:
         bem como coloque sua imagem de avatar do Open Collective ou do GitHub em nosso 
         README no GitHub e na página inicial do eslint.org. Também faremos um tweet de
         agradecimento a partir da nossa conta oficial (mais de 20.000 seguidores).
-        Por favor contate o time do ESLint para agendar sessões de suporte.
+        Por favor entre em contato com o time do ESLint para agendar sessões de suporte.
     gold:
       title: Patrocinadores Gold
       description: >
@@ -414,7 +414,7 @@ donate_page:
     title: Como o dinheiro é usado
     subtitle: >
       O projeto ESLint usa o dinheiro das doações para benefício do projeto e a toda comunidade ESLint como um todo.
-      Em geral, nós empregamos o dinheiro nestars áreas a cada mês.
+      Em geral, nós empregamos o dinheiro nestas áreas a cada mês.
     items:
       - name: Desenvolvimento de equipe
         text: >
@@ -423,7 +423,7 @@ donate_page:
           para committers.
       - name: Grupo de contribuidores
         text: >
-          Reservamos CONTRIBUTOR_POOL_BUDGET USD a cada mês para contribuidores externos que fizeram contribuições
+          Reservamos CONTRIBUTOR_POOL_BUDGET USD a cada mês para apoiadores externos que fizeram contribuições
           significativas ao projeto. Contribuições incluem submeter código, escrever documentação, responder perguntas
           no nosso servidor Discord, e mais. Este dinheiro é alocado mensalmente pelo CDT.
       - name: Dependências
@@ -485,7 +485,7 @@ donate_page:
         e constante. Com um grande nível de extesibilidade, a habilidade do ESLint de permitir
         que os times imponham suas próprias regras customizadas tem sido excelente para projetos 
         open source e mais. O Chrome está muito feliz em patrocinar ESLint, ajudando assim desenvolvedores 
-        a escrever códigos de alta qualidade consistentemente. É uma peça essencial das ferramentas
+        a escrever códigos de alta qualidade de maneira consistente. É uma peça essencial das ferramentas
         de desenvolvimento web moderno.
     - name: Jeff Cross
       title: Co-fundador and Principal Architect, Nx
@@ -529,10 +529,10 @@ donate_page:
     - q: Quem recebe o dinheiro doado?
       a: Todas as contribuições, independente se feitas através do <a href='https://opencollective.com'>Open
         Collective</a> ou GitHub, são recebidas pelo Open Source Collective, que é uma organização sem fins 
-        lucrativos 501(c)(6). A Open Source Collective atua como um fiscal do ESLint e controla todas as doações.
+        lucrativos 501(c)(6). A Open Source Collective atua como um fiscalizador do ESLint e controla todas as doações.
     - q: Terei um registro de todas as minhas doações?
       a: Sim. Se você doar através do Open Collective, você receberá um recibo em PDF por e-mail; 
-        se você doar através do GitHub, a doação aparecerá no seu recibo ou fatura do GitHUb.
+        se você doar através do GitHub, a doação aparecerá no seu recibo ou fatura do GitHub.
     - q: Minha doação é dedutível de imposto?
       a: Não. Apesar de a Open Source Collective ser uma organização sem fins lucrativos 501(c)(6) 
         o IRS não considera doações para projetos open source como uma atividade de caridade, portanto 
