@@ -122,6 +122,5 @@ module.exports = {
 
 If you do, and it finds bugs, I’d love to [hear about them](https://twitter.com/captbaritone)!
 
----
 
 Thanks to [Brad Zacher](https://twitter.com/bradzacher) for the original observation which inspired this work and the suggestion to propose it as a new core rule. And thanks to [Milos Djermanovic](https://github.com/mdjermanovic) for significant contributions during code review.
