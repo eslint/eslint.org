@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105120,
-        "monthlyDonations": 8760,
-        "sponsorCount": 178
+        "annualDonations": 112020,
+        "monthlyDonations": 9335,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -44,6 +44,14 @@
         }
     ],
     "silver": [
+        {
+            "name": "GitHub",
+            "image": "https://avatars.githubusercontent.com/u/9919?v=4",
+            "url": "https://github.com/about",
+            "monthlyDonation": 550,
+            "source": "github",
+            "tier": "silver-sponsor"
+        },
         {
             "name": "Liftoff",
             "url": "https://liftoff.io/",
@@ -495,6 +503,15 @@
             "tier": "backer"
         },
         {
+            "name": "Meta Tier List",
+            "url": "https://metatierlist.com",
+            "image": "https://images.opencollective.com/metatierlist/68a5b41/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Leonardo Rodrigues Ferreira",
             "url": null,
             "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
@@ -562,7 +579,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 60,
+            "totalDonations": 65,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1070,8 +1087,16 @@
         },
         {
             "name": "Maarten Van Hoof",
-            "image": "https://avatars.githubusercontent.com/u/2543633?u=59f1fc94537c9dfcf0be851e599215baa876559d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2543633?u=877bea1d5cbf861c347b1db16e9e23a3cf7b8a5c&v=4",
             "url": "mrtnvh.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Daniel Lindegren",
+            "image": "https://avatars.githubusercontent.com/u/2631623?u=6e15a32c8bc8370d6fbdbbebda3563161e0eb20d&v=4",
+            "url": "https://dlindegren.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1221,6 +1246,14 @@
             "tier": "backer"
         },
         {
+            "name": "Kyle Holmberg",
+            "image": "https://avatars.githubusercontent.com/u/9523719?u=fdddf99ddb809fcb0af5926ea1d5be3272021df5&v=4",
+            "url": "https://kylemh.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "mizdra",
             "image": "https://avatars.githubusercontent.com/u/9639995?u=dd5dac271b000f6c7883880c1796ce2a95a971b2&v=4",
             "url": "https://mizdra.net",
@@ -1319,7 +1352,7 @@
         {
             "name": "Mikl Wolfe",
             "image": "https://avatars.githubusercontent.com/u/22719398?u=d2398fc4f4278f20b87d771b52910e40d22d5250&v=4",
-            "url": "simplydark.net",
+            "url": "mikl.io",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1381,9 +1414,25 @@
             "tier": "backer"
         },
         {
+            "name": "Sara Gerion",
+            "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
+            "url": "https://github.com/saragerion",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Andrea Mazzucchelli",
             "image": "https://avatars.githubusercontent.com/u/60042277?u=ae98af9bebf42b3137986d38d38b5d1dfd609be8&v=4",
             "url": "https://www.linkedin.com/in/andrea-m-0b40051bb",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Shu Nonaka",
+            "image": "https://avatars.githubusercontent.com/u/63281006?u=10c6cc4308629456b2bad0d1e63a69d40f194447&v=4",
+            "url": "https://github.com/CasheeeewNuts",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
