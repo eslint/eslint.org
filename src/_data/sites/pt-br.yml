@@ -14,7 +14,7 @@ language:
   flag: 🇧🇷
   name: Portuguese (BR)
 locale: pt-BR
-hostname: eslint.org
+hostname: pt-br.eslint.org
 
 #------------------------------------------------------------------------------
 # Analytics
