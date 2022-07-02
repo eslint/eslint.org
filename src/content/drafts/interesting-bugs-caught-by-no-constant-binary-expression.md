@@ -26,7 +26,7 @@ For example:
 
 Both of these are examples of expressions that _look_ like they can affect the way the program evaluates, but in reality, do not.
 
-This rule originally started as just an attempt to detect unnecessary null checks. However, as I worked on it, I realized useless null checks were just a special case of a broader category: useless code. Eventually it clicked for me: Because developers don’t _intend_ to write useless code, any useless code you can detect is not doing what the developer intended, and is therefore a bug.
+This rule originally started as just an attempt to detect unnecessary null checks. However, as I worked on it, I realized useless null checks were just a special case of a broader category: useless code. Eventually it clicked for me: developers don't intend to write useless code, and code that does not match the developer's intent is by definition a bug. Therefore, any useless code you can detect is a bug.
 
 This realization was confirmed for me when I ran the first version of the rule against our code base at Meta, and it detected a wide variety of subtle and interesting bugs which had made it through code review.
 
