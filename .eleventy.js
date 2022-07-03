@@ -266,7 +266,9 @@ module.exports = eleventyConfig => {
 
 
     eleventyConfig.addCollection("library", function(collection) {
-        return collection.getFilteredByGlob("./src/content/library/**/*.md");
+        return collection
+        .getFilteredByGlob("./src/content/library/**/*.md")
+        .sort((a, b) => a.data.title.localeCompare(b.data.title));
     });
 
     // START, eleventy-img
