@@ -59,6 +59,11 @@ module.exports = eleventyConfig => {
         eleventyConfig.ignores.add("src/content/drafts/");
     }
 
+    // Make Nunjucks more strict
+    eleventyConfig.setNunjucksEnvironmentOptions({
+        throwOnUndefined: true
+    });
+
     /*****************************************************************************************
      *  Filters
      * ***************************************************************************************/
