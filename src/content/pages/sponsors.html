@@ -188,8 +188,8 @@ hook: "sponsors_page"
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="48" width="48"
                             onerror="this.src = '/assets/images/people/_placeholder-avatar.svg'"
-                            alt="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
-                            title="{{ sponsor.name }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
+                            alt="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
+                            title="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
                     </a>
                 </li>
                 {% endfor %}
