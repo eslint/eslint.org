@@ -26,7 +26,8 @@ The card component is used to create blog post listings. To use the component, c
     authorName: "Happy McPerson",
     category: "Sponsorships",
     readingTime: "5 min",
-    date: "02-03-2020"
+    date: "02-03-2020",
+    url: "/component-library/card"
 }) } }
 ```
 
@@ -39,7 +40,8 @@ The card component is used to create blog post listings. To use the component, c
     authorName: "Happy McPerson",
     category: "Sponsorships",
     readingTime: "5 min",
-    date: "02-03-2020"
+    date: "02-03-2020",
+    url: "/component-library/card"
 }) }}
 
 
@@ -52,5 +54,6 @@ The card component is used to create blog post listings. To use the component, c
     authorName: "The Author Name",
     category: "Sponsorships",
     readingTime: "5 min",
-    date: "02-03-2020"
+    date: "02-03-2020",
+    url: "/component-library/card"
 }) }}
