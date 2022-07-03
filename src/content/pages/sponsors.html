@@ -14,7 +14,7 @@ hook: "sponsors_page"
 {% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.sponsorCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
 
 {{ hero({
-    title: title,
+    title: site.sponsors_page.title,
     supporting_text: supporting_text,
     buttons: {
         primary: {
