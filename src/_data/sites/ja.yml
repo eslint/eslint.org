@@ -12,7 +12,8 @@
 language:
   code: ja
   flag: 🇯🇵
-  name: Japanese
+  name: 日本語
+  title: Japanese
 locale: ja-JP
 hostname: ja.eslint.org
 
