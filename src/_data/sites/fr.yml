@@ -12,7 +12,8 @@
 language:
   code: fr
   flag: 🇫🇷
-  name: French
+  name: Français
+  title: French
 locale: fr-FR
 hostname: fr.eslint.org
 
