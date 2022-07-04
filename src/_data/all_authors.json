@@ -119,5 +119,16 @@
         "twitter_username": null,
         "github_username": "mdjermanovic",
         "location": null
+    },
+    "eslintbot": {
+        "username": "eslintbot",
+        "name": "ESLint Bot",
+        "title": "Automation Bot",
+        "website": "https://eslint.org",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13383618?v=4",
+        "bio": null,
+        "twitter_username": "geteslint",
+        "github_username": "eslintbot",
+        "location": null
     }
 }

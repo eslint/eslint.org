@@ -166,8 +166,14 @@ async function fetchBlogAuthors() {
         fetchBlogAuthors()
     ]);
 
+    const existingAuthors = JSON.parse(await fs.readFile(authorsFilename, "utf8"));
+    const allAuthors = {
+        ...existingAuthors,
+        ...authors
+    };
+
     await fs.writeFile(teamFilename, JSON.stringify(team, null, "    "), { encoding: "utf8" });
-    await fs.writeFile(authorsFilename, JSON.stringify(authors, null, "    "), { encoding: "utf8" });
+    await fs.writeFile(authorsFilename, JSON.stringify(allAuthors, null, "    "), { encoding: "utf8" });
 
     console.log("Fetch Team Data: Success");
 })();
