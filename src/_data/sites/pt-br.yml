@@ -88,7 +88,7 @@ footer:
     language: Idioma
   copyright: >
     Copyright <a href="https://openjsf.org">OpenJS Foundation</a> e contribuidores do ESLint.
-    Todos direitos reservados. A <a href="https://openjsf.org">OpenJS 
+    Todos os direitos reservados. A <a href="https://openjsf.org">OpenJS 
     Foundation</a> possui marcas comerciais registradas e usa marcas comerciais. 
     Para uma lista de marcas comerciais da <a href="https://openjsf.org">
     OpenJS Foundation</a>, por favor veja nossa <a href="https://trademark-policy.openjsf.org">Política de Marcas Comerciais</a> 
@@ -140,9 +140,9 @@ branding_page:
           uma ideia de quanto espaço a marca deve ter entre a marca e o logotipo, 
           bem como ao redor da própria marca.
         - >
-          Nossa marca é versátil - você pode aplicá-la em várias cores, fazendo uso 
-          da opacidade de cores de fundo não brancos para emular uma cor mais clara.
-          A marca ESLint também pode ser usada isoladamente, sem o logotipo. Entretanto
+          Nossa marca é versátil - você pode aplicá-la em várias cores, usando a 
+          opacidade de cores de fundo não brancos para emular uma cor mais clara.
+          A marca ESLint também pode ser usada isoladamente, sem o logotipo. Entretanto, 
           a utilização de ambos é preferível.
       download_svg: Baixar SVG
       download_png: Baixar PNG
@@ -187,7 +187,7 @@ homepage:
   install:
     title: Código de instalação rápida do ESLint
     copy: Copie o código de instalação para a área de transferências
-    copied: Copiado para a área de transferëncias.
+    copied: Copiado para a área de transferências.
   
   versions:
     title: Versões do ESLint
@@ -219,7 +219,7 @@ homepage:
       description: >
         Vários problemas que o ESLint encontra podem ser automaticamente corrigidos.
         As correções do ESLint são conscientes da sintaxe então você não terá problemas
-        típicos introduzidos pelos tradicionais algoritmos de econtrar e substituir.
+        típicos introduzidos pelos tradicionais algoritmos de encontrar e substituir.
       learn_more:
         link: fixProblems 
         text: >
@@ -299,7 +299,7 @@ team_page:
   committers:
     title: Committers
     description: >
-      As pessoas que revisam, corrigem erros e ajudam a clssificar os problemas.
+      As pessoas que revisam, corrigem erros e ajudam a classificar os problemas.
   alumni:
     title: Alumni
     description: >
@@ -329,7 +329,7 @@ sponsors_page:
         bem como coloque sua imagem de avatar do Open Collective ou do GitHub em nosso 
         README no GitHub e na página inicial do eslint.org. Também faremos um tweet de
         agradecimento a partir da nossa conta oficial (mais de 20.000 seguidores).
-        Por favor entre em contato com o time do ESLint para agendar sessões de suporte.
+        Por favor, entre em contato com o time do ESLint para agendar sessões de suporte.
     gold:
       title: Patrocinadores Gold
       description: >
@@ -435,11 +435,11 @@ donate_page:
         text: >
           Reservamos COMMUNITY_BUDGET USD mensalmente para ajudar a manter plugins, parseadores
           e outros projetos que beneficiam o ecossistema ESLint como um todo.
-          Acreditamos que a força do projeto está no seu ecosistema e queremos garantir que
+          Acreditamos que a força do projeto está no seu ecossistema e queremos garantir que
           projetos importantes permaneçam bem mantidos.
       - name: Sistemas de apoio
         text: >
-          Usamos uma quantia pequena mensalmente para pagar por sorftwares que o time usa para ajudar
+          Usamos uma quantia pequena mensalmente para pagar por softwares que o time usa para ajudar
           a gerenciar o projeto, o que inclui coisas como Google Workspace e armazenamento na nuvem.
     footer:
       text: >
@@ -447,7 +447,7 @@ donate_page:
         para trabalharem em coisas que são importantes ao projeto e onde o time não tem tempo ou
         conhecimento suficiente para completar o trabalho por si só. Por exemplo, nós recentemente
         contratamos um designer e um desenvolvedor para redesenhar este website. Nós garantimos que
-        gastamos menos do que recebemos por mês para que possamos reservar para projetos deste tipo.
+        gastamos menos do que recebemos por mês para podermos reservar para projetos deste tipo.
   donation_tiers:
     title: Níveis de doação
     subtitle: Enquanto aceitamos doações de qualquer quantia, nós temos um sistema de diferentes benefícios a cada nível.
@@ -482,7 +482,7 @@ donate_page:
       text: >
         ESLint tem sido crítico em ajudar desenvolvedores a escrever códigos JavaScript de
         alta qualidade por anos. Nós amamos que ele identifique erros comuns de maneira rápida
-        e constante. Com um grande nível de extesibilidade, a habilidade do ESLint de permitir
+        e constante. Com um grande nível de extensibilidade, a habilidade do ESLint de permitir
         que os times imponham suas próprias regras customizadas tem sido excelente para projetos 
         open source e mais. O Chrome está muito feliz em patrocinar ESLint, ajudando assim desenvolvedores 
         a escrever códigos de alta qualidade de maneira consistente. É uma peça essencial das ferramentas
