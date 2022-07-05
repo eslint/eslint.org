@@ -12,7 +12,8 @@
 language:
   code: es
   flag: 🇪🇸
-  name: Spanish (ES)
+  name: Español (ES)
+  title: Spanish
 locale: es-ES
 hostname: es.eslint.org
 

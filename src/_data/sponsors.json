@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 112020,
-        "monthlyDonations": 9335,
-        "sponsorCount": 184
+        "annualDonations": 112080,
+        "monthlyDonations": 9340,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -500,6 +500,15 @@
             "url": "https://sentry.io",
             "monthlyDonation": 8,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Crypto Tracker",
+            "url": "https://cryptotracker.com",
+            "image": "https://images.opencollective.com/crypto-tracker/b258378/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
