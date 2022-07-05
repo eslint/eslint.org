@@ -141,6 +141,11 @@ ul.tag-list {
     border-block-start: 1px solid var(--divider-color);
 }
 
+// https: //github.com/eslint/eslint.org/issues/257
+// https: //bugzilla.mozilla.org/show_bug.cgi?id=1778180
+.post__blog-content {
+    min-width: 0;
+}
 
 /* from the blog section */
 
