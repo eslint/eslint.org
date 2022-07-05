@@ -11,7 +11,9 @@
         window.localStorage.setItem("theme", theme);
     }
 
-    var theme = window.localStorage.getItem("theme");
+    var localStorageTheme = window.localStorage.getItem("theme") 
+    var theme = localStorageTheme ? localStorageTheme : window.matchMedia('(prefers-color-scheme: dark)').matches? 'dark' : 'light';
+    
     document.addEventListener('DOMContentLoaded', function () {
         var switcher = document.getElementById('js-theme-switcher');
         switcher.removeAttribute('hidden');
