@@ -60,3 +60,9 @@
         margin-block-start: 3rem;
     }
 }
+
+.content-container {
+    .span-5-12 {
+        min-width: 0;
+    }
+}
