@@ -119,5 +119,16 @@
         "twitter_username": null,
         "github_username": "mdjermanovic",
         "location": null
+    },
+    "captbaritone": {
+        "username": "captbaritone",
+        "name": "Jordan Eldredge",
+        "title": "Guest Author",
+        "website": "https://jordaneldredge.com",
+        "avatar_url": "https://avatars.githubusercontent.com/u/162735?v=4",
+        "bio": "Engineer on relay.dev at Meta | Made webamp.org",
+        "twitter_username": "captbaritone",
+        "github_username": "captbaritone",
+        "location": "Alameda, CA"
     }
 }
