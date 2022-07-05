@@ -271,6 +271,7 @@ blog_page:
     previous_page: 前
     last_page: 最後
     status: TOTAL_PAGE_COUNT ページ中の PAGE_NUMBER ページ目
+  from_the_blog: 最新のブログ記事
 
 #------------------------------------------------------------------------------
 # Team Page
