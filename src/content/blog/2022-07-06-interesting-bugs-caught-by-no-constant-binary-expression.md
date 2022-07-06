@@ -89,7 +89,7 @@ I’ve only seen this particular typo once, but I wanted to include it because i
 Here, the developer meant to test if a value was greater than or equal to zero (`>= 0`), but accidentally reversed the order of the characters and created an arrow function that returned `0 && startWidth <= 1`!
 
 ```javascript
-assert((startWidth) => 0 && startWidth <= 1);
+assert(startWidth => 0 && startWidth <= 1);
 ```
 
 _From [Mozilla](https://phabricator.services.mozilla.com/rMOZILLACENTRAL925b8d1ad45f80faee052492b3b43f5120052405)_
