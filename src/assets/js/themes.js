@@ -11,7 +11,8 @@
         window.localStorage.setItem("theme", theme);
     }
 
-    var theme = window.localStorage.getItem("theme");
+    var theme = document.documentElement.getAttribute('data-theme');
+    
     document.addEventListener('DOMContentLoaded', function () {
         var switcher = document.getElementById('js-theme-switcher');
         switcher.removeAttribute('hidden');
