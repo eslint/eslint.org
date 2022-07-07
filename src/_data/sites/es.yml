@@ -276,6 +276,7 @@ blog_page:
     previous_page: Anterior
     last_page: Último
     status: Pagina PAGE_NUMBER de TOTAL_PAGE_COUNT
+  from_the_blog: También puedes ver
 
 #------------------------------------------------------------------------------
 # Team Page
