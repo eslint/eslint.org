@@ -141,5 +141,16 @@
         "twitter_username": "captbaritone",
         "github_username": "captbaritone",
         "location": "Alameda, CA"
+    },
+    "BobToninho": {
+        "username": "BobToninho",
+        "name": "Roberto Tonino",
+        "title": "Guest Author",
+        "website": "https://tonino.xyz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58312518?v=4",
+        "bio": null,
+        "twitter_username": "robtonino",
+        "github_username": "BobToninho",
+        "location": "Italy"
     }
 }
