@@ -1,0 +1,9 @@
+.cm-theme-light {
+    min-width: 100%;
+}
+
+.cm-focused .cm-selectionBackground, .cm-selectionBackground, .cm-content ::selection {
+    & {
+        background-color: var(--color-primary-800) !important;
+    }
+}

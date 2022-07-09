@@ -1,0 +1,11 @@
+{
+    "name": "eslint-playground",
+    "private": true,
+    "version": "1.0.0",
+    "description": "The codebase for the ESLint PLayground (play.eslint.org)",
+    "license": "MIT",
+    "dependencies": {
+        "@eslint/eslintrc": "latest",
+        "eslint": "latest"
+    }
+}
