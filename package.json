@@ -14,6 +14,7 @@
     "license": "ISC",
     "scripts": {
         "images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
+        "install:playground": "cd src/playground && npm install --no-package-lock",
         "watch:sass": "sass --watch src/assets/scss:src/assets/css",
         "watch:eleventy": "eleventy --serve --port=2022",
         "watch:webpack": "webpack watch --mode=development",
@@ -25,7 +26,8 @@
         "fetch:sponsors": "node tools/fetch-sponsors.js",
         "fetch": "npm-run-all --parallel fetch:*",
         "start": "npm-run-all build:sass --parallel watch:*",
-        "build": "npm-run-all build:sass build:eleventy build:webpack images"
+        "build": "npm-run-all install:playground build:sass build:eleventy build:webpack images",
+        "postinstall": "npm run install:playground"
     },
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
