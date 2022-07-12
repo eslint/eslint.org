@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 114384,
-        "monthlyDonations": 9532,
+        "annualDonations": 112044,
+        "monthlyDonations": 9337,
         "sponsorCount": 184
     },
     "platinum": [
@@ -138,14 +138,6 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": null,
-            "image": "https://avatars.githubusercontent.com/u/95090305?v=4",
-            "url": "https://github.com/aaditysoni",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1050,6 +1042,14 @@
             "name": "Charles Severance",
             "image": "https://avatars.githubusercontent.com/u/1197222?u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
             "url": "http://www.dr-chuck.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Andrés Rojas",
+            "image": "https://avatars.githubusercontent.com/u/1273138?u=62051fd5167c6aa096b79682d1bac1c1a2911a9a&v=4",
+            "url": "https://github.com/andresroberto",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
