@@ -295,14 +295,5 @@
         "amount": 513.09,
         "date": "2021-12-01T11:36:39.222Z",
         "source": "opencollective"
-    },
-    {
-        "id": "mvrwng4k-j03dpbm8-o8lqz57o-yl9e8xba",
-        "name": "Dolphin{anty}",
-        "url": "https://anty.dolphin.ru.com",
-        "image": "https://images.opencollective.com/dolphin/056c63f/avatar.png",
-        "amount": 50,
-        "date": "2021-11-16T08:30:14.041Z",
-        "source": "opencollective"
     }
 ]
