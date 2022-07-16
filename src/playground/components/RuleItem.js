@@ -4,10 +4,8 @@ export default function RuleItem({ children }) {
     const ref = useRef();
 
     useEffect(() => {
-        if (ref.current) {
-            ref.current.scrollIntoView({ behavior: "smooth", block: "end" });
-            ref.current.children[1].focus();
-        }
+        ref.current.scrollIntoView({ behavior: "smooth", block: "end" });
+        ref.current.children[1].focus();
     }, []);
 
     return (
