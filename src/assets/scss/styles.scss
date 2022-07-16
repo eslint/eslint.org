@@ -16,7 +16,9 @@
 @import 'sponsors.scss';
 @import 'donations.scss';
 @import 'languages.scss';
+@import 'playground-layout.scss';
 
+@import 'components/alert.scss';
 @import 'components/buttons.scss';
 @import 'components/carbon-ads.scss';
 @import 'components/card.scss';
@@ -34,5 +36,7 @@
 @import 'components/version-switcher.scss';
 @import 'components/language-switcher.scss';
 @import 'components/index.scss';
+@import 'components/playground-configuration.scss';
+@import 'components/popup.scss';
 
 @import 'utilities.scss';
