@@ -9,4 +9,6 @@ layout: base.html
     {{ content | safe }}
 </main>
 
-{% include "partials/footer.html" %}
+{% if page.url != '/play/' %} 
+    {% include "partials/footer.html" %}
+{%- endif -%}
