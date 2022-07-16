@@ -149,6 +149,7 @@ branding_page:
           Le logo peut aussi être utilisé seul, sans le nom ESLint. Utiliser les deux ensemble
           est cependant préférable quand cela est possible.
       download_png: Télécharger en PNG
+      download_svg: Télécharger en SVG
       change_background: "Modifier l'arrière-plan:"
     color_palette:
       title: Palette de Couleurs
