@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 112044,
-        "monthlyDonations": 9337,
-        "sponsorCount": 184
+        "annualDonations": 112104,
+        "monthlyDonations": 9342,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -500,6 +500,15 @@
             "url": "https://sentry.io",
             "monthlyDonation": 8,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "TaskRatchet",
+            "url": "https://taskratchet.com",
+            "image": "https://images.opencollective.com/taskratchet/7996706/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
