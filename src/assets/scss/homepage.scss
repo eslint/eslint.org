@@ -46,11 +46,21 @@
         color: var(--headings-color);
     }
 
-    input {
+    .code-snippet {
         all: unset;
         min-width: 30ch;
         color: inherit;
-        font-family: var(--mono-font);      
+        font-family: var(--mono-font);
+        display: inline-block;
+
+        span {
+            font-family: var(--text-font);
+        }
+
+        &[data-copied="true"] {
+            background-color: var(--color-primary-800);
+            color: white;
+        }
     }
 }
 
