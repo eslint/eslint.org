@@ -272,13 +272,11 @@ eleventyExcludeFromCollections: true
         copyBtn.removeAttribute('hidden');
 
         copyBtn.onclick = () => {
-            console.log(copyText)
             navigator.clipboard.writeText(copyText.innerText);
             announcement_region.innerHTML = "{{ site.homepage.install.copied }}";
             this.focus();
             copyBtn.setAttribute('data-copied', 'true');
             copyText.setAttribute('data-copied', 'true');
-            console.log(copyText)
 
             setTimeout(() => {
                 copyBtn.removeAttribute('data-copied');
