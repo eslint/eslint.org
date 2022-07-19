@@ -25,10 +25,7 @@ module.exports = {
                 test: /\.jsx?$/u,
                 loader: "babel-loader",
                 include: path.resolve(__dirname, "src/playground"),
-                exclude: [
-                    path.resolve(__dirname, "node_modules"),
-                    path.resolve(__dirname, "src/playground/node_modules/lodash")
-                ],
+                exclude: /node_modules/u,
                 options: {
                     configFile: path.resolve(__dirname, ".babelrc")
                 }
@@ -49,5 +46,5 @@ module.exports = {
             }
         ]
     },
-    stats: "errors-only"
+    stats: "normal"
 };
