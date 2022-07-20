@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 112104,
-        "monthlyDonations": 9342,
+        "annualDonations": 114444,
+        "monthlyDonations": 9537,
         "sponsorCount": 185
     },
     "platinum": [
@@ -138,6 +138,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "QuickBooks Tool hub",
+            "image": "https://avatars.githubusercontent.com/u/95090305?u=e5bc398ef775c9ed19f955c675cdc1fb6abf01df&v=4",
+            "url": "https://quickbookstoolhub.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1131,14 +1139,6 @@
             "name": "Roberto Arosemena Elizondo",
             "image": "https://avatars.githubusercontent.com/u/3158040?u=dff0b6074392afaef0d7041f79b218cae8053da8&v=4",
             "url": "https://github.com/arosemena",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": null,
-            "image": "https://avatars.githubusercontent.com/u/3339029?u=d4b81c8dd6e15045089aa7213be221f61550d3f5&v=4",
-            "url": "https://github.com/KrakerXyz",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
