@@ -89,7 +89,3 @@
         });
     }
 })();
-
-document.addEventListener("DOMContentLoaded", () => {
-    anchors.add(".post h2, .post h3, .post h4");
-});
