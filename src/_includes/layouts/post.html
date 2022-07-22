@@ -7,6 +7,12 @@ hook: "post blog-post-page"
 
 {%- from 'components/profile.macro.html' import member, contributor, post_author %}
 
+<script src="https://unpkg.com/anchor-js@4.3.1/anchor.min.js" type="text/javascript"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    anchors.add(".post h2, .post h3, .post h4");
+});
+</script>
 <main id="main"  class="post-main" tabindex="-1">
 {%- from 'components/hero.macro.html' import hero %}
     {% set hero_title = title %}
