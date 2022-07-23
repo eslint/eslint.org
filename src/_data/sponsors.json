@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 114444,
-        "monthlyDonations": 9537,
+        "annualDonations": 112104,
+        "monthlyDonations": 9342,
         "sponsorCount": 185
     },
     "platinum": [
@@ -138,14 +138,6 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "QuickBooks Tool hub",
-            "image": "https://avatars.githubusercontent.com/u/95090305?u=e5bc398ef775c9ed19f955c675cdc1fb6abf01df&v=4",
-            "url": "https://quickbookstoolhub.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1203,6 +1195,14 @@
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
             "url": "https://mattiaerre.medium.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Jan-Kanty",
+            "image": "https://avatars.githubusercontent.com/u/6461935?u=430397d1a9f222efd25209eb0fd4e6623286b584&v=4",
+            "url": "https://github.com/jankanty",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
