@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 112104,
-        "monthlyDonations": 9342,
+        "annualDonations": 107904,
+        "monthlyDonations": 8992,
         "sponsorCount": 185
     },
     "platinum": [
@@ -44,14 +44,6 @@
         }
     ],
     "silver": [
-        {
-            "name": "GitHub",
-            "image": "https://avatars.githubusercontent.com/u/9919?v=4",
-            "url": "https://github.com/about",
-            "monthlyDonation": 550,
-            "source": "github",
-            "tier": "silver-sponsor"
-        },
         {
             "name": "Liftoff",
             "url": "https://liftoff.io/",
@@ -138,6 +130,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "QuickBooks Tool hub",
+            "image": "https://avatars.githubusercontent.com/u/95090305?u=e5bc398ef775c9ed19f955c675cdc1fb6abf01df&v=4",
+            "url": "https://quickbookstoolhub.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
