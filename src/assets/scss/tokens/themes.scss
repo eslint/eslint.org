@@ -90,6 +90,17 @@
     --hero-background-color: var(--color-neutral-25);
     --footer-background-color: var(--color-neutral-25);
     --outline-color: var(--color-brand);
+
+    --editor-string-color: var(--color-warning-800);
+    --editor-comment-color: var(--color-success-700);
+    --editor-keyword-color: var(--color-primary-900);
+    --editor-name-color: var(--color-primary-700);
+    --editor-bracket-match-outline-color: var(--color-neutral-200);
+    --editor-bracket-match-background-color: var(--color-neutral-100);
+    --editor-bracket-match-color: none;
+    --editor-bracket-no-match-outline-color: var(--color-rose-500);
+    --editor-bracket-no-match-background-color: none;
+    --editor-bracket-no-match-color: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -111,6 +122,14 @@
         --hero-background-color: var(--color-neutral-800);
         --footer-background-color: var(--color-neutral-800);
         --outline-color: #fff;
+
+        --editor-string-color: var(--color-warning-300);
+        --editor-comment-color: var(--color-success-500);
+        --editor-keyword-color: var(--color-primary-500);
+        --editor-name-color: var(--color-primary-300);
+        --editor-bracket-match-outline-color: var(--color-neutral-600);
+        --editor-bracket-match-background-color: var(--color-neutral-700);
+        --editor-bracket-match-color: var(--color-neutral-25);
     }
 }
 
@@ -135,6 +154,14 @@ html[data-theme="light"] {
     --hero-background-color: var(--color-neutral-25);
     --footer-background-color: var(--color-neutral-25);
     --outline-color: var(--color-brand);
+
+    --editor-string-color: var(--color-warning-800);
+    --editor-comment-color: var(--color-success-700);
+    --editor-keyword-color: var(--color-primary-900);
+    --editor-name-color: var(--color-primary-700);
+    --editor-bracket-match-outline-color: var(--color-neutral-200);
+    --editor-bracket-match-background-color: var(--color-neutral-100);
+    --editor-bracket-match-color: none;
 }
 
 html[data-theme="dark"] {
@@ -155,4 +182,12 @@ html[data-theme="dark"] {
     --hero-background-color: var(--color-neutral-800);
     --footer-background-color: var(--color-neutral-800);
     --outline-color: #fff;
+
+    --editor-string-color: var(--color-warning-300);
+    --editor-comment-color: var(--color-success-500);
+    --editor-keyword-color: var(--color-primary-500);
+    --editor-name-color: var(--color-primary-300);
+    --editor-bracket-match-outline-color: var(--color-neutral-600);
+    --editor-bracket-match-background-color: var(--color-neutral-700);
+    --editor-bracket-match-color: var(--color-neutral-25);
 }

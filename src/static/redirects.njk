@@ -31,15 +31,11 @@ eleventyExcludeFromCollections: true
 /docs/latest/*                      https://latest--docs-eslint.netlify.app/:splat 200!
 /docs/                             /docs/latest/ 301!
 
-# Playground
-/play/*                             https://play-eslint.netlify.app/:splat 200!
-
 {% else %}
 
 # Translated Sites Back to English Site
 /blog/*                             https://eslint.org/blog/:splat 302!
 /docs/*                             https://eslint.org/docs/:splat 302!
 /demo/*                             https://eslint.org/play/:splat 302!
-/play/*                             https://eslint.org/play/:splat 302!
 
 {% endif %}
