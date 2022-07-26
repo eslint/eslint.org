@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 107904,
-        "monthlyDonations": 8992,
+        "annualDonations": 105528,
+        "monthlyDonations": 8794,
         "sponsorCount": 185
     },
     "platinum": [
@@ -130,14 +130,6 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "QuickBooks Tool hub",
-            "image": "https://avatars.githubusercontent.com/u/95090305?u=e5bc398ef775c9ed19f955c675cdc1fb6abf01df&v=4",
-            "url": "https://quickbookstoolhub.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -400,7 +392,7 @@
         },
         {
             "name": "C. Lewis",
-            "image": "https://avatars.githubusercontent.com/u/1657236?u=218e0182803a5f82505affabf416135f1587b457&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1657236?u=722c5cc23f99ed9ac792f01bcb6b3c4f0b6f68c0&v=4",
             "url": "https://github.com/ctjlewis",
             "monthlyDonation": 10,
             "source": "github",
@@ -596,15 +588,6 @@
             "name": "Toan Nguyen",
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 65,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "alinnert",
-            "url": "https://linnertmedia.de",
-            "image": "https://images.opencollective.com/alinnert/9126453/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 70,
             "source": "opencollective",
@@ -907,6 +890,14 @@
             "name": "Martti Laine",
             "image": "https://avatars.githubusercontent.com/u/211543?v=4",
             "url": "https://github.com/codeclown",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "David Dias",
+            "image": "https://avatars.githubusercontent.com/u/237229?u=984c72b4407a6654caf09bb1506d70a678860de7&v=4",
+            "url": "https://linktr.ee/thedaviddias",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1494,6 +1485,15 @@
             "image": "https://images.opencollective.com/sudharaka-palamakumbura/03b6087/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 28,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
+            "name": "alinnert",
+            "url": "https://linnertmedia.de",
+            "image": "https://images.opencollective.com/alinnert/9126453/avatar.png",
+            "monthlyDonation": 2,
+            "totalDonations": 70,
             "source": "opencollective",
             "tier": null
         },
