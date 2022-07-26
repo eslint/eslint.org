@@ -385,7 +385,7 @@ donate_page:
   description: >
     ESLint relies on donations for ongoing maintenance and development.
     There are currently BACKER_COUNT companies, organizations, and individuals
-    who are donating MONTHLY_DONATIONS each month to help us out.
+    donating MONTHLY_DONATIONS each month to help us out.
   hero:
     cta:
       text: See our Sponsors
