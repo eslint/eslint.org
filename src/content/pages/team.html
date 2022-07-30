@@ -119,6 +119,75 @@ hook: "team_page"
     </div>
 </section>
 
+<section class="section">
+    <div class="content-container grid">
+        <div class="span-1-4">
+            <h2 class="section-title">{{ site.team_page.website_team.title }}</h2>
+            <p class="section-supporting-text">
+                {{ site.team_page.website_team.description }}
+            </p>
+        </div>
+        <ul role="list" class="span-6-12 people-list">
+            {% for item in team.website %}
+            {% set itemPhoto = item.avatar_url %}
+            {% set itemName = item.name %}
+            {% set itemHandle = item.username %}
+
+
+            {% set itemBio = item.bio | safe %}
+            {% set itemTwitter = item.twitter_username %}
+            {% set itemGitHub = item.github_username %}
+
+            <li>
+                {{ member({
+                photo: itemPhoto,
+                name: itemName,
+                handle: itemHandle,
+                handleURL: itemHandleURL,
+                bio: itemBio,
+                twitter: itemTwitter,
+                github: itemGitHub
+                }) }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <div class="content-container grid">
+        <div class="span-1-4">
+            <h2 class="section-title">{{ site.team_page.support_team.title }}</h2>
+            <p class="section-supporting-text">
+                {{ site.team_page.support_team.description }}
+            </p>
+        </div>
+        <ul role="list" class="span-6-12 people-list">
+            {% for item in team.support %}
+            {% set itemPhoto = item.avatar_url %}
+            {% set itemName = item.name %}
+            {% set itemHandle = item.username %}
+
+
+            {% set itemBio = item.bio | safe %}
+            {% set itemTwitter = item.twitter_username %}
+            {% set itemGitHub = item.github_username %}
+
+            <li>
+                {{ member({
+                photo: itemPhoto,
+                name: itemName,
+                handle: itemHandle,
+                handleURL: itemHandleURL,
+                bio: itemBio,
+                twitter: itemTwitter,
+                github: itemGitHub
+                }) }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
 
 <section class="section">
     <div class="content-container grid">
