@@ -38,10 +38,10 @@ carbon_ads:
 shared:
   get_started: 开始
   become_a_sponsor: 捐赠
-  eslint_logo_alt: ESLint logo
+  eslint_logo_alt: ESLint 图标
   description: >
-    插件化、可配置的 JavaScript 代码检测工具，让您轻松地维护代码质量。
-  title_format: PAGE_TITLE - ESLint - 插件化的 JavaScript 代码检测工具
+    插件化、可配置的 JavaScript 代码检查工具，让你轻松地提高代码质量。
+  title_format: PAGE_TITLE - ESLint - 插件化的 JavaScript 代码检查工具
   skip_to_content: 跳转到正文
 
 #------------------------------------------------------------------------------
@@ -67,9 +67,9 @@ navigation:
 #------------------------------------------------------------------------------
 
 footer:
-  title: 准备修复您的 JavaScript 代码?
-  description: 从 npm 安装或者开始捐赠。
-  secondary: Secondary
+  title: 准备修复你的 JavaScript 代码了吗？
+  description: 从 npm 安装或捐赠开始。
+  secondary: 次要
   social_icons:
     title: 社交媒体
     twitter: Twitter
@@ -113,7 +113,7 @@ footer:
 404_page:
   title: 404 错误
   subtitle: 页面未找到
-  description: 对不起，您正在寻找的页面不存在或已被移动。
+  description: 对不起，你正在寻找的页面不存在或已被移动。
   actions:
     back_to_home: 回到主页
     browse_docs: 浏览文档
@@ -124,35 +124,35 @@ footer:
 
 branding_page:
   title: 品牌
-  description: 如何使用我们的 logo
+  description: 如何使用我们的图标
   sections:
     name:
       title: 名称
       description: >
-        ESLint 在使用时必须大写 E、S、L，因为 ES 代表 ECMAScript，L 是单词 Lint 的首字母。
+        在提及 ESLint 时必须大写 E、S、L，因为 ES 代表 ECMAScript，L 则是单词 Lint 的首字母。
     logo:
-      title: Logo
+      title: 图标
       description:
         - >
-          ESLint logo 可以放置在各种背景上，只要有足够的垂直和水平填充。
+          只要有足够的空白，ESLint 图标可以放置在各种背景上。
         - >
-          将由间隙创建的内六边形的大小加倍，以了解 logo 和文字符号之间以及 logo 周围应该有多少空间。
+          将由间隙创建的内六边形的大小加倍，以了解图标和文字符号之间以及图标周围应该有多少空间。
         - >
           我们的商标有多种用途-你可以在各种品牌的颜色使用它，利用非白色背景的不透明度来模拟较浅的颜色。
-          也可以单独使用 logo ，而不使用 ESLint 文字符号，但如果可能的话，最好同时使用。
+          也可以单独使用图标 ，而不使用 ESLint 文字符号，但如果可能的话，最好同时使用。
       download_svg: 下载 SVG
       download_png: 下载 PNG
-      change_background: "更改背景："
+      change_background: “更改背景：”
     color_palette:
       title: 调色板
       description:
         - >
-          ESLint的调色可以用与拷贝和 logo 一样来表达我们的品牌。
+          ESLint 的色彩可以用与拷贝和图标一样来表达我们的品牌。
           它们不仅影响我们的设计外观，而且还能引发情感并反映 ESLint 品牌的个性。
         - >
-          主“品牌”颜色用于所有交互元素，例如按钮，链接，输入等。它源自我们的 logo。
+          源自我们的图标的主“品牌色”用于所有交互元素，例如按钮，链接，输入等。
           我们使用现有的两种颜色来创建一个独特的主色范围。
-      brand_palette: 品牌调色
+      brand_palette: 品牌色
       colors:
         primary: 主要
         white: 白色
@@ -166,10 +166,10 @@ branding_page:
 #------------------------------------------------------------------------------
 
 homepage:
-  title: 检测和修复 JavaScript 代码中的问题。
+  title: 检测并修复 JavaScript 代码中的问题。
   description: >
-    ESLint 静态分析您的代码以快速发现问题。ESLint 内置在大多数文本编辑器中，
-    您也可以运行 ESLint 作为持续集成管道的一部分。
+    ESLint 静态分析你的代码以快速发现问题。ESLint 内置在大多数文本编辑器中，
+    你也可以运行 ESLint 作为持续集成管道的一部分。
   
   animation:
     enabled: false
@@ -180,67 +180,67 @@ homepage:
   install:
     title: 快速安装 ESLint
     copy: 复制安装指令到剪贴板
-    copied: 已复制到剪贴板.
+    copied: 已复制到剪贴板。
   
   versions:
     title: ESLint 版本
     latest: 最新版本
     upcoming: 即将到来的版本
     development: 开发中
-    dateline: <span class="text-dark">VERSION</span> on DATE
+    dateline: 发布于 DATE 的 <span class="text-dark">VERSION</span>
 
   explainer:
     image:
       src: eslint-features-img.png
-      alt: "使用 ESLint 的 Visual Studio Code 窗口截图：编辑器中的 ESLint 错误标注为下划线。"
+      alt: “使用 ESLint 的 Visual Studio Code 窗口截图：编辑器中的 ESLint 错误标注为下划线”。
     title: 插件式 JavaScript/JSX 代码检查工具
     description: >
-      ESLint 是一个开源项目，可以帮助你发现和修复 JavaScript 代码中的问题。
-      不论您的 JavaScript 是在浏览器还是在服务器，是否使用框架，ESLint 都可以帮助您的代码变得更好。
+      ESLint 是一个开源项目，可以帮助你发现并修复 JavaScript 代码中的问题。
+      不论你的 JavaScript 是在浏览器还是在服务器，是否使用框架，ESLint 都可以帮助你的代码变得更好。
     features:
     - title: 发现问题
       description: >
-        ESLint 静态分析您的代码以快速发现问题。ESLint 内置在大多数文本编辑器中，
-        您也可以运行 ESLint 作为持续集成管道的一部分。
+        ESLint 静态分析你的代码以快速发现问题。ESLint 内置在大多数文本编辑器中，
+        你也可以运行 ESLint 作为持续集成管道的一部分。
       learn_more:
         link: getStarted 
         text: >
-          了解更多 <span class="visually-hidden">ESLint 发现问题</span>
+          了解更多关于<span class="visually-hidden">使用 ESLint 发现问题</span>的信息
     - title: 自动修复问题
       description: >
-        ESLint 发现的许多问题都可以自动修复。ESLint 自动修复是语法敏感的，所以您不会遇到由传统的查找和替换算法引入的错误。
+        ESLint 发现的许多问题都可以自动修复。ESLint 自动修复是语法敏感的，所以你不会遇到由传统的查找和替换算法引入的错误。
       learn_more:
         link: fixProblems 
         text: >
-          了解更多 <span class="visually-hidden">使用 ESLint 修复问题</span>
+          了解更多关于<span class="visually-hidden">使用 ESLint 修复问题</span>的信息
     - title: 完全可配置
       description: >
-        预处理代码，使用自定义解析器，并编写自己的规则，配合 ESLint 内置规则。自定义 ESLint 来精确地满足您的项目所需。
+        预处理代码，使用自定义解析器，并编写自己的规则，配合 ESLint 内置规则。自定义 ESLint 来精确地满足你的项目所需。
       learn_more:
         link: configuring
         text: >
-          了解更多 <span class="visually-hidden">ESLint 配置</span>
+          了解更多关于<span class="visually-hidden">对 ESLint 进行配置</span>的信息
   blog:
-    view_all_posts: 查看所有博客
+    view_all_posts: 查看所有文章
 
   stats:
     title: 欢迎来到社区
     description: >
-      ESLint 是 npm 下载量排名第一的 JavaScript linter（超过 DOWNLOAD_COUNT 次下载/周），
+      ESLint 是 npm 下载量排名第一的 JavaScript 检查工具（超过 DOWNLOAD_COUNT 次下载/周），
       被微软、Airbnb、Netflix、Facebook 等公司使用。
     dependents: 依赖
     weekly_downloads: 每周下载
     stars: Stars
   
   sponsors:
-    title: 由杰出人士赞助
+    title: 来自杰出人士的赞助
     description: >
-      我们每年收到来自 SPONSOR_COUNT 个赞助商 ANNUAL_DONATIONS 的捐赠。
+      我们每年收到来自 SPONSOR_COUNT 个赞助者 ANNUAL_DONATIONS 的捐赠。
     view_all_sponsors: 查看所有赞助者
 
   donations:
-    title: 最近一次性赞助
-    view_all_donations: 查看所有赞助
+    title: 最近一次性捐赠
+    view_all_donations: 查看所有捐赠
 
 #------------------------------------------------------------------------------
 # Blog Page
@@ -248,10 +248,10 @@ homepage:
 
 blog_page:
   title: 新闻和更新
-  description: 最新的 ESLint 新闻，案例研究，教程和资源。
+  description: 最新的 ESLint 新闻、案例研究、教程和资源。
   search:
     title: 搜索
-    hint: 在您输入时搜索结果将显示和更新。
+    hint: 在你输入时搜索结果将显示和更新。
     clear: 清除搜索
   categories:
     title: 分类
@@ -263,7 +263,7 @@ blog_page:
     previous_page: 上一页
     last_page: 末页
     status: 第 PAGE_NUMBER / TOTAL_PAGE_COUNT 页
-  from_the_blog: 从博客
+  from_the_blog: 来自博客
 
 #------------------------------------------------------------------------------
 # Team Page
@@ -284,7 +284,7 @@ team_page:
   committers:
     title: 提交人
     description: >
-      审查和修复 bug 并帮助分类问题的人。
+      审查和修复漏洞并帮助分类问题的人。
   alumni:
     title: 前成员
     description: >
@@ -306,27 +306,27 @@ sponsors_page:
     platinum:
       title: 白金赞助商
       description: >
-        每月捐赠 2000 美元，即可成为白金赞助商（支持 40 小时的维护和开发）。
-        您将得到 2 小时的专门支持（可以通过聊天或者屏幕共享提供远程支持）。
-        您的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
-        我们也会通过我们的 Twitter 账户（超过 2 万名粉丝）向您表示感谢。
+        每月捐赠 2000 美元，即可成为白金赞助商（支持四十个小时的维护和开发）。
+        你将得到 2 小时的专门支持（可以通过聊天或者屏幕共享提供远程支持）。
+        你的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
+        我们也会通过我们的 Twitter 账户（两万多名关注者）向你表示感谢。
         请联系 ESLint 团队安排支持事宜。
     gold:
       title: 金牌赞助商
       description: >
-        每月捐赠 1000 美元，即可成为金牌赞助商（支持 20 小时的维护和开发）。
-        您的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
-        我们也会通过我们的 Twitter 账户（超过 2 万名粉丝）向您表示感谢。
+        每月捐赠 1000 美元，即可成为金牌赞助商（支持二十个小时的维护和开发）。
+        你的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
+        我们也会通过我们的 Twitter 账户（两万多名关注者）向你表示感谢。
     silver:
       title: 银牌赞助商
       description: >
-        每月捐赠 500 美元，即可成为银牌赞助商（支持 10 小时的维护和开发）。
-        您的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
+        每月捐赠 500 美元，即可成为银牌赞助商（支持十个小时的维护和开发）。
+        你的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
     bronze:
       title: 青铜赞助商
       description: >
-        每月捐赠 200 美元，即可成为青铜赞助商（支持 4 小时的维护和开发）。
-        您的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
+        每月捐赠 200 美元，即可成为青铜赞助商（支持四小时的维护和开发）。
+        你的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
     technology:
       title: 技术赞助商
       description: >
@@ -342,8 +342,8 @@ sponsors_page:
       我们也收到了许多来自杰出人士的一次性捐赠。
       以下是来自 OpenCollective 和 GitHub 的一些最新捐赠。
     
-  sponsor_title: SPONSOR_NAME 正在赞助 AMOUNT /月。
-  tech_sponsor_title: TECH 由 SPONSOR_NAME 支持。
+  sponsor_title: SPONSOR_NAME 每月赞助了 AMOUNT
+  tech_sponsor_title: TECH 由 SPONSOR_NAME 支持
 
 #------------------------------------------------------------------------------
 # Donate Page
@@ -353,7 +353,7 @@ donate_page:
   title: 捐赠
   description: >
     ESLint 依靠捐赠来进行持续的维护和开发。
-    目前有 BACKER_COUNT 个公司、组织和个人捐赠 MONTHLY_DONATIONS/月来帮助我们。
+    目前每月有 BACKER_COUNT 个公司、组织和个人捐赠了 MONTHLY_DONATIONS 来帮助我们。
   hero:
     cta:
       text: 查看我们的赞助商
@@ -363,28 +363,28 @@ donate_page:
     subtitle: 我们通过以下方式接受捐赠。
     open_collective:
       title: Open Collective
-      subtitle: 我们最受欢迎的公司计划.
+      subtitle: 我们最受欢迎的公司计划。
       cta:
         text: 通过 Open Collective 捐赠
       items:
         - text: 直接向 501(c)(6) 非盈利机构捐款
         - text: 一次性和经常性捐赠
         - text: 通过信用卡、银行转账或 PayPal 支付
-        - text: 建立一个开源基金，捐赠给多个项目
+        - text: 建立开源基金并捐赠多个项目
         - text: 在多数国家可用
     github_sponsors:
-      title: GitHub 捐赠
+      title: GitHub Sponsors
       subtitle: 高级特性和报告。
       cta:
         text: 通过 GitHub 捐赠
       items:
         - text: 通过 GitHub 账单捐赠
         - text: 一次性和经常性捐赠
-        - text: 通过信用卡支付或使用与 GitHub 现有的计费关系(包括发票)
-        - text: 在你的 GitHub 档案中显示一个“赞助商”徽章
+        - text: 通过信用卡支付或使用与 GitHub 现有的计费关系（包括发票）
+        - text: 在你的 GitHub 档案中显示一个 “Sponsors” 徽章
         - text: 使用已有的 GitHub 登录
   budget:
-    title: 这些钱是如何使用的
+    title: 钱用到了哪
     subtitle: >
       ESLint 项目使用捐赠的资金使项目和 ESLint 社区受益。一般来说，我们每个月都在这些方面花钱。
     items:
@@ -393,25 +393,25 @@ donate_page:
           我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅人为 HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。
       - name: 贡献者
         text: >
-          我们每个月留出 CONTRIBUTOR_POOL_BUDGET 美元来支付对项目做出重大贡献的外部贡献者。
+          我们每月留出 CONTRIBUTOR_POOL_BUDGET 美元来支付对项目做出重大贡献的外部贡献者。
           贡献包括提交代码、编写文档、在我们的 Discord 服务器上回答问题等等。这笔钱由 TSC 每月分配。
       - name: 依赖
         text: >
-          我们每个月留出 DEPENDENCIES_BUDGET 美元来帮助支持我们的依赖。
+          我们每月留出 DEPENDENCIES_BUDGET 美元来帮助支持我们的依赖。
           我们相信，有幸获得资金支持的开源项目有责任帮助支持他们所依赖的小型项目。
       - name: 社区项目
         text: >
-          我们每个月留出 COMMUNITY_BUDGET 美元来帮助支持插件、解析器和其他对 ESLint 生态系统整体有利的项目。
+          我们每月留出 COMMUNITY_BUDGET 美元来帮助支持插件、解析器和其他对 ESLint 生态系统整体有利的项目。
           我们相信该项目在整个生态中的的价值，我们希望确保重要项目得到良好维护。
       - name: 支持系统
         text: >
-          我们每个月用一小笔钱购买团队用来帮助管理项目的软件，包括谷歌工作区和云存储等。
+          我们每月用一小笔钱购买团队用来帮助管理项目的软件，包括 Google Workspace 和云存储等。
     footer:
       text: >
         此外，我们还会时不时地用这些资金来支付承包商，让他们去做那些对项目很重要，但团队没有时间或专业知识独自完成工作的工作。
         例如，我们最近聘请了一个设计师和开发人员来重新设计了网站。我们确保每个月的支出少于收入，这样我们就可以为此类项目储蓄。
   donation_tiers:
-    title: 捐助等级
+    title: 捐赠等级
     subtitle: 虽然我们接受任何大小的捐赠，但我们确实有一个等级系统，每个等级都有不同的奖励。
     cta:
       open_collective_text: >
@@ -422,19 +422,19 @@ donate_page:
       - name: 白金赞助商
         amount: $2000+
         frequency: 每月
-        text: 2 小时支持, logo 位于主页和 readme 最高位，一切都是最高级。
+        text: 两小时支持，图标位于主页和 readme 最高级，一切都是最高级。
       - name: 黄金赞助商
         amount: $1000–1999
         frequency: 每月
-        text: logo 位于主页和 readme 次高级，一篇感谢推文和博客。
+        text: 图标位于主页和 readme 第二级，来自我们的推特账号的感谢推文（两万关注者）和博客感谢文章中。
       - name: 白银赞助商
         amount: $500–999
         frequency: 每月
-        text: logo 位于主页和 readme 第三级。
-      - name: Bronze Sponsor
+        text: 图标位于主页和 readme 第三级。
+      - name: 青铜赞助商
         amount: $200–499
         frequency: 每月
-        text: logo 位于主页和 readme 第四级。
+        text: 图标位于主页和 readme 第四级。
   testimonials:
     title: 推荐书
     items:
@@ -478,33 +478,33 @@ donate_page:
     title: 常见问题
     description: 你需要知道的关于产品和账单的一切。找不到你想要的答案？请与我们友好的团队联系。
     items:
-    - q: 谁接受捐赠的钱?
+    - q: 捐赠由谁接受？
       a: 所有的捐赠，无论是通过 <a href='https://opencollective.com'>Open Collective</a> 或 GitHub 捐赠的，
-        都是由 501(c)(6) 非盈利组织 Open Source Collective 接收的。Open Source Collective 充当 ESLint 的财务主体，
+        都由 501(c)(6) 非盈利组织 Open Source Collective 接收的。Open Source Collective 充当 ESLint 的财务主体，
         并跟踪所有捐赠。
-    - q: 我会收到我的捐款记录吗?
-      a: 是的。如果您通过 Open Collective 进行捐赠，您将通过电子邮件收到 PDF 收据;
-        如果您通过 GitHub 捐赠，捐赠将出现在您的收据或发票。
-    - q: 我的捐赠税可否扣除?
+    - q: 我会收到我的捐款记录吗？
+      a: 是的。如果你通过 Open Collective 进行捐赠，你将通过电子邮件收到 PDF 收据;
+        如果你通过 GitHub 捐赠，捐赠将出现在你的收据或发票。
+    - q: 我的捐赠税可否扣除？
       a: 不。尽管 Open Source Collective 是个 501(c)(6) 非盈利组织，但美国国税局并不认为开源软件的
         开发是一项慈善活动，因此不授予免税地位。
-    - q: 谁来决定钱如何分配?
-      a: TSC 负责所有关于谁获得资金以及分配多少资金的决定。
-    - q: 我能看到钱是怎么用的吗?
-      a: 是的。通过访问我们的 Open Collective 页面，您可以查看每笔已提交或支付的费用。
+    - q: 谁来决定钱如何分配？
+      a: TSC 负责决定谁获可以得资金以及获得多少资金。
+    - q: 我能看到钱是怎么用的吗？
+      a: 是的。通过访问我们的 Open Collective 页面，你可以查看每笔已提交或支付的费用。
         所有的交易都是开放和公开的。
-    - q: 我可以在任何时候取消我的重复捐赠吗?
-      a: 是的。没有长期承诺。您可以在任何时候通过登录到 Open Collective 或 GitHub 赞助商取消您的捐赠。
-    - q: 我的 logo 需要多长时间才能出现在主页，GitHub 和 npm 包上?
+    - q: 我可以在任何时候取消重复性捐赠吗？
+      a: 是的。没有长期承诺。你可以在任何时候通过登录到 Open Collective 或 GitHub Sponsors 取消你的捐赠。
+    - q: 我的图标需要多长时间才能出现在主页，GitHub 和 npm 包上？
       a: 主页和 GitHub 上的徽标每天都会自动更新，所以它应该不会超过 24 小时出现。npm 包上的标识只有在我们发布新版本时才会更新，
-        通常是每两周更新一次。然而，主要版本发布通常需要几个月的时间才能完成，在这段时间内 npm 包上的 logo 不会更新。
-    - q: 我的 logo 和 URL 来自哪里?
-      a: 我们从你的 Open Collective 或 GitHub 档案中提取 logo 和 URL，这取决于您过去捐赠的网站。
+        通常是每两周更新一次。然而，主要版本发布通常需要几个月的时间才能完成，在这段时间内 npm 包上的图标不会更新。
+    - q: 我的图标和链接来自哪里？
+      a: 我们从你的 Open Collective 或 GitHub 档案中提取图标和链接，这取决于你进行捐赠的网站。
         你可以在任何时候从 Open Collective 或 GitHub 更新这些，这些变化将在 24 小时内反映在主页和 GitHub README。
-        我们无法手动覆盖网站上的 logo 或 url。
-    - q: 可以一次性捐款吗?
+        我们无法手动覆盖网站上的图标或链接。
+    - q: 可以一次性捐款吗？
       a: 是的。一次性捐赠最简单的方式是通过 Open Collective，它允许任何金额。
-        GitHub 的一次性捐赠可能对您捐赠的数额有所限制。
+        GitHub 的一次性捐赠可能对你捐赠的数额有所限制。
 
 #------------------------------------------------------------------------------
 # Languages Page
@@ -512,4 +512,4 @@ donate_page:
 
 languages_page:
   title: 语言
-  choose_language: 选择您的语言
+  choose_language: 选择你的语言
