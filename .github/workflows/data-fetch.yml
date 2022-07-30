@@ -12,9 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repo
+      if: github.event_name == 'schedule'
       uses: actions/checkout@v3
       with:
         token: ${{ secrets.WORKFLOW_PUSH_BOT_TOKEN }}
+
+    - name: Check out repo on PR branch
+      if: github.event_name == 'pull_request'
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.WORKFLOW_PUSH_BOT_TOKEN }}
+        ref: ${{ github.event.pull_request.head.ref }}
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
