@@ -43,13 +43,13 @@ jobs:
         git config user.email "<eslint@googlegroups.com>"
     
     - name: Save updated files
-      if: github.event_name == "schedule"
+      if: github.event_name == 'schedule'
       run: |
         chmod +x ./tools/commit-data.sh
         ./tools/commit-data.sh
 
-    - name: Commit updated docs
-      if: github.event_name == "pull_request"
+    - name: Commit updated data
+      if: github.event_name == 'pull_request'
       uses: EndBug/add-and-commit@v9.0.0
       with:
         message: "chore: fetch latest data"
