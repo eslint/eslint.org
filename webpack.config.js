@@ -11,6 +11,13 @@ module.exports = {
         filename: "[name].js",
         path: path.resolve(__dirname, "_site/assets/js")
     },
+    cache: {
+        type: "filesystem",
+        buildDependencies: {
+            config: [__filename]
+        },
+        cacheDirectory: path.resolve(__dirname, "node_modules/.cache/webpack")
+    },
     resolve: {
         extensions: [".js", ".jsx"],
         mainFields: ["browser", "main", "module"]
