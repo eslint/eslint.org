@@ -152,13 +152,13 @@
 }
 
 .share-url {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 1rem;
     background-color: var(--lightest-background-color);
     border-radius: var(--border-radius);
     border: 1px solid var(--border-color);
-    padding-right: calc(.625rem + 1vw);
+    padding-right: calc(.625rem + 20px);
 
     max-width: 100%;
     color: var(--headings-color);
@@ -174,8 +174,9 @@
 
     input {
         all: unset;
+        flex-grow: 1;
         color: inherit;
-        padding: .625rem calc(.625rem + 1vw) .625rem .875rem;
+        padding: .625rem .625rem .625rem .875rem;
         white-space: nowrap;
         overflow-x: auto;
         overflow: hidden;
