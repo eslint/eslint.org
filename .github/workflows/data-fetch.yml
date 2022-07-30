@@ -3,6 +3,9 @@ name: Data Fetch
 on:
   schedule:
   - cron: "0 7 * * *" # Every day at midnight PDT
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
