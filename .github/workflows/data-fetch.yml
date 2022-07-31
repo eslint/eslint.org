@@ -4,8 +4,8 @@ on:
   schedule:
   - cron: "0 7 * * *" # Every day at midnight PDT
   pull_request:
-    branches:
-      - main
+    types:
+      - labeled
 
 jobs:
   build:
@@ -57,7 +57,7 @@ jobs:
         ./tools/commit-data.sh
 
     - name: Commit updated data
-      if: github.event_name == 'pull_request'
+      if: github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'fetch data')
       uses: EndBug/add-and-commit@v9.0.0
       with:
         message: "chore: fetch latest data"
