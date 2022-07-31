@@ -56,3 +56,35 @@ While color can be subjective, it's clear that good colors can attact and conver
 Due to the functional nature of ESLint, we chose to keep it simple with a primary, neutral and small set of secondary palettes. The new primary colour palette is derived from the original logo — we use the two existing colours to create a unique primary tonal range.
 
 ![](/src/assets/images/blog/2022/eslint-colors.png)
+
+## The Website
+
+Next up was the redesign of the [ESLint website](https://eslint.org/). Besides maximising the visual appeal of the site, we had a few goals we wanted to achieve for each page. For example, on the homepage:
+
+1. We wanted to include the latest and upcoming versions of ESLint in the hero section. This was a key part of the design, as it would be the first time we had a dedicated section for ESLint updates.
+2. We wanted to promote sponsorship. ESLint relies on donations for ongoing maintenance and development, and we wanted to make sure that we could help accelerate the growth of the project.
+3. We wanted to show ESLint in action — how it can be used in the real world, and how it can be used to make your code more readable.
+4. We wanted to showcase some of the incredible stats that ESLint has amassed — as of right now, that's 9M dependants, 25.7M weekly downloads and 21K stars on GitHub.
+
+![](/src/assets/images/blog/2022/eslint-website-home.png)
+
+I also wanted to introduce some animation and life into the ESLint homepage hero while giving our audience a sense of what it's like to work with ESLint.
+
+The red underline in VS Code is synonymous with ESLint, as is the way VS Code implements ESLint action items. Using these visual indicators, I created a small but fun interaction that gives our visitors the simplified experience.
+
+I was particularly happy with how this idea turned out! 💡
+
+By incorporating elements of the wider brand including IDE integration, code snippets and supporter logos, we brought the brand to life. Plus, no dev site would be complete without a testimonial from Addy Osmani.
+
+Needed something that could scale well with a lean engineering-focused team powered by community contributions.
+
+## The Docs
+
+Next up was the mack daddy, redesigning the ESLint documentation. The docs are a central part of ESLint’s ecosystem and are the place where users can find information about the project, as well as the codebase.
+
+We wanted to give it a bit of a revamp, creating a consistent IA across all the pages, plus making pages easier to scan and navigate. We also added in a version dropdown to view previous versions of docs.
+
+![](/src/assets/images/blog/2022/eslint-docs.png)
+
+I also published the little Carbon Ads component as a [Figma Community file](https://www.figma.com/community/file/1019502569915291740)!
+
