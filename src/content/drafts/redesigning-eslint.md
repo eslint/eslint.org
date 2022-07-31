@@ -47,3 +47,12 @@ Space Grotesk works hand-in-hand with it’s origin sister font, Space Mono. It 
 
 ![](/src/assets/images/blog/2022/spacemono-satellites.gif)
 
+### The Colours
+
+ESLint’s colour palette speaks to the brand in ways that are every bit as powerful as the copy and logo. It not only affect how the brand design looks, but can go as far as to elicit emotion and reflect the personality of the ESLint brand. Colors also play an important role in how our designs "look & feel", and are the first impression.
+
+While color can be subjective, it's clear that good colors can attact and convert users. Bad colors, on the other hand, can turn away users and even make designs inaccessible and unusable.
+
+Due to the functional nature of ESLint, we chose to keep it simple with a primary, neutral and small set of secondary palettes. The new primary colour palette is derived from the original logo — we use the two existing colours to create a unique primary tonal range.
+
+![](/src/assets/images/blog/2022/eslint-colors.png)
