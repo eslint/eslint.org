@@ -1152,7 +1152,7 @@
         },
         {
             "name": "Raúl Negrón",
-            "image": "https://avatars.githubusercontent.com/u/4153103?u=8bf99eab522d218b7e2a21125343f22e72dedde5&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4153103?u=8dc630e3eb3ed6979afd4c69187a0b7c8e651842&v=4",
             "url": "https://raulnegron.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1520,7 +1520,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 11,
+            "totalDonations": 12,
             "source": "opencollective",
             "tier": null
         },
