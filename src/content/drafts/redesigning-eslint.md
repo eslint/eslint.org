@@ -31,7 +31,7 @@ The logomark is at the core of ESLint's brand identity and one of the most ident
 
 While we kept the icon (given its widespread usage in websites, IDEs, platforms and projects), we wanted to make it that little bit more refined, modern and flexible. By bringing it together our new primary typeface, Space Grotesk (more on this below), we created a new ESLint logomark. Due to its simplicity, it works in a variety of colours and spaces.
 
-![ESLint Logo Mockup](/src/assets/images/blog/2022/logo-mockup.png)
+![ESLint Logo Mockup](/assets/images/blog/2022/logo-mockup.png)
 
 ### The Typeface
 
@@ -41,11 +41,11 @@ From a technical point of view, we wanted fonts that are widely accessible and c
 
 We decided to go with [Space Grotesk](https://fonts.floriankarsten.com/space-grotesk) — a fantastic, characteristic font that balances that flair with the technical geometric elements that reflect their more developer-centric side. It creates character with its idiosyncratic details that share principles with the logomark and brings life and energy to the brand by showcasing its more technical details.
 
-![An example of the Space Grotesk font](/src/assets/images/blog/2022/space-grotesk.png)
+![An example of the Space Grotesk font](/assets/images/blog/2022/space-grotesk.png)
 
 Space Grotesk works hand-in-hand with it’s origin sister font, Space Mono. It was developed for editorial use in headline and display typography, the letterforms infuse a geometric foundation and grotesque details with qualities often found in headline typefaces of the 1960s, many of which have since been co-opted by science fiction films, television, and literature.
 
-![An example of the Space Mono font](/src/assets/images/blog/2022/spacemono-satellites.gif)
+![An example of the Space Mono font](/assets/images/blog/2022/spacemono-satellites.gif)
 
 ### The Colours
 
@@ -55,7 +55,7 @@ While color can be subjective, it's clear that good colors can attract and conve
 
 Due to the functional nature of ESLint, we chose to keep it simple with a primary, neutral and small set of secondary palettes. The new primary colour palette is derived from the original logo — we use the two existing colours to create a unique primary tonal range.
 
-![A snapshot of ESLint's color palette](/src/assets/images/blog/2022/eslint-colors.png)
+![A snapshot of ESLint's color palette](/assets/images/blog/2022/eslint-colors.png)
 
 ## The Website
 
@@ -66,7 +66,7 @@ Next up was the redesign of the [ESLint website](https://eslint.org/). Besides m
 3. We wanted to show ESLint in action — how it can be used in the real world, and how it can be used to make your code more readable.
 4. We wanted to showcase some of the incredible stats that ESLint has amassed — as of right now, that's 9M dependants, 25.7M weekly downloads and 21K stars on GitHub.
 
-![A mockup of the new ESLint homepage design](/src/assets/images/blog/2022/eslint-website-home.png)
+![A mockup of the new ESLint homepage design](/assets/images/blog/2022/eslint-website-home.png)
 
 I also wanted to introduce some animation and life into the ESLint homepage hero while giving our audience a sense of what it's like to work with ESLint.
 
@@ -84,7 +84,7 @@ Next up was the mack daddy, redesigning the ESLint documentation. The docs are a
 
 We wanted to give it a bit of a revamp, creating a consistent IA across all the pages, plus making pages easier to scan and navigate. We also added in a version dropdown to view previous versions of docs.
 
-![A mockup of the new ESLint Docs design](/src/assets/images/blog/2022/eslint-docs.png)
+![A mockup of the new ESLint Docs design](/assets/images/blog/2022/eslint-docs.png)
 
 I also published the little Carbon Ads component as a [Figma Community file](https://www.figma.com/community/file/1019502569915291740)!
 
@@ -93,7 +93,7 @@ I also published the little Carbon Ads component as a [Figma Community file](htt
 
 The last part of the ESLint brand and redesign project was a new microsite called Playground! It's a fantastic little tool that allows you to create an ESLint configuration file with easy-to-use settings and test your code against it. Then, once you're happy with it, you can download your config as an `.eslintrc` file.
 
-![A mockup of the new ESLint Playground app](/src/assets/images/blog/2022/eslint-playground.png)
+![A mockup of the new ESLint Playground app](/assets/images/blog/2022/eslint-playground.png)
 
 ## What's next?
 
