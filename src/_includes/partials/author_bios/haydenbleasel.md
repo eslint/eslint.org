@@ -1,0 +1,1 @@
+Part designer, part developer. I lead the Product and Design teams at Corellium.
