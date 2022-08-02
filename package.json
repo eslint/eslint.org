@@ -28,7 +28,25 @@
         "start": "npm-run-all build:sass --parallel watch:*",
         "build": "npm-run-all install:playground build:sass build:eleventy build:webpack images",
         "lint": "eslint --ext=.js,.jsx .",
-        "fix": "npm run lint -- --fix"
+        "fix": "npm run lint -- --fix",
+        "lint:scss": "stylelint '**/*.scss'",
+        "lint:scss:fix": "stylelint '**/*.scss' --fix",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "**/*.{js,jsx}": [
+            "eslint --fix",
+            "git add"
+        ],
+        "**/*.scss": [
+            "stylelint --fix",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
     },
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
@@ -57,9 +75,11 @@
         "eslint-plugin-react": "^7.29.4",
         "eslint-plugin-react-hooks": "^4.5.0",
         "gray-matter": "^4.0.3",
+        "husky": "^8.0.1",
         "imagemin": "^8.0.1",
         "imagemin-cli": "^7.0.0",
         "js-yaml": "^3.14.1",
+        "lint-staged": "^13.0.3",
         "markdown-it": "^12.2.0",
         "markdown-it-anchor": "^8.1.2",
         "node-polyfill-webpack-plugin": "^1.1.4",
@@ -70,6 +90,8 @@
         "semver": "^7.3.5",
         "slugify": "^1.6.3",
         "style-loader": "^3.3.1",
+        "stylelint": "^14.9.1",
+        "stylelint-config-standard-scss": "^5.0.0",
         "undici": "^4.13.0",
         "webpack": "^5.70.0",
         "webpack-cli": "^4.9.2"
