@@ -66,7 +66,7 @@ Next up was the redesign of the [ESLint website](https://eslint.org/). Besides m
 1. We wanted to include the latest and upcoming versions of ESLint in the hero section. This was a key part of the design, as it would be the first time we had a dedicated section for ESLint updates.
 2. We wanted to promote sponsorship. ESLint relies on donations for ongoing maintenance and development, and we wanted to make sure that we could help accelerate the growth of the project.
 3. We wanted to show ESLint in action — how it can be used in the real world, and how it can be used to make your code more readable.
-4. We wanted to showcase some of the incredible stats that ESLint has amassed — as of right now, that's 9M dependants, 25.7M weekly downloads and 21K stars on GitHub.
+4. We wanted to showcase some of the incredible stats that ESLint has amassed — as of right now, that's 9M dependents, 25.7M weekly downloads and 21K stars on GitHub.
 
 ![A mockup of the new ESLint homepage design](/assets/images/blog/2022/eslint-website-home.png)
 
