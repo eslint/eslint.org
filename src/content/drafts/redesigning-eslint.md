@@ -37,7 +37,7 @@ While we kept the icon (given its widespread usage in websites, IDEs, platforms 
 
 As a content-driven organization, typography is at the heart of the new ESLint brand. The website, docs, and blog all require typography to be readable and enjoyable. The brand leverages a purposeful set of typographic styles designed to make the content as accessible as possible for everyone.
 
-From a technical point of view, we wanted fonts that are widely accessible and conveniently located, so we’ll have access to it everywhere (particularly on other Google products) and it fits with our free and open-source “vibe”.
+From a technical point of view, we wanted fonts that were widely accessible and conveniently located, so could access it everywhere (particularly on other Google products such as Docs and Slides) and it fits with the free and open-source theme.
 
 We decided to go with [Space Grotesk](https://fonts.floriankarsten.com/space-grotesk) — a fantastic, characteristic font that balances that flair with the technical geometric elements that reflect their more developer-centric side. It creates character with its idiosyncratic details that share principles with the logomark and brings life and energy to the brand by showcasing its more technical details.
 
