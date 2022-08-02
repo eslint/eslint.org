@@ -72,7 +72,7 @@ Next up was the redesign of the [ESLint website](https://eslint.org/). Besides m
 
 I also wanted to introduce some animation and life into the ESLint homepage hero while giving our audience a sense of what it's like to work with ESLint.
 
-The red underline in VS Code is synonymous with ESLint, as is the way VS Code implements ESLint action items. Using these visual indicators, I created a small but fun interaction that gives our visitors the simplified experience.
+The red underline in VS Code is synonymous with ESLint, as it is the way VS Code implements ESLint action items. Using these visual indicators, I created a small but fun interaction that gives our visitors a simplified experience.
 
 I was particularly happy with how this idea turned out! 💡
 
