@@ -55,7 +55,7 @@ ESLint’s color palette speaks to the brand in ways that are every bit as power
 
 While color can be subjective, it's clear that good colors can attract and convert users. Bad colors, on the other hand, can turn away users and even make designs inaccessible and unusable.
 
-Due to the functional nature of ESLint, we chose to keep it simple with a primary, neutral and small set of secondary palettes. The new primary colour palette is derived from the original logo — we use the two existing colours to create a unique primary tonal range.
+Due to the functional nature of ESLint, we chose to keep it simple with a primary, neutral and small set of secondary palettes. The new primary color palette is derived from the original logo — we use the two existing colors to create a unique primary tonal range.
 
 ![A snapshot of ESLint's color palette](/assets/images/blog/2022/eslint-colors.png)
 
