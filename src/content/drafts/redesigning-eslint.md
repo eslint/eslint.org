@@ -91,7 +91,7 @@ I also published the little Carbon Ads component as a [Figma Community file](htt
 
 ## The Playground
 
-The last part of the ESLint brand and redesign project was a new microsite called Playground! It's a fantastic little tool that allows you to create an ESLint configuration file with easy-to-use settings and test your code against it. Then, once you're happy with it, you can download your config as an `.eslintrc` file.
+The last part of the ESLint brand and redesign project was a new microsite called Playground! It's a fantastic little tool that allows you to create an ESLint configuration file with easy-to-use settings and test your code against it. Then, once you're happy with it, you can download your config file to use locally. 
 
 ![A mockup of the new ESLint Playground app](/assets/images/blog/2022/eslint-playground.png)
 
