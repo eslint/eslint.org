@@ -35,7 +35,7 @@ While we kept the icon (given its widespread usage in websites, IDEs, platforms 
 
 ### The Typeface
 
-Typography is at the heart of the new ESLint brand - they're a very content-driven organisation. The website, docs, blog all need require great typography to be readable and enjoyable. The brand leverages a purposeful set of typographic styles, designed to make our content as accessible as possible for everyone.
+As a content-driven organization, typography is at the heart of the new ESLint brand. The website, docs, and blog all require typography to be readable and enjoyable. The brand leverages a purposeful set of typographic styles designed to make the content as accessible as possible for everyone.
 
 From a technical point of view, we wanted fonts that are widely accessible and conveniently located, so we’ll have access to it everywhere (particularly on other Google products) and it fits with our free and open-source “vibe”.
 
