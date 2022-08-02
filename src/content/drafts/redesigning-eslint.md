@@ -51,7 +51,7 @@ Space Grotesk works hand-in-hand with its origin sister font, Space Mono. It was
 
 ### The Colors
 
-ESLint’s colour palette speaks to the brand in ways that are every bit as powerful as the copy and logo. It not only affect how the brand design looks, but can go as far as to elicit emotion and reflect the personality of the ESLint brand. Colors also play an important role in how our designs "look & feel", and are the first impression.
+ESLint’s color palette speaks to the brand in ways that are every bit as powerful as the copy and logo. It not only affects how the brand design looks, but can go as far as to elicit emotion and reflect the personality of the ESLint brand. Colors are the first impression a design makes, and as such, play an important role in a design’s look and feel. 
 
 While color can be subjective, it's clear that good colors can attract and convert users. Bad colors, on the other hand, can turn away users and even make designs inaccessible and unusable.
 
