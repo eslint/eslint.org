@@ -29,6 +29,8 @@ The ESLint Brand is an interesting one - without too much official visual design
 
 The logomark is at the core of ESLint's brand identity and one of the most identifiable pieces. It’s a connection to their ecosystem - you can find it everywhere, from IDE marketplaces to corporate sponsorship pages across the web. It carries with it the expectation of a community of developers who are passionate about the code they write.
 
+![ESLint Logo Animation](/assets/images/blog/2022/eslint-logo-animation.gif)
+
 While we kept the icon (given its widespread usage in websites, IDEs, platforms and projects), we wanted to make it that little bit more refined, modern and flexible. By bringing it together our new primary typeface, Space Grotesk (more on this below), we created a new ESLint logomark. Due to its simplicity, it works in a variety of colours and spaces.
 
 ![ESLint Logo Mockup](/assets/images/blog/2022/logo-mockup.png)
@@ -82,7 +84,7 @@ Needed something that could scale well with a lean engineering-focused team powe
 
 Next up was the mack daddy, redesigning the ESLint documentation. The docs are a central part of ESLint’s ecosystem and are the place where users can find information about the project, as well as the codebase.
 
-We wanted to give it a bit of a revamp, creating a consistent information architecture (IA) across all pages, plus making pages easier to scan and navigate. We also added in a version dropdown to view previous versions of docs.
+We wanted to give it a bit of a revamp, creating a consistent information architecture (IA) across all pages, as well as make the pages easier to scan and navigate. We also added in a version dropdown to view previous versions of docs.
 
 ![A mockup of the new ESLint Docs design](/assets/images/blog/2022/eslint-docs.png)
 
