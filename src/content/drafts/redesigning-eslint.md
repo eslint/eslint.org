@@ -43,7 +43,7 @@ We decided to go with [Space Grotesk](https://fonts.floriankarsten.com/space-gro
 
 ![An example of the Space Grotesk font](/assets/images/blog/2022/space-grotesk.png)
 
-Space Grotesk works hand-in-hand with it’s origin sister font, Space Mono. It was developed for editorial use in headline and display typography, the letterforms infuse a geometric foundation and grotesque details with qualities often found in headline typefaces of the 1960s, many of which have since been co-opted by science fiction films, television, and literature.
+Space Grotesk works hand-in-hand with its origin sister font, Space Mono. It was developed for editorial use in headline and display typography; the letterforms infuse a geometric foundation and grotesque details with qualities often found in headline typefaces of the 1960s, many of which have since been co-opted by science fiction films, television, and literature.
 
 ![An example of the Space Mono font](/assets/images/blog/2022/spacemono-satellites.gif)
 
