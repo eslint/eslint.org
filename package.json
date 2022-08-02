@@ -44,7 +44,7 @@
             "git add"
         ],
         "**/*.svg": [
-            "npx svgo"
+            "npx svgo -r"
         ]
     },
     "husky": {
