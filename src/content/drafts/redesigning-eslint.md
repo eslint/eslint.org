@@ -39,7 +39,7 @@ As a content-driven organization, typography is at the heart of the new ESLint b
 
 From a technical point of view, we wanted fonts that were widely accessible and conveniently located, so could access it everywhere (particularly on other Google products such as Docs and Slides) and it fits with the free and open-source theme.
 
-We decided to go with [Space Grotesk](https://fonts.floriankarsten.com/space-grotesk) — a fantastic, characteristic font that balances that flair with the technical geometric elements that reflect their more developer-centric side. It creates character with its idiosyncratic details that share principles with the logomark and brings life and energy to the brand by showcasing its more technical details.
+We decided to go with [Space Grotesk](https://fonts.floriankarsten.com/space-grotesk) — a fantastic, characteristic font that balances that flair with the technical geometric elements reflecting a more developer-centric side. It creates character with its idiosyncratic details that share principles with the logomark and brings life and energy to the brand by showcasing its more technical details.
 
 ![An example of the Space Grotesk font](/assets/images/blog/2022/space-grotesk.png)
 
