@@ -31,7 +31,8 @@
         "fix": "npm run lint -- --fix",
         "lint:scss": "stylelint '**/*.scss'",
         "lint:scss:fix": "stylelint '**/*.scss' --fix",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "svgo": "svgo -r -f ./"
     },
     "lint-staged": {
         "**/*.{js,jsx}": [
@@ -41,6 +42,9 @@
         "**/*.scss": [
             "stylelint --fix",
             "git add"
+        ],
+        "**/*.svg": [
+            "svgo"
         ]
     },
     "husky": {
