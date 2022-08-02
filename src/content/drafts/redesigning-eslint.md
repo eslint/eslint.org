@@ -78,8 +78,6 @@ I was particularly happy with how this idea turned out! 💡
 
 By incorporating elements of the wider brand including IDE integration, code snippets and supporter logos, we brought the brand to life. Plus, no dev site would be complete without a testimonial from Addy Osmani.
 
-Needed something that could scale well with a lean engineering-focused team powered by community contributions.
-
 ## The Docs
 
 Next up was the mack daddy, redesigning the ESLint documentation. The docs are a central part of ESLint’s ecosystem and are the place where users can find information about the project, as well as the codebase.
