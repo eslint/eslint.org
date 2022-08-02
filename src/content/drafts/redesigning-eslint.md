@@ -103,4 +103,4 @@ I want to thank the ESLint team, especially Nicholas, for the opportunity to wor
 
 If you have any questions, comments, or feedback on the ESLint brand, please reach out to me on Twitter at [@haydenbleasel](https://twitter.com/haydenbleasel).
 
-Happy linting, folks ✌️
+Happy linting, folks! ✌️
