@@ -1,25 +1,30 @@
-import React, { useRef, cloneElement, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 export default function RuleList({ children }) {
-    const lastRuleItemRef = useRef();
+    const ruleListRef = useRef();
 
     useEffect(() => {
-        lastRuleItemRef.current.focus();
+
+        function onMutation([{ addedNodes }]) {
+
+            if (addedNodes?.length) {
+                const li = addedNodes[0];
+
+                li.scrollIntoView({ behavior: "smooth", block: "end" });
+                li.children[1].focus();
+            }
+        }
+
+        const observer = new MutationObserver(onMutation);
+
+        observer.observe(ruleListRef.current, { childList: true });
+        return () => {
+            observer.disconnect();
+        };
     }, []);
 
-    function renderList() {
-        return React.Children.map(children, (child, index) => {
-            if (index === React.Children.count(children) - 1) {
 
-                // Pass ref to the last item in the list
-                return cloneElement(child, { ref: lastRuleItemRef });
-            }
-            return child;
-        });
-    }
-
-
-    return <ul className="config__added-rules" aria-labelledby="added-rules-label">
-        {renderList()}
+    return <ul ref={ruleListRef} className="config__added-rules" aria-labelledby="added-rules-label">
+        {children}
     </ul>;
 }

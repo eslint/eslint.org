@@ -1,11 +1,11 @@
-import React, { forwardRef } from "react";
+import React from "react";
 
-const RuleItem = forwardRef(({ children }, ref) =>
+const RuleItem = ({ children }) =>
     (
         <li className="config__added-rules__item">
-            {children(ref)}
+            {children}
         </li>
-    ));
+    );
 
 RuleItem.displayName = "RuleItem";
 export default RuleItem;
