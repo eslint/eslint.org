@@ -7,5 +7,4 @@ const RuleItem = ({ children }) =>
         </li>
     );
 
-RuleItem.displayName = "RuleItem";
 export default RuleItem;
