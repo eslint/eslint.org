@@ -36,7 +36,7 @@ So assuming `./other-config.json` had some configuration data, you could import 
 
 First, `extends` actually preceded the idea of shareable configs that could be distributed via npm. It was during the implementation of `extends` that we realized shareable configs were possible. The files specified in `extends` were loaded via the Node.js `require()` function, so anything Node.js could load through that function could also work as a config to extend from.
 
-Second, `extends` allowed us to implement `eslint:recommended`, the set of rules that we felt were important for everyone to enable. Originally ESLint has several rules enabled by default, but that became a burden for users. So we switched to having all rules off by default, which also was confusing for new users who didn't see any rules. Adding `eslint:recommended` allowed us to make it explicit that you were including a bunch of rules we recommended but you could remove them if you didn't want to.
+Second, `extends` allowed us to implement `eslint:recommended`, the set of rules that we felt were important for everyone to enable. Originally ESLint had several rules enabled by default, but that became a burden for users. So we switched to having all rules off by default, which also was confusing for new users who didn't see any rules. Adding `eslint:recommended` allowed us to make it explicit that you were including a bunch of rules we recommended but you could remove them if you didn't want to.
 
 In hindsight, if we had thought things through a little more, we would have removed the configuration cascade at this point. Introducing `extends` enabled a lot of the same use cases as the cascade, and keeping both turned out to be a mess that we would spend years trying to fix.
 
