@@ -42,7 +42,7 @@ In hindsight, if we had thought things through a little more, we would have remo
 
 ### Personal configs
 
-The next layer of complexity was added when people requested that we add the abilty to have a personal config file at `~/.eslintrc`. So we added an additional check: if we didn't find a config file in the ancestry of the file location, then we would automatically look for a personal config file.
+The next layer of complexity was added when people requested that we add the ability to have a personal config file at `~/.eslintrc`. So we added an additional check: if we didn't find a config file in the ancestry of the file location, then we would automatically look for a personal config file.
 
 ### Multiple config file formats
 
