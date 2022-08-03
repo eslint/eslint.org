@@ -93,7 +93,7 @@ I also published the little Carbon Ads component as a [Figma Community file](htt
 
 The last part of the project was a new microsite called Playground! It's a fantastic little tool that allows you to create an ESLint configuration file with easy-to-use settings and test your code against it. Then, once you're happy with it, you can download your config file to use locally. Its also a fantastic way of allowing new users to try ESLint directly in the browser.
 
-We started designing Playground with a few key requirements in mind — specifically we wanted to make it easy to use, and to make it easy to create and share reproducible bugs with ESLint. Users should also be able to switch between different versions of ESLint, see potential fixes to given problems and install plugins.
+We started designing Playground with a few key requirements in mind — specifically we wanted to make it easy to use, and to make it easy to create and share reproducible bugs with ESLint. Users should also be able to switch between different versions of ESLint, see potential fixes to given problems and install plugins. Ultimately the team couldn’t implement all of these features, but we designed for them all the same. 
 
 There were a few tricky design challenges to overcome here — particularly around the density of information. Exposing all rules in the UI would make things visually difficult to parse, so we needed a way of adding rules to the UI without having to scroll down to the bottom of the page, then customising the value of each rule easily.
 
