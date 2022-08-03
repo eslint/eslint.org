@@ -1,16 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React, { forwardRef } from "react";
 
-export default function RuleItem({ children }) {
-    const ref = useRef();
-
-    useEffect(() => {
-        ref.current.scrollIntoView({ behavior: "smooth", block: "end" });
-        ref.current.children[1].focus();
-    }, []);
-
-    return (
-        <li ref={ref} className="config__added-rules__item">
-            {children}
+const RuleItem = forwardRef(({ children }, ref) =>
+    (
+        <li className="config__added-rules__item">
+            {children(ref)}
         </li>
-    );
-}
+    ));
+
+RuleItem.displayName = "RuleItem";
+export default RuleItem;
