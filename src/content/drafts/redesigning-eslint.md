@@ -82,7 +82,7 @@ By incorporating elements of the wider brand including IDE integration, code sni
 
 Next up was the mack daddy, redesigning the ESLint documentation. The docs are a central part of ESLint’s ecosystem and are the place where users find information about the project as well as the codebase.
 
-We wanted to give it a bit of a revamp, creating a consistent information architecture (IA) across all pages, as well as make the pages easier to scan and navigate. We also added in a version dropdown to view previous versions of docs.
+We wanted to give it a bit of a revamp, creating a consistent information architecture (IA) across all pages, as well as making the pages easier to scan and navigate. We also added a version dropdown to view previous versions of the docs.
 
 ![A mockup of the new ESLint Docs design](/assets/images/blog/2022/eslint-docs.png)
 
