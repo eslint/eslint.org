@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ESLint's new config system, Part 1: Background"
-teaser: "ESLint's config system started out fairly simple back in 2013. Since that time is has grown more complex and it's time for a change."
+teaser: "ESLint's config system started out fairly simple back in 2013. Since that time it has grown more complex and it's time for a change."
 tags:
   - Configuration
   - Command Line
