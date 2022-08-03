@@ -60,7 +60,7 @@ When npm v3 stopped installing peer dependencies by default, all of the shared c
 
 We added the `--resolve-plugins-relative-to` command line option to try and help with this problem, but it wasn't enough. The most popular requests for help in our [Discord #help channel](https://eslint.org/chat/help) have to do with improper resolution of plugins from config files.
 
-npm eventually changed back to installing peer dependencies by default in v7, but by that point the damage on the ESLint ecosystem has been done.
+npm eventually changed back to installing peer dependencies by default in v7, but by that point the damage on the ESLint ecosystem had been done.
 
 ### The `root` key
 
