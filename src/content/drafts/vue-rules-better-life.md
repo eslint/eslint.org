@@ -34,7 +34,7 @@ I like to keep the rule this way:
 }
 ```
 
-The PascalCase convention for component names helps distinguish more clearly a component from an actual HTML element. Additionaly, depending on the theme, your editor or IDE will highlight a component in PascalCase with a different color with respect to an actual HTML element. In my experience, I find this small tweak especially useful when managing big components.
+The PascalCase convention for component names helps distinguish more clearly a component from an actual HTML element. Additionally, depending on the theme, your editor or IDE will highlight a component in PascalCase with a different color with respect to an actual HTML element. In my experience, I find this small tweak especially useful when managing big components.
 
 ### `vue/match-component-file-name`
 
