@@ -32,7 +32,7 @@ The first significant change to eslintrc was with the introduction of the `exten
 }
 ```
 
-So assuming `./other-config.json` had some configuration data, you could import that and then add your own `rules` settings on top of it. This turned out to a great step forward for ESLint for a number of reasons.
+So assuming `./other-config.json` had some configuration data, you could import that and then add your own `rules` settings on top of it. This turned out to be a great step forward for ESLint for a number of reasons.
 
 First, `extends` actually preceded the idea of shareable configs that could be distributed via npm. It was during the implementation of `extends` that we realized shareable configs were possible. The files specified in `extends` were loaded via the Node.js `require()` function, so anything Node.js could load through that function could also work as a config to extend from.
 
