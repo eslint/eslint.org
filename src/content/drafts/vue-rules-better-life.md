@@ -22,7 +22,7 @@ The [esling-plugin-vue](https://eslint.vuejs.org/) plugin divides its rules in t
 - Uncategorized
 - Extensions
 
-I spent some time digging into the *uncategorized* category to see what can be useful to help avoiding distractions in commits and, of course, to enforce the same style in all parts of a Vue project. In my opinion, all Vue projects should use the Recommended category, which enforces a lot (if not all) of the topics mentioned in the [style guide](https://vuejs.org/style-guide/).
+I spent some time digging into the *uncategorized* category to see what can be useful to help avoid distractions in commits and, of course, to enforce the same style in all parts of a Vue project. In my opinion, all Vue projects should use the Recommended category, which enforces a lot (if not all) of the topics mentioned in the [style guide](https://vuejs.org/style-guide/).
 
 ### `vue/component-name-in-template-casing`
 
