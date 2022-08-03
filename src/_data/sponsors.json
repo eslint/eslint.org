@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105588,
-        "monthlyDonations": 8799,
-        "sponsorCount": 186
+        "annualDonations": 105648,
+        "monthlyDonations": 8804,
+        "sponsorCount": 187
     },
     "platinum": [
         {
@@ -273,7 +273,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-fb34b9dc/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 100,
+            "totalDonations": 110,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -639,6 +639,15 @@
             "tier": "backer"
         },
         {
+            "name": "Tripwire, Inc.",
+            "url": "https://tripwire.com",
+            "image": "https://images.opencollective.com/tripwire/7599e30/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 90,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Batch",
             "url": "https://batch.com",
             "image": "https://images.opencollective.com/batch/3ccdb8f/logo.png",
@@ -814,7 +823,7 @@
             "url": null,
             "image": "https://images.opencollective.com/novascreen/ef6acf0/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 210,
+            "totalDonations": 215,
             "source": "opencollective",
             "tier": "backer"
         },
