@@ -23,7 +23,7 @@ This was a bit of a dream project for me 😅 So, needless to say, we were total
 
 ## The Brand
 
-The ESLint Brand is an interesting one - without too much official visual design, the team have managed to create a brand that is unique and widely recognized by the developer community.
+The ESLint Brand is an interesting one - without too much official visual design, the team has managed to create a brand that is unique and widely recognized by the developer community.
 
 ### The Logo
 
