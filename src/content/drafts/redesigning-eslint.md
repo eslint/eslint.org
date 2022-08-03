@@ -103,7 +103,7 @@ There were a few tricky design challenges to overcome here — particularly arou
 
 The ESLint team are currently rolling out everything above (you're on the new website right now!).
 
-I want to thank the ESLint team, especially Nicholas, for the opportunity to work with on this project. I was also very fortunate to work with such talented and passionate people, such as [Sara](https://www.sarasoueidan.com/) and [Gavin](https://gavinbarnett.com/).
+I want to thank the ESLint team, especially Nicholas, for the opportunity to work on this project. I was also very fortunate to work with such talented and passionate people, such as [Sara](https://www.sarasoueidan.com/) and [Gavin](https://gavinbarnett.com/).
 
 If you have any questions, comments, or feedback on the ESLint brand, please reach out to me on Twitter at [@haydenbleasel](https://twitter.com/haydenbleasel).
 
