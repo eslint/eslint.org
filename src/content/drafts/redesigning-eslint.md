@@ -76,6 +76,8 @@ The red underline in VS Code is synonymous with ESLint, as it is the way VS Code
 
 I was particularly happy with how this idea turned out! 💡
 
+![The ESLint homepage animation](/assets/images/blog/2022/homepage-animation.gif)
+
 By incorporating elements of the wider brand including IDE integration, code snippets and supporter logos, we brought the brand to life. Plus, no dev site would be complete without a testimonial from Addy Osmani.
 
 ## The Docs
