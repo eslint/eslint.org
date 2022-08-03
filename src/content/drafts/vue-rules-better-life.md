@@ -64,6 +64,6 @@ When using this rule, I soften its effect to a `warn`, because I don't want it t
 }
 ```
 
-<!--No commits pollution-->
+<!--Possible more content: In order to no pollute commits you can use...-->
 <!--vue/html-comment-content-spacing-->
 <!--vue/no-empty-component-block-->
