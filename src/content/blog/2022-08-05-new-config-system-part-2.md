@@ -429,7 +429,7 @@ export default [
 
 ### Shared settings are exactly the same
 
-The top-level `settings` key behaves the exact same way as in eslintrc. You an define an object with key-value pairs that should be available to all rules. Here's an example:
+The top-level `settings` key behaves the exact same way as in eslintrc. You can define an object with key-value pairs that should be available to all rules. Here's an example:
 
 ```js
 export default [
