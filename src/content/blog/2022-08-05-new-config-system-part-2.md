@@ -324,7 +324,7 @@ Here, the plugin is named `jsd` in the config, so the rules also use `jsd` to in
 
 ### From `--rulesdir` to runtime plugins
 
-With eslintrc, rules needed to be loaded by the CLI directly in order to be available inside of a config file. This mean either bundling custom rules in a plugin or using the `--rulesdir` flag to specify the directory from which ESLint should load custom rules. Both approaches required some extra work to set up and were a frequent cause of frustration for our users.
+With eslintrc, rules needed to be loaded by the CLI directly in order to be available inside of a config file. This means either bundling custom rules in a plugin or using the `--rulesdir` flag to specify the directory from which ESLint should load custom rules. Both approaches required some extra work to set up and were a frequent cause of frustration for our users.
 
 With flat config, you can load custom rules directly in the config file. Because plugins are now objects directly in the config, you can easily create runtime plugins that exist only in your config file, such as:
 
