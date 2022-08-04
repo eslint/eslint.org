@@ -507,6 +507,6 @@ Using the `FlatCompat` class allows you to continue using all of your existing e
 
 ## Conclusion
 
-The team spent a long time designing flat config so that it would both feel familiar to existing users and to provide new functionality that would benefit everyone. We kept things like rules, settings, and processors the same while extending things like plugins, language options, and linter options to be more uniform. We think that flat config has found a good balance between these two poles and that you will enjoy using ESLint more once the new config system is generally available. In the meantime, the compatibility utility will allow you to continue using existing shared configs.
+The team spent a long time designing flat config so that it would both feel familiar to existing users and provide new functionality that would benefit everyone. We kept things like rules, settings, and processors the same while extending things like plugins, language options, and linter options to be more uniform. We think that flat config has found a good balance between these two poles and that you will enjoy using ESLint more once the new config system is generally available. In the meantime, the compatibility utility will allow you to continue using existing shared configs.
 
 In the next part of this blog series, you'll learn how to start using flat config today.
