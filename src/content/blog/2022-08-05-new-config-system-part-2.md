@@ -400,9 +400,6 @@ export default [
             markdown
         },
         processor: "markdown/markdown"
-        settings: {
-            sharedData: "Hello"
-        }
     }
 ];
 ```
