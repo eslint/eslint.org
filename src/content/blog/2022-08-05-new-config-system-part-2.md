@@ -68,7 +68,7 @@ An `eslint.config.js` file returns an array of config objects. Read on to unders
 
 ## Glob-based configs everywhere
 
-While the `overrides` key in eslintrc was the source of a lot of complexity, one thing was very clear: people really liked being able to define configuration by glob patterns in their config file. Because we wanted to eliminate the config cascade of eslintrc, we had to use glob patterns to enable the same time of config overrides. We used the `overrides` configs as the basis for flat config.
+While the `overrides` key in eslintrc was the source of a lot of complexity, one thing was very clear: people really liked being able to define configuration by glob patterns in their config file. Because we wanted to eliminate the config cascade of eslintrc, we had to use glob patterns to enable the same type of config overrides. We used the `overrides` configs as the basis for flat config.
 
 Each config object can have optional `files` and `ignores` keys specifying [minimatch](https://npmjs.com/package/minimatch)-based glob patterns to match files. A config object only applies to a file if the filename matches a pattern in `files` (or if there is no `files` key, in which case it will match all files). The `ignores` key filters out files from the list of `files`, so you limit which files the config object applies to. For instance, maybe your test files live in the same directory as your source file and you want a config object to apply only to the source files. You could do so like this:
 
