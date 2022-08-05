@@ -11,6 +11,12 @@ module.exports = {
         filename: "[name].js",
         path: path.resolve(__dirname, "_site/assets/js")
     },
+    cache: {
+        type: "filesystem",
+        buildDependencies: {
+            config: [__filename]
+        }
+    },
     resolve: {
         extensions: [".js", ".jsx"],
         mainFields: ["browser", "main", "module"]
