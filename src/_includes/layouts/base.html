@@ -124,9 +124,6 @@
                 });
             });
         }
-        if (/windows/i.test(navigator.userAgent)) {
-            document.body.classList.add('win')
-        }
     </script>
     <script src="{{ '/assets/js/themes.js' | url }}"></script>
     {%- if (hook == "blog_page") -%}
@@ -163,6 +160,11 @@
     <script src="{{ '/assets/js/tabs.js' | url }}"></script>
     <script src="{{ '/assets/js/components-index.js' | url }}"></script>
     {%- endif -%}
+    <script>
+        if (/windows/i.test(navigator.userAgent)) {
+            document.body.classList.add('win')
+        }
+    </script>
 </body>
 
 </html>
