@@ -3,25 +3,15 @@ name: Data Fetch
 on:
   schedule:
   - cron: "0 7 * * *" # Every day at midnight PDT
-  pull_request:
-    types: [labeled]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repo
-      if: github.event_name == 'schedule'
       uses: actions/checkout@v3
       with:
         token: ${{ secrets.WORKFLOW_PUSH_BOT_TOKEN }}
-
-    - name: Check out repo on PR branch
-      if: github.event_name == 'pull_request'
-      uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.WORKFLOW_PUSH_BOT_TOKEN }}
-        ref: ${{ github.event.pull_request.head.ref }}
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
@@ -50,13 +40,6 @@ jobs:
         git config user.email "<eslint@googlegroups.com>"
     
     - name: Save updated files
-      if: github.event_name == 'schedule'
       run: |
         chmod +x ./tools/commit-data.sh
         ./tools/commit-data.sh
-
-    - name: Commit updated data
-      if: github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'fetch data')
-      uses: EndBug/add-and-commit@v9.0.0
-      with:
-        message: "chore: fetch latest data"
