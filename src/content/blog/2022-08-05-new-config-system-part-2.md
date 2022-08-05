@@ -182,7 +182,7 @@ This config has downgraded `ecmaVersion` to `6`. Doing so ensures that all of th
 
 ### Setting `sourceType` in flat config
 
-Next, we moved `sourceType` into `languageOptions`. Similar to `ecmaVersion`, this key affects not just how a file is parser, but also how ESLint evaluates its scope structure. We kept the traditional `"module"` for ESM and `"script"` for scripts, and also added `"commonjs"`, which lets ESLint know that it should treat the file as CommonJS (which also enables CommonJS-specific globals). If you are using `ecmaVersion: 3` or `ecmaVersion: 5`, be sure to set `sourceType: script`, like this:
+Next, we moved `sourceType` into `languageOptions`. Similar to `ecmaVersion`, this key affects not just how a file is parsed, but also how ESLint evaluates its scope structure. We kept the traditional `"module"` for ESM and `"script"` for scripts, and also added `"commonjs"`, which lets ESLint know that it should treat the file as CommonJS (which also enables CommonJS-specific globals). If you are using `ecmaVersion: 3` or `ecmaVersion: 5`, be sure to set `sourceType: script`, like this:
 
 ```js
 export default [
