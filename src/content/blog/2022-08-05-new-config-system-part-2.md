@@ -104,7 +104,7 @@ export default [
 ];
 ```
 
-With this config, all JavaScript files ending with `.test.js` will be ignored. You can think of this as the equivalent of `ignorePatterns` in eslintrc, albiet with minimatch patterns.
+With this config, all JavaScript files ending with `.test.js` will be ignored. You can think of this as the equivalent of `ignorePatterns` in eslintrc, albeit with minimatch patterns.
 
 ## Goodbye `extends`, hello flat cascade
 
