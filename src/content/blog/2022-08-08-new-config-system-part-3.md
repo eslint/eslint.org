@@ -11,7 +11,7 @@ categories:
   - API Changes
 ---
 
-In my [previous post](https://eslint.org/blog/2022/08/new-config-system-part-2/), I explained the fundamental concepts of using the new "flat" config system. The new config system isn't yet tied into the API while do more internal testing, but we did want to give the ESLint community a chance to experiment with flat config while we work on incorporating it into the CLI. So ESLint v8.21.0 incorporates several ways to try out flat config as we work on it. Please keep in mind that everything mentioned in this post is experimental and we would love your feedback as you try it out.
+In my [previous post](https://eslint.org/blog/2022/08/new-config-system-part-2/), I explained the fundamental concepts of using the new "flat" config system. The new config system isn't yet tied into the CLI while we do more internal testing, but we did want to give the ESLint community a chance to experiment with flat config while we work on incorporating it into the CLI. So ESLint v8.21.0 incorporates several ways to try out flat config as we work on it. Please keep in mind that everything mentioned in this post is experimental and we would love your feedback as you try it out.
 
 ## Using flat config with the `Linter` class
 
