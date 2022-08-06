@@ -285,6 +285,14 @@ team_page:
     title: 提交人
     description: >
       审查和修复漏洞并帮助分类问题的人。
+  website_team:
+    title: Website Team
+    description: >
+      Team members who focus specifically on eslint.org
+  support_team:
+    title: Support Team
+    description: >
+      Folks who help in Discord, discussions, and the mailing list.
   alumni:
     title: 前成员
     description: >

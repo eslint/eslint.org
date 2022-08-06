@@ -294,6 +294,14 @@ team_page:
     title: コミッター
     description: >
       バグをレビューして修正し、問題のトリアージを支援する人々
+  website_team:
+    title: Website Team
+    description: >
+      Team members who focus specifically on eslint.org
+  support_team:
+    title: Support Team
+    description: >
+      Folks who help in Discord, discussions, and the mailing list.
   alumni:
     title: アルムナイ
     description: >
