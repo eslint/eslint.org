@@ -358,5 +358,53 @@
             "github_username": "yeonjuan",
             "location": "South Korea"
         }
+    ],
+    "website": [
+        {
+            "username": "amareshsm",
+            "name": "Amaresh  S M ",
+            "title": "ESLint Website Team",
+            "website": "https://amaresh-s-m.firebaseapp.com/",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30730124?v=4",
+            "bio": null,
+            "twitter_username": null,
+            "github_username": "amareshsm",
+            "location": null
+        },
+        {
+            "username": "harish-sethuraman",
+            "name": "Strek",
+            "title": "ESLint Website Team",
+            "website": "https://strek.in",
+            "avatar_url": "https://avatars.githubusercontent.com/u/32865581?v=4",
+            "bio": "I try to code",
+            "twitter_username": "harishkumar_s_s",
+            "github_username": "harish-sethuraman",
+            "location": null
+        },
+        {
+            "username": "kecrily",
+            "name": "Percy Ma",
+            "title": "ESLint Website Team",
+            "website": "https://kecrily.me",
+            "avatar_url": "https://avatars.githubusercontent.com/u/45708948?v=4",
+            "bio": "让世界听到你的声音",
+            "twitter_username": "kecrily",
+            "github_username": "kecrily",
+            "location": "Zhejiang, China"
+        }
+    ],
+    "support": [
+        {
+            "username": "platinumazure",
+            "name": "Kevin Partington",
+            "title": "ESLint Support Team",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4",
+            "bio": "@eslint team alumnus. Currently stepping back a bit to try to get my life in order.",
+            "twitter_username": null,
+            "github_username": "platinumazure",
+            "location": null
+        }
     ]
 }

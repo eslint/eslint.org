@@ -280,6 +280,14 @@ team_page:
     title: Committers
     description: >
       वे लोग जो बग की समीक्षा करते हैं और उन्हें ठीक करते हैं।
+  website_team:
+    title: Website Team
+    description: >
+      Team members who focus specifically on eslint.org
+  support_team:
+    title: Support Team
+    description: >
+      Folks who help in Discord, discussions, and the mailing list.
   alumni:
     title: Alumni
     description: >
