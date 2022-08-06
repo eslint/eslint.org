@@ -219,13 +219,14 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                             delete options.rules[ruleName];
                                             setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs].filter(rule => rule !== ruleName)));
                                             onUpdate(Object.assign({}, options));
-                                        } }
+                                        }}
                                     >
                                         <svg width="25" height="25" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M28.5 16L16.5 28M16.5 16L28.5 28" stroke="var(--link-color)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M28.5 16L16.5 28M16.5 16L28.5 28" stroke="var(--link-color)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
                                         </svg>
                                     </button>
-                                </h4><input
+                                </h4>
+                                <input
                                     id={ruleName}
                                     className={rulesWithInvalidConfigs.has(ruleName) || validationError?.message.includes(`"${ruleName}"`) ? "config__added-rules__rule-input-error" : ""}
                                     style={{ width: "100%" }}
@@ -239,7 +240,8 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                         } catch {
                                             setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs, ruleName]));
                                         }
-                                    } } />
+                                    }}
+                                />
                                 {rulesWithInvalidConfigs.has(ruleName) && (
                                     <p className="config__added-rules__rule-error">Invalid rule configuration. Please use a valid JSON format.</p>
                                 )}
