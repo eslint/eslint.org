@@ -1,6 +1,6 @@
 import "regenerator-runtime/runtime";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Alert from "./components/Alert";
 import CrashAlert from "./components/CrashAlert";
 import Footer from "./components/Footer";
@@ -10,6 +10,7 @@ import { Legacy } from "@eslint/eslintrc/universal";
 import Unicode from "./utils/unicode";
 import Configuration from "./components/Configuration";
 import Split from "react-split";
+import debounce from "./utils/debounce";
 import "./scss/split-pane.scss";
 
 const linter = new Linter();
@@ -96,7 +97,7 @@ const App = () => {
         }
     };
 
-    const storeState = ({ newText, newOptions }) => {
+    const storeState = useCallback(({ newText, newOptions }) => {
         const serializedState = JSON.stringify({ text: newText || text, options: newOptions || options });
 
         if (hasLocalStorage()) {
@@ -107,7 +108,7 @@ const App = () => {
 
         url.hash = Unicode.encodeToBase64(serializedState);
         history.replaceState(null, null, url);
-    };
+    }, [options, text]);
 
     const { messages, output, fatalMessage, error: crashError, validationError } = lint();
     const isInvalidAutofix = fatalMessage && text !== output;
@@ -141,6 +142,11 @@ const App = () => {
         return () => mq.removeEventListener("change", ConfigToggler);
     }, []);
 
+    const debouncedOnUpdate = useMemo(() => debounce(value => {
+        setFix(false);
+        setText(value);
+        storeState({ newText: value });
+    }, 400), [storeState]);
 
     return (
         <div className="playground-wrapper">
@@ -186,11 +192,7 @@ const App = () => {
                             tabIndex="0"
                             codeValue={text}
                             eslintOptions={options}
-                            onUpdate={value => {
-                                setFix(false);
-                                setText(value);
-                                storeState({ newText: value });
-                            }}
+                            onUpdate={debouncedOnUpdate}
                         />
                     </main>
                     <section className="playground__console" aria-labelledby="playground__console-label">
