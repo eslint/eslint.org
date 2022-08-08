@@ -40,7 +40,7 @@ While this base case works the same regardless of which config system you're usi
 
 ## Using flat config with the `ESLint` class
 
-While implementing flat config we discovered that it would be too difficult to create option to switch between config systems like we did for `Linter`. Instead, we created a `FlatESLint` class that encapsulates all of the existing functionality in `ESLint` but uses flat config instead of eslintrc. The `FlatESLint` class is intended only as a preview of functionality; once we switch over to flat config permanently, the current `ESLint` class will be deleted and `FlatESLint` will be renamed to `ESLint`.
+While implementing flat config we discovered that it would be too difficult to create an option to switch between config systems like we did for `Linter`. Instead, we created a `FlatESLint` class that encapsulates all of the existing functionality in `ESLint` but uses flat config instead of eslintrc. The `FlatESLint` class is intended only as a preview of functionality; once we switch over to flat config permanently, the current `ESLint` class will be deleted and `FlatESLint` will be renamed to `ESLint`.
 
 For now, you can access `FlatESLint` through the `use-at-your-own-risk` entrypoint, like this:
 
