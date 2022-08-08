@@ -8,7 +8,7 @@ There are three types of buttons: primary, secondary, and "ghost". The button st
 
 To render the proper semantic element, provide the kind of behavior that is expected: `action` or `link` value. If the button performs an action, it is rendered as a `button`. If the button links somewhere, it renders as a `<a>`.
 
-The button macro will default to `link`, which will render an <code>&lt;a&gt;</code> tag that looks like a button. If you provide `action` as a value for `behavior`, it indicates that it is a button _that performs an action_ and is therefore rendered as a `<button type="button">`.
+The button macro will default to `link`, which will render an <code>&lt;a&gt;</code> tag that looks like a button. If you provide `action` as a value for `behavior`, it indicates that it is a button *that performs an action* and is therefore rendered as a `<button type="button">`.
 
 ## Usage
 
