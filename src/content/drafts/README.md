@@ -28,8 +28,8 @@ Not sure if your idea is suitable for the ESLint blog? Stop by the [#blog](https
 1. Run `node tools/add-author.js username`, where `username` is your GitHub username. This will put all of the information from your GitHub profile for use in the site.
 1. Edit your bio in `_includes/partials/author_bios/username.md` (where `username` is your GitHub username). This file can contain Markdown to embed in the blog post.
 1. Send a pull request to this repository.
-  * The title of the pull request should be `"feat: blog: My great blog post"` (use your actual post title)
-  * In the description, please include 2-4 sentences explaining the overall topic of the blog post.
+    * The title of the pull request should be `"feat: blog: My great blog post"` (use your actual post title)
+    * In the description, please include 2-4 sentences explaining the overall topic of the blog post.
 
 ## Frequently Asked Questions
 
