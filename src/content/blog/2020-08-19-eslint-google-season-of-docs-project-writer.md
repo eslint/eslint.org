@@ -14,7 +14,7 @@ categories:
 This year, ESLint was accepted into the Google Season of Docs (GSoD) program for the first time (thanks, in large part, to our [sponsors](https://opencollective.com/eslint)). The ESLint team has always placed a high value on quality documentation for the project and we came up with a [list of projects](https://github.com/eslint/eslint/issues/13130#issuecomment-614916040) that we thought could improve our documentation. We received more than 20 applications through GSoD, and after a lot of time grading and reviewing applications, we finally ended up with our technical writer!
 
 It's our pleasure to introduce Khawar Latif Khan, the 2020 ESLint GSoD technical writer. Here's a little about Khawar, straight from him:
-	
+ 
 > I am an engineer turned communications specialist from Pakistan, with a passion to create helpful and understandable content. I have a graduate degree in Technical and Professional Communication from North Carolina State University, under the Fulbright Scholarship. During and after my undergraduate degree in Electrical Engineering, I got interested in communicating complex technical knowledge to people in simple terms, an area which most Engineering programs do not pay attention to. This drove me to change my major and serve as a bridge between the creators and the audience of technical information, both interacting with the same content but with different goals.
 
 What interested Khawar in ESLint:
