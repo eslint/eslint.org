@@ -8,7 +8,6 @@ The hero sections typically includes:
 - supporting text 
 - buttons: one primary button, or a primary and a secondary button
 
-
 ## Usage 
 
 ```html 

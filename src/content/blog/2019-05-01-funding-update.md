@@ -43,7 +43,6 @@ And the following sponsors have joined the ESLint Collective at the bronze spons
 * [**TekHattan**](https://tekhattan.com) - $200
 * [**ThemseIsle**](https://themeisle.com) - $200
 
-
 ## Become a sponsor
 
 If your company also uses ESLint to find and fix problems in your JavaScript code, please ask them to join these fantastic companies in [sponsoring ESLint](https://opencollective.com/eslint). (All sponsors above $200 per month get their logos on both the ESLint README and on the homepage of eslint.org.)

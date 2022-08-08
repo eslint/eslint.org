@@ -12,7 +12,6 @@ The card component is used to create blog post listings. To use the component, c
 - reading time 
 - date
 
-
 ## Usage 
 
 ```html 
@@ -31,7 +30,6 @@ The card component is used to create blog post listings. To use the component, c
 }) } }
 ```
 
-
 ## Example: Default card
 
 {{ card({
@@ -43,7 +41,6 @@ The card component is used to create blog post listings. To use the component, c
     date: "02-03-2020",
     url: "/component-library/card"
 }) }}
-
 
 ## Example: Featured (post) card
 

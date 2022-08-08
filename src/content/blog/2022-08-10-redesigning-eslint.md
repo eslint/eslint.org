@@ -90,7 +90,6 @@ We wanted to give it a bit of a revamp, creating a consistent information archit
 
 I also published the little Carbon Ads component as a [Figma Community file](https://www.figma.com/community/file/1019502569915291740)!
 
-
 ## The Playground
 
 The last part of the project was a new microsite called Playground! It's a fantastic little tool that allows you to create an ESLint configuration file with easy-to-use settings and test your code against it. Then, once you're happy with it, you can download your config file to use locally. Its also a fantastic way of allowing new users to try ESLint directly in the browser.
