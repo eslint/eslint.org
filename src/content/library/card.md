@@ -5,12 +5,12 @@ title: Card
 {% from 'components/card.macro.html' import card %}
 
 The card component is used to create blog post listings. To use the component, call the `card()` macro and provide the parameters required:
-- title
-- teaser text
-- author name
-- category
-- reading time
-- date
+* title
+* teaser text
+* author name
+* category
+* reading time
+* date
 
 ## Usage
 

@@ -25,12 +25,12 @@ What interested Khawar in ESLint:
 
 Khawar submitted a proposal for reorganizing and rewriting our [configuration documentation](https://eslint.org/docs/user-guide/configuring), which right now contains a lot of information without a lot of structure. His proposal included a comprehensive plan for addressing the documentation, separated into these steps:
 
-- Conducting a comprehensive content audit
-- Create an Information Architecture to understand the flow of information
-- Improve the Information Architecture to reorganize the documentation
-- Identify links and references between different sections of the content
-- Rewrite/Edit parts of the documentation, if necessary to meet the reconfiguration requirements
-- Ensure the content is flexible and reusable
+* Conducting a comprehensive content audit
+* Create an Information Architecture to understand the flow of information
+* Improve the Information Architecture to reorganize the documentation
+* Identify links and references between different sections of the content
+* Rewrite/Edit parts of the documentation, if necessary to meet the reconfiguration requirements
+* Ensure the content is flexible and reusable
 
 This proposal contained pages of information related to how each step will progress and how long each step is anticipated to take. This level of detail made us feel comfortable that Khawar understood the project's goals and the amount of work involved.
 

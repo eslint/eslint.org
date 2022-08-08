@@ -21,8 +21,8 @@ The rule checks for comparisons (`==`, `!==`, etc) where the outcome cannot vary
 
 For example:
 
-- `+x == null` will always be false, because `+` will coerce `x` into a number, and a number is never nullish.
-- `{ ...foo } || DEFAULT` will never return `DEFAULT` because objects are always truthy.
+* `+x == null` will always be false, because `+` will coerce `x` into a number, and a number is never nullish.
+* `{ ...foo } || DEFAULT` will never return `DEFAULT` because objects are always truthy.
 
 Both of these are examples of expressions that _look_ like they can affect the way the program evaluates, but in reality, do not.
 
@@ -98,9 +98,9 @@ _From [Mozilla](https://phabricator.services.mozilla.com/rMOZILLACENTRAL925b8d1a
 
 The above five categories of errors are not exhaustive. When I originally ran the first version of this rule on our (very) large monorepo at Meta, it found over 500 issues. While many fell into the categories outlined above, there was also a long-tail of other interesting bugs. Some highlights include:
 
-- Thinking `||` allows for set operations: `states.includes('VALID' || 'IN_PROGRESS')`
-- Thinking primitive functions pass through nulls: `Number(x) == null`
-- Not knowing primitive [constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number) return boxed primitives: `new Number(x) === 10`
+* Thinking `||` allows for set operations: `states.includes('VALID' || 'IN_PROGRESS')`
+* Thinking primitive functions pass through nulls: `Number(x) == null`
+* Not knowing primitive [constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number) return boxed primitives: `new Number(x) === 10`
 
 I never would have set out to lint for these specific issues individually, but by simply trying to identify anything “useless” we were able to find and correct them.
 
