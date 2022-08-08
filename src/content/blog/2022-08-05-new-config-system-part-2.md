@@ -64,7 +64,7 @@ export default [
 ];
 ```
 
-An `eslint.config.js` file returns an array of config objects. Read on to understand more about this example.
+An `eslint.config.js` file exports an array of config objects. Read on to understand more about this example.
 
 ## Glob-based configs everywhere
 
@@ -445,7 +445,7 @@ ESLint has two predefined configs:
 * `eslint:recommended` - enables the rules that ESLint recommends everyone use to avoid potential errors
 * `eslint:all` - enables all of the rules shipped with ESLint
 
-To include these predefined configs, you can insert the string values into the returned array and then make any modifications to other properties in subsequent configuration objects:
+To include these predefined configs, you can insert the string values into the exported array and then make any modifications to other properties in subsequent configuration objects:
 
 ```js
 export default [
