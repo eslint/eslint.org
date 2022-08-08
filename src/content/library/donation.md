@@ -4,6 +4,7 @@ title: Donation
 {%- from 'components/donation.macro.html' import donationItem %}
 
 A donation is rendered using the `donationItem()` macro imported from `components/donation.macro.html`. The macro takes parameters:
+
 * image (of entity that donated)
 * name (of entity that donated)
 * donation amount
