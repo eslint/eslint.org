@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 105648,
-        "monthlyDonations": 8804,
+        "annualDonations": 107988,
+        "monthlyDonations": 8999,
         "sponsorCount": 187
     },
     "platinum": [
@@ -130,6 +130,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "QuickBooks Tool hub",
+            "image": "https://avatars.githubusercontent.com/u/95090305?u=e5bc398ef775c9ed19f955c675cdc1fb6abf01df&v=4",
+            "url": "https://quickbookstoolhub.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1132,14 +1140,6 @@
             "name": "Daniel Lindegren",
             "image": "https://avatars.githubusercontent.com/u/2631623?u=6e15a32c8bc8370d6fbdbbebda3563161e0eb20d&v=4",
             "url": "https://dlindegren.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Roberto Arosemena Elizondo",
-            "image": "https://avatars.githubusercontent.com/u/3158040?u=dff0b6074392afaef0d7041f79b218cae8053da8&v=4",
-            "url": "https://github.com/arosemena",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
