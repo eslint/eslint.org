@@ -1,6 +1,6 @@
 # Write for the ESLint blog
 
-Have you had an interesting experience with ESLint? Want to share it with the rest of the world? Writing a blog post for the ESLint blog helps get the word out and also contributes valuable information to the ESLint community as a whole. 
+Have you had an interesting experience with ESLint? Want to share it with the rest of the world? Writing a blog post for the ESLint blog helps get the word out and also contributes valuable information to the ESLint community as a whole.
 
 ## How it works
 
@@ -43,7 +43,7 @@ When you run `npm start`, a local website will start up. Your post will be the t
 
 **How will I get paid?**
 
-You will be paid through [Open Collective](https://opencollective.com/eslint). Open Collective uses PayPal and Wise to initiate payments. We cannot make payments in any other way. You will receive instructions once your post is merged. 
+You will be paid through [Open Collective](https://opencollective.com/eslint). Open Collective uses PayPal and Wise to initiate payments. We cannot make payments in any other way. You will receive instructions once your post is merged.
 
 **Can I still submit a post even if I can't be paid?**
 

@@ -10,9 +10,9 @@ To render the proper semantic element, provide the kind of behavior that is expe
 
 The button macro will default to `link`, which will render an <code>&lt;a&gt;</code> tag that looks like a button. If you provide `action` as a value for `behavior`, it indicates that it is a button _that performs an action_ and is therefore rendered as a `<button type="button">`.
 
-## Usage 
+## Usage
 
-```html 
+```html
 
 <!-- import the macro in the page(s) you want to render the button(s) in -->
 {% from 'components/button.macro.html' import button %}
@@ -25,7 +25,7 @@ The button macro will default to `link`, which will render an <code>&lt;a&gt;</c
 { { button({ type: "primary", text: "Go somewhere", url: "/url/to/somewhere/" }) } }
 ```
 
-## Examples 
+## Examples
 
 {{ button({ behavior: "action", type: "primary" }) }}
 {{ button({ behavior: "action", text: "I perform an action", type: "secondary" }) }}
