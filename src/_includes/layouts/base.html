@@ -125,7 +125,9 @@
             });
         }
     </script>
+    {% if page.url != '/play/' %} 
     <script src="{{ '/assets/js/themes.js' | url }}"></script>
+    {%- endif -%}
     {%- if (hook == "blog_page") -%}
     <script type="module" src="{{ '/assets/js/search.js' | url }}"></script>
     {%- endif -%}
