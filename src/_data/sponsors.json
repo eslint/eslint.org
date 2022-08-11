@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 107988,
-        "monthlyDonations": 8999,
-        "sponsorCount": 187
+        "annualDonations": 107928,
+        "monthlyDonations": 8994,
+        "sponsorCount": 186
     },
     "platinum": [
         {
@@ -597,7 +597,7 @@
             "url": "https://stefan-milenkovic.com",
             "image": "https://images.opencollective.com/stefan-milenkovic/1fd866a/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 50,
+            "totalDonations": 55,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1068,14 +1068,6 @@
             "name": "Charles Severance",
             "image": "https://avatars.githubusercontent.com/u/1197222?u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
             "url": "http://www.dr-chuck.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Andrés Rojas",
-            "image": "https://avatars.githubusercontent.com/u/1273138?u=62051fd5167c6aa096b79682d1bac1c1a2911a9a&v=4",
-            "url": "https://github.com/andresroberto",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
