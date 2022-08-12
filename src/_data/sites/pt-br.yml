@@ -12,7 +12,8 @@
 language:
   code: pt-br
   flag: 🇧🇷
-  name: Portuguese (BR)
+  name: Português (BR)
+  title: Portuguese (BR)
 locale: pt-BR
 hostname: pt-br.eslint.org
 
