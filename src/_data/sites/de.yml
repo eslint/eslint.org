@@ -14,7 +14,7 @@ language:
   flag: 🇩🇪
   name: German (DE)
 locale: de-DE
-hostname: eslint.org
+hostname: de.eslint.org
 
 #------------------------------------------------------------------------------
 # Analytics
