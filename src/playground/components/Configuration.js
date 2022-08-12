@@ -87,7 +87,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         value: ruleName,
         label: rulesMeta[ruleName].deprecated ? ruleName.concat(" (deprecated)") : ruleName
     }));
-    const [selectedRule, setSelectedRule] = useState();
+    const [selectedRules, setSelectedRules] = useState([]);
     const ruleInputRef = useRef(null);
     const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(new Set([]));
 
@@ -177,8 +177,9 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
             <div className="playground__config-options__section playground__config-options__section--rules">
                 <h2 data-config-section-title>Rules</h2>
                 <div data-config-section>
-                    <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
+                    <label htmlFor="rules" className="combo-label"><span className="label__text">Choose rules</span></label>
                     <Select
+                        isMulti
                         isClearable
                         isSearchable
                         styles={customStyles}
@@ -186,9 +187,9 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                         ref={ruleInputRef}
                         onChange={selected => {
                             if (!selected) {
-                                setSelectedRule(null);
+                                setSelectedRules([]);
                             } else {
-                                setSelectedRule(selected.value);
+                                setSelectedRules(selected.map(values => values.value));
                             }
                         }}
                         options={ruleNamesOptions}
@@ -196,14 +197,17 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     <button
                         className="c-btn c-btn--ghost add-rule-btn"
                         onClick={() => {
-                            if (ruleNames.includes(selectedRule)) {
-                                options.rules[selectedRule] = ["error"];
-                                onUpdate(Object.assign({}, options));
-                                ruleInputRef.current.setValue("");
-                            }
+                            selectedRules.forEach(selectedRule => {
+                                if (ruleNames.includes(selectedRule)) {
+                                    options.rules[selectedRule] = ["error"];
+                                    onUpdate(Object.assign({}, options));
+                                    ruleInputRef.current.setValue("");
+                                }
+                            });
+
                         }}
                     >
-                        Add this rule
+                        {selectedRules.length > 1 ? "Add these Rules" : "Add this Rule"}
                     </button>
                     <RuleList>
                         {options.rules && Object.keys(options.rules).sort().map(ruleName => (
