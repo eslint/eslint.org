@@ -321,6 +321,15 @@ team_page:
     description: >
       Die Leute, die Fehler überprüfen und beheben und die bei der Sichtung von
       Problemen helfen.
+  website_team:
+    title: Website Team
+    description: >
+      Teammitglieder, die sich speziell auf eslint.org konzentrieren.
+  support_team:
+    title: Support Team
+    description: >
+      Personen, die bei Discord, Diskussionen und der Mailingliste helfen.
+
   alumni:
     title: Alumni
     description: >
