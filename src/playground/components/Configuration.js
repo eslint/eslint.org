@@ -64,6 +64,15 @@ const customStyles = {
         color: "var(--headings-color)",
         cursor: "pointer",
         backgroundColor: "var(--lighter-background-color)"
+    }),
+    noOptionsMessage: styles => ({
+        ...styles,
+        backgroundColor: "var(--body-background-color)"
+    }),
+    menuList: styles => ({
+        ...styles,
+        backgroundColor: "var(--body-background-color)",
+        border: "1px solid var(--border-color)"
     })
 };
 
