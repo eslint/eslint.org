@@ -32,7 +32,7 @@ const customStyles = {
         color: state.isFocused ? "white" : "var(--body-text-color)",
         cursor: "pointer",
         border: "1px solid var(--border-color)",
-        margin: "-4px 0 -4px 0",
+        borderBottom: "none",
         ":hover": {
             ...styles[":hover"],
             backgroundColor: "var(--color-primary-700)",
@@ -41,6 +41,9 @@ const customStyles = {
         ":active": {
             ...styles[":active"],
             backgroundColor: "var(--color-primary-700)"
+        },
+        ":last-child": {
+            borderBottom: "1px solid var(--border-color)"
         }
     }),
     input: styles => ({
@@ -67,12 +70,12 @@ const customStyles = {
     }),
     noOptionsMessage: styles => ({
         ...styles,
-        backgroundColor: "var(--body-background-color)"
+        backgroundColor: "var(--body-background-color)",
+        border: "1px solid var(--border-color)"
     }),
     menuList: styles => ({
         ...styles,
-        backgroundColor: "var(--body-background-color)",
-        border: "1px solid var(--border-color)"
+        padding: 0
     })
 };
 
