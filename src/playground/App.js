@@ -5,7 +5,7 @@ import Alert from "./components/Alert";
 import CrashAlert from "./components/CrashAlert";
 import Footer from "./components/Footer";
 import CodeEditor from "./components/CodeEditor";
-import { Linter, SourceCodeFixer } from "../../node_modules/eslint/lib/linter";
+import { Linter, SourceCodeFixer } from "./node_modules/eslint/lib/linter/";
 import { Legacy } from "@eslint/eslintrc/universal";
 import Unicode from "./utils/unicode";
 import Configuration from "./components/Configuration";
