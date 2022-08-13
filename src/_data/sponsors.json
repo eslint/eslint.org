@@ -1,10 +1,19 @@
 {
     "totals": {
-        "annualDonations": 107928,
-        "monthlyDonations": 8994,
+        "annualDonations": 131868,
+        "monthlyDonations": 10989,
         "sponsorCount": 186
     },
     "platinum": [
+        {
+            "name": "Frameworks Fund",
+            "url": null,
+            "image": "https://images.opencollective.com/2021-frameworks-fund/logo.png",
+            "monthlyDonation": 2000,
+            "totalDonations": 14500,
+            "source": "opencollective",
+            "tier": "platinum-sponsor"
+        },
         {
             "name": "Automattic",
             "url": "https://automattic.com",
@@ -1196,14 +1205,6 @@
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
             "url": "https://mattiaerre.medium.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Jan-Kanty",
-            "image": "https://avatars.githubusercontent.com/u/6461935?u=430397d1a9f222efd25209eb0fd4e6623286b584&v=4",
-            "url": "https://github.com/jankanty",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
