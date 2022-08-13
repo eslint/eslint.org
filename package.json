@@ -14,7 +14,7 @@
     "license": "ISC",
     "scripts": {
         "images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
-        "install:playground": "cd src/playground",
+        "install:playground": "cd src/playground && npm install --no-package-lock",
         "watch:sass": "sass --watch src/assets/scss:src/assets/css",
         "watch:eleventy": "eleventy --serve --port=2022",
         "watch:webpack": "webpack watch --mode=development",
