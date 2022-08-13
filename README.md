@@ -8,7 +8,6 @@ In order to run the website, you must have [Node.js](https://nodejs.org) install
 
 1. Create a fork of the repository
 2. Run `npm install`
-3. Run `npm run install:playground`
 
 To start a local copy of the website, run:
 
