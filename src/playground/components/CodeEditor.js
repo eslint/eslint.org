@@ -5,7 +5,7 @@ import { bracketMatching } from "@codemirror/matchbrackets";
 import { javascript, esLint } from "@codemirror/lang-javascript";
 import { linter } from "../utils/codemirror-linter-extension";
 import { ESLintPlaygroundTheme, ESLintPlaygroundHighlightStyle } from "../utils/codemirror-theme";
-import { Linter as ESLint } from "../../../node_modules/eslint/lib/linter/";
+import { Linter as ESLint } from "../node_modules/eslint/lib/linter/";
 import "../scss/editor.scss";
 
 export default function CodeEditor({ codeValue, onUpdate, eslintOptions }) {
