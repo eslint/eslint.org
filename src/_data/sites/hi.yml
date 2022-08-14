@@ -12,7 +12,8 @@
 language:
   code: hi
   flag: 🇮🇳
-  name: Hindi (In)
+  name: हिन्दी
+  title: Hindi (IN)
 locale: hi-IN
 hostname: hi.eslint.org
 

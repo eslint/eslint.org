@@ -13,6 +13,7 @@ language:
   code: en
   flag: 🇺🇸
   name: English (US)
+  title: English (US)
 locale: en-US
 hostname: eslint.org
 
