@@ -205,18 +205,26 @@ eleventyExcludeFromCollections: true
                         {% set sponsor_amount = sponsor.monthlyDonation %}
                         {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
                     <li>
+                        {% if sponsor.url %}
                         <a href="{{ sponsor.url }}" class="sponsor-link" rel="nofollow noopen sponsored" target="_blank">
+                        {% endif %}
                             <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="48" loading="lazy" decoding="async" />
+                        {% if sponsor.url %}
                         </a>
+                        {% endif %}
                     </li>
                     {% endfor %}
                 {% endfor %}
                 {% for sponsor in techsponsors %}
                 <li>
                     {% set sponsor_title = site.sponsors_page.tech_sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("TECH", sponsor.donation | capitalize) %}
+                    {% if sponsor.url %}
                     <a href="{{ sponsor.url }}">
+                    {% endif %}
                         <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" width="48" height="48" loading="lazy" decoding="async" />
+                    {% if sponsor.url %}
                     </a>
+                    {% endif %}
                 </li>
                 {% endfor %}
             </ul>
