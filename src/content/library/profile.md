@@ -8,7 +8,7 @@ There are three variations of a profile component on the site: the member, the c
 
 The parameters required for each are shown in the following example:
 
-```html 
+```html
 <!-- first import the profile macro -->
 { % from 'components/profile.macro.html' import member, contributor, post_author % }
 
@@ -34,7 +34,7 @@ The parameters required for each are shown in the following example:
 }) } }
 ```
 
-## Examples 
+## Examples
 
 {{ contributor({
     name: "Name LastName",

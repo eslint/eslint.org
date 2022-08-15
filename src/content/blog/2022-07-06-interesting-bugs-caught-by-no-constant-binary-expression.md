@@ -17,14 +17,14 @@ In this post I’ll explain what the rule does and share some examples of real b
 
 ## What does `no-constant-binary-expression` do?
 
-The rule checks for comparisons (`==`, `!==`, etc) where the outcome cannot vary at runtime, and logical expressions (`&&`, `??`, `||`) which will either _always_ or _never_ short-circuit.
+The rule checks for comparisons (`==`, `!==`, etc) where the outcome cannot vary at runtime, and logical expressions (`&&`, `??`, `||`) which will either *always* or *never* short-circuit.
 
 For example:
 
-- `+x == null` will always be false, because `+` will coerce `x` into a number, and a number is never nullish.
-- `{ ...foo } || DEFAULT` will never return `DEFAULT` because objects are always truthy.
+* `+x == null` will always be false, because `+` will coerce `x` into a number, and a number is never nullish.
+* `{ ...foo } || DEFAULT` will never return `DEFAULT` because objects are always truthy.
 
-Both of these are examples of expressions that _look_ like they can affect the way the program evaluates, but in reality, do not.
+Both of these are examples of expressions that *look* like they can affect the way the program evaluates, but in reality, do not.
 
 This rule originally started as just an attempt to detect unnecessary null checks. However, as I worked on it, I realized useless null checks were just a special case of a broader category: useless code. Eventually it clicked for me: developers don't intend to write useless code, and code that does not match the developer's intent is by definition a bug. Therefore, any useless code you can detect is a bug.
 
@@ -44,7 +44,7 @@ if (!whitelist.has(specifier.imported.name) == null) {
 }
 ```
 
-_From [Material UI](https://github.com/mui/material-ui/blob/60f02a7a6b48092eedd2c25b15a7f643168a001f/packages/mui-codemod/src/v5.0.0/top-level-imports.js#L73:L73) (also: VS Code [1](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/timeline/browser/timelinePane.ts#L64), [2](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/terminal/browser/terminalProfileResolverService.ts#L456:L456), [Webpack](https://github.com/webpack/webpack/blob/3ad4fcac25a976277f2d9cceb37bc81602e96b13/lib/ExportsInfo.js#L468:L468), [Mozilla](https://phabricator.services.mozilla.com/D145655))_
+*From [Material UI](https://github.com/mui/material-ui/blob/60f02a7a6b48092eedd2c25b15a7f643168a001f/packages/mui-codemod/src/v5.0.0/top-level-imports.js#L73:L73) (also: VS Code [1](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/timeline/browser/timelinePane.ts#L64), [2](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/terminal/browser/terminalProfileResolverService.ts#L456:L456), [Webpack](https://github.com/webpack/webpack/blob/3ad4fcac25a976277f2d9cceb37bc81602e96b13/lib/ExportsInfo.js#L468:L468), [Mozilla](https://phabricator.services.mozilla.com/D145655))*
 
 ### Confusing `??` and `||` precedence
 
@@ -56,9 +56,9 @@ shouldShowWelcome() {
 }
 ```
 
-_From [VS Code](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/testing/browser/testingExplorerView.ts#L118:L118)_
+*From [VS Code](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/testing/browser/testingExplorerView.ts#L118:L118)*
 
-_Aside: Observing how frequently developers get confused by operator precedence inspired me to experiment with [a VS Code extension](https://jordaneldredge.com/blog/a-vs-code-extension-to-combat-js-precedence-confusion/) to visually clarify how precedence gets interpreted._
+*Aside: Observing how frequently developers get confused by operator precedence inspired me to experiment with [a VS Code extension](https://jordaneldredge.com/blog/a-vs-code-extension-to-combat-js-precedence-confusion/) to visually clarify how precedence gets interpreted.*
 
 ### Expecting objects to be compared by value
 
@@ -70,7 +70,7 @@ In this example, `hasData` will always be set to true because `data` can never b
 hasData = hasData || data !== {};
 ```
 
-_From [Firefox](https://hg.mozilla.org/try/rev/0fe5678fb8b71f4eb26f0a153c52d0be45fc5ac1#l3.34) (also: [Firefox](https://hg.mozilla.org/try/rev/0fe5678fb8b71f4eb26f0a153c52d0be45fc5ac1#l1.13))_
+*From [Firefox](https://hg.mozilla.org/try/rev/0fe5678fb8b71f4eb26f0a153c52d0be45fc5ac1#l3.34) (also: [Firefox](https://hg.mozilla.org/try/rev/0fe5678fb8b71f4eb26f0a153c52d0be45fc5ac1#l1.13))*
 
 ### Expecting empty objects to be `false` or `null`
 
@@ -80,7 +80,7 @@ Another common categrory of JavaScript error is expecting empty objects to be nu
 const newConfigValue = { ...configProfiles } ?? {};
 ```
 
-_From [VS Code](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/terminal/browser/terminalProfileQuickpick.ts#L126:L126) (also: VS Code [1](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/platform/terminal/node/ptyService.ts#L369:L369), [2](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/terminal/browser/terminalProfileResolverService.ts#L484:L484))_
+*From [VS Code](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/terminal/browser/terminalProfileQuickpick.ts#L126:L126) (also: VS Code [1](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/platform/terminal/node/ptyService.ts#L369:L369), [2](https://github.com/captbaritone/vscode/blob/ab86e0229d6b4d0cb49cfd6747c92cafcd2bd4af/src/vs/workbench/contrib/terminal/browser/terminalProfileResolverService.ts#L484:L484))*
 
 ### Is it `>=` or `=>`?
 
@@ -92,15 +92,15 @@ Here, the developer meant to test if a value was greater than or equal to zero (
 assert(startWidth => 0 && startWidth <= 1);
 ```
 
-_From [Mozilla](https://phabricator.services.mozilla.com/rMOZILLACENTRAL925b8d1ad45f80faee052492b3b43f5120052405)_
+*From [Mozilla](https://phabricator.services.mozilla.com/rMOZILLACENTRAL925b8d1ad45f80faee052492b3b43f5120052405)*
 
 ### Other errors caught by `no-constant-binary-expression`
 
 The above five categories of errors are not exhaustive. When I originally ran the first version of this rule on our (very) large monorepo at Meta, it found over 500 issues. While many fell into the categories outlined above, there was also a long-tail of other interesting bugs. Some highlights include:
 
-- Thinking `||` allows for set operations: `states.includes('VALID' || 'IN_PROGRESS')`
-- Thinking primitive functions pass through nulls: `Number(x) == null`
-- Not knowing primitive [constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number) return boxed primitives: `new Number(x) === 10`
+* Thinking `||` allows for set operations: `states.includes('VALID' || 'IN_PROGRESS')`
+* Thinking primitive functions pass through nulls: `Number(x) == null`
+* Not knowing primitive [constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number) return boxed primitives: `new Number(x) === 10`
 
 I never would have set out to lint for these specific issues individually, but by simply trying to identify anything “useless” we were able to find and correct them.
 
@@ -121,6 +121,5 @@ module.exports = {
 ```
 
 If you do, and it finds bugs, I’d love to [hear about them](https://twitter.com/captbaritone)!
-
 
 *Thanks to [Brad Zacher](https://twitter.com/bradzacher) for the original observation which inspired this work and the suggestion to propose it as a new core rule. And thanks to [Milos Djermanovic](https://github.com/mdjermanovic) for significant contributions during code review.*

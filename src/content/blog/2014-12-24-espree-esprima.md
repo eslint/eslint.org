@@ -38,13 +38,13 @@ Take a look at the [usage instructions](https://github.com/eslint/espree#usage) 
 There are a number of ways you can help the Espree project:
 
 1. **Are you a designer?**
-  * We need help [designing a logo](https://github.com/eslint/espree/issues/24)
-  * We also need help [designing a website](https://github.com/eslint/espree/issues/25)
+    * We need help [designing a logo](https://github.com/eslint/espree/issues/24)
+    * We also need help [designing a website](https://github.com/eslint/espree/issues/25)
 1. **Are you an engineer?**
-  * File bugs for things that aren't working quite right
-  * Fix bugs
-  * Implement new features
-  * Write some documentation
+    * File bugs for things that aren't working quite right
+    * Fix bugs
+    * Implement new features
+    * Write some documentation
 
 ## Other Questions
 
