@@ -13,7 +13,8 @@ language:
   code: zh-hans
   flag: 🇨🇳
   name: 简体中文
-locale: zh-cn
+  title: Simplified Chinese
+locale: zh-hans
 hostname: zh-hans.eslint.org
 
 #------------------------------------------------------------------------------

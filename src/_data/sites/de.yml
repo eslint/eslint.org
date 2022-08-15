@@ -12,7 +12,8 @@
 language:
   code: de
   flag: 🇩🇪
-  name: German (DE)
+  name: Deutsch
+  title: German
 locale: de-DE
 hostname: de.eslint.org
 
