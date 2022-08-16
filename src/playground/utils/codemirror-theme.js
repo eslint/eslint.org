@@ -50,6 +50,9 @@ export const ESLintPlaygroundTheme = EditorView.theme({
     },
     ".cm-completionIcon": {
         width: "1.2rem"
+    },
+    ".cm-tooltip.cm-tooltip-autocomplete > ul > li": {
+        margin: "0"
     }
 }, { dark: true });
 
