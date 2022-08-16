@@ -6,7 +6,7 @@
     },
     "platinum": [
         {
-            "name": "Frameworks Fund",
+            "name": "Chrome Frameworks Fund",
             "url": null,
             "image": "https://images.opencollective.com/2021-frameworks-fund/logo.png",
             "monthlyDonation": 2000,
@@ -1372,7 +1372,7 @@
         {
             "name": "Mikl Wolfe",
             "image": "https://avatars.githubusercontent.com/u/22719398?u=34dbc5a2f36a3bf05b9d5a7f49211cb96fd91e11&v=4",
-            "url": "mikl.io",
+            "url": "chiefmikey.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
