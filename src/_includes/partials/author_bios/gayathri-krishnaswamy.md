@@ -1,0 +1,1 @@
+I am a freelance technical writer who is passionate about improving the documentation of open-source projects.I enjoy solving documentation challenges holistically with people and technology.  When I am not writing, I enjoy cooking Indian food and spending time with my lovely girls.

@@ -152,5 +152,16 @@
         "twitter_username": "haydenbleasel",
         "github_username": "haydenbleasel",
         "location": "Delray Beach, FL"
+    },
+    "gayathri-krishnaswamy": {
+        "username": "gayathri-krishnaswamy",
+        "name": "Gayathri Krishnaswamy",
+        "title": "Guest Author",
+        "website": "",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28027018?v=4",
+        "bio": "Technical Writer",
+        "twitter_username": null,
+        "github_username": "gayathri-krishnaswamy",
+        "location": "Singapore"
     }
 }
