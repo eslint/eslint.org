@@ -23,22 +23,20 @@ The [compiler](https://en.wikipedia.org/wiki/Compiler) is a special program that
 - Code generation 
    
 A [parser](https://en.wikipedia.org/wiki/Parsing) is a program that is part of the compiler that does the syntax check of your source code.
-In this article, you’ll learn how your source code is converted into multiple tokens and is then parsed to produce an [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) (AST) – that represents the syntactic structure of your source code.
+In this article, you’ll learn how your source code is converted into multiple tokens and is then parsed to produce an [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) (AST) that represents the syntactic structure of your source code.
 #  Lexical analysis
 [Lexical analysis](https://en.wikipedia.org/wiki/Lexical_analysis) commonly known as tokenization is the process of converting your source code into a sequence of tokens. A token can be any valid entity in a programming language such as an identifier, keyword, operator, function call, string, or separator. Tokens do not understand how things fit together instead focus on different components of a file. Consider it analogous to breaking a sentence into different words and identifying the words such as nouns, verbs, numbers, adjectives, and punctuation. At this point, you don’t understand what’s part of a sentence or how these words fit together to make a sentence. The below picture depicts how a simple if statement is converted into multiple tokens.
 
 ![If statement converted to tokens](/src/assets/images/blog/2022/lexical_analysis.png "source code to tokens")
 
 #  Syntax analysis
-
-In this step, the list of tokens is converted into an AST- tree-like data structure that represents the actual structure of the code. This is analogous to finding the relationship between nouns, verbs, and adjectives in a sentence and identifying how they conform to the language’s grammar.  Continuing with the same example, in the previous step, we had a pair of tokens for ( ) but now after syntax analysis, we can infer that it is an expression within an if block.
+In this step, the list of tokens is converted into an AST - tree-like data structure that represents the actual structure of the code. This is analogous to finding the relationship between nouns, verbs, and adjectives in a sentence and identifying how they conform to the language’s grammar.  Continuing with the same example, in the previous step, we had a pair of tokens for ( ) but now after syntax analysis, we can infer that it is an expression within an if block.
 
 ![A list of tokens converted to AST](/src/assets/images/blog/2022/syntax_analysis.png "tokens to AST")
 
-
 In the above example,[ AST explorer](https://astexplorer.net/#/gist/052d25ec2db5e45442e474ffc8dd0f43/latest) is used for visualizing the AST for a simple JavaScript code snippet. AST explorer is a freely available online tool that can be used to generate AST for different programming languages.
 
-:information_source:**Tip**: If you ever get lost in the AST, you can hover over different sections of your source code on the right and the tool will then highlight the relevant node in the AST on the left.
+:information_source:**Tip**: If you ever get lost in the AST, you can hover over different sections of your source code on the right ad the tool then highlights the relevant node in the AST on the left.
 
 The AST represents the relationship between the tokens generated from the source code as a tree comprising different nodes. Every node has at least a type specifying what it is representing. For example, a node type could be a `Literal` representing an actual value or a `CallExpression` that represents a function call. The `Literal` node might only contain a value whereas the `CallExpression` node can contain additional information such as what is being called (`callee`), or what `arguments` are being passed in.
 
@@ -85,5 +83,3 @@ In the above code snippet, we check if the length of the body of the `CatchClaus
 Now that you have gained a high-level understanding of how your source code is converted to tokens and parsed to generate an AST, leverage the capability of AST and build your own custom rules, parsers, and formatters using ESLint. If you have any questions, reach out to us at xyz@eslint.com.
 
 You can refer also to our extensive [documentation](https://eslint.org/docs/latest/) on our brand-new website.
-
-
