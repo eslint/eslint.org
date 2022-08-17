@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131868,
-        "monthlyDonations": 10989,
-        "sponsorCount": 186
+        "annualDonations": 131808,
+        "monthlyDonations": 10984,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -1146,14 +1146,6 @@
             "tier": "backer"
         },
         {
-            "name": "Zac Rosenbauer",
-            "image": "https://avatars.githubusercontent.com/u/3486461?u=cee42ca0ec5cb598e9a2e717976eb36caaf62874&v=4",
-            "url": "https://zacrosenbauer.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "lxmarinkovic",
             "image": "https://avatars.githubusercontent.com/u/3509527?u=6f7f7e2db1fa221d36752a92f247aa1325a55ba5&v=4",
             "url": "https://lxmarinkovic.com/",
@@ -1370,7 +1362,7 @@
             "tier": "backer"
         },
         {
-            "name": "Mikl Wolfe",
+            "name": "mikl-wolfe",
             "image": "https://avatars.githubusercontent.com/u/22719398?u=34dbc5a2f36a3bf05b9d5a7f49211cb96fd91e11&v=4",
             "url": "chiefmikey.com",
             "monthlyDonation": 5,
