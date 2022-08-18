@@ -110,6 +110,10 @@
     &:hover {
         background-color: var(--lightest-background-color);
     }
+
+    &.selected{
+        background-color: var(--lightest-background-color);
+    }
 }
 
 .search .search-results__item__title {
@@ -160,3 +164,4 @@
         color: var(--color-neutral-900);
     }
 }
+
