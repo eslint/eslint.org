@@ -150,7 +150,7 @@ searchClearBtn.addEventListener('click', function(e) {
     clearSearchResults();
 });
 
-searchInput.addEventListener('keydown', function (e) {
+searchInput.addEventListener('keydown', function(e) {
     const searchResults = Array.from(document.querySelectorAll('.search-results__item'));
     if (!searchResults.length) return;
     switch (e.key) {
@@ -169,8 +169,8 @@ searchInput.addEventListener('keydown', function (e) {
             e.preventDefault();
             clearSearchResults();
             break;
-
     }
+
     if (activeIndex === -1) return;
     const activeSearchResult = searchResults[activeIndex];
     searchResults.forEach(result => {
