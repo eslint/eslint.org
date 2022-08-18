@@ -170,8 +170,6 @@ searchInput.addEventListener('keydown', function (e) {
             clearSearchResults();
             break;
 
-        default:
-            break;
     }
     if (activeIndex === -1) return;
     const activeSearchResult = searchResults[activeIndex];
