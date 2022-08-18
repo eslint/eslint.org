@@ -144,12 +144,6 @@ searchInput.addEventListener('keyup', function (e) {
     searchQuery = query
 });
 
-resultsElement.addEventListener('keydown', function(e) {
-    if(e.key === "Escape") {
-        clearSearchResults();
-    }
-}, true);
-
 searchClearBtn.addEventListener('click', function(e) {
     searchInput.value = '';
     searchInput.focus();
@@ -170,6 +164,10 @@ searchInput.addEventListener('keydown', function (e) {
             break;
         case "Enter":
             resultsElement.querySelector('li.selected a').click();
+            break;
+        case "Escape":
+            e.preventDefault();
+            clearSearchResults();
             break;
 
         default:
