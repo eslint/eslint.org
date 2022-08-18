@@ -181,3 +181,11 @@ searchInput.addEventListener('keydown', function(e) {
         maintainScrollVisibility(activeSearchResult, resultsElement);
     }
 });
+
+document.addEventListener('keydown',function (e){
+    if((e.metaKey || e.ctrlKey) && e.key === 'k'){
+        e.preventDefault();
+        searchInput.focus();
+        document.querySelector('.search').scrollIntoView({behaviour:"smooth",block: "start"});
+    }
+});
