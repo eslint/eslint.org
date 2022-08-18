@@ -117,7 +117,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
             <div className="playground__config-options__section">
                 <button className="playground-toggle c-btn c-btn--ghost" onClick={() => setShowVersions(currentValue => !currentValue)}>
                     <h2 data-config-section-title>Versioning and Config</h2>
-                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" className="css-tj5bde-Svg" style={{ transform: showVersion ? null : "rotate(180deg)" }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showVersion ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
                 </button>
                 {showVersion && <div data-config-section>
                     <div className="c-field-group">
@@ -179,7 +179,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
             <div className="playground__config-options__section">
                 <button className="playground-toggle c-btn c-btn--ghost" onClick={() => setShowEnvironment(currentValue => !currentValue)}>
                     <h2 data-config-section-title>Environments</h2>
-                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" className="css-tj5bde-Svg" style={{ transform: showEnvironment ? null : "rotate(180deg)" }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showEnvironment ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
                 </button>
                 {showEnvironment && <div data-config-section>
                     <Select
@@ -202,7 +202,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
             <div className="playground__config-options__section playground__config-options__section--rules">
                 <button className="playground-toggle c-btn c-btn--ghost" onClick={() => setShowRules(currentValue => !currentValue)}>
                     <h2 data-config-section-title>Rules</h2>
-                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" className="css-tj5bde-Svg" style={{ transform: showRules ? null : "rotate(180deg)" }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showRules ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
                 </button>
                 {showRules && <div data-config-section>
                     <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
