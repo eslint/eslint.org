@@ -16,9 +16,10 @@ tags:
   - ESLint rules
 ---
 #  Introduction
-[ESLint](https://eslint.org/docs/latest/) -  an open-source pluggable JavaScript linter that uses the Abstract Syntax Tree (AST) of your source code to identify and report patterns found in ECMAScript/JavaScript code. The tool also provides an option to write and configure your own rules to enforce a particular coding style that is relevant only to your project.
+[ESLint](https://eslint.org/docs/latest/) is an open-source pluggable JavaScript linter that uses the Abstract Syntax Tree (AST) of your source code to identify and report patterns found in ECMAScript/JavaScript code. The tool also provides an option to write and configure your own rules to enforce a particular coding style that is relevant only to your project.
 
 In this article, first, we'll see on a high-level how your source code is converted into multiple tokens and is then parsed to produce an AST that represents the syntactic structure of your source code. Next, we'll understand how ESLint leverages the capability of AST and helps you build your own custom rules.
+
 Before we jump into details, let's understand a couple of key terminologies:
 
 - Compiler - A [compiler](https://en.wikipedia.org/wiki/Compiler) is a special program that converts the programming language’s source code into machine-readable code that targets specific operating systems and computer architectures. 
@@ -95,7 +96,7 @@ In the above code snippet, we check if the length of the body of the `CatchClaus
 ## Step 3: Code generation
 Need inputs from engineers
 
-##  What’s next?
+#  What’s next?
 
 Now that you have gained a high-level understanding of how your source code is converted to tokens and parsed to generate an AST, go ahead and generate the AST for your source code and build your own custom rules, parsers, and formatters using ESLint. If you have any questions, reach out to us at xyz@eslint.com.
 
