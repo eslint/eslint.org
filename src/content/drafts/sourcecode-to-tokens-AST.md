@@ -94,7 +94,7 @@ module.exports = {
 In the above code snippet, we check if the length of the body of the `CatchClause` node is 0. If yes,  ESLint’s [report](https://eslint.org/docs/latest/developer-guide/working-with-rules#contextreport) method is used to raise a complaint.
 
 ## Step 3: Code generation
-Need inputs from engineers
+**Need inputs from engineers.**
 
 #  What’s next?
 
