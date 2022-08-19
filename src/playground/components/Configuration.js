@@ -90,8 +90,8 @@ const customTheme = theme => ({
 
 export default function Configuration({ rulesMeta, eslintVersion, onUpdate, options, ruleNames, validationError }) {
 
-    const [showVersion, setShowVersions] = useState(true);
-    const [showEnvironment, setShowEnvironment] = useState(true);
+    const [showVersion, setShowVersions] = useState(false);
+    const [showEnvironment, setShowEnvironment] = useState(false);
     const [showRules, setShowRules] = useState(true);
 
 

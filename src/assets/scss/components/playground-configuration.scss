@@ -148,6 +148,10 @@
     color: inherit;
 }
 
+.playground__config-and-footer {
+    scrollbar-gutter: stable;
+}
+
 .config-js [aria-expanded="true"] .config-icon {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
