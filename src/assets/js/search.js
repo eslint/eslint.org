@@ -150,9 +150,23 @@ searchClearBtn.addEventListener('click', function(e) {
     clearSearchResults();
 });
 
-searchInput.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function(e) {
+
+    if(e.key === 'Escape'){
+        e.preventDefault();
+        clearSearchResults();
+        searchInput.focus();
+    }
+
+    if((e.metaKey || e.ctrlKey) && e.key === 'k'){
+        e.preventDefault();
+        searchInput.focus();
+        document.querySelector('.search').scrollIntoView({behaviour:"smooth",block: "start"});
+    }
+
     const searchResults = Array.from(document.querySelectorAll('.search-results__item'));
     if (!searchResults.length) return;
+
     switch (e.key) {
         case "ArrowUp":
             e.preventDefault();
@@ -162,30 +176,12 @@ searchInput.addEventListener('keydown', function(e) {
             e.preventDefault();
             activeIndex = activeIndex + 1 < searchResults.length ? activeIndex + 1 : 0;
             break;
-        case "Enter":
-            resultsElement.querySelector('li.selected a').click();
-            break;
-        case "Escape":
-            e.preventDefault();
-            clearSearchResults();
-            break;
     }
 
     if (activeIndex === -1) return;
     const activeSearchResult = searchResults[activeIndex];
-    searchResults.forEach(result => {
-        result.classList.remove('selected');
-    });
-    activeSearchResult.classList.add('selected');
+    activeSearchResult.querySelector('a').focus();
     if (isScrollable(resultsElement)) {
         maintainScrollVisibility(activeSearchResult, resultsElement);
-    }
-});
-
-document.addEventListener('keydown',function (e){
-    if((e.metaKey || e.ctrlKey) && e.key === 'k'){
-        e.preventDefault();
-        searchInput.focus();
-        document.querySelector('.search').scrollIntoView({behaviour:"smooth",block: "start"});
     }
 });
