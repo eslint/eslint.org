@@ -261,35 +261,32 @@ module.exports = eleventyConfig => {
         .sort((a, b) => a.data.title.localeCompare(b.data.title)));
 
     // START, eleventy-img
-    function imageShortcode(source, alt, cls, sizes = "(max-width: 768px) 100vw, 50vw") {
+    function imageShortcode(src, alt, cls, sizes = "(max-width: 768px) 100vw, 50vw") {
 
-        // console.log(`Generating image(s) from:  ${src}`)
         const options = {
             widths: [600, 900, 1500],
             formats: ["webp", "jpeg"],
             urlPath: "/assets/images/",
             outputDir: "./_site/assets/images/",
-            filenameFormat(id, src, width, format) {
-                const extension = path.extname(src);
-                const name = path.basename(src, extension);
+            filenameFormat: (id, source, width, format) => {
+                const extension = path.extname(source);
+                const name = path.basename(source, extension);
 
                 return `${name}-${width}w.${format}`;
             }
         };
 
         function getSRC() {
-            if (source.indexOf("http://") || source.indexOf("https://")) {
-                return source;
+            if (src.indexOf("http://") === 0 || src.indexOf("https://") === 0) {
+                return src;
             }
 
             // for convenience, you only need to use the image's name in the shortcode,
             // and this will handle appending the full path to it
-            return path.join("./src/assets/images/", source);
-
+            return path.join("./src/assets/images/", src);
         }
 
         const fullSrc = getSRC();
-
 
         // generate images
         Image(fullSrc, options); // eslint-disable-line new-cap
