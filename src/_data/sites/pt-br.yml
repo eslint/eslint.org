@@ -12,7 +12,8 @@
 language:
   code: pt-br
   flag: 🇧🇷
-  name: Portuguese (BR)
+  name: Português (BR)
+  title: Portuguese (BR)
 locale: pt-BR
 hostname: pt-br.eslint.org
 
@@ -300,6 +301,14 @@ team_page:
     title: Committers
     description: >
       As pessoas que revisam, corrigem erros e ajudam a classificar os problemas.
+  website_team:
+    title: Website Team
+    description: >
+      Team members who focus specifically on eslint.org
+  support_team:
+    title: Support Team
+    description: >
+      Folks who help in Discord, discussions, and the mailing list.
   alumni:
     title: Alumni
     description: >

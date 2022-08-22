@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # Chinese Simplified Site Details
 # The primary ESLint site that is hosted at eslint.org
-# Author: aladdin-add<weiran.zsd@outlook.com>
+# Author: aladdin-add<weiran.zsd@outlook.com> and Percy Ma
 #------------------------------------------------------------------------------
 
 
@@ -10,11 +10,12 @@
 #------------------------------------------------------------------------------
 
 language:
-  code: zh-cn
+  code: zh-hans
   flag: 🇨🇳
   name: 简体中文
-locale: zh-cn
-hostname: new.cn.eslint.org
+  title: Simplified Chinese
+locale: zh-hans
+hostname: zh-hans.eslint.org
 
 #------------------------------------------------------------------------------
 # Analytics
@@ -168,8 +169,8 @@ branding_page:
 homepage:
   title: 检测并修复 JavaScript 代码中的问题。
   description: >
-    ESLint 静态分析你的代码以快速发现问题。ESLint 内置在大多数文本编辑器中，
-    你也可以运行 ESLint 作为持续集成管道的一部分。
+    ESLint 静态分析你的代码以快速发现问题。大多数文本编辑器都内置了 ESLint 支持，
+    但你也可以在持续集成管道中运行 ESLint 。
   
   animation:
     enabled: false
@@ -205,21 +206,21 @@ homepage:
       learn_more:
         link: getStarted 
         text: >
-          了解更多关于<span class="visually-hidden">使用 ESLint 发现问题</span>的信息
+          了解更多<span class="visually-hidden">关于使用 ESLint 发现问题的信息</span>
     - title: 自动修复问题
       description: >
         ESLint 发现的许多问题都可以自动修复。ESLint 自动修复是语法敏感的，所以你不会遇到由传统的查找和替换算法引入的错误。
       learn_more:
         link: fixProblems 
         text: >
-          了解更多关于<span class="visually-hidden">使用 ESLint 修复问题</span>的信息
+          了解更多<span class="visually-hidden">关于使用 ESLint 修复问题的信息</span>
     - title: 完全可配置
       description: >
         预处理代码，使用自定义解析器，并编写自己的规则，配合 ESLint 内置规则。自定义 ESLint 来精确地满足你的项目所需。
       learn_more:
         link: configuring
         text: >
-          了解更多关于<span class="visually-hidden">对 ESLint 进行配置</span>的信息
+          了解更多<span class="visually-hidden">关于对 ESLint 进行配置的信息</span>
   blog:
     view_all_posts: 查看所有文章
 
@@ -227,7 +228,7 @@ homepage:
     title: 欢迎来到社区
     description: >
       ESLint 是 npm 下载量排名第一的 JavaScript 检查工具（超过 DOWNLOAD_COUNT 次下载/周），
-      被微软、Airbnb、Netflix、Facebook 等公司使用。
+      被 Microsoft、Airbnb、Netflix、Facebook 等公司所使用。
     dependents: 依赖
     weekly_downloads: 每周下载
     stars: Stars
@@ -278,13 +279,21 @@ team_page:
     description: >
       管理发布、审查特性请求、定期开会以确保 ESLint 得到正确维护的人。
   reviewers:
-    title: 审阅人
+    title: 审阅者
     description: >
       审查和实现新特性的人。
   committers:
-    title: 提交人
+    title: 提交者
     description: >
-      审查和修复漏洞并帮助分类问题的人。
+      审查并修复漏洞及帮助分类问题的人。
+  website_team:
+    title: 网站团队
+    description: >
+      专注于 eslint.org 的团队成员。
+  support_team:
+    title: 支持团队
+    description: >
+      在 Discord、discussions 和邮件列表提供帮助的人。
   alumni:
     title: 前成员
     description: >
@@ -367,7 +376,7 @@ donate_page:
       cta:
         text: 通过 Open Collective 捐赠
       items:
-        - text: 直接向 501(c)(6) 非盈利机构捐款
+        - text: 直接向 501(c)(6) 非盈利机构捐赠
         - text: 一次性和经常性捐赠
         - text: 通过信用卡、银行转账或 PayPal 支付
         - text: 建立开源基金并捐赠多个项目
@@ -381,7 +390,7 @@ donate_page:
         - text: 通过 GitHub 账单捐赠
         - text: 一次性和经常性捐赠
         - text: 通过信用卡支付或使用与 GitHub 现有的计费关系（包括发票）
-        - text: 在你的 GitHub 档案中显示一个 “Sponsors” 徽章
+        - text: 你的 GitHub 档案将显示“Sponsors”徽章
         - text: 使用已有的 GitHub 登录
   budget:
     title: 钱用到了哪
@@ -390,7 +399,7 @@ donate_page:
     items:
       - name: 团队开发
         text: >
-          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅人为 HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。
+          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅者为 HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。
       - name: 贡献者
         text: >
           我们每月留出 CONTRIBUTOR_POOL_BUDGET 美元来支付对项目做出重大贡献的外部贡献者。
@@ -405,14 +414,14 @@ donate_page:
           我们相信该项目在整个生态中的的价值，我们希望确保重要项目得到良好维护。
       - name: 支持系统
         text: >
-          我们每月用一小笔钱购买团队用来帮助管理项目的软件，包括 Google Workspace 和云存储等。
+          我们每月会用一小笔钱购买团队用来帮助管理项目的软件，包括 Google Workspace 和云存储等。
     footer:
       text: >
         此外，我们还会时不时地用这些资金来支付承包商，让他们去做那些对项目很重要，但团队没有时间或专业知识独自完成工作的工作。
         例如，我们最近聘请了一个设计师和开发人员来重新设计了网站。我们确保每个月的支出少于收入，这样我们就可以为此类项目储蓄。
   donation_tiers:
     title: 捐赠等级
-    subtitle: 虽然我们接受任何大小的捐赠，但我们确实有一个等级系统，每个等级都有不同的奖励。
+    subtitle: 我们接受任意金额的捐赠，但确实有等级系统，每个等级都有不同的奖励。
     cta:
       open_collective_text: >
         <span class="visually-hidden">通过 Open Collective</span> 捐赠
@@ -456,7 +465,7 @@ donate_page:
       title: Salesforce 技术架构师
       image: medede-kpatchaa.jpg
       text: >
-        ESLint 对于任何 JavaScript 项目都是一个非常有用的工具。该工具允许我们建立整个团队
+        ESLint 对于任何一个 JavaScript 项目都非常有用。该工具允许我们建立整个团队
         从项目开始就采用的一致的代码格式规则，极大地促进了代码审查，并使新开发人员很容易集成
         到团队中。我知道我不是唯一一个欣赏它的灵活性和易用性的人。
     - name: Duane O'Brien
@@ -478,33 +487,33 @@ donate_page:
     title: 常见问题
     description: 你需要知道的关于产品和账单的一切。找不到你想要的答案？请与我们友好的团队联系。
     items:
-    - q: 捐赠由谁接受？
+    - q: 捐赠由谁接收？
       a: 所有的捐赠，无论是通过 <a href='https://opencollective.com'>Open Collective</a> 或 GitHub 捐赠的，
         都由 501(c)(6) 非盈利组织 Open Source Collective 接收的。Open Source Collective 充当 ESLint 的财务主体，
         并跟踪所有捐赠。
-    - q: 我会收到我的捐款记录吗？
+    - q: 我会收到捐赠记录吗？
       a: 是的。如果你通过 Open Collective 进行捐赠，你将通过电子邮件收到 PDF 收据;
         如果你通过 GitHub 捐赠，捐赠将出现在你的收据或发票。
     - q: 我的捐赠税可否扣除？
       a: 不。尽管 Open Source Collective 是个 501(c)(6) 非盈利组织，但美国国税局并不认为开源软件的
         开发是一项慈善活动，因此不授予免税地位。
-    - q: 谁来决定钱如何分配？
-      a: TSC 负责决定谁获可以得资金以及获得多少资金。
-    - q: 我能看到钱是怎么用的吗？
+    - q: 资金分配是由谁来决定的？
+      a: TSC 负责决定资金分配及其数量。
+    - q: 我审查资金使用吗？
       a: 是的。通过访问我们的 Open Collective 页面，你可以查看每笔已提交或支付的费用。
         所有的交易都是开放和公开的。
-    - q: 我可以在任何时候取消重复性捐赠吗？
-      a: 是的。没有长期承诺。你可以在任何时候通过登录到 Open Collective 或 GitHub Sponsors 取消你的捐赠。
-    - q: 我的图标需要多长时间才能出现在主页，GitHub 和 npm 包上？
+    - q: 我可以在随时取消周期性捐赠吗？
+      a: 是的，无需长期承诺。你可以随时登录 Open Collective 或 GitHub Sponsors 取消你的捐赠。
+    - q: 我的图标需要多长时间才能出现在主页、GitHub 和 npm 包上？
       a: 主页和 GitHub 上的徽标每天都会自动更新，所以它应该不会超过 24 小时出现。npm 包上的标识只有在我们发布新版本时才会更新，
         通常是每两周更新一次。然而，主要版本发布通常需要几个月的时间才能完成，在这段时间内 npm 包上的图标不会更新。
     - q: 我的图标和链接来自哪里？
       a: 我们从你的 Open Collective 或 GitHub 档案中提取图标和链接，这取决于你进行捐赠的网站。
         你可以在任何时候从 Open Collective 或 GitHub 更新这些，这些变化将在 24 小时内反映在主页和 GitHub README。
         我们无法手动覆盖网站上的图标或链接。
-    - q: 可以一次性捐款吗？
+    - q: 可以仅捐赠一次吗？
       a: 是的。一次性捐赠最简单的方式是通过 Open Collective，它允许任何金额。
-        GitHub 的一次性捐赠可能对你捐赠的数额有所限制。
+        而 GitHub 的一次性捐赠则可能对捐赠数额有所限制。
 
 #------------------------------------------------------------------------------
 # Languages Page

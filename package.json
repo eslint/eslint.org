@@ -28,7 +28,7 @@
         "fetch": "npm-run-all --parallel fetch:*",
         "start": "npm-run-all build:sass --parallel watch:*",
         "build": "npm-run-all install:playground build:sass build:eleventy build:webpack images",
-        "lint": "eslint --ext=.js,.jsx .",
+        "lint": "eslint --ext=.js,.jsx . && markdownlint \"**/*.md\" -i node_modules",
         "fix": "npm run lint -- --fix"
     },
     "devDependencies": {
@@ -63,6 +63,7 @@
         "js-yaml": "^3.14.1",
         "markdown-it": "^12.2.0",
         "markdown-it-anchor": "^8.1.2",
+        "markdownlint-cli": "^0.32.1",
         "node-polyfill-webpack-plugin": "^1.1.4",
         "npm-run-all": "^4.1.5",
         "rimraf": "^3.0.2",
