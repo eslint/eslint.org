@@ -295,14 +295,5 @@
         "amount": 3000,
         "date": "2021-12-14T22:29:21.196Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AA7zc",
-        "name": "GitHub",
-        "image": "https://avatars.githubusercontent.com/u/9919?v=4",
-        "url": "https://github.com/about",
-        "amount": 550,
-        "date": "2022-07-24T00:18:14Z",
-        "source": "github"
     }
 ]
