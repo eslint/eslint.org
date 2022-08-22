@@ -65,7 +65,6 @@
 .search .search-results {
     font-size: .875rem;
     background-color: var(--body-background-color);
-    position: relative;
     z-index: 10;
     width: 100%;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
@@ -113,7 +112,6 @@
 }
 
 .search .search-results__item__title {
-    font-size: var(--step-0);
     font-size: .875rem;
     margin-bottom: 0;
     font-family: var(--text-font);

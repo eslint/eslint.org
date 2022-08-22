@@ -77,7 +77,6 @@
 }
 
 .eslint-install-code__announcement {
-    font-size: .875rem;
     padding: .25rem .75rem;
     font-size: var(--step--1);
     border-radius: var(--border-radius);
@@ -109,7 +108,6 @@
 
     dt {
         border-bottom: 1px solid var(--divider-color);
-        padding: .25em 0;
         margin-bottom: .5em;
         padding-right: 1rem;
         border-block-end: 1px solid var(--divider-color);

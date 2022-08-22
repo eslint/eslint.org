@@ -25,7 +25,6 @@
     justify-content: space-between;
     gap: .5rem;
     font-family: var(--text-font);
-    color: inherit;
     color: var(--color-neutral-700);
     font-weight: 400;
     line-height: 1.5;
@@ -215,7 +214,6 @@
 }
 
 .share-url__announcement {
-    font-size: .875rem;
     padding: .25rem .75rem;
     font-size: var(--step--1);
     display: block;
