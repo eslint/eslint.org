@@ -308,6 +308,14 @@ team_page:
     title: Committers
     description: >
       Les personnes en charge de revoir et corriger les bugs, ainsi que trier les tickets.
+  website_team:
+    title: Website Team
+    description: >
+      Team members who focus specifically on eslint.org
+  support_team:
+    title: Support Team
+    description: >
+      Folks who help in Discord, discussions, and the mailing list.
   alumni:
     title: Anciens Membres
     description: >

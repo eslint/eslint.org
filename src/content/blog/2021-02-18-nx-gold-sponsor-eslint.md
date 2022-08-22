@@ -27,4 +27,4 @@ Here's what the folks at Nx had to say about ESLint:
 > "We help many companies build large systems using Nx. To keep them maintainable, it's important to follow community and org-specific best practices, and ESLint makes it easy."
 > -- Victor Savkin, Co-founder at Nrwl
 
-ESLint is grateful for the support of the Nx team and we are putting these funds to work by paying more contributors to help maintain and develop ESLint. Due to the support of companies like Nx, ESLint is well-positioned to continue being actively maintained for the foreseeable future. 
+ESLint is grateful for the support of the Nx team and we are putting these funds to work by paying more contributors to help maintain and develop ESLint. Due to the support of companies like Nx, ESLint is well-positioned to continue being actively maintained for the foreseeable future.

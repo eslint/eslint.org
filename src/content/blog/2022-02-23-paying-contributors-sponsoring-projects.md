@@ -19,7 +19,7 @@ Once we settled into the per-hour system, that also gave us information on how m
 
 ## The guiding principle
 
-Before explaining how ESLint is using the money it collects now, it helps to take a step back to understand the guiding principles upon which this approach is based. Each project has different goals for why they are raising money and how it should be spent. For many projects, the goal is to allow the maintainer(s) to work full time on the project. That is a worthy goal provided that the maintainers actually want to work full time on the project. This is a narrow approach to distributing funds in that most or all of the money goes to one or a few people. 
+Before explaining how ESLint is using the money it collects now, it helps to take a step back to understand the guiding principles upon which this approach is based. Each project has different goals for why they are raising money and how it should be spent. For many projects, the goal is to allow the maintainer(s) to work full time on the project. That is a worthy goal provided that the maintainers actually want to work full time on the project. This is a narrow approach to distributing funds in that most or all of the money goes to one or a few people.
 
 On ESLint, we discovered that we didn't have any team members interested in working on the project full time. So we thought: what if we went in the complete opposite direction? Given that we know people will only work part time, and probably just in their spare time, how could we distribute the funds as widely as possible for the maximum positive impact?
 
@@ -52,7 +52,7 @@ As we [announced in 2020](https://eslint.org/blog/2020/09/supporting-eslint-depe
 * [Ajv](https://npmjs.com/package/ajv) is a JSON schema validator that ESLint uses to validate configuration.
 * [Eleventy](https://www.11ty.dev/) is a Node.js-based static site generator that we use to create [eslint.org](http://eslint.org).
 * [Sindre Sorhus](https://sindresorhus.com/) is a prolific open source developer, and ESLint uses several of his modules, including [`chalk`](https://npmjs.com/package/chalk), [`globals`](https://npmjs.com/package/globals), [`import-fresh`](https://npmjs.com/package/import-fresh), [`strip-ansi`](https://npmjs.com/package/strip-ansi), and [`strip-json-comments`](https://npmjs.com/package/strip-json-comments).
-* [debug](https://npmjs.com/package/debug) is a small tool ESLint uses to output debugging messages when you use the `--debug` flag. 
+* [debug](https://npmjs.com/package/debug) is a small tool ESLint uses to output debugging messages when you use the `--debug` flag.
 * [lint-staged](https://npmjs.com/package/lint-staged) is a simple precommit hook manager that makes it easy to setup linting in your development process.
 
 We think it's important for open source projects that receive a lot of donations to take care of their dependencies. After all, if your project couldn't exist without those dependencies, then they deserve your support.
