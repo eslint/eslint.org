@@ -299,6 +299,14 @@ team_page:
     title: Committers
     description: >
       Las personas que revisan, corrigen errores y ayudan a clasificar los problemas.
+  website_team:
+    title: Website Team
+    description: >
+      Team members who focus specifically on eslint.org
+  support_team:
+    title: Support Team
+    description: >
+      Folks who help in Discord, discussions, and the mailing list.
   alumni:
     title: Antiguos alumnos
     description: >

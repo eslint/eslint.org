@@ -64,7 +64,7 @@ export default [
 ];
 ```
 
-An `eslint.config.js` file returns an array of config objects. Read on to understand more about this example.
+An `eslint.config.js` file exports an array of config objects. Read on to understand more about this example.
 
 ## Glob-based configs everywhere
 
@@ -348,7 +348,7 @@ export default [
 ];
 ```
 
-Here, a custom rule is imported as `myrule` and then a runtime plugin is created named `custom` to provide that rule to the config as `custom/myrule`. 
+Here, a custom rule is imported as `myrule` and then a runtime plugin is created named `custom` to provide that rule to the config as `custom/myrule`.
 
 As a result, we will be removing `--rulesdir` once the transition to flat config is complete.
 
@@ -445,7 +445,7 @@ ESLint has two predefined configs:
 * `eslint:recommended` - enables the rules that ESLint recommends everyone use to avoid potential errors
 * `eslint:all` - enables all of the rules shipped with ESLint
 
-To include these predefined configs, you can insert the string values into the returned array and then make any modifications to other properties in subsequent configuration objects:
+To include these predefined configs, you can insert the string values into the exported array and then make any modifications to other properties in subsequent configuration objects:
 
 ```js
 export default [
@@ -506,4 +506,4 @@ Using the `FlatCompat` class allows you to continue using all of your existing e
 
 The team spent a long time designing flat config so that it would both feel familiar to existing users and provide new functionality that would benefit everyone. We kept things like rules, settings, and processors the same while extending things like plugins, language options, and linter options to be more uniform. We think that flat config has found a good balance between these two poles and that you will enjoy using ESLint more once the new config system is generally available. In the meantime, the compatibility utility will allow you to continue using existing shared configs.
 
-In the next part of this blog series, you'll learn how to start using flat config today.
+In the [next part](https://eslint.org/blog/2022/08/new-config-system-part-3/) of this blog series, you'll learn how to start using flat config today.

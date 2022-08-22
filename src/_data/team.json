@@ -116,10 +116,10 @@
             "username": "vitorbal",
             "name": "Vitor Balocco",
             "title": "ESLint Alumnus",
-            "website": "https://twitter.com/vitorbal",
+            "website": "",
             "avatar_url": "https://avatars.githubusercontent.com/u/626038?v=4",
             "bio": "Carioca living in Madrid 🇧🇷  ✈️ 🇪🇸",
-            "twitter_username": null,
+            "twitter_username": "vitorbal",
             "github_username": "vitorbal",
             "location": "Madrid"
         },
@@ -357,6 +357,54 @@
             "twitter_username": null,
             "github_username": "yeonjuan",
             "location": "South Korea"
+        }
+    ],
+    "website": [
+        {
+            "username": "amareshsm",
+            "name": "Amaresh  S M ",
+            "title": "ESLint Website Team",
+            "website": "https://amaresh-s-m.firebaseapp.com/",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30730124?v=4",
+            "bio": null,
+            "twitter_username": "Amareshsm13",
+            "github_username": "amareshsm",
+            "location": null
+        },
+        {
+            "username": "harish-sethuraman",
+            "name": "Strek",
+            "title": "ESLint Website Team",
+            "website": "https://strek.in",
+            "avatar_url": "https://avatars.githubusercontent.com/u/32865581?v=4",
+            "bio": "I try to code",
+            "twitter_username": "harishkumar_s_s",
+            "github_username": "harish-sethuraman",
+            "location": null
+        },
+        {
+            "username": "kecrily",
+            "name": "Percy Ma",
+            "title": "ESLint Website Team",
+            "website": "https://kecrily.me",
+            "avatar_url": "https://avatars.githubusercontent.com/u/45708948?v=4",
+            "bio": "让世界听到你的声音",
+            "twitter_username": "kecrily",
+            "github_username": "kecrily",
+            "location": "Zhejiang, China"
+        }
+    ],
+    "support": [
+        {
+            "username": "platinumazure",
+            "name": "Kevin Partington",
+            "title": "ESLint Support Team",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4",
+            "bio": "@eslint support team member. My open source participation will be limited as I continue to heal my depression and anxiety.",
+            "twitter_username": null,
+            "github_username": "platinumazure",
+            "location": null
         }
     ]
 }

@@ -4,14 +4,14 @@ title: Hero
 {% from 'components/hero.macro.html' import hero %}
 
 The hero sections typically includes:
-- a title
-- supporting text 
-- buttons: one primary button, or a primary and a secondary button
 
+* a title
+* supporting text
+* buttons: one primary button, or a primary and a secondary button
 
-## Usage 
+## Usage
 
-```html 
+```html
 <!-- import the macro -->
 {% from 'components/hero.macro.html' import hero %}
 

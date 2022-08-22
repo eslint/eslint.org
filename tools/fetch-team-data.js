@@ -38,12 +38,16 @@ if (!ESLINT_GITHUB_TOKEN) {
 const TSC_TEAM_SLUG = "eslint-tsc";
 const REVIEWERS_TEAM_SLUG = "eslint-reviewers";
 const COMMITTERS_TEAM_SLUG = "eslint-team";
+const WEBSITE_TEAM_SLUG = "website-team";
+const SUPPORT_TEAM_SLUG = "support-team";
 const ALUMNI_TEAM_SLUG = "eslint-alumni";
 
 // lookup table mapping Github team IDs to JSON keys
 const teamIds = {
     [TSC_TEAM_SLUG]: "tsc",
     [COMMITTERS_TEAM_SLUG]: "committers",
+    [WEBSITE_TEAM_SLUG]: "website",
+    [SUPPORT_TEAM_SLUG]: "support",
     [REVIEWERS_TEAM_SLUG]: "reviewers",
     [ALUMNI_TEAM_SLUG]: "alumni"
 };
@@ -53,6 +57,8 @@ const teamMemberTitles = {
     tsc: "ESLint Technical Steering Committee",
     committers: "ESLint Committer",
     reviewers: "ESLint Reviewer",
+    website: "ESLint Website Team",
+    support: "ESLint Support Team",
     alumni: "ESLint Alumnus"
 };
 
@@ -101,10 +107,12 @@ async function fetchTeamMembers() {
         tsc: [],
         alumni: [],
         reviewers: [],
-        committers: []
+        committers: [],
+        website: [],
+        support: []
     };
 
-    for (const teamId of [TSC_TEAM_SLUG, ALUMNI_TEAM_SLUG, COMMITTERS_TEAM_SLUG, REVIEWERS_TEAM_SLUG]) {
+    for (const teamId of [TSC_TEAM_SLUG, ALUMNI_TEAM_SLUG, COMMITTERS_TEAM_SLUG, REVIEWERS_TEAM_SLUG, WEBSITE_TEAM_SLUG, SUPPORT_TEAM_SLUG]) {
         const { data: result } = await octokit.teams.listMembersInOrg({
             org: "eslint",
             team_slug: teamId,

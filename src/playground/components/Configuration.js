@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Select from "react-select";
-import RuleItem from "./RuleItem";
+import RuleList from "./RuleList";
 import ShareURL from "./ShareURL";
 import { ECMA_FEATURES, ECMA_VERSIONS, SOURCE_TYPES, ENV_NAMES } from "../utils/constants";
 
@@ -32,7 +32,7 @@ const customStyles = {
         color: state.isFocused ? "white" : "var(--body-text-color)",
         cursor: "pointer",
         border: "1px solid var(--border-color)",
-        margin: "-4px 0 -4px 0",
+        borderBottom: "none",
         ":hover": {
             ...styles[":hover"],
             backgroundColor: "var(--color-primary-700)",
@@ -41,6 +41,9 @@ const customStyles = {
         ":active": {
             ...styles[":active"],
             backgroundColor: "var(--color-primary-700)"
+        },
+        ":last-child": {
+            borderBottom: "1px solid var(--border-color)"
         }
     }),
     input: styles => ({
@@ -64,6 +67,15 @@ const customStyles = {
         color: "var(--headings-color)",
         cursor: "pointer",
         backgroundColor: "var(--lighter-background-color)"
+    }),
+    noOptionsMessage: styles => ({
+        ...styles,
+        backgroundColor: "var(--body-background-color)",
+        border: "1px solid var(--border-color)"
+    }),
+    menuList: styles => ({
+        ...styles,
+        padding: 0
     })
 };
 
@@ -205,9 +217,9 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     >
                         Add this rule
                     </button>
-                    <ul className="config__added-rules" aria-labelledby="added-rules-label">
+                    <RuleList>
                         {options.rules && Object.keys(options.rules).sort().map(ruleName => (
-                            <RuleItem key={ruleName}>
+                            <li className="config__added-rules__item" key={ruleName}>
                                 <h4 className="config__added-rules__rule-name">
                                     <a href={rulesMeta[ruleName].docs.url}>
                                         {`${ruleName} ${rulesMeta[ruleName].deprecated ? "(deprecated)" : ""}`}
@@ -245,9 +257,9 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                 {rulesWithInvalidConfigs.has(ruleName) && (
                                     <p className="config__added-rules__rule-error">Invalid rule configuration. Please use a valid JSON format.</p>
                                 )}
-                            </RuleItem>
+                            </li>
                         ))}
-                    </ul>
+                    </RuleList>
                 </div>
             </div>
             {/* TODO: Add Plugins */}

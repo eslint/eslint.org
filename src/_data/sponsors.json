@@ -1,10 +1,19 @@
 {
     "totals": {
-        "annualDonations": 105648,
-        "monthlyDonations": 8804,
-        "sponsorCount": 187
+        "annualDonations": 131808,
+        "monthlyDonations": 10984,
+        "sponsorCount": 185
     },
     "platinum": [
+        {
+            "name": "Chrome Frameworks Fund",
+            "url": null,
+            "image": "https://images.opencollective.com/2021-frameworks-fund/logo.png",
+            "monthlyDonation": 2000,
+            "totalDonations": 14500,
+            "source": "opencollective",
+            "tier": "platinum-sponsor"
+        },
         {
             "name": "Automattic",
             "url": "https://automattic.com",
@@ -130,6 +139,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "QuickBooks Tool hub",
+            "image": "https://avatars.githubusercontent.com/u/95090305?u=e5bc398ef775c9ed19f955c675cdc1fb6abf01df&v=4",
+            "url": "https://quickbookstoolhub.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -589,7 +606,7 @@
             "url": "https://stefan-milenkovic.com",
             "image": "https://images.opencollective.com/stefan-milenkovic/1fd866a/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 50,
+            "totalDonations": 55,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1065,14 +1082,6 @@
             "tier": "backer"
         },
         {
-            "name": "Andrés Rojas",
-            "image": "https://avatars.githubusercontent.com/u/1273138?u=62051fd5167c6aa096b79682d1bac1c1a2911a9a&v=4",
-            "url": "https://github.com/andresroberto",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Will Sams",
             "image": "https://avatars.githubusercontent.com/u/1405154?u=4c57d879edac9241e22801e897fd62be3c46fca2&v=4",
             "url": "http://samswebs.com",
@@ -1137,22 +1146,6 @@
             "tier": "backer"
         },
         {
-            "name": "Roberto Arosemena Elizondo",
-            "image": "https://avatars.githubusercontent.com/u/3158040?u=dff0b6074392afaef0d7041f79b218cae8053da8&v=4",
-            "url": "https://github.com/arosemena",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Zac Rosenbauer",
-            "image": "https://avatars.githubusercontent.com/u/3486461?u=cee42ca0ec5cb598e9a2e717976eb36caaf62874&v=4",
-            "url": "https://zacrosenbauer.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "lxmarinkovic",
             "image": "https://avatars.githubusercontent.com/u/3509527?u=6f7f7e2db1fa221d36752a92f247aa1325a55ba5&v=4",
             "url": "https://lxmarinkovic.com/",
@@ -1204,14 +1197,6 @@
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
             "url": "https://mattiaerre.medium.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Jan-Kanty",
-            "image": "https://avatars.githubusercontent.com/u/6461935?u=430397d1a9f222efd25209eb0fd4e6623286b584&v=4",
-            "url": "https://github.com/jankanty",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1370,7 +1355,7 @@
         },
         {
             "name": "Montana Mendy",
-            "image": "https://avatars.githubusercontent.com/u/20936398?u=20efc1830adab49824c95d788234189157a6e36c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/20936398?u=b468990e6221ff0670ed9d1fdd441001b447243f&v=4",
             "url": "https://github.com/Montana",
             "monthlyDonation": 5,
             "source": "github",
@@ -1378,8 +1363,8 @@
         },
         {
             "name": "Mikl Wolfe",
-            "image": "https://avatars.githubusercontent.com/u/22719398?u=ef3c638f05a813832d2fb84f4b5d6be13b35653c&v=4",
-            "url": "mikl.io",
+            "image": "https://avatars.githubusercontent.com/u/22719398?u=34dbc5a2f36a3bf05b9d5a7f49211cb96fd91e11&v=4",
+            "url": "chiefmikey.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
