@@ -1,5 +1,5 @@
 {
-    "name": "eslint-website",
+    "name": "eslint.org",
     "private": true,
     "version": "1.0.0",
     "description": "The codebase for the ESLint website (eslint.org)",
