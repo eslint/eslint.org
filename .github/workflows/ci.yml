@@ -21,7 +21,7 @@ jobs:
         run: npm ci
       - name: Install playground dependencies
         working-directory: src/playground
-        run: npm ci
+        run: npm install
       - name: Lint Files
         run: npm run lint
       - name: Run build
