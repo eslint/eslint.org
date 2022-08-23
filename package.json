@@ -27,7 +27,7 @@
         "fetch": "npm-run-all --parallel fetch:*",
         "start": "npm-run-all build:sass --parallel watch:*",
         "build": "npm-run-all install:playground build:sass build:eleventy build:webpack images",
-        "lint": "eslint --ext=.js,.jsx . && markdownlint \"**/*.md\" -i node_modules",
+        "lint": "eslint --ext=.js,.jsx . && markdownlint \"**/*.md\" ",
         "fix": "npm run lint -- --fix"
     },
     "devDependencies": {
