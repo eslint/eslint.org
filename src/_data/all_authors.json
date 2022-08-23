@@ -152,5 +152,16 @@
         "twitter_username": "haydenbleasel",
         "github_username": "haydenbleasel",
         "location": "Delray Beach, FL"
+    },
+    "KICKdesigns": {
+        "username": "KICKdesigns",
+        "name": "KICKdesigns",
+        "title": "Guest Author",
+        "website": "http://kickdesigns.com",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5341526?v=4",
+        "bio": "KICKdesigns specializes in interactive design, development, and technical writing. ",
+        "twitter_username": null,
+        "github_username": "KICKdesigns",
+        "location": "San Francisco, CA"
     }
 }
