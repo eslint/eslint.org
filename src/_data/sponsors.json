@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131808,
-        "monthlyDonations": 10984,
-        "sponsorCount": 185
+        "annualDonations": 131748,
+        "monthlyDonations": 10979,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -1066,14 +1066,6 @@
             "tier": "backer"
         },
         {
-            "name": "Frédéric Harper",
-            "image": "https://avatars.githubusercontent.com/u/1170989?u=763b5b04f6ac70447e0a76c0f0830e5e9aa8e6a3&v=4",
-            "url": "https://fred.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Charles Severance",
             "image": "https://avatars.githubusercontent.com/u/1197222?u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
             "url": "http://www.dr-chuck.com/",
@@ -1189,6 +1181,14 @@
             "name": "PENG Rui",
             "image": "https://avatars.githubusercontent.com/u/6322673?u=bfd7ed8bc1a1549a0ccd166883a7c55dc2993814&v=4",
             "url": "https://github.com/IndexXuan",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ingo Steinke",
+            "image": "https://avatars.githubusercontent.com/u/6377941?u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
+            "url": "https://www.ingo-steinke.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1365,14 +1365,6 @@
             "name": "Mikl Wolfe",
             "image": "https://avatars.githubusercontent.com/u/22719398?u=34dbc5a2f36a3bf05b9d5a7f49211cb96fd91e11&v=4",
             "url": "chiefmikey.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "The GraphQL Guide",
-            "image": "https://avatars.githubusercontent.com/u/23441982?v=4",
-            "url": "https://graphql.guide",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
