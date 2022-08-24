@@ -19,7 +19,7 @@ tags:
 ##  Introduction
 A parser is a program that takes input in the form of sequential source program instructions and breaks it into smaller pieces (tokens) to generate statements and expressions. The parser then represents the statements and expressions in the form of a parse tree or an Abstract Syntax Tree (AST) that depicts the syntactic structure of your source code.
 
-In this tutorial, first, you'll learn on a high-level how your source code is broken down into multiple tokens and is then converted to build an AST. Next, you'll learn how [ESLint](https://eslint.org/docs/latest/) leverages the capability of AST and helps you build your own custom rules. This tutorial is intended for those who have basic familiarity with:
+In this tutorial, first, you'll learn on a high-level how your source code is broken down into multiple tokens and is then converted to an AST. Next, you'll learn how [ESLint](https://eslint.org/docs/latest/) leverages the capability of AST and helps you build your own custom rules. This tutorial is intended for those who have basic familiarity with:
 - Computer programming
 - Javascript coding
 - ESlint tool
