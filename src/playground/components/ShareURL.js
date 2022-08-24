@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function ShareURL({ url }) {
     const [isDataCopied, setIsDataCopied] = useState(false);
-    const [ShowShareURL, setShowShareURL] = useState(false);
+    const [showShareURL, setShowShareURL] = useState(false);
 
     return (
         <div>
