@@ -19,13 +19,15 @@ tags:
 ##  Introduction
 A parser is a program that takes input in the form of sequential source program instructions and breaks it into smaller pieces (tokens) to generate statements and expressions. The parser then represents the statements and expressions in the form of a parse tree or an Abstract Syntax Tree (AST) that depicts the syntactic structure of your source code.
 
-In this tutorial, first, you'll learn on a high-level how your source code is broken down into multiple tokens and is then converted to build an AST. Next, you'll learn how [ESLint](https://eslint.org/docs/latest/) leverages the capability of AST and helps you build your own custom rules.
-
-The main steps involved in how the parsers process the source code are:
-
-Step 1: Lexical analysis
-
-Step 2: Syntax analysis
+In this tutorial, first, you'll learn on a high-level how your source code is broken down into multiple tokens and is then converted to build an AST. Next, you'll learn how [ESLint](https://eslint.org/docs/latest/) leverages the capability of AST and helps you build your own custom rules. This tutorial is intended for those who have basic familiarity with:
+- Computer programming
+- Javascript coding
+- ESlint tool
+  
+By the end of this tutorial, you’ll be able to:
+- Understand how the source code is converted to AST.
+- Generate AST for your source program using AST explorer.
+- Understand how to traverse the AST nodes to write custom rules in ESLint.
 
 ## Step 1: Lexical analysis
 [Lexical analysis](https://en.wikipedia.org/wiki/Lexical_analysis) commonly known as tokenization is the process of converting your source code into a sequence of tokens. A token can be any valid entity in a programming language such as an identifier, keyword, operator, function call, string, or separator. Tokens do not understand how things fit together instead focus on different components of a file. Consider it analogous to breaking a sentence into different words and identifying the words such as nouns, verbs, numbers, adjectives, and punctuation. At this point, you don’t understand what’s part of a sentence or how these words fit together to make a sentence. The below picture depicts how a simple `if statement` is converted into multiple tokens.
