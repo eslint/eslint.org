@@ -90,6 +90,13 @@ module.exports = {
 
 In the above code snippet, check if the length of the body of the `CatchClause` node is 0. If yes, use ESLint’s [report](https://eslint.org/docs/latest/developer-guide/working-with-rules#contextreport) method to raise a complaint.
 
+## Summary
+In this tutorial, you gained a high-level understanding of how your source program is converted to multiple tokens and then to an AST. You also learned how to:
+
+- Use AST Explorer a freely available online tool to generate AST for your source program.
+
+- Leverage the AST and traverse the AST  nodes to write custom rules in ESLint.
+
 ##  What's next?
 - [Generate AST for your source code](https://astexplorer.net/).
 - [Learn how to write and configure your own custom ESLint rules](https://developers.mews.com/how-to-write-custom-eslint-rules/). 
