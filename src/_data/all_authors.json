@@ -152,5 +152,16 @@
         "twitter_username": "haydenbleasel",
         "github_username": "haydenbleasel",
         "location": "Delray Beach, FL"
+    },
+    "bpmutter": {
+        "username": "bpmutter",
+        "name": "Ben Perlmutter",
+        "title": "Guest Author",
+        "website": "ben.perlmutter.io",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57849986?v=4",
+        "bio": "web dev & tech writer",
+        "twitter_username": "bpmutter",
+        "github_username": "bpmutter",
+        "location": "New York, NY"
     }
 }
