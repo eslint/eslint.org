@@ -1,0 +1,1 @@
+I believe in the power of open source. Obsessed with JavaScript and Web Browsers.
