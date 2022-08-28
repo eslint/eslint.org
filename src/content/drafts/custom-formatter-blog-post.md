@@ -176,11 +176,12 @@ function addOne(i) {
 ```
 
 Next, let's test it out manually by using the custom formatter in the terminal. 
+Include the path to your formatter as the argument to the `--format` flag.
 
 Run the following:
 
 ```sh
-npx eslint test-data/fullOfProblems.js -f ./formatter.js
+npx eslint test-data/fullOfProblems.js --format ./formatter.js
 ```
 
 You should see a TOML version of the ESLint report in your terminal. 
@@ -263,7 +264,7 @@ Update the project's `package.json` file with the following information:
 
 | **Field**     | **Value**                                                                                                                                                                                                           |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "name"        | A unique string name for the package.                                                                                                                                                                               |
+| "name"        | A unique string name for the package. The package name **must** begin with `eslint-formatter-`. There cannot be any other packages published on npm with the same name.                                                |
 | "version"     | A string version for the package, like `"1.0.0"`.                                                                                                                                                                     |
 | "description" | A string description of the package.                                                                                                                                                                                |
 | "main"        | `"formatter.js"`                                                                                                                                                                                                      |
@@ -304,9 +305,40 @@ npm publish
 ```
 
 Now the formatter is live for anyone to use! You can find it by visiting the link
-`https://www.npmjs.com/package/<your-package-name`.
+`https://www.npmjs.com/package/eslint-formatter-<REST-OF-YOUR-PACKAGE-NAME>`.
 
 ### 5. Use Published Custom Formatter
+
+Use the published package by installing the custom formatter in your project
+with the following command: 
+
+```sh
+npm install --save-dev eslint-formatter-<REST-OF-YOUR-PACKAGE-NAME>
+```
+
+Then add a script to run the package with ESLint to your `package.json`. 
+Include the formatter name as the argument to the `--format` flag.
+You can omit `eslint-formatter-` from the argument,
+just including `<YOUR-PACKAGE-NAME>`.
+
+```json
+{
+  // ...other configuration
+  "scripts": {
+    //...other scripts
+    "test:prod": "eslint --format <YOUR-PACKAGE-NAME> test-data/fullOfProblems.js"
+  },
+  // ...other configuration
+}
+```
+
+To test the script, run:
+
+```sh
+npm run test:prod
+```
+
+You should see the same TOML output in the terminal. 
 
 ## Wrapping it up
 
