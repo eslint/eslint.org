@@ -76,7 +76,8 @@ Similar to the `ESLint` class, there was no easy way to provide an option to swi
 
 ```js
 // ESM
-import { FlatRuleTester } from "eslint/use-at-your-own-risk";
+import pkg from "eslint/use-at-your-own-risk";
+const { FlatRuleTester } = pkg;
 
 // CommonJS
 const { FlatRuleTester } = require("eslint/use-at-your-own-risk");
