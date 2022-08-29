@@ -36,7 +36,7 @@ By the end of this post, you'll know how to:
 
 In the remainder of this post, we're going to create a custom formatter that
 outputs ESLint results to [TOML](https://toml.io/).
-TOML is a file format for representing data, similar to JSON or YAML.
+TOML is a format for representing data, similar to JSON or YAML.
 Developers often use TOML for config files, as it's optimized for human readability.
 
 The custom formatter we'll build will take an ESLint formatter `results`object
@@ -55,7 +55,7 @@ like this:
 }
 ```
 
-The custom formatter will then create the TOML output: 
+Then, the custom formatter will create the TOML output: 
 
 ```toml
 extends = "eslint:recommended"
@@ -68,7 +68,7 @@ semi = [ 1, "always" ]
 space-unary-ops = 2
 ```
 
-Then we'll see how to publish the formatter to npm and use it in a project.
+We'll also see how to publish the formatter to npm and use it in a project.
 
 ## Steps
 
@@ -82,11 +82,11 @@ Before you begin:
 
 ### 1. Create Project
 
-First we're going to create the project for our custom formatter.
+First, we're going to create the project for our custom formatter.
 Since an ESLint custom formatter is just a JavaScript function, let's create a 
 new project for the custom formatter by running the following:
 
-```sh
+```bash
 mkdir eslint-formatter-toml
 cd eslint-formatter-toml
 npm init -y
@@ -94,7 +94,7 @@ npm init -y
 
 Add ESLint to the project:
 
-```sh
+```bash
 npm install eslint --save-dev
 ```
 
@@ -120,7 +120,7 @@ refer to the [Configuration File documentation](https://eslint.org/docs/latest/u
 
 Next, add the [json2toml](https://www.npmjs.com/package/json2toml) package, which we'll use to help convert JavaScript objects to TOML: 
 
-```sh
+```bash
 npm install json2toml
 ```
 
@@ -129,9 +129,10 @@ Now we're ready to write the custom formatter.
 ### 2. Create the Custom Formatter 
 
 Custom formatters are just JavaScript functions that take a `results` object and 
-optional `context` object as input and return a string as an output.
-
-TODO: expand on above
+optional `context` object as arguments and return a string as an output.
+In the custom formatter we'll make in this post, we'll just use the `results` argument.
+The `results` argument contains array of all the ESLint results.
+For more information, refer to the [results object documentation](https://eslint.org/docs/latest/developer-guide/working-with-custom-formatters#the-result-object).
 
 In the `eslint-formatter-toml` directory, create a new file `formatter.js`.
 Now let's create the custom formatter in `formatter.js`:
@@ -175,12 +176,12 @@ function addOne(i) {
 };
 ```
 
-Next, let's test it out manually by using the custom formatter in the terminal. 
+Next, let's test our custom formatter out manually with the `eslint` CLI. 
 Include the path to your formatter as the argument to the `--format` flag.
 
 Run the following:
 
-```sh
+```bash
 npx eslint test-data/fullOfProblems.js --format ./formatter.js
 ```
 
@@ -192,7 +193,7 @@ Install the JavaScript testing package [Jest](https://jestjs.io/)
 and the [toml](https://www.npmjs.com/package/toml) package,
 which we'll use to test the custom formatter:
 
-```sh
+```bash
 npm install jest toml --save-dev
 ```
 
@@ -232,13 +233,13 @@ test("Test TOML formatter", async () => {
 
 With everything ready, let's run the test:
 
-```sh
+```bash
 npm test
 ```
 
 In the terminal you should see the following output with the passing test results:
 
-```console
+```
 > eslint-formatter-toml@1.0.0 test
 > jest
 
@@ -257,21 +258,21 @@ Everything is working as expected!
 ### 4. Publish to npm
 
 Since we've validated that the custom formatter works the way we expect from the tests,
-we are ready to publish it to npm. Once it's published to npm, we and anyone 
-else on the internet who wants to add the custom formatter to their project can.
+we are ready to publish it to npm. Once it's published, anyone on the internet
+who wants to use the custom formatter is able to.
 
 Update the project's `package.json` file with the following information:
 
-| **Field**     | **Value**                                                                                                                                                                                                           |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "name"        | A unique string name for the package. The package name **must** begin with `eslint-formatter-`. There cannot be any other packages published on npm with the same name.                                                |
-| "version"     | A string version for the package, like `"1.0.0"`.                                                                                                                                                                     |
-| "description" | A string description of the package.                                                                                                                                                                                |
-| "main"        | `"formatter.js"`                                                                                                                                                                                                      |
-| "keywords"    | `["eslint-formatter", "eslintformatter", "eslint"]`. Add any other keywords you'd like to the array.                                                                                                                  |
-| "author"      | String or object with any author information you'd like to add. For more information, refer to the [npm documention](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#people-fields-author-contributors). |
+| **Field**     | **Value**  |
+|:--------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `"name"`        | A unique string name for the package. The package name **must** begin with `eslint-formatter-`. There cannot be any other packages published on npm with the same name. |
+| `"version"`     | A string version for the package, like `"1.0.0"`. |
+| `"description"` | A string description of the package.|
+| `"main"`        | `"formatter.js"` |
+| `"keywords"`    | `["eslint-formatter", "eslintformatter", "eslint"]`. Add any other keywords you'd like to the array. |
+| `"author"`      | String or object with any author information you'd like to add. For more information, refer to the [npm documention](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#people-fields-author-contributors). |
 
-Now your `package.json` should similar to the following: 
+Your `package.json` should look similar to the following: 
 
 ```json
 {
@@ -300,7 +301,7 @@ Now your `package.json` should similar to the following:
 The package is ready for publication. To publish it, run the following command
 from the main directory of the project:
 
-```sh
+```bash
 npm publish
 ```
 
@@ -312,21 +313,22 @@ Now the formatter is live for anyone to use! You can find it by visiting the lin
 Use the published package by installing the custom formatter in your project
 with the following command: 
 
-```sh
+```bash
 npm install --save-dev eslint-formatter-<REST-OF-YOUR-PACKAGE-NAME>
 ```
 
-Then add a script to run the package with ESLint to your `package.json`. 
-Include the formatter name as the argument to the `--format` flag.
+Then add a script for running the package with ESLint to your `package.json`. 
+Include your formatter's name as the argument to the `--format` flag.
 You can omit `eslint-formatter-` from the argument,
 just including `<YOUR-PACKAGE-NAME>`.
+ESLint knows to look for packages starting with `eslint-formatter-`.
 
 ```json
 {
   // ...other configuration
   "scripts": {
     //...other scripts
-    "test:prod": "eslint --format <YOUR-PACKAGE-NAME> test-data/fullOfProblems.js"
+    "test:prod": "eslint --format <REST-OF-YOUR-PACKAGE-NAME> test-data/fullOfProblems.js"
   },
   // ...other configuration
 }
@@ -334,7 +336,7 @@ just including `<YOUR-PACKAGE-NAME>`.
 
 To test the script, run:
 
-```sh
+```bash
 npm run test:prod
 ```
 
@@ -345,5 +347,5 @@ You should see the same TOML output in the terminal.
 That's it! You now know how to create a ESLint custom formatter, publish it,
 and use it in a project. 
 
-If you'd like to view the code referenced in this post, check out
+If you'd like to view the source code for the example in this post, check out
 [the repository on Github](https://github.com/bpmutter/eslint-formatter-toml).
