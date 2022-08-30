@@ -1,7 +1,8 @@
 {
-    "name": "ESLint",
+    "name": "eslint.org",
+    "private": true,
     "version": "1.0.0",
-    "description": "",
+    "description": "The codebase for the ESLint website (eslint.org)",
     "main": "index.js",
     "keywords": [],
     "author": "",

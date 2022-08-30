@@ -89,6 +89,12 @@ const customTheme = theme => ({
 });
 
 export default function Configuration({ rulesMeta, eslintVersion, onUpdate, options, ruleNames, validationError }) {
+
+    const [showVersion, setShowVersions] = useState(false);
+    const [showEnvironment, setShowEnvironment] = useState(false);
+    const [showRules, setShowRules] = useState(true);
+
+
     const sourceTypeOptions = SOURCE_TYPES.map(sourceType => ({ value: sourceType, label: sourceType }));
     const ECMAFeaturesOptions = ECMA_FEATURES.map(ecmaFeature => ({ value: ecmaFeature, label: ecmaFeature }));
     const ECMAVersionsOptions = ECMA_VERSIONS.map(ecmaVersion => ({ value: ecmaVersion === "latest" ? ecmaVersion : Number(ecmaVersion), label: ecmaVersion }));
@@ -106,11 +112,14 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
     return (
         <div className="playground__config-options__sections">
             <div className="playground__config-options__section">
-                <ShareURL url={window.location}/>
+                <ShareURL url={window.location} />
             </div>
             <div className="playground__config-options__section">
-                <h2 data-config-section-title className="title-toggle">Versioning and Config</h2>
-                <div data-config-section>
+                <button className="playground-toggle c-btn c-btn--ghost" onClick={() => setShowVersions(currentValue => !currentValue)}>
+                    <h2 data-config-section-title>Versioning and Config</h2>
+                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showVersion ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                </button>
+                {showVersion && <div data-config-section>
                     <div className="c-field-group">
                         <label className="c-field" htmlFor="eslint-version">
                             <span className="label__text">ESLint Version</span>
@@ -137,7 +146,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                             isSearchable={false}
                             styles={customStyles}
                             theme={theme => customTheme(theme)}
-                            defaultValue={sourceTypeOptions.filter(sourceTypeOption => options.parserOptions.sourceType === sourceTypeOption.value) }
+                            defaultValue={sourceTypeOptions.filter(sourceTypeOption => options.parserOptions.sourceType === sourceTypeOption.value)}
                             options={sourceTypeOptions}
                             onChange={selected => {
                                 options.parserOptions.sourceType = selected.value;
@@ -165,11 +174,14 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                             }}
                         />
                     </div>
-                </div>
+                </div>}
             </div>
             <div className="playground__config-options__section">
-                <h2 data-config-section-title>Environments</h2>
-                <div data-config-section>
+                <button className="playground-toggle c-btn c-btn--ghost" onClick={() => setShowEnvironment(currentValue => !currentValue)}>
+                    <h2 data-config-section-title>Environments</h2>
+                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showEnvironment ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                </button>
+                {showEnvironment && <div data-config-section>
                     <Select
                         isMulti
                         styles={customStyles}
@@ -185,10 +197,14 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                         }}
                     />
                 </div>
+                }
             </div>
             <div className="playground__config-options__section playground__config-options__section--rules">
-                <h2 data-config-section-title>Rules</h2>
-                <div data-config-section>
+                <button className="playground-toggle c-btn c-btn--ghost" onClick={() => setShowRules(currentValue => !currentValue)}>
+                    <h2 data-config-section-title>Rules</h2>
+                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showRules ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                </button>
+                {showRules && <div data-config-section>
                     <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
                     <Select
                         isClearable
@@ -234,7 +250,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                         }}
                                     >
                                         <svg width="25" height="25" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M28.5 16L16.5 28M16.5 16L28.5 28" stroke="var(--link-color)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            <path d="M28.5 16L16.5 28M16.5 16L28.5 28" stroke="var(--link-color)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </button>
                                 </h4>
@@ -261,6 +277,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                         ))}
                     </RuleList>
                 </div>
+                }
             </div>
             {/* TODO: Add Plugins */}
             {/* <div className="playground__config-options__section">
