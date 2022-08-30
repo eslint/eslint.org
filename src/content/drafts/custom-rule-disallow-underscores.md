@@ -73,7 +73,7 @@ Follow the steps below to create the custom rule to disallow the use of undersco
 
 1. Add the custom rule `no-underscores-in-variables` to the `index.js` file:
 
-  ```
+  ```js
   module.exports = {
     rules: {
       "no-underscores-in-variables": {
