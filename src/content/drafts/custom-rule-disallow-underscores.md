@@ -28,7 +28,7 @@ Ensure you complete the following before you proceed:
 - Install [yarn](https://classic.yarnpkg.com/en/docs/install).
 - Install and configure ESLint. See [Getting Started with ESlint](https://eslint.org/docs/latest/user-guide/getting-started) for more information.
 
-**Note:** This walkthrough uses a JavaScript ESLint configuration file and yarn.
+**Note:** This post uses a JavaScript ESLint configuration file and Yarn.
 
 ## Create the Plugin
 
