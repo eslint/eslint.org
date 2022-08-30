@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131748,
-        "monthlyDonations": 10979,
-        "sponsorCount": 184
+        "annualDonations": 131808,
+        "monthlyDonations": 10984,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -981,6 +981,14 @@
             "name": "Kobayashi Kazuhiro",
             "image": "https://avatars.githubusercontent.com/u/548508?v=4",
             "url": "https://kzhrk.dev/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Shane",
+            "image": "https://avatars.githubusercontent.com/u/561207?u=6442bd8acb1aa78708caf7d82b0a08f733c31014&v=4",
+            "url": "https://shanethe.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
