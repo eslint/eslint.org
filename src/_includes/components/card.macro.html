@@ -22,7 +22,7 @@
     {%- set img = ['/assets/images/blog-covers/', imageName] | join  -%}
     {%- set image_path = ["/blog-covers/", imageName] | join -%}
     {%- set image_alt = params.title -%}
-    <a href="{{ params.url }}" class="card__cover">
+    <a href="{{ params.url }}" class="card__cover" tabindex="-1">
         {%- image image_path, params.title -%}
     </a>
     <div class="card__content">

@@ -552,7 +552,7 @@
             "url": "https://metatierlist.com",
             "image": "https://images.opencollective.com/metatierlist/68a5b41/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -624,7 +624,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 70,
+            "totalDonations": 75,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -986,6 +986,14 @@
             "tier": "backer"
         },
         {
+            "name": "Shane",
+            "image": "https://avatars.githubusercontent.com/u/561207?u=6442bd8acb1aa78708caf7d82b0a08f733c31014&v=4",
+            "url": "https://shanethe.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Will Stone",
             "image": "https://avatars.githubusercontent.com/u/654103?u=87566f3bc8fcd2ee9946dd64d32a99f59d0775c4&v=4",
             "url": "https://wstone.uk",
@@ -1061,14 +1069,6 @@
             "name": "Zhigang Fang",
             "image": "https://avatars.githubusercontent.com/u/1057756?u=15c3cdff1c715ac27bbc63ccb8f0a1c27eeb3784&v=4",
             "url": "https://reily.app",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Frédéric Harper",
-            "image": "https://avatars.githubusercontent.com/u/1170989?u=763b5b04f6ac70447e0a76c0f0830e5e9aa8e6a3&v=4",
-            "url": "https://fred.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1189,6 +1189,14 @@
             "name": "PENG Rui",
             "image": "https://avatars.githubusercontent.com/u/6322673?u=bfd7ed8bc1a1549a0ccd166883a7c55dc2993814&v=4",
             "url": "https://github.com/IndexXuan",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ingo Steinke",
+            "image": "https://avatars.githubusercontent.com/u/6377941?u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
+            "url": "https://www.ingo-steinke.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1365,14 +1373,6 @@
             "name": "Mikl Wolfe",
             "image": "https://avatars.githubusercontent.com/u/22719398?u=34dbc5a2f36a3bf05b9d5a7f49211cb96fd91e11&v=4",
             "url": "chiefmikey.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "The GraphQL Guide",
-            "image": "https://avatars.githubusercontent.com/u/23441982?v=4",
-            "url": "https://graphql.guide",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"

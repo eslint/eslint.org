@@ -1,6 +1,9 @@
 .playground__config__download-btn {
     margin: 1rem;
 }
+[data-config-section] {
+    margin-top: 1rem;
+}
 
 [data-config-section-title]  {
     font-size: .875rem;
@@ -9,12 +12,17 @@
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
-    margin-bottom: 1rem;
-    margin-block-end: 1rem;
 
     .config-js & {
         margin: 0;
     }
+}
+.playground-toggle { 
+    border: none;
+    display: flex;
+    width:100%;
+    padding: 0;
+    justify-content: space-between;
 }
 
 [data-config-section-toggle] {
@@ -138,6 +146,10 @@
     transform-origin: 50% 50%;
     transition: all 0.1s linear;
     color: inherit;
+}
+
+.playground__config-and-footer {
+    scrollbar-gutter: stable;
 }
 
 .config-js [aria-expanded="true"] .config-icon {
