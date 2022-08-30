@@ -2,7 +2,7 @@
 ---
 layout: post
 title: Create a custom rule to disallow underscores
-teaser: "This blog post explains how to create an ESLint custom rule, which disallows underscores."
+teaser: "This blog post explains how to create an ESLint custom rule that disallows underscores in variable names."
 tags:
   - Custom Rules
 authors:
