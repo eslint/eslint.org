@@ -12,7 +12,7 @@ categories:
 ---
 
 
-This blog post describes how to create a custom rule that disallows using an underscore when declaring a variable name. For example, `my-variable` or `myvariable` is be valid, but `my_variable` is disallowed.
+This blog post describes how to create a custom rule that disallows using an underscore when declaring a variable name. For example, `my-variable` or `myvariable` is valid, but `my_variable` is disallowed.
 
 To create a custom rule you'll need to:
 
