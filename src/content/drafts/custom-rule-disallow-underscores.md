@@ -145,7 +145,7 @@ var ruleTester = new RuleTester();
 ruleTester.run("no-underscores-in-variables", rule, {
   valid: [
       {
-          code: "valid-name;",
+          code: "validName;",
       },
       {
           code: "validname;",
