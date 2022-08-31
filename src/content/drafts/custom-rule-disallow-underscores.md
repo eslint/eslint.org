@@ -26,7 +26,7 @@ Before you write any code, it's important to think about what problem you're try
 
 For our example, we want to ensure that variable names adhere to a specific format that disallows underscores. Therefore, when we design the rule, we want to first detect the presence of an underscore in the variable name and then trigger a message if one is found.
 
-Before you write a rule, always check to see if someone else has already solved your problem. Below are links to help you find existing rules and configs:
+Before you write a rule, always check to see if someone else has already solved your problem. Here are some links to help you find existing rules:
 
 * [Official ESLint rules](https://eslint.org/docs/rules/)
 * [awesome-eslint](https://github.com/dustinspecker/awesome-eslint) – A collection of ESLint presets, configs, plugins, and rules.
