@@ -11,7 +11,7 @@ categories:
   - Tutorials
 ---
 
-This blog post describes how to create a custom ESLint rule that disallows using an underscore when declaring a variable name. For example, `my-variable` or `myvariable` is valid, but `my_variable` is disallowed.
+This blog post describes how to create a custom ESLint rule that disallows using an underscore when declaring a variable name. For example, `myVariable` or `myvariable` is valid, but `my_variable` is disallowed.
 
 These are the steps we'll cover:
 
