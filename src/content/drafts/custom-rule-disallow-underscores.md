@@ -31,7 +31,7 @@ Before you write a rule, always check to see if someone else has already solved 
 * [Official ESLint rules](https://eslint.org/docs/rules/)
 * [awesome-eslint](https://github.com/dustinspecker/awesome-eslint) – A collection of ESLint presets, configs, plugins, and rules.
 
-For the purpose of this post, we'll assume that no one else has created this rule and create a new custom rule.
+For the purpose of this post, we'll assume that no one else has already created this rule.
 
 ESLint stores all the tokens it finds during code analysis in an Abstract Syntax Tree (AST). Therefore, our rule needs to traverse the AST, and for each variable node, run a function to detect underscore characters in its name.
 
