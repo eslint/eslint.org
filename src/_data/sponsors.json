@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131808,
-        "monthlyDonations": 10984,
-        "sponsorCount": 185
+        "annualDonations": 131748,
+        "monthlyDonations": 10979,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -1386,14 +1386,6 @@
             "tier": "backer"
         },
         {
-            "name": "Jonathan Milan Pollock, MS",
-            "image": "https://avatars.githubusercontent.com/u/29420046?u=4abd4069b4fef966d4ce3f6fbff4f14f2bc6080f&v=4",
-            "url": "https://www.darkrushphotography.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Oliver Sieweke",
             "image": "https://avatars.githubusercontent.com/u/30631513?u=fbbb709bd6feec2525869ed071b241d52ff87148&v=4",
             "url": "www.oliversieweke.com",
@@ -1523,7 +1515,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 12,
+            "totalDonations": 13,
             "source": "opencollective",
             "tier": null
         },
