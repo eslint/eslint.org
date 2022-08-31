@@ -24,7 +24,7 @@ These are the steps we'll cover:
 
 Before you write any code, it's important to think about what problem you're trying to solve. 
 
-For our example, we want to ensure that variable names adhere to a specific format that disallows underscores. Therefore, when we design the rule, we want to first detect the presence of an underscore in the variable name, then trigger a message if one is found.
+For our example, we want to ensure that variable names adhere to a specific format that disallows underscores. Therefore, when we design the rule, we want to first detect the presence of an underscore in the variable name and then trigger a message if one is found.
 
 Before you write a rule, always check to see if someone else has already solved your problem. Below are links to help you find existing rules and configs:
 
