@@ -405,8 +405,12 @@ You should see the same TOML output in the terminal.
 
 ## Wrapping it up
 
-That's it! You now know how to create a ESLint custom formatter, publish it,
-and use it in a project. 
+That's it! In this post, you learned how to create and test a ESLint custom formatter.
+You also learned how to publish the formatter to npm and use it in a project.
+Now when you need to create formatter results not covered by ESLint's built-in
+formatter, you can create a custom formatter.
+
+For more information, refer to the [custom formatter docs](https://eslint.org/docs/latest/developer-guide/working-with-custom-formatters).
 
 If you'd like to view the source code for the example in this post, check out
 [the repository on Github](https://github.com/bpmutter/eslint-formatter-toml).
