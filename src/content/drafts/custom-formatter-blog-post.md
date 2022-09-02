@@ -12,7 +12,7 @@ tags:
   - Custom Formatter
 ---
 
-In this post, we'll look at how to create a [custom formatter](https://eslint.org/docs/latest/developer-guide/working-with-custom-formatter)
+In this post, you'll look at how to create a [custom formatter](https://eslint.org/docs/latest/developer-guide/working-with-custom-formatter)
 for your ESLint project. Custom formatters are JavaScript functions
 that let you create a unique output for your linting results. 
 
@@ -34,12 +34,12 @@ By the end of this post, you'll know how to:
 
 ## What you will build
 
-In the remainder of this post, we're going to create a custom formatter that
+In the remainder of this post, your're going to create a custom formatter that
 outputs ESLint results to [TOML](https://toml.io/).
 TOML is a format for representing data, similar to JSON or YAML.
 Developers often use TOML for config files, as it's optimized for human readability.
 
-The custom formatter we'll build will take an array of ESLint formatter
+The custom formatter you'll build will take an array of ESLint formatter
 `results` objects like this: 
 
 ```js
@@ -114,7 +114,7 @@ messages = []
 warningCount = 0
 ```
 
-We'll also see how to publish the formatter to npm and use it in a project.
+You'll also see how to publish the formatter to npm and use it in a project.
 
 ## Steps
 
@@ -122,13 +122,13 @@ Before you begin:
 
 1. Have [Node.js](https://nodejs.org) and npm installed in your development environment.
 2. Have a basic understanding of how to use Node.js and npm.
-3. If you want to publish your custom formatter to npm like we'll cover below, 
+3. If you want to publish your custom formatter to npm like you'll cover below, 
    [create an npm account](https://www.npmjs.com/signup) and login from the
    [npm CLI](https://docs.npmjs.com/cli/v7/commands/npm-adduser).
 
 ### 1. Create project
 
-First, we're going to create the project for our custom formatter.
+First, you're going to create the project for your custom formatter.
 Since an ESLint custom formatter is just a JavaScript function, let's create a 
 new project for the custom formatter by running the following:
 
@@ -180,19 +180,19 @@ module.exports = {
 For more information on customizing your ESLint configuration,
 refer to the [Configuration File documentation](https://eslint.org/docs/latest/user-guide/configuring/configuration-files).
 
-Next, add the [json2toml](https://www.npmjs.com/package/json2toml) package, which we'll use to help convert JavaScript objects to TOML: 
+Next, add the [json2toml](https://www.npmjs.com/package/json2toml) package, which you'll use to help convert JavaScript objects to TOML: 
 
 ```bash
 npm install json2toml
 ```
 
-Now we're ready to write the custom formatter.
+Now you're ready to write the custom formatter.
 
 ### 2. Create the custom formatter 
 
 Custom formatters are just JavaScript functions that receive a `results` object and 
 optional `context` object as arguments and return a string as an output.
-In the custom formatter we'll make in this post, we'll just use the `results` argument.
+In the custom formatter you'll make in this post, you'll just use the `results` argument.
 The `results` argument contains array of all the ESLint results.
 For more information, refer to the [results object documentation](https://eslint.org/docs/latest/developer-guide/working-with-custom-formatters#the-result-object).
 
@@ -222,9 +222,9 @@ module.exports = formatTOML;
 
 With the custom formatter made, let's test it out locally. 
 
-First, we need the file that we're going to lint. 
+First, you need the file that you're going to lint. 
 Add the directory `test-data` containing the file  `fullOfProblems.js`,
-which has some ESLint errors that we'll run the test on.
+which has some ESLint errors that you'll run the test on.
 Add the following contents to `test-data/fullOfProblems.js`:
 
 ```js
@@ -237,7 +237,7 @@ function addOne(i) {
 };
 ```
 
-Next, let's test our custom formatter out manually with the `eslint` CLI. 
+Next, let's test your custom formatter out manually with the `eslint` CLI. 
 Include the path to your formatter as the argument to the `--format` flag.
 
 Run the following:
@@ -252,13 +252,13 @@ Now that the custom formatter is working, let's test it programmatically with a
 unit test.
 Install the JavaScript testing package [Jest](https://jestjs.io/)
 and the [toml](https://www.npmjs.com/package/toml) package,
-which we'll use to test the custom formatter:
+which you'll use to test the custom formatter:
 
 ```bash
 npm install jest toml --save-dev
 ```
 
-In your `package.json` file, update our test script to use Jest:
+In your `package.json` file, update your test script to use Jest:
 
 ```json
   // ...other config
@@ -269,7 +269,7 @@ In your `package.json` file, update our test script to use Jest:
 ```
 
 Now create a file for the test, `formatter.test.js`. In the test file,
-we're going to use the [ESLint Node.js API](https://eslint.org/docs/latest/developer-guide/nodejs-api).
+you're going to use the [ESLint Node.js API](https://eslint.org/docs/latest/developer-guide/nodejs-api).
 Add the following code to `formatter.test.js`:
 
 ```js
@@ -318,8 +318,8 @@ Everything is working as expected!
 
 ### 4. Publish to npm
 
-Since we've validated that the custom formatter works the way we expect from the tests,
-we are ready to publish it to npm. Once it's published, anyone on the internet
+Since you've validated that the custom formatter works the way you expect from the tests,
+you are ready to publish it to npm. Once it's published, anyone on the internet
 who wants to use the custom formatter is able to.
 
 Update the project's `package.json` file with the following information:
