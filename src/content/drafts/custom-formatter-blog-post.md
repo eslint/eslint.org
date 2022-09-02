@@ -18,7 +18,8 @@ that let you create a unique output for your linting results.
 
 You might want to make a custom formatter if the formatters built into ESLint 
 don't meet the needs of your use case. You can learn more about ESLint's built-in
-formatters in the [formatter documentation](https://eslint.org/docs/latest/user-guide/formatters/). Some reasons to create a custom formatter include: 
+formatters in the [formatter documentation](https://eslint.org/docs/latest/user-guide/formatters/).
+Some reasons to create a custom formatter include: 
 
 * You only want to report specific error types.
 * You want to format to the results in a way not supported by a built-in formatter.
@@ -38,33 +39,79 @@ outputs ESLint results to [TOML](https://toml.io/).
 TOML is a format for representing data, similar to JSON or YAML.
 Developers often use TOML for config files, as it's optimized for human readability.
 
-The custom formatter we'll build will take an ESLint formatter `results` object
-like this: 
+The custom formatter we'll build will take an array of ESLint formatter
+`results` objects like this: 
 
 ```js
-{
-    "extends": "eslint:recommended",
-    "rules": {
-        "consistent-return": 2,
-        "indent"           : [1, 4],
-        "no-else-return"   : 1,
-        "semi"             : [1, "always"],
-        "space-unary-ops"  : 2
+[
+    {
+        filePath: "/path/to/a/file.js",
+        messages: [
+            {
+                ruleId: "curly",
+                severity: 2,
+                message: "Expected { after 'if' condition.",
+                line: 2,
+                column: 1,
+                nodeType: "IfStatement"
+            },
+            {
+                ruleId: "no-process-exit",
+                severity: 2,
+                message: "Don't use process.exit(); throw an error instead.",
+                line: 3,
+                column: 1,
+                nodeType: "CallExpression"
+            }
+        ],
+        errorCount: 2,
+        warningCount: 0,
+        fixableErrorCount: 0,
+        fixableWarningCount: 0,
+        source:
+            "var err = doStuff();\nif (err) console.log('failed tests: ' + err);\nprocess.exit(1);\n"
+    },
+    {
+        filePath: "/path/to/Gruntfile.js",
+        messages: [],
+        errorCount: 0,
+        warningCount: 0,
+        fixableErrorCount: 0,
+        fixableWarningCount: 0
     }
-}
+]
 ```
 
 Then, the custom formatter will create the TOML output: 
 
 ```toml
-extends = "eslint:recommended"
-
-[rules]
-consistent-return = 2
-indent = [ 1, 4 ]
-no-else-return = 1
-semi = [ 1, "always" ]
-space-unary-ops = 2
+errorCount = 2
+filePath = "/path/to/a/file.js"
+fixableErrorCount = 0
+fixableWarningCount = 0
+[[0.messages]]
+column = 1
+line = 2
+message = "Expected { after 'if' condition."
+nodeType = "IfStatement"
+ruleId = "curly"
+severity = 2
+[[0.messages]]
+column = 1
+line = 3
+message = "Don't use process.exit(); throw an error instead."
+nodeType = "CallExpression"
+ruleId = "no-process-exit"
+severity = 2
+source = "var err = doStuff();\nif (err) console.log('failed tests: ' + err);\nprocess.exit(1);\n"
+warningCount = 0
+[1]
+errorCount = 0
+filePath = "/path/to/Gruntfile.js"
+fixableErrorCount = 0
+fixableWarningCount = 0
+messages = []
+warningCount = 0
 ```
 
 We'll also see how to publish the formatter to npm and use it in a project.
@@ -79,7 +126,7 @@ Before you begin:
    [create an npm account](https://www.npmjs.com/signup) and login from the
    [npm CLI](https://docs.npmjs.com/cli/v7/commands/npm-adduser).
 
-### 1. Create Project
+### 1. Create project
 
 First, we're going to create the project for our custom formatter.
 Since an ESLint custom formatter is just a JavaScript function, let's create a 
@@ -94,23 +141,39 @@ npm init -y
 Add ESLint to the project:
 
 ```bash
-npm install eslint --save-dev
+npm init -y @eslint/config
 ```
 
-To set up a basic ESLint configuration, create the file `.eslintrc`
-with the following contents:
+Select the following options when prompted:
 
-```json
-{
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "ecmaVersion": "latest"
-  },
-  "env": {
-    "es6": true,
-    "node": true,
-    "jest": true
-  }
+| Prompt | Answer |
+|:-------|:-------|
+| How would you like to use ESLint? | To check syntax and find problems |
+| What type of modules does your project use? | CommonJS (require/exports) | 
+| Which framework does your project use? | None of these |
+| Does your project use TypeScript? | No |
+| Where does your code run? | Node |
+| What format do you want your config file to be in? | JavaScript |
+
+This creates the file `.eslintrc.js` with your ESLint configuration.
+The file should look like:
+
+```js
+module.exports = {
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": "eslint:recommended",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+    }
 }
 ```
 
@@ -125,7 +188,7 @@ npm install json2toml
 
 Now we're ready to write the custom formatter.
 
-### 2. Create the Custom Formatter 
+### 2. Create the custom formatter 
 
 Custom formatters are just JavaScript functions that receive a `results` object and 
 optional `context` object as arguments and return a string as an output.
@@ -155,7 +218,7 @@ module.exports = formatTOML;
 
 ```
 
-### 3. Test the Custom Formatter
+### 3. Test the custom formatter
 
 With the custom formatter made, let's test it out locally. 
 
@@ -281,7 +344,7 @@ Your `package.json` should look similar to the following:
   "keywords": ["eslint-formatter", "eslintformatter", "eslint"],
   "author": {
     "name" : "Ben Perlmutter",
-    "email" : "ben@perlmutter.io",
+    "email" : "ben@example.com",
     "url" : "http://ben.perlmutter.io/"
   },
   "license": "MIT",
@@ -306,13 +369,13 @@ npm publish
 Now the formatter is live for anyone to use! You can find it by visiting the link
 `https://www.npmjs.com/package/eslint-formatter-<REST-OF-YOUR-PACKAGE-NAME>`.
 
-### 5. Use Published Custom Formatter
+### 5. Use published custom formatter
 
 Use the published package by installing the custom formatter in your project
 with the following command: 
 
 ```bash
-npm install --save-dev eslint-formatter-<REST-OF-YOUR-PACKAGE-NAME>
+npm install --save-dev eslint-formatter-toml
 ```
 
 Then add a script for running the package with ESLint to your `package.json`. 
@@ -326,7 +389,7 @@ ESLint knows to look for packages starting with `eslint-formatter-`.
   // ...other configuration
   "scripts": {
     //...other scripts
-    "test:prod": "eslint --format <REST-OF-YOUR-PACKAGE-NAME> test-data/fullOfProblems.js"
+    "test:prod": "eslint --format toml test-data/fullOfProblems.js"
   },
   // ...other configuration
 }
