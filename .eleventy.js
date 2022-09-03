@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * @fileoverview Eleventy Configuration File
  * @author Nicholas C. Zakas
@@ -8,36 +10,29 @@
 //-----------------------------------------------------------------------------
 
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const readingTime = require('eleventy-plugin-reading-time');
+const readingTime = require("eleventy-plugin-reading-time");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginTOC = require('eleventy-plugin-nesting-toc');
+const pluginTOC = require("eleventy-plugin-nesting-toc");
 const slugify = require("slugify");
 const markdownIt = require("markdown-it");
-const markdownItAnchor = require('markdown-it-anchor');
+const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
-const metascraper = require('metascraper')([
-    require('metascraper-image')(),
-    require('metascraper-logo')(),
-    require('metascraper-logo-favicon')(),
-    require('metascraper-publisher')(),
-    require('metascraper-title')(),
-    require('metascraper-description')(),
-    require('metascraper-url')()
+const metascraper = require("metascraper")([
+    require("metascraper-image")(),
+    require("metascraper-logo")(),
+    require("metascraper-logo-favicon")(),
+    require("metascraper-publisher")(),
+    require("metascraper-title")(),
+    require("metascraper-description")(),
+    require("metascraper-url")()
 ]);
-const got = require('got');
-const path = require('path');
-const fs = require("fs");
+const got = require("got");
+const path = require("path");
 const yaml = require("js-yaml");
 const {
     DateTime
 } = require("luxon");
-
-//-----------------------------------------------------------------------------
-// Data
-//-----------------------------------------------------------------------------
-
-const SITES_DIR = path.resolve(__dirname, "src/_data/sites");
 
 //-----------------------------------------------------------------------------
 // Eleventy Config
@@ -47,6 +42,7 @@ module.exports = eleventyConfig => {
 
     // Load site-specific data
     const siteName = process.env.ESLINT_SITE_NAME || "en";
+
     eleventyConfig.addGlobalData("site_name", siteName);
 
     // Support YAML data files
@@ -64,134 +60,124 @@ module.exports = eleventyConfig => {
         throwOnUndefined: true
     });
 
-    /*****************************************************************************************
+    /** ***************************************************************************************
      *  Filters
      * ***************************************************************************************/
-    eleventyConfig.addFilter("limitTo", function(arr, limit) {
-        return arr.slice(0, limit);
-    });
+    eleventyConfig.addFilter("limitTo", (arr, limit) => arr.slice(0, limit));
 
-    eleventyConfig.addFilter('jsonify', function(variable) {
-        return JSON.stringify(variable);
-    });
+    eleventyConfig.addFilter("jsonify", variable => JSON.stringify(variable));
 
-    eleventyConfig.addFilter('slugify', function(str) {
+    eleventyConfig.addFilter("slugify", str => {
         if (!str) {
-            return;
+            return "";
         }
 
         return slugify(str, {
             lower: true,
             strict: true,
-            remove: /["]/g,
+            remove: /["]/gu
         });
     });
 
-    eleventyConfig.addFilter('URIencode', function(str) {
+    eleventyConfig.addFilter("URIencode", str => {
         if (!str) {
-            return;
+            return "";
         }
         return encodeURI(str);
     });
 
     /* order collection by the order specified in the front matter */
-    eleventyConfig.addFilter("sortByPageOrder", function(values) {
-        return values.slice().sort((a, b) => a.data.order - b.data.order);
-    });
+    eleventyConfig.addFilter("sortByPageOrder", values => values.slice().sort((a, b) => a.data.order - b.data.order));
 
-    eleventyConfig.addFilter("readableDate", (dateObj) => {
-        //turn it into a JS Date string
+    eleventyConfig.addFilter("readableDate", dateObj => {
+
+        // turn it into a JS Date string
         const date = new Date(dateObj);
-        //pass it to luxon for formatting
-        return DateTime.fromJSDate(date).toFormat('dd MMM, yyyy');
+
+
+        // pass it to luxon for formatting
+        return DateTime.fromJSDate(date).toFormat("dd MMM, yyyy");
     });
 
-    eleventyConfig.addFilter("blogPermalinkDate", (dateObj) => {
-        //turn it into a JS Date string
+    eleventyConfig.addFilter("blogPermalinkDate", dateObj => {
+
+        // turn it into a JS Date string
         const date = new Date(dateObj);
-        //pass it to luxon for formatting
-        return DateTime.fromJSDate(dateObj).toFormat('yyyy/MM');
+
+
+        // pass it to luxon for formatting
+        return DateTime.fromJSDate(date).toFormat("yyyy/MM");
     });
 
-    eleventyConfig.addFilter("shortDateFromISO", isoDate => {
-        return DateTime.fromISO(isoDate).toFormat('d MMM');
-    });
+    eleventyConfig.addFilter("shortDateFromISO", isoDate => DateTime.fromISO(isoDate).toFormat("d MMM"));
 
     eleventyConfig.addFilter("shortNumber", number => {
 
         if (number >= 1000000) {
-            return (number / 1000000).toFixed(1) + "M";
+            return `${(number / 1000000).toFixed(1)}M`;
         }
 
         if (number >= 1000) {
-            return (number / 1000).toFixed(1) + "K";
+            return `${(number / 1000).toFixed(1)}K`;
         }
 
         return number.toString();
     });
 
-    eleventyConfig.addFilter("readableDateFromISO", (isoDate) => {
-        return DateTime.fromISO(isoDate).toUTC().toLocaleString(DateTime.DATE_FULL);
-    });
+    eleventyConfig.addFilter("readableDateFromISO", isoDate => DateTime.fromISO(isoDate).toUTC().toLocaleString(DateTime.DATE_FULL));
 
-    eleventyConfig.addFilter('dollars', value => {
-        return new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD"
-        }).format(value);
-    });
+    eleventyConfig.addFilter("dollars", value => new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+    }).format(value));
 
     // parse markdown from includes, used for author bios
     // Source: https://github.com/11ty/eleventy/issues/658
-    eleventyConfig.addFilter('markdown', function(value) {
-        let markdown = require('markdown-it')({
+    eleventyConfig.addFilter("markdown", value => {
+        const markdown = markdownIt({
             html: true
         });
+
         return markdown.render(value);
     });
 
-    /*****************************************************************************************
+    /** ***************************************************************************************
      *  Plugins
      * ***************************************************************************************/
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(readingTime);
     eleventyConfig.addPlugin(syntaxHighlight, {
-        alwaysWrapLineHighlights: true,
+        alwaysWrapLineHighlights: true
     });
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(pluginTOC, {
-        tags: ['h2', 'h3', 'h4'],
-        wrapper: 'nav', // Element to put around the root `ol`
-        wrapperClass: 'c-toc', // Class for the element around the root `ol`
-        headingText: '', // Optional text to show in heading above the wrapper element
-        headingTag: 'h2' // Heading tag when showing heading above the wrapper element
+        tags: ["h2", "h3", "h4"],
+        wrapper: "nav", // Element to put around the root `ol`
+        wrapperClass: "c-toc", // Class for the element around the root `ol`
+        headingText: "", // Optional text to show in heading above the wrapper element
+        headingTag: "h2" // Heading tag when showing heading above the wrapper element
     });
-    // add IDs to the headers
-    const markdownIt = require('markdown-it');
 
+    // add IDs to the headers
     eleventyConfig.setLibrary("md",
         markdownIt({
             html: true,
             linkify: true,
-            typographer: true,
+            typographer: true
 
-        }).use(markdownItAnchor, {}).disable('code')
-    );
+        }).use(markdownItAnchor, {}).disable("code"));
 
 
     eleventyConfig.addWatchTarget("./src/assets/");
     eleventyConfig.addWatchTarget("./src/content/pages/");
 
-    /**********************************************************************
+    /** ********************************************************************
      *  Shortcodes
      * ********************************************************************/
-    eleventyConfig.addNunjucksAsyncShortcode("link", async function(link) {
+    eleventyConfig.addNunjucksAsyncShortcode("link", async link => {
         const { body: html, url } = await got(link);
         const metadata = await metascraper({ html, url });
-
-        const encodedURL = encodeURIComponent(link);
-        const the_url = (new URL(link)); // same as url
-        const domain = the_url.hostname;
+        const domain = new URL(link).hostname;
 
         return `
         <article class="resource">
@@ -209,7 +195,7 @@ module.exports = eleventyConfig => {
     });
 
 
-    /*****************************************************************************************
+    /** ***************************************************************************************
      *  File PassThroughs
      * ***************************************************************************************/
 
@@ -217,38 +203,38 @@ module.exports = eleventyConfig => {
         "./src/static": "/"
     });
 
-    eleventyConfig.addPassthroughCopy('./src/assets/');
+    eleventyConfig.addPassthroughCopy("./src/assets/");
 
     eleventyConfig.addPassthroughCopy({
-        './src/content/**/*.png': "/assets/images"
+        "./src/content/**/*.png": "/assets/images"
     });
 
     eleventyConfig.addPassthroughCopy({
-        './src/content/**/*.jpg': "/assets/images"
+        "./src/content/**/*.jpg": "/assets/images"
     });
 
     eleventyConfig.addPassthroughCopy({
-        './src/content/**/*.jpeg': "/assets/images"
+        "./src/content/**/*.jpeg": "/assets/images"
     });
 
     eleventyConfig.addPassthroughCopy({
-        './src/content/**/*.svg': "/assets/images"
+        "./src/content/**/*.svg": "/assets/images"
     });
 
     eleventyConfig.addPassthroughCopy({
-        './src/content/**/*.mp4': "/assets/videos"
+        "./src/content/**/*.mp4": "/assets/videos"
     });
 
     eleventyConfig.addPassthroughCopy({
-        './src/content/**/*.pdf': "/assets/documents"
+        "./src/content/**/*.pdf": "/assets/documents"
     });
 
     eleventyConfig.addPassthroughCopy({
-        './node_modules/algoliasearch/dist/algoliasearch-lite.esm.browser.js': "/assets/js/algoliasearch.js"
+        "./node_modules/algoliasearch/dist/algoliasearch-lite.esm.browser.js": "/assets/js/algoliasearch.js"
     });
 
 
-    /*****************************************************************************************
+    /** ***************************************************************************************
      *  Collections
      * ***************************************************************************************/
 
@@ -270,63 +256,64 @@ module.exports = eleventyConfig => {
     );
 
 
-    eleventyConfig.addCollection("library", function(collection) {
-        return collection
+    eleventyConfig.addCollection("library", collection => collection
         .getFilteredByGlob("./src/content/library/**/*.md")
-        .sort((a, b) => a.data.title.localeCompare(b.data.title));
-    });
+        .sort((a, b) => a.data.title.localeCompare(b.data.title)));
 
     // START, eleventy-img
     function imageShortcode(src, alt, cls, sizes = "(max-width: 768px) 100vw, 50vw") {
-        const source = src;
-        // console.log(`Generating image(s) from:  ${src}`)
-        let options = {
+
+        const options = {
             widths: [600, 900, 1500],
             formats: ["webp", "jpeg"],
             urlPath: "/assets/images/",
             outputDir: "./_site/assets/images/",
-            filenameFormat: function(id, src, width, format, options) {
-                const extension = path.extname(src)
-                const name = path.basename(src, extension)
-                return `${name}-${width}w.${format}`
+            filenameFormat: (id, source, width, format) => {
+                const extension = path.extname(source);
+                const name = path.basename(source, extension);
+
+                return `${name}-${width}w.${format}`;
             }
-        }
+        };
 
         function getSRC() {
-            if (source.indexOf("http://") == 0 || source.indexOf("https://") == 0) {
-                return source;
-            } else {
-                // for convenience, you only need to use the image's name in the shortcode,
-                // and this will handle appending the full path to it
-                src = path.join('./src/assets/images/', source);
+            if (src.indexOf("http://") === 0 || src.indexOf("https://") === 0) {
                 return src;
             }
+
+            // for convenience, you only need to use the image's name in the shortcode,
+            // and this will handle appending the full path to it
+            return path.join("./src/assets/images/", src);
         }
 
-        var fullSrc = getSRC();
-        // generate images
-        Image(fullSrc, options)
+        const fullSrc = getSRC();
 
-        let imageAttributes = {
+        // generate images
+        Image(fullSrc, options); // eslint-disable-line new-cap
+
+        const imageAttributes = {
             alt,
             class: cls,
             sizes,
             loading: "lazy",
-            decoding: "async",
-        }
+            decoding: "async"
+        };
+
         // get metadata
-        metadata = Image.statsSync(fullSrc, options)
-        return Image.generateHTML(metadata, imageAttributes)
+        const metadata = Image.statsSync(fullSrc, options);
+
+        return Image.generateHTML(metadata, imageAttributes);
     }
-    eleventyConfig.addShortcode("image", imageShortcode)
+    eleventyConfig.addShortcode("image", imageShortcode);
+
     // END, eleventy-img
 
     return {
         passthroughFileCopy: true,
 
-        markdownTemplateEngine: 'njk',
-        dataTemplateEngine: 'njk',
-        htmlTemplateEngine: 'njk',
+        markdownTemplateEngine: "njk",
+        dataTemplateEngine: "njk",
+        htmlTemplateEngine: "njk",
 
         dir: {
             input: "src",
