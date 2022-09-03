@@ -20,8 +20,7 @@ jobs:
       - name: Install website dependencies
         run: npm ci
       - name: Install playground dependencies
-        working-directory: src/playground
-        run: npm install
+        run: install:playground
       - name: Lint Files
         run: npm run lint
       - name: Run build
