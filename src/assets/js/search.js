@@ -22,6 +22,9 @@ const resultsElement = document.querySelector('#search-results');
 const resultsLiveRegion = document.querySelector('#search-results-announcement');
 const searchInput = document.querySelector('#search');
 const searchClearBtn = document.querySelector('#search__clear-btn');
+let activeIndex = -1;
+let searchQuery;
+
 
 //-----------------------------------------------------------------------------
 // Helpers
@@ -66,13 +69,15 @@ function displaySearchResults(results) {
         list.classList.add('search-results__list');
         resultsElement.append(list);
         resultsElement.setAttribute('data-results', 'true');
+        activeIndex = -1;
 
         for (const result of results) {
             const listItem = document.createElement('li');
             listItem.classList.add('search-results__item');
+            const maxLvl = Math.max(...Object.keys(result._highlightResult.hierarchy).map(k => Number(k.substring(3))));
             listItem.innerHTML = `
                 <h2 class="search-results__item__title"><a href="${result.url}">${result.hierarchy.lvl1}</a></h2>
-                <p class="search-results__item__context">${result._highlightResult.hierarchy.lvl1.value}</p>
+                <p class="search-results__item__context">${typeof result._highlightResult.content !== 'undefined' ? result._highlightResult.content.value : result._highlightResult.hierarchy[`lvl${maxLvl}`].value}</p>
             `.trim();
             list.append(listItem);
         }
@@ -87,6 +92,30 @@ function displaySearchResults(results) {
 
 }
 
+
+// Check if an element is currently scrollable
+function isScrollable(element) {
+    return element && element.clientHeight < element.scrollHeight;
+}
+
+// Ensure given child element is within the parent's visible scroll area
+function maintainScrollVisibility(activeElement, scrollParent) {
+    const { offsetHeight, offsetTop } = activeElement;
+    const { offsetHeight: parentOffsetHeight, scrollTop } = scrollParent;
+
+    const isAbove = offsetTop < scrollTop;
+    const isBelow = (offsetTop + offsetHeight) > (scrollTop + parentOffsetHeight);
+
+    if (isAbove) {
+        scrollParent.scrollTo(0, offsetTop);
+    }
+    else if (isBelow) {
+        scrollParent.scrollTo(0, offsetTop - parentOffsetHeight + offsetHeight);
+    }
+    
+}
+
+
 //-----------------------------------------------------------------------------
 // Event Handlers
 //-----------------------------------------------------------------------------
@@ -95,7 +124,9 @@ function displaySearchResults(results) {
 searchInput.addEventListener('keyup', function (e) {
     const query = searchInput.value;
 
-    if(query.length) searchClearBtn.removeAttribute('hidden');
+    if(query === searchQuery) return;
+
+    if (query.length) searchClearBtn.removeAttribute('hidden');
     else searchClearBtn.setAttribute('hidden', '');
 
     if (query.length > 2) {
@@ -109,16 +140,48 @@ searchInput.addEventListener('keyup', function (e) {
     } else {
         clearSearchResults();
     }
-});
 
-resultsElement.addEventListener('keydown', function(e) {
-    if(e.key === "Escape") {
-        clearSearchResults();
-    }
-}, true);
+    searchQuery = query
+});
 
 searchClearBtn.addEventListener('click', function(e) {
     searchInput.value = '';
     searchInput.focus();
     clearSearchResults();
+});
+
+document.addEventListener('keydown', function(e) {
+
+    if(e.key === 'Escape'){
+        e.preventDefault();
+        clearSearchResults();
+        searchInput.focus();
+    }
+
+    if((e.metaKey || e.ctrlKey) && e.key === 'k'){
+        e.preventDefault();
+        searchInput.focus();
+        document.querySelector('.search').scrollIntoView({behaviour:"smooth",block: "start"});
+    }
+
+    const searchResults = Array.from(document.querySelectorAll('.search-results__item'));
+    if (!searchResults.length) return;
+
+    switch (e.key) {
+        case "ArrowUp":
+            e.preventDefault();
+            activeIndex = activeIndex - 1 < 0 ? searchResults.length - 1 : activeIndex - 1;
+            break;
+        case "ArrowDown":
+            e.preventDefault();
+            activeIndex = activeIndex + 1 < searchResults.length ? activeIndex + 1 : 0;
+            break;
+    }
+
+    if (activeIndex === -1) return;
+    const activeSearchResult = searchResults[activeIndex];
+    activeSearchResult.querySelector('a').focus();
+    if (isScrollable(resultsElement)) {
+        maintainScrollVisibility(activeSearchResult, resultsElement);
+    }
 });

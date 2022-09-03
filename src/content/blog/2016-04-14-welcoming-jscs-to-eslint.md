@@ -49,4 +49,4 @@ We expect this effort to take several months, and as such, we still encourage cu
 
 With the new combined ESLint/JSCS team, you can expect a lot more from ESLint in the future. We now have some of the brightest people in the world working on making ESLint the best possible tool for JavaScript syntax analysis. I'm personally very excited about ESLint's future and tackling some of the more difficult problems like making autofix possible for every rule and incorporating type information into our analysis. We can go a lot further, faster, when we're all working on the same tool.
 
-- Nicholas
+* Nicholas

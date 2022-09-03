@@ -3,6 +3,7 @@
 const path = require("path");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
+/** @type {import("webpack").Configuration} */
 module.exports = {
     entry: {
         playground: path.resolve(__dirname, "src/playground/index.js")
@@ -10,6 +11,12 @@ module.exports = {
     output: {
         filename: "[name].js",
         path: path.resolve(__dirname, "_site/assets/js")
+    },
+    cache: {
+        type: "filesystem",
+        buildDependencies: {
+            config: [__filename]
+        }
     },
     resolve: {
         extensions: [".js", ".jsx"],
