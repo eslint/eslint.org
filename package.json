@@ -29,16 +29,16 @@
         "build": "npm-run-all install:playground build:sass build:eleventy build:webpack images",
         "minify:svg": "svgo -r -f ./",
         "lint:js": "eslint --ext=.js,.jsx .",
-        "lint:js:fix": "npm run lint:js -- --fix",
-        "lint:scss": "stylelint '**/*.scss'",
-        "lint:scss:fix": "npm run lint:scss --fix",
-        "lint": "npm-run-all --parallel lint:js lint:scss",
-        "fix": "npm-run-all --parallel lint:js:fix lint:scss:fix"
+        "lint:md": "markdownlint \"**/*.md\" ",
+        "lint": "npm-run-all --parallel lint:*",
+        "lint:fix:js": "eslint --ext=.js,.jsx . --fix",
+        "lint:fix:md": "markdownlint --fix  \"**/*.md\"",
+        "fix": "npm-run-all --parallel lint:fix:*"
     },
     "lint-staged": {
         "**/*.{js,jsx}": "eslint --fix",
-        "**/*.scss": "stylelint --fix",
-        "**/*.svg": "npx svgo -r"
+        "*.md": "markdownlint --fix",
+        "**/*.svg": "npx svgo -r --multipass"
     },
     "gitHooks": {
         "pre-commit": "lint-staged"
@@ -84,8 +84,6 @@
         "semver": "^7.3.5",
         "slugify": "^1.6.3",
         "style-loader": "^3.3.1",
-        "stylelint": "^14.9.1",
-        "stylelint-config-standard-scss": "^5.0.0",
         "undici": "^4.13.0",
         "webpack": "^5.70.0",
         "webpack-cli": "^4.9.2",
