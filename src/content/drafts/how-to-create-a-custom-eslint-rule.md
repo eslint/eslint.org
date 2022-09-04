@@ -251,7 +251,7 @@ create(context) {
 
 All rules need to have a `create(context)` in them. What's inside of there, though, is where the differences lie. Let's talk through a few key pieces:
 
-* The `create(context)` function needs to return an object that ESLint calls to "visit" each of the nodes while traversing the tree. The simplest rules, like our bacon one, return an object that specifies a specific type of node and then runs some if statement s to check whether or not the rule is violated. More advanced rules will provide many different types of nodes and functions in combination.
+* The `create(context)` function needs to return an object that ESLint calls to "visit" each of the nodes while traversing the tree. The simplest rules, like our bacon one, return an object that specifies a specific type of node and then runs some if statements to check whether or not the rule is violated. More advanced rules will provide many different types of nodes and functions in combination.
   * Remember [earlier](#how-does-eslint-parse-code%3F) how you used the AST Explorer to get a better understanding of how code is broken down? You'll now put that to use here by typing something like: `Identifier(node) {}` and then adding some code for parsing whatever object you went with inside of the brackets.
 * `context.report()` is how you let ESLint know that something violated the rule. In there, you'll want to provide a `node` object and a `messageId` that has the same key as the one in the `meta` section. You can also provide extra data so the user has a better idea of what went wrong (such as by showing them the identifier that has bacon in it).
 
