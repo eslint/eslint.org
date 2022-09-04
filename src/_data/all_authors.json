@@ -152,5 +152,16 @@
         "twitter_username": "haydenbleasel",
         "github_username": "haydenbleasel",
         "location": "Delray Beach, FL"
+    },
+    "mike-solomon": {
+        "username": "mike-solomon",
+        "name": "Mike Solomon",
+        "title": "Guest Author",
+        "website": "https://mike-solomon.github.io/",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1187834?v=4",
+        "bio": null,
+        "twitter_username": null,
+        "github_username": "mike-solomon",
+        "location": "Vancouver, WA"
     }
 }
