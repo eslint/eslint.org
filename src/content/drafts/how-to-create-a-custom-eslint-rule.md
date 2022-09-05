@@ -14,6 +14,7 @@ tags:
 The process of making your own ESLint rule can seem daunting -- especially if you've looked at any of the code for rules that already exist. However, while there is a decent amount to think about and learn, you **can** do it. In this article, you'll learn about the entire process of making an ESLint rule. Each step will be broken down and explained so that you can confidently begin making your own.
 
 All this article assumes is that you:
+
 * Are familiar with what [ESLint](https://eslint.org/) is (if not, check out the [getting started guide](https://eslint.org/docs/latest/user-guide/getting-started)).
 * Are somewhat familiar with JavaScript and [npm](https://www.npmjs.com/).
 * Have looked for [existing ESLint rules](https://eslint.org/docs/latest/rules/) and determined that none fit your needs (as it's often times much better to use an existing one).
@@ -35,6 +36,7 @@ By thinking through this *now*, you can not only make sure you actually want to 
 For the bacon example, let's go with the plan that you'll add a warning for all identifiers that contain `bacon` while also ignoring cases (so `somebAcon` and `baConstructor` would both be rejected). However, it wouldn't go as far as adding searches for underscores or leet speak (so `ba_con` and `b4c0n` would both be accepted).
 
 Here are some examples that would cause this rule to **fail** (meaning the user gets a warning):
+
 ```javascript
 let bacona = "hello";
 console.log(bacon);
@@ -44,6 +46,7 @@ class someBaconClass {};
 ```
 
 Here are some examples that would cause this rule to **pass** (meaning no warning):
+
 ```javascript
 let pork = 1;
 console.log('bacon');
@@ -67,6 +70,7 @@ Once you have those answers you can then think about...
 ## Where will the code for the rule live?
 
 There are four main places that new rules are commonly made:
+
 1. In the core [ESLint repository](https://github.com/eslint/eslint/tree/main/lib/rules) 
     * *For rules that are useful to all JavaScript projects*
 2. In a plugin that already exists 
@@ -100,7 +104,7 @@ function bacon() {};
 If you click on `let`, you should see a `VariableDeclaration` section highlighted on the right side. Likewise, if you click on `function`, you should see a `FunctionDeclaration` highlighted. But what if you click on `pork` or `bacon`? Fortunately for us, both of those cases show that `Identifier` is highlighted (See Figure 1).
 
 ![Figure 1: AST Identifier Example](/assets/images/blog/2022/eslint-ast-example.png)
-_Figure 1: What an identifier in an Abstract Syntax Tree looks like_
+*Figure 1: What an identifier in an Abstract Syntax Tree looks like*
 
 This piece is exactly what you'll need to begin coding the bacon rule. You can see that if you find an `Identifier`, you can check for the `name` and see if it violates the bacon restrictions. 
 
@@ -121,12 +125,13 @@ For the bacon example, the identifier could be something like `no-bacon`. In whi
 3. `docs/rules/no-bacon.md` -- A Markdown file that explains what your rule does. It largely will contain the answers to the questions discussed above.
 
 **Before examining each file, there's a few important links you should be aware of**:
+
 * ESLint provides a [Working with Rules](https://eslint.org/docs/latest/developer-guide/working-with-rules) guide on their website that goes into a lot of detail about each of the files and what every property is. It's something you'll definitely want to check out when you start making your own rules.
 * There is a [Yeoman](https://yeoman.io/) generator that aids in the creation of plugins and rules that you can find [here](https://github.com/eslint/generator-eslint). Once installed, it'll ask you a series of questions and then generate all of the files in the correct spots for you -- with much of the core code set up for you. I found it really useful in helping me get started with rules. 
 
 ### Test File (tests/lib/rules/no-bacon.js)
 
-The Test File is what I'd recommend starting with. If you've followed along with the guide so far, the work you did [earlier](#what-does-the-rule-do%3F) on deciding what will make your rule pass / fail can be used here. In fact the test file will consist almost entirely of those examples!
+The Test File is what I'd recommend starting with. If you've followed along with the guide so far, the work you did earlier on deciding what will make your rule pass / fail can be used here. In fact the test file will consist almost entirely of those examples!
 
 To begin your test file, you'll want to import your rule and the ESLint `RuleTester`:
 
@@ -183,6 +188,7 @@ Also, if you want to learn more about ESLint unit testing and all the options yo
 ### Source File (lib/rules/no-bacon.js)
 
 This is the file where your core code will be. It contains two main pieces:
+
 * A `meta` object that defines high-level details about your rule such as a description of what it does, what type of rule it is, where you can find the docs, etc.
 * A `create` function that returns an object that ESLint uses to determine whether or not some piece of code violates the rule or not. 
 
@@ -215,7 +221,8 @@ meta: {
 {% endhighlight %}
 
 Let's discuss some of the keys:
-* The `type` key (line 2) is one of `'problem'`, `'suggestion'`, or `'layout'` depending on how you think the rule should be configured. In the bacon example, I set `type` to `suggestion` due to the fact that identifiers with the name of bacon won't actually cause any errors. Rather, I am _suggesting_ they make the change for stylistic purposes. 
+
+* The `type` key (line 2) is one of `'problem'`, `'suggestion'`, or `'layout'` depending on how you think the rule should be configured. In the bacon example, I set `type` to `suggestion` due to the fact that identifiers with the name of bacon won't actually cause any errors. Rather, I am *suggesting* they make the change for stylistic purposes. 
 * The `recommended` key (line 6) is either `true` or `false` depending on if it should be a default for anyone using the recommended ESLint rules. In the bacon example, I set `recommended` to `false` because this rule should not be a default rule for anyone using ESLint.
 * The `schema` key (line 10) allows you to add options to the rule so that people can configure it in different ways. In the bacon example, I left `schema` as `[]` because there are no options to configure. An example of something that could be added in the future would be flags like `allowBaconInClassNames` or `preventUnderscoredBacon` -- which could then change what the rule does.
 * The `messages` key (line 12) is a way of providing one or more warnings / errors for the user. By defining these here, it makes it so you don't have to copy the same message to many different files or locations. For instance, the tests I wrote above only have to reference the key of `avoidBacon` instead of copying the entire message to that file.
@@ -227,8 +234,7 @@ If you want to learn more about what flags and settings exist, please read the  
 
 For the bacon example, the `context` function would look like: 
 
-{% highlight "javascript" %}
-{% raw %}
+```javascript
 create(context) {
   return {
     Identifier(node) {
@@ -246,13 +252,12 @@ create(context) {
     }
   };
 },
-{% endraw %}
-{% endhighlight %}
+```
 
 All rules need to have a `create(context)` in them. What's inside of there, though, is where the differences lie. Let's talk through a few key pieces:
 
 * The `create(context)` function needs to return an object that ESLint calls to "visit" each of the nodes while traversing the tree. The simplest rules, like our bacon one, return an object that specifies a specific type of node and then runs some if statements to check whether or not the rule is violated. More advanced rules will provide many different types of nodes and functions in combination.
-  * Remember [earlier](#how-does-eslint-parse-code%3F) how you used the AST Explorer to get a better understanding of how code is broken down? You'll now put that to use here by typing something like: `Identifier(node) {}` and then adding some code for parsing whatever object you went with inside of the brackets.
+  * Remember earlier how you used the AST Explorer to get a better understanding of how code is broken down? You'll now put that to use here by typing something like: `Identifier(node) {}` and then adding some code for parsing whatever object you went with inside of the brackets.
 * `context.report()` is how you let ESLint know that something violated the rule. In there, you'll want to provide a `node` object and a `messageId` that has the same key as the one in the `meta` section. You can also provide extra data so the user has a better idea of what went wrong (such as by showing them the identifier that has bacon in it).
 
 If you want a more detailed look into everything around this `context` object, please read the [ESLint Context Object docs](https://eslint.org/docs/latest/developer-guide/working-with-rules#the-context-object).
@@ -260,6 +265,7 @@ If you want a more detailed look into everything around this `context` object, p
 ### Markdown File (docs/rules/no-bacon.md)
 
 The last file needed for a rule is a markdown file that explains to others everything they need to know about your rule. At the very least you should include:
+
 * A high-level summary of the rule
 * A section called `Rule Details` that provides examples of incorrect / correct code for the rule
 * A section called `When Not To Use It` that explains when this rule shouldn't be applied
@@ -267,7 +273,7 @@ The last file needed for a rule is a markdown file that explains to others every
 Figure 2 shows what this might look like for the bacon example. You can also find a gist of it [here](https://gist.github.com/mike-solomon/29593c0a15fa0720eb014b037cf51e39).
 
 ![Figure 2: Bacon Markdown Example](/assets/images/blog/2022/eslint-bacon-markdown-example.png)
-_Figure 2: What the markdown file might look like for the no-bacon rule._
+*Figure 2: What the markdown file might look like for the no-bacon rule.*
 
 If you want to see what markdown files exist for other rules, you can find them in the [ESLint rules directory](https://github.com/eslint/eslint/tree/main/docs/src/rules). By looking over these rules, you can find examples of what it looks like if your rule has extra options or is more complicated than the bacon example. 
 
