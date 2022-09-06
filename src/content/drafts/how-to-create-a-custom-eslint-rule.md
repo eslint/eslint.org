@@ -77,7 +77,7 @@ There are four main places that new rules are commonly made:
     * *For rules that are useful to a specific subset of JavaScript projects*
 3. In a new plugin 
     * *For rules that are useful to a specific subset of JavaScript projects, but that don't fit into any existing plugin*
-4. Locally in a specific project by utilizing the plugin [eslint-plugin-local-rules](https://www.npmjs.com/package/eslint-plugin-local-rules) 
+4. Locally in a specific project either via the deprecated `--rulesdir` flag or via creating a local plugin and referencing it in your dependencies using the [file: prefix](https://stackoverflow.com/questions/14381898/local-dependency-in-package-json/14387210#14387210).
     * *For rules that should remain local and / or don't need to be shared*
 
 *Note*: A plugin is a way of sharing rules that relate to a specific type of project. Installing a plugin **does not** turn on all the rules in it. Rather, it just adds more rules that you can choose to apply or not.
@@ -88,11 +88,11 @@ I won't go into more detail about what plugins are or how to make them in this a
 
 The last thing you need to think about before coding your rule is the topic of parsing code. It's easy for us, as humans, to think, "Oh, I don't want any identifiers with bacon in them." Computers, unfortunately, are not that simple. They need ways to programmatically define what is an identifier vs. a function declaration vs. a literal and so on. 
 
-Fret not, though, as most of this work has already been done for us. ESLint uses something called [ESTree](https://github.com/estree/estree) to parse code. You can think of it as a way of breaking up code into a giant tree that ESLint can then iterate over to check things. 
+Fret not, though, as most of this work has already been done for us. ESLint uses [Espree](https://github.com/eslint/espree) to parse JavaScript code into an [ESTree](https://github.com/estree/estree)-compatible format. You can think of it as a way of breaking up code into a giant tree that ESLint can then iterate over to check things. 
 
-There's some [extensive documentation](https://web.archive.org/web/20210314002546/https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API#node_objects) you can check out that shows all the different types of nodes that code can be broken up into -- but an even easier way is to use the [AST Explorer](https://astexplorer.net/).
+There's some [extensive documentation](https://github.com/estree/estree#ast-descriptor-syntax) you can check out that shows all the different types of nodes that code can be broken up into -- but an even easier way is to use the [AST Explorer](https://astexplorer.net/).
 
-The [AST Explorer](https://astexplorer.net/) lets you paste in JavaScript code and then shows you exactly what this tree looks like. You can click on any particular piece of code and you'll see the keys and values for it on the right side of the page.
+[AST Explorer](https://astexplorer.net/) lets you paste in JavaScript code and then shows you exactly what this tree looks like. You can click on any particular piece of code and you'll see the keys and values for it on the right side of the page.
 
 For the bacon example, let's copy over two lines to take a look at:
 
@@ -101,22 +101,20 @@ let pork = "Meow";
 function bacon() {};
 ```
 
-If you click on `let`, you should see a `VariableDeclaration` section highlighted on the right side. Likewise, if you click on `function`, you should see a `FunctionDeclaration` highlighted. But what if you click on `pork` or `bacon`? Fortunately for us, both of those cases show that `Identifier` is highlighted (See Figure 1).
+If you click on `let` in the code section of the AST explorer, you should see a `VariableDeclaration` section highlighted on the right side. Likewise, if you click on `function`, you should see a `FunctionDeclaration` highlighted. But what if you click on `pork` or `bacon`? Fortunately for us, both of those cases show that `Identifier` is highlighted (See Figure 1).
 
 ![Figure 1: AST Identifier Example](/assets/images/blog/2022/eslint-ast-example.png)
 *Figure 1: What an identifier in an Abstract Syntax Tree looks like*
 
 This piece is exactly what you'll need to begin coding the bacon rule. You can see that if you find an `Identifier`, you can check for the `name` and see if it violates the bacon restrictions. 
 
-If you visit the [Parser API](https://web.archive.org/web/20210314002546/https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API#miscellaneous) docs, you can see that `Identifiers` do indeed have a `name` field that is a `string` -- which matches what we saw above.
+If you visit the [ES5 Spec](https://github.com/estree/estree/blob/master/es5.md#identifier), you can see that `Identifiers` do indeed have a `name` field that is a `string` -- which matches what we saw above.
 
 Take some time to explore what code translates to what nodes by copying / pasting in various chunks of code that relate to the rule you're trying to make. This will make it easier for you when you go to write the code for the rule.
 
 ## Generate the files
 
-It's now time to go about actually making your rule. (Yay!) Each rule in ESLint has three files named with its identifier. 
-
-*Note*: An identifier is a short, high-level description of the rule separated by dashes.
+It's now time to go about actually making your rule. (Yay!) Each rule in ESLint has three files named with its identifier. *Note*: An identifier is a short, high-level description of the rule separated by dashes.
 
 For the bacon example, the identifier could be something like `no-bacon`. In which case the three files would be:
 
@@ -124,9 +122,9 @@ For the bacon example, the identifier could be something like `no-bacon`. In whi
 2. `lib/rules/no-bacon.js` -- The source file where you will write the core logic of the rule.
 3. `docs/rules/no-bacon.md` -- A Markdown file that explains what your rule does. It largely will contain the answers to the questions discussed above.
 
-**Before examining each file, there's a few important links you should be aware of**:
+**Before examining each file, there are a few important links you should be aware of**:
 
-* ESLint provides a [Working with Rules](https://eslint.org/docs/latest/developer-guide/working-with-rules) guide on their website that goes into a lot of detail about each of the files and what every property is. It's something you'll definitely want to check out when you start making your own rules.
+* ESLint provides a [Working with Rules](https://eslint.org/docs/latest/developer-guide/working-with-rules) guide that goes into a lot of detail about each of the files and what every property is. It's something you'll definitely want to check out when you start making your own rules.
 * There is a [Yeoman](https://yeoman.io/) generator that aids in the creation of plugins and rules that you can find [here](https://github.com/eslint/generator-eslint). Once installed, it'll ask you a series of questions and then generate all of the files in the correct spots for you -- with much of the core code set up for you. I found it really useful in helping me get started with rules. 
 
 ### Test File (tests/lib/rules/no-bacon.js)
@@ -142,7 +140,7 @@ const RuleTester = require("eslint").RuleTester;
 
 From there, you'll want to create your own `ruleTester` object that you can use to run your test cases. You can provide it with options that will act as defaults for all the test cases. 
 
-For instance, the `RuleTester`, by default, uses [ECMA Version 5](https://www.w3schools.com/js/js_es5.asp). If you're used to modern JavaScript, some of your test cases might not work. To fix that, you can specify `parserOptions` when you make this tester so that all your tests use ECMA Version 6 instead:
+For instance, the `RuleTester`, by default, uses ECMAScript 5. If you're used to modern JavaScript, some of your test cases might not work. To fix that, you can specify `parserOptions` when you make this tester so that all your tests use ECMAScript 6 instead by using the `ecmaVersion` option:
 
 ```javascript
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
@@ -200,8 +198,7 @@ For now, let's briefly talk through each of these pieces. I'll start by showing 
 
 For the bacon example, the `meta` section would look like:
 
-{% highlight "javascript" %}
-{% raw %}
+```javascript
 meta: {
   type: 'suggestion',
 
@@ -214,11 +211,10 @@ meta: {
   schema: [], // no options
 
   messages: {
-    avoidBacon: "The word bacon was found in '{{identifier}}'"
+    avoidBacon: "The word bacon was found in {% raw %}'{{identifier}}'" {% endraw %}
   }
 },
-{% endraw %}
-{% endhighlight %}
+```
 
 Let's discuss some of the keys:
 
@@ -230,9 +226,9 @@ Let's discuss some of the keys:
 
 If you want to learn more about what flags and settings exist, please read the  [ESLint Rule Basics](https://eslint.org/docs/latest/developer-guide/working-with-rules#rule-basics) guide.
 
-#### Context Function
+#### Context Object
 
-For the bacon example, the `context` function would look like: 
+For the bacon example, the `context` object would look like: 
 
 ```javascript
 create(context) {
@@ -256,7 +252,7 @@ create(context) {
 
 All rules need to have a `create(context)` in them. What's inside of there, though, is where the differences lie. Let's talk through a few key pieces:
 
-* The `create(context)` function needs to return an object that ESLint calls to "visit" each of the nodes while traversing the tree. The simplest rules, like our bacon one, return an object that specifies a specific type of node and then runs some if statements to check whether or not the rule is violated. More advanced rules will provide many different types of nodes and functions in combination.
+* The `create(context)` object is an object that ESLint uses when it "visits" each of the nodes while traversing the tree. The simplest rules, like our bacon one, specify a specific type of node and then run some if statements to check whether or not the rule is violated. More advanced rules will provide many different types of nodes and functions in combination.
   * Remember earlier how you used the AST Explorer to get a better understanding of how code is broken down? You'll now put that to use here by typing something like: `Identifier(node) {}` and then adding some code for parsing whatever object you went with inside of the brackets.
 * `context.report()` is how you let ESLint know that something violated the rule. In there, you'll want to provide a `node` object and a `messageId` that has the same key as the one in the `meta` section. You can also provide extra data so the user has a better idea of what went wrong (such as by showing them the identifier that has bacon in it).
 
