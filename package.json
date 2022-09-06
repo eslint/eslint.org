@@ -28,8 +28,12 @@
         "fetch": "npm-run-all --parallel fetch:*",
         "start": "npm-run-all build:sass --parallel watch:*",
         "build": "npm-run-all install:playground build:sass build:eleventy build:webpack images",
-        "lint": "eslint --ext=.js,.jsx . && markdownlint \"**/*.md\" -i node_modules",
-        "fix": "npm run lint -- --fix"
+        "lint:js": "eslint --ext=.js,.jsx .",
+        "lint:md": "markdownlint \"**/*.md\" ",
+        "lint": "npm-run-all --parallel lint:*",
+        "lint:fix:js": "eslint --ext=.js,.jsx . --fix",
+        "lint:fix:md": "markdownlint --fix  \"**/*.md\"",
+        "fix": "npm-run-all --parallel lint:fix:*"
     },
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
