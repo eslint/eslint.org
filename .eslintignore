@@ -4,3 +4,5 @@ src/assets/js
 src/_data
 src/_11ty
 tools/
+!.eleventy.js
+!.eslintrc.js

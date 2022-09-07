@@ -16,8 +16,8 @@ A couple of weeks ago, the TypeScript team shared their [roadmap](https://github
 > ## Linting
 >
 > * Semantic rules in ESLint
->     * Parity with TSLint
->     * Speed & scalability
+>   * Parity with TSLint
+>   * Speed & scalability
 > * Editor integration for ESLint
 >
 >In a survey we ran in VS Code a few months back, the most frequent theme we heard from users was that the linting experience left much to be desired. Since part of our team is dedicated to editing experiences in JavaScript, our editor team set out to add support for both TSLint and ESLint. However, we noticed that there were a few architectural issues with the way TSLint rules operate that impacted performance. Fixing TSLint to operate more efficiently would require a different API which would break existing rules (unless an interop API was built like what wotan provides).

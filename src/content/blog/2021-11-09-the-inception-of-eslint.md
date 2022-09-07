@@ -50,7 +50,6 @@ Thanks largely to the availability of Esprima, estraverse, and escope, I was abl
 
 (I feel it's important to point out that I was not the only one looking to create an AST-based linter at the time. JSCS[5] was also under development at around the same time, and current ESLint maintainer Ilya Volodin was working on his own project before discovering ESLint. If I had not come up with something like ESLint then someone else undoubtedly would have. All of the pieces were already out there thanks to Ariya and Yusuke, someone just had to put them together in a useful way.)
 
-
 ## References
 
 1. [Anton Kovalyov](https://www.antonkovalyov.com/) (antonkovalyov.com)
