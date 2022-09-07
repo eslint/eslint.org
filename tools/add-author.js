@@ -76,7 +76,7 @@ async function fetchUserProfile(username) {
     try {
         await fs.stat(bioFilePath);
     } catch {
-        await fs.writeFile(bioFilePath, profile.bio, "utf8");
+        await fs.writeFile(bioFilePath, profile.bio ?? "", "utf8");
     }
 
     console.log(`Please update ${bioFilePath} to include your information.`);
