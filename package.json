@@ -28,12 +28,21 @@
         "fetch": "npm-run-all --parallel fetch:*",
         "start": "npm-run-all build:sass --parallel watch:*",
         "build": "npm-run-all install:playground build:sass build:eleventy build:webpack images",
+        "minify:svg": "svgo -r -f ./",
         "lint:js": "eslint --ext=.js,.jsx .",
         "lint:md": "markdownlint \"**/*.md\" ",
         "lint": "npm-run-all --parallel lint:*",
         "lint:fix:js": "eslint --ext=.js,.jsx . --fix",
         "lint:fix:md": "markdownlint --fix  \"**/*.md\"",
         "fix": "npm-run-all --parallel lint:fix:*"
+    },
+    "lint-staged": {
+        "**/*.{js,jsx}": "eslint --fix",
+        "*.md": "markdownlint --fix",
+        "**/*.svg": "npx svgo -r --multipass"
+    },
+    "gitHooks": {
+        "pre-commit": "lint-staged"
     },
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
@@ -65,6 +74,7 @@
         "imagemin": "^8.0.1",
         "imagemin-cli": "^7.0.0",
         "js-yaml": "^3.14.1",
+        "lint-staged": "^13.0.3",
         "markdown-it": "^12.2.0",
         "markdown-it-anchor": "^8.1.2",
         "markdownlint-cli": "^0.32.1",
@@ -78,7 +88,8 @@
         "style-loader": "^3.3.1",
         "undici": "^4.13.0",
         "webpack": "^5.70.0",
-        "webpack-cli": "^4.9.2"
+        "webpack-cli": "^4.9.2",
+        "yorkie": "^2.0.0"
     },
     "dependencies": {
         "@codemirror/highlight": "0.19.7",
