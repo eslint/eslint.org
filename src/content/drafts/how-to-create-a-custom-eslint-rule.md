@@ -65,7 +65,7 @@ Now that you have some idea of how your rule will work, you should take some tim
 * If this rule **isn't** specific to your company:
   * Is it something that benefits *all* JavaScript projects or is it more specific than that? For example, a rule that provides suggestions for TypeScript apps that use GitHub would be something that is beneficial for some projects, whereas a rule that suggests to not use `console.log` would be beneficial for all types of projects. 
 
-Once you have those answers you can then think about...
+Once you have those answers, you can then think aboutv where the code for this rule will live.
 
 ## Where will the code for the rule live?
 
@@ -92,7 +92,7 @@ Fret not, though, as most of this work has already been done for us. ESLint uses
 
 There's some [extensive documentation](https://github.com/estree/estree#ast-descriptor-syntax) you can check out that shows all the different types of nodes that code can be broken up into -- but an even easier way is to use the [AST Explorer](https://astexplorer.net/).
 
-[AST Explorer](https://astexplorer.net/) lets you paste in JavaScript code and then shows you exactly what this tree looks like. You can click on any particular piece of code and you'll see the keys and values for it on the right side of the page.
+AST Explorer lets you paste in JavaScript code and then shows you exactly what this tree looks like. You can click on any particular piece of code and you'll see the keys and values for it on the right side of the page.
 
 For the bacon example, let's copy over two lines to take a look at:
 
@@ -101,20 +101,20 @@ let pork = "Meow";
 function bacon() {};
 ```
 
-If you click on `let` in the code section of the AST explorer, you should see a `VariableDeclaration` section highlighted on the right side. Likewise, if you click on `function`, you should see a `FunctionDeclaration` highlighted. But what if you click on `pork` or `bacon`? Fortunately for us, both of those cases show that `Identifier` is highlighted (See Figure 1).
+If you click on `let` in the code section of AST Explorer, you should see a `VariableDeclaration` section highlighted on the right side. Likewise, if you click on `function`, you should see a `FunctionDeclaration` highlighted. But what if you click on `pork` or `bacon`? Fortunately for us, both of those cases show that `Identifier` is highlighted (See Figure 1).
 
 ![Figure 1: AST Identifier Example](/assets/images/blog/2022/eslint-ast-example.png)
 *Figure 1: What an identifier in an Abstract Syntax Tree looks like*
 
 This piece is exactly what you'll need to begin coding the bacon rule. You can see that if you find an `Identifier`, you can check for the `name` and see if it violates the bacon restrictions. 
 
-If you visit the [ES5 Spec](https://github.com/estree/estree/blob/master/es5.md#identifier), you can see that `Identifiers` do indeed have a `name` field that is a `string` -- which matches what we saw above.
+If you visit the [ESTree Specification](https://github.com/estree/estree/blob/master/es5.md#identifier), you can see that `Identifiers` do indeed have a `name` field that is a `string` -- which matches what we saw above.
 
 Take some time to explore what code translates to what nodes by copying / pasting in various chunks of code that relate to the rule you're trying to make. This will make it easier for you when you go to write the code for the rule.
 
 ## Generate the files
 
-It's now time to go about actually making your rule. (Yay!) Each rule in ESLint has three files named with its identifier. *Note*: An identifier is a short, high-level description of the rule separated by dashes.
+It's now time to go about actually making your rule. (Yay!) Each rule in ESLint has three files named with its identifier. A rule identifier is a short, high-level description of the rule in dash-case, such as `prefer-const`.
 
 For the bacon example, the identifier could be something like `no-bacon`. In which case the three files would be:
 
@@ -199,21 +199,26 @@ For now, let's briefly talk through each of these pieces. I'll start by showing 
 For the bacon example, the `meta` section would look like:
 
 ```javascript
-meta: {
-  type: 'suggestion',
+module.exports = {
+  meta: {
+    type: 'suggestion',
 
-  docs: {
-    description: "Don't allow bacon in identifiers",
-    recommended: false,
-    url: "https://eslint.org/docs/rules/no-bacon",
+    docs: {
+      description: "Don't allow bacon in identifiers",
+      recommended: false,
+      url: "https://eslint.org/docs/rules/no-bacon",
+    },
+
+    schema: [], // no options
+
+    messages: {
+      avoidBacon: "The word bacon was found in {% raw %}'{{identifier}}'" {% endraw %}
+    }
   },
-
-  schema: [], // no options
-
-  messages: {
-    avoidBacon: "The word bacon was found in {% raw %}'{{identifier}}'" {% endraw %}
+  create(context) {
+    // omitted for clarity
   }
-},
+};
 ```
 
 Let's discuss some of the keys:
@@ -228,35 +233,41 @@ If you want to learn more about what flags and settings exist, please read the  
 
 #### Context Object
 
-For the bacon example, the `context` object would look like: 
+For the bacon example, the `context` object could look like the code below.
+
+*Note*: With the way this rule has been coded, a line of code like `let a = bacon` would cause this rule to fail. The `bacon` variable *could* come from elsewhere so it's possible the variable wouldn't be able to be changed.
 
 ```javascript
-create(context) {
-  return {
-    Identifier(node) {
-      const identifier = node.name;
+module.exports = {
+  // meta omitted for clarity
+  
+  create(context) {
+    return {
+      Identifier(node) {
+        const identifier = node.name;
 
-      if (identifier.toLowerCase().includes("bacon")) {
-        context.report({
-          node: node,
-          messageId: 'avoidBacon',
-          data: {
-            identifier
-          }
-        });
+        if (identifier.toLowerCase().includes("bacon")) {
+          context.report({
+            node: node,
+            messageId: 'avoidBacon',
+            data: {
+              identifier
+            }
+          });
+        }
       }
-    }
-  };
-},
+    };
+  },
+};
 ```
 
-All rules need to have a `create(context)` in them. What's inside of there, though, is where the differences lie. Let's talk through a few key pieces:
+All rules need to have a `create()` method in them. What's inside of the method, though, is where the differences lie. Let's talk through a few key pieces:
 
-* The `create(context)` object is an object that ESLint uses when it "visits" each of the nodes while traversing the tree. The simplest rules, like our bacon one, specify a specific type of node and then run some if statements to check whether or not the rule is violated. More advanced rules will provide many different types of nodes and functions in combination.
-  * Remember earlier how you used the AST Explorer to get a better understanding of how code is broken down? You'll now put that to use here by typing something like: `Identifier(node) {}` and then adding some code for parsing whatever object you went with inside of the brackets.
-* `context.report()` is how you let ESLint know that something violated the rule. In there, you'll want to provide a `node` object and a `messageId` that has the same key as the one in the `meta` section. You can also provide extra data so the user has a better idea of what went wrong (such as by showing them the identifier that has bacon in it).
+* The object returned from the `create()` method tells ESLint which nodes the rule is interested in. When ESLint traverses an AST, it stops on the specified nodes to run the code from your rule. The simplest rules, like our bacon one, specify one specific type of node and then run some `if` statements to check whether or not the rule is violated. More advanced rules will provide many different types of nodes and functions in combination.
+  * Remember earlier how you used the AST Explorer to get a better understanding of how code is broken down? You'll now put that to use here. In the bacon example, I'll use `Identifier(node) {}` as that matches the `type` from AST Explorer. In there, I'll add code to detect when the rule has been violated. For your rule, you'll want to use the appropriate type you determined from AST Explorer, such as `VariableDeclarator(node) {}` or `AssignmentExpression(node) {}`.
+* `context.report()` is how you let ESLint know that something violated the rule. When you call `context.report()`, you'll want to provide a `node` object and a `messageId` that has the same key as the one in the `meta` section. You can also provide extra data so the user has a better idea of what went wrong (such as by showing them the identifier that has bacon in it).
 
-If you want a more detailed look into everything around this `context` object, please read the [ESLint Context Object docs](https://eslint.org/docs/latest/developer-guide/working-with-rules#the-context-object).
+If you want a more detailed look into everything around the `context` object, please read the [ESLint Context Object docs](https://eslint.org/docs/latest/developer-guide/working-with-rules#the-context-object).
 
 ### Markdown File (docs/rules/no-bacon.md)
 
