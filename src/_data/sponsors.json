@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 132948,
-        "monthlyDonations": 11079,
-        "sponsorCount": 185
+        "annualDonations": 132888,
+        "monthlyDonations": 11074,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -1061,14 +1061,6 @@
             "name": "Titus",
             "image": "https://avatars.githubusercontent.com/u/944406?u=bf58f56aeb97f8b1616d8a3d9a84bd3e16ab803b&v=4",
             "url": "wooorm.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": null,
-            "image": "https://avatars.githubusercontent.com/u/950573?u=e39cd137ba9f5e90740611e24625eba0948b8b52&v=4",
-            "url": "https://berlysia.net/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
