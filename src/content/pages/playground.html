@@ -5,10 +5,10 @@ permalink: /play/
 ---
 
 <div id="playground-app">
-  <p style="text-align: center">
-    {% if helpers.isDev %} run <span>npm run install:playground</span> before
-    running playground
-  </p>
+  {% if helpers.isDev %} 
+    <p style="text-align: center">
+    run <span>npm run install:playground</span> before running playground
+    </p>
   {% endif %}
 </div>
 <script src="{{ '/assets/js/playground.js' | url }}"></script>
