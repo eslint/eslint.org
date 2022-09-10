@@ -65,7 +65,7 @@ Now that you have some idea of how your rule will work, you should take some tim
 * If this rule **isn't** specific to your company:
   * Is it something that benefits *all* JavaScript projects or is it more specific than that? For example, a rule that provides suggestions for TypeScript apps that use GitHub would be something that is beneficial for some projects, whereas a rule that suggests to not use `console.log` would be beneficial for all types of projects. 
 
-Once you have those answers, you can then think aboutv where the code for this rule will live.
+Once you have those answers, you can then think about where the code for this rule will live.
 
 ## Where will the code for the rule live?
 
