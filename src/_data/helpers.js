@@ -48,6 +48,6 @@ module.exports = {
             if(item.url !== pageUrl) newArray.push(item);
         });
         return newArray;
-    }
-
+    },
+    isDev: process.env.CONTEXT === 'dev'
 };
