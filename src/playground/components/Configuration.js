@@ -295,7 +295,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     <div className="combo">
                         <label id="plugins-combo-label" className="combo-label visually-hidden">Select plugins</label>
                         <span id="combo-remove" hidden>remove</span>
-                        <ul role="list" className="selected-options pills" id="plugins-combo-selected"></ul>
+                        <ul className="selected-options pills" id="plugins-combo-selected"></ul>
                         <div className="combo js-multiselect">
                             <input aria-activedescendant="" autocomplete="off" aria-autocomplete="none" aria-controls="listbox3" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="plugins-combo-label combo-selected" id="plugins-combo" className="combo-input c-field__input custom-select" role="combobox" type="text" placeholder="Choose plugins" />
                             <div className="combo-menu" role="listbox" id="listbox3"></div>

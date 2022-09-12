@@ -64,7 +64,7 @@ hook: "donate_page"
                         </p>
                     </div>
                 </header>
-                <ul role="list" class="donation-plan__features divider">
+                <ul class="donation-plan__features divider">
                     {%- for item in site.donate_page.donation_options.open_collective.items -%}
                         <li>
                             <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24"
@@ -96,7 +96,7 @@ hook: "donate_page"
                         </p>
                     </div>
                 </header>
-                <ul role="list" class="donation-plan__features divider">
+                <ul class="donation-plan__features divider">
                     {%- for item in site.donate_page.donation_options.github_sponsors.items -%}
                     <li>
                         <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24"
@@ -163,7 +163,7 @@ hook: "donate_page"
                 {{ site.donate_page.donation_tiers.subtitle }}
             </p>
         </div>
-        <ol class="donation-tiers" aria-labelledby="donation-tiers-label" role="list">
+        <ol class="donation-tiers" aria-labelledby="donation-tiers-label">
             {%- for item in site.donate_page.donation_tiers.items -%}
                 <li class="donation-tiers__item">
                     <h3 class="donation-tiers__title">

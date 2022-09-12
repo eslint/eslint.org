@@ -33,7 +33,7 @@ hook: "sponsors_page"
             </p>
         </div>
         <div class="span-7-12">
-            <ul role="list" class="sponsors sponsors--platinum">
+            <ul class="sponsors sponsors--platinum">
                 {% for sponsor in sponsors.platinum %}
                     {% set sponsor_amount = sponsor.monthlyDonation %}
                     {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
@@ -57,7 +57,7 @@ hook: "sponsors_page"
             </p>
         </div>
         <div class="span-7-12">
-            <ul role="list" class="sponsors sponsors--gold">
+            <ul class="sponsors sponsors--gold">
                 {% for sponsor in sponsors.gold %}
                     {% set sponsor_amount = sponsor.monthlyDonation %}
                     {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
@@ -81,7 +81,7 @@ hook: "sponsors_page"
             </p>
         </div>
         <div class="span-7-12">
-            <ul role="list" class="sponsors sponsors--silver">
+            <ul class="sponsors sponsors--silver">
                 {% for sponsor in sponsors.silver %}
                     {% set sponsor_amount = sponsor.monthlyDonation %}
                     {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
@@ -105,7 +105,7 @@ hook: "sponsors_page"
             </p>
         </div>
         <div class="span-7-12">
-            <ul role="list" class="sponsors sponsors--bronze">
+            <ul class="sponsors sponsors--bronze">
                 {% for sponsor in sponsors.bronze %}
                     {% set sponsor_amount = sponsor.monthlyDonation %}
                     {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
@@ -129,7 +129,7 @@ hook: "sponsors_page"
             </p>
         </div>
         <div class="span-7-12">
-            <ul role="list" class="sponsors sponsors--technology">
+            <ul class="sponsors sponsors--technology">
 
                 {% for sponsor in techsponsors %}
                     {% set sponsor_title = site.sponsors_page.tech_sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("TECH", sponsor.donation | capitalize) %}
@@ -152,7 +152,7 @@ hook: "sponsors_page"
                 {{ site.sponsors_page.recent_donations.description }}
             </p>
         </div>
-        <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
+        <ul class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
 
             {% for donation in donations | limitTo(50) %}
             <li class="donations-item">
@@ -182,7 +182,7 @@ hook: "sponsors_page"
             </p>
         </div>
         <div class="grid">
-            <ul role="list" class="sponsors span-1-12 sponsors--backers">
+            <ul class="sponsors span-1-12 sponsors--backers">
                 {% for sponsor in sponsors.backers %}
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
