@@ -16,7 +16,7 @@
     <div class="content-container grid">
         <div class="span-1-7 content-container">
             {%- if params.post -%}
-                <p class="post__meta">Published {{ params.post.date }} under <a href="/blog/category/{{ params.post.categoryURL }}">{{ params.post.category  }}</a></p>
+                <p class="post__meta">Published {{ params.post.date }} under <a href="/blog/category/{{ params.post.categoryURL }}" title="{{ params.post.category }}">{{ params.post.category  }}</a></p>
             {%- endif -%}
             <h1 class="section-title">{{ params.title }}</h1>
             <p class="section-supporting-text">
