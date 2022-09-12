@@ -25,10 +25,21 @@
             {% if params.buttons %}
             <div class="eslint-actions">
                 {% if params.buttons.primary %}
-                    <a href="{{ params.buttons.primary.primaryURL }}" class="c-btn c-btn--primary">{{ params.buttons.primary.primaryText }}</a>
+                    <a
+                        href="{{ params.buttons.primary.primaryURL }}"
+                        class="c-btn c-btn--primary"
+                        title="{{ params.buttons.primary.primaryText }}"
+                    >
+                        {{ params.buttons.primary.primaryText }}
+                    </a>
                 {% endif %}
                 {% if params.buttons.secondary %}
-                    <a href="{{ params.buttons.secondary.secondaryURL }}" class="c-btn c-btn--secondary">{{ params.buttons.secondary.secondaryText }}</a>
+                    <a
+                        href="{{ params.buttons.secondary.secondaryURL }}"
+                        class="c-btn c-btn--secondary" 
+                        title="{{ params.buttons.secondary.secondaryText }}">
+                        {{ params.buttons.secondary.secondaryText }}
+                    </a>
                 {% endif %}
             </div>
 

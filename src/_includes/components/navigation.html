@@ -13,8 +13,12 @@
         {% for item in site.navigation %}
         <li>
             {% set itemLink = links[item.link] %}
-            <a href="{{ itemLink }}" {{ helpers.getLinkActiveState(itemLink,
-            page.url) | safe }} {% if item.target %}target="_blank"{% endif %}>{{ item.text }}</a>
+            <a 
+                href="{{ itemLink }}"
+                {{ helpers.getLinkActiveState(itemLink, page.url) | safe }}
+                {% if item.target %}target="_blank"{% endif %}
+                title="{{ item.text }}"
+            >{{ item.text }}</a>
         </li>
         {% endfor %}
     </ul>
