@@ -152,7 +152,7 @@ hook: "sponsors_page"
                 {{ site.sponsors_page.recent_donations.description }}
             </p>
         </div>
-        <ul role="list" class="donations-list focusable" role="region" tabindex="0" aria-labelledby="donations-label">
+        <ul role="list" class="donations-list" role="region" tabindex="-1" aria-labelledby="donations-label">
 
             {% for donation in donations | limitTo(50) %}
             <li class="donations-item">
