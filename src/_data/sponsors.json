@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 132888,
-        "monthlyDonations": 11074,
+        "annualDonations": 133428,
+        "monthlyDonations": 11119,
         "sponsorCount": 184
     },
     "platinum": [
@@ -209,6 +209,14 @@
             "name": "AX Semantics",
             "image": "https://avatars.githubusercontent.com/u/13435721?v=4",
             "url": "https://www.ax-semantics.com",
+            "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Tailscale",
+            "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
+            "url": "https://tailscale.com",
             "monthlyDonation": 50,
             "source": "github",
             "tier": "backer"
@@ -901,14 +909,6 @@
             "name": "Oliver Steele",
             "image": "https://avatars.githubusercontent.com/u/674?v=4",
             "url": "https://code.osteele.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Stephen Way",
-            "image": "https://avatars.githubusercontent.com/u/38894?u=238da37f0ac3df4e7ab79d1de7c453646cb7ba3a&v=4",
-            "url": "http://stephenway.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
