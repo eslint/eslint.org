@@ -22,7 +22,7 @@ formatters in the [formatter documentation](https://eslint.org/docs/latest/user-
 Some reasons to create a custom formatter include: 
 
 * You only want to report specific error types.
-* You want to format to the results in a way not supported by a built-in formatter.
+* You want to format the results in a way not supported by a built-in formatter.
 * You want to perform an async operation on the results, like sending them to a
   server for further analysis.
 
@@ -34,7 +34,7 @@ By the end of this post, you'll know how to:
 
 ## What you will build
 
-In the remainder of this post, your're going to create a custom formatter that
+In the remainder of this post, you're going to create a custom formatter that
 outputs ESLint results to [TOML](https://toml.io/).
 TOML is a format for representing data, similar to JSON or YAML.
 Developers often use TOML for config files, as it's optimized for human readability.
@@ -191,8 +191,8 @@ Now you're ready to write the custom formatter.
 
 Custom formatters are just JavaScript functions that receive a `results` object and 
 optional `context` object as arguments and return a string as an output.
-In the custom formatter you'll make in this post, you'll just use the `results` argument.
-The `results` argument contains array of all the ESLint results.
+In the custom formatter you'll make in this post, you'll only use the `results` argument.
+The `results` argument contains an array of all the ESLint results.
 For more information, refer to the [results object documentation](https://eslint.org/docs/latest/developer-guide/working-with-custom-formatters#the-result-object).
 
 In the `eslint-formatter-toml` directory, create a new file `formatter.js`.
@@ -342,7 +342,7 @@ Update the project's `package.json` file with the following information:
 | `"description"` | A string description of the package.|
 | `"main"`        | `"formatter.js"` |
 | `"keywords"`    | `["eslint-formatter", "eslintformatter", "eslint"]`. Add any other keywords you'd like to the array. |
-| `"author"`      | String or object with any author information you'd like to add. For more information, refer to the [npm documention](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#people-fields-author-contributors). |
+| `"author"`      | String or object with any author information you'd like to add. For more information, refer to the [npm documentation](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#people-fields-author-contributors). |
 
 Your `package.json` should look similar to the following: 
 
@@ -416,9 +416,9 @@ You should see the same TOML output in the terminal.
 
 ## Wrapping it up
 
-That's it! In this post, you learned how to create and test a ESLint custom formatter.
+That's it! In this post, you learned how to create and test an ESLint custom formatter.
 You also learned how to publish the formatter to npm and use it in a project.
-Now when you need to format results in way not covered by ESLint's built-in
+Now when you need to format results in a way not covered by ESLint's built-in
 formatters, you can create a custom formatter.
 
 For more information, refer to the [custom formatter docs](https://eslint.org/docs/latest/developer-guide/working-with-custom-formatters).
