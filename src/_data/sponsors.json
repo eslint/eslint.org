@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133428,
-        "monthlyDonations": 11119,
-        "sponsorCount": 184
+        "annualDonations": 121308,
+        "monthlyDonations": 10109,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -41,14 +41,6 @@
             "monthlyDonation": 1000,
             "totalDonations": 44610,
             "source": "opencollective",
-            "tier": "gold-sponsor"
-        },
-        {
-            "name": "American Express",
-            "image": "https://avatars.githubusercontent.com/u/3853301?v=4",
-            "url": "https://americanexpress.io",
-            "monthlyDonation": 1000,
-            "source": "github",
             "tier": "gold-sponsor"
         }
     ],
@@ -352,15 +344,6 @@
             "image": "https://images.opencollective.com/john-dorlus/f6d79b4/avatar.png",
             "monthlyDonation": 10,
             "totalDonations": 320,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "n8n.io - n8n GmbH",
-            "url": "https://n8n.io",
-            "image": "https://images.opencollective.com/n8n/dca2f0c/logo.png",
-            "monthlyDonation": 10,
-            "totalDonations": 330,
             "source": "opencollective",
             "tier": "backer"
         },
