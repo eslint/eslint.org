@@ -22,7 +22,7 @@ As an open source project with frequent external contributions, it is important 
 Initially, CesiumJS utilized JSHint for static analysis, since it was the standard at the time. In 2017, we switched over to ESLint since it was better at keeping pace with the rapid nature of ECMAScript standards development. It enabled enforcement of style rules through linting and applying automatic fixes for a lot of those rules. Perhaps most important of all was the ability to create extensible configurations that fit our own coding standards and extend configurations made by others in the community. In this post, I will explain how we, the maintainers of CesiumJS, use ESLint for ensuring code quality, enforcing consistency, and reducing developer burden in adhering to our code style and standards across our open source and private projects.
 
 
-## How we ues ESLint
+## How we use ESLint
 
 The earlier in the development process a developer is able to catch and fix an issue, the less expensive it is to fix it. This “shifting left” strategy is a key priority for us and that is why we incorporate linting into the developer workflow so that developers are informed of common potential issues in their code as they write it or before they commit it. First, VS Code is the IDE of choice at Cesium, so we include the official ESLint VSCode extension in .vscode/extensions.json so that users are prompted to install the extension when they clone the repository and open it in VS Code. 
 
