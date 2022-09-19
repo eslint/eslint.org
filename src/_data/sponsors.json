@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121308,
-        "monthlyDonations": 10109,
-        "sponsorCount": 182
+        "annualDonations": 121248,
+        "monthlyDonations": 10104,
+        "sponsorCount": 181
     },
     "platinum": [
         {
@@ -1412,14 +1412,6 @@
             "name": "Andrea Mazzucchelli",
             "image": "https://avatars.githubusercontent.com/u/60042277?u=ae98af9bebf42b3137986d38d38b5d1dfd609be8&v=4",
             "url": "https://www.linkedin.com/in/andrea-m-0b40051bb",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Shu Nonaka",
-            "image": "https://avatars.githubusercontent.com/u/63281006?u=10c6cc4308629456b2bad0d1e63a69d40f194447&v=4",
-            "url": "https://github.com/CasheeeewNuts",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
