@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121188,
-        "monthlyDonations": 10099,
-        "sponsorCount": 180
+        "annualDonations": 121128,
+        "monthlyDonations": 10094,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -1251,14 +1251,6 @@
             "name": "mizdra",
             "image": "https://avatars.githubusercontent.com/u/9639995?u=dd5dac271b000f6c7883880c1796ce2a95a971b2&v=4",
             "url": "https://mizdra.net",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ross MacPhee",
-            "image": "https://avatars.githubusercontent.com/u/10212476?u=3d6275b89af50c320198f479997b81862c037fcf&v=4",
-            "url": "https://github.com/rossyman",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
