@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121068,
-        "monthlyDonations": 10089,
-        "sponsorCount": 178
+        "annualDonations": 121008,
+        "monthlyDonations": 10084,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -551,7 +551,7 @@
             "url": "https://metatierlist.com",
             "image": "https://images.opencollective.com/metatierlist/68a5b41/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -651,15 +651,6 @@
             "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 90,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Tripwire, Inc.",
-            "url": "https://tripwire.com",
-            "image": "https://images.opencollective.com/tripwire/7599e30/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 95,
             "source": "opencollective",
             "tier": "backer"
         },
