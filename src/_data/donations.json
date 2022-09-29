@@ -277,14 +277,5 @@
         "amount": 200,
         "date": "2022-01-07T11:40:17.632Z",
         "source": "opencollective"
-    },
-    {
-        "id": "jrkx5lmn-v904qjwz-xxmp8bwa-7zdygoe3",
-        "name": "Algolia",
-        "url": "https://algolia.com",
-        "image": "https://images.opencollective.com/algolia/d69b553/logo.png",
-        "amount": 3000,
-        "date": "2022-01-04T19:58:03.201Z",
-        "source": "opencollective"
     }
 ]
