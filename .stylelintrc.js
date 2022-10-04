@@ -1,6 +1,6 @@
-{
-  "extends": ["stylelint-config-standard-scss"],
-  "rules": {
+module.exports = {
+  extends: ["stylelint-config-standard-scss"],
+  rules: {
     "alpha-value-notation": null,
     "at-rule-empty-line-before": null,
     "color-function-notation": null,
@@ -11,7 +11,7 @@
     "declaration-block-no-redundant-longhand-properties": null,
     "declaration-block-no-shorthand-property-overrides": null,
     "hue-degree-notation": null,
-    "indentation": 4,
+    indentation: 4,
     "max-line-length": null,
     "no-descending-specificity": null,
     "no-duplicate-selectors": null,
@@ -20,7 +20,6 @@
     "property-no-unknown": null,
     "property-no-vendor-prefix": null,
     "selector-class-pattern": null,
-    "value-keyword-case": null
+    "value-keyword-case": null,
   },
-  "ignoreFiles": ["_site/"]
-}
+};

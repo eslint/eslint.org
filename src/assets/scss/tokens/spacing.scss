@@ -59,11 +59,10 @@
     --space-xl-3xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
     --space-xl-4xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-4xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
 
-
-     // spacing
-     --spacer-2x: 2rem; // 32px
-     --spacer-3x: 3rem; // 48px
-     --spacer-4x: 4rem; // 64px
-     --spacer-6x: 6rem; // 96px
-     --spacer-8x: 8rem; // 128px
+    // spacing
+    --spacer-2x: 2rem; // 32px
+    --spacer-3x: 3rem; // 48px
+    --spacer-4x: 4rem; // 64px
+    --spacer-6x: 6rem; // 96px
+    --spacer-8x: 8rem; // 128px
 }

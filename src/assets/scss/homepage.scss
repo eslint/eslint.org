@@ -50,7 +50,7 @@
         all: unset;
         min-width: 30ch;
         color: inherit;
-        font-family: var(--mono-font);      
+        font-family: var(--mono-font);
     }
 }
 
@@ -125,7 +125,6 @@
         margin-inline-start: 0;
         margin-block-end: 1rem;
         padding-inline-end: 1rem;
-
         display: flex;
         align-items: center;
     }
@@ -135,7 +134,6 @@
         margin-inline-end: .5rem;
     }
 }
-
 
 /* homepage metrics section */
 .metrics {
@@ -168,7 +166,6 @@
     margin-bottom: .75rem;
     margin-block-end: .75rem;
 }
-
 
 /* Homepage Features Section */
 .features-wrapper.grid {
@@ -235,6 +232,4 @@
     @media all and (min-width: 1023px) {
         display: block;
     }
-
-
 }

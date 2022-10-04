@@ -4,7 +4,6 @@
     }
 }
 
-
 .brand__logo__img {
     height: 100%;
     min-height: calc(310px + 5vw);
@@ -29,7 +28,6 @@
 .brand__logo__colors {
     display: flex;
     align-items: center;
-
     background-color: #fff;
     padding: 1rem;
     color: var(--color-neutral-900);
@@ -55,10 +53,10 @@
         left: 0;
         offset-block-start: calc(100% + .25rem);
         offset-inline-start: 0;
-
         transform: translateX(-1rem);
-        box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1),
-        0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+        box-shadow:
+            0 4px 8px -2px rgba(16, 24, 40, 0.1),
+            0 4px 6px -2px rgba(16, 24, 40, 0.05);
         display: none;
         background-color: var(--lightest-background-color);
         color: var(--headings-color);
@@ -77,6 +75,7 @@
             display: block;
         }
     }
+
     &.focus-visible {
         &::before {
             display: block;

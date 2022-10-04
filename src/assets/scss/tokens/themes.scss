@@ -79,7 +79,6 @@
     --border-color: var(--color-neutral-300);
     --divider-color: var(--color-neutral-200);
 
-
     --icon-color: var(--color-neutral-400);
     --dark-icon-color: var(--color-neutral-500);
     --link-color: var(--color-primary-800);
@@ -133,8 +132,6 @@
     }
 }
 
-
-
 html[data-theme="light"] {
     --body-background-color: #fff;
     --body-text-color: var(--color-neutral-500);
@@ -142,7 +139,6 @@ html[data-theme="light"] {
 
     --border-color: var(--color-neutral-300);
     --divider-color: var(--color-neutral-200);
-
 
     --icon-color: var(--color-neutral-400);
     --dark-icon-color: var(--color-neutral-500);

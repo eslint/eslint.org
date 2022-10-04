@@ -4,15 +4,15 @@
     appearance: none;
 }
 
-[type=search]::-ms-clear,
-[type=search]::-ms-reveal {
+[type="search"]::-ms-clear,
+[type="search"]::-ms-reveal {
     display: none;
     width: 0;
     height: 0;
 }
 
 .search {
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem;
     position: relative;
 }
 
@@ -110,8 +110,8 @@
     &:hover {
         background-color: var(--lightest-background-color);
     }
-    
-    &:focus-within{
+
+    &:focus-within {
         background-color: var(--lightest-background-color);
     }
 }
@@ -121,7 +121,6 @@
     font-size: .875rem;
     margin-bottom: 0;
     font-family: var(--text-font);
-
 
     a {
         display: block;
@@ -164,4 +163,3 @@
         color: var(--color-neutral-900);
     }
 }
-
