@@ -41,6 +41,7 @@
     "lint-staged": {
         "**/*.{js,jsx}": "eslint --fix",
         "*.md": "markdownlint --fix",
+        "*.scss": "stylelint \"**/*.scss\" --fix",
         "**/*.svg": "npx svgo -r --multipass"
     },
     "gitHooks": {
