@@ -1,11 +1,12 @@
 .playground__config__download-btn {
     margin: 1rem;
 }
+
 [data-config-section] {
     margin-top: 1rem;
 }
 
-[data-config-section-title]  {
+[data-config-section-title] {
     font-size: .875rem;
     font-family: var(--text-font);
     color: inherit;
@@ -17,10 +18,11 @@
         margin: 0;
     }
 }
-.playground-toggle { 
+
+.playground-toggle {
     border: none;
     display: flex;
-    width:100%;
+    width: 100%;
     padding: 0;
     justify-content: space-between;
 }
@@ -98,7 +100,6 @@
         }
 
         #ham-top {
-
             transform: rotate(41deg);
         }
 
@@ -135,7 +136,6 @@
     padding: 1rem;
 }
 
-
 /* Styles for the accordion icon */
 .config-js .config-icon {
     display: block !important;
@@ -157,7 +157,6 @@
     transform: rotate(180deg);
 }
 
-
 // share URL section
 .share-url-wrapper {
     position: relative;
@@ -171,7 +170,6 @@
     border-radius: var(--border-radius);
     border: 1px solid var(--border-color);
     padding-right: calc(.625rem + 20px);
-
     max-width: 100%;
     color: var(--headings-color);
     position: relative;
@@ -265,7 +263,7 @@ ul.config__added-rules {
     font-family: var(--mono-font);
 
     li {
-        margin: 0 0 1rem 0;
+        margin: 0 0 1rem;
 
         &:last-of-type {
             margin: 0;
@@ -279,7 +277,7 @@ ul.config__added-rules {
 
 .config__added-rules__rule-name {
     font: inherit;
-    margin: 0 0 .25rem 0;
+    margin: 0 0 .25rem;
     display: flex;
     justify-content: space-between;
 }
@@ -295,6 +293,7 @@ ul.config__added-rules {
 .config__added-rules__rule-error {
     color: var(--color-rose-800);
     margin-top: .75rem;
+
     [data-theme="dark"] & {
         color: var(--color-rose-400);
     }

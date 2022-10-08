@@ -6,10 +6,10 @@
     display: block;
     width: 100%;
     max-width: 100%;
-    min-width: 0px;
-    padding: .625rem .875rem;
-    padding-right: calc(.875rem * 3);
-    padding-inline-end: calc(.875rem * 3);
+    min-width: 0;
+    padding: 0.625rem 0.875rem;
+    padding-right: calc(0.875rem * 3);
+    padding-inline-end: calc(0.875rem * 3);
     font: inherit;
     color: var(--body-text-color);
     color: inherit;
@@ -18,30 +18,36 @@
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-xs);
     background-color: var(--body-background-color);
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.60938L10 12.6094L15 7.60938' stroke='%23667085' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"), linear-gradient(to bottom, var(--body-background-color) 0%, var(--body-background-color) 100%);
+    background-image:
+        url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.60938L10 12.6094L15 7.60938' stroke='%23667085' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"),
+        linear-gradient(
+            to bottom,
+            var(--body-background-color) 0%,
+            var(--body-background-color) 100%
+        );
     background-repeat: no-repeat, repeat;
-    background-position: right calc(.875rem * 1.5) top 50%, 0 0;
+    background-position: right calc(0.875rem * 1.5) top 50%, 0 0;
     background-size: 1em auto, 100%;
 }
 
 .label__text.label__text {
     display: flex;
-    font-size: .875rem;
+    font-size: 0.875rem;
     align-items: center;
-    gap: .5rem;
-    font-size: .875rem;
+    gap: 0.5rem;
+    font-size: 0.875rem;
     font-family: var(--text-font);
     color: inherit;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: .25rem;
-    margin-block-end: .25rem;
+    margin-bottom: 0.25rem;
+    margin-block-end: 0.25rem;
 }
 
 input {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    padding: .625rem .875rem;
+    padding: 0.625rem 0.875rem;
     font: inherit;
     font-size: 1rem;
     display: block;
@@ -51,44 +57,27 @@ input {
     color: inherit;
 }
 
-input::-webkit-input-placeholder {
+input::-moz-input-placeholder {
     color: var(--color-neutral-500);
-    font-size: .875rem;
-    opacity: 1;
-}
-
-input::-moz-placeholder {
-    color: var(--color-neutral-500);
-    font-size: .875rem;
-    opacity: 1;
-}
-
-input:-moz-placeholder {
-    color: var(--color-neutral-500);
-    font-size: .875rem;
+    font-size: 0.875rem;
     opacity: 1;
 }
 
 input::placeholder {
     color: var(--color-neutral-500);
-    font-size: .875rem;
+    font-size: 0.875rem;
     opacity: 1;
 }
 
 [data-theme="dark"] {
-    ::-webkit-input-placeholder {
+    ::-moz-input-placeholder {
         color: var(--color-neutral-400);
-        font-size: .875rem;
-    }
-
-    ::-moz-placeholder {
-        color: var(--color-neutral-400);
-        font-size: .875rem;
+        font-size: 0.875rem;
     }
 
     ::placeholder {
         color: var(--color-neutral-400);
-        font-size: .875rem;
+        font-size: 0.875rem;
     }
 }
 
@@ -100,10 +89,10 @@ input::placeholder {
     display: block;
     width: 100%;
     max-width: 100%;
-    min-width: 0px;
-    padding: .625rem .875rem;
-    padding-right: calc(.875rem * 3);
-    padding-inline-end: calc(.875rem * 3);
+    min-width: 0;
+    padding: 0.625rem 0.875rem;
+    padding-right: calc(0.875rem * 3);
+    padding-inline-end: calc(0.875rem * 3);
     font: inherit;
     color: var(--body-text-color);
     color: inherit;
@@ -112,24 +101,30 @@ input::placeholder {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-xs);
     background-color: var(--body-background-color);
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.60938L10 12.6094L15 7.60938' stroke='%23667085' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"), linear-gradient(to bottom, var(--body-background-color) 0%, var(--body-background-color) 100%);
+    background-image:
+        url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.60938L10 12.6094L15 7.60938' stroke='%23667085' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"),
+        linear-gradient(
+            to bottom,
+            var(--body-background-color) 0%,
+            var(--body-background-color) 100%
+        );
     background-repeat: no-repeat, repeat;
-    background-position: right calc(.875rem * 1.5) top 50%, 0 0;
+    background-position: right calc(0.875rem * 1.5) top 50%, 0 0;
     background-size: 1em auto, 100%;
 }
 
 .label__text.label__text {
     display: flex;
-    font-size: .875rem;
+    font-size: 0.875rem;
     align-items: center;
-    gap: .5rem;
-    font-size: .875rem;
+    gap: 0.5rem;
+    font-size: 0.875rem;
     font-family: var(--text-font);
     color: var(--color-neutral-700);
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: .25rem;
-    margin-block-end: .25rem;
+    margin-bottom: 0.25rem;
+    margin-block-end: 0.25rem;
 
     [data-theme="dark"] & {
         color: var(--color-neutral-100);
@@ -139,11 +134,12 @@ input::placeholder {
 input {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    padding: .625rem .875rem;
+    padding: 0.625rem 0.875rem;
     font: inherit;
     font-size: 1rem;
     display: block;
     min-width: 0;
+
     // width: 100%;
     max-width: 100%;
     background-color: var(--body-background-color);
@@ -164,7 +160,7 @@ input {
     gap: 1rem;
 }
 
-/**************************************************************************************\
+/************************************************************************************** \
  *
  * Multi-select dropdown
  *
@@ -173,6 +169,7 @@ input {
 .combo {
     display: block;
     position: relative;
+
     // margin-bottom: 1rem;
     // margin-block-end: 1rem;
 }
@@ -186,14 +183,19 @@ input {
     -webkit-appearance: none;
     appearance: none;
     background-color: #fff;
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.10001 0.299997L0.700012 1.7L6.70001 7.7L12.7 1.7L11.3 0.299996L6.70001 4.9L2.10001 0.299997Z' fill='%23444D56'/%3E%3C/svg%3E%0A"),
-        linear-gradient(to bottom, var(--body-background-color) 0%, var(--body-background-color) 100%);
+    background-image:
+        url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.10001 0.299997L0.700012 1.7L6.70001 7.7L12.7 1.7L11.3 0.299996L6.70001 4.9L2.10001 0.299997Z' fill='%23444D56'/%3E%3C/svg%3E%0A"),
+        linear-gradient(
+            to bottom,
+            var(--body-background-color) 0%,
+            var(--body-background-color) 100%
+        );
     background-repeat: no-repeat, repeat;
     background-position: right 1rem top 50%, 0 0;
-    background-size: .65em auto, 100%;
-    padding: .625rem .875rem;
-    padding-right: calc(.875rem * 3);
-    padding-inline-end: calc(.875rem * 3);
+    background-size: 0.65em auto, 100%;
+    padding: 0.625rem 0.875rem;
+    padding-right: calc(0.875rem * 3);
+    padding-inline-end: calc(0.875rem * 3);
     box-shadow: var(--shadow-xs);
 
     &::-ms-expand {
@@ -209,7 +211,6 @@ input {
     border-radius: var(--border-radius);
 }
 
-
 .combo-label {
     display: block;
 }
@@ -224,7 +225,7 @@ input {
     overflow-y: scroll;
     left: 0;
     position: absolute;
-    top: calc(100% + .25rem);
+    top: calc(100% + 0.25rem);
     width: 100%;
     z-index: 100;
 }
@@ -239,7 +240,7 @@ input {
     align-items: center;
     position: relative;
     z-index: 2;
-    padding: .5rem;
+    padding: 0.5rem;
     cursor: pointer;
     color: var(--body-text-color);
 
@@ -275,12 +276,11 @@ input {
     color: var(--link-color);
 }
 
-
 // styles for the selected options in the form of pills
 ul.selected-options {
     list-style-type: none;
     margin: 0;
-    padding: .5rem 0 .25rem 0;
+    padding: 0.5rem 0 0.25rem;
     display: flex;
     flex-wrap: wrap;
 
@@ -293,20 +293,19 @@ ul.selected-options {
     display: inline-flex;
     font-size: var(--step--1);
     align-items: center;
-    padding: .25rem .5rem;
+    padding: 0.25rem 0.5rem;
     color: var(--headings-color);
     border: 1px solid var(--divider-color);
     background: var(--lighter-background-color);
     border-radius: 4px;
     cursor: pointer;
-    margin: 0 .25rem .25rem 0;
+    margin: 0 0.25rem 0.25rem 0;
 
     svg {
-        margin-left: .25rem;
-        margin-inline-start: .25rem;
+        margin-left: 0.25rem;
+        margin-inline-start: 0.25rem;
     }
 }
-
 
 /* CUSTOM CHECKBOX STYLES */
 .c-checkbox {
@@ -315,8 +314,8 @@ ul.selected-options {
     flex-direction: row-reverse;
     align-items: center;
     position: relative;
-    margin-bottom: .5rem;
-    margin-block-end: .5rem;
+    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
 
     .label__text {
         margin: 0;
@@ -335,8 +334,8 @@ ul.selected-options {
 
 // basic styles for the svg
 .c-checkbox__icon {
-    margin-right: .5rem;
-    margin-inline-end: .5rem;
+    margin-right: 0.5rem;
+    margin-inline-end: 0.5rem;
 
     * {
         transition: all 0.1s linear;
@@ -349,7 +348,7 @@ ul.selected-options {
     }
 }
 
-.c-checkbox input[type="checkbox"]:checked~.c-checkbox__icon {
+.c-checkbox input[type="checkbox"]:checked ~ .c-checkbox__icon {
     .cm {
         stroke: var(--link-color);
     }
@@ -359,31 +358,31 @@ ul.selected-options {
     }
 }
 
-.c-checkbox input[type="checkbox"]:focus~.c-checkbox__icon {
+.c-checkbox input[type="checkbox"]:focus ~ .c-checkbox__icon {
     outline: 2px solid transparent;
     outline-offset: 3px;
 }
 
-.c-checkbox input[type="checkbox"]:focus~.c-checkbox__icon {
+.c-checkbox input[type="checkbox"]:focus ~ .c-checkbox__icon {
     outline: 3px solid transparent;
 }
 
-.js-focus-visible .c-checkbox input[type="checkbox"]:focus:not(.focus-visible)~.c-checkbox__icon {
+.js-focus-visible .c-checkbox input[type="checkbox"]:focus:not(.focus-visible) ~ .c-checkbox__icon {
     outline: 2px solid transparent;
     outline-offset: 3px;
 }
 
-.c-checkbox input[type="checkbox"]:focus:not(:focus-visible)~.c-checkbox__icon {
+.c-checkbox input[type="checkbox"]:focus:not(:focus-visible) ~ .c-checkbox__icon {
     outline: 2px solid transparent;
     outline-offset: 3px;
 }
 
-.c-checkbox input[type="checkbox"].focus-visible~.c-checkbox__icon {
+.c-checkbox input[type="checkbox"].focus-visible ~ .c-checkbox__icon {
     outline: 2px solid var(--outline-color);
     outline-offset: 3px;
 }
 
-.c-checkbox input[type="checkbox"]:focus-visible~.c-checkbox__icon {
+.c-checkbox input[type="checkbox"]:focus-visible ~ .c-checkbox__icon {
     outline: 2px solid var(--outline-color);
     outline-offset: 3px;
 }
@@ -402,7 +401,7 @@ ul.selected-options {
 }
 
 @media screen and (-ms-high-contrast: active) {
-    .c-checkbox input[type="checkbox"]:checked~.c-checkbox__icon {
+    .c-checkbox input[type="checkbox"]:checked ~ .c-checkbox__icon {
         .cm {
             stroke: highlight;
         }

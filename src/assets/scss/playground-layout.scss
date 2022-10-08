@@ -21,7 +21,6 @@
 .playground__config-and-footer {
     grid-column: 2 / 3;
     grid-row: 1;
-
     display: flex;
     flex-direction: column;
     background-color: var(--lightest-background-color);
@@ -61,10 +60,8 @@
     flex: 1;
     border-bottom: 1px solid var(--divider-color);
     border-block-end: 1px solid var(--divider-color);
-
     display: flex;
     flex-direction: column;
-
 
     @media all and (min-width: 1023px) {
         border-bottom: none;
@@ -75,7 +72,6 @@
 .playground__config-options {
     display: flex;
     flex-direction: column;
-
     flex: 1;
 }
 

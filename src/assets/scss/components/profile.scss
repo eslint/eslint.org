@@ -1,4 +1,4 @@
-/* PERSON */
+// PERSON
 
 .profile {
     position: relative;
@@ -11,7 +11,7 @@
     gap: .75rem;
 }
 
-//bottom of blog post
+// bottom of blog post
 .profile--author {
     margin-bottom: 3rem;
     margin-block-end: 3rem;
@@ -81,7 +81,6 @@
     }
 }
 
-
 .profile__handle {
     text-decoration: none;
     color: var(--link-color);
@@ -105,7 +104,6 @@
             left: 0;
             right: 0;
             bottom: 0;
-
             offset-block-start: 0;
             offset-block-end: 0;
             offset-inline-start: 0;
@@ -129,7 +127,6 @@
         gap: 1rem;
     }
 }
-
 
 /* team page */
 .people-list {

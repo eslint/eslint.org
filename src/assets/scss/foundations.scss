@@ -80,7 +80,6 @@ body {
     offset-block-start: -30em;
     offset-inline-start: 0;
     offset-inline-end: auto;
-
     z-index: 999;
     transition: top .1s linear;
 
@@ -115,7 +114,6 @@ main {
     margin: 0 auto;
     padding: var(--space-xl-3xl) calc(1rem + 1vw);
 }
-
 
 .section-head {
     .section-supporting-text {
@@ -212,7 +210,6 @@ a {
     }
 }
 
-
 a {
     color: var(--link-color);
     transition: color .1s linear;
@@ -246,7 +243,6 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
-
 
 ul,
 ol {
@@ -323,7 +319,6 @@ nav {
     }
 }
 
-
 .video {
     width: 90%;
     max-width: 1400px;
@@ -337,7 +332,6 @@ nav {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
     *:focus-visible,
     *.focus-visible {
         transition: outline-offset .15s linear;
@@ -371,7 +365,6 @@ h6 {
     font-weight: 500;
     margin-top: 0;
     margin-block-start: 0;
-
 }
 
 h2,
@@ -379,7 +372,6 @@ h3,
 h4,
 h5,
 h6 {
-
     .post-main &,
     .docs-main & {
         margin-top: 3rem;
@@ -393,7 +385,6 @@ h6 {
         }
     }
 }
-
 
 h6,
 .h6 {
