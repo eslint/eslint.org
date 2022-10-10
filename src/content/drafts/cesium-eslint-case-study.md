@@ -38,4 +38,4 @@ Our current ESLint configuration allows users to use all modern features availab
 
 ## Conclusion
 
-In conclusion, ESLint is an extremely important part of our development process. It’s a tool that helps us maintain a very large code base that is well-tested, stable, performant and has a strong coding style. It also helps us attract contributors and enables us to be confident in the code we ourselves write and review. If you’re interested in learning more about Cesium, head over to our [blog](https://cesium.com/blog) for more information.
+ESLint is an extremely important part of our development process. It’s a tool that helps us maintain a very large code base that is well-tested, stable, performant and has a strong coding style. It also helps us attract contributors and enables us to be confident in the code we ourselves write and review. If you’re interested in learning more about Cesium, head over to our [blog](https://cesium.com/blog) for more information.
