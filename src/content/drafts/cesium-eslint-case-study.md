@@ -24,7 +24,9 @@ Initially, CesiumJS utilized JSHint for static analysis, since it was the standa
 
 ## How we use ESLint
 
-The earlier in the development process a developer is able to catch and fix an issue, the less expensive it is to fix it. This “shifting left” strategy is a key priority for us and that is why we incorporate linting into the developer workflow so that developers are informed of common potential issues in their code as they write it or before they commit it. First, Visual Studio Code is the IDE of choice at Cesium, so we include the official ESLint VS Code extension in .vscode/extensions.json so that users are prompted to install the extension when they clone the repository and open it in VS Code. 
+The earlier in the development process a developer is able to catch an issue, the less expensive it is to fix it. This “shifting left” strategy is a key priority for us and that is why we incorporate linting into the developer workflow so that developers are informed of potential issues in their code as they write it or before they commit it. 
+
+First, Visual Studio Code is the IDE of choice at Cesium, so we include the official ESLint VS Code extension in `.vscode/extensions.json` so that users are prompted to install the extension when they clone the repository and open it in VS Code. 
 
 ![VSCode ESLint extension](/assets/images/blog/2022/eslint-vscode.png)
 
