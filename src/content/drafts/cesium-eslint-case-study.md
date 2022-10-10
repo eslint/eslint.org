@@ -28,7 +28,11 @@ The earlier in the development process a developer is able to catch and fix an i
 
 ![VSCode ESLint extension](/assets/images/blog/2022/eslint-vscode.png)
 
-Second, we use the [husky](https://github.com/typicode/husky) package to install pre-commit hooks to ensure that the lint command is run every time code is committed to the repository. We also run the lint script as part of our CI step. These tools are replicated for all our repositories to ensure a consistent and efficient experience in development and in review. Maintaining consistency in the code and the tools reduces the burden on developers working on different projects and makes it easier to onramp developers on new projects.
+Second, we use the [husky](https://github.com/typicode/husky) package to install pre-commit hooks to ensure that the lint command is run every time code is committed to the repository.
+
+Last, we also run the lint script as part of our CI step.
+
+These tools are replicated for all our repositories to ensure a consistent and efficient experience in development and in review. Maintaining consistency in the code and the tools reduces the burden on developers working on different projects and makes it easier to onramp developers on new projects.
 
 At Cesium, we maintain two [open source shareable ESLint configurations](https://github.com/CesiumGS/eslint-config-cesium): one for Node.js projects and another for browser environments. Often, both configurations are used in the same repository as there is often server/script code to accompany the client/web code. Our configurations rely heavily on the default ESLint recommended ruleset. Because we use Prettier for code formatting in all our projects, we also add the Prettier ruleset to ensure that there are no conflicts between the linter and the formatter. Projects often also end up extending the base source configuration to create a testing configuration for the Jasmine environment.
 
