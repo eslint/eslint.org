@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 117432,
-        "monthlyDonations": 9786,
+        "annualDonations": 117396,
+        "monthlyDonations": 9783,
         "sponsorCount": 176
     },
     "platinum": [
@@ -589,7 +589,7 @@
             "url": "https://stefan-milenkovic.com",
             "image": "https://images.opencollective.com/stefan-milenkovic/1fd866a/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 60,
+            "totalDonations": 65,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -734,15 +734,6 @@
             "image": "https://images.opencollective.com/eliseu/fe16988/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 200,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Jb Landry",
-            "url": "https://jblandry.info",
-            "image": "https://images.opencollective.com/jblandry/e968bf5/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 215,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1056,7 +1047,7 @@
         },
         {
             "name": "Kelp",
-            "image": "https://avatars.githubusercontent.com/u/1680868?u=333662d31fdb93f5787546c14c411a35d53cb9cf&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1680868?u=ee384bcd6dda85c2f00dd67dfe7c5b98c41856c6&v=4",
             "url": "https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi",
             "monthlyDonation": 5,
             "source": "github",
@@ -1397,6 +1388,15 @@
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
+        },
+        {
+            "name": "Jb Landry",
+            "url": "https://jblandry.info",
+            "image": "https://images.opencollective.com/jblandry/e968bf5/avatar.png",
+            "monthlyDonation": 2,
+            "totalDonations": 235,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Shunfan Du",
