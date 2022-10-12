@@ -152,5 +152,16 @@
         "twitter_username": "haydenbleasel",
         "github_username": "haydenbleasel",
         "location": "Delray Beach, FL"
+    },
+    "sanjeetsuhag": {
+        "username": "sanjeetsuhag",
+        "name": "Sam Suhag",
+        "title": "Guest Author",
+        "website": "",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5172619?v=4",
+        "bio": "3D Software Developer @CesiumGS ",
+        "twitter_username": "sanjeetsuhag",
+        "github_username": "sanjeetsuhag",
+        "location": "United States"
     }
 }
