@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117396,
-        "monthlyDonations": 9783,
-        "sponsorCount": 176
+        "annualDonations": 123600,
+        "monthlyDonations": 10300,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -45,6 +45,14 @@
         }
     ],
     "silver": [
+        {
+            "name": "Sentry",
+            "image": "https://avatars.githubusercontent.com/u/1396951?v=4",
+            "url": "https://sentry.io",
+            "monthlyDonation": 512,
+            "source": "github",
+            "tier": "silver-sponsor"
+        },
         {
             "name": "Liftoff",
             "url": "https://liftoff.io/",
@@ -1009,6 +1017,14 @@
             "name": "Zhigang Fang",
             "image": "https://avatars.githubusercontent.com/u/1057756?u=15c3cdff1c715ac27bbc63ccb8f0a1c27eeb3784&v=4",
             "url": "https://reily.app",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Michał Jastrzębowski",
+            "image": "https://avatars.githubusercontent.com/u/1092924?u=d546335f03b66c4b40f2a1d1544b3d7d57d318cc&v=4",
+            "url": "http://jastrzebowski.pl",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
