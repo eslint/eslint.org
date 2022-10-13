@@ -16,6 +16,9 @@ language:
   title: German
 locale: de-DE
 hostname: de.eslint.org
+locals:
+  docs: false
+  blog: false
 
 #------------------------------------------------------------------------------
 # Analytics

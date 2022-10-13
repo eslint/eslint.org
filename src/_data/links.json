@@ -5,16 +5,16 @@
     "group": "https://groups.google.com/group/eslint",
 
     "blog": "/blog",
-    "docs": "https://eslint.org/docs",
+    "docs": "/docs",
     "playground": "/play",
-    "getStarted": "https://eslint.org/docs/user-guide/getting-started",
+    "getStarted": "/docs/user-guide/getting-started",
     "sponsors": "/sponsors",
     "branding": "/branding",
     "store": "https://eslint.threadless.com",
     "team": "/team",
 
-    "configuring": "https://eslint.org/docs/user-guide/configuring/",
-    "fixProblems": "https://eslint.org/docs/user-guide/command-line-interface#fixing-problems",
+    "configuring": "/docs/user-guide/configuring/",
+    "fixProblems": "/docs/user-guide/command-line-interface#fixing-problems",
 
     "donate": "/donate",
     "openCollective": "https://opencollective.com/eslint",

@@ -16,6 +16,9 @@ language:
   title: French
 locale: fr-FR
 hostname: fr.eslint.org
+locals:
+  docs: false
+  blog: false
 
 #------------------------------------------------------------------------------
 # Analytics

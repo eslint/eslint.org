@@ -16,6 +16,9 @@ language:
   title: English (US)
 locale: en-US
 hostname: eslint.org
+locals:
+  docs: docs-eslint.netlify.app
+  blog: true
 
 #------------------------------------------------------------------------------
 # Analytics

@@ -16,6 +16,9 @@ language:
   title: Japanese
 locale: ja-JP
 hostname: ja.eslint.org
+locals:
+  docs: false
+  blog: false
 
 #------------------------------------------------------------------------------
 # Analytics
