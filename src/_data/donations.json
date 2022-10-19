@@ -268,14 +268,5 @@
         "amount": 30,
         "date": "2022-01-09T05:22:20.377Z",
         "source": "opencollective"
-    },
-    {
-        "id": "gnxdwzj3-le5mpwj8-bzjqy8rv-bko04a97",
-        "name": "Mautic",
-        "url": "https://www.mautic.org",
-        "image": "https://images.opencollective.com/mautic/fc1aa27/logo.png",
-        "amount": 200,
-        "date": "2022-01-07T11:40:17.632Z",
-        "source": "opencollective"
     }
 ]
