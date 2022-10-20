@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
 # Internal Redirects
 /demo/*                             /play/:splat 302!
 
-{% if site.locals.docs %}
+{% if site.locals.docs_latest %}
 
 # Old-Style Docs to New-Style Docs
 /docs/rules/*                       /docs/latest/rules/:splat 301!
@@ -27,13 +27,19 @@ eleventyExcludeFromCollections: true
 /docs/developer-guide/*             /docs/latest/developer-guide/:splat 301!
 
 # Regular Docs
-/docs/head/*                        https://{{ site.locals.docs }}/:splat 200!
-/docs/latest/*                      https://latest--{{ site.locals.docs }}/:splat 200!
-/docs/                             /docs/latest/ 301!
+/docs/latest/*                      https://{{ site.locals.docs_latest }}/:splat 200!
+/docs/                              /docs/latest/ 301!
 {% else %}
 
 # Redirect docs back to English site
 /docs/*                             https://eslint.org/docs/:splat 302!
+{% endif %}
+
+# Docs checked into main branch but not released
+{% if site.locals.docs_head %}
+/docs/head/*                        https://{{ site.locals.docs_head }}/:splat 200!
+{% else %}
+/docs/head/*                        https://eslint.org/docs/head/:splat 302!
 {% endif %}
 
 {% if site.locals.blog == false %}

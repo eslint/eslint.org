@@ -17,7 +17,8 @@ language:
 locale: pt-BR
 hostname: pt-br.eslint.org
 locals:
-  docs: false
+  docs_latest: false
+  docs_head: false
   blog: false
 
 #------------------------------------------------------------------------------

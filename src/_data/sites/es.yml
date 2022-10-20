@@ -17,7 +17,8 @@ language:
 locale: es-ES
 hostname: es.eslint.org
 locals:
-  docs: false
+  docs_latest: false
+  docs_head: false
   blog: false
 
 #------------------------------------------------------------------------------

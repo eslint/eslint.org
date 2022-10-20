@@ -17,7 +17,8 @@ language:
 locale: en-US
 hostname: eslint.org
 locals:
-  docs: docs-eslint.netlify.app
+  docs_latest: latest--docs-eslint.netlify.app
+  docs_head: docs-eslint.netlify.app
   blog: true
 
 #------------------------------------------------------------------------------

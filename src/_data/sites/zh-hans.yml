@@ -17,7 +17,8 @@ language:
 locale: zh-hans
 hostname: zh-hans.eslint.org
 locals:
-  docs: zh-hans-docs.netlify.app
+  docs_latest: zh-hans-docs.netlify.app
+  docs_head: false
   blog: false
 
 #------------------------------------------------------------------------------
