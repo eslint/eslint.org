@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133464,
-        "monthlyDonations": 11122,
-        "sponsorCount": 182
+        "annualDonations": 133524,
+        "monthlyDonations": 11127,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -1050,7 +1050,7 @@
         {
             "name": "Zhigang Fang",
             "image": "https://avatars.githubusercontent.com/u/1057756?u=15c3cdff1c715ac27bbc63ccb8f0a1c27eeb3784&v=4",
-            "url": "https://reily.app",
+            "url": "https://github.com/zhigang1992",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1067,6 +1067,14 @@
             "name": "Charles Severance",
             "image": "https://avatars.githubusercontent.com/u/1197222?u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
             "url": "http://www.dr-chuck.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "MBJ",
+            "image": "https://avatars.githubusercontent.com/u/1220722?u=a8278e2f090ae930817aeb3fcc948e257b2fbe2f&v=4",
+            "url": "https://github.com/thiswallz",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
