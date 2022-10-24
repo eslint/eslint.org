@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133524,
-        "monthlyDonations": 11127,
-        "sponsorCount": 183
+        "annualDonations": 133584,
+        "monthlyDonations": 11132,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -1251,6 +1251,14 @@
             "name": "Marek",
             "image": "https://avatars.githubusercontent.com/u/8512964?u=1f5b1c9e744a3e6da955439f44ca23ef0160f2cb&v=4",
             "url": "https://github.com/mrewers",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Warren Wong",
+            "image": "https://avatars.githubusercontent.com/u/8570718?u=c80bab6e192a8ce02444ee6d7a53695cfa699c73&v=4",
+            "url": "https://www.linkedin.com/in/iamwarrenwong/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
