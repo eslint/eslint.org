@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133584,
-        "monthlyDonations": 11132,
-        "sponsorCount": 184
+        "annualDonations": 131184,
+        "monthlyDonations": 10932,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -105,15 +105,6 @@
             "image": "https://images.opencollective.com/anagram-solver/2666271/logo.png",
             "monthlyDonation": 200,
             "totalDonations": 6200,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "VPS",
-            "url": "https://www.vpsserver.com",
-            "image": "https://images.opencollective.com/vpsservercom/logo.png",
-            "monthlyDonation": 200,
-            "totalDonations": 7800,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
