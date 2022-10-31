@@ -38,6 +38,19 @@ module.exports = {
                 options: {
                     configFile: path.resolve(__dirname, ".babelrc")
                 }
+            },
+            {
+                test: /\.[s]css$/u,
+                use: [
+                    "postcss-loader",
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: "css-loader"
+                    },
+                    {
+                        loader: "sass-loader"
+                    }
+                ]
             }
         ]
     },
