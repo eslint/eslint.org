@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131184,
-        "monthlyDonations": 10932,
-        "sponsorCount": 183
+        "annualDonations": 131244,
+        "monthlyDonations": 10937,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -1159,6 +1159,14 @@
             "tier": "backer"
         },
         {
+            "name": "Hayden Bleasel",
+            "image": "https://avatars.githubusercontent.com/u/4142719?u=1f6f5172d76438797959dd8709c2637fa0fb245d&v=4",
+            "url": "https://haydenbleasel.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Raúl Negrón",
             "image": "https://avatars.githubusercontent.com/u/4153103?u=8dc630e3eb3ed6979afd4c69187a0b7c8e651842&v=4",
             "url": "https://raulnegron.me",
@@ -1505,7 +1513,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 14,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": null
         },
