@@ -1,0 +1,129 @@
+.blog-sidebar {
+  grid-column: 1/4;
+}
+.blog-main {
+  grid-column: 4/13;
+}
+.categories {
+  margin-bottom: 2rem;
+  margin-block-end: 2rem;
+}
+.categories__title {
+  font-size: var(--step--1);
+  font-family: var(--text-font);
+}
+.categories__list__item a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.625rem 0.875rem;
+  font-size: var(--step-0);
+  border-radius: var(--border-radius);
+}
+.categories__list__item a:hover {
+  color: var(--link-color);
+}
+.categories__list__item a[aria-current="page"] {
+  color: var(--link-color);
+  background-color: var(--lightest-background-color);
+  font-weight: 500;
+}
+.blog-posts {
+  margin-bottom: var(--space-l-2xl);
+  margin-block-end: var(--space-l-2xl);
+  display: grid;
+  grid-gap: 3rem 2rem;
+}
+@media all and (min-width: 640px) {
+  .blog-posts {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.post__sidebar {
+  grid-row: 1;
+}
+@media all and (max-width: 1023px) {
+  .post__sidebar {
+    margin-top: 4rem;
+    margin-block-start: 4rem;
+  }
+}
+ul.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tag-list__item {
+  background-color: var(--lightest-background-color);
+  color: var(--link-color);
+  font-weight: 500;
+  border-radius: 1rem;
+  font-size: var(--step--1);
+  padding: 0.125rem 0.625rem;
+}
+.post__meta {
+  color: var(--link-color);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-block-end: 1rem;
+}
+.post__sidebar-module {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  padding-block-end: 2rem;
+  margin-block-end: 2rem;
+}
+.post__sidebar-module:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-block-end: 0;
+  margin-block-end: 0;
+}
+@media all and (max-width: 1023px) {
+  .post__sidebar-module.post-contributors {
+    display: none;
+  }
+}
+.post__sidebar-module__title.post__sidebar-module__title {
+  margin: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: var(--step-0);
+}
+.post__sidebar-module {
+  display: grid;
+  grid-gap: 1.5rem;
+  border-bottom: 1px solid var(--divider-color);
+  border-block-end: 1px solid var(--divider-color);
+}
+.post__sidebar-module:last-of-type {
+  border-bottom: none;
+  border-block-end: none;
+}
+.post__author-bios {
+  padding-top: var(--space-m);
+  margin-top: var(--space-m);
+  border-top: 1px solid var(--divider-color);
+  padding-block-start: var(--space-m);
+  margin-block-start: var(--space-m);
+  border-block-start: 1px solid var(--divider-color);
+}
+.post__blog-content {
+  min-width: 0;
+}
+.from-the-blog__title {
+  margin-bottom: 1rem;
+  margin-block-end: 1rem;
+  font-family: var(--text-font);
+}
+.from-the-blog__more {
+  margin-bottom: 2rem;
+  margin-block-end: 2rem;
+}
+.from-the-blog__top {
+  margin-bottom: var(--space-l-2xl);
+  margin-block-end: var(--space-l-2xl);
+}
+.from-the-blog .blog-posts {
+  grid-column: 1/-1;
+}

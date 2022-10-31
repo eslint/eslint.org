@@ -1,5 +1,6 @@
 "use strict";
 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
@@ -23,6 +24,7 @@ module.exports = {
         mainFields: ["browser", "main", "module"]
     },
     plugins: [
+        new MiniCssExtractPlugin(),
         new NodePolyfillPlugin()
     ],
     devtool: "source-map",
@@ -36,20 +38,6 @@ module.exports = {
                 options: {
                     configFile: path.resolve(__dirname, ".babelrc")
                 }
-            },
-            {
-                test: /\.[s]css$/u,
-                use: [
-                    {
-                        loader: "style-loader"
-                    },
-                    {
-                        loader: "css-loader"
-                    },
-                    {
-                        loader: "sass-loader"
-                    }
-                ]
             }
         ]
     },
