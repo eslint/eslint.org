@@ -16,6 +16,10 @@ language:
   title: Portuguese (BR)
 locale: pt-BR
 hostname: pt-br.eslint.org
+locals:
+  docs_latest: false
+  docs_head: false
+  blog: false
 
 #------------------------------------------------------------------------------
 # Analytics

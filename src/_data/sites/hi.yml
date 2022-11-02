@@ -16,6 +16,10 @@ language:
   title: Hindi (IN)
 locale: hi-IN
 hostname: hi.eslint.org
+locals:
+  docs_latest: false
+  docs_head: false
+  blog: false
 
 #------------------------------------------------------------------------------
 # Analytics

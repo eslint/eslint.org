@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
 # Internal Redirects
 /demo/*                             /play/:splat 302!
 
-{% if site.language.code == "en" %}
+{% if site.locals.docs_latest %}
 
 # Old-Style Docs to New-Style Docs
 /docs/rules/*                       /docs/latest/rules/:splat 301!
@@ -26,16 +26,23 @@ eleventyExcludeFromCollections: true
 /docs/maintainer-guide/*            /docs/latest/maintainer-guide/:splat 301!
 /docs/developer-guide/*             /docs/latest/developer-guide/:splat 301!
 
-# Version-Specific Docs
-/docs/head/*                        https://docs-eslint.netlify.app/:splat 200!
-/docs/latest/*                      https://latest--docs-eslint.netlify.app/:splat 200!
-/docs/                             /docs/latest/ 301!
-
+# Regular Docs
+/docs/latest/*                      https://{{ site.locals.docs_latest }}/:splat 200!
+/docs/                              /docs/latest/ 301!
 {% else %}
 
-# Translated Sites Back to English Site
-/blog/*                             https://eslint.org/blog/:splat 302!
+# Redirect docs back to English site
 /docs/*                             https://eslint.org/docs/:splat 302!
-/demo/*                             https://eslint.org/play/:splat 302!
+{% endif %}
 
+# Docs checked into main branch but not released
+{% if site.locals.docs_head %}
+/docs/head/*                        https://{{ site.locals.docs_head }}/:splat 200!
+{% else %}
+/docs/head/*                        https://eslint.org/docs/head/:splat 302!
+{% endif %}
+
+{% if site.locals.blog == false %}
+# Redirect blog back to English site
+/blog/*                             https://eslint.org/blog/:splat 302!
 {% endif %}

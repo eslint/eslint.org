@@ -16,6 +16,10 @@ language:
   title: Simplified Chinese
 locale: zh-hans
 hostname: zh-hans.eslint.org
+locals:
+  docs_latest: zh-hans-docs.netlify.app
+  docs_head: false
+  blog: false
 
 #------------------------------------------------------------------------------
 # Analytics
