@@ -62,6 +62,7 @@ html {
 }
 
 body {
+    font-size: var(--step-0);
     position: relative;
     margin: 0 auto;
     line-height: 1.5;
@@ -284,11 +285,6 @@ ol {
     }
 }
 
-p:empty {
-    margin: 0;
-    display: none;
-}
-
 figure {
     margin-bottom: 4rem;
     margin-block-end: 4rem;
@@ -340,10 +336,6 @@ nav {
 }
 
 /* typography */
-body {
-    font-size: var(--step-0);
-    line-height: 1.5;
-}
 
 .eyebrow {
     color: var(--link-color);

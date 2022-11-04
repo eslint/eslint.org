@@ -88,8 +88,14 @@ ul.tag-list {
     margin-bottom: 2rem;
     padding-block-end: 2rem;
     margin-block-end: 2rem;
+    display: grid;
+    grid-gap: 1.5rem;
+    border-bottom: 1px solid var(--divider-color);
+    border-block-end: 1px solid var(--divider-color);
 
     &:last-of-type {
+        border-bottom: none;
+        border-block-end: none;
         margin-bottom: 0;
         padding-bottom: 0;
         padding-block-end: 0;
@@ -108,18 +114,6 @@ ul.tag-list {
     color: inherit;
     font-family: inherit;
     font-size: var(--step-0);
-}
-
-.post__sidebar-module {
-    display: grid;
-    grid-gap: 1.5rem;
-    border-bottom: 1px solid var(--divider-color);
-    border-block-end: 1px solid var(--divider-color);
-
-    &:last-of-type {
-        border-bottom: none;
-        border-block-end: none;
-    }
 }
 
 // author bios
