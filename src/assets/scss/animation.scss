@@ -85,8 +85,8 @@
 
     &__cursor {
         width: 40px;
-        height: 40px;
         width: clamp(30px, 5vw, 50px);
+        height: 40px;
         height: clamp(30px, 5vw, 50px);
         border-radius: 100%;
         border: solid 1px hsl(0, 0%, 60%);
