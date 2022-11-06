@@ -9,7 +9,9 @@ export default function Popup({ options, message, ruleName, onFix }) {
                 <div className="popup__main">
                     <p className="popup__text">{message}</p>
                     <div className="popup__refs">
-                        <a href={`https://eslint.org/docs/rules/${ruleName}`}>{ruleName}</a>
+                        <a href={`https://eslint.org/docs/rules/${ruleName}`} target="_blank" rel="noreferrer">
+                            {ruleName}
+                        </a>
                     </div>
                 </div>
 
