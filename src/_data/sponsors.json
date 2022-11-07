@@ -1094,14 +1094,6 @@
             "tier": "backer"
         },
         {
-            "name": "dr.dimitru",
-            "image": "https://avatars.githubusercontent.com/u/1686778?u=90d2cecf76132f5e33422ca09c64640ad03b87d3&v=4",
-            "url": "https://veliovgroup.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "I. Kennedy Yinusa",
             "image": "https://avatars.githubusercontent.com/u/2399466?u=8f8e3cb565ee7b8282606130a2d8a6616f7610da&v=4",
             "url": "https://iyinusa.com",
@@ -1441,6 +1433,14 @@
             "name": "Team-Avalon",
             "image": "https://avatars.githubusercontent.com/u/78931833?v=4",
             "url": "opencollective.com/limasol",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Dotlas",
+            "image": "https://avatars.githubusercontent.com/u/88832003?v=4",
+            "url": "www.dotlas.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
