@@ -20,6 +20,13 @@ locals:
   docs_latest: latest--docs-eslint.netlify.app
   docs_head: docs-eslint.netlify.app
   blog: true
+redirects:
+  - from: https://cn.eslint.org/*
+    to: https://zh-hans.eslint.org
+    status: 301!
+  - from: https://docs.eslint.org/*
+    to: https://eslint.org/docs/latest/
+    status: 302!
 
 #------------------------------------------------------------------------------
 # Analytics
