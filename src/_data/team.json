@@ -36,6 +36,17 @@
     ],
     "alumni": [
         {
+            "username": "brettz9",
+            "name": "Brett Zamir",
+            "title": "ESLint Alumnus",
+            "website": "http://brett-zamir.me",
+            "avatar_url": "https://avatars.githubusercontent.com/u/20234?v=4",
+            "bio": null,
+            "twitter_username": null,
+            "github_username": "brettz9",
+            "location": "Shenzhen, China"
+        },
+        {
             "username": "alberto",
             "name": "alberto",
             "title": "ESLint Alumnus",
@@ -265,6 +276,39 @@
             "twitter_username": null,
             "github_username": "pedrottimark",
             "location": "West of Charlotte, NC; USA"
+        },
+        {
+            "username": "g-plane",
+            "name": "Pig Fang",
+            "title": "ESLint Alumnus",
+            "website": "https://gplane.win",
+            "avatar_url": "https://avatars.githubusercontent.com/u/17216317?v=4",
+            "bio": "Errors should be human-friendly.",
+            "twitter_username": "g3plane",
+            "github_username": "g-plane",
+            "location": "Guangdong, China"
+        },
+        {
+            "username": "anikethsaha",
+            "name": "Anix",
+            "title": "ESLint Alumnus",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/26347874?v=4",
+            "bio": "❤️ Open Source | works mainly with javascript | always bet on plugins",
+            "twitter_username": "__ANIX__",
+            "github_username": "anikethsaha",
+            "location": null
+        },
+        {
+            "username": "yeonjuan",
+            "name": "YeonJuan",
+            "title": "ESLint Alumnus",
+            "website": "https://github.com/yeonjuan/dev-blog",
+            "avatar_url": "https://avatars.githubusercontent.com/u/41323220?v=4",
+            "bio": "Developer",
+            "twitter_username": null,
+            "github_username": "yeonjuan",
+            "location": "South Korea"
         }
     ],
     "reviewers": [
@@ -293,17 +337,6 @@
     ],
     "committers": [
         {
-            "username": "brettz9",
-            "name": "Brett Zamir",
-            "title": "ESLint Committer",
-            "website": "http://brett-zamir.me",
-            "avatar_url": "https://avatars.githubusercontent.com/u/20234?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "brettz9",
-            "location": "Shenzhen, China"
-        },
-        {
             "username": "bmish",
             "name": "Bryan Mishkin",
             "title": "ESLint Committer",
@@ -324,39 +357,6 @@
             "twitter_username": "SaraSoueidan",
             "github_username": "SaraSoueidan",
             "location": "Lebanon"
-        },
-        {
-            "username": "g-plane",
-            "name": "Pig Fang",
-            "title": "ESLint Committer",
-            "website": "https://gplane.win",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17216317?v=4",
-            "bio": "Errors should be human-friendly.",
-            "twitter_username": "g3plane",
-            "github_username": "g-plane",
-            "location": "Guangdong, China"
-        },
-        {
-            "username": "anikethsaha",
-            "name": "Anix",
-            "title": "ESLint Committer",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/26347874?v=4",
-            "bio": "❤️ Open Source | works mainly with javascript | always bet on plugins",
-            "twitter_username": "__ANIX__",
-            "github_username": "anikethsaha",
-            "location": null
-        },
-        {
-            "username": "yeonjuan",
-            "name": "YeonJuan",
-            "title": "ESLint Committer",
-            "website": "https://github.com/yeonjuan/dev-blog",
-            "avatar_url": "https://avatars.githubusercontent.com/u/41323220?v=4",
-            "bio": "Developer",
-            "twitter_username": null,
-            "github_username": "yeonjuan",
-            "location": "South Korea"
         }
     ],
     "website": [
