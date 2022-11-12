@@ -7,6 +7,10 @@ eleventyExcludeFromCollections: true
 # Netlify Redirect Rules
 # https://www.netlify.com/docs/redirects/
 
+{% for redirect in site.redirects %}
+{{ redirect.from }}                 {{ redirect.to }} {{ redirect.status }}
+{% endfor %}
+
 # External Redirects
 /cla                                https://cla.js.foundation/eslint/eslint 302!
 /conduct                            https://code-of-conduct.openjsf.org/ 302!
