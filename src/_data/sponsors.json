@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143184,
-        "monthlyDonations": 11932,
-        "sponsorCount": 184
+        "annualDonations": 143064,
+        "monthlyDonations": 11922,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -1103,14 +1103,6 @@
             "tier": "backer"
         },
         {
-            "name": "I. Kennedy Yinusa",
-            "image": "https://avatars.githubusercontent.com/u/2399466?u=8f8e3cb565ee7b8282606130a2d8a6616f7610da&v=4",
-            "url": "https://iyinusa.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Dan",
             "image": "https://avatars.githubusercontent.com/u/2481552?v=4",
             "url": "https://danminkevitch.com",
@@ -1386,14 +1378,6 @@
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Rahil Patel",
-            "image": "https://avatars.githubusercontent.com/u/37254995?u=a1b58b228d8bdcd234b481056bb63dbe933d4396&v=4",
-            "url": "rahil-p.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
