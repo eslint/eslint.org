@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143064,
-        "monthlyDonations": 11922,
-        "sponsorCount": 182
+        "annualDonations": 143124,
+        "monthlyDonations": 11927,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -516,6 +516,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Josef Kubíček",
+            "url": null,
+            "image": "https://images.opencollective.com/josef-kubicek/6bb5ad8/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
