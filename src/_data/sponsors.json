@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143184,
-        "monthlyDonations": 11932,
-        "sponsorCount": 184
+        "annualDonations": 143244,
+        "monthlyDonations": 11937,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -1019,6 +1019,14 @@
             "name": "Ryan Macy",
             "image": "https://avatars.githubusercontent.com/u/829581?u=7126d6768d3e200ee5dfd3485cd50465cb8e85f4&v=4",
             "url": "https://macy.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Petja Touru",
+            "image": "https://avatars.githubusercontent.com/u/860012?v=4",
+            "url": "https://petja.me/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
