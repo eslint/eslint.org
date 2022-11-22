@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143244,
-        "monthlyDonations": 11937,
-        "sponsorCount": 185
+        "annualDonations": 143364,
+        "monthlyDonations": 11947,
+        "sponsorCount": 186
     },
     "platinum": [
         {
@@ -474,6 +474,14 @@
             "name": "Avrios",
             "image": "https://avatars.githubusercontent.com/u/9891362?v=4",
             "url": "https://avrios.com",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mention Me Ltd",
+            "image": "https://avatars.githubusercontent.com/u/10668008?v=4",
+            "url": "https://eng.mention-me.com",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
