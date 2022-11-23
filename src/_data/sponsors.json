@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 143364,
-        "monthlyDonations": 11947,
+        "annualDonations": 143424,
+        "monthlyDonations": 11952,
         "sponsorCount": 186
     },
     "platinum": [
@@ -490,6 +490,14 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?v=4",
             "url": "https://github.com/Kamalnrf",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Taso",
+            "image": "https://avatars.githubusercontent.com/u/15652018?u=159fc52f9dfa8fee51e9d4eb2fec2605d4eaedd1&v=4",
+            "url": "https://github.com/TasoOneAsia",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1160,6 +1168,14 @@
             "tier": "backer"
         },
         {
+            "name": "Nick Oliver",
+            "image": "https://avatars.githubusercontent.com/u/3945917?u=75ac213afd2def70385395d15c58e888f3460867&v=4",
+            "url": "pixnbits.org",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Raymond Schweers",
             "image": "https://avatars.githubusercontent.com/u/4108685?u=bdd564c34ff380d86efd09da600ec945338dc522&v=4",
             "url": "www.hetwebbureau.nl",
@@ -1259,14 +1275,6 @@
             "name": "Marek",
             "image": "https://avatars.githubusercontent.com/u/8512964?u=1f5b1c9e744a3e6da955439f44ca23ef0160f2cb&v=4",
             "url": "https://github.com/mrewers",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Warren Wong",
-            "image": "https://avatars.githubusercontent.com/u/8570718?u=c80bab6e192a8ce02444ee6d7a53695cfa699c73&v=4",
-            "url": "https://www.linkedin.com/in/iamwarrenwong/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1451,14 +1459,6 @@
             "name": "Team-Avalon",
             "image": "https://avatars.githubusercontent.com/u/78931833?v=4",
             "url": "opencollective.com/limasol",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Dotlas",
-            "image": "https://avatars.githubusercontent.com/u/88832003?v=4",
-            "url": "www.dotlas.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
