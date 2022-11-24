@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 143424,
-        "monthlyDonations": 11952,
+        "annualDonations": 143364,
+        "monthlyDonations": 11947,
         "sponsorCount": 186
     },
     "platinum": [
@@ -418,14 +418,6 @@
             "name": "Gavin Lloyd",
             "image": "https://avatars.githubusercontent.com/u/744538?u=0a08af9abb9fbf841382190be47f67a679bee4fa&v=4",
             "url": "gavinhungry.com",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "C. Lewis",
-            "image": "https://avatars.githubusercontent.com/u/1657236?u=ea60e1982c1e5b79642263f2727579735df4c0e8&v=4",
-            "url": "https://github.com/ctjlewis",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1443,6 +1435,14 @@
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828?u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
             "url": "https://standardresume.co/tech",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Baekilda",
+            "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
+            "url": "https://github.com/baekilda",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
