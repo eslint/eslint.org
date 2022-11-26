@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143364,
-        "monthlyDonations": 11947,
-        "sponsorCount": 186
+        "annualDonations": 143424,
+        "monthlyDonations": 11952,
+        "sponsorCount": 187
     },
     "platinum": [
         {
@@ -527,6 +527,15 @@
             "tier": "backer"
         },
         {
+            "name": "Crash Game",
+            "url": null,
+            "image": "https://images.opencollective.com/crash-game/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Josef Kubíček",
             "url": null,
             "image": "https://images.opencollective.com/josef-kubicek/6bb5ad8/avatar.png",
@@ -666,7 +675,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 85,
+            "totalDonations": 90,
             "source": "opencollective",
             "tier": "backer"
         },
