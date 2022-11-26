@@ -23,7 +23,7 @@
 
 #### What changes did you make? (Give an overview)
 
-#### Related Issue:
+#### Related Issues
 
 #### Is there anything you'd like reviewers to focus on?
 
