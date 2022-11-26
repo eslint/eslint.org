@@ -53,28 +53,30 @@
 }
 
 :root {
-    --mono-font: "Space Mono", monospace;
-    --text-font: "Inter",
-            -apple-system,
-            BlinkMacSystemFont,
-            "Segoe UI",
-            Roboto,
-            Helvetica,
-            Arial,
-            sans-serif,
-            "Apple Color Emoji",
-            "Twemoji Country Flags",
-            "Segoe UI Emoji",
-            "Segoe UI Symbol";
-    --display-font: "Space Grotesk",
-            -apple-system,
-            BlinkMacSystemFont,
-            "Segoe UI",
-            Roboto,
-            Helvetica,
-            Arial,
-            sans-serif,
-            "Apple Color Emoji",
-            "Segoe UI Emoji",
-            "Segoe UI Symbol";
+    --mono-font: "Mono Punctuators", "Space Mono", monospace;
+    --text-font:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Twemoji Country Flags",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    --display-font:
+        "Space Grotesk",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
 }

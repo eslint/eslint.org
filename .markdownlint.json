@@ -1,0 +1,20 @@
+{
+    "default": true,
+    "MD004": {
+        "style": "asterisk"
+    },
+    "MD009": false,
+    "MD012": false,
+    "MD013": false,
+    "MD014": false,
+    "MD025": false,
+    "MD026": false,
+    "MD033": false,
+    "MD034": false,
+    "MD040": false,
+    "MD041": false,
+    "MD047": false,
+    "MD049": {
+        "style": "asterisk"
+    }
+}

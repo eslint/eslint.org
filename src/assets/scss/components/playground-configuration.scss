@@ -2,19 +2,29 @@
     margin: 1rem;
 }
 
-[data-config-section-title]  {
+[data-config-section] {
+    margin-top: 1rem;
+}
+
+[data-config-section-title] {
     font-size: .875rem;
     font-family: var(--text-font);
     color: inherit;
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
-    margin-bottom: 1rem;
-    margin-block-end: 1rem;
 
     .config-js & {
         margin: 0;
     }
+}
+
+.playground-toggle {
+    border: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
 }
 
 [data-config-section-toggle] {
@@ -90,7 +100,6 @@
         }
 
         #ham-top {
-
             transform: rotate(41deg);
         }
 
@@ -127,7 +136,6 @@
     padding: 1rem;
 }
 
-
 /* Styles for the accordion icon */
 .config-js .config-icon {
     display: block !important;
@@ -140,11 +148,14 @@
     color: inherit;
 }
 
+.playground__config-and-footer {
+    scrollbar-gutter: stable;
+}
+
 .config-js [aria-expanded="true"] .config-icon {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-
 
 // share URL section
 .share-url-wrapper {
@@ -159,7 +170,6 @@
     border-radius: var(--border-radius);
     border: 1px solid var(--border-color);
     padding-right: calc(.625rem + 20px);
-
     max-width: 100%;
     color: var(--headings-color);
     position: relative;
@@ -215,8 +225,8 @@
 }
 
 .share-url__announcement {
-    font-size: .875rem;
     padding: .25rem .75rem;
+    font-size: .875rem;
     font-size: var(--step--1);
     display: block;
     margin-top: .5rem;
@@ -253,7 +263,7 @@ ul.config__added-rules {
     font-family: var(--mono-font);
 
     li {
-        margin: 0 0 1rem 0;
+        margin: 0 0 1rem;
 
         &:last-of-type {
             margin: 0;
@@ -267,7 +277,7 @@ ul.config__added-rules {
 
 .config__added-rules__rule-name {
     font: inherit;
-    margin: 0 0 .25rem 0;
+    margin: 0 0 .25rem;
     display: flex;
     justify-content: space-between;
 }
@@ -283,6 +293,7 @@ ul.config__added-rules {
 .config__added-rules__rule-error {
     color: var(--color-rose-800);
     margin-top: .75rem;
+
     [data-theme="dark"] & {
         color: var(--color-rose-400);
     }

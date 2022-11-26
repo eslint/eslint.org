@@ -348,7 +348,7 @@ export default [
 ];
 ```
 
-Here, a custom rule is imported as `myrule` and then a runtime plugin is created named `custom` to provide that rule to the config as `custom/myrule`. 
+Here, a custom rule is imported as `myrule` and then a runtime plugin is created named `custom` to provide that rule to the config as `custom/myrule`.
 
 As a result, we will be removing `--rulesdir` once the transition to flat config is complete.
 

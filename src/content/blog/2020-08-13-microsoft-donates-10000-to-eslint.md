@@ -22,7 +22,7 @@ We are happy to share that [Microsoft](https://microsoft.com) has donated $10,00
 Here's what Microsoft's Jan Pilzer and Steve Faulkner, who nominated ESLint, had to say:
 
 > "When I started working in JavaScript professionally many years ago, I realized there was potential of hidden errors and hard to detect problems. Looking into ways to improve the situation for me and my teams, I used various linting tools and was immediately captured by the potential and power of ESLint when it was created. Then and now, ESLint is an incredibly important tool in any JavaScript project I work on. It is the tool that makes large-scale web development possible and enjoyable for all developers." – Jan Pilzer, Software Engineer, Microsoft
-> 
+>
 > "ESLint has become a critical part of our development tooling at Microsoft. It is as foundational as type checks or unit tests. Without it, we could not ship quality JavaScript and TypeScript code." - Steve Faulkner, Senior Software Engineer, Microsoft
 
 We are grateful to Jan and Steve for nominating ESLint, and to all of the Microsoft employees who voted for ESLint. Already because of donations like these, ESLint has been able to hire our first part-time maintainer and convert our website from Jekyll to Eleventy. Financial support from companies like Microsoft, Salesforce, and Indeed are what will allow ESLint to be maintained and serve the JavaScript community for the foreseeable future.

@@ -12,9 +12,14 @@
 language:
   code: hi
   flag: 🇮🇳
-  name: Hindi (In)
+  name: हिन्दी
+  title: Hindi (IN)
 locale: hi-IN
 hostname: hi.eslint.org
+locals:
+  docs_latest: false
+  docs_head: false
+  blog: false
 
 #------------------------------------------------------------------------------
 # Analytics

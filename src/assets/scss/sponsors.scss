@@ -19,10 +19,10 @@
         a {
             display: block;
         }
-
     }
 
-    picture, img {
+    picture,
+    img {
         display: block;
         height: auto;
         max-height: 3rem;
@@ -35,32 +35,37 @@
 }
 
 .sponsors.sponsors--backers {
-    picture, img {
+    picture,
+    img {
         border-radius: 50%;
     }
 }
 
 .sponsors.sponsors--platinum {
-    picture, img {
+    picture,
+    img {
         max-height: 8rem;
     }
 }
 
 .sponsors.sponsors--gold {
-    picture, img {
+    picture,
+    img {
         max-height: 6rem;
     }
 }
 
 .sponsors.sponsors--silver {
-    picture, img {
+    picture,
+    img {
         max-height: 8rem;
     }
 }
 
 .sponsors.sponsors--bronze,
 .sponsors.sponsors--technology {
-    picture, img {
+    picture,
+    img {
         max-height: 3rem;
     }
 }

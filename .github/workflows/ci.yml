@@ -17,8 +17,10 @@ jobs:
         with:
           node-version: "16.x"
           cache: "npm"
-      - name: Install dependencies
+      - name: Install website dependencies
         run: npm ci
+      - name: Install playground dependencies
+        run: npm run install:playground
       - name: Lint Files
         run: npm run lint
       - name: Run build

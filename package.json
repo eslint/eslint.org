@@ -1,7 +1,8 @@
 {
-    "name": "ESLint",
+    "name": "eslint.org",
+    "private": true,
     "version": "1.0.0",
-    "description": "",
+    "description": "The codebase for the ESLint website (eslint.org)",
     "main": "index.js",
     "keywords": [],
     "author": "",
@@ -16,7 +17,7 @@
         "images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
         "install:playground": "cd src/playground && npm install --no-package-lock",
         "watch:sass": "sass --watch src/assets/scss:src/assets/css",
-        "watch:eleventy": "eleventy --serve --port=2022",
+        "watch:eleventy": "cross-env CONTEXT=dev eleventy --serve --port=2022",
         "watch:webpack": "webpack watch --mode=development",
         "build:sass": "sass --no-source-map --style=compressed src/assets/scss:src/assets/css",
         "build:eleventy": "npx @11ty/eleventy",
@@ -27,8 +28,24 @@
         "fetch": "npm-run-all --parallel fetch:*",
         "start": "npm-run-all build:sass --parallel watch:*",
         "build": "npm-run-all install:playground build:sass build:eleventy build:webpack images",
-        "lint": "eslint --ext=.js,.jsx .",
-        "fix": "npm run lint -- --fix"
+        "minify:svg": "svgo -r -f ./",
+        "lint:js": "eslint --ext=.js,.jsx .",
+        "lint:md": "markdownlint \"**/*.md\" ",
+        "lint:scss": "stylelint \"**/*.scss\"",
+        "lint": "npm-run-all --parallel lint:*",
+        "lint:fix:js": "eslint --ext=.js,.jsx . --fix",
+        "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
+        "lint:fix:md": "markdownlint --fix  \"**/*.md\"",
+        "fix": "npm-run-all --parallel lint:fix:*"
+    },
+    "lint-staged": {
+        "**/*.{js,jsx}": "eslint --fix",
+        "*.md": "markdownlint --fix",
+        "*.scss": "stylelint \"**/*.scss\" --fix",
+        "**/*.svg": "npx svgo -r --multipass"
+    },
+    "gitHooks": {
+        "pre-commit": "lint-staged"
     },
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
@@ -43,6 +60,7 @@
         "@octokit/rest": "^18.12.0",
         "babel-loader": "^8.2.3",
         "cheerio": "*",
+        "cross-env": "^7.0.3",
         "css-loader": "^6.7.1",
         "dom-parser": "^0.1.6",
         "download-stats": "^0.3.4",
@@ -60,8 +78,10 @@
         "imagemin": "^8.0.1",
         "imagemin-cli": "^7.0.0",
         "js-yaml": "^3.14.1",
+        "lint-staged": "^13.0.3",
         "markdown-it": "^12.2.0",
         "markdown-it-anchor": "^8.1.2",
+        "markdownlint-cli": "^0.32.1",
         "node-polyfill-webpack-plugin": "^1.1.4",
         "npm-run-all": "^4.1.5",
         "rimraf": "^3.0.2",
@@ -70,9 +90,12 @@
         "semver": "^7.3.5",
         "slugify": "^1.6.3",
         "style-loader": "^3.3.1",
+        "stylelint": "^14.13.0",
+        "stylelint-config-standard-scss": "^5.0.0",
         "undici": "^4.13.0",
         "webpack": "^5.70.0",
-        "webpack-cli": "^4.9.2"
+        "webpack-cli": "^4.9.2",
+        "yorkie": "^2.0.0"
     },
     "dependencies": {
         "@codemirror/highlight": "0.19.7",

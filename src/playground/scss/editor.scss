@@ -2,8 +2,20 @@
     min-width: 100%;
 }
 
-.cm-focused .cm-selectionBackground, .cm-selectionBackground, .cm-content ::selection {
+.cm-focused .cm-selectionBackground,
+.cm-selectionBackground,
+.cm-content ::selection {
     & {
         background-color: var(--color-primary-800) !important;
     }
+}
+
+.cm-completionMatchedText {
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.cm-tooltip.cm-tooltip-autocomplete,
+.cm-tooltip.cm-tooltip-autocomplete > ul {
+    border-radius: .125rem;
 }

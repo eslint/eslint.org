@@ -1,7 +1,7 @@
 .hero-ad {
-     @media all and (max-width: 800px) {
-         display: none;
-     }
+    @media all and (max-width: 800px) {
+        display: none;
+    }
 }
 
 #carbonads * {
@@ -20,12 +20,11 @@
     display: inline-block;
     margin: 2rem 0;
     padding: .6em;
-
     font-size: 1rem;
     overflow: hidden;
-    border-radius: 4px;
     background-color: var(--body-background-color);
     border: 1px solid var(--border-color);
+    border-radius: 4px;
     border-radius: var(--border-radius);
     box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
 
@@ -65,13 +64,11 @@
 #carbonads span {
     display: block;
     position: relative;
-
     overflow: hidden;
 }
 
 #carbonads .carbon-wrap {
     display: flex;
-
     flex-direction: column;
     max-width: 130px;
 }
@@ -82,7 +79,6 @@
 
 #carbonads .carbon-text {
     margin-top: 10px;
-
     line-height: calc(1.2em + .5ex);
     font-size: .7em;
     font-weight: 500;
@@ -102,20 +98,17 @@
 @media only screen and (min-width: 320px) and (max-width: 759px) {
     #carbonads {
         margin-top: 0;
-
         font-size: 12px;
     }
 
     #carbonads .carbon-wrap {
         display: flex;
-
         flex-direction: row;
         max-width: 330px;
     }
 
     #carbonads .carbon-text {
         margin: 0 0 14px 10px;
-
         font-size: 14px;
         text-align: left;
     }
@@ -124,7 +117,6 @@
         position: absolute;
         bottom: 0;
         left: 142px;
-
         font-size: 8px;
     }
 }

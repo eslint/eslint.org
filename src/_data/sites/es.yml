@@ -16,6 +16,10 @@ language:
   title: Spanish
 locale: es-ES
 hostname: es.eslint.org
+locals:
+  docs_latest: false
+  docs_head: false
+  blog: false
 
 #------------------------------------------------------------------------------
 # Analytics

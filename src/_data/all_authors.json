@@ -16,7 +16,7 @@
         "title": "Guest Author",
         "website": "https://www.okuryu.com/",
         "avatar_url": "https://avatars.githubusercontent.com/u/34588?v=4",
-        "bio": "Contributor at @yahoo, @formatjs, @nodejs, and @yui.",
+        "bio": "Technical at Yahoo! JAPAN, contributor @progit, @yahoo, @formatjs, @nodejs, and @yui.",
         "twitter_username": "okuryu",
         "github_username": "okuryu",
         "location": "Tokyo"
@@ -93,7 +93,7 @@
         "title": "ESLint Support Team",
         "website": "",
         "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4",
-        "bio": "@eslint team alumnus. Currently stepping back a bit to try to get my life in order.",
+        "bio": "@eslint support team member. My open source participation will be limited as I continue to heal my depression and anxiety.",
         "twitter_username": null,
         "github_username": "platinumazure",
         "location": null
@@ -152,5 +152,16 @@
         "twitter_username": "haydenbleasel",
         "github_username": "haydenbleasel",
         "location": "Delray Beach, FL"
+    },
+    "sanjeetsuhag": {
+        "username": "sanjeetsuhag",
+        "name": "Sam Suhag",
+        "title": "Guest Author",
+        "website": "",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5172619?v=4",
+        "bio": "3D Software Developer @CesiumGS ",
+        "twitter_username": null,
+        "github_username": "sanjeetsuhag",
+        "location": "United States"
     }
 }

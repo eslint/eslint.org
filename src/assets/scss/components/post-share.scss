@@ -1,4 +1,3 @@
-
 .c-share {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +15,8 @@
     align-items: center;
     color: var(--icon-color);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: var(--headings-color);
     }
 

@@ -4,5 +4,11 @@ title: ESLint Playground
 permalink: /play/
 ---
 
-<div id="playground-app"></div>
+<div id="playground-app">
+  {% if helpers.isDev %} 
+    <p style="text-align: center">
+    run <span>npm run install:playground</span> before running playground
+    </p>
+  {% endif %}
+</div>
 <script src="{{ '/assets/js/playground.js' | url }}"></script>

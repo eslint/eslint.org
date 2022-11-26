@@ -1,6 +1,6 @@
 # Write for the ESLint blog
 
-Have you had an interesting experience with ESLint? Want to share it with the rest of the world? Writing a blog post for the ESLint blog helps get the word out and also contributes valuable information to the ESLint community as a whole. 
+Have you had an interesting experience with ESLint? Want to share it with the rest of the world? Writing a blog post for the ESLint blog helps get the word out and also contributes valuable information to the ESLint community as a whole.
 
 ## How it works
 
@@ -28,8 +28,8 @@ Not sure if your idea is suitable for the ESLint blog? Stop by the [#blog](https
 1. Run `node tools/add-author.js username`, where `username` is your GitHub username. This will put all of the information from your GitHub profile for use in the site.
 1. Edit your bio in `_includes/partials/author_bios/username.md` (where `username` is your GitHub username). This file can contain Markdown to embed in the blog post.
 1. Send a pull request to this repository.
-  * The title of the pull request should be `"feat: blog: My great blog post"` (use your actual post title)
-  * In the description, please include 2-4 sentences explaining the overall topic of the blog post.
+    * The title of the pull request should be `"feat: blog: My great blog post"` (use your actual post title)
+    * In the description, please include 2-4 sentences explaining the overall topic of the blog post.
 
 ## Frequently Asked Questions
 
@@ -43,7 +43,7 @@ When you run `npm start`, a local website will start up. Your post will be the t
 
 **How will I get paid?**
 
-You will be paid through [Open Collective](https://opencollective.com/eslint). Open Collective uses PayPal and Wise to initiate payments. We cannot make payments in any other way. You will receive instructions once your post is merged. 
+You will be paid through [Open Collective](https://opencollective.com/eslint). Open Collective uses PayPal and Wise to initiate payments. We cannot make payments in any other way. You will receive instructions once your post is merged.
 
 **Can I still submit a post even if I can't be paid?**
 

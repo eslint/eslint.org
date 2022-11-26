@@ -11,12 +11,12 @@
 
 ul.donations-list {
     margin-top: var(--space-l-2xl);
-        display: grid;
-        grid-gap: 0 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        margin-bottom: 0;
-        margin-block-end: 0;
-        align-items: stretch;
+    display: grid;
+    grid-gap: 0 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin-bottom: 0;
+    margin-block-end: 0;
+    align-items: stretch;
 
     .donations-item {
         display: flex;
@@ -24,7 +24,6 @@ ul.donations-list {
         margin-block-end: 2rem;
     }
 }
-
 
 .donation {
     width: 100%;
@@ -75,7 +74,6 @@ ul.donations-list {
     border-radius: var(--border-radius);
 }
 
-
 // donation plans on donate page
 
 .donation-plans {
@@ -88,13 +86,8 @@ ul.donations-list {
     border: 1px solid var(--divider-color);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
-
     display: flex;
     flex-direction: column;
-
-    &:first-of-type() {
-        @media all and (max-width: 768px) {}
-    }
 
     @media all and (max-width: 1023px) {
         margin-bottom: 2rem;
@@ -173,7 +166,6 @@ ul.donation-plan__features,
 }
 
 @media all and (max-width: 640px) {
-
     ul.donation-plan__features,
     .donation-plan__footer {
         padding: 2rem 1rem;

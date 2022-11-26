@@ -1,0 +1,1 @@
+Sanjeet Suhag is a 3D Software Developer at [Cesium](https://cesium.com), where he works on [CesiumJS](https://cesium.com/platform/cesiumjs/). In his spare time, he enjoys tinkering with computer graphics, reading military history and playing flight simulation games.
