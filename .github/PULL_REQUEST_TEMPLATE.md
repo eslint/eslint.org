@@ -8,12 +8,11 @@
 
 - [ ] I have read the [contributing guidelines](https://github.com/eslint/eslint/blob/HEAD/CONTRIBUTING.md).
 
-#### What is the purpose of this pull request? (put an "X" next to an item)
+#### What is the purpose of this pull request?
 <!--
     Please ensure your pull request is ready:
 
     - Read the pull request guide (https://eslint.org/docs/developer-guide/contributing/pull-requests)
-    - Include tests for this change
     - Update documentation for this change (if appropriate)
 -->
 
