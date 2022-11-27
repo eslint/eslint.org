@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143424,
-        "monthlyDonations": 11952,
-        "sponsorCount": 187
+        "annualDonations": 143484,
+        "monthlyDonations": 11957,
+        "sponsorCount": 188
     },
     "platinum": [
         {
@@ -527,9 +527,18 @@
             "tier": "backer"
         },
         {
+            "name": "Aviator Game",
+            "url": "https://aviatorgame.guru",
+            "image": "https://images.opencollective.com/aviator-game1/93ba7db/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Crash Game",
-            "url": null,
-            "image": "https://images.opencollective.com/crash-game/avatar.png",
+            "url": "https://crash-gambling-game.com",
+            "image": "https://images.opencollective.com/crash-game/c67c0f2/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 5,
             "source": "opencollective",
