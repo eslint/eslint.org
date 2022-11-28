@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143484,
-        "monthlyDonations": 11957,
-        "sponsorCount": 188
+        "annualDonations": 142884,
+        "monthlyDonations": 11907,
+        "sponsorCount": 187
     },
     "platinum": [
         {
@@ -204,14 +204,6 @@
             "totalDonations": 1400,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Josh Goldberg",
-            "image": "https://avatars.githubusercontent.com/u/3335181?u=bcc591417a50454dffef85a2d537e293ca7df827&v=4",
-            "url": "http://www.joshuakgoldberg.com",
-            "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "AX Semantics",
@@ -612,7 +604,7 @@
             "url": "https://metatierlist.com",
             "image": "https://images.opencollective.com/metatierlist/68a5b41/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
