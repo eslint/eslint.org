@@ -110,6 +110,20 @@ function maintainScrollVisibility(activeElement, scrollParent) {
     }
     
 }
+function debounce(callback, delay) {
+    let timerId;
+
+    return (...args) => {
+        clearTimeout(timerId);
+        timerId = setTimeout(() => {
+            callback.apply(this, args)
+        }, delay);
+    };
+}
+
+const debouncedFetchSearchResults = debounce((query) => {
+    fetchSearchResults(query).then(displaySearchResults).catch(clearSearchResults)
+}, 300)
 
 
 //-----------------------------------------------------------------------------
@@ -126,9 +140,7 @@ searchInput.addEventListener('keyup', function (e) {
     else searchClearBtn.setAttribute('hidden', '');
 
     if (query.length > 2) {
-        fetchSearchResults(query)
-            .then(displaySearchResults)
-            .catch(clearSearchResults);
+        debouncedFetchSearchResults(query);
 
         document.addEventListener('click', function(e) {
             if(e.target !== resultsElement) clearSearchResults();
