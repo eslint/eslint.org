@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 142092,
-        "monthlyDonations": 11841,
+        "annualDonations": 142632,
+        "monthlyDonations": 11886,
         "sponsorCount": 183
     },
     "platinum": [
@@ -30,7 +30,7 @@
             "url": "https://ridicorp.com/career/",
             "image": "https://images.opencollective.com/ridi-corporation/175dcf3/logo.png",
             "monthlyDonation": 1000,
-            "totalDonations": 1000,
+            "totalDonations": 2000,
             "source": "opencollective",
             "tier": "gold-sponsor"
         },
@@ -86,7 +86,7 @@
             "url": "https://themeisle.com",
             "image": "https://images.opencollective.com/themeisle/d5592fe/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 8600,
+            "totalDonations": 8800,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -195,6 +195,15 @@
             "totalDonations": 600,
             "source": "opencollective",
             "tier": "backer"
+        },
+        {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 50,
+            "totalDonations": 1450,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "AX Semantics",
@@ -523,7 +532,7 @@
             "url": null,
             "image": "https://images.opencollective.com/josef-kubicek/6bb5ad8/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -702,15 +711,6 @@
             "name": "Nathan Friedly",
             "url": "http://www.nfriedly.com",
             "image": "https://images.opencollective.com/nfriedly/c7be1d5/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 135,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Lex Webb",
-            "url": null,
-            "image": "https://images.opencollective.com/lex-webb/e94811a/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 135,
             "source": "opencollective",
