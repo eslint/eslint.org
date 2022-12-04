@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142632,
-        "monthlyDonations": 11886,
-        "sponsorCount": 183
+        "annualDonations": 142752,
+        "monthlyDonations": 11896,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -473,6 +473,14 @@
             "name": "Taso",
             "image": "https://avatars.githubusercontent.com/u/15652018?u=159fc52f9dfa8fee51e9d4eb2fec2605d4eaedd1&v=4",
             "url": "https://github.com/TasoOneAsia",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Raimonds Korzenevskis",
+            "image": "https://avatars.githubusercontent.com/u/28185559?u=4e564dd0947ebc75d9fe02a90b7149256a48164e&v=4",
+            "url": "raykay.dk",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
