@@ -1,5 +1,5 @@
 playground:
-- playground/**/*
+  - playground/**/*
 
 translation:
-- src/_data/sites/*
+  - src/_data/sites/*
