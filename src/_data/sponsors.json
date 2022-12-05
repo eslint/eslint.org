@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142752,
-        "monthlyDonations": 11896,
-        "sponsorCount": 184
+        "annualDonations": 142272,
+        "monthlyDonations": 11856,
+        "sponsorCount": 185
     },
     "platinum": [
         {
@@ -204,14 +204,6 @@
             "totalDonations": 1450,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "AX Semantics",
-            "image": "https://avatars.githubusercontent.com/u/13435721?v=4",
-            "url": "https://www.ax-semantics.com",
-            "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "Tailscale",
@@ -515,6 +507,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Fuller, Inc.",
+            "url": "https://www.fuller-inc.com/",
+            "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1346,6 +1347,14 @@
             "name": "Jordan",
             "image": "https://avatars.githubusercontent.com/u/17376090?u=4fb9a453df8d83b3f80edd16612991be1338d7cd&v=4",
             "url": "djmm.me",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "None",
+            "image": "https://avatars.githubusercontent.com/u/17837186?v=4",
+            "url": "https://github.com/shadmau",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
