@@ -1,0 +1,5 @@
+playground:
+- playground/**/*
+
+translation:
+- src/_data/sites/*
