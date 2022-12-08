@@ -12,7 +12,7 @@
     "engines": {
         "node": "16.14.0"
     },
-    "license": "Apache",
+    "license": "Apache-2.0",
     "scripts": {
         "images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
         "install:playground": "cd src/playground && npm install --no-package-lock",
