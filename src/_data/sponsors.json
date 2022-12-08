@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142272,
-        "monthlyDonations": 11856,
-        "sponsorCount": 185
+        "annualDonations": 139812,
+        "monthlyDonations": 11651,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -87,15 +87,6 @@
             "image": "https://images.opencollective.com/themeisle/d5592fe/logo.png",
             "monthlyDonation": 200,
             "totalDonations": 8800,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "launchdarkly",
-            "url": "https://launchdarkly.com",
-            "image": "https://images.opencollective.com/launchdarkly/574bb9e/logo.png",
-            "monthlyDonation": 200,
-            "totalDonations": 2800,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -677,15 +668,6 @@
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 90,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Clément Ollivier",
-            "url": null,
-            "image": "https://images.opencollective.com/clement-ollivier/fb7bb09/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 100,
             "source": "opencollective",
             "tier": "backer"
         },
