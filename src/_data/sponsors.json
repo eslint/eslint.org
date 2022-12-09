@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139812,
-        "monthlyDonations": 11651,
-        "sponsorCount": 183
+        "annualDonations": 139752,
+        "monthlyDonations": 11646,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -533,15 +533,6 @@
             "image": "https://images.opencollective.com/josef-kubicek/6bb5ad8/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 10,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Tomasz Kleszczewski",
-            "url": null,
-            "image": "https://images.opencollective.com/tomasz-kleszczewski/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
