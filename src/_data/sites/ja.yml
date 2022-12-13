@@ -82,6 +82,7 @@ footer:
     chat: Discord
     mailing_list: Google グループ
     github: GitHub
+    mastodon: Mastodon
   theme_switcher:
     title: 配色モード切り替え
     light: 通常
