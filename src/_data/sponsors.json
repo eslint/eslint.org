@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139752,
-        "monthlyDonations": 11646,
-        "sponsorCount": 182
+        "annualDonations": 137868,
+        "monthlyDonations": 11489,
+        "sponsorCount": 181
     },
     "platinum": [
         {
@@ -152,15 +152,6 @@
         }
     ],
     "backers": [
-        {
-            "name": "Cybozu, Inc.",
-            "url": "https://cybozu.co.jp/",
-            "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
-            "monthlyDonation": 157,
-            "totalDonations": 11488,
-            "source": "opencollective",
-            "tier": null
-        },
         {
             "name": "kartenmacherei",
             "image": "https://avatars.githubusercontent.com/u/12070167?v=4",
