@@ -141,6 +141,6 @@ Some things to keep in mind when using `FlatRuleTester`:
 
 We think that the new config system will be a great experience for ESLint users, but in order for that to happen, we have to make sure that the ESLint ecosystem is ready for these changes. That's why we've put together this developer preview to let all of our plugin, custom rule, parser, and shareable config authors get an early look at how their packages will work in the new config system. This is your opportunity to give us your feedback and help work through any incompatibilities or problems with flat config.
 
-Please try out flat config with your packages and let us know how it goes by [starting a discussion](https://github.com/eslint/eslint/discussions/new) or stopping by the [Discord #developers channel](https://eslint.org/chat/developers) if you have questions or [opening an issue](https://github.com/eslint/eslint/issues/new) if you discover a problem.
+Please try out flat config with your packages and let us know how it goes by [starting a discussion](https://github.com/eslint/eslint/discussions/new) or stopping by the [Discord #developers channel](https://eslint.org/chat) if you have questions or [opening an issue](https://github.com/eslint/eslint/issues/new) if you discover a problem.
 
 We appreciate your help and feedback!
