@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 137868,
-        "monthlyDonations": 11489,
-        "sponsorCount": 181
+        "annualDonations": 131868,
+        "monthlyDonations": 10989,
+        "sponsorCount": 180
     },
     "platinum": [
         {
@@ -69,14 +69,6 @@
             "monthlyDonation": 500,
             "totalDonations": 15500,
             "source": "opencollective",
-            "tier": "silver-sponsor"
-        },
-        {
-            "name": "Microsoft",
-            "image": "https://avatars.githubusercontent.com/u/6154722?v=4",
-            "url": "https://opensource.microsoft.com",
-            "monthlyDonation": 500,
-            "source": "github",
             "tier": "silver-sponsor"
         }
     ],
