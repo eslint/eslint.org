@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131868,
-        "monthlyDonations": 10989,
-        "sponsorCount": 180
+        "annualDonations": 131808,
+        "monthlyDonations": 10984,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -1319,14 +1319,6 @@
             "name": "BrightCrowd",
             "image": "https://avatars.githubusercontent.com/u/19253501?v=4",
             "url": "https://brightcrowd.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Montana Mendy",
-            "image": "https://avatars.githubusercontent.com/u/20936398?u=bf1d4f615984b1ac1f6b102ebcda9421f3676405&v=4",
-            "url": "https://github.com/Montana",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
