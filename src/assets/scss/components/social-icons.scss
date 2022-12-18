@@ -1,16 +1,9 @@
 .eslint-social-icons {
-
-    @media all and (max-width: 1023px) {
-        margin-bottom: -1rem;
-        margin-block-end: -1rem;
-    }
-
     ul {
         margin: 0;
         padding: 0;
-        margin-left: -1rem;
-        margin-inline-start: -1rem;
-        display: inline-flex;
+        display: flex;
+        gap: 1.5rem;
 
         li {
             margin: 0;
@@ -19,7 +12,6 @@
 
             a {
                 display: flex;
-                padding: 1rem;
             }
         }
     }
