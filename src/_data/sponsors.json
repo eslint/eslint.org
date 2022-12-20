@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 131868,
-        "monthlyDonations": 10989,
+        "annualDonations": 131928,
+        "monthlyDonations": 10994,
         "sponsorCount": 180
     },
     "platinum": [
@@ -302,6 +302,15 @@
             "totalDonations": 290,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "John Hamilton",
+            "url": null,
+            "image": "https://images.opencollective.com/john-hamilton/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 300,
+            "source": "opencollective",
+            "tier": "backer"
         },
         {
             "name": "John Dorlus",
@@ -1415,14 +1424,6 @@
             "name": "Team-Avalon",
             "image": "https://avatars.githubusercontent.com/u/78931833?v=4",
             "url": "opencollective.com/limasol",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Mario Kernich",
-            "image": "https://avatars.githubusercontent.com/u/92290876?u=ab87664a9f5d0944d8485f14b0e5955b16337bbc&v=4",
-            "url": "https://marioke.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
