@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131928,
-        "monthlyDonations": 10994,
-        "sponsorCount": 180
+        "annualDonations": 131808,
+        "monthlyDonations": 10984,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -989,14 +989,6 @@
             "tier": "backer"
         },
         {
-            "name": "Petja Touru",
-            "image": "https://avatars.githubusercontent.com/u/860012?v=4",
-            "url": "https://petja.me/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Jimmy Bradshaw",
             "image": "https://avatars.githubusercontent.com/u/916017?u=f9be66668f243eecd298b6eea9bb4410f9718b32&v=4",
             "url": "https://github.com/bradshjg",
@@ -1296,14 +1288,6 @@
             "name": "Johannes Konings",
             "image": "https://avatars.githubusercontent.com/u/14806640?u=3586bd6e631a350aec9ff1f2cc31615f72233244&v=4",
             "url": "https://johanneskonings.dev/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Maya Kaczorowski",
-            "image": "https://avatars.githubusercontent.com/u/15946341?u=9a8c989d2ebd91a9507560fda2d61e99c4aa04d7&v=4",
-            "url": "www.mayakaczorowski.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
