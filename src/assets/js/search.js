@@ -169,7 +169,7 @@ document.addEventListener('keydown', function (e) {
             clearSearchResults();
             searchInput.focus();
         } else if (!searchResults.length && document.activeElement === searchInput) {
-            searchInput.blur()
+            searchInput.blur();
         }
     }
 
