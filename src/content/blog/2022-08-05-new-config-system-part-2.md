@@ -466,6 +466,12 @@ As mentioned previously, we felt like there needed to be a good amount of backwa
 
 ```js
 import { FlatCompat } from "@eslint/eslintrc";
+import path from "path";
+import { fileURLToPath } from "url";
+
+// mimic CommonJS variables -- not needed if using CommonJS
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const compat = new FlatCompat({
     baseDirectory: __dirname
