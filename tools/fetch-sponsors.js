@@ -227,7 +227,7 @@ async function fetchGitHubSponsors() {
     // return an array in the same format as Open Collective
     const sponsors = organization.sponsorshipsAsMaintainer.nodes
         .map(({ sponsor, tier }) => ({
-            name: sponsor.name,
+            name: sponsor.name || sponsor.login,
             image: sponsor.avatarUrl,
             url: sponsor.websiteUrl || sponsor.url,
             monthlyDonation: tier.monthlyPriceInDollars,
@@ -249,7 +249,7 @@ async function fetchGitHubSponsors() {
         .filter(donation => {
             // invoiced recurring donations are incorrectly marked as one-time
             const sponsor = sponsors.find(sponsor => sponsor.name === donation.name);
-            
+
             // only include if the amount is different than the monthly amount
             return sponsor ? sponsor.monthlyDonation !== donation.amount : true;
         });
@@ -273,11 +273,11 @@ async function fetchGitHubSponsors() {
         {
             sponsors: openCollectiveSponsors,
             donations: openCollectiveDonations
-        }, 
+        },
         {
             sponsors: githubSponsors,
             donations: githubDonations
-        }, 
+        },
     ] = await Promise.all([
         fetchOpenCollectiveData(),
         fetchGitHubSponsors()
