@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131808,
-        "monthlyDonations": 10984,
-        "sponsorCount": 178
+        "annualDonations": 131928,
+        "monthlyDonations": 10994,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -448,6 +448,14 @@
             "name": "Taso",
             "image": "https://avatars.githubusercontent.com/u/15652018?u=159fc52f9dfa8fee51e9d4eb2fec2605d4eaedd1&v=4",
             "url": "https://github.com/TasoOneAsia",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": null,
+            "image": "https://avatars.githubusercontent.com/u/23113912?u=8f0f72610d5ec4a8bd382680e693984210b1cf18&v=4",
+            "url": "https://github.com/ndNovaDev",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1253,6 +1261,14 @@
             "tier": "backer"
         },
         {
+            "name": "Fatih Aygün",
+            "image": "https://avatars.githubusercontent.com/u/10846005?u=5f14cc2e916a6f2f1620bc5b3bce5e012c5a8bc1&v=4",
+            "url": "https://github.com/cyco130",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "James Ives",
             "image": "https://avatars.githubusercontent.com/u/10888441?u=61f6af1b0be0b5e9a15908ef45168b9242798486&v=4",
             "url": "https://jamesiv.es",
@@ -1320,14 +1336,6 @@
             "name": "BrightCrowd",
             "image": "https://avatars.githubusercontent.com/u/19253501?v=4",
             "url": "https://brightcrowd.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Mikl Wolfe",
-            "image": "https://avatars.githubusercontent.com/u/22719398?u=34dbc5a2f36a3bf05b9d5a7f49211cb96fd91e11&v=4",
-            "url": "chiefmikey.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
