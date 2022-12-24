@@ -168,6 +168,8 @@ document.addEventListener('keydown', function (e) {
         if (searchResults.length) {
             clearSearchResults();
             searchInput.focus();
+        } else if (!searchResults.length && document.activeElement === searchInput) {
+            searchInput.blur()
         }
     }
 
