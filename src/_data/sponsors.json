@@ -453,14 +453,6 @@
             "tier": "backer"
         },
         {
-            "name": null,
-            "image": "https://avatars.githubusercontent.com/u/23113912?u=8f0f72610d5ec4a8bd382680e693984210b1cf18&v=4",
-            "url": "https://github.com/ndNovaDev",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Raimonds Korzenevskis",
             "image": "https://avatars.githubusercontent.com/u/28185559?u=4e564dd0947ebc75d9fe02a90b7149256a48164e&v=4",
             "url": "raykay.dk",
@@ -1229,14 +1221,6 @@
             "tier": "backer"
         },
         {
-            "name": null,
-            "image": "https://avatars.githubusercontent.com/u/8572152?v=4",
-            "url": "https://github.com/per1234",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Gabi",
             "image": "https://avatars.githubusercontent.com/u/9082013?u=0a2400198d68bd7155832384f6135c22aefa6f4b&v=4",
             "url": "https://github.com/0xGabi",
@@ -1320,14 +1304,6 @@
             "name": "None",
             "image": "https://avatars.githubusercontent.com/u/17837186?v=4",
             "url": "https://github.com/shadmau",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": null,
-            "image": "https://avatars.githubusercontent.com/u/19206886?u=5302740136db6d2fe4d4009680064ce95a1896fc&v=4",
-            "url": "https://github.com/portfine",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
