@@ -239,7 +239,7 @@ async function fetchGitHubSponsors() {
         .filter(transaction => transaction.tier && transaction.tier.isOneTime)
         .map(({ sponsor, timestamp, tier, id }) => ({
             id,
-            name: sponsor.name,
+            name: sponsor.name || sponsor.login,
             image: sponsor.avatarUrl,
             url: sponsor.websiteUrl || sponsor.url,
             amount: tier.monthlyPriceInDollars,
