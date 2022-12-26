@@ -108,7 +108,7 @@ function maintainScrollVisibility(activeElement, scrollParent) {
     else if (isBelow) {
         scrollParent.scrollTo(0, offsetTop - parentOffsetHeight + offsetHeight);
     }
-    
+
 }
 function debounce(callback, delay) {
     let timerId;
@@ -134,7 +134,7 @@ const debouncedFetchSearchResults = debounce((query) => {
 searchInput.addEventListener('keyup', function (e) {
     const query = searchInput.value;
 
-    if(query === searchQuery) return;
+    if (query === searchQuery) return;
 
     if (query.length) searchClearBtn.removeAttribute('hidden');
     else searchClearBtn.setAttribute('hidden', '');
@@ -142,8 +142,8 @@ searchInput.addEventListener('keyup', function (e) {
     if (query.length > 2) {
         debouncedFetchSearchResults(query);
 
-        document.addEventListener('click', function(e) {
-            if(e.target !== resultsElement) clearSearchResults();
+        document.addEventListener('click', function (e) {
+            if (e.target !== resultsElement) clearSearchResults();
         });
     } else {
         clearSearchResults();
@@ -152,28 +152,33 @@ searchInput.addEventListener('keyup', function (e) {
     searchQuery = query
 });
 
-searchClearBtn.addEventListener('click', function(e) {
+searchClearBtn.addEventListener('click', function (e) {
     searchInput.value = '';
     searchInput.focus();
     clearSearchResults();
     searchClearBtn.setAttribute('hidden', '');
 });
 
-document.addEventListener('keydown', function(e) {
-
-    if(e.key === 'Escape'){
-        e.preventDefault();
-        clearSearchResults();
-        searchInput.focus();
-    }
-
-    if((e.metaKey || e.ctrlKey) && e.key === 'k'){
-        e.preventDefault();
-        searchInput.focus();
-        document.querySelector('.search').scrollIntoView({behaviour:"smooth",block: "start"});
-    }
+document.addEventListener('keydown', function (e) {
 
     const searchResults = Array.from(document.querySelectorAll('.search-results__item'));
+
+    if (e.key === 'Escape') {
+        e.preventDefault();
+        if (searchResults.length) {
+            clearSearchResults();
+            searchInput.focus();
+        } else if (!searchResults.length && document.activeElement === searchInput) {
+            searchInput.blur();
+        }
+    }
+
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInput.focus();
+        document.querySelector('.search').scrollIntoView({ behaviour: "smooth", block: "start" });
+    }
+
     if (!searchResults.length) return;
 
     switch (e.key) {
