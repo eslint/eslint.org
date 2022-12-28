@@ -31,27 +31,6 @@ eleventyExcludeFromCollections: true
 /docs/maintainer-guide/*            /docs/latest/maintainer-guide/:splat 301!
 /docs/developer-guide/*             /docs/latest/developer-guide/:splat 301!
 
-# Regular Docs
-/docs/latest/*                      https://{{ site.locals.docs_latest }}/:splat 200!
-/docs/                              /docs/latest/ 301!
-{% else %}
-
-# Redirect docs back to English site
-/docs/*                             https://eslint.org/docs/:splat 302!
-{% endif %}
-
-# Docs checked into main branch but not released
-{% if site.locals.docs_head %}
-/docs/head/*                        https://{{ site.locals.docs_head }}/:splat 200!
-{% else %}
-/docs/head/*                        https://eslint.org/docs/head/:splat 302!
-{% endif %}
-
-{% if site.locals.blog == false %}
-# Redirect blog back to English site
-/blog/*                             https://eslint.org/blog/:splat 302!
-{% endif %}
-
 # Redirects for the ESLint IA Refactor (https://github.com/eslint/rfcs/pull/97)
 /docs/latest/user-guide/                                     /docs/latest/use/ 301!
 /docs/latest/user-guide/core-concepts/                       /docs/latest/use/core-concepts/ 301!
@@ -92,3 +71,24 @@ eleventyExcludeFromCollections: true
 /docs/latest/user-guide/*                                    /docs/latest/use/:splat/ 301!
 /docs/latest/developer-guide/*                               /docs/latest/extend/:splat/ 301!
 /docs/latest/maintainer-guide/*                              /docs/latest/maintain/:splat/ 301!
+
+# Regular Docs
+/docs/latest/*                      https://{{ site.locals.docs_latest }}/:splat 200!
+/docs/                              /docs/latest/ 301!
+{% else %}
+
+# Redirect docs back to English site
+/docs/*                             https://eslint.org/docs/:splat 302!
+{% endif %}
+
+# Docs checked into main branch but not released
+{% if site.locals.docs_head %}
+/docs/head/*                        https://{{ site.locals.docs_head }}/:splat 200!
+{% else %}
+/docs/head/*                        https://eslint.org/docs/head/:splat 302!
+{% endif %}
+
+{% if site.locals.blog == false %}
+# Redirect blog back to English site
+/blog/*                             https://eslint.org/blog/:splat 302!
+{% endif %}
