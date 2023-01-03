@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129192,
-        "monthlyDonations": 10766,
-        "sponsorCount": 173
+        "annualDonations": 129336,
+        "monthlyDonations": 10778,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -30,7 +30,7 @@
             "url": "https://ridicorp.com/career/",
             "image": "https://images.opencollective.com/ridi-corporation/175dcf3/logo.png",
             "monthlyDonation": 1000,
-            "totalDonations": 2000,
+            "totalDonations": 3000,
             "source": "opencollective",
             "tier": "gold-sponsor"
         },
@@ -250,6 +250,15 @@
             "tier": "backer"
         },
         {
+            "name": "Anu Alabi",
+            "url": null,
+            "image": "https://images.opencollective.com/anu-alabi/2804057/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 140,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Oleksii Myzgin",
             "url": null,
             "image": "https://images.opencollective.com/guest-fb34b9dc/avatar.png",
@@ -318,6 +327,15 @@
             "image": "https://images.opencollective.com/kevin-partington/54f2124/avatar.png",
             "monthlyDonation": 10,
             "totalDonations": 440,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Benjamin Piouffle",
+            "url": "https://benjamin.piouffle.com",
+            "image": "https://images.opencollective.com/betree/2142bbe/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 478,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -434,14 +452,6 @@
             "tier": "backer"
         },
         {
-            "name": "Raimonds Korzenevskis",
-            "image": "https://avatars.githubusercontent.com/u/28185559?u=4e564dd0947ebc75d9fe02a90b7149256a48164e&v=4",
-            "url": "raykay.dk",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Routable",
             "image": "https://avatars.githubusercontent.com/u/34727309?v=4",
             "url": "https://github.com/routablehq",
@@ -478,7 +488,7 @@
             "url": "https://www.fuller-inc.com/",
             "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -487,7 +497,7 @@
             "url": "https://aviatorgame.guru",
             "image": "https://images.opencollective.com/aviator-game1/93ba7db/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -496,7 +506,7 @@
             "url": "https://crash-gambling-game.com",
             "image": "https://images.opencollective.com/crash-game/c67c0f2/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -505,7 +515,7 @@
             "url": null,
             "image": "https://images.opencollective.com/josef-kubicek/6bb5ad8/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1399,6 +1409,15 @@
             "image": "https://images.opencollective.com/shunfan/ca1c537/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 50,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
+            "name": "Sudharaka Palamakumbura",
+            "url": "https://ca.linkedin.com/in/sudharakap",
+            "image": "https://images.opencollective.com/sudharaka-palamakumbura/03b6087/avatar.png",
+            "monthlyDonation": 2,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": null
         },
