@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129336,
-        "monthlyDonations": 10778,
-        "sponsorCount": 175
+        "annualDonations": 129276,
+        "monthlyDonations": 10773,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -1286,14 +1286,6 @@
             "name": "Jordan",
             "image": "https://avatars.githubusercontent.com/u/17376090?u=4fb9a453df8d83b3f80edd16612991be1338d7cd&v=4",
             "url": "djmm.me",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "None",
-            "image": "https://avatars.githubusercontent.com/u/17837186?v=4",
-            "url": "https://github.com/shadmau",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
