@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129276,
-        "monthlyDonations": 10773,
-        "sponsorCount": 174
+        "annualDonations": 131736,
+        "monthlyDonations": 10978,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -97,6 +97,15 @@
             "image": "https://images.opencollective.com/anagram-solver/2666271/logo.png",
             "monthlyDonation": 200,
             "totalDonations": 6800,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Icons8: free icons, photos, illustrations, and music",
+            "url": "https://icons8.com",
+            "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 8400,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -481,6 +490,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Blockchain",
+            "url": null,
+            "image": "https://images.opencollective.com/blockchain2/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
