@@ -49,5 +49,5 @@ module.exports = {
         });
         return newArray;
     },
-    isDev: process.env.IS_DEV === 'dev'
+    isDev: process.env.IS_DEV === 'true'
 };
