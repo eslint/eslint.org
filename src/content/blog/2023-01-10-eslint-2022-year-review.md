@@ -109,4 +109,4 @@ In 2022, the ESLint project donated $14,350.00 USD to ecosystem projects and our
 
 While ESLint had a fantastic 2022, we are looking forward to an even better 2023. With the ESLint Community and documentation projects running, we expect to make the ESLint ecosystem even stronger. We are also planning to start on a [complete rewrite](https://github.com/eslint/eslint/discussions/16557) from the ground up to make sure that ESLint is ready for the next ten years of JavaScript development. This process will likely take place in small, incremental steps as we think through how JavaScript development has changed and will continue to evolve in the future.
 
-We are excited for the future of ESLint and we appreciate your ongoing support.
+We are excited about the future of ESLint and we appreciate your ongoing support.
