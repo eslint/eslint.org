@@ -17,7 +17,7 @@
         "images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
         "install:playground": "cd src/playground && npm install --no-package-lock",
         "watch:sass": "sass --watch src/assets/scss:src/assets/css",
-        "watch:eleventy": "cross-env CONTEXT=dev eleventy --serve --port=2022",
+        "watch:eleventy": "cross-env IS_DEV=dev eleventy --serve --port=2022",
         "watch:webpack": "webpack watch --mode=development",
         "build:sass": "sass --no-source-map --style=compressed src/assets/scss:src/assets/css",
         "build:eleventy": "npx @11ty/eleventy",
