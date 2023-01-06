@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ESLint's 2022 year in review
-teaser: "2022 was a productive year for the ESLint project with improvements in all facts of the project."
+teaser: "2022 was a productive year for the ESLint project with improvements in all facets of the project."
 tags:
   - Updates
   - Features
