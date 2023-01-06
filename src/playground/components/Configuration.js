@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import Select from "react-select";
+import Select, { components } from "react-select";
 import RuleList from "./RuleList";
 import ShareURL from "./ShareURL";
 import { ECMA_FEATURES, ECMA_VERSIONS, SOURCE_TYPES, ENV_NAMES } from "../utils/constants";
@@ -109,6 +109,31 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
     const ruleInputRef = useRef(null);
     const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(new Set([]));
 
+    const handleRuleChange = () => {
+        selectedRules.forEach(selectedRule => {
+            if (ruleNames.includes(selectedRule)) {
+                options.rules[selectedRule] = ["error"];
+                onUpdate(Object.assign({}, options));
+                ruleInputRef.current.setValue("");
+            }
+        });
+    };
+
+    const Input = props => {
+        if (props.isHidden) {
+            return <components.Input {...props} />;
+        }
+        return (
+            <components.Input {...props} onKeyDown={e => {
+                if ((e.metaKey || e.ctrlKey) && e.code === "Enter") {
+                    handleRuleChange();
+                } else {
+                    props.onKeyDown(e);
+                }
+            }} />
+        );
+    };
+
     return (
         <div className="playground__config-options__sections">
             <div className="playground__config-options__section">
@@ -208,6 +233,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
                     <Select
                         isMulti
+                        components={{ Input }}
                         isClearable
                         isSearchable
                         styles={customStyles}
@@ -225,13 +251,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     <button
                         className="c-btn c-btn--ghost add-rule-btn"
                         onClick={() => {
-                            selectedRules.forEach(selectedRule => {
-                                if (ruleNames.includes(selectedRule)) {
-                                    options.rules[selectedRule] = ["error"];
-                                    onUpdate(Object.assign({}, options));
-                                    ruleInputRef.current.setValue("");
-                                }
-                            });
+                            handleRuleChange();
                         }}
                     >
                         {selectedRules.length > 1 ? "Add these Rules" : "Add this Rule"}
