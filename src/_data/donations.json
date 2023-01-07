@@ -250,14 +250,5 @@
         "amount": 3,
         "date": "2022-02-21T11:46:53.444Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4ABHcn",
-        "name": "Gabriel Gregório",
-        "image": "https://avatars.githubusercontent.com/u/48621655?u=8d11d15f533053597c354e57e0ed0fbb453c175b&v=4",
-        "url": "https://gregorio-portfolio.vercel.app/",
-        "amount": 25,
-        "date": "2022-12-07T23:22:34Z",
-        "source": "github"
     }
 ]
