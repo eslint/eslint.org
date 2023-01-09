@@ -68,7 +68,7 @@ During 2022, ESLint received $197,267.73 USD from all of our income sources. You
 | Stackaid.us | $77.54 |
 | **Total** | **$197,267.73** |
 
-As usual, most of our donations come through Open Collective followed by GitHub Sponsors. Our Tidelift agreement also provided a good amount of income as did the ad on our website.
+As usual, most of our donations came through Open Collective followed by GitHub Sponsors. Our Tidelift agreement also provided a good amount of income as did the ad on our website.
 
 We are extremely grateful for the generous donations from companies and individuals that allow the project to continue development.
 
