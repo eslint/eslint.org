@@ -57,7 +57,7 @@ In addition to our normal maintenance and development, we also kicked off a coup
 
 ## Income review
 
-During 2022, ESLint received $197,267.73 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
+During 2022, ESLint received $197,345.27 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
 
 | **Source** | **Amount** |
 |-----------|-------------|
@@ -66,7 +66,7 @@ During 2022, ESLint received $197,267.73 USD from all of our income sources. You
 | Tidelift | $29,088.00 |
 | Carbon Ads | $13,831.16 |
 | Stackaid.us | $77.54 |
-| **Total** | **$197,267.73** |
+| **Total** | **$197,345.27** |
 
 As usual, most of our donations came through Open Collective followed by GitHub Sponsors. Our Tidelift agreement also provided a good amount of income as did the ad on our website.
 
@@ -74,19 +74,20 @@ We are extremely grateful for the generous donations from companies and individu
 
 ## Expenses review
 
-In 2022, we spent $133,536.57 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
+In 2022, we spent $139,986.57 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
 
 | **Category** | **Amount** |
 |-----------|-------------|
 | Maintenance and Development | $97,516.23 |
 | Contributor Pool | $7,900.00 |
+| Website Redesign | $6,450.00 |
 | Guest Blog Posts | $600.00 |
 | Community Logo Design | $2,700.00 |
 | Documentation Project | $4,147.50 |
 | Tech Writer Application Time | $1,500.00 |
 | Open Source Collective Fee | $12,172.84 |
 | Community Management | $7,000.00 |
-| **Total** | **$133,536.57** |
+| **Total** | **$139,986.57** |
 
 As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community.
 
