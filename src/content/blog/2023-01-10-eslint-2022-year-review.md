@@ -43,6 +43,8 @@ As we do each year, the ESLint team stays on top of the latest ECMAScript versio
 1. [Top-level await](https://github.com/tc39/proposal-top-level-await)
 1. [Class fields](https://github.com/tc39/proposal-class-fields)
 1. [Ergonomic brand checks for private fields](https://github.com/tc39/proposal-private-fields-in-in)
+1. [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block)
+1. [RegExp Match Indices](https://github.com/tc39/proposal-regexp-match-indices)
 
 You can enable these in your configuration by setting `ecmaVersion: 2022` or `ecmaVersion: "latest"`.
 
