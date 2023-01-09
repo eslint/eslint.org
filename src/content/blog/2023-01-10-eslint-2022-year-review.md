@@ -30,7 +30,7 @@ We had been working on the design of a new configuration system for several year
 
 1. [Part 1](https://eslint.org/blog/2022/08/new-config-system-part-1/) explains why we needed a new configuration system and the problems with the current system.
 2. [Part 2](https://eslint.org/blog/2022/08/new-config-system-part-2/) explains the new configuration system and the thinking that went into its design.
-3. [Part 3](https://eslint.org/blog/2022/08/new-config-system-part-2/) explains how to use the developer preview of the configuration system.
+3. [Part 3](https://eslint.org/blog/2022/08/new-config-system-part-3/) explains how to use the developer preview of the configuration system.
 
 Since we published that third post, the new configuration system is almost complete and is available for use by end users ([see the docs](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new) for more).
 
