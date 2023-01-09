@@ -14,7 +14,7 @@ language:
   flag: 🇨🇳
   name: 简体中文
   title: Simplified Chinese
-locale: zh-hans
+locale: zh-Hans
 hostname: zh-hans.eslint.org
 locals:
   docs_latest: zh-hans-docs.netlify.app
@@ -144,8 +144,8 @@ branding_page:
         - >
           将由间隙创建的内六边形的大小加倍，以了解图标和文字符号之间以及图标周围应该有多少空间。
         - >
-          我们的商标有多种用途-你可以在各种品牌的颜色使用它，利用非白色背景的不透明度来模拟较浅的颜色。
-          也可以单独使用图标 ，而不使用 ESLint 文字符号，但如果可能的话，最好同时使用。
+          我们的商标有多种用途——你可以在各种品牌的颜色使用它，通过调节非白色背景的不透明度来模拟较浅的颜色。
+          也可以单独使用图标 ，而不使用 ESLint 文字符号，但可以的话，最好同时使用。
       download_svg: 下载 SVG
       download_png: 下载 PNG
       change_background: “更改背景：”
@@ -174,14 +174,14 @@ branding_page:
 homepage:
   title: 检测并修复 JavaScript 代码中的问题。
   description: >
-    ESLint 静态分析你的代码以快速发现问题。大多数文本编辑器都内置了 ESLint 支持，
-    但你也可以在持续集成管道中运行 ESLint 。
+    ESLint 通过静态分析代码以快速发现问题。大多数文本编辑器都内置了 ESLint 支持，
+    但你也可以在持续集成管道中运行 ESLint。
   
   animation:
-    enabled: false
-    text: 检测和修复 JavaScript 代码中的问题。
-    highlight_word: problems
-    wrong_word: problmes
+    enabled: true
+    text: 检测并修复 JavaScript 代码中的问题。
+    highlight_word: 代码中的问题。
+    wrong_word: 代码中的提问。
 
   install:
     title: 快速安装 ESLint
@@ -193,7 +193,7 @@ homepage:
     latest: 最新版本
     upcoming: 即将到来的版本
     development: 开发中
-    dateline: 发布于 DATE 的 <span class="text-dark">VERSION</span>
+    dateline: 于 DATE 发布 <span class="text-dark">VERSION</span>
 
   explainer:
     image:
@@ -207,7 +207,7 @@ homepage:
     - title: 发现问题
       description: >
         ESLint 静态分析你的代码以快速发现问题。ESLint 内置在大多数文本编辑器中，
-        你也可以运行 ESLint 作为持续集成管道的一部分。
+        你也可以在持续集成管道中运行 ESLint。
       learn_more:
         link: getStarted 
         text: >
@@ -278,7 +278,7 @@ blog_page:
 team_page:
   title: 认识我们的团队
   description: >
-    他们是开发和维护 ESLint 的人。
+    他们开发并维护 ESLint。
   tsc:
     title: 技术指导委员会
     description: >
@@ -311,7 +311,7 @@ team_page:
 sponsors_page:
   title: 赞助
   description: >
-    目前每月有 BACKER_COUNT 个公司、组织或个人赞助了 MONTHLY_DONATIONS 以支持 ESLint 的持续维护和开发。
+    目前每月有 BACKER_COUNT 个公司、组织或个人会赞助 MONTHLY_DONATIONS 以支持 ESLint 的持续维护和开发。
   hero:
     cta:
       text: 开始赞助
@@ -400,7 +400,7 @@ donate_page:
   budget:
     title: 钱用到了哪
     subtitle: >
-      ESLint 项目使用捐赠的资金使项目和 ESLint 社区受益。一般来说，我们每个月都在这些方面花钱。
+      ESLint 项目会用捐赠的资金使项目和 ESLint 社区受益。一般来说，我们每个月都在这些方面花钱。
     items:
       - name: 团队开发
         text: >
@@ -429,9 +429,9 @@ donate_page:
     subtitle: 我们接受任意金额的捐赠，但确实有等级系统，每个等级都有不同的奖励。
     cta:
       open_collective_text: >
-        <span class="visually-hidden">通过 Open Collective</span> 捐赠
+        <span class="visually-hidden">通过 Open Collective </span>捐赠
       github_sponsors_text: > 
-        <span class="visually-hidden">通过 GitHub</span> 捐赠
+        <span class="visually-hidden">通过 GitHub </span>捐赠
     items:
       - name: 白金赞助商
         amount: $2000+
@@ -457,7 +457,7 @@ donate_page:
       image: addy-osmani.jpg
       text: >
         ESLint 多年来一直在帮助开发者编写高质量 JavaScript 方面发挥着关键作用。
-        我们喜欢它能及时发现常见问题。有了高度扩展性，ESLint 让团队执行自定义规则
+        我们喜欢它能及时发现常见问题。有着高度扩展性，ESLint 让团队执行自定义规则
         的能力在开源项目和其他项目中非常出色。Chrome 很乐意赞助 ESLint 来帮助 web
         开发者编写始终如一的高质量代码。它是现代 web 开发工具包的重要组成部分。
     - name: Jeff Cross
