@@ -53,7 +53,7 @@ You can enable these in your configuration by setting `ecmaVersion: 2022` or `ec
 In addition to our normal maintenance and development, we also kicked off a couple of additional projects:
 
 1. **Documentation Refresh** - we hired a technical writer to start reviewing, organizing, and rewriting our documentation. We have never had a documentation-focused project and we felt like 2022 was the right time to start this project given the funds we had available. We anticipate this project to continue until mid-2023.
-2. **ESLint Community** - the strength of ESLint is in its ecosystem and we had been searching for a way to better organize that ecosystem. As a result, we created the [`eslint-community`](https://github.com/eslint-community) GitHub organization as a home for high-value projects in the ESLint ecosystem. We intend this to be a place for projects related to ESLint to live and thrive so that they never fall out of maintenance. We are still working through the details on this and you can expect a followup blog post soon.
+2. **ESLint Community** - the strength of ESLint is in its ecosystem and we had been searching for a way to better organize that ecosystem. As a result, we created the [`eslint-community`](https://github.com/eslint-community) GitHub organization as a home for high-value projects in the ESLint ecosystem. We intend this to be a place for projects related to ESLint to live and thrive so that they never fall out of maintenance. We are still working through the details on this and you can expect a follow-up blog post soon.
 
 ## Income review
 
