@@ -163,5 +163,16 @@
         "twitter_username": null,
         "github_username": "sanjeetsuhag",
         "location": "United States"
+    },
+    "MichaelDeBoey": {
+        "username": "MichaelDeBoey",
+        "name": "Michaël De Boey",
+        "title": "ESLint Community core team",
+        "website": "https://michaeldeboey.be",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6643991?v=4",
+        "bio": "👨‍💻 Freelance full stack JavaScript/TypeScript & React engineer",
+        "twitter_username": "MichaelDeBoey93",
+        "github_username": "MichaelDeBoey",
+        "location": "Sint-Niklaas, Belgium"
     }
 }
