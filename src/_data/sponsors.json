@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131736,
-        "monthlyDonations": 10978,
-        "sponsorCount": 176
+        "annualDonations": 131856,
+        "monthlyDonations": 10988,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -597,6 +597,15 @@
             "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 40,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Sufi Meditation",
+            "url": "https://www.zikir.com",
+            "image": "https://images.opencollective.com/sufi-meditation/74935dc/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1368,6 +1377,14 @@
             "name": "Andrea Mazzucchelli",
             "image": "https://avatars.githubusercontent.com/u/60042277?u=ae98af9bebf42b3137986d38d38b5d1dfd609be8&v=4",
             "url": "https://www.linkedin.com/in/andrea-m-0b40051bb",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ugi Stelmokaitis",
+            "image": "https://avatars.githubusercontent.com/u/63953745?u=4ee0716e3b0a027712047ed8824d0141c370e9ad&v=4",
+            "url": "ugistelmokaitis.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
