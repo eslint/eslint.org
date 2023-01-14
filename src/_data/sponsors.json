@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131856,
-        "monthlyDonations": 10988,
-        "sponsorCount": 178
+        "annualDonations": 131796,
+        "monthlyDonations": 10983,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -1049,14 +1049,6 @@
             "name": "MBJ",
             "image": "https://avatars.githubusercontent.com/u/1220722?u=e348cce6ef8ec9d82739150ef1c6c32ee25cb788&v=4",
             "url": "https://github.com/thiswallz",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Will Sams",
-            "image": "https://avatars.githubusercontent.com/u/1405154?u=4c57d879edac9241e22801e897fd62be3c46fca2&v=4",
-            "url": "http://samswebs.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
