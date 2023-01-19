@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131676,
-        "monthlyDonations": 10973,
-        "sponsorCount": 175
+        "annualDonations": 131736,
+        "monthlyDonations": 10978,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -490,6 +490,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Rad Web Hosting",
+            "url": "https://radwebhosting.com",
+            "image": "https://images.opencollective.com/radwebhosting/eed7f39/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
