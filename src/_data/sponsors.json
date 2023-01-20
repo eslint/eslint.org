@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131736,
-        "monthlyDonations": 10978,
-        "sponsorCount": 176
+        "annualDonations": 131796,
+        "monthlyDonations": 10983,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -308,7 +308,7 @@
             "url": null,
             "image": "https://images.opencollective.com/john-hamilton/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 300,
+            "totalDonations": 310,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -935,6 +935,14 @@
             "tier": "backer"
         },
         {
+            "name": "Sean Kennedy",
+            "image": "https://avatars.githubusercontent.com/u/414475?u=02a094d2d568aa9d65132d8fd42a7eeb2b1a02fa&v=4",
+            "url": "https://www.codeserious.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Alexey Antipov",
             "image": "https://avatars.githubusercontent.com/u/427621?u=345ba2cd29c19aa77b31491d083de28e4186ba60&v=4",
             "url": "alexei.me",
@@ -1136,7 +1144,7 @@
         },
         {
             "name": "Hayden Bleasel",
-            "image": "https://avatars.githubusercontent.com/u/4142719?u=1f6f5172d76438797959dd8709c2637fa0fb245d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4142719?u=5aebd93316de5a1d41b6976c31c130b39d1c8d3d&v=4",
             "url": "https://haydenbleasel.com/",
             "monthlyDonation": 5,
             "source": "github",
