@@ -125,7 +125,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         }
         return (
             <components.Input {...props} onKeyDown={e => {
-                if ((e.metaKey || e.ctrlKey) && e.code === "Enter") {
+                if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
                     handleRuleChange();
                     e.stopPropagation();
                 }
