@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131796,
-        "monthlyDonations": 10983,
-        "sponsorCount": 177
+        "annualDonations": 131916,
+        "monthlyDonations": 10993,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -1311,6 +1311,14 @@
             "tier": "backer"
         },
         {
+            "name": "zapolnoch",
+            "image": "https://avatars.githubusercontent.com/u/15930575?v=4",
+            "url": "https://github.com/zapolnoch",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Jordan",
             "image": "https://avatars.githubusercontent.com/u/17376090?u=4fb9a453df8d83b3f80edd16612991be1338d7cd&v=4",
             "url": "djmm.me",
@@ -1402,6 +1410,14 @@
             "name": "Scout APM Sponsorships",
             "image": "https://avatars.githubusercontent.com/u/71095532?u=9f5a794ddc3b67ba057ee65e7ce166ad205a76c2&v=4",
             "url": "https://scoutapm.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Open Source Software PH",
+            "image": "https://avatars.githubusercontent.com/u/73895857?v=4",
+            "url": "https://ossph.org",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
