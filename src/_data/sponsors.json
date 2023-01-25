@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131796,
-        "monthlyDonations": 10983,
-        "sponsorCount": 178
+        "annualDonations": 134256,
+        "monthlyDonations": 11188,
+        "sponsorCount": 180
     },
     "platinum": [
         {
@@ -116,6 +116,14 @@
             "monthlyDonation": 200,
             "totalDonations": 9000,
             "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Transloadit",
+            "image": "https://avatars.githubusercontent.com/u/125754?v=4",
+            "url": "https://transloadit.com/",
+            "monthlyDonation": 200,
+            "source": "github",
             "tier": "bronze-sponsor"
         },
         {
@@ -1298,6 +1306,14 @@
             "name": "Johannes Konings",
             "image": "https://avatars.githubusercontent.com/u/14806640?u=3586bd6e631a350aec9ff1f2cc31615f72233244&v=4",
             "url": "https://johanneskonings.dev/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Niko Achilles Kokkinos",
+            "image": "https://avatars.githubusercontent.com/u/15736120?u=2b792b2e5fd22d36b8dafbc514cf019b82955e63&v=4",
+            "url": "https://www.linkedin.com/in/niko-achilles-kokkinos/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
