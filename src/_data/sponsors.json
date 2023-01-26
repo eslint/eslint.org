@@ -668,7 +668,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 95,
+            "totalDonations": 100,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -938,6 +938,14 @@
             "name": "Sean Kennedy",
             "image": "https://avatars.githubusercontent.com/u/414475?u=02a094d2d568aa9d65132d8fd42a7eeb2b1a02fa&v=4",
             "url": "https://www.codeserious.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Enrise",
+            "image": "https://avatars.githubusercontent.com/u/417390?v=4",
+            "url": "https://enrise.com/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1346,14 +1354,6 @@
             "name": "Krešimir Čondić",
             "image": "https://avatars.githubusercontent.com/u/26605058?u=ce9a827bfef6ec4740a32a2e2c5cb769c812a217&v=4",
             "url": "https://codemage.co",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Oliver Sieweke",
-            "image": "https://avatars.githubusercontent.com/u/30631513?u=fbbb709bd6feec2525869ed071b241d52ff87148&v=4",
-            "url": "www.oliversieweke.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
