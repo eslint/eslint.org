@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134256,
-        "monthlyDonations": 11188,
-        "sponsorCount": 181
+        "annualDonations": 134316,
+        "monthlyDonations": 11193,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -1370,6 +1370,14 @@
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Christian Adler",
+            "image": "https://avatars.githubusercontent.com/u/37087119?u=fc31e5d4518a25d45b2f8ea9109016993c861371&v=4",
+            "url": "https://github.com/Christian-Adler",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
