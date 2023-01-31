@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134316,
-        "monthlyDonations": 11193,
-        "sponsorCount": 182
+        "annualDonations": 136776,
+        "monthlyDonations": 11398,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -73,6 +73,15 @@
         }
     ],
     "bronze": [
+        {
+            "name": "PayDay Say",
+            "url": "https://paydaysay.com/",
+            "image": "https://images.opencollective.com/payday-say-organization/9cd2467/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "ThemeIsle",
             "url": "https://themeisle.com",
@@ -1055,6 +1064,14 @@
             "tier": "backer"
         },
         {
+            "name": "ELAN e.V.",
+            "image": "https://avatars.githubusercontent.com/u/1064602?v=4",
+            "url": "https://elan-ev.de",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Michał Jastrzębowski",
             "image": "https://avatars.githubusercontent.com/u/1092924?u=d546335f03b66c4b40f2a1d1544b3d7d57d318cc&v=4",
             "url": "http://jastrzebowski.pl",
@@ -1513,7 +1530,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 17,
+            "totalDonations": 18,
             "source": "opencollective",
             "tier": null
         },
