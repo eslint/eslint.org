@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136716,
-        "monthlyDonations": 11393,
-        "sponsorCount": 183
+        "annualDonations": 136596,
+        "monthlyDonations": 11383,
+        "sponsorCount": 181
     },
     "platinum": [
         {
@@ -503,20 +503,11 @@
             "tier": "backer"
         },
         {
-            "name": "Blockchain",
-            "url": null,
-            "image": "https://images.opencollective.com/blockchain2/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Fuller, Inc.",
             "url": "https://www.fuller-inc.com/",
             "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -525,16 +516,7 @@
             "url": "https://aviatorgame.guru",
             "image": "https://images.opencollective.com/aviator-game1/93ba7db/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Crash Game",
-            "url": "https://crash-gambling-game.com",
-            "image": "https://images.opencollective.com/crash-game/c67c0f2/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -543,7 +525,7 @@
             "url": null,
             "image": "https://images.opencollective.com/josef-kubicek/6bb5ad8/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -553,6 +535,15 @@
             "image": "https://images.opencollective.com/kevinpeckham/194bb8a/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 25,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "SureBet",
+            "url": "https://www.sure.bet/casinos-not-on-gamstop/",
+            "image": "https://images.opencollective.com/wesurebet/0052abd/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -821,15 +812,6 @@
             "name": "Thomas Hermann",
             "url": null,
             "image": "https://images.opencollective.com/novascreen/ef6acf0/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 245,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Kevin Lamping",
-            "url": "https://klamp.in",
-            "image": "https://images.opencollective.com/klamping/26de35c/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 245,
             "source": "opencollective",
