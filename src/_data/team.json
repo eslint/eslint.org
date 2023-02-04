@@ -405,6 +405,17 @@
             "twitter_username": null,
             "github_username": "platinumazure",
             "location": null
+        },
+        {
+            "username": "Rec0iL99",
+            "name": "Joel Mathew Koshy",
+            "title": "ESLint Support Team",
+            "website": "joelmathew.js.org",
+            "avatar_url": "https://avatars.githubusercontent.com/u/56463684?v=4",
+            "bio": "React | Graphql | Typescript",
+            "twitter_username": "Rec0iL99",
+            "github_username": "Rec0iL99",
+            "location": "India"
         }
     ]
 }
