@@ -79,7 +79,6 @@ footer:
     title: सामाजिक मीडिया
     twitter: Twitter
     chat: Discord
-    mailing_list: Google Group
     github: GitHub
     mastodon: Mastodon
   theme_switcher:
@@ -289,11 +288,11 @@ team_page:
   website_team:
     title: Website Team
     description: >
-      Team members who focus specifically on eslint.org
+      टीम के सदस्य जो विशेष रूप से eslint.org पर ध्यान केंद्रित करते हैं।
   support_team:
     title: Support Team
     description: >
-      Folks who help in Discord, discussions, and the mailing list.
+      कलह और चर्चा में मदद करने वाले लोग।.
   alumni:
     title: Alumni
     description: >

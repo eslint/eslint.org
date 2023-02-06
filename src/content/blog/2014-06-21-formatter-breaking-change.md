@@ -55,4 +55,4 @@ Note that this list is not exhaustive. You should check any non-bundled ESLint f
 
 ## Questions?
 
-If you have further questions about this change, please contact the [mailing list](https://groups.google.com/group/eslint).
+If you have further questions about this change, Open a [discussion](https://github.com/eslint/eslint/discussions) or stop by our [Discord server](https://eslint.org/chat).
