@@ -81,7 +81,6 @@ footer:
     title: Soziale Medien
     twitter: Twitter
     chat: Discord
-    mailing_list: Google Group
     github: GitHub
     mastodon: Mastodon
   theme_switcher:
@@ -334,7 +333,7 @@ team_page:
   support_team:
     title: Support Team
     description: >
-      Personen, die bei Discord, Diskussionen und der Mailingliste helfen.
+      Personen, die bei Discord und Diskussionen helfen.
 
   alumni:
     title: Alumni

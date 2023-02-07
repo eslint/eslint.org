@@ -57,4 +57,4 @@ We are keeping the existing JSDoc rules to give users plenty of time to transiti
 
 ## What if I have other questions about this?
 
-Please reach out to us through the [mailing list](https://groups.google.com/group/eslint).
+Open a [discussion](https://github.com/eslint/eslint/discussions) or stop by our [Discord server](https://eslint.org/chat).

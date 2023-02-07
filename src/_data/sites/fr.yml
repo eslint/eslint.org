@@ -81,7 +81,6 @@ footer:
     title: Réseaux Sociaux
     twitter: Twitter
     chat: Discord
-    mailing_list: Google Group
     github: GitHub
     mastodon: Mastodon
   theme_switcher:
@@ -316,11 +315,11 @@ team_page:
   website_team:
     title: Website Team
     description: >
-      Team members who focus specifically on eslint.org
+      Les membres de l'équipe qui se concentrent spécifiquement sur eslint.org.
   support_team:
     title: Support Team
     description: >
-      Folks who help in Discord, discussions, and the mailing list.
+      Les gens qui aident dans Discord et les discussions.
   alumni:
     title: Anciens Membres
     description: >
