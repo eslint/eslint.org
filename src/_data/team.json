@@ -396,6 +396,17 @@
     ],
     "support": [
         {
+            "username": "sam3k",
+            "name": "Samuel Roldan",
+            "title": "ESLint Support Team",
+            "website": "www.sam3k.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/180152?v=4",
+            "bio": "I am a staff frontend engineer with 19 years of experience architecting\r\napplications.",
+            "twitter_username": "sam3k_",
+            "github_username": "sam3k",
+            "location": "New York City"
+        },
+        {
             "username": "platinumazure",
             "name": "Kevin Partington",
             "title": "ESLint Support Team",
