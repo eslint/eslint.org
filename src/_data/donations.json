@@ -259,14 +259,5 @@
         "amount": 5,
         "date": "2023-02-02T13:19:19Z",
         "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4ABKOm",
-        "name": "Lorenz Castillo",
-        "image": "https://avatars.githubusercontent.com/u/83609329?u=8eca2d0b411591f036a711fc7060aae2113a54e8&v=4",
-        "url": "https://github.com/LorenzCastillo",
-        "amount": 5,
-        "date": "2023-01-10T07:57:25Z",
-        "source": "github"
     }
 ]
