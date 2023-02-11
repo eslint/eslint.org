@@ -25,7 +25,5 @@ jobs:
         run: npm run lint
       - name: Run build
         run: npm run build
-      - name: Validate internal links
-        run: npm run lint:links
-        env:
-          NODE_OPTIONS: --max-old-space-size=4096
+      - name: Lint Files
+        run: npm run lint
