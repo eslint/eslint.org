@@ -67,6 +67,16 @@
     &__dropdown-img {
         position: relative;
         box-shadow: var(--shadow-lg);
+        max-width: 330px;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 800px) {
+            max-width: 230px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            max-width: 200px;
+        }
     }
 
     @media only screen and (min-width: 405px) {

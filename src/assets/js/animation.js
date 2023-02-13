@@ -152,4 +152,19 @@
       },
       '+=0.25'
     );
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropImg = document.querySelectorAll('.anim__dropdown-img');
+      const winWidth = window.innerWidth;
+
+      dropImg.forEach(function (img) {
+        var rect = img.getBoundingClientRect();
+
+        if(winWidth < rect.right) {
+          img.style.float = 'right';
+        } else {
+          img.style.float = 'none';
+        }
+      });
+    });
 })();
