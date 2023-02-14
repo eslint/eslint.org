@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 136656,
-        "monthlyDonations": 11388,
+        "annualDonations": 136116,
+        "monthlyDonations": 11343,
         "sponsorCount": 181
     },
     "platinum": [
@@ -195,14 +195,6 @@
             "totalDonations": 1550,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Tailscale",
-            "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
-            "url": "https://tailscale.com",
-            "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "STORIS",
@@ -1048,6 +1040,14 @@
             "name": "Michał Jastrzębowski",
             "image": "https://avatars.githubusercontent.com/u/1092924?u=d546335f03b66c4b40f2a1d1544b3d7d57d318cc&v=4",
             "url": "http://jastrzebowski.pl",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Kenichi Kamiya",
+            "image": "https://avatars.githubusercontent.com/u/1180335?u=ff21c609e29dae512ed7f5911c21d2119b1db390&v=4",
+            "url": "https://kachick.github.io/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
