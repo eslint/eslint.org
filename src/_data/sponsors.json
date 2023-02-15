@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136116,
-        "monthlyDonations": 11343,
-        "sponsorCount": 181
+        "annualDonations": 136176,
+        "monthlyDonations": 11348,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -483,6 +483,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Trevor Burnham",
+            "url": "https://trevorburnham.com",
+            "image": "https://images.opencollective.com/trevorburnham/016f6da/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1517,7 +1526,7 @@
         },
         {
             "name": "Till Sanders",
-            "url": null,
+            "url": "https://till-sanders.de",
             "image": "https://images.opencollective.com/tillsanders/1c9743b/avatar.png",
             "monthlyDonation": 1,
             "totalDonations": 31,
