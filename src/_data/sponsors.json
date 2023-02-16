@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136176,
-        "monthlyDonations": 11348,
-        "sponsorCount": 182
+        "annualDonations": 136776,
+        "monthlyDonations": 11398,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -195,6 +195,14 @@
             "totalDonations": 1550,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Tailscale",
+            "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
+            "url": "https://tailscale.com",
+            "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "STORIS",
@@ -483,6 +491,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Kazuhiro Kobayashi",
+            "url": null,
+            "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1254,14 +1271,6 @@
             "tier": "backer"
         },
         {
-            "name": "Roman Eckert",
-            "image": "https://avatars.githubusercontent.com/u/9392031?u=18c737b16bba6a4373b9b2dc63f7609819dfb5bb&v=4",
-            "url": "https://github.com/romaneckert",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "mizdra",
             "image": "https://avatars.githubusercontent.com/u/9639995?u=dd5dac271b000f6c7883880c1796ce2a95a971b2&v=4",
             "url": "https://mizdra.net",
@@ -1390,6 +1399,14 @@
             "tier": "backer"
         },
         {
+            "name": "Frazer Smith",
+            "image": "https://avatars.githubusercontent.com/u/43814140?u=861818e6d31cb51e8d66433a0e2a3b87eee05181&v=4",
+            "url": "https://yeovilhospital.co.uk/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
@@ -1433,14 +1450,6 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Scout APM Sponsorships",
-            "image": "https://avatars.githubusercontent.com/u/71095532?u=9f5a794ddc3b67ba057ee65e7ce166ad205a76c2&v=4",
-            "url": "https://scoutapm.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
