@@ -348,6 +348,17 @@
             "location": "Lebanon"
         },
         {
+            "username": "fasttime",
+            "name": "Francesco Trotta",
+            "title": "ESLint Committer",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6367844?v=4",
+            "bio": null,
+            "twitter_username": null,
+            "github_username": "fasttime",
+            "location": null
+        },
+        {
             "username": "yeonjuan",
             "name": "YeonJuan",
             "title": "ESLint Committer",
