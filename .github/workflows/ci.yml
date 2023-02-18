@@ -21,7 +21,9 @@ jobs:
         run: npm ci
       - name: Install playground dependencies
         run: npm run install:playground
-      - name: Run build
-        run: npm run build
       - name: Lint Files
         run: npm run lint
+      - name: Run build
+        run: npm run build
+      - name: Validate Internal Links
+        run: npm run validate:links
