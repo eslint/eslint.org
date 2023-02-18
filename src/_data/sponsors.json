@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136776,
-        "monthlyDonations": 11398,
-        "sponsorCount": 183
+        "annualDonations": 136788,
+        "monthlyDonations": 11399,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -897,7 +897,7 @@
         {
             "name": "David Dias",
             "image": "https://avatars.githubusercontent.com/u/237229?u=984c72b4407a6654caf09bb1506d70a678860de7&v=4",
-            "url": "https://linktr.ee/thedaviddias",
+            "url": "https://thedaviddias.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1521,6 +1521,15 @@
             "image": "https://images.opencollective.com/roman-nazarenko/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 60,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
+            "name": "Thanyanit Jongjitragan",
+            "url": "https://github.com/Thanyanit-J",
+            "image": "https://images.opencollective.com/thanyanit-j/d817dac/avatar.png",
+            "monthlyDonation": 1,
+            "totalDonations": 3,
             "source": "opencollective",
             "tier": null
         },
