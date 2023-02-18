@@ -37,7 +37,7 @@
         "lint:fix:js": "eslint --ext=.js,.jsx . --fix",
         "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
         "lint:fix:md": "markdownlint --fix  \"**/*.md\"",
-        "fix": "npm-run-all --parallel lint:fix:*",
+        "fix": "npm-run-all --parallel lint:fix:*"
     },
     "lint-staged": {
         "**/*.{js,jsx}": "eslint --fix",
