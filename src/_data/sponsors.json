@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 136248,
-        "monthlyDonations": 11354,
+        "annualDonations": 136788,
+        "monthlyDonations": 11399,
         "sponsorCount": 184
     },
     "platinum": [
@@ -195,6 +195,14 @@
             "totalDonations": 1550,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Tailscale",
+            "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
+            "url": "https://tailscale.com",
+            "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "STORIS",
@@ -1450,14 +1458,6 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Open Source Software PH",
-            "image": "https://avatars.githubusercontent.com/u/73895857?v=4",
-            "url": "https://ossph.org",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
