@@ -10,8 +10,8 @@ tapRenderInstance.pipe(spot()).pipe(process.stdout);
 const skipPatterns = [
     "https://",
     "fragment-redirect",
-    "_site/sponsors",
-    "_site/docs"
+    path.normalize("_site/sponsors"),
+    "/docs"
 ];
 
 const skipFilter = (report) =>
