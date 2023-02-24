@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 136788,
-        "monthlyDonations": 11399,
+        "annualDonations": 137388,
+        "monthlyDonations": 11449,
         "sponsorCount": 184
     },
     "platinum": [
@@ -179,6 +179,14 @@
             "tier": "backer"
         },
         {
+            "name": "New Relic",
+            "image": "https://avatars.githubusercontent.com/u/31739?v=4",
+            "url": "https://newrelic.com",
+            "monthlyDonation": 100,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "GitBook",
             "url": "https://www.gitbook.com",
             "image": "https://images.opencollective.com/gitbook/d35a8e7/logo.png",
@@ -195,14 +203,6 @@
             "totalDonations": 1550,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Tailscale",
-            "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
-            "url": "https://tailscale.com",
-            "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "STORIS",
