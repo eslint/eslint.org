@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 137388,
-        "monthlyDonations": 11449,
+        "annualDonations": 137928,
+        "monthlyDonations": 11494,
         "sponsorCount": 184
     },
     "platinum": [
@@ -203,6 +203,14 @@
             "totalDonations": 1550,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Tailscale",
+            "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
+            "url": "https://tailscale.com",
+            "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "STORIS",
@@ -669,7 +677,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 100,
+            "totalDonations": 105,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1106,14 +1114,6 @@
             "name": "Jonny Burger",
             "image": "https://avatars.githubusercontent.com/u/1629785?u=5b5d80ddcda83e4780e2391b2d0b475f442289bd&v=4",
             "url": "https://jonny.io",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Kelp",
-            "image": "https://avatars.githubusercontent.com/u/1680868?u=ee384bcd6dda85c2f00dd67dfe7c5b98c41856c6&v=4",
-            "url": "https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
