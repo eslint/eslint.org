@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 137928,
-        "monthlyDonations": 11494,
+        "annualDonations": 137448,
+        "monthlyDonations": 11454,
         "sponsorCount": 184
     },
     "platinum": [
@@ -205,14 +205,6 @@
             "tier": null
         },
         {
-            "name": "Tailscale",
-            "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
-            "url": "https://tailscale.com",
-            "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "STORIS",
             "url": "https://www.storis.com/",
             "image": "https://images.opencollective.com/storis/dfb0e13/logo.png",
@@ -401,6 +393,14 @@
             "name": "Ryan Waskiewicz",
             "image": "https://avatars.githubusercontent.com/u/1930213?u=aac8c767b7a38900fafe0b7f92abb20b1be77d28&v=4",
             "url": "ducktyped.dev",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ye Paing",
+            "image": "https://avatars.githubusercontent.com/u/2662098?u=ef38b1af19e4d2f3c0f2baabe1351c663e40f8a3&v=4",
+            "url": "y3p.io",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
