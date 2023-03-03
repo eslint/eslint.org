@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136728,
-        "monthlyDonations": 11394,
-        "sponsorCount": 177
+        "annualDonations": 137688,
+        "monthlyDonations": 11474,
+        "sponsorCount": 181
     },
     "platinum": [
         {
@@ -78,7 +78,7 @@
             "url": "https://paydaysay.com/",
             "image": "https://images.opencollective.com/payday-say-organization/9cd2467/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 200,
+            "totalDonations": 400,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -196,6 +196,15 @@
             "tier": "backer"
         },
         {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 50,
+            "totalDonations": 1600,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
             "name": "Tailscale",
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
@@ -237,6 +246,15 @@
             "monthlyDonation": 25,
             "source": "github",
             "tier": "backer"
+        },
+        {
+            "name": "Infinum",
+            "url": "https://infinum.com",
+            "image": "https://images.opencollective.com/infinum/9a719cb/avatar.png",
+            "monthlyDonation": 20,
+            "totalDonations": 240,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Agendrix",
@@ -480,7 +498,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -489,7 +507,7 @@
             "url": "https://trevorburnham.com",
             "image": "https://images.opencollective.com/trevorburnham/016f6da/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -507,7 +525,7 @@
             "url": "https://www.fuller-inc.com/",
             "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -516,7 +534,7 @@
             "url": "https://aviatorgame.guru",
             "image": "https://images.opencollective.com/aviator-game1/93ba7db/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -535,6 +553,15 @@
             "image": "https://images.opencollective.com/kevinpeckham/194bb8a/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 30,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "SureBet",
+            "url": "https://www.sure.bet/casinos-not-on-gamstop/",
+            "image": "https://images.opencollective.com/wesurebet/0052abd/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 35,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1327,6 +1354,14 @@
             "name": "BrightCrowd",
             "image": "https://avatars.githubusercontent.com/u/19253501?v=4",
             "url": "https://brightcrowd.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Amer Alimanović",
+            "image": "https://avatars.githubusercontent.com/u/22625371?v=4",
+            "url": "https://github.com/amer8",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
