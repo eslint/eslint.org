@@ -26,6 +26,8 @@
     background-color: var(--lightest-background-color);
 
     @media all and (min-width: 1023px) {
+        height: calc(100vh - 77px);
+        overflow-y: auto;
         border-left: 1px solid var(--divider-color);
         border-inline-end: 1px solid var(--divider-color);
         background-color: inherit;
@@ -47,13 +49,6 @@
     padding: 1rem;
     overflow: auto;
     flex: 1;
-}
-
-.playground__config-and-footer {
-    @media all and (min-width: 1023px) {
-        height: calc(100vh - 77px);
-        overflow-y: auto;
-    }
 }
 
 .playground__config {
