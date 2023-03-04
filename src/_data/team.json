@@ -12,17 +12,6 @@
             "location": "Mountain View, CA"
         },
         {
-            "username": "btmills",
-            "name": "Brandon Mills",
-            "title": "ESLint Technical Steering Committee",
-            "website": "https://bmills.dev",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4",
-            "bio": "Director of Engineering at @drivecapital by day and @eslint maintainer by night",
-            "twitter_username": "brandontmills",
-            "github_username": "btmills",
-            "location": "Columbus, Ohio"
-        },
-        {
             "username": "mdjermanovic",
             "name": "Milos Djermanovic",
             "title": "ESLint Technical Steering Committee",
@@ -190,6 +179,17 @@
             "location": null
         },
         {
+            "username": "btmills",
+            "name": "Brandon Mills",
+            "title": "ESLint Committer",
+            "website": "https://bmills.dev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4",
+            "bio": "Director of Engineering at @drivecapital by day and @eslint maintainer by night",
+            "twitter_username": "brandontmills",
+            "github_username": "btmills",
+            "location": "Columbus, Ohio"
+        },
+        {
             "username": "mysticatea",
             "name": "Toru Nagashima",
             "title": "ESLint Alumnus",
@@ -210,6 +210,17 @@
             "twitter_username": null,
             "github_username": "soda0289",
             "location": null
+        },
+        {
+            "username": "SaraSoueidan",
+            "name": "Sara Soueidan",
+            "title": "ESLint Alumnus",
+            "website": "http://sarasoueidan.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2527933?v=4",
+            "bio": "Independent UI/design engineer.",
+            "twitter_username": "SaraSoueidan",
+            "github_username": "SaraSoueidan",
+            "location": "Lebanon"
         },
         {
             "username": "VictorHom",
@@ -337,15 +348,15 @@
             "location": "New York City and San Francisco"
         },
         {
-            "username": "SaraSoueidan",
-            "name": "Sara Soueidan",
+            "username": "btmills",
+            "name": "Brandon Mills",
             "title": "ESLint Committer",
-            "website": "http://sarasoueidan.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/2527933?v=4",
-            "bio": "Independent UI/design engineer.",
-            "twitter_username": "SaraSoueidan",
-            "github_username": "SaraSoueidan",
-            "location": "Lebanon"
+            "website": "https://bmills.dev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4",
+            "bio": "Director of Engineering at @drivecapital by day and @eslint maintainer by night",
+            "twitter_username": "brandontmills",
+            "github_username": "btmills",
+            "location": "Columbus, Ohio"
         },
         {
             "username": "fasttime",
