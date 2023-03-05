@@ -252,21 +252,21 @@
         "source": "opencollective"
     },
     {
+        "id": "SA_kwHOAFvahM4ABRb2",
+        "name": "Matheus Alcuri",
+        "image": "https://avatars.githubusercontent.com/u/44079893?u=6ab5a4eb5941a9e150b6f77510e1c789908a3f7f&v=4",
+        "url": "https://www.linkedin.com/in/matheusalcuri/",
+        "amount": 5,
+        "date": "2023-03-05T05:01:28Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4ABNy3",
         "name": "Yufan You",
         "image": "https://avatars.githubusercontent.com/u/30581822?u=671a1aee13e77f68470fcb72fffa02fcbc46ee2a&v=4",
         "url": "https://ouuan.moe/about",
         "amount": 5,
         "date": "2023-02-14T04:16:58Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4ABMmw",
-        "name": "Riccardo Linares",
-        "image": "https://avatars.githubusercontent.com/u/10235116?u=1b3d24d4ad6b6c3bc603ab176a62ead133bab030&v=4",
-        "url": "riccardolinares.me",
-        "amount": 5,
-        "date": "2023-02-02T13:19:19Z",
         "source": "github"
     }
 ]
