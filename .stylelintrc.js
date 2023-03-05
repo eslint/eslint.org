@@ -16,7 +16,6 @@ module.exports = {
     indentation: 4,
     "max-line-length": null,
     "no-descending-specificity": null,
-    "no-duplicate-selectors": null,
     "number-leading-zero": null,
     "number-no-trailing-zeros": null,
     "property-no-unknown": null,
