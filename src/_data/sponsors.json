@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 137688,
-        "monthlyDonations": 11474,
-        "sponsorCount": 181
+        "annualDonations": 137508,
+        "monthlyDonations": 11459,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -409,14 +409,6 @@
             "name": "Ye Paing",
             "image": "https://avatars.githubusercontent.com/u/2662098?u=ef38b1af19e4d2f3c0f2baabe1351c663e40f8a3&v=4",
             "url": "y3p.io",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Nobutaka OSHIRO",
-            "image": "https://avatars.githubusercontent.com/u/3583286?u=cf4c1f3e26e13c58dd86227213feedc1d5e2984f&v=4",
-            "url": "https://notakaos.com",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1394,14 +1386,6 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Jordan",
-            "image": "https://avatars.githubusercontent.com/u/49492517?u=dfcff5b478f1cc94c24c1d57367fe928c4445367&v=4",
-            "url": "https://github.com/xulww",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
