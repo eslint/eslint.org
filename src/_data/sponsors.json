@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 137508,
-        "monthlyDonations": 11459,
-        "sponsorCount": 179
+        "annualDonations": 137988,
+        "monthlyDonations": 11499,
+        "sponsorCount": 180
     },
     "platinum": [
         {
@@ -209,6 +209,14 @@
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "gmsllc",
+            "image": "https://avatars.githubusercontent.com/u/9335128?v=4",
+            "url": "https://github.com/gmsllc",
+            "monthlyDonation": 40,
             "source": "github",
             "tier": "backer"
         },
