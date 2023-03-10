@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 144048,
-        "monthlyDonations": 12004,
-        "sponsorCount": 182
+        "annualDonations": 143988,
+        "monthlyDonations": 11999,
+        "sponsorCount": 181
     },
     "platinum": [
         {
@@ -1047,14 +1047,6 @@
             "tier": "backer"
         },
         {
-            "name": "Zhigang Fang",
-            "image": "https://avatars.githubusercontent.com/u/1057756?u=15c3cdff1c715ac27bbc63ccb8f0a1c27eeb3784&v=4",
-            "url": "https://github.com/zhigang1992",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "ELAN e.V.",
             "image": "https://avatars.githubusercontent.com/u/1064602?v=4",
             "url": "https://elan-ev.de",
@@ -1066,14 +1058,6 @@
             "name": "Michał Jastrzębowski",
             "image": "https://avatars.githubusercontent.com/u/1092924?u=d546335f03b66c4b40f2a1d1544b3d7d57d318cc&v=4",
             "url": "http://jastrzebowski.pl",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Kenichi Kamiya",
-            "image": "https://avatars.githubusercontent.com/u/1180335?u=ff21c609e29dae512ed7f5911c21d2119b1db390&v=4",
-            "url": "https://kachick.github.io/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1178,6 +1162,14 @@
             "name": "Moinul Hossain",
             "image": "https://avatars.githubusercontent.com/u/4328772?u=c4e0fd72bd7cdb3751166c8ade8ef253e6f5ba67&v=4",
             "url": "https://moinulhossain.me",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "ABDENNEBI",
+            "image": "https://avatars.githubusercontent.com/u/4634256?u=ce2f009895e84dd68da9da485819cfa6b59b5009&v=4",
+            "url": "https://github.com/achrefabdennebi",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1319,14 +1311,6 @@
             "tier": "backer"
         },
         {
-            "name": "Yo",
-            "image": "https://avatars.githubusercontent.com/u/13982759?u=2e68ef5c601f388ddd3dff25ed3473c5f7019990&v=4",
-            "url": "https://github.com/ungarson",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Johannes Konings",
             "image": "https://avatars.githubusercontent.com/u/14806640?u=3586bd6e631a350aec9ff1f2cc31615f72233244&v=4",
             "url": "https://johanneskonings.dev/",
@@ -1450,6 +1434,14 @@
             "name": "Team-Avalon",
             "image": "https://avatars.githubusercontent.com/u/78931833?v=4",
             "url": "opencollective.com/limasol",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Nikita Lukyanenko",
+            "image": "https://avatars.githubusercontent.com/u/126616965?u=7cf3fec05cf0d349faa79b7c03cc9fde2eabf279&v=4",
+            "url": "photon-solutions.io",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"

@@ -1,5 +1,14 @@
 [
     {
+        "id": "8rzownxl-9e50pxy9-9736ymvb-dgk7j43a",
+        "name": "DLTx Pty Ltd",
+        "url": "https://dltx.io",
+        "image": "https://images.opencollective.com/dltxio/5df06df/logo.png",
+        "amount": 20,
+        "date": "2023-03-09T07:33:43.485Z",
+        "source": "opencollective"
+    },
+    {
         "id": "8rzownxl-9e50pxy9-wgj6ymvb-dgk7j43a",
         "name": "Sayz Lim",
         "url": "https://sayzlim.net",
@@ -231,15 +240,6 @@
         "image": "https://images.opencollective.com/hans-de-feber/avatar.png",
         "amount": 10,
         "date": "2022-03-22T14:52:38.750Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "jrkx5lmn-v904qjw7-d3bp8bwa-7zdygoe3",
-        "name": "Shivansh Srivastava",
-        "url": null,
-        "image": "https://images.opencollective.com/shivansh-srivastava/avatar.png",
-        "amount": 10,
-        "date": "2022-03-22T14:43:55.528Z",
         "source": "opencollective"
     },
     {
