@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143988,
-        "monthlyDonations": 11999,
-        "sponsorCount": 181
+        "annualDonations": 144048,
+        "monthlyDonations": 12004,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -1130,6 +1130,14 @@
             "name": "Jared Collier",
             "image": "https://avatars.githubusercontent.com/u/2757601?v=4",
             "url": "https://github.com/autoboxer",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Matt Chestnut",
+            "image": "https://avatars.githubusercontent.com/u/3226829?u=ebfd201b89f48a0cd14253d15f307e2cd8bad554&v=4",
+            "url": "www.mattchestnut.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
