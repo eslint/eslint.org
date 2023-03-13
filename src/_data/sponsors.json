@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 144048,
-        "monthlyDonations": 12004,
-        "sponsorCount": 182
+        "annualDonations": 143328,
+        "monthlyDonations": 11944,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -192,15 +192,6 @@
             "url": "https://newrelic.com",
             "monthlyDonation": 100,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "GitBook",
-            "url": "https://www.gitbook.com",
-            "image": "https://images.opencollective.com/gitbook/d35a8e7/logo.png",
-            "monthlyDonation": 50,
-            "totalDonations": 750,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1391,14 +1382,6 @@
             "tier": "backer"
         },
         {
-            "name": "Frazer Smith",
-            "image": "https://avatars.githubusercontent.com/u/43814140?u=861818e6d31cb51e8d66433a0e2a3b87eee05181&v=4",
-            "url": "https://yeovilhospital.co.uk/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
@@ -1410,14 +1393,6 @@
             "name": "Andrea Mazzucchelli",
             "image": "https://avatars.githubusercontent.com/u/60042277?u=ae98af9bebf42b3137986d38d38b5d1dfd609be8&v=4",
             "url": "https://www.linkedin.com/in/andrea-m-0b40051bb",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ugi Stelmokaitis",
-            "image": "https://avatars.githubusercontent.com/u/63953745?u=4ee0716e3b0a027712047ed8824d0141c370e9ad&v=4",
-            "url": "ugistelmokaitis.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
