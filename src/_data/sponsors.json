@@ -1094,14 +1094,6 @@
             "tier": "backer"
         },
         {
-            "name": "Dan",
-            "image": "https://avatars.githubusercontent.com/u/2481552?v=4",
-            "url": "https://danminkevitch.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Maarten Van Hoof",
             "image": "https://avatars.githubusercontent.com/u/2543633?u=877bea1d5cbf861c347b1db16e9e23a3cf7b8a5c&v=4",
             "url": "mrtnvh.com",
@@ -1409,6 +1401,14 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Rakesh Potnuru",
+            "image": "https://avatars.githubusercontent.com/u/70439799?u=bec24b4e5ffba041d3c967c787485386a8cf7b09&v=4",
+            "url": "https://itsrakesh.co",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
