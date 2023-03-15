@@ -241,14 +241,5 @@
         "amount": 5,
         "date": "2023-03-05T05:01:28Z",
         "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4ABNy3",
-        "name": "Yufan You",
-        "image": "https://avatars.githubusercontent.com/u/30581822?u=671a1aee13e77f68470fcb72fffa02fcbc46ee2a&v=4",
-        "url": "https://ouuan.moe/about",
-        "amount": 5,
-        "date": "2023-02-14T04:16:58Z",
-        "source": "github"
     }
 ]

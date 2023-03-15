@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143328,
-        "monthlyDonations": 11944,
-        "sponsorCount": 179
+        "annualDonations": 143268,
+        "monthlyDonations": 11939,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -1409,14 +1409,6 @@
             "name": "Rakesh Potnuru",
             "image": "https://avatars.githubusercontent.com/u/70439799?u=bec24b4e5ffba041d3c967c787485386a8cf7b09&v=4",
             "url": "https://itsrakesh.co",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Team-Avalon",
-            "image": "https://avatars.githubusercontent.com/u/78931833?v=4",
-            "url": "opencollective.com/limasol",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
