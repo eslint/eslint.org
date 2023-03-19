@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143268,
-        "monthlyDonations": 11939,
-        "sponsorCount": 178
+        "annualDonations": 143208,
+        "monthlyDonations": 11934,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -515,7 +515,7 @@
             "url": "https://radwebhosting.com/",
             "image": "https://images.opencollective.com/radwebhosting/23b5940/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -873,14 +873,6 @@
             "name": "Jordan Harband",
             "image": "https://avatars.githubusercontent.com/u/45469?u=6ab74b3b934f9659a90b588062c2c4328e40c6be&v=4",
             "url": "https://github.com/ljharb",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alan Mendelevich",
-            "image": "https://avatars.githubusercontent.com/u/179076?u=97951e8b8995b1a8556dd0eca3f380c719da383b&v=4",
-            "url": "https://blog.ailon.org",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
