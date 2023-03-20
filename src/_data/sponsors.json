@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143208,
-        "monthlyDonations": 11934,
-        "sponsorCount": 177
+        "annualDonations": 143148,
+        "monthlyDonations": 11929,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -340,7 +340,7 @@
             "url": null,
             "image": "https://images.opencollective.com/john-hamilton/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 320,
+            "totalDonations": 330,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -454,7 +454,7 @@
         },
         {
             "name": "Kamal",
-            "image": "https://avatars.githubusercontent.com/u/12810203?v=4",
+            "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
             "url": "https://github.com/Kamalnrf",
             "monthlyDonation": 10,
             "source": "github",
@@ -913,14 +913,6 @@
             "name": "Christophe Hurpeau",
             "image": "https://avatars.githubusercontent.com/u/302891?u=425d1bd46e8899798b80b2dbc5173fa0cf61f33a&v=4",
             "url": "https://christophe.hurpeau.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Sean Kennedy",
-            "image": "https://avatars.githubusercontent.com/u/414475?u=02a094d2d568aa9d65132d8fd42a7eeb2b1a02fa&v=4",
-            "url": "https://www.codeserious.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
