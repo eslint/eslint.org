@@ -64,7 +64,8 @@ organization. A full list of the current projects include:
   We took this one over from the
   [@nodesecurity](https://github.com/nodesecurity) team, but
   [@nzakas](https://github.com/nzakas) is still maintaining it
-* [`eslint-utils`](https://github.com/eslint-community/eslint-utils) and
+* [`eslint-plugin-eslint-comments`](https://github.com/mysticatea/eslint-plugin-eslint-comments),
+  [`eslint-utils`](https://github.com/eslint-community/eslint-utils) and
   [`regexpp`](https://github.com/eslint-community/regexpp)  
   We created a fork from [@mysticatea](https://github.com/mysticatea)'s repos
   and published them under the
@@ -77,7 +78,6 @@ originally authored by [@mysticatea](https://github.com/mysticatea) as well:
   We'll work on getting all
   [`eslint-plugin-es-x`](https://github.com/eslint-community/eslint-plugin-es-x)
   features merged as well
-* [`eslint-plugin-eslint-comments`](https://github.com/mysticatea/eslint-plugin-eslint-comments)
 * [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node)  
   We'll work on getting all
   [`eslint-plugin-n`](https://github.com/eslint-community/eslint-plugin-n)
@@ -122,7 +122,12 @@ with to determine whether to accept a project into the organization.
 
 We hope that this new `eslint-community` organization will help us further
 support the awesome ESLint ecosystem and ensure that the community can continue
-to rely on these high-value, widely depended upon projects for years to come. Ensuring that the ESLint ecosystem remains vibrant and without stagnation is a key goal of the project as a whole, and we believe the `eslint-community` organization will only increase the confidence of ESLint users when relying on community-maintained projects.
+to rely on these high-value, widely depended upon projects for years to come.
+Ensuring that the ESLint ecosystem remains vibrant and without stagnation is a
+key goal of the project as a whole, and we believe the `eslint-community`
+organization will only increase the confidence of ESLint users when relying on
+community-maintained projects.
 
-If you have any questions about the `eslint-community` organization, feel free to ask them on
+If you have any questions about the `eslint-community` organization, feel free
+to ask them on
 [the official ESLint Discord](https://eslint.org/chat/eslint-community).
