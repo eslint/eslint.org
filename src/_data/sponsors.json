@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 143148,
-        "monthlyDonations": 11929,
-        "sponsorCount": 176
+        "annualDonations": 142968,
+        "monthlyDonations": 11914,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -456,14 +456,6 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
             "url": "https://github.com/Kamalnrf",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Routable",
-            "image": "https://avatars.githubusercontent.com/u/34727309?v=4",
-            "url": "https://github.com/routablehq",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -998,6 +990,14 @@
             "tier": "backer"
         },
         {
+            "name": "DanoR",
+            "image": "https://avatars.githubusercontent.com/u/894004?u=93800a4c18557e6a84b905d90000587e389017b9&v=4",
+            "url": "https://danor.app/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Jimmy Bradshaw",
             "image": "https://avatars.githubusercontent.com/u/916017?u=f9be66668f243eecd298b6eea9bb4410f9718b32&v=4",
             "url": "https://github.com/bradshjg",
@@ -1166,14 +1166,6 @@
             "tier": "backer"
         },
         {
-            "name": "PENG Rui",
-            "image": "https://avatars.githubusercontent.com/u/6322673?u=bfd7ed8bc1a1549a0ccd166883a7c55dc2993814&v=4",
-            "url": "https://github.com/IndexXuan",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Ingo Steinke",
             "image": "https://avatars.githubusercontent.com/u/6377941?u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
             "url": "https://www.ingo-steinke.com",
@@ -1257,14 +1249,6 @@
             "name": "Fatih Aygün",
             "image": "https://avatars.githubusercontent.com/u/10846005?u=5f14cc2e916a6f2f1620bc5b3bce5e012c5a8bc1&v=4",
             "url": "https://github.com/cyco130",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "James Ives",
-            "image": "https://avatars.githubusercontent.com/u/10888441?u=91e4be3976dd596111a9998f9bd3e8b557e6563a&v=4",
-            "url": "https://jamesiv.es",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
