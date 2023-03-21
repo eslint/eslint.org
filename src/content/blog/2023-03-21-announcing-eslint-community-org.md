@@ -27,6 +27,8 @@ continue with ongoing maintenance and development. Our next step is to create
 the `eslint-community` GitHub organization as a home for high-value projects in
 the ESLint ecosystem.
 
+## About the organization
+
 As you can read in the
 ["`eslint-community` GitHub organization" RFC](https://github.com/eslint/rfcs/tree/main/designs/2022-community-eslint-org),
 the goal of this new organization is to have a place where community members can
@@ -40,6 +42,8 @@ The Community Core team (which currently consists of
 maintainers will make sure these packages stay up-to-date with newer ESLint
 releases, and they don't hold the wider community back by depending on a single
 person's GitHub or npm account.
+
+### Organization projects
 
 You might have noticed that some of your most beloved ESLint-related packages
 have already been moved over to or been forked by the new `eslint-community`
@@ -81,6 +85,8 @@ originally authored by [@mysticatea](https://github.com/mysticatea) as well:
 
 Of course, we don't want to stop there.
 
+## Submitting projects for the organization
+
 If you think your project would be a good fit for the new `eslint-community`
 organization, or you're depending on a project that's currently unmaintained and
 want to have the community to adopt it, you can contact the Community Core team
@@ -112,8 +118,11 @@ following criteria:
 These criteria aren't written in stone, but are the guidelines we're beginning
 with to determine whether to accept a project into the organization.
 
+## Conclusion
+
 We hope that this new `eslint-community` organization will help us further
 support the awesome ESLint ecosystem and ensure that the community can continue
-to rely on these high-value widely depended upon projects for years to come.  
-If you have any further questions, feel free to ask them on
+to rely on these high-value, widely depended upon projects for years to come. Ensuring that the ESLint ecosystem remains vibrant and without stagnation is a key goal of the project as a whole, and we believe the `eslint-community` organization will only increase the confidence of ESLint users when relying on community-maintained projects.
+
+If you have any questions about the `eslint-community` organization, feel free to ask them on
 [the official ESLint Discord](https://eslint.org/chat/eslint-community).
