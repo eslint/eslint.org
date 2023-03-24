@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142968,
-        "monthlyDonations": 11914,
-        "sponsorCount": 174
+        "annualDonations": 142908,
+        "monthlyDonations": 11909,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -969,14 +969,6 @@
             "name": "Gavin Lloyd",
             "image": "https://avatars.githubusercontent.com/u/744538?u=0a08af9abb9fbf841382190be47f67a679bee4fa&v=4",
             "url": "gavinhungry.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Jirka Svoboda",
-            "image": "https://avatars.githubusercontent.com/u/761766?u=1771454e0852904ddf71fe74e493e228331dd27a&v=4",
-            "url": "https://github.com/svobik7",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
