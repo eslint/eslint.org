@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142908,
-        "monthlyDonations": 11909,
-        "sponsorCount": 173
+        "annualDonations": 141708,
+        "monthlyDonations": 11809,
+        "sponsorCount": 172
     },
     "platinum": [
         {
@@ -184,14 +184,6 @@
             "monthlyDonation": 100,
             "totalDonations": 4500,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "New Relic",
-            "image": "https://avatars.githubusercontent.com/u/31739?v=4",
-            "url": "https://newrelic.com",
-            "monthlyDonation": 100,
-            "source": "github",
             "tier": "backer"
         },
         {
@@ -660,7 +652,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 105,
+            "totalDonations": 110,
             "source": "opencollective",
             "tier": "backer"
         },
