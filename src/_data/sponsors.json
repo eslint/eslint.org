@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 141708,
-        "monthlyDonations": 11809,
-        "sponsorCount": 172
+        "annualDonations": 140424,
+        "monthlyDonations": 11702,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -169,14 +169,6 @@
         }
     ],
     "backers": [
-        {
-            "name": "kartenmacherei",
-            "image": "https://avatars.githubusercontent.com/u/12070167?v=4",
-            "url": "https://www.kartenmacherei.de",
-            "monthlyDonation": 117,
-            "source": "github",
-            "tier": "backer"
-        },
         {
             "name": "Yannick Croissant",
             "url": "https://yannick.cr",
@@ -1118,6 +1110,14 @@
             "tier": "backer"
         },
         {
+            "name": "Razvan Vuscan",
+            "image": "https://avatars.githubusercontent.com/u/4265489?u=63e52b4b9f1b0c16b06dcf49bd3c853b52cf101e&v=4",
+            "url": "https://github.com/RazvanVuscan",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Moinul Hossain",
             "image": "https://avatars.githubusercontent.com/u/4328772?u=c4e0fd72bd7cdb3751166c8ade8ef253e6f5ba67&v=4",
             "url": "https://moinulhossain.me",
@@ -1313,6 +1313,14 @@
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ossama Rafique",
+            "image": "https://avatars.githubusercontent.com/u/32899991?u=17fd6648c9442c2de0f27c1fee04cea0f9a30476&v=4",
+            "url": "https://ossamarafique.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
