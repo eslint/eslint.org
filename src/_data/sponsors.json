@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 140424,
-        "monthlyDonations": 11702,
+        "annualDonations": 140364,
+        "monthlyDonations": 11697,
         "sponsorCount": 173
     },
     "platinum": [
@@ -392,14 +392,6 @@
             "name": "Ryan Waskiewicz",
             "image": "https://avatars.githubusercontent.com/u/1930213?u=aac8c767b7a38900fafe0b7f92abb20b1be77d28&v=4",
             "url": "ducktyped.dev",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ye Paing",
-            "image": "https://avatars.githubusercontent.com/u/2662098?u=ef38b1af19e4d2f3c0f2baabe1351c663e40f8a3&v=4",
-            "url": "y3p.io",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1161,6 +1153,14 @@
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
             "url": "https://mattiaerre.medium.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Raymond Luong",
+            "image": "https://avatars.githubusercontent.com/u/6905162?u=2041c3f15f8ba0ee661fad8e1b40b6b1fae63e62&v=4",
+            "url": "raymondluong.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
