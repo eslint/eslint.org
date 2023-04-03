@@ -232,14 +232,5 @@
         "amount": 10,
         "date": "2022-03-23T01:27:27.801Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4ABRb2",
-        "name": "Matheus Alcuri",
-        "image": "https://avatars.githubusercontent.com/u/44079893?u=6ab5a4eb5941a9e150b6f77510e1c789908a3f7f&v=4",
-        "url": "https://www.linkedin.com/in/matheusalcuri/",
-        "amount": 5,
-        "date": "2023-03-05T05:01:28Z",
-        "source": "github"
     }
 ]
