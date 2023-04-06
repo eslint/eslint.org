@@ -181,7 +181,7 @@
         {
             "username": "btmills",
             "name": "Brandon Mills",
-            "title": "ESLint Committer",
+            "title": "ESLint Alumnus",
             "website": "https://bmills.dev",
             "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4",
             "bio": "Director of Engineering at @drivecapital by day and @eslint maintainer by night",
@@ -346,17 +346,6 @@
             "twitter_username": null,
             "github_username": "bmish",
             "location": "New York City and San Francisco"
-        },
-        {
-            "username": "btmills",
-            "name": "Brandon Mills",
-            "title": "ESLint Committer",
-            "website": "https://bmills.dev",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4",
-            "bio": "Director of Engineering at @drivecapital by day and @eslint maintainer by night",
-            "twitter_username": "brandontmills",
-            "github_username": "btmills",
-            "location": "Columbus, Ohio"
         },
         {
             "username": "fasttime",

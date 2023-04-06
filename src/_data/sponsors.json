@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 140124,
-        "monthlyDonations": 11677,
+        "annualDonations": 139704,
+        "monthlyDonations": 11642,
         "sponsorCount": 170
     },
     "platinum": [
@@ -192,14 +192,6 @@
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "gmsllc",
-            "image": "https://avatars.githubusercontent.com/u/9335128?v=4",
-            "url": "https://github.com/gmsllc",
-            "monthlyDonation": 40,
             "source": "github",
             "tier": "backer"
         },
@@ -1295,6 +1287,14 @@
             "name": "Ossama Rafique",
             "image": "https://avatars.githubusercontent.com/u/32899991?u=17fd6648c9442c2de0f27c1fee04cea0f9a30476&v=4",
             "url": "https://ossamarafique.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yubin Karki",
+            "image": "https://avatars.githubusercontent.com/u/36847479?u=e8124222c911b302c5f3d73d99fcd443c908ffa5&v=4",
+            "url": "yubinkarki.com.np",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
