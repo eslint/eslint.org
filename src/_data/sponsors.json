@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 139704,
-        "monthlyDonations": 11642,
+        "annualDonations": 139812,
+        "monthlyDonations": 11651,
         "sponsorCount": 170
     },
     "platinum": [
@@ -440,6 +440,14 @@
             "name": "ProjectDiscovery",
             "image": "https://avatars.githubusercontent.com/u/50994705?v=4",
             "url": "https://projectdiscovery.io",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yusuke Hakamaya",
+            "image": "https://avatars.githubusercontent.com/u/65002858?u=7ef80ed24a13792b0153966cc9084b4f7d5a1605&v=4",
+            "url": "https://www.yhakamay.me",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1406,15 +1414,6 @@
             "image": "https://images.opencollective.com/roman-nazarenko/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 80,
-            "source": "opencollective",
-            "tier": null
-        },
-        {
-            "name": "Thanyanit Jongjitragan",
-            "url": "https://github.com/Thanyanit-J",
-            "image": "https://images.opencollective.com/thanyanit-j/d817dac/avatar.png",
-            "monthlyDonation": 1,
-            "totalDonations": 4,
             "source": "opencollective",
             "tier": null
         },
