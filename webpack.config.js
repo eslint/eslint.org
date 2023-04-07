@@ -16,7 +16,7 @@ module.exports = (env, { mode }) => ({
     },
     output: {
         filename: "[name].js",
-        path: path.resolve(__dirname, "src/assets/js")
+        path: mode === "development" ? path.resolve(__dirname, "src/assets/js") : path.resolve(__dirname, "_site/assets/js")
     },
     cache: {
         type: "filesystem",
