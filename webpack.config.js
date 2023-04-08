@@ -5,8 +5,8 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 /**
  * webpack configuration
- * @param {import("webpack").ConfigurationFactory} env
- * @param {import("webpack").ConfigurationFactory} argv
+ * @param {Record<string, any>} env
+ * @param {Record<string, any>} argv
  * @returns {import("webpack").Configuration}
  * a valid webpack configuration for development and production mode
  */
