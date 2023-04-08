@@ -1020,6 +1020,14 @@
             "tier": "backer"
         },
         {
+            "name": "Gustav Hansen",
+            "image": "https://avatars.githubusercontent.com/u/2244375?u=5240e0f277601e08bdcffd579e395a57f8b23e3f&v=4",
+            "url": "gu.stav.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Maarten Van Hoof",
             "image": "https://avatars.githubusercontent.com/u/2543633?u=877bea1d5cbf861c347b1db16e9e23a3cf7b8a5c&v=4",
             "url": "mrtnvh.com",
@@ -1303,14 +1311,6 @@
             "name": "Yubin Karki",
             "image": "https://avatars.githubusercontent.com/u/36847479?u=e8124222c911b302c5f3d73d99fcd443c908ffa5&v=4",
             "url": "yubinkarki.com.np",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Viktor Chernodub",
-            "image": "https://avatars.githubusercontent.com/u/37013688?u=2614f4d310c2b39ff3633b0b016acbfacab5c3c4&v=4",
-            "url": "chernodub.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
