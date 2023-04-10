@@ -108,3 +108,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# playground webpack outputs
+playground.js.map
+playground.js

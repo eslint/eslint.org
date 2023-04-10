@@ -3,14 +3,20 @@
 const path = require("path");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
-/** @type {import("webpack").Configuration} */
-module.exports = {
+/**
+ * webpack configuration
+ * @param {Record<string, any>} env
+ * @param {Record<string, any>} argv
+ * @returns {import("webpack").Configuration}
+ * a valid webpack configuration for development and production mode
+ */
+module.exports = (env, { mode }) => ({
     entry: {
         playground: path.resolve(__dirname, "src/playground/index.js")
     },
     output: {
         filename: "[name].js",
-        path: path.resolve(__dirname, "_site/assets/js")
+        path: mode === "development" ? path.resolve(__dirname, "src/assets/js") : path.resolve(__dirname, "_site/assets/js")
     },
     cache: {
         type: "filesystem",
@@ -22,10 +28,8 @@ module.exports = {
         extensions: [".js", ".jsx"],
         mainFields: ["browser", "main", "module"]
     },
-    plugins: [
-        new NodePolyfillPlugin()
-    ],
-    devtool: "source-map",
+    plugins: [new NodePolyfillPlugin()],
+    ...(mode === "development" ? { devtool: "source-map" } : {}),
     module: {
         rules: [
             {
@@ -54,4 +58,4 @@ module.exports = {
         ]
     },
     stats: "normal"
-};
+});
