@@ -309,6 +309,17 @@
             "twitter_username": "__ANIX__",
             "github_username": "anikethsaha",
             "location": null
+        },
+        {
+            "username": "yeonjuan",
+            "name": "YeonJuan",
+            "title": "ESLint Alumnus",
+            "website": "https://github.com/yeonjuan/dev-blog",
+            "avatar_url": "https://avatars.githubusercontent.com/u/41323220?v=4",
+            "bio": "Developer",
+            "twitter_username": null,
+            "github_username": "yeonjuan",
+            "location": "South Korea"
         }
     ],
     "reviewers": [
@@ -357,17 +368,6 @@
             "twitter_username": null,
             "github_username": "fasttime",
             "location": null
-        },
-        {
-            "username": "yeonjuan",
-            "name": "YeonJuan",
-            "title": "ESLint Committer",
-            "website": "https://github.com/yeonjuan/dev-blog",
-            "avatar_url": "https://avatars.githubusercontent.com/u/41323220?v=4",
-            "bio": "Developer",
-            "twitter_username": null,
-            "github_username": "yeonjuan",
-            "location": "South Korea"
         }
     ],
     "website": [
