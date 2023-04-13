@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 139692,
-        "monthlyDonations": 11641,
+        "annualDonations": 139752,
+        "monthlyDonations": 11646,
         "sponsorCount": 168
     },
     "platinum": [
@@ -416,6 +416,14 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
             "url": "https://github.com/Kamalnrf",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "xtomoya",
+            "image": "https://avatars.githubusercontent.com/u/40332021?u=60991c16fda1072cf7b2804a7db17867a0090c05&v=4",
+            "url": "https://github.com/xtomoya",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1326,14 +1334,6 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Rakesh Potnuru",
-            "image": "https://avatars.githubusercontent.com/u/70439799?u=bec24b4e5ffba041d3c967c787485386a8cf7b09&v=4",
-            "url": "https://itsrakesh.co",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
