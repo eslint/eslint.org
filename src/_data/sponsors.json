@@ -461,6 +461,15 @@
             "tier": "backer"
         },
         {
+            "name": "Nicholas Martin",
+            "url": null,
+            "image": "https://images.opencollective.com/builtbyrebels/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Kazuhiro Kobayashi",
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
@@ -1214,14 +1223,6 @@
             "name": "Sebastian Silbermann",
             "image": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
             "url": "https://solverfox.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Michael Rotarius",
-            "image": "https://avatars.githubusercontent.com/u/13236924?u=c07053c05ab6ed3abd3a11a303186219b60c8adf&v=4",
-            "url": "https://github.com/Mirobit",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
