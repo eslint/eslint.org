@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139752,
-        "monthlyDonations": 11646,
-        "sponsorCount": 168
+        "annualDonations": 139692,
+        "monthlyDonations": 11641,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -887,14 +887,6 @@
             "name": "Forrest Desjardins",
             "image": "https://avatars.githubusercontent.com/u/502491?u=1658efb692d4da77a8f68251b9dd8d7a3bdf7aab&v=4",
             "url": "https://aeralta.tech/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Kazuhiro Kobayashi",
-            "image": "https://avatars.githubusercontent.com/u/548508?u=50c8e66925f6aa9da3ef83a39cb308750a13d6f0&v=4",
-            "url": "https://kzhrk.dev/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
