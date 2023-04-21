@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 139692,
-        "monthlyDonations": 11641,
+        "annualDonations": 142032,
+        "monthlyDonations": 11836,
         "sponsorCount": 167
     },
     "platinum": [
@@ -81,6 +81,15 @@
         }
     ],
     "bronze": [
+        {
+            "name": "Twicsy",
+            "url": "https://twicsy.com/buy-instagram-likes",
+            "image": "https://images.opencollective.com/twicsy/7af290f/avatar.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "PayDay Say",
             "url": "https://paydaysay.com/",
@@ -927,14 +936,6 @@
             "name": "Ryan Macy",
             "image": "https://avatars.githubusercontent.com/u/829581?u=7126d6768d3e200ee5dfd3485cd50465cb8e85f4&v=4",
             "url": "https://macy.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "DanoR",
-            "image": "https://avatars.githubusercontent.com/u/894004?u=93800a4c18557e6a84b905d90000587e389017b9&v=4",
-            "url": "https://danor.app/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
