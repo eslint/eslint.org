@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142032,
-        "monthlyDonations": 11836,
-        "sponsorCount": 167
+        "annualDonations": 141852,
+        "monthlyDonations": 11821,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -363,14 +363,6 @@
             "monthlyDonation": 10,
             "totalDonations": 508,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Miles Johnson",
-            "image": "https://avatars.githubusercontent.com/u/143744?u=1426cc72e6858364971e280555e7e1f9fd0ef323&v=4",
-            "url": "https://github.com/milesj",
-            "monthlyDonation": 10,
-            "source": "github",
             "tier": "backer"
         },
         {
@@ -984,14 +976,6 @@
             "name": "Charles Severance",
             "image": "https://avatars.githubusercontent.com/u/1197222?u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
             "url": "http://www.dr-chuck.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "MBJ",
-            "image": "https://avatars.githubusercontent.com/u/1220722?u=e348cce6ef8ec9d82739150ef1c6c32ee25cb788&v=4",
-            "url": "https://github.com/thiswallz",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
