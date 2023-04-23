@@ -232,5 +232,14 @@
         "amount": 5,
         "date": "2022-03-29T14:43:28.396Z",
         "source": "opencollective"
+    },
+    {
+        "id": "SA_kwHOAFvahM4ABY4H",
+        "name": "Max Marienko",
+        "image": "https://avatars.githubusercontent.com/u/64919508?u=9e60da49341debeb23d6cb9b2ba553def22d612f&v=4",
+        "url": "https://github.com/mmarienko",
+        "amount": 5,
+        "date": "2023-04-22T21:50:56Z",
+        "source": "github"
     }
 ]

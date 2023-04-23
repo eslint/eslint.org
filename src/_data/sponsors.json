@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 141852,
-        "monthlyDonations": 11821,
-        "sponsorCount": 165
+        "annualDonations": 141912,
+        "monthlyDonations": 11826,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -1136,6 +1136,14 @@
             "name": "Paul Foryt",
             "image": "https://avatars.githubusercontent.com/u/7229568?u=479eec3115957259c1a11cc5093d2b3244d94e6c&v=4",
             "url": "https://foryt.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Alex Eagle",
+            "image": "https://avatars.githubusercontent.com/u/7249538?u=7421c6159c0a6861ab604f0ef51fe4b1c64edb66&v=4",
+            "url": "https://github.com/ilovepixelart",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
