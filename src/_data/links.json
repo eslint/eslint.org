@@ -5,16 +5,16 @@
     "mastodon": "https://fosstodon.org/@eslint",
 
     "blog": "/blog",
-    "docs": "/docs",
+    "docs": "/docs/latest/",
     "playground": "/play",
-    "getStarted": "/docs/user-guide/getting-started",
+    "getStarted": "/docs/latest/use/getting-started",
     "sponsors": "/sponsors",
     "branding": "/branding",
     "store": "https://eslint.threadless.com",
     "team": "/team",
 
-    "configuring": "/docs/user-guide/configuring/",
-    "fixProblems": "/docs/user-guide/command-line-interface#fixing-problems",
+    "configuring": "/docs/latest/use/configure/",
+    "fixProblems": "/docs/latest/use/command-line-interface#fix-problems",
 
     "donate": "/donate",
     "openCollective": "https://opencollective.com/eslint",
