@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 141912,
-        "monthlyDonations": 11826,
-        "sponsorCount": 166
+        "annualDonations": 142212,
+        "monthlyDonations": 11851,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -229,6 +229,14 @@
             "monthlyDonation": 25,
             "totalDonations": 1275,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Phil Parsons",
+            "image": "https://avatars.githubusercontent.com/u/441581?u=dc52f16579894fcb4ea1ef11c4044e9f9920787b&v=4",
+            "url": "https://github.com/p-m-p",
+            "monthlyDonation": 25,
+            "source": "github",
             "tier": "backer"
         },
         {
@@ -628,7 +636,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 110,
+            "totalDonations": 115,
             "source": "opencollective",
             "tier": "backer"
         },
