@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142212,
-        "monthlyDonations": 11851,
-        "sponsorCount": 167
+        "annualDonations": 130212,
+        "monthlyDonations": 10851,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -25,15 +25,6 @@
         }
     ],
     "gold": [
-        {
-            "name": "RIDI",
-            "url": "https://ridicorp.com/career/",
-            "image": "https://images.opencollective.com/ridi-corporation/175dcf3/logo.png",
-            "monthlyDonation": 1000,
-            "totalDonations": 6000,
-            "source": "opencollective",
-            "tier": "gold-sponsor"
-        },
         {
             "name": "Salesforce",
             "url": "https://engineering.salesforce.com",
