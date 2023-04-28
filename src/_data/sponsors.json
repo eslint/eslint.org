@@ -1036,6 +1036,14 @@
             "tier": "backer"
         },
         {
+            "name": "UmedaTakefumi",
+            "image": "https://avatars.githubusercontent.com/u/2947983?v=4",
+            "url": "https://github.com/UmedaTakefumi",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Matt Chestnut",
             "image": "https://avatars.githubusercontent.com/u/3226829?u=ebfd201b89f48a0cd14253d15f307e2cd8bad554&v=4",
             "url": "www.mattchestnut.com",
@@ -1063,14 +1071,6 @@
             "name": "Hayden Bleasel",
             "image": "https://avatars.githubusercontent.com/u/4142719?u=5aebd93316de5a1d41b6976c31c130b39d1c8d3d&v=4",
             "url": "https://haydenbleasel.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Razvan Vuscan",
-            "image": "https://avatars.githubusercontent.com/u/4265489?u=63e52b4b9f1b0c16b06dcf49bd3c853b52cf101e&v=4",
-            "url": "https://github.com/RazvanVuscan",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1276,14 +1276,6 @@
             "tier": "backer"
         },
         {
-            "name": "Ossama Rafique",
-            "image": "https://avatars.githubusercontent.com/u/32899991?u=17fd6648c9442c2de0f27c1fee04cea0f9a30476&v=4",
-            "url": "https://ossamarafique.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Yubin Karki",
             "image": "https://avatars.githubusercontent.com/u/36847479?u=e8124222c911b302c5f3d73d99fcd443c908ffa5&v=4",
             "url": "yubinkarki.com.np",
@@ -1319,6 +1311,14 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "wojtekLs",
+            "image": "https://avatars.githubusercontent.com/u/109670049?u=b3e747a5a6378cf7f5a9a857ed1fa741a5d8e27a&v=4",
+            "url": "https://github.com/wojtekLs",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
