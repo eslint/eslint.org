@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130212,
-        "monthlyDonations": 10851,
-        "sponsorCount": 166
+        "annualDonations": 130272,
+        "monthlyDonations": 10856,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -1087,6 +1087,14 @@
             "name": "Matan Kushner",
             "image": "https://avatars.githubusercontent.com/u/4658208?u=887d888c45d991a2dbde8ca6f317bf22bc133468&v=4",
             "url": "matchai.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Hajime Nakamura",
+            "image": "https://avatars.githubusercontent.com/u/5644420?u=fb1c6fbea69ffc2112a2b56dd2e6d63737b97073&v=4",
+            "url": "https://medium.com/@hajimenakamura",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
