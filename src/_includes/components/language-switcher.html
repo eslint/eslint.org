@@ -14,7 +14,7 @@
             {% for key, other_site in sites %}
             <option value="{{ other_site.language.code }}"
                     title="{{ other_site.language.title }}" 
-                    data-url="https://{{ other_site.hostname }}{{ page.url }}"
+                    data-url="https://{{ other_site.hostname }}{% if multilingual %}{{ page.url }}{% endif %}"
                     {% if site.language.code == other_site.language.code %} selected {% endif %}>
                 {{ other_site.language.flag }} {{ other_site.language.name }}
             </option>
