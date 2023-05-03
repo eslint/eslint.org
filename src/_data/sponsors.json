@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127932,
-        "monthlyDonations": 10661,
-        "sponsorCount": 167
+        "annualDonations": 127872,
+        "monthlyDonations": 10656,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -77,7 +77,7 @@
             "url": "https://paydaysay.com/",
             "image": "https://images.opencollective.com/payday-say-organization/9cd2467/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 600,
+            "totalDonations": 800,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -456,7 +456,7 @@
             "url": null,
             "image": "https://images.opencollective.com/builtbyrebels/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -465,7 +465,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -474,7 +474,7 @@
             "url": "https://trevorburnham.com",
             "image": "https://images.opencollective.com/trevorburnham/016f6da/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -483,7 +483,7 @@
             "url": "https://www.fuller-inc.com/",
             "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -822,14 +822,6 @@
             "name": "Martti Laine",
             "image": "https://avatars.githubusercontent.com/u/211543?v=4",
             "url": "https://github.com/codeclown",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "David Dias",
-            "image": "https://avatars.githubusercontent.com/u/237229?u=984c72b4407a6654caf09bb1506d70a678860de7&v=4",
-            "url": "https://thedaviddias.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
