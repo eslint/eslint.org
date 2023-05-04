@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127872,
-        "monthlyDonations": 10656,
-        "sponsorCount": 166
+        "annualDonations": 127812,
+        "monthlyDonations": 10651,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -1118,14 +1118,6 @@
             "name": "Nicolas Charpentier",
             "image": "https://avatars.githubusercontent.com/u/7189823?u=f7558a0f6828f45f1082970880aefbeab9596d0b&v=4",
             "url": "https://charpeni.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Paul Foryt",
-            "image": "https://avatars.githubusercontent.com/u/7229568?u=479eec3115957259c1a11cc5093d2b3244d94e6c&v=4",
-            "url": "https://foryt.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
