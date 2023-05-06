@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127812,
-        "monthlyDonations": 10651,
-        "sponsorCount": 165
+        "annualDonations": 127752,
+        "monthlyDonations": 10646,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -1262,14 +1262,6 @@
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Yubin Karki",
-            "image": "https://avatars.githubusercontent.com/u/36847479?u=e8124222c911b302c5f3d73d99fcd443c908ffa5&v=4",
-            "url": "yubinkarki.com.np",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
