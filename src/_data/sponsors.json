@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127752,
-        "monthlyDonations": 10646,
-        "sponsorCount": 164
+        "annualDonations": 127872,
+        "monthlyDonations": 10656,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -246,6 +246,15 @@
             "totalDonations": 295,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Nirvati",
+            "url": "https://nirvati.org/",
+            "image": "https://images.opencollective.com/nirvati/d8a5a80/logo.png",
+            "monthlyDonation": 10,
+            "totalDonations": 10,
+            "source": "opencollective",
+            "tier": "backer"
         },
         {
             "name": "WWOOF's Open Source Fund",
@@ -1204,7 +1213,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=1550b29318480f3d430e927a8ffc4ccce3d5c1ea&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=81cb270dca26954d8ea7acd489e71c64f8b260d2&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
