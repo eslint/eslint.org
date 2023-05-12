@@ -1221,7 +1221,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=81cb270dca26954d8ea7acd489e71c64f8b260d2&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=a8c10303d68cdf7f68cec325ac88a70ee8e32aa0&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1378,20 +1378,20 @@
             "tier": null
         },
         {
+            "name": "Till Sanders",
+            "url": "https://till-sanders.de",
+            "image": "https://images.opencollective.com/tillsanders/1c9743b/avatar.png",
+            "monthlyDonation": 1,
+            "totalDonations": 44,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
             "name": "Guest",
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
             "totalDonations": 21,
-            "source": "opencollective",
-            "tier": null
-        },
-        {
-            "name": "Till Sanders",
-            "url": "https://till-sanders.de",
-            "image": "https://images.opencollective.com/tillsanders/1c9743b/avatar.png",
-            "monthlyDonation": 1,
-            "totalDonations": 34,
             "source": "opencollective",
             "tier": null
         },
