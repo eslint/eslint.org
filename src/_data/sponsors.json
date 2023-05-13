@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127872,
-        "monthlyDonations": 10656,
-        "sponsorCount": 165
+        "annualDonations": 130452,
+        "monthlyDonations": 10871,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -72,6 +72,15 @@
         }
     ],
     "bronze": [
+        {
+            "name": "Ilmaiset Pitkävetovihjeet",
+            "url": "https://www.vedonlyontibonukset.com/pitkavetovihjeet",
+            "image": "https://images.opencollective.com/pitkavetovihjeet/0131f1d/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "PayDay Say",
             "url": "https://paydaysay.com/",
@@ -217,6 +226,14 @@
             "name": "Phil Parsons",
             "image": "https://avatars.githubusercontent.com/u/441581?u=dc52f16579894fcb4ea1ef11c4044e9f9920787b&v=4",
             "url": "https://github.com/p-m-p",
+            "monthlyDonation": 25,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Kyle Holmberg",
+            "image": "https://avatars.githubusercontent.com/u/9523719?u=764bd873bd1166dbe9177ad7a4bc59a419bb6acc&v=4",
+            "url": "https://kylemh.com",
             "monthlyDonation": 25,
             "source": "github",
             "tier": "backer"
@@ -416,14 +433,6 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
             "url": "https://github.com/Kamalnrf",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "xtomoya",
-            "image": "https://avatars.githubusercontent.com/u/40332021?u=60991c16fda1072cf7b2804a7db17867a0090c05&v=4",
-            "url": "https://github.com/xtomoya",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
