@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130452,
-        "monthlyDonations": 10871,
-        "sponsorCount": 166
+        "annualDonations": 130752,
+        "monthlyDonations": 10896,
+        "sponsorCount": 168
     },
     "platinum": [
         {
@@ -265,6 +265,14 @@
             "tier": null
         },
         {
+            "name": "Guilherme Abel",
+            "image": "https://avatars.githubusercontent.com/u/68508662?u=105e707708074e357744370c5437ea8dcd4746c8&v=4",
+            "url": "https://github.com/guilhermeabell",
+            "monthlyDonation": 20,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Nirvati",
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/d8a5a80/logo.png",
@@ -467,6 +475,15 @@
             "url": "https://www.yhakamay.me",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Gamble Critic",
+            "url": "https://gamblecritic.net",
+            "image": "https://images.opencollective.com/gamblecritic/4668ddb/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
