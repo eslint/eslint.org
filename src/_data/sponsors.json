@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130752,
-        "monthlyDonations": 10896,
-        "sponsorCount": 168
+        "annualDonations": 130452,
+        "monthlyDonations": 10871,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -239,14 +239,6 @@
             "tier": "backer"
         },
         {
-            "name": "Apify",
-            "image": "https://avatars.githubusercontent.com/u/24586296?v=4",
-            "url": "https://apify.com/",
-            "monthlyDonation": 25,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Infinum",
             "url": "https://infinum.com",
             "image": "https://images.opencollective.com/infinum/9a719cb/avatar.png",
@@ -349,7 +341,7 @@
             "url": null,
             "image": "https://images.opencollective.com/john-hamilton/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 340,
+            "totalDonations": 350,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1247,7 +1239,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=6aaec8fd67a051064d9e3d65b04524e75623e78b&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=2d0f2b4c752f39fa3e91fc65f8ea586f92822496&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
