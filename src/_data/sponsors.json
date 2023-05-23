@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130452,
-        "monthlyDonations": 10871,
-        "sponsorCount": 167
+        "annualDonations": 130332,
+        "monthlyDonations": 10861,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -1150,14 +1150,6 @@
             "tier": "backer"
         },
         {
-            "name": "Alex Eagle",
-            "image": "https://avatars.githubusercontent.com/u/7249538?u=7421c6159c0a6861ab604f0ef51fe4b1c64edb66&v=4",
-            "url": "https://github.com/ilovepixelart",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "James Hay",
             "image": "https://avatars.githubusercontent.com/u/7937480?u=54287fafb0a0c782bc8f68b6635d80e4a0944f74&v=4",
             "url": "https://github.com/flagpoonage",
@@ -1255,7 +1247,7 @@
         },
         {
             "name": "zapolnoch",
-            "image": "https://avatars.githubusercontent.com/u/15930575?v=4",
+            "image": "https://avatars.githubusercontent.com/u/15930575?u=610a01227a302084a6e7bf946954390ea482a349&v=4",
             "url": "https://github.com/zapolnoch",
             "monthlyDonation": 5,
             "source": "github",
@@ -1305,14 +1297,6 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Andrea Mazzucchelli",
-            "image": "https://avatars.githubusercontent.com/u/60042277?u=ae98af9bebf42b3137986d38d38b5d1dfd609be8&v=4",
-            "url": "https://www.linkedin.com/in/andrea-m-0b40051bb",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
