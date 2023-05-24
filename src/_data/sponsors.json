@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130332,
-        "monthlyDonations": 10861,
-        "sponsorCount": 165
+        "annualDonations": 130476,
+        "monthlyDonations": 10873,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -261,6 +261,14 @@
             "image": "https://avatars.githubusercontent.com/u/68508662?u=105e707708074e357744370c5437ea8dcd4746c8&v=4",
             "url": "https://github.com/guilhermeabell",
             "monthlyDonation": 20,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Pleo",
+            "image": "https://avatars.githubusercontent.com/u/12394870?v=4",
+            "url": "https://www.pleo.io",
+            "monthlyDonation": 12,
             "source": "github",
             "tier": "backer"
         },
