@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130476,
-        "monthlyDonations": 10873,
-        "sponsorCount": 166
+        "annualDonations": 127836,
+        "monthlyDonations": 10653,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -72,15 +72,6 @@
         }
     ],
     "bronze": [
-        {
-            "name": "Ilmaiset Pitkävetovihjeet",
-            "url": "https://www.vedonlyontibonukset.com/pitkavetovihjeet",
-            "image": "https://images.opencollective.com/pitkavetovihjeet/0131f1d/logo.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
         {
             "name": "PayDay Say",
             "url": "https://paydaysay.com/",
@@ -220,14 +211,6 @@
             "monthlyDonation": 25,
             "totalDonations": 1300,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Phil Parsons",
-            "image": "https://avatars.githubusercontent.com/u/441581?u=dc52f16579894fcb4ea1ef11c4044e9f9920787b&v=4",
-            "url": "https://github.com/p-m-p",
-            "monthlyDonation": 25,
-            "source": "github",
             "tier": "backer"
         },
         {
@@ -653,7 +636,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 115,
+            "totalDonations": 120,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1030,6 +1013,14 @@
             "tier": "backer"
         },
         {
+            "name": "Tony Lee",
+            "image": "https://avatars.githubusercontent.com/u/2465773?u=061bf5e616f2c8538d8ae1123c3ada4e4c457c19&v=4",
+            "url": "https://github.com/tonylee80",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Maarten Van Hoof",
             "image": "https://avatars.githubusercontent.com/u/2543633?u=877bea1d5cbf861c347b1db16e9e23a3cf7b8a5c&v=4",
             "url": "mrtnvh.com",
@@ -1254,9 +1245,9 @@
             "tier": "backer"
         },
         {
-            "name": "zapolnoch",
+            "name": "Nassim Gafarov",
             "image": "https://avatars.githubusercontent.com/u/15930575?u=610a01227a302084a6e7bf946954390ea482a349&v=4",
-            "url": "https://github.com/zapolnoch",
+            "url": "https://optics.vision",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
