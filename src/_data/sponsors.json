@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127836,
-        "monthlyDonations": 10653,
-        "sponsorCount": 165
+        "annualDonations": 127776,
+        "monthlyDonations": 10648,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -241,7 +241,7 @@
         },
         {
             "name": "Guilherme Abel",
-            "image": "https://avatars.githubusercontent.com/u/68508662?u=105e707708074e357744370c5437ea8dcd4746c8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/68508662?u=1462ae951a08cfa0e87b32a6cbced96ad433e676&v=4",
             "url": "https://github.com/guilhermeabell",
             "monthlyDonation": 20,
             "source": "github",
@@ -1040,14 +1040,6 @@
             "name": "Jared Collier",
             "image": "https://avatars.githubusercontent.com/u/2757601?v=4",
             "url": "https://github.com/autoboxer",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "UmedaTakefumi",
-            "image": "https://avatars.githubusercontent.com/u/2947983?v=4",
-            "url": "https://github.com/UmedaTakefumi",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
