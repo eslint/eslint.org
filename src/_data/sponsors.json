@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127776,
-        "monthlyDonations": 10648,
-        "sponsorCount": 164
+        "annualDonations": 127716,
+        "monthlyDonations": 10643,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -73,11 +73,11 @@
     ],
     "bronze": [
         {
-            "name": "PayDay Say",
-            "url": "https://paydaysay.com/",
-            "image": "https://images.opencollective.com/payday-say-organization/9cd2467/logo.png",
+            "name": "King Billy Slots",
+            "url": null,
+            "image": "https://images.opencollective.com/king-billy-slots1/c30c2aa/avatar.png",
             "monthlyDonation": 200,
-            "totalDonations": 800,
+            "totalDonations": 200,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -1093,14 +1093,6 @@
             "tier": "backer"
         },
         {
-            "name": "Hajime Nakamura",
-            "image": "https://avatars.githubusercontent.com/u/5644420?u=fb1c6fbea69ffc2112a2b56dd2e6d63737b97073&v=4",
-            "url": "https://medium.com/@hajimenakamura",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Limon Monte",
             "image": "https://avatars.githubusercontent.com/u/6059356?u=0f4c2c459c0eb6d18c4ec93e6954a800742330e2&v=4",
             "url": "https://limonte.github.io",
@@ -1384,7 +1376,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 21,
+            "totalDonations": 22,
             "source": "opencollective",
             "tier": null
         },
