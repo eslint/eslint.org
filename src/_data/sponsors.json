@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127056,
-        "monthlyDonations": 10588,
-        "sponsorCount": 161
+        "annualDonations": 130116,
+        "monthlyDonations": 10843,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -72,6 +72,15 @@
         }
     ],
     "bronze": [
+        {
+            "name": "BairesDev",
+            "url": "https://www.bairesdev.com/sponsoring-open-source-projects/",
+            "image": "https://images.opencollective.com/bairesdev/e861fe2/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "King Billy Slots",
             "url": null,
@@ -170,6 +179,15 @@
             "tier": "backer"
         },
         {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 50,
+            "totalDonations": 1750,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
             "name": "Tailscale",
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
@@ -251,7 +269,7 @@
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/d8a5a80/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 10,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -456,7 +474,7 @@
             "url": "https://gamblecritic.net",
             "image": "https://images.opencollective.com/gamblecritic/4668ddb/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -465,7 +483,7 @@
             "url": null,
             "image": "https://images.opencollective.com/builtbyrebels/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -474,7 +492,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -483,7 +501,7 @@
             "url": "https://trevorburnham.com",
             "image": "https://images.opencollective.com/trevorburnham/016f6da/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1254,6 +1272,14 @@
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "v 1 r t l",
+            "image": "https://avatars.githubusercontent.com/u/35937217?u=2f4a9eb4b4921f4704578b785522f40fe6efd9eb&v=4",
+            "url": "https://v1rtl.site",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
