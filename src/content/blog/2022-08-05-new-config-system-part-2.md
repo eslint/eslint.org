@@ -352,40 +352,6 @@ Here, a custom rule is imported as `myrule` and then a runtime plugin is created
 
 As a result, we will be removing `--rulesdir` once the transition to flat config is complete.
 
-### Custom parsers in plugins
-
-One of the weird artifacts of ESLint's development is that parsers were never part of plugins. That's because custom parsers existed long before plugins did, and we never went back to make the two work well together. In flat config, we took the opportunity to fix this problem by allowing plugins to expose parsers in the same that they expose processors and rules. For example, you can now define a plugin that looks like this:
-
-```js
-export default {
-    parsers: {
-        parserName: {
-            parse() { /*... */ }
-        }
-    }
-}
-```
-
-This plugin exposes a parser called `parserName` under the `parsers` key. You can then use this parser in your config like this:
-
-```js
-import custom from "./custom-plugin.js";
-
-export default [
-    {
-        files: ["**/*.js"],
-        plugins: {
-            custom
-        },
-        languageOptions: {
-            parser: "custom/parserName"
-        }
-    }
-];
-```
-
-This config creates a plugin namespace called `custom`. The custom parser can then be accessed using the string `"custom/parserName"`.
-
 ### Processors works in a similar way to eslintrc
 
 The `processor` top-level key works mostly the same as in eslintrc, with the primary use case being to use a processor that is defined in a plugin, for example:
