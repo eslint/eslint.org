@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130116,
-        "monthlyDonations": 10843,
-        "sponsorCount": 164
+        "annualDonations": 125316,
+        "monthlyDonations": 10443,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -72,24 +72,6 @@
         }
     ],
     "bronze": [
-        {
-            "name": "BairesDev",
-            "url": "https://www.bairesdev.com/sponsoring-open-source-projects/",
-            "image": "https://images.opencollective.com/bairesdev/e861fe2/logo.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "King Billy Slots",
-            "url": null,
-            "image": "https://images.opencollective.com/king-billy-slots1/c30c2aa/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
         {
             "name": "ThemeIsle",
             "url": "https://themeisle.com",
