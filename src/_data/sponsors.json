@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125316,
-        "monthlyDonations": 10443,
-        "sponsorCount": 162
+        "annualDonations": 125376,
+        "monthlyDonations": 10448,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -574,6 +574,15 @@
             "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 65,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Sufi Meditation",
+            "url": "https://www.zikir.com",
+            "image": "https://images.opencollective.com/sufi-meditation/74935dc/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 75,
             "source": "opencollective",
             "tier": "backer"
         },
