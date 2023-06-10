@@ -111,6 +111,7 @@ const App = () => {
     }, [options, text]);
 
     const { messages, output, fatalMessage, error: crashError, validationError } = lint();
+    const lintTime = Date.now();
     const isInvalidAutofix = fatalMessage && text !== output;
 
     const onFix = message => {
@@ -209,23 +210,14 @@ const App = () => {
                         {
                             validationError && <Alert type="error" text={validationError.message} />
                         }
-                        {messages.length > 0 && messages.map(message => (
-                            message.suggestions ? (
-                                <Alert
-                                    key={`${message.ruleId}-${message.line}-${message.column}`}
-                                    type={message.severity === 2 ? "error" : "warning"}
-                                    message={message}
-                                    suggestions={message.suggestions}
-                                    onFix={onFix}
-                                />
-                            ) : (
-                                <Alert
-                                    key={`${message.ruleId}-${message.line}-${message.column}`}
-                                    type={message.severity === 2 ? "error" : "warning"}
-                                    message={message}
-                                    onFix={onFix}
-                                />
-                            )
+                        {messages.length > 0 && messages.map((message, index) => (
+                            <Alert
+                                key={`${lintTime}-${index}`}
+                                type={message.severity === 2 ? "error" : "warning"}
+                                message={message}
+                                suggestions={message.suggestions}
+                                onFix={onFix}
+                            />
                         ))}
                     </section>
                 </Split>
