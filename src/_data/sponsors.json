@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125376,
-        "monthlyDonations": 10448,
-        "sponsorCount": 163
+        "annualDonations": 125436,
+        "monthlyDonations": 10453,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -1183,6 +1183,14 @@
             "name": "Sebastian Silbermann",
             "image": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
             "url": "https://solverfox.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yuhei FUJITA",
+            "image": "https://avatars.githubusercontent.com/u/13161267?u=f45735a8978321dd7f4bffe0feb5bdde6ff3dd84&v=4",
+            "url": "https://github.com/YuheiFUJITA",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
