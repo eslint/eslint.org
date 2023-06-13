@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125436,
-        "monthlyDonations": 10453,
-        "sponsorCount": 164
+        "annualDonations": 125196,
+        "monthlyDonations": 10433,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -229,14 +229,6 @@
             "totalDonations": 315,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Guilherme Abel",
-            "image": "https://avatars.githubusercontent.com/u/68508662?u=1462ae951a08cfa0e87b32a6cbced96ad433e676&v=4",
-            "url": "https://github.com/guilhermeabell",
-            "monthlyDonation": 20,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "Pleo",
