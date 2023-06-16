@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125196,
-        "monthlyDonations": 10433,
-        "sponsorCount": 163
+        "annualDonations": 125256,
+        "monthlyDonations": 10438,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -348,7 +348,7 @@
         },
         {
             "name": "Benjamin Piouffle",
-            "url": "https://benjamin.piouffle.com",
+            "url": "https://benjamin.piouffle.com/",
             "image": "https://images.opencollective.com/betree/2142bbe/avatar.png",
             "monthlyDonation": 10,
             "totalDonations": 528,
@@ -1295,6 +1295,14 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Alec Pedersen",
+            "image": "https://avatars.githubusercontent.com/u/96690104?u=a9e089755b1959962a175026a30e0c9d57881df7&v=4",
+            "url": "https://github.com/alecsorenpedersen",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
