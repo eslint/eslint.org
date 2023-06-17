@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125256,
-        "monthlyDonations": 10438,
-        "sponsorCount": 164
+        "annualDonations": 125196,
+        "monthlyDonations": 10433,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -855,14 +855,6 @@
             "name": "Enrise",
             "image": "https://avatars.githubusercontent.com/u/417390?v=4",
             "url": "https://enrise.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alexey Antipov",
-            "image": "https://avatars.githubusercontent.com/u/427621?u=345ba2cd29c19aa77b31491d083de28e4186ba60&v=4",
-            "url": "alexei.me",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
