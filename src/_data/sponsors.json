@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125196,
-        "monthlyDonations": 10433,
-        "sponsorCount": 163
+        "annualDonations": 125136,
+        "monthlyDonations": 10428,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -708,15 +708,6 @@
             "name": "James Sherwood-Jones",
             "url": null,
             "image": "https://images.opencollective.com/james-sherwood-jones/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 240,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Eliseu Monar dos Santos",
-            "url": "https://medium.com/@eliseumds",
-            "image": "https://images.opencollective.com/eliseu/fe16988/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 240,
             "source": "opencollective",
