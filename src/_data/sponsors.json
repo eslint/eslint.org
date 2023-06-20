@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125136,
-        "monthlyDonations": 10428,
-        "sponsorCount": 162
+        "annualDonations": 127596,
+        "monthlyDonations": 10633,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -129,6 +129,14 @@
             "name": "Ignition",
             "image": "https://avatars.githubusercontent.com/u/5753491?v=4",
             "url": "https://www.ignitionapp.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Mercedes-Benz Group",
+            "image": "https://avatars.githubusercontent.com/u/34240465?v=4",
+            "url": "https://opensource.mercedes-benz.com/",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -315,7 +323,7 @@
             "url": null,
             "image": "https://images.opencollective.com/john-hamilton/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 350,
+            "totalDonations": 360,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -441,6 +449,15 @@
             "url": "https://www.yhakamay.me",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "ReverseProxy.com",
+            "url": "https://reverseproxy.com",
+            "image": "https://images.opencollective.com/reverseproxy/a739284/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
