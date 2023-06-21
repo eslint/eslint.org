@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127596,
-        "monthlyDonations": 10633,
-        "sponsorCount": 164
+        "annualDonations": 127680,
+        "monthlyDonations": 10640,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -452,6 +452,14 @@
             "tier": "backer"
         },
         {
+            "name": "Jacob Sunol",
+            "image": "https://avatars.githubusercontent.com/u/575547?u=dfc790ded21e754151e32fdf36e05d10c60d75ad&v=4",
+            "url": "www.jasuca.com",
+            "monthlyDonation": 7,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "ReverseProxy.com",
             "url": "https://reverseproxy.com",
             "image": "https://images.opencollective.com/reverseproxy/a739284/logo.png",
@@ -830,7 +838,7 @@
         {
             "name": "Martti Laine",
             "image": "https://avatars.githubusercontent.com/u/211543?v=4",
-            "url": "https://github.com/codeclown",
+            "url": "https://marttilaine.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
