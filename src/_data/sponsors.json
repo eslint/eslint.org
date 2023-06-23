@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127680,
-        "monthlyDonations": 10640,
-        "sponsorCount": 165
+        "annualDonations": 127476,
+        "monthlyDonations": 10623,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -239,14 +239,6 @@
             "tier": null
         },
         {
-            "name": "Pleo",
-            "image": "https://avatars.githubusercontent.com/u/12394870?v=4",
-            "url": "https://www.pleo.io",
-            "monthlyDonation": 12,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Nirvati",
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/d8a5a80/logo.png",
@@ -439,14 +431,6 @@
             "name": "ProjectDiscovery",
             "image": "https://avatars.githubusercontent.com/u/50994705?v=4",
             "url": "https://projectdiscovery.io",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Yusuke Hakamaya",
-            "image": "https://avatars.githubusercontent.com/u/65002858?u=53b598cdafe9b03086c4e143615cc2979ee9339f&v=4",
-            "url": "https://www.yhakamay.me",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1287,6 +1271,14 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yusuke Hakamaya",
+            "image": "https://avatars.githubusercontent.com/u/65002858?u=53b598cdafe9b03086c4e143615cc2979ee9339f&v=4",
+            "url": "https://www.yhakamay.me",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
