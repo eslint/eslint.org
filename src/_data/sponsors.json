@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127476,
-        "monthlyDonations": 10623,
-        "sponsorCount": 164
+        "annualDonations": 127596,
+        "monthlyDonations": 10633,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -237,6 +237,15 @@
             "totalDonations": 315,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "odan",
+            "url": null,
+            "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 10,
+            "source": "opencollective",
+            "tier": "backer"
         },
         {
             "name": "Nirvati",
