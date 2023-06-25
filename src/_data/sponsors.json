@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127596,
-        "monthlyDonations": 10633,
-        "sponsorCount": 165
+        "annualDonations": 127536,
+        "monthlyDonations": 10628,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -992,14 +992,6 @@
             "name": "Gustav Hansen",
             "image": "https://avatars.githubusercontent.com/u/2244375?u=5240e0f277601e08bdcffd579e395a57f8b23e3f&v=4",
             "url": "gu.stav.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Tony Lee",
-            "image": "https://avatars.githubusercontent.com/u/2465773?u=061bf5e616f2c8538d8ae1123c3ada4e4c457c19&v=4",
-            "url": "https://github.com/tonylee80",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
