@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127128,
-        "monthlyDonations": 10594,
-        "sponsorCount": 162
+        "annualDonations": 127068,
+        "monthlyDonations": 10589,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -243,7 +243,7 @@
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/d8a5a80/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 20,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -466,7 +466,7 @@
             "url": "https://gamblecritic.net",
             "image": "https://images.opencollective.com/gamblecritic/4668ddb/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -565,7 +565,7 @@
             "url": "https://metatierlist.com",
             "image": "https://images.opencollective.com/metatierlist/68a5b41/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 55,
+            "totalDonations": 60,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1230,14 +1230,6 @@
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "v 1 r t l",
-            "image": "https://avatars.githubusercontent.com/u/35937217?u=2f4a9eb4b4921f4704578b785522f40fe6efd9eb&v=4",
-            "url": "https://v1rtl.site",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
