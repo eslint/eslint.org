@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 127068,
-        "monthlyDonations": 10589,
+        "annualDonations": 127128,
+        "monthlyDonations": 10594,
         "sponsorCount": 161
     },
     "platinum": [
@@ -391,6 +391,14 @@
             "name": "Avrios",
             "image": "https://avatars.githubusercontent.com/u/9891362?v=4",
             "url": "https://avrios.com",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Andre Tepper",
+            "image": "https://avatars.githubusercontent.com/u/10585783?v=4",
+            "url": "https://github.com/Noxmox6",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1110,14 +1118,6 @@
             "name": "per1234",
             "image": "https://avatars.githubusercontent.com/u/8572152?v=4",
             "url": "https://github.com/per1234",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Gabi",
-            "image": "https://avatars.githubusercontent.com/u/9082013?u=0a2400198d68bd7155832384f6135c22aefa6f4b&v=4",
-            "url": "https://github.com/0xGabi",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
