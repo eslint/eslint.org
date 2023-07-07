@@ -184,7 +184,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                         <Select
                             isClearable
                             isMulti
-                            defaultValue={ECMAFeaturesOptions.filter(ecmaFeatureName => options.parserOptions.ecmaFeatures[ecmaFeatureName.value])}
+                            defaultValue={ECMAFeaturesOptions.filter(ecmaFeatureName => options.parserOptions.ecmaFeatures?.[ecmaFeatureName.value])}
                             isSearchable={false}
                             styles={customStyles}
                             theme={theme => customTheme(theme)}
