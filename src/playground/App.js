@@ -21,6 +21,28 @@ const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
     return result;
 }, {});
 
+const fillOptionsDefaults = (options = {}) => ({
+    ...options,
+    env: {
+        es6: true,
+        ...options.env
+    },
+    parserOptions: {
+        ...options.parserOptions,
+        ecmaFeatures: {
+            ecmaVersion: "latest",
+            sourceType: "script",
+            ...options.ecmaFeatures
+        }
+    },
+    rules: options.rules ?? [...rules.entries()].reduce((result, [ruleId, rule]) => {
+        if (rule.meta.docs.recommended) {
+            result[ruleId] = ["error"];
+        }
+        return result;
+    }, {})
+});
+
 const getUrlState = () => {
     try {
         return JSON.parse(Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")));
@@ -44,24 +66,7 @@ const App = () => {
     const { text: urlText, options: urlOptions } = getUrlState();
     const [text, setText] = useState(urlText || storedText || "/* eslint quotes: [\"error\", \"double\"] */\nconst a = 'b';");
     const [fix, setFix] = useState(false);
-    const [options, setOptions] = useState(
-        urlOptions || storedOptions || {
-            parserOptions: {
-                ecmaVersion: "latest",
-                sourceType: "script",
-                ecmaFeatures: {}
-            },
-            rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
-                if (rule.meta.docs.recommended) {
-                    result[ruleId] = ["error"];
-                }
-                return result;
-            }, {}),
-            env: {
-                es6: true
-            }
-        }
-    );
+    const [options, setOptions] = useState(fillOptionsDefaults(urlOptions || storedOptions));
 
     const lint = () => {
         try {
