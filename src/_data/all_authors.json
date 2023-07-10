@@ -8,6 +8,7 @@
         "bio": "Creator of ESLint, independent software developer, consultant, coach, and author.",
         "twitter_username": "slicknet",
         "github_username": "nzakas",
+        "mastodon_url": "https://fosstodon.org/@nzakas",
         "location": "Mountain View, CA"
     },
     "okuryu": {
@@ -52,6 +53,7 @@
         "bio": "Director of Engineering at @drivecapital by day and @eslint maintainer by night",
         "twitter_username": "brandontmills",
         "github_username": "btmills",
+        "mastodon_url": "https://fosstodon.org/@bmills",
         "location": "Columbus, Ohio"
     },
     "gyandeeps": {
