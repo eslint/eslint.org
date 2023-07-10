@@ -88,7 +88,9 @@ async function fetchUserProfile(username) {
         username: profile.login,
         name: profile.name,
         title: "Guest Author",
-        website: profile.blog,
+        website: profile.blog.match(/http(s)?:\/\//)
+            ? profile.blog
+            : profile.blog ? `https://${profile.blog}` : profile.blog,
         avatar_url: profile.avatar_url,
         bio: profile.bio,
         twitter_username: profile.twitter_username,
