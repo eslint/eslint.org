@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 126888,
-        "monthlyDonations": 10574,
-        "sponsorCount": 160
+        "annualDonations": 129288,
+        "monthlyDonations": 10774,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -72,6 +72,15 @@
         }
     ],
     "bronze": [
+        {
+            "name": "Incognito",
+            "url": null,
+            "image": "https://images.opencollective.com/user-11e72209/avatar.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "ThemeIsle",
             "url": "https://themeisle.com",
