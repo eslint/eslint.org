@@ -9,6 +9,7 @@
             "bio": "Creator of ESLint, independent software developer, consultant, coach, and author.",
             "twitter_username": "slicknet",
             "github_username": "nzakas",
+            "mastodon_url": "https://fosstodon.org/@nzakas",
             "location": "Mountain View, CA"
         },
         {
@@ -77,6 +78,7 @@
             "bio": null,
             "twitter_username": "smooshMap",
             "github_username": "michaelficarra",
+            "mastodon_url": "https://mastodon.social/@michaelficarra",
             "location": "Colorado, USA"
         },
         {
@@ -176,6 +178,7 @@
             "bio": "Director of Engineering at @drivecapital by day and @eslint maintainer by night",
             "twitter_username": "brandontmills",
             "github_username": "btmills",
+            "mastodon_url": "https://fosstodon.org/@bmills",
             "location": "Columbus, Ohio"
         },
         {
@@ -231,6 +234,7 @@
             "bio": "I build front-ends and raise 🦆, 🐝 & two boys.  @storybookjs core team member.",
             "twitter_username": "ianvanschooten",
             "github_username": "IanVS",
+            "mastodon_url": "https://fosstodon.org/@IanVS",
             "location": "Ann Arbor, MI"
         },
         {
@@ -248,7 +252,7 @@
             "username": "kaicataldo",
             "name": "Kai Cataldo",
             "title": "ESLint Alumnus",
-            "website": "kaicataldo.com",
+            "website": "https://kaicataldo.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/7041728?v=4",
             "bio": "💻 🎺 🎮 ⌨️ 🐕 • he/him",
             "twitter_username": null,
@@ -391,6 +395,7 @@
             "bio": "让世界听到你的声音",
             "twitter_username": "kecrily",
             "github_username": "kecrily",
+            "mastodon_url": "https://toot.io/@kecrily",
             "location": "Zhejiang, China"
         }
     ],
@@ -410,7 +415,7 @@
             "username": "sam3k",
             "name": "Samuel Roldan",
             "title": "ESLint Support Team",
-            "website": "www.sam3k.com",
+            "website": "https://www.sam3k.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/180152?v=4",
             "bio": "I am a staff frontend engineer with 19 years of experience architecting\r\napplications.",
             "twitter_username": "sam3k_",
@@ -432,7 +437,7 @@
             "username": "Rec0iL99",
             "name": "Joel Mathew Koshy",
             "title": "ESLint Support Team",
-            "website": "joelmathew.js.org",
+            "website": "https://joelmathew.js.org",
             "avatar_url": "https://avatars.githubusercontent.com/u/56463684?v=4",
             "bio": "Support team @eslint | UWindsor",
             "twitter_username": "Rec0iL99",

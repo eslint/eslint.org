@@ -31,8 +31,10 @@ hook: "team_page"
 
 
                     {% set itemBio = item.bio | safe %}
-                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemWebsite = item.website %}
                     {% set itemGitHub = item.github_username %}
+                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemMastodon = item.mastodon_url %}
 
                     <li>
                         {{ member({
@@ -41,8 +43,10 @@ hook: "team_page"
                             handle: itemHandle,
                             handleURL: itemHandleURL,
                             bio: itemBio,
+                            website: itemWebsite,
+                            github: itemGitHub,
                             twitter: itemTwitter,
-                            github: itemGitHub
+                            mastodon: itemMastodon
                         }) }}
                     </li>
                 {% endfor %}
@@ -68,8 +72,10 @@ hook: "team_page"
                     {% set itemHandle = item.username %}
 
                     {% set itemBio = item.bio | safe %}
-                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemWebsite = item.website %}
                     {% set itemGitHub = item.github_username %}
+                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemMastodon = item.mastodon_url %}
 
                     <li>
                         {{ member({
@@ -78,8 +84,10 @@ hook: "team_page"
                             handle: itemHandle,
                             handleURL: itemHandleURL,
                             bio: itemBio,
+                            website: itemWebsite,
+                            github: itemGitHub,
                             twitter: itemTwitter,
-                            github: itemGitHub
+                            mastodon: itemMastodons
                         }) }}
                     </li>
                 {% endfor %}
@@ -105,8 +113,10 @@ hook: "team_page"
 
 
                     {% set itemBio = item.bio | safe %}
-                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemWebsite = item.website %}
                     {% set itemGitHub = item.github_username %}
+                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemMastodon = item.mastodon_url %}
 
                     <li>
                         {{ member({
@@ -115,8 +125,10 @@ hook: "team_page"
                             handle: itemHandle,
                             handleURL: itemHandleURL,
                             bio: itemBio,
+                            website: itemWebsite,
+                            github: itemGitHub,
                             twitter: itemTwitter,
-                            github: itemGitHub
+                            mastodon: itemMastodon
                         }) }}
                     </li>
                 {% endfor %}
@@ -142,18 +154,22 @@ hook: "team_page"
 
 
                 {% set itemBio = item.bio | safe %}
-                {% set itemTwitter = item.twitter_username %}
+                {% set itemWebsite = item.website %}
                 {% set itemGitHub = item.github_username %}
+                {% set itemTwitter = item.twitter_username %}
+                {% set itemMastodon = item.mastodon_url %}
 
                 <li>
                     {{ member({
-                    photo: itemPhoto,
-                    name: itemName,
-                    handle: itemHandle,
-                    handleURL: itemHandleURL,
-                    bio: itemBio,
-                    twitter: itemTwitter,
-                    github: itemGitHub
+                        photo: itemPhoto,
+                        name: itemName,
+                        handle: itemHandle,
+                        handleURL: itemHandleURL,
+                        bio: itemBio,
+                        website: itemWebsite,
+                        github: itemGitHub,
+                        twitter: itemTwitter,
+                        mastodon: itemMastodon
                     }) }}
                 </li>
                 {% endfor %}
@@ -179,18 +195,22 @@ hook: "team_page"
 
 
                 {% set itemBio = item.bio | safe %}
-                {% set itemTwitter = item.twitter_username %}
+                {% set itemWebsite = item.website %}
                 {% set itemGitHub = item.github_username %}
+                {% set itemTwitter = item.twitter_username %}
+                {% set itemMastodon = item.mastodon_url %}
 
                 <li>
                     {{ member({
-                    photo: itemPhoto,
-                    name: itemName,
-                    handle: itemHandle,
-                    handleURL: itemHandleURL,
-                    bio: itemBio,
-                    twitter: itemTwitter,
-                    github: itemGitHub
+                        photo: itemPhoto,
+                        name: itemName,
+                        handle: itemHandle,
+                        handleURL: itemHandleURL,
+                        bio: itemBio,
+                        website: itemWebsite,
+                        github: itemGitHub,
+                        twitter: itemTwitter,
+                        mastodon: itemMastodon
                     }) }}
                 </li>
                 {% endfor %}
@@ -213,8 +233,6 @@ hook: "team_page"
                     {% set itemPhoto = item.avatar_url %}
                     {% set itemName = item.name %}
                     {% set itemHandle = item.username %}
-
-
 
                     <li>
                         {{ contributor({

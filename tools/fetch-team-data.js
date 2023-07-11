@@ -82,16 +82,20 @@ async function fetchUserProfile(username) {
     }
 
     const { data: profile } = await octokit.users.getByUsername({ username });
+    const { data: social } = await octokit.request('GET /users/{username}/social_accounts', { username });
 
     const result = {
         username: profile.login,
         name: profile.name,
         title: "Guest Author",
-        website: profile.blog,
+        website: profile.blog.match(/http(s)?:\/\//)
+            ? profile.blog
+            : profile.blog ? `https://${profile.blog}` : profile.blog,
         avatar_url: profile.avatar_url,
         bio: profile.bio,
         twitter_username: profile.twitter_username,
         github_username: profile.login,
+        mastodon_url: social.find(account => account.provider === "mastodon")?.url,
         location: profile.location
     };
 

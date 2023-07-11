@@ -8,6 +8,7 @@
         "bio": "Creator of ESLint, independent software developer, consultant, coach, and author.",
         "twitter_username": "slicknet",
         "github_username": "nzakas",
+        "mastodon_url": "https://fosstodon.org/@nzakas",
         "location": "Mountain View, CA"
     },
     "okuryu": {
@@ -36,7 +37,7 @@
         "username": "kaicataldo",
         "name": "Kai Cataldo",
         "title": "ESLint Alumnus",
-        "website": "kaicataldo.com",
+        "website": "https://kaicataldo.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/7041728?v=4",
         "bio": "💻 🎺 🎮 ⌨️ 🐕 • he/him",
         "twitter_username": null,
@@ -52,6 +53,7 @@
         "bio": "Director of Engineering at @drivecapital by day and @eslint maintainer by night",
         "twitter_username": "brandontmills",
         "github_username": "btmills",
+        "mastodon_url": "https://fosstodon.org/@bmills",
         "location": "Columbus, Ohio"
     },
     "gyandeeps": {
@@ -101,7 +103,7 @@
     "hzoo": {
         "username": "hzoo",
         "name": "Henry",
-        "title": "Guest Author",
+        "title": "ESLint Alumnus",
         "website": "https://henryzoo.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/588473?v=4",
         "bio": "Learning to maintain stuff",
