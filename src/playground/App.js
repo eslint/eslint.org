@@ -21,27 +21,33 @@ const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
     return result;
 }, {});
 
-const fillOptionsDefaults = (options = {}) => ({
-    ...options,
-    env: {
-        es6: true,
-        ...options.env
-    },
-    parserOptions: {
-        ...options.parserOptions,
-        ecmaFeatures: {
-            ecmaVersion: "latest",
-            sourceType: "script",
-            ...options.ecmaFeatures
+const defaultParserOptions = {
+    ecmaFeatures: {},
+    ecmaVersion: "latest",
+    sourceType: "script"
+};
+
+const fillOptionsDefaults = options =>
+    (options
+        ? {
+            env: {},
+            rules: {},
+            ...options,
+            parserOptions: {
+                ...defaultParserOptions,
+                ...options.parserOptions
+            }
         }
-    },
-    rules: options.rules ?? [...rules.entries()].reduce((result, [ruleId, rule]) => {
-        if (rule.meta.docs.recommended) {
-            result[ruleId] = ["error"];
-        }
-        return result;
-    }, {})
-});
+        : {
+            env: { es6: true },
+            parserOptions: defaultParserOptions,
+            rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
+                if (rule.meta.docs.recommended) {
+                    result[ruleId] = ["error"];
+                }
+                return result;
+            }, {})
+        });
 
 const getUrlState = () => {
     try {
