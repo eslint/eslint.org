@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129288,
-        "monthlyDonations": 10774,
-        "sponsorCount": 161
+        "annualDonations": 129408,
+        "monthlyDonations": 10784,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -284,6 +284,15 @@
             "tier": "backer"
         },
         {
+            "name": "Balsa",
+            "url": "https://balsa.com/",
+            "image": "https://images.opencollective.com/balsa/77de498/logo.png",
+            "monthlyDonation": 10,
+            "totalDonations": 660,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Extremely Heavy",
             "url": "https://xh.io",
             "image": "https://images.opencollective.com/xh/cec0963/logo.png",
@@ -538,15 +547,6 @@
             "image": "https://images.opencollective.com/wesurebet/0052abd/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 60,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Remote Index",
-            "url": "https://remoteindex.co",
-            "image": "https://images.opencollective.com/remote-index/ee02ad2/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -982,6 +982,14 @@
             "name": "Gustav Hansen",
             "image": "https://avatars.githubusercontent.com/u/2244375?u=5240e0f277601e08bdcffd579e395a57f8b23e3f&v=4",
             "url": "gu.stav.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Martin Eigenmann",
+            "image": "https://avatars.githubusercontent.com/u/2293142?u=820f1940d7336d128c3fcfb5e4155ee2aa0566ce&v=4",
+            "url": "eigenmannmartin.ch",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
