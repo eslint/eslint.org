@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 129408,
-        "monthlyDonations": 10784,
+        "annualDonations": 131688,
+        "monthlyDonations": 10974,
         "sponsorCount": 162
     },
     "platinum": [
@@ -124,6 +124,14 @@
             "monthlyDonation": 200,
             "totalDonations": 10200,
             "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "GitHub",
+            "image": "https://avatars.githubusercontent.com/u/9919?v=4",
+            "url": "https://github.com/about",
+            "monthlyDonation": 200,
+            "source": "github",
             "tier": "bronze-sponsor"
         },
         {
@@ -280,15 +288,6 @@
             "image": "https://images.opencollective.com/guest-fb34b9dc/avatar.png",
             "monthlyDonation": 10,
             "totalDonations": 220,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Balsa",
-            "url": "https://balsa.com/",
-            "image": "https://images.opencollective.com/balsa/77de498/logo.png",
-            "monthlyDonation": 10,
-            "totalDonations": 660,
             "source": "opencollective",
             "tier": "backer"
         },
