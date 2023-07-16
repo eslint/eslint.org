@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131688,
-        "monthlyDonations": 10974,
-        "sponsorCount": 162
+        "annualDonations": 131628,
+        "monthlyDonations": 10969,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -1269,14 +1269,6 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alec Pedersen",
-            "image": "https://avatars.githubusercontent.com/u/96690104?u=a9e089755b1959962a175026a30e0c9d57881df7&v=4",
-            "url": "https://github.com/alecsorenpedersen",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
