@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131628,
-        "monthlyDonations": 10969,
-        "sponsorCount": 161
+        "annualDonations": 129228,
+        "monthlyDonations": 10769,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -72,15 +72,6 @@
         }
     ],
     "bronze": [
-        {
-            "name": "iBoysoft",
-            "url": "https://iboysoft.com/",
-            "image": "https://images.opencollective.com/iboysoft-software/7f9d60e/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
         {
             "name": "ThemeIsle",
             "url": "https://themeisle.com",
