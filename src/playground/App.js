@@ -72,7 +72,7 @@ const App = () => {
     const { text: urlText, options: urlOptions } = getUrlState();
     const [text, setText] = useState(urlText || storedText || "/* eslint quotes: [\"error\", \"double\"] */\nconst a = 'b';");
     const [fix, setFix] = useState(false);
-    const [options, setOptions] = useState(fillOptionsDefaults(urlOptions || storedOptions));
+    const [options, setOptions] = useState(fillOptionsDefaults(urlText ? urlOptions || {} : storedOptions));
 
     const lint = () => {
         try {
