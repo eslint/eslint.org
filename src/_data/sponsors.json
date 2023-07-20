@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 129228,
-        "monthlyDonations": 10769,
+        "annualDonations": 126948,
+        "monthlyDonations": 10579,
         "sponsorCount": 160
     },
     "platinum": [
@@ -142,14 +142,6 @@
             "tier": "bronze-sponsor"
         },
         {
-            "name": "Mercedes-Benz Group",
-            "image": "https://avatars.githubusercontent.com/u/34240465?v=4",
-            "url": "https://opensource.mercedes-benz.com/",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
@@ -283,6 +275,15 @@
             "tier": "backer"
         },
         {
+            "name": "Balsa",
+            "url": "https://balsa.com/",
+            "image": "https://images.opencollective.com/balsa/77de498/logo.png",
+            "monthlyDonation": 10,
+            "totalDonations": 670,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Extremely Heavy",
             "url": "https://xh.io",
             "image": "https://images.opencollective.com/xh/cec0963/logo.png",
@@ -314,7 +315,7 @@
             "url": null,
             "image": "https://images.opencollective.com/john-hamilton/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 360,
+            "totalDonations": 370,
             "source": "opencollective",
             "tier": "backer"
         },
