@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 126864,
-        "monthlyDonations": 10572,
-        "sponsorCount": 159
+        "annualDonations": 126984,
+        "monthlyDonations": 10582,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -415,6 +415,14 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
             "url": "https://github.com/Kamalnrf",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "HikaruEgashira",
+            "image": "https://avatars.githubusercontent.com/u/39324739?u=f0cf8bc9f40a845025ebbef80b8bb735d545f0cd&v=4",
+            "url": "https://github.com/HikaruEgashira",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -939,7 +947,7 @@
         },
         {
             "name": "Carl Topham",
-            "image": "https://avatars.githubusercontent.com/u/1415767?u=524a719c7778e24a1651fd22e3685696e999a991&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1415767?u=182dd99279f62d2b306c21e310141747161f5903&v=4",
             "url": "https://carl-topham.com",
             "monthlyDonation": 5,
             "source": "github",
