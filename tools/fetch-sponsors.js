@@ -35,7 +35,7 @@ const knownOneTimers = new Set(["GitHub Sponsors", "Read the Docs", "BuySellAds"
 const { ESLINT_GITHUB_TOKEN } = process.env;
 
 if (!ESLINT_GITHUB_TOKEN) {
-    // throw new Error("Missing ESLINT_GITHUB_TOKEN.");
+    throw new Error("Missing ESLINT_GITHUB_TOKEN.");
 }
 
 //-----------------------------------------------------------------------------
