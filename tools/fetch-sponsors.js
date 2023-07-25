@@ -35,7 +35,7 @@ const knownOneTimers = new Set(["GitHub Sponsors", "Read the Docs", "BuySellAds"
 const { ESLINT_GITHUB_TOKEN } = process.env;
 
 if (!ESLINT_GITHUB_TOKEN) {
-    throw new Error("Missing ESLINT_GITHUB_TOKEN.");
+    // throw new Error("Missing ESLINT_GITHUB_TOKEN.");
 }
 
 //-----------------------------------------------------------------------------
@@ -74,7 +74,16 @@ function getTierSlug(monthlyDonation) {
 async function fetchOpenCollectiveData() {
 
     const endpoint = "https://api.opencollective.com/graphql/v2";
+    const now = new Date();
+    const startOfCurrentMonth = `${now.getFullYear()}-${now.getMonth().toString().padStart(2, "0")}-01T00:00:00Z`;
 
+    /*
+     * account.orders - These are the currently active sponsorships.
+     * account.cancelledOrders - These are the sponsorships that are still
+     *    active for this month but have been cancelled. OC doesn't include
+     *    these as status: ACTIVE so we need to do a separate query to
+     *    retrieve them.
+     */
     const query = `{
         account(slug: "eslint") {
           orders(status: ACTIVE, filter: INCOMING) {
@@ -97,7 +106,29 @@ async function fetchOpenCollectiveData() {
               }
             }
           }
+  
+          cancelledOrders: orders(filter: INCOMING, onlySubscriptions: true, dateFrom:"${startOfCurrentMonth}") {
+            totalCount
+            nodes {
+              fromAccount {
+                name
+                website
+                imageUrl
+              }
+              amount {
+                value
+              }
+              tier {
+                slug
+              }
+              frequency
+              totalDonations {
+                value
+              }
+            }
+          }
         }
+
         donations: orders(
             account: { slug: "eslint" }
             frequency: ONETIME
@@ -131,7 +162,9 @@ async function fetchOpenCollectiveData() {
 
     let payload = await result.json();
 
-    const sponsors = payload.data.account.orders.nodes.map(order => ({
+    const sponsors = payload.data.account.orders.nodes.concat(
+      payload.data.account.cancelledOrders.nodes
+    ).map(order => ({
         name: order.fromAccount.name,
         url: order.fromAccount.website,
         image: order.fromAccount.imageUrl,
@@ -285,7 +318,6 @@ async function fetchGitHubSponsors() {
 
     const sponsors = openCollectiveSponsors.concat(githubSponsors);
     const donations = openCollectiveDonations.concat(githubDonations);
-
 
     // sort donations so most recent is first
     donations.sort((a, b) => new Date(a) - new Date(b));
