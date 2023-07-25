@@ -191,7 +191,7 @@ async function fetchGitHubSponsors() {
               }
             }
           }
-          sponsorsActivities (first: 100) {
+          sponsorsActivities (first: 100, includePrivate: false) {
             nodes {
               id
               sponsor {
