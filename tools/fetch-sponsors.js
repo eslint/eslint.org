@@ -201,7 +201,7 @@ async function fetchGitHubSponsors() {
 
     const { organization } = await githubGraphQL(`query {
         organization(login: "eslint") {
-          sponsorshipsAsMaintainer (first: 100) {
+          sponsorshipsAsMaintainer (first: 100, includePrivate: false) {
             nodes {
               sponsor: sponsorEntity {
                 ...on User {
@@ -224,7 +224,7 @@ async function fetchGitHubSponsors() {
               }
             }
           }
-          sponsorsActivities (first: 100) {
+          sponsorsActivities (first: 100, includePrivate: false) {
             nodes {
               id
               sponsor {
