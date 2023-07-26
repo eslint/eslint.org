@@ -75,7 +75,7 @@ async function fetchOpenCollectiveData() {
 
     const endpoint = "https://api.opencollective.com/graphql/v2";
     const now = new Date();
-    const startOfCurrentMonth = `${now.getFullYear()}-${now.getMonth().toString().padStart(2, "0")}-01T00:00:00Z`;
+    const startOfCurrentMonth = `${now.getFullYear()}-${(now.getMonth()+1).toString().padStart(2, "0")}-01T00:00:00Z`;
 
     /*
      * account.orders - These are the currently active sponsorships.
@@ -107,7 +107,7 @@ async function fetchOpenCollectiveData() {
             }
           }
   
-          cancelledOrders: orders(filter: INCOMING, onlySubscriptions: true, dateFrom:"${startOfCurrentMonth}") {
+          cancelledOrders: orders(status: CANCELLED, filter: INCOMING, onlySubscriptions: true, dateFrom:"${startOfCurrentMonth}") {
             totalCount
             nodes {
               fromAccount {
