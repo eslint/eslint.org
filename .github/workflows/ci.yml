@@ -1,0 +1,29 @@
+name: eslint.org
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  ci:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+          cache: "npm"
+      - name: Install website dependencies
+        run: npm ci
+      - name: Install playground dependencies
+        run: npm run install:playground
+      - name: Lint Files
+        run: npm run lint
+      - name: Run build
+        run: npm run build
+      - name: Validate Internal Links
+        run: npm run validate:links

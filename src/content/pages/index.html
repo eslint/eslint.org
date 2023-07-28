@@ -1,0 +1,294 @@
+---
+layout: main.html
+permalink: /
+multilingual: true
+desc: ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
+cover: /assets/images/site-cover.jpg
+hook: "homepage"
+
+eleventyExcludeFromCollections: true
+---
+
+{%- from 'components/donation.macro.html' import donationItem %}
+{%- from 'components/card.macro.html' import card %}
+
+<section class="section hero hero--homepage">
+    <div class="content-container grid">
+        <div class="span-1-7 content-container">
+            <div class="">
+                <div class="section-head">
+		{% if site.homepage.animation.enabled %}
+                    	<h1 class="visually-hidden">{{ site.homepage.title }}</h1>
+                        {% include 'components/header-animation.njk' %}
+                    {% else %}
+                        <h1 class="section-title">{{ site.homepage.title }}</h1>
+                    {% endif %}
+                    <p class="section-supporting-text">
+                        {{ site.homepage.description }}
+                    </p>
+                </div>
+                <div class="eslint-install-code-wrapper">
+                    <div class="eslint-install-code" role="region" aria-labelledby="eslint-installation">
+                        <span hidden id="eslint-installation">{{ site.homepage.install.title }}</span>
+                        <button class="eslint-install-code__btn" id="copyBtn" aria-labelledby="copy-button-label">
+                            <span hidden id="copy-button-label">{{ site.homepage.install.title }}</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" class="c-icon" role="img" aria-label="copy" fill="none" focusable="false">
+                                <path d="M4.16667 12.5H3.33333C2.89131 12.5 2.46738 12.3244 2.15482 12.0118C1.84226 11.6993 1.66667 11.2754 1.66667 10.8333V3.33332C1.66667 2.8913 1.84226 2.46737 2.15482 2.15481C2.46738 1.84225 2.89131 1.66666 3.33333 1.66666H10.8333C11.2754 1.66666 11.6993 1.84225 12.0118 2.15481C12.3244 2.46737 12.5 2.8913 12.5 3.33332V4.16666M9.16667 7.49999H16.6667C17.5871 7.49999 18.3333 8.24618 18.3333 9.16666V16.6667C18.3333 17.5871 17.5871 18.3333 16.6667 18.3333H9.16667C8.24619 18.3333 7.5 17.5871 7.5 16.6667V9.16666C7.5 8.24618 8.24619 7.49999 9.16667 7.49999Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <input type="text" id="code-snippet" value="npm init @eslint/config" aria-readonly="true" readonly tabindex="-1" aria-labelledby="eslint-installation">
+                    </div>
+                    <span id="eslint-install-code__announcement" class="eslint-install-code__announcement" aria-live="polite" aria-atomic="true"></span>
+                </div>
+                <div class="eslint-actions">
+                    <a href="{{ links.getStarted }}" target="_blank" class="c-btn c-btn--primary c-btn--large">{{ site.shared.get_started }}</a>
+                    <a href="{{ links.donate }}" class="c-btn c-btn--secondary c-btn--large donate-link">{{ site.shared.become_a_sponsor }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="span-10-12 eslint-versions-col">
+            <div class="carbon-wrapper">
+                {% include "partials/carbon-ad.html" %}
+            </div>
+            <dl class="eslint-versions" aria-labelledby="eslint-versions-title">
+                <span id="eslint-versions-title" hidden>{{ site.homepage.versions.title }}</span>
+                <dt>{{ site.homepage.versions.latest }}</dt>
+                <dd>
+                    {% set version_date = stats.currentVersionDate | shortDateFromISO %}
+                    {% set dateline = site.homepage.versions.dateline | safe | replace("VERSION", stats.currentVersion) | replace("DATE", version_date) %}
+                    <svg width="16" height="8" viewBox="0 0 16 8" class="c-icon" role="img" aria-label="npm">
+                        <path d="M0 0.888885H16V6.22222H8V7.11111H4.44444V6.22222H0V0.888885ZM0.888889 5.33333H2.66667V2.66666H3.55556V5.33333H4.44444V1.77777H0.888889V5.33333ZM5.33333 1.77777V6.22222H7.11111V5.33333H8.88889V1.77777H5.33333ZM7.11111 2.66666H8V4.44444H7.11111V2.66666ZM9.77778 1.77777V5.33333H11.5556V2.66666H12.4444V5.33333H13.3333V2.66666H14.2222V5.33333H15.1111V1.77777H9.77778Z" fill="currentColor" />
+                    </svg>
+                    <span>{{ dateline }}</span>
+                </dd>
+                <dt>{{ site.homepage.versions.upcoming }}</dt>
+                <dd>
+                    {% set version_date = stats.nextVersionDate | shortDateFromISO %}
+                    {% set dateline = site.homepage.versions.dateline | safe | replace("VERSION", stats.nextVersion) | replace("DATE", version_date) %}
+                    <svg width="16" height="16" viewBox="0 0 16 16" class="c-icon" role="img" aria-label="Github">
+                        <path d="M8 0.200012C3.6 0.200012 0 3.80001 0 8.20001C0 11.7333 2.26667 14.7333 5.46667 15.8C5.86667 15.8667 6 15.6 6 15.4C6 15.2 6 14.7333 6 14.0667C3.8 14.5333 3.33333 13 3.33333 13C3 12.0667 2.46667 11.8 2.46667 11.8C1.66667 11.3333 2.46667 11.3333 2.46667 11.3333C3.26667 11.4 3.66667 12.1333 3.66667 12.1333C4.4 13.3333 5.53333 13 6 12.8C6.06667 12.2667 6.26667 11.9333 6.53333 11.7333C4.73333 11.5333 2.86667 10.8667 2.86667 7.80001C2.86667 6.93335 3.2 6.20001 3.66667 5.66668C3.66667 5.40001 3.33333 4.60001 3.8 3.53335C3.8 3.53335 4.46667 3.33335 6 4.33335C6.66667 4.13335 7.33333 4.06668 8 4.06668C8.66667 4.06668 9.33333 4.13335 10 4.33335C11.5333 3.26668 12.2 3.53335 12.2 3.53335C12.6667 4.66668 12.3333 5.46668 12.2667 5.66668C12.8 6.20001 13.0667 6.93335 13.0667 7.80001C13.0667 10.8667 11.2 11.5333 9.4 11.7333C9.66667 12 9.93333 12.4667 9.93333 13.2C9.93333 14.2667 9.93333 15.1333 9.93333 15.4C9.93333 15.6 10.0667 15.8667 10.4667 15.8C13.6667 14.7333 15.9333 11.7333 15.9333 8.20001C16 3.80001 12.4 0.200012 8 0.200012Z" fill="currentColor" />
+                    </svg>
+                    <span>{{ dateline }}</span>
+                </dd>
+                <dt>{{ site.homepage.versions.development }}</dt>
+                <dd>
+                    {% set version_date = stats.lastCommitDate | shortDateFromISO %}
+                    {% set dateline = site.homepage.versions.dateline | safe | replace("VERSION", "HEAD") | replace("DATE", version_date) %}
+
+                    <svg width="16" height="16" viewBox="0 0 16 16" class="c-icon" role="img" aria-label="Github">
+                        <path d="M8 0.200012C3.6 0.200012 0 3.80001 0 8.20001C0 11.7333 2.26667 14.7333 5.46667 15.8C5.86667 15.8667 6 15.6 6 15.4C6 15.2 6 14.7333 6 14.0667C3.8 14.5333 3.33333 13 3.33333 13C3 12.0667 2.46667 11.8 2.46667 11.8C1.66667 11.3333 2.46667 11.3333 2.46667 11.3333C3.26667 11.4 3.66667 12.1333 3.66667 12.1333C4.4 13.3333 5.53333 13 6 12.8C6.06667 12.2667 6.26667 11.9333 6.53333 11.7333C4.73333 11.5333 2.86667 10.8667 2.86667 7.80001C2.86667 6.93335 3.2 6.20001 3.66667 5.66668C3.66667 5.40001 3.33333 4.60001 3.8 3.53335C3.8 3.53335 4.46667 3.33335 6 4.33335C6.66667 4.13335 7.33333 4.06668 8 4.06668C8.66667 4.06668 9.33333 4.13335 10 4.33335C11.5333 3.26668 12.2 3.53335 12.2 3.53335C12.6667 4.66668 12.3333 5.46668 12.2667 5.66668C12.8 6.20001 13.0667 6.93335 13.0667 7.80001C13.0667 10.8667 11.2 11.5333 9.4 11.7333C9.66667 12 9.93333 12.4667 9.93333 13.2C9.93333 14.2667 9.93333 15.1333 9.93333 15.4C9.93333 15.6 10.0667 15.8667 10.4667 15.8C13.6667 14.7333 15.9333 11.7333 15.9333 8.20001C16 3.80001 12.4 0.200012 8 0.200012Z" fill="currentColor" />
+                    </svg>
+                    <span>{{ dateline }}</span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</section>
+
+<section class="section features-section">
+    <div class="content-container">
+        <header class="section-head center-text">
+            <h2 class="section-title h3">{{ site.homepage.explainer.title }}</h2>
+            <p class="section-supporting-text fs-step-0">
+                {{ site.homepage.explainer.description }}
+            </p>
+        </header>
+        <div class="section-body features-wrapper grid">
+            <div class="features span-1-5">
+                {%- for feature in site.homepage.explainer.features -%}
+                <article class="feature">
+                    <h3 class="feature__title">{{ feature.title }}</h3>
+                    <p class="feature__description">{{ feature.description }}</p>
+                    <a href="{{ links[feature.learn_more.link] }}" class="feature__details-link">
+                        {{ feature.learn_more.text | safe }}
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path d="M4.16667 9.99996H15.8333M15.8333 9.99996L10 4.16663M15.8333 9.99996L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </a>
+                </article>
+                {%- endfor -%}
+            </div>
+
+            <div class="features-image span-7-12">
+                {% image site.homepage.explainer.image.src, site.homepage.explainer.image.alt %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="content-container divider">
+        <header class="section-head center-text">
+            <h2 class="section-title h3" id="latest-posts-label">{{ site.blog_page.title }}</h2>
+            <p class="section-supporting-text fs-step-0">
+                {{ site.blog_page.description }}
+            </p>
+        </header>
+        <div class="blog-posts">
+            {% set posts = collections.blogposts | limitTo(3) %}
+            {%- for item in posts -%}
+
+            <!-- temporary until I can go through an update all the posts-->
+            {% set author = item.data.author %}
+            {% if not author %}
+            {% set author = item.data.authors[0] %}
+            {% endif %}
+
+            {% set author_image = all_authors[author].avatar_url %}
+            {% set author_name = all_authors[author].name %}
+            {% set reading_time = item.templateContent | readingTime %}
+
+            {{ card({
+                postAuthor: author,
+                authorImage: author_image,
+                authorName: author_name,
+                featured: item.data.featured,
+                url: item.url,
+                image: item.data.image,
+                category: item.data.categories[0],
+                title: item.data.title,
+                readingTime: reading_time,
+                teaser: item.data.teaser,
+                date: item.date
+            }) }}
+            {% endfor %}
+        </div>
+
+        <div class="center-text">
+            <a href="/blog/" class="c-btn c-btn--primary">{{ site.homepage.blog.view_all_posts }}</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="content-container divider">
+        <header class="section-head center-text">
+            <h2 class="section-title h3">{{ site.homepage.stats.title }}</h2>
+            {% set download_count = stats.weeklyDownloads | shortNumber %}
+            {% set stats_desc = site.homepage.stats.description | replace("DOWNLOAD_COUNT", download_count) %}
+            <p class="section-supporting-text fs-step-0">
+                {{ stats_desc }}
+            </p>
+        </header>
+        <div class="metrics center-text">
+            <div class="metrics__item">
+                <span class="metrics__value">{{ stats.projectDependents | shortNumber }}</span>
+                <span>{{ site.homepage.stats.dependents }}</span>
+            </div>
+            <div class="metrics__item">
+                <span class="metrics__value">{{ stats.weeklyDownloads | shortNumber }}</span>
+                <span>{{ site.homepage.stats.weekly_downloads }}</span>
+            </div>
+            <div class="metrics__item">
+                <span class="metrics__value">{{ stats.stars | shortNumber }}</span>
+                <span>{{ site.homepage.stats.stars }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="content-container divider">
+        <header class="section-head center-text">
+            <h2 class="section-title h3">{{ site.homepage.sponsors.title }}</h2>
+            {% set annual_donations = sponsors.totals.annualDonations | dollars %}
+            {% set sponsors_desc = site.homepage.sponsors.description | replace("ANNUAL_DONATIONS", annual_donations) | replace("SPONSOR_COUNT", sponsors.totals.sponsorCount) %}
+            <p class="section-supporting-text fs-step-0">
+                {{ sponsors_desc }}
+            </p>
+        </header>
+        <div class="grid">
+            <ul role="list" class="sponsors span-4-9">
+                {% for tier in ['platinum', 'gold', 'silver', 'bronze'] %}
+                    {% for sponsor in sponsors[tier] %}
+                        {% set sponsor_amount = sponsor.monthlyDonation %}
+                        {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+                    <li>
+                        {% if sponsor.url %}
+                        <a href="{{ sponsor.url }}" class="sponsor-link" rel="nofollow noopen sponsored" target="_blank">
+                        {% endif %}
+                            <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="48" loading="lazy" decoding="async" />
+                        {% if sponsor.url %}
+                        </a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                {% endfor %}
+                {% for sponsor in techsponsors %}
+                <li>
+                    {% set sponsor_title = site.sponsors_page.tech_sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("TECH", sponsor.donation | capitalize) %}
+                    {% if sponsor.url %}
+                    <a href="{{ sponsor.url }}">
+                    {% endif %}
+                        <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" width="48" height="48" loading="lazy" decoding="async" />
+                    {% if sponsor.url %}
+                    </a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="center-text"><a href="/sponsors/" class="c-btn c-btn--primary">{{ site.homepage.sponsors.view_all_sponsors }}</a></div>
+        </div>
+        <div class="grid">
+            <div class="span-3-10">
+                <h3 class="donations-title span-5-8" id="donations-label">{{ site.homepage.donations.title }}</h3>
+
+                <ul role="list" class="donations-list" role="region" tabindex="-1" aria-labelledby="donations-label">
+                    {% for donation in donations | limitTo(6) %}
+                    <li class="donations-item">
+                        {% set donation_image = donation.image %}
+                        {% set donation_name = donation.name %}
+                        {% set donation_type = donation.type %}
+                        {% set donation_amount = donation.amount | dollars %}
+                        {% set donation_date = donation.date | readableDateFromISO %}
+
+                        {{ donationItem({
+                            image: donation_image,
+                            name: donation_name,
+                            type: donation_type,
+                            amount: donation_amount,
+                            date: donation_date
+                        }) }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="center-text">
+                <a href="/sponsors/#donations" class="c-btn c-btn--secondary">{{ site.homepage.donations.view_all_donations }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section aria-labelledby="testimonials-section-label">
+    <h2 class="visually-hidden">{{ site.donate_page.testimonials.title }}</h2>
+    <div class="content-container">
+        {% include 'components/testimonials-slider.html' %}
+    </div>
+</section>
+
+
+<script>
+    (function() {
+        const copyBtn = document.getElementById('copyBtn');
+        const copyText = document.getElementById('code-snippet');
+        const announcement_region = document.getElementById('eslint-install-code__announcement');
+        copyBtn.removeAttribute('hidden');
+
+        copyBtn.onclick = () => {
+            copyText.select();
+            navigator.clipboard.writeText(copyText.value);
+            announcement_region.innerHTML = "{{ site.homepage.install.copied }}";
+            this.focus();
+            copyBtn.setAttribute('data-copied', 'true');
+
+            setTimeout(() => {
+                copyBtn.removeAttribute('data-copied');
+                announcement_region.innerHTML = "";
+                announcement_region.removeAttribute('data-fades-out');
+            }, 4000);
+        }
+    })();
+</script>

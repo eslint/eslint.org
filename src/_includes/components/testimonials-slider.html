@@ -1,0 +1,43 @@
+<div class="c-slider c-slider--testimonials" data-slider data-aria-label="Testimonials">
+    <div class="c-slider__slides-container" data-slides>
+        <div class="c-slider__slides-wrapper" data-slides-wrapper>
+            {%- for item in site.donate_page.testimonials.items -%}
+            <div class="c-slider__slide focusable" data-slide>
+                <blockquote class="c-slider__testimonial span-1-6">
+                    <div class="c-slider__testimonial__content">
+                        <p>{{ item.text }}</p>
+                    </div>
+                    <footer class="c-slider__testimonial__footer">
+                        <cite class="profile contributor">
+                            <img class="profile__photo profile__photo--small" src="/assets/images/people/testimonials/small/{{ item.image }}" width="48" height="48" alt="{{ item.name }}" loading="lazy">
+                            <div class="profile__details">
+                                <span class="c-slider__testimonial__author profile__name">{{ item.name }}</span>
+                                <span class="c-slider__testimonial__author-role profile__title">{{ item.title }}</span>
+                            </div>
+                        </cite>
+                    </footer>
+                </blockquote>
+                <div class="span-8-12">
+                    <div class="c-slider__testimonial__img">
+                        {% set image_file = ["/people/testimonials/large/", item.image] | join %}
+                        {% set image_alt = item.name %}
+                        {% image image_file, image_alt %}
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+    <div class="c-slider__paddleNav" data-slider-paddlenav hidden>
+        <button class="c-slider__paddleNav__prev" aria-label="Previous Slide" data-prev>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <button class="c-slider__paddleNav__next" aria-label="Next Slide" data-next>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</div>

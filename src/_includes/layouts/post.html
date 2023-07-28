@@ -1,0 +1,61 @@
+---
+layout: base.html
+hook: "post blog-post-page"
+---
+
+{% include "partials/header.html" %}
+
+{%- from 'components/profile.macro.html' import member, contributor, post_author %}
+
+<script src="https://unpkg.com/anchor-js@4.3.1/anchor.min.js" type="text/javascript"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    anchors.add(".post__blog-content h2, .post__blog-content h3, .post__blog-content h4");
+});
+</script>
+<main id="main"  class="post-main" tabindex="-1">
+{%- from 'components/hero.macro.html' import hero %}
+    {% set hero_title = title %}
+    {% set hero_supporting_text = teaser %}
+    {% set hero_date = page.date | readableDate %}
+    {% set hero_category = categories[0] %}
+    {% set hero_category_url = categories[0] | slugify %}
+
+    {{ hero({
+        title: hero_title,
+        supporting_text: hero_supporting_text,
+        post: {
+            date: hero_date,
+            category: hero_category,
+            categoryURL: hero_category_url
+        }
+    }) }}
+
+    <div class="content-container grid">
+
+        <div class="post__blog-content span-5-12">
+            {{ content | safe }}
+        </div>
+
+        <div class="post__author-bios span-5-12">
+            {% for author in authors %}
+                {{ post_author({
+                    photo: all_authors[author].avatar_url,
+                    name: all_authors[author].name,
+                    title: all_authors[author].title,
+                    handle: all_authors[author].username,
+                    github: all_authors[author].github_username,
+                    twitter: all_authors[author].twitter_username,
+                    bio: all_authors[author].bio
+                }) }}
+            {% endfor %}
+        </div>
+
+        {% include 'partials/post-sidebar.html' %}
+
+    </div>
+</main>
+
+{% include "partials/from-the-blog.html" %}
+
+{% include "partials/footer.html" %}

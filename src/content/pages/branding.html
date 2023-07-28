@@ -1,0 +1,59 @@
+---
+layout: main.html
+permalink: /branding/
+multilingual: true
+eleventyExcludeFromCollections: true
+hook: "branding_page"
+---
+
+{%- from 'components/swatch.macro.html' import swatch %}
+{%- from 'components/hero.macro.html' import hero %}
+
+
+{{ hero({
+    title: site.branding_page.title,
+    supporting_text: site.branding_page.description
+}) }}
+
+<section class="section">
+    <div class="content-container grid">
+        <div class="span-1-6">
+            <h2 class="section-title h3">{{ site.branding_page.sections.name.title }}</h2>
+            <p class="">
+                {{ site.branding_page.sections.name.description }}
+            </p>
+        </div>
+    </div>
+    <div class="content-container grid">
+        <div class="span-1-6">
+            <h2 class="section-title h3">{{ site.branding_page.sections.logo.title }}</h2>
+            {% for paragraph in site.branding_page.sections.logo.description %}
+            <p>
+                {{ paragraph }}
+            </p>
+            {% endfor %}
+            <div class="eslint-actions">
+                <a download href="/assets/images/logo/eslint-logo-color.svg" class="c-btn c-btn--secondary">{{ site.branding_page.sections.logo.download_svg }}</a>
+                <a download href="/assets/images/logo/eslint-logo-color.png" class="c-btn c-btn--secondary">{{ site.branding_page.sections.logo.download_png }}</a>
+            </div>
+        </div>
+        <div class="span-8-12">
+            {% include 'partials/branding-logo.html' %}
+        </div>
+    </div>
+    <div class="content-container grid">
+        <div class="span-1-6">
+            <h2 class="section-title h3">{{ site.branding_page.sections.color_palette.title }}</h2>
+            {% for paragraph in site.branding_page.sections.color_palette.description %}
+            <p>
+                {{ paragraph }}
+            </p>
+            {% endfor %}
+        </div>
+        <div class="span-8-12">
+            <div class="brand__palette">
+                {% include 'partials/brand-swatches.html' %}
+            </div>
+        </div>
+    </div>
+</section>

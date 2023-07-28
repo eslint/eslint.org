@@ -1,0 +1,54 @@
+<!--
+    Parameters:
+        title
+        featured
+        teaser
+        authorName
+        category
+        readingTime
+        date
+    The category, readingTime and date are typically generated from the item in the collection you're looping through.
+-->
+
+{%- macro card(params) -%}
+<article class='card {% if params.featured == "true" %} card--featured {% endif %}'>
+    {%- if params.image -%}
+        {%- set imageName =  params.image -%}
+    {%- elseif params.category -%}
+        {%- set imageName =  [params.category | slugify, '.png' ] | join -%}
+    {%- else -%}
+        {%- set imageName =  'sponsorships.png' -%}
+    {%- endif -%}
+    {%- set img = ['/assets/images/blog-covers/', imageName] | join  -%}
+    {%- set image_path = ["/blog-covers/", imageName] | join -%}
+    {%- set image_alt = params.title -%}
+    <a href="{{ params.url }}" class="card__cover" tabindex="-1">
+        {%- image image_path, params.title -%}
+    </a>
+    <div class="card__content">
+        <div class="badge-group">
+            <span class="blog-post__category">
+                <span class="visually-hidden">Published under:</span> {{ params.category }}
+            </span>
+            <span class="blog-post__reading-time">
+                {{ params.readingTime }} read
+            </span>
+        </div>
+
+        <h3 class="card__title">
+            <a href="{{ params.url }}">
+                {{ params.title }}</a>
+        </h3>
+        <p class="card__teaser">
+            {{ params.teaser }}
+        </p>
+        <div class="card__footer">
+            <img class="blog-post__author-photo" src="{% if params.authorImage %}{{ params.authorImage }} {% else %}../../../assets/images/people/_placeholder-avatar.svg{% endif %}" alt="{{ params.authorName }}" width="40" height="40" loading="lazy">
+            <div class="blog-post__author__details">
+                <div class="blog-post__author-name">{{ params.authorName }}</div>
+                <time class="blog-post__publish-date" datetime="{{ params.date }}">{{ params.date | readableDate }}</time>
+            </div>
+        </div>
+    </div>
+</article>
+{%- endmacro -%}

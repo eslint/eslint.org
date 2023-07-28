@@ -1,0 +1,44 @@
+---
+layout: category.html
+pagination:
+    data: collections.blogpostsByCategories
+    size: 1
+    alias: currentCategory
+permalink: /blog/category/{{ currentCategory.slug }}/index.html
+---
+
+{%- from 'components/card.macro.html' import card %}
+
+{% block content %}
+<h2 hidden>{{ currentCategory.title }}</h2>
+<div class="blog-posts">
+
+    {% for post in currentCategory.items %}
+
+    <!-- temporary until I can go through an update all the posts-->
+            {% set author = post.data.author %}
+            {% if not author %}
+            {% set author = post.data.authors[0] %}
+            {% endif %}
+
+            {% set author_image = all_authors[author].avatar_url %}
+            {% set author_name = all_authors[author].name %}
+            {% set reading_time = post.templateContent | readingTime %}
+
+            {{ card({
+                postAuthor: author,
+                authorImage: author_image,
+                authorName: author_name,
+                featured: post.data.featured,
+                url: post.url,
+                image: post.data.image,
+                category: post.data.categories[0],
+                title: post.data.title,
+                readingTime: reading_time,
+                teaser: post.data.teaser,
+                date: post.date
+            }) }}
+    {% endfor %}
+</div>
+
+{% endblock %}

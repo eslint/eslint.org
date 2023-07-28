@@ -1,0 +1,636 @@
+#------------------------------------------------------------------------------
+# German Site Details
+# The primary ESLint site that is hosted at eslint.org
+# Author: Stefan Kolb
+#------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------
+# Global Settings
+#------------------------------------------------------------------------------
+
+language:
+  code: de
+  flag: 🇩🇪
+  name: Deutsch
+  title: German
+locale: de-DE
+hostname: de.eslint.org
+locals:
+  docs_latest: false
+  docs_head: false
+  blog: false
+
+#------------------------------------------------------------------------------
+# Analytics
+#------------------------------------------------------------------------------
+
+google_analytics:
+  code: "G-42E45Y2LFS"
+
+#------------------------------------------------------------------------------
+# Ads
+#------------------------------------------------------------------------------
+
+carbon_ads:
+  serve: ""
+  placement: ""
+
+#------------------------------------------------------------------------------
+# Shared
+#------------------------------------------------------------------------------
+
+shared:
+  get_started: Erste Schritte
+  become_a_sponsor: Werde Sponsor
+  eslint_logo_alt: ESLint Logo
+  description: >
+    Ein erweiterbares und konfigurierbares Lint-Werkzeug, um Muster
+    in JavaScript zu erkennen und zu melden. Es ist ein Leichtes,
+    deine Code-Qualität hoch zu halten.
+  title_format: PAGE_TITLE - ESLint - Erweiterbarer JavaScript Linter
+  skip_to_content: Gehe zum Hauptinhalt
+
+#------------------------------------------------------------------------------
+# Navigation
+#------------------------------------------------------------------------------
+
+navigation:
+- text: Team
+  link: team
+- text: Blog
+  link: blog
+- text: Dokumentation
+  link: docs
+- text: Store
+  link: store
+  target: _blank
+- text: Demo
+  link: playground
+  target: _blank
+
+#------------------------------------------------------------------------------
+# Footer
+#------------------------------------------------------------------------------
+
+footer:
+  title: Möchtest Du Fehler in deinem JavaScript-Code beheben?
+  description: Installiere ESLint mittels npm oder beginne noch heute zu Spenden.
+  secondary: Zweitens
+  social_icons:
+    title: Soziale Medien
+    twitter: Twitter
+    chat: Discord
+    github: GitHub
+    mastodon: Mastodon
+  theme_switcher:
+    title: Themenauswahl
+    light: Hell
+    dark: Dunkel
+  language_switcher:
+    title: Sprachauswahl
+    description: >
+      Wenn Du eine Sprache auswählst, wirst Du zur ESLint-Webseite in dieser
+      Sprache weitergeleitet.
+    change_language: Sprache ändern
+    language: Sprache
+  copyright: >
+    Copyright <a href="https://openjsf.org">OpenJS-Stiftung</a> und die
+    Mitwirkenden an ESLint. Alle Rechte vorbehalten. Die
+    <a href="https://openjsf.org">OpenJS-Stiftung</a> besitzt eingetragene
+    Markenzeichen und benutzt Markenzeichen. Eine Auflistung der Marken der
+    <a href="https://openjsf.org">OpenJS-Stiftung</a> finden Sie in unserer
+    <a href="https://trademark-policy.openjsf.org">Markenrichtlinie</a> und
+    unserer <a href="https://trademark-list.openjsf.org">Markenliste</a>.
+    Warenzeichen und Logos, die nicht auf der
+    <a href="https://trademark-list.openjsf.org">Markenliste</a> aufgeführt
+    sind, sind entweder Warenzeichen oder eingetragene Warenzeichen ihrer
+    jeweiligen Inhaber. Die Benutzung dieser Warenzeichen impliziert keine
+    Zugehörigkeit zu oder Unterstützung durch diese Inhaber.
+  links:
+    open_jsf: Die OpenJS-Stiftung
+    terms: Nutzungsbedingungen
+    privacy: Datenschutzbestimmungen
+    bylaws: Statuten der OpenJS-Stiftung
+    trademark: Warenzeichen
+    trademark_list: Liste der Warenzeichen
+    cookies: Cookie-Richtlinie
+
+#------------------------------------------------------------------------------
+# 404 Page
+#------------------------------------------------------------------------------
+
+404_page:
+  title: Fehler 404
+  subtitle: Seite nicht gefunden
+  description: >
+    Es tut uns leid, aber die gesuchte Seite existiert nicht oder wurde
+    verschoben.
+  actions:
+    back_to_home: Zurück zur Startseite
+    browse_docs: Durchsuche die Dokumentation
+
+#------------------------------------------------------------------------------
+# Branding Page
+#------------------------------------------------------------------------------
+
+branding_page:
+  title: Unsere Marke
+  description: Wie man unser Logo benutzt
+  sections:
+    name:
+      title: Name
+      description: >
+        ESLint muss bei der Verwendung mit einem großen E, S und L geschrieben
+        werden, da "ES" für ECMAScript steht und "L" der Anfang des Wortes
+        "Lint" ist.
+    logo:
+      title: Logo
+      description:
+        - >
+          Das ESLint Logo kann auf verschiedefarbigen Hintergründen platziert
+          werden, vorausgesetzt, es hat genügend vertikalen und horizontalen
+          Freiraum.
+        - >
+          Verdopple die Größe des inneren Sechsecks, dass durch die Lücke
+          entsteht, um ein Gefühl dafür zu bekommen, wie viel Abstand zwischen dem
+          Logo und der Wortmarke bzw. wie viel Platz um das Logo selbst sein
+          sollte.
+        - >
+          Unser Logo ist vielseitig einsetzbar - Du kannst es auf verschiedenen
+          Markenfarben verwenden. Um die helleren Farben zu emulieren, passe die
+          Deckkraft auf nicht-weißen Hintergründen an. Die ESLint-Logomarke kann
+          auch alleine, ohne die ESLint-Wortmarke verwendet werden, wobei die
+          Verwendung beider nach Möglichkeit vorzuziehen ist.
+      download_svg: SVG herunterladen
+      download_png: PNG herunterladen
+      change_background: "Hintergrund ändern:"
+    color_palette:
+      title: Farbpalette
+      description:
+        - >
+          Die Farbpalette von ESLint kann genauso kraftvoll für unsere Marke
+          sprechen wie unsere Texte und Logos. Sie beeinflusst nicht nur das
+          Aussehen bzw. unser Design, sondern kann Emotionen hervorrufen und
+          die Persönlichkeit der Marke ESLint widerspiegeln.
+        - >
+          Die primäre "Markenfarbe" wird für alle interaktiven Elemente wie
+          Buttons, Links, Eingabefelder etc. verwendet. Sie ist von unserem
+          Logo abgeleitet. Wir nutzen die zwei bestehenden Farben, um einen
+          einzigartigen primären Farbtonbereich zu schaffen.
+      brand_palette: Markenpalette
+      colors:
+        primary: Primär
+        white: Weiß
+        neutral: Neutral
+  actions:
+    back_to_home: Zurück zur Startseite
+    browse_docs: Durchsuche die Dokumentation
+
+#------------------------------------------------------------------------------
+# Homepage
+#------------------------------------------------------------------------------
+
+homepage:
+  title: Finde und behebe Probleme in deinem JavaScript Code
+  description: >
+    ESLint analysiert deinen Code statisch, damit Probleme schnell gefunden werden.
+    Es ist in die meisten Texteditoren integriert und Du kannst ESLint als Teil
+    deiner Continuous-Integration-Pipelines nutzen.
+
+  animation:
+    enabled: true
+    text: Finde und behebe Probleme in deinem JavaScript Code
+    highlight_word: Probleme
+    wrong_word: Probelme
+
+  install:
+    title: ESLint-Code zur Schnellinstallation
+    copy: Kopiere den Code zur Schnellinstallation in die Zwischenablage
+    copied: In die Zwischenablage kopiert.
+
+  versions:
+    title: ESLint Versionen
+    latest: Aktuellste Version
+    upcoming: Nächste Version
+    development: Entwicklung
+    dateline: <span class="text-dark">VERSION</span> am DATE
+
+  explainer:
+    image:
+      src: eslint-features-img.png
+      alt: "Bildschirmfoto eines Code-Fensters von Visual Studio, in dem ESLint seine Arbeit verrichtet: es unterstreicht einen ESLint-Fehler im Editor."
+    title: Das erweiterbare Lint-Werkzeug für JavaScript und JSX
+    description: >
+      ESLint ist ein Open-Source-Projekt, das Dir hilft, Probleme in deinem
+      JavaScript-Code zu finden und zu beheben. Dabei spielt es keine Rolle, ob
+      Du JavaScript im Browser oder auf einem Server schreibst, ob Du ein
+      Framework benutzt oder nicht; ESLint kann Dir dabei helfen, dass dein Code
+      glänzt.
+    features:
+    - title: Probleme finden
+      description: >
+        ESLint analysiert deinen Code statisch, damit Probleme schnell gefunden
+        werden. Es ist in die meisten Texteditoren integriert und Du kannst ESLint
+        als Teil deiner Continuous-Integration-Pipelines nutzen.
+      learn_more:
+        link: getStarted
+        text: >
+          Lerne mehr darüber, <span class="visually-hidden">wie Du Probleme mit ESLint aufspürst</span>
+    - title: Behebe Probleme automatisch
+      description: >
+        Viele Probleme, die ESLint findet können automatisch behoben werden.
+        ESLint-Fehlerbehebungen sind sich der Syntax bewusst, so dass Fehler,
+        die durch klassische Suchen-und-Ersetzen-Algorithmen auftreten können,
+        nicht erfolgen.
+      learn_more:
+        link: fixProblems
+        text: >
+          Lerne mehr darüber, <span class="visually-hidden">wie Du Probleme automatisch mit ESLint behebst</span>
+    - title: Konfiguriere alles
+      description: >
+        Code vorverarbeiten, eigene Parser verwenden sowie eigene Regeln schreiben,
+        die mit den vorgefertigen ESLint-Regeln zusammenarbeiten. Passe ESLint
+        genau an deine Bedürfnisse an, damit es so funktioniert, wie Du es für
+        dein Projekt benötigst.
+      learn_more:
+        link: configuring
+        text: >
+          Lerne mehr darüber, <span class="visually-hidden">wie Du ESLint konfigurierst</span>
+  blog:
+    view_all_posts: Zeige alle Beiträge
+
+  stats:
+    title: Willkommen in der Community
+    description: >
+      ESLint ist der #1 JavaScript-Linter gemessen an den Downloads auf npm
+      (über DOWNLOAD_COUNT Downloads / Woche) und wird bei Firmen wie beispielsweise
+      Microsoft, Airbnb, Netflix und Facebook eingesetzt.
+    dependents: Nutzer
+    weekly_downloads: Wöchentliche Downloads
+    stars: Sterne
+
+  sponsors:
+    title: Unterstützt von fantastischen Menschen
+    description: >
+      Wir erhalten ANNUAL_DONATIONS / Jahr als Spenden von SPONSOR_COUNT Sponsoren.
+    view_all_sponsors: Zeige alle Sponsoren
+
+  donations:
+    title: Kürzliche Einmalspenden
+    view_all_donations: Zeige alle Spenden
+
+#------------------------------------------------------------------------------
+# Blog Page
+#------------------------------------------------------------------------------
+
+blog_page:
+  title: Neuigkeiten
+  description: Die neusten ESLint-Nachrichten, Fallstudien, Anleitungen und Ressourcen.
+  search:
+    title: Suche
+    hint: Die Suchergebnisse werden während der Eingabe angezeigt und aktualisiert.
+    clear: Suche zurücksetzen
+  categories:
+    title: Kategorien
+    everything: Alles
+  pagination:
+    title: Seitennummerierung
+    first_page: Erste
+    next_page: Nächste
+    previous_page: Vorherige
+    last_page: Letzte
+    status: Seite PAGE_NUMBER von TOTAL_PAGE_COUNT
+  from_the_blog: Aus dem Blog
+
+#------------------------------------------------------------------------------
+# Team Page
+#------------------------------------------------------------------------------
+
+team_page:
+  title: Unser Team
+  description: >
+    Dies sind die Menschen, die ESLint entwickeln und betreuen.
+  tsc:
+    title: Technischer Lenkungsausschuss
+    description: >
+      Die Leute, die Releases verwalten, Funktionsanforderungen prüfen und sich
+      regelmäßig treffen, um sicherzustellen, dass ESLint ordnungsgemäß gepflegt
+      wird.
+  reviewers:
+    title: Reviewer
+    description: >
+      Die Leute, die neue Funktionen prüfen und implementieren.
+  committers:
+    title: Mitwirkende
+    description: >
+      Die Leute, die Fehler überprüfen und beheben und die bei der Sichtung von
+      Problemen helfen.
+  website_team:
+    title: Website Team
+    description: >
+      Teammitglieder, die sich speziell auf eslint.org konzentrieren.
+  support_team:
+    title: Support Team
+    description: >
+      Personen, die bei Discord und Diskussionen helfen.
+
+  alumni:
+    title: Alumni
+    description: >
+      Ehemalige Teammitglieder, die früher bei der Betreuung von ESLint
+      mitgeholfen haben.
+
+#------------------------------------------------------------------------------
+# Sponsors Page
+#------------------------------------------------------------------------------
+
+sponsors_page:
+  title: Sponsoren
+  description: >
+    BACKER_COUNT Firmen, Organisationen und Individuen spenden aktuell
+    MONTHLY_DONATIONS jeden Monat, um die fortlaufende Pflege und Entwicklung
+    von ESLint zu unterstützen.
+  hero:
+    cta:
+      text: Werde Sponsor
+      url: /donate
+  tiers:
+    platinum:
+      title: Platin Sponsoren
+      description: >
+        Mit einer monatlichen Spende von $2000 USD (die für 40 Stunden Pflege und
+        Entwicklung verwendet wird) wirst Du Platin Sponsor und bekommst zwei
+        Stunden dedizierten Support (Fernunterstützung möglich per Chat oder
+        Bildschirmfreigabe) pro Monat. Zusätzlich fügen wir dein Open Collective-
+        oder GitHub-Avatarbild in unser README auf GitHub ein und zeigen es auf
+        unserer Homepage auf eslint.org. Wir twittern außerdem ein Dankeschön
+        von unserem Twitter-Account (der mehr als 20.000 Follower hat). Bitte
+        kontaktiere das ESLint-Team, um Support-Sitzungen zu vereinbaren.
+    gold:
+      title: Gold Sponsoren
+      description: >
+        Mit einer monatlichen Spende von $1000 USD (die für 20 Stunden Pflege und
+        Entwicklung verwendet wird) wirst Du Gold Sponsor. Wir fügen dein Open
+        Collective- or GitHub-Avatarbild in unser README auf GitHub ein und
+        zeigen es auf unserer Homepage auf eslint.org. Wir twittern außerdem ein
+        Dankeschön von unserem Twitter-Account (der mehr als 20.000 Follower hat).
+    silver:
+      title: Silber Sponsoren
+      description: >
+        Mit einer monatlichen Spende von $500 USD (die für 10 Stunden Pflege und
+        Entwicklung verwendet wird) wirst Du Silber Sponsor. Wir fügen dein Open
+        Collective- or GitHub-Avatarbild in unser README auf GitHub ein und
+        zeigen es auf unserer Homepage auf eslint.org.
+    bronze:
+      title: Bronze Sponsoren
+      description: >
+        Mit einer monatlichen Spende von $200 USD (die für vier Stunden Pflege und
+        Entwicklung verwendet wird) wirst Du Bronze Sponsor. Wir fügen dein Open
+        Collective- or GitHub-Avatarbild in unser README auf GitHub ein und
+        zeigen es auf unserer Homepage auf eslint.org.
+    technology:
+      title: Technologie Sponsoren
+      description: >
+        Technologie-Sponsoren ermöglichen uns die kostenlose Nutzung ihrer
+        Produkte und Dienstleistungen als Teil eines Beitrags zum
+        Open-Source-Ökosystem und zu unserer Arbeit.
+    backers:
+      title: Alle Unterstützer
+      description: >
+        Unterstützer leisten monatliche Beiträge, um ESLint weiter zu betreiben.
+
+  recent_donations:
+    title: Kürzliche Einmalspenden
+    description: >
+      Wir erhalten außerdem viele Einmalbeiträge von fantastischen Menschen.
+      Hier sind einige der aktuellen Zuwendungen von Open Collective und GitHub.
+
+  sponsor_title: SPONSOR_NAME spendet AMOUNT jeden Monat
+  tech_sponsor_title: TECH bereitgestellt von SPONSOR_NAME
+
+#------------------------------------------------------------------------------
+# Donate Page
+#------------------------------------------------------------------------------
+
+donate_page:
+  title: Spende
+  description: >
+    ESLint ist für die fortlaufende Wartung und Entwicklung auf Spenden angewiesen.
+    Derzeit gibt es BACKER_COUNT Firmen, Organisationen und Einzelpersonen, die
+    monatlich MONTHLY_DONATIONS spenden, um uns zu unterstützen.
+  hero:
+    cta:
+      text: Sponsoren anzeigen
+      url: /sponsors
+  donation_options:
+    title: Wie Du spenden kannst
+    subtitle: Wir akzeptieren Spenden über die folgenden Webseiten.
+    open_collective:
+      title: Open Collective
+      subtitle: Die beliebteste Möglichkeit unter Firmen.
+      cta:
+        text: Unterstütze uns via Open Collective
+      items:
+        - text: Spende direkt an eine gemeinnützige 501(c)(6) Non-Profit-Organisation
+        - text: Einmalspenden und Spenden im Dauerauftrag
+        - text: Zahle mit Kreditkarte, Überweisung oder PayPayl
+        - text: Richte einen Open-Source-Fonds ein, um an mehrere Projekte zu spenden
+        - text: Verfügbar in den meisten Ländern
+    github_sponsors:
+      title: GitHub Sponsors
+      subtitle: Erweiterte Funktionen und Berichte.
+      cta:
+        text: Unterstütze uns via GitHub
+      items:
+        - text: Spenden werden über GitHub abgerechnet
+        - text: Einmalspenden und Spenden im Dauerauftrag
+        - text: Zahle mit Kreditkarte oder mittels der bei GitHub hinterlegten Zahlungsmethode (inklusive Rechnungserstellung)
+        - text: Zeige ein “Sponsor”-Badge auf deinem GitHub-Profil
+        - text: Verwende deinen bestehenden GitHub-Login
+  budget:
+    title: Wie das Geld verwendet wird
+    subtitle: >
+      Das ESLint-Projekt verwendet das gespendete Geld, um sowohl das Projekt
+      an sich als auch die ESLint-Community als Ganzes zu unterstützen.
+      Im Allgemeinen geben wir jeden Monat Geld für diese Bereiche aus.
+    items:
+      - name: Team Entwicklung
+        text: >
+          Wir zahlen unseren Teammitgliedern eine Stundensatz, der auf ihrer
+          Erfahrung basiert. Momentan zahlen wir HOURLY_RATE_TSC USD/Stunde für
+          TSC-Mitglieder und Reviewer und HOURLY_RATE_COMMITERS für Mitwirkende.
+      - name: Mitwirkenden-Fonds
+        text: >
+          Wir stellen jeden Monat CONTRIBUTOR_POOL_BUDGET USD zur Verfügung, um
+          externe Mitwirkende zu bezahlen, die wichtige Beiträge zum Projekt
+          geleistet haben. Als Beiträge zählen das Einreichen von Code, das
+          Schreiben von Dokumentation, die Beantwortung von Fragen auf unserem
+          Discord-Server und vieles mehr. Dieses Geld wird jeden Monat vom TSC
+          zugewiesen.
+      - name: Abhängigkeiten
+        text: >
+          Wir stellen jeden Monat DEPENDENCIES_BUDGET USD zur Verfügung, um die
+          Projekte zu unterstützen, von denen wir abhängig sind. Wir glauben,
+          dass Open-Source-Projekte, die das Glück haben finanziert zu werden,
+          die Verantwortung haben, die kleineren Projekt, auf die sie
+          angewisen sind, zu unterstützen.
+      - name: Community-Projekte
+        text: >
+          Wir stellen jeden Monat DEPENDENCIES_BUDGET USD zur Verfügung, um
+          Plugins, Parser und andere Projekte zu unterstützen, die für das
+          ESLint-Ökosystem als Ganzem von Nutzen sind. Wir glauben, dass die
+          Stärke des Projekts in seinem Ökosystem liegt und wir wollen
+          sicherstellen, dass wichtige Projekte weiterhin gut betreut werden.
+      - name: Unterstützende Systeme
+        text: >
+          Wir verwenden jeden Monat einen kleinen Betrag, um die Software zu
+          bezahlen, die das Team zur Verwaltung des Projekts einsetzt. Dazu
+          gehören Dinge wie Google Workspace und Cloud-Speicher.
+    footer:
+      text: >
+        Ab und an verwenden wir die gespendeten Mittel außerdem, um Auftragsarbeiten
+        zu bezahlen, die für das Projekt wichtig sind, für die das Team aber
+        weder die Zeit noch das Fachwissen hat, um sie selbst zu erledigen.
+        Zum Beispiel haben wir vor Kurzem einen Designer und einen Entwickler
+        beauftragt, diese Website neu zu gestalten. Wir achten darauf, dass wir
+        jeden Monat weniger ausgeben als wir einnehmen, um für Projekte dieser
+        Art zu sparen.
+  donation_tiers:
+    title: Spendenstufen
+    subtitle: Wir nehmen Spenden in jeder Höhe an, haben aber ein Stufensystem mit unterschiedlichen Belohnungen für jede Stufe.
+    cta:
+      open_collective_text: >
+        Spende <span class="visually-hidden">mittels Open Collective</span>
+      github_sponsors_text: >
+        Spende <span class="visually-hidden">mittels GitHub</span>
+    items:
+      - name: Platin Sponsor
+        amount: $2000+
+        frequency: pro Monat
+        text: Zwei Stunden Support, höchste Platzierung des Logos auf der Homepage und in der README-Datei. Zusätzlich alles aus der Gold-Sponsor Stufe.
+      - name: Gold Sponsor
+        amount: $1000–1999
+        frequency: pro Monat
+        text: Zweithöchste Platzierung des Logos auf der Homepage und in der README-Datei, ein Dankeschön-Tweet von unserem Twitter-Account (20.000 Follower) und ein Dankeschön-Post in unserem Blog.
+      - name: Silber Sponsor
+        amount: $500–999
+        frequency: pro Monat
+        text: Dritthöchste Platzierung des Logos auf der Homepage und in der README-Datei.
+      - name: Bronze Sponsor
+        amount: $200–499
+        frequency: pro Monat
+        text: Vierthöchste Platzierung des Logos auf der Homepage und in der README-Datei.
+  testimonials:
+    title: Referenzen
+    items:
+    - name: Addy Osmani
+      title: Senior Staff Eng. Manager, Chrome
+      image: addy-osmani.jpg
+      text: >
+        ESLint hilft Entwicklern schon seit Jahren, qualitativ hochwertigen
+        JavaScript-Code zu schreiben. Wir finden es gut, dass es gewöhnliche
+        auftretende Fehler früh und oft erkennt. Durch den hohen Grad der
+        Erweiterbarkeit haben Teams die Möglichkeit auf sie zugeschnittene Regeln
+        anzuwenden. Dies ist Etwas, das nicht nur Open-Source-Projekten zu Gute
+        kommt. Chrome is glücklich darüber ESLint zu unterstützen, damit
+        Web-Entwickler die Möglichkeit haben konsistenten, hoch qualitativen Code
+        zu schreiben. Es ist ein essentieller Bestandteil des Werkzeugkastens
+        eines modernen Web-Entwicklers.
+    - name: Jeff Cross
+      title: Co-founder und Principal Architect, Nx
+      image: jeff-cross.jpg
+      text: >
+        Nx verwendet ESLint, um Codequalität, Bibliotheksbeschränkungen und
+        Projektsichtbarkeitsbeschränkungen durchzusetzen. ESLint macht Nx
+        leistungsfähiger. Im Namen der Nx.dev-Community: Wir sind stolz darauf
+        unseren Teil zu leisten und weiterhin ESLints Erfolg zu unterstützen.
+    - name: Médédé Raymond KPATCHAA
+      title: Technical Architect, Salesforce
+      image: medede-kpatchaa.jpg
+      text: >
+        ESLint ist für jedes JavaScript-Projekt ein äußerst nützliches Werkzeug.
+        Es erlaubt uns einheitliche Regeln für die Codeformatierung festzulegen,
+        die vom gesamten Team seit Beginn des Projekts übernommen wurden.
+        Dies erleichert Code-Reviews erheblich und macht es einfach, neue
+        Entwickler in das Team zu integrieren. Ich weiß, dass ich nicht der Einzige
+        bin, der die Flexibilität und Benutzerfreundlichkeit zu schätzen weiß.
+    - name: Duane O'Brien
+      title: Head of Open Source, Indeed
+      image: duane-obrien.jpg
+      text: >
+        Die meisten JavaScript-Projekte hängen direkt oder indirect von ESLint ab.
+        Ein Mitarbeiter von Indeed schlug vor an ESLint aus dem FOSS Contributor
+        Fund zu spenden und die Kollegen stimmten vollumfänglich zu. Wir freuen
+        uns, die Open-Source-Technologien zu untersützen, die es uns ermöglichen,
+        die digitale Intrastruktur zu entwickeln, zu schützen und zu betreuen,
+        die unsere Produkte unterstützen und Menschen bei der Jobsuche helfen.
+    - name: Gajus Kuizinas
+      title: Co-Founder / CTO, Contra
+      image: gajus.jpg
+      text: >
+        ESLint spielt eine wichtige Rolle in dem es uns hilft eine sichere und
+        konsistente Erfahrung über eine wachsende Anzahl an Code-Basen und
+        Entwicklern hinweg zu schaffen. Wir sind dankbar für all die Open-Source-
+        Projekte, die uns bei der Entwicklung von Contra helfen und ESLint ist
+        das erste von vielen Open-Source-Projekten, die wir unterstützen wollen.
+
+
+  faq:
+    title: Häufig gestellte Fragen (F.A.Q.)
+    description: Alles, was Du über das Produkt und die Rechnungsstellung wissen musst. Die Antwort auf deine Frage ist nicht dabei? Bitte sprich mit unserem freundlichen Team.
+    items:
+    - q: Wer erhält das gespdendete Geld?
+      a: Alle Zuwendungen, ob durch <a href='https://opencollective.com'>Open
+        Collective</a> oder GitHub erhalten, gehen an das Open Source Collective,
+        eine Non-Profit-Organisation nach 501(c)(6). Das Open Source Collective
+        fungiert als fiskalischer Verwalter für ESLint und behält den Überblick
+        über alle Spenden.
+    - q: Bekomme ich einen Nachweis über meine Spenden?
+      a: Ja. Du erhälst eine Quittung als PDF, wenn Du mittels Open Collective
+        spendest; wenn Du mittels GitHub spendest wird die Spende auf deiner
+        Quittung oder Rechnung aufgeführt sein.
+    - q: Ist meine Spende steuerlich absetzbar?
+      a: Nein. Obwohl das Open Source Collective eine 501(c)(6) Non-Profit-
+        Organisation ist, betrachtet der IRS die Entwicklung von Open-Source-
+        Software nicht als wohltätige Aktivität und gewährt daher keine
+        Steuerbefreiung.
+    - q: Wer entscheidet, wie das Geld verteilt wird?
+      a: Das TSC trifft alle Entscheidungen darüber, wer das Geld erhält und wie
+        viel verteilt wird.
+    - q: Kann ich sehen, wie das Geld verwendet wird?
+      a: Ja. Wenn Du auf unsere Open Collective-Seite gehst kannst Du alle
+        eingereichten und bezahlten Ausgaben sehen. Alle Transaktionen sind
+        vollständig verfügbar und öffentlich einsehbar.
+    - q: Kann ich meinen Spenden-Dauerauftrag jederzeit kündigen?
+      a: Ja. Es gibt keine langfristige Verpflichtung. Du kannst deinen Spenden-
+        Dauerauftrag jederzeit stornieren. Logge dich dazu entweder bei Open
+        Collective oder GitHub-Sponsors ein.
+    - q: Wie lange dauert es bis mein Logo auf der Homepage, GitHub und im
+        npm-Paket erscheint?
+      a: Die Logos auf der Homepage und GitHub werden automatisch jeden Tag
+        aktualisiert, es sollte also nicht länger as 24 Stunden dauern, bis sie
+        erscheinen. Die Logos im npm-Paket werden nur aktualisiert, wenn wir eine
+        neue Version veröffentlichen, was normalerweise alle zwei Wochen der Fall
+        ist. Die Fertigstellung größrer Versionen dauert jedoch oft mehrere Monate,
+        und während dieser Zeit werden die Logos im npm-Paket nicht aktualisiert.
+    - q: Woher kommen mein Logo und meine URL?
+      a: Wir beziehen das Logo und die URL aus deinem Open-Collective- oder
+        GitHub-Profil, je nachdem, welche Seite Du für die Spende verwendet hast.
+        Du kannst diese Angaben jederzeit auf Open Collective oder GitHub
+        aktualisieren und die Änderungen werden innerhalb von 24 Stunden auf der
+        Homepage und in der README auf GitHub angezeigt. Wir haben keine
+        Möglichkeit Logos und URLs manuell auf der Webseite zu überschreiben.
+    - q: Ist es möglich eine einmalige Spende zu tätigen?
+      a: Ja. Der einfachste Weg eine einmalige Spende zu tätigen ist über Open
+        Collective; dort ist es möglich jeden beliebigen Betrag zu spenden. Bei
+        Spenden über GitHub kann es sein, dass der Betrag den Du spenden kannst,
+        begrenzt ist.
+
+#------------------------------------------------------------------------------
+# Languages Page
+#------------------------------------------------------------------------------
+
+languages_page:
+  title: Sprachen
+  choose_language: Wähle deine Sprache

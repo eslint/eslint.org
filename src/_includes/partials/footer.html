@@ -1,0 +1,41 @@
+<footer class="site-footer">
+    <div class="content-container divider">
+        <section class="footer-cta center-text">
+            {% include "components/logo.html" %}
+
+            <div class="section-head centered">
+                <h2 class="section-title h3">{{ site.footer.title }}</h2>
+                <p class="section-supporting-text">
+                    {{ site.footer.description }}
+                </p>
+            </div>
+            <div class="eslint-actions">
+                <a href="{{ links.getStarted }}" target="_blank" class="c-btn c-btn--primary">{{ site.shared.get_started }}</a>
+                <a href="{{ links.donate }}" class="c-btn c-btn--secondary donate-link">{{ site.shared.become_a_sponsor }}</a>
+            </div>
+        </section>
+    </div>
+    <div class="content-container divider footer-middle">
+        {% include 'components/social-icons.html' %}
+        {% include 'components/theme-switcher.html' %}
+        {% include 'components/language-switcher.html' %}
+    </div>
+    <div class="content-container footer-legal-section">
+        <div class="copyright">
+            <p>{{ site.footer.copyright | safe }}</p>
+        </div>
+        <nav aria-labelledby="footer-legal-links-label" class="footer-legal-links">
+            <h2 id="footer-legal-links-label" hidden>{{ site.footer.secondary }}</h2>
+            <ul>
+                <li><a href="/branding/">{{ site.branding_page.title }}</a></li>
+                <li><a href="https://openjsf.org/">{{ site.footer.links.open_jsf }}</a></li>
+                <li><a href="https://terms-of-use.openjsf.org/">{{ site.footer.links.terms }}</a></li>
+                <li><a href="https://privacy-policy.openjsf.org/">{{ site.footer.links.privacy }}</a></li>
+                <li><a href="https://bylaws.openjsf.org/">{{ site.footer.links.bylaws }}</a></li>
+                <li><a href="https://trademark-policy.openjsf.org/">{{ site.footer.links.trademark }}</a></li>
+                <li><a href="https://trademark-list.openjsf.org/">{{ site.footer.links.trademark_list }}</a></li>
+                <li><a href="https://www.linuxfoundation.org/cookies/">{{ site.footer.links.cookies }}</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>

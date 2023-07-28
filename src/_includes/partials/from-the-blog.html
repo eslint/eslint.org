@@ -1,0 +1,49 @@
+{%- from 'components/card.macro.html' import card %}
+
+<section aria-labelledby="more-posts-label" class="from-the-blog">
+    <div class="content-container">
+        <div class="from-the-blog__top grid grid--center-items">
+            <header class="section-head span-1-7 ">
+                <h2 class="from-the-blog__title" id="more-posts-label">{{ site.blog_page.from_the_blog }}</h2>
+                <p class="">
+                    {{ site.blog_page.description }}
+                </p>
+            </header>
+            <div class="span-11-12"><a href="{{ links.blog }}" class="c-btn c-btn--primary c-btn--block from-the-blog__more">{{ site.homepage.blog.view_all_posts }}</a></div>
+        </div>
+
+        <div class="blog-posts">
+            {%- set posts = helpers.excludeThis(collections.blogposts, page.url) | limitTo(3) -%}
+            {%- for item in posts -%}
+
+            {% if item.url !== page.url %}
+
+            {% set author = item.data.author %}
+            {% if not author %}
+            {% set author = item.data.authors[0] %}
+            {% endif %}
+
+            {% set author_image = all_authors[author].avatar_url %}
+            {% set author_name = all_authors[author].name %}
+            {% set reading_time = item.templateContent | readingTime %}
+
+
+
+            {{ card({
+                postAuthor: author,
+                authorImage: author_image,
+                authorName: author_name,
+                featured: item.data.featured,
+                url: item.url,
+                image: item.data.image,
+                category: item.data.categories[0],
+                title: item.data.title,
+                readingTime: reading_time,
+                teaser: item.data.teaser,
+                date: item.date
+            }) }}
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

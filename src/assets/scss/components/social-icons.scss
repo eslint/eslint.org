@@ -1,0 +1,18 @@
+.eslint-social-icons {
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 2rem;
+
+        li {
+            margin: 0;
+            display: inline-flex;
+            align-items: center;
+
+            a {
+                display: flex;
+            }
+        }
+    }
+}

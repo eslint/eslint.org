@@ -1,0 +1,250 @@
+---
+layout: main.html
+permalink: /team/
+multilingual: true
+hook: "team_page"
+---
+
+{%- from 'components/profile.macro.html' import member, contributor %}
+{%- from 'components/hero.macro.html' import hero %}
+
+
+{{ hero({
+    title: site.team_page.title,
+    supporting_text: site.team_page.description
+}) }}
+
+{% if team.tsc.length > 0 %}
+    <section class="section">
+        <div class="content-container grid">
+            <div class="span-1-4">
+                <h2 class="section-title">{{ site.team_page.tsc.title }}</h2>
+                <p class="section-supporting-text">
+                    {{ site.team_page.tsc.description }}
+                </p>
+            </div>
+            <ul role="list" class="span-6-12 people-list">
+                {% for item in team.tsc %}
+                    {% set itemPhoto = item.avatar_url %}
+                    {% set itemName = item.name %}
+                    {% set itemHandle = item.username %}
+
+
+                    {% set itemBio = item.bio | safe %}
+                    {% set itemWebsite = item.website %}
+                    {% set itemGitHub = item.github_username %}
+                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemMastodon = item.mastodon_url %}
+
+                    <li>
+                        {{ member({
+                            photo: itemPhoto,
+                            name: itemName,
+                            handle: itemHandle,
+                            handleURL: itemHandleURL,
+                            bio: itemBio,
+                            website: itemWebsite,
+                            github: itemGitHub,
+                            twitter: itemTwitter,
+                            mastodon: itemMastodon
+                        }) }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endif %}
+
+{% if team.reviewers.length > 0 %}
+    <section class="section">
+        <div class="content-container grid">
+            <div class="span-1-4">
+                <h2 class="section-title">{{ site.team_page.reviewers.title }}</h2>
+                <p class="section-supporting-text">
+                    {{ site.team_page.reviewers.description }}
+                </p>
+            </div>
+            <ul role="list" class="span-6-12 people-list">
+                {% for item in team.reviewers %}
+                    {% set itemPhoto = item.avatar_url %}
+                    {% set itemName = item.name %}
+
+                    {% set itemHandle = item.username %}
+
+                    {% set itemBio = item.bio | safe %}
+                    {% set itemWebsite = item.website %}
+                    {% set itemGitHub = item.github_username %}
+                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemMastodon = item.mastodon_url %}
+
+                    <li>
+                        {{ member({
+                            photo: itemPhoto,
+                            name: itemName,
+                            handle: itemHandle,
+                            handleURL: itemHandleURL,
+                            bio: itemBio,
+                            website: itemWebsite,
+                            github: itemGitHub,
+                            twitter: itemTwitter,
+                            mastodon: itemMastodons
+                        }) }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endif %}
+
+{% if team.committers.length > 0 %}
+    <section class="section">
+        <div class="content-container grid">
+            <div class="span-1-4">
+                <h2 class="section-title">{{ site.team_page.committers.title }}</h2>
+                <p class="section-supporting-text">
+                    {{ site.team_page.committers.description }}
+                </p>
+            </div>
+            <ul role="list" class="span-6-12 people-list">
+                {% for item in team.committers %}
+                    {% set itemPhoto = item.avatar_url %}
+                    {% set itemName = item.name %}
+                    {% set itemHandle = item.username %}
+
+
+                    {% set itemBio = item.bio | safe %}
+                    {% set itemWebsite = item.website %}
+                    {% set itemGitHub = item.github_username %}
+                    {% set itemTwitter = item.twitter_username %}
+                    {% set itemMastodon = item.mastodon_url %}
+
+                    <li>
+                        {{ member({
+                            photo: itemPhoto,
+                            name: itemName,
+                            handle: itemHandle,
+                            handleURL: itemHandleURL,
+                            bio: itemBio,
+                            website: itemWebsite,
+                            github: itemGitHub,
+                            twitter: itemTwitter,
+                            mastodon: itemMastodon
+                        }) }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endif %}
+
+{% if team.website.length > 0 %}
+    <section class="section">
+        <div class="content-container grid">
+            <div class="span-1-4">
+                <h2 class="section-title">{{ site.team_page.website_team.title }}</h2>
+                <p class="section-supporting-text">
+                    {{ site.team_page.website_team.description }}
+                </p>
+            </div>
+            <ul role="list" class="span-6-12 people-list">
+                {% for item in team.website %}
+                {% set itemPhoto = item.avatar_url %}
+                {% set itemName = item.name %}
+                {% set itemHandle = item.username %}
+
+
+                {% set itemBio = item.bio | safe %}
+                {% set itemWebsite = item.website %}
+                {% set itemGitHub = item.github_username %}
+                {% set itemTwitter = item.twitter_username %}
+                {% set itemMastodon = item.mastodon_url %}
+
+                <li>
+                    {{ member({
+                        photo: itemPhoto,
+                        name: itemName,
+                        handle: itemHandle,
+                        handleURL: itemHandleURL,
+                        bio: itemBio,
+                        website: itemWebsite,
+                        github: itemGitHub,
+                        twitter: itemTwitter,
+                        mastodon: itemMastodon
+                    }) }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endif %}
+
+{% if team.support.length > 0 %}  
+    <section class="section">
+        <div class="content-container grid">
+            <div class="span-1-4">
+                <h2 class="section-title">{{ site.team_page.support_team.title }}</h2>
+                <p class="section-supporting-text">
+                    {{ site.team_page.support_team.description }}
+                </p>
+            </div>
+            <ul role="list" class="span-6-12 people-list">
+                {% for item in team.support %}
+                {% set itemPhoto = item.avatar_url %}
+                {% set itemName = item.name %}
+                {% set itemHandle = item.username %}
+
+
+                {% set itemBio = item.bio | safe %}
+                {% set itemWebsite = item.website %}
+                {% set itemGitHub = item.github_username %}
+                {% set itemTwitter = item.twitter_username %}
+                {% set itemMastodon = item.mastodon_url %}
+
+                <li>
+                    {{ member({
+                        photo: itemPhoto,
+                        name: itemName,
+                        handle: itemHandle,
+                        handleURL: itemHandleURL,
+                        bio: itemBio,
+                        website: itemWebsite,
+                        github: itemGitHub,
+                        twitter: itemTwitter,
+                        mastodon: itemMastodon
+                    }) }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{%- endif -%}
+
+{% if team.alumni.length > 0 %}
+    <section class="section">
+        <div class="content-container grid">
+            <div class="span-1-4">
+                <h2 class="section-title">{{ site.team_page.alumni.title }}</h2>
+                <p class="section-supporting-text">
+                    {{ site.team_page.alumni.description }}
+                </p>
+            </div>
+            <ul role="list" class="span-6-12 people-list">
+                {% for item in team.alumni %}
+                    {% set itemPhoto = item.avatar_url %}
+                    {% set itemName = item.name %}
+                    {% set itemHandle = item.username %}
+
+                    <li>
+                        {{ contributor({
+                            photo: itemPhoto,
+                            name: itemName,
+                            handle: itemHandle,
+                            handleURL: itemHandleURL
+                        }) }}
+                    </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </section>
+{%- endif -%}

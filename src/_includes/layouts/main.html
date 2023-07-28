@@ -1,0 +1,14 @@
+---
+layout: base.html
+---
+
+{% include "partials/header.html" %}
+
+
+<main id="main" tabindex="-1">
+    {{ content | safe }}
+</main>
+
+{% if page.url != '/play/' %} 
+    {% include "partials/footer.html" %}
+{%- endif -%}

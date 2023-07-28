@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="{{ site.language.code }}" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if title %}
+        {% set page_title = title %}
+    {% elseif currentCategory %}
+        {% set page_title = currentCategory.title %}    
+    {% else %}
+        {% set page_title = site[hook].title %}
+    {% endif %}
+
+    {% set page_title = site.shared.title_format | replace("PAGE_TITLE", page_title) %}
+    {% set cover_image = ["https://", site.hostname, "/icon-512.png" ] | join %}
+    {% set cover_image_alt = site.shared.eslint_logo_alt %}
+    {% set page_desc = site.shared.description %}
+    {% set relative_page_url = page.url | url %}
+    {% set page_url = ["https://", site.hostname, relative_page_url ] | join %}
+
+    <!-- SEO -->
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_desc }}">
+    {%- if original -%}
+    <link rel="canonical" href="{{ original.url }}">
+    {%- else -%}
+    <link rel="canonical" href="{{ page_url }}">
+    {%- endif -%}
+
+    <!-- Feed -->
+    <link rel="alternate" href="/feed.xml" title="ESLint RSS" type="application/atom+xml">
+
+    <!-- favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- social sharing previews. Make sure every page template has title, desc, and cover url -->
+    <!-- Open graph -->
+
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_desc }}">
+    <meta property="og:image" content="{{ cover_image }}" />
+    <meta property="og:image:alt" content="{{ cover_image_alt }}">
+    <meta property="og:locale" content="{{ site.locale | replace("-", "_") }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page_url }}">
+    <!-- Twitter -->
+    <meta name="twitter:title" content="{{ page_title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@geteslint">
+    <meta name="twitter:description" content="{{ page_desc }}">
+    <meta name="twitter:image" content="{{ cover_image }}">
+    <meta name="twitter:creator" content="@geteslint">
+
+    <script>
+        // This is a capable browser, let's improve the UI further!
+        document.documentElement.classList.add("enhanced");
+        document.documentElement.classList.remove('no-js');
+    </script>
+
+    <link rel="preload" href="{{ '/assets/fonts/Consolas.woff' | url }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ '/assets/fonts/SpaceGrotesk-Medium-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ '/assets/fonts/Inter-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ '/assets/fonts/SpaceMono-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com/">
+
+    <script>
+            (function () {
+                var theme = window.localStorage.getItem("theme");
+                if (theme) document.documentElement.setAttribute('data-theme', theme)
+                else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                else document.documentElement.setAttribute('data-theme', 'light');
+            })();
+    </script>
+
+
+    <style>
+
+        /* Overrides for funky punctuators */
+        @font-face {
+            font-family: "Mono Punctuators";
+            src: url("{{ '/assets/fonts/Consolas.woff' | url }}") format("woff");
+            font-weight: 400;
+            unicode-range: U+40, U+7B, U+7D, U+28, U+29;
+            font-display: swap;
+        }
+    
+        /* Space Grotesk for headings */
+        @font-face {
+            font-family: "Space Grotesk";
+            src: url("{{ '/assets/fonts/SpaceGrotesk-Medium-subset.woff2' | url }}") format("woff2"),
+            url("{{ '/assets/fonts/SpaceGrotesk-Medium-subset.zopfli.woff' | url }}") format("woff");
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        /* Inter for body text */
+        @font-face {
+            font-family: "Inter";
+            src: url("{{ '/assets/fonts/Inter-Regular-subset.woff2' | url }}") format("woff2"),
+            url("{{ '/assets/fonts/Inter-Regular-subset.zopfli.woff' | url }}") format("woff");
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        /* Space Mono for code snippets */
+        @font-face {
+            font-family: "Space Mono";
+            src: url("{{ '/assets/fonts/SpaceMono-Regular-subset.woff2' | url }}") format("woff2"),
+            url("{{ '/assets/fonts/SpaceMono-Regular-subset.zopfli.woff' | url }}") format("woff");
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        /* Country Flags for Windows*/
+        @font-face {
+            font-family: 'Twemoji Country Flags';
+            unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+            src: url('https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2') format('woff2');
+        }
+    </style>
+    <script>
+        if ("fonts" in document) {
+            var InterSemiBold = new FontFace("Inter", "url({{ '/assets/fonts/Inter-SemiBold-subset.woff2' | url }}) format('woff2'), url({{ '/assets/fonts/Inter-SemiBold-subset.zopfli.woff' | url }}) format('woff')", {
+                weight: "500",
+                style: "normal"
+            });
+
+            Promise.all([InterSemiBold.load()]).then(function(fonts) {
+                fonts.forEach(function(font) {
+                    document.fonts.add(font);
+                });
+            });
+        }
+    </script>
+    {% if page.url != '/play/' %} 
+    <script src="{{ '/assets/js/themes.js' | url }}"></script>
+    {%- endif -%}
+    {%- if (hook == "blog_page") -%}
+    <script type="module" src="{{ '/assets/js/search.js' | url }}"></script>
+    {%- endif -%}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | url }}">
+</head>
+
+<body class="{{ hook | replace('_', '-') }}">
+    <a href="#main" class="c-btn c-btn--primary" id="skip-link">{{ site.shared.skip_to_content }}</a>
+
+    {{ content | safe }}
+
+    <script src="{{ '/assets/js/css-vars-ponyfill@2.js' | url }}"></script>
+    <script src="{{ '/assets/js/focus-visible.js' | url }}"></script>
+    <script src="{{ '/assets/js/main.js' | url }}"></script>
+    {% include 'partials/analytics.html' %}
+
+    {%- if site.homepage.animation.enabled and hook == "homepage" -%}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/Flip.min.js"></script>
+    <script src="{{ 'assets/js/animation.js' | url }}"></script>
+    {%- endif -%}
+
+    {%- if (hook == "homepage") or (hook == "component_library") -%}
+    <script src="{{ 'assets/js/hammer.min.js' | url }}"></script>
+    <script src="{{ 'assets/js/slider.js' | url }}"></script>
+    {%- endif -%}
+
+    {%- if (hook == "donate_page") or (hook == "component_library") -%}
+    <script src="{{ '/assets/js/accordion.js' | url }}"></script>
+    {%- endif -%}
+    {%- if hook == "component_library" -%}
+    <script src="{{ '/assets/js/tabs.js' | url }}"></script>
+    <script src="{{ '/assets/js/components-index.js' | url }}"></script>
+    {%- endif -%}
+</body>
+
+</html>

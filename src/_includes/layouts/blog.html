@@ -1,0 +1,32 @@
+---
+layout: base.html
+---
+{% include "partials/header.html" %}
+{%- from 'components/hero.macro.html' import hero %}
+
+
+<main id="main" tabindex="-1">
+
+    {{ hero({
+        title: site.blog_page.title,
+        supporting_text: site.blog_page.description
+    }) }}
+
+    <div class="content-container grid">
+        <aside class="span-1-3">
+            {% include 'components/search.html' %}
+
+            {% include 'partials/blog-categories.html' %}
+        </aside>
+
+        <div class="span-4-12">
+            {{ content | safe }}
+        </div>
+        <div class="span-4-12">
+            {% include "partials/blog-pagination.html" %}
+        </div>
+    </div>
+
+</main>
+
+{% include "partials/footer.html" %}

@@ -1,0 +1,55 @@
+<nav class="c-pagination" aria-labelledby="pagination-label">
+    <h2 id="pagination-label" hidden>{{ site.blog_page.pagination.title }}</h2>
+
+    {% set pagination_status = site.blog_page.pagination.status | replace("PAGE_NUMBER", currentCategory.currentPage) | replace("TOTAL_PAGE_COUNT", currentCategory.totalPages) %}
+
+    <span class="c-pagination__item c-pagination__current">{{ pagination_status }}</span>
+
+    {% if currentCategory.totalPages > 1 %}
+    <div class="c-pagination__prev">
+        {% set firstCategoryPageURL =  ['/blog/category/', currentCategory.hrefs.first, '/'] | join %}
+        {% if page.url !=  firstCategoryPageURL %}
+        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.first }}">{{ site.blog_page.pagination.first_page }}</a>
+        {% else %}
+        <a class="c-pagination__item" role="link" aria-disabled="true">{{ site.blog_page.pagination.first_page }}</a>
+        {% endif %}
+
+        {% if currentCategory.hrefs.previous %}
+        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.previous }}">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <span class="c-pagination__item__text">{{ site.blog_page.pagination.previous_page }}</span></a>
+        {% else %}
+        <a class="c-pagination__item" role="link" aria-disabled="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="c-pagination__item__text">{{ site.blog_page.pagination.previous_page }}</span></a>
+        {% endif %}
+
+    </div>
+    <div class="c-pagination__next">
+        {% if currentCategory.hrefs.next %}
+        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.next }}">
+            <span class="c-pagination__item__text">{{ site.blog_page.pagination.next_page }}</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+        {% else %}
+        <a class="c-pagination__item" role="link" aria-disabled="true">
+            <span class="c-pagination__item__text">{{ site.blog_page.pagination.next_page }}</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+        {% endif %}
+        {% set lastCategoryPageURL =  ['/blog/category/', currentCategory.hrefs.last, '/'] | join %}
+        {% if page.url !=  lastCategoryPageURL %}
+        <a class="c-pagination__item" href="/blog/category/{{ currentCategory.hrefs.last }}">{{ site.blog_page.pagination.last_page }}</a>
+        {% else %}
+        <a class="c-pagination__item" role="link" aria-disabled="true">{{ site.blog_page.pagination.last_page }}</a>
+        {% endif %}
+    </div>
+    {% endif %}
+</nav>

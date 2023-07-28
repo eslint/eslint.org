@@ -1,0 +1,27 @@
+<div class="anim">
+  <script>
+    const ANIMATION_WRONG_WORD = "{{ site.homepage.animation.wrong_word }}";
+    const ANIMATION_CORRECT_WORD = "{{ site.homepage.animation.highlight_word }}";
+  </script>
+  {% set words = site.homepage.animation.text.split(' ') %}
+  <div class="anim__cursorCont" aria-hidden="true">
+    <div class="anim__cursor anim__cursor--start"></div>
+  </div>
+  <h1 class="section-title h0 anim__title" aria-hidden="true">
+
+    {% for word in words %}
+      {% if word == site.homepage.animation.highlight_word %}
+        <span class="anim__word anim__problems">
+          <span class="anim__text">{{ word }}</span>
+          <div class="anim__dropdown">
+            <img class="anim__dropdown-img anim__dropdown-img--dark" src="/assets/images/dropdown--dark.png" alt="" />
+            <img class="anim__dropdown-img anim__dropdown-img--light" src="/assets/images/dropdown--light.png" alt="" />
+            <div class="anim__cursor anim__cursor--end"></div>
+          </div>
+        </span>
+      {% else %}
+        <span class="anim__word">{{ word }}</span>
+      {% endif %}
+    {% endfor %}
+  </h1>
+</div>

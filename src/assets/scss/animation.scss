@@ -1,0 +1,152 @@
+@supports (--css: variables) {
+    @media (prefers-reduced-motion: no-preference) {
+        /* only hide text if browser supports CSS vars and user allows animation */
+        .anim {
+            opacity: 0;
+        }
+
+        .anim__word::after {
+            content: "";
+            position: absolute;
+            background-color: var(--hero-background-color);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleX(var(--scale));
+            transform-origin: center right;
+            z-index: 999;
+        }
+    }
+}
+
+.anim {
+    &__word {
+        display: inline-block;
+        position: relative;
+        --scale: 1;
+    }
+
+    &__problems {
+        display: inline-block;
+        position: relative;
+    }
+
+    &__text {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+        --squiggle-opacity: 0;
+    }
+
+    &__text::before {
+        content: "";
+        position: absolute;
+        top: 83%;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: contain;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 255 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L5.57531 5.20496C6.71487 6.22648 8.44068 6.22648 9.58024 5.20496L11.1531 3.79504C12.2927 2.77352 14.0185 2.77352 15.158 3.79504L16.7309 5.20496C17.8704 6.22648 19.5962 6.22648 20.7358 5.20496L22.3086 3.79504C23.4482 2.77352 25.174 2.77352 26.3136 3.79504L27.8864 5.20496C29.026 6.22648 30.7518 6.22648 31.8914 5.20496L33.4642 3.79504C34.6038 2.77352 36.3296 2.77352 37.4691 3.79504L39.042 5.20496C40.1815 6.22648 41.9073 6.22648 43.0469 5.20496L44.6198 3.79504C45.7593 2.77352 47.4851 2.77352 48.6247 3.79504L50.1975 5.20496C51.3371 6.22648 53.0629 6.22648 54.2025 5.20496L55.7753 3.79504C56.9149 2.77352 58.6407 2.77352 59.7802 3.79504L61.3531 5.20496C62.4927 6.22648 64.2185 6.22648 65.358 5.20496L66.9309 3.79504C68.0704 2.77352 69.7962 2.77352 70.9358 3.79504L72.5086 5.20496C73.6482 6.22648 75.374 6.22648 76.5136 5.20496L78.0864 3.79504C79.226 2.77352 80.9518 2.77352 82.0914 3.79504L83.6642 5.20496C84.8038 6.22648 86.5296 6.22648 87.6691 5.20496L89.242 3.79504C90.3815 2.77352 92.1074 2.77352 93.2469 3.79504L94.8198 5.20496C95.9593 6.22648 97.6851 6.22648 98.8247 5.20496L100.398 3.79504C101.537 2.77352 103.263 2.77352 104.402 3.79504L105.975 5.20496C107.115 6.22648 108.841 6.22648 109.98 5.20496L111.553 3.79504C112.693 2.77352 114.418 2.77352 115.558 3.79504L117.131 5.20496C118.27 6.22648 119.996 6.22648 121.136 5.20497L122.709 3.79504C123.848 2.77352 125.574 2.77352 126.714 3.79504L128.286 5.20496C129.426 6.22648 131.152 6.22648 132.291 5.20496L133.864 3.79504C135.004 2.77352 136.73 2.77352 137.869 3.79504L139.442 5.20496C140.582 6.22648 142.307 6.22648 143.447 5.20496L145.02 3.79504C146.159 2.77352 147.885 2.77352 149.025 3.79504L150.598 5.20496C151.737 6.22648 153.463 6.22648 154.602 5.20496L156.175 3.79504C157.315 2.77352 159.041 2.77352 160.18 3.79504L161.753 5.20496C162.893 6.22648 164.618 6.22648 165.758 5.20496L167.331 3.79503C168.47 2.77352 170.196 2.77352 171.336 3.79503L172.909 5.20497C174.048 6.22648 175.774 6.22648 176.914 5.20497L178.486 3.79504C179.626 2.77352 181.352 2.77352 182.491 3.79504L184.064 5.20496C185.204 6.22648 186.93 6.22648 188.069 5.20496L189.642 3.79504C190.782 2.77352 192.507 2.77352 193.647 3.79504L195.22 5.20496C196.359 6.22648 198.085 6.22648 199.225 5.20496L200.798 3.79504C201.937 2.77352 203.663 2.77352 204.802 3.79504L206.375 5.20496C207.515 6.22648 209.241 6.22648 210.38 5.20496L211.953 3.79504C213.093 2.77352 214.818 2.77352 215.958 3.79504L217.531 5.20496C218.67 6.22648 220.396 6.22648 221.536 5.20496L223.109 3.79504C224.248 2.77352 225.974 2.77352 227.114 3.79503L228.686 5.20497C229.826 6.22648 231.552 6.22648 232.691 5.20496L234.264 3.79504C235.404 2.77352 237.13 2.77352 238.269 3.79503L239.842 5.20497C240.982 6.22648 242.707 6.22648 243.847 5.20497L245.42 3.79504C246.559 2.77352 248.285 2.77352 249.425 3.79504L253 7' stroke='%23F63D68' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+        opacity: var(--squiggle-opacity);
+        z-index: -1;
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: 101%;
+        width: 150%;
+        left: 0;
+        pointer-events: none;
+        overflow: visible;
+        visibility: hidden;
+        z-index: 2;
+    }
+
+    &__dropdown-img {
+        position: relative;
+        box-shadow: var(--shadow-lg);
+        max-width: 330px;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 800px) {
+            max-width: 230px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            max-width: 200px;
+        }
+    }
+
+    @media only screen and (min-width: 405px) {
+        &__dropdown {
+            width: 120%;
+            left: -10%;
+        }
+    }
+
+    &__cursorCont {
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        z-index: 999;
+    }
+
+    &__cursor {
+        width: 40px;
+        width: clamp(30px, 5vw, 50px);
+        height: 40px;
+        height: clamp(30px, 5vw, 50px);
+        border-radius: 100%;
+        border: solid 1px hsl(0, 0%, 60%);
+        background-color: hsl(0, 0%, 85%);
+        opacity: 0.6;
+    }
+
+    &__cursor--end {
+        position: absolute;
+        bottom: -5%;
+        left: 30%;
+        opacity: 0;
+    }
+}
+
+[data-theme="dark"] .anim__dropdown-img--dark,
+[data-theme="light"] .anim__dropdown-img--light {
+    display: block;
+}
+
+[data-theme="dark"] .anim__dropdown-img--light,
+[data-theme="light"] .anim__dropdown-img--dark {
+    display: none;
+}
+
+// make sure content is still visible without JS whilst avoiding FOUC
+.no-js .anim__word::after {
+    animation: fallback-hide 0.01s ease-out 0.5s forwards;
+}
+
+.no-js .anim {
+    animation: fallback-show 0.01s ease-out 0.5s forwards;
+}
+
+@keyframes fallback-show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fallback-hide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

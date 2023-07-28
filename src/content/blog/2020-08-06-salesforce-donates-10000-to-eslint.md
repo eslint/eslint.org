@@ -1,0 +1,28 @@
+---
+layout: post
+title: Salesforce donates $10,000 to ESLint
+teaser: "We are happy to announce that Salesforce has donated $10,000 to ESLint, as part of their FOSS Contributor Fund. It is an honor to be supported by Salesforce. We are grateful to the technical architect, Médédé Raymond Kpatchaa, for nominating ESLint, and the employees who voted for us."
+image: sponsorship-salesforce.png
+tags:
+  - Open Source
+  - Funding
+  - Open Collective
+  - Sponsors
+  - Backers
+authors:
+  - nzakas
+categories: 
+  - Sponsorships
+---
+
+![Salesforce Donates to ESLint](/assets/images/blog-covers/sponsorship-salesforce.png)
+
+We are happy to share that [Salesforce](https://salesforce.com) has donated $10,000 to the ESLint project as part of their [FOSS Contributor Fund](https://engineering.salesforce.com/announcing-the-first-foss-contributor-fund-recipient-60a295201497). The FOSS Contributor Fund donates $10,000 to qualifying open source projects each quarter. Salesforce employees who have contributed to an open source project nominate and vote on potential project recipients. For this quarter, ESLint was selected as the recipient. (Read about it on the [Salesforce Blog][salesforce-post], too.)
+
+Here's what Médédé Raymond KPATCHAA, who nominated ESLint, had to say:
+
+> "ESLint is an extremely useful tool for any JavaScript project. This tool allows us to set up consistent code formatting rules adopted by the whole team from the beginning of the project, greatly facilitates code reviews, and makes it easy to integrate new developers into the team. I know I am not alone in appreciating its flexibility and ease-of-use." -- Médédé Raymond KPATCHAA, Technical Architect, Salesforce
+
+We are grateful to Médédé for nominating ESLint this quarter and to the Salesforce employees who voted for ESLint. Financial support from companies like Salesforce is why ESLint has been able to keep up with the changing JavaScript ecosystem for the past seven years.
+
+[salesforce-post]: https://engineering.salesforce.com/giving-back-through-our-foss-fund-38754167c00d

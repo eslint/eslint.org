@@ -1,0 +1,556 @@
+---
+#------------------------------------------------------------------------------
+# Japanese Site Details
+# The primary ESLint site that is hosted at eslint.org
+# Author: Alex Fachin
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# Global Settings
+#------------------------------------------------------------------------------
+
+language:
+  code: ja
+  flag: 🇯🇵
+  name: 日本語
+  title: Japanese
+locale: ja-JP
+hostname: ja.eslint.org
+locals:
+  docs_latest: false
+  docs_head: false
+  blog: false
+
+#------------------------------------------------------------------------------
+# Analytics
+#------------------------------------------------------------------------------
+
+google_analytics:
+  code: "G-ZF3CQJFEZS"
+
+#------------------------------------------------------------------------------
+# Ads
+#------------------------------------------------------------------------------
+
+carbon_ads:
+  serve: "CEAICK3J"
+  placement: "jaeslintorg"
+
+#------------------------------------------------------------------------------
+# Shared
+#------------------------------------------------------------------------------
+
+shared:
+  get_started: 始める
+  become_a_sponsor: スポンサーになる
+  eslint_logo_alt: ESLintのロゴ
+  description: >
+    JavaScriptのパターンを識別し報告するための、プラグイン可能で設定可能なリンターツールです。
+    コードの品質を簡単に維持することができます。
+  title_format: PAGE_TITLE - ESLint - プラグイン可能なJavaScriptリンターツール
+  skip_to_content: 本文へスキップ
+
+#------------------------------------------------------------------------------
+# Navigation
+#------------------------------------------------------------------------------
+
+navigation:
+  - text: チーム
+    link: team
+  - text: ブログ
+    link: blog
+  - text: ドキュメント
+    link: docs
+  - text: ストアー
+    link: store
+    target: _blank
+  - text: Playground
+    link: playground
+    target: _blank
+
+#------------------------------------------------------------------------------
+# Footer
+#------------------------------------------------------------------------------
+
+footer:
+  title: JavaScriptのコードを修正する準備はできましたか？
+  description: npmからインストール。または今日から寄付を開始する。
+  secondary: Secondary
+  social_icons:
+    title: ソーシャルメディア
+    twitter: Twitter
+    chat: Discord
+    github: GitHub
+    mastodon: Mastodon
+  theme_switcher:
+    title: 配色モード切り替え
+    light: 通常
+    dark: ダーク
+  language_switcher:
+    title: 言語切り替え
+    description: 言語を選択すると、その言語のESLintウェブサイトへ移動します
+    change_language: 言語の変更
+    language: 言語
+  copyright: >
+    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint 
+    contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS 
+    Foundation</a> has registered trademarks and uses trademarks.  For a list of 
+    trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please 
+    see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> 
+    and <a href="https://trademark-list.openjsf.org">Trademark List</a>.  
+    Trademarks and logos not indicated on the 
+    <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation 
+    trademarks</a> are trademarks&trade; or registered&reg; trademarks of 
+    their respective holders. Use of them does not imply any affiliation with 
+    or endorsement by them.
+  links:
+    open_jsf: The OpenJS Foundation
+    terms: 利用規約
+    privacy: プライバシーポリシー
+    bylaws: OpenJS Foundation 定款
+    trademark: 商標ポリシー
+    trademark_list: 商標リスト
+    cookies: クッキーポリシー
+
+#------------------------------------------------------------------------------
+# 404 Page
+#------------------------------------------------------------------------------
+
+404_page:
+  title: 404エラー
+  subtitle: ページが見つかりません
+  description: 申し訳ございませんが、お探しのページは移動または削除された可能性があります。
+  actions:
+    back_to_home: ホームページへ
+    browse_docs: ドキュメントを読む
+
+#------------------------------------------------------------------------------
+# Branding Page
+#------------------------------------------------------------------------------
+
+branding_page:
+  title: ブランディング
+  description: 正しいロゴの使い方
+  sections:
+    name:
+      title: 名前
+      description: >
+        ESLintと書くときは、EとSとLは必ず大文字を使用してください。「ES」はECMAScriptの略称、Lは「Lint」の頭文字です。
+    logo:
+      title: ロゴ
+      description:
+        - >
+          ESLintのロゴは、様々な背景に配置することができます。十分な縦・横の余白が必要です。
+        - >
+          隙間からなる内側の六角形の大きさの2倍が、ロゴとロゴタイプの間隔、およびロゴの周囲の余白の
+          大きさの目安になります。
+        - >
+          我々のロゴは汎用性があります。様々なブランドカラーに使用することができ、白以外の背景では透過させることで
+          明るい色を模倣することができます。ESLintのロゴは、ロゴタイプを付けずに単独で使用することもできますが、
+          可能であればESLintのロゴとロゴタイプの両方を使用することが望ましいです。
+      download_svg: SVG ダウンロード
+      download_png: PNG ダウンロード
+      change_background: "背景色の変更"
+    color_palette:
+      title: カラーパレット
+      description:
+        - >
+          ロゴや文言と同じくらい、ESLintのカラーパレットにはブランドを表す力があります。
+          デザインの見た目に影響を与えるだけでなく、感情を呼び起こし、
+          ESLintブランドの個性を反映することができるのです。
+        - >
+          ブランドの中心となるカラーはボタン、リンク、入力コンポーネントなど、すべてのインタラクティブな要素で使用されます。
+          これは私たちのロゴに由来しています。既存の2色を使って、独自の一次色調を作り出しています。
+      brand_palette: ブランド パレット
+      colors:
+        primary: プライマリ
+        white: 白色
+        neutral: ニュートラル
+  actions:
+    back_to_home: ホームページへ
+    browse_docs: ドキュメントを読む
+
+#------------------------------------------------------------------------------
+# Homepage
+#------------------------------------------------------------------------------
+
+homepage:
+  title: 解析対象のJavaScriptコードにおける問題発見と解消
+  description: >
+    ESLintはコードを静的に解析し、迅速に問題を発見します。
+    ほとんどのテキストエディタに組み込まれており、CIパイプラインの一部としてESLintを実行することができます。
+
+  animation:
+    enabled: false
+    text: JavaScriptコードの問題点の発見と修正
+    highlight_word: problems
+    wrong_word: problmes
+
+  install:
+    title: ESLint インストールコマンド
+    copy: インストールコマンドをコピーします
+    copied: コピーしました
+
+  versions:
+    title: ESLintバージョン
+    latest: 最新バージョン
+    upcoming: 次バージョン
+    development: 開発中バージョン
+    dateline: <span class="text-dark">VERSION</span>（DATE）
+
+  explainer:
+    image:
+      src: eslint-features-img.png
+      alt: "ESLintが動作しているVisual Studioのコードウィンドウのスクリーンショット：IDE内のESLintエラーに下線を引いています。"
+    title: The pluggable linting utility for JavaScript and JSX
+    description: >
+      ESLintはあなたのJavaScriptコードの問題を発見し、修正することを支援するオープンソースプロジェクトです。
+      JavaScriptがブラウザ内で動作するかサーバーで動作するか、あなたがフレームワークを使用しているかいないかに関わらず、ESLintはあなたのコードが
+      良い状態になるように支援します。
+    features:
+      - title: 問題発見
+        description: >
+          ESLintはコードを静的に解析し、迅速に問題を発見します。ESLintはほとんどのテキストエディタに組み込まれており、
+          CIパイプライン内で実行することもできます。
+        learn_more:
+          link: getStarted
+          text: >
+            <span class="visually-hidden">ESLintで間違いを探す方法について</span>もっと知りたい
+      - title: 問題の自動修正
+        description: >
+          ESLintが発見した問題のほとんどは自動的に修正することができます。
+          ESLintは構文を意識して修正を行うため、従来の置換ベースのコード修正アルゴリズムのように新しいエラーを生み出すことはありません。
+        learn_more:
+          link: fixProblems
+          text: >
+            <span class="visually-hidden">ESLintの自動修正について</span>もっと知りたい
+      - title: 何でも設定可能
+        description: >
+          コードの前処理、カスタムパーサーの使用、ESLintの組み込みルールと一緒に動作する独自のルールを作成することができます。
+          プロジェクトで必要な形に合わせてESLintをカスタマイズすることができます。
+        learn_more:
+          link: configuring
+          text: >
+            <span class="visually-hidden">ESLintのカスタマイズについて</span>もっと知りたい
+  blog:
+    view_all_posts: 全ての投稿を見る
+
+  stats:
+    title: ようこそ、コミュニティへ
+    description: >
+      ESLintはnpmにおけるダウンロード数がNo.1のJavaScriptリンターです（DOWNLOAD_COUNT以上）。
+      Microsoft、Airbnb、Netflix、Facebookなどの企業で使用されています。
+    dependents: 依存関係
+    weekly_downloads: 週間ダウンロード数
+    stars: スター
+
+  sponsors:
+    title: 素晴らしい人々によって支えられています
+    description: >
+      SPONSOR_COUNTのスポンサー様から、年間 ANNUAL_DONATIONS の寄付をいただいています。
+    view_all_sponsors: スポンサーの皆様を見る
+
+  donations:
+    title: 最近の一時的寄付
+    view_all_donations: 全ての寄付を見る
+
+#------------------------------------------------------------------------------
+# Blog Page
+#------------------------------------------------------------------------------
+
+blog_page:
+  title: ニュース・最新情報
+  description: ESLintの最新ニュース、ケーススタディ、チュートリアル、リソースなどをご紹介します。
+  search:
+    title: 検索
+    hint: キーワードを入力するとリアルタイムに検索結果が表示されます。
+    clear: 入力したキーワードの削除
+  categories:
+    title: カテゴリー一覧
+    everything: 全て
+  pagination:
+    title: ページ
+    first_page: 最初
+    next_page: 次
+    previous_page: 前
+    last_page: 最後
+    status: TOTAL_PAGE_COUNT ページ中の PAGE_NUMBER ページ目
+  from_the_blog: 最新のブログ記事
+
+#------------------------------------------------------------------------------
+# Team Page
+#------------------------------------------------------------------------------
+
+team_page:
+  title: チーム紹介
+  description: >
+    ESLintを構築し、維持管理しているチームメンバーです
+  tsc:
+    title: 技術運営委員会
+    description: >
+      リリースを管理し、機能要求をレビューし、ESLintが適切に維持されるように定期的に
+      ミーティングを行う人々
+  reviewers:
+    title: レビュアー
+    description: >
+      新機能をレビューし、実装する人々
+  committers:
+    title: コミッター
+    description: >
+      バグをレビューして修正し、問題のトリアージを支援する人々
+  website_team:
+    title: Website Team
+    description: >
+      eslint.org に特化したチーム メンバー。
+  support_team:
+    title: Support Team
+    description: >
+      Discordやディスカッションを手伝ってくれる人。
+  alumni:
+    title: アルムナイ
+    description: >
+      以前にESLintの保守を担っていた元チームメンバー
+
+#------------------------------------------------------------------------------
+# Sponsors Page
+#------------------------------------------------------------------------------
+
+sponsors_page:
+  title: スポンサー様
+  description: >
+    現在、BACKER_COUNT の企業、団体、個人が
+    ESLintの継続的な維持・発展を支援するために、毎月総額MONTHLY_DONATIONSの寄付をしています。
+  hero:
+    cta:
+      text: スポンサーになる
+      url: /donate
+  tiers:
+    platinum:
+      title: プラチナスポンサー
+      description: >
+        毎月2000ドルの寄付で、プラチナスポンサーとなり、40時間分のメンテナンスと開発を援助します。
+        2時間の専属サポートサービスを受けられます。サポートはチャットや画面共有による遠隔サポートの形で可能です。
+        プラチナスポンサーのアバター画像はESLintのREADMEとeslint.orgのトップページに記載いたします。
+        また、フォロワー数2万人以上のESLintのTwitterアカウントからお礼をツイートします。
+        サポートセッションをご希望の方は、ESLintチームまでご連絡ください。
+    gold:
+      title: ゴールドスポンサー
+      description: >
+        毎月1000ドルの寄付で、ゴールドスポンサーとなり、20時間分のメンテナンスと開発を援助します。
+        ゴールドスポンサーのアバター画像はESLintのREADMEとeslint.orgのトップページに記載いたします。
+        また、フォロワー数2万人以上のESLintのTwitterアカウントからお礼をツイートします。
+    silver:
+      title: シルバースポンサー
+      description: >
+        毎月500ドルの寄付で、シルバースポンサーとなり、10時間分のメンテナンスと開発を援助します。
+        シルバースポンサーのアバター画像はESLintのREADMEとeslint.orgのトップページに記載いたします。
+    bronze:
+      title: ブロンズスポンサー
+      description: >
+        毎月200ドルの寄付で、ブロンズスポンサーとなり、4時間分のメンテナンスと開発を援助します。
+        ブロンズスポンサーのアバター画像はESLintのREADMEとeslint.orgのトップページに記載いたします。
+    technology:
+      title: 技術スポンサー
+      description: >
+        技術スポンサーはオープンソースのエコシステムと私たちの仕事への貢献の一環として、製品・サービスを無償で利用許諾してくださっています。
+    backers:
+      title: バッカー
+      description: >
+        バッカー（支援者）は、ESLintを維持するための資金を毎月提供します。
+
+  recent_donations:
+    title: 最近の一時的な寄付
+    description: >
+      また、素晴らしい方々から沢山の一時的な寄付をいただいています。
+      OpenCollectiveとGitHubから最近の寄付を紹介します。
+
+  sponsor_title: SPONSOR_NAME 様から毎月 AMOUNTの寄付をいただいています。
+  tech_sponsor_title: TECH provided by SPONSOR_NAME
+
+#------------------------------------------------------------------------------
+# Donate Page
+#------------------------------------------------------------------------------
+
+donate_page:
+  title: 寄付
+  description: >
+    ESLintは、継続的なメンテナンスと開発のための寄付金に依存しています。
+    現在、BACKER_COUNTの企業・団体・個人が、毎月MONTHLY_DONATIONSを寄付してくれています。
+  hero:
+    cta:
+      text: スポンサーを見る
+      url: /sponsors
+  donation_options:
+    title: 寄付方法
+    subtitle: 以下のサイトを通じて寄付を受け付けています。
+    open_collective:
+      title: Open Collective
+      subtitle: 法人向けで一番人気のプラン
+      cta:
+        text: Open Collectiveを通じた寄付
+      items:
+        - text: 501(c)(6)非営利団体への直接寄付
+        - text: 一時的な寄付と定期的な寄付
+        - text: クレジットカード、銀行振り込み、PayPalで支払い可能
+        - text: オープンソースファンドを立ち上げることで、複数プロジェクトへの寄付が可能
+        - text: ほとんどの国で利用可能
+    github_sponsors:
+      title: GitHub Sponsors
+      subtitle: 高度な機能とレポート
+      cta:
+        text: GitHubを通じて寄付
+      items:
+        - text: GitHubへの支払いを通じた寄付
+        - text: 一時的な寄付と定期的な寄付
+        - text: クレジットカードでの支払い、またはGitHubの既存の課金方法（請求書発行を含む）をご利用可能
+        - text: GitHub プロフィールに "sponsor" バッジを表示する
+        - text: 既存のGitHubログインを使用可能
+  budget:
+    title: 資金の用途
+    subtitle: >
+      ESLintプロジェクトは、寄付されたお金をプロジェクトやESLintコミュニティ全体のために使っています。
+      一般的には、毎月下記のような分野にお金を使っています。
+    items:
+      - name: チーム開発
+        text: >
+          チームメンバーには貢献期間の長さに応じて時給が支払われ、現在はTSCメンバーとレビュアーの時給はHOURLY_RATE_TSC USDとなっています。
+          コミッターの時給はHOURLY_RATE_COMMITERS USDとなっています。
+      - name: 貢献者プール
+        text: >
+          私たちは毎月CONTRIBUTOR_POOL_BUDGET USDを、プロジェクトに多大な貢献をした外部貢献者への支払いに充てています。
+          貢献には、コードの提出、ドキュメントの作成、Discordサーバでの質問への回答などが含まれます。このお金はTSCによって毎月配分されます。
+      - name: 依存プロジェクト
+        text: >
+          私たちは毎月DEPENDENCIES_BUDGET USDを積み立て、ESLintが依存する他のプロジェクトをサポートするために役立てています。
+          私たちは、資金を得るのに十分な幸運に恵まれたオープンソースプロジェクトは、自分たちが依存している小規模な
+          プロジェクトを支援する責任があると考えます。
+      - name: コミュニティプロジェクト
+        text: >
+          私たちは毎月COMMUNITY_BUDGET USDを確保して、プラグインやパーサー、その他ESLintのエコシステム全体にとって有益なプロジェクト
+          をサポートするために役立てています。私たちは、プロジェクトの強さはそのエコシステムにあると信じており、
+          重要なプロジェクトが確実に維持され続けることを望んでいます。
+      - name: サポートシステム
+        text: >
+          Google Workspaceやクラウドストレージなど、チームがプロジェクトを管理するために使用するソフトウェアの費用として、
+          毎月少額を支払っています。
+    footer:
+      text: >
+        また、時々、この資金を使用して、請負業者に、プロジェクトにとって重要で、チームには時間や専門知識がなくて
+        自分たちの手で完成できない作業を依頼することがあります。例えば、最近、このウェブサイトのリニューアルの為にデザイナーと開発者を雇いました。
+        そのようなプロジェクトのために貯蓄をすることができるよう、我々は毎月の支出を収入より少なくするよう心がけています。
+  donation_tiers:
+    title: 寄付のティアシステム
+    subtitle: 寄付の規模は問いませんが、レベルごとに異なる報酬を設定するティアシステムを導入しています。
+    cta:
+      open_collective_text: >
+        <span class="visually-hidden">Open Collective</span>で寄付をします
+      github_sponsors_text: >
+        <span class="visually-hidden">GitHub</span>で寄付をします
+    items:
+      - name: プラチナスポンサー
+        amount: $2000+
+        frequency: 毎月
+        text: 2時間のサポート、ホームページとREADMEの最上段にロゴを掲載。さらに、Gold Tierの全ての内容を提供します。
+      - name: ゴールドスポンサー
+        amount: $1000–1999
+        frequency: 毎月
+        text: トップページとREADMEの2段目にロゴを掲載、私たち(ESLint)のTwitterアカウント（2万人のフォロワー）からのお礼のツイート、お礼のブログ記事を掲載します。
+      - name: シルバースポンサー
+        amount: $500–999
+        frequency: 毎月
+        text: トップページとREADMEの3段目にロゴを掲載。
+      - name: ブロンズスポンサー
+        amount: $200–499
+        frequency: 毎月
+        text: トップページとREADMEの4段目にロゴを掲載。
+  testimonials:
+    title: testimonials
+    items:
+      - name: Addy Osmani
+        title: Senior Staff Eng. Manager, Chrome
+        image: addy-osmani.jpg
+        text: >
+          長年にわたりESLintは、開発者が高品質のJavaScriptを書くために重要な役割を担っています。
+          よくある問題を早期に、そして頻繁にキャッチしてくれることが素晴らしいです。
+          高い拡張性を持つESLintは、チームが自分たちに合ったカスタムルールを実施できるため、
+          オープンソースプロジェクトなどでも優れた効果を発揮しています。
+          ChromeはESLintのスポンサーとして、ウェブ開発者が一貫して高品質のコードを書けるよう支援できることを嬉しく思っています。
+          これは、現代のウェブ開発ツールキットに不可欠な要素です。
+      - name: Jeff Cross
+        title: Co-founder and Principal Architect, Nx
+        image: jeff-cross.jpg
+        text: >
+          NxはESLintをコード品質、ライブラリ境界、およびプロジェクトの可視性を強制する為に使用してます。
+          ESLintはNxをより強力にするので、Nx.devコミュニティを代表して、ESLintの継続的な成功のためにスポンサーになることを嬉しく思います。
+      - name: Médédé Raymond KPATCHAA
+        title: Technical Architect, Salesforce
+        image: medede-kpatchaa.jpg
+        text: >
+          ESLintは、どんなJavaScriptプロジェクトにも使える非常に便利なツールです。
+          このツールを使うとプロジェクトの初期段階から一貫したコードフォーマットルールを設定でき、
+          コードレビューが非常に容易になり、また、新しい開発者がチームに簡単に適応できるようになります。
+          私を含めて多くの開発者からESLintの柔軟性と使いやすさが好まれてます。
+      - name: Duane O'Brien
+        title: Head of Open Source, Indeed
+        image: duane-obrien.jpg
+        text: >
+          ほとんどのJavaScriptプロジェクトは、直接的または間接的にESLintに依存しています。
+          Indeedの社員がFOSS Contributor Fundから寄付を受けるためにESLintを推薦し、その同僚も明らかに同意しています。
+          オープンソースの技術は我々の製品を支え、人々の就職を支援するデジタルインフラを開発し、保護し、維持することを可能にするものです。
+          そのオープンソース技術を支援できることを嬉しく思っています。
+      - name: Gajus Kuizinas
+        title: Co-Founder / CTO, Contra
+        image: gajus.jpg
+        text: >
+          ESLintは、増え続けるコードベースとエンジニアに安全で一貫した体験を提供するために大きな役割を担っています。
+          私たちは、Contraの構築を助けてくれているすべてのオープンソースプロジェクトに感謝していますし、
+          ESLintは、私たちがサポートすることを約束する多くのオープンソースプロジェクトの最初のものです。
+
+  faq:
+    title: よくあるご質問
+    description: 製品・課金に関するすべての情報。お探しの答えが見つかりませんか？私たちのフレンドリーなチームとチャットでもできます。
+    items:
+      - q: 寄付されたお金は誰が受け取るのですか？
+        a:
+          <a href='https://opencollective.com'>Open Collective</a>またはGitHubを通じての寄付であろうと、
+          すべての寄付は、501(c)(6)の非営利団体であるOpen Source Collectiveによって受け取られます。
+          The Open Source CollectiveはESLintの財政的なホストとして、すべての寄付を記録しています。
+      - q: 寄付の領収書の発行はできますか?
+        a:
+          Open Collectiveで寄付をされた場合、PDFの領収書をお送りします。GitHubで寄付をされた場合は、
+          領収書または請求書に記載されます。
+      - q: 寄付金の税額控除は受けられますか?
+        a:
+          Open Source Collectiveは501(c)(6)の非営利団体ですが、IRSは、オープンソースソフトウェアの開発を慈善事業と
+          見なしていません。そのため、非課税措置の対象となりません。
+      - q: お金の分配は誰が決めるのですか？
+        a: TSCが、誰がどれだけお金を受け取るかをすべて決定します。
+      - q: お金の使い道を確認することはできますか？
+        a:
+          できます。Open Collectiveのページでは、申請・決済されたすべての経費を確認することができます。
+          すべての取引は完全にオープンで、一般に公開されています。
+      - q: 定期的な寄付をいつでもキャンセルできますか？
+        a:
+          できます。長期的なコミットメントはありません。寄付の取り消しはいつでも可能です。Open CollectiveまたはGitHubに
+          ログインしてキャンセルできます。
+      - q: ロゴがホームページ、GitHub、npmパッケージに表示されるまでには、どれくらいの時間がかかりますか？
+        a:
+          ホームページとGitHubのロゴは毎日自動的に更新されますので、24時間以内に表示されるはずです。
+          npmパッケージのロゴは、通常2週間ごとに行われる新しいリリースの公開時にのみ更新されます。
+          ただし、メジャーリリースには数ヶ月かかることが多いので、その間はnpmパッケージのロゴは更新されません。
+      - q: ロゴとURLはどこから取得されますか？
+        a:
+          ロゴとURLは、寄付を行ったサイトに応じて、Open CollectiveまたはGitHubのプロフィールから取得されます。Open CollectiveやGitHubからいつでも更新することができ、
+          24時間以内にホームページとGitHubのREADMEに反映されます。サイト上のロゴやURLを手動で上書きすることはできません。
+      - q: 一時的な寄付はできますか？
+        a:
+          Open Collectiveを利用することが一時的な寄付をする最も簡単な方法です。任意の金額を寄付することができます。
+          GitHubの一時的な寄付は、金額に制限がある場合があります。
+
+#------------------------------------------------------------------------------
+# Languages Page
+#------------------------------------------------------------------------------
+
+languages_page:
+  title: 言語
+  choose_language: 言語の設定

@@ -1,0 +1,199 @@
+---
+layout: main.html
+permalink: /sponsors/
+multilingual: true
+eleventyExcludeFromCollections: true
+hook: "sponsors_page"
+---
+
+{%- from 'components/donation.macro.html' import donationItem %}
+{%- from 'components/hero.macro.html' import hero %}
+
+{% set supporting_text = site.sponsors_page.description %}
+{% set monthly_donations = sponsors.totals.monthlyDonations | dollars %}
+{% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.sponsorCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
+
+{{ hero({
+    title: site.sponsors_page.title,
+    supporting_text: supporting_text,
+    buttons: {
+        primary: {
+            primaryText: site.sponsors_page.hero.cta.text,
+            primaryURL: site.sponsors_page.hero.cta.url
+        }
+    }
+}) }}
+
+<section class="section">
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.platinum.title }}</h2>
+            <p>
+                {{ site.sponsors_page.tiers.platinum.description }}
+            </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--platinum">
+                {% for sponsor in sponsors.platinum %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
+                <li>
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.gold.title }}</h2>
+            <p>
+                {{ site.sponsors_page.tiers.gold.description }}
+            </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--gold">
+                {% for sponsor in sponsors.gold %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
+                <li>
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.silver.title }}</h2>
+            <p>
+                {{ site.sponsors_page.tiers.silver.description }}
+            </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--silver">
+                {% for sponsor in sponsors.silver %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
+                <li>
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.bronze.title }}</h2>
+            <p>
+                {{ site.sponsors_page.tiers.bronze.description }}
+            </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--bronze">
+                {% for sponsor in sponsors.bronze %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
+                <li>
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4">{{ site.sponsors_page.tiers.technology.title }}</h2>
+            <p>
+                {{ site.sponsors_page.tiers.technology.description }}
+            </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--technology">
+
+                {% for sponsor in techsponsors %}
+                    {% set sponsor_title = site.sponsors_page.tech_sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("TECH", sponsor.donation | capitalize) %}
+                <li>
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="64"/>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="donations">
+    <div class="content-container divider">
+        <div class="section-head center-text">
+            <h2 class="section-title h3" id="donations-label">{{ site.sponsors_page.recent_donations.title }}</h2>
+            <p class="section-supporting-text fs-step-0">
+                {{ site.sponsors_page.recent_donations.description }}
+            </p>
+        </div>
+        <ul role="list" class="donations-list" role="region" tabindex="-1" aria-labelledby="donations-label">
+
+            {% for donation in donations | limitTo(50) %}
+            <li class="donations-item">
+                {% set donation_image = donation.image %}
+                {% set donation_name = donation.name %}
+                {% set donation_amount = donation.amount | dollars %}
+                {% set donation_date = donation.date | readableDateFromISO %}
+
+                {{ donationItem({
+                        image: donation_image,
+                        name: donation_name,
+                        amount: donation_amount,
+                        date: donation_date
+                    }) }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section>
+    <div class="content-container divider">
+        <div class="section-head center-text">
+            <h2 class="section-title h3">{{ site.sponsors_page.tiers.backers.title }}</h2>
+            <p class="section-supporting-text fs-step-0">
+                {{ site.sponsors_page.tiers.backers.description }}
+            </p>
+        </div>
+        <div class="grid">
+            <ul role="list" class="sponsors span-1-12 sponsors--backers">
+                {% for sponsor in sponsors.backers %}
+                <li>
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="48" width="48"
+                            onerror="this.src = '/assets/images/people/_placeholder-avatar.svg'"
+                            alt="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
+                            title="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
