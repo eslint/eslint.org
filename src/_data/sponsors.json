@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133236,
-        "monthlyDonations": 11103,
-        "sponsorCount": 167
+        "annualDonations": 133176,
+        "monthlyDonations": 11098,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -492,15 +492,6 @@
             "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 35,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "ReverseProxy.com",
-            "url": "https://reverseproxy.com",
-            "image": "https://images.opencollective.com/reverseproxy/a739284/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1088,7 +1079,7 @@
         },
         {
             "name": "Hayden Bleasel",
-            "image": "https://avatars.githubusercontent.com/u/4142719?u=5aebd93316de5a1d41b6976c31c130b39d1c8d3d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4142719?u=de9d17186542f6e63a6e049bd904d741e93ed755&v=4",
             "url": "https://haydenbleasel.com/",
             "monthlyDonation": 5,
             "source": "github",
