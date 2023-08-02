@@ -26,4 +26,4 @@ jobs:
       - name: Run build
         run: npm run build
       - name: Validate Internal Links
-        run: npm run validate:links
+        run: npm run lint:links
