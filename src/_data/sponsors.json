@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130776,
-        "monthlyDonations": 10898,
-        "sponsorCount": 164
+        "annualDonations": 128364,
+        "monthlyDonations": 10697,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -114,15 +114,6 @@
             "image": "https://images.opencollective.com/discordapp/f9645d9/logo.png",
             "monthlyDonation": 200,
             "totalDonations": 10400,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "iBoysoft",
-            "url": "https://iboysoft.com/",
-            "image": "https://images.opencollective.com/iboysoft-software/7f9d60e/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 0,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -251,7 +242,7 @@
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/d8a5a80/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 30,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -489,7 +480,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 35,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -498,7 +489,7 @@
             "url": "https://gamblecritic.net",
             "image": "https://images.opencollective.com/gamblecritic/4668ddb/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -507,7 +498,7 @@
             "url": null,
             "image": "https://images.opencollective.com/builtbyrebels/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1356,7 +1347,7 @@
             "url": "https://www.linkedin.com/in/clemencelesne",
             "image": "https://images.opencollective.com/clemlesne/7c58537/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 1,
+            "totalDonations": 2,
             "source": "opencollective",
             "tier": null
         },
@@ -1375,15 +1366,6 @@
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
             "totalDonations": 24,
-            "source": "opencollective",
-            "tier": null
-        },
-        {
-            "name": "Clémence",
-            "url": "https://www.linkedin.com/in/clemencelesne",
-            "image": "https://images.opencollective.com/clemlesne/7c58537/avatar.png",
-            "monthlyDonation": 1,
-            "totalDonations": 1,
             "source": "opencollective",
             "tier": null
         },
