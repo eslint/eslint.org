@@ -34,7 +34,7 @@
             "bio": null,
             "twitter_username": null,
             "github_username": "brettz9",
-            "location": "Shenzhen, China"
+            "location": null
         },
         {
             "username": "alberto",
@@ -361,6 +361,17 @@
             "twitter_username": null,
             "github_username": "fasttime",
             "location": null
+        },
+        {
+            "username": "ota-meshi",
+            "name": "Yosuke Ota",
+            "title": "ESLint Committer",
+            "website": "https://ota-meshi.github.io/",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16508807?v=4",
+            "bio": "Member of @vuejs, @sveltejs, @stylelint, @stylus, @eslint and @intlify. Owner of cheetah-grid.\r\nJava/JavaScript/TypeScript. I use broken English",
+            "twitter_username": "omoteota",
+            "github_username": "ota-meshi",
+            "location": "Kanagawa, Japan"
         }
     ],
     "website": [
