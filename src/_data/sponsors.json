@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128244,
-        "monthlyDonations": 10687,
-        "sponsorCount": 161
+        "annualDonations": 128304,
+        "monthlyDonations": 10692,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -1100,6 +1100,14 @@
             "name": "Nicolas Charpentier",
             "image": "https://avatars.githubusercontent.com/u/7189823?u=f7558a0f6828f45f1082970880aefbeab9596d0b&v=4",
             "url": "https://charpeni.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mateus Etto",
+            "image": "https://avatars.githubusercontent.com/u/7322925?u=33db251d02b633150683f87dfe90fcd6621ab850&v=4",
+            "url": "https://yutsuten.github.io/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
