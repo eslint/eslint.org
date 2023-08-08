@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128304,
-        "monthlyDonations": 10692,
-        "sponsorCount": 162
+        "annualDonations": 128424,
+        "monthlyDonations": 10702,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -1033,6 +1033,14 @@
             "tier": "backer"
         },
         {
+            "name": "y.takahashi",
+            "image": "https://avatars.githubusercontent.com/u/3516343?u=2043000e4b6c6247945d9c1d1a683c709c527448&v=4",
+            "url": "https://mizle.net",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Nick Oliver",
             "image": "https://avatars.githubusercontent.com/u/3945917?u=75ac213afd2def70385395d15c58e888f3460867&v=4",
             "url": "pixnbits.org",
@@ -1276,6 +1284,14 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Stanzin Norzang",
+            "image": "https://avatars.githubusercontent.com/u/109467334?u=0d5f47f3670584425f8acd7c7dd0080bcbe45e26&v=4",
+            "url": "https://github.com/Stanzin7",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
