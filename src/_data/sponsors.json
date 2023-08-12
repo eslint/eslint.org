@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128484,
-        "monthlyDonations": 10707,
-        "sponsorCount": 165
+        "annualDonations": 128544,
+        "monthlyDonations": 10712,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -1292,6 +1292,14 @@
             "name": "Baekilda",
             "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
             "url": "https://github.com/baekilda",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Srijan Baniyal",
+            "image": "https://avatars.githubusercontent.com/u/107460791?u=74bae61fb48828df95486d01e729b119180186e5&v=4",
+            "url": "https://github.com/Srijan-Baniyal",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
