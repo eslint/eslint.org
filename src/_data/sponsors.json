@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128544,
-        "monthlyDonations": 10712,
-        "sponsorCount": 166
+        "annualDonations": 128484,
+        "monthlyDonations": 10707,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -860,14 +860,6 @@
             "name": "Forrest Desjardins",
             "image": "https://avatars.githubusercontent.com/u/502491?u=1658efb692d4da77a8f68251b9dd8d7a3bdf7aab&v=4",
             "url": "https://aeralta.tech/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Will Stone",
-            "image": "https://avatars.githubusercontent.com/u/654103?u=87566f3bc8fcd2ee9946dd64d32a99f59d0775c4&v=4",
-            "url": "https://wstone.uk",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
