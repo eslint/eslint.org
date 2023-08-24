@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128484,
-        "monthlyDonations": 10707,
-        "sponsorCount": 165
+        "annualDonations": 129924,
+        "monthlyDonations": 10827,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -177,6 +177,14 @@
             "tier": "backer"
         },
         {
+            "name": "CarbonReach",
+            "image": "https://avatars.githubusercontent.com/u/87486177?u=2b644f4759facf085d4691926131076d82f35f17&v=4",
+            "url": "https://carbonreach.io",
+            "monthlyDonation": 100,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Principal Financial Group",
             "url": "https://www.principal.com/about-us",
             "image": "https://images.opencollective.com/principal/431e690/logo.png",
@@ -229,11 +237,19 @@
             "tier": null
         },
         {
+            "name": "Joel Alvarez Mexia",
+            "image": "https://avatars.githubusercontent.com/u/139817810?v=4",
+            "url": "https://github.com/jeresoftx",
+            "monthlyDonation": 20,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "odan",
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 20,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
