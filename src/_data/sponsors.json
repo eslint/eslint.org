@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129924,
-        "monthlyDonations": 10827,
-        "sponsorCount": 167
+        "annualDonations": 129960,
+        "monthlyDonations": 10830,
+        "sponsorCount": 168
     },
     "platinum": [
         {
@@ -1327,6 +1327,15 @@
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
+        },
+        {
+            "name": "Austin Akers",
+            "url": null,
+            "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
+            "monthlyDonation": 3,
+            "totalDonations": 3,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Jb Landry",
