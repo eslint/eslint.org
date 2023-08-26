@@ -205,14 +205,5 @@
         "amount": 5,
         "date": "2022-08-09T00:16:04.561Z",
         "source": "opencollective"
-    },
-    {
-        "id": "rxg0j35l-zkwm6v50-a3yqvoe9-8n47daby",
-        "name": "Andrea",
-        "url": null,
-        "image": "https://images.opencollective.com/guest-9811959c/avatar.png",
-        "amount": 1.75,
-        "date": "2022-07-25T15:19:57.126Z",
-        "source": "opencollective"
     }
 ]
