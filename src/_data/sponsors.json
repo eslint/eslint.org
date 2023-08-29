@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129900,
-        "monthlyDonations": 10825,
-        "sponsorCount": 167
+        "annualDonations": 129960,
+        "monthlyDonations": 10830,
+        "sponsorCount": 168
     },
     "platinum": [
         {
@@ -1316,6 +1316,14 @@
             "name": "wojtekLs",
             "image": "https://avatars.githubusercontent.com/u/109670049?u=b3e747a5a6378cf7f5a9a857ed1fa741a5d8e27a&v=4",
             "url": "nslabpoland.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Eduardo Bruno",
+            "image": "https://avatars.githubusercontent.com/u/111282091?u=783ca434bf4f278adea0ae6d7d127cff3eb076c1&v=4",
+            "url": "www.codingar.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
