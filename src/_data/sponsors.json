@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129960,
-        "monthlyDonations": 10830,
-        "sponsorCount": 168
+        "annualDonations": 129900,
+        "monthlyDonations": 10825,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -836,14 +836,6 @@
             "name": "Martti Laine",
             "image": "https://avatars.githubusercontent.com/u/211543?v=4",
             "url": "https://marttilaine.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Art Pai",
-            "image": "https://avatars.githubusercontent.com/u/239570?v=4",
-            "url": "http://stylecoder.tw",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
