@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 129900,
-        "monthlyDonations": 10825,
+        "annualDonations": 129840,
+        "monthlyDonations": 10820,
         "sponsorCount": 167
     },
     "platinum": [
@@ -399,14 +399,6 @@
             "name": "Hiroki Osame",
             "image": "https://avatars.githubusercontent.com/u/1075694?u=7f766073ee609bfb8876e1ae2b55ace083c1c19c&v=4",
             "url": "https://hirok.io",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Konstantin Melnikov",
-            "image": "https://avatars.githubusercontent.com/u/1079509?v=4",
-            "url": "https://www.linkedin.com/in/konstantin-melnikov/",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1257,6 +1249,14 @@
             "tier": "backer"
         },
         {
+            "name": "Matthew Nanas",
+            "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
+            "url": "https://mnanas.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
@@ -1406,7 +1406,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 24,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": null
         },
