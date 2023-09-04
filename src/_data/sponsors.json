@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129840,
-        "monthlyDonations": 10820,
-        "sponsorCount": 167
+        "annualDonations": 129828,
+        "monthlyDonations": 10819,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -1380,15 +1380,6 @@
             "image": "https://images.opencollective.com/roman-nazarenko/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 80,
-            "source": "opencollective",
-            "tier": null
-        },
-        {
-            "name": "Clémence",
-            "url": "https://www.linkedin.com/in/clemencelesne",
-            "image": "https://images.opencollective.com/clemlesne/7c58537/avatar.png",
-            "monthlyDonation": 1,
-            "totalDonations": 3,
             "source": "opencollective",
             "tier": null
         },
