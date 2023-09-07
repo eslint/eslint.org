@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129828,
-        "monthlyDonations": 10819,
-        "sponsorCount": 166
+        "annualDonations": 129768,
+        "monthlyDonations": 10814,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -498,7 +498,7 @@
             "url": null,
             "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 35,
+            "totalDonations": 36,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1292,14 +1292,6 @@
             "name": "Srijan Baniyal",
             "image": "https://avatars.githubusercontent.com/u/107460791?u=74bae61fb48828df95486d01e729b119180186e5&v=4",
             "url": "srijanbaniyal.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Stanzin Norzang",
-            "image": "https://avatars.githubusercontent.com/u/109467334?u=0d5f47f3670584425f8acd7c7dd0080bcbe45e26&v=4",
-            "url": "https://github.com/Stanzin7",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
