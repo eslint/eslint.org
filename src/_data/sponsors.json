@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129768,
-        "monthlyDonations": 10814,
-        "sponsorCount": 165
+        "annualDonations": 135768,
+        "monthlyDonations": 11314,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -60,6 +60,14 @@
             "monthlyDonation": 500,
             "totalDonations": 20000,
             "source": "opencollective",
+            "tier": "silver-sponsor"
+        },
+        {
+            "name": "Siemens",
+            "image": "https://avatars.githubusercontent.com/u/624020?v=4",
+            "url": "https://opensource.siemens.com",
+            "monthlyDonation": 500,
+            "source": "github",
             "tier": "silver-sponsor"
         },
         {
