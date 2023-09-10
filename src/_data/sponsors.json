@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 135768,
-        "monthlyDonations": 11314,
-        "sponsorCount": 166
+        "annualDonations": 135828,
+        "monthlyDonations": 11319,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -873,6 +873,14 @@
             "tier": "backer"
         },
         {
+            "name": "Joao Zarate",
+            "image": "https://avatars.githubusercontent.com/u/566544?u=0f3f602e8a4d37469df822841594ee3618cef2c0&v=4",
+            "url": "www.linkedin.com/in/joaozarate/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Rithish",
             "image": "https://avatars.githubusercontent.com/u/674539?v=4",
             "url": "https://github.com/rithish",
@@ -1202,7 +1210,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=823b3a751ad019d797365113e4753bc85f9aabb3&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=96445853ba98a02404583e397959caf194b3d55c&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
