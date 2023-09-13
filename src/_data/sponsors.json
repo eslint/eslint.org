@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 135828,
-        "monthlyDonations": 11319,
-        "sponsorCount": 167
+        "annualDonations": 135888,
+        "monthlyDonations": 11324,
+        "sponsorCount": 168
     },
     "platinum": [
         {
@@ -316,15 +316,6 @@
             "tier": "backer"
         },
         {
-            "name": "Extremely Heavy",
-            "url": "https://xh.io",
-            "image": "https://images.opencollective.com/xh/cec0963/logo.png",
-            "monthlyDonation": 10,
-            "totalDonations": 310,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Raider.IO",
             "url": "https://raider.io",
             "image": "https://images.opencollective.com/raiderio_wow/7a380a3/logo.png",
@@ -399,6 +390,14 @@
             "name": "Bryan Mishkin",
             "image": "https://avatars.githubusercontent.com/u/698306?v=4",
             "url": "http://www.linkedin.com/in/bmish",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Extremely Heavy",
+            "image": "https://avatars.githubusercontent.com/u/850311?v=4",
+            "url": "https://xh.io",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1276,6 +1275,14 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Parsify Technologies",
+            "image": "https://avatars.githubusercontent.com/u/60750495?v=4",
+            "url": "https://www.parsify.eu",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
