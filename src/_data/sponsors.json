@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 140148,
-        "monthlyDonations": 11679,
-        "sponsorCount": 170
+        "annualDonations": 137688,
+        "monthlyDonations": 11474,
+        "sponsorCount": 168
     },
     "platinum": [
         {
@@ -123,14 +123,6 @@
             "monthlyDonation": 200,
             "totalDonations": 10600,
             "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "GitHub",
-            "image": "https://avatars.githubusercontent.com/u/9919?v=4",
-            "url": "https://github.com/about",
-            "monthlyDonation": 200,
-            "source": "github",
             "tier": "bronze-sponsor"
         },
         {
@@ -1196,14 +1188,6 @@
             "name": "Yuhei FUJITA",
             "image": "https://avatars.githubusercontent.com/u/13161267?u=f45735a8978321dd7f4bffe0feb5bdde6ff3dd84&v=4",
             "url": "https://github.com/YuheiFUJITA",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Schalk Venter",
-            "image": "https://avatars.githubusercontent.com/u/14258328?u=fdcaca808e98f2a073093f8873f2dbfd865ccb96&v=4",
-            "url": "https://schalkventer.me",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
