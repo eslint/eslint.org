@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 137688,
-        "monthlyDonations": 11474,
-        "sponsorCount": 168
+        "annualDonations": 137628,
+        "monthlyDonations": 11469,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -900,14 +900,6 @@
             "name": "Gavin Lloyd",
             "image": "https://avatars.githubusercontent.com/u/744538?u=0a08af9abb9fbf841382190be47f67a679bee4fa&v=4",
             "url": "gavinhungry.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ryan Macy",
-            "image": "https://avatars.githubusercontent.com/u/829581?u=7126d6768d3e200ee5dfd3485cd50465cb8e85f4&v=4",
-            "url": "https://macy.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
