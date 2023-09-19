@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 137628,
-        "monthlyDonations": 11469,
-        "sponsorCount": 167
+        "annualDonations": 137568,
+        "monthlyDonations": 11464,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -875,7 +875,7 @@
         {
             "name": "Joao Zarate",
             "image": "https://avatars.githubusercontent.com/u/566544?u=0f3f602e8a4d37469df822841594ee3618cef2c0&v=4",
-            "url": "www.linkedin.com/in/joaozarate/",
+            "url": "https://github.com/joaozarate",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1164,14 +1164,6 @@
             "name": "Fatih Aygün",
             "image": "https://avatars.githubusercontent.com/u/10846005?u=5f14cc2e916a6f2f1620bc5b3bce5e012c5a8bc1&v=4",
             "url": "https://github.com/cyco130",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Sebastian Silbermann",
-            "image": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
-            "url": "https://solverfox.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
