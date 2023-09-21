@@ -128,7 +128,7 @@ The `context.markVariableAsUsed(name)` method finds a variable with the given na
 module.exports = {
     create(context) {
 
-        const { sourceCode } = context.sourceCode;
+        const { sourceCode } = context;
 
         return {
             Program(node) {
