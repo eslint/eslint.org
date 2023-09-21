@@ -59,7 +59,7 @@ We have introduced a new `SourceCode#getScope(node)` method that requires you to
 module.exports = {
     create(context) {
 
-        const { sourceCode } = context.sourceCode;
+        const { sourceCode } = context;
 
         return {
             Program(node) {
