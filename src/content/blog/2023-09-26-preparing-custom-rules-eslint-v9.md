@@ -82,7 +82,7 @@ The `context.getAncestors()` method is another method on `context` that used the
 module.exports = {
     create(context) {
 
-        const { sourceCode } = context.sourceCode;
+        const { sourceCode } = context;
 
         return {
             Program(node) {
