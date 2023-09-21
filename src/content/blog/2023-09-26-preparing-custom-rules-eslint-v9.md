@@ -211,7 +211,7 @@ As we look towards the API we'd like rules for other languages to have, we decid
 |-----------------------|--------------------------|
 |`context.getSourceCode()`|`context.sourceCode`|
 |`context.getFilename()`|`context.filename`|
-|`context.getPhysicalFilename()`|`context.physicalfilename`|
+|`context.getPhysicalFilename()`|`context.physicalFilename`|
 |`context.getCwd()`|`context.cwd`|
 
 We are deprecating the methods in favor of the properties (added in v8.40.0). These methods will be removed in v10.0.0 (not v9.0.0) as they are not blocking language plugins work. Here's an example that ensures the correct value is used:
