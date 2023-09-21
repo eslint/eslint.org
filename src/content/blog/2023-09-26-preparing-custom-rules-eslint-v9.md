@@ -105,7 +105,7 @@ The `context.getDeclaredVariables(node)` returns all variables declared by the g
 module.exports = {
     create(context) {
 
-        const { sourceCode } = context.sourceCode;
+        const { sourceCode } = context;
 
         return {
             Program(node) {
