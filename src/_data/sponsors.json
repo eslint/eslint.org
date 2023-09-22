@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 137568,
-        "monthlyDonations": 11464,
-        "sponsorCount": 166
+        "annualDonations": 137508,
+        "monthlyDonations": 11459,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -1220,14 +1220,6 @@
             "name": "BrightCrowd",
             "image": "https://avatars.githubusercontent.com/u/19253501?v=4",
             "url": "https://brightcrowd.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Krešimir Čondić",
-            "image": "https://avatars.githubusercontent.com/u/26605058?u=ce9a827bfef6ec4740a32a2e2c5cb769c812a217&v=4",
-            "url": "https://codemage.co",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
