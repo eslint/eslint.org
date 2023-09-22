@@ -21,13 +21,13 @@ In a language-agnostic ESLint core, we need to redefine the responsibilities of 
 
 All of this is to say that we are deprecating all of the code-related methods on `context` and moving them to `SourceCode`. The following table shows which fields on `context` are moving to `SourceCode`. Note that the method signatures remain unchanged for all of these methods even if the name changes:
 
-|**Deprecated on `context`**|**Replacement on `SourceCode`**|
+|**Deprecated on `context`**|**Replacement(s) on `SourceCode`**|
 |-----------------------|--------------------------|
 |`context.getSource()`|`sourceCode.getText()`|
 |`context.getSourceLines()`|`sourceCode.getLines()`|
 |`context.getAllComments()`|`sourceCode.getAllComments()`|
 |`context.getNodeByRangeIndex()`|`sourceCode.getNodeByRangeIndex()`|
-|`context.getComments()`|`sourceCode.getComments()`|
+|`context.getComments()`|`sourceCode.getCommentsBefore()`, `sourceCode.getCommentsAfter()`, `sourceCode.getCommentsInside()`|
 |`context.getCommentsBefore()`|`sourceCode.getCommentsBefore()`|
 |`context.getCommentsAfter()`|`sourceCode.getCommentsAfter()`|
 |`context.getCommentsInside()`|`sourceCode.getCommentsInside()`|
@@ -234,11 +234,11 @@ module.exports = {
 };
 ```
 
-## `context` properties being removed
+## `context` properties: `parserOptions` and `parserPath` being removed
 
-Additionally, the `context.parserOptions` and `context.parserPath` properties are deprecated and will be removed in v9.0.0. There is a new `context.languageOptions` property that allows rules to access similar data as `context.parserOptions`. In general, though, rules should not depend on information either in `context.parserOptions` or `context.languageOptions` to determine how they should behave; this information is primarily for debugging purposes.
+Additionally, the `context.parserOptions` and `context.parserPath` properties are deprecated and will be removed in v10.0.0 (not v9.0.0). There is a new `context.languageOptions` property that allows rules to access similar data as `context.parserOptions`. In general, though, rules should not depend on information either in `context.parserOptions` or `context.languageOptions` to determine how they should behave.
 
-The `context.parserPath` property was intended to allow rules to retrieve an instance of the parser that ESLint is using via `require()`. However, the new flat config system does not know the location of the parser module to load, so we are unable to provide this data. Further, because the JavaScript ecosystem is moving to ESM, any value returned from this property will not work with `import()`. This property was added early on in ESLint's life and we generally recommend that rules not try to further parse JavaScript code inside of them.
+The `context.parserPath` property was intended to allow rules to retrieve an instance of the parser that ESLint is using via `require()`. However, the new flat config system does not know the location of the parser module to load, so we are unable to provide this data. Further, because the JavaScript ecosystem is moving to ESM, any value returned from this property will not work with `import()`. This property was added early on in ESLint's life and we generally recommend that rules not try to further parse JavaScript code inside of them. If necessary, you can use `context.languageOptions.parser` to access the parser ESLint is using.
 
 ## Conclusion
 
