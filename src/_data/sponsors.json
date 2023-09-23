@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 137508,
-        "monthlyDonations": 11459,
-        "sponsorCount": 165
+        "annualDonations": 136080,
+        "monthlyDonations": 11340,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -186,14 +186,6 @@
             "tier": "backer"
         },
         {
-            "name": "CarbonReach",
-            "image": "https://avatars.githubusercontent.com/u/87486177?u=2b644f4759facf085d4691926131076d82f35f17&v=4",
-            "url": "https://carbonreach.io",
-            "monthlyDonation": 100,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Principal Financial Group",
             "url": "https://www.principal.com/about-us",
             "image": "https://images.opencollective.com/principal/431e690/logo.png",
@@ -244,14 +236,6 @@
             "totalDonations": 375,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Joel Alvarez Mexia",
-            "image": "https://avatars.githubusercontent.com/u/139817810?v=4",
-            "url": "https://github.com/jeresoftx",
-            "monthlyDonation": 20,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "odan",
@@ -1392,6 +1376,14 @@
             "totalDonations": 25,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "José David",
+            "image": "https://avatars.githubusercontent.com/u/59240597?u=e44f814b3734077fd53e16c60b58f704ac16d9bf&v=4",
+            "url": "https://github.com/B4LSEROS",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "PLANFRED",
