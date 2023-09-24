@@ -112,3 +112,5 @@ dist
 # playground webpack outputs
 playground.js.map
 playground.js
+# Local Netlify folder
+.netlify

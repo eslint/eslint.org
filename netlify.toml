@@ -1,6 +1,15 @@
+[dev]
+  command = "npm run start"
+  targetPort = 2022
+
 [build]
   publish = "_site"
   command = "npm run build"
+  edge_functions = "functions"
+
+[[edge_functions]]
+  function = "og"
+  path = "/og"
 
 # fix avif loading in Firefox
 # Source: https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/
