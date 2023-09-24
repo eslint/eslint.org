@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136080,
-        "monthlyDonations": 11340,
-        "sponsorCount": 164
+        "annualDonations": 136020,
+        "monthlyDonations": 11335,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -242,7 +242,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 30,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -518,15 +518,6 @@
             "image": "https://images.opencollective.com/aviator-game1/93ba7db/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 50,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Josef Kubíček",
-            "url": null,
-            "image": "https://images.opencollective.com/josef-kubicek/6bb5ad8/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 55,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1170,7 +1161,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=96445853ba98a02404583e397959caf194b3d55c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=9b4dda156c0218b5561ff269a3bbabdce79d85db&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
