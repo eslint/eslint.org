@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136020,
-        "monthlyDonations": 11335,
-        "sponsorCount": 163
+        "annualDonations": 136032,
+        "monthlyDonations": 11336,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -1372,6 +1372,14 @@
             "name": "José David",
             "image": "https://avatars.githubusercontent.com/u/59240597?u=e44f814b3734077fd53e16c60b58f704ac16d9bf&v=4",
             "url": "https://github.com/B4LSEROS",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Aldrich",
+            "image": "https://avatars.githubusercontent.com/u/106362981?u=af356e9c6e32f58fa9e9f19a846da8fd1611dbb0&v=4",
+            "url": "zstun.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
