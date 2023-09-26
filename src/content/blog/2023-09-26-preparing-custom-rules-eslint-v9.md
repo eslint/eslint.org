@@ -76,7 +76,7 @@ module.exports = {
 
 ### `context.getAncestors()`
 
-The `context.getAncestors()` method is another method on `context` that used the internal traversal state to return the ancestors of the currently visited node. And also similar to `context.getScope()`, this meant the method was both limited and unclear. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#getAncestors(node)` (added in v8.38.0), which requires you to pass in the node whose ancestors you want to retrieve. Here is an example that checks for the correct method to use:
+The `context.getAncestors()` method is another method on `context` that uses the internal traversal state to return the ancestors of the currently visited node. Also similar to `context.getScope()`, this meant the method was both limited and unclear. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#getAncestors(node)` (added in v8.38.0), which requires you to pass in the node whose ancestors you want to retrieve. Here is an example that checks for the correct method to use:
 
 ```js
 module.exports = {
