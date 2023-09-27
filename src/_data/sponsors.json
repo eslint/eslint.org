@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136032,
-        "monthlyDonations": 11336,
-        "sponsorCount": 164
+        "annualDonations": 136044,
+        "monthlyDonations": 11337,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -1367,6 +1367,14 @@
             "totalDonations": 25,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Rubem Vasconcelos",
+            "image": "https://avatars.githubusercontent.com/u/11760617?u=012364ad9fd334be48cb552cb16ecd16475d3a9c&v=4",
+            "url": "https://linkedin.com/in/rubemfsv",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "José David",
