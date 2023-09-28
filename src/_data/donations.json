@@ -196,14 +196,5 @@
         "amount": 100,
         "date": "2022-08-31T12:56:55.922Z",
         "source": "opencollective"
-    },
-    {
-        "id": "ywz9j4av-god8pgmr-l4jpmr35-nxklb0e7",
-        "name": "Chrome Frameworks Fund",
-        "url": null,
-        "image": "https://images.opencollective.com/2021-frameworks-fund/logo.png",
-        "amount": 12500,
-        "date": "2022-08-12T19:32:46.307Z",
-        "source": "opencollective"
     }
 ]
