@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 126840,
-        "monthlyDonations": 10570,
-        "sponsorCount": 161
+        "annualDonations": 127392,
+        "monthlyDonations": 10616,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -147,7 +147,7 @@
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 350,
-            "totalDonations": 15414,
+            "totalDonations": 15764,
             "source": "opencollective",
             "tier": null
         },
@@ -167,6 +167,15 @@
             "monthlyDonation": 100,
             "source": "github",
             "tier": "backer"
+        },
+        {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 50,
+            "totalDonations": 1950,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Tailscale",
@@ -225,7 +234,7 @@
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/d8a5a80/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 50,
+            "totalDonations": 60,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -446,7 +455,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 45,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -455,7 +464,7 @@
             "url": "https://gamblecritic.net",
             "image": "https://images.opencollective.com/gamblecritic/4668ddb/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -464,7 +473,7 @@
             "url": null,
             "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 36,
+            "totalDonations": 41,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -893,7 +902,7 @@
         },
         {
             "name": "Jonny Burger",
-            "image": "https://avatars.githubusercontent.com/u/1629785?u=5b5d80ddcda83e4780e2391b2d0b475f442289bd&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1629785?u=f91613c118bb1fcf442a71008dff1cd5f9b30411&v=4",
             "url": "https://jonny.io",
             "monthlyDonation": 5,
             "source": "github",
@@ -1244,19 +1253,11 @@
             "tier": "backer"
         },
         {
-            "name": "wojtekLs",
-            "image": "https://avatars.githubusercontent.com/u/109670049?u=b3e747a5a6378cf7f5a9a857ed1fa741a5d8e27a&v=4",
-            "url": "nslabpoland.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Austin Akers",
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
-            "totalDonations": 3,
+            "totalDonations": 6,
             "source": "opencollective",
             "tier": null
         },
@@ -1336,6 +1337,14 @@
             "name": "Rubem Vasconcelos",
             "image": "https://avatars.githubusercontent.com/u/11760617?u=012364ad9fd334be48cb552cb16ecd16475d3a9c&v=4",
             "url": "https://linkedin.com/in/rubemfsv",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Raghu S",
+            "image": "https://avatars.githubusercontent.com/u/50697306?u=6b457f32d3755c6f1de55096f83878072600c5f1&v=4",
+            "url": "https://linktr.ee/raghu0007",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
