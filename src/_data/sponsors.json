@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127392,
-        "monthlyDonations": 10616,
-        "sponsorCount": 162
+        "annualDonations": 127272,
+        "monthlyDonations": 10606,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -1232,22 +1232,6 @@
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828?u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
             "url": "https://standardresume.co/tech",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Baekilda",
-            "image": "https://avatars.githubusercontent.com/u/67785358?u=263879170247a4a23804b214a1d4be092b9245e6&v=4",
-            "url": "https://github.com/baekilda",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Srijan Baniyal",
-            "image": "https://avatars.githubusercontent.com/u/107460791?u=74bae61fb48828df95486d01e729b119180186e5&v=4",
-            "url": "srijanbaniyal.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
