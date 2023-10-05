@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127272,
-        "monthlyDonations": 10606,
-        "sponsorCount": 160
+        "annualDonations": 127380,
+        "monthlyDonations": 10615,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -571,6 +571,15 @@
             "name": "Corellium",
             "url": "https://www.corellium.com",
             "image": "https://images.opencollective.com/corellium/aa8c228/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 115,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Nicolò Ribaudo",
+            "url": null,
+            "image": "https://images.opencollective.com/nicoloribaudo/924f189/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 115,
             "source": "opencollective",
@@ -1233,6 +1242,14 @@
             "image": "https://avatars.githubusercontent.com/u/65968828?u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
             "url": "https://standardresume.co/tech",
             "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Sentry",
+            "image": "https://avatars.githubusercontent.com/u/1396951?v=4",
+            "url": "https://sentry.io",
+            "monthlyDonation": 4,
             "source": "github",
             "tier": "backer"
         },
