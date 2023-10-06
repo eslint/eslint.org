@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127380,
-        "monthlyDonations": 10615,
-        "sponsorCount": 162
+        "annualDonations": 127440,
+        "monthlyDonations": 10620,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -926,6 +926,14 @@
             "tier": "backer"
         },
         {
+            "name": "Mahbubur Rahman",
+            "image": "https://avatars.githubusercontent.com/u/1979225?u=d24ed105db153f78a1a4662da355e88d8ad4785d&v=4",
+            "url": "https://github.com/iamcrypticcoder",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Gustav Hansen",
             "image": "https://avatars.githubusercontent.com/u/2244375?u=5240e0f277601e08bdcffd579e395a57f8b23e3f&v=4",
             "url": "gu.stav.dev",
@@ -1152,7 +1160,7 @@
         {
             "name": "Niko Achilles Kokkinos",
             "image": "https://avatars.githubusercontent.com/u/15736120?u=2b792b2e5fd22d36b8dafbc514cf019b82955e63&v=4",
-            "url": "https://www.linkedin.com/in/nikoachilles/",
+            "url": "https://github.com/niko-achilles",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1361,7 +1369,7 @@
         {
             "name": "Aldrich",
             "image": "https://avatars.githubusercontent.com/u/106362981?u=af356e9c6e32f58fa9e9f19a846da8fd1611dbb0&v=4",
-            "url": "zstun.com",
+            "url": "www.beloved.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
