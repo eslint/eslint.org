@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 127440,
-        "monthlyDonations": 10620,
+        "annualDonations": 121560,
+        "monthlyDonations": 10130,
         "sponsorCount": 163
     },
     "platinum": [
@@ -52,14 +52,6 @@
             "monthlyDonation": 500,
             "totalDonations": 20500,
             "source": "opencollective",
-            "tier": "silver-sponsor"
-        },
-        {
-            "name": "Siemens",
-            "image": "https://avatars.githubusercontent.com/u/624020?v=4",
-            "url": "https://opensource.siemens.com",
-            "monthlyDonation": 500,
-            "source": "github",
             "tier": "silver-sponsor"
         },
         {
@@ -414,6 +406,14 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
             "url": "https://github.com/Kamalnrf",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Oliver Tacke",
+            "image": "https://avatars.githubusercontent.com/u/16688047?v=4",
+            "url": "https://snordian.de",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
