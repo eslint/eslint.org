@@ -54,7 +54,7 @@ When ESLint v10.0.0 is released (end of 2024 or early 2025 in all likelihood), t
 * The `ESLINT_USE_FLAT_CONFIG` environment variable will no longer be honored but won't throw an error.
 * CLI options that were specific to eslintrc config files will be removed.
 
-**For rule developers**, the `context.parserPath`, `context.parserOptions`, and `context.globals` properties will be removed.
+**For rule developers**, the `context.parserPath` and `context.parserOptions` properties will be removed.
 
 **For plugin developers**, there are no additional concerns in v10.0.0.
 
