@@ -15,7 +15,7 @@ It may seem hard to believe, but the [RFC for ESLint's new configuration system]
 
 ## Flat config by default in ESLint v9.0.0
 
-When ESLint v9.0.0 is released, either the end of this year or beginning of next year, flat config will be the default configuration system and we will deprecate, but not be remove, eslintrc. New features will be added only for flat config, so we encourage everyone to move off of eslintrc as quickly as possible to take advantage of everything v9.0.0 will offer.
+When ESLint v9.0.0 is released, either the end of this year or beginning of next year, flat config will be the default configuration system and we will deprecate, but not remove, eslintrc. New features will be added only for flat config, so we encourage everyone to move off of eslintrc as quickly as possible to take advantage of everything v9.0.0 will offer.
 
 What this change means for you depends on how you use ESLint, and if you have any questions or concerns, please stop by our [Discord](https://eslint.org/chat) to discuss with the team.
 
