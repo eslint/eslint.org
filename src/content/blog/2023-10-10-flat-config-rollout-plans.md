@@ -29,7 +29,9 @@ What this change means for you depends on how you use ESLint, and if you have an
 
 You should also make sure that your rules aren't using `context.parserOptions` and `context.parserPath`. Instead, you should be using `context.languageOptions` and `context.languageOptions.parser`, which also work when ESLint is run in eslintrc mode. See our [previous post](https://eslint.org/blog/2023/09/preparing-custom-rules-eslint-v9/) for more information.
 
-**For plugin developers**, you should be updating your exported configs and shareable configs to use flat config format. The rest of your plugin, including rules and processors, don't require any changes.
+**For shareable config authors**, you should update your shareable configs to use flat config format. This includes moving referenced plugins from the `peerDependencies` section of `package.json` to the `dependencies` section.
+
+**For plugin developers**, you should update your exported configs to use flat config format. The rest of your plugin, including rules and processors, don't require any changes.
 
 **For API users**, you'll need to decide whether or not you want to support both configuration systems in the short term. The API in v9.0.0 will change in the following ways:
 
@@ -55,6 +57,8 @@ When ESLint v10.0.0 is released (end of 2024 or early 2025 in all likelihood), t
 * CLI options that were specific to eslintrc config files will be removed.
 
 **For rule developers**, the `context.parserPath` and `context.parserOptions` properties will be removed.
+
+**For shareable config authors**, there are no additional concerns in v10.0.0.
 
 **For plugin developers**, there are no additional concerns in v10.0.0.
 
