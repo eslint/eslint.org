@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121560,
-        "monthlyDonations": 10130,
-        "sponsorCount": 163
+        "annualDonations": 121548,
+        "monthlyDonations": 10129,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -1354,14 +1354,6 @@
             "name": "Raghu S",
             "image": "https://avatars.githubusercontent.com/u/50697306?u=6b457f32d3755c6f1de55096f83878072600c5f1&v=4",
             "url": "https://linktr.ee/raghu0007",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "José David",
-            "image": "https://avatars.githubusercontent.com/u/59240597?u=e44f814b3734077fd53e16c60b58f704ac16d9bf&v=4",
-            "url": "https://github.com/B4LSEROS",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
