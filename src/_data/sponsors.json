@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 123888,
-        "monthlyDonations": 10324,
-        "sponsorCount": 162
+        "annualDonations": 123828,
+        "monthlyDonations": 10319,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -822,14 +822,6 @@
             "tier": "backer"
         },
         {
-            "name": "Joao Zarate",
-            "image": "https://avatars.githubusercontent.com/u/566544?u=0f3f602e8a4d37469df822841594ee3618cef2c0&v=4",
-            "url": "https://github.com/joaozarate",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Rithish",
             "image": "https://avatars.githubusercontent.com/u/674539?v=4",
             "url": "https://github.com/rithish",
@@ -1275,7 +1267,7 @@
             "url": "https://jblandry.info",
             "image": "https://images.opencollective.com/jblandry/e968bf5/avatar.png",
             "monthlyDonation": 2,
-            "totalDonations": 235,
+            "totalDonations": 255,
             "source": "opencollective",
             "tier": null
         },
