@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 123828,
-        "monthlyDonations": 10319,
-        "sponsorCount": 161
+        "annualDonations": 124464,
+        "monthlyDonations": 10372,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -183,6 +183,14 @@
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Alan",
+            "image": "https://avatars.githubusercontent.com/u/18175329?v=4",
+            "url": "https://alan.com",
+            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
@@ -1254,6 +1262,14 @@
             "tier": "backer"
         },
         {
+            "name": "Syntax",
+            "image": "https://avatars.githubusercontent.com/u/130389858?v=4",
+            "url": "https://syntax.fm",
+            "monthlyDonation": 4,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Austin Akers",
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
@@ -1261,6 +1277,14 @@
             "totalDonations": 6,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Codecov",
+            "image": "https://avatars.githubusercontent.com/u/8226205?v=4",
+            "url": "https://codecov.io/",
+            "monthlyDonation": 3,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "Jb Landry",
@@ -1333,6 +1357,14 @@
             "totalDonations": 26,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Marco Esposito",
+            "image": "https://avatars.githubusercontent.com/u/10075957?v=4",
+            "url": "https://www.tonicadigital.it",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "Rubem Vasconcelos",
