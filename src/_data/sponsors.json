@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 124464,
-        "monthlyDonations": 10372,
-        "sponsorCount": 165
+        "annualDonations": 122064,
+        "monthlyDonations": 10172,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -64,15 +64,6 @@
         }
     ],
     "bronze": [
-        {
-            "name": "bulkfollow",
-            "url": null,
-            "image": "https://images.opencollective.com/david128/c45a0fd/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
         {
             "name": "ThemeIsle",
             "url": "https://themeisle.com",
@@ -1151,7 +1142,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=84fde89a8335d5800d0eea8b4a7c51ff77a37b72&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=b3c824dfd505d8327622bc7937744b7c5d89eccf&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
