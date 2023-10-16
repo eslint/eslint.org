@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122064,
-        "monthlyDonations": 10172,
-        "sponsorCount": 164
+        "annualDonations": 122004,
+        "monthlyDonations": 10167,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -1208,14 +1208,6 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Frederik Reiff",
-            "image": "https://avatars.githubusercontent.com/u/53524083?u=351e18936c73412d2b7c857c8230a8fb7bb36176&v=4",
-            "url": "https://freiff.de",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
