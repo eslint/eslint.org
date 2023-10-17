@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122004,
-        "monthlyDonations": 10167,
-        "sponsorCount": 163
+        "annualDonations": 122064,
+        "monthlyDonations": 10172,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -1208,6 +1208,14 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "gdlol",
+            "image": "https://avatars.githubusercontent.com/u/53998112?u=0baba89b10e6510aa010dcbc77910aa66df72fa9&v=4",
+            "url": "https://github.com/gdlol",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
