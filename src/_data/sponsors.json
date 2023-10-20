@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122064,
-        "monthlyDonations": 10172,
-        "sponsorCount": 164
+        "annualDonations": 122076,
+        "monthlyDonations": 10173,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -306,7 +306,7 @@
             "url": null,
             "image": "https://images.opencollective.com/john-hamilton/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 390,
+            "totalDonations": 400,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1361,6 +1361,14 @@
             "name": "Rubem Vasconcelos",
             "image": "https://avatars.githubusercontent.com/u/11760617?u=012364ad9fd334be48cb552cb16ecd16475d3a9c&v=4",
             "url": "https://linkedin.com/in/rubemfsv",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Stephen Zhang",
+            "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
+            "url": "https://github.com/m1nicrusher",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
