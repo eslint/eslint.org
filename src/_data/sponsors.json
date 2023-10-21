@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122076,
-        "monthlyDonations": 10173,
-        "sponsorCount": 165
+        "annualDonations": 122088,
+        "monthlyDonations": 10174,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -456,6 +456,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Dopoid",
+            "url": "https://dopoid.com/",
+            "image": "https://images.opencollective.com/dopoid/6a53418/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1109,14 +1118,6 @@
             "tier": "backer"
         },
         {
-            "name": "Fatih Aygün",
-            "image": "https://avatars.githubusercontent.com/u/10846005?u=5f14cc2e916a6f2f1620bc5b3bce5e012c5a8bc1&v=4",
-            "url": "https://github.com/cyco130",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Anthony Fu",
             "image": "https://avatars.githubusercontent.com/u/11247099?u=746eca82e375631967235dd01261428762bbcbf9&v=4",
             "url": "https://antfu.me",
@@ -1142,7 +1143,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=b3c824dfd505d8327622bc7937744b7c5d89eccf&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=66e9a797191cdde2a988d60306c65160bba1d2c7&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1385,6 +1386,14 @@
             "name": "Aldrich",
             "image": "https://avatars.githubusercontent.com/u/106362981?u=af356e9c6e32f58fa9e9f19a846da8fd1611dbb0&v=4",
             "url": "www.beloved.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Odemur Marangoni",
+            "image": "https://avatars.githubusercontent.com/u/118846877?u=8068c0cb6f2df2267277e6b6bbd6180dca4d92c9&v=4",
+            "url": "https://odemur.com.br",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
