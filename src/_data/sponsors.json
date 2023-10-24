@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122088,
-        "monthlyDonations": 10174,
-        "sponsorCount": 166
+        "annualDonations": 122028,
+        "monthlyDonations": 10169,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -225,7 +225,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 40,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -456,15 +456,6 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Dopoid",
-            "url": "https://dopoid.com/",
-            "image": "https://images.opencollective.com/dopoid/6a53418/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1385,7 +1376,7 @@
         {
             "name": "Aldrich",
             "image": "https://avatars.githubusercontent.com/u/106362981?u=af356e9c6e32f58fa9e9f19a846da8fd1611dbb0&v=4",
-            "url": "www.beloved.dev",
+            "url": "https://github.com/aldrich8",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
