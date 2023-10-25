@@ -15,7 +15,7 @@ In ESLint v8.53.0, scheduled to be released on Friday, November 3, 2023, we will
 
 ## Background
 
-When ESLint was initially released in 2013, the JavaScript ecosystem was embroiled in a debate about whether or not source code formatting should be part of a linter. [JSLint](https://jslint.com), the original JavaScript linter, heavily encoded its author's formatting preferences into the tool. Those preferences were carried over and loosened a bit in JSLint's successor, [JSHint](https://jshint.com), but by 2013, JSHint had announced that it was [deprecating its formatting rules](https://jshint.com/blog/jshint-3-plans/) and would be removing them in the next major release. While the options were never removed, they still [show this warning](https://jshint.com/docs/options/#camelcase):
+When ESLint was initially released in 2013, the JavaScript ecosystem was embroiled in a debate about whether or not source code formatting should be part of a linter. [JSLint](https://jslint.com), the original JavaScript linter, heavily encoded its author's formatting preferences into the tool. Those preferences were carried over and loosened a bit in JSLint's successor, [JSHint](https://jshint.com), but by 2013, JSHint had announced that it was [deprecating its formatting options](https://jshint.com/blog/jshint-3-plans/) and would be removing them in the next major release. While the options were never removed, they still [show this warning](https://jshint.com/docs/options/#camelcase):
 
 > **Warning** This option has been deprecated and will be removed in the next major release of JSHint.
 >
