@@ -21,7 +21,7 @@ When ESLint was initially released in 2013, the JavaScript ecosystem was embroil
 >
 > JSHint is limiting its scope to issues of code correctness. If you would like to enforce rules relating to code style, check out the JSCS project.
 
-The [JSCS](https://jscs-dev.github.io/) project was born to cater to the growing desire of JavaScript developers to format their code in more specific ways. Appearing in the same year as ESLint, there was a bit of a experimentation period as people tried using different combinations of JSHint, JSCS, and ESLint to achieve their linting and formatting needs.
+The [JSCS](https://jscs-dev.github.io/) project was born to cater to the growing desire of JavaScript developers to format their code in more specific ways. Appearing in the same year as ESLint, there was a bit of an experimentation period as people tried using different combinations of JSHint, JSCS, and ESLint to achieve their linting and formatting needs.
 
 Early on, I thought the only way for ESLint to reasonably compete with JSHint was to ensure that all available JSHint rules had ESLint equivalents. While the strength of ESLint was (and still is) in creating custom rules, I didn't think ESLint would get much adoption if everyone had to recreate the JSHint rules for themselves. My initial plan was to make a couple dozen core rules and then leave the rest to be implemented as plugins.
 
