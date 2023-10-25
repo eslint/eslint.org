@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: "lts/*"
+        node-version: "18.x"
 
     - name: Install npm packages
       run: npm install
@@ -40,7 +40,7 @@ jobs:
       run: |
         git config user.name "GitHub Actions Bot"
         git config user.email "<eslint@googlegroups.com>"
-    
+
     - name: Save updated files
       run: |
         chmod +x ./tools/commit-data.sh
