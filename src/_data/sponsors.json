@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 122016,
-        "monthlyDonations": 10168,
+        "annualDonations": 121968,
+        "monthlyDonations": 10164,
         "sponsorCount": 164
     },
     "platinum": [
@@ -607,7 +607,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 140,
+            "totalDonations": 145,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -848,14 +848,6 @@
             "name": "Jimmy Bradshaw",
             "image": "https://avatars.githubusercontent.com/u/916017?u=f9be66668f243eecd298b6eea9bb4410f9718b32&v=4",
             "url": "https://github.com/bradshjg",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "John Karahalis",
-            "image": "https://avatars.githubusercontent.com/u/933396?v=4",
-            "url": "https://www.johnkarahalis.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1340,6 +1332,14 @@
             "totalDonations": 26,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "John Karahalis",
+            "image": "https://avatars.githubusercontent.com/u/933396?v=4",
+            "url": "https://www.johnkarahalis.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "Marco Esposito",
