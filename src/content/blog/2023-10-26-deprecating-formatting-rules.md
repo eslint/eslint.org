@@ -124,6 +124,7 @@ We recommend using a source code formatter instead of ESLint for formatting your
 
 * [Prettier](https://prettier.io) - a JavaScript-based formatter with support for formatting a large number of languages
 * [dprint](https://dprint.dev) - a Rust-based formatter with support for a smaller set of languages
+* [Biome](https://biomejs.dev) - a Rust-based toolchain, that provides a formatter with a smaller set of languages
 
 If the idea of using a dedicated source code formatter doesn't appeal to you, you can also use [`@stylistic/eslint-plugin-js`](https://eslint.style/packages/js) for JavaScript or [`@stylistic/eslint-plugin-ts`](https://eslint.style/packages/ts) for TypeScript. These packages contain the deprecated formatting rules from the ESLint core and [`typescript-eslint`](https://typescript-eslint.io), respectively. The packages are maintained by [Anthony Fu](https://github.com/antfu), who has decided to continue maintaining these rules going forward. If you'd like to continue using the rules mentioned in this post, then we recommend switching to these packages.
 
