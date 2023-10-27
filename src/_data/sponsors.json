@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121968,
-        "monthlyDonations": 10164,
-        "sponsorCount": 164
+        "annualDonations": 119556,
+        "monthlyDonations": 9963,
+        "sponsorCount": 162
     },
     "platinum": [
         {
@@ -120,14 +120,6 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "QuickBooks Tool hub",
-            "image": "https://avatars.githubusercontent.com/u/95090305?u=e5bc398ef775c9ed19f955c675cdc1fb6abf01df&v=4",
-            "url": "https://quickbookstoolhub.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1345,14 +1337,6 @@
             "name": "Marco Esposito",
             "image": "https://avatars.githubusercontent.com/u/10075957?v=4",
             "url": "https://www.tonicadigital.it",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Rubem Vasconcelos",
-            "image": "https://avatars.githubusercontent.com/u/11760617?u=012364ad9fd334be48cb552cb16ecd16475d3a9c&v=4",
-            "url": "https://linkedin.com/in/rubemfsv",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
