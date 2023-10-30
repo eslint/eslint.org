@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119568,
-        "monthlyDonations": 9964,
-        "sponsorCount": 163
+        "annualDonations": 119628,
+        "monthlyDonations": 9969,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -1176,6 +1176,14 @@
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Sashida Ryoma",
+            "image": "https://avatars.githubusercontent.com/u/47236636?u=1757a2a33028a3deaf6b1cfe3c26e943799ce9cd&v=4",
+            "url": "https://github.com/sassy0q0",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
