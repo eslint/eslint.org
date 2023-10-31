@@ -205,14 +205,5 @@
         "amount": 21.36,
         "date": "2022-10-20T20:12:42.063Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4ABpPM",
-        "name": "John Karahalis",
-        "image": "https://avatars.githubusercontent.com/u/933396?v=4",
-        "url": "https://www.johnkarahalis.com",
-        "amount": 3,
-        "date": "2023-10-01T05:56:48Z",
-        "source": "github"
     }
 ]

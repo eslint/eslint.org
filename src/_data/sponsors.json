@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119628,
-        "monthlyDonations": 9969,
-        "sponsorCount": 164
+        "annualDonations": 119568,
+        "monthlyDonations": 9964,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -1157,14 +1157,6 @@
             "tier": "backer"
         },
         {
-            "name": "Andre Specht",
-            "image": "https://avatars.githubusercontent.com/u/27459200?u=e4d59d59439569dccf4bb0cff6a84de4f1b8d94d&v=4",
-            "url": "andrespecht.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
@@ -1329,7 +1321,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 26,
+            "totalDonations": 27,
             "source": "opencollective",
             "tier": null
         },
