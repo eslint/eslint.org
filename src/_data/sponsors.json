@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119376,
-        "monthlyDonations": 9948,
-        "sponsorCount": 160
+        "annualDonations": 119436,
+        "monthlyDonations": 9953,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -505,6 +505,15 @@
             "tier": "backer"
         },
         {
+            "name": "SureBet",
+            "url": "https://www.sure.bet/casinos-not-on-gamstop/",
+            "image": "https://images.opencollective.com/wesurebet/0052abd/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 80,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "TaskRatchet",
             "url": "https://taskratchet.com",
             "image": "https://images.opencollective.com/taskratchet/7996706/logo.png",
@@ -883,14 +892,6 @@
             "tier": "backer"
         },
         {
-            "name": "Mahbubur Rahman",
-            "image": "https://avatars.githubusercontent.com/u/1979225?u=d24ed105db153f78a1a4662da355e88d8ad4785d&v=4",
-            "url": "https://github.com/iamcrypticcoder",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Gustav Hansen",
             "image": "https://avatars.githubusercontent.com/u/2244375?u=5240e0f277601e08bdcffd579e395a57f8b23e3f&v=4",
             "url": "gu.stav.dev",
@@ -1100,7 +1101,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=680fe1dd42d9d42894b4c0187e76e75d87cfcb99&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=9d9aad8f298d99892549fd03f736edb6f73954e6&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1150,6 +1151,14 @@
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Gabriel Castro",
+            "image": "https://avatars.githubusercontent.com/u/38432614?u=4872219317fac82eeac9d1b3b7f8114e0b3363fe&v=4",
+            "url": "www.gitzwc.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
