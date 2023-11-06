@@ -75,16 +75,6 @@ To clean up and make rules easier to work with, we're making [two changes](https
 
 You can read more about this change in the [RFC](https://github.com/eslint/rfcs/tree/main/designs/2021-schema-object-rules).
 
-### `reportUnusedDisableDirectives` enabled by default and more flexible
-
-The `reportUnusedDisableDirectives` option is undergoing several changes in v9.0.0:
-
-1. The `reportUnusedDisableDirectives` configuration option can now be configured as `"off"`, `"warn"`, and `"error"` in your `eslint.config.js` file. Going forward, `true` will be equivalent to `"warn"` and `false` will be equivalent to `"off"`.
-2. The `reportUnusedDisableDirectives` configuration option is enabled by default at the `"warn"` level.
-3. You can also change the severity level on the command line by using the new `--report-unused-disable-directives-severity` option.
-
-You can read more about this change in the [RFC](https://github.com/eslint/rfcs/tree/main/designs/2022-unused-disable-directive-flexible-config).
-
 ### `--quiet` option is more performant
 
 The `--quiet` option hides all warnings in the ESLint console. In v9.0.0, we are making a performance improvement by also not executing any rules set to `"warn"`. You can read more about this change in the [RFC](https://github.com/eslint/rfcs/tree/main/designs/2023-only-run-reporting-rules).
