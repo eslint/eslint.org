@@ -11,7 +11,7 @@ categories:
   - API Changes
 ---
 
-Last month, the Technical Steering Committee (TSC) met to finalize the features for ESLint v9.0.0. This post outlines our plans for v9.0.0. You can keep up to date everything that is planned for v9.0.0 on our [project board](https://github.com/eslint/eslint/projects/9).
+Last month, the Technical Steering Committee (TSC) met to finalize the features for ESLint v9.0.0. This post outlines our plans for v9.0.0. You can keep up to date everything that is planned for v9.0.0 on our [project board](https://github.com/orgs/eslint/projects/4).
 
 ## Development plan
 
