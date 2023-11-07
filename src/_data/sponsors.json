@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119436,
-        "monthlyDonations": 9953,
-        "sponsorCount": 161
+        "annualDonations": 119292,
+        "monthlyDonations": 9941,
+        "sponsorCount": 159
     },
     "platinum": [
         {
@@ -397,14 +397,6 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
             "url": "https://github.com/Kamalnrf",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Oliver Tacke",
-            "image": "https://avatars.githubusercontent.com/u/16688047?v=4",
-            "url": "https://snordian.de",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1125,7 +1117,7 @@
         },
         {
             "name": "Jordan",
-            "image": "https://avatars.githubusercontent.com/u/17376090?u=4fb9a453df8d83b3f80edd16612991be1338d7cd&v=4",
+            "image": "https://avatars.githubusercontent.com/u/17376090?u=ebb702d1a6ac346a9ca4c093bea1928e2f62b239&v=4",
             "url": "djmm.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1268,15 +1260,6 @@
             "image": "https://images.opencollective.com/sudharaka-palamakumbura/03b6087/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 60,
-            "source": "opencollective",
-            "tier": null
-        },
-        {
-            "name": "alinnert",
-            "url": "https://linnertmedia.de",
-            "image": "https://images.opencollective.com/alinnert/9126453/avatar.png",
-            "monthlyDonation": 2,
-            "totalDonations": 102,
             "source": "opencollective",
             "tier": null
         },
