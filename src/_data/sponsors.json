@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119292,
-        "monthlyDonations": 9941,
-        "sponsorCount": 159
+        "annualDonations": 119460,
+        "monthlyDonations": 9955,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -365,6 +365,14 @@
             "name": "Ryan Waskiewicz",
             "image": "https://avatars.githubusercontent.com/u/1930213?u=aac8c767b7a38900fafe0b7f92abb20b1be77d28&v=4",
             "url": "ducktyped.dev",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Alejandro Celaya",
+            "image": "https://avatars.githubusercontent.com/u/2719332?u=5f95c85f625500a9cdafe0cd26fce1862d48d46d&v=4",
+            "url": "https://alejandrocelaya.blog",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -815,6 +823,14 @@
             "name": "Gavin Lloyd",
             "image": "https://avatars.githubusercontent.com/u/744538?u=0a08af9abb9fbf841382190be47f67a679bee4fa&v=4",
             "url": "gavinhungry.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Owen Buckley",
+            "image": "https://avatars.githubusercontent.com/u/895923?u=ee2417210461abea5b06cf6aea5492220ecdadf7&v=4",
+            "url": "https://www.thegreenhouse.io",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1303,14 +1319,6 @@
             "name": "John Karahalis",
             "image": "https://avatars.githubusercontent.com/u/933396?v=4",
             "url": "https://www.johnkarahalis.com",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Marco Esposito",
-            "image": "https://avatars.githubusercontent.com/u/10075957?v=4",
-            "url": "https://www.tonicadigital.it",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
