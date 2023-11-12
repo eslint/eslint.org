@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119460,
-        "monthlyDonations": 9955,
-        "sponsorCount": 160
+        "annualDonations": 119472,
+        "monthlyDonations": 9956,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -1299,7 +1299,7 @@
         },
         {
             "name": "Till Sanders",
-            "url": "https://till-sanders.de",
+            "url": "https://till-sanders.de/",
             "image": "https://images.opencollective.com/tillsanders/1c9743b/avatar.png",
             "monthlyDonation": 1,
             "totalDonations": 44,
@@ -1327,6 +1327,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Michał Cieślar",
+            "image": "https://avatars.githubusercontent.com/u/44656126?u=8e3fa7f539bcf8704e8f515d1489702bcb11e50f&v=4",
+            "url": "https://www.linkedin.com/in/cieslarmichal",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
