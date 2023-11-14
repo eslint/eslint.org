@@ -198,7 +198,11 @@ homepage:
     title: Comment installer ESLint
     copy: Copier la commande d'installation dans le presse-papier
     copied: Copié dans le presse-papier.
-  
+
+  sponsor:
+    text: 'Sponsored by:'
+    more: and more...
+
   versions:
     title: Versions d'ESLint
     latest: Dernière Version

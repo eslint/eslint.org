@@ -186,7 +186,11 @@ homepage:
     title: 快速安装 ESLint
     copy: 复制安装指令到剪贴板
     copied: 已复制到剪贴板。
-  
+
+  sponsor:
+    text: 获以下赞助：
+    more: 更多…
+
   versions:
     title: ESLint 版本
     latest: 最新版本

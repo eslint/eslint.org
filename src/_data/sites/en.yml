@@ -204,7 +204,11 @@ homepage:
     title: ESLint quick install code
     copy: Copy installation code to clipboard
     copied: Copied to clipboard.
-  
+
+  sponsor:
+    text: 'Sponsored by:'
+    more: and more...
+
   versions:
     title: ESLint Versions
     latest: Latest Version

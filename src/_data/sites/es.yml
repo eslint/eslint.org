@@ -192,7 +192,11 @@ homepage:
     title: Código de instalación rápido de ESLint
     copy: Copie el código de instalación al portapapeles
     copied: Copiado al portapapeles.
-  
+
+  sponsor:
+    text: 'Sponsored by:'
+    more: and more...
+
   versions:
     title: Versiones de ESLint
     latest: Última versión

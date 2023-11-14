@@ -191,6 +191,10 @@ homepage:
     copy: インストールコマンドをコピーします
     copied: コピーしました
 
+  sponsor:
+    text: 'Sponsored by:'
+    more: and more...
+
   versions:
     title: ESLintバージョン
     latest: 最新バージョン

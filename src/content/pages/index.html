@@ -48,7 +48,7 @@ eleventyExcludeFromCollections: true
                 {% set highly_sponsors = sponsors.platinum | concat(sponsors.gold) %}
 
                 <div class="eslint-highly-sponsors">
-                    <div class="sponsor-text">Sponsored by:</div>
+                    <div class="sponsor-text">{{ site.homepage.sponsor.text }}</div>
                     <div class="sponsors">
                         {% for sponsor in highly_sponsors %}
                         <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
@@ -57,6 +57,7 @@ eleventyExcludeFromCollections: true
                                 title="{{ sponsor.name }}" />
                         </a>
                         {% endfor %}
+                        <a href="/sponsors/#silver">{{ site.homepage.sponsor.more }}</a>
                     </div>
                 </div>
             </div>

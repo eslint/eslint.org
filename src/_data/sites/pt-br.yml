@@ -193,7 +193,11 @@ homepage:
     title: Código de instalação rápida do ESLint
     copy: Copie o código de instalação para a área de transferências
     copied: Copiado para a área de transferências.
-  
+
+  sponsor:
+    text: 'Sponsored by:'
+    more: and more...
+
   versions:
     title: Versões do ESLint
     latest: Versão mais Recente

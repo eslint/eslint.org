@@ -209,6 +209,10 @@ homepage:
     copy: Kopiere den Code zur Schnellinstallation in die Zwischenablage
     copied: In die Zwischenablage kopiert.
 
+  sponsor:
+    text: 'Sponsored by:'
+    more: and more...
+
   versions:
     title: ESLint Versionen
     latest: Aktuellste Version

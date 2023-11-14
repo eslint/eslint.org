@@ -135,15 +135,16 @@
 }
 
 .eslint-highly-sponsors {
-    margin-top: 2rem;
+    padding: 1rem 0;
 
     .sponsor-text {
         font-size: 1.2rem;
-        padding: 0.25rem;
+        padding-bottom: 0.25rem;
     }
 
     .sponsors {
         gap: 1.5rem;
+        align-items: center;
 
         /* reset */
         justify-content: unset !important;
