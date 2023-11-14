@@ -134,6 +134,34 @@
     }
 }
 
+.eslint-highly-sponsors {
+    margin-top: 2rem;
+
+    .sponsor-text {
+        font-size: 1.2rem;
+        padding: 0.25rem;
+    }
+
+    .sponsors {
+        gap: 1.5rem;
+
+        /* reset */
+        justify-content: unset !important;
+        margin-bottom: unset !important;
+        margin-block-end: unset !important;
+        flex-wrap: nowrap !important;
+
+        @media all and (min-width: 640px) {
+            flex-wrap: wrap;
+        }
+
+        @media all and (max-width: 1023px) {
+            margin-top: unset !important;
+            margin-block-start: unset !important;
+        }
+    }
+}
+
 /* homepage metrics section */
 .metrics {
     background-color: var(--lightest-background-color);

@@ -131,6 +131,8 @@ module.exports = eleventyConfig => {
         return markdown.render(value);
     });
 
+    eleventyConfig.addFilter("concat", (value1, value2) => value1.concat(value2));
+
     /** ***************************************************************************************
      *  Plugins
      * ***************************************************************************************/
