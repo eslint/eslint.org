@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119460,
-        "monthlyDonations": 9955,
-        "sponsorCount": 160
+        "annualDonations": 119400,
+        "monthlyDonations": 9950,
+        "sponsorCount": 159
     },
     "platinum": [
         {
@@ -1109,7 +1109,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=fa03b27453e2219f40dd05dfde5606d295dc1584&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=3fb6db22b935aa9acfb5e49743f00110afc4c260&v=4",
             "url": "https://github.com/nzws",
             "monthlyDonation": 5,
             "source": "github",
@@ -1183,14 +1183,6 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "gdlol",
-            "image": "https://avatars.githubusercontent.com/u/53998112?u=0baba89b10e6510aa010dcbc77910aa66df72fa9&v=4",
-            "url": "https://github.com/gdlol",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
