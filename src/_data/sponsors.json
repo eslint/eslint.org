@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119400,
-        "monthlyDonations": 9950,
-        "sponsorCount": 159
+        "annualDonations": 119460,
+        "monthlyDonations": 9955,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -847,6 +847,14 @@
             "name": "Titus",
             "image": "https://avatars.githubusercontent.com/u/944406?u=6e0f32d14d720c1b0785b91694428741f8cda89c&v=4",
             "url": "wooorm.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Kaan Barmore-Genç",
+            "image": "https://avatars.githubusercontent.com/u/1008124?u=8c392763cc6578c200317deea62a23d9dec11f2a&v=4",
+            "url": "https://bgenc.net",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
