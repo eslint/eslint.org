@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119460,
-        "monthlyDonations": 9955,
-        "sponsorCount": 160
+        "annualDonations": 119520,
+        "monthlyDonations": 9960,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -1095,6 +1095,14 @@
             "name": "Anthony Fu",
             "image": "https://avatars.githubusercontent.com/u/11247099?u=746eca82e375631967235dd01261428762bbcbf9&v=4",
             "url": "https://antfu.me",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Andrii Oriekhov",
+            "image": "https://avatars.githubusercontent.com/u/11459840?u=696bfba6db4389e6c08373f977e2cd941fc0ab7c&v=4",
+            "url": "https://www.linkedin.com/in/andrey-oriekhov-8b8724103/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
