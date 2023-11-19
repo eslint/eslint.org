@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 119460,
-        "monthlyDonations": 9955,
+        "annualDonations": 119220,
+        "monthlyDonations": 9935,
         "sponsorCount": 160
     },
     "platinum": [
@@ -193,14 +193,6 @@
             "monthlyDonation": 25,
             "totalDonations": 1450,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Kyle Holmberg",
-            "image": "https://avatars.githubusercontent.com/u/9523719?u=764bd873bd1166dbe9177ad7a4bc59a419bb6acc&v=4",
-            "url": "https://kylemh.com",
-            "monthlyDonation": 25,
-            "source": "github",
             "tier": "backer"
         },
         {
@@ -852,6 +844,14 @@
             "tier": "backer"
         },
         {
+            "name": "Kaan Barmore-Genç",
+            "image": "https://avatars.githubusercontent.com/u/1008124?u=8c392763cc6578c200317deea62a23d9dec11f2a&v=4",
+            "url": "https://bgenc.net",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "ELAN e.V.",
             "image": "https://avatars.githubusercontent.com/u/1064602?v=4",
             "url": "https://elan-ev.de",
@@ -1046,7 +1046,7 @@
         {
             "name": "Mateus Etto",
             "image": "https://avatars.githubusercontent.com/u/7322925?u=33db251d02b633150683f87dfe90fcd6621ab850&v=4",
-            "url": "https://yutsuten.github.io/",
+            "url": "https://yutsuten.github.io/notes/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1077,7 +1077,7 @@
         },
         {
             "name": "mizdra",
-            "image": "https://avatars.githubusercontent.com/u/9639995?u=dd5dac271b000f6c7883880c1796ce2a95a971b2&v=4",
+            "image": "https://avatars.githubusercontent.com/u/9639995?u=c89c30b17b1c1630fb400ca0ca7db881776db3fa&v=4",
             "url": "https://mizdra.net",
             "monthlyDonation": 5,
             "source": "github",
@@ -1087,6 +1087,14 @@
             "name": "Anthony Fu",
             "image": "https://avatars.githubusercontent.com/u/11247099?u=746eca82e375631967235dd01261428762bbcbf9&v=4",
             "url": "https://antfu.me",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Andrii Oriekhov",
+            "image": "https://avatars.githubusercontent.com/u/11459840?u=696bfba6db4389e6c08373f977e2cd941fc0ab7c&v=4",
+            "url": "https://www.linkedin.com/in/andrey-oriekhov-8b8724103/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1109,8 +1117,8 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=fa03b27453e2219f40dd05dfde5606d295dc1584&v=4",
-            "url": "https://nzws.me",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=3fb6db22b935aa9acfb5e49743f00110afc4c260&v=4",
+            "url": "https://github.com/nzws",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1183,14 +1191,6 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "gdlol",
-            "image": "https://avatars.githubusercontent.com/u/53998112?u=0baba89b10e6510aa010dcbc77910aa66df72fa9&v=4",
-            "url": "https://github.com/gdlol",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
