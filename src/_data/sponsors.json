@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119520,
-        "monthlyDonations": 9960,
-        "sponsorCount": 161
+        "annualDonations": 119220,
+        "monthlyDonations": 9935,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -193,14 +193,6 @@
             "monthlyDonation": 25,
             "totalDonations": 1450,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Kyle Holmberg",
-            "image": "https://avatars.githubusercontent.com/u/9523719?u=764bd873bd1166dbe9177ad7a4bc59a419bb6acc&v=4",
-            "url": "https://kylemh.com",
-            "monthlyDonation": 25,
-            "source": "github",
             "tier": "backer"
         },
         {
@@ -1085,7 +1077,7 @@
         },
         {
             "name": "mizdra",
-            "image": "https://avatars.githubusercontent.com/u/9639995?u=dd5dac271b000f6c7883880c1796ce2a95a971b2&v=4",
+            "image": "https://avatars.githubusercontent.com/u/9639995?u=c89c30b17b1c1630fb400ca0ca7db881776db3fa&v=4",
             "url": "https://mizdra.net",
             "monthlyDonation": 5,
             "source": "github",
