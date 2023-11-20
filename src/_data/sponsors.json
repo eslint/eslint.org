@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119220,
-        "monthlyDonations": 9935,
-        "sponsorCount": 160
+        "annualDonations": 119208,
+        "monthlyDonations": 9934,
+        "sponsorCount": 159
     },
     "platinum": [
         {
@@ -290,7 +290,7 @@
             "url": null,
             "image": "https://images.opencollective.com/john-hamilton/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 400,
+            "totalDonations": 410,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1335,14 +1335,6 @@
             "name": "Bart Zalewski",
             "image": "https://avatars.githubusercontent.com/u/44788056?u=5707df915d71059c8b2804f3813d8863a36fb7b0&v=4",
             "url": "https://bartzalewski.com",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Odemur Marangoni",
-            "image": "https://avatars.githubusercontent.com/u/118846877?u=8068c0cb6f2df2267277e6b6bbd6180dca4d92c9&v=4",
-            "url": "https://odemur.com.br",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
