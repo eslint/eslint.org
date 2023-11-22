@@ -19,4 +19,7 @@
 
 .language-switcher {
     display: inline-flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: end;
 }
