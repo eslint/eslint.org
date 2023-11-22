@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 119208,
-        "monthlyDonations": 9934,
+        "annualDonations": 119160,
+        "monthlyDonations": 9930,
         "sponsorCount": 159
     },
     "platinum": [
@@ -1004,14 +1004,6 @@
             "tier": "backer"
         },
         {
-            "name": "Limon Monte",
-            "image": "https://avatars.githubusercontent.com/u/6059356?u=0f4c2c459c0eb6d18c4ec93e6954a800742330e2&v=4",
-            "url": "https://limonte.github.io",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Ingo Steinke",
             "image": "https://avatars.githubusercontent.com/u/6377941?u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
             "url": "https://www.ingo-steinke.com",
@@ -1319,6 +1311,14 @@
             "name": "John Karahalis",
             "image": "https://avatars.githubusercontent.com/u/933396?v=4",
             "url": "https://www.johnkarahalis.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Peter Dave Hello",
+            "image": "https://avatars.githubusercontent.com/u/3691490?u=4dee3c8d8045eccca432b07645c80fbbe61d1c36&v=4",
+            "url": "https://www.peterdavehello.org/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"

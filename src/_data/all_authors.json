@@ -87,6 +87,7 @@
         "bio": null,
         "twitter_username": "not_an_aardvark",
         "github_username": "not-an-aardvark",
+        "mastodon_url": "https://infosec.exchange/@not_an_aardvark",
         "location": "New York, NY"
     },
     "platinumazure": {
@@ -103,7 +104,7 @@
     "hzoo": {
         "username": "hzoo",
         "name": "Henry",
-        "title": "ESLint Alumnus",
+        "title": "Guest Author",
         "website": "https://henryzoo.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/588473?v=4",
         "bio": "Learning to maintain stuff",
