@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119160,
-        "monthlyDonations": 9930,
-        "sponsorCount": 159
+        "annualDonations": 119172,
+        "monthlyDonations": 9931,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -1306,6 +1306,14 @@
             "totalDonations": 27,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Benjamin Reed",
+            "image": "https://avatars.githubusercontent.com/u/89252?v=4",
+            "url": "http://raccoonfink.bandcamp.com/",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "John Karahalis",
