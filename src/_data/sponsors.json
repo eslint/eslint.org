@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119172,
-        "monthlyDonations": 9931,
-        "sponsorCount": 160
+        "annualDonations": 119208,
+        "monthlyDonations": 9934,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -209,7 +209,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 50,
+            "totalDonations": 60,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1240,6 +1240,14 @@
             "name": "Codecov",
             "image": "https://avatars.githubusercontent.com/u/8226205?v=4",
             "url": "https://codecov.io/",
+            "monthlyDonation": 3,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Zwyx",
+            "image": "https://avatars.githubusercontent.com/u/29386932?u=1c535ee7444ba22d9d16547974378a0b5e5b3c19&v=4",
+            "url": "zwyx.dev",
             "monthlyDonation": 3,
             "source": "github",
             "tier": "backer"
