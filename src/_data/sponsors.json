@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119208,
-        "monthlyDonations": 9934,
-        "sponsorCount": 161
+        "annualDonations": 119196,
+        "monthlyDonations": 9933,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -1343,14 +1343,6 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Bart Zalewski",
-            "image": "https://avatars.githubusercontent.com/u/44788056?u=5707df915d71059c8b2804f3813d8863a36fb7b0&v=4",
-            "url": "https://bartzalewski.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
