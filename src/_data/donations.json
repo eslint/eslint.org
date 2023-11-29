@@ -223,14 +223,5 @@
         "amount": 1.42,
         "date": "2022-11-18T21:33:12.631Z",
         "source": "opencollective"
-    },
-    {
-        "id": "mywxoz34-09rl6kgr-4owpvenb-dj7gk85a",
-        "name": "StackAid",
-        "url": "https://stackaid.us",
-        "image": "https://images.opencollective.com/stackaid/c1d8ea2/logo.png",
-        "amount": 56.22,
-        "date": "2022-11-13T17:59:09.721Z",
-        "source": "opencollective"
     }
 ]
