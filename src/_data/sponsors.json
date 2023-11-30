@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119196,
-        "monthlyDonations": 9933,
-        "sponsorCount": 160
+        "annualDonations": 119136,
+        "monthlyDonations": 9928,
+        "sponsorCount": 159
     },
     "platinum": [
         {
@@ -1167,14 +1167,6 @@
             "name": "Gabriel Castro",
             "image": "https://avatars.githubusercontent.com/u/38432614?u=4872219317fac82eeac9d1b3b7f8114e0b3363fe&v=4",
             "url": "www.gitzwc.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Sashida Ryoma",
-            "image": "https://avatars.githubusercontent.com/u/47236636?u=1757a2a33028a3deaf6b1cfe3c26e943799ce9cd&v=4",
-            "url": "https://github.com/sassy0q0",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
