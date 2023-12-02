@@ -1,5 +1,14 @@
 [
     {
+        "id": "a47byg9n-xozdp8x4-e8v6mjlv-03rek5w8",
+        "name": "Vite",
+        "url": "https://vitejs.dev",
+        "image": "https://images.opencollective.com/vite/e6d15e1/logo.png",
+        "amount": 300,
+        "date": "2023-12-01T09:31:37.971Z",
+        "source": "opencollective"
+    },
+    {
         "id": "e0adkjrv-8xwm69o5-g0o67z5n-4l93bgoy",
         "name": "Guest",
         "url": null,
