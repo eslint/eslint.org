@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 118536,
-        "monthlyDonations": 9878,
-        "sponsorCount": 158
+        "annualDonations": 119136,
+        "monthlyDonations": 9928,
+        "sponsorCount": 159
     },
     "platinum": [
         {
@@ -131,7 +131,7 @@
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 350,
-            "totalDonations": 16114,
+            "totalDonations": 16464,
             "source": "opencollective",
             "tier": null
         },
@@ -151,6 +151,15 @@
             "monthlyDonation": 100,
             "source": "github",
             "tier": "backer"
+        },
+        {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 50,
+            "totalDonations": 2050,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Tailscale",
@@ -427,9 +436,9 @@
         {
             "name": "Kazuhiro Kobayashi",
             "url": null,
-            "image": "https://images.opencollective.com/kzhrk/0fbea43/avatar.png",
+            "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 55,
+            "totalDonations": 60,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1215,7 +1224,7 @@
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
-            "totalDonations": 9,
+            "totalDonations": 12,
             "source": "opencollective",
             "tier": null
         },
