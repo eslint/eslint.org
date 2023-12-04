@@ -29,8 +29,12 @@
     }
 
     .content-container {
-        padding: var(--space-xl-4xl) 0;
+        padding: var(--space-xl-4xl) 0 var(--space-l);
         margin: 0;
+
+        @media all and (min-width: 800px) {
+            padding: var(--space-xl-4xl) 0 var(--space-xl-2xl);
+        }
     }
 
     >.content-container {

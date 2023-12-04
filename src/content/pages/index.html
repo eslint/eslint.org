@@ -44,6 +44,22 @@ eleventyExcludeFromCollections: true
                     <a href="{{ links.getStarted }}" target="_blank" class="c-btn c-btn--primary c-btn--large">{{ site.shared.get_started }}</a>
                     <a href="{{ links.donate }}" class="c-btn c-btn--secondary c-btn--large donate-link">{{ site.shared.become_a_sponsor }}</a>
                 </div>
+
+                {% set top_sponsors = sponsors.platinum | concat(sponsors.gold) %}
+
+                <div class="eslint-top-sponsors">
+                    <div class="sponsor-text">{{ site.homepage.sponsor.text }}</div>
+                    <div class="sponsors">
+                        {% for sponsor in top_sponsors %}
+                        <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                            <img loading="lazy" decoding="async" src="{{sponsor.image}}" height="128"
+                                alt="{{sponsor.name}}"
+                                title="{{ sponsor.name }}" />
+                        </a>
+                        {% endfor %}
+                        <a href="/sponsors">{{ site.homepage.sponsor.more }}</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="span-10-12 eslint-versions-col">

@@ -184,6 +184,10 @@ homepage:
     copy: इंस्टॉलेशन कमांड को कॉपी करें
     copied: क्लिपबोर्ड पर नकल।
 
+  sponsor:
+    text: 'Sponsored by:'
+    more: and more...
+
   versions:
     title: ESLint संस्करण
     latest: नवीनतम संस्करण

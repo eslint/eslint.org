@@ -134,6 +134,34 @@
     }
 }
 
+.eslint-top-sponsors {
+    padding-top: 1.5rem;
+
+    .sponsor-text {
+        font-size: 1.2rem;
+        padding-bottom: 0.25rem;
+    }
+
+    .sponsors {
+        gap: 0.5rem;
+        align-items: center;
+
+        /* reset */
+        justify-content: unset !important;
+        margin-bottom: unset !important;
+        margin-block-end: unset !important;
+
+        @media all and (min-width: 640px) {
+            column-gap: 1rem;
+        }
+
+        @media all and (max-width: 1023px) {
+            margin-top: unset !important;
+            margin-block-start: unset !important;
+        }
+    }
+}
+
 /* homepage metrics section */
 .metrics {
     background-color: var(--lightest-background-color);
