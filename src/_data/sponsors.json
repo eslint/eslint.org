@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119136,
-        "monthlyDonations": 9928,
-        "sponsorCount": 159
+        "annualDonations": 121488,
+        "monthlyDonations": 10124,
+        "sponsorCount": 160
     },
     "platinum": [
         {
@@ -112,6 +112,14 @@
             "name": "Ignition",
             "image": "https://avatars.githubusercontent.com/u/5753491?v=4",
             "url": "https://www.ignitionapp.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Nx",
+            "image": "https://avatars.githubusercontent.com/u/23692104?v=4",
+            "url": "https://nx.dev",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1164,14 +1172,6 @@
             "tier": "backer"
         },
         {
-            "name": "Gabriel Castro",
-            "image": "https://avatars.githubusercontent.com/u/38432614?u=4872219317fac82eeac9d1b3b7f8114e0b3363fe&v=4",
-            "url": "www.gitzwc.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
@@ -1335,6 +1335,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Colin Hülsbusch",
+            "image": "https://avatars.githubusercontent.com/u/75516777?u=4fd2f557f6673e73de1d3bd93b5d8f76bb6552ce&v=4",
+            "url": "https://colinhuelsbusch.de",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
