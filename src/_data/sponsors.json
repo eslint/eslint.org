@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121488,
-        "monthlyDonations": 10124,
-        "sponsorCount": 160
+        "annualDonations": 121500,
+        "monthlyDonations": 10125,
+        "sponsorCount": 161
     },
     "platinum": [
         {
@@ -1327,6 +1327,14 @@
             "name": "Peter Dave Hello",
             "image": "https://avatars.githubusercontent.com/u/3691490?u=4dee3c8d8045eccca432b07645c80fbbe61d1c36&v=4",
             "url": "https://www.peterdavehello.org/",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Kirill Devope",
+            "image": "https://avatars.githubusercontent.com/u/8249408?u=c1818225ecdbe96d8e837747e0ee26ebe856a95b&v=4",
+            "url": "https://github.com/devope",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
