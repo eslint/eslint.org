@@ -91,16 +91,16 @@ footer:
     change_language: 更改语言
     language: 语言
   copyright: >
-    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint 
-    contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS 
-    Foundation</a> has registered trademarks and uses trademarks.  For a list of 
-    trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please 
-    see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> 
-    and <a href="https://trademark-list.openjsf.org">Trademark List</a>.  
-    Trademarks and logos not indicated on the 
-    <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation 
-    trademarks</a> are trademarks&trade; or registered&reg; trademarks of 
-    their respective holders. Use of them does not imply any affiliation with 
+    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint
+    contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS
+    Foundation</a> has registered trademarks and uses trademarks.  For a list of
+    trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please
+    see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a>
+    and <a href="https://trademark-list.openjsf.org">Trademark List</a>.
+    Trademarks and logos not indicated on the
+    <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation
+    trademarks</a> are trademarks&trade; or registered&reg; trademarks of
+    their respective holders. Use of them does not imply any affiliation with
     or endorsement by them.
   links:
     open_jsf: OpenJS 基金会
@@ -175,7 +175,7 @@ homepage:
   description: >
     ESLint 通过静态分析代码以快速发现问题。大多数文本编辑器都内置了 ESLint 支持，
     但你也可以在持续集成管道中运行 ESLint。
-  
+
   animation:
     enabled: true
     text: 检测并修复 JavaScript 代码中的问题。
@@ -196,7 +196,7 @@ homepage:
     latest: 最新版本
     upcoming: 即将到来的版本
     development: 开发中
-    dateline: 于 DATE 发布 <span class="text-dark">VERSION</span>
+    dateline: 于 DATE 发布 VERSION
 
   explainer:
     image:
@@ -212,14 +212,14 @@ homepage:
         ESLint 静态分析你的代码以快速发现问题。ESLint 内置在大多数文本编辑器中，
         你也可以在持续集成管道中运行 ESLint。
       learn_more:
-        link: getStarted 
+        link: getStarted
         text: >
           了解更多<span class="visually-hidden">关于使用 ESLint 发现问题的信息</span>
     - title: 自动修复问题
       description: >
         ESLint 发现的许多问题都可以自动修复。ESLint 自动修复是语法敏感的，所以你不会遇到由传统的查找和替换算法引入的错误。
       learn_more:
-        link: fixProblems 
+        link: fixProblems
         text: >
           了解更多<span class="visually-hidden">关于使用 ESLint 修复问题的信息</span>
     - title: 完全可配置
@@ -240,7 +240,7 @@ homepage:
     dependents: 依赖
     weekly_downloads: 每周下载
     stars: Stars
-  
+
   sponsors:
     title: 来自杰出人士的赞助
     description: >
@@ -352,13 +352,13 @@ sponsors_page:
       title: 所有支持者
       description: >
         赞助者每月提供捐助来帮助维护 ESLint。
-  
+
   recent_donations:
     title: 近期的一次性捐赠
     description: >
       我们也收到了许多来自杰出人士的一次性捐赠。
       以下是来自 OpenCollective 和 GitHub 的一些最新捐赠。
-    
+
   sponsor_title: SPONSOR_NAME 每月赞助了 AMOUNT
   tech_sponsor_title: TECH 由 SPONSOR_NAME 支持
 
@@ -433,7 +433,7 @@ donate_page:
     cta:
       open_collective_text: >
         <span class="visually-hidden">通过 Open Collective </span>捐赠
-      github_sponsors_text: > 
+      github_sponsors_text: >
         <span class="visually-hidden">通过 GitHub </span>捐赠
     items:
       - name: 白金赞助商

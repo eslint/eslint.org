@@ -91,16 +91,16 @@ footer:
     change_language: भाषा बदलें
     language: भाषा
   copyright: >
-    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint 
-    contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS 
-    Foundation</a> has registered trademarks and uses trademarks.  For a list of 
-    trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please 
-    see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> 
-    and <a href="https://trademark-list.openjsf.org">Trademark List</a>.  
-    Trademarks and logos not indicated on the 
-    <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation 
-    trademarks</a> are trademarks&trade; or registered&reg; trademarks of 
-    their respective holders. Use of them does not imply any affiliation with 
+    Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and ESLint
+    contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS
+    Foundation</a> has registered trademarks and uses trademarks.  For a list of
+    trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please
+    see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a>
+    and <a href="https://trademark-list.openjsf.org">Trademark List</a>.
+    Trademarks and logos not indicated on the
+    <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation
+    trademarks</a> are trademarks&trade; or registered&reg; trademarks of
+    their respective holders. Use of them does not imply any affiliation with
     or endorsement by them.
   links:
     open_jsf: The OpenJS Foundation
@@ -193,7 +193,7 @@ homepage:
     latest: नवीनतम संस्करण
     upcoming: आगामी संस्करण
     development: विकास संस्करण के तहत
-    dateline: <span class="text-dark">VERSION</span> on DATE
+    dateline: VERSION on DATE
 
   explainer:
     image:
@@ -365,7 +365,7 @@ donate_page:
   title: दान करें
   description: >
     ESLint चल रहे रखरखाव और विकास के लिए दान पर निर्भर करता है।
-     वर्तमान में BACKER_COUNT कंपनियां, संगठन और व्यक्ति 
+     वर्तमान में BACKER_COUNT कंपनियां, संगठन और व्यक्ति
      हमारी मदद करने के लिए हर महीने MONTHLY_DONATIONS दान कर रहे हैं।
   hero:
     cta:

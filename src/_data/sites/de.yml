@@ -218,7 +218,7 @@ homepage:
     latest: Aktuellste Version
     upcoming: Nächste Version
     development: Entwicklung
-    dateline: <span class="text-dark">VERSION</span> am DATE
+    dateline: VERSION am DATE
 
   explainer:
     image:

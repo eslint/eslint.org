@@ -58,6 +58,10 @@
     color: var(--headings-color);
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
 .divider {
     border-bottom: 1px solid var(--divider-color);
     border-block-end: 1px solid var(--divider-color);
