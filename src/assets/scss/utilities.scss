@@ -60,6 +60,10 @@
 
 .no-underline {
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .divider {
