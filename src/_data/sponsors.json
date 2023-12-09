@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121560,
-        "monthlyDonations": 10130,
-        "sponsorCount": 162
+        "annualDonations": 127560,
+        "monthlyDonations": 10630,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -58,6 +58,14 @@
             "name": "American Express",
             "image": "https://avatars.githubusercontent.com/u/3853301?v=4",
             "url": "https://americanexpress.io",
+            "monthlyDonation": 500,
+            "source": "github",
+            "tier": "silver-sponsor"
+        },
+        {
+            "name": "Workleap",
+            "image": "https://avatars.githubusercontent.com/u/53535748?u=d1e55d7661d724bf2281c1bfd33cb8f99fe2465f&v=4",
+            "url": "https://www.workleap.com",
             "monthlyDonation": 500,
             "source": "github",
             "tier": "silver-sponsor"
