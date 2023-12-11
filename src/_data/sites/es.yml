@@ -93,11 +93,11 @@ footer:
     language: Lenguaje
   copyright: >
     Copyright <a href="https://openjsf.org">fundación OpenJS</a> y colaboradores de ESLint. Todos los derechos reservados.
-    La <a href="https://openjsf.org">fundación OpenJS</a> tiene marcas comerciales registradas y utiliza marcas comerciales. 
-    Para obtener una lista de marcas comerciales de la <a href="https://openjsf.org">fundación OpenJS</a>, consulta nuestra 
-    <a href="https://trademark-policy.openjsf.org">Política de marcas comerciales</a> y  <a href="https://trademark-list.openjsf.org">Lista de marcas comerciales</a>. Las marcas comerciales y 
-    los logotipos que no se indican en la <a href="https://trademark-list.openjsf.org">lista de marcas comerciales de OpenJS Foundation 
-    </a> son marcas comerciales&trade; o marcas comerciales registradas&reg; de sus respectivos propietarios. 
+    La <a href="https://openjsf.org">fundación OpenJS</a> tiene marcas comerciales registradas y utiliza marcas comerciales.
+    Para obtener una lista de marcas comerciales de la <a href="https://openjsf.org">fundación OpenJS</a>, consulta nuestra
+    <a href="https://trademark-policy.openjsf.org">Política de marcas comerciales</a> y  <a href="https://trademark-list.openjsf.org">Lista de marcas comerciales</a>. Las marcas comerciales y
+    los logotipos que no se indican en la <a href="https://trademark-list.openjsf.org">lista de marcas comerciales de OpenJS Foundation
+    </a> son marcas comerciales&trade; o marcas comerciales registradas&reg; de sus respectivos propietarios.
     El uso de ellos no implica ninguna afiliación o respaldo por parte de ellos.
   links:
     open_jsf: Fundación OpenJS
@@ -136,7 +136,7 @@ branding_page:
       title: Logo
       description:
         - >
-          El logo de ESLint puede estar con diferentes fondos, siempre que tenga 
+          El logo de ESLint puede estar con diferentes fondos, siempre que tenga
           el suficiente espacio vertical y horizontalmente.
         - >
           Duplique el tamaño del hexágono interior creado por el espacio para tener
@@ -154,7 +154,7 @@ branding_page:
       title: Paleta de colores
       description:
         - >
-          La paleta de colores de ESLint puede hablarde nuestra marca en maneras 
+          La paleta de colores de ESLint puede hablarde nuestra marca en maneras
           que son casi tan poderosos como los textos y los logotipos.
           Esto no solo afecta como nuestro diseño se ve, si no también cuanto puede
           provocar emociones y reflejar la personalidad de la marca ESLint.
@@ -181,7 +181,7 @@ homepage:
     ESLint analiza estáticamente el código para rápidamente encontrar problemas. Se encuentra
     en muchos editores de texto asi podrás usar ESLint como parte de su proceso integración
     continua.
-  
+
   animation:
     enabled: true
     text: Encuentra y arregla problemas en su código Javascript
@@ -202,7 +202,7 @@ homepage:
     latest: Última versión
     upcoming: Próxima versión
     development: Desarrollo
-    dateline: <span class="text-dark">VERSION</span> en DATE
+    dateline: VERSION en DATE
 
   explainer:
     image:
@@ -220,7 +220,7 @@ homepage:
         ESLint analiza estáticamente el código para rápidamente encontrar problemas. Se encuentra
         en muchos editores de texto asi podrás usar ESLint como parte de su proceso integración continua.
       learn_more:
-        link: getStarted 
+        link: getStarted
         text: >
           Aprenda más <span class="visually-hidden">de encontrar errores con ESLint</span>
     - title: Arregla problemas automáticamente
@@ -229,7 +229,7 @@ homepage:
         consciente de la sintaxis para que no experimente errores introducidos por los tradicionales
         algoritmos de encontrar y reemplazar.
       learn_more:
-        link: fixProblems 
+        link: fixProblems
         text: >
           Aprenda más <span class="visually-hidden">de encontrar errores automáticamente con ESLint</span>
     - title: Configura todo
@@ -252,7 +252,7 @@ homepage:
     dependents: Dependencias
     weekly_downloads: Descargas semanales
     stars: Estrellas
-  
+
   sponsors:
     title: Auspiciado por gente fantástica
     description: >
@@ -297,8 +297,8 @@ team_page:
   tsc:
     title: Comité Directivo Técnico
     description: >
-      Las personas que administran los lanzamientos, revisan las solicitudes de funcionalidades 
-      y se reúnen regularmente para garantizar que ESLint se mantenga correctamente.  
+      Las personas que administran los lanzamientos, revisan las solicitudes de funcionalidades
+      y se reúnen regularmente para garantizar que ESLint se mantenga correctamente.
   reviewers:
     title: Revisores
     description: >
@@ -376,13 +376,13 @@ sponsors_page:
       title: Todos los patrocinadores
       description: >
         Los patrocinadores proporcionan contribuciones mensuales para ayudar a mantener ESLint.
-  
+
   recent_donations:
     title: Donaciones únicas recientes
     description: >
       También recibimos muchas contribuciones únicas de personas fantásticas.
       Aquí hay algunos recientes de OpenCollective y GitHub.
-    
+
   sponsor_title: SPONSOR_NAME esta donando AMOUNT cada mes
   tech_sponsor_title: TECH proveido por SPONSOR_NAME
 
@@ -468,7 +468,7 @@ donate_page:
     cta:
       open_collective_text: >
         Donar <span class="visually-hidden">en Open Collective</span>
-      github_sponsors_text: > 
+      github_sponsors_text: >
         Donar <span class="visually-hidden">en GitHub</span>
     items:
       - name: Auspiciador Platino
@@ -494,11 +494,11 @@ donate_page:
       title: Senior Staff Eng. Manager, Chrome
       image: addy-osmani.jpg
       text: >
-        ESLint ha sido fundamental para ayudar a los desarrolladores a escribir JavaScript de alta calidad durante años. 
-        Nos encanta que detecte problemas comunes de manera temprana y frecuente. Con un alto nivel de extensibilidad, 
-        la capacidad de ESLint para permitir que los equipos apliquen reglas personalizadas que funcionen para ellos 
-        ,ha sido excelente para proyectos de código abierto y más. Chrome se complace en patrocinar ESLint para ayudar 
-        a los desarrolladores web a escribir código de alta calidad de forma constante. Es una pieza esencial del kit 
+        ESLint ha sido fundamental para ayudar a los desarrolladores a escribir JavaScript de alta calidad durante años.
+        Nos encanta que detecte problemas comunes de manera temprana y frecuente. Con un alto nivel de extensibilidad,
+        la capacidad de ESLint para permitir que los equipos apliquen reglas personalizadas que funcionen para ellos
+        ,ha sido excelente para proyectos de código abierto y más. Chrome se complace en patrocinar ESLint para ayudar
+        a los desarrolladores web a escribir código de alta calidad de forma constante. Es una pieza esencial del kit
         de herramientas de desarrollo web moderno.
     - name: Jeff Cross
       title: Co-fundador y Arquitecto Principal, Nx

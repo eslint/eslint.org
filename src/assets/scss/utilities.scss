@@ -58,6 +58,14 @@
     color: var(--headings-color);
 }
 
+.no-underline {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .divider {
     border-bottom: 1px solid var(--divider-color);
     border-block-end: 1px solid var(--divider-color);

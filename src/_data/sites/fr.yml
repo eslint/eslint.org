@@ -97,7 +97,7 @@ footer:
     contributeurs d'ESLint. Tous droits réservés.
     L'<a href="https://openjsf.org">OpenJS Foundation</a> a des marques enregistrées et des marques déposées.
     Pour voir une liste des marques déposées de l'<a href="https://openjsf.org">OpenJS Foundation</a>,
-    veuillez lire notre <a href="https://trademark-policy.openjsf.org">politique de marques déposées</a> 
+    veuillez lire notre <a href="https://trademark-policy.openjsf.org">politique de marques déposées</a>
     et notre <a href="https://trademark-list.openjsf.org">liste de marques déposées</a>.
     Toutes marques et logos non présents sur la <a href="https://trademark-list.openjsf.org">liste des marques
     déposées de l'OpenJS Foundation</a> sont des marques déposées&trade; ou enregistrées&reg; de
@@ -187,7 +187,7 @@ homepage:
     ESLint analyse votre code de manière statique pour y trouver des erreurs
     rapidement. La plupart des éditeurs de texte le supportent et vous pouvez
     aussi l'exécuter au sein de votre chaîne d'intégration continue.
-  
+
   animation:
     enabled: true
     text: Trouvez et corrigez les erreurs de votre code JavaScript
@@ -208,7 +208,7 @@ homepage:
     latest: Dernière Version
     upcoming: Prochaine Version
     development: Développement
-    dateline: <span class="text-dark">VERSION</span> du DATE
+    dateline: VERSION du DATE
 
   explainer:
     image:
@@ -227,7 +227,7 @@ homepage:
         rapidement. La plupart des éditeurs de texte le supportent et vous pouvez
         aussi l'exécuter au sein de votre chaîne d'intégration continue.
       learn_more:
-        link: getStarted 
+        link: getStarted
         text: >
           En savoir plus sur <span class="visually-hidden">comment repérer les erreurs avec ESLint</span>
     - title: Corrigez les erreurs automatiquement
@@ -237,7 +237,7 @@ homepage:
         introduire d'autres erreurs comme le font les algorithmes habituels de
         remplacement de texte.
       learn_more:
-        link: fixProblems 
+        link: fixProblems
         text: >
           En savoir plus sur <span class="visually-hidden">la correction automatique des erreurs avec ESLint</span>
     - title: Entièrement configurable
@@ -261,7 +261,7 @@ homepage:
     dependents: Projets Dépendants
     weekly_downloads: Téléchargements Hebdomadaires
     stars: Favoris sur GitHub
-  
+
   sponsors:
     title: Sponsorisé par des personnes fantastiques
     description: >
@@ -390,13 +390,13 @@ sponsors_page:
       description: >
         Nos soutiens contribuent tous les mois à nous aider pour la maintenance
         d'ESLint.
-  
+
   recent_donations:
     title: Dons ponctuels récents
     description: >
       Nous recevons également beaucoup de contributions ponctuels de la part de
       gens fantastiques. En voici quelques-unes d'Open Collective et GitHub.
-    
+
   sponsor_title: SPONSOR_NAME fait don de AMOUNT chaque mois
   tech_sponsor_title: TECH fourni par SPONSOR_NAME
 
@@ -482,7 +482,7 @@ donate_page:
     cta:
       open_collective_text: >
         Faire un don <span class="visually-hidden">sur Open Collective</span>
-      github_sponsors_text: > 
+      github_sponsors_text: >
         Faire un don <span class="visually-hidden">sur GitHub</span>
     items:
       - name: Sponsor Platinum
