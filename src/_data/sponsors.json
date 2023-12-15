@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127500,
-        "monthlyDonations": 10625,
-        "sponsorCount": 162
+        "annualDonations": 127560,
+        "monthlyDonations": 10630,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -447,6 +447,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "LightCDN",
+            "url": "https://www.lightcdn.com",
+            "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
