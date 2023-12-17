@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127560,
-        "monthlyDonations": 10630,
-        "sponsorCount": 163
+        "annualDonations": 127524,
+        "monthlyDonations": 10627,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -878,14 +878,6 @@
             "tier": "backer"
         },
         {
-            "name": "Kaan Barmore-Genç",
-            "image": "https://avatars.githubusercontent.com/u/1008124?u=8c392763cc6578c200317deea62a23d9dec11f2a&v=4",
-            "url": "https://bgenc.net",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "ELAN e.V.",
             "image": "https://avatars.githubusercontent.com/u/1064602?v=4",
             "url": "https://elan-ev.de",
@@ -1342,6 +1334,14 @@
             "tier": "backer"
         },
         {
+            "name": "VegetaTheCat",
+            "image": "https://avatars.githubusercontent.com/u/2340896?u=9f1d29a0fba2c0d6781e7552398d28422029aea2&v=4",
+            "url": "elliottchenstudio.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Peter Dave Hello",
             "image": "https://avatars.githubusercontent.com/u/3691490?u=4dee3c8d8045eccca432b07645c80fbbe61d1c36&v=4",
             "url": "https://www.peterdavehello.org/",
@@ -1369,6 +1369,14 @@
             "name": "Colin Hülsbusch",
             "image": "https://avatars.githubusercontent.com/u/75516777?u=4fd2f557f6673e73de1d3bd93b5d8f76bb6552ce&v=4",
             "url": "https://colinhuelsbusch.de",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Cengiz",
+            "image": "https://avatars.githubusercontent.com/u/117142914?u=041e5bce9cd32d3e49aba6e75715828ff23c5cc0&v=4",
+            "url": "cecinar.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
