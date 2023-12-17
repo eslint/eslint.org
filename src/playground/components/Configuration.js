@@ -133,17 +133,20 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         );
     };
 
-    const selectAll = e => {
-        if (e.target.checked) {
+    const allRulesSelected = Object.keys(options.rules).length === ruleNames.length;
+
+
+    const selectAll = () => {
+        if (allRulesSelected) {
+            options.rules = {};
+            onUpdate(options);
+            setSelectedRules([]);
+        } else {
             ruleNames.forEach(ruleName => {
                 options.rules[ruleName] = ["error"];
                 onUpdate(Object.assign({}, options));
                 ruleInputRef.current.setValue("");
             });
-        } else {
-            options.rules = {};
-            onUpdate(options);
-            setSelectedRules([]);
         }
     };
 
@@ -245,41 +248,43 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                 </button>
                 {showRules && <div data-config-section>
                     <div className="playground__config-enable_all_rules">
-                        <input
-                            className="enable_all_rules-checkbox"
-                            type="checkbox"
+                        <button className="c-btn c-btn--primary playground__config-enable_all_rules__btn"
                             onClick={selectAll}
-                        />
-                        <label htmlFor="rules" className="combo-label">
-                            <span className="label__text">Enable all the rules</span>
-                        </label>
+                        >
+                            {allRulesSelected ? "Disable all rules" : "Enable all rules"}
+                        </button>
                     </div>
-                    <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
-                    <Select
-                        isMulti
-                        components={{ Input }}
-                        isClearable
-                        isSearchable
-                        styles={customStyles}
-                        theme={theme => customTheme(theme)}
-                        ref={ruleInputRef}
-                        onChange={selected => {
-                            if (!selected) {
-                                setSelectedRules([]);
-                            } else {
-                                setSelectedRules(selected.map(values => values.value));
-                            }
-                        }}
-                        options={ruleNamesOptions}
-                    />
-                    <button
-                        className="c-btn c-btn--ghost add-rule-btn"
-                        onClick={() => {
-                            handleRuleChange();
-                        }}
-                    >
-                        {selectedRules.length > 1 ? "Add these Rules" : "Add this Rule"}
-                    </button>
+                    {!allRulesSelected &&
+                    (
+                        <>
+                            <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
+                            <Select
+                                isMulti
+                                components={{ Input }}
+                                isClearable
+                                isSearchable
+                                styles={customStyles}
+                                theme={theme => customTheme(theme)}
+                                ref={ruleInputRef}
+                                onChange={selected => {
+                                    if (!selected) {
+                                        setSelectedRules([]);
+                                    } else {
+                                        setSelectedRules(selected.map(values => values.value));
+                                    }
+                                }}
+                                options={ruleNamesOptions}
+                            />
+                            <button
+                                className="c-btn c-btn--ghost add-rule-btn"
+                                onClick={() => {
+                                    handleRuleChange();
+                                }}
+                            >
+                                {selectedRules.length > 1 ? "Add these Rules" : "Add this Rule"}
+                            </button>
+                        </>
+                    )}
                     <RuleList>
                         {options.rules && Object.keys(options.rules).sort().map(ruleName => (
                             <li className="config__added-rules__item" key={ruleName}>
