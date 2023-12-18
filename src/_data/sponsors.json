@@ -1102,14 +1102,6 @@
             "tier": "backer"
         },
         {
-            "name": "Andrii Oriekhov",
-            "image": "https://avatars.githubusercontent.com/u/11459840?u=696bfba6db4389e6c08373f977e2cd941fc0ab7c&v=4",
-            "url": "https://www.linkedin.com/in/andrey-oriekhov-8b8724103/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Yuhei FUJITA",
             "image": "https://avatars.githubusercontent.com/u/13161267?u=f45735a8978321dd7f4bffe0feb5bdde6ff3dd84&v=4",
             "url": "https://github.com/YuheiFUJITA",
@@ -1209,6 +1201,14 @@
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828?u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
             "url": "https://standardresume.co/tech",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yuto Yoshino",
+            "image": "https://avatars.githubusercontent.com/u/87469023?u=9c5ad67f4f4df8c5a303281f8378bac254eae064&v=4",
+            "url": "yossydev.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
