@@ -17,6 +17,7 @@ const fs = require("fs/promises");
 const { DateTime } = require("luxon");
 const util = require("util");
 const downloadStats = require("download-stats");
+const { upcomingVersionPrereleaseType } = require("./release-data");
 
 //-----------------------------------------------------------------------------
 // Data
@@ -37,7 +38,7 @@ if (!ESLINT_GITHUB_TOKEN) {
 const fetchWeeklyNpmDownloads = util.promisify(downloadStats.get.lastWeek);
 
 async function fetchStatsFromGitHubAPI() {
-    const { repository } = await graphql(`query { 
+    const { repository } = await graphql(`query {
         repository(owner:"eslint", name:"eslint") {
             latestRelease {
                 publishedAt
@@ -69,7 +70,7 @@ async function fetchGitHubNetworkStats() {
     const html = await response.body.text();
     const $ = cheerio.load(html);
     const projectDependents = $("[href~='/eslint/eslint/network/dependents?dependent_type=REPOSITORY']").text();
-    
+
     return {
         projectDependents: Number(projectDependents.trim().replace(/[^\d]/g, ""))
     };
@@ -97,8 +98,47 @@ async function fetchGitHubNetworkStats() {
         weeklyDownloads
     };
 
-    stats.nextVersion = `v${semver.inc(stats.currentVersion, "minor")}`;
-    
+    const { currentVersion } = stats;
+    let nextVersion;
+
+    if (stats.currentVersionIsPrerelease) {
+        if (upcomingVersionPrereleaseType) {
+            /*
+             * prerelease -> prerelease
+             * Increments prerelease number or updates prerelease type.
+             * Examples:
+             *    9.0.0-alpha.0 -> 9.0.0-alpha.1
+             *    9.0.0-alpha.1 -> 9.0.0-beta.0
+             */
+            nextVersion = semver.inc(currentVersion, "prerelease", upcomingVersionPrereleaseType);
+        } else {
+          /*
+           * prerelease -> major
+           * Example:
+           *     9.0.0-rc.1 -> 9.0.0
+           */
+           nextVersion = semver.inc(currentVersion, "major");
+        }
+    } else {
+        if (upcomingVersionPrereleaseType) {
+            /*
+             * regular -> prerelease
+             * Example:
+             *    8.56.0 -> 9.0.0-alpha.0
+             */
+            nextVersion = semver.inc(currentVersion, "premajor", upcomingVersionPrereleaseType);
+        } else {
+          /*
+           * regular -> regular
+           * Example:
+           *     8.56.0 -> 8.57.0
+           */
+           nextVersion = semver.inc(currentVersion, "minor");
+        }
+    }
+
+    stats.nextVersion = `v${nextVersion}`;
+
     // approximate next release date
     stats.nextVersionDate = DateTime.fromISO(stats.currentVersionDate)
         .plus({ weeks: 2 }).endOf("week").minus({ days: 2 }).toISODate();
