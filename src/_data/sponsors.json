@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127524,
-        "monthlyDonations": 10627,
-        "sponsorCount": 164
+        "annualDonations": 127512,
+        "monthlyDonations": 10626,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -1369,14 +1369,6 @@
             "name": "Colin Hülsbusch",
             "image": "https://avatars.githubusercontent.com/u/75516777?u=4fd2f557f6673e73de1d3bd93b5d8f76bb6552ce&v=4",
             "url": "https://colinhuelsbusch.de",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Cengiz",
-            "image": "https://avatars.githubusercontent.com/u/117142914?u=041e5bce9cd32d3e49aba6e75715828ff23c5cc0&v=4",
-            "url": "cecinar.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
