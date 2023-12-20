@@ -306,7 +306,7 @@
             "url": null,
             "image": "https://images.opencollective.com/john-hamilton/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 410,
+            "totalDonations": 420,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1126,7 +1126,7 @@
             "tier": "backer"
         },
         {
-            "name": "Niko Achilles Kokkinos",
+            "name": "Nikolaos Kokkinos",
             "image": "https://avatars.githubusercontent.com/u/15736120?u=2b792b2e5fd22d36b8dafbc514cf019b82955e63&v=4",
             "url": "https://github.com/niko-achilles",
             "monthlyDonation": 5,
