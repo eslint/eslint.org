@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127512,
-        "monthlyDonations": 10626,
-        "sponsorCount": 163
+        "annualDonations": 133512,
+        "monthlyDonations": 11126,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -45,6 +45,15 @@
         }
     ],
     "silver": [
+        {
+            "name": "JetBrains",
+            "url": "https://www.jetbrains.com/",
+            "image": "https://images.opencollective.com/jetbrains/eb04ddc/logo.png",
+            "monthlyDonation": 500,
+            "totalDonations": 500,
+            "source": "opencollective",
+            "tier": "silver-sponsor"
+        },
         {
             "name": "Liftoff",
             "url": "https://liftoff.io/",
