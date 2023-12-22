@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133512,
-        "monthlyDonations": 11126,
-        "sponsorCount": 164
+        "annualDonations": 133500,
+        "monthlyDonations": 11125,
+        "sponsorCount": 163
     },
     "platinum": [
         {
@@ -1129,7 +1129,7 @@
         {
             "name": "Yuzuki Aida",
             "image": "https://avatars.githubusercontent.com/u/14953122?u=3fb6db22b935aa9acfb5e49743f00110afc4c260&v=4",
-            "url": "https://github.com/nzws",
+            "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1346,14 +1346,6 @@
             "name": "VegetaTheCat",
             "image": "https://avatars.githubusercontent.com/u/2340896?u=9f1d29a0fba2c0d6781e7552398d28422029aea2&v=4",
             "url": "elliottchenstudio.com",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Peter Dave Hello",
-            "image": "https://avatars.githubusercontent.com/u/3691490?u=4dee3c8d8045eccca432b07645c80fbbe61d1c36&v=4",
-            "url": "https://www.peterdavehello.org/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
