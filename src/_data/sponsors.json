@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 133500,
-        "monthlyDonations": 11125,
+        "annualDonations": 133812,
+        "monthlyDonations": 11151,
         "sponsorCount": 163
     },
     "platinum": [
@@ -199,6 +199,14 @@
             "image": "https://avatars.githubusercontent.com/u/18175329?v=4",
             "url": "https://alan.com",
             "monthlyDonation": 45,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "365Talents",
+            "image": "https://avatars.githubusercontent.com/u/52778438?v=4",
+            "url": "https://365talents.com/",
+            "monthlyDonation": 31,
             "source": "github",
             "tier": "backer"
         },
@@ -1098,14 +1106,6 @@
             "name": "mizdra",
             "image": "https://avatars.githubusercontent.com/u/9639995?u=c89c30b17b1c1630fb400ca0ca7db881776db3fa&v=4",
             "url": "https://mizdra.net",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Anthony Fu",
-            "image": "https://avatars.githubusercontent.com/u/11247099?u=746eca82e375631967235dd01261428762bbcbf9&v=4",
-            "url": "https://antfu.me",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
