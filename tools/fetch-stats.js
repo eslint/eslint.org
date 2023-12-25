@@ -40,10 +40,12 @@ const fetchWeeklyNpmDownloads = util.promisify(downloadStats.get.lastWeek);
 async function fetchStatsFromGitHubAPI() {
     const { repository } = await graphql(`query {
         repository(owner:"eslint", name:"eslint") {
-            latestRelease {
-                publishedAt
-                isPrerelease
-                tagName
+            releases(first: 20, orderBy: { field: CREATED_AT, direction: DESC } ) {
+                nodes {
+                    publishedAt
+                    isPrerelease
+                    tagName
+                }
             }
             stargazerCount
             pushedAt
@@ -55,10 +57,15 @@ async function fetchStatsFromGitHubAPI() {
         }
     });
 
+    const [currentRelease] = repository.releases.nodes;
+    const latestRelease = repository.releases.nodes.find(({ isPrerelease }) => !isPrerelease);
+
     return {
-        currentVersion: repository.latestRelease.tagName,
-        currentVersionDate: repository.latestRelease.publishedAt,
-        currentVersionIsPrerelease: repository.latestRelease.isPrerelease,
+        latestVersion: latestRelease.tagName,
+        latestVersionDate: latestRelease.publishedAt,
+        currentVersion: currentRelease.tagName,
+        currentVersionDate: currentRelease.publishedAt,
+        currentVersionIsPrerelease: currentRelease.isPrerelease,
         stars: repository.stargazerCount,
         lastCommitDate: repository.pushedAt
     };

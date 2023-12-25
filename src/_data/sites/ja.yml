@@ -198,6 +198,7 @@ homepage:
   versions:
     title: ESLintバージョン
     latest: 最新バージョン
+    latest_prerelease: Latest Prerelease Version
     upcoming: 次バージョン
     development: 開発中バージョン
     dateline: VERSION（DATE）

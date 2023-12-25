@@ -216,6 +216,7 @@ homepage:
   versions:
     title: ESLint Versionen
     latest: Aktuellste Version
+    latest_prerelease: Latest Prerelease Version
     upcoming: Nächste Version
     development: Entwicklung
     dateline: VERSION am DATE
