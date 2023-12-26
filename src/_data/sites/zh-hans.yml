@@ -194,6 +194,7 @@ homepage:
   versions:
     title: ESLint 版本
     latest: 最新版本
+    latest_prerelease: Latest Prerelease Version
     upcoming: 即将到来的版本
     development: 开发中
     dateline: 于 DATE 发布 VERSION

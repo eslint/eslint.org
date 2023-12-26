@@ -70,6 +70,19 @@ eleventyExcludeFromCollections: true
                 <span id="eslint-versions-title" hidden>{{ site.homepage.versions.title }}</span>
                 <dt>{{ site.homepage.versions.latest }}</dt>
                 <dd>
+                    {% set version_date = stats.latestVersionDate | shortDateFromISO %}
+                    {% set dateline = site.homepage.versions.dateline | safe
+                        | replace("VERSION", "<a href=\"https://github.com/eslint/eslint/releases/tag/" + stats.latestVersion + "\" class=\"text-dark no-underline\">" + stats.latestVersion + "</a>")
+                        | replace("DATE", version_date)
+                    %}
+                    <svg width="16" height="8" viewBox="0 0 16 8" class="c-icon" role="img" aria-label="npm">
+                        <path d="M0 0.888885H16V6.22222H8V7.11111H4.44444V6.22222H0V0.888885ZM0.888889 5.33333H2.66667V2.66666H3.55556V5.33333H4.44444V1.77777H0.888889V5.33333ZM5.33333 1.77777V6.22222H7.11111V5.33333H8.88889V1.77777H5.33333ZM7.11111 2.66666H8V4.44444H7.11111V2.66666ZM9.77778 1.77777V5.33333H11.5556V2.66666H12.4444V5.33333H13.3333V2.66666H14.2222V5.33333H15.1111V1.77777H9.77778Z" fill="currentColor" />
+                    </svg>
+                    <span>{{ dateline }}</span>
+                </dd>
+                {% if stats.currentVersionIsPrerelease -%}
+                <dt>{{ site.homepage.versions.latest_prerelease }}</dt>
+                <dd>
                     {% set version_date = stats.currentVersionDate | shortDateFromISO %}
                     {% set dateline = site.homepage.versions.dateline | safe
                         | replace("VERSION", "<a href=\"https://github.com/eslint/eslint/releases/tag/" + stats.currentVersion + "\" class=\"text-dark no-underline\">" + stats.currentVersion + "</a>")
@@ -80,6 +93,7 @@ eleventyExcludeFromCollections: true
                     </svg>
                     <span>{{ dateline }}</span>
                 </dd>
+                {%- endif %}
                 <dt>{{ site.homepage.versions.upcoming }}</dt>
                 <dd>
                     {% set version_date = stats.nextVersionDate | shortDateFromISO %}
@@ -92,6 +106,7 @@ eleventyExcludeFromCollections: true
                     </svg>
                     <span>{{ dateline }}</span>
                 </dd>
+                {% if not stats.currentVersionIsPrerelease -%}
                 <dt>{{ site.homepage.versions.development }}</dt>
                 <dd>
                     {% set version_date = stats.lastCommitDate | shortDateFromISO %}
@@ -102,6 +117,7 @@ eleventyExcludeFromCollections: true
                     </svg>
                     <span>{{ dateline }}</span>
                 </dd>
+                {%- endif %}
             </dl>
         </div>
     </div>
