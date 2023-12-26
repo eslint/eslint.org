@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133812,
-        "monthlyDonations": 11151,
-        "sponsorCount": 163
+        "annualDonations": 133872,
+        "monthlyDonations": 11156,
+        "sponsorCount": 164
     },
     "platinum": [
         {
@@ -633,7 +633,7 @@
             "url": null,
             "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 150,
+            "totalDonations": 155,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -954,6 +954,14 @@
             "name": "Martin Eigenmann",
             "image": "https://avatars.githubusercontent.com/u/2293142?u=820f1940d7336d128c3fcfb5e4155ee2aa0566ce&v=4",
             "url": "eigenmannmartin.ch",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mashmatrix, Inc.",
+            "image": "https://avatars.githubusercontent.com/u/2441953?v=4",
+            "url": "http://www.mashmatrix.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
