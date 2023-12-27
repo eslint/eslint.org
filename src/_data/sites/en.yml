@@ -19,6 +19,7 @@ hostname: eslint.org
 locals:
   docs_latest: latest--docs-eslint.netlify.app
   docs_head: docs-eslint.netlify.app
+  docs_next: next--docs-eslint.netlify.app
   blog: true
 redirects:
   - from: https://cn.eslint.org/*

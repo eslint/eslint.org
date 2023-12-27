@@ -19,6 +19,7 @@ hostname: de.eslint.org
 locals:
   docs_latest: false
   docs_head: false
+  docs_next: false
   blog: false
 
 #------------------------------------------------------------------------------
