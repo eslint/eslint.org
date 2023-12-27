@@ -19,6 +19,7 @@ hostname: zh-hans.eslint.org
 locals:
   docs_latest: zh-hans-docs.netlify.app
   docs_head: false
+  docs_next: false
   blog: false
 
 #------------------------------------------------------------------------------

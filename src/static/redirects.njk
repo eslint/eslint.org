@@ -97,6 +97,13 @@ eleventyExcludeFromCollections: true
 /docs/head/*                        https://eslint.org/docs/head/:splat 302!
 {% endif %}
 
+# Docs for the current prerelease
+{% if site.locals.docs_next %}
+/docs/next/*                        https://{{ site.locals.docs_next }}/:splat 200!
+{% else %}
+/docs/next/*                        https://eslint.org/docs/next/:splat 302!
+{% endif %}
+
 {% if site.locals.blog == false %}
 # Redirect blog back to English site
 /blog/*                             https://eslint.org/blog/:splat 302!
