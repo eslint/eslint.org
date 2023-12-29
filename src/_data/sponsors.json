@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133872,
-        "monthlyDonations": 11156,
-        "sponsorCount": 164
+        "annualDonations": 134472,
+        "monthlyDonations": 11206,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -185,6 +185,14 @@
             "totalDonations": 2050,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Efstathiadis Dimitris",
+            "image": "https://avatars.githubusercontent.com/u/48406873?u=caa64a50cc02b2df29afc7c51df593b1be283b48&v=4",
+            "url": "https://github.com/EfstathiadisD",
+            "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "Tailscale",
@@ -1143,7 +1151,7 @@
             "tier": "backer"
         },
         {
-            "name": "Nikolaos Kokkinos",
+            "name": "Nikolaos Achilles Kokkinos",
             "image": "https://avatars.githubusercontent.com/u/15736120?u=2b792b2e5fd22d36b8dafbc514cf019b82955e63&v=4",
             "url": "https://github.com/niko-achilles",
             "monthlyDonation": 5,
