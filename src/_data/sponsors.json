@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133704,
-        "monthlyDonations": 11142,
-        "sponsorCount": 163
+        "annualDonations": 134424,
+        "monthlyDonations": 11202,
+        "sponsorCount": 165
     },
     "platinum": [
         {
@@ -156,7 +156,7 @@
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 350,
-            "totalDonations": 16464,
+            "totalDonations": 16814,
             "source": "opencollective",
             "tier": null
         },
@@ -176,6 +176,15 @@
             "monthlyDonation": 100,
             "source": "github",
             "tier": "backer"
+        },
+        {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 50,
+            "totalDonations": 2100,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Efstathiadis Dimitris",
@@ -269,6 +278,15 @@
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
             "monthlyDonation": 10,
             "totalDonations": 220,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Anu Alabi",
+            "url": null,
+            "image": "https://images.opencollective.com/anu-alabi/2804057/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 260,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -466,20 +484,11 @@
             "tier": "backer"
         },
         {
-            "name": "LightCDN",
-            "url": "https://www.lightcdn.com",
-            "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "LightNode",
             "url": "https://www.lightnode.com",
             "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -823,6 +832,14 @@
             "name": "Forrest Desjardins",
             "image": "https://avatars.githubusercontent.com/u/502491?u=1658efb692d4da77a8f68251b9dd8d7a3bdf7aab&v=4",
             "url": "https://aeralta.tech/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Leesa Ward",
+            "image": "https://avatars.githubusercontent.com/u/563583?u=b50d6c7220db7b037496600994b3e03569ac16a0&v=4",
+            "url": "leesaward.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1232,7 +1249,7 @@
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
-            "totalDonations": 12,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": null
         },
