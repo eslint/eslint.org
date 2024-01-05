@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134412,
-        "monthlyDonations": 11201,
-        "sponsorCount": 164
+        "annualDonations": 134436,
+        "monthlyDonations": 11203,
+        "sponsorCount": 166
     },
     "platinum": [
         {
@@ -484,6 +484,15 @@
             "tier": "backer"
         },
         {
+            "name": "LightCDN",
+            "url": "https://www.lightcdn.com",
+            "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "LightNode",
             "url": "https://www.lightnode.com",
             "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
@@ -579,15 +588,6 @@
             "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 100,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Min Chen",
-            "url": "https://www.hikerpig.cn",
-            "image": "https://images.opencollective.com/min-chen/61f2fcb/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 125,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1333,6 +1333,14 @@
             "tier": null
         },
         {
+            "name": "Mr. Henry",
+            "image": "https://avatars.githubusercontent.com/u/45111?v=4",
+            "url": "https://mrhenry.be",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Benjamin Reed",
             "image": "https://avatars.githubusercontent.com/u/89252?v=4",
             "url": "http://raccoonfink.bandcamp.com/",
@@ -1376,6 +1384,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Luis Falcon",
+            "image": "https://avatars.githubusercontent.com/u/57654255?u=714b5dd86bf79c258033e31f449044f104169c59&v=4",
+            "url": "https://luisfalconmx.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
