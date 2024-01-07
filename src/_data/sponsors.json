@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134436,
-        "monthlyDonations": 11203,
-        "sponsorCount": 166
+        "annualDonations": 134448,
+        "monthlyDonations": 11204,
+        "sponsorCount": 167
     },
     "platinum": [
         {
@@ -1376,6 +1376,14 @@
             "name": "Kirill Devope",
             "image": "https://avatars.githubusercontent.com/u/8249408?u=c1818225ecdbe96d8e837747e0ee26ebe856a95b&v=4",
             "url": "https://github.com/devope",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Schalk Venter",
+            "image": "https://avatars.githubusercontent.com/u/14258328?u=fdcaca808e98f2a073093f8873f2dbfd865ccb96&v=4",
+            "url": "https://schalkventer.me",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
