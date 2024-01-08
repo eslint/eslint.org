@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134448,
-        "monthlyDonations": 11204,
-        "sponsorCount": 167
+        "annualDonations": 134484,
+        "monthlyDonations": 11207,
+        "sponsorCount": 169
     },
     "platinum": [
         {
@@ -1315,6 +1315,14 @@
             "tier": null
         },
         {
+            "name": "Frontend Masters",
+            "image": "https://avatars.githubusercontent.com/u/5613852?v=4",
+            "url": "https://FrontendMasters.com",
+            "monthlyDonation": 2,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Till Sanders",
             "url": "https://till-sanders.de/",
             "image": "https://images.opencollective.com/tillsanders/1c9743b/avatar.png",
@@ -1400,6 +1408,14 @@
             "name": "Luis Falcon",
             "image": "https://avatars.githubusercontent.com/u/57654255?u=714b5dd86bf79c258033e31f449044f104169c59&v=4",
             "url": "https://luisfalconmx.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Bryan King Pecho",
+            "image": "https://avatars.githubusercontent.com/u/91954699?u=da55c4702c518f1e810b2b3be6f50c48e284a5ba&v=4",
+            "url": "bkpecho.tech",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
