@@ -353,6 +353,18 @@
             "location": "New York City and San Francisco"
         },
         {
+            "username": "JoshuaKGoldberg",
+            "name": "Josh Goldberg ✨",
+            "title": "ESLint Committer",
+            "website": "http://www.joshuakgoldberg.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
+            "bio": "Full time open source 💖✨ \r\n\r\n@typescript-eslint maintainer; \r\n@LearningTypeScript author;\r\nMicrosoft MVP 🌟",
+            "twitter_username": "JoshuaKGoldberg",
+            "github_username": "JoshuaKGoldberg",
+            "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
+            "location": "Philadelphia, PA, USA"
+        },
+        {
             "username": "fasttime",
             "name": "Francesco Trotta",
             "title": "ESLint Committer",

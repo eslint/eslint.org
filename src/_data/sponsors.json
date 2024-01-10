@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134484,
-        "monthlyDonations": 11207,
-        "sponsorCount": 169
+        "annualDonations": 134544,
+        "monthlyDonations": 11212,
+        "sponsorCount": 170
     },
     "platinum": [
         {
@@ -472,6 +472,15 @@
             "url": "https://projectdiscovery.io",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Celebian",
+            "url": "https://celebian.com/",
+            "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
