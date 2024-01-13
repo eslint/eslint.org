@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134544,
-        "monthlyDonations": 11212,
-        "sponsorCount": 170
+        "annualDonations": 134616,
+        "monthlyDonations": 11218,
+        "sponsorCount": 172
     },
     "platinum": [
         {
@@ -1190,6 +1190,14 @@
             "tier": "backer"
         },
         {
+            "name": "Erez Asmara",
+            "image": "https://avatars.githubusercontent.com/u/33747218?u=b1497232bca4ef41bf6085ddb32ca51274ca5251&v=4",
+            "url": "https://github.com/erezasmara",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
@@ -1382,7 +1390,7 @@
             "tier": "backer"
         },
         {
-            "name": "BooTheCat",
+            "name": "BooTheKat",
             "image": "https://avatars.githubusercontent.com/u/2340896?u=9f1d29a0fba2c0d6781e7552398d28422029aea2&v=4",
             "url": "elliottchenstudio.com",
             "monthlyDonation": 1,
@@ -1417,6 +1425,14 @@
             "name": "Luis Falcon",
             "image": "https://avatars.githubusercontent.com/u/57654255?u=714b5dd86bf79c258033e31f449044f104169c59&v=4",
             "url": "https://luisfalconmx.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Vezel",
+            "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
+            "url": "https://vezel.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
