@@ -136,11 +136,6 @@
     padding: 1rem;
 }
 
-.playground__config-enable_all_rules {
-    display: flex;
-    margin: 0.5rem 0;
-}
-
 /* Styles for the accordion icon */
 .config-js .config-icon {
     display: block !important;
@@ -251,8 +246,14 @@
     font-size: .875rem;
 }
 
-.playground__config-enable_all_rules__btn {
-    width: 100%;
+.rules-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:has(> :nth-child(1):last-child) {
+        justify-content: flex-end;
+    }
 }
 
 .add-rule-btn {

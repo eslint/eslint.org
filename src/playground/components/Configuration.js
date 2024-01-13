@@ -144,9 +144,9 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         } else {
             ruleNames.forEach(ruleName => {
                 options.rules[ruleName] = ["error"];
-                onUpdate(Object.assign({}, options));
                 ruleInputRef.current.setValue("");
             });
+            onUpdate(Object.assign({}, options));
         }
     };
 
@@ -246,16 +246,8 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     <h2 data-config-section-title>Rules</h2>
                     <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showRules ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
                 </button>
-                {showRules && <div data-config-section>
-                    <div className="playground__config-enable_all_rules">
-                        <button className="c-btn c-btn--primary playground__config-enable_all_rules__btn"
-                            onClick={selectAll}
-                        >
-                            {allRulesSelected ? "Disable all rules" : "Enable all rules"}
-                        </button>
-                    </div>
-                    {!allRulesSelected &&
-                    (
+                {showRules && (<div data-config-section>
+                    {!allRulesSelected && (
                         <>
                             <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
                             <Select
@@ -275,6 +267,10 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                 }}
                                 options={ruleNamesOptions}
                             />
+                        </>
+                    )}
+                    <div className="rules-actions">
+                        {!allRulesSelected && (
                             <button
                                 className="c-btn c-btn--ghost add-rule-btn"
                                 onClick={() => {
@@ -283,8 +279,14 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                             >
                                 {selectedRules.length > 1 ? "Add these Rules" : "Add this Rule"}
                             </button>
-                        </>
-                    )}
+                        )}
+                        <button
+                            className="c-btn c-btn--ghost add-rule-btn"
+                            onClick={selectAll}
+                        >
+                            {allRulesSelected ? "Disable all rules" : "Enable all rules"}
+                        </button>
+                    </div>
                     <RuleList>
                         {options.rules && Object.keys(options.rules).sort().map(ruleName => (
                             <li className="config__added-rules__item" key={ruleName}>
@@ -329,7 +331,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                         ))}
                     </RuleList>
                 </div>
-                }
+                )}
             </div>
             {/* TODO: Add Plugins */}
             {/* <div className="playground__config-options__section">
