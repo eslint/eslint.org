@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134616,
-        "monthlyDonations": 11218,
-        "sponsorCount": 172
+        "annualDonations": 134496,
+        "monthlyDonations": 11208,
+        "sponsorCount": 171
     },
     "platinum": [
         {
@@ -296,15 +296,6 @@
             "image": "https://images.opencollective.com/guest-fb34b9dc/avatar.png",
             "monthlyDonation": 10,
             "totalDonations": 280,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Balsa",
-            "url": "https://balsa.com/",
-            "image": "https://images.opencollective.com/balsa/77de498/logo.png",
-            "monthlyDonation": 10,
-            "totalDonations": 730,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1191,7 +1182,7 @@
         },
         {
             "name": "Erez Asmara",
-            "image": "https://avatars.githubusercontent.com/u/33747218?u=b1497232bca4ef41bf6085ddb32ca51274ca5251&v=4",
+            "image": "https://avatars.githubusercontent.com/u/33747218?u=36ea31f758924ccbc44aebd20fa33a87683ad31a&v=4",
             "url": "https://github.com/erezasmara",
             "monthlyDonation": 5,
             "source": "github",
