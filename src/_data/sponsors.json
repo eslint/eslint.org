@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134496,
-        "monthlyDonations": 11208,
-        "sponsorCount": 171
+        "annualDonations": 134508,
+        "monthlyDonations": 11209,
+        "sponsorCount": 172
     },
     "platinum": [
         {
@@ -1182,7 +1182,7 @@
         },
         {
             "name": "Erez Asmara",
-            "image": "https://avatars.githubusercontent.com/u/33747218?u=36ea31f758924ccbc44aebd20fa33a87683ad31a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/33747218?u=4887d20b7ceaca69e2daa41bd7dbd3fc8b90aae4&v=4",
             "url": "https://github.com/erezasmara",
             "monthlyDonation": 5,
             "source": "github",
@@ -1408,6 +1408,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mirko Basic",
+            "image": "https://avatars.githubusercontent.com/u/24759563?u=ad63a8d249c09ce43a3f9e6f13807424597a81ce&v=4",
+            "url": "bejzik.eth.limo",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
