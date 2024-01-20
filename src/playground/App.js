@@ -6,41 +6,45 @@ import CrashAlert from "./components/CrashAlert";
 import Footer from "./components/Footer";
 import CodeEditor from "./components/CodeEditor";
 import { Linter, SourceCodeFixer } from "./node_modules/eslint/lib/linter/";
-import { Legacy } from "@eslint/eslintrc/universal";
 import Unicode from "./utils/unicode";
 import Configuration from "./components/Configuration";
 import Split from "react-split";
 import debounce from "./utils/debounce";
 import "./scss/split-pane.scss";
 
-const linter = new Linter();
-const rules = linter.getRules();
+const linter = new Linter({ configType: "flat" });
+const legacyLinter = new Linter();
+const rules = legacyLinter.getRules();
+
 const ruleNames = Array.from(rules.keys());
 const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
     result[key] = value.meta;
     return result;
 }, {});
 
-const defaultParserOptions = {
-    ecmaFeatures: {},
+const defaultLanguageOptions = {
     ecmaVersion: "latest",
-    sourceType: "script"
+    parserOptions: {
+        ecmaFeatures: {}
+    }
 };
 
 const fillOptionsDefaults = options =>
     (options
         ? {
-            env: {},
             rules: {},
             ...options,
-            parserOptions: {
-                ...defaultParserOptions,
-                ...options.parserOptions
+            languageOptions: {
+                ecmaVersion: "latest",
+                parserOptions: {
+                    ecmaFeatures: {},
+                    ...options.languageOptions?.parserOptions
+                },
+                ...options.languageOptions
             }
         }
         : {
-            env: { es6: true },
-            parserOptions: defaultParserOptions,
+            languageOptions: defaultLanguageOptions,
             rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
                 if (rule.meta.docs.recommended) {
                     result[ruleId] = ["error"];
@@ -49,9 +53,32 @@ const fillOptionsDefaults = options =>
             }, {})
         });
 
+const convertLegacyOptionsToFlatConfig = options => {
+    const { parserOptions } = options;
+    const flatConfigOptions = {
+        languageOptions: {
+            ecmaVersion: parserOptions.ecmaVersion || "latest",
+            parserOptions: {
+                ecmaFeatures: parserOptions.ecmaFeatures || {}
+            },
+            sourceType: parserOptions.sourceType || "script"
+        },
+        rules: options.rules
+
+    };
+
+    return flatConfigOptions;
+};
+
 const getUrlState = () => {
     try {
-        return JSON.parse(Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")));
+        const urlOptions = JSON.parse(Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")));
+
+        if (typeof urlOptions.options.languageOptions !== "undefined") {
+            return urlOptions;
+        }
+
+        return { text: urlOptions.text, options: convertLegacyOptionsToFlatConfig(urlOptions.options) };
     } catch {
         return {};
     }
@@ -72,20 +99,16 @@ const App = () => {
     const { text: urlText, options: urlOptions } = getUrlState();
     const [text, setText] = useState(urlText || storedText || "/* eslint quotes: [\"error\", \"double\"] */\nconst a = 'b';");
     const [fix, setFix] = useState(false);
-    const [options, setOptions] = useState(fillOptionsDefaults(urlText ? urlOptions || {} : storedOptions));
+
+    let flatConfigStoredOptions = storedOptions;
+
+    if (typeof storedOptions.languageOptions === "undefined") {
+        flatConfigStoredOptions = convertLegacyOptionsToFlatConfig(storedOptions);
+    }
+
+    const [options, setOptions] = useState(fillOptionsDefaults(urlText ? urlOptions || {} : flatConfigStoredOptions));
 
     const lint = () => {
-        try {
-            const validator = new Legacy.ConfigValidator({ builtInRules: rules });
-
-            validator.validate(options);
-        } catch (error) {
-            return {
-                messages: [],
-                output: text,
-                validationError: error
-            };
-        }
         try {
             const { messages, output } = linter.verifyAndFix(text, options, { fix });
             let fatalMessage;
@@ -203,6 +226,7 @@ const App = () => {
                         <CodeEditor
                             tabIndex="0"
                             codeValue={text}
+                            eslintInstance={linter}
                             eslintOptions={options}
                             onUpdate={debouncedOnUpdate}
                         />

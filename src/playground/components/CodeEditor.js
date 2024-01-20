@@ -12,7 +12,7 @@ export default function CodeEditor({ codeValue, onUpdate, eslintOptions }) {
     const extensions = useMemo(() => [
         history(),
         bracketMatching(),
-        linter(esLint(new ESLint(), eslintOptions), { delay: 0 }),
+        linter(esLint(new ESLint({ configType: "flat" }), { ...eslintOptions }), { delay: 0 }),
         javascript(),
         ESLintPlaygroundTheme,
         ESLintPlaygroundHighlightStyle
