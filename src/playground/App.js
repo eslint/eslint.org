@@ -54,6 +54,10 @@ const fillOptionsDefaults = options =>
         });
 
 const convertLegacyOptionsToFlatConfig = options => {
+    if (typeof options.languageOptions !== "undefined" && typeof options.parserOptions === "undefined") {
+        return options;
+    }
+
     const { parserOptions } = options;
     const flatConfigOptions = {
         languageOptions: {
@@ -73,10 +77,6 @@ const convertLegacyOptionsToFlatConfig = options => {
 const getUrlState = () => {
     try {
         const urlOptions = JSON.parse(Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")));
-
-        if (typeof urlOptions.options.languageOptions !== "undefined") {
-            return urlOptions;
-        }
 
         return { text: urlOptions.text, options: convertLegacyOptionsToFlatConfig(urlOptions.options) };
     } catch {
@@ -99,14 +99,7 @@ const App = () => {
     const { text: urlText, options: urlOptions } = getUrlState();
     const [text, setText] = useState(urlText || storedText || "/* eslint quotes: [\"error\", \"double\"] */\nconst a = 'b';");
     const [fix, setFix] = useState(false);
-
-    let flatConfigStoredOptions = storedOptions;
-
-    if (typeof storedOptions.languageOptions === "undefined") {
-        flatConfigStoredOptions = convertLegacyOptionsToFlatConfig(storedOptions);
-    }
-
-    const [options, setOptions] = useState(fillOptionsDefaults(urlText ? urlOptions || {} : flatConfigStoredOptions));
+    const [options, setOptions] = useState(fillOptionsDefaults(urlText ? urlOptions || {} : convertLegacyOptionsToFlatConfig(storedOptions)));
 
     const lint = () => {
         try {
