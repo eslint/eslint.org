@@ -54,6 +54,13 @@ const fillOptionsDefaults = options =>
         });
 
 const convertLegacyOptionsToFlatConfig = options => {
+
+    // If options object is empty, return it
+    if (options && Object.keys(options).length === 0 && options.constructor === Object) {
+        return options;
+    }
+
+    // If options is already a flat config, return it
     if (typeof options.languageOptions !== "undefined" && typeof options.parserOptions === "undefined") {
         return options;
     }
