@@ -53,7 +53,7 @@ const fillOptionsDefaults = options =>
             }, {})
         });
 
-const convertLegacyOptionsToFlatConfig = options => {
+const convertLegacyOptionsToFlatConfig = (options = {}) => {
 
     // If options object is empty, return it
     if (options && Object.keys(options).length === 0 && options.constructor === Object) {
