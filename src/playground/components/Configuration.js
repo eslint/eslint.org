@@ -140,7 +140,6 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
 
     const allRulesSelected = Object.keys(options.rules).length === ruleNames.length;
 
-
     const selectAll = () => {
         if (allRulesSelected) {
             options.rules = {};
@@ -156,7 +155,6 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         }
         onUpdate(Object.assign({}, options));
     };
-
 
     return (
         <div className="playground__config-options__sections">
@@ -347,9 +345,9 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
             </div> */}
             <a
                 href={
-                    `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(options, null, 4))}`
+                    `data:application/json;charset=utf-8,${encodeURIComponent(configFileContent)}`
                 }
-                download=".eslintrc.json"
+                download="eslint.config.js"
                 className="c-btn c-btn--primary playground__config__download-btn"
             >
                 Download this config file
