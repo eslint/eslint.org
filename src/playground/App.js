@@ -25,7 +25,8 @@ const defaultLanguageOptions = {
     ecmaVersion: "latest",
     parserOptions: {
         ecmaFeatures: {}
-    }
+    },
+    sourceType: "script"
 };
 
 const fillOptionsDefaults = options =>
@@ -35,11 +36,12 @@ const fillOptionsDefaults = options =>
             ...options,
             languageOptions: {
                 ecmaVersion: "latest",
+                sourceType: "script",
+                ...options.languageOptions,
                 parserOptions: {
                     ecmaFeatures: {},
                     ...options.languageOptions?.parserOptions
-                },
-                ...options.languageOptions
+                }
             }
         }
         : {
