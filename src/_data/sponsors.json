@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134508,
-        "monthlyDonations": 11209,
-        "sponsorCount": 172
+        "annualDonations": 134136,
+        "monthlyDonations": 11178,
+        "sponsorCount": 171
     },
     "platinum": [
         {
@@ -207,14 +207,6 @@
             "image": "https://avatars.githubusercontent.com/u/18175329?v=4",
             "url": "https://alan.com",
             "monthlyDonation": 45,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "365Talents",
-            "image": "https://avatars.githubusercontent.com/u/52778438?v=4",
-            "url": "https://365talents.com/",
-            "monthlyDonation": 31,
             "source": "github",
             "tier": "backer"
         },
@@ -966,7 +958,7 @@
         },
         {
             "name": "Maarten Van Hoof",
-            "image": "https://avatars.githubusercontent.com/u/2543633?u=877bea1d5cbf861c347b1db16e9e23a3cf7b8a5c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2543633?u=ca4ab981a1547381b359f5e36380a50d9d41920d&v=4",
             "url": "mrtnvh.com",
             "monthlyDonation": 5,
             "source": "github",
