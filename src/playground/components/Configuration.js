@@ -1,6 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Select, { components } from "react-select";
-import RuleList from "./RuleList";
 import ShareURL from "./ShareURL";
 import { ECMA_FEATURES, ECMA_VERSIONS, SOURCE_TYPES, ENV_NAMES } from "../utils/constants";
 
@@ -108,16 +107,26 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
     const [selectedRules, setSelectedRules] = useState([]);
     const ruleInputRef = useRef(null);
     const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(new Set([]));
+    const firstRuleRef = useRef();
+
+    useEffect(() => {
+        firstRuleRef.current?.focus();
+    }, [options.rules]);
+
 
     const handleRuleChange = () => {
+        const rules = { ...options.rules };
+
         selectedRules.forEach(selectedRule => {
             if (ruleNames.includes(selectedRule)) {
-                options.rules[selectedRule] = ["error"];
+                rules[selectedRule] = ["error"];
+                options.rules = rules;
                 onUpdate(Object.assign({}, options));
                 ruleInputRef.current.setValue("");
             }
         });
     };
+
 
     const Input = props => {
         if (props.isHidden) {
@@ -139,15 +148,17 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
     const selectAll = () => {
         if (allRulesSelected) {
             options.rules = {};
-            onUpdate(options);
             setSelectedRules([]);
         } else {
+            const rules = {};
+
             ruleNames.forEach(ruleName => {
-                options.rules[ruleName] = ["error"];
+                rules[ruleName] = ["error"];
+                options.rules = rules;
                 ruleInputRef.current.setValue("");
             });
-            onUpdate(Object.assign({}, options));
         }
+        onUpdate(Object.assign({}, options));
     };
 
 
@@ -287,8 +298,8 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                             {allRulesSelected ? "Disable all rules" : "Enable all rules"}
                         </button>
                     </div>
-                    <RuleList>
-                        {options.rules && Object.keys(options.rules).sort().map(ruleName => (
+                    <ul className="config__added-rules" aria-labelledby="added-rules-label">
+                        {options.rules && Object.keys(options.rules).sort().map((ruleName, index) => (
                             <li className="config__added-rules__item" key={ruleName}>
                                 <h4 className="config__added-rules__rule-name">
                                     <a href={rulesMeta[ruleName].docs.url}>
@@ -309,6 +320,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                     </button>
                                 </h4>
                                 <input
+                                    {...(index === 0 ? { ref: firstRuleRef } : {})}
                                     id={ruleName}
                                     className={rulesWithInvalidConfigs.has(ruleName) || validationError?.message.includes(`"${ruleName}"`) ? "config__added-rules__rule-input-error" : ""}
                                     style={{ width: "100%" }}
@@ -329,7 +341,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                 )}
                             </li>
                         ))}
-                    </RuleList>
+                    </ul>
                 </div>
                 )}
             </div>
