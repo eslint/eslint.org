@@ -23,3 +23,8 @@ export const SOURCE_TYPES = [
     "module",
     "commonjs"
 ];
+
+export const CONFIG_FORMATS = [
+    "CommonJS",
+    "ESM"
+];

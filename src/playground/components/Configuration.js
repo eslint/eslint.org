@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Select, { components } from "react-select";
 import ShareURL from "./ShareURL";
-import { ECMA_FEATURES, ECMA_VERSIONS, SOURCE_TYPES } from "../utils/constants";
+import { ECMA_FEATURES, ECMA_VERSIONS, SOURCE_TYPES, CONFIG_FORMATS } from "../utils/constants";
 
 const customStyles = {
     singleValue: styles => ({
@@ -90,10 +90,12 @@ const customTheme = theme => ({
 export default function Configuration({ rulesMeta, eslintVersion, onUpdate, options, ruleNames, validationError }) {
     const [showVersion, setShowVersions] = useState(false);
     const [showRules, setShowRules] = useState(true);
+    const [configFileFormat, setConfigFileFormat] = useState("ESM");
 
     const sourceTypeOptions = SOURCE_TYPES.map(sourceType => ({ value: sourceType, label: sourceType }));
     const ECMAFeaturesOptions = ECMA_FEATURES.map(ecmaFeature => ({ value: ecmaFeature, label: ecmaFeature }));
     const ECMAVersionsOptions = ECMA_VERSIONS.map(ecmaVersion => ({ value: ecmaVersion === "latest" ? ecmaVersion : Number(ecmaVersion), label: ecmaVersion }));
+    const configFileFormatOptions = CONFIG_FORMATS.map(configFormat => ({ value: configFormat, label: configFormat }));
 
     // filter rules which are already added to the configuration
     const ruleNamesOptions = ruleNames.filter(ruleName => options.rules && !options.rules[ruleName]).map(ruleName => ({
@@ -156,6 +158,8 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         onUpdate(Object.assign({}, options));
     };
 
+    const configFileContent = `${configFileFormat === "esm" ? "export default" : "module.exports ="} ${JSON.stringify([options], null, 4)};`;
+
     return (
         <div className="playground__config-options__sections">
             <div className="playground__config-options__section">
@@ -179,7 +183,8 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                 styles={customStyles}
                                 theme={theme => customTheme(theme)}
                                 defaultValue={
-                                    ECMAVersionsOptions.filter(ecmaVersion => options.languageOptions.ecmaVersion === ecmaVersion.value)}
+                                    ECMAVersionsOptions.filter(ecmaVersion => ecmaVersion.value === (options.languageOptions.ecmaVersion || "latest"))
+                                }
                                 options={ECMAVersionsOptions}
                                 onChange={selected => {
                                     options.languageOptions.ecmaVersion = selected.value;
@@ -194,11 +199,25 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                             isSearchable={false}
                             styles={customStyles}
                             theme={theme => customTheme(theme)}
-                            defaultValue={sourceTypeOptions.filter(sourceTypeOption => options.languageOptions.sourceType === sourceTypeOption.value)}
+                            defaultValue={sourceTypeOptions.filter(sourceTypeOption => sourceTypeOption.value === (options.languageOptions.sourceType || "module"))}
                             options={sourceTypeOptions}
                             onChange={selected => {
                                 options.languageOptions.sourceType = selected.value;
                                 onUpdate(Object.assign({}, options));
+                            }}
+
+                        />
+                    </label>
+                    <label className="c-field" htmlFor="config-format">
+                        <span className="label__text">Configuration File Format</span>
+                        <Select
+                            isSearchable={false}
+                            styles={customStyles}
+                            theme={theme => customTheme(theme)}
+                            defaultValue={configFileFormatOptions.filter(formatOption => formatOption.value === "ESM")}
+                            options={configFileFormatOptions}
+                            onChange={selected => {
+                                setConfigFileFormat(selected.value);
                             }}
 
                         />
@@ -343,6 +362,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     </div>
                 </div>
             </div> */}
+
             <a
                 href={
                     `data:application/json;charset=utf-8,${encodeURIComponent(configFileContent)}`
@@ -350,7 +370,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                 download="eslint.config.js"
                 className="c-btn c-btn--primary playground__config__download-btn"
             >
-                Download this config file
+                Download this config file ({configFileFormat})
             </a>
         </div>
     );

@@ -22,11 +22,9 @@ const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
 }, {});
 
 const defaultLanguageOptions = {
-    ecmaVersion: "latest",
     parserOptions: {
         ecmaFeatures: {}
-    },
-    sourceType: "script"
+    }
 };
 
 const fillOptionsDefaults = options =>
@@ -35,8 +33,6 @@ const fillOptionsDefaults = options =>
             rules: {},
             ...options,
             languageOptions: {
-                ecmaVersion: "latest",
-                sourceType: "script",
                 ...options.languageOptions,
                 parserOptions: {
                     ecmaFeatures: {},
@@ -73,7 +69,7 @@ const convertLegacyOptionsToFlatConfig = (options = {}) => {
             parserOptions: {
                 ecmaFeatures: parserOptions.ecmaFeatures || {}
             },
-            sourceType: parserOptions.sourceType || "script"
+            sourceType: parserOptions.sourceType || "module"
         },
         rules: options.rules
 
