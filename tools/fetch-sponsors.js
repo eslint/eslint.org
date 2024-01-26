@@ -103,6 +103,7 @@ async function fetchOpenCollectiveData() {
             frequency: ONETIME
             status: PAID
             limit: 50
+            filter: INCOMING
           ) {
             totalCount
             nodes {
