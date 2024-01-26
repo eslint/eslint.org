@@ -208,20 +208,6 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
 
                         />
                     </label>
-                    <label className="c-field" htmlFor="config-format">
-                        <span className="label__text">Configuration File Format</span>
-                        <Select
-                            isSearchable={false}
-                            styles={customStyles}
-                            theme={theme => customTheme(theme)}
-                            defaultValue={configFileFormatOptions.filter(formatOption => formatOption.value === "ESM")}
-                            options={configFileFormatOptions}
-                            onChange={selected => {
-                                setConfigFileFormat(selected.value);
-                            }}
-
-                        />
-                    </label>
                     <div className="combo">
                         <label id="ecma-combo-label" htmlFor="ECMA Feature" className="label__text">ECMA Features</label>
                         <Select
@@ -363,15 +349,32 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                 </div>
             </div> */}
 
-            <a
-                href={
-                    `data:application/json;charset=utf-8,${encodeURIComponent(configFileContent)}`
-                }
-                download="eslint.config.js"
-                className="c-btn c-btn--primary playground__config__download-btn"
-            >
-                Download this config file ({configFileFormat})
-            </a>
+            <div className="playground__config-options__section">
+                <div data-config-section>
+                    <label className="c-field" htmlFor="config-format">
+                        <span className="label__text">Configuration File Format</span>
+                        <Select
+                            isSearchable={false}
+                            styles={customStyles}
+                            theme={theme => customTheme(theme)}
+                            defaultValue={configFileFormatOptions.filter(formatOption => formatOption.value === "ESM")}
+                            options={configFileFormatOptions}
+                            onChange={selected => {
+                                setConfigFileFormat(selected.value);
+                            }}
+                        />
+                    </label>
+                    <a
+                        href={
+                            `data:application/json;charset=utf-8,${encodeURIComponent(configFileContent)}`
+                        }
+                        download="eslint.config.js"
+                        className="c-btn c-btn--primary playground__config__download-btn"
+                    >
+                        Download this config file
+                    </a>
+                </div>
+            </div>
         </div>
     );
 }
