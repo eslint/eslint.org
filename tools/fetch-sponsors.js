@@ -2,6 +2,10 @@
  * @fileoverview Script to fetch sponsor data from Open Collective and GitHub.
  * Call using:
  *     node _tools/fetch-sponsors.js
+ *
+ * To output debug data, set the DEBUG environment variable to a truthy value:
+ *    DEBUG=1 node _tools/fetch-sponsors.js
+ *
  * @author Nicholas C. Zakas
  */
 
@@ -41,6 +45,24 @@ if (!ESLINT_GITHUB_TOKEN) {
 //-----------------------------------------------------------------------------
 // Helpers
 //-----------------------------------------------------------------------------
+
+/**
+ * Ensures a URL has a valid protocol.
+ * @param {string} url The string to check.
+ * @returns {string} The URL with a valid protocol.
+ */
+function fixUrl(url) {
+
+    if (!url) {
+        return null;
+    }
+
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+        return `https://${url}`;
+    }
+
+    return url;
+}
 
 /**
  * Returns the tier ID for a given donation amount.
@@ -132,9 +154,13 @@ async function fetchOpenCollectiveData() {
 
     let payload = await result.json();
 
+    if (process.env.DEBUG) {
+        await fs.writeFile("./debug-opencollective-raw-response.json", JSON.stringify(payload, null, 4), { encoding: "utf8" });
+    }
+
     const sponsors = payload.data.account.orders.nodes.map(order => ({
         name: order.fromAccount.name,
-        url: order.fromAccount.website,
+        url: fixUrl(order.fromAccount.website),
         image: order.fromAccount.imageUrl,
         monthlyDonation: order.frequency === "YEARLY" ? Math.round(order.amount.value / 12) : order.amount.value,
         totalDonations: order.totalDonations.value,
@@ -147,7 +173,7 @@ async function fetchOpenCollectiveData() {
         .map(transaction => ({
             id: transaction.id,
             name: transaction.fromAccount.name,
-            url: transaction.fromAccount.website,
+            url: fixUrl(transaction.fromAccount.website),
             image: transaction.fromAccount.imageUrl,
             amount: transaction.amount.value,
             date: transaction.updatedAt,
@@ -167,82 +193,140 @@ async function fetchOpenCollectiveData() {
  */
 async function fetchGitHubSponsors() {
 
-    const { organization } = await githubGraphQL(`query {
-        organization(login: "eslint") {
-          sponsorshipsAsMaintainer (first: 100, includePrivate: false) {
-            nodes {
-              sponsor: sponsorEntity {
-                ...on User {
-                  name,
-                  login,
-                  avatarUrl,
-                  url,
-                  websiteUrl
+    const sponsorshipsQuery = (cursor = null) => (`
+        query {
+            organization(login: "eslint") {
+                sponsorshipsAsMaintainer (first: 100, includePrivate: false, after: "${cursor}") {
+                    nodes {
+                        sponsor: sponsorEntity {
+                            ...on User {
+                                name,
+                                login,
+                                avatarUrl,
+                                url,
+                                websiteUrl
+                            }
+                            ...on Organization {
+                                name,
+                                login,
+                                avatarUrl,
+                                url,
+                                websiteUrl
+                            }
+                        },
+                        tier {
+                            monthlyPriceInDollars
+                        }
+                    }
+                    pageInfo {
+                        endCursor
+                        startCursor
+                        hasNextPage
+                        hasPreviousPage
+                    }
                 }
-                ...on Organization {
-                  name,
-                  login,
-                  avatarUrl,
-                  url,
-                  websiteUrl
-                }
-              },
-              tier {
-                monthlyPriceInDollars
-              }
             }
-          }
-          sponsorsActivities (first: 100, includePrivate: false) {
-            nodes {
-              id
-              sponsor {
-                ...on User {
-                  name,
-                  login,
-                  avatarUrl,
-                  url,
-                  websiteUrl
+        }
+    `);
+
+    const donationsQuery = `
+        query {
+            organization(login: "eslint") {
+                sponsorsActivities (first: 100, includePrivate: false) {
+                    nodes {
+                        id
+                        sponsor {
+                            ...on User {
+                                name,
+                                login,
+                                avatarUrl,
+                                url,
+                                websiteUrl
+                            }
+                            ...on Organization {
+                                name,
+                                login,
+                                avatarUrl,
+                                url,
+                                websiteUrl
+                            }
+                        },
+                        timestamp
+                        tier: sponsorsTier {
+                            monthlyPriceInDollars,
+                            isOneTime
+                        }
+                    }
                 }
-                ...on Organization {
-                  name,
-                  login,
-                  avatarUrl,
-                  url,
-                  websiteUrl
-                }
-              },
-              timestamp
-              tier: sponsorsTier {
-                monthlyPriceInDollars,
-                isOneTime
-              }
             }
-          }
         }
-      }`, {
-        headers: {
-            authorization: `token ${ESLINT_GITHUB_TOKEN}`
+    `;
+
+    const [
+        sponsorshipsResponse,
+        donationsResponse
+    ] = await Promise.all([
+        githubGraphQL(sponsorshipsQuery(), {
+            headers: {
+                authorization: `token ${ESLINT_GITHUB_TOKEN}`
+            }
+        }),
+        githubGraphQL(donationsQuery, {
+            headers: {
+                authorization: `token ${ESLINT_GITHUB_TOKEN}`
+            }
+        })
+    ]);
+
+    if (process.env.DEBUG) {
+        await fs.writeFile("./debug-github-raw-response-1.json", JSON.stringify({
+            sponsorshipsResponse,
+            donationsResponse
+        }, null, 4), { encoding: "utf8" });
+    }
+
+    let pageInfo = sponsorshipsResponse.organization.sponsorshipsAsMaintainer.pageInfo;
+    let sponsorships = sponsorshipsResponse.organization.sponsorshipsAsMaintainer.nodes;
+    let pageNumber = 1;
+
+    while (pageInfo.hasNextPage) {
+
+        const cursor = pageInfo.endCursor;
+
+        const pagedResponse = await githubGraphQL(sponsorshipsQuery(cursor), {
+            headers: {
+                authorization: `token ${ESLINT_GITHUB_TOKEN}`
+            }
+        });
+
+        pageNumber++;
+
+        if (process.env.DEBUG) {
+            await fs.writeFile(`./debug-github-raw-response-${pageNumber}.json`, JSON.stringify(pagedResponse, null, 4), { encoding: "utf8" });
         }
-    });
+
+        pageInfo = pagedResponse.organization.sponsorshipsAsMaintainer.pageInfo;
+        sponsorships.push(...pagedResponse.organization.sponsorshipsAsMaintainer.nodes);
+    }
 
     // return an array in the same format as Open Collective
-    const sponsors = organization.sponsorshipsAsMaintainer.nodes
+    const sponsors = sponsorships
         .map(({ sponsor, tier }) => ({
             name: sponsor.name || sponsor.login,
             image: sponsor.avatarUrl,
-            url: sponsor.websiteUrl || sponsor.url,
+            url: fixUrl(sponsor.websiteUrl || sponsor.url),
             monthlyDonation: tier.monthlyPriceInDollars,
             source: "github",
             tier: getTierSlug(tier.monthlyPriceInDollars)
         }));
 
-    const donations = organization.sponsorsActivities.nodes
+    const donations = donationsResponse.organization.sponsorsActivities.nodes
         .filter(transaction => transaction.tier && transaction.tier.isOneTime)
         .map(({ sponsor, timestamp, tier, id }) => ({
             id,
             name: sponsor.name || sponsor.login,
             image: sponsor.avatarUrl,
-            url: sponsor.websiteUrl || sponsor.url,
+            url: fixUrl(sponsor.websiteUrl || sponsor.url),
             amount: tier.monthlyPriceInDollars,
             date: timestamp,
             source: "github"

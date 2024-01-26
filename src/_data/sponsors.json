@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134352,
-        "monthlyDonations": 11196,
-        "sponsorCount": 173
+        "annualDonations": 136764,
+        "monthlyDonations": 11397,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -145,6 +145,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Nextbase Starter Kit",
+            "image": "https://avatars.githubusercontent.com/u/145838380?v=4",
+            "url": "https://usenextbase.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -380,7 +388,7 @@
         {
             "name": "Ryan Waskiewicz",
             "image": "https://avatars.githubusercontent.com/u/1930213?u=aac8c767b7a38900fafe0b7f92abb20b1be77d28&v=4",
-            "url": "ducktyped.dev",
+            "url": "https://ducktyped.dev",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -444,7 +452,7 @@
         {
             "name": "Buttondown",
             "image": "https://avatars.githubusercontent.com/u/48390753?v=4",
-            "url": "buttondown.email",
+            "url": "https://buttondown.email",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -736,15 +744,6 @@
             "tier": "backer"
         },
         {
-            "name": "Mariusz Nowak",
-            "url": "https://medikoo.com",
-            "image": "https://images.opencollective.com/medikoo/1fa36d8/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 300,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Chih-Hsuan Fan",
             "url": "https://pymaster.tw",
             "image": "https://images.opencollective.com/pc035860/8fed8ae/avatar.png",
@@ -806,6 +805,14 @@
             "tier": "backer"
         },
         {
+            "name": "Mariusz Nowak",
+            "image": "https://avatars.githubusercontent.com/u/122434?u=6202deb7a394c25a15b19d420e5ea28914384ec4&v=4",
+            "url": "http://www.medikoo.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Martti Laine",
             "image": "https://avatars.githubusercontent.com/u/211543?v=4",
             "url": "https://marttilaine.com",
@@ -848,7 +855,7 @@
         {
             "name": "Leesa Ward",
             "image": "https://avatars.githubusercontent.com/u/563583?u=b50d6c7220db7b037496600994b3e03569ac16a0&v=4",
-            "url": "leesaward.dev",
+            "url": "https://leesaward.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -872,7 +879,7 @@
         {
             "name": "Gavin Lloyd",
             "image": "https://avatars.githubusercontent.com/u/744538?u=0a08af9abb9fbf841382190be47f67a679bee4fa&v=4",
-            "url": "gavinhungry.com",
+            "url": "https://gavinhungry.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -896,7 +903,7 @@
         {
             "name": "Titus",
             "image": "https://avatars.githubusercontent.com/u/944406?u=6e0f32d14d720c1b0785b91694428741f8cda89c&v=4",
-            "url": "wooorm.com",
+            "url": "https://wooorm.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -944,7 +951,7 @@
         {
             "name": "Kevin Porten",
             "image": "https://avatars.githubusercontent.com/u/1839345?u=dc2263d5cfe0d927ce1a0be04a1d55dd6b55405c&v=4",
-            "url": "www.kevinporten.dev",
+            "url": "https://www.kevinporten.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -952,7 +959,7 @@
         {
             "name": "Gustav Hansen",
             "image": "https://avatars.githubusercontent.com/u/2244375?u=5240e0f277601e08bdcffd579e395a57f8b23e3f&v=4",
-            "url": "gu.stav.dev",
+            "url": "https://gu.stav.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -960,7 +967,7 @@
         {
             "name": "Martin Eigenmann",
             "image": "https://avatars.githubusercontent.com/u/2293142?u=820f1940d7336d128c3fcfb5e4155ee2aa0566ce&v=4",
-            "url": "eigenmannmartin.ch",
+            "url": "https://eigenmannmartin.ch",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -976,7 +983,7 @@
         {
             "name": "Maarten Van Hoof",
             "image": "https://avatars.githubusercontent.com/u/2543633?u=ca4ab981a1547381b359f5e36380a50d9d41920d&v=4",
-            "url": "mrtnvh.com",
+            "url": "https://mrtnvh.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1000,7 +1007,7 @@
         {
             "name": "Matt Chestnut",
             "image": "https://avatars.githubusercontent.com/u/3226829?u=ebfd201b89f48a0cd14253d15f307e2cd8bad554&v=4",
-            "url": "www.mattchestnut.com",
+            "url": "https://www.mattchestnut.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1024,7 +1031,7 @@
         {
             "name": "Nick Oliver",
             "image": "https://avatars.githubusercontent.com/u/3945917?u=75ac213afd2def70385395d15c58e888f3460867&v=4",
-            "url": "pixnbits.org",
+            "url": "https://pixnbits.org",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1032,7 +1039,7 @@
         {
             "name": "Raymond Schweers",
             "image": "https://avatars.githubusercontent.com/u/4108685?u=bdd564c34ff380d86efd09da600ec945338dc522&v=4",
-            "url": "www.hetwebbureau.nl",
+            "url": "https://www.hetwebbureau.nl",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1056,7 +1063,7 @@
         {
             "name": "Matan Kushner",
             "image": "https://avatars.githubusercontent.com/u/4658208?u=887d888c45d991a2dbde8ca6f317bf22bc133468&v=4",
-            "url": "matchai.dev",
+            "url": "https://matchai.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1080,7 +1087,7 @@
         {
             "name": "Raymond Luong",
             "image": "https://avatars.githubusercontent.com/u/6905162?u=2d47a34b1c9034dc9bd31f997d5c482f170dc536&v=4",
-            "url": "raymondluong.com",
+            "url": "https://raymondluong.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1168,7 +1175,7 @@
         {
             "name": "Jordan",
             "image": "https://avatars.githubusercontent.com/u/17376090?u=ebb702d1a6ac346a9ca4c093bea1928e2f62b239&v=4",
-            "url": "djmm.me",
+            "url": "https://djmm.me",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1240,7 +1247,7 @@
         {
             "name": "Yuto Yoshino",
             "image": "https://avatars.githubusercontent.com/u/87469023?u=9c5ad67f4f4df8c5a303281f8378bac254eae064&v=4",
-            "url": "yossydev.com",
+            "url": "https://yossydev.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1289,7 +1296,7 @@
         {
             "name": "Zwyx",
             "image": "https://avatars.githubusercontent.com/u/29386932?u=1c535ee7444ba22d9d16547974378a0b5e5b3c19&v=4",
-            "url": "zwyx.dev",
+            "url": "https://zwyx.dev",
             "monthlyDonation": 3,
             "source": "github",
             "tier": "backer"
@@ -1391,7 +1398,15 @@
         {
             "name": "BooTheKat",
             "image": "https://avatars.githubusercontent.com/u/2340896?u=9f1d29a0fba2c0d6781e7552398d28422029aea2&v=4",
-            "url": "elliottchenstudio.com",
+            "url": "https://elliottchenstudio.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mikihiro SUDA",
+            "image": "https://avatars.githubusercontent.com/u/6907421?u=c75ea52865a9d8c123be471553aa81c24380e89d&v=4",
+            "url": "https://sudame.net",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
@@ -1423,7 +1438,7 @@
         {
             "name": "Mirko Basic",
             "image": "https://avatars.githubusercontent.com/u/24759563?u=ad63a8d249c09ce43a3f9e6f13807424597a81ce&v=4",
-            "url": "bejzik.eth.limo",
+            "url": "https://bejzik.eth.limo",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
@@ -1447,7 +1462,7 @@
         {
             "name": "Bryan King Pecho",
             "image": "https://avatars.githubusercontent.com/u/91954699?u=da55c4702c518f1e810b2b3be6f50c48e284a5ba&v=4",
-            "url": "bkpecho.tech",
+            "url": "https://bkpecho.tech",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
