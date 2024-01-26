@@ -25,9 +25,6 @@ const { graphql: githubGraphQL } = require("@octokit/graphql");
 // Data
 //-----------------------------------------------------------------------------
 
-// max one-time donations to pull
-const MAX_DONATIONS = 20;
-
 // filename to output sponsors to
 const sponsorsFilename = "./src/_data/sponsors.json";
 const donationsFilename = "./src/_data/donations.json";
