@@ -114,3 +114,6 @@ playground.js.map
 playground.js
 # Local Netlify folder
 .netlify
+
+# debug files for fetch scripts
+debug*.json

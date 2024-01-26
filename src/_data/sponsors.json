@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134352,
-        "monthlyDonations": 11196,
-        "sponsorCount": 173
+        "annualDonations": 136764,
+        "monthlyDonations": 11397,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -145,6 +145,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Nextbase Starter Kit",
+            "image": "https://avatars.githubusercontent.com/u/145838380?v=4",
+            "url": "usenextbase.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -736,15 +744,6 @@
             "tier": "backer"
         },
         {
-            "name": "Mariusz Nowak",
-            "url": "https://medikoo.com",
-            "image": "https://images.opencollective.com/medikoo/1fa36d8/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 300,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Chih-Hsuan Fan",
             "url": "https://pymaster.tw",
             "image": "https://images.opencollective.com/pc035860/8fed8ae/avatar.png",
@@ -801,6 +800,14 @@
             "name": "Jordan Harband",
             "image": "https://avatars.githubusercontent.com/u/45469?u=6ab74b3b934f9659a90b588062c2c4328e40c6be&v=4",
             "url": "https://github.com/ljharb",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mariusz Nowak",
+            "image": "https://avatars.githubusercontent.com/u/122434?u=6202deb7a394c25a15b19d420e5ea28914384ec4&v=4",
+            "url": "http://www.medikoo.com/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1392,6 +1399,14 @@
             "name": "BooTheKat",
             "image": "https://avatars.githubusercontent.com/u/2340896?u=9f1d29a0fba2c0d6781e7552398d28422029aea2&v=4",
             "url": "elliottchenstudio.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mikihiro SUDA",
+            "image": "https://avatars.githubusercontent.com/u/6907421?u=c75ea52865a9d8c123be471553aa81c24380e89d&v=4",
+            "url": "https://sudame.net",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
