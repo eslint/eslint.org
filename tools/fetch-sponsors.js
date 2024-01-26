@@ -47,6 +47,24 @@ if (!ESLINT_GITHUB_TOKEN) {
 //-----------------------------------------------------------------------------
 
 /**
+ * Ensures a URL has a valid protocol.
+ * @param {string} url The string to check.
+ * @returns {string} The URL with a valid protocol.
+ */
+function fixUrl(url) {
+
+    if (!url) {
+        return null;
+    }
+
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+        return `https://${url}`;
+    }
+
+    return url;
+}
+
+/**
  * Returns the tier ID for a given donation amount.
  * @param {int} monthlyDonation The monthly donation in dollars.
  * @returns {string} The ID of the tier the donation belongs to.
@@ -141,7 +159,7 @@ async function fetchOpenCollectiveData() {
 
     const sponsors = payload.data.account.orders.nodes.map(order => ({
         name: order.fromAccount.name,
-        url: order.fromAccount.website,
+        url: fixUrl(order.fromAccount.website),
         image: order.fromAccount.imageUrl,
         monthlyDonation: order.frequency === "YEARLY" ? Math.round(order.amount.value / 12) : order.amount.value,
         totalDonations: order.totalDonations.value,
@@ -154,7 +172,7 @@ async function fetchOpenCollectiveData() {
         .map(transaction => ({
             id: transaction.id,
             name: transaction.fromAccount.name,
-            url: transaction.fromAccount.website,
+            url: fixUrl(transaction.fromAccount.website),
             image: transaction.fromAccount.imageUrl,
             amount: transaction.amount.value,
             date: transaction.updatedAt,
@@ -295,7 +313,7 @@ async function fetchGitHubSponsors() {
         .map(({ sponsor, tier }) => ({
             name: sponsor.name || sponsor.login,
             image: sponsor.avatarUrl,
-            url: sponsor.websiteUrl || sponsor.url,
+            url: fixUrl(sponsor.websiteUrl || sponsor.url),
             monthlyDonation: tier.monthlyPriceInDollars,
             source: "github",
             tier: getTierSlug(tier.monthlyPriceInDollars)
@@ -307,7 +325,7 @@ async function fetchGitHubSponsors() {
             id,
             name: sponsor.name || sponsor.login,
             image: sponsor.avatarUrl,
-            url: sponsor.websiteUrl || sponsor.url,
+            url: fixUrl(sponsor.websiteUrl || sponsor.url),
             amount: tier.monthlyPriceInDollars,
             date: timestamp,
             source: "github"
