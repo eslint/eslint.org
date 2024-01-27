@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136764,
-        "monthlyDonations": 11397,
-        "sponsorCount": 175
+        "annualDonations": 136344,
+        "monthlyDonations": 11362,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -195,14 +195,6 @@
             "tier": null
         },
         {
-            "name": "Efstathiadis Dimitris",
-            "image": "https://avatars.githubusercontent.com/u/48406873?u=caa64a50cc02b2df29afc7c51df593b1be283b48&v=4",
-            "url": "https://github.com/EfstathiadisD",
-            "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Tailscale",
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
@@ -235,6 +227,15 @@
             "totalDonations": 1500,
             "source": "opencollective",
             "tier": "backer"
+        },
+        {
+            "name": "WebdriverIO",
+            "url": "https://webdriver.io/",
+            "image": "https://images.opencollective.com/webdriverio/bbdd5c3/logo.png",
+            "monthlyDonation": 20,
+            "totalDonations": 20,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Agendrix",
@@ -623,15 +624,6 @@
             "image": "https://images.opencollective.com/meshpayments/e216d5a/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 150,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Toan Nguyen",
-            "url": null,
-            "image": "https://images.opencollective.com/toan-nguyen1/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 160,
             "source": "opencollective",
             "tier": "backer"
         },
