@@ -2,8 +2,8 @@
 
 const js = require("@eslint/js");
 const { FlatCompat } = require("@eslint/eslintrc");
+const eslintConfigESLintCJS = require("eslint-config-eslint/cjs");
 const globals = require("globals");
-const jsdoc = require("eslint-plugin-jsdoc");
 const reactPlugin = require("eslint-plugin-react");
 const reactRecommended = require("eslint-plugin-react/configs/recommended");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
@@ -22,14 +22,13 @@ module.exports = [
             "_site/**",
             "src/assets/js/**",
             "src/_data/**",
-            "src/_11ty/**"
+            "src/_11ty/**",
+            ".stylelintrc.js"
         ]
     },
+    ...eslintConfigESLintCJS,
     {
         files: ["**/*.js"],
-        plugins: {
-            jsdoc
-        },
         languageOptions: {
             globals: {
                 ...globals.node
@@ -41,25 +40,32 @@ module.exports = [
             // Disable eslint-plugin-node rules from eslint-config-eslint
             "no-process-exit": "off",
             "func-style": "off",
-            "node/no-deprecated-api": "off",
-            "node/no-extraneous-require": "off",
-            "node/no-missing-require": "off",
-            "node/no-unpublished-bin": "off",
-            "node/no-unpublished-require": "off",
-            "node/no-unsupported-features/es-builtins": "off",
-            "node/no-unsupported-features/es-syntax": "off",
-            "node/no-unsupported-features/node-builtins": "off",
-            "node/process-exit-as-throw": "off",
-            "node/shebang": "off",
-            "node/no-extraneous-import": "off",
-            "node/no-missing-import": "off",
-            "node/no-unpublished-import": "off",
+            "n/no-deprecated-api": "off",
+            "n/no-extraneous-require": "off",
+            "n/no-missing-require": "off",
+            "n/no-unpublished-bin": "off",
+            "n/no-unpublished-require": "off",
+            "n/no-unsupported-features/es-builtins": "off",
+            "n/no-unsupported-features/es-syntax": "off",
+            "n/no-unsupported-features/node-builtins": "off",
+            "n/process-exit-as-throw": "off",
+            "n/shebang": "off",
+            "n/no-extraneous-import": "off",
+            "n/no-missing-import": "off",
+            "n/no-unpublished-import": "off",
 
             // Disable rules that the codebase doesn't currently follow.
             "jsdoc/require-jsdoc": "off",
             "jsdoc/require-returns": "off",
             "jsdoc/require-param-description": "off",
             "jsdoc/require-param-type": "off"
+        }
+    },
+    {
+        files: ["tools/**/*.js"],
+        rules: {
+            "no-console": "off",
+            "n/no-process-exit": "off"
         }
     },
     {
@@ -80,6 +86,7 @@ module.exports = [
                     jsx: true
                 }
             },
+            sourceType: "module",
             globals: {
                 ...globals.browser,
                 ...globals.es2021

@@ -123,7 +123,7 @@ async function fetchGitHubNetworkStats() {
     const projectDependents = $("[href~='/eslint/eslint/network/dependents?dependent_type=REPOSITORY']").text();
 
     return {
-        projectDependents: Number(projectDependents.trim().replace(/[^\d]/g, ""))
+        projectDependents: Number(projectDependents.trim().replace(/[^\d]/gu, ""))
     };
 }
 
@@ -154,6 +154,7 @@ async function fetchGitHubNetworkStats() {
 
     if (stats.currentVersionIsPrerelease) {
         if (upcomingVersionPrereleaseType) {
+
             /*
              * prerelease -> prerelease
              * Increments prerelease number or updates prerelease type.
@@ -163,15 +164,17 @@ async function fetchGitHubNetworkStats() {
              */
             nextVersion = semver.inc(currentVersion, "prerelease", upcomingVersionPrereleaseType);
         } else {
-          /*
+
+            /*
            * prerelease -> major
            * Example:
            *     9.0.0-rc.1 -> 9.0.0
            */
-           nextVersion = semver.inc(currentVersion, "major");
+            nextVersion = semver.inc(currentVersion, "major");
         }
     } else {
         if (upcomingVersionPrereleaseType) {
+
             /*
              * regular -> prerelease
              * Example:
@@ -179,12 +182,13 @@ async function fetchGitHubNetworkStats() {
              */
             nextVersion = semver.inc(currentVersion, "premajor", upcomingVersionPrereleaseType);
         } else {
-          /*
+
+            /*
            * regular -> regular
            * Example:
            *     8.56.0 -> 8.57.0
            */
-           nextVersion = semver.inc(currentVersion, "minor");
+            nextVersion = semver.inc(currentVersion, "minor");
         }
     }
 

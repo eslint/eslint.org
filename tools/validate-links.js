@@ -1,3 +1,5 @@
+"use strict";
+
 const path = require("path");
 const TapRender = require("@munter/tap-render");
 const spot = require("tap-spot");
@@ -14,10 +16,9 @@ const skipPatterns = [
     "/docs"
 ];
 
-const skipFilter = (report) =>
-    Object.values(report).some((value) =>
-        skipPatterns.some((pattern) => String(value).includes(pattern))
-    );
+const skipFilter = report =>
+    Object.values(report).some(value =>
+        skipPatterns.some(pattern => String(value).includes(pattern)));
 
 (async () => {
     try {
@@ -30,7 +31,7 @@ const skipFilter = (report) =>
                 internalOnly: true,
                 pretty: true,
                 concurrency: 25,
-                skipFilter,
+                skipFilter
             },
             tapRenderInstance
         );

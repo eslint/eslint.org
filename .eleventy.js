@@ -50,9 +50,11 @@ module.exports = eleventyConfig => {
         throwOnUndefined: true
     });
 
-    /** ***************************************************************************************
+    /**
+     * ***************************************************************************************
      *  Filters
-     * ***************************************************************************************/
+     * **************************************************************************************
+     */
     eleventyConfig.addFilter("limitTo", (arr, limit) => arr.slice(0, limit));
 
     eleventyConfig.addFilter("jsonify", variable => JSON.stringify(variable));
@@ -133,9 +135,11 @@ module.exports = eleventyConfig => {
 
     eleventyConfig.addFilter("concat", (value1, value2) => value1.concat(value2));
 
-    /** ***************************************************************************************
+    /**
+     * ***************************************************************************************
      *  Plugins
-     * ***************************************************************************************/
+     * **************************************************************************************
+     */
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(readingTime);
     eleventyConfig.addPlugin(syntaxHighlight, {
@@ -163,9 +167,11 @@ module.exports = eleventyConfig => {
     eleventyConfig.addWatchTarget("./src/assets/");
     eleventyConfig.addWatchTarget("./src/content/pages/");
 
-    /** ***************************************************************************************
+    /**
+     * ***************************************************************************************
      *  File PassThroughs
-     * ***************************************************************************************/
+     * **************************************************************************************
+     */
 
     eleventyConfig.addPassthroughCopy({
         "./src/static": "/"
@@ -202,9 +208,11 @@ module.exports = eleventyConfig => {
     });
 
 
-    /** ***************************************************************************************
+    /**
+     * ***************************************************************************************
      *  Collections
-     * ***************************************************************************************/
+     * **************************************************************************************
+     */
 
     eleventyConfig.addCollection(
         "blogposts",
@@ -236,7 +244,7 @@ module.exports = eleventyConfig => {
             formats: ["webp", "jpeg"],
             urlPath: "/assets/images/",
             outputDir: "./_site/assets/images/",
-            filenameFormat: (id, source, width, format) => {
+            filenameFormat(id, source, width, format) {
                 const extension = path.extname(source);
                 const name = path.basename(source, extension);
 
@@ -257,7 +265,7 @@ module.exports = eleventyConfig => {
         const fullSrc = getSRC();
 
         // generate images
-        Image(fullSrc, options); // eslint-disable-line new-cap
+        Image(fullSrc, options); // eslint-disable-line new-cap -- Third-party code
 
         const imageAttributes = {
             alt,

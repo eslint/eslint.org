@@ -4,7 +4,7 @@
  * @author Nicholas C. Zakas
  */
 
-/* eslint camelcase: [error, { properties: never }] */
+/* eslint camelcase: [error, { properties: never }] -- API response */
 
 "use strict";
 
@@ -82,13 +82,14 @@ async function fetchUserProfile(username) {
     }
 
     const { data: profile } = await octokit.users.getByUsername({ username });
-    const { data: social } = await octokit.request('GET /users/{username}/social_accounts', { username });
+    const { data: social } = await octokit.request("GET /users/{username}/social_accounts", { username });
 
     const result = {
         username: profile.login,
         name: profile.name,
         title: "Guest Author",
-        website: profile.blog.match(/http(s)?:\/\//)
+        // eslint-disable-next-line no-nested-ternary -- add https if missing
+        website: profile.blog.match(/http(s)?:\/\//u)
             ? profile.blog
             : profile.blog ? `https://${profile.blog}` : profile.blog,
         avatar_url: profile.avatar_url,
@@ -133,8 +134,8 @@ async function fetchTeamMembers() {
     }
 
     // filter out TSC members and reviewers from committers list
-    team.committers = team.committers.filter(user => !team.tsc.find(tscmember => tscmember.username === user.username) &&
-        !team.reviewers.find(tscmember => tscmember.username === user.username));
+    team.committers = team.committers.filter(user => !team.tsc.some(tscmember => tscmember.username === user.username) &&
+        !team.reviewers.some(tscmember => tscmember.username === user.username));
 
     // add appropriate titles
     for (const [teamName, members] of Object.entries(team)) {

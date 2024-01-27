@@ -9,7 +9,7 @@
  * @author Nicholas C. Zakas
  */
 
-/* eslint camelcase: [error, { properties: never }] */
+/* eslint camelcase: [error, { properties: never }] -- API response */
 
 "use strict";
 
@@ -149,7 +149,7 @@ async function fetchOpenCollectiveData() {
         body: JSON.stringify({ query })
     });
 
-    let payload = await result.json();
+    const payload = await result.json();
 
     if (process.env.DEBUG) {
         await fs.writeFile("./debug-opencollective-raw-response.json", JSON.stringify(payload, null, 4), { encoding: "utf8" });
@@ -329,11 +329,12 @@ async function fetchGitHubSponsors() {
             source: "github"
         }))
         .filter(donation => {
+
             // invoiced recurring donations are incorrectly marked as one-time
-            const sponsor = sponsors.find(sponsor => sponsor.name === donation.name);
+            const foundSponsor = sponsors.find(sponsor => sponsor.name === donation.name);
 
             // only include if the amount is different than the monthly amount
-            return sponsor ? sponsor.monthlyDonation !== donation.amount : true;
+            return foundSponsor ? foundSponsor.monthlyDonation !== donation.amount : true;
         });
 
     // TODO: Double check that donations don't include recurring
@@ -359,7 +360,7 @@ async function fetchGitHubSponsors() {
         {
             sponsors: githubSponsors,
             donations: githubDonations
-        },
+        }
     ] = await Promise.all([
         fetchOpenCollectiveData(),
         fetchGitHubSponsors()
