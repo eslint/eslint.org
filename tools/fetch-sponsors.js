@@ -283,7 +283,7 @@ async function fetchGitHubSponsors() {
     }
 
     let pageInfo = sponsorshipsResponse.organization.sponsorshipsAsMaintainer.pageInfo;
-    let sponsorships = sponsorshipsResponse.organization.sponsorshipsAsMaintainer.nodes;
+    const sponsorships = sponsorshipsResponse.organization.sponsorshipsAsMaintainer.nodes;
     let pageNumber = 1;
 
     while (pageInfo.hasNextPage) {
