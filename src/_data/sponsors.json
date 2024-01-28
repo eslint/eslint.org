@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 136344,
-        "monthlyDonations": 11362,
+        "annualDonations": 136296,
+        "monthlyDonations": 11358,
         "sponsorCount": 174
     },
     "platinum": [
@@ -1061,14 +1061,6 @@
             "tier": "backer"
         },
         {
-            "name": "Ingo Steinke",
-            "image": "https://avatars.githubusercontent.com/u/6377941?u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
-            "url": "https://www.ingo-steinke.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
             "url": "https://mattiaerre.medium.com/",
@@ -1190,7 +1182,7 @@
         },
         {
             "name": "Erez Asmara",
-            "image": "https://avatars.githubusercontent.com/u/33747218?u=4887d20b7ceaca69e2daa41bd7dbd3fc8b90aae4&v=4",
+            "image": "https://avatars.githubusercontent.com/u/33747218?u=4a4b578304abdd05b64a8c015e409ada8beb81f9&v=4",
             "url": "https://github.com/erezasmara",
             "monthlyDonation": 5,
             "source": "github",
@@ -1391,6 +1383,14 @@
             "name": "BooTheKat",
             "image": "https://avatars.githubusercontent.com/u/2340896?u=9f1d29a0fba2c0d6781e7552398d28422029aea2&v=4",
             "url": "https://elliottchenstudio.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ingo Steinke",
+            "image": "https://avatars.githubusercontent.com/u/6377941?u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
+            "url": "https://www.ingo-steinke.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
