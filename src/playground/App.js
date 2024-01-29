@@ -164,7 +164,7 @@ const App = () => {
         <div className="playground-wrapper">
             <div className="playground__config-and-footer">
                 <section className="playground__config" aria-labelledby="playground__config-toggle">
-                    <button className="playground__config-toggle" id="playground__config-toggle" onClick={ () => {
+                    <button className="playground__config-toggle" id="playground__config-toggle" onClick={() => {
                         setShowConfigMenu(value => !value);
                     }}
                     aria-expanded={showConfigMenu}
@@ -178,7 +178,7 @@ const App = () => {
                         </svg>
                     </button>
                     <span className="visually-hidden" id="infobox">Changing configurations will apply the selected changes to the playground.</span>
-                    <div className="playground__config-options" id="playground__config-options" data-open={isConfigHidden ? true : showConfigMenu }>
+                    <div className="playground__config-options" id="playground__config-options" data-open={isConfigHidden ? true : showConfigMenu}>
                         <Configuration
                             ruleNames={ruleNames}
                             options={options}

@@ -246,6 +246,16 @@
     font-size: .875rem;
 }
 
+.rules-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:has(> :nth-child(1):last-child) {
+        justify-content: flex-end;
+    }
+}
+
 .add-rule-btn {
     color: var(--link-color);
     margin: 1rem 0;

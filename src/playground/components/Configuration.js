@@ -1,6 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Select, { components } from "react-select";
-import RuleList from "./RuleList";
 import ShareURL from "./ShareURL";
 import { ECMA_FEATURES, ECMA_VERSIONS, SOURCE_TYPES, ENV_NAMES } from "../utils/constants";
 
@@ -108,16 +107,26 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
     const [selectedRules, setSelectedRules] = useState([]);
     const ruleInputRef = useRef(null);
     const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(new Set([]));
+    const firstRuleRef = useRef();
+
+    useEffect(() => {
+        firstRuleRef.current?.focus();
+    }, [options.rules]);
+
 
     const handleRuleChange = () => {
+        const rules = { ...options.rules };
+
         selectedRules.forEach(selectedRule => {
             if (ruleNames.includes(selectedRule)) {
-                options.rules[selectedRule] = ["error"];
+                rules[selectedRule] = ["error"];
+                options.rules = rules;
                 onUpdate(Object.assign({}, options));
                 ruleInputRef.current.setValue("");
             }
         });
     };
+
 
     const Input = props => {
         if (props.isHidden) {
@@ -132,6 +141,26 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
             }} />
         );
     };
+
+    const allRulesSelected = Object.keys(options.rules).length === ruleNames.length;
+
+
+    const selectAll = () => {
+        if (allRulesSelected) {
+            options.rules = {};
+            setSelectedRules([]);
+        } else {
+            const rules = {};
+
+            ruleNames.forEach(ruleName => {
+                rules[ruleName] = ["error"];
+                options.rules = rules;
+                ruleInputRef.current.setValue("");
+            });
+        }
+        onUpdate(Object.assign({}, options));
+    };
+
 
     return (
         <div className="playground__config-options__sections">
@@ -228,35 +257,49 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     <h2 data-config-section-title>Rules</h2>
                     <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showRules ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
                 </button>
-                {showRules && <div data-config-section>
-                    <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
-                    <Select
-                        isMulti
-                        components={{ Input }}
-                        isClearable
-                        isSearchable
-                        styles={customStyles}
-                        theme={theme => customTheme(theme)}
-                        ref={ruleInputRef}
-                        onChange={selected => {
-                            if (!selected) {
-                                setSelectedRules([]);
-                            } else {
-                                setSelectedRules(selected.map(values => values.value));
-                            }
-                        }}
-                        options={ruleNamesOptions}
-                    />
-                    <button
-                        className="c-btn c-btn--ghost add-rule-btn"
-                        onClick={() => {
-                            handleRuleChange();
-                        }}
-                    >
-                        {selectedRules.length > 1 ? "Add these Rules" : "Add this Rule"}
-                    </button>
-                    <RuleList>
-                        {options.rules && Object.keys(options.rules).sort().map(ruleName => (
+                {showRules && (<div data-config-section>
+                    {!allRulesSelected && (
+                        <>
+                            <label htmlFor="rules" className="combo-label"><span className="label__text">Choose a rule</span></label>
+                            <Select
+                                isMulti
+                                components={{ Input }}
+                                isClearable
+                                isSearchable
+                                styles={customStyles}
+                                theme={theme => customTheme(theme)}
+                                ref={ruleInputRef}
+                                onChange={selected => {
+                                    if (!selected) {
+                                        setSelectedRules([]);
+                                    } else {
+                                        setSelectedRules(selected.map(values => values.value));
+                                    }
+                                }}
+                                options={ruleNamesOptions}
+                            />
+                        </>
+                    )}
+                    <div className="rules-actions">
+                        {!allRulesSelected && (
+                            <button
+                                className="c-btn c-btn--ghost add-rule-btn"
+                                onClick={() => {
+                                    handleRuleChange();
+                                }}
+                            >
+                                {selectedRules.length > 1 ? "Add these Rules" : "Add this Rule"}
+                            </button>
+                        )}
+                        <button
+                            className="c-btn c-btn--ghost add-rule-btn"
+                            onClick={selectAll}
+                        >
+                            {allRulesSelected ? "Disable all rules" : "Enable all rules"}
+                        </button>
+                    </div>
+                    <ul className="config__added-rules" aria-labelledby="added-rules-label">
+                        {options.rules && Object.keys(options.rules).sort().map((ruleName, index) => (
                             <li className="config__added-rules__item" key={ruleName}>
                                 <h4 className="config__added-rules__rule-name">
                                     <a href={rulesMeta[ruleName].docs.url}>
@@ -277,6 +320,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                     </button>
                                 </h4>
                                 <input
+                                    {...(index === 0 ? { ref: firstRuleRef } : {})}
                                     id={ruleName}
                                     className={rulesWithInvalidConfigs.has(ruleName) || validationError?.message.includes(`"${ruleName}"`) ? "config__added-rules__rule-input-error" : ""}
                                     style={{ width: "100%" }}
@@ -297,9 +341,9 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                 )}
                             </li>
                         ))}
-                    </RuleList>
+                    </ul>
                 </div>
-                }
+                )}
             </div>
             {/* TODO: Add Plugins */}
             {/* <div className="playground__config-options__section">
