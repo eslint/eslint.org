@@ -57,8 +57,12 @@ async function fetchStatsFromGitHubAPI() {
         }
     });
 
-    const [currentRelease] = repository.releases.nodes;
-    const latestRelease = repository.releases.nodes.find(({ isPrerelease }) => !isPrerelease);
+    const releases = repository.releases.nodes.toSorted(
+        (first, second) => semver.rcompare(first.tagName, second.tagName)
+    );
+
+    const [currentRelease] = releases;
+    const latestRelease = releases.find(({ isPrerelease }) => !isPrerelease);
 
     return {
         latestVersion: latestRelease.tagName,
