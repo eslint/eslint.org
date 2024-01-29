@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136296,
-        "monthlyDonations": 11358,
-        "sponsorCount": 174
+        "annualDonations": 136428,
+        "monthlyDonations": 11369,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -430,6 +430,14 @@
             "name": "Kamal",
             "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
             "url": "https://github.com/Kamalnrf",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "kagan",
+            "image": "https://avatars.githubusercontent.com/u/34136752?u=4d75e5b7a3bd567567c340b60cd68e5b0612dfd1&v=4",
+            "url": "https://github.com/kagankan",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1359,6 +1367,14 @@
             "name": "Benjamin Reed",
             "image": "https://avatars.githubusercontent.com/u/89252?v=4",
             "url": "http://raccoonfink.bandcamp.com/",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "yaakaito",
+            "image": "https://avatars.githubusercontent.com/u/283562?u=f663d61ba0a16914f6c4b1d6642b5424fbcf7d3e&v=4",
+            "url": "https://yaakai.to",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
