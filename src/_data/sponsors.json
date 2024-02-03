@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 135648,
-        "monthlyDonations": 11304,
+        "annualDonations": 136188,
+        "monthlyDonations": 11349,
         "sponsorCount": 174
     },
     "platinum": [
@@ -50,7 +50,7 @@
             "url": "https://www.jetbrains.com/",
             "image": "https://images.opencollective.com/jetbrains/eb04ddc/logo.png",
             "monthlyDonation": 500,
-            "totalDonations": 500,
+            "totalDonations": 1000,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
@@ -164,7 +164,7 @@
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 350,
-            "totalDonations": 16814,
+            "totalDonations": 17164,
             "source": "opencollective",
             "tier": null
         },
@@ -184,6 +184,15 @@
             "monthlyDonation": 100,
             "source": "github",
             "tier": "backer"
+        },
+        {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 50,
+            "totalDonations": 2150,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Tailscale",
@@ -469,7 +478,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 65,
+            "totalDonations": 70,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -478,7 +487,7 @@
             "url": "https://www.lightcdn.com",
             "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -487,7 +496,7 @@
             "url": "https://www.lightnode.com",
             "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -648,15 +657,6 @@
             "name": "Nathan Friedly",
             "url": "http://www.nfriedly.com",
             "image": "https://images.opencollective.com/nfriedly/c7be1d5/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 205,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Say Yup",
-            "url": "https://www.sayyup.nl",
-            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 205,
             "source": "opencollective",
@@ -1254,7 +1254,7 @@
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
-            "totalDonations": 15,
+            "totalDonations": 18,
             "source": "opencollective",
             "tier": null
         },
