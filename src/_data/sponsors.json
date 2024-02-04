@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136188,
-        "monthlyDonations": 11349,
-        "sponsorCount": 174
+        "annualDonations": 136176,
+        "monthlyDonations": 11348,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -505,7 +505,7 @@
             "url": "https://gamblecritic.net",
             "image": "https://images.opencollective.com/gamblecritic/4668ddb/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 45,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1335,14 +1335,6 @@
             "totalDonations": 30,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Mr. Henry",
-            "image": "https://avatars.githubusercontent.com/u/45111?v=4",
-            "url": "https://mrhenry.be",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "Benjamin Reed",
