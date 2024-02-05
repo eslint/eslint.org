@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136176,
-        "monthlyDonations": 11348,
-        "sponsorCount": 173
+        "annualDonations": 136296,
+        "monthlyDonations": 11358,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -465,6 +465,15 @@
             "tier": "backer"
         },
         {
+            "name": "Organic Social Boost",
+            "url": "https://organicsocialboost.com/",
+            "image": "https://images.opencollective.com/organic-social-boosting/856d920/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Celebian",
             "url": "https://celebian.com/",
             "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
@@ -659,6 +668,15 @@
             "image": "https://images.opencollective.com/nfriedly/c7be1d5/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 205,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Say Yup",
+            "url": "https://www.sayyup.nl",
+            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 210,
             "source": "opencollective",
             "tier": "backer"
         },
