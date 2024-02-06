@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136296,
-        "monthlyDonations": 11358,
-        "sponsorCount": 175
+        "annualDonations": 136176,
+        "monthlyDonations": 11348,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -465,15 +465,6 @@
             "tier": "backer"
         },
         {
-            "name": "Organic Social Boost",
-            "url": "https://organicsocialboost.com/",
-            "image": "https://images.opencollective.com/organic-social-boosting/856d920/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Celebian",
             "url": "https://celebian.com/",
             "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
@@ -506,15 +497,6 @@
             "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 15,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Gamble Critic",
-            "url": "https://gamblecritic.net",
-            "image": "https://images.opencollective.com/gamblecritic/4668ddb/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
