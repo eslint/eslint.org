@@ -158,7 +158,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         onUpdate(Object.assign({}, options));
     };
 
-    const configFileContent = `${configFileFormat === "esm" ? "export default" : "module.exports ="} ${JSON.stringify([options], null, 4)};`;
+    const configFileContent = `${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([options], null, 4)};`;
 
     return (
         <div className="playground__config-options__sections">
