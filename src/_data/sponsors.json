@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136176,
-        "monthlyDonations": 11348,
-        "sponsorCount": 173
+        "annualDonations": 136188,
+        "monthlyDonations": 11349,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -1317,6 +1317,15 @@
             "monthlyDonation": 2,
             "source": "github",
             "tier": "backer"
+        },
+        {
+            "name": "Theme Divi",
+            "url": "https://wptheme.fr/theme-wordpress-divi/",
+            "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
+            "monthlyDonation": 1,
+            "totalDonations": 1,
+            "source": "opencollective",
+            "tier": null
         },
         {
             "name": "Till Sanders",
