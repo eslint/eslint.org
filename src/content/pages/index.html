@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
 
 {%- from 'components/donation.macro.html' import donationItem %}
 {%- from 'components/card.macro.html' import card %}
-{%- from 'components/carbon-ad.macro.html' import carbonAd %}
+{%- from 'components/ad.macro.html' import ad %}
 
 <section class="section hero hero--homepage">
     <div class="content-container grid">
@@ -65,7 +65,7 @@ eleventyExcludeFromCollections: true
         </div>
         <div class="span-10-12 eslint-versions-col">
             <div class="carbon-wrapper">
-                {{ carbonAd({
+                {{ ad({
                 carbonAd: site.carbon_ads.serve,
                 placement: site.carbon_ads.placement
                 }) }}

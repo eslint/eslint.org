@@ -12,7 +12,7 @@
         carbonAd
         placement
 -->
-{%- from 'components/carbon-ad.macro.html' import carbonAd %}
+{%- from 'components/ad.macro.html' import ad %}
 
 {%- macro hero(params) -%}
 <div class="section hero">
@@ -38,7 +38,7 @@
             {% endif %}
         </div>
         <div class="span-10-12 hero-ad">
-            {{ carbonAd({
+            {{ ad({
                 carbonAd: params.carbonAd,
                 placement: params.placement
             }) }}
