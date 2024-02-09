@@ -9,7 +9,10 @@ layout: base.html
 
     {{ hero({
         title: site.blog_page.title,
-        supporting_text: site.blog_page.description
+        supporting_text: site.blog_page.description,
+        carbonAd: site.carbon_ads.serve,
+        placement: site.carbon_ads.placement
+
     }) }}
 
     <div class="content-container grid">

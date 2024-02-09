@@ -1,0 +1,20 @@
+<!--
+    Parameters:
+        carbobAd
+        placement
+-->
+
+{%- macro carbonAd(params) -%}
+    {% if params.carbonAd %}
+    <script id="eslint-sponsor">
+        if (window.innerWidth > 800) {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//cdn.carbonads.com/carbon.js?serve={{ params.carbonAd }}&placement={{ params.placement}}";
+            s.id = "_carbonads_js";
+            document.getElementById("eslint-sponsor").after(s);
+            document.getElementById("eslint-sponsor").remove();
+        }
+    </script>
+    {% endif %}
+{%- endmacro -%}

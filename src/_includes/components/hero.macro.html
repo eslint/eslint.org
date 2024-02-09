@@ -9,7 +9,10 @@
             secondary
                 secondaryText
                 secondaryURL
+        carbonAd
+        placement
 -->
+{%- from 'components/carbon-ad.macro.html' import carbonAd %}
 
 {%- macro hero(params) -%}
 <div class="section hero">
@@ -35,7 +38,10 @@
             {% endif %}
         </div>
         <div class="span-10-12 hero-ad">
-            {% include "partials/carbon-ad.html" %}
+            {{ carbonAd({
+                carbonAd: params.carbonAd,
+                placement: params.placement
+            }) }}
         </div>
     </div>
 </div>
