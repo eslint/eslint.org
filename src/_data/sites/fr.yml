@@ -34,8 +34,8 @@ google_analytics:
 #------------------------------------------------------------------------------
 
 carbon_ads:
-  serve: "CEAIV2JM"
-  placement: "freslintorg"
+  serve: ""
+  placement: ""
 
 ethical_ads: true
 
