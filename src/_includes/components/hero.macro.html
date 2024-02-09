@@ -11,6 +11,7 @@
                 secondaryURL
         carbonAd
         placement
+        ethicalAds
 -->
 {%- from 'components/ad.macro.html' import ad %}
 
@@ -40,7 +41,8 @@
         <div class="span-10-12 hero-ad">
             {{ ad({
                 carbonAd: params.carbonAd,
-                placement: params.placement
+                placement: params.placement,
+                ethicalAds: params.ethicalAds
             }) }}
         </div>
     </div>
