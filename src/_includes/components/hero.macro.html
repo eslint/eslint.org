@@ -9,9 +9,20 @@
             secondary
                 secondaryText
                 secondaryURL
+        ad
+            carbonAds
+            placement
+            ethicalAds
 -->
 
 {%- macro hero(params) -%}
+{% set site = {
+    "carbon_ads": {
+        "serve": params.ad.carbonAds,
+        "placement": params.ad.placement
+    },
+    "ethical_ads": params.ad.ethicalAds
+} %}
 <div class="section hero">
     <div class="content-container grid">
         <div class="span-1-7 content-container">

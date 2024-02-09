@@ -12,7 +12,12 @@ hook: "branding_page"
 
 {{ hero({
     title: site.branding_page.title,
-    supporting_text: site.branding_page.description
+    supporting_text: site.branding_page.description,
+    ad: {
+        carbonAds: site.carbon_ads.serve,
+        placement: site.carbon_ads.placement,
+        ethicalAds: site.ethical_ads
+    }
 }) }}
 
 <section class="section">

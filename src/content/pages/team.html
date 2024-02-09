@@ -11,7 +11,12 @@ hook: "team_page"
 
 {{ hero({
     title: site.team_page.title,
-    supporting_text: site.team_page.description
+    supporting_text: site.team_page.description,
+    ad: {
+        carbonAds: site.carbon_ads.serve,
+        placement: site.carbon_ads.placement,
+        ethicalAds: site.ethical_ads
+    }
 }) }}
 
 {% if team.tsc.length > 0 %}
@@ -178,7 +183,7 @@ hook: "team_page"
     </section>
 {% endif %}
 
-{% if team.support.length > 0 %}  
+{% if team.support.length > 0 %}
     <section class="section">
         <div class="content-container grid">
             <div class="span-1-4">

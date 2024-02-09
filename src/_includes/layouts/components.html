@@ -9,7 +9,12 @@ hook: "component_library"
 
 {{ hero({
         title: "ESLint Components",
-        supporting_text: "Components used across this site."
+        supporting_text: "Components used across this site.",
+        ad: {
+            carbonAds: site.carbon_ads.serve,
+            placement: site.carbon_ads.placement,
+            ethicalAds: site.ethical_ads
+        }
     })
 }}
 

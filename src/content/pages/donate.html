@@ -40,6 +40,11 @@ hook: "donate_page"
             primaryText: site.donate_page.hero.cta.text,
             primaryURL: site.donate_page.hero.cta.url
         }
+    },
+    ad: {
+        carbonAds: site.carbon_ads.serve,
+        placement: site.carbon_ads.placement,
+        ethicalAds: site.ethical_ads
     }
 }) }}
 
@@ -189,7 +194,7 @@ hook: "donate_page"
                         </a>
                     </div>
                 </li>
-            {%- endfor -%}        
+            {%- endfor -%}
         </ol>
     </div>
 </section>

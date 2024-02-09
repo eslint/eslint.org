@@ -10,7 +10,12 @@ hook: "languages_page"
 
 {{ hero({
     title: site.languages_page.title,
-    supporting_text: site.languages_page.choose_language
+    supporting_text: site.languages_page.choose_language,
+    ad: {
+        carbonAds: site.carbon_ads.serve,
+        placement: site.carbon_ads.placement,
+        ethicalAds: site.ethical_ads
+    }
 }) }}
 
 <section class="languages-section section">
