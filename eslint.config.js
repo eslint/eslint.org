@@ -58,7 +58,10 @@ module.exports = [
             "jsdoc/require-jsdoc": "off",
             "jsdoc/require-returns": "off",
             "jsdoc/require-param-description": "off",
-            "jsdoc/require-param-type": "off"
+            "jsdoc/require-param-type": "off",
+            "jsdoc/no-bad-blocks": ["error", {
+                ignore: ["__PURE__"]
+            }]
         }
     },
     {

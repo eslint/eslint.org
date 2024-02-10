@@ -1,4 +1,4 @@
-/* eslint-disable no-use-before-define, no-param-reassign, jsdoc/check-tag-names, eslint-comments/disable-enable-pair, eslint-comments/require-description -- Code follows 3rd party styles */
+/* eslint-disable no-use-before-define, no-param-reassign, eslint-comments/disable-enable-pair, eslint-comments/require-description -- Code follows 3rd party styles */
 /**
  * This file is inspired from @codemirror/lint package https://github.com/codemirror/lint
  * We added custom styles and tooltips content as per our theme and design
@@ -92,11 +92,11 @@ function setDiagnostics(state, diagnostics) {
  * The state effect that updates the set of active diagnostics. Can
  * be useful when writing an extension that needs to track these.
  */
-const setDiagnosticsEffect = /** @__PURE__*/StateEffect.define();
-const togglePanel = /** @__PURE__*/StateEffect.define();
-const movePanelSelection = /** @__PURE__*/StateEffect.define();
+const setDiagnosticsEffect = /* @__PURE__*/StateEffect.define();
+const togglePanel = /* @__PURE__*/StateEffect.define();
+const movePanelSelection = /* @__PURE__*/StateEffect.define();
 
-const lintState = /** @__PURE__*/StateField.define({
+const lintState = /* @__PURE__*/StateField.define({
     create() {
         return new LintState(Decoration.none, null, null);
     },
@@ -127,7 +127,7 @@ const lintState = /** @__PURE__*/StateField.define({
         EditorView.decorations.from(f, s => s.diagnostics)]
 });
 
-const activeMark = /** @__PURE__*/Decoration.mark({ class: "cm-lintRange cm-lintRange-active" });
+const activeMark = /* @__PURE__*/Decoration.mark({ class: "cm-lintRange cm-lintRange-active" });
 
 function lintTooltip(view, pos, side) {
     const { diagnostics } = view.state.field(lintState);
@@ -173,7 +173,7 @@ const closeLintPanel = view => {
     return true;
 };
 
-const lintPlugin = /** @__PURE__*/ViewPlugin.fromClass(class {
+const lintPlugin = /* @__PURE__*/ViewPlugin.fromClass(class {
     constructor(view) {
         this.view = view;
         this.timeout = -1;
@@ -227,7 +227,7 @@ const lintPlugin = /** @__PURE__*/ViewPlugin.fromClass(class {
     }
 });
 
-const lintSource = /** @__PURE__*/Facet.define({
+const lintSource = /* @__PURE__*/Facet.define({
     combine(input) {
         return { sources: input.map(i => i.source), delay: input.length ? Math.max(...input.map(i => i.delay)) : 750 };
     },
@@ -503,15 +503,15 @@ function svg(content, attrs = "viewBox=\"0 0 40 40\"") {
 function underline(color) {
     return svg(`<path d="m0 2.5 l2 -1.5 l1 0 l2 1.5 l1 0" stroke="${color}" fill="none" stroke-width=".7"/>`, "width=\"6\" height=\"3\"");
 }
-const baseTheme = /** @__PURE__*/EditorView.baseTheme({
+const baseTheme = /* @__PURE__*/EditorView.baseTheme({
     ".cm-lintRange": {
         backgroundPosition: "left bottom",
         backgroundRepeat: "repeat-x",
         paddingBottom: "0.7px"
     },
-    ".cm-lintRange-error": { backgroundImage: /** @__PURE__*/underline("#d11") },
-    ".cm-lintRange-warning": { backgroundImage: /** @__PURE__*/underline("orange") },
-    ".cm-lintRange-info": { backgroundImage: /** @__PURE__*/underline("#999") },
+    ".cm-lintRange-error": { backgroundImage: /* @__PURE__*/underline("#d11") },
+    ".cm-lintRange-warning": { backgroundImage: /* @__PURE__*/underline("orange") },
+    ".cm-lintRange-info": { backgroundImage: /* @__PURE__*/underline("#999") },
     ".cm-lintRange-active": { backgroundColor: "#ffdd9980" },
     ".cm-lintPoint": {
         position: "relative",
