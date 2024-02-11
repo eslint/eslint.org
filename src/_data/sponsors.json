@@ -465,6 +465,15 @@
             "tier": "backer"
         },
         {
+            "name": "Leonardo Rodrigues Ferreira",
+            "url": null,
+            "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 110,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Celebian",
             "url": "https://celebian.com/",
             "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
@@ -569,15 +578,6 @@
             "image": "https://images.opencollective.com/metatierlist/68a5b41/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 95,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Leonardo Rodrigues Ferreira",
-            "url": null,
-            "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 105,
             "source": "opencollective",
             "tier": "backer"
         },
