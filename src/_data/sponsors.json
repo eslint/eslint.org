@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136176,
-        "monthlyDonations": 11348,
-        "sponsorCount": 173
+        "annualDonations": 136116,
+        "monthlyDonations": 11343,
+        "sponsorCount": 172
     },
     "platinum": [
         {
@@ -1165,14 +1165,6 @@
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Erez Asmara",
-            "image": "https://avatars.githubusercontent.com/u/33747218?u=4a4b578304abdd05b64a8c015e409ada8beb81f9&v=4",
-            "url": "https://github.com/erezasmara",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
