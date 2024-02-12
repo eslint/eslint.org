@@ -2,7 +2,7 @@
 layout: base.html
 ---
 {% include "partials/header.html" %}
-{%- from 'components/hero.macro.html' import hero %}
+{%- from 'components/hero.macro.html' import hero with context %}
 
 <main id="main" tabindex="-1">
     {{ hero({
