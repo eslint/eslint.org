@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136116,
-        "monthlyDonations": 11343,
-        "sponsorCount": 172
+        "annualDonations": 136056,
+        "monthlyDonations": 11338,
+        "sponsorCount": 171
     },
     "platinum": [
         {
@@ -1181,14 +1181,6 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Parsify Technologies",
-            "image": "https://avatars.githubusercontent.com/u/60750495?v=4",
-            "url": "https://www.parsify.eu",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
