@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 <main id="main"  class="post-main" tabindex="-1">
-{%- from 'components/hero.macro.html' import hero %}
+{%- from 'components/hero.macro.html' import hero with context %}
     {% set hero_title = title %}
     {% set hero_supporting_text = teaser %}
     {% set hero_date = page.date | readableDate %}

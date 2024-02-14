@@ -6,7 +6,7 @@ hook: "team_page"
 ---
 
 {%- from 'components/profile.macro.html' import member, contributor %}
-{%- from 'components/hero.macro.html' import hero %}
+{%- from 'components/hero.macro.html' import hero with context %}
 
 
 {{ hero({
@@ -178,7 +178,7 @@ hook: "team_page"
     </section>
 {% endif %}
 
-{% if team.support.length > 0 %}  
+{% if team.support.length > 0 %}
     <section class="section">
         <div class="content-container grid">
             <div class="span-1-4">

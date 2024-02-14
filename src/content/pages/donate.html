@@ -26,7 +26,7 @@ hook: "donate_page"
 </svg>
 
 
-{%- from 'components/hero.macro.html' import hero %}
+{%- from 'components/hero.macro.html' import hero with context %}
 
 {% set supporting_text = site.donate_page.description %}
 {% set monthly_donations = sponsors.totals.monthlyDonations | dollars %}
@@ -189,7 +189,7 @@ hook: "donate_page"
                         </a>
                     </div>
                 </li>
-            {%- endfor -%}        
+            {%- endfor -%}
         </ol>
     </div>
 </section>
