@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136056,
-        "monthlyDonations": 11338,
-        "sponsorCount": 171
+        "annualDonations": 136128,
+        "monthlyDonations": 11344,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -462,6 +462,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Artur Kulig",
+            "url": "https://arturkulig.pl",
+            "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1365,6 +1374,14 @@
             "name": "BooTheKat",
             "image": "https://avatars.githubusercontent.com/u/2340896?u=9f1d29a0fba2c0d6781e7552398d28422029aea2&v=4",
             "url": "https://elliottchenstudio.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ethan Glover",
+            "image": "https://avatars.githubusercontent.com/u/3924176?u=bc9bb871ceeaf5f7fa0d543da22aae98ef3bf281&v=4",
+            "url": "https://www.ethang.dev/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
