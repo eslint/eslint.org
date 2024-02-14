@@ -20,9 +20,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 const yaml = require("js-yaml");
-const {
-    DateTime
-} = require("luxon");
+const { DateTime } = require("luxon");
 
 //-----------------------------------------------------------------------------
 // Eleventy Config

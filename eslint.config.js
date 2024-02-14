@@ -18,12 +18,10 @@ const [jsxA11yRecommended] = compat.extends("plugin:jsx-a11y/recommended");
 module.exports = [
     {
         ignores: [
-            "node_modules/**",
             "_site/**",
             "src/assets/js/**",
             "src/_data/**",
-            "src/_11ty/**",
-            ".stylelintrc.js"
+            "src/_11ty/**"
         ]
     },
     ...eslintConfigESLintCJS,
@@ -37,23 +35,6 @@ module.exports = [
         rules: {
             ...js.configs.recommended.rules,
 
-            // Disable eslint-plugin-node rules from eslint-config-eslint
-            "no-process-exit": "off",
-            "func-style": "off",
-            "n/no-deprecated-api": "off",
-            "n/no-extraneous-require": "off",
-            "n/no-missing-require": "off",
-            "n/no-unpublished-bin": "off",
-            "n/no-unpublished-require": "off",
-            "n/no-unsupported-features/es-builtins": "off",
-            "n/no-unsupported-features/es-syntax": "off",
-            "n/no-unsupported-features/node-builtins": "off",
-            "n/process-exit-as-throw": "off",
-            "n/shebang": "off",
-            "n/no-extraneous-import": "off",
-            "n/no-missing-import": "off",
-            "n/no-unpublished-import": "off",
-
             // Disable rules that the codebase doesn't currently follow.
             "jsdoc/require-jsdoc": "off",
             "jsdoc/require-returns": "off",
@@ -61,6 +42,9 @@ module.exports = [
             "jsdoc/require-param-type": "off",
             "jsdoc/no-bad-blocks": ["error", {
                 ignore: ["__PURE__"]
+            }],
+            "n/no-extraneous-require": ["error", {
+                allowModules: ["luxon"]
             }]
         }
     },
@@ -107,7 +91,24 @@ module.exports = [
             "react/prop-types": "off",
             "jsdoc/require-jsdoc": "off",
             "react-hooks/rules-of-hooks": "error",
-            "react-hooks/exhaustive-deps": "warn"
+            "react-hooks/exhaustive-deps": "warn",
+
+            // Disable eslint-plugin-node rules from eslint-config-eslint
+            "no-process-exit": "off",
+            "func-style": "off",
+            "n/no-deprecated-api": "off",
+            "n/no-extraneous-require": "off",
+            "n/no-missing-require": "off",
+            "n/no-unpublished-bin": "off",
+            "n/no-unpublished-require": "off",
+            "n/no-unsupported-features/es-builtins": "off",
+            "n/no-unsupported-features/es-syntax": "off",
+            "n/no-unsupported-features/node-builtins": "off",
+            "n/process-exit-as-throw": "off",
+            "n/shebang": "off",
+            "n/no-extraneous-import": "off",
+            "n/no-missing-import": "off",
+            "n/no-unpublished-import": "off"
         }
     }
 ];

@@ -16,9 +16,11 @@ const skipPatterns = [
     "/docs"
 ];
 
-const skipFilter = report =>
-    Object.values(report).some(value =>
-        skipPatterns.some(pattern => String(value).includes(pattern)));
+function skipFilter(report) {
+    return Object.values(report).some(
+        value => skipPatterns.some(pattern => String(value).includes(pattern))
+    );
+}
 
 (async () => {
     try {

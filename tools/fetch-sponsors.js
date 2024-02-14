@@ -190,41 +190,43 @@ async function fetchOpenCollectiveData() {
  */
 async function fetchGitHubSponsors() {
 
-    const sponsorshipsQuery = (cursor = null) => (`
-        query {
-            organization(login: "eslint") {
-                sponsorshipsAsMaintainer (first: 100, includePrivate: false, after: "${cursor}") {
-                    nodes {
-                        sponsor: sponsorEntity {
-                            ...on User {
-                                name,
-                                login,
-                                avatarUrl,
-                                url,
-                                websiteUrl
+    function sponsorshipsQuery(cursor = null) {
+        return `
+            query {
+                organization(login: "eslint") {
+                    sponsorshipsAsMaintainer (first: 100, includePrivate: false, after: "${cursor}") {
+                        nodes {
+                            sponsor: sponsorEntity {
+                                ...on User {
+                                    name,
+                                    login,
+                                    avatarUrl,
+                                    url,
+                                    websiteUrl
+                                }
+                                ...on Organization {
+                                    name,
+                                    login,
+                                    avatarUrl,
+                                    url,
+                                    websiteUrl
+                                }
+                            },
+                            tier {
+                                monthlyPriceInDollars
                             }
-                            ...on Organization {
-                                name,
-                                login,
-                                avatarUrl,
-                                url,
-                                websiteUrl
-                            }
-                        },
-                        tier {
-                            monthlyPriceInDollars
                         }
-                    }
-                    pageInfo {
-                        endCursor
-                        startCursor
-                        hasNextPage
-                        hasPreviousPage
+                        pageInfo {
+                            endCursor
+                            startCursor
+                            hasNextPage
+                            hasPreviousPage
+                        }
                     }
                 }
             }
-        }
-    `);
+        `;
+    }
 
     const donationsQuery = `
         query {
