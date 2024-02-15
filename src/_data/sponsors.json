@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136128,
-        "monthlyDonations": 11344,
-        "sponsorCount": 173
+        "annualDonations": 138648,
+        "monthlyDonations": 11554,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -81,6 +81,15 @@
         }
     ],
     "bronze": [
+        {
+            "name": "notion",
+            "url": "https://www.notion.so",
+            "image": "https://images.opencollective.com/notion/bf3b117/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "ThemeIsle",
             "url": "https://themeisle.com",
@@ -420,6 +429,14 @@
             "name": "kagan",
             "image": "https://avatars.githubusercontent.com/u/34136752?u=4d75e5b7a3bd567567c340b60cd68e5b0612dfd1&v=4",
             "url": "https://github.com/kagankan",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Vladislav Doronin",
+            "image": "https://avatars.githubusercontent.com/u/38317538?u=40223f6095007ded4ed9be20af6201c93d67955a&v=4",
+            "url": "https://github.com/reapziq",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
