@@ -1,19 +1,11 @@
 "use strict";
 
-const js = require("@eslint/js");
-const { FlatCompat } = require("@eslint/eslintrc");
 const eslintConfigESLintCJS = require("eslint-config-eslint/cjs");
 const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
 const reactRecommended = require("eslint-plugin-react/configs/recommended");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
-
-const compat = new FlatCompat({
-    baseDirectory: __dirname
-});
-
-const [jsxA11yRecommended] = compat.extends("plugin:jsx-a11y/recommended");
 
 module.exports = [
     {
@@ -27,13 +19,7 @@ module.exports = [
     ...eslintConfigESLintCJS,
     {
         files: ["**/*.js"],
-        languageOptions: {
-            globals: {
-                ...globals.node
-            }
-        },
         rules: {
-            ...js.configs.recommended.rules,
 
             // Disable rules that the codebase doesn't currently follow.
             "jsdoc/require-jsdoc": "off",
@@ -81,7 +67,7 @@ module.exports = [
         },
         rules: {
             ...reactRecommended.rules,
-            ...jsxA11yRecommended.rules,
+            ...jsxA11yPlugin.configs.recommended.rules,
             "react/jsx-no-useless-fragment": "error",
             "react/jsx-no-target-blank": "error",
 
