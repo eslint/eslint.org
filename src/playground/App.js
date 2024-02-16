@@ -122,18 +122,18 @@ const App = () => {
                 fatalMessage
             };
         } catch (error) {
-            if (error.message.includes("Oops! Something went wrong!")) {
+            if (error.message.includes("Key \"rules\":")) {
                 return {
                     messages: [],
                     output: text,
-                    crashError: error
+                    validationError: error
                 };
             }
 
             return {
                 messages: [],
                 output: text,
-                validationError: error
+                crashError: error
             };
         }
     };
