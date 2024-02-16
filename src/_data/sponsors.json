@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 138648,
-        "monthlyDonations": 11554,
-        "sponsorCount": 175
+        "annualDonations": 138624,
+        "monthlyDonations": 11552,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -1439,22 +1439,6 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Mirko Basic",
-            "image": "https://avatars.githubusercontent.com/u/24759563?u=ad63a8d249c09ce43a3f9e6f13807424597a81ce&v=4",
-            "url": "https://bejzik.eth.limo",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Luis Falcon",
-            "image": "https://avatars.githubusercontent.com/u/57654255?u=714b5dd86bf79c258033e31f449044f104169c59&v=4",
-            "url": "https://luisfalconmx.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
