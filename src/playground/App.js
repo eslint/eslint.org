@@ -27,8 +27,10 @@ const defaultLanguageOptions = {
     }
 };
 
+const isEmptyObject = obj => obj && Object.keys(obj).length === 0 && obj.constructor === Object;
+
 const fillOptionsDefaults = options =>
-    (options
+    (!isEmptyObject(options)
         ? {
             rules: {},
             ...options,
@@ -53,7 +55,7 @@ const fillOptionsDefaults = options =>
 const convertLegacyOptionsToFlatConfig = (options = {}) => {
 
     // If options object is empty, return it
-    if (options && Object.keys(options).length === 0 && options.constructor === Object) {
+    if (isEmptyObject(options)) {
         return options;
     }
 
@@ -71,7 +73,7 @@ const convertLegacyOptionsToFlatConfig = (options = {}) => {
             },
             sourceType: parserOptions.sourceType || "module"
         },
-        rules: options.rules
+        rules: options.rules || {}
 
     };
 
@@ -120,10 +122,18 @@ const App = () => {
                 fatalMessage
             };
         } catch (error) {
+            if (error.message.includes("Oops! Something went wrong!")) {
+                return {
+                    messages: [],
+                    output: text,
+                    crashError: error
+                };
+            }
+
             return {
                 messages: [],
                 output: text,
-                error
+                validationError: error
             };
         }
     };
@@ -141,7 +151,7 @@ const App = () => {
         history.replaceState(null, null, url);
     }, [options, text]);
 
-    const { messages, output, fatalMessage, error: crashError, validationError } = lint();
+    const { messages, output, fatalMessage, crashError, validationError } = lint();
     const lintTime = Date.now();
     const isInvalidAutofix = fatalMessage && text !== output;
 

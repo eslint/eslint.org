@@ -113,7 +113,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
 
 
     const handleRuleChange = () => {
-        const rules = { ...options.rules };
+        const rules = { ...(options.rules || {}) };
 
         selectedRules.forEach(selectedRule => {
             if (ruleNames.includes(selectedRule)) {
@@ -140,7 +140,8 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         );
     };
 
-    const allRulesSelected = Object.keys(options.rules).length === ruleNames.length;
+    const allRulesSelected = Object.keys(options.rules || {}).length === ruleNames.length;
+
 
     const selectAll = () => {
         if (allRulesSelected) {
