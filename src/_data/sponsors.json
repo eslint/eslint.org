@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 138624,
-        "monthlyDonations": 11552,
+        "annualDonations": 140064,
+        "monthlyDonations": 11672,
         "sponsorCount": 173
     },
     "platinum": [
@@ -178,6 +178,15 @@
             "tier": null
         },
         {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 170,
+            "totalDonations": 2150,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
             "name": "Yannick Croissant",
             "url": "https://yannick.cr",
             "image": "https://images.opencollective.com/yannickcr/765f06f/avatar.png",
@@ -193,15 +202,6 @@
             "monthlyDonation": 100,
             "source": "github",
             "tier": "backer"
-        },
-        {
-            "name": "Principal Financial Group",
-            "url": "https://www.principal.com/about-us",
-            "image": "https://images.opencollective.com/principal/431e690/logo.png",
-            "monthlyDonation": 50,
-            "totalDonations": 2150,
-            "source": "opencollective",
-            "tier": null
         },
         {
             "name": "Tailscale",
@@ -1141,7 +1141,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=533b1a99065a82901fe0c155cbc929be216de754&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=c283b1ff7bfa02883bfb150f0b95ebcca5757a37&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
