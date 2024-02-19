@@ -25,7 +25,7 @@ Just before the end of the year, we [released ESLint v9.0.0-alpha.0](https://esl
 * [Deprecation of formatting rules](https://eslint.org/blog/2023/10/deprecating-formatting-rules/) - in a significant shift from ESLint's roots, we decided to officially deprecate formatting rules
 * [Changes to rule API](https://eslint.org/blog/2023/09/preparing-custom-rules-eslint-v9/) - for those who write their own rules, we announced important changes to the rule API that will prepare ESLint for our next step: [language plugins](https://github.com/eslint/rfcs/blob/main/designs/2022-languages/README.md).
 
-## Updates to support latest ECMAScript features
+## Updates to support the latest ECMAScript features
 
 The team spends much of the year anticipating new ECMAScript features and updating ESLint accordingly. 2023 was an outlier in that most of the changes weren't syntax-related, and so there wasn't a lot of additional work. The most significant syntax change, [hashbang comments](https://github.com/tc39/proposal-hashbang), is something that ESLint already handled to support Node.js.
 
