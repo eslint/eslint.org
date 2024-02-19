@@ -43,7 +43,7 @@ During 2023, ESLint received $179,601.53 USD from all of our income sources. You
 | Stackaid.us | $91.00 |
 | **Total** | **$179,601.53** |
 
-As usual, most of our donations came through Open Collective. Tidelift (slight up from 2022) surpassed GitHub Sponsors donations (slightly down from 2022) in 2023. Noteably, our website ad revenue dropped roughly 50% from 2022, following an overall softening of the display ad business. We'll be looking at options to improve our website ad revenue in 2024.
+As usual, most of our donations came through Open Collective. Tidelift (slight up from 2022) surpassed GitHub Sponsors donations (slightly down from 2022) in 2023. Notably, our website ad revenue dropped roughly 50% from 2022, following an overall softening of the display ad business. We'll be looking at options to improve our website ad revenue in 2024.
 
 The newer sponsoring options, Thanks.dev and Stackaid.us, didn't provide much income but are both interesting ideas that we'll keep participating in.
 
