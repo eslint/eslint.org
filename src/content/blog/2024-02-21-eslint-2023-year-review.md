@@ -12,7 +12,7 @@ categories:
   - Storytime
 ---
 
-The plan for 2023 centered around our first major release [since 2021](https://eslint.org/blog/2021/10/eslint-v8.0.0-released/), ESLint v9.0.0. Most of the year was spent preparing for the release, including the building out of the new configuration system (flat config) and communicating the impact to the ecosystem throughout the year.
+The plan for 2023 centered around our first major release [since 2021](https://eslint.org/blog/2021/10/eslint-v8.0.0-released/), ESLint v9.0.0. Most of the year was spent preparing for the release, building out the new configuration system (flat config) and communicating the impact to the ecosystem throughout the year.
 
 ## Release of ESLint v9.0.0 and the new configuration system
 
