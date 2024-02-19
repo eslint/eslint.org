@@ -22,7 +22,7 @@ Just before the end of the year, we [released ESLint v9.0.0-alpha.0](https://esl
 
 ## Other changes
 
-* [Deprecation of formatting rules](https://eslint.org/blog/2023/10/deprecating-formatting-rules/) - in a significant shift from ESLint's roots, we decided to officially deprecated formatting rules
+* [Deprecation of formatting rules](https://eslint.org/blog/2023/10/deprecating-formatting-rules/) - in a significant shift from ESLint's roots, we decided to officially deprecate formatting rules
 * [Changes to rule API](https://eslint.org/blog/2023/09/preparing-custom-rules-eslint-v9/) - for those who write their own rules, we announced important changes to the rule API that will prepare ESLint for our next step: [language plugins](https://github.com/eslint/rfcs/blob/main/designs/2022-languages/README.md).
 
 ## Updates to support latest ECMAScript features
