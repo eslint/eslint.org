@@ -69,6 +69,8 @@ In 2023, we spent $182,245.97 USD on the ESLint project as a whole. This include
 
 Our overall expenses increased from $155,054.09 USD in 2022 as we increased our donations to other open source projects, hired a part-time technical writer, and took on the cost of health insurance.
 
+You may have noticed that our expenses exceed our income in 2023. We maintain a large reserve account both to ensure we can handle any spending overages and also as a hedge against loss of sponsorships.
+
 As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community GitHub organization.
 
 ## Supporting our dependencies and ecosystem
