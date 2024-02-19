@@ -51,7 +51,7 @@ We are grateful to the companies and individuals who generously donated to suppo
 
 ## Expenses review
 
-In 2023, we spent $152,168.13 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
+In 2023, we spent $182,245.97 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
 
 | **Category** | **Amount** |
 |-----------|-------------|
