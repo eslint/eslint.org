@@ -89,6 +89,6 @@ In 2023, the ESLint project donated $24,100.00 USD to ecosystem projects and our
 
 ## Looking forward to 2024
 
-Once v9.0.0 is released, we'll be in a good spot to finish work on language plugins and then move on to the [complete rewrite](https://github.com/eslint/eslint/discussions/16557) we talked about in 2023. It's hard to believe ESLint is heading into it's 11th year, and we're making the preparations to ensure the project will continue to be useful to the JavaScript community for the next decade.
+Once v9.0.0 is released, we'll be in a good spot to finish work on language plugins and then move on to the [complete rewrite](https://github.com/eslint/eslint/discussions/16557) we talked about in 2023. It's hard to believe ESLint is heading into its 11th year, and we're making the preparations to ensure the project will continue to be useful to the JavaScript community for the next decade.
 
 We know that ESLint is an important part of your toolchain and we appreciate your ongoing support as our team of volunteers moves the project forward.
