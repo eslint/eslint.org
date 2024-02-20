@@ -55,7 +55,7 @@ We are grateful to the companies and individuals who generously donated to suppo
 
 ### Expenses review
 
-In 2023, we spent $182,792.47 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
+In 2023, we spent $185,702.36 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
 
 | **Category** | **Amount** |
 |-----------|-------------|
@@ -68,10 +68,13 @@ In 2023, we spent $182,792.47 USD on the ESLint project as a whole. This include
 | Open Source Collective Fee | -$9,206.88 |
 | Ecosystem/Dependencies | -$24,400.00 |
 | Community Management | -$15,599.84 |
+| Payment Processor Fees | -$2,814.75 |
 | Google Workspace | -$187.35 |
-| **Total** | **-$182,792.47** |
+| **Total** | **-$185,702.36** |
 
 As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community GitHub organization.
+
+You may notice that our expenses exceeded our income in 2023. Thankfully, we keep a large reserve fund so we can handle any unexpected expenses and to hedge against loss of sponsorships.
 
 ### Supporting our dependencies and ecosystem
 
