@@ -29,65 +29,65 @@ Just before the end of the year, we [released ESLint v9.0.0-alpha.0](https://esl
 
 The team spends much of the year anticipating new ECMAScript features and updating ESLint accordingly. 2023 was an outlier in that most of the changes weren't syntax-related, and so there wasn't a lot of additional work. The most significant syntax change, [hashbang comments](https://github.com/tc39/proposal-hashbang), is something that ESLint already handled to support Node.js.
 
-## Income review
+## Financials review
 
-During 2023, ESLint received $179,601.53 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
+The next few sections dig into the project financials. All of this information is gathered from the Open Collective transaction list with the exception of Tidelift payments (which are retrieved from Tidelift directly). Because transactions come in all throughout the course of a day, we decided to consider transactions beginning on January 1, 2023 at midnight UTC and ending on December 31, 2023 at 11:59 UTC as our fiscal 2023.
+
+### Income review
+
+During 2023, ESLint received $183,066.53 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
 
 | **Source** | **Amount** |
 |-----------|-------------|
-| Open Collective | $117,336.30 |
-| Tidelift | $30,077.84 |
+| Open Collective | $120,801.30 |
 | GitHub Sponsors | $25,190.89 |
+| Tidelift | $30,077.84 |
 | Carbon Ads | $6,380.89 |
 | Thanks.dev | $524.61 |
 | Stackaid.us | $91.00 |
-| **Total** | **$179,601.53** |
+| **Total** | **$183,066.53** |
 
-As usual, most of our donations came through Open Collective. Tidelift (slight up from 2022) surpassed GitHub Sponsors donations (slightly down from 2022) in 2023. Notably, our website ad revenue dropped roughly 50% from 2022, following an overall softening of the display ad business. We'll be looking at options to improve our website ad revenue in 2024.
+As usual, most of our donations came through Open Collective. Notably, our website ad revenue dropped roughly 50% from 2022, following an overall softening of the display ad business. We'll be looking at options to improve our website ad revenue in 2024.
 
 The newer sponsoring options, Thanks.dev and Stackaid.us, didn't provide much income but are both interesting ideas that we'll keep participating in.
 
 We are grateful to the companies and individuals who generously donated to support ESLint. We know that there has been a lot of turbulence in the tech industry in the past year, and we really appreciate everyone who still decided to sponsor ESLint.
 
-## Expenses review
+### Expenses review
 
-In 2023, we spent $182,245.97 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
+In 2023, we spent $182,792.47 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
 
 | **Category** | **Amount** |
 |-----------|-------------|
-| Maintenance and Development | $66,910.37 |
-| TSC Stipend (Tidelift) | $30,077.84 |
-| Triage and Support | $10,307.78 |
-| Ecosystem/Dependencies | $24,100.00 |
-| Community Management | $15,599.84 |
-| Health Insurance | $13,447.41 |
-| Open Source Collective Fee | $8,960.38 |
-| Technical Writing | $8,155.00 |
-| Contributor Pool | $4,500.00 |
-| Google Workspace | $187.35 |
-| **Total** | **$182,245.97** |
-
-Our overall expenses increased from $155,054.09 USD in 2022 as we increased our donations to other open source projects, hired a part-time technical writer, and took on the cost of health insurance.
-
-You may have noticed that our expenses exceed our income in 2023. We maintain a large reserve account both to ensure we can handle any spending overages and also as a hedge against loss of sponsorships.
+| Maintenance and Development | -$66,910.37 |
+| TSC Stipend (Tidelift) | -$30,077.84 |
+| Triage and Support | -$10,307.78 |
+| Technical Writing | -$8,155.00 |
+| Contributor Pool | -$4,500.00 |
+| Health Insurance | -$13,447.41 |
+| Open Source Collective Fee | -$9,206.88 |
+| Ecosystem/Dependencies | -$24,400.00 |
+| Community Management | -$15,599.84 |
+| Google Workspace | -$187.35 |
+| **Total** | **-$182,792.47** |
 
 As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community GitHub organization.
 
-## Supporting our dependencies and ecosystem
+### Supporting our dependencies and ecosystem
 
-In 2023, the ESLint project donated $24,100.00 USD to ecosystem projects and our dependencies (listed in the previous table as "Ecosystem/Dependencies"). This is part of our ongoing commitment to supporting projects that are important to ESLint.
+In 2023, the ESLint project donated $24,400.00 USD to ecosystem projects and our dependencies (listed in the previous table as "Ecosystem/Dependencies"). This is part of our ongoing commitment to supporting projects that are important to ESLint.
 
 | **Project** | **Donations** |
 |-----------|-------------|
-| typescript-eslint | $11,800.00 |
-| debug | $1,800.00 |
-| eslint-plugin-import | $1,800.00 |
-| jsx-eslint | $1,800.00 |
-| lint-staged | $1,800.00 |
-| Rollup | $1,800.00 |
-| Sindre Sorhus | $1,800.00 |
-| Ajv | $1,500.00 |
-| **Total** | **$24,100.00** |
+| typescript-eslint | -$11,800.00 |
+| Ajv | -$1,800.00 |
+| debug | -$1,800.00 |
+| eslint-plugin-import | -$1,800.00 |
+| jsx-eslint | -$1,800.00 |
+| lint-staged | -$1,800.00 |
+| Rollup | -$1,800.00 |
+| Sindre Sorhus | -$1,800.00 |
+| **Total** | **-$24,400.00** |
 
 ## Looking forward to 2024
 
