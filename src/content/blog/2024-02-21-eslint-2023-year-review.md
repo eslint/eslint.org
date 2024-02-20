@@ -16,7 +16,7 @@ The plan for 2023 centered around our first major release [since 2021](https://e
 
 ## Release of ESLint v9.0.0 and the new configuration system
 
-While there are [a lot of changes in v9.0.0](https://eslint.org/blog/2023/11/whats-coming-in-eslint-9.0.0/), the biggest change is making flat config the default configuration system. The old (eslintrc) configuration is still available via an environment variable, and we published the [rollout plan](https://eslint.org/blog/2023/10/flat-config-rollout-plans/) outlining how the transition will occur from v8x through to v10.x.
+While there are [a lot of changes in v9.0.0](https://eslint.org/blog/2023/11/whats-coming-in-eslint-9.0.0/), the biggest change is making flat config the default configuration system. The old (eslintrc) configuration is still available via an environment variable, and we published the [rollout plan](https://eslint.org/blog/2023/10/flat-config-rollout-plans/) outlining how the transition will occur from v8.x through to v10.x.
 
 Just before the end of the year, we [released ESLint v9.0.0-alpha.0](https://eslint.org/blog/2023/12/eslint-v9.0.0-alpha.0-released/). We anticipate a final v9.0.0 release in the spring of 2024.
 
