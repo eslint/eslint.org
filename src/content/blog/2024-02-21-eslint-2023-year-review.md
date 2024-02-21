@@ -35,17 +35,17 @@ The next few sections dig into the project financials. All of this information i
 
 ### Income review
 
-During 2023, ESLint received $183,066.53 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
+During 2023, ESLint received $180,646.53 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
 
 | **Source** | **Amount** |
 |-----------|-------------|
-| Open Collective | $120,801.30 |
+| Open Collective | $118,381.30 |
 | GitHub Sponsors | $25,190.89 |
 | Tidelift | $30,077.84 |
 | Carbon Ads | $6,380.89 |
 | Thanks.dev | $524.61 |
 | Stackaid.us | $91.00 |
-| **Total** | **$183,066.53** |
+| **Total** | **$180,646.53** |
 
 As usual, most of our donations came through Open Collective. Notably, our website ad revenue dropped roughly 50% from 2022, following an overall softening of the display ad business. We'll be looking at options to improve our website ad revenue in 2024.
 
@@ -55,7 +55,7 @@ We are grateful to the companies and individuals who generously donated to suppo
 
 ### Expenses review
 
-In 2023, we spent $185,702.36 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
+In 2023, we spent $185,646.98 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
 
 | **Category** | **Amount** |
 |-----------|-------------|
@@ -68,9 +68,9 @@ In 2023, we spent $185,702.36 USD on the ESLint project as a whole. This include
 | Open Source Collective Fee | -$9,206.88 |
 | Ecosystem/Dependencies | -$24,400.00 |
 | Community Management | -$15,599.84 |
-| Payment Processor Fees | -$2,814.75 |
+| Payment Processor Fee | -$2,854.51 |
 | Google Workspace | -$187.35 |
-| **Total** | **-$185,702.36** |
+| **Total** | **-$185,646.98** |
 
 As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community GitHub organization.
 
