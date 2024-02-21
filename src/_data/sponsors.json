@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 140064,
-        "monthlyDonations": 11672,
-        "sponsorCount": 173
+        "annualDonations": 140076,
+        "monthlyDonations": 11673,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -1439,6 +1439,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mustapha Aouas",
+            "image": "https://avatars.githubusercontent.com/u/19464651?u=c9a5b92ae330451e6fbe01a18738c575b9e70e3c&v=4",
+            "url": "https://dev.to/mustapha",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
