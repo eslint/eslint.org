@@ -4,7 +4,7 @@
  * @author Nicholas C. Zakas
  */
 
-/* eslint camelcase: [error, { properties: never }] */
+/* eslint camelcase: [error, { properties: never }] -- API response */
 
 "use strict";
 
@@ -38,7 +38,7 @@ const octokit = new Octokit({
     userAgent: "ESLint Website"
 });
 
-async function fetchUserProfile(username) {
+async function fetchUserProfile() {
 
     const { data: profile } = await octokit.users.getByUsername({ username });
 
@@ -63,7 +63,7 @@ async function fetchUserProfile(username) {
 
     // fetch author info from GitHub
     const authors = JSON.parse(await fs.readFile(authorsFilename, "utf8"));
-    const profile = await fetchUserProfile(username);
+    const profile = await fetchUserProfile();
 
     authors[profile.username] = profile;
 

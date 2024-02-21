@@ -9,7 +9,7 @@
  * @author Nicholas C. Zakas
  */
 
-/* eslint camelcase: [error, { properties: never }] */
+/* eslint camelcase: [error, { properties: never }] -- API response */
 
 "use strict";
 
@@ -24,9 +24,6 @@ const { graphql: githubGraphQL } = require("@octokit/graphql");
 //-----------------------------------------------------------------------------
 // Data
 //-----------------------------------------------------------------------------
-
-// max one-time donations to pull
-const MAX_DONATIONS = 20;
 
 // filename to output sponsors to
 const sponsorsFilename = "./src/_data/sponsors.json";
@@ -152,7 +149,7 @@ async function fetchOpenCollectiveData() {
         body: JSON.stringify({ query })
     });
 
-    let payload = await result.json();
+    const payload = await result.json();
 
     if (process.env.DEBUG) {
         await fs.writeFile("./debug-opencollective-raw-response.json", JSON.stringify(payload, null, 4), { encoding: "utf8" });
@@ -193,41 +190,43 @@ async function fetchOpenCollectiveData() {
  */
 async function fetchGitHubSponsors() {
 
-    const sponsorshipsQuery = (cursor = null) => (`
-        query {
-            organization(login: "eslint") {
-                sponsorshipsAsMaintainer (first: 100, includePrivate: false, after: "${cursor}") {
-                    nodes {
-                        sponsor: sponsorEntity {
-                            ...on User {
-                                name,
-                                login,
-                                avatarUrl,
-                                url,
-                                websiteUrl
+    function sponsorshipsQuery(cursor = null) {
+        return `
+            query {
+                organization(login: "eslint") {
+                    sponsorshipsAsMaintainer (first: 100, includePrivate: false, after: "${cursor}") {
+                        nodes {
+                            sponsor: sponsorEntity {
+                                ...on User {
+                                    name,
+                                    login,
+                                    avatarUrl,
+                                    url,
+                                    websiteUrl
+                                }
+                                ...on Organization {
+                                    name,
+                                    login,
+                                    avatarUrl,
+                                    url,
+                                    websiteUrl
+                                }
+                            },
+                            tier {
+                                monthlyPriceInDollars
                             }
-                            ...on Organization {
-                                name,
-                                login,
-                                avatarUrl,
-                                url,
-                                websiteUrl
-                            }
-                        },
-                        tier {
-                            monthlyPriceInDollars
                         }
-                    }
-                    pageInfo {
-                        endCursor
-                        startCursor
-                        hasNextPage
-                        hasPreviousPage
+                        pageInfo {
+                            endCursor
+                            startCursor
+                            hasNextPage
+                            hasPreviousPage
+                        }
                     }
                 }
             }
-        }
-    `);
+        `;
+    }
 
     const donationsQuery = `
         query {
@@ -286,7 +285,7 @@ async function fetchGitHubSponsors() {
     }
 
     let pageInfo = sponsorshipsResponse.organization.sponsorshipsAsMaintainer.pageInfo;
-    let sponsorships = sponsorshipsResponse.organization.sponsorshipsAsMaintainer.nodes;
+    const sponsorships = sponsorshipsResponse.organization.sponsorshipsAsMaintainer.nodes;
     let pageNumber = 1;
 
     while (pageInfo.hasNextPage) {
@@ -332,11 +331,12 @@ async function fetchGitHubSponsors() {
             source: "github"
         }))
         .filter(donation => {
+
             // invoiced recurring donations are incorrectly marked as one-time
-            const sponsor = sponsors.find(sponsor => sponsor.name === donation.name);
+            const foundSponsor = sponsors.find(sponsor => sponsor.name === donation.name);
 
             // only include if the amount is different than the monthly amount
-            return sponsor ? sponsor.monthlyDonation !== donation.amount : true;
+            return foundSponsor ? foundSponsor.monthlyDonation !== donation.amount : true;
         });
 
     // TODO: Double check that donations don't include recurring
@@ -362,7 +362,7 @@ async function fetchGitHubSponsors() {
         {
             sponsors: githubSponsors,
             donations: githubDonations
-        },
+        }
     ] = await Promise.all([
         fetchOpenCollectiveData(),
         fetchGitHubSponsors()
