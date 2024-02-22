@@ -53,6 +53,27 @@ The newer sponsoring options, Thanks.dev and Stackaid.us, didn't provide much in
 
 We are grateful to the companies and individuals who generously donated to support ESLint. We know that there has been a lot of turbulence in the tech industry in the past year, and we really appreciate everyone who still decided to sponsor ESLint.
 
+### Top sponsors
+
+While we are grateful to all of our sponsors, both large and small, we feel especially grateful to those who donated $1,000 USD or more during 2023. These folks totaled $109,576 USD during 2023, representing 60% of our total income.
+
+| **Sponsor** | **2023 Donation Total** |
+|-------------|-------------------------|
+| Chrome Frameworks Fund | $24,000.00 |
+| Automattic | $24,000.00 |
+| Salesforce | $12,000.00 |
+| Airbnb | $12,000.00 |
+| Indeed | $10,000.00 |
+| Liftoff | $6,000.00 |
+| Cybozu | $4,976.00 |
+| RIDI | $4,000.00 |
+| ThemeIsle | $2,400.00 |
+| Icons8 | $2,400.00 |
+| Discord | $2,400.00 |
+| Anagram Solver | $2,400.00 |
+| Nx (by Nrwl) | $1,800.00 |
+| Yannick Croissant | $1,200.00 |
+
 ### Expenses review
 
 In 2023, we spent $185,646.98 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
