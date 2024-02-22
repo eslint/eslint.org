@@ -57,43 +57,74 @@ In addition to our normal maintenance and development, we also kicked off a coup
 
 ## Income review
 
-During 2022, ESLint received $197,345.27 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
+During 2022, ESLint received $211,733.71 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
 
 | **Source** | **Amount** |
 |-----------|-------------|
-| Open Collective | $127,741.96 |
+| Open Collective | $142,170.50 |
 | GitHub Sponsors | $26,606.61 |
-| Tidelift | $29,088.00 |
+| Tidelift | $29,047.86 |
 | Carbon Ads | $13,831.16 |
-| Stackaid.us | $77.54 |
-| **Total** | **$197,345.27** |
+| Stackaid.us | $77.58 |
+| **Total** | **$211,733.71** |
 
 As usual, most of our donations came through Open Collective followed by GitHub Sponsors. Our Tidelift agreement also provided a good amount of income as did the ad on our website.
 
 We are extremely grateful for the generous donations from companies and individuals that allow the project to continue development.
 
+## Top sponsors
+
+The overwhelming majority of our income came from sponsors, and we're extra grateful to all of the sponsors who donated $1,000 or more during the year.
+
+| **Sponsor** | **2022 Donation Total** |
+|-------------|-------------------------|
+| Chrome Frameworks Fund | $23,500.00 |
+| Automattic | $22,000.00 |
+| Etsy Open Source | $18,000.00 |
+| BuySellAds | $13,831.16 |
+| Salesforce | $12,000.00 |
+| Airbnb | $11,000.00 |
+| Nx (by Nrwl) | $6,400.00 |
+| Liftoff | $5,500.00 |
+| Contra | $5,000.00 |
+| Cybozu | $3,152.00 |
+| Wix Engineering | $2,400.00 |
+| launchdarkly | $2,200.00 |
+| Icons8 | $2,200.00 |
+| Discord | $2,200.00 |
+| Anagram Solver | $2,200.00 |
+| ThemeIsle | $2,000.00 |
+| RIDI | $2,000.00 |
+| VPS Server | $1,800.00 |
+| Yannick Croissant | $1,200.00 |
+
 ## Expenses review
 
-In 2022, we spent $140,704.09 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
+In 2022, we spent $152,220.48 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
 
 | **Category** | **Amount** |
 |-----------|-------------|
-| Maintenance and Development | $97,516.23 |
-| Contributor Pool | $7,900.00 |
-| Website Redesign | $7,167.52 |
-| Guest Blog Posts | $600.00 |
-| Community Logo Design | $2,700.00 |
-| Documentation Project | $4,147.50 |
-| Tech Writer Application Time | $1,500.00 |
-| Open Source Collective Fee | $12,172.84 |
-| Community Management | $7,000.00 |
-| **Total** | **$140,704.09** |
+| Maintenance and Development | -$68,428.23 |
+| TSC Stipend (Tidelift) | -$29,047.86 |
+| Website Redesign | -$7,167.52 |
+| Technical Writing | -$4,147.50 |
+| Contributor Pool | -$7,900.00 |
+| Payment Processor Fees | -$2,942.67 |
+| Health Insurance | -$1,847.86 |
+| Open Source Collective Fee | -$12,172.84 |
+| Ecosystem/Dependencies | -$14,350.00 |
+| Community Management | -$4,000.00 |
+| Google Workspace | -$216.00 |
+| Tech Writer Interviews | -$1,500.00 |
+| Community Logo Design | -$3,000.00 |
+| Guest Blog Posts | -$300.00 |
+| **Total** | **-$152,220.48** |
 
 As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community.
 
 ## Supporting our dependencies and ecosystem
 
-In 2022, the ESLint project donated $14,350.00 USD to ecosystem projects and our dependencies. This is part of our ongoing commitment to supporting projects that are important to ESLint.
+In 2022, the ESLint project donated $14,150.00 USD to ecosystem projects and our dependencies. This is part of our ongoing commitment to supporting projects that are important to ESLint.
 
 | **Project** | **Donations** |
 |-----------|-------------|
@@ -105,11 +136,13 @@ In 2022, the ESLint project donated $14,350.00 USD to ecosystem projects and our
 | Sindre Sorhus | $1,700.00 |
 | typescript-eslint | $1,700.00 |
 | Rollup | $900.00 |
-| Eleventy | $800.00 |
-| **Total** | **$14,350.00** |
+| Eleventy | $700.00 |
+| **Total** | **$14,150.00** |
 
 ## Looking forward to 2023
 
 While ESLint had a fantastic 2022, we are looking forward to an even better 2023. With the ESLint Community and documentation projects running, we expect to make the ESLint ecosystem even stronger. We are also planning to start on a [complete rewrite](https://github.com/eslint/eslint/discussions/16557) from the ground up to make sure that ESLint is ready for the next ten years of JavaScript development. This process will likely take place in small, incremental steps as we think through how JavaScript development has changed and will continue to evolve in the future.
 
 We are excited about the future of ESLint and we appreciate your ongoing support.
+
+**Updated (2024-02-22):** We revised how our financials were reported to correct for errors in our initial calculation and to bring the numbers in this post inline with our 2023 approach to calculating our financials.
