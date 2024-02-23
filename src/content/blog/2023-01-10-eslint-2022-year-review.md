@@ -85,10 +85,13 @@ The overwhelming majority of our income came from sponsors, and we're extra grat
 | Salesforce | $12,000.00 |
 | Airbnb | $11,000.00 |
 | Nx (by Nrwl) | $6,400.00 |
+| American Express | $6,000.00 |
 | Liftoff | $5,500.00 |
 | Contra | $5,000.00 |
+| Substack | $5,000.00 |
 | Cybozu | $3,152.00 |
 | Wix Engineering | $2,400.00 |
+| Ignition | $2,400.00 |
 | launchdarkly | $2,200.00 |
 | Icons8 | $2,200.00 |
 | Discord | $2,200.00 |
@@ -96,6 +99,9 @@ The overwhelming majority of our income came from sponsors, and we're extra grat
 | ThemeIsle | $2,000.00 |
 | RIDI | $2,000.00 |
 | VPS Server | $1,800.00 |
+| Sentry | $1,608.00 |
+| HeroCoders | $1,400.00 |
+| QuickBooks Tool hub | $1,320.00 |
 | Yannick Croissant | $1,200.00 |
 
 ## Expenses review
