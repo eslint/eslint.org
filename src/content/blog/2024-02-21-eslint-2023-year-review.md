@@ -66,12 +66,18 @@ While we are grateful to all of our sponsors, both large and small, we feel espe
 | Indeed | $10,000.00 |
 | Liftoff | $6,000.00 |
 | Cybozu | $4,976.00 |
+| Sentry | $4,624.00 |
+| American Express | $4,467.74 |
 | RIDI | $4,000.00 |
 | ThemeIsle | $2,400.00 |
 | Icons8 | $2,400.00 |
 | Discord | $2,400.00 |
 | Anagram Solver | $2,400.00 |
+| Ignition | $2,400.00 |
+| HeroCoders | $2,400.00 |
+| Transloadit | $2,309.68 |
 | Nx (by Nrwl) | $1,800.00 |
+| QuickBooks Tool hub | $1,600.00 |
 | Yannick Croissant | $1,200.00 |
 
 ### Expenses review
