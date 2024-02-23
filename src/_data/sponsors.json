@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 140076,
-        "monthlyDonations": 11673,
-        "sponsorCount": 174
+        "annualDonations": 140016,
+        "monthlyDonations": 11668,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -1231,14 +1231,6 @@
             "name": "Yuto Yoshino",
             "image": "https://avatars.githubusercontent.com/u/87469023?u=9c5ad67f4f4df8c5a303281f8378bac254eae064&v=4",
             "url": "https://yossy.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Liam Li",
-            "image": "https://avatars.githubusercontent.com/u/143149260?u=0b0fd25ba0aebd2264c953e9c2d34d6793cdf70a&v=4",
-            "url": "https://liamli99.github.io/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
