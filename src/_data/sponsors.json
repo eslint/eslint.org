@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 140016,
-        "monthlyDonations": 11668,
-        "sponsorCount": 173
+        "annualDonations": 140076,
+        "monthlyDonations": 11673,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -1207,6 +1207,14 @@
             "name": "Sara Gerion",
             "image": "https://avatars.githubusercontent.com/u/47529391?u=78d94abe9fad438b9df30f8dc80160e6ea3f044e&v=4",
             "url": "https://github.com/saragerion",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Dastan Tynyshtyk",
+            "image": "https://avatars.githubusercontent.com/u/57841128?u=f25562322dd2c00e569cf2a7864248d4f3485ec4&v=4",
+            "url": "https://tynyshtyq.blog",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
