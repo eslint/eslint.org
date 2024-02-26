@@ -57,7 +57,7 @@ In addition to our normal maintenance and development, we also kicked off a coup
 
 ## Income review
 
-During 2022, ESLint received $211,733.71 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
+During 2022, ESLint received $211,656.13 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
 
 | **Source** | **Amount** |
 |-----------|-------------|
