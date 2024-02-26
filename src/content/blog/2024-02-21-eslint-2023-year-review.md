@@ -55,7 +55,7 @@ We are grateful to the companies and individuals who generously donated to suppo
 
 ### Top sponsors
 
-While we are grateful to all of our sponsors, both large and small, we feel especially grateful to those who donated $1,000 USD or more during 2023. These folks totaled $109,576 USD during 2023, representing 60% of our total income.
+While we are grateful to all of our sponsors, both large and small, we feel especially grateful to those who donated $1,000 USD or more during 2023. These folks totaled $127,377.42 USD during 2023, representing 70% of our total income.
 
 | **Sponsor** | **2023 Donation Total** |
 |-------------|-------------------------|
