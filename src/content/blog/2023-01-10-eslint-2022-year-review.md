@@ -142,8 +142,8 @@ In 2022, the ESLint project donated $14,350.00 USD to ecosystem projects and our
 | Sindre Sorhus | $1,700.00 |
 | typescript-eslint | $1,700.00 |
 | Rollup | $900.00 |
-| Eleventy | $700.00 |
-| **Total** | **$14,150.00** |
+| Eleventy | $800.00 |
+| **Total** | **$14,350.00** |
 
 ## Looking forward to 2023
 
