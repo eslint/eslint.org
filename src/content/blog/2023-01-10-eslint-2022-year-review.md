@@ -106,7 +106,7 @@ The overwhelming majority of our income came from sponsors, and we're extra grat
 
 ## Expenses review
 
-In 2022, we spent $152,220.48 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
+In 2022, we spent $157,270.48 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. See the table below for an overview.
 
 | **Category** | **Amount** |
 |-----------|-------------|
@@ -121,10 +121,10 @@ In 2022, we spent $152,220.48 USD on the ESLint project as a whole. This include
 | Ecosystem/Dependencies | -$14,350.00 |
 | Community Management | -$4,000.00 |
 | Google Workspace | -$216.00 |
-| Tech Writer Interviews | -$1,500.00 |
+| Tech Writer Hiring & Interviews | -$1,750.00 |
 | Community Logo Design | -$3,000.00 |
 | Guest Blog Posts | -$300.00 |
-| **Total** | **-$157,020.48** |
+| **Total** | **-157,270.48** |
 
 As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community.
 
