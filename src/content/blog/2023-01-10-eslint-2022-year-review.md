@@ -124,7 +124,7 @@ In 2022, we spent $152,220.48 USD on the ESLint project as a whole. This include
 | Tech Writer Interviews | -$1,500.00 |
 | Community Logo Design | -$3,000.00 |
 | Guest Blog Posts | -$300.00 |
-| **Total** | **-$152,220.48** |
+| **Total** | **-$157,020.48** |
 
 As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community.
 
