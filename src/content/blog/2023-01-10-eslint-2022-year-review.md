@@ -130,7 +130,7 @@ As a reminder, the Contributor Pool is money we award for contributions to peopl
 
 ## Supporting our dependencies and ecosystem
 
-In 2022, the ESLint project donated $14,150.00 USD to ecosystem projects and our dependencies. This is part of our ongoing commitment to supporting projects that are important to ESLint.
+In 2022, the ESLint project donated $14,350.00 USD to ecosystem projects and our dependencies. This is part of our ongoing commitment to supporting projects that are important to ESLint.
 
 | **Project** | **Donations** |
 |-----------|-------------|
