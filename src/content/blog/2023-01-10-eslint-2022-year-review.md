@@ -61,7 +61,7 @@ During 2022, ESLint received $211,733.71 USD from all of our income sources. You
 
 | **Source** | **Amount** |
 |-----------|-------------|
-| Open Collective | $142,170.50 |
+| Open Collective | $142,092.92 |
 | GitHub Sponsors | $26,606.61 |
 | Tidelift | $29,047.86 |
 | Carbon Ads | $13,831.16 |
