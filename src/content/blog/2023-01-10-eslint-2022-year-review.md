@@ -81,7 +81,6 @@ The overwhelming majority of our income came from sponsors, and we're extra grat
 | Chrome Frameworks Fund | $23,500.00 |
 | Automattic | $22,000.00 |
 | Etsy Open Source | $18,000.00 |
-| BuySellAds | $13,831.16 |
 | Salesforce | $12,000.00 |
 | Airbnb | $11,000.00 |
 | Nx (by Nrwl) | $6,400.00 |
