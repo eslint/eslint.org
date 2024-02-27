@@ -241,14 +241,5 @@
         "amount": 10,
         "date": "2023-02-14T17:32:53.083Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEMcO",
-        "name": "kagan",
-        "image": "https://avatars.githubusercontent.com/u/34136752?u=4d75e5b7a3bd567567c340b60cd68e5b0612dfd1&v=4",
-        "url": "https://github.com/kagankan",
-        "amount": 100,
-        "date": "2024-01-28T18:31:24Z",
-        "source": "github"
     }
 ]

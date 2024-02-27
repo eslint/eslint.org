@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 140076,
-        "monthlyDonations": 11673,
-        "sponsorCount": 174
+        "annualDonations": 140016,
+        "monthlyDonations": 11668,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -927,14 +927,6 @@
             "name": "Charles Severance",
             "image": "https://avatars.githubusercontent.com/u/1197222?u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
             "url": "http://www.dr-chuck.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Carl Topham",
-            "image": "https://avatars.githubusercontent.com/u/1415767?u=182dd99279f62d2b306c21e310141747161f5903&v=4",
-            "url": "https://carl-topham.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
