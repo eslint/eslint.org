@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 140016,
-        "monthlyDonations": 11668,
+        "annualDonations": 139956,
+        "monthlyDonations": 11663,
         "sponsorCount": 173
     },
     "platinum": [
@@ -343,14 +343,6 @@
             "monthlyDonation": 10,
             "totalDonations": 608,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Jarrod Davis",
-            "image": "https://avatars.githubusercontent.com/u/235875?u=0c5fb7e068f0f2c5a10ac505ca6492979097c92f&v=4",
-            "url": "https://jarrodldavis.com",
-            "monthlyDonation": 10,
-            "source": "github",
             "tier": "backer"
         },
         {
@@ -820,6 +812,14 @@
             "tier": "backer"
         },
         {
+            "name": "Jarrod Davis",
+            "image": "https://avatars.githubusercontent.com/u/235875?u=0c5fb7e068f0f2c5a10ac505ca6492979097c92f&v=4",
+            "url": "https://jarrodldavis.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Kah Wai Liew",
             "image": "https://avatars.githubusercontent.com/u/289419?v=4",
             "url": "https://github.com/tureki",
@@ -1133,7 +1133,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=f0e0f2996f68d787df7fb425c620640323bb4578&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=3ff0ab2b114d92845f7bce8ad241736438a26fc7&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",

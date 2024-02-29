@@ -232,14 +232,5 @@
         "amount": 1,
         "date": "2023-02-17T07:40:22.406Z",
         "source": "opencollective"
-    },
-    {
-        "id": "v349mrwg-z75lpy79-anrpa08d-jeybknox",
-        "name": "Eugene Voynov",
-        "url": null,
-        "image": "https://images.opencollective.com/eugene-voynov/avatar.png",
-        "amount": 10,
-        "date": "2023-02-14T17:32:53.083Z",
-        "source": "opencollective"
     }
 ]
