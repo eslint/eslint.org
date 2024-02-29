@@ -89,7 +89,7 @@ The overwhelming majority of our income came from sponsors, and we're extra grat
 | Contra | $5,000.00 |
 | Substack | $5,000.00 |
 | Cybozu | $3,152.00 |
-| Algolia | $3,000 |
+| Algolia | $3,000.00 |
 | Wix Engineering | $2,400.00 |
 | Ignition | $2,400.00 |
 | Icons8 | $2,400.00 |
