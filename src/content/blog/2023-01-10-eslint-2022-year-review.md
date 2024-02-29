@@ -151,4 +151,4 @@ While ESLint had a fantastic 2022, we are looking forward to an even better 2023
 
 We are excited about the future of ESLint and we appreciate your ongoing support.
 
-**Updated (2024-02-22):** We revised how our financials were reported to correct for errors in our initial calculation and to bring the numbers in this post inline with our 2023 approach to calculating our financials.
+**Updated (2024-02-29):** We revised how our financials were reported to correct for errors in our initial calculation and to bring the numbers in this post inline with our 2023 approach to calculating our financials.
