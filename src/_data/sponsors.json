@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 137688,
-        "monthlyDonations": 11474,
-        "sponsorCount": 170
+        "annualDonations": 139908,
+        "monthlyDonations": 11659,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -50,7 +50,7 @@
             "url": "https://www.jetbrains.com/",
             "image": "https://images.opencollective.com/jetbrains/eb04ddc/logo.png",
             "monthlyDonation": 500,
-            "totalDonations": 1000,
+            "totalDonations": 1500,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
@@ -86,7 +86,7 @@
             "url": "https://www.notion.so",
             "image": "https://images.opencollective.com/notion/bf3b117/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 200,
+            "totalDonations": 400,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -173,7 +173,16 @@
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 350,
-            "totalDonations": 17164,
+            "totalDonations": 17514,
+            "source": "opencollective",
+            "tier": null
+        },
+        {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 170,
+            "totalDonations": 2320,
             "source": "opencollective",
             "tier": null
         },
@@ -233,7 +242,7 @@
             "url": "https://webdriver.io/",
             "image": "https://images.opencollective.com/webdriverio/bbdd5c3/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 20,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": null
         },
@@ -279,6 +288,15 @@
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
             "monthlyDonation": 10,
             "totalDonations": 240,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Anu Alabi",
+            "url": null,
+            "image": "https://images.opencollective.com/anu-alabi/2804057/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 280,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -469,7 +487,7 @@
             "url": null,
             "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 110,
+            "totalDonations": 115,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -487,7 +505,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 70,
+            "totalDonations": 75,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -496,7 +514,7 @@
             "url": "https://www.lightcdn.com",
             "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -505,7 +523,7 @@
             "url": "https://www.lightnode.com",
             "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -542,6 +560,15 @@
             "image": "https://images.opencollective.com/kevinpeckham/194bb8a/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 90,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "SureBet",
+            "url": "https://www.sure.bet/casinos-not-on-gamstop/",
+            "image": "https://images.opencollective.com/wesurebet/0052abd/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 100,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1106,7 +1133,7 @@
         },
         {
             "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=fa8b1a5ca15dddfcc7c859063815009679cac50d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14953122?u=eec1a659aae619d768966cf9621318ab46cb1cd9&v=4",
             "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1221,7 +1248,7 @@
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
-            "totalDonations": 18,
+            "totalDonations": 21,
             "source": "opencollective",
             "tier": null
         },
