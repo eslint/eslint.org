@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139908,
-        "monthlyDonations": 11659,
-        "sponsorCount": 173
+        "annualDonations": 139920,
+        "monthlyDonations": 11660,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -1444,6 +1444,14 @@
             "tier": "backer"
         },
         {
+            "name": "ᴀʀᴍᴇʀ.ᴄʏʙᴇʀ",
+            "image": "https://avatars.githubusercontent.com/u/34856790?u=0c84665bc8dfc012f0efe640755cddd5a2731f18&v=4",
+            "url": "https://github.com/Kritsanawipankhet",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
             "url": "https://vezel.dev",
@@ -1453,7 +1461,7 @@
         },
         {
             "name": "PLANFRED",
-            "url": "https://www.planfred.com",
+            "url": "https://www.planfred.com/",
             "image": "https://images.opencollective.com/planfredapp/4ae56a1/logo.png",
             "monthlyDonation": 0,
             "totalDonations": 20,
