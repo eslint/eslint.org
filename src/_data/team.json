@@ -13,6 +13,17 @@
             "location": "Mountain View, CA"
         },
         {
+            "username": "fasttime",
+            "name": "Francesco Trotta",
+            "title": "ESLint Technical Steering Committee",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6367844?v=4",
+            "bio": null,
+            "twitter_username": null,
+            "github_username": "fasttime",
+            "location": null
+        },
+        {
             "username": "mdjermanovic",
             "name": "Milos Djermanovic",
             "title": "ESLint Technical Steering Committee",
@@ -374,17 +385,6 @@
             "github_username": "JoshuaKGoldberg",
             "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
             "location": "Philadelphia, PA, USA"
-        },
-        {
-            "username": "fasttime",
-            "name": "Francesco Trotta",
-            "title": "ESLint Committer",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6367844?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "fasttime",
-            "location": null
         },
         {
             "username": "Tanujkanti4441",
