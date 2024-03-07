@@ -3,18 +3,22 @@ name: Data Fetch
 on:
   schedule:
   - cron: "0 7 * * *" # Every day at midnight PDT
+  push:
+    tags:
+    - "v*" # After each release
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
+        ref: "main" # Necessary when a tag triggers the workflow. Without this, the tag would be checked out and so the commit would not update the main branch.
         token: ${{ secrets.WORKFLOW_PUSH_BOT_TOKEN }}
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: "lts/*"
 
@@ -40,7 +44,7 @@ jobs:
       run: |
         git config user.name "GitHub Actions Bot"
         git config user.email "<eslint@googlegroups.com>"
-    
+
     - name: Save updated files
       run: |
         chmod +x ./tools/commit-data.sh
