@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133920,
-        "monthlyDonations": 11160,
-        "sponsorCount": 173
+        "annualDonations": 139932,
+        "monthlyDonations": 11661,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -61,6 +61,14 @@
             "monthlyDonation": 500,
             "totalDonations": 23000,
             "source": "opencollective",
+            "tier": "silver-sponsor"
+        },
+        {
+            "name": "American Express",
+            "image": "https://avatars.githubusercontent.com/u/3853301?v=4",
+            "url": "https://americanexpress.io",
+            "monthlyDonation": 500,
+            "source": "github",
             "tier": "silver-sponsor"
         },
         {
@@ -1423,6 +1431,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "ochairo",
+            "image": "https://avatars.githubusercontent.com/u/19258508?u=a8b649356a6ef5d75e0b8a5aa3382b0aa267cdb1&v=4",
+            "url": "https://github.com/ochairo",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"

@@ -4,10 +4,10 @@
     "currentVersion": "v9.0.0-beta.1",
     "currentVersionDate": "2024-02-23T22:04:24Z",
     "currentVersionIsPrerelease": true,
-    "stars": 24000,
-    "lastCommitDate": "2024-03-07T05:22:47Z",
-    "projectDependents": 18384416,
-    "weeklyDownloads": 39562337,
+    "stars": 24006,
+    "lastCommitDate": "2024-03-07T20:52:57Z",
+    "projectDependents": 18408431,
+    "weeklyDownloads": 39590097,
     "nextVersion": "v9.0.0-beta.2",
     "nextVersionDate": "2024-03-08"
 }
