@@ -126,12 +126,13 @@
     "eslintbot": {
         "username": "eslintbot",
         "name": "ESLint Bot",
-        "title": "Automation Bot",
+        "title": "Guest Author",
         "website": "https://eslint.org",
         "avatar_url": "https://avatars.githubusercontent.com/u/13383618?v=4",
         "bio": null,
         "twitter_username": "geteslint",
         "github_username": "eslintbot",
+        "mastodon_url": "https://fosstodon.org/@eslint",
         "location": null
     },
     "captbaritone": {

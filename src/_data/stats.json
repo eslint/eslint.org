@@ -1,13 +1,13 @@
 {
     "latestVersion": "v8.57.0",
     "latestVersionDate": "2024-02-23T20:39:50Z",
-    "currentVersion": "v9.0.0-beta.1",
-    "currentVersionDate": "2024-02-23T22:04:24Z",
+    "currentVersion": "v9.0.0-beta.2",
+    "currentVersionDate": "2024-03-08T21:22:53Z",
     "currentVersionIsPrerelease": true,
-    "stars": 24006,
-    "lastCommitDate": "2024-03-07T20:52:57Z",
-    "projectDependents": 18408431,
+    "stars": 24010,
+    "lastCommitDate": "2024-03-08T21:22:52Z",
+    "projectDependents": 18422267,
     "weeklyDownloads": 39590097,
-    "nextVersion": "v9.0.0-beta.2",
-    "nextVersionDate": "2024-03-08"
+    "nextVersion": "v9.0.0-beta.3",
+    "nextVersionDate": "2024-03-22"
 }
