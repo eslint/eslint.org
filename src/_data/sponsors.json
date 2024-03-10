@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139932,
-        "monthlyDonations": 11661,
-        "sponsorCount": 175
+        "annualDonations": 139812,
+        "monthlyDonations": 11651,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -328,15 +328,6 @@
             "tier": null
         },
         {
-            "name": "Kevin Partington",
-            "url": null,
-            "image": "https://images.opencollective.com/kevin-partington/54f2124/avatar.png",
-            "monthlyDonation": 10,
-            "totalDonations": 580,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Benjamin Piouffle",
             "url": "https://benjamin.piouffle.com/",
             "image": "https://images.opencollective.com/betree/2142bbe/avatar.png",
@@ -496,7 +487,7 @@
             "url": "https://celebian.com/",
             "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
