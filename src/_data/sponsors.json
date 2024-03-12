@@ -1,19 +1,10 @@
 {
     "totals": {
-        "annualDonations": 139812,
-        "monthlyDonations": 11651,
-        "sponsorCount": 174
+        "annualDonations": 115812,
+        "monthlyDonations": 9651,
+        "sponsorCount": 173
     },
     "platinum": [
-        {
-            "name": "Chrome Frameworks Fund",
-            "url": null,
-            "image": "https://images.opencollective.com/2021-frameworks-fund/logo.png",
-            "monthlyDonation": 2000,
-            "totalDonations": 52500,
-            "source": "opencollective",
-            "tier": "platinum-sponsor"
-        },
         {
             "name": "Automattic",
             "url": "https://automattic.com",
