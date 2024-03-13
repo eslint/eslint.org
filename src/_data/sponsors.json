@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 115812,
-        "monthlyDonations": 9651,
-        "sponsorCount": 173
+        "annualDonations": 128352,
+        "monthlyDonations": 10696,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -16,6 +16,14 @@
         }
     ],
     "gold": [
+        {
+            "name": "Bitwarden",
+            "image": "https://avatars.githubusercontent.com/u/15990069?v=4",
+            "url": "https://bitwarden.com",
+            "monthlyDonation": 1048,
+            "source": "github",
+            "tier": "gold-sponsor"
+        },
         {
             "name": "Salesforce",
             "url": "https://engineering.salesforce.com",
@@ -1066,14 +1074,6 @@
             "tier": "backer"
         },
         {
-            "name": "Yutsuten",
-            "image": "https://avatars.githubusercontent.com/u/7322925?u=33db251d02b633150683f87dfe90fcd6621ab850&v=4",
-            "url": "https://yutsuten.github.io/notes/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "James Hay",
             "image": "https://avatars.githubusercontent.com/u/7937480?u=54287fafb0a0c782bc8f68b6635d80e4a0944f74&v=4",
             "url": "https://github.com/flagpoonage",
@@ -1322,6 +1322,14 @@
             "tier": null
         },
         {
+            "name": "Mr. Henry",
+            "image": "https://avatars.githubusercontent.com/u/45111?v=4",
+            "url": "https://mrhenry.be",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Benjamin Reed",
             "image": "https://avatars.githubusercontent.com/u/89252?v=4",
             "url": "http://raccoonfink.bandcamp.com/",
@@ -1389,6 +1397,14 @@
             "name": "Mikihiro SUDA",
             "image": "https://avatars.githubusercontent.com/u/6907421?u=c75ea52865a9d8c123be471553aa81c24380e89d&v=4",
             "url": "https://sudame.net",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yutsuten",
+            "image": "https://avatars.githubusercontent.com/u/7322925?u=33db251d02b633150683f87dfe90fcd6621ab850&v=4",
+            "url": "https://yutsuten.github.io/notes/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
