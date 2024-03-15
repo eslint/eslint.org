@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128352,
-        "monthlyDonations": 10696,
-        "sponsorCount": 175
+        "annualDonations": 129072,
+        "monthlyDonations": 10756,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -199,6 +199,14 @@
             "image": "https://avatars.githubusercontent.com/u/34240465?v=4",
             "url": "https://opensource.mercedes-benz.com/",
             "monthlyDonation": 100,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Park Sijun",
+            "image": "https://avatars.githubusercontent.com/u/79843980?u=7c6759d0bb6bc7732e919c85bf77858072047ed4&v=4",
+            "url": "https://velog.io/@millwheel",
+            "monthlyDonation": 50,
             "source": "github",
             "tier": "backer"
         },
@@ -427,6 +435,14 @@
             "name": "HikaruEgashira",
             "image": "https://avatars.githubusercontent.com/u/39324739?u=846fcaed774d2417d7f72875e0592af97cbc1a6b&v=4",
             "url": "https://github.com/HikaruEgashira",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Erik Perri",
+            "image": "https://avatars.githubusercontent.com/u/46399654?v=4",
+            "url": "https://github.com/erik-perri",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
