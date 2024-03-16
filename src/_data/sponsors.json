@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129072,
-        "monthlyDonations": 10756,
-        "sponsorCount": 177
+        "annualDonations": 128940,
+        "monthlyDonations": 10745,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -419,14 +419,6 @@
             "name": "kagan",
             "image": "https://avatars.githubusercontent.com/u/34136752?u=4d75e5b7a3bd567567c340b60cd68e5b0612dfd1&v=4",
             "url": "https://github.com/kagankan",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Vladislav Doronin",
-            "image": "https://avatars.githubusercontent.com/u/38317538?u=40223f6095007ded4ed9be20af6201c93d67955a&v=4",
-            "url": "https://github.com/reapziq",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1445,14 +1437,6 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "ochairo",
-            "image": "https://avatars.githubusercontent.com/u/19258508?u=a8b649356a6ef5d75e0b8a5aa3382b0aa267cdb1&v=4",
-            "url": "https://github.com/ochairo",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
