@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128940,
-        "monthlyDonations": 10745,
-        "sponsorCount": 175
+        "annualDonations": 129000,
+        "monthlyDonations": 10750,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -1189,6 +1189,14 @@
             "name": "Suleima Solpa",
             "image": "https://avatars.githubusercontent.com/u/57841128?u=d70005ad835f11378c1991c3130943ad5d63abba&v=4",
             "url": "https://github.com/dgdgsf",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Rohit Irvisetty",
+            "image": "https://avatars.githubusercontent.com/u/62420528?u=a3250ca55ec3904929b8b6bd09b4c7b9725f03dd&v=4",
+            "url": "https://rohit.setty3197@gmail.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
