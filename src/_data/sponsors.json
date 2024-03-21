@@ -906,7 +906,7 @@
             "tier": "backer"
         },
         {
-            "name": "ELAN e.V.",
+            "name": "elan e.V.",
             "image": "https://avatars.githubusercontent.com/u/1064602?v=4",
             "url": "https://elan-ev.de",
             "monthlyDonation": 5,
@@ -1435,7 +1435,7 @@
         },
         {
             "name": "Schalk Venter",
-            "image": "https://avatars.githubusercontent.com/u/14258328?u=9ba6a280f10968206633a9b7a423d01afe53913b&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14258328?u=4f6ab1695f0bdc1beea54afb531565f9797b8f8d&v=4",
             "url": "https://schalkventer.me",
             "monthlyDonation": 1,
             "source": "github",
