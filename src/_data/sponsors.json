@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128988,
-        "monthlyDonations": 10749,
-        "sponsorCount": 175
+        "annualDonations": 128976,
+        "monthlyDonations": 10748,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -267,7 +267,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 90,
+            "totalDonations": 100,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1131,8 +1131,8 @@
         },
         {
             "name": "Niko Achilles Kokkinos",
-            "image": "https://avatars.githubusercontent.com/u/15736120?u=2b792b2e5fd22d36b8dafbc514cf019b82955e63&v=4",
-            "url": "https://github.com/niko-achilles",
+            "image": "https://avatars.githubusercontent.com/u/15736120?u=e221b8aedcdec7157c105624717826c325e376ac&v=4",
+            "url": "https://nikoachilles.substack.com/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1187,8 +1187,8 @@
         },
         {
             "name": "Dastan Rinatuly",
-            "image": "https://avatars.githubusercontent.com/u/57841128?u=d70005ad835f11378c1991c3130943ad5d63abba&v=4",
-            "url": "https://github.com/tynyshtyq",
+            "image": "https://avatars.githubusercontent.com/u/57841128?v=4",
+            "url": "https://tynyshtyq.blog",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1373,14 +1373,6 @@
             "name": "John Karahalis",
             "image": "https://avatars.githubusercontent.com/u/933396?v=4",
             "url": "https://www.johnkarahalis.com",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "BooTheKat",
-            "image": "https://avatars.githubusercontent.com/u/2340896?u=9f1d29a0fba2c0d6781e7552398d28422029aea2&v=4",
-            "url": "https://elliottchenstudio.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
