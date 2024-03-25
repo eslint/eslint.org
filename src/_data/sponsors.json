@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128976,
-        "monthlyDonations": 10748,
-        "sponsorCount": 174
+        "annualDonations": 128916,
+        "monthlyDonations": 10743,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -1117,14 +1117,6 @@
             "name": "Johannes Konings",
             "image": "https://avatars.githubusercontent.com/u/14806640?u=3586bd6e631a350aec9ff1f2cc31615f72233244&v=4",
             "url": "https://johanneskonings.dev/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Yuzuki Aida",
-            "image": "https://avatars.githubusercontent.com/u/14953122?u=592adbb5a5bb93653a29cb3fbf98f825a3632322&v=4",
-            "url": "https://nzws.me",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
