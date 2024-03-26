@@ -87,14 +87,19 @@ const customTheme = theme => ({
     }
 });
 
+const defaultOption = {
+    value: "default",
+    label: "(default)"
+};
+
 export default function Configuration({ rulesMeta, eslintVersion, onUpdate, options, ruleNames, validationError }) {
     const [showVersion, setShowVersions] = useState(false);
     const [showRules, setShowRules] = useState(true);
     const [configFileFormat, setConfigFileFormat] = useState("ESM");
 
-    const sourceTypeOptions = SOURCE_TYPES.map(sourceType => ({ value: sourceType, label: sourceType }));
+    const sourceTypeOptions = [defaultOption, ...SOURCE_TYPES.map(sourceType => ({ value: sourceType, label: sourceType }))];
     const ECMAFeaturesOptions = ECMA_FEATURES.map(ecmaFeature => ({ value: ecmaFeature, label: ecmaFeature }));
-    const ECMAVersionsOptions = ECMA_VERSIONS.map(ecmaVersion => ({ value: ecmaVersion === "latest" ? ecmaVersion : Number(ecmaVersion), label: ecmaVersion }));
+    const ECMAVersionsOptions = [defaultOption, ...ECMA_VERSIONS.map(ecmaVersion => ({ value: ecmaVersion === "latest" ? ecmaVersion : Number(ecmaVersion), label: ecmaVersion }))];
     const configFileFormatOptions = CONFIG_FORMATS.map(configFormat => ({ value: configFormat, label: configFormat }));
 
     // filter rules which are already added to the configuration
@@ -184,11 +189,16 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                 styles={customStyles}
                                 theme={theme => customTheme(theme)}
                                 defaultValue={
-                                    ECMAVersionsOptions.filter(ecmaVersion => ecmaVersion.value === (options.languageOptions.ecmaVersion || "latest"))
+                                    ECMAVersionsOptions.filter(ecmaVersion => ecmaVersion.value === (options.languageOptions.ecmaVersion || "default"))
                                 }
                                 options={ECMAVersionsOptions}
                                 onChange={selected => {
-                                    options.languageOptions.ecmaVersion = selected.value;
+                                    if (selected.value === "default") {
+                                        delete options.languageOptions.ecmaVersion;
+                                    } else {
+                                        options.languageOptions.ecmaVersion = selected.value;
+                                    }
+
                                     onUpdate(Object.assign({}, options));
                                 }}
                             />
@@ -200,10 +210,15 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                             isSearchable={false}
                             styles={customStyles}
                             theme={theme => customTheme(theme)}
-                            defaultValue={sourceTypeOptions.filter(sourceTypeOption => sourceTypeOption.value === (options.languageOptions.sourceType || "module"))}
+                            defaultValue={sourceTypeOptions.filter(sourceTypeOption => sourceTypeOption.value === (options.languageOptions.sourceType || "default"))}
                             options={sourceTypeOptions}
                             onChange={selected => {
-                                options.languageOptions.sourceType = selected.value;
+                                if (selected.value === "default") {
+                                    delete options.languageOptions.sourceType;
+                                } else {
+                                    options.languageOptions.sourceType = selected.value;
+                                }
+
                                 onUpdate(Object.assign({}, options));
                             }}
 
