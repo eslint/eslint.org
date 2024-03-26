@@ -12,6 +12,8 @@ import Split from "react-split";
 import debounce from "./utils/debounce";
 import "./scss/split-pane.scss";
 
+const DEFAULT_TEXT = "/* eslint quotes: [\"error\", \"double\"] */\nconst a = 'b';";
+
 const linter = new Linter({ configType: "flat" });
 const legacyLinter = new Linter({ configType: "eslintrc" });
 const rules = legacyLinter.getRules();
@@ -21,72 +23,75 @@ const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
     return result;
 }, {});
 
-const defaultLanguageOptions = {
-    parserOptions: {
-        ecmaFeatures: {}
-    }
-};
-
-const isEmptyObject = obj => obj && Object.keys(obj).length === 0 && obj.constructor === Object;
-
-const fillOptionsDefaults = options =>
-    (!isEmptyObject(options)
-        ? {
-            rules: {},
-            ...options,
-            languageOptions: {
-                ...options.languageOptions,
-                parserOptions: {
-                    ecmaFeatures: {},
-                    ...options.languageOptions?.parserOptions
-                }
-            }
+const getDefaultOptions = () => ({
+    rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
+        if (rule.meta.docs.recommended) {
+            result[ruleId] = ["error"];
         }
-        : {
-            languageOptions: defaultLanguageOptions,
-            rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
-                if (rule.meta.docs.recommended) {
-                    result[ruleId] = ["error"];
-                }
-                return result;
-            }, {})
-        });
+        return result;
+    }, {})
+});
 
-const convertLegacyOptionsToFlatConfig = (options = {}) => {
+const fillOptionsDefaults = options => ({
+    rules: {},
+    ...options,
+    languageOptions: {
+        ...options.languageOptions,
+        parserOptions: {
+            ecmaFeatures: {},
+            ...options.languageOptions?.parserOptions
+        }
+    }
+});
 
-    // If options object is empty, return it
-    if (isEmptyObject(options)) {
+const convertLegacyOptionsToFlatConfig = options => {
+
+    // If there are no legacy properties, return it
+    if (!options.env && !options.parserOptions) {
         return options;
     }
 
-    // If options is already a flat config, return it
-    if (typeof options.languageOptions !== "undefined" && typeof options.parserOptions === "undefined") {
-        return options;
+    // eslint-disable-next-line no-unused-vars -- `env` is discarded as it doesn't exist in flat config
+    const { env, parserOptions, ...flatConfigOptions } = options;
+
+    if (parserOptions) {
+        const { ecmaFeatures, ...restParserOptions } = parserOptions;
+
+        flatConfigOptions.languageOptions = restParserOptions;
+
+        if (ecmaFeatures) {
+            flatConfigOptions.languageOptions.parserOptions = { ecmaFeatures };
+        }
     }
-
-    const { parserOptions } = options;
-    const flatConfigOptions = {
-        languageOptions: {
-            ecmaVersion: parserOptions.ecmaVersion || "latest",
-            parserOptions: {
-                ecmaFeatures: parserOptions.ecmaFeatures || {}
-            },
-            sourceType: parserOptions.sourceType || "module"
-        },
-        rules: options.rules || {}
-
-    };
 
     return flatConfigOptions;
 };
 
 const getUrlState = () => {
     try {
-        const urlOptions = JSON.parse(Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")));
+        const urlState = JSON.parse(Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")));
 
-        return { text: urlOptions.text, options: convertLegacyOptionsToFlatConfig(urlOptions.options) };
+        if (typeof urlState.text === "undefined") {
+            return null;
+        }
+
+        return { text: urlState.text, options: urlState.options };
     } catch {
-        return {};
+        return null;
+    }
+};
+
+const getLocalStorageState = () => {
+    try {
+        const localStorageState = JSON.parse(window.localStorage.getItem("linterDemoState") || "{}");
+
+        if (typeof localStorageState.text === "undefined") {
+            return null;
+        }
+
+        return { text: localStorageState.text, options: localStorageState.options };
+    } catch {
+        return null;
     }
 };
 
@@ -101,11 +106,23 @@ const hasLocalStorage = () => {
 };
 
 const App = () => {
-    const { text: storedText, options: storedOptions } = JSON.parse(window.localStorage.getItem("linterDemoState") || "{}");
-    const { text: urlText, options: urlOptions } = getUrlState();
-    const [text, setText] = useState(urlText || storedText || "/* eslint quotes: [\"error\", \"double\"] */\nconst a = 'b';");
+    let initialText, initialOptions;
+
+    const initialState = getUrlState() || getLocalStorageState();
+
+    if (initialState) {
+        initialText = initialState.text;
+        initialOptions = initialState.options ? convertLegacyOptionsToFlatConfig(initialState.options) : {};
+    } else {
+        initialText = DEFAULT_TEXT;
+        initialOptions = getDefaultOptions();
+    }
+
+    initialOptions = fillOptionsDefaults(initialOptions);
+
+    const [text, setText] = useState(initialText);
     const [fix, setFix] = useState(false);
-    const [options, setOptions] = useState(fillOptionsDefaults(urlText ? urlOptions || {} : convertLegacyOptionsToFlatConfig(storedOptions)));
+    const [options, setOptions] = useState(initialOptions);
 
     const lint = () => {
         try {
