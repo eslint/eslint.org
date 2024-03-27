@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 128916,
-        "monthlyDonations": 10743,
+        "annualDonations": 128196,
+        "monthlyDonations": 10683,
         "sponsorCount": 173
     },
     "platinum": [
@@ -186,15 +186,6 @@
             "tier": null
         },
         {
-            "name": "Yannick Croissant",
-            "url": "https://yannick.cr",
-            "image": "https://images.opencollective.com/yannickcr/765f06f/avatar.png",
-            "monthlyDonation": 100,
-            "totalDonations": 5700,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Mercedes-Benz Group",
             "image": "https://avatars.githubusercontent.com/u/34240465?v=4",
             "url": "https://opensource.mercedes-benz.com/",
@@ -224,6 +215,15 @@
             "url": "https://alan.com",
             "monthlyDonation": 45,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yannick Croissant",
+            "url": "https://yannick.cr/",
+            "image": "https://images.opencollective.com/yannickcr/765f06f/avatar.png",
+            "monthlyDonation": 40,
+            "totalDonations": 5700,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1178,9 +1178,9 @@
             "tier": "backer"
         },
         {
-            "name": "Dastan Rinatuly",
-            "image": "https://avatars.githubusercontent.com/u/57841128?v=4",
-            "url": "https://tynyshtyq.blog",
+            "name": "xuantm",
+            "image": "https://avatars.githubusercontent.com/u/53134698?u=43a77dc1d74c808e528ec7a59ed3656977cd0c74&v=4",
+            "url": "https://github.com/ssnaruto",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
