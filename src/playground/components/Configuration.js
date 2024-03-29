@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Select, { components } from "react-select";
 import ShareURL from "./ShareURL";
-import { ECMA_FEATURES, ECMA_VERSIONS, SOURCE_TYPES, ENV_NAMES } from "../utils/constants";
+import { ECMA_FEATURES, ECMA_VERSIONS, SOURCE_TYPES, CONFIG_FORMATS } from "../utils/constants";
 
 const customStyles = {
     singleValue: styles => ({
@@ -87,17 +87,22 @@ const customTheme = theme => ({
     }
 });
 
+const defaultOption = {
+    value: "default",
+    label: "(default)"
+};
+
+const isEmpty = obj => Object.keys(obj).length === 0;
+
 export default function Configuration({ rulesMeta, eslintVersion, onUpdate, options, ruleNames, validationError }) {
-
     const [showVersion, setShowVersions] = useState(false);
-    const [showEnvironment, setShowEnvironment] = useState(false);
     const [showRules, setShowRules] = useState(true);
+    const [configFileFormat, setConfigFileFormat] = useState("ESM");
 
-
-    const sourceTypeOptions = SOURCE_TYPES.map(sourceType => ({ value: sourceType, label: sourceType }));
+    const sourceTypeOptions = [defaultOption, ...SOURCE_TYPES.map(sourceType => ({ value: sourceType, label: sourceType }))];
     const ECMAFeaturesOptions = ECMA_FEATURES.map(ecmaFeature => ({ value: ecmaFeature, label: ecmaFeature }));
-    const ECMAVersionsOptions = ECMA_VERSIONS.map(ecmaVersion => ({ value: ecmaVersion === "latest" ? ecmaVersion : Number(ecmaVersion), label: ecmaVersion }));
-    const envNamesOptions = ENV_NAMES.map(envName => ({ value: envName, label: envName }));
+    const ECMAVersionsOptions = [defaultOption, ...ECMA_VERSIONS.map(ecmaVersion => ({ value: ecmaVersion === "latest" ? ecmaVersion : Number(ecmaVersion), label: ecmaVersion }))];
+    const configFileFormatOptions = CONFIG_FORMATS.map(configFormat => ({ value: configFormat, label: configFormat }));
 
     // filter rules which are already added to the configuration
     const ruleNamesOptions = ruleNames.filter(ruleName => options.rules && !options.rules[ruleName]).map(ruleName => ({
@@ -161,6 +166,19 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         onUpdate(Object.assign({}, options));
     };
 
+    // Remove empty objects from download configuration
+    const hasEcmaFeatures = !isEmpty(options.languageOptions.parserOptions.ecmaFeatures);
+    const optionsForConfigFile = {
+        rules: isEmpty(options.rules) ? void 0 : options.rules,
+        languageOptions: Object.keys(options.languageOptions).length === 1 && !hasEcmaFeatures
+            ? void 0
+            : {
+                ...options.languageOptions,
+                parserOptions: !hasEcmaFeatures ? void 0 : options.languageOptions.parserOptions
+            }
+    };
+
+    const configFileContent = `${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([optionsForConfigFile], null, 4)};`;
 
     return (
         <div className="playground__config-options__sections">
@@ -184,10 +202,17 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                 isSearchable={false}
                                 styles={customStyles}
                                 theme={theme => customTheme(theme)}
-                                defaultValue={ECMAVersionsOptions.filter(ecmaVersion => options.parserOptions.ecmaVersion === ecmaVersion.value)}
+                                defaultValue={
+                                    ECMAVersionsOptions.filter(ecmaVersion => ecmaVersion.value === (options.languageOptions.ecmaVersion || "default"))
+                                }
                                 options={ECMAVersionsOptions}
                                 onChange={selected => {
-                                    options.parserOptions.ecmaVersion = selected.value;
+                                    if (selected.value === "default") {
+                                        delete options.languageOptions.ecmaVersion;
+                                    } else {
+                                        options.languageOptions.ecmaVersion = selected.value;
+                                    }
+
                                     onUpdate(Object.assign({}, options));
                                 }}
                             />
@@ -199,10 +224,15 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                             isSearchable={false}
                             styles={customStyles}
                             theme={theme => customTheme(theme)}
-                            defaultValue={sourceTypeOptions.filter(sourceTypeOption => options.parserOptions.sourceType === sourceTypeOption.value)}
+                            defaultValue={sourceTypeOptions.filter(sourceTypeOption => sourceTypeOption.value === (options.languageOptions.sourceType || "default"))}
                             options={sourceTypeOptions}
                             onChange={selected => {
-                                options.parserOptions.sourceType = selected.value;
+                                if (selected.value === "default") {
+                                    delete options.languageOptions.sourceType;
+                                } else {
+                                    options.languageOptions.sourceType = selected.value;
+                                }
+
                                 onUpdate(Object.assign({}, options));
                             }}
 
@@ -213,44 +243,23 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                         <Select
                             isClearable
                             isMulti
-                            defaultValue={ECMAFeaturesOptions.filter(ecmaFeatureName => options.parserOptions.ecmaFeatures[ecmaFeatureName.value])}
+                            defaultValue={
+                                ECMAFeaturesOptions.filter(ecmaFeatureName => options.languageOptions.parserOptions.ecmaFeatures[ecmaFeatureName.value])
+                            }
                             isSearchable={false}
                             styles={customStyles}
                             theme={theme => customTheme(theme)}
                             options={ECMAFeaturesOptions}
                             onChange={selectedOptions => {
-                                options.parserOptions.ecmaFeatures = {};
+                                options.languageOptions.parserOptions.ecmaFeatures = {};
                                 selectedOptions.forEach(selected => {
-                                    options.parserOptions.ecmaFeatures[selected.value] = true;
+                                    options.languageOptions.parserOptions.ecmaFeatures[selected.value] = true;
                                 });
                                 onUpdate(Object.assign({}, options));
                             }}
                         />
                     </div>
                 </div>}
-            </div>
-            <div className="playground__config-options__section">
-                <button className="playground-toggle c-btn c-btn--ghost" onClick={() => setShowEnvironment(currentValue => !currentValue)}>
-                    <h2 data-config-section-title>Environments</h2>
-                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor" style={{ transform: showEnvironment ? "rotate(180deg)" : null }}><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
-                </button>
-                {showEnvironment && <div data-config-section>
-                    <Select
-                        isMulti
-                        styles={customStyles}
-                        theme={theme => customTheme(theme)}
-                        defaultValue={envNamesOptions.filter(envName => options.env[envName.value])}
-                        options={envNamesOptions}
-                        onChange={selectedOptions => {
-                            options.env = {};
-                            selectedOptions.forEach(selected => {
-                                options.env[selected.value] = true;
-                            });
-                            onUpdate(Object.assign({}, options));
-                        }}
-                    />
-                </div>
-                }
             </div>
             <div className="playground__config-options__section playground__config-options__section--rules">
                 <button className="playground-toggle c-btn c-btn--ghost" onClick={() => setShowRules(currentValue => !currentValue)}>
@@ -369,15 +378,33 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                     </div>
                 </div>
             </div> */}
-            <a
-                href={
-                    `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(options, null, 4))}`
-                }
-                download=".eslintrc.json"
-                className="c-btn c-btn--primary playground__config__download-btn"
-            >
-                Download this config file
-            </a>
+
+            <div className="playground__config-options__section">
+                <div data-config-section>
+                    <label className="c-field" htmlFor="config-format">
+                        <span className="label__text">Configuration File Format</span>
+                        <Select
+                            isSearchable={false}
+                            styles={customStyles}
+                            theme={theme => customTheme(theme)}
+                            defaultValue={configFileFormatOptions.filter(formatOption => formatOption.value === "ESM")}
+                            options={configFileFormatOptions}
+                            onChange={selected => {
+                                setConfigFileFormat(selected.value);
+                            }}
+                        />
+                    </label>
+                    <a
+                        href={
+                            `data:application/json;charset=utf-8,${encodeURIComponent(configFileContent)}`
+                        }
+                        download="eslint.config.js"
+                        className="c-btn c-btn--primary playground__config__download-btn"
+                    >
+                        Download this config file
+                    </a>
+                </div>
+            </div>
         </div>
     );
 }

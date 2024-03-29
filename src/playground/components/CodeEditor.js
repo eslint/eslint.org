@@ -5,18 +5,17 @@ import { bracketMatching } from "@codemirror/matchbrackets";
 import { javascript, esLint } from "@codemirror/lang-javascript";
 import { linter } from "../utils/codemirror-linter-extension";
 import { ESLintPlaygroundTheme, ESLintPlaygroundHighlightStyle } from "../utils/codemirror-theme";
-import { Linter as ESLint } from "../node_modules/eslint/lib/linter/";
 import "../scss/editor.scss";
 
-export default function CodeEditor({ codeValue, onUpdate, eslintOptions }) {
+export default function CodeEditor({ codeValue, onUpdate, eslintOptions, eslintInstance }) {
     const extensions = useMemo(() => [
         history(),
         bracketMatching(),
-        linter(esLint(new ESLint(), eslintOptions), { delay: 0 }),
+        linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
         javascript(),
         ESLintPlaygroundTheme,
         ESLintPlaygroundHighlightStyle
-    ], [eslintOptions]);
+    ], [eslintOptions, eslintInstance]);
 
     return (
         <CodeMirror

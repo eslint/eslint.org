@@ -4,37 +4,6 @@ export const ECMA_FEATURES = [
     "impliedStrict"
 ];
 
-export const ENV_NAMES = [
-    "browser",
-    "node",
-    "commonjs",
-    "shared-node-browser",
-    "worker",
-    "amd",
-    "mocha",
-    "jasmine",
-    "jest",
-    "phantomjs",
-    "jquery",
-    "qunit",
-    "prototypejs",
-    "shelljs",
-    "meteor",
-    "mongo",
-    "protractor",
-    "applescript",
-    "nashorn",
-    "serviceworker",
-    "atomtest",
-    "embertest",
-    "webextensions",
-    "es6",
-    "es2017",
-    "es2020",
-    "es2021",
-    "greasemonkey"
-];
-
 export const ECMA_VERSIONS = [
     "3",
     "5",
@@ -46,10 +15,18 @@ export const ECMA_VERSIONS = [
     "2020",
     "2021",
     "2022",
+    "2023",
+    "2024",
     "latest"
 ];
 
 export const SOURCE_TYPES = [
     "script",
-    "module"
+    "module",
+    "commonjs"
+];
+
+export const CONFIG_FORMATS = [
+    "CommonJS",
+    "ESM"
 ];

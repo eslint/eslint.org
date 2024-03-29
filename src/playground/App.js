@@ -6,54 +6,104 @@ import CrashAlert from "./components/CrashAlert";
 import Footer from "./components/Footer";
 import CodeEditor from "./components/CodeEditor";
 import { Linter, SourceCodeFixer } from "./node_modules/eslint/lib/linter/";
-import { Legacy } from "@eslint/eslintrc/universal";
 import Unicode from "./utils/unicode";
 import Configuration from "./components/Configuration";
 import Split from "react-split";
 import debounce from "./utils/debounce";
 import "./scss/split-pane.scss";
 
-const linter = new Linter();
-const rules = linter.getRules();
+const DEFAULT_TEXT = "/* eslint quotes: [\"error\", \"double\"] */\nconst a = 'b';";
+
+const linter = new Linter({ configType: "flat" });
+const legacyLinter = new Linter({ configType: "eslintrc" });
+const rules = legacyLinter.getRules();
 const ruleNames = Array.from(rules.keys());
 const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
     result[key] = value.meta;
     return result;
 }, {});
 
-const defaultParserOptions = {
-    ecmaFeatures: {},
-    ecmaVersion: "latest",
-    sourceType: "script"
-};
-
-const fillOptionsDefaults = options =>
-    (options
-        ? {
-            env: {},
-            rules: {},
-            ...options,
-            parserOptions: {
-                ...defaultParserOptions,
-                ...options.parserOptions
-            }
+const getDefaultOptions = () => ({
+    rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
+        if (rule.meta.docs.recommended) {
+            result[ruleId] = ["error"];
         }
-        : {
-            env: { es6: true },
-            parserOptions: defaultParserOptions,
-            rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
-                if (rule.meta.docs.recommended) {
-                    result[ruleId] = ["error"];
-                }
-                return result;
-            }, {})
-        });
+        return result;
+    }, {})
+});
+
+const fillOptionsDefaults = options => ({
+    rules: {},
+    ...options,
+    languageOptions: {
+        ...options.languageOptions,
+        parserOptions: {
+            ecmaFeatures: {},
+            ...options.languageOptions?.parserOptions
+        }
+    }
+});
+
+const convertLegacyOptionsToFlatConfig = options => {
+
+    // If there are no legacy properties, return it
+    if (!options.env && !options.parserOptions) {
+        return options;
+    }
+
+    // eslint-disable-next-line no-unused-vars -- `env` is discarded as it doesn't exist in flat config
+    const { env, parserOptions, ...flatConfigOptions } = options;
+
+    if (parserOptions) {
+        const { ecmaFeatures, ...restParserOptions } = parserOptions;
+
+        flatConfigOptions.languageOptions = restParserOptions;
+
+        /*
+         * Normalize ecmaVersion to support links with configs generated
+         * by the old demo (https://archive.eslint.org/demo)
+         */
+        if (
+            typeof parserOptions.ecmaVersion === "number" &&
+            parserOptions.ecmaVersion >= 6 &&
+            parserOptions.ecmaVersion < 2015
+        ) {
+            flatConfigOptions.languageOptions.ecmaVersion = parserOptions.ecmaVersion + 2009;
+        }
+
+        if (ecmaFeatures) {
+            flatConfigOptions.languageOptions.parserOptions = { ecmaFeatures };
+        }
+    }
+
+    return flatConfigOptions;
+};
 
 const getUrlState = () => {
     try {
-        return JSON.parse(Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")));
+        const urlState = JSON.parse(Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")));
+
+        if (typeof urlState.text === "undefined") {
+            return null;
+        }
+
+        return { text: urlState.text, options: urlState.options };
     } catch {
-        return {};
+        return null;
+    }
+};
+
+const getLocalStorageState = () => {
+    try {
+        const localStorageState = JSON.parse(window.localStorage.getItem("linterDemoState") || "{}");
+
+        if (typeof localStorageState.text === "undefined") {
+            return null;
+        }
+
+        return { text: localStorageState.text, options: localStorageState.options };
+    } catch {
+        return null;
     }
 };
 
@@ -68,26 +118,41 @@ const hasLocalStorage = () => {
 };
 
 const App = () => {
-    const { text: storedText, options: storedOptions } = JSON.parse(window.localStorage.getItem("linterDemoState") || "{}");
-    const { text: urlText, options: urlOptions } = getUrlState();
-    const [text, setText] = useState(urlText || storedText || "/* eslint quotes: [\"error\", \"double\"] */\nconst a = 'b';");
+    let initialText, initialOptions;
+
+    const initialState = getUrlState() || getLocalStorageState();
+
+    if (initialState) {
+        initialText = initialState.text;
+        initialOptions = initialState.options ? convertLegacyOptionsToFlatConfig(initialState.options) : {};
+    } else {
+        initialText = DEFAULT_TEXT;
+        initialOptions = getDefaultOptions();
+    }
+
+    initialOptions = fillOptionsDefaults(initialOptions);
+
+    const [text, setText] = useState(initialText);
     const [fix, setFix] = useState(false);
-    const [options, setOptions] = useState(fillOptionsDefaults(urlText ? urlOptions || {} : storedOptions));
+    const [options, setOptions] = useState(initialOptions);
+
+    // In some cases, Linter modifies `languageOptions`, so we'll deep-clone them
+    const optionsForLinter = {
+        ...options,
+        languageOptions: {
+            ...options.languageOptions,
+            parserOptions: {
+                ...options.languageOptions.parserOptions,
+                ecmaFeatures: {
+                    ...options.languageOptions.parserOptions.ecmaFeatures
+                }
+            }
+        }
+    };
 
     const lint = () => {
         try {
-            const validator = new Legacy.ConfigValidator({ builtInRules: rules });
-
-            validator.validate(options);
-        } catch (error) {
-            return {
-                messages: [],
-                output: text,
-                validationError: error
-            };
-        }
-        try {
-            const { messages, output } = linter.verifyAndFix(text, options, { fix });
+            const { messages, output } = linter.verifyAndFix(text, optionsForLinter, { fix });
             let fatalMessage;
 
             if (messages && messages.length > 0 && messages[0].fatal) {
@@ -100,10 +165,18 @@ const App = () => {
                 fatalMessage
             };
         } catch (error) {
+            if (error.message.includes("Key \"rules\":")) {
+                return {
+                    messages: [],
+                    output: text,
+                    validationError: error
+                };
+            }
+
             return {
                 messages: [],
                 output: text,
-                error
+                crashError: error
             };
         }
     };
@@ -121,7 +194,7 @@ const App = () => {
         history.replaceState(null, null, url);
     }, [options, text]);
 
-    const { messages, output, fatalMessage, error: crashError, validationError } = lint();
+    const { messages, output, fatalMessage, crashError, validationError } = lint();
     const lintTime = Date.now();
     const isInvalidAutofix = fatalMessage && text !== output;
 
@@ -203,7 +276,8 @@ const App = () => {
                         <CodeEditor
                             tabIndex="0"
                             codeValue={text}
-                            eslintOptions={options}
+                            eslintInstance={linter}
+                            eslintOptions={optionsForLinter}
                             onUpdate={debouncedOnUpdate}
                         />
                     </main>
