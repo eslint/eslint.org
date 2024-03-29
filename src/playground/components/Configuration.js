@@ -92,6 +92,8 @@ const defaultOption = {
     label: "(default)"
 };
 
+const isEmpty = obj => Object.keys(obj).length === 0;
+
 export default function Configuration({ rulesMeta, eslintVersion, onUpdate, options, ruleNames, validationError }) {
     const [showVersion, setShowVersions] = useState(false);
     const [showRules, setShowRules] = useState(true);
@@ -164,7 +166,19 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
         onUpdate(Object.assign({}, options));
     };
 
-    const configFileContent = `${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([options], null, 4)};`;
+    // Remove empty objects from download configuration
+    const hasEcmaFeatures = !isEmpty(options.languageOptions.parserOptions.ecmaFeatures);
+    const optionsForConfigFile = {
+        rules: isEmpty(options.rules) ? void 0 : options.rules,
+        languageOptions: Object.keys(options.languageOptions).length === 1 && !hasEcmaFeatures
+            ? void 0
+            : {
+                ...options.languageOptions,
+                parserOptions: !hasEcmaFeatures ? void 0 : options.languageOptions.parserOptions
+            }
+    };
+
+    const configFileContent = `${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([optionsForConfigFile], null, 4)};`;
 
     return (
         <div className="playground__config-options__sections">
