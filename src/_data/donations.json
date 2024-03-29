@@ -214,14 +214,5 @@
         "amount": 20,
         "date": "2023-03-09T07:33:43.485Z",
         "source": "opencollective"
-    },
-    {
-        "id": "8rzownxl-9e50pxy9-wgj6ymvb-dgk7j43a",
-        "name": "Sayz Lim",
-        "url": "https://sayzlim.net",
-        "image": "https://images.opencollective.com/sayzlim/22f657d/avatar.png",
-        "amount": 5,
-        "date": "2023-02-17T17:49:45.356Z",
-        "source": "opencollective"
     }
 ]
