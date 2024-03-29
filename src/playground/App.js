@@ -59,6 +59,18 @@ const convertLegacyOptionsToFlatConfig = options => {
 
         flatConfigOptions.languageOptions = restParserOptions;
 
+        /*
+         * Normalize ecmaVersion to support links with configs generated
+         * by the old demo (https://archive.eslint.org/demo)
+         */
+        if (
+            typeof parserOptions.ecmaVersion === "number" &&
+            parserOptions.ecmaVersion >= 6 &&
+            parserOptions.ecmaVersion < 2015
+        ) {
+            flatConfigOptions.languageOptions.ecmaVersion = parserOptions.ecmaVersion + 2009;
+        }
+
         if (ecmaFeatures) {
             flatConfigOptions.languageOptions.parserOptions = { ecmaFeatures };
         }
