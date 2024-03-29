@@ -136,9 +136,23 @@ const App = () => {
     const [fix, setFix] = useState(false);
     const [options, setOptions] = useState(initialOptions);
 
+    // In some cases, Linter modifies `languageOptions`, so we'll deep-clone them
+    const optionsForLinter = {
+        ...options,
+        languageOptions: {
+            ...options.languageOptions,
+            parserOptions: {
+                ...options.languageOptions.parserOptions,
+                ecmaFeatures: {
+                    ...options.languageOptions.parserOptions.ecmaFeatures
+                }
+            }
+        }
+    };
+
     const lint = () => {
         try {
-            const { messages, output } = linter.verifyAndFix(text, options, { fix });
+            const { messages, output } = linter.verifyAndFix(text, optionsForLinter, { fix });
             let fatalMessage;
 
             if (messages && messages.length > 0 && messages[0].fatal) {
@@ -263,7 +277,7 @@ const App = () => {
                             tabIndex="0"
                             codeValue={text}
                             eslintInstance={linter}
-                            eslintOptions={options}
+                            eslintOptions={optionsForLinter}
                             onUpdate={debouncedOnUpdate}
                         />
                     </main>
