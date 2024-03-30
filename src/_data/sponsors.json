@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128196,
-        "monthlyDonations": 10683,
-        "sponsorCount": 173
+        "annualDonations": 128340,
+        "monthlyDonations": 10695,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -337,7 +337,7 @@
         {
             "name": "Benjamin Piouffle",
             "url": "https://benjamin.piouffle.com/",
-            "image": "https://images.opencollective.com/betree/2142bbe/avatar.png",
+            "image": "https://images.opencollective.com/betree/eb1a3dd/avatar.png",
             "monthlyDonation": 10,
             "totalDonations": 618,
             "source": "opencollective",
@@ -1154,6 +1154,14 @@
             "tier": "backer"
         },
         {
+            "name": "Kaelyn Suh",
+            "image": "https://avatars.githubusercontent.com/u/23407262?u=a79a3846a0b020d43801226e934e749554a50807&v=4",
+            "url": "https://kaelyn.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Zentered",
             "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
             "url": "https://zentered.co",
@@ -1205,6 +1213,14 @@
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828?u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
             "url": "https://standardresume.co/tech",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mahaut Victoria Latinis",
+            "image": "https://avatars.githubusercontent.com/u/77189438?u=ddf033348d8b4c64c1e337a8c6c98afc41794a22&v=4",
+            "url": "https://github.com/mahautlatinis",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1293,6 +1309,14 @@
             "totalDonations": 80,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Kieran McGuire",
+            "image": "https://avatars.githubusercontent.com/u/2109807?u=ba55c676da7633c859f85f91e37595bacf72f8fd&v=4",
+            "url": "https://kieranmcguire.uk/",
+            "monthlyDonation": 2,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "Frontend Masters",
