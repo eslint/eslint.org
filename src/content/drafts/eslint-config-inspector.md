@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing ESLint Config Inspector
-teaser: "Introducing to the ESLint Config Inspector, a visual tool to help you understand and inspect ESLint flat configuration files."
+teaser: "Introducing the ESLint Config Inspector, a visual tool to help you understand and inspect ESLint flat configuration files."
 tags:
   - Config Inspector
   - Release
@@ -13,13 +13,13 @@ categories:
 
 As the [new flat config format](/blog/2023/10/flat-config-rollout-plans/) rolling out with many benefits, it makes configures easier to manage and more transparent to compose. However, it can still be non-trivial to understand what rules are enabled and disabled for which files, especially when the configurations are complex or extending from multiple sources.
 
-To help with that situtation and improve the developer experience with flat configs even further, we are excited to introduce you the [ESLint Config Inspector](https://github.com/eslint/config-inspector) --- a visual and interactive tool helping you to understand and inspect your config file.
+To help with that situation and improve the developer experience with flat configs even further, we are excited to introduce you the [ESLint Config Inspector](https://github.com/eslint/config-inspector) --- a visual and interactive tool helping you to understand and inspect your config file.
 
 ![Screenshot of config inspector](/assets/images/blog/2024/config-inspector-intro.png)
 
 ## Give it a Try!
 
-[ESLint Config Inspector](https://github.com/eslint/config-inspector) is a CLI command that fires up a local web server to visualize your ESLint configuration file from you local filesystem. You can give it a try by running the following command
+[ESLint Config Inspector](https://github.com/eslint/config-inspector) is a CLI command that fires up a local web server to visualize your ESLint configuration file from your local filesystem. You can give it a try by running the following command
 in the root directory that contains `eslint.config.js` file:
 
 ```bash
@@ -34,7 +34,7 @@ Here are some of the key features that the ESLint Config Inspector provides:
 
 ### Config Items Overview
 
-In the `Configs` tab, you will see a list of all flat configuration items from your ESLint configuration file. This is useful especially when you are extending external configurations or having dynamic generated configurations. This feature gives you the transparency to see how those configurations are resolved and augmented into your project.
+In the `Configs` tab, you will see a list of all flat configuration items from your ESLint configuration file. This is useful especially when you are extending external configurations or having dynamically generated configurations. This feature gives you the transparency to see how those configurations are resolved and augmented into your project.
 
 ![Screenshot of Configs Overview](/assets/images/blog/2024/config-inspector-configs.png)
 
