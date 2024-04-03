@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 126912,
-        "monthlyDonations": 10576,
-        "sponsorCount": 177
+        "annualDonations": 126972,
+        "monthlyDonations": 10581,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -49,7 +49,7 @@
             "url": "https://www.jetbrains.com/",
             "image": "https://images.opencollective.com/jetbrains/eb04ddc/logo.png",
             "monthlyDonation": 500,
-            "totalDonations": 1500,
+            "totalDonations": 2000,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
@@ -256,7 +256,7 @@
             "url": "https://webdriver.io/",
             "image": "https://images.opencollective.com/webdriverio/bbdd5c3/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 40,
+            "totalDonations": 60,
             "source": "opencollective",
             "tier": null
         },
@@ -487,6 +487,15 @@
             "tier": "backer"
         },
         {
+            "name": "Marco Solazzi",
+            "url": "https://marco.solazzi.me",
+            "image": "https://images.opencollective.com/marco-solazzi/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Artur Kulig",
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
@@ -527,7 +536,7 @@
             "url": "https://www.lightcdn.com",
             "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1448,7 +1457,7 @@
         },
         {
             "name": "Schalk Venter",
-            "image": "https://avatars.githubusercontent.com/u/14258328?u=4f6ab1695f0bdc1beea54afb531565f9797b8f8d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14258328?u=5e16ca45510cb4cbb7e74f9bc7c7d51bac7f3288&v=4",
             "url": "https://schalkventer.me",
             "monthlyDonation": 1,
             "source": "github",
