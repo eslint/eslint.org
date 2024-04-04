@@ -11,9 +11,7 @@ categories:
   - Announcements
 ---
 
-As the [new flat config format](/blog/2023/10/flat-config-rollout-plans/) rolling out with many benefits, it makes configures easier to manage and more transparent to compose. However, it can still be non-trivial to understand what rules are enabled and disabled for which files, especially when the configurations are complex or extending from multiple sources.
-
-To help with that situation and improve the developer experience with flat configs even further, we are excited to introduce you the [ESLint Config Inspector](https://github.com/eslint/config-inspector) --- a visual and interactive tool helping you to understand and inspect your config file.
+As of ESLint v9,0.0, the [new configuration system](/blog/2023/10/flat-config-rollout-plans/) has reached general availability, bringing with it with many benefits. Configuration files are now easier to manage and more transparent to compose. However, it can still be non-trivial to understand which rules are enabled and disabled for specific files, especially when your configuration is complex or composed from multiple sources. That's why we are excited to introduce the [ESLint Config Inspector](https://github.com/eslint/config-inspector), a visual and interactive tool to help you better understand and inspect your config file.
 
 ![Screenshot of config inspector](/assets/images/blog/2024/config-inspector-intro.png)
 
@@ -26,7 +24,7 @@ in the root directory that contains `eslint.config.js` file:
 npx @eslint/config-inspector
 ```
 
-Visit http://localhost:7777 in your browser, and you will see a visual representation of your ESLint configuration file. You can then navigate through the rules, plugins, and language configurations that are enabled or disabled in your configuration. Changes made to your local configuration file will also be reflected in automatically in the inspector.
+Visit http://localhost:7777 in your browser, and you will see a visual representation of your ESLint configuration file. You can then navigate through the rules, plugins, and language configurations that are enabled or disabled. Changes made to your local configuration file will also be reflected in automatically in the inspector.
 
 ## Features
 
@@ -34,13 +32,13 @@ Here are some of the key features that the ESLint Config Inspector provides:
 
 ### Config Items Overview
 
-In the `Configs` tab, you will see a list of all flat configuration items from your ESLint configuration file. This is useful especially when you are extending external configurations or having dynamically generated configurations. This feature gives you the transparency to see how those configurations are resolved and augmented into your project.
+In the "Configs" tab, you will see a list of all configuration objects from your configuration file. This is especially useful when you are including external configurations or have dynamically generated configurations. This feature gives you the transparency to see how those configurations are resolved and augmented in your project.
 
 ![Screenshot of Configs Overview](/assets/images/blog/2024/config-inspector-configs.png)
 
 ### Filepath Matching
 
-In the `Configs` tab, you can also use the search input to match with a filepath to see which rules are enabled or disabled for that specific file:
+In the "Configs" tab, you can enter a file path to see which rules are enabled or disabled for that specific file:
 
 ![Screenshot of Filepath Matching](/assets/images/blog/2024/config-inspector-filepath-filter.png)
 
@@ -50,10 +48,10 @@ You can also toggle the view to see the final merged rules for that file:
 
 ### Available Rules
 
-You can go to the `Rules` tab to see all the available rules from the plugins you have installed. See how each rule is enabled or disabled in your configuration file. Or filter the rules to find the usage of deprecated rules or recommended rules that are not yet enabled, etc.
+Go to the "Rules" tab to see all the available rules from the plugins you have installed. Each rule displays if it is enabled or disabled in your configuration file. You can also filter rules to find the usage of deprecated rules or recommended rules that are not yet enabled.
 
 ![Screenshot of Filepath Matching](/assets/images/blog/2024/config-inspector-deprecated.png)
 
 ## Conclusion
 
-We hope that the ESLint Config Inspector will make understanding and maintaining your ESLint configurations easier and more enjoyable. We are excited to hear your feedback and suggestions on how we can improve the tool further. Please feel free to [open an issue](https://github.com/eslint/config-inspector/issues) on the GitHub repository if you have any ideas for new features or better experiences.
+We hope that the ESLint Config Inspector will make understanding and maintaining your ESLint configurations easier and more enjoyable. We are excited to hear your feedback and suggestions on how we can improve the tool further. Please feel free to [open an issue](https://github.com/eslint/config-inspector/issues) to share your thoughts.
