@@ -97,6 +97,13 @@ eleventyExcludeFromCollections: true
 /docs/head/*                        https://eslint.org/docs/head/:splat 302!
 {% endif %}
 
+# Docs for the latest v8.x
+{% if site.locals.docs_v8 %}
+/docs/v8.x/*                        https://{{ site.locals.docs_v8 }}/:splat 200!
+{% else %}
+/docs/v8.x/*                        https://eslint.org/docs/v8.x/:splat 302!
+{% endif %}
+
 # Docs for the current prerelease
 {% if site.locals.docs_next %}
 /docs/next/*                        https://{{ site.locals.docs_next }}/:splat 200!

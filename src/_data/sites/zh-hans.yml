@@ -20,6 +20,7 @@ locals:
   docs_latest: zh-hans-docs.netlify.app
   docs_head: false
   docs_next: false
+  docs_v8: false
   blog: false
 
 #------------------------------------------------------------------------------
