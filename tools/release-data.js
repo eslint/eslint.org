@@ -13,7 +13,7 @@
  *   an alpha/beta/rc prerelease, regardless of the current version.
  * @type {null|string}
  */
-const upcomingVersionPrereleaseType = "rc";
+const upcomingVersionPrereleaseType = null;
 
 module.exports = {
     upcomingVersionPrereleaseType
