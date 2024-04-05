@@ -17,8 +17,13 @@ As of ESLint v9,0.0, the [new configuration system](/blog/2023/10/flat-config-ro
 
 ## Give it a Try!
 
-[ESLint Config Inspector](https://github.com/eslint/config-inspector) is a CLI command that fires up a local web server to visualize your ESLint configuration file from your local filesystem. You can give it a try by running the following command
-in the root directory that contains `eslint.config.js` file:
+[ESLint Config Inspector](https://github.com/eslint/config-inspector) is a CLI command that fires up a local web server to visualize your ESLint configuration file from your local filesystem. Give it a try:
+
+```bash
+eslint --inspect-config
+```
+
+Or you can run the config inspector without ESLint installed by running the following command in the root directory that contains `eslint.config.js` file:
 
 ```bash
 npx @eslint/config-inspector
