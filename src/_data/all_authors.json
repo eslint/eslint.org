@@ -189,5 +189,16 @@
         "twitter_username": null,
         "github_username": "fasttime",
         "location": null
+    },
+    "antfu": {
+        "username": "antfu",
+        "name": "Anthony Fu",
+        "title": "Guest Author",
+        "website": "https://antfu.me",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11247099?v=4",
+        "bio": "A ship in harbor is safe, but that is not what ships are built for.",
+        "twitter_username": "antfu7",
+        "github_username": "antfu",
+        "location": "undefined"
     }
 }
