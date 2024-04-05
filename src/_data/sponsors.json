@@ -1408,6 +1408,14 @@
             "tier": "backer"
         },
         {
+            "name": "Nhan Doan",
+            "image": "https://avatars.githubusercontent.com/u/2561973?v=4",
+            "url": "https://nhan.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Ethan Glover",
             "image": "https://avatars.githubusercontent.com/u/3924176?u=c00121ab8bd1d501799150db672276615e136415&v=4",
             "url": "https://www.ethang.dev/",
@@ -1467,14 +1475,6 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "ᴀʀᴍᴇʀ.ᴄʏʙᴇʀ",
-            "image": "https://avatars.githubusercontent.com/u/34856790?u=0c84665bc8dfc012f0efe640755cddd5a2731f18&v=4",
-            "url": "https://github.com/Kritsanawipankhet",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
