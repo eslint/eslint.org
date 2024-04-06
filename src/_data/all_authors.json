@@ -104,7 +104,7 @@
     "hzoo": {
         "username": "hzoo",
         "name": "Henry",
-        "title": "Guest Author",
+        "title": "ESLint Alumnus",
         "website": "https://henryzoo.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/588473?v=4",
         "bio": "Learning to maintain stuff",
@@ -199,6 +199,7 @@
         "bio": "A ship in harbor is safe, but that is not what ships are built for.",
         "twitter_username": "antfu7",
         "github_username": "antfu",
+        "mastodon_url": "https://m.webtoo.ls/@antfu",
         "location": "undefined"
     }
 }
