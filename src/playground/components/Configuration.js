@@ -317,7 +317,7 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
                                         aria-label={`Remove ${ruleName}`}
                                         title={`Remove ${ruleName}`}
                                         onClick={() => {
-                                                                                        delete options.rules[ruleName];
+                                            delete options.rules[ruleName];
                                             setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs].filter(rule => rule !== ruleName)));
                                             onUpdate(Object.assign({}, options));
                                         }}
