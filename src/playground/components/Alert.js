@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Alert({ type, text, message, onFix }) {
+export default function Alert({ type, text, message, onFix, options, onUpdate, rulesWithInvalidConfigs, setRulesWithInvalidConfigs }) {
     if (!message) {
         return (
             <article aria-roledescription={type} className={`alert alert--${type}`}>
@@ -70,12 +70,25 @@ export default function Alert({ type, text, message, onFix }) {
                     </ul>
                 </>
             ) : (
-                fix && (
-                    <button onClick={() => onFix(message)} className="alert__fix-btn">
+                <div style={{
+                    display: 'flex'
+                }}>
+                   { fix && (
+                    <button onClick={() => onFix(message)} className="alert__fix-btn" style={{'border-radius': 0}}>
                         Fix
                     </button>
-                )
+                        )}
+                    <button onClick={() => {
+                         delete options.rules[ruleId];
+                         setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs].filter(rule => rule !== ruleId)));
+                         onUpdate(Object.assign({}, options));
+                        
+                    }} className="alert__fix-btn">
+                        Disabled
+                    </button>
+                </div>
             )}
+
         </article>
     );
 }
