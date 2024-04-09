@@ -71,18 +71,18 @@ export default function Alert({ type, text, message, onFix, options, onUpdate, r
                 </>
             ) : (
                 <div style={{
-                    display: 'flex'
+                    display: "flex"
                 }}>
-                   { fix && (
-                    <button onClick={() => onFix(message)} className="alert__fix-btn" style={{'border-radius': 0}}>
+                    { fix && (
+                        <button onClick={() => onFix(message)} className="alert__fix-btn" style={{ "border-radius": 0 }}>
                         Fix
-                    </button>
-                        )}
+                        </button>
+                    )}
                     <button onClick={() => {
-                         delete options.rules[ruleId];
-                         setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs].filter(rule => rule !== ruleId)));
-                         onUpdate(Object.assign({}, options));
-                        
+                        delete options.rules[ruleId];
+                        setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs].filter(rule => rule !== ruleId)));
+                        onUpdate(Object.assign({}, options));
+
                     }} className="alert__fix-btn">
                         Disabled
                     </button>
