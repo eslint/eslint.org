@@ -78,13 +78,14 @@ export default function Alert({ type, text, message, onFix, options, onUpdate, r
                         Fix
                         </button>
                     )}
-                    <button onClick={() => {
-                        delete options.rules[ruleId];
-                        setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs].filter(rule => rule !== ruleId)));
-                        onUpdate(Object.assign({}, options));
-
-                    }} className="alert__fix-btn">
-                        Disabled
+                    <button
+                        onClick={() => {
+                            delete options.rules[ruleId];
+                            setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs].filter(rule => rule !== ruleId)));
+                            onUpdate(Object.assign({}, options));
+                        }}
+                        className="alert__fix-btn">
+                        Turnoff
                     </button>
                 </div>
             )}
