@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 126972,
-        "monthlyDonations": 10581,
-        "sponsorCount": 178
+        "annualDonations": 126984,
+        "monthlyDonations": 10582,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -527,7 +527,7 @@
             "url": "https://celebian.com/",
             "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1476,6 +1476,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yesman",
+            "image": "https://avatars.githubusercontent.com/u/62268626?u=ec6a03e203542d46d6e5893183f0f85b2f88ca62&v=4",
+            "url": "https://yesman.vercel.app",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
