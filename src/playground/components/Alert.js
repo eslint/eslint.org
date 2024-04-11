@@ -85,7 +85,7 @@ export default function Alert({ type, text, message, onFix, options, onUpdate, r
                             onUpdate(Object.assign({}, options));
                         }}
                         className="alert__fix-btn">
-                        Turnoff
+                        Disable
                     </button>
                 </div>
             )}
