@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 126984,
-        "monthlyDonations": 10582,
-        "sponsorCount": 179
+        "annualDonations": 114396,
+        "monthlyDonations": 9533,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -16,14 +16,6 @@
         }
     ],
     "gold": [
-        {
-            "name": "Bitwarden",
-            "image": "https://avatars.githubusercontent.com/u/15990069?v=4",
-            "url": "https://bitwarden.com",
-            "monthlyDonation": 1048,
-            "source": "github",
-            "tier": "gold-sponsor"
-        },
         {
             "name": "Salesforce",
             "url": "https://engineering.salesforce.com",
@@ -1375,14 +1367,6 @@
             "totalDonations": 32,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Mr. Henry",
-            "image": "https://avatars.githubusercontent.com/u/45111?v=4",
-            "url": "https://mrhenry.be",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "Benjamin Reed",
