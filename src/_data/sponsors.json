@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 114396,
-        "monthlyDonations": 9533,
-        "sponsorCount": 177
+        "annualDonations": 114516,
+        "monthlyDonations": 9543,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -889,6 +889,14 @@
             "tier": "backer"
         },
         {
+            "name": "Miroslav Šustek",
+            "image": "https://avatars.githubusercontent.com/u/885946?v=4",
+            "url": "https://github.com/sustmi",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Owen Buckley",
             "image": "https://avatars.githubusercontent.com/u/895923?u=ee2417210461abea5b06cf6aea5492220ecdadf7&v=4",
             "url": "https://www.thegreenhouse.io",
@@ -1100,6 +1108,14 @@
             "name": "James Hay",
             "image": "https://avatars.githubusercontent.com/u/7937480?u=54287fafb0a0c782bc8f68b6635d80e4a0944f74&v=4",
             "url": "https://github.com/flagpoonage",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Daniel Arthur Gallagher",
+            "image": "https://avatars.githubusercontent.com/u/8526031?u=9bdab29f81fd1923b7608a513cf69a9f8f0752dd&v=4",
+            "url": "https://danieleloscozzese.it",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
