@@ -133,7 +133,6 @@ const App = () => {
     initialOptions = fillOptionsDefaults(initialOptions);
 
     const [text, setText] = useState(initialText);
-    const fix = false;
     const [options, setOptions] = useState(initialOptions);
 
     // In some cases, Linter modifies `languageOptions`, so we'll deep-clone them
@@ -152,7 +151,7 @@ const App = () => {
 
     const lint = () => {
         try {
-            const { messages, output } = linter.verifyAndFix(text, optionsForLinter, { fix });
+            const { messages, output } = linter.verifyAndFix(text, optionsForLinter, { fix: false });
             let fatalMessage;
 
             if (messages && messages.length > 0 && messages[0].fatal) {
