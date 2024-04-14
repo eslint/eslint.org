@@ -133,7 +133,7 @@ const App = () => {
     initialOptions = fillOptionsDefaults(initialOptions);
 
     const [text, setText] = useState(initialText);
-    const [fix, setFix] = useState(false);
+    const fix = false;
     const [options, setOptions] = useState(initialOptions);
 
     // In some cases, Linter modifies `languageOptions`, so we'll deep-clone them
@@ -192,7 +192,7 @@ const App = () => {
 
         url.hash = Unicode.encodeToBase64(serializedState);
         history.replaceState(null, null, url);
-    }, [options, text]);
+    }, [options]);
 
     const { messages, output, fatalMessage, crashError, validationError } = lint();
     const lintTime = Date.now();
@@ -228,7 +228,6 @@ const App = () => {
     }, []);
 
     const debouncedOnUpdate = useMemo(() => debounce(value => {
-        setFix(false);
         setText(value);
         storeState({ newText: value });
     }, 400), [storeState]);
