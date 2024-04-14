@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 114516,
-        "monthlyDonations": 9543,
-        "sponsorCount": 179
+        "annualDonations": 113916,
+        "monthlyDonations": 9493,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -180,14 +180,6 @@
             "name": "Hyosik Philip Joo",
             "image": "https://avatars.githubusercontent.com/u/21357387?u=688fc4968fbc84881a3f0a88007605209b2cc7b3&v=4",
             "url": "https://bit.ly/Hyositive-Portfolio-EN",
-            "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Park Sijun",
-            "image": "https://avatars.githubusercontent.com/u/79843980?u=7c6759d0bb6bc7732e919c85bf77858072047ed4&v=4",
-            "url": "https://velog.io/@millwheel",
             "monthlyDonation": 50,
             "source": "github",
             "tier": "backer"
@@ -501,7 +493,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
