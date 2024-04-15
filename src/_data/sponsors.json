@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113916,
-        "monthlyDonations": 9493,
-        "sponsorCount": 178
+        "annualDonations": 113856,
+        "monthlyDonations": 9488,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -1180,14 +1180,6 @@
             "name": "Kaelyn Suh",
             "image": "https://avatars.githubusercontent.com/u/23407262?u=a79a3846a0b020d43801226e934e749554a50807&v=4",
             "url": "https://kaelyn.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Zentered",
-            "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
-            "url": "https://zentered.co",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
