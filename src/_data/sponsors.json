@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113856,
-        "monthlyDonations": 9488,
-        "sponsorCount": 177
+        "annualDonations": 113868,
+        "monthlyDonations": 9489,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -1460,6 +1460,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Gavin John",
+            "image": "https://avatars.githubusercontent.com/u/45835846?v=4",
+            "url": "https://pandapip1.com/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
