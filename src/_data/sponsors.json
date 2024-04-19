@@ -471,6 +471,15 @@
             "tier": "backer"
         },
         {
+            "name": "Buy TikTok Likes",
+            "url": "https://tikviral.com",
+            "image": "https://images.opencollective.com/buy-tiktok-likes/ed5b6c1/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "William Killerud",
             "url": null,
             "image": "https://images.opencollective.com/wkillerud/75e761e/avatar.png",
@@ -1196,14 +1205,6 @@
             "name": "xuantm",
             "image": "https://avatars.githubusercontent.com/u/53134698?u=43a77dc1d74c808e528ec7a59ed3656977cd0c74&v=4",
             "url": "https://github.com/ssnaruto",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Rohit Irvisetty",
-            "image": "https://avatars.githubusercontent.com/u/62420528?u=a3250ca55ec3904929b8b6bd09b4c7b9725f03dd&v=4",
-            "url": "https://rohit.setty3197@gmail.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
