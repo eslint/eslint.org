@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113868,
-        "monthlyDonations": 9489,
-        "sponsorCount": 178
+        "annualDonations": 113808,
+        "monthlyDonations": 9484,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -468,15 +468,6 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Buy TikTok Likes",
-            "url": "https://tikviral.com",
-            "image": "https://images.opencollective.com/buy-tiktok-likes/ed5b6c1/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
