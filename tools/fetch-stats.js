@@ -194,9 +194,21 @@ async function fetchGitHubNetworkStats() {
 
     stats.nextVersion = `v${nextVersion}`;
 
-    // approximate next release date
-    stats.nextVersionDate = DateTime.fromISO(stats.currentVersionDate)
-        .plus({ weeks: 2 }).endOf("week").minus({ days: 2 }).toISODate();
+    /*
+    * Calculate next release date.
+    * We do scheduled releases every two weeks, on Fridays.
+    * One of the scheduled release dates was Friday, 2024-01-12. We'll use that date as the baseline.
+    * So, all planned releases are expected to be on 2024-01-12 + n * 14 days.
+    * Now we'll find the first such day after the current version date.
+    */
+    const baseDate = DateTime.fromISO("2024-01-12");
+    const currentVersionDate = DateTime.fromISO(stats.currentVersionDate);
+
+    stats.nextVersionDate = currentVersionDate
+        .plus({
+            days: 14 - currentVersionDate.diff(baseDate, "days").days % 14
+        })
+        .toISODate();
 
     await fs.writeFile(statsFilePath, JSON.stringify(stats, null, 4), { encoding: "utf8" });
 
