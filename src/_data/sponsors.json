@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113808,
-        "monthlyDonations": 9484,
-        "sponsorCount": 177
+        "annualDonations": 113868,
+        "monthlyDonations": 9489,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -258,7 +258,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 100,
+            "totalDonations": 110,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -908,6 +908,14 @@
             "name": "Titus",
             "image": "https://avatars.githubusercontent.com/u/944406?u=6e0f32d14d720c1b0785b91694428741f8cda89c&v=4",
             "url": "https://wooorm.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Dorell James",
+            "image": "https://avatars.githubusercontent.com/u/977413?u=a9d7861e9c3adacc8729c49a559685cbbb497544&v=4",
+            "url": "https://dorelljames.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
