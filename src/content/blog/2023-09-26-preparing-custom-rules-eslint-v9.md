@@ -13,6 +13,37 @@ categories:
 
 When ESLint v9.0.0 is released, it will ship with several breaking changes for rule authors. These changes are necessary as part of the work to implement [language plugins](https://github.com/eslint/rfcs/blob/main/designs/2022-languages/README.md), which gives ESLint first-class support for linting languages other than JavaScript. We've had to make these changes because ESLint has, from the start, assumed that it would only ever be used to lint JavaScript. As such, there wasn't a lot of thought put into where methods that rules used to interact with source code should live. When revisiting the API for the language plugins work we found that the inconsistencies we were able to live with in a JavaScript-only world will not work in a language-agnostic ESLint core.
 
+## `context` methods becoming properties
+
+As we look towards the API we'd like rules for other languages to have, we decided to convert some methods on `context` to properties. The methods in the following table just returned some data that didn't change, so there was no reason they couldn't be properties instead.
+
+|**Deprecated on `context`**|**Property on `context`**|
+|-----------------------|--------------------------|
+|`context.getSourceCode()`|`context.sourceCode`|
+|`context.getFilename()`|`context.filename`|
+|`context.getPhysicalFilename()`|`context.physicalFilename`|
+|`context.getCwd()`|`context.cwd`|
+
+We are deprecating the methods in favor of the properties (added in v8.40.0). These methods will be removed in v10.0.0 (not v9.0.0) as they are not blocking language plugins work. Here's an example that ensures the correct value is used:
+
+```js
+module.exports = {
+    create(context) {
+
+        const sourceCode = context.sourceCode ?? context.getSourceCode();
+        const cwd = context.cwd ?? context.getCwd();
+        const filename = context.filename ?? context.getFilename();
+        const physicalFilename = context.physicalFilename ?? context.getPhysicalFilename();
+
+        return {
+            Program(node) {
+                // do something
+            }
+        }
+    }
+};
+```
+
 ## From `context` to `SourceCode`
 
 The majority of the breaking changes for rule authors consist of moving methods off of the `context` object that is passed into rules and onto the `SourceCode` object that is retrieved via `context.sourceCode` (or the deprecated `context.getSourceCode()`; see below). The area of responsibility for `context` vs. `SourceCode` has shifted during the lifetime of ESLint: In the beginning, `context` was the home for everything rules needed to use. Once we added `SourceCode`, we slowly started adding more methods to it. The end result was that some methods lived on `context` and some methods lived on `SourceCode`, and the only reason why? The time at which the methods were added.
@@ -59,7 +90,7 @@ We have introduced a new `SourceCode#getScope(node)` method that requires you to
 module.exports = {
     create(context) {
 
-        const { sourceCode } = context;
+        const sourceCode = context.sourceCode ?? context.getSourceCode();
 
         return {
             Program(node) {
@@ -82,7 +113,7 @@ The `context.getAncestors()` method is another method on `context` that uses the
 module.exports = {
     create(context) {
 
-        const { sourceCode } = context;
+        const sourceCode = context.sourceCode ?? context.getSourceCode();
 
         return {
             Program(node) {
@@ -105,7 +136,7 @@ The `context.getDeclaredVariables(node)` returns all variables declared by the g
 module.exports = {
     create(context) {
 
-        const { sourceCode } = context;
+        const sourceCode = context.sourceCode ?? context.getSourceCode();
 
         return {
             Program(node) {
@@ -128,7 +159,7 @@ The `context.markVariableAsUsed(name)` method finds a variable with the given na
 module.exports = {
     create(context) {
 
-        const { sourceCode } = context;
+        const sourceCode = context.sourceCode ?? context.getSourceCode();
 
         return {
             Program(node) {
@@ -202,37 +233,6 @@ module.exports = {
 ```
 
 We have already made this change in all of the ESLint core rules to validate that the approach works as expected.
-
-## `context` methods becoming properties
-
-As we look towards the API we'd like rules for other languages to have, we decided to convert some methods on `context` to properties. The methods in the following table just returned some data that didn't change, so there was no reason they couldn't be properties instead.
-
-|**Deprecated on `context`**|**Property on `context`**|
-|-----------------------|--------------------------|
-|`context.getSourceCode()`|`context.sourceCode`|
-|`context.getFilename()`|`context.filename`|
-|`context.getPhysicalFilename()`|`context.physicalFilename`|
-|`context.getCwd()`|`context.cwd`|
-
-We are deprecating the methods in favor of the properties (added in v8.40.0). These methods will be removed in v10.0.0 (not v9.0.0) as they are not blocking language plugins work. Here's an example that ensures the correct value is used:
-
-```js
-module.exports = {
-    create(context) {
-
-        const sourceCode = context.sourceCode ?? context.getSourceCode();
-        const cwd = context.cwd ?? context.getCwd();
-        const filename = context.filename ?? context.getFilename();
-        const physicalFilename = context.physicalFilename ?? context.getPhysicalFilename();
-
-        return {
-            Program(node) {
-                // do something
-            }
-        }
-    }
-};
-```
 
 ## `context` properties: `parserOptions` and `parserPath` being removed
 
