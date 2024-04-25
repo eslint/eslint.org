@@ -11,7 +11,7 @@ categories:
   - Announcements
 ---
 
-As of ESLint v9,0.0, the [new configuration system](/blog/2023/10/flat-config-rollout-plans/) has reached general availability, bringing with it with many benefits. Configuration files are now easier to manage and more transparent to compose. However, it can still be non-trivial to understand which rules are enabled and disabled for specific files, especially when your configuration is complex or composed from multiple sources. That's why we are excited to introduce the [ESLint Config Inspector](https://github.com/eslint/config-inspector), a visual and interactive tool to help you better understand and inspect your config file.
+As of ESLint v9,0.0, the [new configuration system](/blog/2023/10/flat-config-rollout-plans/) has reached general availability, bringing with it many benefits. Configuration files are now easier to manage and more transparent to compose. However, it can still be non-trivial to understand which rules are enabled and disabled for specific files, especially when your configuration is complex or composed from multiple sources. That's why we are excited to introduce the [ESLint Config Inspector](https://github.com/eslint/config-inspector), a visual and interactive tool to help you better understand and inspect your config file.
 
 ![Screenshot of config inspector](/assets/images/blog/2024/config-inspector-intro.png)
 

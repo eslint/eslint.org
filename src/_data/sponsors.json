@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 126972,
-        "monthlyDonations": 10581,
+        "annualDonations": 113868,
+        "monthlyDonations": 9489,
         "sponsorCount": 178
     },
     "platinum": [
@@ -16,14 +16,6 @@
         }
     ],
     "gold": [
-        {
-            "name": "Bitwarden",
-            "image": "https://avatars.githubusercontent.com/u/15990069?v=4",
-            "url": "https://bitwarden.com",
-            "monthlyDonation": 1048,
-            "source": "github",
-            "tier": "gold-sponsor"
-        },
         {
             "name": "Salesforce",
             "url": "https://engineering.salesforce.com",
@@ -193,14 +185,6 @@
             "tier": "backer"
         },
         {
-            "name": "Park Sijun",
-            "image": "https://avatars.githubusercontent.com/u/79843980?u=7c6759d0bb6bc7732e919c85bf77858072047ed4&v=4",
-            "url": "https://velog.io/@millwheel",
-            "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Tailscale",
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
@@ -274,14 +258,14 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 100,
+            "totalDonations": 110,
             "source": "opencollective",
             "tier": "backer"
         },
         {
             "name": "Nirvati",
             "url": "https://nirvati.org/",
-            "image": "https://images.opencollective.com/nirvati/d8a5a80/logo.png",
+            "image": "https://images.opencollective.com/nirvati/605818e/logo.png",
             "monthlyDonation": 10,
             "totalDonations": 120,
             "source": "opencollective",
@@ -509,7 +493,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -527,7 +511,7 @@
             "url": "https://celebian.com/",
             "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -897,6 +881,14 @@
             "tier": "backer"
         },
         {
+            "name": "Miroslav Šustek",
+            "image": "https://avatars.githubusercontent.com/u/885946?v=4",
+            "url": "https://github.com/sustmi",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Owen Buckley",
             "image": "https://avatars.githubusercontent.com/u/895923?u=ee2417210461abea5b06cf6aea5492220ecdadf7&v=4",
             "url": "https://www.thegreenhouse.io",
@@ -916,6 +908,14 @@
             "name": "Titus",
             "image": "https://avatars.githubusercontent.com/u/944406?u=6e0f32d14d720c1b0785b91694428741f8cda89c&v=4",
             "url": "https://wooorm.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Dorell James",
+            "image": "https://avatars.githubusercontent.com/u/977413?u=a9d7861e9c3adacc8729c49a559685cbbb497544&v=4",
+            "url": "https://dorelljames.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1113,6 +1113,14 @@
             "tier": "backer"
         },
         {
+            "name": "Daniel Arthur Gallagher",
+            "image": "https://avatars.githubusercontent.com/u/8526031?u=9bdab29f81fd1923b7608a513cf69a9f8f0752dd&v=4",
+            "url": "https://danieleloscozzese.it",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "per1234",
             "image": "https://avatars.githubusercontent.com/u/8572152?v=4",
             "url": "https://github.com/per1234",
@@ -1185,14 +1193,6 @@
             "tier": "backer"
         },
         {
-            "name": "Zentered",
-            "image": "https://avatars.githubusercontent.com/u/32449351?v=4",
-            "url": "https://zentered.co",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
@@ -1204,14 +1204,6 @@
             "name": "xuantm",
             "image": "https://avatars.githubusercontent.com/u/53134698?u=43a77dc1d74c808e528ec7a59ed3656977cd0c74&v=4",
             "url": "https://github.com/ssnaruto",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Rohit Irvisetty",
-            "image": "https://avatars.githubusercontent.com/u/62420528?u=a3250ca55ec3904929b8b6bd09b4c7b9725f03dd&v=4",
-            "url": "https://rohit.setty3197@gmail.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1377,14 +1369,6 @@
             "tier": null
         },
         {
-            "name": "Mr. Henry",
-            "image": "https://avatars.githubusercontent.com/u/45111?v=4",
-            "url": "https://mrhenry.be",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Benjamin Reed",
             "image": "https://avatars.githubusercontent.com/u/89252?v=4",
             "url": "http://raccoonfink.bandcamp.com/",
@@ -1476,6 +1460,22 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Gavin John",
+            "image": "https://avatars.githubusercontent.com/u/45835846?v=4",
+            "url": "https://pandapip1.com/",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yesman",
+            "image": "https://avatars.githubusercontent.com/u/62268626?u=ec6a03e203542d46d6e5893183f0f85b2f88ca62&v=4",
+            "url": "https://yesman.vercel.app",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
