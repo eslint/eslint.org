@@ -137,6 +137,17 @@
             "location": "Madrid"
         },
         {
+            "username": "bmish",
+            "name": "Bryan Mishkin",
+            "title": "ESLint Alumnus",
+            "website": "http://www.linkedin.com/in/bmish",
+            "avatar_url": "https://avatars.githubusercontent.com/u/698306?v=4",
+            "bio": "Software Engineer. Passionate about open source and helping developers maximize their productivity. @eslint team.  Former @square.",
+            "twitter_username": null,
+            "github_username": "bmish",
+            "location": "New York City and San Francisco"
+        },
+        {
             "username": "JamesHenry",
             "name": "James Henry",
             "title": "ESLint Alumnus",
@@ -363,17 +374,6 @@
         }
     ],
     "committers": [
-        {
-            "username": "bmish",
-            "name": "Bryan Mishkin",
-            "title": "ESLint Committer",
-            "website": "http://www.linkedin.com/in/bmish",
-            "avatar_url": "https://avatars.githubusercontent.com/u/698306?v=4",
-            "bio": "Software Engineer. Passionate about open source and helping developers maximize their productivity. @eslint team.  Former @square.",
-            "twitter_username": null,
-            "github_username": "bmish",
-            "location": "New York City and San Francisco"
-        },
         {
             "username": "JoshuaKGoldberg",
             "name": "Josh Goldberg ✨",
