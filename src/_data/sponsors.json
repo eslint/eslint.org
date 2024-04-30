@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113808,
-        "monthlyDonations": 9484,
-        "sponsorCount": 177
+        "annualDonations": 113208,
+        "monthlyDonations": 9434,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -173,14 +173,6 @@
             "image": "https://avatars.githubusercontent.com/u/34240465?v=4",
             "url": "https://opensource.mercedes-benz.com/",
             "monthlyDonation": 100,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Hyosik Philip Joo",
-            "image": "https://avatars.githubusercontent.com/u/21357387?u=688fc4968fbc84881a3f0a88007605209b2cc7b3&v=4",
-            "url": "https://bit.ly/Hyositive-Portfolio-EN",
-            "monthlyDonation": 50,
             "source": "github",
             "tier": "backer"
         },
