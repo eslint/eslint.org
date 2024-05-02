@@ -1,4 +1,4 @@
-/* eslint no-use-before-define: 0, no-param-reassign: 0, eslint-comments/require-description: 0 -- Code follows 3rd party styles */
+/* eslint no-use-before-define: 0, no-param-reassign: 0, @eslint-community/eslint-comments/require-description: 0 -- Code follows 3rd party styles */
 /**
  * This file is inspired from @codemirror/lint package https://github.com/codemirror/lint
  * We added custom styles and tooltips content as per our theme and design
