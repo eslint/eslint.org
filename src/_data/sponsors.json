@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111300,
-        "monthlyDonations": 9275,
-        "sponsorCount": 172
+        "annualDonations": 110760,
+        "monthlyDonations": 9230,
+        "sponsorCount": 171
     },
     "platinum": [
         {
@@ -173,14 +173,6 @@
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alan",
-            "image": "https://avatars.githubusercontent.com/u/18175329?v=4",
-            "url": "https://alan.com",
-            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
@@ -567,7 +559,7 @@
             "url": "https://meshpayments.com/",
             "image": "https://images.opencollective.com/meshpayments/e216d5a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 175,
+            "totalDonations": 170,
             "source": "opencollective",
             "tier": "backer"
         },
