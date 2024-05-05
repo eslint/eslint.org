@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 111300,
-        "monthlyDonations": 9275,
+        "annualDonations": 111348,
+        "monthlyDonations": 9279,
         "sponsorCount": 172
     },
     "platinum": [
@@ -383,7 +383,7 @@
         {
             "name": "hikae",
             "image": "https://avatars.githubusercontent.com/u/39324739?u=846fcaed774d2417d7f72875e0592af97cbc1a6b&v=4",
-            "url": "https://github.com/HikaruEgashira",
+            "url": "https://egahika.dev/",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -434,6 +434,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "DevITJobs.com",
+            "url": "https://devitjobs.com/jobs/Java/all",
+            "image": "https://images.opencollective.com/devitjobsus/a84664b/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1327,14 +1336,6 @@
             "name": "John Karahalis",
             "image": "https://avatars.githubusercontent.com/u/933396?v=4",
             "url": "https://www.johnkarahalis.com",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Nhan Doan",
-            "image": "https://avatars.githubusercontent.com/u/2561973?v=4",
-            "url": "https://nhan.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
