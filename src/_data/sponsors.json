@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111348,
-        "monthlyDonations": 9279,
-        "sponsorCount": 172
+        "annualDonations": 111948,
+        "monthlyDonations": 9329,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -182,6 +182,15 @@
             "url": "https://alan.com",
             "monthlyDonation": 45,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yannick Croissant",
+            "url": "https://yannick.cr/",
+            "image": "https://images.opencollective.com/yannickcr/765f06f/avatar.png",
+            "monthlyDonation": 40,
+            "totalDonations": 5740,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -496,6 +505,24 @@
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 85,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "LightCDN",
+            "url": "https://www.lightcdn.com",
+            "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 25,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "LightNode",
+            "url": "https://www.lightnode.com",
+            "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
