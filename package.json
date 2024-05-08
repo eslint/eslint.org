@@ -57,7 +57,7 @@
         "@babel/core": "^7.17.5",
         "@babel/preset-env": "^7.16.11",
         "@babel/preset-react": "^7.16.7",
-        "@eslint/compat": "https://gitpkg.now.sh/eslint/rewrite/packages/compat?commit=backcompat-clean&scripts.postinstall=npm%20install%20--ignore-scripts%20%26%26%20npm%20run%20build",
+        "@eslint/compat": "^1.0.1",
         "@munter/tap-render": "^0.2.0",
         "@octokit/graphql": "^4.8.0",
         "@octokit/rest": "^18.12.0",
@@ -100,6 +100,9 @@
         "webpack": "^5.70.0",
         "webpack-cli": "^4.9.2",
         "yorkie": "^2.0.0"
+    },
+    "overrides": {
+        "eslint": "^9.1.1"
     },
     "dependencies": {
         "@codemirror/highlight": "0.19.7",

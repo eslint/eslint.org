@@ -51,8 +51,8 @@ module.exports = [
         files: [playgroundFiles],
         plugins: {
             react: fixupPluginRules(reactPlugin),
-            "jsx-a11y": jsxA11yPlugin,
-            "react-hooks": reactHooksPlugin
+            "jsx-a11y": fixupPluginRules(jsxA11yPlugin),
+            "react-hooks": fixupPluginRules(reactHooksPlugin)
         },
         settings: {
             react: {
