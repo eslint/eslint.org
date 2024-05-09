@@ -1,6 +1,7 @@
 "use strict";
 
 const path = require("path");
+const webpack = require("webpack");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 /**
@@ -28,7 +29,15 @@ module.exports = (env, { mode }) => ({
         extensions: [".js", ".jsx"],
         mainFields: ["browser", "main", "module"]
     },
-    plugins: [new NodePolyfillPlugin()],
+    plugins: [
+        new webpack.NormalModuleReplacementPlugin(
+            /^node:/u,
+            resource => {
+                resource.request = resource.request.replace(/^node:/u, "");
+            }
+        ),
+        new NodePolyfillPlugin()
+    ],
     ...(mode === "development" ? { devtool: "source-map" } : {}),
     module: {
         rules: [
