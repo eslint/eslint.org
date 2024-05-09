@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111948,
-        "monthlyDonations": 9329,
-        "sponsorCount": 175
+        "annualDonations": 111888,
+        "monthlyDonations": 9324,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -1019,14 +1019,6 @@
             "name": "Nick Oliver",
             "image": "https://avatars.githubusercontent.com/u/3945917?u=75ac213afd2def70385395d15c58e888f3460867&v=4",
             "url": "https://pixnbits.org",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Raymond Schweers",
-            "image": "https://avatars.githubusercontent.com/u/4108685?u=bdd564c34ff380d86efd09da600ec945338dc522&v=4",
-            "url": "https://www.hetwebbureau.nl",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
