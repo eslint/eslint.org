@@ -69,8 +69,6 @@ If you are importing a flat-style configuration from another package that refere
 import { fixupConfigRules } from "@eslint/compat";
 import recommended from "eslint-plugin-example/configs/recommended.js";
 
-const flatCompat = new FlatCompat();
-
 export default [
 
     ...fixupConfigRules(recommended)
