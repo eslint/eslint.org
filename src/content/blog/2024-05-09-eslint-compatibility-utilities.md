@@ -28,7 +28,7 @@ These errors mean that the plugin rules have not been updated to latest ESLint r
 
 ## Using the compatibility utilities
 
-First, install the `@eslint/compat` package using npm or any npm-compatible CLI:
+First, install the [`@eslint/compat`](https://npmjs.com/package/@eslint/compat) package using npm or any npm-compatible CLI:
 
 ```shell
 npm install @eslint/compat -D
