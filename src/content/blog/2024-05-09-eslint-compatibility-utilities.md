@@ -24,7 +24,7 @@ TypeError: context.markVariableAsUsed is not a function
 TypeError: context.getDeclaredVariables is not a function
 ```
 
-These errors mean that the plugin rules have not been updated to latest ESLint rule API.
+These errors mean that the plugin rules have not been updated to the latest ESLint rule API.
 
 ## Using the compatibility utilities
 
@@ -45,12 +45,12 @@ Then, use the `fixupPluginRules()` function in your `eslint.config.js` file to w
 ```js
 // eslint.config.js
 import { fixupPluginRules } from "@eslint/compat";
-import oldPlugin from "eslint-plugin-old-plugin";
+import example from "eslint-plugin-example";
 
 export default [
     {
         plugins: {
-            oldPlugin: fixupPluginRules(oldPlugin)
+            example: fixupPluginRules(example)
         }
     },
 
@@ -60,9 +60,30 @@ export default [
 
 After that, the plugin should work as expected.
 
+## Fixing an imported configuration
+
+If you are importing a flat-style configuration from another package that references plugins, you can use the `fixupConfigRules()` function to wrap all of the plugins found, like this:
+
+```js
+// eslint.config.js
+import { fixupConfigRules } from "@eslint/compat";
+import recommended from "eslint-plugin-example/configs/recommended.js";
+
+const flatCompat = new FlatCompat();
+
+export default [
+
+    ...fixupConfigRules(recommended)
+
+    // other config
+];
+```
+
+The `fixupConfigRules()` function accepts both a single object and an array of objects to easily update any configuration you're using.
+
 ## Using with `FlatCompat`
 
-If you are using `FlatCompat` from the [`@eslint/eslintrc`](https://npmjs.com/package/@eslint/eslintrc) package, you may not be able to access each of the plugins that are referenced inside of an eslintrc-style configuration. In that case, you can use the `fixupConfigRules()` function to wrap all plugins found in an array of configs, as in this example:
+If you are using `FlatCompat` from the [`@eslint/eslintrc`](https://npmjs.com/package/@eslint/eslintrc) package, you may not be able to access each of the plugins that are referenced inside of an eslintrc-style configuration. In that case, you can use the `fixupConfigRules()` function to wrap all plugins, as in this example:
 
 ```js
 // eslint.config.js
