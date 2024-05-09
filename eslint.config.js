@@ -1,11 +1,15 @@
 "use strict";
 
+const eslintConfigESLintBase = require("eslint-config-eslint/base");
 const eslintConfigESLintCJS = require("eslint-config-eslint/cjs");
 const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
 const reactRecommended = require("eslint-plugin-react/configs/recommended");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
+const { fixupPluginRules } = require("@eslint/compat");
+
+const playgroundFiles = "src/playground/**/*.{js,jsx}";
 
 module.exports = [
     {
@@ -16,24 +20,20 @@ module.exports = [
             "src/_11ty/**"
         ]
     },
-    ...eslintConfigESLintCJS,
-    {
-        files: ["**/*.js"],
-        rules: {
 
-            // Disable rules that the codebase doesn't currently follow.
-            "jsdoc/require-jsdoc": "off",
-            "jsdoc/require-returns": "off",
-            "jsdoc/require-param-description": "off",
-            "jsdoc/require-param-type": "off",
-            "jsdoc/no-bad-blocks": ["error", {
-                ignore: ["__PURE__"]
-            }],
+    ...eslintConfigESLintCJS.map(config => ({
+        ...config,
+        ignores: [playgroundFiles]
+    })),
+    {
+        rules: {
             "n/no-extraneous-require": ["error", {
                 allowModules: ["luxon"]
             }]
-        }
+        },
+        ignores: [playgroundFiles]
     },
+
     {
         files: ["tools/**/*.js"],
         rules: {
@@ -41,12 +41,18 @@ module.exports = [
             "n/no-process-exit": "off"
         }
     },
+
+    // Playground
+    ...eslintConfigESLintBase.map(config => ({
+        ...config,
+        files: [playgroundFiles]
+    })),
     {
-        files: ["src/playground/**/*.{js,jsx}"],
+        files: [playgroundFiles],
         plugins: {
-            react: reactPlugin,
-            "jsx-a11y": jsxA11yPlugin,
-            "react-hooks": reactHooksPlugin
+            react: fixupPluginRules(reactPlugin),
+            "jsx-a11y": fixupPluginRules(jsxA11yPlugin),
+            "react-hooks": fixupPluginRules(reactHooksPlugin)
         },
         settings: {
             react: {
@@ -78,23 +84,21 @@ module.exports = [
             "jsdoc/require-jsdoc": "off",
             "react-hooks/rules-of-hooks": "error",
             "react-hooks/exhaustive-deps": "warn",
+            "func-style": "off"
+        }
+    },
 
-            // Disable eslint-plugin-node rules from eslint-config-eslint
-            "no-process-exit": "off",
-            "func-style": "off",
-            "n/no-deprecated-api": "off",
-            "n/no-extraneous-require": "off",
-            "n/no-missing-require": "off",
-            "n/no-unpublished-bin": "off",
-            "n/no-unpublished-require": "off",
-            "n/no-unsupported-features/es-builtins": "off",
-            "n/no-unsupported-features/es-syntax": "off",
-            "n/no-unsupported-features/node-builtins": "off",
-            "n/process-exit-as-throw": "off",
-            "n/shebang": "off",
-            "n/no-extraneous-import": "off",
-            "n/no-missing-import": "off",
-            "n/no-unpublished-import": "off"
+    // Disable rules that the codebase doesn't currently follow.
+    // It might be a good idea to enable these in the future.
+    {
+        rules: {
+            "jsdoc/require-jsdoc": "off",
+            "jsdoc/require-returns": "off",
+            "jsdoc/require-param-description": "off",
+            "jsdoc/require-param-type": "off",
+            "jsdoc/no-bad-blocks": ["error", {
+                ignore: ["__PURE__"]
+            }]
         }
     }
 ];
