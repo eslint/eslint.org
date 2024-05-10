@@ -17,7 +17,7 @@ The release of ESLint v9.0.0 brought with it the rollout of the [new configurati
 
 These utilities may help if you encounter any of the following errors while running ESLint:
 
-```
+```shell
 TypeError: context.getScope is not a function
 TypeError: context.getAncestors is not a function
 TypeError: context.markVariableAsUsed is not a function
