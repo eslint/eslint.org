@@ -9,7 +9,7 @@
     {% if title %}
         {% set page_title = title %}
     {% elseif currentCategory %}
-        {% set page_title = currentCategory.title %}    
+        {% set page_title = currentCategory.title %}
     {% else %}
         {% set page_title = site[hook].title %}
     {% endif %}
@@ -69,6 +69,11 @@
     <link rel="preload" href="{{ '/assets/fonts/SpaceMono-Regular-subset.woff2' | url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preconnect" href="https://www.googletagmanager.com/">
 
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://images.opencollective.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+
     <script>
             (function () {
                 var theme = window.localStorage.getItem("theme");
@@ -90,7 +95,7 @@
             unicode-range: U+40, U+7B, U+7D, U+28, U+29;
             font-display: swap;
         }
-    
+
         /* Space Grotesk for headings */
         @font-face {
             font-family: "Space Grotesk";
@@ -139,7 +144,7 @@
             });
         }
     </script>
-    {% if page.url != '/play/' %} 
+    {% if page.url != '/play/' %}
     <script src="{{ '/assets/js/themes.js' | url }}"></script>
     {%- endif -%}
     {%- if (hook == "blog_page") -%}
