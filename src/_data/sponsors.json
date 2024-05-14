@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109548,
-        "monthlyDonations": 9129,
-        "sponsorCount": 174
+        "annualDonations": 109632,
+        "monthlyDonations": 9136,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -39,7 +39,7 @@
         {
             "name": "JetBrains",
             "url": "https://www.jetbrains.com/",
-            "image": "https://images.opencollective.com/jetbrains/eb04ddc/logo.png",
+            "image": "https://images.opencollective.com/jetbrains/b7ad8a3/logo.png",
             "monthlyDonation": 500,
             "totalDonations": 2500,
             "source": "opencollective",
@@ -469,7 +469,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1137,6 +1137,14 @@
             "tier": "backer"
         },
         {
+            "name": "Roman Lykhovych",
+            "image": "https://avatars.githubusercontent.com/u/15987348?u=384f60a2389ce626d346dffd4d531192310f43cf&v=4",
+            "url": "https://github.com/liker912",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Jordan",
             "image": "https://avatars.githubusercontent.com/u/17376090?u=ebb702d1a6ac346a9ca4c093bea1928e2f62b239&v=4",
             "url": "https://djmm.me",
@@ -1305,6 +1313,14 @@
             "name": "Frontend Masters",
             "image": "https://avatars.githubusercontent.com/u/5613852?v=4",
             "url": "https://FrontendMasters.com",
+            "monthlyDonation": 2,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Guilherme Halter Nunes",
+            "image": "https://avatars.githubusercontent.com/u/99202829?u=e96b3e920712a626b1d981548035ebd7dbed6a77&v=4",
+            "url": "https://github.com/GuilhermeHalter",
             "monthlyDonation": 2,
             "source": "github",
             "tier": "backer"
