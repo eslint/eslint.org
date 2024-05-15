@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 109632,
-        "monthlyDonations": 9136,
+        "annualDonations": 109584,
+        "monthlyDonations": 9132,
         "sponsorCount": 176
     },
     "platinum": [
@@ -614,15 +614,6 @@
             "image": "https://images.opencollective.com/arnaud-drain/d7165f2/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 190,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Morgane Dubus",
-            "url": null,
-            "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 185,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1351,6 +1342,14 @@
             "totalDonations": 33,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Mr. Henry",
+            "image": "https://avatars.githubusercontent.com/u/45111?v=4",
+            "url": "https://mrhenry.be",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "Benjamin Reed",
