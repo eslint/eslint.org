@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 109584,
-        "monthlyDonations": 9132,
+        "annualDonations": 109524,
+        "monthlyDonations": 9127,
         "sponsorCount": 176
     },
     "platinum": [
@@ -39,7 +39,7 @@
         {
             "name": "JetBrains",
             "url": "https://www.jetbrains.com/",
-            "image": "https://images.opencollective.com/jetbrains/b7ad8a3/logo.png",
+            "image": "https://images.opencollective.com/jetbrains/fe76f99/logo.png",
             "monthlyDonation": 500,
             "totalDonations": 2500,
             "source": "opencollective",
@@ -390,14 +390,6 @@
             "tier": "backer"
         },
         {
-            "name": "Lucas Nørgård",
-            "image": "https://avatars.githubusercontent.com/u/40726067?u=9cd166b908ef3ebb632adce102d7f349ac8c15a3&v=4",
-            "url": "https://luxass.dev/",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Erik Perri",
             "image": "https://avatars.githubusercontent.com/u/46399654?v=4",
             "url": "https://github.com/erik-perri",
@@ -614,6 +606,15 @@
             "image": "https://images.opencollective.com/arnaud-drain/d7165f2/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 190,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Morgane Dubus",
+            "url": null,
+            "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 185,
             "source": "opencollective",
             "tier": "backer"
         },
