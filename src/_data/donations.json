@@ -9,6 +9,15 @@
         "source": "opencollective"
     },
     {
+        "id": "vedj9wro-z3a56dg7-3n567blg-8x4m0ykn",
+        "name": "THANKS.DEV",
+        "url": "https://thanks.dev",
+        "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
+        "amount": 346.61,
+        "date": "2024-05-17T11:20:41.437Z",
+        "source": "opencollective"
+    },
+    {
         "id": "mywxoz34-09rl6k3o-74wqvenb-dj7gk85a",
         "name": "EthicalAds",
         "url": "https://www.ethicalads.io/",
@@ -204,15 +213,6 @@
         "image": "https://images.opencollective.com/danoc/9258559/avatar.png",
         "amount": 1,
         "date": "2023-04-17T01:20:54.640Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "vedj9wro-z3a56d35-0mzp7blg-8x4m0ykn",
-        "name": "TheNextWe",
-        "url": "https://thenextwe.com/",
-        "image": "https://images.opencollective.com/thenextwe/e275ab8/logo.png",
-        "amount": 50,
-        "date": "2023-04-04T12:16:38.144Z",
         "source": "opencollective"
     }
 ]
