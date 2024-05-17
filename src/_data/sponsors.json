@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109524,
-        "monthlyDonations": 9127,
-        "sponsorCount": 176
+        "annualDonations": 109464,
+        "monthlyDonations": 9122,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -924,14 +924,6 @@
             "name": "Jonny Burger",
             "image": "https://avatars.githubusercontent.com/u/1629785?u=f91613c118bb1fcf442a71008dff1cd5f9b30411&v=4",
             "url": "https://jonny.io",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Kevin Porten",
-            "image": "https://avatars.githubusercontent.com/u/1839345?u=dc2263d5cfe0d927ce1a0be04a1d55dd6b55405c&v=4",
-            "url": "https://www.kevinporten.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
