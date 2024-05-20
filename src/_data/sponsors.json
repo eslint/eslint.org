@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109464,
-        "monthlyDonations": 9122,
-        "sponsorCount": 175
+        "annualDonations": 109344,
+        "monthlyDonations": 9112,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -430,15 +430,6 @@
             "tier": "backer"
         },
         {
-            "name": "DevITJobs.com",
-            "url": "https://devitjobs.com/jobs/Java/all/all",
-            "image": "https://images.opencollective.com/devitjobsus/a84664b/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "William Killerud",
             "url": null,
             "image": "https://images.opencollective.com/wkillerud/75e761e/avatar.png",
@@ -606,15 +597,6 @@
             "image": "https://images.opencollective.com/arnaud-drain/d7165f2/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 190,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Morgane Dubus",
-            "url": null,
-            "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 185,
             "source": "opencollective",
             "tier": "backer"
         },
