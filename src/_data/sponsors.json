@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109464,
-        "monthlyDonations": 9122,
-        "sponsorCount": 174
+        "annualDonations": 109344,
+        "monthlyDonations": 9112,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -228,15 +228,6 @@
             "totalDonations": 535,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Explore IG.com",
-            "url": null,
-            "image": "https://images.opencollective.com/explore-ig/avatar.png",
-            "monthlyDonation": 10,
-            "totalDonations": 10,
-            "source": "opencollective",
-            "tier": "backer"
         },
         {
             "name": "odan",
