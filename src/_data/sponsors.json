@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109344,
-        "monthlyDonations": 9112,
-        "sponsorCount": 173
+        "annualDonations": 109284,
+        "monthlyDonations": 9107,
+        "sponsorCount": 172
     },
     "platinum": [
         {
@@ -858,14 +858,6 @@
             "name": "Titus",
             "image": "https://avatars.githubusercontent.com/u/944406?u=6e0f32d14d720c1b0785b91694428741f8cda89c&v=4",
             "url": "https://wooorm.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Dorell James",
-            "image": "https://avatars.githubusercontent.com/u/977413?u=a9d7861e9c3adacc8729c49a559685cbbb497544&v=4",
-            "url": "https://dorelljames.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
