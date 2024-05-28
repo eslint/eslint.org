@@ -214,14 +214,5 @@
         "amount": 3576,
         "date": "2023-06-14T00:56:00.807Z",
         "source": "opencollective"
-    },
-    {
-        "id": "gnxdwzj3-le5mpwjd-yyeqy8rv-bko04a97",
-        "name": "Daniel O'Connor",
-        "url": "https://danoc.me/",
-        "image": "https://images.opencollective.com/danoc/9258559/avatar.png",
-        "amount": 1,
-        "date": "2023-04-17T01:20:54.640Z",
-        "source": "opencollective"
     }
 ]
