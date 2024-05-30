@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109284,
-        "monthlyDonations": 9107,
-        "sponsorCount": 172
+        "annualDonations": 109224,
+        "monthlyDonations": 9102,
+        "sponsorCount": 171
     },
     "platinum": [
         {
@@ -1114,14 +1114,6 @@
             "name": "BrightCrowd",
             "image": "https://avatars.githubusercontent.com/u/19253501?v=4",
             "url": "https://brightcrowd.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Kaelyn Suh",
-            "image": "https://avatars.githubusercontent.com/u/23407262?u=a79a3846a0b020d43801226e934e749554a50807&v=4",
-            "url": "https://kaelyn.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
