@@ -55,7 +55,7 @@ The goal of the configuration migrator is to reduce the likelihood of running in
 
 After generating a configuration file, you should review the following:
 
-* **Are there more recent versions of plugins?** It's possible that there's a newer version of a plugin that fully supports ESLint v9.x on its own and doesn't require any kind of compatilibity work. It's always best to upgrade to the latest version of the plugins you use.
+* **Are there more recent versions of plugins?** It's possible that there's a newer version of a plugin that fully supports ESLint v9.x on its own and doesn't require any kind of compatibility work. It's always best to upgrade to the latest version of the plugins you use.
 * **Do you have `.eslintrc.*` config files in other directories?** The new configuration system doesn't merge configuration files from ancestor directories. If you are using `.eslintrc.*` files to override configuration in specific directories, you'll need to move that configuration into your primary `eslint.config.*` file.
 * **Were you using the `--ext` CLI flag?** If so, you'll need to [create an entry](https://github.com/eslint/rewrite/tree/main/packages/migrate-config#--ext) in your configuration file to match the file extensions you use to pass on the command line.
 
