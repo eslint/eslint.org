@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109224,
-        "monthlyDonations": 9102,
-        "sponsorCount": 171
+        "annualDonations": 109212,
+        "monthlyDonations": 9101,
+        "sponsorCount": 170
     },
     "platinum": [
         {
@@ -1298,7 +1298,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 33,
+            "totalDonations": 34,
             "source": "opencollective",
             "tier": null
         },
@@ -1418,14 +1418,6 @@
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
             "url": "https://vezel.dev",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Eduardo M. Santos",
-            "image": "https://avatars.githubusercontent.com/u/160991364?u=4588968abac1f9f1c72b3a2780ef5dd5e90c9185&v=4",
-            "url": "https://github.com/supitsdu",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
