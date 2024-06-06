@@ -13,6 +13,23 @@ categories:
 
 When ESLint v9.0.0 is released, it will ship with several breaking changes for rule authors. These changes are necessary as part of the work to implement [language plugins](https://github.com/eslint/rfcs/blob/main/designs/2022-languages/README.md), which gives ESLint first-class support for linting languages other than JavaScript. We've had to make these changes because ESLint has, from the start, assumed that it would only ever be used to lint JavaScript. As such, there wasn't a lot of thought put into where methods that rules used to interact with source code should live. When revisiting the API for the language plugins work we found that the inconsistencies we were able to live with in a JavaScript-only world will not work in a language-agnostic ESLint core.
 
+## Automatically update your rules
+
+Before explaining all of the changes introduced in ESLint v9.0.0, it's helpful to know that most of the changes described in this post can be automatically made using the [`eslint-transforms`](https://www.npmjs.com/package/eslint-transforms) utility. To use the utility, first install it and then run the `v9-rule-migration` transform, like this:
+
+```shell
+# install the utility
+npm install eslint-transforms -g
+
+# apply the transform to one file
+eslint-transforms v9-rule-migration rule.js
+
+# apply the transform to all files in a directory
+eslint-transforms v9-rule-migration rules/
+```
+
+Not every change can be addressed with `eslint-tranforms`, though, so below is a complete list of the API changes and recommended ways to address them.
+
 ## `context` methods becoming properties
 
 As we look towards the API we'd like rules for other languages to have, we decided to convert some methods on `context` to properties. The methods in the following table just returned some data that didn't change, so there was no reason they couldn't be properties instead.
@@ -243,3 +260,5 @@ The `context.parserPath` property was intended to allow rules to retrieve an ins
 ## Conclusion
 
 ESLint has been around for ten years, and in that time, we have collected some API cruft that we need to clean up in order to prepare ESLint for the next ten years. The API changes described in this post are a necessary step towards enabling ESLint to lint non-JavaScript languages and to better separate core functionality from language-specific functionality. The team spent a lot of time planning this transition point in ESLint's lifecycle and we hope that these changes are just a small inconvenience for the ecosystem. If you need help with, or have questions about, any of what was discussed in this post, please [start a discussion](https://github.com/eslint/eslint/discussions/new) or stop by [Discord](https://eslint.org/chat) to talk with the team.
+
+**Update (2024-06-06):** Added section on `eslint-tranforms`.
