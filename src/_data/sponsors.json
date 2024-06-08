@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109356,
-        "monthlyDonations": 9113,
-        "sponsorCount": 173
+        "annualDonations": 121356,
+        "monthlyDonations": 10113,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -16,6 +16,15 @@
         }
     ],
     "gold": [
+        {
+            "name": "Eli Schleifer",
+            "url": null,
+            "image": "https://images.opencollective.com/guest-bf377e88/avatar.png",
+            "monthlyDonation": 1000,
+            "totalDonations": 1000,
+            "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
         {
             "name": "Salesforce",
             "url": "https://engineering.salesforce.com",
