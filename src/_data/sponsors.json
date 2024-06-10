@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121356,
-        "monthlyDonations": 10113,
-        "sponsorCount": 174
+        "annualDonations": 121416,
+        "monthlyDonations": 10118,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -436,6 +436,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "SidesMedia",
+            "url": "https://sidesmedia.com",
+            "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1027,7 +1036,7 @@
         {
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
-            "url": "https://mattiaerre.medium.com/",
+            "url": "https://mattiaerre.medium.com/list/running-eb8adc87dd5a",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
