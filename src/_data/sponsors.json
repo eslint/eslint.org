@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121416,
-        "monthlyDonations": 10118,
-        "sponsorCount": 175
+        "annualDonations": 119016,
+        "monthlyDonations": 9918,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -137,14 +137,6 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "Nextbase Starter Kit",
-            "image": "https://avatars.githubusercontent.com/u/145838380?v=4",
-            "url": "https://usenextbase.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1363,7 +1355,7 @@
         },
         {
             "name": "UKYO Kazuma",
-            "image": "https://avatars.githubusercontent.com/u/283562?u=d19a6b856bc57fd74fb1ef1cfbc17db13e2b26bc&v=4",
+            "image": "https://avatars.githubusercontent.com/u/283562?u=6d1e9d2061ebb92782f6dae7bf31d4eff60ca961&v=4",
             "url": "https://yaakai.to",
             "monthlyDonation": 1,
             "source": "github",
