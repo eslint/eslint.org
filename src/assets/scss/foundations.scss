@@ -114,6 +114,10 @@ main {
     max-width: 1280px;
     margin: 0 auto;
     padding: var(--space-xl-3xl) calc(1rem + 1vw);
+
+    @media screen and (min-width: 1920px) {
+        max-width: 60%;
+    }
 }
 
 .section-head {
