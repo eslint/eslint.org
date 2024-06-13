@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 119016,
-        "monthlyDonations": 9918,
+        "annualDonations": 121392,
+        "monthlyDonations": 10116,
         "sponsorCount": 174
     },
     "platinum": [
@@ -137,6 +137,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Nextbase Starter Kit",
+            "image": "https://avatars.githubusercontent.com/u/145838380?v=4",
+            "url": "https://usenextbase.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1114,14 +1122,6 @@
             "tier": "backer"
         },
         {
-            "name": "Roman Lykhovych",
-            "image": "https://avatars.githubusercontent.com/u/15987348?u=384f60a2389ce626d346dffd4d531192310f43cf&v=4",
-            "url": "https://github.com/liker912",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Jordan",
             "image": "https://avatars.githubusercontent.com/u/17376090?u=ebb702d1a6ac346a9ca4c093bea1928e2f62b239&v=4",
             "url": "https://djmm.me",
@@ -1141,6 +1141,14 @@
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Colin Massard",
+            "image": "https://avatars.githubusercontent.com/u/43334854?u=045154cf7dfb40f8bfa5d4b684ba381887ca180a&v=4",
+            "url": "https://colinmassard.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1298,14 +1306,6 @@
             "name": "Ala Eddine Menai",
             "image": "https://avatars.githubusercontent.com/u/20143684?u=3303259ea3073dd239dc3b1d044040b3c5b6338a&v=4",
             "url": "https://github.com/alamenai",
-            "monthlyDonation": 2,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Guilherme Halter Nunes",
-            "image": "https://avatars.githubusercontent.com/u/99202829?u=e96b3e920712a626b1d981548035ebd7dbed6a77&v=4",
-            "url": "https://github.com/GuilhermeHalter",
             "monthlyDonation": 2,
             "source": "github",
             "tier": "backer"
