@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 121392,
-        "monthlyDonations": 10116,
+        "annualDonations": 121512,
+        "monthlyDonations": 10126,
         "sponsorCount": 174
     },
     "platinum": [
@@ -237,6 +237,14 @@
             "totalDonations": 555,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Victor B.",
+            "image": "https://avatars.githubusercontent.com/u/27899449?u=46b48df9186aee91a62aa10d51e677fb016c74b9&v=4",
+            "url": "https://norfe.xyz",
+            "monthlyDonation": 11,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "odan",
@@ -479,7 +487,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1336,14 +1344,6 @@
             "totalDonations": 34,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Mr. Henry",
-            "image": "https://avatars.githubusercontent.com/u/45111?v=4",
-            "url": "https://www.mrhenry.be",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "Benjamin Reed",
