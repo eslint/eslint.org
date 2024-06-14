@@ -115,8 +115,10 @@ main {
     margin: 0 auto;
     padding: var(--space-xl-3xl) calc(1rem + 1vw);
 
-    @media screen and (min-width: 1920px) {
-        max-width: 60%;
+    &.community-section {
+        @media screen and (min-width: 1920px) {
+            max-width: 60%;
+        }
     }
 }
 
