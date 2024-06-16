@@ -18,7 +18,7 @@ const slugify = require("slugify");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
-const path = require("path");
+const path = require("node:path");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 
