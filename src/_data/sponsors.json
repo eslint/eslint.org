@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121512,
-        "monthlyDonations": 10126,
-        "sponsorCount": 174
+        "annualDonations": 121500,
+        "monthlyDonations": 10125,
+        "sponsorCount": 173
     },
     "platinum": [
         {
@@ -1437,14 +1437,6 @@
             "name": "Gavin John",
             "image": "https://avatars.githubusercontent.com/u/45835846?v=4",
             "url": "https://pandapip1.com/",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Luis Falcon",
-            "image": "https://avatars.githubusercontent.com/u/57654255?u=714b5dd86bf79c258033e31f449044f104169c59&v=4",
-            "url": "https://luisfalconmx.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
