@@ -17,7 +17,7 @@
 // Requirements
 //-----------------------------------------------------------------------------
 
-const fs = require("fs/promises");
+const fs = require("node:fs/promises");
 const { request } = require("undici");
 const { graphql: githubGraphQL } = require("@octokit/graphql");
 

@@ -12,10 +12,10 @@
 // Requirements
 //-----------------------------------------------------------------------------
 
-const fs = require("fs/promises");
+const fs = require("node:fs/promises");
 const matter = require("gray-matter");
 const { Octokit } = require("@octokit/rest");
-const path = require("path");
+const path = require("node:path");
 
 //-----------------------------------------------------------------------------
 // Data

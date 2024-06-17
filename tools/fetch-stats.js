@@ -13,9 +13,9 @@ const semver = require("semver");
 const cheerio = require("cheerio");
 const { request } = require("undici");
 const { graphql } = require("@octokit/graphql");
-const fs = require("fs/promises");
+const fs = require("node:fs/promises");
 const { DateTime } = require("luxon");
-const util = require("util");
+const util = require("node:util");
 const downloadStats = require("download-stats");
 const { upcomingVersionPrereleaseType } = require("./release-data");
 
