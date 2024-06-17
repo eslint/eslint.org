@@ -1,22 +1,22 @@
 {
-    "github": "https://github.com/eslint/eslint",
-    "twitter": "https://twitter.com/geteslint",
-    "chat": "https://eslint.org/chat",
-    "mastodon": "https://fosstodon.org/@eslint",
+  "github": "https://github.com/eslint/eslint",
+  "twitter": "https://twitter.com/geteslint",
+  "chat": "https://eslint.org/chat",
+  "mastodon": "https://fosstodon.org/@eslint",
 
-    "blog": "/blog",
-    "docs": "/docs/latest/",
-    "playground": "/play",
-    "getStarted": "/docs/latest/use/getting-started",
-    "sponsors": "/sponsors",
-    "branding": "/branding",
-    "store": "https://eslint.threadless.com",
-    "team": "/team",
+  "blog": "/blog",
+  "docs": "/docs/latest/",
+  "playground": "/play",
+  "getStarted": "/docs/latest/use/getting-started",
+  "sponsors": "/sponsors",
+  "branding": "/branding",
+  "store": "https://eslint.threadless.com",
+  "team": "/team",
 
-    "configuring": "/docs/latest/use/configure/",
-    "fixProblems": "/docs/latest/use/command-line-interface#fix-problems",
+  "configuring": "/docs/latest/use/configure/",
+  "fixProblems": "/docs/latest/use/command-line-interface#fix-problems",
 
-    "donate": "/donate",
-    "openCollective": "https://opencollective.com/eslint",
-    "githubSponsors": "https://github.com/sponsors/eslint"
+  "donate": "/donate",
+  "openCollective": "https://opencollective.com/eslint",
+  "githubSponsors": "https://github.com/sponsors/eslint"
 }

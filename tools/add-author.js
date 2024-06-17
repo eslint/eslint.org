@@ -26,8 +26,8 @@ const bioPath = "./src/_includes/partials/author_bios/";
 const username = process.argv[2];
 
 if (!username) {
-    console.error("No username passed.");
-    process.exit(1);
+	console.error("No username passed.");
+	process.exit(1);
 }
 
 //-----------------------------------------------------------------------------
@@ -35,24 +35,23 @@ if (!username) {
 //-----------------------------------------------------------------------------
 
 const octokit = new Octokit({
-    userAgent: "ESLint Website"
+	userAgent: "ESLint Website"
 });
 
 async function fetchUserProfile() {
+	const { data: profile } = await octokit.users.getByUsername({ username });
 
-    const { data: profile } = await octokit.users.getByUsername({ username });
-
-    return {
-        username: profile.login,
-        name: profile.name,
-        title: "Guest Author",
-        website: profile.blog,
-        avatar_url: profile.avatar_url,
-        bio: profile.bio,
-        twitter_username: profile.twitter_username,
-        github_username: profile.login,
-        location: profile.location
-    };
+	return {
+		username: profile.login,
+		name: profile.name,
+		title: "Guest Author",
+		website: profile.blog,
+		avatar_url: profile.avatar_url,
+		bio: profile.bio,
+		twitter_username: profile.twitter_username,
+		github_username: profile.login,
+		location: profile.location
+	};
 }
 
 //-----------------------------------------------------------------------------
@@ -60,24 +59,27 @@ async function fetchUserProfile() {
 //-----------------------------------------------------------------------------
 
 (async () => {
+	// fetch author info from GitHub
+	const authors = JSON.parse(await fs.readFile(authorsFilename, "utf8"));
+	const profile = await fetchUserProfile();
 
-    // fetch author info from GitHub
-    const authors = JSON.parse(await fs.readFile(authorsFilename, "utf8"));
-    const profile = await fetchUserProfile();
+	authors[profile.username] = profile;
 
-    authors[profile.username] = profile;
+	await fs.writeFile(
+		authorsFilename,
+		JSON.stringify(authors, null, 4),
+		"utf8"
+	);
+	console.log(`Updated ${authorsFilename} with ${username}`);
 
-    await fs.writeFile(authorsFilename, JSON.stringify(authors, null, 4), "utf8");
-    console.log(`Updated ${authorsFilename} with ${username}`);
+	// create bio file if not already present
+	const bioFilePath = path.join(bioPath, `${profile.username}.md`);
 
-    // create bio file if not already present
-    const bioFilePath = path.join(bioPath, `${profile.username}.md`);
+	try {
+		await fs.stat(bioFilePath);
+	} catch {
+		await fs.writeFile(bioFilePath, profile.bio ?? "", "utf8");
+	}
 
-    try {
-        await fs.stat(bioFilePath);
-    } catch {
-        await fs.writeFile(bioFilePath, profile.bio ?? "", "utf8");
-    }
-
-    console.log(`Please update ${bioFilePath} to include your information.`);
+	console.log(`Please update ${bioFilePath} to include your information.`);
 })();

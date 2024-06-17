@@ -1,472 +1,472 @@
 {
-    "tsc": [
-        {
-            "username": "nzakas",
-            "name": "Nicholas C. Zakas",
-            "title": "ESLint Technical Steering Committee",
-            "website": "https://humanwhocodes.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/38546?v=4",
-            "bio": "Creator of ESLint, independent software developer, consultant, coach, and author.",
-            "twitter_username": "slicknet",
-            "github_username": "nzakas",
-            "mastodon_url": "https://fosstodon.org/@nzakas",
-            "location": "Mountain View, CA"
-        },
-        {
-            "username": "fasttime",
-            "name": "Francesco Trotta",
-            "title": "ESLint Technical Steering Committee",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6367844?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "fasttime",
-            "location": null
-        },
-        {
-            "username": "mdjermanovic",
-            "name": "Milos Djermanovic",
-            "title": "ESLint Technical Steering Committee",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/44349756?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "mdjermanovic",
-            "location": null
-        }
-    ],
-    "alumni": [
-        {
-            "username": "brettz9",
-            "name": "Brett Zamir",
-            "title": "ESLint Alumnus",
-            "website": "http://brett-zamir.me",
-            "avatar_url": "https://avatars.githubusercontent.com/u/20234?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "brettz9",
-            "location": null
-        },
-        {
-            "username": "alberto",
-            "name": "alberto",
-            "title": "ESLint Alumnus",
-            "website": "http://www.sharpbites.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/72561?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "alberto",
-            "location": null
-        },
-        {
-            "username": "BYK",
-            "name": "Burak Yigit Kaya",
-            "title": "ESLint Alumnus",
-            "website": "http://byk.im",
-            "avatar_url": "https://avatars.githubusercontent.com/u/126780?v=4",
-            "bio": "Helping engineers help themselves help us all. Tinkerer @getsentry\r\n",
-            "twitter_username": "madBYK",
-            "github_username": "BYK",
-            "location": "London, UK"
-        },
-        {
-            "username": "lo1tuma",
-            "name": "Mathias Schreck",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/169170?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "lo1tuma",
-            "location": "Munich"
-        },
-        {
-            "username": "michaelficarra",
-            "name": "Michael Ficarra",
-            "title": "ESLint Alumnus",
-            "website": "https://justgrahamthings.tumblr.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/218840?v=4",
-            "bio": null,
-            "twitter_username": "smooshMap",
-            "github_username": "michaelficarra",
-            "mastodon_url": "https://mastodon.social/@michaelficarra",
-            "location": "Colorado, USA"
-        },
-        {
-            "username": "xjamundx",
-            "name": "Jamund Ferguson",
-            "title": "ESLint Alumnus",
-            "website": "http://www.jamund.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/246143?v=4",
-            "bio": "Sr. Frontend Engineer @ Amazon",
-            "twitter_username": "xjamundx",
-            "github_username": "xjamundx",
-            "location": "London, UK"
-        },
-        {
-            "username": "mikesherov",
-            "name": "Mike Sherov",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/364532?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "mikesherov",
-            "location": null
-        },
-        {
-            "username": "hzoo",
-            "name": "Henry",
-            "title": "ESLint Alumnus",
-            "website": "https://henryzoo.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/588473?v=4",
-            "bio": "Learning to maintain stuff",
-            "twitter_username": "left_pad",
-            "github_username": "hzoo",
-            "location": null
-        },
-        {
-            "username": "vitorbal",
-            "name": "Vitor Balocco",
-            "title": "ESLint Alumnus",
-            "website": "https://gitlab.com/vitor.balocco",
-            "avatar_url": "https://avatars.githubusercontent.com/u/626038?v=4",
-            "bio": "Carioca living in Madrid 🇧🇷  ✈️ 🇪🇸",
-            "twitter_username": "vitorbal",
-            "github_username": "vitorbal",
-            "location": "Madrid"
-        },
-        {
-            "username": "bmish",
-            "name": "Bryan Mishkin",
-            "title": "ESLint Alumnus",
-            "website": "http://www.linkedin.com/in/bmish",
-            "avatar_url": "https://avatars.githubusercontent.com/u/698306?v=4",
-            "bio": "Software Engineer. Passionate about open source and helping developers maximize their productivity. @eslint team.  Former @square.",
-            "twitter_username": null,
-            "github_username": "bmish",
-            "location": "New York City and San Francisco"
-        },
-        {
-            "username": "JamesHenry",
-            "name": "James Henry",
-            "title": "ESLint Alumnus",
-            "website": "https://jameshenry.blog",
-            "avatar_url": "https://avatars.githubusercontent.com/u/900523?v=4",
-            "bio": "Director of Engineering @nrwl. 5x MVP for TypeScript @microsoft. Creator of @typescript-eslint and @angular-eslint.",
-            "twitter_username": "MrJamesHenry",
-            "github_username": "JamesHenry",
-            "location": "☁️"
-        },
-        {
-            "username": "markelog",
-            "name": "Oleg Gaidarenko",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/945528?v=4",
-            "bio": "Pass the Courvoisi'!",
-            "twitter_username": "arkel",
-            "github_username": "markelog",
-            "location": null
-        },
-        {
-            "username": "faceleg",
-            "name": "Michael Robinson",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1000759?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "faceleg",
-            "location": "Auckland, New Zealand"
-        },
-        {
-            "username": "ilyavolodin",
-            "name": "Ilya Volodin",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1380062?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "ilyavolodin",
-            "location": null
-        },
-        {
-            "username": "btmills",
-            "name": "Brandon Mills",
-            "title": "ESLint Alumnus",
-            "website": "https://bmills.dev",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4",
-            "bio": "Director of Engineering at @drivecapital by day and inveterate yak shaver by night\r\n",
-            "twitter_username": "brandontmills",
-            "github_username": "btmills",
-            "mastodon_url": "https://fosstodon.org/@bmills",
-            "location": "Columbus, Ohio"
-        },
-        {
-            "username": "mysticatea",
-            "name": "Toru Nagashima",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1937871?v=4",
-            "bio": "A software developer.",
-            "twitter_username": null,
-            "github_username": "mysticatea",
-            "location": "Shizuoka, Japan"
-        },
-        {
-            "username": "soda0289",
-            "name": "Reyad Attiyat",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/2373964?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "soda0289",
-            "location": null
-        },
-        {
-            "username": "SaraSoueidan",
-            "name": "Sara Soueidan",
-            "title": "ESLint Alumnus",
-            "website": "http://sarasoueidan.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/2527933?v=4",
-            "bio": "Inlclusive UI/design engineer, author, speaker, trainer. Creator of Practical Accessibility video course: https://practical-accessibility.today ",
-            "twitter_username": "SaraSoueidan",
-            "github_username": "SaraSoueidan",
-            "location": "Lebanon"
-        },
-        {
-            "username": "VictorHom",
-            "name": "Victor Hom",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3211873?v=4",
-            "bio": "\r\n    👋\r\n",
-            "twitter_username": "victorhomburger",
-            "github_username": "VictorHom",
-            "location": "NYC"
-        },
-        {
-            "username": "IanVS",
-            "name": "Ian VanSchooten",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/4616705?v=4",
-            "bio": "I like to do things.",
-            "twitter_username": "ianvanschooten",
-            "github_username": "IanVS",
-            "mastodon_url": "https://fosstodon.org/@IanVS",
-            "location": "Ann Arbor, MI"
-        },
-        {
-            "username": "gyandeeps",
-            "name": "Gyandeep Singh",
-            "title": "ESLint Alumnus",
-            "website": "https://gyandeeps.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/5554486?v=4",
-            "bio": "Talk--; Code++;",
-            "twitter_username": "gyandeeps",
-            "github_username": "gyandeeps",
-            "location": "Kansas City, USA"
-        },
-        {
-            "username": "kaicataldo",
-            "name": "Kai Cataldo",
-            "title": "ESLint Alumnus",
-            "website": "https://kaicataldo.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/7041728?v=4",
-            "bio": "💻 🎺 🎮 ⌨️ • he/him",
-            "twitter_username": null,
-            "github_username": "kaicataldo",
-            "location": "Brooklyn, NY"
-        },
-        {
-            "username": "not-an-aardvark",
-            "name": "Teddy Katz",
-            "title": "ESLint Alumnus",
-            "website": "https://blog.teddykatz.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/11638619?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "not-an-aardvark",
-            "mastodon_url": "https://infosec.exchange/@not_an_aardvark",
-            "location": "New York, NY"
-        },
-        {
-            "username": "pedrottimark",
-            "name": "Mark Pedrotti",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/11862657?v=4",
-            "bio": "Working where content, markup, style, and code intersect so ordinary people benefit from technology. Soli Deo gloria.",
-            "twitter_username": null,
-            "github_username": "pedrottimark",
-            "location": "West of Charlotte, NC; USA"
-        },
-        {
-            "username": "ota-meshi",
-            "name": "Yosuke Ota",
-            "title": "ESLint Alumnus",
-            "website": "https://ota-meshi.github.io/",
-            "avatar_url": "https://avatars.githubusercontent.com/u/16508807?v=4",
-            "bio": "Member of @vuejs, @sveltejs, @stylelint, @stylus, and @intlify. ex-@eslint. Owner of cheetah-grid.\r\nJava/JavaScript/TypeScript. I use broken English",
-            "twitter_username": "omoteota",
-            "github_username": "ota-meshi",
-            "location": "Kanagawa, Japan"
-        },
-        {
-            "username": "g-plane",
-            "name": "Pig Fang",
-            "title": "ESLint Alumnus",
-            "website": "https://gplane.win",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17216317?v=4",
-            "bio": "Error messages should be human-friendly.",
-            "twitter_username": null,
-            "github_username": "g-plane",
-            "location": null
-        },
-        {
-            "username": "anikethsaha",
-            "name": "Anix",
-            "title": "ESLint Alumnus",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/26347874?v=4",
-            "bio": "❤️ Open Source | works mainly with javascript | always bet on plugins",
-            "twitter_username": "__ANIX__",
-            "github_username": "anikethsaha",
-            "location": null
-        },
-        {
-            "username": "yeonjuan",
-            "name": "YeonJuan",
-            "title": "ESLint Alumnus",
-            "website": "https://yeonjuan.github.io/",
-            "avatar_url": "https://avatars.githubusercontent.com/u/41323220?v=4",
-            "bio": "Developer",
-            "twitter_username": null,
-            "github_username": "yeonjuan",
-            "location": "South Korea"
-        }
-    ],
-    "reviewers": [
-        {
-            "username": "aladdin-add",
-            "name": "唯然",
-            "title": "ESLint Reviewer",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/13050025?v=4",
-            "bio": "(he/him)",
-            "twitter_username": null,
-            "github_username": "aladdin-add",
-            "location": "China"
-        },
-        {
-            "username": "snitin315",
-            "name": "Nitin Kumar",
-            "title": "ESLint Reviewer",
-            "website": "https://snitin315.dev/",
-            "avatar_url": "https://avatars.githubusercontent.com/u/46647141?v=4",
-            "bio": "Helping maintain @webpack and @eslint",
-            "twitter_username": "snitin315",
-            "github_username": "snitin315",
-            "location": "INDIA"
-        }
-    ],
-    "committers": [
-        {
-            "username": "JoshuaKGoldberg",
-            "name": "Josh Goldberg ✨",
-            "title": "ESLint Committer",
-            "website": "http://www.joshuakgoldberg.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
-            "bio": "Full time open source 💖✨ \r\n\r\n@typescript-eslint maintainer; \r\n@LearningTypeScript author;\r\nMicrosoft MVP 🌟",
-            "twitter_username": "JoshuaKGoldberg",
-            "github_username": "JoshuaKGoldberg",
-            "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
-            "location": "Philadelphia, PA, USA"
-        },
-        {
-            "username": "Tanujkanti4441",
-            "name": "Tanuj Kanti",
-            "title": "ESLint Committer",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/86398394?v=4",
-            "bio": null,
-            "twitter_username": null,
-            "github_username": "Tanujkanti4441",
-            "location": "India"
-        }
-    ],
-    "website": [
-        {
-            "username": "amareshsm",
-            "name": "Amaresh  S M ",
-            "title": "ESLint Website Team",
-            "website": "https://amaresh-s-m.firebaseapp.com/",
-            "avatar_url": "https://avatars.githubusercontent.com/u/30730124?v=4",
-            "bio": null,
-            "twitter_username": "Amareshsm13",
-            "github_username": "amareshsm",
-            "location": null
-        },
-        {
-            "username": "harish-sethuraman",
-            "name": "Strek",
-            "title": "ESLint Website Team",
-            "website": "https://strek.in",
-            "avatar_url": "https://avatars.githubusercontent.com/u/32865581?v=4",
-            "bio": "I try to code",
-            "twitter_username": "harishkumar_s_s",
-            "github_username": "harish-sethuraman",
-            "location": "Bengaluru"
-        },
-        {
-            "username": "kecrily",
-            "name": "Percy Ma",
-            "title": "ESLint Website Team",
-            "website": "https://kecrily.me",
-            "avatar_url": "https://avatars.githubusercontent.com/u/45708948?v=4",
-            "bio": "让世界听到你的声音",
-            "twitter_username": "kecrily",
-            "github_username": "kecrily",
-            "mastodon_url": "https://toot.io/@kecrily",
-            "location": "Zhejiang, China"
-        }
-    ],
-    "support": [
-        {
-            "username": "sam3k",
-            "name": "Samuel Roldan",
-            "title": "ESLint Support Team",
-            "website": "https://www.sam3k.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/180152?v=4",
-            "bio": "I am a frontend lead engineer with over two decades of experience architecting\r\nfrontend web applications.",
-            "twitter_username": null,
-            "github_username": "sam3k",
-            "location": "New York City"
-        },
-        {
-            "username": "platinumazure",
-            "name": "Kevin Partington",
-            "title": "ESLint Support Team",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4",
-            "bio": "@eslint support team member. My open source participation will be limited as I continue to heal my depression and anxiety.",
-            "twitter_username": null,
-            "github_username": "platinumazure",
-            "location": null
-        },
-        {
-            "username": "Rec0iL99",
-            "name": "Joel Mathew Koshy",
-            "title": "ESLint Support Team",
-            "website": "https://joelmathew.js.org",
-            "avatar_url": "https://avatars.githubusercontent.com/u/56463684?v=4",
-            "bio": "Team @eslint | UWindsor",
-            "twitter_username": "Rec0iL99",
-            "github_username": "Rec0iL99",
-            "location": "Canada"
-        }
-    ]
+  "tsc": [
+    {
+      "username": "nzakas",
+      "name": "Nicholas C. Zakas",
+      "title": "ESLint Technical Steering Committee",
+      "website": "https://humanwhocodes.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38546?v=4",
+      "bio": "Creator of ESLint, independent software developer, consultant, coach, and author.",
+      "twitter_username": "slicknet",
+      "github_username": "nzakas",
+      "mastodon_url": "https://fosstodon.org/@nzakas",
+      "location": "Mountain View, CA"
+    },
+    {
+      "username": "fasttime",
+      "name": "Francesco Trotta",
+      "title": "ESLint Technical Steering Committee",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6367844?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "fasttime",
+      "location": null
+    },
+    {
+      "username": "mdjermanovic",
+      "name": "Milos Djermanovic",
+      "title": "ESLint Technical Steering Committee",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44349756?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "mdjermanovic",
+      "location": null
+    }
+  ],
+  "alumni": [
+    {
+      "username": "brettz9",
+      "name": "Brett Zamir",
+      "title": "ESLint Alumnus",
+      "website": "http://brett-zamir.me",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20234?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "brettz9",
+      "location": null
+    },
+    {
+      "username": "alberto",
+      "name": "alberto",
+      "title": "ESLint Alumnus",
+      "website": "http://www.sharpbites.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72561?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "alberto",
+      "location": null
+    },
+    {
+      "username": "BYK",
+      "name": "Burak Yigit Kaya",
+      "title": "ESLint Alumnus",
+      "website": "http://byk.im",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126780?v=4",
+      "bio": "Helping engineers help themselves help us all. Tinkerer @getsentry\r\n",
+      "twitter_username": "madBYK",
+      "github_username": "BYK",
+      "location": "London, UK"
+    },
+    {
+      "username": "lo1tuma",
+      "name": "Mathias Schreck",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/169170?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "lo1tuma",
+      "location": "Munich"
+    },
+    {
+      "username": "michaelficarra",
+      "name": "Michael Ficarra",
+      "title": "ESLint Alumnus",
+      "website": "https://justgrahamthings.tumblr.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/218840?v=4",
+      "bio": null,
+      "twitter_username": "smooshMap",
+      "github_username": "michaelficarra",
+      "mastodon_url": "https://mastodon.social/@michaelficarra",
+      "location": "Colorado, USA"
+    },
+    {
+      "username": "xjamundx",
+      "name": "Jamund Ferguson",
+      "title": "ESLint Alumnus",
+      "website": "http://www.jamund.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/246143?v=4",
+      "bio": "Sr. Frontend Engineer @ Amazon",
+      "twitter_username": "xjamundx",
+      "github_username": "xjamundx",
+      "location": "London, UK"
+    },
+    {
+      "username": "mikesherov",
+      "name": "Mike Sherov",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/364532?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "mikesherov",
+      "location": null
+    },
+    {
+      "username": "hzoo",
+      "name": "Henry",
+      "title": "ESLint Alumnus",
+      "website": "https://henryzoo.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/588473?v=4",
+      "bio": "Learning to maintain stuff",
+      "twitter_username": "left_pad",
+      "github_username": "hzoo",
+      "location": null
+    },
+    {
+      "username": "vitorbal",
+      "name": "Vitor Balocco",
+      "title": "ESLint Alumnus",
+      "website": "https://gitlab.com/vitor.balocco",
+      "avatar_url": "https://avatars.githubusercontent.com/u/626038?v=4",
+      "bio": "Carioca living in Madrid 🇧🇷  ✈️ 🇪🇸",
+      "twitter_username": "vitorbal",
+      "github_username": "vitorbal",
+      "location": "Madrid"
+    },
+    {
+      "username": "bmish",
+      "name": "Bryan Mishkin",
+      "title": "ESLint Alumnus",
+      "website": "http://www.linkedin.com/in/bmish",
+      "avatar_url": "https://avatars.githubusercontent.com/u/698306?v=4",
+      "bio": "Software Engineer. Passionate about open source and helping developers maximize their productivity. @eslint team.  Former @square.",
+      "twitter_username": null,
+      "github_username": "bmish",
+      "location": "New York City and San Francisco"
+    },
+    {
+      "username": "JamesHenry",
+      "name": "James Henry",
+      "title": "ESLint Alumnus",
+      "website": "https://jameshenry.blog",
+      "avatar_url": "https://avatars.githubusercontent.com/u/900523?v=4",
+      "bio": "Director of Engineering @nrwl. 5x MVP for TypeScript @microsoft. Creator of @typescript-eslint and @angular-eslint.",
+      "twitter_username": "MrJamesHenry",
+      "github_username": "JamesHenry",
+      "location": "☁️"
+    },
+    {
+      "username": "markelog",
+      "name": "Oleg Gaidarenko",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/945528?v=4",
+      "bio": "Pass the Courvoisi'!",
+      "twitter_username": "arkel",
+      "github_username": "markelog",
+      "location": null
+    },
+    {
+      "username": "faceleg",
+      "name": "Michael Robinson",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1000759?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "faceleg",
+      "location": "Auckland, New Zealand"
+    },
+    {
+      "username": "ilyavolodin",
+      "name": "Ilya Volodin",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1380062?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "ilyavolodin",
+      "location": null
+    },
+    {
+      "username": "btmills",
+      "name": "Brandon Mills",
+      "title": "ESLint Alumnus",
+      "website": "https://bmills.dev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4",
+      "bio": "Director of Engineering at @drivecapital by day and inveterate yak shaver by night\r\n",
+      "twitter_username": "brandontmills",
+      "github_username": "btmills",
+      "mastodon_url": "https://fosstodon.org/@bmills",
+      "location": "Columbus, Ohio"
+    },
+    {
+      "username": "mysticatea",
+      "name": "Toru Nagashima",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1937871?v=4",
+      "bio": "A software developer.",
+      "twitter_username": null,
+      "github_username": "mysticatea",
+      "location": "Shizuoka, Japan"
+    },
+    {
+      "username": "soda0289",
+      "name": "Reyad Attiyat",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2373964?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "soda0289",
+      "location": null
+    },
+    {
+      "username": "SaraSoueidan",
+      "name": "Sara Soueidan",
+      "title": "ESLint Alumnus",
+      "website": "http://sarasoueidan.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2527933?v=4",
+      "bio": "Inlclusive UI/design engineer, author, speaker, trainer. Creator of Practical Accessibility video course: https://practical-accessibility.today ",
+      "twitter_username": "SaraSoueidan",
+      "github_username": "SaraSoueidan",
+      "location": "Lebanon"
+    },
+    {
+      "username": "VictorHom",
+      "name": "Victor Hom",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3211873?v=4",
+      "bio": "\r\n    👋\r\n",
+      "twitter_username": "victorhomburger",
+      "github_username": "VictorHom",
+      "location": "NYC"
+    },
+    {
+      "username": "IanVS",
+      "name": "Ian VanSchooten",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4616705?v=4",
+      "bio": "I like to do things.",
+      "twitter_username": "ianvanschooten",
+      "github_username": "IanVS",
+      "mastodon_url": "https://fosstodon.org/@IanVS",
+      "location": "Ann Arbor, MI"
+    },
+    {
+      "username": "gyandeeps",
+      "name": "Gyandeep Singh",
+      "title": "ESLint Alumnus",
+      "website": "https://gyandeeps.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5554486?v=4",
+      "bio": "Talk--; Code++;",
+      "twitter_username": "gyandeeps",
+      "github_username": "gyandeeps",
+      "location": "Kansas City, USA"
+    },
+    {
+      "username": "kaicataldo",
+      "name": "Kai Cataldo",
+      "title": "ESLint Alumnus",
+      "website": "https://kaicataldo.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7041728?v=4",
+      "bio": "💻 🎺 🎮 ⌨️ • he/him",
+      "twitter_username": null,
+      "github_username": "kaicataldo",
+      "location": "Brooklyn, NY"
+    },
+    {
+      "username": "not-an-aardvark",
+      "name": "Teddy Katz",
+      "title": "ESLint Alumnus",
+      "website": "https://blog.teddykatz.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11638619?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "not-an-aardvark",
+      "mastodon_url": "https://infosec.exchange/@not_an_aardvark",
+      "location": "New York, NY"
+    },
+    {
+      "username": "pedrottimark",
+      "name": "Mark Pedrotti",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11862657?v=4",
+      "bio": "Working where content, markup, style, and code intersect so ordinary people benefit from technology. Soli Deo gloria.",
+      "twitter_username": null,
+      "github_username": "pedrottimark",
+      "location": "West of Charlotte, NC; USA"
+    },
+    {
+      "username": "ota-meshi",
+      "name": "Yosuke Ota",
+      "title": "ESLint Alumnus",
+      "website": "https://ota-meshi.github.io/",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16508807?v=4",
+      "bio": "Member of @vuejs, @sveltejs, @stylelint, @stylus, and @intlify. ex-@eslint. Owner of cheetah-grid.\r\nJava/JavaScript/TypeScript. I use broken English",
+      "twitter_username": "omoteota",
+      "github_username": "ota-meshi",
+      "location": "Kanagawa, Japan"
+    },
+    {
+      "username": "g-plane",
+      "name": "Pig Fang",
+      "title": "ESLint Alumnus",
+      "website": "https://gplane.win",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17216317?v=4",
+      "bio": "Error messages should be human-friendly.",
+      "twitter_username": null,
+      "github_username": "g-plane",
+      "location": null
+    },
+    {
+      "username": "anikethsaha",
+      "name": "Anix",
+      "title": "ESLint Alumnus",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26347874?v=4",
+      "bio": "❤️ Open Source | works mainly with javascript | always bet on plugins",
+      "twitter_username": "__ANIX__",
+      "github_username": "anikethsaha",
+      "location": null
+    },
+    {
+      "username": "yeonjuan",
+      "name": "YeonJuan",
+      "title": "ESLint Alumnus",
+      "website": "https://yeonjuan.github.io/",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41323220?v=4",
+      "bio": "Developer",
+      "twitter_username": null,
+      "github_username": "yeonjuan",
+      "location": "South Korea"
+    }
+  ],
+  "reviewers": [
+    {
+      "username": "aladdin-add",
+      "name": "唯然",
+      "title": "ESLint Reviewer",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13050025?v=4",
+      "bio": "(he/him)",
+      "twitter_username": null,
+      "github_username": "aladdin-add",
+      "location": "China"
+    },
+    {
+      "username": "snitin315",
+      "name": "Nitin Kumar",
+      "title": "ESLint Reviewer",
+      "website": "https://snitin315.dev/",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46647141?v=4",
+      "bio": "Helping maintain @webpack and @eslint",
+      "twitter_username": "snitin315",
+      "github_username": "snitin315",
+      "location": "INDIA"
+    }
+  ],
+  "committers": [
+    {
+      "username": "JoshuaKGoldberg",
+      "name": "Josh Goldberg ✨",
+      "title": "ESLint Committer",
+      "website": "http://www.joshuakgoldberg.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
+      "bio": "Full time open source 💖✨ \r\n\r\n@typescript-eslint maintainer; \r\n@LearningTypeScript author;\r\nMicrosoft MVP 🌟",
+      "twitter_username": "JoshuaKGoldberg",
+      "github_username": "JoshuaKGoldberg",
+      "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
+      "location": "Philadelphia, PA, USA"
+    },
+    {
+      "username": "Tanujkanti4441",
+      "name": "Tanuj Kanti",
+      "title": "ESLint Committer",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86398394?v=4",
+      "bio": null,
+      "twitter_username": null,
+      "github_username": "Tanujkanti4441",
+      "location": "India"
+    }
+  ],
+  "website": [
+    {
+      "username": "amareshsm",
+      "name": "Amaresh  S M ",
+      "title": "ESLint Website Team",
+      "website": "https://amaresh-s-m.firebaseapp.com/",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30730124?v=4",
+      "bio": null,
+      "twitter_username": "Amareshsm13",
+      "github_username": "amareshsm",
+      "location": null
+    },
+    {
+      "username": "harish-sethuraman",
+      "name": "Strek",
+      "title": "ESLint Website Team",
+      "website": "https://strek.in",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32865581?v=4",
+      "bio": "I try to code",
+      "twitter_username": "harishkumar_s_s",
+      "github_username": "harish-sethuraman",
+      "location": "Bengaluru"
+    },
+    {
+      "username": "kecrily",
+      "name": "Percy Ma",
+      "title": "ESLint Website Team",
+      "website": "https://kecrily.me",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45708948?v=4",
+      "bio": "让世界听到你的声音",
+      "twitter_username": "kecrily",
+      "github_username": "kecrily",
+      "mastodon_url": "https://toot.io/@kecrily",
+      "location": "Zhejiang, China"
+    }
+  ],
+  "support": [
+    {
+      "username": "sam3k",
+      "name": "Samuel Roldan",
+      "title": "ESLint Support Team",
+      "website": "https://www.sam3k.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/180152?v=4",
+      "bio": "I am a frontend lead engineer with over two decades of experience architecting\r\nfrontend web applications.",
+      "twitter_username": null,
+      "github_username": "sam3k",
+      "location": "New York City"
+    },
+    {
+      "username": "platinumazure",
+      "name": "Kevin Partington",
+      "title": "ESLint Support Team",
+      "website": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4",
+      "bio": "@eslint support team member. My open source participation will be limited as I continue to heal my depression and anxiety.",
+      "twitter_username": null,
+      "github_username": "platinumazure",
+      "location": null
+    },
+    {
+      "username": "Rec0iL99",
+      "name": "Joel Mathew Koshy",
+      "title": "ESLint Support Team",
+      "website": "https://joelmathew.js.org",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56463684?v=4",
+      "bio": "Team @eslint | UWindsor",
+      "twitter_username": "Rec0iL99",
+      "github_username": "Rec0iL99",
+      "location": "Canada"
+    }
+  ]
 }

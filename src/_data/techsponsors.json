@@ -1,20 +1,20 @@
 [
-    {
-        "name": "Netlify",
-        "url": "https://netlify.com",
-        "image": "/assets/images/techsponsors/netlify-icon.svg",
-        "donation": "hosting"
-    },
-    {
-        "name": "Algolia",
-        "url": "https://algolia.com",
-        "image": "/assets/images/techsponsors/algolia-icon.svg",
-        "donation": "search"
-    },
-    {
-        "name": "1Password",
-        "url": "https://1password.com",
-        "image": "/assets/images/techsponsors/1password-icon.svg",
-        "donation": "password management"
-    }
+  {
+    "name": "Netlify",
+    "url": "https://netlify.com",
+    "image": "/assets/images/techsponsors/netlify-icon.svg",
+    "donation": "hosting"
+  },
+  {
+    "name": "Algolia",
+    "url": "https://algolia.com",
+    "image": "/assets/images/techsponsors/algolia-icon.svg",
+    "donation": "search"
+  },
+  {
+    "name": "1Password",
+    "url": "https://1password.com",
+    "image": "/assets/images/techsponsors/1password-icon.svg",
+    "donation": "password management"
+  }
 ]
