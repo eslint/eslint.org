@@ -2,7 +2,6 @@
 
 const eslintConfigESLintBase = require("eslint-config-eslint/base");
 const eslintConfigESLintCJS = require("eslint-config-eslint/cjs");
-const eslintConfigESLintFormatting = require("eslint-config-eslint/formatting");
 const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
 const reactRecommended = require("eslint-plugin-react/configs/recommended");
@@ -21,8 +20,6 @@ module.exports = [
             "src/_11ty/**"
         ]
     },
-
-    eslintConfigESLintFormatting,
 
     ...eslintConfigESLintCJS.map(config => ({
         ...config,
@@ -102,6 +99,16 @@ module.exports = [
             "jsdoc/no-bad-blocks": ["error", {
                 ignore: ["__PURE__"]
             }]
+        }
+    },
+
+    // Disable rules that prettier will handle.
+    {
+        rules: {
+            "no-tabs": "off",
+            indent: "off",
+            "lines-around-comment": "off",
+            "function-paren-newline": "off"
         }
     }
 ];

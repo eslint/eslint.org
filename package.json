@@ -37,13 +37,16 @@
         "lint:fix:md": "markdownlint --fix  \"**/*.md\"",
         "lint:scss": "stylelint \"**/*.scss\"",
         "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
+        "format": "prettier --write \"**/*.+(js|json|scss)\"",
+        "format:check": "prettier --check \"**/*.+(js|json|scss)\"",
         "start": "npm-run-all build:sass --parallel *:*:watch"
     },
     "lint-staged": {
         "**/*.{js,jsx}": "eslint --fix",
         "*.md": "markdownlint --fix",
         "*.scss": "stylelint \"**/*.scss\" --fix",
-        "**/*.svg": "npx svgo -r --multipass"
+        "**/*.svg": "npx svgo -r --multipass",
+        "**/*.{js,jsx,scss}": "prettier --write"
     },
     "gitHooks": {
         "pre-commit": "lint-staged"
@@ -87,6 +90,7 @@
         "markdownlint-cli": "^0.32.1",
         "node-polyfill-webpack-plugin": "^1.1.4",
         "npm-run-all": "^4.1.5",
+        "prettier": "^3.3.2",
         "rimraf": "^3.0.2",
         "sass": "^1.38.0",
         "sass-loader": "^13.0.2",
