@@ -1,99 +1,99 @@
 {
-  "primary": [
-      {
-          "description": "Primary 25",
-          "value": "#FBFBFF"
-      },
-      {
-          "description": "Primary 50",
-          "value": "#F6F6FE"
-      },
-      {
-          "description": "Primary 100",
-          "value": "#ECECFD"
-      },
-      {
-          "description": "Primary 200",
-          "value": "#DEDEFF"
-      },
-      {
-          "description": "Primary 300",
-          "value": "#CCCCFA"
-      },
-      {
-          "description": "Primary 400",
-          "value": "#B7B7FF"
-      },
-      {
-          "description": "Primary 500",
-          "value": "#A0A0F5"
-      },
-      {
-          "description": "Primary 600",
-          "value": "#8080F2"
-      },
-      {
-          "description": "Primary 700",
-          "value": "#6358D4"
-      },
-      {
-          "description": "Primary 800",
-          "value": "#4B32C3"
-      },
-      {
-          "description": "Primary 900",
-          "value": "#341BAB"
-      },
-      {
-          "description": "White",
-          "value": "#FFFFFF"
-      }
+    "primary": [
+        {
+            "description": "Primary 25",
+            "value": "#FBFBFF"
+        },
+        {
+            "description": "Primary 50",
+            "value": "#F6F6FE"
+        },
+        {
+            "description": "Primary 100",
+            "value": "#ECECFD"
+        },
+        {
+            "description": "Primary 200",
+            "value": "#DEDEFF"
+        },
+        {
+            "description": "Primary 300",
+            "value": "#CCCCFA"
+        },
+        {
+            "description": "Primary 400",
+            "value": "#B7B7FF"
+        },
+        {
+            "description": "Primary 500",
+            "value": "#A0A0F5"
+        },
+        {
+            "description": "Primary 600",
+            "value": "#8080F2"
+        },
+        {
+            "description": "Primary 700",
+            "value": "#6358D4"
+        },
+        {
+            "description": "Primary 800",
+            "value": "#4B32C3"
+        },
+        {
+            "description": "Primary 900",
+            "value": "#341BAB"
+        },
+        {
+            "description": "White",
+            "value": "#FFFFFF"
+        }
 
-  ],
-  "neutral": [
-       {
-          "description": "Neutral 25",
-          "value": "#FCFCFD"
-      },
-      {
-          "description": "Neutral 50",
-          "value": "#F9FAFB"
-      },
-      {
-          "description": "Neutral 100",
-          "value": "#F2F4F7"
-      },
-      {
-          "description": "Neutral 200",
-          "value": "#E4E7EC"
-      },
-      {
-          "description": "Neutral 300",
-          "value": "#D0D5DD"
-      },
-      {
-          "description": "Neutral 400",
-          "value": "#98A2B3"
-      },
-      {
-          "description": "Neutral 500",
-          "value": "#667085"
-      },
-      {
-          "description": "Neutral 600",
-          "value": "#475467"
-      },
-      {
-          "description": "Neutral 700",
-          "value": "#344054"
-      },
-      {
-          "description": "Neutral 800",
-          "value": "#1D2939"
-      },
-      {
-          "description": "Neutral 900",
-          "value": "#101828"
-      }
-  ]
+    ],
+    "neutral": [
+         {
+            "description": "Neutral 25",
+            "value": "#FCFCFD"
+        },
+        {
+            "description": "Neutral 50",
+            "value": "#F9FAFB"
+        },
+        {
+            "description": "Neutral 100",
+            "value": "#F2F4F7"
+        },
+        {
+            "description": "Neutral 200",
+            "value": "#E4E7EC"
+        },
+        {
+            "description": "Neutral 300",
+            "value": "#D0D5DD"
+        },
+        {
+            "description": "Neutral 400",
+            "value": "#98A2B3"
+        },
+        {
+            "description": "Neutral 500",
+            "value": "#667085"
+        },
+        {
+            "description": "Neutral 600",
+            "value": "#475467"
+        },
+        {
+            "description": "Neutral 700",
+            "value": "#344054"
+        },
+        {
+            "description": "Neutral 800",
+            "value": "#1D2939"
+        },
+        {
+            "description": "Neutral 900",
+            "value": "#101828"
+        }
+    ]
 }
