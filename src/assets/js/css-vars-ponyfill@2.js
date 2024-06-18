@@ -44,7 +44,7 @@
 			})(e) ||
 			(function () {
 				throw new TypeError(
-					"Invalid attempt to spread non-iterable instance"
+					"Invalid attempt to spread non-iterable instance",
 				);
 			})()
 		);
@@ -59,7 +59,7 @@
 				onBeforeSend: t.onBeforeSend || Function.prototype,
 				onSuccess: t.onSuccess || Function.prototype,
 				onError: t.onError || Function.prototype,
-				onComplete: t.onComplete || Function.prototype
+				onComplete: t.onComplete || Function.prototype,
 			},
 			n = Array.isArray(e) ? e : [e],
 			o = Array.apply(null, Array(n.length)).map(function (e) {
@@ -112,8 +112,8 @@
 					console.warn(
 						"Internet Explorer 9 Cross-Origin (CORS) requests must use the same protocol (".concat(
 							e,
-							")"
-						)
+							")",
+						),
 					),
 						a(null, t);
 			} else {
@@ -137,7 +137,7 @@
 		var t = {
 				cssComments: /\/\*[\s\S]+?\*\//g,
 				cssImports:
-					/(?:@import\s*)(?:url\(\s*)?(?:['"])([^'"]*)(?:['"])(?:\s*\))?(?:[^;]*;)/g
+					/(?:@import\s*)(?:url\(\s*)?(?:['"])([^'"]*)(?:['"])(?:\s*\))?(?:[^;]*;)/g,
 			},
 			n = {
 				rootElement: e.rootElement || document,
@@ -148,11 +148,11 @@
 				onBeforeSend: e.onBeforeSend || Function.prototype,
 				onSuccess: e.onSuccess || Function.prototype,
 				onError: e.onError || Function.prototype,
-				onComplete: e.onComplete || Function.prototype
+				onComplete: e.onComplete || Function.prototype,
 			},
 			s = Array.apply(
 				null,
-				n.rootElement.querySelectorAll(n.include)
+				n.rootElement.querySelectorAll(n.include),
 			).filter(function (e) {
 				return (
 					(t = e),
@@ -214,7 +214,7 @@
 									t = t.replace(l.rules[r], e);
 								}),
 									e(t, o, s, a, c, i);
-							}
+							},
 						})
 					: a(t, c);
 			})(
@@ -230,7 +230,7 @@
 							? (a[t] = e)
 							: (a[t] = ""),
 						c());
-				}
+				},
 			);
 		}
 		function u(e, r) {
@@ -281,7 +281,7 @@
 							},
 							onError: function (r, o, s) {
 								(a[t] = ""), n.onError(r, e, o), c();
-							}
+							},
 						});
 					else if (f) {
 						var d = e.textContent;
@@ -323,7 +323,7 @@
 				end: n[1],
 				pre: r.slice(0, n[0]),
 				body: r.slice(n[0] + e.length, n[1]),
-				post: r.slice(n[1] + t.length)
+				post: r.slice(n[1] + t.length),
 			}
 		);
 	}
@@ -357,7 +357,7 @@
 		var r = e(
 			{},
 			{ preserveStatic: !0, removeComments: !1 },
-			arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+			arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
 		);
 		function n(e) {
 			throw new Error("CSS parse error: ".concat(e));
@@ -396,7 +396,7 @@
 					.trim()
 					.replace(
 						/\/\*([^*]|[\r\n]|(\*+([^*\/]|[\r\n])))*\*\/+/g,
-						""
+						"",
 					)
 					.replace(/"(?:\\"|[^"])*"|'(?:\\'|[^'])*'/g, function (e) {
 						return e.replace(/,/g, "‌");
@@ -414,12 +414,12 @@
 				if (((t = t[0].trim()), !o(/^:\s*/)))
 					return n("property missing ':'");
 				var r = o(
-						/^((?:\/\*.*?\*\/|'(?:\\'|.)*?'|"(?:\\"|.)*?"|\((\s*'(?:\\'|.)*?'|"(?:\\"|.)*?"|[^)]*?)\s*\)|[^};])+)/
+						/^((?:\/\*.*?\*\/|'(?:\\'|.)*?'|"(?:\\"|.)*?"|\((\s*'(?:\\'|.)*?'|"(?:\\"|.)*?"|[^)]*?)\s*\)|[^};])+)/,
 					),
 					s = {
 						type: "declaration",
 						property: t.replace(e, ""),
-						value: r ? r[0].replace(e, "").trim() : ""
+						value: r ? r[0].replace(e, "").trim() : "",
 					};
 				return o(/^[;\s]*/), s;
 			}
@@ -459,7 +459,7 @@
 										type: "keyframes",
 										name: s,
 										vendor: t,
-										keyframes: i
+										keyframes: i,
 									}
 								: n("@keyframes missing '}'");
 						}
@@ -470,7 +470,7 @@
 							return {
 								type: "supports",
 								supports: e[1].trim(),
-								rules: y()
+								rules: y(),
 							};
 					})() ||
 					(function () {
@@ -482,7 +482,7 @@
 							return {
 								type: "media",
 								media: (e[1] || "").trim(),
-								rules: y()
+								rules: y(),
 							};
 					})() ||
 					(function () {
@@ -491,7 +491,7 @@
 							return {
 								type: "custom-media",
 								name: e[1].trim(),
-								media: e[2].trim()
+								media: e[2].trim(),
 							};
 					})() ||
 					(function () {
@@ -499,7 +499,7 @@
 							return {
 								type: "page",
 								selectors: f() || [],
-								declarations: p()
+								declarations: p(),
 							};
 					})() ||
 					(function () {
@@ -509,7 +509,7 @@
 								type: "document",
 								document: e[2].trim(),
 								vendor: e[1] ? e[1].trim() : null,
-								rules: y()
+								rules: y(),
 							};
 					})() ||
 					(function () {
@@ -555,7 +555,7 @@
 							var t =
 									c.some(function (e) {
 										return /:(?:root|host)(?![.:#(])/.test(
-											e
+											e,
 										);
 									}) && /^--\S/.test(e.property),
 								r = /var\(/.test(e.value);
@@ -584,10 +584,10 @@
 				{ parseHost: !1, store: {}, onWarning: function () {} },
 				arguments.length > 1 && void 0 !== arguments[1]
 					? arguments[1]
-					: {}
+					: {},
 			),
 			n = new RegExp(
-				":".concat(r.parseHost ? "host" : "root", "(?![.:#(])")
+				":".concat(r.parseHost ? "host" : "root", "(?![.:#(])"),
 			);
 		return (
 			"string" == typeof t && (t = u(t, r)),
@@ -682,7 +682,7 @@
 				},
 				supports: function (e) {
 					return "@supports " + e.supports + "{" + o(e.rules) + "}";
-				}
+				},
 			};
 		function o(e) {
 			for (var o = "", s = 0; s < e.length; s++) {
@@ -705,9 +705,9 @@
 				preserveStatic: !0,
 				preserveVars: !1,
 				variables: {},
-				onWarning: function () {}
+				onWarning: function () {},
 			},
-			arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+			arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
 		);
 		return (
 			"string" == typeof t && (t = u(t, r)),
@@ -738,7 +738,7 @@
 										? (e.splice(n, 0, {
 												type: s,
 												property: a,
-												value: i
+												value: i,
 											}),
 											n++)
 										: (o.value = i));
@@ -770,7 +770,7 @@
 			? "var" === n.pre.slice(-3)
 				? 0 === n.body.trim().length
 					? (t.onWarning(
-							"var() must contain a non-whitespace string"
+							"var() must contain a non-whitespace string",
 						),
 						e)
 					: n.pre.slice(0, -3) +
@@ -779,7 +779,7 @@
 								o = (e.match(/(?:\s*,\s*){1}(.*)?/) || [])[1],
 								s = Object.prototype.hasOwnProperty.call(
 									t.variables,
-									n
+									n,
 								)
 									? String(t.variables[n])
 									: void 0,
@@ -788,7 +788,10 @@
 							return (
 								s ||
 									t.onWarning(
-										'variable "'.concat(n, '" is undefined')
+										'variable "'.concat(
+											n,
+											'" is undefined',
+										),
 									),
 								a && "undefined" !== a && a.length > 0
 									? h(a, t, c)
@@ -799,7 +802,7 @@
 				: n.pre + "(".concat(h(n.body, t), ")") + h(n.post, t)
 			: (-1 !== e.indexOf("var(") &&
 					t.onWarning(
-						'missing closing ")" in the value "'.concat(e, '"')
+						'missing closing ")" in the value "'.concat(e, '"'),
 					),
 				e);
 	}
@@ -827,7 +830,7 @@
 			onWarning: function () {},
 			onError: function () {},
 			onSuccess: function () {},
-			onComplete: function () {}
+			onComplete: function () {},
 		},
 		E = {
 			cssComments: /\/\*[\s\S]+?\*\//g,
@@ -839,7 +842,7 @@
 			cssVarDecls: /(?:[\s;]*)(-{2}\w[\w-]*)(?:\s*:\s*)([^;]*);/g,
 			cssVarFunc: /var\(\s*--[\w-]/,
 			cssVars:
-				/(?:(?::(?:root|host)(?![.:#(])[\s,]*[^{]*{\s*[^;]*;*\s*)|(?:var\(\s*))(--[^:)]+)(?:\s*[:)])/
+				/(?:(?::(?:root|host)(?![.:#(])[\s,]*[^{]*{\s*[^;]*;*\s*)|(?:var\(\s*))(--[^:)]+)(?:\s*[:)])/,
 		},
 		w = { dom: {}, job: {}, user: {} },
 		C = !1,
@@ -874,7 +877,7 @@
 								"LINK" === e.tagName &&
 								-1 !==
 									(e.getAttribute("rel") || "").indexOf(
-										"stylesheet"
+										"stylesheet",
 									) &&
 								!e.disabled
 							);
@@ -897,7 +900,7 @@
 																1 ===
 																	e.nodeType &&
 																e.hasAttribute(
-																	"data-cssvars"
+																	"data-cssvars",
 																),
 															n =
 																(function (e) {
@@ -908,17 +911,17 @@
 																	);
 																})(e) &&
 																E.cssVars.test(
-																	e.textContent
+																	e.textContent,
 																);
 														return (
 															!r && (t(e) || n)
 														);
-													}
+													},
 												) ||
 												(function (t) {
 													return Array.apply(
 														null,
-														t
+														t,
 													).some(function (t) {
 														var r =
 																1 ===
@@ -927,35 +930,35 @@
 																r &&
 																"out" ===
 																	t.getAttribute(
-																		"data-cssvars"
+																		"data-cssvars",
 																	),
 															o =
 																r &&
 																"src" ===
 																	t.getAttribute(
-																		"data-cssvars"
+																		"data-cssvars",
 																	),
 															s = o;
 														if (o || n) {
 															var a =
 																	t.getAttribute(
-																		"data-cssvars-group"
+																		"data-cssvars-group",
 																	),
 																c =
 																	e.rootElement.querySelector(
 																		'[data-cssvars-group="'.concat(
 																			a,
-																			'"]'
-																		)
+																			'"]',
+																		),
 																	);
 															o &&
 																(L(
-																	e.rootElement
+																	e.rootElement,
 																),
 																(w.dom = {})),
 																c &&
 																	c.parentNode.removeChild(
-																		c
+																		c,
 																	);
 														}
 														return s;
@@ -968,7 +971,7 @@
 							attributes: !0,
 							attributeFilter: ["disabled", "href"],
 							childList: !0,
-							subtree: !0
+							subtree: !0,
 						});
 					})(s),
 					void k(s)
@@ -994,7 +997,7 @@
 						O
 							? '[data-cssvars]:not([data-cssvars=""])'
 							: '[data-cssvars="out"]',
-						s.exclude
+						s.exclude,
 					]
 						.filter(function (e) {
 							return e;
@@ -1023,23 +1026,23 @@
 						(Array.apply(
 							null,
 							s.rootElement.querySelectorAll(
-								'[data-cssvars="out"]'
-							)
+								'[data-cssvars="out"]',
+							),
 						).forEach(function (e) {
 							var t = e.getAttribute("data-cssvars-group");
 							(t
 								? s.rootElement.querySelector(
 										'[data-cssvars="src"][data-cssvars-group="'.concat(
 											t,
-											'"]'
-										)
+											'"]',
+										),
 									)
 								: null) || e.parentNode.removeChild(e);
 						}),
 						A)
 					) {
 						var i = s.rootElement.querySelectorAll(
-							'[data-cssvars]:not([data-cssvars="out"])'
+							'[data-cssvars]:not([data-cssvars="out"])',
 						);
 						i.length < A && ((A = i.length), (w.dom = {}));
 					}
@@ -1072,7 +1075,7 @@
 												.replace(E.cssComments, "")
 												.replace(
 													E.cssMediaQueries,
-													""
+													"",
 												)).match(E.cssVarDeclRules) ||
 											[]
 										).join("")) || !1
@@ -1082,7 +1085,7 @@
 									l(e, { store: w.dom, onWarning: c }),
 										(j = !0),
 										k(s);
-								}
+								},
 							})
 						: ((C = s.rootElement),
 							n({
@@ -1107,7 +1110,7 @@
 											.concat(o),
 										t,
 										e,
-										n
+										n,
 									);
 								},
 								onSuccess: function (e, t, r) {
@@ -1124,19 +1127,19 @@
 														e
 															.replace(
 																E.cssComments,
-																""
+																"",
 															)
 															.match(E.cssUrls) ||
 														[]
 													).forEach(function (r) {
 														var n = r.replace(
 																E.cssUrls,
-																"$1"
+																"$1",
 															),
 															o = _(n, t);
 														e = e.replace(
 															r,
-															r.replace(n, o)
+															r.replace(n, o),
 														);
 													}),
 													e
@@ -1157,7 +1160,7 @@
 											: Object.keys(w.job).length
 												? w.job
 												: (w.job = JSON.parse(
-														JSON.stringify(w.dom)
+														JSON.stringify(w.dom),
 													)),
 										p = !1;
 									if (
@@ -1167,17 +1170,17 @@
 													var r = u(n[t], {
 														preserveStatic:
 															s.preserveStatic,
-														removeComments: !0
+														removeComments: !0,
 													});
 													l(r, {
 														parseHost: Boolean(
-															s.rootElement.host
+															s.rootElement.host,
 														),
 														store: i,
-														onWarning: c
+														onWarning: c,
 													}),
 														(e.__cssVars = {
-															tree: r
+															tree: r,
 														});
 												} catch (t) {
 													a(t.message, e);
@@ -1187,14 +1190,14 @@
 										e(i, s.variables),
 										(p = Boolean(
 											(document.querySelector(
-												"[data-cssvars]"
+												"[data-cssvars]",
 											) ||
 												Object.keys(w.dom).length) &&
 												Object.keys(i).some(
 													function (e) {
 														return i[e] !== d[e];
-													}
-												)
+													},
+												),
 										)),
 										e(d, w.user, i),
 										p)
@@ -1215,110 +1218,110 @@
 															t.__cssVars.tree,
 															e({}, s, {
 																variables: d,
-																onWarning: c
-															})
+																onWarning: c,
+															}),
 														);
 														var n = f(
-															t.__cssVars.tree
+															t.__cssVars.tree,
 														);
 														if (s.updateDOM) {
 															if (
 																(t.getAttribute(
-																	"data-cssvars"
+																	"data-cssvars",
 																) ||
 																	t.setAttribute(
 																		"data-cssvars",
-																		"src"
+																		"src",
 																	),
 																n.length)
 															) {
 																var o =
 																		t.getAttribute(
-																			"data-cssvars-group"
+																			"data-cssvars-group",
 																		) ||
 																		++S.group,
 																	i =
 																		n.replace(
 																			/\s/g,
-																			""
+																			"",
 																		),
 																	u =
 																		s.rootElement.querySelector(
 																			'[data-cssvars="out"][data-cssvars-group="'.concat(
 																				o,
-																				'"]'
-																			)
+																				'"]',
+																			),
 																		) ||
 																		document.createElement(
-																			"style"
+																			"style",
 																		);
 																(y =
 																	y ||
 																	E.cssKeyframes.test(
-																		n
+																		n,
 																	)),
 																	u.hasAttribute(
-																		"data-cssvars"
+																		"data-cssvars",
 																	) ||
 																		u.setAttribute(
 																			"data-cssvars",
-																			"out"
+																			"out",
 																		),
 																	i ===
 																	t.textContent.replace(
 																		/\s/g,
-																		""
+																		"",
 																	)
 																		? ((r =
 																				!0),
 																			u &&
 																				u.parentNode &&
 																				(t.removeAttribute(
-																					"data-cssvars-group"
+																					"data-cssvars-group",
 																				),
 																				u.parentNode.removeChild(
-																					u
+																					u,
 																				)))
 																		: i !==
 																				u.textContent.replace(
 																					/\s/g,
-																					""
+																					"",
 																				) &&
 																			([
 																				t,
-																				u
+																				u,
 																			].forEach(
 																				function (
-																					e
+																					e,
 																				) {
 																					e.setAttribute(
 																						"data-cssvars-job",
-																						S.job
+																						S.job,
 																					),
 																						e.setAttribute(
 																							"data-cssvars-group",
-																							o
+																							o,
 																						);
-																				}
+																				},
 																			),
 																			(u.textContent =
 																				n),
 																			v.push(
-																				n
+																				n,
 																			),
 																			h.push(
-																				u
+																				u,
 																			),
 																			u.parentNode ||
 																				t.parentNode.insertBefore(
 																					u,
-																					t.nextSibling
+																					t.nextSibling,
 																				));
 															}
 														} else
 															t.textContent.replace(
 																/\s/g,
-																""
+																"",
 															) !== n &&
 																v.push(n);
 													} catch (e) {
@@ -1327,18 +1330,18 @@
 												r &&
 													t.setAttribute(
 														"data-cssvars",
-														"skip"
+														"skip",
 													),
 													t.hasAttribute(
-														"data-cssvars-job"
+														"data-cssvars-job",
 													) ||
 														t.setAttribute(
 															"data-cssvars-job",
-															S.job
+															S.job,
 														);
 											}),
 											(A = s.rootElement.querySelectorAll(
-												'[data-cssvars]:not([data-cssvars="out"])'
+												'[data-cssvars]:not([data-cssvars="out"])',
 											).length),
 											s.shadowDOM)
 										)
@@ -1347,9 +1350,9 @@
 													b = [s.rootElement].concat(
 														t(
 															s.rootElement.querySelectorAll(
-																"*"
-															)
-														)
+																"*",
+															),
+														),
 													),
 													O = 0;
 												(g = b[O]);
@@ -1358,12 +1361,12 @@
 												if (
 													g.shadowRoot &&
 													g.shadowRoot.querySelector(
-														"style"
+														"style",
 													)
 												) {
 													var x = e({}, s, {
 														rootElement:
-															g.shadowRoot
+															g.shadowRoot,
 													});
 													k(x);
 												}
@@ -1373,10 +1376,10 @@
 												v.join(""),
 												h,
 												JSON.parse(JSON.stringify(d)),
-												T() - s.__benchmark
+												T() - s.__benchmark,
 											);
 									}
-								}
+								},
 							}));
 			else
 				document.addEventListener("DOMContentLoaded", function e(t) {
@@ -1388,7 +1391,7 @@
 		var t = [
 			"animation-name",
 			"-moz-animation-name",
-			"-webkit-animation-name"
+			"-webkit-animation-name",
 		].filter(function (e) {
 			return getComputedStyle(document.body)[e];
 		})[0];
@@ -1437,7 +1440,7 @@
 	function L(e) {
 		Array.apply(
 			null,
-			e.querySelectorAll('[data-cssvars="skip"],[data-cssvars="src"]')
+			e.querySelectorAll('[data-cssvars="skip"],[data-cssvars="src"]'),
 		).forEach(function (e) {
 			return e.setAttribute("data-cssvars", "");
 		});
@@ -1491,5 +1494,5 @@ cssVars({
 	},
 	onComplete(cssText, styleElms, cssVariables, benchmark) {
 		// ...
-	}
+	},
 });

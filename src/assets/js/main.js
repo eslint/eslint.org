@@ -57,7 +57,7 @@
 
 	function unsetOtherButtons() {
 		currentButton = document.querySelector(
-			'.brand__logo__colors__btn[aria-pressed="true"]'
+			'.brand__logo__colors__btn[aria-pressed="true"]',
 		);
 		currentButton.setAttribute("aria-pressed", "false");
 	}

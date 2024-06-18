@@ -9,7 +9,7 @@ const strToSlug = str => {
 	const options = {
 		replacement: "-",
 		remove: /[&,+()$~%.'":*?<>{}]/g,
-		lower: true
+		lower: true,
 	};
 
 	return slugify(str, options);
@@ -33,12 +33,12 @@ module.exports = collection => {
 	// format and return array of categories objects
 	const categories = uniqueCategories.map(category => {
 		const postsInCategory = collection.filter(item =>
-			item.data.categories.includes(category)
+			item.data.categories.includes(category),
 		);
 		return {
 			title: category,
 			slug: strToSlug(category),
-			totalItems: postsInCategory.length
+			totalItems: postsInCategory.length,
 		};
 	});
 

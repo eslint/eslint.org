@@ -13,7 +13,7 @@ export const ECMA_VERSIONS = [
 	"2022",
 	"2023",
 	"2024",
-	"latest"
+	"latest",
 ];
 
 export const SOURCE_TYPES = ["script", "module", "commonjs"];

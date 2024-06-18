@@ -116,7 +116,7 @@ var util = {
 		ENTER: 13,
 		SPACE: 32,
 		DELETE: 46,
-		TAB: 9
+		TAB: 9,
 	},
 
 	generateID: function (base) {
@@ -127,22 +127,22 @@ var util = {
 		return Array.prototype.filter.call(elm.children, function (child) {
 			return child.matches(selector);
 		});
-	}
+	},
 };
 
 (function (w, doc, undefined) {
 	var CollapsibleIndexOptions = {
 		allCollapsed: false,
-		icon: '<svg class="index-icon" width="12" height="8" aria-hidden="true" focusable="false" viewBox="0 0 12 8"><g fill="none"><path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z"/><path d="M-6-8h24v24h-24z"/></g></svg>'
+		icon: '<svg class="index-icon" width="12" height="8" aria-hidden="true" focusable="false" viewBox="0 0 12 8"><g fill="none"><path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z"/><path d="M-6-8h24v24h-24z"/></g></svg>',
 	};
 	var CollapsibleIndex = function (inst, options) {
 		var _options = Object.assign(CollapsibleIndexOptions, options);
 		var el = inst;
 		var indexToggles = el.querySelectorAll(
-			".docs-index > ul > .docs-index__item[data-has-children] > a"
+			".docs-index > ul > .docs-index__item[data-has-children] > a",
 		); // only top-most level
 		var indexPanels = el.querySelectorAll(
-			".docs-index > ul > .docs-index__item>[data-child-list]"
+			".docs-index > ul > .docs-index__item>[data-child-list]",
 		); // the list
 		var accID = util.generateID("c-index-");
 
@@ -179,7 +179,7 @@ var util = {
 				$this.setAttribute("id", accID + "__list-" + index);
 				$this.setAttribute(
 					"aria-labelledby",
-					accID + "__item-" + index
+					accID + "__item-" + index,
 				);
 				if (_options.allCollapsed)
 					$this.setAttribute("aria-hidden", "true");
@@ -209,5 +209,5 @@ var util = {
 // init
 var index = document.getElementById("docs-index");
 index = new CollapsibleIndex(index, {
-	allCollapsed: false
+	allCollapsed: false,
 });

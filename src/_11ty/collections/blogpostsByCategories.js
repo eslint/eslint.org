@@ -14,6 +14,6 @@ module.exports = function (collection) {
 	return paginateCollectionByCategories(
 		blogposts,
 		blogpostsCategories,
-		itemsPerPage
+		itemsPerPage,
 	);
 };

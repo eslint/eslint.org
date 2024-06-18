@@ -7,7 +7,7 @@ if (typeof Object.assign != "function") {
 			if (target == null) {
 				// TypeError if undefined or null
 				throw new TypeError(
-					"Cannot convert undefined or null to object"
+					"Cannot convert undefined or null to object",
 				);
 			}
 
@@ -23,7 +23,7 @@ if (typeof Object.assign != "function") {
 						if (
 							Object.prototype.hasOwnProperty.call(
 								nextSource,
-								nextKey
+								nextKey,
 							)
 						) {
 							to[nextKey] = nextSource[nextKey];
@@ -34,7 +34,7 @@ if (typeof Object.assign != "function") {
 			return to;
 		},
 		writable: true,
-		configurable: true
+		configurable: true,
 	});
 }
 // add utilities
@@ -49,7 +49,7 @@ var util = {
 		ENTER: 13,
 		SPACE: 32,
 		DELETE: 46,
-		TAB: 9
+		TAB: 9,
 	},
 
 	generateID: function (base) {
@@ -60,7 +60,7 @@ var util = {
 		return Array.prototype.filter.call(elm.children, function (child) {
 			return child.matches(selector);
 		});
-	}
+	},
 };
 
 (function (w, doc, undefined) {
@@ -72,7 +72,7 @@ var util = {
 		// the following needs to be an SVG icon
 		// we will be dynamically inserting this icon into the buttons in this script
 		// make sure you add the class `accordion-icon` to it
-		icon: '<svg class="accordion-icon" width="12" height="8" aria-hidden="true" focusable="false" viewBox="0 0 12 8"><g fill="none"><path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z"/><path d="M-6-8h24v24h-24z"/></g></svg>'
+		icon: '<svg class="accordion-icon" width="12" height="8" aria-hidden="true" focusable="false" viewBox="0 0 12 8"><g fill="none"><path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z"/><path d="M-6-8h24v24h-24z"/></g></svg>',
 	};
 	/**
 	 * ARIA Accordion
@@ -139,7 +139,7 @@ var util = {
 				Array.from(accordionHeadings).forEach(function (item, index) {
 					item.querySelector("button").setAttribute(
 						"aria-expanded",
-						"true"
+						"true",
 					);
 				});
 
@@ -155,7 +155,7 @@ var util = {
 				Array.from(accordionHeadings).forEach(function (item, index) {
 					item.querySelector("button").setAttribute(
 						"aria-expanded",
-						"false"
+						"false",
 					);
 				});
 
@@ -179,7 +179,7 @@ var util = {
 				headingButton.setAttribute("id", accID + "__heading-" + index);
 				headingButton.setAttribute(
 					"aria-controls",
-					accID + "__panel-" + index
+					accID + "__panel-" + index,
 				);
 				headingButton.innerText = text;
 
@@ -201,7 +201,7 @@ var util = {
 				$this.setAttribute("id", accID + "__panel-" + index);
 				$this.setAttribute(
 					"aria-labelledby",
-					accID + "__heading-" + index
+					accID + "__heading-" + index,
 				);
 				$this.setAttribute("aria-hidden", "true");
 			});
@@ -261,7 +261,7 @@ var util = {
 
 		var checkToggleExpandButtonState = function () {
 			var closedPanels = el.querySelectorAll(
-				'button[aria-expanded="false"]'
+				'button[aria-expanded="false"]',
 			);
 
 			if (!closedPanels.length) {
@@ -273,7 +273,7 @@ var util = {
 
 		var checkToggleCollapseButtonState = function () {
 			var openPanels = el.querySelectorAll(
-				'button[aria-expanded="true"]'
+				'button[aria-expanded="true"]',
 			);
 
 			if (openPanels.length === 0) {
@@ -299,7 +299,7 @@ for (var i = 0; i < els.length; i++) {
 	// var nAccs = new ARIAaccordion(els[i]);
 	var nAccs = new ARIAaccordion(els[i], {
 		withControls: false,
-		showOneAnswerAtATime: false
+		showOneAnswerAtATime: false,
 	});
 
 	allAccs.push(nAccs);

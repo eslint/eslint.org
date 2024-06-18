@@ -33,7 +33,7 @@ const donationsFilename = "./src/_data/donations.json";
 const knownOneTimers = new Set([
 	"GitHub Sponsors",
 	"Read the Docs",
-	"BuySellAds"
+	"BuySellAds",
 ]);
 
 // we must have a token for this to work
@@ -148,7 +148,7 @@ async function fetchOpenCollectiveData() {
 	const { body: result } = await request(endpoint, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
-		body: JSON.stringify({ query })
+		body: JSON.stringify({ query }),
 	});
 
 	const payload = await result.json();
@@ -157,7 +157,7 @@ async function fetchOpenCollectiveData() {
 		await fs.writeFile(
 			"./debug-opencollective-raw-response.json",
 			JSON.stringify(payload, null, 4),
-			{ encoding: "utf8" }
+			{ encoding: "utf8" },
 		);
 	}
 
@@ -171,12 +171,12 @@ async function fetchOpenCollectiveData() {
 				: order.amount.value,
 		totalDonations: order.totalDonations.value,
 		source: "opencollective",
-		tier: order.tier ? order.tier.slug : null
+		tier: order.tier ? order.tier.slug : null,
 	}));
 
 	const donations = payload.data.donations.nodes
 		.filter(
-			transaction => !knownOneTimers.has(transaction.fromAccount.name)
+			transaction => !knownOneTimers.has(transaction.fromAccount.name),
 		)
 		.map(transaction => ({
 			id: transaction.id,
@@ -185,12 +185,12 @@ async function fetchOpenCollectiveData() {
 			image: transaction.fromAccount.imageUrl,
 			amount: transaction.amount.value,
 			date: transaction.updatedAt,
-			source: "opencollective"
+			source: "opencollective",
 		}));
 
 	return {
 		sponsors,
-		donations
+		donations,
 	};
 }
 
@@ -273,14 +273,14 @@ async function fetchGitHubSponsors() {
 	const [sponsorshipsResponse, donationsResponse] = await Promise.all([
 		githubGraphQL(sponsorshipsQuery(), {
 			headers: {
-				authorization: `token ${ESLINT_GITHUB_TOKEN}`
-			}
+				authorization: `token ${ESLINT_GITHUB_TOKEN}`,
+			},
 		}),
 		githubGraphQL(donationsQuery, {
 			headers: {
-				authorization: `token ${ESLINT_GITHUB_TOKEN}`
-			}
-		})
+				authorization: `token ${ESLINT_GITHUB_TOKEN}`,
+			},
+		}),
 	]);
 
 	if (process.env.DEBUG) {
@@ -289,12 +289,12 @@ async function fetchGitHubSponsors() {
 			JSON.stringify(
 				{
 					sponsorshipsResponse,
-					donationsResponse
+					donationsResponse,
 				},
 				null,
-				4
+				4,
 			),
-			{ encoding: "utf8" }
+			{ encoding: "utf8" },
 		);
 	}
 
@@ -309,8 +309,8 @@ async function fetchGitHubSponsors() {
 
 		const pagedResponse = await githubGraphQL(sponsorshipsQuery(cursor), {
 			headers: {
-				authorization: `token ${ESLINT_GITHUB_TOKEN}`
-			}
+				authorization: `token ${ESLINT_GITHUB_TOKEN}`,
+			},
 		});
 
 		pageNumber++;
@@ -319,13 +319,13 @@ async function fetchGitHubSponsors() {
 			await fs.writeFile(
 				`./debug-github-raw-response-${pageNumber}.json`,
 				JSON.stringify(pagedResponse, null, 4),
-				{ encoding: "utf8" }
+				{ encoding: "utf8" },
 			);
 		}
 
 		pageInfo = pagedResponse.organization.sponsorshipsAsMaintainer.pageInfo;
 		sponsorships.push(
-			...pagedResponse.organization.sponsorshipsAsMaintainer.nodes
+			...pagedResponse.organization.sponsorshipsAsMaintainer.nodes,
 		);
 	}
 
@@ -336,7 +336,7 @@ async function fetchGitHubSponsors() {
 		url: fixUrl(sponsor.websiteUrl || sponsor.url),
 		monthlyDonation: tier.monthlyPriceInDollars,
 		source: "github",
-		tier: getTierSlug(tier.monthlyPriceInDollars)
+		tier: getTierSlug(tier.monthlyPriceInDollars),
 	}));
 
 	const donations = donationsResponse.organization.sponsorsActivities.nodes
@@ -348,12 +348,12 @@ async function fetchGitHubSponsors() {
 			url: fixUrl(sponsor.websiteUrl || sponsor.url),
 			amount: tier.monthlyPriceInDollars,
 			date: timestamp,
-			source: "github"
+			source: "github",
 		}))
 		.filter(donation => {
 			// invoiced recurring donations are incorrectly marked as one-time
 			const foundSponsor = sponsors.find(
-				sponsor => sponsor.name === donation.name
+				sponsor => sponsor.name === donation.name,
 			);
 
 			// only include if the amount is different than the monthly amount
@@ -366,7 +366,7 @@ async function fetchGitHubSponsors() {
 
 	return {
 		sponsors,
-		donations
+		donations,
 	};
 }
 
@@ -378,9 +378,9 @@ async function fetchGitHubSponsors() {
 	const [
 		{
 			sponsors: openCollectiveSponsors,
-			donations: openCollectiveDonations
+			donations: openCollectiveDonations,
 		},
-		{ sponsors: githubSponsors, donations: githubDonations }
+		{ sponsors: githubSponsors, donations: githubDonations },
 	] = await Promise.all([fetchOpenCollectiveData(), fetchGitHubSponsors()]);
 
 	const sponsors = openCollectiveSponsors.concat(githubSponsors);
@@ -395,7 +395,7 @@ async function fetchGitHubSponsors() {
 		gold: [],
 		silver: [],
 		bronze: [],
-		backers: []
+		backers: [],
 	};
 
 	// sponsorship totals
@@ -444,17 +444,17 @@ async function fetchGitHubSponsors() {
 				totals: {
 					annualDonations,
 					monthlyDonations,
-					sponsorCount
+					sponsorCount,
 				},
-				...tierSponsors
+				...tierSponsors,
 			},
 			null,
-			4
+			4,
 		),
-		{ encoding: "utf8" }
+		{ encoding: "utf8" },
 	);
 
 	await fs.writeFile(donationsFilename, JSON.stringify(donations, null, 4), {
-		encoding: "utf8"
+		encoding: "utf8",
 	});
 })();

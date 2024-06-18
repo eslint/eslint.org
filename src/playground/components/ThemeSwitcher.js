@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function ThemeSwitcher() {
 	const [theme, setTheme] = useState(
-		document.documentElement.getAttribute("data-theme")
+		document.documentElement.getAttribute("data-theme"),
 	);
 
 	const toggleTheme = newTheme => {

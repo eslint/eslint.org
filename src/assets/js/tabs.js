@@ -8,7 +8,7 @@ if (typeof Object.assign != "function") {
 			if (target == null) {
 				// TypeError if undefined or null
 				throw new TypeError(
-					"Cannot convert undefined or null to object"
+					"Cannot convert undefined or null to object",
 				);
 			}
 
@@ -24,7 +24,7 @@ if (typeof Object.assign != "function") {
 						if (
 							Object.prototype.hasOwnProperty.call(
 								nextSource,
-								nextKey
+								nextKey,
 							)
 						) {
 							to[nextKey] = nextSource[nextKey];
@@ -35,7 +35,7 @@ if (typeof Object.assign != "function") {
 			return to;
 		},
 		writable: true,
-		configurable: true
+		configurable: true,
 	});
 }
 // add utilities; borrowed from: https://scottaohara.github.io/a11y_tab_widget/
@@ -50,7 +50,7 @@ var util = {
 		ENTER: 13,
 		SPACE: 32,
 		DELETE: 46,
-		TAB: 9
+		TAB: 9,
 	},
 
 	generateID: function (base) {
@@ -75,13 +75,13 @@ var util = {
 		} else {
 			location.hash = hash;
 		}
-	}
+	},
 };
 
 (function (w, doc, undefined) {
 	var ARIAaccOptions = {
 		manual: true,
-		open: 0
+		open: 0,
 	};
 
 	var ARIAtabs = function (inst, options) {
@@ -119,7 +119,7 @@ var util = {
 				tab.setAttribute("id", tabsID + "__tab-" + index);
 				tab.setAttribute(
 					"data-controls",
-					tabpanels[index].getAttribute("id")
+					tabpanels[index].getAttribute("id"),
 				);
 
 				// first tab is initially active
@@ -144,7 +144,7 @@ var util = {
 						selectTab(tab);
 						//   updateUrlHash();
 					},
-					false
+					false,
 				);
 
 				tab.addEventListener(
@@ -152,7 +152,7 @@ var util = {
 					e => {
 						tabKeyboardRespond(e, tab);
 					},
-					false
+					false,
 				);
 			});
 		};
@@ -195,7 +195,7 @@ var util = {
 					e => {
 						panelKeyboardRespond(e);
 					},
-					false
+					false,
 				);
 
 				tabpanel.addEventListener(
@@ -203,7 +203,7 @@ var util = {
 					() => {
 						tabpanel.setAttribute("tabindex", "-1");
 					},
-					false
+					false,
 				);
 			});
 		};
@@ -230,7 +230,7 @@ var util = {
 					tabpanel.removeAttribute("hidden");
 					tabpanel.setAttribute(
 						"aria-labelledby",
-						tabs[currentIndex].getAttribute("id")
+						tabs[currentIndex].getAttribute("id"),
 					);
 					tabpanel.setAttribute("tabindex", "0");
 				}

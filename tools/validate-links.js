@@ -13,12 +13,12 @@ const skipPatterns = [
 	"https://",
 	"fragment-redirect",
 	path.normalize("_site/sponsors"),
-	"/docs"
+	"/docs",
 ];
 
 function skipFilter(report) {
 	return Object.values(report).some(value =>
-		skipPatterns.some(pattern => String(value).includes(pattern))
+		skipPatterns.some(pattern => String(value).includes(pattern)),
 	);
 }
 
@@ -33,9 +33,9 @@ function skipFilter(report) {
 				internalOnly: true,
 				pretty: true,
 				concurrency: 25,
-				skipFilter
+				skipFilter,
 			},
-			tapRenderInstance
+			tapRenderInstance,
 		);
 	} catch (err) {
 		console.log(err.stack);

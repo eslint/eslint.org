@@ -21,6 +21,6 @@ module.exports = collection => {
 					(!item.data.draft && item.date <= now)
 				);
 			})
-			.reverse()
+			.reverse(),
 	);
 };

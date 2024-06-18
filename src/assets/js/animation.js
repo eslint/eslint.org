@@ -6,7 +6,7 @@
 
 	// motion check, hooray for accessible animation
 	const animationIsOk = window.matchMedia(
-		"(prefers-reduced-motion: no-preference)"
+		"(prefers-reduced-motion: no-preference)",
 	).matches;
 
 	if (!animationIsOk) {
@@ -30,14 +30,14 @@
 
 	//   initial visual state
 	gsap.set(".anim", {
-		autoAlpha: 1
+		autoAlpha: 1,
 	});
 	gsap.set(".anim__dropdown", {
-		autoAlpha: 1
+		autoAlpha: 1,
 	});
 	gsap.set(".anim__dropdown-img", {
 		opacity: 0,
-		yPercent: -10
+		yPercent: -10,
 	});
 	text.innerText = ANIMATION_WRONG_WORD;
 
@@ -49,7 +49,7 @@
 			"--scale": 0,
 			ease: "none",
 			//   duration based on word length for consistency
-			duration: word.clientWidth / speed
+			duration: word.clientWidth / speed,
 		});
 	});
 
@@ -57,9 +57,9 @@
 		".anim__text",
 		{
 			"--squiggle-opacity": 1,
-			duration: 0.3
+			duration: 0.3,
 		},
-		"+=0.3"
+		"+=0.3",
 	)
 		.to(".anim__dropdown-img", {
 			opacity: 1,
@@ -70,24 +70,24 @@
 					rotate: -90,
 					transformOrigin: "-200px -600px",
 					duration: 1.3,
-					delay: 0.2
+					delay: 0.2,
 				});
 				//   use Flip to grab state and ensure cursor always comes from top right of screen no matter the screen size
 				state = Flip.getState(".anim__cursorCont");
 				Flip.fit(".anim__cursorCont", ".anim__cursor--end", {
 					duration: 1.3,
 					delay: 0.2,
-					ease: "back.out"
+					ease: "back.out",
 				});
-			}
+			},
 		})
 		.to(
 			".anim__text",
 			{
 				"--squiggle-opacity": 1,
-				duration: 0.3
+				duration: 0.3,
 			},
-			"+=0.3"
+			"+=0.3",
 		)
 		.to(
 			".anim__cursor--start",
@@ -95,15 +95,15 @@
 				backgroundColor: "#fff",
 				opacity: 0.9,
 				duration: 0.2,
-				scale: 0.92
+				scale: 0.92,
 			},
-			"+=1.2"
+			"+=1.2",
 		)
 		.to(".anim__cursor--start", {
 			backgroundColor: "#d7d7d7",
 			opacity: 0.6,
 			scale: 1,
-			duration: 0.1
+			duration: 0.1,
 		})
 		.to(
 			".anim__dropdown-img",
@@ -114,24 +114,24 @@
 					Flip.fit(".anim__cursorCont", state, {
 						duration: 0.4,
 						ease: "sine.out",
-						delay: 0.5
+						delay: 0.5,
 					});
 					gsap.to(".anim__cursor--start", {
 						xPercent: -400,
 						duration: 0.4,
 						delay: 0.5,
-						opacity: 0
+						opacity: 0,
 					});
-				}
+				},
 			},
-			"<"
+			"<",
 		)
 		.to(
 			".anim__text",
 			{
-				"--squiggle-opacity": 0
+				"--squiggle-opacity": 0,
 			},
-			"<"
+			"<",
 		)
 		.to(
 			".anim__problems",
@@ -140,17 +140,17 @@
 				ease: "sine.out",
 				onComplete: () => {
 					text.innerText = ANIMATION_CORRECT_WORD;
-				}
+				},
 			},
-			"<+=0.1"
+			"<+=0.1",
 		)
 		.to(
 			".anim__problems",
 			{
 				"--scale": 0,
-				ease: "power1.out"
+				ease: "power1.out",
 			},
-			"+=0.25"
+			"+=0.25",
 		);
 
 	document.addEventListener("DOMContentLoaded", function () {

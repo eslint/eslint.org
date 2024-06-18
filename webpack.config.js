@@ -13,30 +13,30 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
  */
 module.exports = (env, { mode }) => ({
 	entry: {
-		playground: path.resolve(__dirname, "src/playground/index.js")
+		playground: path.resolve(__dirname, "src/playground/index.js"),
 	},
 	output: {
 		filename: "[name].js",
 		path:
 			mode === "development"
 				? path.resolve(__dirname, "src/assets/js")
-				: path.resolve(__dirname, "_site/assets/js")
+				: path.resolve(__dirname, "_site/assets/js"),
 	},
 	cache: {
 		type: "filesystem",
 		buildDependencies: {
-			config: [__filename]
-		}
+			config: [__filename],
+		},
 	},
 	resolve: {
 		extensions: [".js", ".jsx"],
-		mainFields: ["browser", "main", "module"]
+		mainFields: ["browser", "main", "module"],
 	},
 	plugins: [
 		new webpack.NormalModuleReplacementPlugin(/^node:/u, resource => {
 			resource.request = resource.request.replace(/^node:/u, "");
 		}),
-		new NodePolyfillPlugin()
+		new NodePolyfillPlugin(),
 	],
 	...(mode === "development" ? { devtool: "source-map" } : {}),
 	module: {
@@ -47,24 +47,24 @@ module.exports = (env, { mode }) => ({
 				include: path.resolve(__dirname, "src/playground"),
 				exclude: /node_modules/u,
 				options: {
-					configFile: path.resolve(__dirname, ".babelrc")
-				}
+					configFile: path.resolve(__dirname, ".babelrc"),
+				},
 			},
 			{
 				test: /\.[s]css$/u,
 				use: [
 					{
-						loader: "style-loader"
+						loader: "style-loader",
 					},
 					{
-						loader: "css-loader"
+						loader: "css-loader",
 					},
 					{
-						loader: "sass-loader"
-					}
-				]
-			}
-		]
+						loader: "sass-loader",
+					},
+				],
+			},
+		],
 	},
-	stats: "normal"
+	stats: "normal",
 });

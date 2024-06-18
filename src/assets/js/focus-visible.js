@@ -23,7 +23,7 @@ function applyFocusVisiblePolyfill(scope) {
 		week: true,
 		time: true,
 		datetime: true,
-		"datetime-local": true
+		"datetime-local": true,
 	};
 
 	/**

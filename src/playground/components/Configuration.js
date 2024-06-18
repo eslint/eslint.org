@@ -5,13 +5,13 @@ import {
 	ECMA_FEATURES,
 	ECMA_VERSIONS,
 	SOURCE_TYPES,
-	CONFIG_FORMATS
+	CONFIG_FORMATS,
 } from "../utils/constants";
 
 const customStyles = {
 	singleValue: styles => ({
 		...styles,
-		color: "var(--body-text-color)"
+		color: "var(--body-text-color)",
 	}),
 	control: styles => ({
 		...styles,
@@ -21,14 +21,14 @@ const customStyles = {
 		padding: 0,
 		":hover": {
 			...styles[":hover"],
-			borderColor: "var(--color-primary-700)"
+			borderColor: "var(--color-primary-700)",
 		},
 		":focus": {
-			borderColor: "var(--color-primary-700)"
+			borderColor: "var(--color-primary-700)",
 		},
 		":active": {
-			borderColor: "var(--color-primary-700)"
-		}
+			borderColor: "var(--color-primary-700)",
+		},
 	}),
 	option: (styles, state) => ({
 		...styles,
@@ -42,47 +42,47 @@ const customStyles = {
 		":hover": {
 			...styles[":hover"],
 			backgroundColor: "var(--color-primary-700)",
-			color: "white"
+			color: "white",
 		},
 		":active": {
 			...styles[":active"],
-			backgroundColor: "var(--color-primary-700)"
+			backgroundColor: "var(--color-primary-700)",
 		},
 		":last-child": {
-			borderBottom: "1px solid var(--border-color)"
-		}
+			borderBottom: "1px solid var(--border-color)",
+		},
 	}),
 	input: styles => ({
 		...styles,
 		color: "var(--body-text-color)",
-		caretShape: "underscore"
+		caretShape: "underscore",
 	}),
 	multiValue: styles => ({
 		...styles,
 		color: "var(--body-text-color)",
 		backgroundColor: "var(--lighter-background-color)",
-		border: "1px solid var(--border-color)"
+		border: "1px solid var(--border-color)",
 	}),
 	multiValueLabel: styles => ({
 		...styles,
 		color: "var(--headings-color)",
-		backgroundColor: "var(--lighter-background-color)"
+		backgroundColor: "var(--lighter-background-color)",
 	}),
 	multiValueRemove: styles => ({
 		...styles,
 		color: "var(--headings-color)",
 		cursor: "pointer",
-		backgroundColor: "var(--lighter-background-color)"
+		backgroundColor: "var(--lighter-background-color)",
 	}),
 	noOptionsMessage: styles => ({
 		...styles,
 		backgroundColor: "var(--body-background-color)",
-		border: "1px solid var(--border-color)"
+		border: "1px solid var(--border-color)",
 	}),
 	menuList: styles => ({
 		...styles,
-		padding: 0
-	})
+		padding: 0,
+	}),
 };
 
 const customTheme = theme => ({
@@ -90,13 +90,13 @@ const customTheme = theme => ({
 	colors: {
 		...theme.colors,
 		primary25: "var(--color-primary-500)",
-		primary: "var(--color-primary-700)"
-	}
+		primary: "var(--color-primary-700)",
+	},
 });
 
 const defaultOption = {
 	value: "default",
-	label: "(default)"
+	label: "(default)",
 };
 
 const isEmpty = obj => Object.keys(obj).length === 0;
@@ -107,7 +107,7 @@ export default function Configuration({
 	onUpdate,
 	options,
 	ruleNames,
-	validationError
+	validationError,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -117,23 +117,23 @@ export default function Configuration({
 		defaultOption,
 		...SOURCE_TYPES.map(sourceType => ({
 			value: sourceType,
-			label: sourceType
-		}))
+			label: sourceType,
+		})),
 	];
 	const ECMAFeaturesOptions = ECMA_FEATURES.map(ecmaFeature => ({
 		value: ecmaFeature,
-		label: ecmaFeature
+		label: ecmaFeature,
 	}));
 	const ECMAVersionsOptions = [
 		defaultOption,
 		...ECMA_VERSIONS.map(ecmaVersion => ({
 			value: ecmaVersion === "latest" ? ecmaVersion : Number(ecmaVersion),
-			label: ecmaVersion
-		}))
+			label: ecmaVersion,
+		})),
 	];
 	const configFileFormatOptions = CONFIG_FORMATS.map(configFormat => ({
 		value: configFormat,
-		label: configFormat
+		label: configFormat,
 	}));
 
 	// filter rules which are already added to the configuration
@@ -143,12 +143,12 @@ export default function Configuration({
 			value: ruleName,
 			label: rulesMeta[ruleName].deprecated
 				? ruleName.concat(" (deprecated)")
-				: ruleName
+				: ruleName,
 		}));
 	const [selectedRules, setSelectedRules] = useState([]);
 	const ruleInputRef = useRef(null);
 	const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(
-		new Set([])
+		new Set([]),
 	);
 	const firstRuleRef = useRef();
 
@@ -207,7 +207,7 @@ export default function Configuration({
 
 	// Remove empty objects from download configuration
 	const hasEcmaFeatures = !isEmpty(
-		options.languageOptions.parserOptions.ecmaFeatures
+		options.languageOptions.parserOptions.ecmaFeatures,
 	);
 	const optionsForConfigFile = {
 		rules: isEmpty(options.rules) ? void 0 : options.rules,
@@ -219,8 +219,8 @@ export default function Configuration({
 						...options.languageOptions,
 						parserOptions: !hasEcmaFeatures
 							? void 0
-							: options.languageOptions.parserOptions
-					}
+							: options.languageOptions.parserOptions,
+					},
 	};
 
 	const configFileContent = `${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([optionsForConfigFile], null, 4)};`;
@@ -246,7 +246,7 @@ export default function Configuration({
 						focusable="false"
 						fill="currentColor"
 						style={{
-							transform: showVersion ? "rotate(180deg)" : null
+							transform: showVersion ? "rotate(180deg)" : null,
 						}}
 					>
 						<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
@@ -273,7 +273,7 @@ export default function Configuration({
 										ecmaVersion =>
 											ecmaVersion.value ===
 											(options.languageOptions
-												.ecmaVersion || "default")
+												.ecmaVersion || "default"),
 									)}
 									options={ECMAVersionsOptions}
 									onChange={selected => {
@@ -300,7 +300,7 @@ export default function Configuration({
 									sourceTypeOption =>
 										sourceTypeOption.value ===
 										(options.languageOptions.sourceType ||
-											"default")
+											"default"),
 								)}
 								options={sourceTypeOptions}
 								onChange={selected => {
@@ -330,7 +330,9 @@ export default function Configuration({
 								defaultValue={ECMAFeaturesOptions.filter(
 									ecmaFeatureName =>
 										options.languageOptions.parserOptions
-											.ecmaFeatures[ecmaFeatureName.value]
+											.ecmaFeatures[
+											ecmaFeatureName.value
+										],
 								)}
 								isSearchable={false}
 								styles={customStyles}
@@ -365,7 +367,7 @@ export default function Configuration({
 						focusable="false"
 						fill="currentColor"
 						style={{
-							transform: showRules ? "rotate(180deg)" : null
+							transform: showRules ? "rotate(180deg)" : null,
 						}}
 					>
 						<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
@@ -394,8 +396,8 @@ export default function Configuration({
 										} else {
 											setSelectedRules(
 												selected.map(
-													values => values.value
-												)
+													values => values.value,
+												),
 											);
 										}
 									}}
@@ -456,19 +458,19 @@ export default function Configuration({
 														setRulesWithInvalidConfigs(
 															new Set(
 																[
-																	...rulesWithInvalidConfigs
+																	...rulesWithInvalidConfigs,
 																].filter(
 																	rule =>
 																		rule !==
-																		ruleName
-																)
-															)
+																		ruleName,
+																),
+															),
 														);
 														onUpdate(
 															Object.assign(
 																{},
-																options
-															)
+																options,
+															),
 														);
 													}}
 												>
@@ -496,17 +498,17 @@ export default function Configuration({
 												id={ruleName}
 												className={
 													rulesWithInvalidConfigs.has(
-														ruleName
+														ruleName,
 													) ||
 													validationError?.message.includes(
-														`"${ruleName}"`
+														`"${ruleName}"`,
 													)
 														? "config__added-rules__rule-input-error"
 														: ""
 												}
 												style={{ width: "100%" }}
 												defaultValue={JSON.stringify(
-													options.rules[ruleName]
+													options.rules[ruleName],
 												)}
 												placeholder={'["error"]'}
 												onChange={event => {
@@ -514,37 +516,37 @@ export default function Configuration({
 														options.rules[
 															ruleName
 														] = JSON.parse(
-															event.target.value
+															event.target.value,
 														);
 														setRulesWithInvalidConfigs(
 															new Set(
 																[
-																	...rulesWithInvalidConfigs
+																	...rulesWithInvalidConfigs,
 																].filter(
 																	rule =>
 																		rule !==
-																		ruleName
-																)
-															)
+																		ruleName,
+																),
+															),
 														);
 														onUpdate(
 															Object.assign(
 																{},
-																options
-															)
+																options,
+															),
 														);
 													} catch {
 														setRulesWithInvalidConfigs(
 															new Set([
 																...rulesWithInvalidConfigs,
-																ruleName
-															])
+																ruleName,
+															]),
 														);
 													}
 												}}
 											/>
 											{rulesWithInvalidConfigs.has(
-												ruleName
+												ruleName,
 											) && (
 												<p className="config__added-rules__rule-error">
 													Invalid rule configuration.
@@ -594,7 +596,7 @@ export default function Configuration({
 							styles={customStyles}
 							theme={theme => customTheme(theme)}
 							defaultValue={configFileFormatOptions.filter(
-								formatOption => formatOption.value === "ESM"
+								formatOption => formatOption.value === "ESM",
 							)}
 							options={configFileFormatOptions}
 							onChange={selected => {

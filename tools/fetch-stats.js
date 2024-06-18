@@ -60,9 +60,9 @@ async function fetchStatsFromGitHubAPI() {
 		{
 			headers: {
 				authorization: `token ${ESLINT_GITHUB_TOKEN}`,
-				Accept: "application/vnd.github.hawkgirl-preview+json"
-			}
-		}
+				Accept: "application/vnd.github.hawkgirl-preview+json",
+			},
+		},
 	);
 
 	/*
@@ -102,7 +102,7 @@ async function fetchStatsFromGitHubAPI() {
 	 *
 	 */
 	const releases = repository.releases.nodes.toSorted((first, second) =>
-		semver.rcompare(first.tagName, second.tagName)
+		semver.rcompare(first.tagName, second.tagName),
 	);
 
 	/*
@@ -119,24 +119,24 @@ async function fetchStatsFromGitHubAPI() {
 		currentVersionDate: currentRelease.publishedAt,
 		currentVersionIsPrerelease: currentRelease.isPrerelease,
 		stars: repository.stargazerCount,
-		lastCommitDate: repository.pushedAt
+		lastCommitDate: repository.pushedAt,
 	};
 }
 
 async function fetchGitHubNetworkStats() {
 	const response = await request(
-		"https://github.com/eslint/eslint/network/dependents"
+		"https://github.com/eslint/eslint/network/dependents",
 	);
 	const html = await response.body.text();
 	const $ = cheerio.load(html);
 	const projectDependents = $(
-		"[href~='/eslint/eslint/network/dependents?dependent_type=REPOSITORY']"
+		"[href~='/eslint/eslint/network/dependents?dependent_type=REPOSITORY']",
 	).text();
 
 	return {
 		projectDependents: Number(
-			projectDependents.trim().replace(/[^\d]/gu, "")
-		)
+			projectDependents.trim().replace(/[^\d]/gu, ""),
+		),
 	};
 }
 
@@ -149,13 +149,13 @@ async function fetchGitHubNetworkStats() {
 		await Promise.all([
 			fetchStatsFromGitHubAPI(),
 			fetchGitHubNetworkStats(),
-			fetchWeeklyNpmDownloads("eslint")
+			fetchWeeklyNpmDownloads("eslint"),
 		]);
 
 	const stats = {
 		...repoStats,
 		...dependencyStats,
-		weeklyDownloads
+		weeklyDownloads,
 	};
 
 	const { currentVersion } = stats;
@@ -173,7 +173,7 @@ async function fetchGitHubNetworkStats() {
 			nextVersion = semver.inc(
 				currentVersion,
 				"prerelease",
-				upcomingVersionPrereleaseType
+				upcomingVersionPrereleaseType,
 			);
 		} else {
 			/*
@@ -193,7 +193,7 @@ async function fetchGitHubNetworkStats() {
 			nextVersion = semver.inc(
 				currentVersion,
 				"premajor",
-				upcomingVersionPrereleaseType
+				upcomingVersionPrereleaseType,
 			);
 		} else {
 			/*
@@ -219,12 +219,12 @@ async function fetchGitHubNetworkStats() {
 
 	stats.nextVersionDate = currentVersionDate
 		.plus({
-			days: 14 - (currentVersionDate.diff(baseDate, "days").days % 14)
+			days: 14 - (currentVersionDate.diff(baseDate, "days").days % 14),
 		})
 		.toISODate();
 
 	await fs.writeFile(statsFilePath, JSON.stringify(stats, null, 4), {
-		encoding: "utf8"
+		encoding: "utf8",
 	});
 
 	console.log("Fetch Homepage Stats: Success");

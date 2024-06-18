@@ -70,7 +70,7 @@ module.exports = (collection, collectionCategories, itemsPerPage) => {
 	collectionCategories.forEach(category => {
 		// get posts in category
 		const postsInCategory = collection.filter(item =>
-			item.data.categories.includes(category.title)
+			item.data.categories.includes(category.title),
 		);
 
 		// chunk posts in category to create pages
@@ -101,8 +101,8 @@ module.exports = (collection, collectionCategories, itemsPerPage) => {
 					first: slugs[0],
 					last: slugs[slugs.length - 1],
 					next: slugs[index + 1] ?? null,
-					previous: slugs[index - 1] ?? null
-				}
+					previous: slugs[index - 1] ?? null,
+				},
 			});
 		});
 	});

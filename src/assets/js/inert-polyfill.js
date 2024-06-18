@@ -33,7 +33,7 @@ window.addEventListener("load", function () {
 			: b.appendChild(document.createTextNode(a));
 		document.body.appendChild(b);
 	})(
-		"/*[inert]*/[inert]{position:relative!important;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none}[inert]::before{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0}"
+		"/*[inert]*/[inert]{position:relative!important;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none}[inert]::before{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0}",
 	);
 	var c = 0;
 	document.addEventListener("keydown", function (a) {
@@ -57,7 +57,7 @@ window.addEventListener("load", function () {
 							code: "Tab",
 							keyIdentifier: "U+0009",
 							shiftKey: !!(0 > c),
-							bubbles: !0
+							bubbles: !0,
 						});
 					Object.defineProperty(e, "keyCode", { value: 9 });
 					document.activeElement.dispatchEvent(e);
@@ -84,13 +84,13 @@ window.addEventListener("load", function () {
 				a.stopPropagation();
 			}
 		},
-		!0
+		!0,
 	);
 	document.addEventListener(
 		"click",
 		function (a) {
 			g(a.target) && (a.preventDefault(), a.stopPropagation());
 		},
-		!0
+		!0,
 	);
 });

@@ -8,5 +8,5 @@ export default {
 
 	decodeFromBase64(base64) {
 		return decodeURIComponent(escape(window.atob(base64)));
-	}
+	},
 };

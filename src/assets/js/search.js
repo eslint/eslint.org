@@ -20,7 +20,7 @@ const index = client.initIndex("eslint");
 // page
 const resultsElement = document.querySelector("#search-results");
 const resultsLiveRegion = document.querySelector(
-	"#search-results-announcement"
+	"#search-results-announcement",
 );
 const searchInput = document.querySelector("#search");
 const searchClearBtn = document.querySelector("#search__clear-btn");
@@ -39,7 +39,7 @@ let searchQuery;
 function fetchSearchResults(query) {
 	return index
 		.search(query, {
-			facetFilters: ["tags:blog"]
+			facetFilters: ["tags:blog"],
 		})
 		.then(({ hits }) => hits);
 }
@@ -76,8 +76,8 @@ function displaySearchResults(results) {
 			listItem.classList.add("search-results__item");
 			const maxLvl = Math.max(
 				...Object.keys(result._highlightResult.hierarchy).map(k =>
-					Number(k.substring(3))
-				)
+					Number(k.substring(3)),
+				),
 			);
 			listItem.innerHTML = `
                 <h2 class="search-results__item__title"><a href="${result.url}">${result.hierarchy.lvl1}</a></h2>
@@ -163,7 +163,7 @@ searchClearBtn.addEventListener("click", function (e) {
 
 document.addEventListener("keydown", function (e) {
 	const searchResults = Array.from(
-		document.querySelectorAll(".search-results__item")
+		document.querySelectorAll(".search-results__item"),
 	);
 
 	if (e.key === "Escape") {

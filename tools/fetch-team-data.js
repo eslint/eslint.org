@@ -49,7 +49,7 @@ const teamIds = {
 	[WEBSITE_TEAM_SLUG]: "website",
 	[SUPPORT_TEAM_SLUG]: "support",
 	[REVIEWERS_TEAM_SLUG]: "reviewers",
-	[ALUMNI_TEAM_SLUG]: "alumni"
+	[ALUMNI_TEAM_SLUG]: "alumni",
 };
 
 // lookup table mapping Github team IDs to member titles
@@ -59,7 +59,7 @@ const teamMemberTitles = {
 	reviewers: "ESLint Reviewer",
 	website: "ESLint Website Team",
 	support: "ESLint Support Team",
-	alumni: "ESLint Alumnus"
+	alumni: "ESLint Alumnus",
 };
 
 // blog post authors
@@ -71,7 +71,7 @@ const users = new Map();
 
 const octokit = new Octokit({
 	userAgent: "ESLint Website",
-	auth: ESLINT_GITHUB_TOKEN
+	auth: ESLINT_GITHUB_TOKEN,
 });
 
 async function fetchUserProfile(username) {
@@ -83,7 +83,7 @@ async function fetchUserProfile(username) {
 	const { data: profile } = await octokit.users.getByUsername({ username });
 	const { data: social } = await octokit.request(
 		"GET /users/{username}/social_accounts",
-		{ username }
+		{ username },
 	);
 
 	const result = {
@@ -102,7 +102,7 @@ async function fetchUserProfile(username) {
 		github_username: profile.login,
 		mastodon_url: social.find(account => account.provider === "mastodon")
 			?.url,
-		location: profile.location
+		location: profile.location,
 	};
 
 	// cache the result
@@ -118,7 +118,7 @@ async function fetchTeamMembers() {
 		reviewers: [],
 		committers: [],
 		website: [],
-		support: []
+		support: [],
 	};
 
 	for (const teamId of [
@@ -127,12 +127,12 @@ async function fetchTeamMembers() {
 		COMMITTERS_TEAM_SLUG,
 		REVIEWERS_TEAM_SLUG,
 		WEBSITE_TEAM_SLUG,
-		SUPPORT_TEAM_SLUG
+		SUPPORT_TEAM_SLUG,
 	]) {
 		const { data: result } = await octokit.teams.listMembersInOrg({
 			org: "eslint",
 			team_slug: teamId,
-			per_page: 100
+			per_page: 100,
 		});
 
 		// this user only has login, need to fetch the full profile for useful data
@@ -148,8 +148,8 @@ async function fetchTeamMembers() {
 		user =>
 			!team.tsc.some(tscmember => tscmember.username === user.username) &&
 			!team.reviewers.some(
-				tscmember => tscmember.username === user.username
-			)
+				tscmember => tscmember.username === user.username,
+			),
 	);
 
 	// add appropriate titles
@@ -189,24 +189,24 @@ async function fetchBlogAuthors() {
 (async () => {
 	const [team, authors] = await Promise.all([
 		fetchTeamMembers(),
-		fetchBlogAuthors()
+		fetchBlogAuthors(),
 	]);
 
 	const existingAuthors = JSON.parse(
-		await fs.readFile(authorsFilename, "utf8")
+		await fs.readFile(authorsFilename, "utf8"),
 	);
 	const allAuthors = {
 		...existingAuthors,
-		...authors
+		...authors,
 	};
 
 	await fs.writeFile(teamFilename, JSON.stringify(team, null, "    "), {
-		encoding: "utf8"
+		encoding: "utf8",
 	});
 	await fs.writeFile(
 		authorsFilename,
 		JSON.stringify(allAuthors, null, "    "),
-		{ encoding: "utf8" }
+		{ encoding: "utf8" },
 	);
 
 	console.log("Fetch Team Data: Success");

@@ -39,7 +39,7 @@
 					setTheme(theme);
 					disableToggle(dark_theme_toggle);
 				},
-				false
+				false,
 			);
 			dark_theme_toggle.addEventListener(
 				"click",
@@ -49,9 +49,9 @@
 					setTheme(theme);
 					disableToggle(light_theme_toggle);
 				},
-				false
+				false,
 			);
 		},
-		false
+		false,
 	);
 })();

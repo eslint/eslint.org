@@ -39,7 +39,7 @@ export default function Alert({ type, text, message, onFix }) {
 		message: alertMessage,
 		ruleId,
 		fix,
-		suggestions
+		suggestions,
 	} = message;
 
 	return (

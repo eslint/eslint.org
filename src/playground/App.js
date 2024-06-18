@@ -30,7 +30,7 @@ const getDefaultOptions = () => ({
 			result[ruleId] = ["error"];
 		}
 		return result;
-	}, {})
+	}, {}),
 });
 
 const fillOptionsDefaults = options => ({
@@ -40,9 +40,9 @@ const fillOptionsDefaults = options => ({
 		...options.languageOptions,
 		parserOptions: {
 			ecmaFeatures: {},
-			...options.languageOptions?.parserOptions
-		}
-	}
+			...options.languageOptions?.parserOptions,
+		},
+	},
 });
 
 const convertLegacyOptionsToFlatConfig = options => {
@@ -83,7 +83,7 @@ const convertLegacyOptionsToFlatConfig = options => {
 const getUrlState = () => {
 	try {
 		const urlState = JSON.parse(
-			Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, ""))
+			Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")),
 		);
 
 		if (typeof urlState.text === "undefined") {
@@ -99,7 +99,7 @@ const getUrlState = () => {
 const getLocalStorageState = () => {
 	try {
 		const localStorageState = JSON.parse(
-			window.localStorage.getItem("linterDemoState") || "{}"
+			window.localStorage.getItem("linterDemoState") || "{}",
 		);
 
 		if (typeof localStorageState.text === "undefined") {
@@ -108,7 +108,7 @@ const getLocalStorageState = () => {
 
 		return {
 			text: localStorageState.text,
-			options: localStorageState.options
+			options: localStorageState.options,
 		};
 	} catch {
 		return null;
@@ -154,10 +154,10 @@ const App = () => {
 			parserOptions: {
 				...options.languageOptions.parserOptions,
 				ecmaFeatures: {
-					...options.languageOptions.parserOptions.ecmaFeatures
-				}
-			}
-		}
+					...options.languageOptions.parserOptions.ecmaFeatures,
+				},
+			},
+		},
 	};
 
 	const lint = () => {
@@ -165,7 +165,7 @@ const App = () => {
 			const { messages, output } = linter.verifyAndFix(
 				text,
 				optionsForLinter,
-				{ fix }
+				{ fix },
 			);
 			let fatalMessage;
 
@@ -176,21 +176,21 @@ const App = () => {
 			return {
 				messages,
 				output,
-				fatalMessage
+				fatalMessage,
 			};
 		} catch (error) {
 			if (error.message.includes('Key "rules":')) {
 				return {
 					messages: [],
 					output: text,
-					validationError: error
+					validationError: error,
 				};
 			}
 
 			return {
 				messages: [],
 				output: text,
-				crashError: error
+				crashError: error,
 			};
 		}
 	};
@@ -199,7 +199,7 @@ const App = () => {
 		({ newText, newOptions }) => {
 			const serializedState = JSON.stringify({
 				text: newText || text,
-				options: newOptions || options
+				options: newOptions || options,
 			});
 
 			if (hasLocalStorage()) {
@@ -211,7 +211,7 @@ const App = () => {
 			url.hash = Unicode.encodeToBase64(serializedState);
 			history.replaceState(null, null, url);
 		},
-		[options, text]
+		[options, text],
 	);
 
 	const { messages, output, fatalMessage, crashError, validationError } =
@@ -224,7 +224,7 @@ const App = () => {
 			const { output: fixedCode } = SourceCodeFixer.applyFixes(
 				text,
 				[message],
-				true
+				true,
 			);
 
 			setText(fixedCode);
@@ -238,7 +238,7 @@ const App = () => {
 	};
 	const [showConfigMenu, setShowConfigMenu] = useState(false);
 	const [isConfigHidden, setIsConfigHidden] = useState(
-		window.matchMedia("(min-width: 1023px)").matches
+		window.matchMedia("(min-width: 1023px)").matches,
 	);
 
 	useEffect(() => {
@@ -260,7 +260,7 @@ const App = () => {
 				setText(value);
 				storeState({ newText: value });
 			}, 400),
-		[storeState]
+		[storeState],
 	);
 
 	return (

@@ -35,7 +35,7 @@ if (!username) {
 //-----------------------------------------------------------------------------
 
 const octokit = new Octokit({
-	userAgent: "ESLint Website"
+	userAgent: "ESLint Website",
 });
 
 async function fetchUserProfile() {
@@ -50,7 +50,7 @@ async function fetchUserProfile() {
 		bio: profile.bio,
 		twitter_username: profile.twitter_username,
 		github_username: profile.login,
-		location: profile.location
+		location: profile.location,
 	};
 }
 
@@ -68,7 +68,7 @@ async function fetchUserProfile() {
 	await fs.writeFile(
 		authorsFilename,
 		JSON.stringify(authors, null, 4),
-		"utf8"
+		"utf8",
 	);
 	console.log(`Updated ${authorsFilename} with ${username}`);
 

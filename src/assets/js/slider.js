@@ -18,12 +18,12 @@
 					docFrag.appendChild(
 						isNode
 							? argItem
-							: document.createTextNode(String(argItem))
+							: document.createTextNode(String(argItem)),
 					);
 				});
 
 				this.insertBefore(docFrag, this.firstChild);
-			}
+			},
 		});
 	});
 })([Element.prototype, Document.prototype, DocumentFragment.prototype]);
@@ -37,7 +37,7 @@ if (typeof Object.assign != "function") {
 			if (target == null) {
 				// TypeError if undefined or null
 				throw new TypeError(
-					"Cannot convert undefined or null to object"
+					"Cannot convert undefined or null to object",
 				);
 			}
 
@@ -53,7 +53,7 @@ if (typeof Object.assign != "function") {
 						if (
 							Object.prototype.hasOwnProperty.call(
 								nextSource,
-								nextKey
+								nextKey,
 							)
 						) {
 							to[nextKey] = nextSource[nextKey];
@@ -64,7 +64,7 @@ if (typeof Object.assign != "function") {
 			return to;
 		},
 		writable: true,
-		configurable: true
+		configurable: true,
 	});
 }
 // add utilities; some of them borrowed from: https://scottaohara.github.io/a11y_tab_widget/
@@ -79,7 +79,7 @@ var util = {
 		ENTER: 13,
 		SPACE: 32,
 		DELETE: 46,
-		TAB: 9
+		TAB: 9,
 	},
 
 	generateID: function (base) {
@@ -126,14 +126,14 @@ var util = {
 
 	dashToSpaces: function (string) {
 		return string.replace(/-/g, " ");
-	}
+	},
 };
 
 (function (w, doc, undefined) {
 	var ARIASliderOptions = {
 		manual: false,
 		loop: false,
-		withDotNav: false
+		withDotNav: false,
 	};
 
 	var ARIAslider = function (inst, options) {
@@ -215,7 +215,7 @@ var util = {
 					paddleKeyboardRespond(e);
 					updateHelper();
 				},
-				false
+				false,
 			);
 
 			nextButton.addEventListener(
@@ -224,7 +224,7 @@ var util = {
 					paddleKeyboardRespond(e);
 					updateHelper();
 				},
-				false
+				false,
 			);
 
 			prevButton.addEventListener("click", function (e) {
@@ -303,7 +303,7 @@ var util = {
 						handlePaddleButtonsState();
 						updateHelper();
 					},
-					false
+					false,
 				);
 
 				dot.addEventListener(
@@ -312,7 +312,7 @@ var util = {
 						dotKeyboardRespond(e, dot);
 						updateHelper();
 					},
-					false
+					false,
 				);
 			});
 
@@ -340,7 +340,7 @@ var util = {
 					slide.setAttribute("role", "tabpanel");
 					slide.setAttribute(
 						"aria-labelledby",
-						dots[index].getAttribute("id")
+						dots[index].getAttribute("id"),
 					);
 				} else {
 					slide.setAttribute("role", "group");
@@ -355,7 +355,7 @@ var util = {
 					e => {
 						// slideKeyboardRespond(e);
 					},
-					false
+					false,
 				);
 
 				slide.addEventListener(
@@ -363,7 +363,7 @@ var util = {
 					() => {
 						slide.setAttribute("tabindex", "-1");
 					},
-					false
+					false,
 				);
 			});
 

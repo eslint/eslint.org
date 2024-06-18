@@ -6,7 +6,7 @@ import { javascript, esLint } from "@codemirror/lang-javascript";
 import { linter } from "../utils/codemirror-linter-extension";
 import {
 	ESLintPlaygroundTheme,
-	ESLintPlaygroundHighlightStyle
+	ESLintPlaygroundHighlightStyle,
 } from "../utils/codemirror-theme";
 import "../scss/editor.scss";
 
@@ -14,7 +14,7 @@ export default function CodeEditor({
 	codeValue,
 	onUpdate,
 	eslintOptions,
-	eslintInstance
+	eslintInstance,
 }) {
 	const extensions = useMemo(
 		() => [
@@ -23,9 +23,9 @@ export default function CodeEditor({
 			linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
 			javascript(),
 			ESLintPlaygroundTheme,
-			ESLintPlaygroundHighlightStyle
+			ESLintPlaygroundHighlightStyle,
 		],
-		[eslintOptions, eslintInstance]
+		[eslintOptions, eslintInstance],
 	);
 
 	return (

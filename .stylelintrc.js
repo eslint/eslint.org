@@ -12,8 +12,8 @@ module.exports = {
 		"declaration-block-no-duplicate-properties": [
 			true,
 			{
-				ignore: ["consecutive-duplicates-with-different-values"]
-			}
+				ignore: ["consecutive-duplicates-with-different-values"],
+			},
 		],
 		"declaration-block-no-redundant-longhand-properties": null,
 		"declaration-block-no-shorthand-property-overrides": null,
@@ -31,6 +31,6 @@ module.exports = {
 		"property-no-unknown": null,
 		"property-no-vendor-prefix": null,
 		"selector-class-pattern": null,
-		"value-keyword-case": null
-	}
+		"value-keyword-case": null,
+	},
 };

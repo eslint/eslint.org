@@ -11,7 +11,7 @@ import {
 	EditorView,
 	ViewPlugin,
 	logException,
-	WidgetType
+	WidgetType,
 } from "@codemirror/view";
 import { StateEffect, StateField, Facet } from "@codemirror/state";
 import { hoverTooltip } from "@codemirror/tooltip";
@@ -41,16 +41,16 @@ class LintState {
 				(d.from === d.to - 1 && state.doc.lineAt(d.from).to === d.from)
 					? Decoration.widget({
 							widget: new DiagnosticWidget(d),
-							diagnostic: d
+							diagnostic: d,
 						}).range(d.from)
 					: Decoration.mark({
 							attributes: {
-								class: `cm-lintRange cm-lintRange-${d.severity}`
+								class: `cm-lintRange cm-lintRange-${d.severity}`,
 							},
-							diagnostic: d
-						}).range(d.from, d.to)
+							diagnostic: d,
+						}).range(d.from, d.to),
 			),
-			true
+			true,
 		);
 
 		return new LintState(ranges, panel, findDiagnostic(ranges));
@@ -86,12 +86,15 @@ function maybeEnableLint(state, effects) {
 							selected.from === selected.to
 							? Decoration.none
 							: Decoration.set([
-									activeMark.range(selected.from, selected.to)
+									activeMark.range(
+										selected.from,
+										selected.to,
+									),
 								]);
 					}),
 					hoverTooltip(lintTooltip),
-					baseTheme
-				])
+					baseTheme,
+				]),
 			);
 }
 
@@ -104,7 +107,7 @@ function maybeEnableLint(state, effects) {
  */
 function setDiagnostics(state, diagnostics) {
 	return {
-		effects: maybeEnableLint(state, [setDiagnosticsEffect.of(diagnostics)])
+		effects: maybeEnableLint(state, [setDiagnosticsEffect.of(diagnostics)]),
 	};
 }
 
@@ -141,13 +144,13 @@ const lintState = /* @__PURE__*/ StateField.define({
 				value = new LintState(
 					value.diagnostics,
 					effect.value ? LintPanel.open : null,
-					value.selected
+					value.selected,
 				);
 			} else if (effect.is(movePanelSelection)) {
 				value = new LintState(
 					value.diagnostics,
 					value.panel,
-					effect.value
+					effect.value,
 				);
 			}
 		}
@@ -155,12 +158,12 @@ const lintState = /* @__PURE__*/ StateField.define({
 	},
 	provide: f => [
 		showPanel.from(f, val => val.panel),
-		EditorView.decorations.from(f, s => s.diagnostics)
-	]
+		EditorView.decorations.from(f, s => s.diagnostics),
+	],
 });
 
 const activeMark = /* @__PURE__*/ Decoration.mark({
-	class: "cm-lintRange cm-lintRange-active"
+	class: "cm-lintRange cm-lintRange-active",
 });
 
 function lintTooltip(view, pos, side) {
@@ -183,7 +186,7 @@ function lintTooltip(view, pos, side) {
 				stackStart = Math.min(from, stackStart);
 				stackEnd = Math.max(to, stackEnd);
 			}
-		}
+		},
 	);
 	if (!found.length) {
 		return null;
@@ -194,14 +197,14 @@ function lintTooltip(view, pos, side) {
 		above: view.state.doc.lineAt(stackStart).to < stackEnd,
 		create() {
 			return { dom: diagnosticsTooltip(view, found) };
-		}
+		},
 	};
 }
 function diagnosticsTooltip(view, diagnostics) {
 	return elt(
 		"div",
 		{ style: "opacity: hidden" },
-		diagnostics.map(d => renderDiagnostic(view, d, false))
+		diagnostics.map(d => renderDiagnostic(view, d, false)),
 	);
 }
 
@@ -242,20 +245,20 @@ const lintPlugin = /* @__PURE__*/ ViewPlugin.fromClass(
 					{ sources } = state.facet(lintSource);
 
 				Promise.all(
-					sources.map(source => Promise.resolve(source(this.view)))
+					sources.map(source => Promise.resolve(source(this.view))),
 				).then(
 					annotations => {
 						const all = annotations.reduce((a, b) => a.concat(b));
 
 						if (this.view.state.doc === state.doc) {
 							this.view.dispatch(
-								setDiagnostics(this.view.state, all)
+								setDiagnostics(this.view.state, all),
 							);
 						}
 					},
 					error => {
 						logException(this.view.state, error);
-					}
+					},
 				);
 			}
 		}
@@ -282,17 +285,17 @@ const lintPlugin = /* @__PURE__*/ ViewPlugin.fromClass(
 		destroy() {
 			clearTimeout(this.timeout);
 		}
-	}
+	},
 );
 
 const lintSource = /* @__PURE__*/ Facet.define({
 	combine(input) {
 		return {
 			sources: input.map(i => i.source),
-			delay: input.length ? Math.max(...input.map(i => i.delay)) : 750
+			delay: input.length ? Math.max(...input.map(i => i.delay)) : 750,
 		};
 	},
-	enables: lintPlugin
+	enables: lintPlugin,
 });
 
 /**
@@ -308,7 +311,7 @@ function linter(source, config = {}) {
 
 	return lintSource.of({
 		source,
-		delay: (_a = config.delay) !== null && _a !== void 0 ? _a : 750
+		delay: (_a = config.delay) !== null && _a !== void 0 ? _a : 750,
 	});
 }
 
@@ -354,12 +357,12 @@ function renderDiagnostic(view, diagnostic) {
 						diagnostic.actions[0].apply(
 							view,
 							diagnostic.from,
-							diagnostic.to
+							diagnostic.to,
 						))
 				}
 				ruleName={ruleName}
 			/>
-		</React.StrictMode>
+		</React.StrictMode>,
 	);
 	return element;
 }
@@ -374,7 +377,7 @@ class DiagnosticWidget extends WidgetType {
 	}
 	toDOM() {
 		return elt("span", {
-			class: `cm-lintPoint cm-lintPoint-${this.diagnostic.severity}`
+			class: `cm-lintPoint cm-lintPoint-${this.diagnostic.severity}`,
 		});
 	}
 }
@@ -402,12 +405,12 @@ class LintPanel {
 				// ArrowUp, PageUp
 				this.moveSelection(
 					(this.selectedIndex - 1 + this.items.length) %
-						this.items.length
+						this.items.length,
 				);
 			} else if (event.keyCode === 40 || event.keyCode === 34) {
 				// ArrowDown, PageDown
 				this.moveSelection(
-					(this.selectedIndex + 1) % this.items.length
+					(this.selectedIndex + 1) % this.items.length,
 				);
 			} else if (event.keyCode === 36) {
 				// Home
@@ -431,14 +434,14 @@ class LintPanel {
 					if (keys[i].toUpperCase().charCodeAt(0) === event.keyCode) {
 						const found = findDiagnostic(
 							this.view.state.field(lintState).diagnostics,
-							diagnostic
+							diagnostic,
 						);
 
 						if (found) {
 							diagnostic.actions[i].apply(
 								view,
 								found.from,
-								found.to
+								found.to,
 							);
 						}
 					}
@@ -461,7 +464,7 @@ class LintPanel {
 			role: "listbox",
 			"aria-label": this.view.state.phrase("Diagnostics"),
 			onkeydown,
-			onclick
+			onclick,
 		});
 		this.dom = elt(
 			"div",
@@ -473,10 +476,10 @@ class LintPanel {
 					type: "button",
 					name: "close",
 					"aria-label": this.view.state.phrase("close"),
-					onclick: () => closeLintPanel(this.view)
+					onclick: () => closeLintPanel(this.view),
 				},
-				"×"
-			)
+				"×",
+			),
 		);
 		this.update();
 	}
@@ -532,7 +535,7 @@ class LintPanel {
 					item.dom.removeAttribute("aria-selected");
 				}
 				i++;
-			}
+			},
 		);
 		while (
 			i < this.items.length &&
@@ -547,8 +550,8 @@ class LintPanel {
 					from: -1,
 					to: -1,
 					severity: "info",
-					message: this.view.state.phrase("No diagnostics")
-				})
+					message: this.view.state.phrase("No diagnostics"),
+				}),
 			);
 			needsSync = true;
 		}
@@ -558,7 +561,7 @@ class LintPanel {
 				key: this,
 				read: () => ({
 					sel: newSelectedItem.dom.getBoundingClientRect(),
-					panel: this.list.getBoundingClientRect()
+					panel: this.list.getBoundingClientRect(),
 				}),
 				write: ({ sel, panel }) => {
 					if (sel.top < panel.top) {
@@ -566,7 +569,7 @@ class LintPanel {
 					} else if (sel.bottom > panel.bottom) {
 						this.list.scrollTop += sel.bottom - panel.bottom;
 					}
-				}
+				},
 			});
 		} else if (this.selectedIndex < 0) {
 			this.list.removeAttribute("aria-activedescendant");
@@ -605,7 +608,7 @@ class LintPanel {
 		const field = this.view.state.field(lintState);
 		const selection = findDiagnostic(
 			field.diagnostics,
-			this.items[selectedIndex].diagnostic
+			this.items[selectedIndex].diagnostic,
 		);
 
 		if (!selection) {
@@ -614,7 +617,7 @@ class LintPanel {
 		this.view.dispatch({
 			selection: { anchor: selection.from, head: selection.to },
 			scrollIntoView: true,
-			effects: movePanelSelection.of(selection)
+			effects: movePanelSelection.of(selection),
 		});
 	}
 	static open(view) {
@@ -627,20 +630,20 @@ function svg(content, attrs = 'viewBox="0 0 40 40"') {
 function underline(color) {
 	return svg(
 		`<path d="m0 2.5 l2 -1.5 l1 0 l2 1.5 l1 0" stroke="${color}" fill="none" stroke-width=".7"/>`,
-		'width="6" height="3"'
+		'width="6" height="3"',
 	);
 }
 const baseTheme = /* @__PURE__*/ EditorView.baseTheme({
 	".cm-lintRange": {
 		backgroundPosition: "left bottom",
 		backgroundRepeat: "repeat-x",
-		paddingBottom: "0.7px"
+		paddingBottom: "0.7px",
 	},
 	".cm-lintRange-error": {
-		backgroundImage: /* @__PURE__*/ underline("#d11")
+		backgroundImage: /* @__PURE__*/ underline("#d11"),
 	},
 	".cm-lintRange-warning": {
-		backgroundImage: /* @__PURE__*/ underline("orange")
+		backgroundImage: /* @__PURE__*/ underline("orange"),
 	},
 	".cm-lintRange-info": { backgroundImage: /* @__PURE__*/ underline("#999") },
 	".cm-lintRange-active": { backgroundColor: "#ffdd9980" },
@@ -653,15 +656,15 @@ const baseTheme = /* @__PURE__*/ EditorView.baseTheme({
 			left: "-2px",
 			borderLeft: "3px solid transparent",
 			borderRight: "3px solid transparent",
-			borderBottom: "4px solid #d11"
-		}
+			borderBottom: "4px solid #d11",
+		},
 	},
 	".cm-lintPoint-warning": {
-		"&:after": { borderBottomColor: "orange" }
+		"&:after": { borderBottomColor: "orange" },
 	},
 	".cm-lintPoint-info": {
-		"&:after": { borderBottomColor: "#999" }
-	}
+		"&:after": { borderBottomColor: "#999" },
+	},
 });
 
 export { linter, setDiagnostics, setDiagnosticsEffect };
