@@ -77,6 +77,8 @@
     <script>
             (function () {
                 var theme = window.localStorage.getItem("theme");
+                var isSystemTheme = window.localStorage.getItem("system-theme") === "true";
+                document.documentElement.setAttribute('data-system-theme', isSystemTheme);
                 if (theme) document.documentElement.setAttribute('data-theme', theme)
                 else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
                     document.documentElement.setAttribute('data-theme', 'dark');
