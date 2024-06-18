@@ -2,7 +2,6 @@
 	"useTabs": true,
 	"tabWidth": 4,
 	"arrowParens": "avoid",
-	"trailingComma": "none",
 	"overrides": [
 		{
 			"files": ["*.json"],

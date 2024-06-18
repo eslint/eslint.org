@@ -37,16 +37,21 @@
         "lint:fix:md": "markdownlint --fix  \"**/*.md\"",
         "lint:scss": "stylelint \"**/*.scss\"",
         "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
-        "format": "prettier --write \"**/*.+(js|json|scss)\"",
-        "format:check": "prettier --check \"**/*.+(js|json|scss)\"",
+        "fmt": "prettier --write \"**/*.+(js|json|scss)\"",
+        "fmt:check": "prettier --check \"**/*.+(js|json|scss)\"",
         "start": "npm-run-all build:sass --parallel *:*:watch"
     },
     "lint-staged": {
-        "**/*.{js,jsx}": "eslint --fix",
+        "**/*.{js,jsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.scss": [
+            "stylelint \"**/*.scss\" --fix",
+            "prettier --write"
+        ],
         "*.md": "markdownlint --fix",
-        "*.scss": "stylelint \"**/*.scss\" --fix",
-        "**/*.svg": "npx svgo -r --multipass",
-        "**/*.{js,jsx,scss}": "prettier --write"
+        "**/*.svg": "npx svgo -r --multipass"
     },
     "gitHooks": {
         "pre-commit": "lint-staged"
