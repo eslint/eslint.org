@@ -233,6 +233,8 @@ const App = () => {
         storeState({ newText: value });
     }, 400), [storeState]);
 
+    const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(new Set([]));
+
     return (
         <div className="playground-wrapper">
             <div className="playground__config-and-footer">
@@ -259,6 +261,8 @@ const App = () => {
                             rulesMeta={rulesMeta}
                             validationError={validationError}
                             eslintVersion={linter.version}
+                            rulesWithInvalidConfigs={rulesWithInvalidConfigs}
+                            setRulesWithInvalidConfigs={setRulesWithInvalidConfigs}
                         />
                         <Footer />
                     </div>
@@ -302,6 +306,10 @@ const App = () => {
                                 message={message}
                                 suggestions={message.suggestions}
                                 onFix={onFix}
+                                options={options}
+                                onUpdate={updateOptions}
+                                rulesWithInvalidConfigs={rulesWithInvalidConfigs}
+                                setRulesWithInvalidConfigs={setRulesWithInvalidConfigs}
                             />
                         ))}
                     </section>

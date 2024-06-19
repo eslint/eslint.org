@@ -94,7 +94,16 @@ const defaultOption = {
 
 const isEmpty = obj => Object.keys(obj).length === 0;
 
-export default function Configuration({ rulesMeta, eslintVersion, onUpdate, options, ruleNames, validationError }) {
+export default function Configuration({
+    rulesMeta,
+    eslintVersion,
+    onUpdate,
+    options,
+    ruleNames,
+    validationError,
+    rulesWithInvalidConfigs,
+    setRulesWithInvalidConfigs
+}) {
     const [showVersion, setShowVersions] = useState(false);
     const [showRules, setShowRules] = useState(true);
     const [configFileFormat, setConfigFileFormat] = useState("ESM");
@@ -111,7 +120,6 @@ export default function Configuration({ rulesMeta, eslintVersion, onUpdate, opti
     }));
     const [selectedRules, setSelectedRules] = useState([]);
     const ruleInputRef = useRef(null);
-    const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(new Set([]));
     const firstRuleRef = useRef();
 
     useEffect(() => {
