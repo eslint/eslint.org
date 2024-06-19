@@ -37,8 +37,8 @@
         "lint:fix:md": "markdownlint --fix  \"**/*.md\"",
         "lint:scss": "stylelint \"**/*.scss\"",
         "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
-        "fmt": "prettier --write \"**/*.+(js|json|scss)\"",
-        "fmt:check": "prettier --check \"**/*.+(js|json|scss)\"",
+        "fmt": "prettier --write .",
+        "fmt:check": "prettier --check .",
         "start": "npm-run-all build:sass --parallel *:*:watch"
     },
     "lint-staged": {
@@ -50,6 +50,7 @@
             "stylelint \"**/*.scss\" --fix",
             "prettier --write"
         ],
+        "*.json": "prettier --write",
         "*.md": "markdownlint --fix",
         "**/*.svg": "npx svgo -r --multipass"
     },
