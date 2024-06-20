@@ -6,7 +6,6 @@
 !*.scss
 _site
 package-lock.json
-package.json
 src/_data/*.json
 *-polyfill.js
 *-ponyfill*.js
