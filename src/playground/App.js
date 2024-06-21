@@ -20,29 +20,29 @@ const legacyLinter = new Linter({ configType: "eslintrc" });
 const rules = legacyLinter.getRules();
 const ruleNames = Array.from(rules.keys());
 const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
-    result[key] = value.meta;
-    return result;
+	result[key] = value.meta;
+	return result;
 }, {});
 
 const getDefaultOptions = () => ({
-    rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
-        if (rule.meta.docs.recommended) {
-            result[ruleId] = ["error"];
-        }
-        return result;
-    }, {})
+	rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
+		if (rule.meta.docs.recommended) {
+			result[ruleId] = ["error"];
+		}
+		return result;
+	}, {}),
 });
 
 const fillOptionsDefaults = options => ({
-    rules: {},
-    ...options,
-    languageOptions: {
-        ...options.languageOptions,
-        parserOptions: {
-            ecmaFeatures: {},
-            ...options.languageOptions?.parserOptions
-        }
-    }
+	rules: {},
+	...options,
+	languageOptions: {
+		...options.languageOptions,
+		parserOptions: {
+			ecmaFeatures: {},
+			...options.languageOptions?.parserOptions,
+		},
+	},
 });
 
 const convertLegacyOptionsToFlatConfig = options => {
@@ -117,13 +117,13 @@ const getLocalStorageState = () => {
 };
 
 const hasLocalStorage = () => {
-    try {
-        window.localStorage.setItem("localStorageTest", "foo");
-        window.localStorage.removeItem("localStorageTest");
-        return true;
-    } catch {
-        return false;
-    }
+	try {
+		window.localStorage.setItem("localStorageTest", "foo");
+		window.localStorage.removeItem("localStorageTest");
+		return true;
+	} catch {
+		return false;
+	}
 };
 
 const App = () => {

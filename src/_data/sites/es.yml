@@ -313,11 +313,11 @@ team_page:
     description: >
       Las personas que revisan, corrigen errores y ayudan a clasificar los problemas.
   website_team:
-    title: Website Team
+    title: Equipo del sitio web
     description: >
       Miembros del equipo que se enfocan específicamente en eslint.org.
   support_team:
-    title: Support Team
+    title: Equipo de soporte
     description: >
       Gente que ayuda en Discord y discusiones.
   alumni:

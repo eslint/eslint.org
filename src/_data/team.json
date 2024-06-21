@@ -64,7 +64,7 @@
             "title": "ESLint Alumnus",
             "website": "http://byk.im",
             "avatar_url": "https://avatars.githubusercontent.com/u/126780?v=4",
-            "bio": "Helping engineers help themselves help us all. Sr. SRE at @bloomberg, formerly @formsort, @getsentry, @facebook, @disqus, always a Mozillian\r\n",
+            "bio": "Helping engineers help themselves help us all. Tinkerer @getsentry\r\n",
             "twitter_username": "madBYK",
             "github_username": "BYK",
             "location": "London, UK"
@@ -135,6 +135,17 @@
             "twitter_username": "vitorbal",
             "github_username": "vitorbal",
             "location": "Madrid"
+        },
+        {
+            "username": "bmish",
+            "name": "Bryan Mishkin",
+            "title": "ESLint Alumnus",
+            "website": "http://www.linkedin.com/in/bmish",
+            "avatar_url": "https://avatars.githubusercontent.com/u/698306?v=4",
+            "bio": "Software Engineer. Passionate about open source and helping developers maximize their productivity. @eslint team.  Former @square.",
+            "twitter_username": null,
+            "github_username": "bmish",
+            "location": "New York City and San Francisco"
         },
         {
             "username": "JamesHenry",
@@ -242,7 +253,7 @@
             "title": "ESLint Alumnus",
             "website": "",
             "avatar_url": "https://avatars.githubusercontent.com/u/4616705?v=4",
-            "bio": "I build front-ends and raise 🦆, 🐝 & two boys.  @storybookjs core team member.",
+            "bio": "I like to do things.",
             "twitter_username": "ianvanschooten",
             "github_username": "IanVS",
             "mastodon_url": "https://fosstodon.org/@IanVS",
@@ -265,7 +276,7 @@
             "title": "ESLint Alumnus",
             "website": "https://kaicataldo.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/7041728?v=4",
-            "bio": "💻 🎺 🎮 ⌨️ 🐕 • he/him",
+            "bio": "💻 🎺 🎮 ⌨️ • he/him",
             "twitter_username": null,
             "github_username": "kaicataldo",
             "location": "Brooklyn, NY"
@@ -277,7 +288,7 @@
             "website": "https://blog.teddykatz.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/11638619?v=4",
             "bio": null,
-            "twitter_username": "not_an_aardvark",
+            "twitter_username": null,
             "github_username": "not-an-aardvark",
             "mastodon_url": "https://infosec.exchange/@not_an_aardvark",
             "location": "New York, NY"
@@ -364,17 +375,6 @@
     ],
     "committers": [
         {
-            "username": "bmish",
-            "name": "Bryan Mishkin",
-            "title": "ESLint Committer",
-            "website": "http://www.linkedin.com/in/bmish",
-            "avatar_url": "https://avatars.githubusercontent.com/u/698306?v=4",
-            "bio": "Software Engineer. Passionate about open source and helping developers maximize their productivity. @eslint team.  Former @square.",
-            "twitter_username": null,
-            "github_username": "bmish",
-            "location": "New York City and San Francisco"
-        },
-        {
             "username": "JoshuaKGoldberg",
             "name": "Josh Goldberg ✨",
             "title": "ESLint Committer",
@@ -441,8 +441,8 @@
             "title": "ESLint Support Team",
             "website": "https://www.sam3k.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/180152?v=4",
-            "bio": "I am a staff frontend engineer with 19 years of experience architecting\r\napplications.",
-            "twitter_username": "sam3k_",
+            "bio": "I am a frontend lead engineer with over two decades of experience architecting\r\nfrontend web applications.",
+            "twitter_username": null,
             "github_username": "sam3k",
             "location": "New York City"
         },

@@ -40,7 +40,7 @@ eleventyExcludeFromCollections: true
 /docs/latest/user-guide/core-concepts                        /docs/latest/use/core-concepts 301!
 /docs/latest/user-guide/configuring/                         /docs/latest/use/configure/ 301!
 /docs/latest/user-guide/configuring/configuration-files-new  /docs/latest/use/configure/configuration-files-new 301!
-/docs/latest/user-guide/configuring/configuration-files     /docs/latest/use/configure/configuration-files 301!
+/docs/latest/user-guide/configuring/configuration-files      /docs/latest/use/configure/configuration-files 301!
 /docs/latest/user-guide/configuring/language-options         /docs/latest/use/configure/language-options 301!
 /docs/latest/user-guide/configuring/rules                    /docs/latest/use/configure/rules 301!
 /docs/latest/user-guide/configuring/plugins                  /docs/latest/use/configure/plugins 301!
@@ -106,6 +106,10 @@ eleventyExcludeFromCollections: true
 {% else %}
 /docs/v8.x/*                        https://eslint.org/docs/v8.x/:splat 302!
 {% endif %}
+
+# Docs for the latest v9.x
+# Redirect to latest docs while v9.x is the latest release
+/docs/v9.x/*                        https://eslint.org/docs/latest/:splat 302!
 
 # Docs for the current prerelease
 # As there is currently no active prerelease, redirect to latest docs

@@ -1,0 +1,12 @@
+*
+!*/
+!*.js
+!*.jsx
+!*.json
+!*.scss
+_site
+package-lock.json
+src/_data/*.json
+*-polyfill.js
+*-ponyfill*.js
+*.min.js
