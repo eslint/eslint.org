@@ -1,25 +1,25 @@
 .switcher--language {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .25rem .5rem;
-    position: relative;
-    min-width: 15rem;
-    padding: 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.25rem 0.5rem;
+	position: relative;
+	min-width: 15rem;
+	padding: 0;
 }
 
 .switcher--language .label__text {
-    flex: 1 0 10ch;
+	flex: 1 0 10ch;
 }
 
 .switcher--language .switcher__select {
-    min-width: 15rem;
-    flex: 0 1 15rem;
+	min-width: 15rem;
+	flex: 0 1 15rem;
 }
 
 .language-switcher {
-    display: inline-flex;
-    flex-grow: 1;
-    flex-basis: 0;
-    justify-content: end;
+	display: inline-flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: end;
 }

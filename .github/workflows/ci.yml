@@ -23,6 +23,8 @@ jobs:
         run: npm run install:playground
       - name: Lint Files
         run: npm run lint
+      - name: Check Formatting
+        run: npm run fmt:check
       - name: Run build
         run: npm run build
       - name: Validate Internal Links

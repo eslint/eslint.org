@@ -63,50 +63,50 @@ const lodash = require("lodash");
  * ]
  */
 module.exports = (collection, collectionCategories, itemsPerPage) => {
-  // create empty array
-  const paginatedCollectionByCategories = [];
+	// create empty array
+	const paginatedCollectionByCategories = [];
 
-  // walk unique categories
-  collectionCategories.forEach((category) => {
-    // get posts in category
-    const postsInCategory = collection.filter((item) =>
-      item.data.categories.includes(category.title)
-    );
+	// walk unique categories
+	collectionCategories.forEach(category => {
+		// get posts in category
+		const postsInCategory = collection.filter(item =>
+			item.data.categories.includes(category.title),
+		);
 
-    // chunk posts in category to create pages
-    const chunkedCollection = lodash.chunk(postsInCategory, itemsPerPage);
+		// chunk posts in category to create pages
+		const chunkedCollection = lodash.chunk(postsInCategory, itemsPerPage);
 
-    // create array of slugs
-    const slugs = [];
-    for (let i = 1; i <= chunkedCollection.length; i++) {
-      let slug = `${category.slug}/${i}`;
-      if (i === 1) {
-        slug = category.slug;
-      }
+		// create array of slugs
+		const slugs = [];
+		for (let i = 1; i <= chunkedCollection.length; i++) {
+			let slug = `${category.slug}/${i}`;
+			if (i === 1) {
+				slug = category.slug;
+			}
 
-      slugs.push(slug);
-    }
+			slugs.push(slug);
+		}
 
-    // add formatted objects to empty array
-    chunkedCollection.forEach((items, index) => {
-      paginatedCollectionByCategories.push({
-        title: category.title,
-        slug: slugs[index],
-        currentPage: index + 1,
-        totalItems: postsInCategory.length,
-        totalPages: Math.ceil(postsInCategory.length / itemsPerPage),
-        items: items,
-        hrefs: {
-          all: slugs,
-          first: slugs[0],
-          last: slugs[slugs.length - 1],
-          next: slugs[index + 1] ?? null,
-          previous: slugs[index - 1] ?? null,
-        },
-      });
-    });
-  });
+		// add formatted objects to empty array
+		chunkedCollection.forEach((items, index) => {
+			paginatedCollectionByCategories.push({
+				title: category.title,
+				slug: slugs[index],
+				currentPage: index + 1,
+				totalItems: postsInCategory.length,
+				totalPages: Math.ceil(postsInCategory.length / itemsPerPage),
+				items: items,
+				hrefs: {
+					all: slugs,
+					first: slugs[0],
+					last: slugs[slugs.length - 1],
+					next: slugs[index + 1] ?? null,
+					previous: slugs[index - 1] ?? null,
+				},
+			});
+		});
+	});
 
-  // return array of objects
-  return paginatedCollectionByCategories;
+	// return array of objects
+	return paginatedCollectionByCategories;
 };
