@@ -198,7 +198,7 @@ const App = () => {
 	const storeState = useCallback(
 		({ newText, newOptions }) => {
 			const serializedState = JSON.stringify({
-				text: newText || text,
+				text: newText,
 				options: newOptions || options,
 			});
 
