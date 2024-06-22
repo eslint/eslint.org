@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 121572,
-        "monthlyDonations": 10131,
+        "annualDonations": 133572,
+        "monthlyDonations": 11131,
         "sponsorCount": 175
     },
     "platinum": [
@@ -11,6 +11,15 @@
             "image": "https://images.opencollective.com/automattic/d0ef3e1/logo.png",
             "monthlyDonation": 2000,
             "totalDonations": 88000,
+            "source": "opencollective",
+            "tier": "platinum-sponsor"
+        },
+        {
+            "name": "Airbnb",
+            "url": "https://www.airbnb.com/",
+            "image": "https://images.opencollective.com/airbnb/d327d66/logo.png",
+            "monthlyDonation": 2000,
+            "totalDonations": 65610,
             "source": "opencollective",
             "tier": "platinum-sponsor"
         }
@@ -31,15 +40,6 @@
             "image": "https://images.opencollective.com/salesforce/ca8f997/logo.png",
             "monthlyDonation": 1000,
             "totalDonations": 75741,
-            "source": "opencollective",
-            "tier": "gold-sponsor"
-        },
-        {
-            "name": "Airbnb",
-            "url": "https://www.airbnb.com/",
-            "image": "https://images.opencollective.com/airbnb/d327d66/logo.png",
-            "monthlyDonation": 1000,
-            "totalDonations": 65610,
             "source": "opencollective",
             "tier": "gold-sponsor"
         }
@@ -1450,7 +1450,7 @@
             "tier": "backer"
         },
         {
-            "name": "Davidbadasyan",
+            "name": "David Badasyan",
             "image": "https://avatars.githubusercontent.com/u/59211418?u=3ec40b6724f732cdf15f040d6a1a94675407102e&v=4",
             "url": "https://www.linkedin.com/in/david-badasyan-17b544199/",
             "monthlyDonation": 1,
