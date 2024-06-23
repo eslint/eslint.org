@@ -241,7 +241,10 @@ const App = () => {
 
 	const onPositionClick = message => {
 		if (editorRef.current) {
-			editorRef.current.scrollToPosition(message.line, message.column);
+			editorRef.current.scrollToPosition(
+				message.line,
+				message.column - 1,
+			);
 		}
 	};
 
