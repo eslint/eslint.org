@@ -1,6 +1,12 @@
 import "regenerator-runtime/runtime";
 
-import React, { useState, useEffect, useMemo, useCallback } from "react";
+import React, {
+	useState,
+	useEffect,
+	useMemo,
+	useCallback,
+	useRef,
+} from "react";
 import Alert from "./components/Alert";
 import CrashAlert from "./components/CrashAlert";
 import Footer from "./components/Footer";
@@ -127,6 +133,7 @@ const hasLocalStorage = () => {
 
 const App = () => {
 	let initialText, initialOptions;
+	const editorRef = useRef(null);
 
 	const initialState = getUrlState() || getLocalStorageState();
 
@@ -229,6 +236,12 @@ const App = () => {
 
 			setText(fixedCode);
 			storeState({ newText: fixedCode });
+		}
+	};
+
+	const onPositionClick = message => {
+		if (editorRef.current) {
+			editorRef.current.scrollToPosition(message.line, message.column);
 		}
 	};
 
@@ -339,6 +352,7 @@ const App = () => {
 						aria-label="Editor"
 					>
 						<CodeEditor
+							ref={editorRef}
 							tabIndex="0"
 							codeValue={text}
 							eslintInstance={linter}
@@ -379,6 +393,7 @@ const App = () => {
 									message={message}
 									suggestions={message.suggestions}
 									onFix={onFix}
+									onPositionClick={onPositionClick}
 								/>
 							))}
 					</section>

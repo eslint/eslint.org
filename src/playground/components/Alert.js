@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Alert({ type, text, message, onFix }) {
+export default function Alert({ type, text, message, onFix, onPositionClick }) {
 	if (!message) {
 		return (
 			<article
@@ -64,11 +64,14 @@ export default function Alert({ type, text, message, onFix }) {
 						/>
 					</svg>
 					<span className="visually-hidden">Error</span>
-					<p className="alert__line-number">
+					<button
+						className="alert__line-number"
+						onClick={() => onPositionClick(message)}
+					>
 						<span className="line-number">{line}</span>
 						{line && column && <span aria-hidden="true">:</span>}
 						<span className="colun-number">{column}</span>
-					</p>
+					</button>
 				</div>
 				<div className="alert__text">
 					{alertMessage}

@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { forwardRef, useImperativeHandle, useMemo, useRef } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { history } from "@codemirror/history";
 import { bracketMatching } from "@codemirror/matchbrackets";
@@ -10,33 +10,72 @@ import {
 } from "../utils/codemirror-theme";
 import "../scss/editor.scss";
 
-export default function CodeEditor({
-	codeValue,
-	onUpdate,
-	eslintOptions,
-	eslintInstance,
-}) {
-	const extensions = useMemo(
-		() => [
-			history(),
-			bracketMatching(),
-			linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
-			javascript(),
-			ESLintPlaygroundTheme,
-			ESLintPlaygroundHighlightStyle,
-		],
-		[eslintOptions, eslintInstance],
-	);
+const CodeEditor = forwardRef(
+	({ codeValue, onUpdate, eslintOptions, eslintInstance }, ref) => {
+		const editorRef = useRef(null);
 
-	return (
-		<CodeMirror
-			value={codeValue}
-			minWidth="100%"
-			height="100%"
-			extensions={extensions}
-			onChange={value => {
-				onUpdate(value);
-			}}
-		/>
-	);
-}
+		const extensions = useMemo(
+			() => [
+				history(),
+				bracketMatching(),
+				linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
+				javascript(),
+				ESLintPlaygroundTheme,
+				ESLintPlaygroundHighlightStyle,
+			],
+			[eslintOptions, eslintInstance],
+		);
+
+		useImperativeHandle(ref, () => ({
+			scrollToPosition(line, col) {
+				if (editorRef.current) {
+					const editorView = editorRef.current.view;
+					if (editorView) {
+						const { state } = editorView;
+						const pos = state.doc.line(line).from + col;
+
+						// Set the cursor selection to the position
+						editorView.dispatch({
+							selection: { anchor: pos },
+							scrollIntoView: true,
+						});
+
+						const linePos = editorView.coordsAtPos(
+							state.doc.line(line).from,
+						);
+
+						// Calculate to try to center the line in the editor
+						if (linePos) {
+							const editorRect =
+								editorView.dom.getBoundingClientRect();
+							const offset =
+								linePos.top -
+								editorRect.top -
+								editorRect.height / 2;
+							editorView.scrollDOM.scrollTop += offset;
+						}
+
+						editorView.focus();
+					}
+				}
+			},
+		}));
+
+		return (
+			<CodeMirror
+				value={codeValue}
+				minWidth="100%"
+				height="100%"
+				ref={editorRef}
+				extensions={extensions}
+				onChange={value => {
+					onUpdate(value);
+				}}
+			/>
+		);
+	},
+);
+
+CodeEditor.displayName = "CodeEditor";
+
+export default CodeEditor;
