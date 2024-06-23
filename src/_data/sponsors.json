@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133572,
-        "monthlyDonations": 11131,
-        "sponsorCount": 175
+        "annualDonations": 133596,
+        "monthlyDonations": 11133,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -1322,6 +1322,14 @@
             "name": "Ala Eddine Menai",
             "image": "https://avatars.githubusercontent.com/u/20143684?u=3303259ea3073dd239dc3b1d044040b3c5b6338a&v=4",
             "url": "https://github.com/alamenai",
+            "monthlyDonation": 2,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Eduardo M. Santos",
+            "image": "https://avatars.githubusercontent.com/u/160991364?u=ac394f8dda3cbf3685f3309f47fb97b9db585507&v=4",
+            "url": "https://github.com/supitsdu",
             "monthlyDonation": 2,
             "source": "github",
             "tier": "backer"
