@@ -47,7 +47,7 @@
     "btmills": {
         "username": "btmills",
         "name": "Brandon Mills",
-        "title": "ESLint Alumnus",
+        "title": "Guest Author",
         "website": "https://bmills.dev",
         "avatar_url": "https://avatars.githubusercontent.com/u/1709537?v=4",
         "bio": "Director of Engineering at @drivecapital by day and inveterate yak shaver by night\r\n",
@@ -81,7 +81,7 @@
     "not-an-aardvark": {
         "username": "not-an-aardvark",
         "name": "Teddy Katz",
-        "title": "ESLint Alumnus",
+        "title": "Guest Author",
         "website": "https://blog.teddykatz.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/11638619?v=4",
         "bio": null,
@@ -93,7 +93,7 @@
     "platinumazure": {
         "username": "platinumazure",
         "name": "Kevin Partington",
-        "title": "ESLint Support Team",
+        "title": "ESLint Alumnus",
         "website": "",
         "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4",
         "bio": "@eslint support team member. My open source participation will be limited as I continue to heal my depression and anxiety.",

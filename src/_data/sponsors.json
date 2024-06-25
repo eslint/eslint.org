@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133596,
-        "monthlyDonations": 11133,
-        "sponsorCount": 176
+        "annualDonations": 133536,
+        "monthlyDonations": 11128,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -1061,14 +1061,6 @@
             "name": "Nicolas Charpentier",
             "image": "https://avatars.githubusercontent.com/u/7189823?u=f7558a0f6828f45f1082970880aefbeab9596d0b&v=4",
             "url": "https://charpeni.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "James Hay",
-            "image": "https://avatars.githubusercontent.com/u/7937480?u=54287fafb0a0c782bc8f68b6635d80e4a0944f74&v=4",
-            "url": "https://github.com/flagpoonage",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
