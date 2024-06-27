@@ -28,36 +28,29 @@ const CodeEditor = forwardRef(
 
 		useImperativeHandle(ref, () => ({
 			scrollToPosition(line, col) {
-				if (editorRef.current) {
-					const editorView = editorRef.current.view;
-					if (editorView) {
-						const { state } = editorView;
-						const pos = state.doc.line(line).from + col;
+				const editorView = editorRef.current.view;
+				const { state } = editorView;
+				const pos = state.doc.line(line).from + col;
 
-						// Set the cursor selection to the position
-						editorView.dispatch({
-							selection: { anchor: pos },
-							scrollIntoView: true,
-						});
+				// Set the cursor selection to the position
+				editorView.dispatch({
+					selection: { anchor: pos },
+					scrollIntoView: true,
+				});
 
-						const linePos = editorView.coordsAtPos(
-							state.doc.line(line).from,
-						);
+				const linePos = editorView.coordsAtPos(
+					state.doc.line(line).from,
+				);
 
-						// Calculate to try to center the line in the editor
-						if (linePos) {
-							const editorRect =
-								editorView.dom.getBoundingClientRect();
-							const offset =
-								linePos.top -
-								editorRect.top -
-								editorRect.height / 2;
-							editorView.scrollDOM.scrollTop += offset;
-						}
-
-						editorView.focus();
-					}
+				// Calculate to try to center the line in the editor
+				if (linePos) {
+					const editorRect = editorView.dom.getBoundingClientRect();
+					const offset =
+						linePos.top - editorRect.top - editorRect.height / 2;
+					editorView.scrollDOM.scrollTop += offset;
 				}
+
+				editorView.focus();
 			},
 		}));
 
