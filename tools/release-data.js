@@ -16,5 +16,5 @@
 const upcomingVersionPrereleaseType = null;
 
 module.exports = {
-    upcomingVersionPrereleaseType
+	upcomingVersionPrereleaseType,
 };

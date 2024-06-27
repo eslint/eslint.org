@@ -1,53 +1,53 @@
 module.exports = {
-    /**
-     * Returns some attributes based on whether the link is active or
-     * a parent of an active item
-     *
-     * @param {String} itemUrl is the link in question
-     * @param {String} pageUrl is the page context
-     * @returns {String} is the attributes or empty
-     */
-    getLinkActiveState: function(itemUrl, pageUrl) {
-        let response = '';
+	/**
+	 * Returns some attributes based on whether the link is active or
+	 * a parent of an active item
+	 *
+	 * @param {String} itemUrl is the link in question
+	 * @param {String} pageUrl is the page context
+	 * @returns {String} is the attributes or empty
+	 */
+	getLinkActiveState: function (itemUrl, pageUrl) {
+		let response = "";
 
-        if (itemUrl === pageUrl) {
-            response = ' aria-current="page" ';
-        }
+		if (itemUrl === pageUrl) {
+			response = ' aria-current="page" ';
+		}
 
-        if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-            response += ' data-current="true" ';
-        }
+		if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
+			response += ' data-current="true" ';
+		}
 
-        return response;
-    },
-    setBlogActiveState: function(itemUrl, pageUrl) {
-        let response = '';
+		return response;
+	},
+	setBlogActiveState: function (itemUrl, pageUrl) {
+		let response = "";
 
-        if (itemUrl === pageUrl || pageUrl.indexOf('/blog/page/') >= 0 ) {
-            response = ' aria-current="page" ';
-        }
+		if (itemUrl === pageUrl || pageUrl.indexOf("/blog/page/") >= 0) {
+			response = ' aria-current="page" ';
+		}
 
-        return response;
-    },
-    setActiveCategory: function(itemUrl, pageUrl) {
-        let response = '';
+		return response;
+	},
+	setActiveCategory: function (itemUrl, pageUrl) {
+		let response = "";
 
-        if (itemUrl === pageUrl) {
-            response = ' aria-current="page" ';
-        }
+		if (itemUrl === pageUrl) {
+			response = ' aria-current="page" ';
+		}
 
-        if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-            response += ' aria-current="page" ';
-        }
+		if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
+			response += ' aria-current="page" ';
+		}
 
-        return response;
-    },
-    excludeThis: function(arr, pageUrl) {
-        var newArray = [];
-        arr.forEach(item => {
-            if(item.url !== pageUrl) newArray.push(item);
-        });
-        return newArray;
-    },
-    isDev: process.env.IS_DEV === 'true'
+		return response;
+	},
+	excludeThis: function (arr, pageUrl) {
+		var newArray = [];
+		arr.forEach(item => {
+			if (item.url !== pageUrl) newArray.push(item);
+		});
+		return newArray;
+	},
+	isDev: process.env.IS_DEV === "true",
 };

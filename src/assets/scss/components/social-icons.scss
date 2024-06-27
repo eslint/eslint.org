@@ -1,21 +1,21 @@
 .eslint-social-icons {
-    flex-grow: 1;
-    flex-basis: 0;
+	flex-grow: 1;
+	flex-basis: 0;
 
-    ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 2rem;
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		gap: 2rem;
 
-        li {
-            margin: 0;
-            display: inline-flex;
-            align-items: center;
+		li {
+			margin: 0;
+			display: inline-flex;
+			align-items: center;
 
-            a {
-                display: flex;
-            }
-        }
-    }
+			a {
+				display: flex;
+			}
+		}
+	}
 }

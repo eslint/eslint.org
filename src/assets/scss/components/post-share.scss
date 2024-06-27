@@ -1,51 +1,51 @@
 .c-share {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .75rem;
-    position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	position: relative;
 }
 
 .c-share__btn {
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-xs);
-    border: 1px solid var(--border-color);
-    padding: .75rem;
-    margin: 0;
-    display: inline-flex;
-    align-items: center;
-    color: var(--icon-color);
+	border-radius: var(--border-radius);
+	box-shadow: var(--shadow-xs);
+	border: 1px solid var(--border-color);
+	padding: 0.75rem;
+	margin: 0;
+	display: inline-flex;
+	align-items: center;
+	color: var(--icon-color);
 
-    &:hover,
-    &:focus {
-        color: var(--headings-color);
-    }
+	&:hover,
+	&:focus {
+		color: var(--headings-color);
+	}
 
-    svg {
-        color: inherit;
-    }
+	svg {
+		color: inherit;
+	}
 }
 
 button.c-share__btn {
-    color: var(--dark-icon-color);
+	color: var(--dark-icon-color);
 
-    &[data-copied="true"] {
-        color: var(--link-color);
-    }
+	&[data-copied="true"] {
+		color: var(--link-color);
+	}
 }
 
 .ctc-announcement {
-    flex: 1 1 999px;
-    font-size: .875rem;
-    font-size: var(--step--1);
-    padding: .25rem;
-    border-radius: var(--border-radius);
-    display: block;
-    position: absolute;
-    top: 100%;
-    offset-block-start: 100%;
-    transition: opacity 1s linear 3s;
+	flex: 1 1 999px;
+	font-size: 0.875rem;
+	font-size: var(--step--1);
+	padding: 0.25rem;
+	border-radius: var(--border-radius);
+	display: block;
+	position: absolute;
+	top: 100%;
+	offset-block-start: 100%;
+	transition: opacity 1s linear 3s;
 
-    &[data-fades-out] {
-        opacity: 0;
-    }
+	&[data-fades-out] {
+		opacity: 0;
+	}
 }

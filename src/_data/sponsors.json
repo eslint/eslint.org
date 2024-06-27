@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121500,
-        "monthlyDonations": 10125,
-        "sponsorCount": 173
+        "annualDonations": 133656,
+        "monthlyDonations": 11138,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -11,6 +11,15 @@
             "image": "https://images.opencollective.com/automattic/d0ef3e1/logo.png",
             "monthlyDonation": 2000,
             "totalDonations": 88000,
+            "source": "opencollective",
+            "tier": "platinum-sponsor"
+        },
+        {
+            "name": "Airbnb",
+            "url": "https://www.airbnb.com/",
+            "image": "https://images.opencollective.com/airbnb/d327d66/logo.png",
+            "monthlyDonation": 2000,
+            "totalDonations": 65610,
             "source": "opencollective",
             "tier": "platinum-sponsor"
         }
@@ -31,15 +40,6 @@
             "image": "https://images.opencollective.com/salesforce/ca8f997/logo.png",
             "monthlyDonation": 1000,
             "totalDonations": 75741,
-            "source": "opencollective",
-            "tier": "gold-sponsor"
-        },
-        {
-            "name": "Airbnb",
-            "url": "https://www.airbnb.com/",
-            "image": "https://images.opencollective.com/airbnb/d327d66/logo.png",
-            "monthlyDonation": 1000,
-            "totalDonations": 65610,
             "source": "opencollective",
             "tier": "gold-sponsor"
         }
@@ -251,7 +251,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 120,
+            "totalDonations": 130,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -442,6 +442,14 @@
             "name": "Measured",
             "image": "https://avatars.githubusercontent.com/u/65702254?v=4",
             "url": "https://measured.co",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "JSerDev",
+            "image": "https://avatars.githubusercontent.com/u/69352453?u=46e3453fd641e2e2c8d9c9da91f7cbfbb805ed65&v=4",
+            "url": "https://jser.dev",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1066,14 +1074,6 @@
             "tier": "backer"
         },
         {
-            "name": "James Hay",
-            "image": "https://avatars.githubusercontent.com/u/7937480?u=54287fafb0a0c782bc8f68b6635d80e4a0944f74&v=4",
-            "url": "https://github.com/flagpoonage",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Daniel Arthur Gallagher",
             "image": "https://avatars.githubusercontent.com/u/8526031?u=9bdab29f81fd1923b7608a513cf69a9f8f0752dd&v=4",
             "url": "https://danieleloscozzese.it",
@@ -1165,6 +1165,14 @@
             "name": "xuantm",
             "image": "https://avatars.githubusercontent.com/u/53134698?u=43a77dc1d74c808e528ec7a59ed3656977cd0c74&v=4",
             "url": "https://github.com/ssnaruto",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ugi Stelmokaitis",
+            "image": "https://avatars.githubusercontent.com/u/63953745?u=a6d4a877e145c07386cd39f43fb81c788abebf5d&v=4",
+            "url": "https://ugi.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1319,6 +1327,14 @@
             "tier": "backer"
         },
         {
+            "name": "Eduardo M. Santos",
+            "image": "https://avatars.githubusercontent.com/u/160991364?u=ac394f8dda3cbf3685f3309f47fb97b9db585507&v=4",
+            "url": "https://github.com/supitsdu",
+            "monthlyDonation": 2,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Theme Divi",
             "url": "https://wptheme.fr/theme-wordpress-divi/",
             "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
@@ -1437,6 +1453,14 @@
             "name": "Gavin John",
             "image": "https://avatars.githubusercontent.com/u/45835846?v=4",
             "url": "https://pandapip1.com/",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "David Badasyan",
+            "image": "https://avatars.githubusercontent.com/u/59211418?u=3ec40b6724f732cdf15f040d6a1a94675407102e&v=4",
+            "url": "https://www.linkedin.com/in/david-badasyan-17b544199/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"

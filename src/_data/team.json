@@ -104,6 +104,17 @@
             "location": "London, UK"
         },
         {
+            "username": "platinumazure",
+            "name": "Kevin Partington",
+            "title": "ESLint Alumnus",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4",
+            "bio": "@eslint support team member. My open source participation will be limited as I continue to heal my depression and anxiety.",
+            "twitter_username": null,
+            "github_username": "platinumazure",
+            "location": null
+        },
+        {
             "username": "mikesherov",
             "name": "Mike Sherov",
             "title": "ESLint Alumnus",
@@ -445,17 +456,6 @@
             "twitter_username": null,
             "github_username": "sam3k",
             "location": "New York City"
-        },
-        {
-            "username": "platinumazure",
-            "name": "Kevin Partington",
-            "title": "ESLint Support Team",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/284282?v=4",
-            "bio": "@eslint support team member. My open source participation will be limited as I continue to heal my depression and anxiety.",
-            "twitter_username": null,
-            "github_username": "platinumazure",
-            "location": null
         },
         {
             "username": "Rec0iL99",
