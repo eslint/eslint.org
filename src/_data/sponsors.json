@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133656,
-        "monthlyDonations": 11138,
-        "sponsorCount": 176
+        "annualDonations": 133716,
+        "monthlyDonations": 11143,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -1197,6 +1197,14 @@
             "name": "Louis Ramos",
             "image": "https://avatars.githubusercontent.com/u/75388869?u=56435279647cc80b907c4006513a49f31fb6c1be&v=4",
             "url": "https://louisramos.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Vinícius Vieira",
+            "image": "https://avatars.githubusercontent.com/u/77009586?u=41fc223b92244569ac09b9ce883a5125471c4d1a&v=4",
+            "url": "https://vbraz.vercel.app/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
