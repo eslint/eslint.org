@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133716,
-        "monthlyDonations": 11143,
-        "sponsorCount": 177
+        "annualDonations": 133656,
+        "monthlyDonations": 11138,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -767,14 +767,6 @@
             "monthlyDonation": 5,
             "totalDonations": 325,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Oliver Steele",
-            "image": "https://avatars.githubusercontent.com/u/674?v=4",
-            "url": "https://code.osteele.com/",
-            "monthlyDonation": 5,
-            "source": "github",
             "tier": "backer"
         },
         {
