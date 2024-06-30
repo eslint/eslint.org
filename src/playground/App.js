@@ -205,7 +205,7 @@ const App = () => {
 	const storeState = useCallback(
 		({ newText, newOptions }) => {
 			const serializedState = JSON.stringify({
-				text: newText || text,
+				text: newText,
 				options: newOptions || options,
 			});
 
@@ -218,7 +218,7 @@ const App = () => {
 			url.hash = Unicode.encodeToBase64(serializedState);
 			history.replaceState(null, null, url);
 		},
-		[options, text],
+		[options],
 	);
 
 	const { messages, output, fatalMessage, crashError, validationError } =
@@ -250,7 +250,7 @@ const App = () => {
 
 	const updateOptions = newOptions => {
 		setOptions(newOptions);
-		storeState({ newOptions });
+		storeState({ newOptions, newText: text });
 	};
 	const [showConfigMenu, setShowConfigMenu] = useState(false);
 	const [isConfigHidden, setIsConfigHidden] = useState(
