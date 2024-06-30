@@ -113,6 +113,7 @@
 	font-weight: 500;
 	margin-bottom: 0.25rem;
 	border-bottom: 1px solid currentColor;
+	padding: 0;
 
 	.alert--error & {
 		color: var(--color-rose-700);
