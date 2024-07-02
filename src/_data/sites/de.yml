@@ -90,6 +90,7 @@ footer:
     mastodon: Mastodon
   theme_switcher:
     title: Themenauswahl
+    system: System
     light: Hell
     dark: Dunkel
   language_switcher:

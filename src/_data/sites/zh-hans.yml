@@ -87,6 +87,7 @@ footer:
     mastodon: Mastodon
   theme_switcher:
     title: 主题切换
+    system: 系统
     light: 浅色
     dark: 深色
   language_switcher:
