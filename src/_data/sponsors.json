@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133656,
-        "monthlyDonations": 11138,
-        "sponsorCount": 176
+        "annualDonations": 133536,
+        "monthlyDonations": 11128,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -39,7 +39,7 @@
             "url": "https://engineering.salesforce.com",
             "image": "https://images.opencollective.com/salesforce/ca8f997/logo.png",
             "monthlyDonation": 1000,
-            "totalDonations": 75741,
+            "totalDonations": 76741,
             "source": "opencollective",
             "tier": "gold-sponsor"
         }
@@ -165,7 +165,7 @@
             "url": "https://www.principal.com/about-us",
             "image": "https://images.opencollective.com/principal/431e690/logo.png",
             "monthlyDonation": 170,
-            "totalDonations": 2830,
+            "totalDonations": 3000,
             "source": "opencollective",
             "tier": null
         },
@@ -234,7 +234,7 @@
             "url": "https://www.agendrix.com/",
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 555,
+            "totalDonations": 575,
             "source": "opencollective",
             "tier": null
         },
@@ -260,7 +260,7 @@
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/605818e/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 140,
+            "totalDonations": 150,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -269,7 +269,7 @@
             "url": null,
             "image": "https://images.opencollective.com/wwoof-open-source-fund/cb8119c/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 260,
+            "totalDonations": 270,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -278,7 +278,7 @@
             "url": "https://mfbtech.com",
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 270,
+            "totalDonations": 280,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -305,7 +305,7 @@
             "url": "https://www.simedia.com/",
             "image": "https://images.opencollective.com/simedia/848efc9/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 470,
+            "totalDonations": 480,
             "source": "opencollective",
             "tier": null
         },
@@ -549,7 +549,7 @@
             "url": null,
             "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 81,
+            "totalDonations": 86,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -558,7 +558,7 @@
             "url": "https://trevorburnham.com",
             "image": "https://images.opencollective.com/trevorburnham/016f6da/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 85,
+            "totalDonations": 90,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -567,16 +567,7 @@
             "url": "https://www.fuller-inc.com/",
             "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 95,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Kevin Peckham",
-            "url": "https://pugify.dev",
-            "image": "https://images.opencollective.com/kevinpeckham/194bb8a/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 105,
+            "totalDonations": 100,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -585,7 +576,7 @@
             "url": "https://taskratchet.com",
             "image": "https://images.opencollective.com/taskratchet/7996706/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 115,
+            "totalDonations": 120,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -594,7 +585,7 @@
             "url": "https://cryptotracker.com",
             "image": "https://images.opencollective.com/crypto-tracker/b258378/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 120,
+            "totalDonations": 125,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -603,7 +594,7 @@
             "url": "https://www.corellium.com",
             "image": "https://images.opencollective.com/corellium/aa8c228/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 155,
+            "totalDonations": 160,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -612,7 +603,7 @@
             "url": null,
             "image": "https://images.opencollective.com/nicoloribaudo/924f189/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 155,
+            "totalDonations": 160,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -630,7 +621,7 @@
             "url": "https://ca.linkedin.com/in/sudharakap",
             "image": "https://images.opencollective.com/sudharaka-palamakumbura/03b6087/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 89,
+            "totalDonations": 94,
             "source": "opencollective",
             "tier": null
         },
@@ -1186,14 +1177,6 @@
             "tier": "backer"
         },
         {
-            "name": "Louis Ramos",
-            "image": "https://avatars.githubusercontent.com/u/75388869?u=56435279647cc80b907c4006513a49f31fb6c1be&v=4",
-            "url": "https://louisramos.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Vinícius Vieira",
             "image": "https://avatars.githubusercontent.com/u/77009586?u=41fc223b92244569ac09b9ce883a5125471c4d1a&v=4",
             "url": "https://vbraz.vercel.app/",
@@ -1272,7 +1255,7 @@
             "url": null,
             "image": "https://images.opencollective.com/shunfan/ca1c537/avatar.png",
             "monthlyDonation": 2,
-            "totalDonations": 84,
+            "totalDonations": 86,
             "source": "opencollective",
             "tier": null
         },
