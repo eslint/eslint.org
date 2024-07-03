@@ -28,7 +28,7 @@ Here's what to expect going forward (with no specific timetable as everything is
 
 The current plan is to have these three official ESLint language plugins with the hopes that they serve as examples for the ecosystem to develop more language plugins.
 
-With language-specific functionality extract into separate repositories, that leaves us with the task of rewriting the core completely.
+With language-specific functionality extracted into separate repositories, that leaves us with the task of rewriting the core completely.
 
 ## Core rewrite
 
