@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 133536,
-        "monthlyDonations": 11128,
+        "annualDonations": 133572,
+        "monthlyDonations": 11131,
         "sponsorCount": 174
     },
     "platinum": [
@@ -50,7 +50,7 @@
             "url": "https://www.jetbrains.com/",
             "image": "https://images.opencollective.com/jetbrains/fe76f99/logo.png",
             "monthlyDonation": 500,
-            "totalDonations": 3000,
+            "totalDonations": 3500,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
@@ -86,7 +86,7 @@
             "url": "https://www.notion.so",
             "image": "https://images.opencollective.com/notion/bf3b117/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 1000,
+            "totalDonations": 1200,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -156,7 +156,7 @@
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 350,
-            "totalDonations": 18564,
+            "totalDonations": 18914,
             "source": "opencollective",
             "tier": null
         },
@@ -225,7 +225,7 @@
             "url": "https://webdriver.io/",
             "image": "https://images.opencollective.com/webdriverio/bbdd5c3/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 100,
+            "totalDonations": 120,
             "source": "opencollective",
             "tier": null
         },
@@ -486,7 +486,7 @@
             "url": "https://marco.solazzi.me",
             "image": "https://images.opencollective.com/marco-solazzi/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -504,7 +504,7 @@
             "url": null,
             "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 130,
+            "totalDonations": 135,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -513,7 +513,7 @@
             "url": "https://celebian.com/",
             "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 30,
+            "totalDonations": 35,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -522,7 +522,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 90,
+            "totalDonations": 95,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -531,7 +531,7 @@
             "url": "https://www.lightcdn.com",
             "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 35,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -540,7 +540,7 @@
             "url": "https://www.lightnode.com",
             "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 35,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1201,6 +1201,14 @@
             "tier": "backer"
         },
         {
+            "name": "Jupli",
+            "image": "https://avatars.githubusercontent.com/u/140319444?v=4",
+            "url": "https://jupli.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Sentry",
             "image": "https://avatars.githubusercontent.com/u/1396951?v=4",
             "url": "https://sentry.io",
@@ -1221,7 +1229,7 @@
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
-            "totalDonations": 30,
+            "totalDonations": 33,
             "source": "opencollective",
             "tier": null
         },
@@ -1297,14 +1305,6 @@
             "name": "Frontend Masters",
             "image": "https://avatars.githubusercontent.com/u/5613852?v=4",
             "url": "https://FrontendMasters.com",
-            "monthlyDonation": 2,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ala Eddine Menai",
-            "image": "https://avatars.githubusercontent.com/u/20143684?u=3303259ea3073dd239dc3b1d044040b3c5b6338a&v=4",
-            "url": "https://github.com/alamenai",
             "monthlyDonation": 2,
             "source": "github",
             "tier": "backer"
