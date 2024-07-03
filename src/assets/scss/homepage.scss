@@ -101,6 +101,11 @@
 	}
 }
 
+.eslint-versions-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .eslint-versions {
 	margin-top: 3rem;
 	margin-block-start: 3rem;
