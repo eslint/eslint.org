@@ -52,6 +52,6 @@ Going forward, here's what you can expect:
 
 ## Conclusion
 
-We are very excited for this future direction of ESLint as we think this represents the next logical step in ESLint's evolution. Turning ESLint into a language-agnostic linter that anyone can write plugins for will simplify development by reducing the number of linting tools and editor extensions any one project needs. Further, rewriting our core into a more composeable API allows easier and more customizable integrations, along with owning our own type definitions to ensure compatibility with the APIs.
+We are very excited for this future direction of ESLint as we think this represents the next logical step in ESLint's evolution. Turning ESLint into a language-agnostic linter that anyone can write plugins for will simplify development by reducing the number of linting tools and editor extensions any one project needs. Further, rewriting our core into a more composable API allows easier and more customizable integrations, along with owning our own type definitions to ensure compatibility with the APIs.
 
 ESLint has made it through 11 years with its current architecture, and we hope that these changes will get us through the next 11 years.
