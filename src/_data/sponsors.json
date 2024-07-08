@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133512,
-        "monthlyDonations": 11126,
-        "sponsorCount": 173
+        "annualDonations": 133572,
+        "monthlyDonations": 11131,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -1188,6 +1188,14 @@
             "name": "Yuto Yoshino",
             "image": "https://avatars.githubusercontent.com/u/87469023?u=9c5ad67f4f4df8c5a303281f8378bac254eae064&v=4",
             "url": "https://yossy.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yuhi Yamane",
+            "image": "https://avatars.githubusercontent.com/u/92073990?u=25cc6a9a77a97b5aa00e19c835d40c7a791cb13d&v=4",
+            "url": "https://canva.matuyuhi.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
