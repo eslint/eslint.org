@@ -28,8 +28,8 @@ ESLint major release lines are designated by the level of support they receive f
 | v7.0.0-v7.32.0   | EOL        | 2020-05-08        | 2021-07-30       | 2022-04-09 | [HeroDevs][herodevs] |
 | v6.0.0-v6.8.0    | EOL        | 2019-06-21        | 2019-12-20       | 2020-11-08 | [HeroDevs][herodevs] |
 | v5.0.0-v5.16.0   | EOL        | 2018-06-22        | 2019-03-29       | 2019-12-21 | [HeroDevs][herodevs] |
-| v4.0.0-v4.19.1   | EOL        | 2017-06-21        | 2018-03-21       | 2018-12-22 | [HeroDevs][herodevs] |
-| v3.0.0-v3.19.0   | EOL        | 2016-07-01        | 2017-03-31       | 2017-12-21 | [HeroDevs][herodevs] |
+| v4.0.0-v4.19.1   | EOL        | 2017-06-11        | 2018-03-21       | 2018-12-22 | [HeroDevs][herodevs] |
+| v3.0.0-v3.19.0   | EOL        | 2016-07-01        | 2017-03-31       | 2017-12-11 | [HeroDevs][herodevs] |
 | v2.0.0-v2.13.1   | EOL        | 2016-02-12        | 2016-06-20       | 2017-02-01 | [HeroDevs][herodevs] |
 | v1.0.0-v1.10.3   | EOL        | 2015-07-31        | 2015-12-01       | 2016-08-12 | [HeroDevs][herodevs] |
 
