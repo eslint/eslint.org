@@ -35,9 +35,9 @@ ESLint major release lines are designated by the level of support they receive f
 
 ## Commercial Support
 
-ESLint offers commercial support through our partners, [TideLift][tidelift] and [HeroDevs][herodevs].
+ESLint offers commercial support through our partners, [Tidelift][tidelift] and [HeroDevs][herodevs].
 
-For Current and Maintenance release lines, commercial support is provided by [TideLift][tidelift]. Tidelift validates that ESLint is up-to-date with the latest security best practices and can be a first point of contact for any problems that may arise. [Learn more][tidelift]
+For Current and Maintenance release lines, commercial support is provided by [Tidelift][tidelift]. Tidelift validates that ESLint is up-to-date with the latest security best practices and can be a first point of contact for any problems that may arise. [Learn more][tidelift]
 
 For EOL release lines, commercial support is provided by [HeroDevs][herodevs]. HeroDevs provides drop-in replacements for older versions of ESLint that are kept up-to-date for security and compliance issues. [Learn more][herodevs]
 
