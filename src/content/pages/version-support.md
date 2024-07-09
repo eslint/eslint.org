@@ -23,8 +23,8 @@ ESLint major release lines are designated by the level of support they receive f
 
 | **Release Line** | **Status** | **First Release** | **Last Release** | **EOL Start** | **Commercial Support** |
 |-------------------|------------|-------------------|-----------------|---------------|------------------------|
-| v9.x             | Current    | 2024-04-05        | TBD              | TBD | [TideLift][tidelift] |
-| v8.x             | Maintenance | 2021-10-09       | TBD              | 2024-10-06 | [TideLift][tidelift] |
+| v9.x             | Current    | 2024-04-05        | TBD              | TBD | [Tidelift][tidelift] |
+| v8.x             | Maintenance | 2021-10-09       | TBD              | 2024-10-05 | [Tidelift][tidelift] |
 | v7.0.0-v7.32.0   | EOL        | 2020-05-08        | 2021-07-30       | 2022-04-09 | [HeroDevs][herodevs] |
 | v6.0.0-v6.8.0    | EOL        | 2019-06-21        | 2019-12-20       | 2020-11-08 | [HeroDevs][herodevs] |
 | v5.0.0-v5.16.0   | EOL        | 2018-06-22        | 2019-03-29       | 2019-12-21 | [HeroDevs][herodevs] |
