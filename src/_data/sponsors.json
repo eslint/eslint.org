@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133572,
-        "monthlyDonations": 11131,
-        "sponsorCount": 174
+        "annualDonations": 133692,
+        "monthlyDonations": 11141,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -338,6 +338,14 @@
             "name": "Hiroki Osame",
             "image": "https://avatars.githubusercontent.com/u/1075694?u=7f766073ee609bfb8876e1ae2b55ace083c1c19c&v=4",
             "url": "https://hirok.io",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "ANDO Shohei",
+            "image": "https://avatars.githubusercontent.com/u/1482802?u=5ed9e9723f2adffe818e892ac8694e71ad37060e&v=4",
+            "url": "https://github.com/lyoz",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
