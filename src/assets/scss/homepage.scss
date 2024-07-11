@@ -99,6 +99,11 @@
 	@media all and (min-width: 1023px) {
 		align-items: flex-end;
 	}
+
+	@media all and (min-width: 800px) {
+		padding-block-start: var(--space-xl-2xl);
+		padding-top: var(--space-xl-2xl);
+	}
 }
 
 .eslint-versions-container {
