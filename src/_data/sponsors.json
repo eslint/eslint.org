@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133692,
-        "monthlyDonations": 11141,
-        "sponsorCount": 175
+        "annualDonations": 133632,
+        "monthlyDonations": 11136,
+        "sponsorCount": 174
     },
     "platinum": [
         {
@@ -1140,14 +1140,6 @@
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Colin Massard",
-            "image": "https://avatars.githubusercontent.com/u/43334854?u=045154cf7dfb40f8bfa5d4b684ba381887ca180a&v=4",
-            "url": "https://colinmassard.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
