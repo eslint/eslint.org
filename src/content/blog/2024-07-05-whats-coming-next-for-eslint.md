@@ -23,7 +23,7 @@ In 2023, the [language plugins RFC](https://github.com/eslint/rfcs/blob/main/des
 Here's what to expect going forward (with no specific timetable as everything is dependent upon contributor availability):
 
 * **`@eslint/js`** - We will slowly move all of the JavaScript-related functionality into the `@eslint/js` package, including rules and documentation. We will reuse the existing [Espree repo](https://github.com/eslint/espree/issues/609) and convert it into a monorepo containing Espree, `eslint-scope`, `eslint-visitor-keys`, and all of the core JavaScript rules. This will allow us to deal with everything JavaScript-related in a single repo.
-* **`@eslint/json`** - Our first language plugin will allow ESLint to lint JSON files natively. This plugin will contain the parsing logic and all of the related rules and documentation. Similar to `@eslint/json`, this will allow us to have a single repo to focus on JSON linting, further moving any language-specific functionality away from the core.
+* **`@eslint/json`** - Our first language plugin will allow ESLint to lint JSON files natively. This plugin will contain the parsing logic and all of the related rules and documentation. Similar to `@eslint/js`, this will allow us to have a single repo to focus on JSON linting, further moving any language-specific functionality away from the core.
 * **`@eslint/markdown`** - [`eslint-plugin-markdown`](https://github.com/eslint/eslint-plugin-markdown) will be renamed to `@eslint/markdown` to better align with the other packages. We'll add the ability to lint Markdown and Markdown-specific rules.
 
 The current plan is to have these three official ESLint language plugins with the hopes that they serve as examples for the ecosystem to develop more language plugins.
