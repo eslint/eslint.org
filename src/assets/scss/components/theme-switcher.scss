@@ -22,14 +22,17 @@
 
 .theme-switcher__button {
 	box-shadow: var(--shadow-xs);
-	padding: 0.625rem 0.675rem;
+	padding: 0.625rem 0.875rem;
 	display: inline-flex;
 	align-items: center;
 	margin: 0;
 	gap: 0.25rem;
 	color: inherit;
 
-	@media (max-width: 1100px) {
+	@media screen and (min-width: 1121px) and (max-width: 1200px) {
+		padding: 0.625rem 0.675rem;
+	}
+	@media screen and (min-width: 1023px) and (max-width: 1120px) {
 		padding: 0.625rem 0.375rem;
 	}
 
