@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 133584,
-        "monthlyDonations": 11132,
+        "annualDonations": 133704,
+        "monthlyDonations": 11142,
         "sponsorCount": 175
     },
     "platinum": [
@@ -198,7 +198,7 @@
             "name": "STORIS",
             "url": "https://www.storis.com/",
             "image": "https://images.opencollective.com/storis/dfb0e13/logo.png",
-            "monthlyDonation": 25,
+            "monthlyDonation": 35,
             "totalDonations": 950,
             "source": "opencollective",
             "tier": null
@@ -1138,7 +1138,7 @@
         },
         {
             "name": "xuantm",
-            "image": "https://avatars.githubusercontent.com/u/53134698?u=43a77dc1d74c808e528ec7a59ed3656977cd0c74&v=4",
+            "image": "https://avatars.githubusercontent.com/u/53134698?u=ab243c45398eba42e40adf9987cb1f95d659d16e&v=4",
             "url": "https://github.com/ssnaruto",
             "monthlyDonation": 5,
             "source": "github",

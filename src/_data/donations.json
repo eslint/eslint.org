@@ -1,5 +1,14 @@
 [
     {
+        "id": "8rzownxl-9e50pxrx-7a3pymvb-dgk7j43a",
+        "name": "EthicalAds",
+        "url": "https://www.ethicalads.io/",
+        "image": "https://images.opencollective.com/ethicalads/ad1ea41/logo.png",
+        "amount": 641.53,
+        "date": "2024-07-15T20:05:19.651Z",
+        "source": "opencollective"
+    },
+    {
         "id": "gm9bnk80-437xqrnk-y4j6vzeo-ljdayw5r",
         "name": "THANKS.DEV",
         "url": "https://thanks.dev",
@@ -231,15 +240,6 @@
         "image": "https://images.opencollective.com/eze-solomon/726083a/avatar.png",
         "amount": 1,
         "date": "2023-07-17T08:43:25.664Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "3k0exgzn-m8yj64g8-n9j65wao-9r7b4dlv",
-        "name": "Ritik",
-        "url": null,
-        "image": "https://images.opencollective.com/ritik1/4883fe3/avatar.png",
-        "amount": 5,
-        "date": "2023-06-26T11:59:40.525Z",
         "source": "opencollective"
     }
 ]
