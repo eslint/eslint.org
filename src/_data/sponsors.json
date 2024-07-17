@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133704,
-        "monthlyDonations": 11142,
-        "sponsorCount": 175
+        "annualDonations": 133764,
+        "monthlyDonations": 11147,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -452,6 +452,15 @@
             "url": "https://jser.dev",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "David Passarelli",
+            "url": null,
+            "image": "https://images.opencollective.com/davidpassarelli/2734144/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
