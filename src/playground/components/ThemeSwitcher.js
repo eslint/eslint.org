@@ -10,18 +10,15 @@ export default function ThemeSwitcher() {
 			).matches
 				? "dark"
 				: "light";
-
 			document.documentElement.setAttribute(
 				"data-theme",
 				currentSystemTheme,
 			);
-			window.localStorage.setItem("theme", "system");
-			setTheme("system");
 		} else {
 			document.documentElement.setAttribute("data-theme", newTheme);
-			window.localStorage.setItem("theme", newTheme);
-			setTheme(newTheme);
 		}
+		window.localStorage.setItem("theme", newTheme);
+		setTheme(newTheme);
 	};
 
 	useEffect(() => {
