@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133764,
-        "monthlyDonations": 11147,
-        "sponsorCount": 176
+        "annualDonations": 133704,
+        "monthlyDonations": 11142,
+        "sponsorCount": 175
     },
     "platinum": [
         {
@@ -1149,14 +1149,6 @@
             "name": "xuantm",
             "image": "https://avatars.githubusercontent.com/u/53134698?u=ab243c45398eba42e40adf9987cb1f95d659d16e&v=4",
             "url": "https://github.com/ssnaruto",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ugi Stelmokaitis",
-            "image": "https://avatars.githubusercontent.com/u/63953745?u=a6d4a877e145c07386cd39f43fb81c788abebf5d&v=4",
-            "url": "https://ugi.dev",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
