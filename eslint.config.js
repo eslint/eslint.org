@@ -4,7 +4,6 @@ const eslintConfigESLintBase = require("eslint-config-eslint/base");
 const eslintConfigESLintCJS = require("eslint-config-eslint/cjs");
 const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
-const reactRecommended = require("eslint-plugin-react/configs/recommended");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const { fixupPluginRules } = require("@eslint/compat");
@@ -53,7 +52,7 @@ module.exports = [
 	{
 		files: [playgroundFiles],
 		plugins: {
-			react: fixupPluginRules(reactPlugin),
+			react: reactPlugin,
 			"jsx-a11y": fixupPluginRules(jsxA11yPlugin),
 			"react-hooks": fixupPluginRules(reactHooksPlugin),
 		},
@@ -75,7 +74,7 @@ module.exports = [
 			},
 		},
 		rules: {
-			...reactRecommended.rules,
+			...reactPlugin.configs.flat.recommended.rules,
 			...jsxA11yPlugin.configs.recommended.rules,
 			"react/jsx-no-useless-fragment": "error",
 			"react/jsx-no-target-blank": "error",
