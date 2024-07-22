@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133704,
-        "monthlyDonations": 11142,
-        "sponsorCount": 175
+        "annualDonations": 133764,
+        "monthlyDonations": 11147,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -452,6 +452,15 @@
             "url": "https://jser.dev",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 6,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
