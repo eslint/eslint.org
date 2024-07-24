@@ -88,6 +88,7 @@ footer:
     mastodon: Mastodon
   theme_switcher:
     title: Cambiar temas
+    system: Sistema
     light: Claro
     dark: Oscuro
   language_switcher:

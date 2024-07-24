@@ -1,15 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function ThemeSwitcher() {
-	const [theme, setTheme] = useState(
-		document.documentElement.getAttribute("data-theme"),
-	);
+	const [theme, setTheme] = useState(window.localStorage.getItem("theme"));
 
 	const toggleTheme = newTheme => {
-		setTheme(newTheme);
-		document.documentElement.setAttribute("data-theme", newTheme);
+		if (newTheme === "system") {
+			const currentSystemTheme = window.matchMedia(
+				"(prefers-color-scheme: dark)",
+			).matches
+				? "dark"
+				: "light";
+			document.documentElement.setAttribute(
+				"data-theme",
+				currentSystemTheme,
+			);
+		} else {
+			document.documentElement.setAttribute("data-theme", newTheme);
+		}
 		window.localStorage.setItem("theme", newTheme);
+		setTheme(newTheme);
 	};
+
+	useEffect(() => {
+		const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+		function onChangeMedia() {
+			const currentTheme = window.localStorage.getItem("theme");
+
+			if (currentTheme === "system" || !currentTheme) {
+				toggleTheme("system");
+			}
+		}
+
+		media.addEventListener("change", onChangeMedia);
+		return () => media.removeEventListener("change", onChangeMedia);
+	}, []);
 
 	return (
 		<div
@@ -51,6 +76,41 @@ export default function ThemeSwitcher() {
 						</g>
 					</svg>
 					<span>Light</span>
+				</button>
+				<button
+					className="theme-switcher__button js-toggle-button"
+					id="system-theme-toggle"
+					data-theme="system"
+					onClick={() => {
+						toggleTheme("system");
+					}}
+					aria-pressed={theme === "system"}
+				>
+					<svg
+						className="theme-switcher__icon"
+						focusable="false"
+						width="22"
+						height="22"
+						viewBox="0 0 24 24"
+						aria-hidden="true"
+						fill="none"
+						stroke="currentColor"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					>
+						<rect
+							x="2"
+							y="3"
+							width="20"
+							height="14"
+							rx="2"
+							ry="2"
+						></rect>
+						<line x1="8" y1="21" x2="16" y2="21"></line>
+						<line x1="12" y1="17" x2="12" y2="21"></line>
+					</svg>
+					<span>System</span>
 				</button>
 				<button
 					className="theme-switcher__button js-toggle-button"

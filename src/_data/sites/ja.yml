@@ -88,6 +88,7 @@ footer:
     mastodon: Mastodon
   theme_switcher:
     title: 配色モード切り替え
+    system: システム
     light: 通常
     dark: ダーク
   language_switcher:
