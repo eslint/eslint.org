@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133752,
-        "monthlyDonations": 11146,
-        "sponsorCount": 176
+        "annualDonations": 133776,
+        "monthlyDonations": 11148,
+        "sponsorCount": 178
     },
     "platinum": [
         {
@@ -1459,9 +1459,25 @@
             "tier": "backer"
         },
         {
+            "name": "Nikita Savenko",
+            "image": "https://avatars.githubusercontent.com/u/61596575?u=3446c2bc21fad59f5c50d111e7248163c17cb67d&v=4",
+            "url": "https://github.com/Nikitosiki",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
             "url": "https://vezel.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "stepan.moc",
+            "image": "https://avatars.githubusercontent.com/u/114861206?u=f56fe427cbd09a575b5537ba633c8ad7683da5dc&v=4",
+            "url": "https://github.com/MocStepan",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
