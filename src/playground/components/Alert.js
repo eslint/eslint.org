@@ -1,6 +1,16 @@
 import React from "react";
 
-export default function Alert({ type, text, message, onFix, options, onUpdate, rulesWithInvalidConfigs, setRulesWithInvalidConfigs, onPositionClick }) {
+export default function Alert({
+	type,
+	text,
+	message,
+	onFix,
+	options,
+	onUpdate,
+	rulesWithInvalidConfigs,
+	setRulesWithInvalidConfigs,
+	onPositionClick,
+}) {
 	if (!message) {
 		return (
 			<article
@@ -145,26 +155,32 @@ export default function Alert({ type, text, message, onFix, options, onUpdate, r
 				</>
 			) : (
 				<div className="alert__actions">
-                    { fix && (
-    					<button
-						onClick={() => onFix(message)}
+					{fix && (
+						<button
+							onClick={() => onFix(message)}
+							className="alert__fix-btn"
+						>
+							Fix
+						</button>
+					)}
+					<button
+						onClick={() => {
+							delete options.rules[ruleId];
+							setRulesWithInvalidConfigs(
+								new Set(
+									[...rulesWithInvalidConfigs].filter(
+										rule => rule !== ruleId,
+									),
+								),
+							);
+							onUpdate(Object.assign({}, options));
+						}}
 						className="alert__fix-btn"
 					>
-						Fix
-                        </button>
-                    )}
-                    <button
-                        onClick={() => {
-                            delete options.rules[ruleId];
-                            setRulesWithInvalidConfigs(new Set([...rulesWithInvalidConfigs].filter(rule => rule !== ruleId)));
-                            onUpdate(Object.assign({}, options));
-                        }}
-                        className="alert__fix-btn">
-                        Disable
+						Disable
 					</button>
 				</div>
 			)}
-
 		</article>
 	);
 }

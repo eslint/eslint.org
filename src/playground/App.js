@@ -279,7 +279,9 @@ const App = () => {
 		[storeState],
 	);
 
-    const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(new Set([]));
+	const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(
+		new Set([]),
+	);
 
 	return (
 		<div className="playground-wrapper">
@@ -338,8 +340,10 @@ const App = () => {
 							rulesMeta={rulesMeta}
 							validationError={validationError}
 							eslintVersion={linter.version}
-                            rulesWithInvalidConfigs={rulesWithInvalidConfigs}
-                            setRulesWithInvalidConfigs={setRulesWithInvalidConfigs}
+							rulesWithInvalidConfigs={rulesWithInvalidConfigs}
+							setRulesWithInvalidConfigs={
+								setRulesWithInvalidConfigs
+							}
 						/>
 						<Footer />
 					</div>
@@ -400,8 +404,12 @@ const App = () => {
 									message={message}
 									suggestions={message.suggestions}
 									options={options}
-									rulesWithInvalidConfigs={rulesWithInvalidConfigs}
-									setRulesWithInvalidConfigs={setRulesWithInvalidConfigs}
+									rulesWithInvalidConfigs={
+										rulesWithInvalidConfigs
+									}
+									setRulesWithInvalidConfigs={
+										setRulesWithInvalidConfigs
+									}
 									onFix={onFix}
 									onUpdate={updateOptions}
 									onPositionClick={onPositionClick}
