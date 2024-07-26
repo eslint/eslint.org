@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133776,
-        "monthlyDonations": 11148,
-        "sponsorCount": 178
+        "annualDonations": 133716,
+        "monthlyDonations": 11143,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -1174,14 +1174,6 @@
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828?u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
             "url": "https://standardresume.co/tech",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Vinícius Vieira",
-            "image": "https://avatars.githubusercontent.com/u/77009586?u=41fc223b92244569ac09b9ce883a5125471c4d1a&v=4",
-            "url": "https://vbraz.vercel.app/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
