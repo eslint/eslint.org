@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 133716,
-        "monthlyDonations": 11143,
+        "annualDonations": 121728,
+        "monthlyDonations": 10144,
         "sponsorCount": 177
     },
     "platinum": [
@@ -31,15 +31,6 @@
             "image": "https://images.opencollective.com/guest-bf377e88/avatar.png",
             "monthlyDonation": 1000,
             "totalDonations": 2000,
-            "source": "opencollective",
-            "tier": "gold-sponsor"
-        },
-        {
-            "name": "Salesforce",
-            "url": "https://engineering.salesforce.com",
-            "image": "https://images.opencollective.com/salesforce/ca8f997/logo.png",
-            "monthlyDonation": 1000,
-            "totalDonations": 76741,
             "source": "opencollective",
             "tier": "gold-sponsor"
         }
@@ -1414,6 +1405,14 @@
             "name": "Kirill Devope",
             "image": "https://avatars.githubusercontent.com/u/8249408?u=c1818225ecdbe96d8e837747e0ee26ebe856a95b&v=4",
             "url": "https://github.com/devope",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Edmur",
+            "image": "https://avatars.githubusercontent.com/u/12579932?u=87d67accc4676aa2503dae589d9a9f6717d5cf3c&v=4",
+            "url": "https://rumd3x.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
