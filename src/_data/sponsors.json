@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121728,
-        "monthlyDonations": 10144,
-        "sponsorCount": 177
+        "annualDonations": 121608,
+        "monthlyDonations": 10134,
+        "sponsorCount": 176
     },
     "platinum": [
         {
@@ -433,14 +433,6 @@
             "name": "Measured",
             "image": "https://avatars.githubusercontent.com/u/65702254?v=4",
             "url": "https://measured.co",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "JSerDev",
-            "image": "https://avatars.githubusercontent.com/u/69352453?u=46e3453fd641e2e2c8d9c9da91f7cbfbb805ed65&v=4",
-            "url": "https://jser.dev",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
