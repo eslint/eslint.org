@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121608,
-        "monthlyDonations": 10134,
-        "sponsorCount": 176
+        "annualDonations": 121668,
+        "monthlyDonations": 10139,
+        "sponsorCount": 177
     },
     "platinum": [
         {
@@ -438,6 +438,15 @@
             "tier": "backer"
         },
         {
+            "name": "SidesMedia",
+            "url": "https://sidesmedia.com",
+            "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 15,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "IT Flashcards",
             "url": "https://www.itflashcards.com",
             "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
@@ -460,7 +469,7 @@
             "url": "https://sidesmedia.com",
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
