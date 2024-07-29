@@ -136,11 +136,14 @@
 	font-family: var(--text-font);
 	padding: 0.5rem 0.75rem;
 	margin: 0;
-	border-radius: 0 var(--border-radius) var(--border-radius) 0;
 	font-weight: 500;
 	gap: 0.75rem;
 
-	&[aria-expanded="true"] {
+	&:last-child {
+		border-radius: 0 var(--border-radius) var(--border-radius) 0;
+	}
+
+	&:last-child[aria-expanded="true"] {
 		border-radius: 0 var(--border-radius) 0 0;
 	}
 
