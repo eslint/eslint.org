@@ -215,6 +215,8 @@ table {
 
 	@media screen and (max-width: 768px) {
 		display: block;
+		width: fit-content;
+		margin-inline: auto;
 		overflow-x: scroll;
 	}
 }
