@@ -219,6 +219,13 @@ table {
 		max-width: 100%;
 		margin-inline: auto;
 		overflow-x: scroll;
+        tbody tr > td:first-child {
+            border-left: none;
+        }
+
+        tbody tr > td:last-child {
+            border-right: none;
+        }
 	}
 }
 
