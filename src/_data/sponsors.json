@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121668,
-        "monthlyDonations": 10139,
-        "sponsorCount": 177
+        "annualDonations": 121848,
+        "monthlyDonations": 10154,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -422,6 +422,14 @@
             "tier": "backer"
         },
         {
+            "name": "takurinton",
+            "image": "https://avatars.githubusercontent.com/u/50351271?u=c6e1899a5362587840fa116dc3efa66f084090b8&v=4",
+            "url": "https://github.com/takurinton",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "ProjectDiscovery",
             "image": "https://avatars.githubusercontent.com/u/50994705?v=4",
             "url": "https://projectdiscovery.io",
@@ -435,6 +443,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "No-code Web Scraper",
+            "url": "https://automatio.co/",
+            "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 10,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
