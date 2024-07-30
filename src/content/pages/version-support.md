@@ -43,4 +43,4 @@ For EOL release lines, commercial support is provided by [HeroDevs][herodevs]. H
 
 
 [tidelift]: https://tidelift.com/funding/github/npm/eslint
-[herodevs]: https://www.herodevs.com/
+[herodevs]: https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES
