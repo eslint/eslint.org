@@ -99,11 +99,25 @@
 	@media all and (min-width: 1023px) {
 		align-items: flex-end;
 	}
+
+	@media all and (min-width: 800px) {
+		padding-block-start: var(--space-xl-2xl);
+		padding-top: var(--space-xl-2xl);
+	}
+}
+
+.eslint-versions-container {
+	display: flex;
+	flex-direction: column;
+	padding-block-end: 2rem;
+	padding-bottom: 2rem;
 }
 
 .eslint-versions {
 	margin-top: 3rem;
 	margin-block-start: 3rem;
+	margin-bottom: 1rem;
+	margin-block-end: 1rem;
 	display: inline-flex;
 	flex-direction: column;
 
@@ -126,6 +140,11 @@
 		padding-inline-end: 1rem;
 		display: flex;
 		align-items: center;
+	}
+
+	dd:last-of-type {
+		margin-bottom: 0;
+		margin-block-end: 0;
 	}
 
 	.c-icon {

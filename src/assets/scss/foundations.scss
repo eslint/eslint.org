@@ -122,6 +122,10 @@ main {
 	}
 }
 
+.content-container__no-sidebar {
+	max-width: 800px;
+}
+
 .section-head {
 	.section-supporting-text {
 		text-align: center;
@@ -207,6 +211,22 @@ table {
 	th {
 		background-color: var(--lightest-background-color);
 		padding: 0.25rem 0.5rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		display: block;
+		width: fit-content;
+		max-width: 100%;
+		margin-inline: auto;
+		overflow-x: scroll;
+
+		tbody tr > td:first-child {
+			border-left: none;
+		}
+
+		tbody tr > td:last-child {
+			border-right: none;
+		}
 	}
 }
 

@@ -1,0 +1,24 @@
+---
+layout: base.html
+hook: "page"
+---
+
+{% include "partials/header.html" %}
+
+<main id="main"  class="post-main" tabindex="-1">
+{%- from 'components/hero.macro.html' import hero with context %}
+    {% set hero_title = title %}
+    {% set hero_supporting_text = description %}
+
+    {{ hero({
+        title: hero_title,
+        supporting_text: hero_supporting_text
+    }) }}
+
+    <div class="content-container content-container__no-sidebar">
+        {{ content | safe }}
+    </div>
+</main>
+
+
+{% include "partials/footer.html" %}

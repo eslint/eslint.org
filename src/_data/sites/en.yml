@@ -22,6 +22,7 @@ locals:
   docs_next: next--docs-eslint.netlify.app
   docs_v8: v8-x--docs-eslint.netlify.app
   blog: true
+  version_support: true
 redirects:
   - from: https://cn.eslint.org/*
     to: https://zh-hans.eslint.org
@@ -221,6 +222,7 @@ homepage:
     upcoming: Upcoming Version
     development: Development
     dateline: VERSION on DATE
+    version_support: Version Support
 
   explainer:
     image:

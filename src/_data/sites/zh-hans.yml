@@ -22,6 +22,7 @@ locals:
   docs_next: false
   docs_v8: false
   blog: false
+  version_support: false
 
 #------------------------------------------------------------------------------
 # Analytics
@@ -203,6 +204,7 @@ homepage:
     upcoming: 即将到来的版本
     development: 开发中
     dateline: 于 DATE 发布 VERSION
+    version_support: Version Support
 
   explainer:
     image:
