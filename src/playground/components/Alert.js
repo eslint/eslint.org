@@ -163,22 +163,24 @@ export default function Alert({
 							Fix
 						</button>
 					)}
-					<button
-						onClick={() => {
-							delete options.rules[ruleId];
-							setRulesWithInvalidConfigs(
-								new Set(
-									[...rulesWithInvalidConfigs].filter(
-										rule => rule !== ruleId,
+					{options.rules[ruleId] && (
+						<button
+							onClick={() => {
+								delete options.rules[ruleId];
+								setRulesWithInvalidConfigs(
+									new Set(
+										[...rulesWithInvalidConfigs].filter(
+											rule => rule !== ruleId,
+										),
 									),
-								),
-							);
-							onUpdate(Object.assign({}, options));
-						}}
-						className="alert__fix-btn"
-					>
-						Disable
-					</button>
+								);
+								onUpdate(Object.assign({}, options));
+							}}
+							className="alert__fix-btn"
+						>
+							Disable
+						</button>
+					)}
 				</div>
 			)}
 		</article>
