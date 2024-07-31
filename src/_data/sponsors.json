@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121848,
-        "monthlyDonations": 10154,
-        "sponsorCount": 179
+        "annualDonations": 121872,
+        "monthlyDonations": 10156,
+        "sponsorCount": 181
     },
     "platinum": [
         {
@@ -1351,7 +1351,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 35,
+            "totalDonations": 36,
             "source": "opencollective",
             "tier": null
         },
@@ -1452,6 +1452,14 @@
             "tier": "backer"
         },
         {
+            "name": "su-",
+            "image": "https://avatars.githubusercontent.com/u/30166652?u=95465ea487c57300299dc3a9c708933ec91e9365&v=4",
+            "url": "https://site.su-u.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Gavin John",
             "image": "https://avatars.githubusercontent.com/u/45835846?v=4",
             "url": "https://pandapip1.com/",
@@ -1479,6 +1487,14 @@
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
             "url": "https://vezel.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Antonis Antoniadis",
+            "image": "https://avatars.githubusercontent.com/u/92358784?u=3d0f5f9803fe560f72e16a51fcaa89a34ca4b968&v=4",
+            "url": "https://www.ema-app.com/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
