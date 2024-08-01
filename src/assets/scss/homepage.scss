@@ -280,3 +280,44 @@
 		display: block;
 	}
 }
+
+.deprecation-notice {
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 0;
+	background-color: var(--link-color);
+	color: var(--body-background-color);
+
+	a {
+		color: var(--body-background-color);
+		padding: 0 4px;
+	}
+
+	.hourglass-icon path {
+		fill: var(--body-background-color);
+	}
+
+	@media all and (max-width: 785px) {
+		display: block;
+		text-align: center;
+		padding: 0 5px 12px;
+
+		.hourglass-icon {
+			position: relative;
+			top: 10px;
+		}
+	}
+
+	@media all and (min-width: 786px) and (max-width: 1023px) {
+		display: block;
+		text-align: center;
+		padding: 0 3px 6px;
+
+		.hourglass-icon {
+			position: relative;
+			top: 10px;
+		}
+	}
+}
