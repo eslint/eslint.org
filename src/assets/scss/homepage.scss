@@ -286,7 +286,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 2px 0;
+	padding: 4px 0;
 	background-color: var(--color-neutral-500);
 	color: white;
 
@@ -295,29 +295,19 @@
 		padding: 0 4px;
 	}
 
-	.hourglass-icon path {
-		fill: white;
+	.hourglass-icon {
+		margin-right: 5px;
 	}
 
-	@media all and (max-width: 785px) {
+	@media all and (max-width: 865px) {
 		display: block;
 		text-align: center;
-		padding: 0 5px 12px;
+		padding: 4px 6px;
 
 		.hourglass-icon {
 			position: relative;
-			top: 10px;
-		}
-	}
-
-	@media all and (min-width: 786px) and (max-width: 1023px) {
-		display: block;
-		text-align: center;
-		padding: 0 3px 6px;
-
-		.hourglass-icon {
-			position: relative;
-			top: 10px;
+			margin-right: 0;
+			top: 2px;
 		}
 	}
 }
