@@ -1,7 +1,7 @@
 ---
 layout: blog.html
 hook: "blog_page"
-permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
+permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber + 1 }}{% endif %}/index.html'
 
 pagination:
     alias: blogPosts
