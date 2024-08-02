@@ -287,16 +287,16 @@
 	justify-content: center;
 	align-items: center;
 	padding: 2px 0;
-	background-color: var(--link-color);
-	color: var(--body-background-color);
+	background-color: var(--color-neutral-500);
+	color: white;
 
 	a {
-		color: var(--body-background-color);
+		color: white;
 		padding: 0 4px;
 	}
 
 	.hourglass-icon path {
-		fill: var(--body-background-color);
+		fill: white;
 	}
 
 	@media all and (max-width: 785px) {
