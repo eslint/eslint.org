@@ -108,6 +108,8 @@ export default function Configuration({
 	options,
 	ruleNames,
 	validationError,
+	rulesWithInvalidConfigs,
+	setRulesWithInvalidConfigs,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -147,9 +149,6 @@ export default function Configuration({
 		}));
 	const [selectedRules, setSelectedRules] = useState([]);
 	const ruleInputRef = useRef(null);
-	const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(
-		new Set([]),
-	);
 	const firstRuleRef = useRef();
 
 	useEffect(() => {
