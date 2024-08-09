@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122292,
-        "monthlyDonations": 10191,
-        "sponsorCount": 179
+        "annualDonations": 122304,
+        "monthlyDonations": 10192,
+        "sponsorCount": 180
     },
     "platinum": [
         {
@@ -1430,6 +1430,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=8e79faa8ced714f87ca77436785381112c7500cf&v=4",
             "url": "https://github.com/m1nicrusher",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Dante",
+            "image": "https://avatars.githubusercontent.com/u/25969748?u=dca5e6dba17f10be243263dd7c57ce5b3336f925&v=4",
+            "url": "https://github.com/dante-ibt",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
