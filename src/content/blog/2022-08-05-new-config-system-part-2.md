@@ -59,7 +59,7 @@ export default [
         rules: {
             "semi": "error",
             "no-unused-vars": "error"
-        }  
+        }
     }
 ];
 ```
@@ -80,7 +80,7 @@ export default [
         rules: {
             "semi": "error",
             "no-unused-vars": "error"
-        }  
+        }
     }
 ];
 ```
@@ -99,7 +99,7 @@ export default [
         rules: {
             "semi": "error",
             "no-unused-vars": "error"
-        }  
+        }
     }
 ];
 ```
@@ -117,14 +117,14 @@ export default [
         rules: {
             "semi": "error",
             "no-unused-vars": "error"
-        }  
+        }
     },
     {
         files: ["**/*.js"],
         rules: {
             "no-undef": "error",
             "semi": "warn"
-        }  
+        }
     }
 ];
 ```
@@ -143,14 +143,14 @@ export default [
         rules: {
             "semi": "error",
             "no-unused-vars": "error"
-        }  
+        }
     },
     {
         files: ["**/*.js"],
         rules: {
             "no-undef": "error",
             "semi": "warn"
-        }  
+        }
     }
 ];
 ```
@@ -286,11 +286,11 @@ export default [
         files: ["**/*.js"],
         plugins: {
             jsdoc
-        }
+        },
         rules: {
             "jsdoc/require-description": "error",
             "jsdoc/check-values": "error"
-        }  
+        }
     }
 ];
 ```
@@ -311,11 +311,11 @@ export default [
         files: ["**/*.js"],
         plugins: {
             jsd: jsdoc
-        }
+        },
         rules: {
             "jsd/require-description": "error",
             "jsd/check-values": "error"
-        }  
+        }
     }
 ];
 ```
@@ -340,10 +340,10 @@ export default [
                     myrule
                 }
             }
-        }
+        },
         rules: {
             "custom/myrule": "error"
-        }  
+        }
     }
 ];
 ```
@@ -406,16 +406,18 @@ export default [
 
 ### Using predefined configs
 
-ESLint has two predefined configs:
+ESLint has two predefined configurations for JavaScript:
 
-* `eslint:recommended` - enables the rules that ESLint recommends everyone use to avoid potential errors
-* `eslint:all` - enables all of the rules shipped with ESLint
+* `js.configs.recommended` - enables the rules that ESLint recommends everyone use to avoid potential errors
+* `js.configs.all` - enables all of the rules shipped with ESLint
 
-To include these predefined configs, you can insert the string values into the exported array and then make any modifications to other properties in subsequent configuration objects:
+To include these predefined configurations, install the `@eslint/js` package and then make any modifications to other properties in subsequent configuration objects:
 
 ```js
+import js from "@eslint/js";
+
 export default [
-    "eslint:recommended",
+    js.configs.recommended,
     {
         rules: {
             semi: ["warn", "always"]
@@ -479,3 +481,5 @@ Using the `FlatCompat` class allows you to continue using all of your existing e
 The team spent a long time designing flat config so that it would both feel familiar to existing users and provide new functionality that would benefit everyone. We kept things like rules, settings, and processors the same while extending things like plugins, language options, and linter options to be more uniform. We think that flat config has found a good balance between these two poles and that you will enjoy using ESLint more once the new config system is generally available. In the meantime, the compatibility utility will allow you to continue using existing shared configs.
 
 In the [next part](https://eslint.org/blog/2022/08/new-config-system-part-3/) of this blog series, you'll learn how to start using flat config today.
+
+**Updated (2024-08-12):** Updated the predefined ESLint configurations for JavaScript.
