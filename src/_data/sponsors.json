@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 122304,
-        "monthlyDonations": 10192,
+        "annualDonations": 122472,
+        "monthlyDonations": 10206,
         "sponsorCount": 180
     },
     "platinum": [
@@ -237,6 +237,14 @@
             "totalDonations": 595,
             "source": "opencollective",
             "tier": null
+        },
+        {
+            "name": "Drew Showalter",
+            "image": "https://avatars.githubusercontent.com/u/10665739?u=301dbdfabb033f2b4ad99710ce51f688674e1c4e&v=4",
+            "url": "https://119.is",
+            "monthlyDonation": 20,
+            "source": "github",
+            "tier": "backer"
         },
         {
             "name": "odan",
@@ -1187,14 +1195,6 @@
             "tier": "backer"
         },
         {
-            "name": "Akilesh Jayakumar",
-            "image": "https://avatars.githubusercontent.com/u/115217361?u=0bc02ef807e2f08f038c0be6447ada93bb9a4b71&v=4",
-            "url": "https://akileshjayakumar.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Jupli",
             "image": "https://avatars.githubusercontent.com/u/140319444?v=4",
             "url": "https://jupli.com",
@@ -1299,14 +1299,6 @@
             "name": "Frontend Masters",
             "image": "https://avatars.githubusercontent.com/u/5613852?v=4",
             "url": "https://FrontendMasters.com",
-            "monthlyDonation": 2,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ando",
-            "image": "https://avatars.githubusercontent.com/u/65276708?u=cbb4cc3ac652234fd622db42b598691cfa9520fd&v=4",
-            "url": "https://andostronaut.com",
             "monthlyDonation": 2,
             "source": "github",
             "tier": "backer"
@@ -1502,6 +1494,14 @@
             "name": "Ian Tapply",
             "image": "https://avatars.githubusercontent.com/u/114881396?u=c8201f005eca8d1c1c4ece7188260f0e99d1227f&v=4",
             "url": "https://github.com/IanTapply22",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Max Loshak",
+            "image": "https://avatars.githubusercontent.com/u/119050285?u=cefc55c2945e9d01139e72895d8a4a8e3334263c&v=4",
+            "url": "https://github.com/maxlshk",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
