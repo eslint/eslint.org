@@ -334,6 +334,9 @@ const App = () => {
 						data-open={isConfigHidden ? true : showConfigMenu}
 					>
 						<Configuration
+							initialOptions={fillOptionsDefaults(
+								getDefaultOptions(),
+							)}
 							ruleNames={ruleNames}
 							options={options}
 							onUpdate={updateOptions}
