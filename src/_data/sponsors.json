@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122472,
-        "monthlyDonations": 10206,
-        "sponsorCount": 180
+        "annualDonations": 122484,
+        "monthlyDonations": 10207,
+        "sponsorCount": 181
     },
     "platinum": [
         {
@@ -432,7 +432,7 @@
         {
             "name": "Buttondown",
             "image": "https://avatars.githubusercontent.com/u/48390753?v=4",
-            "url": "https://buttondown.email",
+            "url": "https://buttondown.com",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -538,7 +538,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 30,
+            "totalDonations": 35,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1438,6 +1438,14 @@
             "name": "su-",
             "image": "https://avatars.githubusercontent.com/u/30166652?u=95465ea487c57300299dc3a9c708933ec91e9365&v=4",
             "url": "https://site.su-u.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "paolampilla",
+            "image": "https://avatars.githubusercontent.com/u/43100344?u=ab97185ef961acba8de33ece0d3e54987b2e2940&v=4",
+            "url": "https://github.com/paolampilla",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
