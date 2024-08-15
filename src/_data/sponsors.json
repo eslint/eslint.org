@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122484,
-        "monthlyDonations": 10207,
-        "sponsorCount": 181
+        "annualDonations": 122544,
+        "monthlyDonations": 10212,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -584,6 +584,15 @@
             "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 45,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Pink Fluffy Nico",
+            "url": null,
+            "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 91,
             "source": "opencollective",
             "tier": "backer"
         },
