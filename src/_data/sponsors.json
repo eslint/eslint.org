@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122544,
-        "monthlyDonations": 10212,
-        "sponsorCount": 182
+        "annualDonations": 134604,
+        "monthlyDonations": 11217,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -32,6 +32,14 @@
             "monthlyDonation": 1000,
             "totalDonations": 3000,
             "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
+        {
+            "name": "Siemens",
+            "image": "https://avatars.githubusercontent.com/u/624020?v=4",
+            "url": "https://opensource.siemens.com",
+            "monthlyDonation": 1000,
+            "source": "github",
             "tier": "gold-sponsor"
         }
     ],
@@ -959,6 +967,14 @@
             "name": "Charles Severance",
             "image": "https://avatars.githubusercontent.com/u/1197222?u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
             "url": "http://www.dr-chuck.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "electrovir",
+            "image": "https://avatars.githubusercontent.com/u/1205860?u=c4e653db4509818397f911401051aab0c77eb339&v=4",
+            "url": "https://electrovir.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
