@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134604,
-        "monthlyDonations": 11217,
-        "sponsorCount": 184
+        "annualDonations": 134544,
+        "monthlyDonations": 11212,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -1103,14 +1103,6 @@
             "name": "Nicolas Charpentier",
             "image": "https://avatars.githubusercontent.com/u/7189823?u=f7558a0f6828f45f1082970880aefbeab9596d0b&v=4",
             "url": "https://charpeni.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Daniel Arthur Gallagher",
-            "image": "https://avatars.githubusercontent.com/u/8526031?u=9bdab29f81fd1923b7608a513cf69a9f8f0752dd&v=4",
-            "url": "https://danieleloscozzese.it",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
