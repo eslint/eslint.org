@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134544,
-        "monthlyDonations": 11212,
-        "sponsorCount": 183
+        "annualDonations": 134604,
+        "monthlyDonations": 11217,
+        "sponsorCount": 184
     },
     "platinum": [
         {
@@ -1175,6 +1175,14 @@
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Roboflow",
+            "image": "https://avatars.githubusercontent.com/u/53104118?v=4",
+            "url": "https://roboflow.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
