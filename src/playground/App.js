@@ -334,6 +334,7 @@ const App = () => {
 						data-open={isConfigHidden ? true : showConfigMenu}
 					>
 						<Configuration
+							errors={messages}
 							ruleNames={ruleNames}
 							options={options}
 							onUpdate={updateOptions}

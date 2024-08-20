@@ -104,6 +104,7 @@ const isEmpty = obj => Object.keys(obj).length === 0;
 export default function Configuration({
 	rulesMeta,
 	eslintVersion,
+	errors,
 	onUpdate,
 	options,
 	ruleNames,
@@ -227,7 +228,7 @@ export default function Configuration({
 	return (
 		<div className="playground__config-options__sections">
 			<div className="playground__config-options__section">
-				<ShareURL url={window.location} />
+				<ShareURL errors={errors} url={window.location} />
 			</div>
 			<div className="playground__config-options__section">
 				<button

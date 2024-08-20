@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ShareURL({ url }) {
+export default function ShareURL({ url, errors }) {
 	const [isDataCopied, setIsDataCopied] = useState(false);
 	const [showShareURL, setShowShareURL] = useState(false);
 
@@ -10,7 +10,7 @@ export default function ShareURL({ url }) {
 				className="playground-toggle c-btn c-btn--ghost"
 				onClick={() => setShowShareURL(currentValue => !currentValue)}
 			>
-				<h2 data-config-section-title>Share URL</h2>
+				<h2 data-config-section-title>Share</h2>
 				<svg
 					height="20"
 					width="20"
@@ -89,6 +89,34 @@ export default function ShareURL({ url }) {
 							</span>
 						)}
 					</div>
+
+					<button
+						onClick={() => {
+							const reportUrl = new URL(
+								"https://github.com/eslint/eslint/issues/new",
+							);
+							const params = {
+								labels: "bug,repro:yes",
+								template: "bug-report.yml",
+								"repro-url": window.location,
+								"lint-output": errors
+									.map(
+										({ line, column, message, ruleId }) =>
+											`${line}:${column} ${message} (${ruleId})`,
+									)
+									.join("\n"),
+							};
+
+							Object.entries(params).forEach(([key, value]) => {
+								reportUrl.searchParams.append(key, value);
+							});
+
+							window.open(reportUrl, "_blank");
+						}}
+						className="c-btn c-btn--secondary report-issue-btn"
+					>
+						Report an issue
+					</button>
 				</div>
 			)}
 		</div>
