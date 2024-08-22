@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134604,
-        "monthlyDonations": 11217,
-        "sponsorCount": 184
+        "annualDonations": 134532,
+        "monthlyDonations": 11211,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -1212,14 +1212,6 @@
             "tier": "backer"
         },
         {
-            "name": "Yuto Yoshino",
-            "image": "https://avatars.githubusercontent.com/u/87469023?u=9c5ad67f4f4df8c5a303281f8378bac254eae064&v=4",
-            "url": "https://yossy.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Jupli",
             "image": "https://avatars.githubusercontent.com/u/140319444?v=4",
             "url": "https://jupli.com",
@@ -1487,14 +1479,6 @@
             "name": "David Badasyan",
             "image": "https://avatars.githubusercontent.com/u/59211418?u=3ec40b6724f732cdf15f040d6a1a94675407102e&v=4",
             "url": "https://www.linkedin.com/in/david-badasyan-17b544199/",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Nikita Savenko",
-            "image": "https://avatars.githubusercontent.com/u/61596575?u=3446c2bc21fad59f5c50d111e7248163c17cb67d&v=4",
-            "url": "https://github.com/Nikitosiki",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
