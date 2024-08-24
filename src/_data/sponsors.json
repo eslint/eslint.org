@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134532,
-        "monthlyDonations": 11211,
-        "sponsorCount": 182
+        "annualDonations": 134520,
+        "monthlyDonations": 11210,
+        "sponsorCount": 181
     },
     "platinum": [
         {
@@ -1495,14 +1495,6 @@
             "name": "Antonis Antoniadis",
             "image": "https://avatars.githubusercontent.com/u/92358784?u=3d0f5f9803fe560f72e16a51fcaa89a34ca4b968&v=4",
             "url": "https://www.ema-app.com/",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "stepan.moc",
-            "image": "https://avatars.githubusercontent.com/u/114861206?u=f56fe427cbd09a575b5537ba633c8ad7683da5dc&v=4",
-            "url": "https://github.com/MocStepan",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
