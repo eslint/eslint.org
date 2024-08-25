@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134520,
-        "monthlyDonations": 11210,
-        "sponsorCount": 181
+        "annualDonations": 134640,
+        "monthlyDonations": 11220,
+        "sponsorCount": 183
     },
     "platinum": [
         {
@@ -467,6 +467,24 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Free Instagram Likes",
+            "url": "https://expressfollowers.com/",
+            "image": "https://images.opencollective.com/free-instagram-likes/3204842/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "InstantAutoLikes",
+            "url": "https://instantautolikes.com/",
+            "image": "https://images.opencollective.com/instantautolikes/cb21ef2/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
