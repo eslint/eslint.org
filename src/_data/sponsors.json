@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134640,
-        "monthlyDonations": 11220,
-        "sponsorCount": 183
+        "annualDonations": 134568,
+        "monthlyDonations": 11214,
+        "sponsorCount": 182
     },
     "platinum": [
         {
@@ -385,14 +385,6 @@
             "name": "Mention Me Ltd",
             "image": "https://avatars.githubusercontent.com/u/10668008?v=4",
             "url": "https://eng.mention-me.com",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Kamal",
-            "image": "https://avatars.githubusercontent.com/u/12810203?u=b489c73c2734864ee472daba665c69f563ded9da&v=4",
-            "url": "https://github.com/Kamalnrf",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1190,6 +1182,14 @@
             "tier": "backer"
         },
         {
+            "name": "Bekah Lundy",
+            "image": "https://avatars.githubusercontent.com/u/20376939?u=5b1cf4d7e6c761d4a487fdd7f1e8bf9db33f6d3c&v=4",
+            "url": "https://github.com/bekahlundy",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
@@ -1433,14 +1433,6 @@
             "name": "Kirill Devope",
             "image": "https://avatars.githubusercontent.com/u/8249408?u=c1818225ecdbe96d8e837747e0ee26ebe856a95b&v=4",
             "url": "https://github.com/devope",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Edmur",
-            "image": "https://avatars.githubusercontent.com/u/12579932?u=87d67accc4676aa2503dae589d9a9f6717d5cf3c&v=4",
-            "url": "https://rumd3x.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
