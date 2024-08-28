@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+const getTemplate = code => `\`\`\`js
+${code}
+\`\`\``;
+
 export default function ShareURL({ url, errors, config }) {
 	const [isDataCopied, setIsDataCopied] = useState(false);
 	const [showShareURL, setShowShareURL] = useState(false);
@@ -105,7 +109,7 @@ export default function ShareURL({ url, errors, config }) {
 											`${line}:${column} ${message} (${ruleId})`,
 									)
 									.join("\n"),
-								description: `<details><summary>Configuration</summary>${config}</details>`,
+								description: getTemplate(config),
 							};
 
 							Object.entries(params).forEach(([key, value]) => {
