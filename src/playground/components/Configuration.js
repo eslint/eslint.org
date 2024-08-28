@@ -228,7 +228,11 @@ export default function Configuration({
 	return (
 		<div className="playground__config-options__sections">
 			<div className="playground__config-options__section">
-				<ShareURL errors={errors} url={window.location} />
+				<ShareURL
+					errors={errors}
+					url={window.location}
+					config={JSON.stringify([optionsForConfigFile])}
+				/>
 			</div>
 			<div className="playground__config-options__section">
 				<button

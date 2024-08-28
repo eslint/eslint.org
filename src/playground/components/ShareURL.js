@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ShareURL({ url, errors }) {
+export default function ShareURL({ url, errors, config }) {
 	const [isDataCopied, setIsDataCopied] = useState(false);
 	const [showShareURL, setShowShareURL] = useState(false);
 
@@ -105,6 +105,7 @@ export default function ShareURL({ url, errors }) {
 											`${line}:${column} ${message} (${ruleId})`,
 									)
 									.join("\n"),
+								description: `<details><summary>Configuration</summary>${config}</details>`,
 							};
 
 							Object.entries(params).forEach(([key, value]) => {
