@@ -259,14 +259,5 @@
         "amount": 5,
         "date": "2023-10-11T17:05:21.670Z",
         "source": "opencollective"
-    },
-    {
-        "id": "mlo94zn7-x08dpo0b-7k3pewga-3vjbrky5",
-        "name": "Pink Fluffy Nico",
-        "url": null,
-        "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
-        "amount": 1,
-        "date": "2023-09-06T13:57:14.119Z",
-        "source": "opencollective"
     }
 ]
