@@ -620,7 +620,7 @@ export default function Configuration({
 						onClick={revertToDefault}
 						className="c-btn playground__config__revertConfig-btn"
 					>
-						Revert Configs to Default
+						Reset
 					</button>
 				</div>
 			</div>
