@@ -98,7 +98,7 @@ export default function ShareURL({ url, errors, config }) {
 							const params = {
 								labels: "bug,repro:yes",
 								template: "bug-report.yml",
-								"repro-url": window.location,
+								"repro-url": window.location.href,
 								"lint-output": errors
 									.map(
 										({ line, column, message, ruleId }) =>
