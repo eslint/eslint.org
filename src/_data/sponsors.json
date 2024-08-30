@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134448,
-        "monthlyDonations": 11204,
-        "sponsorCount": 180
+        "annualDonations": 134436,
+        "monthlyDonations": 11203,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -26,9 +26,9 @@
     ],
     "gold": [
         {
-            "name": "Eli Schleifer",
-            "url": null,
-            "image": "https://images.opencollective.com/guest-bf377e88/avatar.png",
+            "name": "trunk.io",
+            "url": "https://trunk.io/",
+            "image": "https://images.opencollective.com/trunkio/avatar.png",
             "monthlyDonation": 1000,
             "totalDonations": 3000,
             "source": "opencollective",
@@ -1165,7 +1165,7 @@
         },
         {
             "name": "Bekah Lundy",
-            "image": "https://avatars.githubusercontent.com/u/20376939?u=5b1cf4d7e6c761d4a487fdd7f1e8bf9db33f6d3c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/20376939?u=a51ea53f977a9b9e2f86a23634d3c8caa0cbb687&v=4",
             "url": "https://github.com/bekahlundy",
             "monthlyDonation": 5,
             "source": "github",
@@ -1479,14 +1479,6 @@
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
             "url": "https://vezel.dev",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Antonis Antoniadis",
-            "image": "https://avatars.githubusercontent.com/u/92358784?u=3d0f5f9803fe560f72e16a51fcaa89a34ca4b968&v=4",
-            "url": "https://www.ema-app.com/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
