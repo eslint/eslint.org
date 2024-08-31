@@ -28,7 +28,7 @@
         {
             "name": "trunk.io",
             "url": "https://trunk.io/",
-            "image": "https://images.opencollective.com/trunkio/avatar.png",
+            "image": "https://images.opencollective.com/trunkio/fb92d60/avatar.png",
             "monthlyDonation": 1000,
             "totalDonations": 3000,
             "source": "opencollective",
@@ -1343,7 +1343,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 36,
+            "totalDonations": 37,
             "source": "opencollective",
             "tier": null
         },
