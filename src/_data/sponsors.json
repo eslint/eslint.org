@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131916,
-        "monthlyDonations": 10993,
-        "sponsorCount": 176
+        "annualDonations": 156048,
+        "monthlyDonations": 13004,
+        "sponsorCount": 180
     },
     "platinum": [
         {
@@ -21,6 +21,14 @@
             "monthlyDonation": 2000,
             "totalDonations": 71610,
             "source": "opencollective",
+            "tier": "platinum-sponsor"
+        },
+        {
+            "name": "@OMB_A11PX_EL ",
+            "image": "https://avatars.githubusercontent.com/u/164418633?u=f8b9d091a344162744859620e47972208302e5b3&v=4",
+            "url": "https://andcertifiedadjusters+MELElyon-admin@pm.me ",
+            "monthlyDonation": 2000,
+            "source": "github",
             "tier": "platinum-sponsor"
         }
     ],
@@ -566,6 +574,24 @@
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 105,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "LightCDN",
+            "url": "https://www.lightcdn.com",
+            "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 45,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "LightNode",
+            "url": "https://www.lightnode.com",
+            "image": "https://images.opencollective.com/lightnode/4847412/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 45,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1340,6 +1366,14 @@
             "name": "John Karahalis",
             "image": "https://avatars.githubusercontent.com/u/933396?v=4",
             "url": "https://www.johnkarahalis.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ray Harris",
+            "image": "https://avatars.githubusercontent.com/u/2948753?v=4",
+            "url": "https://github.com/raymondgh",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
