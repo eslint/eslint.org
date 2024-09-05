@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 156048,
-        "monthlyDonations": 13004,
-        "sponsorCount": 180
+        "annualDonations": 155988,
+        "monthlyDonations": 12999,
+        "sponsorCount": 179
     },
     "platinum": [
         {
@@ -974,14 +974,6 @@
             "name": "Jonny Burger",
             "image": "https://avatars.githubusercontent.com/u/1629785?u=f91613c118bb1fcf442a71008dff1cd5f9b30411&v=4",
             "url": "https://jonny.io",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Martin Eigenmann",
-            "image": "https://avatars.githubusercontent.com/u/2293142?u=820f1940d7336d128c3fcfb5e4155ee2aa0566ce&v=4",
-            "url": "https://eigenmannmartin.ch",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
