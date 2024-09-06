@@ -26,7 +26,7 @@ Read the [full version support policy](/version-support) for more details.
 
 ## Commercial support from HeroDevs after EOL
 
-Because we realize not everyone can upgrade to a new major release within six months, we've partnered with [HeroDevs][herodevs] to provide commercial support for EOL release lines. HeroDevs provides drop-in replacements for EOL ESLint packages that keeps your experience seamless.
+Because we realize not everyone can upgrade to a new major release within six months, [we've partnered with HeroDevs](https://www.herodevs.com/blog-posts/herodevs-partners-with-eslint-to-launch-eslint-nes-for-legacy-javascript-support) to provide commercial support for EOL release lines. HeroDevs provides drop-in replacements for EOL ESLint packages that keeps your experience seamless.
 
 Additionally, HeroDevs provides never-ending support for these drop-in replacements, meaning that they'll continue to receive critical security fixes.
 
