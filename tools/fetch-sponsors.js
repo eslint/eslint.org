@@ -34,6 +34,8 @@ const knownOneTimers = new Set([
 	"GitHub Sponsors",
 	"Read the Docs",
 	"BuySellAds",
+	"EthicalAds",
+	"Threadless",
 ]);
 
 // we must have a token for this to work
@@ -395,7 +397,7 @@ async function fetchGitHubSponsors() {
 	const donations = openCollectiveDonations.concat(githubDonations);
 
 	// sort donations so most recent is first
-	donations.sort((a, b) => new Date(a) - new Date(b));
+	donations.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
 	// simplified data structure
 	const tierSponsors = {
