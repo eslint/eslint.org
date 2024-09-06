@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 131988,
-        "monthlyDonations": 10999,
-        "sponsorCount": 178
+        "annualDonations": 119640,
+        "monthlyDonations": 9970,
+        "sponsorCount": 171
     },
     "platinum": [
         {
@@ -32,14 +32,6 @@
             "monthlyDonation": 1000,
             "totalDonations": 4000,
             "source": "opencollective",
-            "tier": "gold-sponsor"
-        },
-        {
-            "name": "Siemens",
-            "image": "https://avatars.githubusercontent.com/u/624020?v=4",
-            "url": "https://opensource.siemens.com",
-            "monthlyDonation": 1000,
-            "source": "github",
             "tier": "gold-sponsor"
         }
     ],
@@ -236,14 +228,6 @@
             "totalDonations": 615,
             "source": "opencollective",
             "tier": null
-        },
-        {
-            "name": "Drew Showalter",
-            "image": "https://avatars.githubusercontent.com/u/10665739?u=b920126f61285f5c8ed6a47eed52a80f4a705423&v=4",
-            "url": "https://119.is",
-            "monthlyDonation": 20,
-            "source": "github",
-            "tier": "backer"
         },
         {
             "name": "odan",
@@ -1147,14 +1131,6 @@
             "tier": "backer"
         },
         {
-            "name": "Bekah Lundy",
-            "image": "https://avatars.githubusercontent.com/u/20376939?u=a51ea53f977a9b9e2f86a23634d3c8caa0cbb687&v=4",
-            "url": "https://github.com/bekahlundy",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
             "url": "https://mnanas.dev",
@@ -1355,14 +1331,6 @@
             "tier": "backer"
         },
         {
-            "name": "Ray Harris",
-            "image": "https://avatars.githubusercontent.com/u/2948753?v=4",
-            "url": "https://github.com/raymondgh",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Ethan Glover",
             "image": "https://avatars.githubusercontent.com/u/3924176?u=c00121ab8bd1d501799150db672276615e136415&v=4",
             "url": "https://www.ethang.dev/",
@@ -1427,25 +1395,9 @@
             "tier": "backer"
         },
         {
-            "name": "Dante",
-            "image": "https://avatars.githubusercontent.com/u/25969748?u=dca5e6dba17f10be243263dd7c57ce5b3336f925&v=4",
-            "url": "https://github.com/dante-ibt",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "su-",
             "image": "https://avatars.githubusercontent.com/u/30166652?u=95465ea487c57300299dc3a9c708933ec91e9365&v=4",
             "url": "https://site.su-u.dev",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "paolampilla",
-            "image": "https://avatars.githubusercontent.com/u/43100344?u=ab97185ef961acba8de33ece0d3e54987b2e2940&v=4",
-            "url": "https://github.com/paolampilla",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
@@ -1478,14 +1430,6 @@
             "name": "Ian Tapply",
             "image": "https://avatars.githubusercontent.com/u/114881396?u=c8201f005eca8d1c1c4ece7188260f0e99d1227f&v=4",
             "url": "https://github.com/IanTapply22",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Max Loshak",
-            "image": "https://avatars.githubusercontent.com/u/119050285?u=cefc55c2945e9d01139e72895d8a4a8e3334263c&v=4",
-            "url": "https://github.com/maxlshk",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
