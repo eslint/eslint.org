@@ -223,6 +223,7 @@ async function fetchGitHubSponsors() {
                             },
                             tier {
                                 monthlyPriceInDollars
+                                isOneTime
                             }
                         }
                         pageInfo {
@@ -329,16 +330,23 @@ async function fetchGitHubSponsors() {
 		);
 	}
 
-	// return an array in the same format as Open Collective
-	const sponsors = sponsorships.map(({ sponsor, tier }) => ({
-		name: sponsor.name || sponsor.login,
-		image: sponsor.avatarUrl,
-		url: fixUrl(sponsor.websiteUrl || sponsor.url),
-		monthlyDonation: tier.monthlyPriceInDollars,
-		source: "github",
-		tier: getTierSlug(tier.monthlyPriceInDollars),
-	}));
+	// process sponsorships
+	const sponsors = sponsorships
 
+		// filter out one-time sponsorships -- these are displayed in the donations list
+		.filter(({ tier }) => !tier.isOneTime)
+
+		// return an array in the same format as Open Collective
+		.map(({ sponsor, tier }) => ({
+			name: sponsor.name || sponsor.login,
+			image: sponsor.avatarUrl,
+			url: fixUrl(sponsor.websiteUrl || sponsor.url),
+			monthlyDonation: tier.monthlyPriceInDollars,
+			source: "github",
+			tier: getTierSlug(tier.monthlyPriceInDollars),
+		}));
+
+	// process one-time donations
 	const donations = donationsResponse.organization.sponsorsActivities.nodes
 		.filter(transaction => transaction.tier && transaction.tier.isOneTime)
 		.map(({ sponsor, timestamp, tier, id }) => ({
