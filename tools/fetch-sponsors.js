@@ -25,6 +25,9 @@ const { graphql: githubGraphQL } = require("@octokit/graphql");
 // Data
 //-----------------------------------------------------------------------------
 
+// sponsors to block
+const blockedSponsorsFilename = "./src/_data/blocked-sponsors.json";
+
 // filename to output sponsors to
 const sponsorsFilename = "./src/_data/sponsors.json";
 const donationsFilename = "./src/_data/donations.json";
@@ -381,9 +384,25 @@ async function fetchGitHubSponsors() {
 			donations: openCollectiveDonations,
 		},
 		{ sponsors: githubSponsors, donations: githubDonations },
-	] = await Promise.all([fetchOpenCollectiveData(), fetchGitHubSponsors()]);
+		blockedSponsors,
+	] = await Promise.all([
+		fetchOpenCollectiveData(),
+		fetchGitHubSponsors(),
+		fs
+			.readFile(blockedSponsorsFilename, { encoding: "utf8" })
+			.then(data => JSON.parse(data)),
+	]);
 
-	const sponsors = openCollectiveSponsors.concat(githubSponsors);
+	const sponsors = openCollectiveSponsors
+		.concat(githubSponsors)
+		.filter(
+			sponsor =>
+				!blockedSponsors.some(
+					blockedSponsor =>
+						sponsor.name === blockedSponsor.name &&
+						sponsor.source === blockedSponsor.source,
+				),
+		);
 	const donations = openCollectiveDonations.concat(githubDonations);
 
 	// sort donations so most recent is first
