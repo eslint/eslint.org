@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119640,
-        "monthlyDonations": 9970,
-        "sponsorCount": 171
+        "annualDonations": 117240,
+        "monthlyDonations": 9770,
+        "sponsorCount": 170
     },
     "platinum": [
         {
@@ -97,14 +97,6 @@
             "monthlyDonation": 200,
             "totalDonations": 13000,
             "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "Ignition",
-            "image": "https://avatars.githubusercontent.com/u/5753491?v=4",
-            "url": "https://www.ignitionapp.com",
-            "monthlyDonation": 200,
-            "source": "github",
             "tier": "bronze-sponsor"
         },
         {
