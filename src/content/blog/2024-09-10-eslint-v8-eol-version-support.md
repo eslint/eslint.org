@@ -32,7 +32,7 @@ Additionally, HeroDevs provides never-ending support for these drop-in replaceme
 
 ## ESLint v8.x end of life is October 5, 2024
 
-Following our policy, that puts the end of life for ESLint v8.x at October 5, 2024. After that point, the ESLint team will no longer make changes or publish releases in the v8.x release line. If you need  support for v8.x after EOL, please contact [HeroDevs][herodevs].
+Following our policy, that puts the end of life for ESLint v8.x on October 5, 2024. After that point, the ESLint team will no longer make changes or publish releases in the v8.x release line. If you need support for v8.x after EOL, please contact [HeroDevs][herodevs].
 
 ## Conclusion
 
