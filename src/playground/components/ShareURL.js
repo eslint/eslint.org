@@ -116,6 +116,17 @@ export default function ShareURL({ url, errors, config }) {
 								reportUrl.searchParams.append(key, value);
 							});
 
+							if (reportUrl.search.length > 8148) {
+								reportUrl.searchParams.set(
+									"description",
+									"<!-- The configuration has been saved to clipboard. Please paste it here 👇🏻 -->",
+								);
+
+								navigator?.clipboard.writeText(
+									getTemplate(config),
+								);
+							}
+
 							window.open(reportUrl, "_blank");
 						}}
 						className="c-btn c-btn--secondary report-issue-btn"
