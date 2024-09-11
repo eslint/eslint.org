@@ -102,6 +102,7 @@ const defaultOption = {
 const isEmpty = obj => Object.keys(obj).length === 0;
 
 export default function Configuration({
+	initialOptions,
 	rulesMeta,
 	eslintVersion,
 	errors,
@@ -205,6 +206,10 @@ export default function Configuration({
 		onUpdate(Object.assign({}, options));
 	};
 
+	const revertToDefault = () => {
+		onUpdate(Object.assign({}, initialOptions));
+	};
+
 	// Remove empty objects from download configuration
 	const hasEcmaFeatures = !isEmpty(
 		options.languageOptions.parserOptions.ecmaFeatures,
@@ -273,11 +278,11 @@ export default function Configuration({
 									isSearchable={false}
 									styles={customStyles}
 									theme={theme => customTheme(theme)}
-									defaultValue={ECMAVersionsOptions.filter(
+									value={ECMAVersionsOptions.filter(
 										ecmaVersion =>
 											ecmaVersion.value ===
 											(options.languageOptions
-												.ecmaVersion || "default"),
+												?.ecmaVersion || "default"),
 									)}
 									options={ECMAVersionsOptions}
 									onChange={selected => {
@@ -300,10 +305,10 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								defaultValue={sourceTypeOptions.filter(
+								value={sourceTypeOptions.filter(
 									sourceTypeOption =>
 										sourceTypeOption.value ===
-										(options.languageOptions.sourceType ||
+										(options.languageOptions?.sourceType ||
 											"default"),
 								)}
 								options={sourceTypeOptions}
@@ -331,7 +336,7 @@ export default function Configuration({
 							<Select
 								isClearable
 								isMulti
-								defaultValue={ECMAFeaturesOptions.filter(
+								value={ECMAFeaturesOptions.filter(
 									ecmaFeatureName =>
 										options.languageOptions.parserOptions
 											.ecmaFeatures[
@@ -615,6 +620,13 @@ export default function Configuration({
 					>
 						Download this config file
 					</a>
+
+					<button
+						onClick={revertToDefault}
+						className="c-btn playground__config__revertConfig-btn"
+					>
+						Reset
+					</button>
 				</div>
 			</div>
 		</div>

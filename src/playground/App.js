@@ -335,6 +335,9 @@ const App = () => {
 					>
 						<Configuration
 							errors={messages}
+							initialOptions={fillOptionsDefaults(
+								getDefaultOptions(),
+							)}
 							ruleNames={ruleNames}
 							options={options}
 							onUpdate={updateOptions}

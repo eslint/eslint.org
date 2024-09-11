@@ -25,6 +25,9 @@ const { graphql: githubGraphQL } = require("@octokit/graphql");
 // Data
 //-----------------------------------------------------------------------------
 
+// sponsors to block
+const blockedSponsorsFilename = "./src/_data/blocked-sponsors.json";
+
 // filename to output sponsors to
 const sponsorsFilename = "./src/_data/sponsors.json";
 const donationsFilename = "./src/_data/donations.json";
@@ -34,6 +37,8 @@ const knownOneTimers = new Set([
 	"GitHub Sponsors",
 	"Read the Docs",
 	"BuySellAds",
+	"EthicalAds",
+	"Threadless",
 ]);
 
 // we must have a token for this to work
@@ -223,6 +228,7 @@ async function fetchGitHubSponsors() {
                             },
                             tier {
                                 monthlyPriceInDollars
+                                isOneTime
                             }
                         }
                         pageInfo {
@@ -329,16 +335,23 @@ async function fetchGitHubSponsors() {
 		);
 	}
 
-	// return an array in the same format as Open Collective
-	const sponsors = sponsorships.map(({ sponsor, tier }) => ({
-		name: sponsor.name || sponsor.login,
-		image: sponsor.avatarUrl,
-		url: fixUrl(sponsor.websiteUrl || sponsor.url),
-		monthlyDonation: tier.monthlyPriceInDollars,
-		source: "github",
-		tier: getTierSlug(tier.monthlyPriceInDollars),
-	}));
+	// process sponsorships
+	const sponsors = sponsorships
 
+		// filter out one-time sponsorships -- these are displayed in the donations list
+		.filter(({ tier }) => !tier.isOneTime)
+
+		// return an array in the same format as Open Collective
+		.map(({ sponsor, tier }) => ({
+			name: sponsor.name || sponsor.login,
+			image: sponsor.avatarUrl,
+			url: fixUrl(sponsor.websiteUrl || sponsor.url),
+			monthlyDonation: tier.monthlyPriceInDollars,
+			source: "github",
+			tier: getTierSlug(tier.monthlyPriceInDollars),
+		}));
+
+	// process one-time donations
 	const donations = donationsResponse.organization.sponsorsActivities.nodes
 		.filter(transaction => transaction.tier && transaction.tier.isOneTime)
 		.map(({ sponsor, timestamp, tier, id }) => ({
@@ -381,13 +394,29 @@ async function fetchGitHubSponsors() {
 			donations: openCollectiveDonations,
 		},
 		{ sponsors: githubSponsors, donations: githubDonations },
-	] = await Promise.all([fetchOpenCollectiveData(), fetchGitHubSponsors()]);
+		blockedSponsors,
+	] = await Promise.all([
+		fetchOpenCollectiveData(),
+		fetchGitHubSponsors(),
+		fs
+			.readFile(blockedSponsorsFilename, { encoding: "utf8" })
+			.then(data => JSON.parse(data)),
+	]);
 
-	const sponsors = openCollectiveSponsors.concat(githubSponsors);
+	const sponsors = openCollectiveSponsors
+		.concat(githubSponsors)
+		.filter(
+			sponsor =>
+				!blockedSponsors.some(
+					blockedSponsor =>
+						sponsor.name === blockedSponsor.name &&
+						sponsor.source === blockedSponsor.source,
+				),
+		);
 	const donations = openCollectiveDonations.concat(githubDonations);
 
 	// sort donations so most recent is first
-	donations.sort((a, b) => new Date(a) - new Date(b));
+	donations.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
 	// simplified data structure
 	const tierSponsors = {
