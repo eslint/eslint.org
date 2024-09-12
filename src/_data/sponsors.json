@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117240,
-        "monthlyDonations": 9770,
-        "sponsorCount": 170
+        "annualDonations": 117192,
+        "monthlyDonations": 9766,
+        "sponsorCount": 169
     },
     "platinum": [
         {
@@ -439,7 +439,7 @@
         },
         {
             "name": "No-code Web Scraper",
-            "url": "https://automatio.co/",
+            "url": "https://automatio.ai/",
             "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 15,
@@ -1174,14 +1174,6 @@
             "name": "Sentry",
             "image": "https://avatars.githubusercontent.com/u/1396951?v=4",
             "url": "https://sentry.io",
-            "monthlyDonation": 4,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Syntax",
-            "image": "https://avatars.githubusercontent.com/u/130389858?v=4",
-            "url": "https://syntax.fm",
             "monthlyDonation": 4,
             "source": "github",
             "tier": "backer"
