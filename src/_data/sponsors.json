@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117192,
-        "monthlyDonations": 9766,
-        "sponsorCount": 169
+        "annualDonations": 117252,
+        "monthlyDonations": 9771,
+        "sponsorCount": 170
     },
     "platinum": [
         {
@@ -1158,6 +1158,14 @@
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828?u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
             "url": "https://standardresume.co/tech",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Oghenemano Utomudo Omogha",
+            "image": "https://avatars.githubusercontent.com/u/76177578?u=b0397b665f96a420faedea1fe2450d2bcf50fb7b&v=4",
+            "url": "https://github.com/omoghaoghenemano",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
