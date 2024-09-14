@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117252,
-        "monthlyDonations": 9771,
-        "sponsorCount": 170
+        "annualDonations": 117192,
+        "monthlyDonations": 9766,
+        "sponsorCount": 169
     },
     "platinum": [
         {
@@ -514,16 +514,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 35,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Leonardo Rodrigues Ferreira",
-            "url": null,
-            "image": "https://images.opencollective.com/leonardo-rodrigues-ferreira/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 145,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
