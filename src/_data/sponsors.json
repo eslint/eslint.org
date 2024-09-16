@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117192,
-        "monthlyDonations": 9766,
-        "sponsorCount": 169
+        "annualDonations": 117132,
+        "monthlyDonations": 9761,
+        "sponsorCount": 168
     },
     "platinum": [
         {
@@ -829,14 +829,6 @@
             "name": "Leesa Ward",
             "image": "https://avatars.githubusercontent.com/u/563583?u=b50d6c7220db7b037496600994b3e03569ac16a0&v=4",
             "url": "https://leesaward.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Rithish",
-            "image": "https://avatars.githubusercontent.com/u/674539?v=4",
-            "url": "https://github.com/rithish",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
