@@ -1,5 +1,9 @@
 playground:
-  - playground/**/*
+- any:
+  - changed-files:
+    - any-glob-to-any-file: ['playground/**/*']
 
 translation:
-  - src/_data/sites/*
+- any:
+  - changed-files:
+    - any-glob-to-any-file: ['src/_data/sites/*']
