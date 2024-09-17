@@ -6,3 +6,20 @@
 
 	--border-radius: 0.5rem;
 }
+
+@media (prefers-color-scheme: "dark") {
+	:root {
+		--sponsor-img-border-radius: var(--border-radius);
+		--sponsor-backers-img-border-radius: var(--border-radius);
+	}
+}
+
+html[data-theme="light"] {
+	--sponsor-img-border-radius: 0;
+    --sponsor-backers-img-border-radius: 50%;
+}
+
+html[data-theme="dark"] {
+    --sponsor-img-border-radius: var(--border-radius);
+	--sponsor-backers-img-border-radius: var(--border-radius);
+}
