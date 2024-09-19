@@ -53,7 +53,7 @@ It’s taken four years for the ripple of Brad’s initial observation on that i
 
 ## Conclusion
 
-Solving problems fundamentally requires the combined insights of many people, the persistence of stubborn individuals, active communication, a community that learns from eachother, and often a lot of patience. But if you can make it happen, fundamental solutions scale really well. They apply broadly, can be adapted into other tools and domains, and improve the state of the world not just for developers but to the users those developers serve.
+Solving problems fundamentally requires the combined insights of many people, the persistence of stubborn individuals, active communication, a community that learns from each other, and often a lot of patience. But if you can make it happen, fundamental solutions scale really well. They apply broadly, can be adapted into other tools and domains, and improve the state of the world not just for developers but to the users those developers serve.
 
 ---
 
