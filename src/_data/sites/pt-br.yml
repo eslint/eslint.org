@@ -348,13 +348,11 @@ sponsors_page:
     platinum:
       title: Patrocinadores Platinum
       description: >
-        Torne-se um patrocinador Platinum com uma doação mensal de $2000 USD (proporcionando
-        40 horas de manutenção e desenvolvimento) e obtenha 2 horas de suporte dedicado
-        (suporte remoto disponível através de chat ou compartilhamento de tela) por mês,
-        bem como coloque sua imagem de avatar do Open Collective ou do GitHub em nosso
-        README no GitHub e na página inicial do eslint.org. Também faremos um tweet de
-        agradecimento a partir da nossa conta oficial (mais de 20.000 seguidores).
-        Por favor, entre em contato com o time do ESLint para agendar sessões de suporte.
+        Torne-se um patrocinador platina com uma doação mensal de 2.000 USD (fornecendo 40
+        horas de manutenção e desenvolvimento). Sua imagem de avatar do Open Collective ou
+        GitHub será exibida em nossos READMEs no GitHub e na página inicial do eslint.org.
+        Também publicaremos um agradecimento em nossa conta do Twitter (mais de 20.000
+        seguidores).
     gold:
       title: Patrocinadores Gold
       description: >

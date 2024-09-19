@@ -372,14 +372,11 @@ sponsors_page:
     platinum:
       title: Platin Sponsoren
       description: >
-        Mit einer monatlichen Spende von $2000 USD (die für 40 Stunden Pflege und
-        Entwicklung verwendet wird) wirst Du Platin Sponsor und bekommst zwei
-        Stunden dedizierten Support (Fernunterstützung möglich per Chat oder
-        Bildschirmfreigabe) pro Monat. Zusätzlich fügen wir dein Open Collective-
-        oder GitHub-Avatarbild in unser README auf GitHub ein und zeigen es auf
-        unserer Homepage auf eslint.org. Wir twittern außerdem ein Dankeschön
-        von unserem Twitter-Account (der mehr als 20.000 Follower hat). Bitte
-        kontaktiere das ESLint-Team, um Support-Sitzungen zu vereinbaren.
+        Werden Sie ein Platin-Sponsor mit einer monatlichen Spende von 2.000 USD
+        (entspricht 40 Stunden Wartung und Entwicklung). Ihr Open Collective- oder
+        GitHub-Avatarbild wird in unseren READMEs auf GitHub und auf der Startseite
+        von eslint.org angezeigt. Außerdem werden wir uns mit einem Dankeschön von
+        unserem Twitter-Account (über 38.000 Follower) bedanken.
     gold:
       title: Gold Sponsoren
       description: >
@@ -387,7 +384,7 @@ sponsors_page:
         Entwicklung verwendet wird) wirst Du Gold Sponsor. Wir fügen dein Open
         Collective- or GitHub-Avatarbild in unser README auf GitHub ein und
         zeigen es auf unserer Homepage auf eslint.org. Wir twittern außerdem ein
-        Dankeschön von unserem Twitter-Account (der mehr als 20.000 Follower hat).
+        Dankeschön von unserem Twitter-Account (der mehr als 38.000 Follower hat).
     silver:
       title: Silber Sponsoren
       description: >

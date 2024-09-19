@@ -360,21 +360,18 @@ sponsors_page:
     platinum:
       title: Platinum Sponsors
       description: >
-        Become a platinum sponsor with a monthly donation of $2000 USD (providing
-        40 hours of maintenance and development) and get 2 hours of dedicated
-        support (remote support available through chat or screen-sharing) per
-        month as well as your Open Collective or GitHub avatar image on our
-        README on GitHub and on the home page of eslint.org. We will also
-        tweet a thank you from our Twitter account (over 20,000 followers).
-        Please contact the ESLint team to schedule support sessions.
+        Become a platinum sponsor with a monthly donation of $2,000 USD (providing
+        40 hours of maintenance and development) Open Collective or GitHub avatar
+        image on our READMEs on GitHub and on the home page of eslint.org. We will also
+        tweet a thank you from our Twitter account (over 38,000 followers).
     gold:
       title: Gold Sponsors
       description: >
-        Become a gold sponsor with a monthly donation of $1000 USD (providing 20
+        Become a gold sponsor with a monthly donation of $1,000 USD (providing 20
         hours of maintenance and development) and get your Open Collective
         or GitHub avatar image on our README on GitHub and the front page of
         eslint.org. We will also tweet a thank you from our Twitter account
-        (over 20,000 followers).
+        (over 38,000 followers).
     silver:
       title: Silver Sponsors
       description: >
