@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code review nit to ecosystem improvements"
+title: "no-unused-binary-expressions: From code review nit to ecosystem improvements"
 teaser: "Reflecting on the power of lint rules"
 authors:
   - captbaritone
