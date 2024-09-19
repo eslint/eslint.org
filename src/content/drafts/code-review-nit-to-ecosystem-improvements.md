@@ -14,7 +14,7 @@ Four years ago, doing code review at work, I was surprised that [Flow](https://f
 
 The two events are connected, because that moment in code review four years ago led me to write [a lint rule](https://eslint.org/blog/2022/07/interesting-bugs-caught-by-no-constant-binary-expression/) which was part of the inspiration for the TypeScript features.
 
-Given the protracted timeline and the many intermediate steps I thought it would be interesting to reflect on what lead to this observation in code review snowballing into what I feel is a significant impact to a large number of developers, and why I think the snowball could continue to grow.
+Given the protracted timeline and the many intermediate steps I thought it would be interesting to reflect on what led to this observation in code review snowballing into what I feel is a significant impact to a large number of developers, and why I think the snowball could continue to grow.
 
 First a timeline:
 
