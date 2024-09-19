@@ -57,4 +57,4 @@ Solving problems fundamentally requires the combined insights of many people, th
 
 ---
 
-Thanks to [Brad Zacher](https://zacher.com.au/) for his initial key observation and ongoing encouragement, to [Nicholas C. Zakas](https://humanwhocodes.com/blog/) and [Milos Djermanovic](https://github.com/mdjermanovic) for significant contributions to the rule during code review, and to [Ryan Cavanaugh](https://twitter.com/SeaRyanC) for bringing these same types of validation to the TypeScript ecosystem.
+Thanks to [Brad Zacher](https://zacher.com.au/) for his initial key observation and ongoing encouragement, to [Nicholas C. Zakas](https://humanwhocodes.com/) and [Milos Djermanovic](https://github.com/mdjermanovic) for significant contributions to the rule during code review, and to [Ryan Cavanaugh](https://twitter.com/SeaRyanC) for bringing these same types of validation to the TypeScript ecosystem.
