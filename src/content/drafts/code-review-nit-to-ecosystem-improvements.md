@@ -16,7 +16,7 @@ The two events are connected, because that moment in code review four years ago 
 
 Given the protracted timeline and the many intermediate steps I thought it would be interesting to reflect on what led to this observation in code review snowballing into what I feel is a significant impact to a large number of developers, and why I think the snowball could continue to grow.
 
-First a timeline:
+To answer these questions, it helps to review the timeline of events.
 
 ## Timeline
 
