@@ -40,7 +40,7 @@ Upon reflection, there were a number of key factors that contributed to this sma
 * Meta’s culture of autonomy gave me the freedom to take on a side quest of writing this rule despite it not being part of my team’s responsibility.
 * ESLint’s pluggable architecture empowered me to write my own rule and easily deploy it across the whole company without needing to convince any gate keepers.
 * The ESLint team’s openness to, and active support of, a new contributor adding a new core rule despite a [2020 policy](https://eslint.org/docs/latest/contribute/propose-new-rule) of only accepting new rules if they relate to new language features.
-* Active communication about the work initiated by me, and amplified by the ESLint team, in the form of a blog post and Tweets. These allowed the TypeScript team to connect the dots between a more specific request they got about disallowing `if (/regex/)`, and the broader idea of detecting constant conditions.
+* Active communication about the work initiated by me, and amplified by the ESLint team, in the form of a blog post and tweets. These allowed the TypeScript team to connect the dots between a more specific request they got about disallowing `if (/regex/)`, and the broader idea of detecting constant conditions.
 * My having a somewhat obsessive personality that wasn’t satisfied with just pointing out a useless null check in code review. Instead, I saw that a fundamental solution to that class of problem was possible, and I wasn’t satisfied until that solution was enabled not just for me, my team, or my company, but for the broader ecosystem.
 
 ## What’s Next
