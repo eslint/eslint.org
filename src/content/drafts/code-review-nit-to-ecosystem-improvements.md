@@ -12,7 +12,7 @@ tags:
 ---
 Four years ago, while doing a code review at work, I was surprised that [Flow](https://flow.org/) had not warned about a null check that had become unnecessary. This month [TypeScript 5.6](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/#disallowed-nullish-and-truthy-checks1) released with validation rules that disallows nullish and truthy checks which uncovered nearly 100 existing bugs in the top 800 TypeScript repos on GitHub.
 
-The two events are connected, because that moment in code review four years ago led me to write [a lint rule](https://eslint.org/blog/2022/07/interesting-bugs-caught-by-no-constant-binary-expression/) which was part of the inspiration for the TypeScript features.
+The two events are connected, because that moment in code review four years ago led me to write [the `no-unused-binary-expressions` rule](https://eslint.org/blog/2022/07/interesting-bugs-caught-by-no-constant-binary-expression/) which helped inspire the TypeScript features.
 
 Given the protracted timeline and the many intermediate steps I thought it would be interesting to reflect on what led to this observation in code review snowballing into what I feel is a significant impact to a large number of developers, and why I think the snowball could continue to grow.
 
