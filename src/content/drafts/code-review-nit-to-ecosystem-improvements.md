@@ -48,7 +48,7 @@ Upon reflection, there were a number of key factors that contributed to this sma
 It’s taken four years for the ripple of Brad’s initial observation on that internal post to reach this point, but I think the ideas here have the potential to resonate even further:
 
 * TypeScript and Flow could internally track types which they happen to know are sound, and opportunistically report errors based on that data, allowing checks like this to be performed in many many more cases.
-* Other unsound languages which previously avoided reporting unnecessary checks for the same reason Flow did, could use this same approach to catch logic errors.
+* Other unsound languages which previously avoided reporting unnecessary checks for the same reason Flow did could use this same approach to catch logic errors.
 * More broadly, dead code elimination is a well understood area of compiler design with many codified techniques and approaches. However, they are nearly always applied as optimizations in the compiler backend. I suspect many of these same dead code elimination techniques could be brought to the front-end of the compiler and used to detect and report bugs.
 
 ## Conclusion
