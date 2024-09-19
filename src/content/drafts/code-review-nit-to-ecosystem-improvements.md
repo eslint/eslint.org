@@ -35,7 +35,7 @@ To answer these questions, it helps to review the timeline of events.
 
 Upon reflection, there were a number of key factors that contributed to this small observation in code review helping spur a meaningful ecosystem wide improvement:
 
-* Meta’s internal culture empowered me, a random engineer, to have a direct conversation with members of the Flow team, in a venue where Brad Zacher, an ESLint expert, could happen upon the conversation and chime in.
+* Meta’s internal culture empowered me, a random engineer, to have a direct conversation with members of the Flow team. That conversation happened in a venue where Brad Zacher, an ESLint expert, could happen upon it and chime in.
 * Meta’s mono-repo gave me direct access to a massive codebase which let me easily run early drafts of the rule to assess how impactful the validation would be on a vast amount of real code.
 * Meta’s culture of autonomy gave me the freedom to take on a side-quest of writing this rule despite it not being part of my team’s responsibility.
 * ESLint’s pluggable architecture empowering me to write my own rule and easily deploy it across the whole company without needing to convince any gate keepers.
