@@ -339,7 +339,7 @@ sponsors_page:
   tiers:
     platinum:
       title: プラチナスポンサー
-    description: >
+      description: >
         月額 2,000 米ドルの寄付でプラチナスポンサーになりましょう（40時間のメンテナンスと
         開発を提供）。Open Collective または GitHub のアバター画像が、GitHub の README と
         eslint.org のホームページに表示されます。また、Twitter アカウント（フォロワー20,000人
