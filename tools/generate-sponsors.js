@@ -26,19 +26,24 @@ const got = require("got");
 
 const SPONSORS_URL =
 	"https://raw.githubusercontent.com/eslint/eslint.org/main/src/_data/sponsors.json";
-const NEW_FILE_PATH = "../src/_data/sponsors.md";
+const NEW_FILE_PATH = "./sponsors.md";
 const TECH_SPONSORS_URL =
 	"https://raw.githubusercontent.com/eslint/eslint.org/main/src/_data/techsponsors.json";
 const TECH_SPONSORS_IMAGE_PATH =
 	"https://raw.githubusercontent.com/eslint/eslint.org/main/src";
 
-const heights = {
+const HEIGHTS = {
 	diamond: 160,
 	platinum: 128,
 	gold: 96,
 	silver: 64,
 	bronze: 32,
 };
+
+const SPONSOR_INTRO_TEXT = `## Sponsors
+
+The following companies, organizations, and individuals support ESLint's ongoing maintenance and development. [Become a Sponsor](https://eslint.org/donate)
+to get your logo on our READMEs and [website](https://eslint.org/sponsors).`;
 
 //-----------------------------------------------------------------------------
 // Helpers
@@ -77,7 +82,7 @@ function formatSponsors(sponsors) {
 					sponsor =>
 						`<a href="${sponsor.url || "#"}"><img src="${
 							sponsor.image
-						}" alt="${sponsor.name}" height="${heights[tier]}"></a>`,
+						}" alt="${sponsor.name}" height="${HEIGHTS[tier]}"></a>`,
 				)
 				.join(" ")}</p>`,
 			)
@@ -100,13 +105,14 @@ async function fetchTechSponsors() {
  */
 function formatTechSponsors(sponsors) {
 	return stripIndents`<!--techsponsorsstart-->
-        <h2>Technology Sponsors</h2>
+        <h3>Technology Sponsors</h3>
+        Technology sponsors allow us to use their products and services for free as part of a contribution to the open source ecosystem and our work.
             <p>${sponsors
 				.map(
 					sponsor =>
 						`<a href="${sponsor.url || "#"}"><img src="${
 							TECH_SPONSORS_IMAGE_PATH + sponsor.image
-						}" alt="${sponsor.name}" height="${heights.bronze}"></a>`,
+						}" alt="${sponsor.name}" height="${HEIGHTS.bronze}"></a>`,
 				)
 				.join(" ")}</p>
     <!--techsponsorsend-->`;
@@ -123,6 +129,7 @@ function formatTechSponsors(sponsors) {
 	]);
 
 	const newFileContent = stripIndents`
+        ${SPONSOR_INTRO_TEXT}
         ${formatSponsors(allSponsors)}
         ${formatTechSponsors(techSponsors)}
     `;
