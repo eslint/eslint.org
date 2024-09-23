@@ -17,6 +17,7 @@
 //-----------------------------------------------------------------------------
 
 const fs = require("node:fs");
+const path = require("node:path");
 const { stripIndents } = require("common-tags");
 const got = require("got");
 
@@ -26,7 +27,7 @@ const got = require("got");
 
 const SPONSORS_URL =
 	"https://raw.githubusercontent.com/eslint/eslint.org/main/src/_data/sponsors.json";
-const NEW_FILE_PATH = "./sponsors.md";
+const NEW_FILE_PATH = path.resolve(__dirname, "../sponsors/sponsors.md");
 const TECH_SPONSORS_URL =
 	"https://raw.githubusercontent.com/eslint/eslint.org/main/src/_data/techsponsors.json";
 const TECH_SPONSORS_IMAGE_PATH =
