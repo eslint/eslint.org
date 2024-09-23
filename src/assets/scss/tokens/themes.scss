@@ -136,6 +136,7 @@
 		--sponsor-background-color: #fff;
 
 		--label-text-color: var(--color-neutral-100);
+		--code-text-color: var(--color-neutral-100);
 	}
 }
 
@@ -170,6 +171,7 @@ html[data-theme="light"] {
 	--logo-center-color: var(--color-primary-600);
 
 	--label-text-color: var(--color-neutral-700);
+	--code-text-color: var(--color-neutral-900);
 }
 
 html[data-theme="dark"] {
@@ -207,4 +209,5 @@ html[data-theme="dark"] {
 	--sponsor-background-color: #fff;
 
 	--label-text-color: var(--color-neutral-100);
+	--code-text-color: var(--color-neutral-100);
 }

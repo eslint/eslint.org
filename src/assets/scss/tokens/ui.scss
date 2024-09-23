@@ -11,15 +11,18 @@
 	:root {
 		--sponsor-img-border-radius: var(--border-radius);
 		--sponsor-backers-img-border-radius: var(--border-radius);
+		--github-logo-filter: invert(100%);
 	}
 }
 
 html[data-theme="light"] {
 	--sponsor-img-border-radius: 0;
 	--sponsor-backers-img-border-radius: 50%;
+	--github-logo-filter: invert(0);
 }
 
 html[data-theme="dark"] {
 	--sponsor-img-border-radius: var(--border-radius);
 	--sponsor-backers-img-border-radius: var(--border-radius);
+	--github-logo-filter: invert(100%);
 }
