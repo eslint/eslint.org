@@ -75,6 +75,10 @@ function fixUrl(url) {
  * @returns {string} The ID of the tier the donation belongs to.
  */
 function getTierSlug(monthlyDonation) {
+	if (monthlyDonation >= 5000) {
+		return "diamond-sponsor";
+	}
+
 	if (monthlyDonation >= 2000) {
 		return "platinum-sponsor";
 	}
@@ -420,6 +424,7 @@ async function fetchGitHubSponsors() {
 
 	// simplified data structure
 	const tierSponsors = {
+		diamond: [],
 		platinum: [],
 		gold: [],
 		silver: [],
@@ -440,6 +445,10 @@ async function fetchGitHubSponsors() {
 		monthlyDonations += sponsor.monthlyDonation;
 
 		switch (sponsor.tier) {
+			case "diamond-sponsor":
+				tierSponsors.diamond.push(sponsor);
+				break;
+
 			case "platinum-sponsor":
 				tierSponsors.platinum.push(sponsor);
 				break;
