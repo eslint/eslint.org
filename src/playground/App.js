@@ -11,12 +11,14 @@ import Alert from "./components/Alert";
 import CrashAlert from "./components/CrashAlert";
 import Footer from "./components/Footer";
 import CodeEditor from "./components/CodeEditor";
-import { Linter, SourceCodeFixer } from "./node_modules/eslint/lib/linter/";
+import { Linter } from "eslint/universal";
 import Unicode from "./utils/unicode";
 import Configuration from "./components/Configuration";
 import Split from "react-split";
 import debounce from "./utils/debounce";
 import "./scss/split-pane.scss";
+
+const BOM = "\uFEFF";
 
 const DEFAULT_TEXT =
 	'/* eslint quotes: ["error", "double"] */\nconst a = \'b\';';
@@ -131,6 +133,14 @@ const hasLocalStorage = () => {
 	}
 };
 
+const applyFix = (text, fix) => {
+	const bomOffset = text.startsWith(BOM) ? 1 : 0;
+	const start = fix.range[0] + bomOffset;
+	const end = fix.range[1] + bomOffset;
+
+	return `${text.slice(0, start)}${fix.text}${text.slice(end)}`;
+};
+
 const App = () => {
 	let initialText, initialOptions;
 	const editorRef = useRef(null);
@@ -228,11 +238,7 @@ const App = () => {
 
 	const onFix = message => {
 		if (message.fix) {
-			const { output: fixedCode } = SourceCodeFixer.applyFixes(
-				text,
-				[message],
-				true,
-			);
+			const fixedCode = applyFix(text, message.fix);
 
 			setText(fixedCode);
 			storeState({ newText: fixedCode });
