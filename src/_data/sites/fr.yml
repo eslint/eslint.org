@@ -352,6 +352,13 @@ sponsors_page:
       text: Devenez Sponsor
       url: /donate
   tiers:
+    diamond:
+      title: Sponsors Diamant
+      description: >
+        Devenez un sponsor diamant avec un don mensuel de 5 000 USD (fournissant
+        60 à 100 heures de maintenance et de développement) et ajoutez votre image d'avatar Open Collective ou GitHub
+        dans nos fichiers README sur GitHub et sur la page d'accueil de eslint.org. Nous publierons également
+        un remerciement depuis notre compte Twitter (plus de 38 000 abonnés).
     platinum:
       title: Sponsors Platinum
       description: >
@@ -489,22 +496,26 @@ donate_page:
       github_sponsors_text: >
         Faire un don <span class="visually-hidden">sur GitHub</span>
     items:
-      - name: Sponsor Platinum
-        amount: 2000 $ et plus
+      - name: Sponsor Diamant
+        amount: 5000$+
         frequency: par mois
-        text: 2 heures de support, placement de logo tout en haut sur la page d'accueil et sur le README, et inclut les récompenses Or.
+        text: Placement du logo le plus élevé sur la page d'accueil et le README, et tout ce qui est inclus dans le palier Platine.
+      - name: Sponsor Platine
+        amount: 2000–4999$
+        frequency: par mois
+        text: Deuxième placement de logo le plus élevé sur la page d'accueil et le README, et tout ce qui est inclus dans le palier Or.
       - name: Sponsor Or
-        amount: De 1000 à 1999 $
+        amount: 1000–1999$
         frequency: par mois
-        text: Placement de logo sous la catégorie Platinum sur la page d'accueil et sur le README, un tweet de remerciements depuis notre compte Twitter (20000 abonnés) et un post de remerciements sur notre blog.
+        text: Troisième placement de logo le plus élevé sur la page d'accueil et le README, un tweet de remerciement depuis notre compte Twitter (38 000 abonnés) et un article de blog de remerciement optionnel.
       - name: Sponsor Argent
-        amount: De 500 à 999 $
+        amount: 500–999$
         frequency: par mois
-        text: Placement de logo sous la catégorie Or sur la page d'accueil et sur le README.
+        text: Quatrième placement de logo le plus élevé sur la page d'accueil et le README.
       - name: Sponsor Bronze
-        amount: De 200 à 499 $
+        amount: 200–499$
         frequency: par mois
-        text: Placement de logo sous la catégorie Argent sur la page d'accueil et sur le README.
+        text: Cinquième placement de logo le plus élevé sur la page d'accueil et le README.
   testimonials:
     title: Témoignages
     items:

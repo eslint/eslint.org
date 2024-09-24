@@ -357,17 +357,24 @@ sponsors_page:
       text: Become a Sponsor
       url: /donate
   tiers:
+    diamond:
+      title: Diamond Sponsors
+      description: >
+        Become a diamond sponsor with a monthly donation of $5,000 USD (providing
+        60-100 hours of maintenance and development) and get your Open Collective or GitHub avatar
+        image on our READMEs on GitHub and on the home page of eslint.org. We will also
+        tweet a thank you from our Twitter account (over 38,000 followers).
     platinum:
       title: Platinum Sponsors
       description: >
         Become a platinum sponsor with a monthly donation of $2,000 USD (providing
-        40 hours of maintenance and development) Open Collective or GitHub avatar
+        25-40 hours of maintenance and development) Open Collective or GitHub avatar
         image on our READMEs on GitHub and on the home page of eslint.org. We will also
         tweet a thank you from our Twitter account (over 38,000 followers).
     gold:
       title: Gold Sponsors
       description: >
-        Become a gold sponsor with a monthly donation of $1,000 USD (providing 20
+        Become a gold sponsor with a monthly donation of $1,000 USD (providing 12-20
         hours of maintenance and development) and get your Open Collective
         or GitHub avatar image on our README on GitHub and the front page of
         eslint.org. We will also tweet a thank you from our Twitter account
@@ -375,7 +382,7 @@ sponsors_page:
     silver:
       title: Silver Sponsors
       description: >
-        Become a silver sponsor with a monthly donation of $500 USD (providing 10
+        Become a silver sponsor with a monthly donation of $500 USD (providing 6-10
         hours of maintenance and development) and get your Open Collective
         or GitHub avatar image on our README on GitHub and the front page
         of eslint.org.
@@ -491,21 +498,25 @@ donate_page:
         Donate <span class="visually-hidden">on GitHub</span>
     items:
       - name: Platinum Sponsor
-        amount: $2000+
+        amount: $5000+
         frequency: per month
-        text: 2 hours of support, highest logo placement on homepage and readme and everything in Gold tier.
+        text: Highest logo placement on homepage and readme and everything in Platinum tier.
+      - name: Platinum Sponsor
+        amount: $2000-4999
+        frequency: per month
+        text: Second highest logo placement on homepage and readme and everything in Gold tier.
       - name: Gold Sponsor
         amount: $1000–1999
         frequency: per month
-        text: Second highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (20,000 followers) and a thank you blog post.
+        text: Third highest logo placement on homepage and readme, a Thank you tweet from our Twitter account (38,000 followers) and a optional thank you blog post.
       - name: Silver Sponsor
         amount: $500–999
         frequency: per month
-        text: Third highest logo placement on homepage and readme.
+        text: Fourth highest logo placement on homepage and readme.
       - name: Bronze Sponsor
         amount: $200–499
         frequency: per month
-        text: Fourth highest logo placement on homepage and readme.
+        text: Fifth highest logo placement on homepage and readme.
   testimonials:
     title: testimonials
     items:

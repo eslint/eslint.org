@@ -343,6 +343,13 @@ sponsors_page:
       text: Ser auspiciador
       url: /donate
   tiers:
+    diamond:
+      title: Patrocinadores Diamante
+      description: >
+        Conviértase en un patrocinador diamante con una donación mensual de $5,000 USD (proporcionando
+        60-100 horas de mantenimiento y desarrollo) y obtenga su imagen de avatar de Open Collective o GitHub
+        en nuestros READMEs en GitHub y en la página principal de eslint.org. También publicaremos un
+        agradecimiento desde nuestra cuenta de Twitter (más de 38,000 seguidores).
     platinum:
       title: Patrocinadores Platino
       description: >
@@ -476,22 +483,26 @@ donate_page:
       github_sponsors_text: >
         Donar <span class="visually-hidden">en GitHub</span>
     items:
-      - name: Auspiciador Platino
-        amount: $2000+
+      - name: Patrocinador Diamante
+        amount: $5000+
         frequency: por mes
-        text: 2 horas de soporte, el logotipo estará en la ubicación mas alta en la página de inicio, README y todo en el nivel platino.
-      - name: Patrocinador de oro
+        text: Colocación de logotipo más alta en la página de inicio y el README y todo en el nivel Platino.
+      - name: Patrocinador Platino
+        amount: $2000-4999
+        frequency: por mes
+        text: Segunda colocación de logotipo más alta en la página de inicio y el README y todo en el nivel Oro.
+      - name: Patrocinador Oro
         amount: $1000–1999
         frequency: por mes
-        text: Segunda ubicación más alta del logotipo en la página de inicio y README, un tweet de agradecimiento de nuestra cuenta de Twitter (20,000 seguidores) y una publicación de blog de agradecimiento.
+        text: Tercera colocación de logotipo más alta en la página de inicio y el README, un tweet de agradecimiento desde nuestra cuenta de Twitter (38,000 seguidores) y una publicación de blog de agradecimiento opcional.
       - name: Patrocinador Plata
         amount: $500–999
         frequency: por mes
-        text: Tercera ubicación más alta del logotipo en la página de inicio y el README.
+        text: Cuarta colocación de logotipo más alta en la página de inicio y el README.
       - name: Patrocinador Bronce
         amount: $200–499
         frequency: por mes
-        text: Cuarta ubicación más alta del logotipo en la página de inicio y el README.
+        text: Quinta colocación de logotipo más alta en la página de inicio y el README.
   testimonials:
     title: Testimonios
     items:
