@@ -328,6 +328,12 @@ sponsors_page:
       text: 开始赞助
       url: /donate
   tiers:
+    diamond:
+      title: 钻石赞助商
+      description: >
+        通过每月捐赠 5,000 美元成为钻石赞助商（提供 60-100 小时的维护和开发）。
+        您的 Open Collective 或 GitHub 头像将显示在我们 GitHub 的 README 文件和
+        eslint.org 的首页上。我们还会在 Twitter 账户（超过 38,000 名关注者）上发推感谢。
     platinum:
       title: 白金赞助商
       description: >
@@ -442,22 +448,26 @@ donate_page:
       github_sponsors_text: >
         <span class="visually-hidden">通过 GitHub </span>捐赠
     items:
-      - name: 白金赞助商
-        amount: $2000+
+      - name: 钻石赞助商
+        amount: $5000+
         frequency: 每月
-        text: 两小时支持，图标位于主页和 readme 最高级，一切都是最高级。
-      - name: 黄金赞助商
+        text: 主页和 README 文件中的最高徽标位置，以及白金赞助商的所有内容。
+      - name: 白金赞助商
+        amount: $2000-4999
+        frequency: 每月
+        text: 主页和 README 文件中的第二高徽标位置，以及金牌赞助商的所有内容。
+      - name: 金牌赞助商
         amount: $1000–1999
         frequency: 每月
-        text: 图标位于主页和 readme 第二级，来自我们的推特账号的感谢推文（两万关注者）和博客感谢文章中。
-      - name: 白银赞助商
+        text: 主页和 README 文件中的第三高徽标位置，来自我们 Twitter 账户（38,000 名关注者）的感谢推文，以及可选的感谢博客文章。
+      - name: 银牌赞助商
         amount: $500–999
         frequency: 每月
-        text: 图标位于主页和 readme 第三级。
+        text: 主页和 README 文件中的第四高徽标位置。
       - name: 青铜赞助商
         amount: $200–499
         frequency: 每月
-        text: 图标位于主页和 readme 第四级。
+        text: 主页和 README 文件中的第五高徽标位置。
   testimonials:
     title: 推荐书
     items:

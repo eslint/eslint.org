@@ -369,6 +369,14 @@ sponsors_page:
       text: Werde Sponsor
       url: /donate
   tiers:
+    diamond:
+      title: Diamant Sponsoren
+      description: >
+        Werden Sie ein Diamant-Sponsor mit einer monatlichen Spende von 5.000 USD
+        (entspricht 60-100 Stunden Wartung und Entwicklung). Ihr Open Collective- oder
+        GitHub-Avatarbild wird in unseren READMEs auf GitHub und auf der Startseite
+        von eslint.org angezeigt. Außerdem werden wir uns mit einem Dankeschön von
+        unserem Twitter-Account (über 38.000 Follower) bedanken.
     platinum:
       title: Platin Sponsoren
       description: >
@@ -515,22 +523,26 @@ donate_page:
       github_sponsors_text: >
         Spende <span class="visually-hidden">mittels GitHub</span>
     items:
-      - name: Platin Sponsor
-        amount: $2000+
+      - name: Diamant Sponsor
+        amount: $5000+
         frequency: pro Monat
-        text: Zwei Stunden Support, höchste Platzierung des Logos auf der Homepage und in der README-Datei. Zusätzlich alles aus der Gold-Sponsor Stufe.
+        text: Höchste Logo-Platzierung auf der Startseite und im README sowie alles aus der Platin-Stufe.
+      - name: Platin Sponsor
+        amount: $2000-4999
+        frequency: pro Monat
+        text: Zweithöchste Logo-Platzierung auf der Startseite und im README sowie alles aus der Gold-Stufe.
       - name: Gold Sponsor
         amount: $1000–1999
         frequency: pro Monat
-        text: Zweithöchste Platzierung des Logos auf der Homepage und in der README-Datei, ein Dankeschön-Tweet von unserem Twitter-Account (20.000 Follower) und ein Dankeschön-Post in unserem Blog.
+        text: Dritthöchste Logo-Platzierung auf der Startseite und im README, ein Dankeschön-Tweet von unserem Twitter-Account (38.000 Follower) und ein optionaler Dankeschön-Blogpost.
       - name: Silber Sponsor
         amount: $500–999
         frequency: pro Monat
-        text: Dritthöchste Platzierung des Logos auf der Homepage und in der README-Datei.
+        text: Vierthöchste Logo-Platzierung auf der Startseite und im README.
       - name: Bronze Sponsor
         amount: $200–499
         frequency: pro Monat
-        text: Vierthöchste Platzierung des Logos auf der Homepage und in der README-Datei.
+        text: Fünfthöchste Logo-Platzierung auf der Startseite und im README.
   testimonials:
     title: Referenzen
     items:
