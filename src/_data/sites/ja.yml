@@ -337,6 +337,12 @@ sponsors_page:
       text: スポンサーになる
       url: /donate
   tiers:
+    diamond:
+      title: ダイヤモンドスポンサー
+      description: >
+        月額5,000米ドルの寄付でダイヤモンドスポンサーになり、60〜100時間のメンテナンスと開発を提供します。
+        Open CollectiveまたはGitHubのアバター画像が、GitHubのREADMEとeslint.orgのホームページに表示されます。
+        また、フォロワー数38,000人以上のTwitterアカウントから感謝のツイートを投稿します。
     platinum:
       title: プラチナスポンサー
       description: >
@@ -461,22 +467,27 @@ donate_page:
       github_sponsors_text: >
         <span class="visually-hidden">GitHub</span>で寄付をします
     items:
+      - name: ダイヤモンドスポンサー
+        amount: $5000+
+        frequency: 月ごと
+        text: ホームページとREADMEの最上部にロゴを配置し、プラチナティアのすべての特典を含みます。
       - name: プラチナスポンサー
-        amount: $2000+
-        frequency: 毎月
-        text: 2時間のサポート、ホームページとREADMEの最上段にロゴを掲載。さらに、Gold Tierの全ての内容を提供します。
+        amount: $2000-4999
+        frequency: 月ごと
+        text: ホームページとREADMEの2番目に高い位置にロゴを配置し、ゴールドティアのすべての特典を含みます。
       - name: ゴールドスポンサー
         amount: $1000–1999
-        frequency: 毎月
-        text: トップページとREADMEの2段目にロゴを掲載、私たち(ESLint)のTwitterアカウント（2万人のフォロワー）からのお礼のツイート、お礼のブログ記事を掲載します。
+        frequency: 月ごと
+        text: ホームページとREADMEの3番目に高い位置にロゴを配置し、Twitterアカウント（フォロワー38,000人）からの感謝のツイートと、オプションで感謝のブログ投稿を含みます。
       - name: シルバースポンサー
         amount: $500–999
-        frequency: 毎月
-        text: トップページとREADMEの3段目にロゴを掲載。
+        frequency: 月ごと
+        text: ホームページとREADMEの4番目に高い位置にロゴを配置します。
       - name: ブロンズスポンサー
         amount: $200–499
-        frequency: 毎月
-        text: トップページとREADMEの4段目にロゴを掲載。
+        frequency: 月ごと
+        text: ホームページとREADMEの5番目に高い位置にロゴを配置します。
+
   testimonials:
     title: testimonials
     items:
