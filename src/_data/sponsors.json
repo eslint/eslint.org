@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 117132,
-        "monthlyDonations": 9761,
+        "annualDonations": 117192,
+        "monthlyDonations": 9766,
         "sponsorCount": 168
     },
     "diamond": [],
@@ -425,6 +425,14 @@
             "name": "Measured",
             "image": "https://avatars.githubusercontent.com/u/65702254?v=4",
             "url": "https://measured.co",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Pavel Romanov",
+            "image": "https://avatars.githubusercontent.com/u/82144989?u=33d98fdd99b062f43addca735cc90ae30dd79a5e&v=4",
+            "url": "https://pavel-romanov.com/",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1070,14 +1078,6 @@
             "name": "Johannes Konings",
             "image": "https://avatars.githubusercontent.com/u/14806640?u=3586bd6e631a350aec9ff1f2cc31615f72233244&v=4",
             "url": "https://johanneskonings.dev/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Niko Achilles Kokkinos",
-            "image": "https://avatars.githubusercontent.com/u/15736120?u=656fbe0265f50a4e57261ed768c92660fa2702f3&v=4",
-            "url": "https://nikoachilles.substack.com/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
