@@ -497,7 +497,7 @@ donate_page:
       github_sponsors_text: >
         Donate <span class="visually-hidden">on GitHub</span>
     items:
-      - name: Platinum Sponsor
+      - name: Diamond Sponsor
         amount: $5000+
         frequency: per month
         text: Highest logo placement on homepage and readme and everything in Platinum tier.
