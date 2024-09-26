@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117192,
-        "monthlyDonations": 9766,
-        "sponsorCount": 168
+        "annualDonations": 119592,
+        "monthlyDonations": 9966,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -98,6 +98,14 @@
             "monthlyDonation": 200,
             "totalDonations": 13000,
             "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "GitBook",
+            "image": "https://avatars.githubusercontent.com/u/7111340?v=4",
+            "url": "https://www.gitbook.com",
+            "monthlyDonation": 200,
+            "source": "github",
             "tier": "bronze-sponsor"
         },
         {
