@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119652,
-        "monthlyDonations": 9971,
-        "sponsorCount": 170
+        "annualDonations": 121980,
+        "monthlyDonations": 10165,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -73,6 +73,15 @@
         }
     ],
     "bronze": [
+        {
+            "name": "Goread.io",
+            "url": "https://goread.io/buy-instagram-followers",
+            "image": "https://images.opencollective.com/goread_io/eb6337d/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "Anagram Solver",
             "url": "https://www.crosswordsolver.org/anagram-solver/",
@@ -443,15 +452,6 @@
             "url": "https://pavel-romanov.com/",
             "monthlyDonation": 10,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Buy Google Reviews and 5 Stars",
-            "url": "https://myinstafollow.com/buy-google-business-review/",
-            "image": "https://images.opencollective.com/buy-google-reviews-and-5-stars/e7374c4/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1391,14 +1391,6 @@
             "name": "su-",
             "image": "https://avatars.githubusercontent.com/u/30166652?u=95465ea487c57300299dc3a9c708933ec91e9365&v=4",
             "url": "https://site.su-u.dev",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Gavin John",
-            "image": "https://avatars.githubusercontent.com/u/45835846?v=4",
-            "url": "https://pandapip1.com/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
