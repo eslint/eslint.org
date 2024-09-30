@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121980,
-        "monthlyDonations": 10165,
-        "sponsorCount": 169
+        "annualDonations": 124380,
+        "monthlyDonations": 10365,
+        "sponsorCount": 170
     },
     "diamond": [],
     "platinum": [
@@ -73,6 +73,15 @@
         }
     ],
     "bronze": [
+        {
+            "name": "WordHint",
+            "url": "https://www.wordhint.net/",
+            "image": "https://images.opencollective.com/wordhint/be86813/avatar.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "Goread.io",
             "url": "https://goread.io/buy-instagram-followers",
