@@ -17,8 +17,8 @@ eleventyExcludeFromCollections: true
         <div class="span-1-7 content-container">
             <div class="">
                 <div class="section-head">
-		{% if site.homepage.animation.enabled %}
-                    	<h1 class="visually-hidden">{{ site.homepage.title }}</h1>
+                    {% if site.homepage.animation.enabled %}
+                        <h1 class="visually-hidden">{{ site.homepage.title }}</h1>
                         {% include 'components/header-animation.njk' %}
                     {% else %}
                         <h1 class="section-title">{{ site.homepage.title }}</h1>
@@ -45,7 +45,7 @@ eleventyExcludeFromCollections: true
                     <a href="{{ links.donate }}" class="c-btn c-btn--secondary c-btn--large donate-link">{{ site.shared.become_a_sponsor }}</a>
                 </div>
 
-                {% set top_sponsors = sponsors.platinum | concat(sponsors.gold) %}
+                {% set top_sponsors = sponsors.diamond | concat(sponsors.platinum) | concat(sponsors.gold) %}
 
                 <div class="eslint-top-sponsors">
                     <div class="sponsor-text">{{ site.homepage.sponsor.text }}</div>
@@ -241,7 +241,7 @@ eleventyExcludeFromCollections: true
         </header>
         <div class="grid">
             <ul role="list" class="sponsors span-4-9">
-                {% for tier in ['platinum', 'gold', 'silver', 'bronze'] %}
+                {% for tier in ['diamond', 'platinum', 'gold', 'silver', 'bronze'] %}
                     {% for sponsor in sponsors[tier] %}
                         {% set sponsor_amount = sponsor.monthlyDonation %}
                         {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}

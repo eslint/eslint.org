@@ -25,6 +25,35 @@ hook: "sponsors_page"
 }) }}
 
 <section class="section">
+
+    {% if sponsors.diamond.length %}
+    <div class="content-container grid grid--center-items">
+        <div class="span-1-5">
+            <h2 class="section-title h4" id="diamond">{{ site.sponsors_page.tiers.diamond.title }}</h2>
+            <p>
+                {{ site.sponsors_page.tiers.diamond.description }}
+            </p>
+        </div>
+        <div class="span-7-12">
+            <ul role="list" class="sponsors sponsors--diamond">
+                {% for sponsor in sponsors.diamond %}
+                    {% set sponsor_amount = sponsor.monthlyDonation %}
+                    {% set sponsor_title = site.sponsors_page.sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("AMOUNT", sponsor_amount | dollars) %}
+
+                <li>
+                    <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                            alt="{{ sponsor_title }}"
+                            title="{{ sponsor_title }}" />
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if sponsors.platinum.length %}
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4" id="platinum">{{ site.sponsors_page.tiers.platinum.title }}</h2>
@@ -49,6 +78,9 @@ hook: "sponsors_page"
             </ul>
         </div>
     </div>
+    {% endif %}
+
+    {% if sponsors.gold.length %}
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4" id="gold">{{ site.sponsors_page.tiers.gold.title }}</h2>
@@ -73,6 +105,9 @@ hook: "sponsors_page"
             </ul>
         </div>
     </div>
+    {% endif %}
+
+    {% if sponsors.silver.length %}
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4" id="silver">{{ site.sponsors_page.tiers.silver.title }}</h2>
@@ -97,6 +132,9 @@ hook: "sponsors_page"
             </ul>
         </div>
     </div>
+    {% endif %}
+
+    {% if sponsors.bronze.length %}
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4" id="bronze">{{ site.sponsors_page.tiers.bronze.title }}</h2>
@@ -121,6 +159,7 @@ hook: "sponsors_page"
             </ul>
         </div>
     </div>
+    {% endif %}
     <div class="content-container grid grid--center-items">
         <div class="span-1-5">
             <h2 class="section-title h4" id="technology">{{ site.sponsors_page.tiers.technology.title }}</h2>
