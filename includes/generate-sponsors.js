@@ -16,20 +16,21 @@
 // Requirements
 //-----------------------------------------------------------------------------
 
-const fs = require("node:fs");
+const fs = require("node:fs").promises;
 const path = require("node:path");
 const { stripIndents } = require("common-tags");
-const got = require("got");
 
 //-----------------------------------------------------------------------------
 // Data
 //-----------------------------------------------------------------------------
 
-const SPONSORS_URL =
-	"https://raw.githubusercontent.com/eslint/eslint.org/main/src/_data/sponsors.json";
+const SPONSORS_URL = path.resolve(__dirname, "../src/_data/sponsors.json");
+const TECH_SPONSORS_URL = path.resolve(
+	__dirname,
+	"../src/_data/techsponsors.json",
+);
 const NEW_FILE_PATH = path.resolve(__dirname, "../sponsors/sponsors.md");
-const TECH_SPONSORS_URL =
-	"https://raw.githubusercontent.com/eslint/eslint.org/main/src/_data/techsponsors.json";
+
 const TECH_SPONSORS_IMAGE_PATH =
 	"https://raw.githubusercontent.com/eslint/eslint.org/main/src";
 
@@ -51,15 +52,38 @@ to get your logo on our READMEs and [website](https://eslint.org/sponsors).`;
 //-----------------------------------------------------------------------------
 
 /**
+ * Fetches data from the specified URL and parses it as JSON.
+ * @param {string} url The URL to fetch data from.
+ * @returns {Object|null} The parsed data object, or null if an error occurs.
+ */
+async function fetchData(url) {
+	try {
+		const data = await fs.readFile(url, "utf8");
+		return JSON.parse(data);
+	} catch (err) {
+		console.error("Error reading or parsing the file:", err);
+		return null;
+	}
+}
+
+/**
  * Fetches the latest sponsors data from the website.
- * @returns {Object} The sponsors data object.
+ * @returns {Object|null} The sponsors data object without backers.
  */
 async function fetchSponsorsData() {
-	const data = await got(SPONSORS_URL).json();
-	// remove backers from sponsors list - not shown on readme
-	delete data.backers;
+	const sponsorsData = await fetchData(SPONSORS_URL);
+	if (sponsorsData) {
+		delete sponsorsData.backers;
+	}
+	return sponsorsData;
+}
 
-	return data;
+/**
+ * Fetches the latest tech sponsors data from the website.
+ * @returns {Array<Object>|null} The tech sponsors data object.
+ */
+async function fetchTechSponsors() {
+	return fetchData(TECH_SPONSORS_URL);
 }
 
 /**
@@ -72,7 +96,7 @@ function formatSponsors(sponsors) {
 		tier => sponsors[tier].length,
 	);
 
-	return stripIndents`<!--sponsorsstart-->
+	return stripIndents`
         ${nonEmptySponsors
 			.map(
 				tier => `<h3>${tier[0].toUpperCase()}${tier.slice(
@@ -87,16 +111,7 @@ function formatSponsors(sponsors) {
 				)
 				.join(" ")}</p>`,
 			)
-			.join("")}
-    <!--sponsorsend-->`;
-}
-
-/**
- * Fetches the latest tech sponsors data from the website.
- * @returns {Array<Object>} The tech sponsors data object.
- */
-async function fetchTechSponsors() {
-	return got(TECH_SPONSORS_URL).json();
+			.join("")}`;
 }
 
 /**
@@ -105,7 +120,7 @@ async function fetchTechSponsors() {
  * @returns {string} The HTML for the tech sponsors section.
  */
 function formatTechSponsors(sponsors) {
-	return stripIndents`<!--techsponsorsstart-->
+	return stripIndents`
         <h3>Technology Sponsors</h3>
         Technology sponsors allow us to use their products and services for free as part of a contribution to the open source ecosystem and our work.
             <p>${sponsors
@@ -115,13 +130,27 @@ function formatTechSponsors(sponsors) {
 							TECH_SPONSORS_IMAGE_PATH + sponsor.image
 						}" alt="${sponsor.name}" height="${HEIGHTS.bronze}"></a>`,
 				)
-				.join(" ")}</p>
-    <!--techsponsorsend-->`;
+				.join(" ")}</p>`;
 }
 
 //-----------------------------------------------------------------------------
 // Main
 //-----------------------------------------------------------------------------
+
+/**
+ * Writes data to a specified file.
+ * @param {string} filePath The path to the file where data should be written.
+ * @param {string|Object} data The data to write to the file. If an object is provided, it should be stringified.
+ * @returns {Promise<void>} A promise that resolves when the write operation is complete.
+ * @throws {Error} Will log an error if writing to the file fails.
+ */
+async function writeData(filePath, data) {
+	try {
+		await fs.writeFile(filePath, data, "utf8");
+	} catch (err) {
+		console.error("Error writing data:", err);
+	}
+}
 
 (async () => {
 	const [allSponsors, techSponsors] = await Promise.all([
@@ -135,6 +164,6 @@ function formatTechSponsors(sponsors) {
         ${formatTechSponsors(techSponsors)}
     `;
 
-	fs.writeFileSync(NEW_FILE_PATH, newFileContent, "utf8");
+	await writeData(NEW_FILE_PATH, newFileContent);
 	console.log(`Sponsors information has been written to ${NEW_FILE_PATH}`);
 })();
