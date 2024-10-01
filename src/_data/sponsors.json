@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 124380,
-        "monthlyDonations": 10365,
-        "sponsorCount": 170
+        "annualDonations": 121980,
+        "monthlyDonations": 10165,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -77,15 +77,6 @@
             "name": "WordHint",
             "url": "https://www.wordhint.net/",
             "image": "https://images.opencollective.com/wordhint/be86813/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "Goread.io",
-            "url": "https://goread.io/buy-instagram-followers",
-            "image": "https://images.opencollective.com/goread_io/eb6337d/logo.png",
             "monthlyDonation": 200,
             "totalDonations": 200,
             "source": "opencollective",
@@ -1304,7 +1295,7 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 37,
+            "totalDonations": 38,
             "source": "opencollective",
             "tier": null
         },
