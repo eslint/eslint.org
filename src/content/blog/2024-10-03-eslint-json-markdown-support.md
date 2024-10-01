@@ -97,7 +97,7 @@ Both `@eslint/json` and `@eslint/markdown` parse source code into an AST and the
 
 Code Explorer allows you to view and explore the AST of different languages to help in creating custom rules. For JSON and Markdown, you'll get an expandable view of the AST, while JavaScript allows you to see not just the AST but also the scope and code path information that ESLint generates as it parses your code. Going forward, we'll continue to update Code Explorer with new languages and capabilities designed to help you create custom rules.
 
-And the best part? Code explorer is [open source](https://github.com/eslint/code-explorer), so you can help us make it even better.
+And the best part? Code Explorer is [open source](https://github.com/eslint/code-explorer), so you can help us make it even better.
 
 ## Write your own language plugin
 
