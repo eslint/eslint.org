@@ -38,7 +38,7 @@ const TECH_SPONSORS_IMAGE_PATH =
 	"https://raw.githubusercontent.com/eslint/eslint.org/main/src";
 
 const HEIGHTS = {
-	diamond: 160,
+	diamond: 128,
 	platinum: 128,
 	gold: 96,
 	silver: 64,
