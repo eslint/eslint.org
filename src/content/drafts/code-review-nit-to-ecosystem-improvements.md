@@ -25,7 +25,7 @@ const foo1 = !x == null;
 const foo2 = x === y ?? true;
 ```
 
-This rule, in turn, helped inspire the newly added TypeScript validations.
+The `no-constant-binary-expression` rule, in turn, helped inspire the newly added TypeScript validations.
 
 Given the protracted timeline and the many intermediate steps, I thought it would be interesting to reflect on how we got here. How did this observation in one code review snowball into a significant positive impact to developers? And how could the snowball continue to grow?
 
