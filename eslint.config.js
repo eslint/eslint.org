@@ -37,7 +37,7 @@ module.exports = [
 	},
 
 	{
-		files: ["tools/**/*.js", "includes/*.js"],
+		files: ["tools/**/*.js"],
 		rules: {
 			"no-console": "off",
 			"n/no-process-exit": "off",
