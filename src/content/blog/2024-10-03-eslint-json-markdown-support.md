@@ -61,7 +61,7 @@ For more information on configuring JSON linting, please check out the [README](
 ## Markdown linting with `@eslint/markdown`
 
 Markdown linting is accomplished using the
-[`@eslint/json`](https://npmjs.com/package/@eslint/markdown) plugin, which is the next generation of the [`eslint-plugin-markdown`](https://npmjs.com/package/eslint-plugin-markdown) plugin that only contained a processor. This new officially supported language plugin features parsing and rules for CommonMark and GitHub-Flavored Markdown. To use the plugin, install it from npm:
+[`@eslint/markdown`](https://npmjs.com/package/@eslint/markdown) plugin, which is the next generation of the [`eslint-plugin-markdown`](https://npmjs.com/package/eslint-plugin-markdown) plugin that only contained a processor. This new officially supported language plugin features parsing and rules for CommonMark and GitHub-Flavored Markdown. To use the plugin, install it from npm:
 
 ```shell
 npm install @eslint/markdown -D
