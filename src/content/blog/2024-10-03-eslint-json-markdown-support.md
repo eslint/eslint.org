@@ -87,7 +87,7 @@ export default [
 
 Similar to the JSON plugin, there are several rules built-in to the plugin, and we're looking for more suggestions. Have an idea for a rule? [Open an issue](https://github.com/eslint/markdown/issues).
 
-For more information on configuring Markdown linting, please check out the [README]([`@eslint/markdown`](https://npmjs.com/package/@eslint/markdown)).
+For more information on configuring Markdown linting, please check out the [README](https://npmjs.com/package/@eslint/markdown).
 
 ## Creating custom rules and using Code Explorer
 
