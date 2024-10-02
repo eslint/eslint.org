@@ -74,14 +74,16 @@ Then update your configuration file:
 import markdown from "@eslint/markdown";
 
 export default [
-    files: ["**/*.md"],
-    plugins: {
-        markdown
-    },
-    language: "markdown/commonmark",
-    rules: {
-        "markdown/no-html": "error"
-    }
+    {
+        files: ["**/*.md"],
+        plugins: {
+            markdown
+        },
+        language: "markdown/commonmark",
+        rules: {
+            "markdown/no-html": "error"
+        }
+    }    
 ];
 ```
 
