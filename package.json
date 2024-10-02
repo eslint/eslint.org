@@ -21,7 +21,7 @@
     "build:playground:watch": "webpack watch --mode=development",
     "build:sass": "sass --no-source-map --style=compressed src/assets/scss:src/assets/css",
     "build:sass:watch": "sass --watch src/assets/scss:src/assets/css",
-    "build:sponsors": "node includes/generate-sponsors.js",
+    "build:sponsors": "node tools/generate-sponsors.js",
     "build:website": "npx @11ty/eleventy",
     "build:website:watch": "cross-env IS_DEV=true eleventy --serve --port=2022",
     "fetch": "npm-run-all --parallel fetch:*",

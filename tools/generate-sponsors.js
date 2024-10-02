@@ -24,12 +24,15 @@ const { stripIndents } = require("common-tags");
 // Data
 //-----------------------------------------------------------------------------
 
-const SPONSORS_URL = path.resolve(__dirname, "../src/_data/sponsors.json");
-const TECH_SPONSORS_URL = path.resolve(
+const SPONSORS_FILE_PATH = path.resolve(
+	__dirname,
+	"../src/_data/sponsors.json",
+);
+const TECH_SPONSORS_FILE_PATH = path.resolve(
 	__dirname,
 	"../src/_data/techsponsors.json",
 );
-const NEW_FILE_PATH = path.resolve(__dirname, "../sponsors/sponsors.md");
+const NEW_FILE_PATH = path.resolve(__dirname, "../includes/sponsors.md");
 
 const TECH_SPONSORS_IMAGE_PATH =
 	"https://raw.githubusercontent.com/eslint/eslint.org/main/src";
@@ -52,13 +55,13 @@ to get your logo on our READMEs and [website](https://eslint.org/sponsors).`;
 //-----------------------------------------------------------------------------
 
 /**
- * Fetches data from the specified URL and parses it as JSON.
- * @param {string} url The URL to fetch data from.
- * @returns {Object|null} The parsed data object, or null if an error occurs.
+ * Reads a file from the specified path and parses it as JSON.
+ * @param {string} filePath The path to the file to be read.
+ * @returns {Object|null} The parsed data object if successful, or null if an error occurs.
  */
-async function fetchData(url) {
+async function readData(filePath) {
 	try {
-		const data = await fs.readFile(url, "utf8");
+		const data = await fs.readFile(filePath, "utf8");
 		return JSON.parse(data);
 	} catch (err) {
 		console.error("Error reading or parsing the file:", err);
@@ -71,7 +74,7 @@ async function fetchData(url) {
  * @returns {Object|null} The sponsors data object without backers.
  */
 async function fetchSponsorsData() {
-	const sponsorsData = await fetchData(SPONSORS_URL);
+	const sponsorsData = await readData(SPONSORS_FILE_PATH);
 	if (sponsorsData) {
 		delete sponsorsData.backers;
 	}
@@ -83,7 +86,7 @@ async function fetchSponsorsData() {
  * @returns {Array<Object>|null} The tech sponsors data object.
  */
 async function fetchTechSponsors() {
-	return fetchData(TECH_SPONSORS_URL);
+	return readData(TECH_SPONSORS_FILE_PATH);
 }
 
 /**
