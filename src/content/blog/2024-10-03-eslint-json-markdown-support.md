@@ -56,7 +56,7 @@ export default [
 
 There are several rules built-in to the plugin, and we're looking for more suggestions. Have an idea for a rule? [Open an issue](https://github.com/eslint/json/issues).
 
-For more information on configuring JSON linting, please check out the [README]([`@eslint/json`](https://npmjs.com/package/@eslint/json)).
+For more information on configuring JSON linting, please check out the [README](https://npmjs.com/package/@eslint/json).
 
 ## Markdown linting with `@eslint/markdown`
 
