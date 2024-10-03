@@ -1,12 +1,10 @@
-const { DateTime } = require("luxon");
-
 module.exports = collection => {
 	let now = new Date();
 	const CONTEXT = process.env.CONTEXT;
-	const showFuturePostsAndDrafts = !CONTEXT || CONTEXT === "deploy-preview";
+	const showDrafts = !CONTEXT || CONTEXT === "deploy-preview";
 
 	// for local development and deploy previews, show drafts
-	const drafts = showFuturePostsAndDrafts
+	const drafts = showDrafts
 		? collection
 				.getFilteredByGlob("./src/content/drafts/*.md")
 				.filter(item => !item.inputPath.includes("README.md"))
@@ -16,10 +14,7 @@ module.exports = collection => {
 		collection
 			.getFilteredByGlob("./src/content/blog/*.md")
 			.filter(item => {
-				return (
-					showFuturePostsAndDrafts ||
-					(!item.data.draft && item.date <= now)
-				);
+				return showDrafts || !item.data.draft;
 			})
 			.reverse(),
 	);
