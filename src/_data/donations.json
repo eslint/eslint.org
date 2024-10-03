@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AEnYc",
+        "name": "Daniel Cela",
+        "image": "https://avatars.githubusercontent.com/u/13622306?u=5344fd11527b499a89e21836d75b49a2e75ae588&v=4",
+        "url": "https://danielcela.com",
+        "amount": 1,
+        "date": "2024-10-02T13:07:10Z",
+        "source": "github"
+    },
+    {
         "id": "ywz9j4av-god8pgwk-5b36mr35-nxklb0e7",
         "name": "Open Source Collective",
         "url": "https://oscollective.org/",
@@ -42,15 +51,6 @@
         "url": "https://omarbasem.com",
         "amount": 1,
         "date": "2024-09-07T11:20:52Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEkJm",
-        "name": "Ray Harris",
-        "image": "https://avatars.githubusercontent.com/u/2948753?v=4",
-        "url": "https://github.com/raymondgh",
-        "amount": 1,
-        "date": "2024-09-03T20:40:29Z",
         "source": "github"
     },
     {
