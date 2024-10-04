@@ -106,4 +106,10 @@ module.exports = [
 			],
 		},
 	},
+	{
+		files: [".eleventy.js"],
+		rules: {
+			"no-console": "off",
+		},
+	},
 ];

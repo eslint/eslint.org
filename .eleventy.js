@@ -19,6 +19,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
 const path = require("node:path");
+const fs = require("node:fs");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 
@@ -35,11 +36,32 @@ module.exports = eleventyConfig => {
 	// Support YAML data files
 	eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
 
-	// filter our draft posts in production only
+	// filter out draft posts and future posts in production only
 	const CONTEXT = process.env.CONTEXT;
 
 	if (CONTEXT && CONTEXT !== "deploy-preview") {
 		eleventyConfig.ignores.add("src/content/drafts/");
+
+		const blogDir = "src/content/blog";
+		const blogFiles = fs.readdirSync(path.resolve(__dirname, blogDir));
+
+		blogFiles.forEach(blogFile => {
+			const match = /^(?<date>\d{4}-\d{2}-\d{2})-.*\.md$/u.exec(blogFile);
+
+			if (!match) {
+				return;
+			}
+
+			const date = match.groups.date;
+
+			if (Date.parse(date) > Date.now()) {
+				const ignorePattern = `${blogDir}/${blogFile}`;
+
+				console.log(`Ignoring future blog post ${ignorePattern}`);
+
+				eleventyConfig.ignores.add(ignorePattern);
+			}
+		});
 	}
 
 	// Make Nunjucks more strict
