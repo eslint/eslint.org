@@ -72,7 +72,6 @@
     "@octokit/graphql": "^4.8.0",
     "@octokit/rest": "^18.12.0",
     "babel-loader": "^8.2.3",
-    "common-tags": "^1.8.2",
     "cheerio": "*",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
