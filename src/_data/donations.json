@@ -1,5 +1,14 @@
 [
     {
+        "id": "v349mrwg-z75lpy50-d9z6a08d-jeybknox",
+        "name": "THANKS.DEV",
+        "url": "https://thanks.dev",
+        "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
+        "amount": 121.87,
+        "date": "2024-10-04T12:12:50.274Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AEnYc",
         "name": "Daniel Cela",
         "image": "https://avatars.githubusercontent.com/u/13622306?u=5344fd11527b499a89e21836d75b49a2e75ae588&v=4",
@@ -231,15 +240,6 @@
         "image": "https://images.opencollective.com/sayzlim/22f657d/avatar.png",
         "amount": 10,
         "date": "2023-11-10T10:18:19.588Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "3kzxy4v0-7wlr6mkk-oyeqmj9n-o8agdbe5",
-        "name": "James Simone",
-        "url": null,
-        "image": "https://images.opencollective.com/james-simone/dc9b19b/avatar.png",
-        "amount": 250,
-        "date": "2023-10-18T21:17:33.312Z",
         "source": "opencollective"
     }
 ]
