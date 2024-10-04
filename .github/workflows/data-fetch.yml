@@ -40,6 +40,9 @@ jobs:
       env:
         ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
 
+    - name: Generate sponsor data
+      run: npm run build:sponsors
+
     - name: Setup Git
       run: |
         git config user.name "GitHub Actions Bot"
