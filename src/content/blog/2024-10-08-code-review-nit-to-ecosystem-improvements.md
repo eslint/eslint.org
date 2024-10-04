@@ -5,7 +5,7 @@ teaser: "How implementing an ESLint rule led to changes in how people write Java
 authors:
   - captbaritone
 categories:
-  - Case Studies
+  - Storytime
 tags:
   - Guest Post
   - Rules
