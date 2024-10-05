@@ -48,7 +48,8 @@ const HEIGHTS = {
 const SPONSOR_INTRO_TEXT = `## Sponsors
 
 The following companies, organizations, and individuals support ESLint's ongoing maintenance and development. [Become a Sponsor](https://eslint.org/donate)
-to get your logo on our READMEs and [website](https://eslint.org/sponsors).`;
+to get your logo on our READMEs and [website](https://eslint.org/sponsors).
+`;
 
 //-----------------------------------------------------------------------------
 // Helpers
