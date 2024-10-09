@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121680,
-        "monthlyDonations": 10140,
-        "sponsorCount": 165
+        "annualDonations": 121620,
+        "monthlyDonations": 10135,
+        "sponsorCount": 164
     },
     "diamond": [],
     "platinum": [
@@ -443,15 +443,6 @@
             "url": "https://pavel-romanov.com/",
             "monthlyDonation": 10,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Que Narras",
-            "url": "https://www.quenarras.com/",
-            "image": "https://images.opencollective.com/que-narras/34fb099/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 10,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
