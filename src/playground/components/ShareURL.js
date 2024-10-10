@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-export default function ShareURL({ url }) {
+const getTemplate = code => `\`\`\`js
+${code}
+\`\`\``;
+
+export default function ShareURL({ url, errors, config }) {
 	const [isDataCopied, setIsDataCopied] = useState(false);
 	const [showShareURL, setShowShareURL] = useState(false);
 
@@ -10,7 +14,7 @@ export default function ShareURL({ url }) {
 				className="playground-toggle c-btn c-btn--ghost"
 				onClick={() => setShowShareURL(currentValue => !currentValue)}
 			>
-				<h2 data-config-section-title>Share URL</h2>
+				<h2 data-config-section-title>Share</h2>
 				<svg
 					height="20"
 					width="20"
@@ -89,6 +93,46 @@ export default function ShareURL({ url }) {
 							</span>
 						)}
 					</div>
+
+					<button
+						onClick={() => {
+							const reportUrl = new URL(
+								"https://github.com/eslint/eslint/issues/new",
+							);
+							const params = {
+								labels: "bug,repro:yes",
+								template: "bug-report.yml",
+								"repro-url": window.location.href,
+								"lint-output": errors
+									.map(
+										({ line, column, message, ruleId }) =>
+											`${line}:${column} ${message} (${ruleId})`,
+									)
+									.join("\n"),
+								description: getTemplate(config),
+							};
+
+							Object.entries(params).forEach(([key, value]) => {
+								reportUrl.searchParams.append(key, value);
+							});
+
+							if (reportUrl.search.length > 8148) {
+								reportUrl.searchParams.set(
+									"description",
+									"<!-- The configuration has been saved to clipboard. Please paste it here 👇🏻 -->",
+								);
+
+								navigator?.clipboard.writeText(
+									getTemplate(config),
+								);
+							}
+
+							window.open(reportUrl, "_blank");
+						}}
+						className="c-btn c-btn--secondary report-issue-btn"
+					>
+						Report an issue
+					</button>
 				</div>
 			)}
 		</div>
