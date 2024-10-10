@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121620,
-        "monthlyDonations": 10135,
-        "sponsorCount": 164
+        "annualDonations": 121920,
+        "monthlyDonations": 10160,
+        "sponsorCount": 165
     },
     "diamond": [],
     "platinum": [
@@ -217,6 +217,14 @@
             "name": "Lex Machina",
             "image": "https://avatars.githubusercontent.com/u/1168494?v=4",
             "url": "https://lexmachina.com",
+            "monthlyDonation": 25,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Sanofi-Public",
+            "image": "https://avatars.githubusercontent.com/u/94403953?v=4",
+            "url": "https://www.sanofi.com/",
             "monthlyDonation": 25,
             "source": "github",
             "tier": "backer"
