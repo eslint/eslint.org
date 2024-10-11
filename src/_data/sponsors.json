@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121920,
-        "monthlyDonations": 10160,
-        "sponsorCount": 165
+        "annualDonations": 121932,
+        "monthlyDonations": 10161,
+        "sponsorCount": 166
     },
     "diamond": [],
     "platinum": [
@@ -1180,7 +1180,7 @@
             "url": "https://jblandry.info",
             "image": "https://images.opencollective.com/jblandry/e7d47d8/avatar.png",
             "monthlyDonation": 2,
-            "totalDonations": 255,
+            "totalDonations": 275,
             "source": "opencollective",
             "tier": null
         },
@@ -1346,6 +1346,14 @@
             "name": "Stephen Zhang",
             "image": "https://avatars.githubusercontent.com/u/19246983?u=69c6925f1e932a74d22710298fd6791fd126bce6&v=4",
             "url": "https://github.com/swinzy",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Juhyeok Kang",
+            "image": "https://avatars.githubusercontent.com/u/23312485?u=56d44be9f5705224b1914bf365a1d7c6f022e2bf&v=4",
+            "url": "https://kangju.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
