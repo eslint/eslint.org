@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121932,
-        "monthlyDonations": 10161,
-        "sponsorCount": 166
+        "annualDonations": 121944,
+        "monthlyDonations": 10162,
+        "sponsorCount": 167
     },
     "diamond": [],
     "platinum": [
@@ -1290,6 +1290,14 @@
             "name": "Ethan Glover",
             "image": "https://avatars.githubusercontent.com/u/3924176?u=c00121ab8bd1d501799150db672276615e136415&v=4",
             "url": "https://www.ethang.dev/",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Oliver Radwell",
+            "image": "https://avatars.githubusercontent.com/u/5054896?u=49b4ab60d7caed33a655a7f921a5a130cf28388a&v=4",
+            "url": "https://www.radwell.codes",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
