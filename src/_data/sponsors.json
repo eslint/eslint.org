@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 121944,
-        "monthlyDonations": 10162,
-        "sponsorCount": 167
+        "annualDonations": 122124,
+        "monthlyDonations": 10177,
+        "sponsorCount": 170
     },
     "diamond": [],
     "platinum": [
@@ -451,6 +451,33 @@
             "url": "https://pavel-romanov.com/",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Proxy Coupons",
+            "url": "https://proxy.coupons",
+            "image": "https://images.opencollective.com/proxy-coupons/9dd588f/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Bountii",
+            "url": "https://bountii.co/",
+            "image": "https://images.opencollective.com/bountii/7cd628b/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "ChaturbateAlternatives",
+            "url": "https://chaturbatealternatives.com",
+            "image": "https://images.opencollective.com/chaturbatealternatives/45a0f97/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
