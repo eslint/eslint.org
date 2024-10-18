@@ -26,18 +26,15 @@
 		display: block;
 		height: auto;
 		max-height: 3rem;
-
-		[data-theme="dark"] & {
-			background-color: #fff;
-			border-radius: var(--border-radius);
-		}
+		background-color: var(--sponsor-background-color);
+		border-radius: var(--sponsor-img-border-radius);
 	}
 }
 
 .sponsors.sponsors--backers {
 	picture,
 	img {
-		border-radius: 50%;
+		border-radius: var(--sponsor-backers-img-border-radius);
 	}
 }
 

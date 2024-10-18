@@ -2,6 +2,7 @@
 @import "tokens/spacing";
 @import "tokens/typography";
 @import "tokens/ui";
+@import "tokens/opacity";
 
 @import "foundations";
 @import "syntax-highlighter";
@@ -38,5 +39,6 @@
 @import "components/index";
 @import "components/playground-configuration";
 @import "components/popup";
+@import "components/logo";
 
 @import "utilities";
