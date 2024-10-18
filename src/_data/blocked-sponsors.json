@@ -2,5 +2,17 @@
     {
         "name": "@OMB_A11PX_EL ",
         "source": "github"
+    },
+    {
+        "name": "proxy-coupons",
+        "source": "opencollective"
+    },
+    {
+        "name": "bountii",
+        "source": "opencollective"
+    },
+    {
+        "name": "chaturbatealternatives",
+        "source": "opencollective"
     }
 ]
