@@ -105,6 +105,7 @@ export default function Configuration({
 	initialOptions,
 	rulesMeta,
 	eslintVersion,
+	errors,
 	onUpdate,
 	options,
 	ruleNames,
@@ -232,7 +233,11 @@ export default function Configuration({
 	return (
 		<div className="playground__config-options__sections">
 			<div className="playground__config-options__section">
-				<ShareURL url={window.location} />
+				<ShareURL
+					errors={errors}
+					url={window.location}
+					config={configFileContent}
+				/>
 			</div>
 			<div className="playground__config-options__section">
 				<button
