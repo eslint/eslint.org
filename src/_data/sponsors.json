@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122124,
-        "monthlyDonations": 10177,
-        "sponsorCount": 170
+        "annualDonations": 122256,
+        "monthlyDonations": 10188,
+        "sponsorCount": 173
     },
     "diamond": [],
     "platinum": [
@@ -454,6 +454,24 @@
             "tier": "backer"
         },
         {
+            "name": "Black Hat Webmasters",
+            "url": "https://blackhatwebmasters.com",
+            "image": "https://images.opencollective.com/black-hat-webmasters/0e55bbd/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "John’s Directory",
+            "url": "https://johnsporn.com",
+            "image": "https://images.opencollective.com/johns-directory/20379c3/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Proxy Coupons",
             "url": "https://proxy.coupons",
             "image": "https://images.opencollective.com/proxy-coupons/9dd588f/logo.png",
@@ -472,9 +490,9 @@
             "tier": "backer"
         },
         {
-            "name": "ChaturbateAlternatives",
+            "name": "Alternatives-7563467",
             "url": "https://chaturbatealternatives.com",
-            "image": "https://images.opencollective.com/chaturbatealternatives/45a0f97/logo.png",
+            "image": "https://images.opencollective.com/alternatives-7563467/45a0f97/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 5,
             "source": "opencollective",
@@ -1413,6 +1431,14 @@
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
             "url": "https://vezel.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "xxtf1z",
+            "image": "https://avatars.githubusercontent.com/u/98784191?u=e3628692ed2866bd6d41e454e85781eb28040004&v=4",
+            "url": "https://github.com/x1yizhuo",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
