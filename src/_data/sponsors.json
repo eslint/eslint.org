@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122256,
-        "monthlyDonations": 10188,
-        "sponsorCount": 173
+        "annualDonations": 122016,
+        "monthlyDonations": 10168,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -454,44 +454,8 @@
             "tier": "backer"
         },
         {
-            "name": "Black Hat Webmasters",
-            "url": "https://blackhatwebmasters.com",
-            "image": "https://images.opencollective.com/black-hat-webmasters/0e55bbd/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "John’s Directory",
-            "url": "https://johnsporn.com",
-            "image": "https://images.opencollective.com/johns-directory/20379c3/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Proxy Coupons",
-            "url": "https://proxy.coupons",
-            "image": "https://images.opencollective.com/proxy-coupons/9dd588f/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Bountii",
-            "url": "https://bountii.co/",
-            "image": "https://images.opencollective.com/bountii/7cd628b/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Alternatives-7563467",
-            "url": "https://chaturbatealternatives.com",
+            "url": null,
             "image": "https://images.opencollective.com/alternatives-7563467/45a0f97/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 5,
