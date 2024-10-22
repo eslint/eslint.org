@@ -6,7 +6,6 @@ const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
-const { fixupPluginRules } = require("@eslint/compat");
 
 const playgroundFiles = "src/playground/**/*.{js,jsx}";
 
@@ -53,8 +52,8 @@ module.exports = [
 		files: [playgroundFiles],
 		plugins: {
 			react: reactPlugin,
-			"jsx-a11y": fixupPluginRules(jsxA11yPlugin),
-			"react-hooks": fixupPluginRules(reactHooksPlugin),
+			"jsx-a11y": jsxA11yPlugin,
+			"react-hooks": reactHooksPlugin,
 		},
 		settings: {
 			react: {
