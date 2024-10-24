@@ -100,6 +100,12 @@
 	--editor-bracket-no-match-outline-color: var(--color-rose-500);
 	--editor-bracket-no-match-background-color: none;
 	--editor-bracket-no-match-color: none;
+
+	--logo-color: var(--color-primary-800);
+	--logo-center-color: var(--color-primary-600);
+
+	--label-text-color: var(--color-neutral-700);
+	--code-text-color: var(--color-neutral-900);
 }
 
 @media (prefers-color-scheme: dark) {
