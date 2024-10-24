@@ -3,6 +3,7 @@
  * This script generates a markdown file containing sponsor information.
  * It fetches sponsor data from specified JSON files, formats
  * the data into HTML sections, and writes the output to a new markdown file.
+ * Additionally, it updates the README file with the latest sponsor information.
  *
  * Usage:
  *   Run the script using Node.js:
@@ -51,6 +52,8 @@ The following companies, organizations, and individuals support ESLint's ongoing
 to get your logo on our READMEs and [website](https://eslint.org/sponsors).
 `;
 
+const README_FILE_PATH = path.resolve(__dirname, "../README.md");
+
 //-----------------------------------------------------------------------------
 // Helpers
 //-----------------------------------------------------------------------------
@@ -63,7 +66,7 @@ to get your logo on our READMEs and [website](https://eslint.org/sponsors).
 async function readData(filePath) {
 	try {
 		const data = await fs.readFile(filePath, "utf8");
-		return JSON.parse(data);
+		return data;
 	} catch (err) {
 		console.error("Error reading or parsing the file:", err);
 		return null;
@@ -76,10 +79,11 @@ async function readData(filePath) {
  */
 async function fetchSponsorsData() {
 	const sponsorsData = await readData(SPONSORS_FILE_PATH);
-	if (sponsorsData) {
-		delete sponsorsData.backers;
+	const parsedSponsorData = JSON.parse(sponsorsData);
+	if (parsedSponsorData) {
+		delete parsedSponsorData.backers;
 	}
-	return sponsorsData;
+	return parsedSponsorData;
 }
 
 /**
@@ -87,7 +91,9 @@ async function fetchSponsorsData() {
  * @returns {Array<Object>|null} The tech sponsors data object.
  */
 async function fetchTechSponsors() {
-	return readData(TECH_SPONSORS_FILE_PATH);
+	const sponsorsData = await readData(TECH_SPONSORS_FILE_PATH);
+	const parsedSponsorData = JSON.parse(sponsorsData);
+	return parsedSponsorData;
 }
 
 /**
@@ -156,18 +162,37 @@ async function writeData(filePath, data) {
 	}
 }
 
+/**
+ * Updates the README file with the latest sponsors information.
+ * @param {string} sponsorsInfo The HTML string containing formatted sponsor information to be inserted.
+ * @returns {Promise<void>} A promise that resolves when the update operation is complete.
+ */
+async function updateReadme(sponsorsInfo) {
+	const readme = await readData(README_FILE_PATH);
+	let newReadme = readme.replace(
+		/<!--sponsorsstart-->[\w\W]*?<!--sponsorsend-->/u,
+		`<!--sponsorsstart-->\n\n${sponsorsInfo}\n<!--sponsorsend-->`,
+	);
+
+	// replace multiple consecutive blank lines with just one blank line
+	newReadme = newReadme.replace(/(?<=^|\n)\n{2,}/gu, "\n");
+	writeData(README_FILE_PATH, newReadme);
+}
+
 (async () => {
-	const [allSponsors, techSponsors] = await Promise.all([
+	const [sponsors, techSponsors] = await Promise.all([
 		fetchSponsorsData(),
 		fetchTechSponsors(),
 	]);
 
-	const newFileContent = stripIndents`
+	const allSponsors = stripIndents`
         ${SPONSOR_INTRO_TEXT}
-        ${formatSponsors(allSponsors)}
+        ${formatSponsors(sponsors)}
         ${formatTechSponsors(techSponsors)}
     `;
 
-	await writeData(NEW_FILE_PATH, newFileContent);
+	await writeData(NEW_FILE_PATH, allSponsors);
 	console.log(`Sponsors information has been written to ${NEW_FILE_PATH}`);
+
+	updateReadme(allSponsors);
 })();
