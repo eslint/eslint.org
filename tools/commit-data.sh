@@ -4,15 +4,15 @@
 # Commits the data files if any have changed
 #------------------------------------------------------------------------------
 
-if [ -z "$(git status --porcelain)" ]; then 
+if [ -z "$(git status --porcelain)" ]; then
 	echo "Data did not change."
 else
 	echo "Data changed!"
 
 	# commit the result
-	git add src/_data/ includes/
+	git add src/_data/ includes/ README.md
 	git commit -m "chore: Update remote data"
 
 	# push back to source control
-	git push origin HEAD  
+	git push origin HEAD
 fi
