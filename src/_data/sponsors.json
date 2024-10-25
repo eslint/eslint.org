@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 122016,
-        "monthlyDonations": 10168,
-        "sponsorCount": 169
+        "annualDonations": 119616,
+        "monthlyDonations": 9968,
+        "sponsorCount": 168
     },
     "diamond": [],
     "platinum": [
@@ -129,14 +129,6 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "Nextbase Starter Kit",
-            "image": "https://avatars.githubusercontent.com/u/145838380?v=4",
-            "url": "https://usenextbase.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
