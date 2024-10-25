@@ -45,7 +45,7 @@ const knownOneTimers = new Set([
 const { ESLINT_GITHUB_TOKEN } = process.env;
 
 if (!ESLINT_GITHUB_TOKEN) {
-	throw new Error("Missing ESLINT_GITHUB_TOKEN.");
+	// throw new Error("Missing ESLINT_GITHUB_TOKEN.");
 }
 
 //-----------------------------------------------------------------------------
@@ -414,28 +414,29 @@ async function fetchThanksDevData() {
 		);
 	}
 
-	const sponsors = Object.values(payload.donors).reduce(
-		(accumulator, { name, login, avatar, url, payments }) => {
+	const sponsors = Object.values(payload.donors)
+		.filter(({ payments }) => {
 			const lastPayment = payments.at(-1);
 
 			const paymentMonth = new Date(lastPayment.month).getMonth();
 			const currentMonth = new Date().getMonth();
 
-			if (paymentMonth === currentMonth) {
-				accumulator.push({
-					name: name ?? login,
-					url: fixUrl(url),
-					image: avatar,
-					monthlyDonation: Number(lastPayment.amount),
-					source: "thanksdev",
-					tier: getTierSlug(lastPayment.amount),
-				});
-			}
+			const paymentYear = new Date(lastPayment.month).getFullYear();
+			const currentYear = new Date().getFullYear();
 
-			return accumulator;
-		},
-		[],
-	);
+			return paymentMonth === currentMonth && paymentYear === currentYear;
+		})
+		.map(({ name, login, avatar, url, payments }) => {
+			const { amount } = payments.at(-1);
+			return {
+				name: name ?? login,
+				url: fixUrl(url),
+				image: avatar,
+				monthlyDonation: Number(amount),
+				source: "thanks.dev",
+				tier: getTierSlug(amount),
+			};
+		});
 
 	return {
 		sponsors,
