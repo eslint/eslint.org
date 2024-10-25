@@ -100,7 +100,9 @@ function getTierSlug(monthlyDonation) {
 
 /**
  * Fetch order data from Open Collective using the GraphQL API.
- * @returns {Array} An array of sponsors.
+ * @returns {Promise<{sponsors: Array, donations: Array}>} An promise that resolves to an object with two properties:
+ *  - `sponsors` (Array): List of sponsors
+ * - `donations` (Array): List of donations
  */
 async function fetchOpenCollectiveData() {
 	const endpoint = "https://api.opencollective.com/graphql/v2";
@@ -205,7 +207,9 @@ async function fetchOpenCollectiveData() {
 
 /**
  * Fetches GitHub Sponsors data using the GraphQL API.
- * @returns {Array} An array of sponsors.
+ * @returns {Promise<{sponsors: Array, donations: Array}>} An promise that resolves to an object with two properties:
+ *   - `sponsors` (Array): List of sponsors
+ *  - `donations` (Array): List of donations
  */
 async function fetchGitHubSponsors() {
 	function sponsorshipsQuery(cursor = null) {
@@ -387,6 +391,57 @@ async function fetchGitHubSponsors() {
 	};
 }
 
+/**
+ * Fetches thanks.dev data using the REST API.
+ * @returns {Promise<{sponsors: Array}>} An promise that resolves to an object with one property:
+ *  - `sponsors` (Array): List of sponsors
+ */
+async function fetchThanksDevData() {
+	const endpoint = "https://api.thanks.dev/v1/entity/gh/eslint/donors";
+
+	const { body: result } = await request(endpoint, {
+		method: "GET",
+		headers: { "Content-Type": "application/json" },
+	});
+
+	const payload = await result.json();
+
+	if (process.env.DEBUG) {
+		await fs.writeFile(
+			"./debug-thanksdev-raw-response.json",
+			JSON.stringify(payload, null, 4),
+			{ encoding: "utf8" },
+		);
+	}
+
+	const sponsors = Object.values(payload.donors).reduce(
+		(accumulator, { name, login, avatar, url, payments }) => {
+			const lastPayment = payments.at(-1);
+
+			const paymentMonth = new Date(lastPayment.month).getMonth();
+			const currentMonth = new Date().getMonth();
+
+			if (paymentMonth === currentMonth) {
+				accumulator.push({
+					name: name ?? login,
+					url: fixUrl(url),
+					image: avatar,
+					monthlyDonation: Number(lastPayment.amount),
+					source: "thanksdev",
+					tier: getTierSlug(lastPayment.amount),
+				});
+			}
+
+			return accumulator;
+		},
+		[],
+	);
+
+	return {
+		sponsors,
+	};
+}
+
 //-----------------------------------------------------------------------------
 // Main
 //-----------------------------------------------------------------------------
@@ -402,6 +457,7 @@ async function fetchGitHubSponsors() {
 	] = await Promise.all([
 		fetchOpenCollectiveData(),
 		fetchGitHubSponsors(),
+		fetchThanksDevData(),
 		fs
 			.readFile(blockedSponsorsFilename, { encoding: "utf8" })
 			.then(data => JSON.parse(data)),
