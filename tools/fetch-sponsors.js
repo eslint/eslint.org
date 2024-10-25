@@ -453,6 +453,7 @@ async function fetchThanksDevData() {
 			donations: openCollectiveDonations,
 		},
 		{ sponsors: githubSponsors, donations: githubDonations },
+		{ sponsors: thanksDevSponsors },
 		blockedSponsors,
 	] = await Promise.all([
 		fetchOpenCollectiveData(),
@@ -465,6 +466,7 @@ async function fetchThanksDevData() {
 
 	const sponsors = openCollectiveSponsors
 		.concat(githubSponsors)
+		.concat(thanksDevSponsors)
 		.filter(
 			sponsor =>
 				!blockedSponsors.some(
