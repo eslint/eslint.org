@@ -45,7 +45,7 @@ const knownOneTimers = new Set([
 const { ESLINT_GITHUB_TOKEN } = process.env;
 
 if (!ESLINT_GITHUB_TOKEN) {
-	// throw new Error("Missing ESLINT_GITHUB_TOKEN.");
+	throw new Error("Missing ESLINT_GITHUB_TOKEN.");
 }
 
 //-----------------------------------------------------------------------------
@@ -418,13 +418,14 @@ async function fetchThanksDevData() {
 		.filter(({ payments }) => {
 			const lastPayment = payments.at(-1);
 
-			const paymentMonth = new Date(lastPayment.month).getMonth();
-			const currentMonth = new Date().getMonth();
+			const now = new Date();
+			const isCurrentYear =
+				now.getFullYear().toString() === lastPayment.month.slice(0, 4);
+			const isCurrentMonth =
+				(now.getMonth() + 1).toString().padStart(2, "0") ===
+				lastPayment.month.slice(5, 7);
 
-			const paymentYear = new Date(lastPayment.month).getFullYear();
-			const currentYear = new Date().getFullYear();
-
-			return paymentMonth === currentMonth && paymentYear === currentYear;
+			return isCurrentMonth && isCurrentYear;
 		})
 		.map(({ name, login, avatar, url, payments }) => {
 			const { amount } = payments.at(-1);
