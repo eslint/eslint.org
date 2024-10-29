@@ -434,6 +434,10 @@ async function fetchThanksDevData() {
 				url: fixUrl(url),
 				image: avatar,
 				monthlyDonation: Number(amount),
+				totalDonations: payments.reduce(
+					(total, payment) => total + payment.amount,
+					0,
+				),
 				source: "thanks.dev",
 				tier: getTierSlug(amount),
 			};
