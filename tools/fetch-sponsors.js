@@ -100,7 +100,9 @@ function getTierSlug(monthlyDonation) {
 
 /**
  * Fetch order data from Open Collective using the GraphQL API.
- * @returns {Array} An array of sponsors.
+ * @returns {Promise<{sponsors: Array, donations: Array}>} An promise that resolves to an object with two properties:
+ *  - `sponsors` (Array): List of sponsors
+ * - `donations` (Array): List of donations
  */
 async function fetchOpenCollectiveData() {
 	const endpoint = "https://api.opencollective.com/graphql/v2";
@@ -205,7 +207,9 @@ async function fetchOpenCollectiveData() {
 
 /**
  * Fetches GitHub Sponsors data using the GraphQL API.
- * @returns {Array} An array of sponsors.
+ * @returns {Promise<{sponsors: Array, donations: Array}>} An promise that resolves to an object with two properties:
+ *   - `sponsors` (Array): List of sponsors
+ *  - `donations` (Array): List of donations
  */
 async function fetchGitHubSponsors() {
 	function sponsorshipsQuery(cursor = null) {
@@ -387,6 +391,63 @@ async function fetchGitHubSponsors() {
 	};
 }
 
+/**
+ * Fetches thanks.dev data using the REST API.
+ * @returns {Promise<{sponsors: Array}>} An promise that resolves to an object with one property:
+ *  - `sponsors` (Array): List of sponsors
+ */
+async function fetchThanksDevData() {
+	const endpoint = "https://api.thanks.dev/v1/entity/gh/eslint/donors";
+
+	const { body: result } = await request(endpoint, {
+		method: "GET",
+		headers: { "Content-Type": "application/json" },
+	});
+
+	const payload = await result.json();
+
+	if (process.env.DEBUG) {
+		await fs.writeFile(
+			"./debug-thanksdev-raw-response.json",
+			JSON.stringify(payload, null, 4),
+			{ encoding: "utf8" },
+		);
+	}
+
+	const sponsors = Object.values(payload.donors)
+		.filter(({ payments }) => {
+			const lastPayment = payments.at(-1);
+
+			const now = new Date();
+			const isCurrentYear =
+				now.getFullYear().toString() === lastPayment.month.slice(0, 4);
+			const isCurrentMonth =
+				(now.getMonth() + 1).toString().padStart(2, "0") ===
+				lastPayment.month.slice(5, 7);
+
+			return isCurrentMonth && isCurrentYear;
+		})
+		.map(({ name, login, avatar, url, payments }) => {
+			const { amount } = payments.at(-1);
+			return {
+				name: name ?? login,
+				url: fixUrl(url),
+				image: avatar,
+				monthlyDonation: Number(amount),
+				totalDonations: payments.reduce(
+					(total, payment) => total + payment.amount,
+					0,
+				),
+				source: "thanks.dev",
+				tier: getTierSlug(amount),
+			};
+		});
+
+	return {
+		sponsors,
+	};
+}
+
 //-----------------------------------------------------------------------------
 // Main
 //-----------------------------------------------------------------------------
@@ -398,10 +459,12 @@ async function fetchGitHubSponsors() {
 			donations: openCollectiveDonations,
 		},
 		{ sponsors: githubSponsors, donations: githubDonations },
+		{ sponsors: thanksDevSponsors },
 		blockedSponsors,
 	] = await Promise.all([
 		fetchOpenCollectiveData(),
 		fetchGitHubSponsors(),
+		fetchThanksDevData(),
 		fs
 			.readFile(blockedSponsorsFilename, { encoding: "utf8" })
 			.then(data => JSON.parse(data)),
@@ -409,6 +472,7 @@ async function fetchGitHubSponsors() {
 
 	const sponsors = openCollectiveSponsors
 		.concat(githubSponsors)
+		.concat(thanksDevSponsors)
 		.filter(
 			sponsor =>
 				!blockedSponsors.some(
