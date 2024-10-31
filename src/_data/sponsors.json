@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119950.4501676,
-        "monthlyDonations": 9995.870847299999,
-        "sponsorCount": 194
+        "annualDonations": 125950.4501676,
+        "monthlyDonations": 10495.870847299999,
+        "sponsorCount": 195
     },
     "diamond": [],
     "platinum": [
@@ -37,6 +37,15 @@
         }
     ],
     "silver": [
+        {
+            "name": "SERP Triumph",
+            "url": "https://www.serptriumph.com/",
+            "image": "https://images.opencollective.com/serp-triumph5/fea3074/logo.png",
+            "monthlyDonation": 500,
+            "totalDonations": 1000,
+            "source": "opencollective",
+            "tier": "silver-sponsor"
+        },
         {
             "name": "JetBrains",
             "url": "https://www.jetbrains.com/",
@@ -151,7 +160,7 @@
             "monthlyDonation": 170,
             "totalDonations": 3510,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Torutek",
@@ -194,7 +203,7 @@
             "monthlyDonation": 35,
             "totalDonations": 1055,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Neovation Learning Solutions",
@@ -228,7 +237,7 @@
             "monthlyDonation": 20,
             "totalDonations": 180,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Agendrix",
@@ -237,7 +246,7 @@
             "monthlyDonation": 20,
             "totalDonations": 635,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "GitButler",
@@ -300,7 +309,7 @@
             "monthlyDonation": 10,
             "totalDonations": 510,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Bryan Mishkin",
@@ -1176,7 +1185,7 @@
             "monthlyDonation": 3,
             "totalDonations": 42,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Codecov",
@@ -1210,7 +1219,7 @@
             "monthlyDonation": 2,
             "totalDonations": 275,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Shunfan Du",
@@ -1219,7 +1228,7 @@
             "monthlyDonation": 2,
             "totalDonations": 92,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Kostas Bariotis",
@@ -1228,7 +1237,7 @@
             "monthlyDonation": 2,
             "totalDonations": 100,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Roman Nazarenko",
@@ -1237,7 +1246,7 @@
             "monthlyDonation": 2,
             "totalDonations": 100,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Daniel O’Connor",
@@ -1270,7 +1279,7 @@
             "monthlyDonation": 1,
             "totalDonations": 9,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Till Sanders",
@@ -1279,16 +1288,16 @@
             "monthlyDonation": 1,
             "totalDonations": 54,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Guest",
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 38,
+            "totalDonations": 39,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Benjamin Reed",
@@ -1647,7 +1656,7 @@
             "monthlyDonation": 0,
             "totalDonations": 25,
             "source": "opencollective",
-            "tier": null
+            "tier": "backer"
         },
         {
             "name": "Francesc Rosas",
