@@ -182,7 +182,7 @@ async function fetchOpenCollectiveData() {
 				: order.amount.value,
 		totalDonations: order.totalDonations.value,
 		source: "opencollective",
-		tier: order.tier ? order.tier.slug : null,
+		tier: order.tier ? order.tier.slug : getTierSlug(order.amount.value),
 	}));
 
 	const donations = payload.data.donations.nodes

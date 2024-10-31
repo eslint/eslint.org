@@ -222,11 +222,12 @@ hook: "sponsors_page"
         </div>
         <div class="grid">
             <ul role="list" class="sponsors span-1-12 sponsors--backers">
+                {% set fallback_image = '/assets/images/people/_placeholder-avatar.svg' %}
                 {% for sponsor in sponsors.backers %}
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="48" width="48"
-                            onerror="this.src = '/assets/images/people/_placeholder-avatar.svg'"
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" height="48" width="48"
+                            onerror="this.src = '{{fallback_image}}'"
                             alt="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
                             title="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
                     </a>

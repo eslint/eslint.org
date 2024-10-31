@@ -74,6 +74,15 @@
     ],
     "bronze": [
         {
+            "name": "Cybozu",
+            "url": "https://cybozu.co.jp/",
+            "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
+            "monthlyDonation": 350,
+            "totalDonations": 19964,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
             "name": "WordHint",
             "url": "https://www.wordhint.net/",
             "image": "https://images.opencollective.com/wordhint/be86813/avatar.png",
@@ -135,15 +144,6 @@
         }
     ],
     "backers": [
-        {
-            "name": "Cybozu",
-            "url": "https://cybozu.co.jp/",
-            "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
-            "monthlyDonation": 350,
-            "totalDonations": 19964,
-            "source": "opencollective",
-            "tier": null
-        },
         {
             "name": "Principal Financial Group",
             "url": "https://www.principal.com/about-us",
