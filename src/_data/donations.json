@@ -1,5 +1,14 @@
 [
     {
+        "id": "ejoxl3az-45w9pa5v-w8k6y870-mgkbrvdn",
+        "name": "b-yp",
+        "url": null,
+        "image": "https://images.opencollective.com/b-yp/avatar.png",
+        "amount": 1,
+        "date": "2024-10-31T08:04:11.073Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AEqa3",
         "name": "Isabela de Matos",
         "image": "https://avatars.githubusercontent.com/u/30164700?u=0a7ea60c26b70cac2c04a4113bcfdcafece0d97e&v=4",
@@ -52,15 +61,6 @@
         "amount": 121.87,
         "date": "2024-10-04T12:12:50.274Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEnYc",
-        "name": "Daniel Cela",
-        "image": "https://avatars.githubusercontent.com/u/13622306?u=5344fd11527b499a89e21836d75b49a2e75ae588&v=4",
-        "url": "https://danielcela.com",
-        "amount": 1,
-        "date": "2024-10-02T13:07:10Z",
-        "source": "github"
     },
     {
         "id": "ywz9j4av-god8pgwk-5b36mr35-nxklb0e7",
@@ -231,15 +231,6 @@
         "image": "https://images.opencollective.com/skunk-team/3ddba2f/logo.png",
         "amount": 500,
         "date": "2023-11-20T13:46:25.545Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "gm9bnk80-437xqrn3-dvk6vzeo-ljdayw5r",
-        "name": "Gabriel",
-        "url": null,
-        "image": "https://images.opencollective.com/guest-f541ef04/avatar.png",
-        "amount": 5,
-        "date": "2023-11-10T18:31:08.312Z",
         "source": "opencollective"
     }
 ]
