@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125628,
-        "monthlyDonations": 10469,
-        "sponsorCount": 170
+        "annualDonations": 125088,
+        "monthlyDonations": 10424,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -176,14 +176,6 @@
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alan",
-            "image": "https://avatars.githubusercontent.com/u/18175329?v=4",
-            "url": "https://alan.com",
-            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
