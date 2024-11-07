@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AErL9",
+        "name": "Wildy Sheverando",
+        "image": "https://avatars.githubusercontent.com/u/169340344?u=d868988c5544a20f915ba596e8b22d7ca369f168&v=4",
+        "url": "https://shiwildy.com",
+        "amount": 1,
+        "date": "2024-11-06T15:50:45Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AEqzm",
         "name": "64 Shades",
         "image": "https://avatars.githubusercontent.com/u/85593293?v=4",
@@ -61,15 +70,6 @@
         "amount": 181.42,
         "date": "2024-10-15T14:54:11.298Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEoFF",
-        "name": "Peter Dave Hello",
-        "image": "https://avatars.githubusercontent.com/u/3691490?u=4dee3c8d8045eccca432b07645c80fbbe61d1c36&v=4",
-        "url": "https://www.peterdavehello.org/",
-        "amount": 1,
-        "date": "2024-10-08T19:21:58Z",
-        "source": "github"
     },
     {
         "id": "v349mrwg-z75lpy50-d9z6a08d-jeybknox",
