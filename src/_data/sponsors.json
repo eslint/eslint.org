@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 125088,
-        "monthlyDonations": 10424,
+        "annualDonations": 125124,
+        "monthlyDonations": 10427,
         "sponsorCount": 169
     },
     "diamond": [],
@@ -444,6 +444,15 @@
             "url": "https://pavel-romanov.com/",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "UK-Exchange",
+            "url": "https://uk-exchange.com/en/usdt-to-paypal.php",
+            "image": "https://images.opencollective.com/uk-exchange/4021be9/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1230,14 +1239,6 @@
             "tier": "backer"
         },
         {
-            "name": "Frontend Masters",
-            "image": "https://avatars.githubusercontent.com/u/5613852?v=4",
-            "url": "https://FrontendMasters.com",
-            "monthlyDonation": 2,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Theme Divi",
             "url": "https://wptheme.fr/theme-wordpress-divi/",
             "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
@@ -1346,7 +1347,7 @@
         },
         {
             "name": "Schalk Venter",
-            "image": "https://avatars.githubusercontent.com/u/14258328?u=5e16ca45510cb4cbb7e74f9bc7c7d51bac7f3288&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14258328?u=889f25b21456dc7137f9fb9299fcf2c90b38fb05&v=4",
             "url": "https://schalkventer.me",
             "monthlyDonation": 1,
             "source": "github",
