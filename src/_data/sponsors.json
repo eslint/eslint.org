@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125124,
-        "monthlyDonations": 10427,
-        "sponsorCount": 169
+        "annualDonations": 125301.26208276,
+        "monthlyDonations": 10441.77184023,
+        "sponsorCount": 171
     },
     "diamond": [],
     "platinum": [
@@ -238,6 +238,15 @@
             "monthlyDonation": 20,
             "totalDonations": 655,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "GitButler",
+            "url": "https://gitbutler.com",
+            "image": "https://github.com/gitbutlerapp.png",
+            "monthlyDonation": 14.76605047,
+            "totalDonations": "014.5787826214.5787826214.76605047",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1415,6 +1424,15 @@
             "url": "https://github.com/IanTapply22",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 0.00578976,
+            "totalDonations": "04.714773010.00578976",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
