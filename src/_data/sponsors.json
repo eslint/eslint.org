@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125301.26208276,
-        "monthlyDonations": 10441.77184023,
-        "sponsorCount": 171
+        "annualDonations": 125217.26208276,
+        "monthlyDonations": 10434.77184023,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -1163,28 +1163,12 @@
             "tier": "backer"
         },
         {
-            "name": "Sentry",
-            "image": "https://avatars.githubusercontent.com/u/1396951?v=4",
-            "url": "https://sentry.io",
-            "monthlyDonation": 4,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Austin Akers",
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
             "totalDonations": 45,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Codecov",
-            "image": "https://avatars.githubusercontent.com/u/8226205?v=4",
-            "url": "https://codecov.io/",
-            "monthlyDonation": 3,
-            "source": "github",
             "tier": "backer"
         },
         {
