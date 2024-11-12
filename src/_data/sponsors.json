@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 125217.26208276,
-        "monthlyDonations": 10434.77184023,
+        "annualDonations": 125157.26208276,
+        "monthlyDonations": 10429.77184023,
         "sponsorCount": 169
     },
     "diamond": [],
@@ -379,14 +379,6 @@
             "name": "Connected Cars",
             "image": "https://avatars.githubusercontent.com/u/23233019?v=4",
             "url": "https://connectedcars.io",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "kagan",
-            "image": "https://avatars.githubusercontent.com/u/34136752?u=4d75e5b7a3bd567567c340b60cd68e5b0612dfd1&v=4",
-            "url": "https://github.com/kagankan",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1102,6 +1094,14 @@
             "name": "BrightCrowd",
             "image": "https://avatars.githubusercontent.com/u/19253501?v=4",
             "url": "https://brightcrowd.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "kagan",
+            "image": "https://avatars.githubusercontent.com/u/34136752?u=4d75e5b7a3bd567567c340b60cd68e5b0612dfd1&v=4",
+            "url": "https://github.com/kagankan",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
