@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 125157.26208276,
-        "monthlyDonations": 10429.77184023,
-        "sponsorCount": 169
+        "annualDonations": 130438.89123048,
+        "monthlyDonations": 10869.90760254,
+        "sponsorCount": 182
     },
     "diamond": [],
     "platinum": [
@@ -92,6 +92,15 @@
             "tier": "bronze-sponsor"
         },
         {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 319.2177209,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090",
+            "source": "thanks.dev",
+            "tier": "bronze-sponsor"
+        },
+        {
             "name": "WordHint",
             "url": "https://www.wordhint.net/",
             "image": "https://images.opencollective.com/wordhint/be86813/avatar.png",
@@ -163,6 +172,15 @@
             "tier": "backer"
         },
         {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 86.16143728,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Torutek",
             "url": "https://torutek.com",
             "image": "https://images.opencollective.com/torutek/logo.png",
@@ -186,6 +204,15 @@
             "monthlyDonation": 40,
             "totalDonations": 6020,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 38.46808241,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.46808241",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1147,14 +1174,6 @@
             "tier": "backer"
         },
         {
-            "name": "Oghenemano Utomudo Omogha",
-            "image": "https://avatars.githubusercontent.com/u/76177578?u=b0397b665f96a420faedea1fe2450d2bcf50fb7b&v=4",
-            "url": "https://github.com/omoghaoghenemano",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Jupli",
             "image": "https://avatars.githubusercontent.com/u/140319444?v=4",
             "url": "https://jupli.com",
@@ -1411,11 +1430,109 @@
             "tier": "backer"
         },
         {
+            "name": "Syntax",
+            "image": "https://avatars.githubusercontent.com/u/130389858?v=4",
+            "url": "https://syntax.fm",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "jshttp",
+            "url": "https://jshttp.github.io/",
+            "image": "https://github.com/jshttp.png",
+            "monthlyDonation": 0.1034726,
+            "totalDonations": "00.122468210.10347260",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "pillarjs",
+            "url": "https://pillarjs.github.io",
+            "image": "https://github.com/pillarjs.png",
+            "monthlyDonation": 0.0694062,
+            "totalDonations": "00.089878450.079007620.06940620",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "expressjs",
+            "url": "https://expressjs.com/",
+            "image": "https://github.com/expressjs.png",
+            "monthlyDonation": 0.0319565,
+            "totalDonations": "00.036993410.03195650",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Borderless Labs",
+            "url": "http://borderlesslabs.com",
+            "image": "https://github.com/borderless.png",
+            "monthlyDonation": 0.02622197,
+            "totalDonations": "00.018086400.047381980.002942660.003561150.003287090.003555470.003953530.003895520.003687860.045300870.005236730.039536870.029764490.02622197",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "plurals",
+            "url": null,
+            "image": "https://github.com/plurals.png",
+            "monthlyDonation": 0.02524178,
+            "totalDonations": "00.038991720.028657820.02524178",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "ServieJS",
+            "url": null,
+            "image": "https://github.com/serviejs.png",
+            "monthlyDonation": 0.01225007,
+            "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.01225007",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Blake Embrey",
+            "url": "http://blakeembrey.me/",
+            "image": "https://github.com/blakeembrey.png",
+            "monthlyDonation": 0.01001284,
+            "totalDonations": "00.005415800.000533090.001606820.001553130.001647770.001866400.001845610.001738910.003049130.002179140.014938270.011472110.01001284",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "TypeStrong",
+            "url": null,
+            "image": "https://github.com/typestrong.png",
+            "monthlyDonation": 0.00791603,
+            "totalDonations": "00.003410240.015248400.001100760.001275070.001245090.001285740.001500770.001496250.001382360.001410270.001469810.012471970.009082980.00791603",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Konstantin Vinogradov",
             "url": "https://kvinogradov.com/",
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.00578976,
             "totalDonations": "04.714773010.00578976",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "RegexHQ",
+            "url": "https://regexhq.tunnckocore.com",
+            "image": "https://github.com/regexhq.png",
+            "monthlyDonation": 0.00108172,
+            "totalDonations": "00.00108172",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "timely-deploy",
+            "url": null,
+            "image": "https://github.com/timely-deploy.png",
+            "monthlyDonation": 0.00096201,
+            "totalDonations": "00.007694850.004561920.003529240.004101030.003628910.004094640.004800190.004788970.004480280.004434840.006867220.000965030.001107280.00096201",
             "source": "thanks.dev",
             "tier": "backer"
         },

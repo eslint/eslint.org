@@ -1,5 +1,14 @@
 [
     {
+        "id": "mvrwng4k-j03dpb9z-7za6z57o-yl9e8xba",
+        "name": "Sanity.io",
+        "url": "https://www.sanity.io/",
+        "image": "https://images.opencollective.com/sanity_io/558f87f/logo.png",
+        "amount": 2400,
+        "date": "2024-11-12T13:46:38.117Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AErrO",
         "name": "Viktor Svertoka",
         "image": "https://avatars.githubusercontent.com/u/115661003?u=b5612957e02e68645dc72cd2e97189de21b14183&v=4",
@@ -249,15 +258,6 @@
         "image": "https://images.opencollective.com/caleb-clarke/fa8f464/avatar.png",
         "amount": 50,
         "date": "2023-11-24T20:05:01.541Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "k9mbw7y4-8r3zq3oe-a5jq0ej5-lavnodgx",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
-        "amount": 524.61,
-        "date": "2023-11-21T04:07:23.609Z",
         "source": "opencollective"
     },
     {
