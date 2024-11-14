@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130438.89123048,
-        "monthlyDonations": 10869.90760254,
-        "sponsorCount": 182
+        "annualDonations": 130450.89123048,
+        "monthlyDonations": 10870.90760254,
+        "sponsorCount": 183
     },
     "diamond": [],
     "platinum": [
@@ -560,7 +560,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 45,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1409,6 +1409,14 @@
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
             "url": "https://vezel.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Bryan King Pecho",
+            "image": "https://avatars.githubusercontent.com/u/91954699?u=707e67b3afac1d27f132696336bb01ec73916301&v=4",
+            "url": "https://github.com/bkpecho",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
