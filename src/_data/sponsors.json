@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130450.89123048,
-        "monthlyDonations": 10870.90760254,
-        "sponsorCount": 183
+        "annualDonations": 130453.92037524,
+        "monthlyDonations": 10871.160031270001,
+        "sponsorCount": 184
     },
     "diamond": [],
     "platinum": [
@@ -1443,6 +1443,15 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.25242873,
+            "totalDonations": "00.256147130.25242873",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
