@@ -259,14 +259,5 @@
         "amount": 50,
         "date": "2023-11-24T20:05:01.541Z",
         "source": "opencollective"
-    },
-    {
-        "id": "jrkx5lmn-v904qjld-4gz68bwa-7zdygoe3",
-        "name": "Skunk Team",
-        "url": "https://skunk.team",
-        "image": "https://images.opencollective.com/skunk-team/3ddba2f/logo.png",
-        "amount": 500,
-        "date": "2023-11-20T13:46:25.545Z",
-        "source": "opencollective"
     }
 ]
