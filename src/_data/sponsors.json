@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130453.92037524,
-        "monthlyDonations": 10871.160031270001,
-        "sponsorCount": 184
+        "annualDonations": 130472.33467632001,
+        "monthlyDonations": 10872.694556360002,
+        "sponsorCount": 187
     },
     "diamond": [],
     "platinum": [
@@ -1446,6 +1446,24 @@
             "tier": "backer"
         },
         {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.71929287,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.71929287",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.71208254,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.71208254",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Sharp Hall",
             "url": "http://sharphall.org",
             "image": "https://github.com/sharph.png",
@@ -1460,6 +1478,15 @@
             "image": "https://github.com/jshttp.png",
             "monthlyDonation": 0.1034726,
             "totalDonations": "00.122468210.10347260",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Pelle Wessman",
+            "url": "https://kodfabrik.se/",
+            "image": "https://github.com/voxpelli.png",
+            "monthlyDonation": 0.10314968,
+            "totalDonations": "00.069859840.011582310.013089270.103379050.098303480.10314968",
             "source": "thanks.dev",
             "tier": "backer"
         },
