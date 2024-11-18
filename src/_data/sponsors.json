@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130472.33467632001,
-        "monthlyDonations": 10872.694556360002,
-        "sponsorCount": 187
+        "annualDonations": 130475.21734392001,
+        "monthlyDonations": 10872.934778660003,
+        "sponsorCount": 188
     },
     "diamond": [],
     "platinum": [
@@ -1469,6 +1469,15 @@
             "image": "https://github.com/sharph.png",
             "monthlyDonation": 0.25242873,
             "totalDonations": "00.256147130.25242873",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "timhaynes",
+            "url": null,
+            "image": "https://github.com/timhaynes.png",
+            "monthlyDonation": 0.2402223,
+            "totalDonations": "00.115090580.225653430.249133320.24022230",
             "source": "thanks.dev",
             "tier": "backer"
         },
