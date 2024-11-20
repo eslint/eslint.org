@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130475.21734392001,
-        "monthlyDonations": 10872.934778660003,
-        "sponsorCount": 188
+        "annualDonations": 130499.56886052001,
+        "monthlyDonations": 10874.964071710003,
+        "sponsorCount": 190
     },
     "diamond": [],
     "platinum": [
@@ -1251,6 +1251,15 @@
             "tier": "backer"
         },
         {
+            "name": "charon",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 1.02934928,
+            "totalDonations": "00.783637540.783637541.02934928",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Theme Divi",
             "url": "https://wptheme.fr/theme-wordpress-divi/",
             "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
@@ -1443,6 +1452,15 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "peerdb",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 0.99994377,
+            "totalDonations": "00.761247260.761247260.99994377",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
