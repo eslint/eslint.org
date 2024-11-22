@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130502.86436652002,
-        "monthlyDonations": 10875.238697210001,
-        "sponsorCount": 193
+        "annualDonations": 130503.27506172002,
+        "monthlyDonations": 10875.272921810001,
+        "sponsorCount": 195
     },
     "diamond": [],
     "platinum": [
@@ -1577,6 +1577,24 @@
             "image": "https://github.com/plurals.png",
             "monthlyDonation": 0.02524178,
             "totalDonations": "00.038991720.028657820.02524178",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Robin Wong",
+            "url": "https://rwong.tech/",
+            "image": "https://github.com/robinwongm.png",
+            "monthlyDonation": 0.01808319,
+            "totalDonations": "00.001030800.01808319",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "robinWongM's Archived Projects",
+            "url": null,
+            "image": "https://github.com/robinwongm-archives.png",
+            "monthlyDonation": 0.01614141,
+            "totalDonations": "00.007977920.01614141",
             "source": "thanks.dev",
             "tier": "backer"
         },
