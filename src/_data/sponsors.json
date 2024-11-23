@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 130503.27506172002,
-        "monthlyDonations": 10875.272921810001,
-        "sponsorCount": 195
+        "annualDonations": 130635.43853472002,
+        "monthlyDonations": 10886.286544560002,
+        "sponsorCount": 200
     },
     "diamond": [],
     "platinum": [
@@ -454,6 +454,14 @@
             "name": "ProjectDiscovery",
             "image": "https://avatars.githubusercontent.com/u/50994705?v=4",
             "url": "https://projectdiscovery.io",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "PostHog",
+            "image": "https://avatars.githubusercontent.com/u/60330232?v=4",
+            "url": "https://posthog.com",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1048,7 +1056,7 @@
         {
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
-            "url": "https://mattiaerre.medium.com/list/running-eb8adc87dd5a",
+            "url": "https://medium.com/@mattiaerre",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -1482,6 +1490,24 @@
             "tier": "backer"
         },
         {
+            "name": "Trevor Burnham",
+            "url": "http://trevorburnham.com",
+            "image": "https://github.com/trevorburnham.png",
+            "monthlyDonation": 0.52796127,
+            "totalDonations": "05.729764060.288011590.165338280.159169460.156555340.155512200.151551060.160889750.163961850.158733750.527942750.162531990.503347140.504827100.52796127",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "styled-components",
+            "url": "https://styled-components.com",
+            "image": "https://github.com/styled-components.png",
+            "monthlyDonation": 0.42817618,
+            "totalDonations": "00.326053020.012738540.011030230.010665550.010449220.010140180.010645300.010899230.010936890.009709040.013606960.415049130.408826210.42817618",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Sharp Hall",
             "url": "http://sharphall.org",
             "image": "https://github.com/sharph.png",
@@ -1554,6 +1580,15 @@
             "tier": "backer"
         },
         {
+            "name": "Keith Bauson",
+            "url": null,
+            "image": "https://github.com/kwbauson.png",
+            "monthlyDonation": 0.04692557,
+            "totalDonations": "00.635652471.322767680.832633090.603044300.563307010.540283450.290172470.290045850.288562100.253337330.264087100.262133070.025115780.047545740.04692557",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "expressjs",
             "url": "https://expressjs.com/",
             "image": "https://github.com/expressjs.png",
@@ -1604,6 +1639,15 @@
             "image": "https://github.com/serviejs.png",
             "monthlyDonation": 0.01225007,
             "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.01225007",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Nicco Kunzmann",
+            "url": "https://niccokunzmann.github.io",
+            "image": "https://github.com/niccokunzmann.png",
+            "monthlyDonation": 0.01055973,
+            "totalDonations": "00.001362730.001391190.000000310.000000310.000000310.011984230.011965540.01055973",
             "source": "thanks.dev",
             "tier": "backer"
         },
