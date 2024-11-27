@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AEtl1",
+        "name": "박동준",
+        "image": "https://avatars.githubusercontent.com/u/70469055?u=4b035424ff81049e874f422e9b46da0f58dad074&v=4",
+        "url": "https://github.com/DONG-8",
+        "amount": 20,
+        "date": "2024-11-26T10:04:06Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AEtah",
         "name": "Pupfelt",
         "image": "https://avatars.githubusercontent.com/u/185438011?v=4",
@@ -39,7 +48,7 @@
         "id": "SA_kwHOAFvahM4AErrO",
         "name": "Viktor Svertoka",
         "image": "https://avatars.githubusercontent.com/u/115661003?u=b5612957e02e68645dc72cd2e97189de21b14183&v=4",
-        "url": "https://www.behance.net/viktorsvertoka",
+        "url": "https://github.com/ViktorSvertoka",
         "amount": 5,
         "date": "2024-11-10T23:20:21Z",
         "source": "github"
