@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 122544,
-        "monthlyDonations": 10212,
+        "annualDonations": 124836,
+        "monthlyDonations": 10403,
         "sponsorCount": 166
     },
     "diamond": [],
@@ -96,7 +96,7 @@
             "url": "https://www.wordhint.net/",
             "image": "https://images.opencollective.com/wordhint/be86813/avatar.png",
             "monthlyDonation": 200,
-            "totalDonations": 400,
+            "totalDonations": 600,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -106,6 +106,15 @@
             "image": "https://images.opencollective.com/anagram-solver/2666271/logo.png",
             "monthlyDonation": 200,
             "totalDonations": 11400,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Icons8",
+            "url": "https://icons8.com/",
+            "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 13000,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -158,7 +167,7 @@
             "url": "https://torutek.com",
             "image": "https://images.opencollective.com/torutek/logo.png",
             "monthlyDonation": 50,
-            "totalDonations": 200,
+            "totalDonations": 250,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -438,29 +447,11 @@
             "tier": "backer"
         },
         {
-            "name": "UK-Exchange",
-            "url": "https://uk-exchange.com/en/usdt-to-paypal.php",
-            "image": "https://images.opencollective.com/uk-exchange/4021be9/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Alternatives-7563467",
-            "url": null,
-            "image": "https://images.opencollective.com/alternatives-7563467/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "No-code Web Scraper",
             "url": "https://automatio.ai/",
             "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -469,7 +460,7 @@
             "url": "https://sidesmedia.com",
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 55,
+            "totalDonations": 60,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -487,7 +478,7 @@
             "url": "https://sidesmedia.com",
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 55,
+            "totalDonations": 60,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1271,6 +1262,14 @@
             "tier": "backer"
         },
         {
+            "name": "Frontend Masters",
+            "image": "https://avatars.githubusercontent.com/u/5613852?v=4",
+            "url": "https://FrontendMasters.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Ingo Steinke",
             "image": "https://avatars.githubusercontent.com/u/6377941?u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
             "url": "https://www.ingo-steinke.com",
@@ -1287,7 +1286,7 @@
             "tier": "backer"
         },
         {
-            "name": "Mateus Eto",
+            "name": "Mateus Etto",
             "image": "https://avatars.githubusercontent.com/u/7322925?u=33db251d02b633150683f87dfe90fcd6621ab850&v=4",
             "url": "https://yutsuten.github.io/notes/",
             "monthlyDonation": 1,
