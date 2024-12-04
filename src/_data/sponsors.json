@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 124836,
-        "monthlyDonations": 10403,
-        "sponsorCount": 166
+        "annualDonations": 127716,
+        "monthlyDonations": 10643,
+        "sponsorCount": 168
     },
     "diamond": [],
     "platinum": [
@@ -144,6 +144,14 @@
             "tier": "bronze-sponsor"
         },
         {
+            "name": "Mercedes-Benz Group",
+            "image": "https://avatars.githubusercontent.com/u/34240465?v=4",
+            "url": "https://opensource.mercedes-benz.com/",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
             "url": "https://herocoders.com",
@@ -176,6 +184,14 @@
             "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Alan",
+            "image": "https://avatars.githubusercontent.com/u/18175329?v=4",
+            "url": "https://alan.com",
+            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
@@ -439,14 +455,6 @@
             "tier": "backer"
         },
         {
-            "name": "Pavel Romanov",
-            "image": "https://avatars.githubusercontent.com/u/82144989?u=33d98fdd99b062f43addca735cc90ae30dd79a5e&v=4",
-            "url": "https://pavel-romanov.com/",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "No-code Web Scraper",
             "url": "https://automatio.ai/",
             "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
@@ -461,6 +469,15 @@
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 60,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 26,
             "source": "opencollective",
             "tier": "backer"
         },
