@@ -13,26 +13,6 @@ export default function SocialIcons() {
 				<ul>
 					<li>
 						<a
-							href="https://twitter.com/geteslint"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<svg
-								viewBox="0 0 512 512"
-								height="25"
-								width="25"
-								className="c-icon"
-								role="img"
-								aria-label="Twitter"
-								fill="currentColor"
-							>
-								<path fill="none" d="M0 0h24v24H0z"></path>
-								<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a
 							href="https://github.com/eslint/eslint.org"
 							target="_blank"
 							rel="noreferrer"
@@ -91,7 +71,27 @@ export default function SocialIcons() {
 							</svg>
 						</a>
 					</li>
-
+					<li>
+						<a
+							href="https://bsky.app/profile/eslint.org"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 64 57"
+								className="c-icon"
+								role="img"
+								aria-label="{{ site.footer.social_icons.bluesky }}"
+							>
+								<path
+									fill="currentColor"
+									d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"
+								/>
+							</svg>
+						</a>
+					</li>
 					<li>
 						<a
 							href="https://fosstodon.org/@eslint"
@@ -114,6 +114,26 @@ export default function SocialIcons() {
 									fill="var(--lighter-background-color)"
 									d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675"
 								/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://twitter.com/geteslint"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<svg
+								viewBox="0 0 512 512"
+								height="25"
+								width="25"
+								className="c-icon"
+								role="img"
+								aria-label="Twitter"
+								fill="currentColor"
+							>
+								<path fill="none" d="M0 0h24v24H0z"></path>
+								<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
 							</svg>
 						</a>
 					</li>

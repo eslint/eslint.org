@@ -83,10 +83,11 @@ footer:
   secondary: Secundario
   social_icons:
     title: Redes Sociales
-    twitter: Twitter
     chat: Discord
     github: GitHub
+    bluesky: Bluesky
     mastodon: Mastodon
+    twitter: Twitter
   theme_switcher:
     title: Cambiar temas
     system: Sistema
