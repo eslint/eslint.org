@@ -108,7 +108,7 @@ TypeScript is configured by a set list of compiler options on a project level.
 Its [`tsconfig.json` ("TSConfig") files](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) allow for compiler options that change type checking for all files in the project.
 Those compiler options are set by TypeScript and generally change large swathes of type checking behavior.
 
-ESLint on the other hand, runs with a configurable set of lint rules.
+ESLint, on the other hand, runs with a configurable set of lint rules.
 Each lint rule can be granularly configured.
 If you don't like a particular lint rule, you can always turn it off for a line, set of files, or your entire project.
 
@@ -144,12 +144,12 @@ By adding in rules from plugins, ESLint configurations can be tailored to the sp
 
 ESLint and TypeScript operate differently and specialize in different areas of code defects.
 Some code defects straddle the line between "best practices" and "type safety", and so can be caught by both linting and type checking.
-There are some core rules that are superseded by TypeScript's type checking.
+Those defects can often be caught by both ESLint and TypeScript.
 
 To make the most of both tools, we recommend:
 
 * In your ESLint configuration file, use the [ESLint `js.configs.recommended` config](https://eslint.org/docs/latest/use/getting-started#configuration), at least the [`tseslint.configs.recommended` configuration from typescript-eslint](https://typescript-eslint.io/getting-started/typed-linting), and any community plugins relevant to your project's libraries and frameworks
-* In your TypeScript configuration file, enable [`strict` mode](https://www.typescriptlang.org/tsconfig/#strict)
+* In your TypeScript configuration file, enable [`strict` mode](https://www.typescriptlang.org/tsconfig/#strict) to catch as many type safety issues as possible
 
 typescript-eslint's recommended preset configs disable core ESLint rules that are not helpful with TypeScript.
 The configs leave on any core ESLint rules that are useful alongside type checking.
