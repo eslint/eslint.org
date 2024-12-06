@@ -14,9 +14,9 @@ Linters and type checkers are two kinds of tools that both analyze code and repo
 They may seem similar at first.
 However, the two kinds of tools detect very different issues and are useful in different ways.
 
-## Definitions
+## What is static analysis?
 
-*"Static analysis"* is the term for tooling that checks code for issues without running it.
+*Static analysis* is the inspection of source code without executing it. This differs from *dynamic analysis*, in which source code is inspected while it is executed. As such, dynamic analysis brings with it the inherent danger of executing malicious code or creating side effects while static analysis is safe to execute regardless of the source code.
 There are three forms of static analysis commonly used in web development projects today:
 
 1. **Formatters**: only print your code quickly, without worrying about logic
@@ -26,19 +26,19 @@ There are three forms of static analysis commonly used in web development projec
 We'll focus in this blog post on *linters*, namely ESLint, and *type checkers*, namely [TypeScript](https://typescriptlang.org).
 ESLint and TypeScript are often used together to detect defects in code.
 
-## Differences in Purpose
+## Digging deeper into linting vs. type checking
 
 Type checkers make sure the *intent* behind values in code matches the *usage* of those values.
-They check that code is "type-safe": meaning values are used according to the ways their types describe as being allowed.
+They check that code is "type-safe": values are used according to how their types are described as being allowed.
 
 Type checkers do not attempt to look for defects that are only likely, rather than certain.
 Nor do type checkers enforce subjective opinions that might change between projects.
 That means TypeScript does not attempt to enforce general best practices — only that values are used in type-safe ways.
 TypeScript won't detect likely mistakes that work within those types.
 
-Linters, on the other hand, primarily target *likely* defects and can also be used to enforce subjective opinions.
-ESLint and other linters catch issues that are technically type-safe but are potential sources of bugs.
-Many developers rely on linters to make sure their code follow framework and language best practices.
+Linters, on the other hand, primarily target likely defects and can also be used to enforce subjective opinions.
+ESLint and other linters catch issues that are may or may not be type-safe but are potential sources of bugs.
+Many developers rely on linters to make sure their code follows framework and language best practices.
 
 For example, developers sometimes leave out the `break` or `return` at the end of a `switch` statement's `case`.
 Doing so is type-safe and permitted by JavaScript and TypeScript.
@@ -84,7 +84,7 @@ Linters, on the other hand, run with a configurable set of lint rules.
 Each lint rule can be granularly configured.
 If you don't like a particular lint rule, you can always turn it off for a line, set of files, or your entire project.
 
-Linters can also can be augmented by **plugins** that add new lint rules.
+Linters can also be augmented by **plugins** that add new lint rules.
 Plugin-specific lint rules extend the breadth of code checks that linter configurations can pick and choose from.
 
 For example, this ESLint configuration enables the recommended rules from [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y), a plugin that adds checks for accessibility in JSX libraries such as Solid.js and React:
@@ -115,7 +115,7 @@ By adding in rules from plugins, linter configurations can be tailored to the sp
 
 Linters and type checkers operate differently and specialize in different areas of code defects.
 Some code defects straddle the line between "best practices" and "type safety", and so can be caught by both linting and type checking.
-There are some core rules in that are superseded by TypeScript's type checking.
+There are some core rules that are superseded by TypeScript's type checking.
 
 To make the most of both tools, we recommend:
 
@@ -153,7 +153,7 @@ The lint rules by default also ignore variables whose name begins with `_`.
 They additionally ignore parameters that come before any parameter that is itself used.
 
 Some projects prefer to never allow unused parameters regardless of name or position.
-That stricter preferences helps prevent API designs that lead developers to creating many unused parameters.
+These stricter preferences help prevent API designs that lead developers to create many unused parameters.
 
 A more strict ESLint configuration would be able to report on the `_` parameter:
 
@@ -185,7 +185,7 @@ In fact, linters and type checkers are at their most powerful when used in conju
 ### Linters, With Type Information
 
 Traditional lint rules run on a single file at a time and have no knowledge of other files in the project.
-They can't make decisions on files based on contents of other files.
+They can't make decisions on files based on the contents of other files.
 
 However, if your project is set up using TypeScript, you can opt into "type checked" lint rules: rules that can pull in type information.
 In doing so, type checked lint rules can make decisions based on other files.
