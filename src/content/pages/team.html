@@ -29,10 +29,10 @@ hook: "team_page"
                     {% set itemName = item.name %}
                     {% set itemHandle = item.username %}
 
+
                     {% set itemBio = item.bio | safe %}
                     {% set itemWebsite = item.website %}
                     {% set itemGitHub = item.github_username %}
-                    {% set itemBluesky = item.bluesky_url %}
                     {% set itemTwitter = item.twitter_username %}
                     {% set itemMastodon = item.mastodon_url %}
 
@@ -44,7 +44,6 @@ hook: "team_page"
                             handleURL: itemHandleURL,
                             bio: itemBio,
                             website: itemWebsite,
-                            bluesky: itemBluesky,
                             github: itemGitHub,
                             twitter: itemTwitter,
                             mastodon: itemMastodon
@@ -69,12 +68,12 @@ hook: "team_page"
                 {% for item in team.reviewers %}
                     {% set itemPhoto = item.avatar_url %}
                     {% set itemName = item.name %}
+
                     {% set itemHandle = item.username %}
 
                     {% set itemBio = item.bio | safe %}
                     {% set itemWebsite = item.website %}
                     {% set itemGitHub = item.github_username %}
-                    {% set itemBluesky = item.bluesky_url %}
                     {% set itemTwitter = item.twitter_username %}
                     {% set itemMastodon = item.mastodon_url %}
 
@@ -86,7 +85,6 @@ hook: "team_page"
                             handleURL: itemHandleURL,
                             bio: itemBio,
                             website: itemWebsite,
-                            bluesky: itemBluesky,
                             github: itemGitHub,
                             twitter: itemTwitter,
                             mastodon: itemMastodons
@@ -113,10 +111,10 @@ hook: "team_page"
                     {% set itemName = item.name %}
                     {% set itemHandle = item.username %}
 
+
                     {% set itemBio = item.bio | safe %}
                     {% set itemWebsite = item.website %}
                     {% set itemGitHub = item.github_username %}
-                    {% set itemBluesky = item.bluesky_url %}
                     {% set itemTwitter = item.twitter_username %}
                     {% set itemMastodon = item.mastodon_url %}
 
@@ -128,7 +126,6 @@ hook: "team_page"
                             handleURL: itemHandleURL,
                             bio: itemBio,
                             website: itemWebsite,
-                            bluesky: itemBluesky,
                             github: itemGitHub,
                             twitter: itemTwitter,
                             mastodon: itemMastodon
@@ -155,10 +152,10 @@ hook: "team_page"
                 {% set itemName = item.name %}
                 {% set itemHandle = item.username %}
 
+
                 {% set itemBio = item.bio | safe %}
                 {% set itemWebsite = item.website %}
                 {% set itemGitHub = item.github_username %}
-                {% set itemBluesky = item.bluesky_url %}
                 {% set itemTwitter = item.twitter_username %}
                 {% set itemMastodon = item.mastodon_url %}
 
@@ -170,7 +167,6 @@ hook: "team_page"
                         handleURL: itemHandleURL,
                         bio: itemBio,
                         website: itemWebsite,
-                        bluesky: itemBluesky,
                         github: itemGitHub,
                         twitter: itemTwitter,
                         mastodon: itemMastodon
@@ -197,10 +193,10 @@ hook: "team_page"
                 {% set itemName = item.name %}
                 {% set itemHandle = item.username %}
 
+
                 {% set itemBio = item.bio | safe %}
                 {% set itemWebsite = item.website %}
                 {% set itemGitHub = item.github_username %}
-                {% set itemBluesky = item.bluesky_url %}
                 {% set itemTwitter = item.twitter_username %}
                 {% set itemMastodon = item.mastodon_url %}
 
@@ -212,7 +208,6 @@ hook: "team_page"
                         handleURL: itemHandleURL,
                         bio: itemBio,
                         website: itemWebsite,
-                        bluesky: itemBluesky,
                         github: itemGitHub,
                         twitter: itemTwitter,
                         mastodon: itemMastodon
