@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127716,
-        "monthlyDonations": 10643,
-        "sponsorCount": 168
+        "annualDonations": 127776,
+        "monthlyDonations": 10648,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -433,7 +433,7 @@
         {
             "name": "ProjectDiscovery",
             "image": "https://avatars.githubusercontent.com/u/50994705?v=4",
-            "url": "https://projectdiscovery.io",
+            "url": "https://projectdiscovery.io/",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -452,6 +452,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "ConnectionsHint",
+            "url": "https://connectionshint.ai",
+            "image": "https://images.opencollective.com/connectionshint/b2ab68b/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
