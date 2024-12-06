@@ -28,12 +28,14 @@ Static analysis can be immensely helpful for improving code readability, reliabi
 Many developers rely on static analysis to enforce consistent code formatting and style, to ensure code is well-documented, and to catch likely bugs.
 Because static analysis runs on source code, it can suggest improvements in editors, as code is written.
 
-We'll focus in this blog post on *linters*, namely ESLint, and *type checkers*, namely [TypeScript](https://typescriptlang.org).
+We'll focus in this blog post on ESLint and TypeScript:
 
 * **ESLint**: executes individually configurable checks known as "lint rules"
 * **TypeScript**: collects all files into a full understanding of the project
 
-ESLint and TypeScript are often used together to detect defects in code.
+ESLint and TypeScript use some of the same forms of analysis to detect defects in code.
+They both analyze how scopes and variables are created and used in code, and can catch issues such as referencing a variable that doesn't exist.
+We'll explore the different ways the two use information from analyzing your code.
 
 ## Digging deeper into linting vs. type checking
 
@@ -56,9 +58,10 @@ Compiled languages such as Java and Rust perform type checking as part of their 
 Because JavaScript is an interpreted language, TypeScript is run separately.
 
 Type checkers generally do not attempt to look for defects that are only likely to occur.
-Type checkers generally only look for defects that are certainly wrong.
+They generally only look for uses of code that are certainly wrong.
+
 Nor do type checkers enforce subjective opinions that might change between projects.
-That means TypeScript does not attempt to enforce general best practices — only that values are used in type-safe ways.
+TypeScript does not attempt to enforce general best practices — only that values are used in type-safe ways.
 TypeScript won't detect likely mistakes that work within those types.
 
 Linters, on the other hand, primarily target likely defects and can also be used to enforce subjective opinions.
@@ -95,24 +98,24 @@ function logFruit(value: "apple" | "banana" | "cherry") {
 logFruit("banana");
 ```
 
-Another way of looking at the differences between linters and type checkers is that type checkers enforce what you *can* do, whereas linters enforce what you *should* do.
+Another way of looking at the differences between ESLint and TypeScript is that TypeScript enforces what you *can* do, whereas ESLint enforces what you *should* do.
 
 ### Granular Extensibility
 
 Another difference between ESLint and TypeScript is how flexibly their areas of responsibility can be configured.
 
 TypeScript is configured by a set list of compiler options on a project level.
-TypeScript's [`tsconfig.json` ("TSConfig") files](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) allow for compiler options that change type checking for all files in the project.
+Its [`tsconfig.json` ("TSConfig") files](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) allow for compiler options that change type checking for all files in the project.
 Those compiler options are set by TypeScript and generally change large swathes of type checking behavior.
 
-Linters, on the other hand, run with a configurable set of lint rules.
+ESLint on the other hand, runs with a configurable set of lint rules.
 Each lint rule can be granularly configured.
 If you don't like a particular lint rule, you can always turn it off for a line, set of files, or your entire project.
 
-Linters can also be augmented by **plugins** that add new lint rules.
-Plugin-specific lint rules extend the breadth of code checks that linter configurations can pick and choose from.
+ESLint can also be augmented by **plugins** that add new lint rules.
+Plugin-specific lint rules extend the breadth of code checks that ESLint configurations can pick and choose from.
 
-For example, this ESLint configuration enables the recommended rules from [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y), a plugin that adds checks for accessibility in JSX libraries such as Solid.js and React:
+For example, this ESLint configuration enables the recommended rules from [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y), a plugin that adds checks for accessibility in projects using JSX libraries such as Solid.js and React:
 
 ```js title="eslint.config.js"
 import js from "@eslint/js";
@@ -125,7 +128,8 @@ export default [
 ];
 ```
 
-A project using the JSX accessibility rules would then be told if they render a native `<img>` tag without descriptive text per [`jsx-a11y/alt-text`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/alt-text.md):
+A project using the JSX accessibility rules would then be told if their code violates common accessibility guidelines.
+For example, rendering a native `<img>` tag without descriptive text would receive a report from [`jsx-a11y/alt-text`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/alt-text.md):
 
 ```tsx
 const MyComponent = () => <img src="source.webp" />;
@@ -134,11 +138,11 @@ const MyComponent = () => <img src="source.webp" />;
 // img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
 ```
 
-By adding in rules from plugins, linter configurations can be tailored to the specific best practices and common issues to the frameworks a project is built with.
+By adding in rules from plugins, ESLint configurations can be tailored to the specific best practices and common issues to the frameworks a project is built with.
 
 ### Areas of Overlap
 
-Linters and type checkers operate differently and specialize in different areas of code defects.
+ESLint and TypeScript operate differently and specialize in different areas of code defects.
 Some code defects straddle the line between "best practices" and "type safety", and so can be caught by both linting and type checking.
 There are some core rules that are superseded by TypeScript's type checking.
 
@@ -200,14 +204,14 @@ That extra level of configurability provided by the `no-unused-vars` rules can a
 
 > 💡 See [`no-unused-binary-expressions`: From code review nit to ecosystem improvements](/blog/2024/10/code-review-nit-to-ecosystem-improvements) for more areas of code checking with partial overlap between linting and type checking.
 
-## Is a Linter Still Useful With a Type Checker?
+## Is a ESLint Still Useful With TypeScript?
 
 **Yes.**
 
 If you are using TypeScript, it is still very useful to use ESLint.
-In fact, linters and type checkers are at their most powerful when used in conjunction with each other.
+In fact, ESLint and TypeScript are at their most powerful when used in conjunction with each other.
 
-### Linters, With Type Information
+### ESLint, With Type Information
 
 Traditional lint rules run on a single file at a time and have no knowledge of other files in the project.
 They can't make decisions on files based on the contents of other files.
@@ -232,10 +236,10 @@ for (const name in getArrayOfNames()) {
 }
 ```
 
-Augmenting the linter with information from the type checker makes for a more powerful set of lint rules.
+Augmenting ESLint with information from TypeScript makes for a more powerful set of lint rules.
 See [Typed Linting: The Most Powerful TypeScript Linting Ever](https://typescript-eslint.io/blog/typed-linting) for more details on typed linting with typescript-eslint.
 
-### Type Checkers, With Linting
+### TypeScript, With Linting
 
 TypeScript adds extra complexity to JavaScript.
 That complexity is often worth it, but any added complexity brings with it the potential for misuse.
@@ -259,15 +263,15 @@ export function logObjectEntries(value: {}) {
 logObjectEntries(0); // No type error!
 ```
 
-Enforcing language-specific best practices with a linter helps developers learn about and correctly use type checkers such as TypeScript.
+Enforcing language-specific best practices with ESLint helps developers learn about and correctly use TypeScript.
 
 ## Conclusion
 
 Linters such as ESLint and type checkers such as TypeScript are both valuable assets for developers.
 The two catch different areas of code defects and come with different philosophies around configurability and extensibility.
 
-* Type checkers check that code is "type-safe": enforcing what you *can* write
-* Linters check that code adheres to best practices and is consistent: enforcing what you *should* write
+* TypeScripts checks that code is "type-safe": enforcing what you *can* write
+* ESLint checks that code adheres to best practices and is consistent: enforcing what you *should* write
 
 Put together, the two tools help projects write code with fewer bugs and more consistency.
 We recommend that any project that uses TypeScript additionally uses ESLint.
