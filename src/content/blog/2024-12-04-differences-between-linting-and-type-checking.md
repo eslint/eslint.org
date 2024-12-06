@@ -10,20 +10,29 @@ tags:
   - Linting
 ---
 
+If you're a JavaScript developer today, you're probably using ESLint and/or TypeScript to assist development.
+Those two tools are common examples of their kind of tooling: ESLint is a common *linter*, whereas TypeScript is a common *type checker*.
+
 Linters and type checkers are two kinds of tools that both analyze code and report on detected issues.
 They may seem similar at first.
+They both fall under the category of *static analysis*.
 However, the two kinds of tools detect very different issues and are useful in different ways.
 
 ## What is static analysis?
 
-*Static analysis* is the inspection of source code without executing it. This differs from *dynamic analysis*, in which source code is inspected while it is executed. As such, dynamic analysis brings with it the inherent danger of executing malicious code or creating side effects while static analysis is safe to execute regardless of the source code.
-There are three forms of static analysis commonly used in web development projects today:
+Static analysis is the inspection of source code without executing it.
+This differs from *dynamic analysis*, in which source code is inspected while it is executed.
+As such, dynamic analysis brings with it the inherent danger of executing malicious code or creating side effects while static analysis is safe to execute regardless of the source code.
 
-1. **Formatters**: only print your code quickly, without worrying about logic
-2. **Linters**: execute individually configurable checks known as "lint rules"
-3. **Type checkers**: collect all files into a full understanding of the project
+Static analysis can be immensely helpful for improving code readability, reliability, and overall quality.
+Many developers rely on static analysis to enforce consistent code formatting and style, to ensure code is well-documented, and to catch likely bugs.
+Because static analysis runs on source code, it can suggest improvements in editors, as code is written.
 
 We'll focus in this blog post on *linters*, namely ESLint, and *type checkers*, namely [TypeScript](https://typescriptlang.org).
+
+* **ESLint**: executes individually configurable checks known as "lint rules"
+* **TypeScript**: collects all files into a full understanding of the project
+
 ESLint and TypeScript are often used together to detect defects in code.
 
 ## Digging deeper into linting vs. type checking
@@ -31,7 +40,21 @@ ESLint and TypeScript are often used together to detect defects in code.
 Type checkers make sure the *intent* behind values in code matches the *usage* of those values.
 They check that code is "type-safe": values are used according to how their types are described as being allowed.
 
-Type checkers do not attempt to look for defects that are only likely, rather than certain.
+For example, TypeScript would report a type error on the following `logUppercase(9001)` call, because `logUppercase` is declared as receiving a `string` rather than a `number`:
+
+```ts
+function logUppercase(text: string) {
+    console.log(text.toUpperCase());
+}
+
+logUppercase(9001);
+```
+
+Compiled languages such as Java and Rust perform type checking as part of their compilation step.
+Because JavaScript is an interpreted language, TypeScript is run separately.
+
+Type checkers generally do not attempt to look for defects that are only likely to occur.
+Type checkers generally only look for defects that are certainly wrong.
 Nor do type checkers enforce subjective opinions that might change between projects.
 That means TypeScript does not attempt to enforce general best practices — only that values are used in type-safe ways.
 TypeScript won't detect likely mistakes that work within those types.
@@ -74,9 +97,9 @@ Another way of looking at the differences between linters and type checkers is t
 
 ### Granular Extensibility
 
-Another difference between linters and type checkers is how flexibly their areas of responsibility can be configured.
+Another difference between ESLint and TypeScript is how flexibly their areas of responsibility can be configured.
 
-Type checkers are generally configured with a set list of compiler options on a project level.
+TypeScript is configured by a set list of compiler options on a project level.
 TypeScript's [`tsconfig.json` ("TSConfig") files](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) allow for compiler options that change type checking for all files in the project.
 Those compiler options are set by TypeScript and generally change large swathes of type checking behavior.
 
