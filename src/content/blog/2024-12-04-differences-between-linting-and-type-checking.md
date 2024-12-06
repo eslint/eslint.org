@@ -48,6 +48,8 @@ function logUppercase(text: string) {
 }
 
 logUppercase(9001);
+//           ~~~~
+// Argument of type 'number' is not assignable to parameter of type 'string'.
 ```
 
 Compiled languages such as Java and Rust perform type checking as part of their compilation step.
