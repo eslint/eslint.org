@@ -1,8 +1,9 @@
 {
     "github": "https://github.com/eslint/eslint",
-    "twitter": "https://twitter.com/geteslint",
     "chat": "https://eslint.org/chat",
+    "bluesky": "https://bsky.app/profile/eslint.org",
     "mastodon": "https://fosstodon.org/@eslint",
+    "twitter": "https://twitter.com/geteslint",
 
     "blog": "/blog",
     "docs": "/docs/latest/",

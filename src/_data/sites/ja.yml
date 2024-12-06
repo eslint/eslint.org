@@ -83,10 +83,11 @@ footer:
   secondary: Secondary
   social_icons:
     title: ソーシャルメディア
-    twitter: Twitter
     chat: Discord
     github: GitHub
+    bluesky: Bluesky
     mastodon: Mastodon
+    twitter: Twitter
   theme_switcher:
     title: 配色モード切り替え
     system: システム
