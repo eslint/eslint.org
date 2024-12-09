@@ -59,9 +59,7 @@ Because JavaScript is an interpreted language, TypeScript is run separately.
 
 TypeScript generally does not attempt to look for defects that are only likely to occur.
 It generally only looks for uses of code that are certainly wrong.
-
 Nor does the type checking in TypeScript enforce subjective opinions that might change between projects.
-TypeScript won't detect likely mistakes that work within those types.
 
 Linters, on the other hand, primarily target likely defects and can also be used to enforce subjective opinions.
 ESLint and other linters catch issues that may or may not be type-safe but are potential sources of bugs.
