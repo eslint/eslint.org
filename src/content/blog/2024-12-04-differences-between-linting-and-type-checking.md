@@ -65,7 +65,7 @@ TypeScript does not attempt to enforce general best practices — only that valu
 TypeScript won't detect likely mistakes that work within those types.
 
 Linters, on the other hand, primarily target likely defects and can also be used to enforce subjective opinions.
-ESLint and other linters catch issues that are may or may not be type-safe but are potential sources of bugs.
+ESLint and other linters catch issues that may or may not be type-safe but are potential sources of bugs.
 Many developers rely on linters to make sure their code follows framework and language best practices.
 
 For example, developers sometimes leave out the `break` or `return` at the end of a `switch` statement's `case`.
