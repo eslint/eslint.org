@@ -10,7 +10,7 @@ tags:
   - Linting
 ---
 
-If you're a JavaScript developer today, you're probably using ESLint and/or TypeScript to assist development.
+If you're a JavaScript developer today, there's a good chance you're using ESLint and/or TypeScript to assist development.
 Those two tools are common examples of their kind of tooling: ESLint is a common *linter*, whereas TypeScript is a common *type checker*.
 
 Linters and type checkers are two kinds of tools that both analyze code and report on detected issues.
