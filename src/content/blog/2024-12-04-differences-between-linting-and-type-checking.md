@@ -57,11 +57,10 @@ logUppercase(9001);
 Compiled languages such as Java and Rust perform type checking as part of their compilation step.
 Because JavaScript is an interpreted language, TypeScript is run separately.
 
-Type checkers generally do not attempt to look for defects that are only likely to occur.
-They generally only look for uses of code that are certainly wrong.
+TypeScript generally does not attempt to look for defects that are only likely to occur.
+It generally only looks for uses of code that are certainly wrong.
 
-Nor do type checkers enforce subjective opinions that might change between projects.
-TypeScript does not attempt to enforce general best practices — only that values are used in type-safe ways.
+Nor does the type checking in TypeScript enforce subjective opinions that might change between projects.
 TypeScript won't detect likely mistakes that work within those types.
 
 Linters, on the other hand, primarily target likely defects and can also be used to enforce subjective opinions.
