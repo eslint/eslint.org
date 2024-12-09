@@ -26,7 +26,7 @@ As such, dynamic analysis brings with it the inherent danger of executing malici
 
 Static analysis can be immensely helpful for improving code readability, reliability, and overall quality.
 Many developers rely on static analysis to enforce consistent code formatting and style, to ensure code is well-documented, and to catch likely bugs.
-Because static analysis runs on source code, it can suggest improvements in editors, as code is written.
+Because static analysis runs on source code, it can suggest improvements in editors as code is written.
 
 We'll focus in this blog post on ESLint and TypeScript:
 
@@ -145,7 +145,7 @@ Those defects can often be caught by both ESLint and TypeScript.
 
 To make the most of both tools, we recommend:
 
-* In your ESLint configuration file, use the [ESLint `js.configs.recommended` config](https://eslint.org/docs/latest/use/getting-started#configuration), at least the [`tseslint.configs.recommended` configuration from typescript-eslint](https://typescript-eslint.io/getting-started/typed-linting), and any community plugins relevant to your project's libraries and frameworks
+* In your ESLint configuration file, use the [ESLint `js.configs.recommended` config](https://eslint.org/docs/latest/use/getting-started#configuration), at least the [`tseslint.configs.recommended` config from typescript-eslint](https://typescript-eslint.io/getting-started/typed-linting), and any community plugins relevant to your project's libraries and frameworks
 * In your TypeScript configuration file, enable [`strict` mode](https://www.typescriptlang.org/tsconfig/#strict) to catch as many type safety issues as possible
 
 typescript-eslint's recommended preset configs disable core ESLint rules that are not helpful with TypeScript.
@@ -174,7 +174,7 @@ declare function registerCallback(callback: Callback): void;
 registerCallback((_, message) => console.log(message));
 ```
 
-Unused variables in JavaScript can also be caught by ESLint's [`no-unused-vars`](https://eslint.org/docs/latest/rules/no-unused-vars) rule; when in TypeScript code, the [`@typescript-eslint/no-unused-vars`](https://typescript-eslint.io/rules/no-unused-vars) is preferred instead.
+Unused variables in JavaScript can also be caught by ESLint's [`no-unused-vars`](https://eslint.org/docs/latest/rules/no-unused-vars) rule; when in TypeScript code, the [`@typescript-eslint/no-unused-vars`](https://typescript-eslint.io/rules/no-unused-vars) is preferable instead.
 The lint rules by default also ignore variables whose name begins with `_`.
 They additionally ignore parameters that come before any parameter that is itself used.
 
