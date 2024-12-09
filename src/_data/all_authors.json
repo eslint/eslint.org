@@ -6,6 +6,7 @@
         "website": "https://humanwhocodes.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/38546?v=4",
         "bio": "Creator of ESLint, independent software developer, consultant, coach, and author.",
+        "bluesky_url": "https://bsky.app/profile/humanwhocodes.com",
         "twitter_username": "slicknet",
         "github_username": "nzakas",
         "mastodon_url": "https://fosstodon.org/@nzakas",
@@ -130,6 +131,7 @@
         "website": "https://eslint.org",
         "avatar_url": "https://avatars.githubusercontent.com/u/13383618?v=4",
         "bio": null,
+        "bluesky_url": "https://bsky.app/profile/eslint.org",
         "twitter_username": "geteslint",
         "github_username": "eslintbot",
         "mastodon_url": "https://fosstodon.org/@eslint",
@@ -175,6 +177,7 @@
         "website": "https://michaeldeboey.be",
         "avatar_url": "https://avatars.githubusercontent.com/u/6643991?v=4",
         "bio": "👨‍💻 Freelance full stack JavaScript/TypeScript & React engineer",
+        "bluesky_url": "https://bsky.app/profile/michaeldeboey.bsky.social",
         "twitter_username": "MichaelDeBoey93",
         "github_username": "MichaelDeBoey",
         "location": "Sint-Niklaas, Belgium"
@@ -197,6 +200,7 @@
         "website": "https://antfu.me",
         "avatar_url": "https://avatars.githubusercontent.com/u/11247099?v=4",
         "bio": "A ship in harbor is safe, but that is not what ships are built for.",
+        "bluesky_url": "https://bsky.app/profile/antfu.me",
         "twitter_username": "antfu7",
         "github_username": "antfu",
         "location": "undefined"

@@ -7,6 +7,7 @@
             "website": "https://humanwhocodes.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/38546?v=4",
             "bio": "Creator of ESLint, independent software developer, consultant, coach, and author.",
+            "bluesky_url": "https://bsky.app/profile/humanwhocodes.com",
             "twitter_username": "slicknet",
             "github_username": "nzakas",
             "mastodon_url": "https://fosstodon.org/@nzakas",
@@ -87,6 +88,7 @@
             "website": "https://justgrahamthings.tumblr.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/218840?v=4",
             "bio": null,
+            "bluesky_url": "@michael.ficarra.me",
             "twitter_username": "smooshMap",
             "github_username": "michaelficarra",
             "mastodon_url": "https://mastodon.social/@michaelficarra",
@@ -165,6 +167,7 @@
             "website": "https://jameshenry.blog",
             "avatar_url": "https://avatars.githubusercontent.com/u/900523?v=4",
             "bio": "Director of Engineering at Nx (@nrwl). 5x MVP for TypeScript @microsoft. Creator of @typescript-eslint and @angular-eslint.",
+            "bluesky_url": "https://bsky.app/profile/jameshenry.bsky.social",
             "twitter_username": "MrJamesHenry",
             "github_username": "JamesHenry",
             "location": "☁️"
@@ -311,6 +314,7 @@
             "website": "https://ota-meshi.github.io/",
             "avatar_url": "https://avatars.githubusercontent.com/u/16508807?v=4",
             "bio": "Member of @vuejs, @sveltejs, @stylelint, @stylus, and @intlify. ex-@eslint. Owner of cheetah-grid.\r\nJava/JavaScript/TypeScript. I use broken English",
+            "bluesky_url": "https://bsky.app/profile/ota-meshi.bsky.social",
             "twitter_username": "omoteota",
             "github_username": "ota-meshi",
             "location": "Kanagawa, Japan"
@@ -368,6 +372,7 @@
             "website": "https://snitin315.dev/",
             "avatar_url": "https://avatars.githubusercontent.com/u/46647141?v=4",
             "bio": "Helping maintain @webpack and @eslint",
+            "bluesky_url": "https://bsky.app/profile/nitin.bsky.social",
             "twitter_username": "snitin315",
             "github_username": "snitin315",
             "location": "INDIA"
@@ -381,6 +386,7 @@
             "website": "http://www.joshuakgoldberg.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
             "bio": "Full time open source 💖✨ \r\n\r\n@typescript-eslint maintainer; \r\n@LearningTypeScript author;\r\nMicrosoft MVP 🌟",
+            "bluesky_url": "https://bsky.app/profile/joshuakgoldberg.com",
             "twitter_username": "JoshuaKGoldberg",
             "github_username": "JoshuaKGoldberg",
             "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
