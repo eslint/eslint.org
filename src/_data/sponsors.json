@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 127836,
-        "monthlyDonations": 10653,
-        "sponsorCount": 170
+        "annualDonations": 133113.74233224,
+        "monthlyDonations": 11092.81186102,
+        "sponsorCount": 173
     },
     "diamond": [],
     "platinum": [
@@ -92,6 +92,15 @@
             "tier": "bronze-sponsor"
         },
         {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 316.66365564,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090316.66365564",
+            "source": "thanks.dev",
+            "tier": "bronze-sponsor"
+        },
+        {
             "name": "WordHint",
             "url": "https://www.wordhint.net/",
             "image": "https://images.opencollective.com/wordhint/be86813/avatar.png",
@@ -171,6 +180,15 @@
             "tier": "backer"
         },
         {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 85.10147634,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.1614372885.10147634",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Torutek",
             "url": "https://torutek.com",
             "image": "https://images.opencollective.com/torutek/logo.png",
@@ -202,6 +220,15 @@
             "monthlyDonation": 40,
             "totalDonations": 6060,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 38.04672904,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824138.04672904",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
