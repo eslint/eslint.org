@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133113.74233224,
-        "monthlyDonations": 11092.81186102,
-        "sponsorCount": 173
+        "annualDonations": 133170.03710880002,
+        "monthlyDonations": 11097.5030924,
+        "sponsorCount": 174
     },
     "diamond": [],
     "platinum": [
@@ -1176,6 +1176,15 @@
             "url": "https://jupli.com",
             "monthlyDonation": 5,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 4.69123138,
+            "totalDonations": "04.714773010.005789764.69123138",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
