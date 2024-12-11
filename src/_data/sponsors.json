@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133170.03710880002,
-        "monthlyDonations": 11097.5030924,
-        "sponsorCount": 174
+        "annualDonations": 133406.50109976,
+        "monthlyDonations": 11117.208424980001,
+        "sponsorCount": 176
     },
     "diamond": [],
     "platinum": [
@@ -284,6 +284,15 @@
             "tier": "backer"
         },
         {
+            "name": "GitButler",
+            "url": "https://gitbutler.com",
+            "image": "https://github.com/gitbutlerapp.png",
+            "monthlyDonation": 14.70533258,
+            "totalDonations": "014.5787826214.5787826214.7660504714.70533258",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "odan",
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
@@ -479,6 +488,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Backlink Bento",
+            "url": "https://www.backlinkbento.com/",
+            "image": "https://images.opencollective.com/backlink-bento/1727dee/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
