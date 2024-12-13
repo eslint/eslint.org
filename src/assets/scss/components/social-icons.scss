@@ -17,5 +17,9 @@
 				display: flex;
 			}
 		}
+
+		@media screen and (min-width: 1022px) and (max-width: 1200px) {
+			gap: 1.5rem;
+		}
 	}
 }
