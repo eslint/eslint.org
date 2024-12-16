@@ -24,17 +24,16 @@
 	background-color: var(--hero-background-color);
 
 	@media all and (min-width: 800px) {
-		// when the ad is displayed
-		min-height: calc(285px + var(--space-xl-4xl));
+		align-items: center;
+		display: flex;
+
+		// Just enough height to be be slightly taller than the ad
+		min-height: 335px;
 	}
 
 	.content-container {
-		padding: var(--space-xl-4xl) 0 var(--space-l);
+		padding: var(--space-xl-2xl) 0 var(--space-l);
 		margin: 0;
-
-		@media all and (min-width: 800px) {
-			padding: var(--space-xl-4xl) 0 var(--space-xl-2xl);
-		}
 	}
 
 	> .content-container {
