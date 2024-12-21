@@ -46,7 +46,7 @@ async function fetchUserProfile() {
 		name: profile.name,
 		title: "Guest Author",
 		website: profile.blog,
-		avatar_url: profile.avatar_url.replace("private-", ""),
+		avatar_url: `${profile.avatar_url.replace("private-", "").split("?")[0]}?v=4`,
 		bio: profile.bio,
 		twitter_username: profile.twitter_username,
 		github_username: profile.login,
