@@ -96,7 +96,7 @@ async function fetchUserProfile(username) {
 			: profile.blog
 				? `https://${profile.blog}`
 				: profile.blog,
-		avatar_url: profile.avatar_url,
+		avatar_url: profile.avatar_url.replace("private-", ""),
 		bio: profile.bio,
 		twitter_username: profile.twitter_username,
 		github_username: profile.login,
