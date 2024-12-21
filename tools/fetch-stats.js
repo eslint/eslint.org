@@ -17,7 +17,10 @@ const fs = require("node:fs/promises");
 const { DateTime } = require("luxon");
 const util = require("node:util");
 const downloadStats = require("download-stats");
-const { upcomingVersionPrereleaseType } = require("./release-data");
+const {
+	upcomingVersionPrereleaseType,
+	nextVersionDateOverride,
+} = require("./release-data");
 
 //-----------------------------------------------------------------------------
 // Data
@@ -217,11 +220,16 @@ async function fetchGitHubNetworkStats() {
 	const baseDate = DateTime.fromISO("2024-01-12");
 	const currentVersionDate = DateTime.fromISO(stats.currentVersionDate);
 
-	stats.nextVersionDate = currentVersionDate
+	const nextVersionDate = currentVersionDate
 		.plus({
 			days: 14 - (currentVersionDate.diff(baseDate, "days").days % 14),
 		})
 		.toISODate();
+
+	stats.nextVersionDate =
+		nextVersionDateOverride && nextVersionDateOverride > nextVersionDate // string comparison works well with ISO format
+			? nextVersionDateOverride
+			: nextVersionDate;
 
 	await fs.writeFile(statsFilePath, JSON.stringify(stats, null, 4), {
 		encoding: "utf8",
