@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133407.57051731998,
-        "monthlyDonations": 11117.29754311,
-        "sponsorCount": 193
+        "annualDonations": 133411.15484099995,
+        "monthlyDonations": 11117.596236750001,
+        "sponsorCount": 196
     },
     "diamond": [],
     "platinum": [
@@ -1515,6 +1515,24 @@
             "tier": "backer"
         },
         {
+            "name": "Amuzil",
+            "url": "http://amuzil.com",
+            "image": "https://github.com/amuzil.png",
+            "monthlyDonation": 0.12130807,
+            "totalDonations": "00.104836190.12130807",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Wésley Guimarães",
+            "url": "https://guima.dev",
+            "image": "https://github.com/wesleycoder.png",
+            "monthlyDonation": 0.11718545,
+            "totalDonations": "00.117750950.11718545",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "jshttp",
             "url": "https://jshttp.github.io/",
             "image": "https://github.com/jshttp.png",
@@ -1538,6 +1556,15 @@
             "image": "https://github.com/pillarjs.png",
             "monthlyDonation": 0.07040576,
             "totalDonations": "00.089878450.079007620.069406200.07040576",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jongerenraad Zutphen",
+            "url": "https://jrzutphen.nl",
+            "image": "https://github.com/jrzutphen.png",
+            "monthlyDonation": 0.06020012,
+            "totalDonations": "00.052038360.06020012",
             "source": "thanks.dev",
             "tier": "backer"
         },
