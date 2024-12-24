@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 132211.71632987997,
-        "monthlyDonations": 11017.643027490001,
-        "sponsorCount": 197
+        "annualDonations": 132224.97625199996,
+        "monthlyDonations": 11018.748021000001,
+        "sponsorCount": 199
     },
     "diamond": [],
     "platinum": [
@@ -297,7 +297,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 180,
+            "totalDonations": 190,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1497,11 +1497,29 @@
             "tier": "backer"
         },
         {
+            "name": "Trevor Burnham",
+            "url": "http://trevorburnham.com",
+            "image": "https://github.com/trevorburnham.png",
+            "monthlyDonation": 0.69745014,
+            "totalDonations": "05.729764060.288011590.165338280.159169460.156555340.155512200.151551060.160889750.163961850.158733750.527942750.162531990.503347140.504827100.527961270.69745014",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Jos de Jong",
             "url": "https://josdejong.com",
             "image": "https://github.com/josdejong.png",
             "monthlyDonation": 0.68186405,
             "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.68186405",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "styled-components",
+            "url": "https://styled-components.com",
+            "image": "https://github.com/styled-components.png",
+            "monthlyDonation": 0.40754337,
+            "totalDonations": "00.326053020.012738540.011030230.010665550.010449220.010140180.010645300.010899230.010936890.009709040.013606960.415049130.408826210.428176180.40754337",
             "source": "thanks.dev",
             "tier": "backer"
         },
