@@ -24,8 +24,15 @@ const resultsLiveRegion = document.querySelector(
 );
 const searchInput = document.querySelector("#search");
 const searchClearBtn = document.querySelector("#search__clear-btn");
+const poweredByLink = document.querySelector(".search_powered-by-wrapper");
 let activeIndex = -1;
 let searchQuery;
+
+if (poweredByLink) {
+	poweredByLink.addEventListener("focus", function () {
+		clearSearchResults();
+	});
+}
 
 //-----------------------------------------------------------------------------
 // Helpers
