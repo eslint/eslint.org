@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 132224.97625199996,
-        "monthlyDonations": 11018.748021000001,
-        "sponsorCount": 199
+        "annualDonations": 132344.97625199996,
+        "monthlyDonations": 11028.748021000001,
+        "sponsorCount": 201
     },
     "diamond": [],
     "platinum": [
@@ -488,6 +488,24 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mercury Jets",
+            "url": "https://www.mercuryjets.com",
+            "image": "https://images.opencollective.com/private-flight/d5b295f/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Tiekunta",
+            "url": "https://tiehoitokunta.fi",
+            "image": "https://images.opencollective.com/tiekunta/3958004/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
