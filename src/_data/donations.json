@@ -223,14 +223,5 @@
         "amount": 262.77,
         "date": "2024-01-16T19:44:38.365Z",
         "source": "opencollective"
-    },
-    {
-        "id": "a47byg9n-xozdp8x4-e8v6mjlv-03rek5w8",
-        "name": "Vite",
-        "url": "https://vitejs.dev",
-        "image": "https://images.opencollective.com/vite/e6d15e1/logo.png",
-        "amount": 300,
-        "date": "2023-12-01T09:31:37.971Z",
-        "source": "opencollective"
     }
 ]
