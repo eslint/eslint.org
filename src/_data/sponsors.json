@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 132344.97625199996,
-        "monthlyDonations": 11028.748021000001,
-        "sponsorCount": 201
+        "annualDonations": 132370.39039367996,
+        "monthlyDonations": 11030.86586614,
+        "sponsorCount": 202
     },
     "diamond": [],
     "platinum": [
@@ -1237,6 +1237,15 @@
             "image": null,
             "monthlyDonation": 2.3964867,
             "totalDonations": "00.761247260.761247260.999943772.39648670",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Scienta",
+            "url": "https://www.scienta.nl",
+            "image": "https://github.com/scientanl.png",
+            "monthlyDonation": 2.11784514,
+            "totalDonations": "00.038842860.034193890.033182100.030406520.030375670.030949060.029162580.037892530.037574320.040268370.040065522.206205022.154429282.129015752.090163402.11784514",
             "source": "thanks.dev",
             "tier": "backer"
         },
