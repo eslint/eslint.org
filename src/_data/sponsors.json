@@ -66,7 +66,7 @@
         },
         {
             "name": "American Express",
-            "image": "https://avatars.githubusercontent.com/u/3853301?v=4",
+            "image": "https://avatars.githubusercontent.com/u/3853301",
             "url": "https://americanexpress.io",
             "monthlyDonation": 500,
             "source": "github",
@@ -74,7 +74,7 @@
         },
         {
             "name": "Workleap",
-            "image": "https://avatars.githubusercontent.com/u/53535748?u=d1e55d7661d724bf2281c1bfd33cb8f99fe2465f&v=4",
+            "image": "https://avatars.githubusercontent.com/u/53535748",
             "url": "https://www.workleap.com",
             "monthlyDonation": 500,
             "source": "github",
@@ -129,7 +129,7 @@
         },
         {
             "name": "GitBook",
-            "image": "https://avatars.githubusercontent.com/u/7111340?v=4",
+            "image": "https://avatars.githubusercontent.com/u/7111340",
             "url": "https://www.gitbook.com",
             "monthlyDonation": 200,
             "source": "github",
@@ -137,7 +137,7 @@
         },
         {
             "name": "Nx",
-            "image": "https://avatars.githubusercontent.com/u/23692104?v=4",
+            "image": "https://avatars.githubusercontent.com/u/23692104",
             "url": "https://nx.dev",
             "monthlyDonation": 200,
             "source": "github",
@@ -145,7 +145,7 @@
         },
         {
             "name": "Mercedes-Benz Group",
-            "image": "https://avatars.githubusercontent.com/u/34240465?v=4",
+            "image": "https://avatars.githubusercontent.com/u/34240465",
             "url": "https://opensource.mercedes-benz.com/",
             "monthlyDonation": 200,
             "source": "github",
@@ -153,7 +153,7 @@
         },
         {
             "name": "HeroCoders",
-            "image": "https://avatars.githubusercontent.com/u/37549774?v=4",
+            "image": "https://avatars.githubusercontent.com/u/37549774",
             "url": "https://herocoders.com",
             "monthlyDonation": 200,
             "source": "github",
@@ -181,7 +181,7 @@
         },
         {
             "name": "Tailscale",
-            "image": "https://avatars.githubusercontent.com/u/48932923?v=4",
+            "image": "https://avatars.githubusercontent.com/u/48932923",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
             "source": "github",
@@ -189,7 +189,7 @@
         },
         {
             "name": "Alan",
-            "image": "https://avatars.githubusercontent.com/u/18175329?v=4",
+            "image": "https://avatars.githubusercontent.com/u/18175329",
             "url": "https://alan.com",
             "monthlyDonation": 45,
             "source": "github",
@@ -224,7 +224,7 @@
         },
         {
             "name": "Lex Machina",
-            "image": "https://avatars.githubusercontent.com/u/1168494?v=4",
+            "image": "https://avatars.githubusercontent.com/u/1168494",
             "url": "https://lexmachina.com",
             "monthlyDonation": 25,
             "source": "github",
@@ -232,7 +232,7 @@
         },
         {
             "name": "Sanofi-Public",
-            "image": "https://avatars.githubusercontent.com/u/94403953?v=4",
+            "image": "https://avatars.githubusercontent.com/u/94403953",
             "url": "https://www.sanofi.com/",
             "monthlyDonation": 25,
             "source": "github",
@@ -312,7 +312,7 @@
         },
         {
             "name": "Bryan Mishkin",
-            "image": "https://avatars.githubusercontent.com/u/698306?v=4",
+            "image": "https://avatars.githubusercontent.com/u/698306",
             "url": "http://www.linkedin.com/in/bmish",
             "monthlyDonation": 10,
             "source": "github",
@@ -320,7 +320,7 @@
         },
         {
             "name": "Extremely Heavy",
-            "image": "https://avatars.githubusercontent.com/u/850311?v=4",
+            "image": "https://avatars.githubusercontent.com/u/850311",
             "url": "https://xh.io",
             "monthlyDonation": 10,
             "source": "github",
@@ -328,7 +328,7 @@
         },
         {
             "name": "Hiroki Osame",
-            "image": "https://avatars.githubusercontent.com/u/1075694?u=7f766073ee609bfb8876e1ae2b55ace083c1c19c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1075694",
             "url": "https://hirok.io",
             "monthlyDonation": 10,
             "source": "github",
@@ -336,7 +336,7 @@
         },
         {
             "name": "ANDO Shohei",
-            "image": "https://avatars.githubusercontent.com/u/1482802?u=5ed9e9723f2adffe818e892ac8694e71ad37060e&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1482802",
             "url": "https://github.com/lyoz",
             "monthlyDonation": 10,
             "source": "github",
@@ -344,7 +344,7 @@
         },
         {
             "name": "Ryan Waskiewicz",
-            "image": "https://avatars.githubusercontent.com/u/1930213?u=aac8c767b7a38900fafe0b7f92abb20b1be77d28&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1930213",
             "url": "https://ducktyped.dev",
             "monthlyDonation": 10,
             "source": "github",
@@ -352,7 +352,7 @@
         },
         {
             "name": "Alejandro Celaya",
-            "image": "https://avatars.githubusercontent.com/u/2719332?u=5f95c85f625500a9cdafe0cd26fce1862d48d46d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2719332",
             "url": "https://alejandrocelaya.blog",
             "monthlyDonation": 10,
             "source": "github",
@@ -360,7 +360,7 @@
         },
         {
             "name": "Moxio",
-            "image": "https://avatars.githubusercontent.com/u/4497863?v=4",
+            "image": "https://avatars.githubusercontent.com/u/4497863",
             "url": "https://moxio.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -368,7 +368,7 @@
         },
         {
             "name": "Avrios",
-            "image": "https://avatars.githubusercontent.com/u/9891362?v=4",
+            "image": "https://avatars.githubusercontent.com/u/9891362",
             "url": "https://avrios.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -376,7 +376,7 @@
         },
         {
             "name": "Mention Me Ltd",
-            "image": "https://avatars.githubusercontent.com/u/10668008?v=4",
+            "image": "https://avatars.githubusercontent.com/u/10668008",
             "url": "https://eng.mention-me.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -384,7 +384,7 @@
         },
         {
             "name": "Connected Cars",
-            "image": "https://avatars.githubusercontent.com/u/23233019?v=4",
+            "image": "https://avatars.githubusercontent.com/u/23233019",
             "url": "https://connectedcars.io",
             "monthlyDonation": 10,
             "source": "github",
@@ -392,7 +392,7 @@
         },
         {
             "name": "hikae",
-            "image": "https://avatars.githubusercontent.com/u/39324739?u=846fcaed774d2417d7f72875e0592af97cbc1a6b&v=4",
+            "image": "https://avatars.githubusercontent.com/u/39324739",
             "url": "https://github.com/HikaruEgashira",
             "monthlyDonation": 10,
             "source": "github",
@@ -400,7 +400,7 @@
         },
         {
             "name": "Erik Perri",
-            "image": "https://avatars.githubusercontent.com/u/46399654?v=4",
+            "image": "https://avatars.githubusercontent.com/u/46399654",
             "url": "https://github.com/erik-perri",
             "monthlyDonation": 10,
             "source": "github",
@@ -408,7 +408,7 @@
         },
         {
             "name": "Simon Lammes",
-            "image": "https://avatars.githubusercontent.com/u/46446421?u=1fb269e9d9e2a4364e8d3eadf67355fc42cc953a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/46446421",
             "url": "https://github.com/simon-lammes",
             "monthlyDonation": 10,
             "source": "github",
@@ -416,7 +416,7 @@
         },
         {
             "name": "Buttondown",
-            "image": "https://avatars.githubusercontent.com/u/48390753?v=4",
+            "image": "https://avatars.githubusercontent.com/u/48390753",
             "url": "https://buttondown.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -424,7 +424,7 @@
         },
         {
             "name": "takurinton",
-            "image": "https://avatars.githubusercontent.com/u/50351271?u=c6e1899a5362587840fa116dc3efa66f084090b8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/50351271",
             "url": "https://github.com/takurinton",
             "monthlyDonation": 10,
             "source": "github",
@@ -432,7 +432,7 @@
         },
         {
             "name": "ProjectDiscovery",
-            "image": "https://avatars.githubusercontent.com/u/50994705?v=4",
+            "image": "https://avatars.githubusercontent.com/u/50994705",
             "url": "https://projectdiscovery.io/",
             "monthlyDonation": 10,
             "source": "github",
@@ -440,7 +440,7 @@
         },
         {
             "name": "PostHog",
-            "image": "https://avatars.githubusercontent.com/u/60330232?v=4",
+            "image": "https://avatars.githubusercontent.com/u/60330232",
             "url": "https://posthog.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -448,7 +448,7 @@
         },
         {
             "name": "Measured",
-            "image": "https://avatars.githubusercontent.com/u/65702254?v=4",
+            "image": "https://avatars.githubusercontent.com/u/65702254",
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
@@ -762,7 +762,7 @@
         },
         {
             "name": "Jordan Harband",
-            "image": "https://avatars.githubusercontent.com/u/45469?u=6ab74b3b934f9659a90b588062c2c4328e40c6be&v=4",
+            "image": "https://avatars.githubusercontent.com/u/45469",
             "url": "https://linkedin.com/in/ljharb",
             "monthlyDonation": 5,
             "source": "github",
@@ -770,7 +770,7 @@
         },
         {
             "name": "Mariusz Nowak",
-            "image": "https://avatars.githubusercontent.com/u/122434?u=6202deb7a394c25a15b19d420e5ea28914384ec4&v=4",
+            "image": "https://avatars.githubusercontent.com/u/122434",
             "url": "http://www.medikoo.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -778,7 +778,7 @@
         },
         {
             "name": "Martti Laine",
-            "image": "https://avatars.githubusercontent.com/u/211543?v=4",
+            "image": "https://avatars.githubusercontent.com/u/211543",
             "url": "https://marttilaine.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -786,7 +786,7 @@
         },
         {
             "name": "Jarrod Davis",
-            "image": "https://avatars.githubusercontent.com/u/235875?u=0c5fb7e068f0f2c5a10ac505ca6492979097c92f&v=4",
+            "image": "https://avatars.githubusercontent.com/u/235875",
             "url": "https://jarrodldavis.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -794,7 +794,7 @@
         },
         {
             "name": "Kah Wai Liew",
-            "image": "https://avatars.githubusercontent.com/u/289419?v=4",
+            "image": "https://avatars.githubusercontent.com/u/289419",
             "url": "https://github.com/tureki",
             "monthlyDonation": 5,
             "source": "github",
@@ -802,7 +802,7 @@
         },
         {
             "name": "Christophe Hurpeau",
-            "image": "https://avatars.githubusercontent.com/u/302891?u=425d1bd46e8899798b80b2dbc5173fa0cf61f33a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/302891",
             "url": "https://christophe.hurpeau.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -810,7 +810,7 @@
         },
         {
             "name": "Enrise",
-            "image": "https://avatars.githubusercontent.com/u/417390?v=4",
+            "image": "https://avatars.githubusercontent.com/u/417390",
             "url": "https://enrise.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -818,7 +818,7 @@
         },
         {
             "name": "Forrest Desjardins",
-            "image": "https://avatars.githubusercontent.com/u/502491?u=1658efb692d4da77a8f68251b9dd8d7a3bdf7aab&v=4",
+            "image": "https://avatars.githubusercontent.com/u/502491",
             "url": "https://aeralta.tech/",
             "monthlyDonation": 5,
             "source": "github",
@@ -826,7 +826,7 @@
         },
         {
             "name": "Leesa Ward",
-            "image": "https://avatars.githubusercontent.com/u/563583?u=b50d6c7220db7b037496600994b3e03569ac16a0&v=4",
+            "image": "https://avatars.githubusercontent.com/u/563583",
             "url": "https://leesaward.dev",
             "monthlyDonation": 5,
             "source": "github",
@@ -834,7 +834,7 @@
         },
         {
             "name": "JC Dang",
-            "image": "https://avatars.githubusercontent.com/u/721579?u=24f5ea15c1d19daae309349971bd6e874f52fa15&v=4",
+            "image": "https://avatars.githubusercontent.com/u/721579",
             "url": "https://github.com/jcdang",
             "monthlyDonation": 5,
             "source": "github",
@@ -842,7 +842,7 @@
         },
         {
             "name": "Gavin Lloyd",
-            "image": "https://avatars.githubusercontent.com/u/744538?u=0a08af9abb9fbf841382190be47f67a679bee4fa&v=4",
+            "image": "https://avatars.githubusercontent.com/u/744538",
             "url": "https://gavinhungry.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -850,7 +850,7 @@
         },
         {
             "name": "Miroslav Šustek",
-            "image": "https://avatars.githubusercontent.com/u/885946?v=4",
+            "image": "https://avatars.githubusercontent.com/u/885946",
             "url": "https://github.com/sustmi",
             "monthlyDonation": 5,
             "source": "github",
@@ -858,7 +858,7 @@
         },
         {
             "name": "Owen Buckley",
-            "image": "https://avatars.githubusercontent.com/u/895923?u=ee2417210461abea5b06cf6aea5492220ecdadf7&v=4",
+            "image": "https://avatars.githubusercontent.com/u/895923",
             "url": "https://www.thegreenhouse.io",
             "monthlyDonation": 5,
             "source": "github",
@@ -866,7 +866,7 @@
         },
         {
             "name": "Jimmy Bradshaw",
-            "image": "https://avatars.githubusercontent.com/u/916017?u=f9be66668f243eecd298b6eea9bb4410f9718b32&v=4",
+            "image": "https://avatars.githubusercontent.com/u/916017",
             "url": "https://github.com/bradshjg",
             "monthlyDonation": 5,
             "source": "github",
@@ -874,7 +874,7 @@
         },
         {
             "name": "Titus",
-            "image": "https://avatars.githubusercontent.com/u/944406?u=6e0f32d14d720c1b0785b91694428741f8cda89c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/944406",
             "url": "https://wooorm.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -882,7 +882,7 @@
         },
         {
             "name": "elan e.V.",
-            "image": "https://avatars.githubusercontent.com/u/1064602?v=4",
+            "image": "https://avatars.githubusercontent.com/u/1064602",
             "url": "https://elan-ev.de",
             "monthlyDonation": 5,
             "source": "github",
@@ -890,7 +890,7 @@
         },
         {
             "name": "Michał Jastrzębowski",
-            "image": "https://avatars.githubusercontent.com/u/1092924?u=d546335f03b66c4b40f2a1d1544b3d7d57d318cc&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1092924",
             "url": "http://jastrzebowski.pl",
             "monthlyDonation": 5,
             "source": "github",
@@ -898,7 +898,7 @@
         },
         {
             "name": "anatdagan",
-            "image": "https://avatars.githubusercontent.com/u/1194087?u=8968347cc199b34c7e397f7cbe542e0882e7ef7c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1194087",
             "url": "https://github.com/anatdagan",
             "monthlyDonation": 5,
             "source": "github",
@@ -906,7 +906,7 @@
         },
         {
             "name": "Charles Severance",
-            "image": "https://avatars.githubusercontent.com/u/1197222?u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1197222",
             "url": "http://www.dr-chuck.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -914,7 +914,7 @@
         },
         {
             "name": "electrovir",
-            "image": "https://avatars.githubusercontent.com/u/1205860?u=61c2513bc24ecc2a909817adc701746b94fed939&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1205860",
             "url": "https://electrovir.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -922,7 +922,7 @@
         },
         {
             "name": "Jonny Burger",
-            "image": "https://avatars.githubusercontent.com/u/1629785?u=f91613c118bb1fcf442a71008dff1cd5f9b30411&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1629785",
             "url": "https://jonny.io",
             "monthlyDonation": 5,
             "source": "github",
@@ -930,7 +930,7 @@
         },
         {
             "name": "Mashmatrix, Inc.",
-            "image": "https://avatars.githubusercontent.com/u/2441953?v=4",
+            "image": "https://avatars.githubusercontent.com/u/2441953",
             "url": "http://www.mashmatrix.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -938,7 +938,7 @@
         },
         {
             "name": "Maarten Van Hoof",
-            "image": "https://avatars.githubusercontent.com/u/2543633?u=ca4ab981a1547381b359f5e36380a50d9d41920d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2543633",
             "url": "https://mrtnvh.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -946,7 +946,7 @@
         },
         {
             "name": "Daniel Lindegren",
-            "image": "https://avatars.githubusercontent.com/u/2631623?u=6e15a32c8bc8370d6fbdbbebda3563161e0eb20d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2631623",
             "url": "https://dlindegren.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -954,7 +954,7 @@
         },
         {
             "name": "Jared Collier",
-            "image": "https://avatars.githubusercontent.com/u/2757601?v=4",
+            "image": "https://avatars.githubusercontent.com/u/2757601",
             "url": "https://github.com/autoboxer",
             "monthlyDonation": 5,
             "source": "github",
@@ -962,7 +962,7 @@
         },
         {
             "name": "Matt Chestnut",
-            "image": "https://avatars.githubusercontent.com/u/3226829?u=ebfd201b89f48a0cd14253d15f307e2cd8bad554&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3226829",
             "url": "https://www.mattchestnut.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -970,7 +970,7 @@
         },
         {
             "name": "lxmarinkovic",
-            "image": "https://avatars.githubusercontent.com/u/3509527?u=6f7f7e2db1fa221d36752a92f247aa1325a55ba5&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3509527",
             "url": "https://lxmarinkovic.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -978,7 +978,7 @@
         },
         {
             "name": "y.takahashi",
-            "image": "https://avatars.githubusercontent.com/u/3516343?u=2043000e4b6c6247945d9c1d1a683c709c527448&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3516343",
             "url": "https://mizle.net",
             "monthlyDonation": 5,
             "source": "github",
@@ -986,7 +986,7 @@
         },
         {
             "name": "Nick Oliver",
-            "image": "https://avatars.githubusercontent.com/u/3945917?u=75ac213afd2def70385395d15c58e888f3460867&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3945917",
             "url": "https://pixnbits.org",
             "monthlyDonation": 5,
             "source": "github",
@@ -994,7 +994,7 @@
         },
         {
             "name": "Hayden Bleasel",
-            "image": "https://avatars.githubusercontent.com/u/4142719?u=825af960ccb1f63c9f9a248999ef3f2e6a9f3ff8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4142719",
             "url": "https://haydenbleasel.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -1002,7 +1002,7 @@
         },
         {
             "name": "Moinul Hossain",
-            "image": "https://avatars.githubusercontent.com/u/4328772?u=c4e0fd72bd7cdb3751166c8ade8ef253e6f5ba67&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4328772",
             "url": "https://moinulhossain.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1010,7 +1010,7 @@
         },
         {
             "name": "Matan Kushner",
-            "image": "https://avatars.githubusercontent.com/u/4658208?u=887d888c45d991a2dbde8ca6f317bf22bc133468&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4658208",
             "url": "https://matchai.dev",
             "monthlyDonation": 5,
             "source": "github",
@@ -1018,7 +1018,7 @@
         },
         {
             "name": "Mattia Richetto",
-            "image": "https://avatars.githubusercontent.com/u/6423261?u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
+            "image": "https://avatars.githubusercontent.com/u/6423261",
             "url": "https://medium.com/@mattiaerre",
             "monthlyDonation": 5,
             "source": "github",
@@ -1026,7 +1026,7 @@
         },
         {
             "name": "Raymond Luong",
-            "image": "https://avatars.githubusercontent.com/u/6905162?u=2d47a34b1c9034dc9bd31f997d5c482f170dc536&v=4",
+            "image": "https://avatars.githubusercontent.com/u/6905162",
             "url": "https://raymondluong.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1034,7 +1034,7 @@
         },
         {
             "name": "Nicolas Charpentier",
-            "image": "https://avatars.githubusercontent.com/u/7189823?u=f7558a0f6828f45f1082970880aefbeab9596d0b&v=4",
+            "image": "https://avatars.githubusercontent.com/u/7189823",
             "url": "https://charpeni.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1042,7 +1042,7 @@
         },
         {
             "name": "Dan Brown",
-            "image": "https://avatars.githubusercontent.com/u/8343178?u=0827017afd8f54d126d84a9dfea02e9f00d81934&v=4",
+            "image": "https://avatars.githubusercontent.com/u/8343178",
             "url": "https://danb.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1050,7 +1050,7 @@
         },
         {
             "name": "Per Tillisch",
-            "image": "https://avatars.githubusercontent.com/u/8572152?v=4",
+            "image": "https://avatars.githubusercontent.com/u/8572152",
             "url": "https://github.com/per1234",
             "monthlyDonation": 5,
             "source": "github",
@@ -1058,7 +1058,7 @@
         },
         {
             "name": "mizdra",
-            "image": "https://avatars.githubusercontent.com/u/9639995?u=c89c30b17b1c1630fb400ca0ca7db881776db3fa&v=4",
+            "image": "https://avatars.githubusercontent.com/u/9639995",
             "url": "https://mizdra.net",
             "monthlyDonation": 5,
             "source": "github",
@@ -1066,7 +1066,7 @@
         },
         {
             "name": "Yuhei FUJITA",
-            "image": "https://avatars.githubusercontent.com/u/13161267?u=f45735a8978321dd7f4bffe0feb5bdde6ff3dd84&v=4",
+            "image": "https://avatars.githubusercontent.com/u/13161267",
             "url": "https://github.com/YuheiFUJITA",
             "monthlyDonation": 5,
             "source": "github",
@@ -1074,7 +1074,7 @@
         },
         {
             "name": "Johannes Konings",
-            "image": "https://avatars.githubusercontent.com/u/14806640?u=3586bd6e631a350aec9ff1f2cc31615f72233244&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14806640",
             "url": "https://johanneskonings.dev/",
             "monthlyDonation": 5,
             "source": "github",
@@ -1082,7 +1082,7 @@
         },
         {
             "name": "Nazim Gafarov",
-            "image": "https://avatars.githubusercontent.com/u/15930575?u=610a01227a302084a6e7bf946954390ea482a349&v=4",
+            "image": "https://avatars.githubusercontent.com/u/15930575",
             "url": "https://github.com/zapolnoch",
             "monthlyDonation": 5,
             "source": "github",
@@ -1090,7 +1090,7 @@
         },
         {
             "name": "Jordan",
-            "image": "https://avatars.githubusercontent.com/u/17376090?u=ebb702d1a6ac346a9ca4c093bea1928e2f62b239&v=4",
+            "image": "https://avatars.githubusercontent.com/u/17376090",
             "url": "https://djmm.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1098,7 +1098,7 @@
         },
         {
             "name": "BrightCrowd",
-            "image": "https://avatars.githubusercontent.com/u/19253501?v=4",
+            "image": "https://avatars.githubusercontent.com/u/19253501",
             "url": "https://brightcrowd.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1106,7 +1106,7 @@
         },
         {
             "name": "kagan",
-            "image": "https://avatars.githubusercontent.com/u/34136752?u=4d75e5b7a3bd567567c340b60cd68e5b0612dfd1&v=4",
+            "image": "https://avatars.githubusercontent.com/u/34136752",
             "url": "https://github.com/kagankan",
             "monthlyDonation": 5,
             "source": "github",
@@ -1114,7 +1114,7 @@
         },
         {
             "name": "Matthew Nanas",
-            "image": "https://avatars.githubusercontent.com/u/37747855?u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
+            "image": "https://avatars.githubusercontent.com/u/37747855",
             "url": "https://mnanas.dev",
             "monthlyDonation": 5,
             "source": "github",
@@ -1122,7 +1122,7 @@
         },
         {
             "name": "Roboflow",
-            "image": "https://avatars.githubusercontent.com/u/53104118?v=4",
+            "image": "https://avatars.githubusercontent.com/u/53104118",
             "url": "https://roboflow.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1130,7 +1130,7 @@
         },
         {
             "name": "xuantm",
-            "image": "https://avatars.githubusercontent.com/u/53134698?u=ab243c45398eba42e40adf9987cb1f95d659d16e&v=4",
+            "image": "https://avatars.githubusercontent.com/u/53134698",
             "url": "https://github.com/ssnaruto",
             "monthlyDonation": 5,
             "source": "github",
@@ -1138,7 +1138,7 @@
         },
         {
             "name": "Yusuke Hakamaya",
-            "image": "https://avatars.githubusercontent.com/u/65002858?u=53b598cdafe9b03086c4e143615cc2979ee9339f&v=4",
+            "image": "https://avatars.githubusercontent.com/u/65002858",
             "url": "https://www.yhakamay.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1146,7 +1146,7 @@
         },
         {
             "name": "Standard Resume Sponsors",
-            "image": "https://avatars.githubusercontent.com/u/65968828?u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
+            "image": "https://avatars.githubusercontent.com/u/65968828",
             "url": "https://standardresume.co/tech",
             "monthlyDonation": 5,
             "source": "github",
@@ -1154,7 +1154,7 @@
         },
         {
             "name": "Jupli",
-            "image": "https://avatars.githubusercontent.com/u/140319444?v=4",
+            "image": "https://avatars.githubusercontent.com/u/140319444",
             "url": "https://jupli.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1171,7 +1171,7 @@
         },
         {
             "name": "Zwyx",
-            "image": "https://avatars.githubusercontent.com/u/29386932?u=1c535ee7444ba22d9d16547974378a0b5e5b3c19&v=4",
+            "image": "https://avatars.githubusercontent.com/u/29386932",
             "url": "https://zwyx.dev",
             "monthlyDonation": 3,
             "source": "github",
@@ -1206,7 +1206,7 @@
         },
         {
             "name": "Daniel O’Connor",
-            "image": "https://avatars.githubusercontent.com/u/916038?v=4",
+            "image": "https://avatars.githubusercontent.com/u/916038",
             "url": "https://danoc.me/",
             "monthlyDonation": 2,
             "source": "github",
@@ -1214,7 +1214,7 @@
         },
         {
             "name": "Kieran McGuire",
-            "image": "https://avatars.githubusercontent.com/u/2109807?u=ba55c676da7633c859f85f91e37595bacf72f8fd&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2109807",
             "url": "https://kieranmcguire.uk/",
             "monthlyDonation": 2,
             "source": "github",
@@ -1249,7 +1249,7 @@
         },
         {
             "name": "Benjamin Reed",
-            "image": "https://avatars.githubusercontent.com/u/89252?v=4",
+            "image": "https://avatars.githubusercontent.com/u/89252",
             "url": "https://music.raccoonfink.com/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1257,7 +1257,7 @@
         },
         {
             "name": "UKYO Kazuma",
-            "image": "https://avatars.githubusercontent.com/u/283562?u=6d1e9d2061ebb92782f6dae7bf31d4eff60ca961&v=4",
+            "image": "https://avatars.githubusercontent.com/u/283562",
             "url": "https://yaakai.to",
             "monthlyDonation": 1,
             "source": "github",
@@ -1265,7 +1265,7 @@
         },
         {
             "name": "John Karahalis",
-            "image": "https://avatars.githubusercontent.com/u/933396?v=4",
+            "image": "https://avatars.githubusercontent.com/u/933396",
             "url": "https://www.johnkarahalis.com",
             "monthlyDonation": 1,
             "source": "github",
@@ -1273,7 +1273,7 @@
         },
         {
             "name": "Ethan Glover",
-            "image": "https://avatars.githubusercontent.com/u/3924176?u=c00121ab8bd1d501799150db672276615e136415&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3924176",
             "url": "https://www.ethang.dev/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1281,7 +1281,7 @@
         },
         {
             "name": "Oliver Radwell",
-            "image": "https://avatars.githubusercontent.com/u/5054896?u=49b4ab60d7caed33a655a7f921a5a130cf28388a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/5054896",
             "url": "https://www.radwell.codes",
             "monthlyDonation": 1,
             "source": "github",
@@ -1289,7 +1289,7 @@
         },
         {
             "name": "Valery Buchinsky",
-            "image": "https://avatars.githubusercontent.com/u/5102057?u=705588d5282df4140c93a11bd51b276ed3286752&v=4",
+            "image": "https://avatars.githubusercontent.com/u/5102057",
             "url": "https://github.com/vbuch",
             "monthlyDonation": 1,
             "source": "github",
@@ -1297,7 +1297,7 @@
         },
         {
             "name": "Frontend Masters",
-            "image": "https://avatars.githubusercontent.com/u/5613852?v=4",
+            "image": "https://avatars.githubusercontent.com/u/5613852",
             "url": "https://FrontendMasters.com",
             "monthlyDonation": 1,
             "source": "github",
@@ -1305,7 +1305,7 @@
         },
         {
             "name": "Ingo Steinke",
-            "image": "https://avatars.githubusercontent.com/u/6377941?u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/6377941",
             "url": "https://www.ingo-steinke.com",
             "monthlyDonation": 1,
             "source": "github",
@@ -1313,7 +1313,7 @@
         },
         {
             "name": "Mikihiro SUDA",
-            "image": "https://avatars.githubusercontent.com/u/6907421?u=c75ea52865a9d8c123be471553aa81c24380e89d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/6907421",
             "url": "https://sudame.net",
             "monthlyDonation": 1,
             "source": "github",
@@ -1321,7 +1321,7 @@
         },
         {
             "name": "Mateus Etto",
-            "image": "https://avatars.githubusercontent.com/u/7322925?u=33db251d02b633150683f87dfe90fcd6621ab850&v=4",
+            "image": "https://avatars.githubusercontent.com/u/7322925",
             "url": "https://yutsuten.github.io/notes/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1329,7 +1329,7 @@
         },
         {
             "name": "Kirill Devope",
-            "image": "https://avatars.githubusercontent.com/u/8249408?u=c1818225ecdbe96d8e837747e0ee26ebe856a95b&v=4",
+            "image": "https://avatars.githubusercontent.com/u/8249408",
             "url": "https://github.com/devope",
             "monthlyDonation": 1,
             "source": "github",
@@ -1337,7 +1337,7 @@
         },
         {
             "name": "Schalk Venter",
-            "image": "https://avatars.githubusercontent.com/u/14258328?u=889f25b21456dc7137f9fb9299fcf2c90b38fb05&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14258328",
             "url": "https://schalkventer.me",
             "monthlyDonation": 1,
             "source": "github",
@@ -1345,7 +1345,7 @@
         },
         {
             "name": "Stephen Zhang",
-            "image": "https://avatars.githubusercontent.com/u/19246983?u=69c6925f1e932a74d22710298fd6791fd126bce6&v=4",
+            "image": "https://avatars.githubusercontent.com/u/19246983",
             "url": "https://github.com/swinzy",
             "monthlyDonation": 1,
             "source": "github",
@@ -1353,7 +1353,7 @@
         },
         {
             "name": "Juhyeok Kang",
-            "image": "https://avatars.githubusercontent.com/u/23312485?u=56d44be9f5705224b1914bf365a1d7c6f022e2bf&v=4",
+            "image": "https://avatars.githubusercontent.com/u/23312485",
             "url": "https://kangju.dev",
             "monthlyDonation": 1,
             "source": "github",
@@ -1361,7 +1361,7 @@
         },
         {
             "name": "su-",
-            "image": "https://avatars.githubusercontent.com/u/30166652?u=95465ea487c57300299dc3a9c708933ec91e9365&v=4",
+            "image": "https://avatars.githubusercontent.com/u/30166652",
             "url": "https://su-u.notion.site/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1369,7 +1369,7 @@
         },
         {
             "name": "Niklas Henning",
-            "image": "https://avatars.githubusercontent.com/u/58544929?u=fa4140692bf0990655a7e36a57a799111eadfedb&v=4",
+            "image": "https://avatars.githubusercontent.com/u/58544929",
             "url": "https://niklashenning.com",
             "monthlyDonation": 1,
             "source": "github",
@@ -1377,7 +1377,7 @@
         },
         {
             "name": "David Badasyan",
-            "image": "https://avatars.githubusercontent.com/u/59211418?u=3ec40b6724f732cdf15f040d6a1a94675407102e&v=4",
+            "image": "https://avatars.githubusercontent.com/u/59211418",
             "url": "https://www.linkedin.com/in/david-badasyan-17b544199/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1385,7 +1385,7 @@
         },
         {
             "name": "Vezel",
-            "image": "https://avatars.githubusercontent.com/u/87844133?v=4",
+            "image": "https://avatars.githubusercontent.com/u/87844133",
             "url": "https://vezel.dev",
             "monthlyDonation": 1,
             "source": "github",
@@ -1393,7 +1393,7 @@
         },
         {
             "name": "Bryan King Pecho",
-            "image": "https://avatars.githubusercontent.com/u/91954699?u=707e67b3afac1d27f132696336bb01ec73916301&v=4",
+            "image": "https://avatars.githubusercontent.com/u/91954699",
             "url": "https://github.com/bkpecho",
             "monthlyDonation": 1,
             "source": "github",
@@ -1401,7 +1401,7 @@
         },
         {
             "name": "Ian Tapply",
-            "image": "https://avatars.githubusercontent.com/u/114881396?u=c8201f005eca8d1c1c4ece7188260f0e99d1227f&v=4",
+            "image": "https://avatars.githubusercontent.com/u/114881396",
             "url": "https://github.com/IanTapply22",
             "monthlyDonation": 1,
             "source": "github",
@@ -1409,7 +1409,7 @@
         },
         {
             "name": "Syntax",
-            "image": "https://avatars.githubusercontent.com/u/130389858?v=4",
+            "image": "https://avatars.githubusercontent.com/u/130389858",
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
