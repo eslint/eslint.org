@@ -20,6 +20,7 @@
 const fs = require("node:fs/promises");
 const { request } = require("undici");
 const { graphql: githubGraphQL } = require("@octokit/graphql");
+const { getGithubAvatar } = require("./utils");
 
 //-----------------------------------------------------------------------------
 // Data
@@ -352,7 +353,7 @@ async function fetchGitHubSponsors() {
 		// return an array in the same format as Open Collective
 		.map(({ sponsor, tier }) => ({
 			name: sponsor.name || sponsor.login,
-			image: `${sponsor.avatarUrl.replace("private-", "").split("?")[0]}?v=4`,
+			image: getGithubAvatar(sponsor),
 			url: fixUrl(sponsor.websiteUrl || sponsor.url),
 			monthlyDonation: tier.monthlyPriceInDollars,
 			source: "github",
@@ -365,7 +366,7 @@ async function fetchGitHubSponsors() {
 		.map(({ sponsor, timestamp, tier, id }) => ({
 			id,
 			name: sponsor.name || sponsor.login,
-			image: `${sponsor.avatarUrl.replace("private-", "").split("?")[0]}?v=4`,
+			image: getGithubAvatar(sponsor),
 			url: fixUrl(sponsor.websiteUrl || sponsor.url),
 			amount: tier.monthlyPriceInDollars,
 			date: timestamp,

@@ -12,6 +12,7 @@ hook: "sponsors_page"
 {% set supporting_text = site.sponsors_page.description %}
 {% set monthly_donations = sponsors.totals.monthlyDonations | dollars %}
 {% set supporting_text = supporting_text | replace("BACKER_COUNT", sponsors.totals.sponsorCount) | replace("MONTHLY_DONATIONS", monthly_donations) %}
+{% set fallback_image = '/assets/images/people/_placeholder-avatar.svg' %}
 
 {{ hero({
     title: site.sponsors_page.title,
@@ -42,7 +43,8 @@ hook: "sponsors_page"
 
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" height="128"
+                            onerror="this.src = '{{fallback_image}}'"
                             alt="{{ sponsor_title }}"
                             title="{{ sponsor_title }}" />
                     </a>
@@ -69,7 +71,8 @@ hook: "sponsors_page"
 
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" height="128"
+                            onerror="this.src = '{{fallback_image}}'"
                             alt="{{ sponsor_title }}"
                             title="{{ sponsor_title }}" />
                     </a>
@@ -96,7 +99,8 @@ hook: "sponsors_page"
 
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" height="128"
+                            onerror="this.src = '{{fallback_image}}'"
                             alt="{{ sponsor_title }}"
                             title="{{ sponsor_title }}" />
                     </a>
@@ -123,7 +127,8 @@ hook: "sponsors_page"
 
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" height="128"
+                            onerror="this.src = '{{fallback_image}}'"
                             alt="{{ sponsor_title }}"
                             title="{{ sponsor_title }}" />
                     </a>
@@ -150,7 +155,8 @@ hook: "sponsors_page"
 
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" height="128"
+                            onerror="this.src = '{{fallback_image}}'"
                             alt="{{ sponsor_title }}"
                             title="{{ sponsor_title }}" />
                     </a>
@@ -174,7 +180,7 @@ hook: "sponsors_page"
                     {% set sponsor_title = site.sponsors_page.tech_sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("TECH", sponsor.donation | capitalize) %}
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="64"/>
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="64" onerror="this.src = '{{fallback_image}}'"/>
                     </a>
                 </li>
                 {% endfor %}
@@ -222,7 +228,6 @@ hook: "sponsors_page"
         </div>
         <div class="grid">
             <ul role="list" class="sponsors span-1-12 sponsors--backers">
-                {% set fallback_image = '/assets/images/people/_placeholder-avatar.svg' %}
                 {% for sponsor in sponsors.backers %}
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
