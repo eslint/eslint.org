@@ -15,7 +15,6 @@
 const fs = require("node:fs/promises");
 const { Octokit } = require("@octokit/rest");
 const path = require("node:path");
-const { getGithubAvatar } = require("./utils");
 
 //-----------------------------------------------------------------------------
 // Data
@@ -47,7 +46,7 @@ async function fetchUserProfile() {
 		name: profile.name,
 		title: "Guest Author",
 		website: profile.blog,
-		avatar_url: getGithubAvatar(profile),
+		avatar_url: profile.avatar_url,
 		bio: profile.bio,
 		twitter_username: profile.twitter_username,
 		github_username: profile.login,
