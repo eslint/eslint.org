@@ -40,13 +40,14 @@ const octokit = new Octokit({
 
 async function fetchUserProfile() {
 	const { data: profile } = await octokit.users.getByUsername({ username });
+	const avatarURL = `https://avatars.githubusercontent.com/u/${profile.id}`;
 
 	return {
 		username: profile.login,
 		name: profile.name,
 		title: "Guest Author",
 		website: profile.blog,
-		avatar_url: profile.avatar_url,
+		avatar_url: avatarURL,
 		bio: profile.bio,
 		twitter_username: profile.twitter_username,
 		github_username: profile.login,
