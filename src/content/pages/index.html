@@ -12,6 +12,8 @@ eleventyExcludeFromCollections: true
 {%- from 'components/donation.macro.html' import donationItem %}
 {%- from 'components/card.macro.html' import card %}
 
+{% set fallback_image = '/assets/images/people/_placeholder-avatar.svg' %}
+
 <section class="section hero hero--homepage">
     <div class="content-container grid">
         <div class="span-1-7 content-container">
@@ -52,7 +54,8 @@ eleventyExcludeFromCollections: true
                     <div class="sponsors">
                         {% for sponsor in top_sponsors %}
                         <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                            <img loading="lazy" decoding="async" src="{{sponsor.image}}" height="128"
+                            <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" height="128"
+                                onerror="this.src = '{{fallback_image}}'"
                                 alt="{{sponsor.name}}"
                                 title="{{ sponsor.name }}" />
                         </a>
@@ -249,7 +252,7 @@ eleventyExcludeFromCollections: true
                         {% if sponsor.url %}
                         <a href="{{ sponsor.url }}" class="sponsor-link" rel="nofollow noopen sponsored" target="_blank">
                         {% endif %}
-                            <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="48" loading="lazy" decoding="async" />
+                            <img src="{{ sponsor.image if sponsor.image else fallback_image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="48" loading="lazy" decoding="async" onerror="this.src = '{{fallback_image}}'" />
                         {% if sponsor.url %}
                         </a>
                         {% endif %}
