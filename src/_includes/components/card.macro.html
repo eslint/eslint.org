@@ -44,7 +44,7 @@
         </p>
         <div class="card__footer">
             {% set fallback_image = '/assets/images/people/_placeholder-avatar.svg' %}
-            <img class="blog-post__author-photo" src="{{ params.image if params.image else fallback_image }}" alt="{{ params.authorName }}" width="40" height="40" loading="lazy" onerror="this.src = '{{fallback_image}}'">
+            <img class="blog-post__author-photo" src="{{ params.authorImage if params.authorImage else fallback_image }}" alt="{{ params.authorName }}" width="40" height="40" loading="lazy" onerror="this.src = '{{fallback_image}}'">
             <div class="blog-post__author__details">
                 <div class="blog-post__author-name">{{ params.authorName }}</div>
                 <time class="blog-post__publish-date" datetime="{{ params.date }}">{{ params.date | readableDate }}</time>
