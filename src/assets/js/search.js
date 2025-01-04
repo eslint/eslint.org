@@ -24,8 +24,15 @@ const resultsLiveRegion = document.querySelector(
 );
 const searchInput = document.querySelector("#search");
 const searchClearBtn = document.querySelector("#search__clear-btn");
+const poweredByLink = document.querySelector(".search_powered-by-wrapper");
 let activeIndex = -1;
 let searchQuery;
+
+if (poweredByLink) {
+	poweredByLink.addEventListener("focus", function () {
+		clearSearchResults();
+	});
+}
 
 //-----------------------------------------------------------------------------
 // Helpers
@@ -45,13 +52,36 @@ function fetchSearchResults(query) {
 }
 
 /**
- * Removes any current search results from the display.
- * @returns {void}
+ * Clears the search results from the display.
+ * If the removeEventListener flag is true, removes the click event listener from the document.
+ * @param {boolean} [removeEventListener=false] - Optional flag to indicate if the click event listener should be removed. Default is false.
+ * @returns {void} - This function doesn't return anything.
  */
-function clearSearchResults() {
-	while (resultsElement.firstChild) {
-		resultsElement.removeChild(resultsElement.firstChild);
+function clearSearchResults(removeEventListener = false) {
+	resultsElement.innerHTML = "";
+	if (removeEventListener && document.clickEventAdded) {
+		document.removeEventListener("click", handleDocumentClick);
+		document.clickEventAdded = false;
 	}
+}
+
+/**
+ * Displays a "No results found" message in both the live region and results display area.
+ * This is typically used when no matching results are found in the search.
+ * @returns {void} - This function doesn't return anything.
+ */
+function showNoResults() {
+	resultsLiveRegion.innerHTML = "No results found.";
+	resultsElement.innerHTML = "No results found.";
+	resultsElement.setAttribute("data-results", "false");
+}
+
+/**
+ * Clears any "No results found" message from the live region and results display area.
+ * @returns {void} - This function doesn't return anything.
+ */
+function clearNoResults() {
+	resultsLiveRegion.innerHTML = "";
 	resultsElement.innerHTML = "";
 }
 
@@ -86,9 +116,7 @@ function displaySearchResults(results) {
 			list.append(listItem);
 		}
 	} else {
-		resultsLiveRegion.innerHTML = "No results found.";
-		resultsElement.innerHTML = "No results found.";
-		resultsElement.setAttribute("data-results", "false");
+		showNoResults();
 	}
 }
 
@@ -111,6 +139,13 @@ function maintainScrollVisibility(activeElement, scrollParent) {
 		scrollParent.scrollTo(0, offsetTop - parentOffsetHeight + offsetHeight);
 	}
 }
+
+/**
+ * Debounces the provided callback with a given delay.
+ * @param {Function} callback The callback that needs to be debounced.
+ * @param {Number} delay Time in ms that the timer should wait before the callback is executed.
+ * @returns {Function} Returns the new debounced function.
+ */
 function debounce(callback, delay) {
 	let timerId;
 
@@ -122,18 +157,39 @@ function debounce(callback, delay) {
 	};
 }
 
+/**
+ * Debounced function to fetch search results after 300ms of inactivity.
+ * Calls `fetchSearchResults` to retrieve data and `displaySearchResults` to show them.
+ * If an error occurs, clears the search results.
+ * @param {string} query - The search query.
+ * @returns {void} - No return value.
+ * @see debounce - Limits the number of requests during rapid typing.
+ */
 const debouncedFetchSearchResults = debounce(query => {
 	fetchSearchResults(query)
 		.then(displaySearchResults)
-		.catch(clearSearchResults);
+		.catch(() => {
+			clearSearchResults(true);
+		});
 }, 300);
+
+/**
+ * Handles the document click event to clear search results if the user clicks outside of the search input or results element.
+ * @param {MouseEvent} e - The event object representing the click event.
+ * @returns {void} - This function does not return any value. It directly interacts with the UI by clearing search results.
+ */
+const handleDocumentClick = e => {
+	if (e.target !== resultsElement && e.target !== searchInput) {
+		clearSearchResults(true);
+	}
+};
 
 //-----------------------------------------------------------------------------
 // Event Handlers
 //-----------------------------------------------------------------------------
 
 // listen for input changes
-searchInput.addEventListener("keyup", function (e) {
+searchInput.addEventListener("keyup", function () {
 	const query = searchInput.value;
 
 	if (query === searchQuery) return;
@@ -143,12 +199,12 @@ searchInput.addEventListener("keyup", function (e) {
 
 	if (query.length > 2) {
 		debouncedFetchSearchResults(query);
-
-		document.addEventListener("click", function (e) {
-			if (e.target !== resultsElement) clearSearchResults();
-		});
+		if (!document.clickEventAdded) {
+			document.addEventListener("click", handleDocumentClick);
+			document.clickEventAdded = true;
+		}
 	} else {
-		clearSearchResults();
+		clearSearchResults(true);
 	}
 
 	searchQuery = query;
@@ -157,7 +213,7 @@ searchInput.addEventListener("keyup", function (e) {
 searchClearBtn.addEventListener("click", function (e) {
 	searchInput.value = "";
 	searchInput.focus();
-	clearSearchResults();
+	clearSearchResults(true);
 	searchClearBtn.setAttribute("hidden", "");
 });
 
@@ -169,12 +225,10 @@ document.addEventListener("keydown", function (e) {
 	if (e.key === "Escape") {
 		e.preventDefault();
 		if (searchResults.length) {
-			clearSearchResults();
+			clearSearchResults(true);
 			searchInput.focus();
-		} else if (
-			!searchResults.length &&
-			document.activeElement === searchInput
-		) {
+		} else if (document.activeElement === searchInput) {
+			clearNoResults();
 			searchInput.blur();
 		}
 	}

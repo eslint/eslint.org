@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133367.41972583998,
-        "monthlyDonations": 11113.95164382,
-        "sponsorCount": 191
+        "annualDonations": 123780,
+        "monthlyDonations": 10315,
+        "sponsorCount": 168
     },
     "diamond": [],
     "platinum": [
@@ -11,7 +11,7 @@
             "url": "https://automattic.com",
             "image": "https://images.opencollective.com/automattic/d0ef3e1/logo.png",
             "monthlyDonation": 2000,
-            "totalDonations": 100000,
+            "totalDonations": 102000,
             "source": "opencollective",
             "tier": "platinum-sponsor"
         },
@@ -20,7 +20,7 @@
             "url": "https://www.airbnb.com/",
             "image": "https://images.opencollective.com/airbnb/d327d66/logo.png",
             "monthlyDonation": 2000,
-            "totalDonations": 77610,
+            "totalDonations": 79610,
             "source": "opencollective",
             "tier": "platinum-sponsor"
         }
@@ -31,7 +31,7 @@
             "url": "https://trunk.io/",
             "image": "https://images.opencollective.com/trunkio/fb92d60/avatar.png",
             "monthlyDonation": 1000,
-            "totalDonations": 7000,
+            "totalDonations": 8000,
             "source": "opencollective",
             "tier": "gold-sponsor"
         }
@@ -42,7 +42,7 @@
             "url": "https://www.serptriumph.com/",
             "image": "https://images.opencollective.com/serp-triumph5/fea3074/logo.png",
             "monthlyDonation": 500,
-            "totalDonations": 1500,
+            "totalDonations": 2000,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
@@ -51,7 +51,7 @@
             "url": "https://www.jetbrains.com/",
             "image": "https://images.opencollective.com/jetbrains/fe76f99/logo.png",
             "monthlyDonation": 500,
-            "totalDonations": 6000,
+            "totalDonations": 6500,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
@@ -60,13 +60,13 @@
             "url": "https://liftoff.io/",
             "image": "https://images.opencollective.com/liftoff/5c4fa84/logo.png",
             "monthlyDonation": 500,
-            "totalDonations": 27500,
+            "totalDonations": 28000,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
         {
             "name": "American Express",
-            "image": "https://private-avatars.githubusercontent.com/u/3853301?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg1NDAsIm5iZiI6MTczNDY3NzM0MCwicGF0aCI6Ii91LzM4NTMzMDEifQ.gc82XgMFd23b3-_thSBjIt6qts5zjbGuGjWpwdYeYX8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3853301",
             "url": "https://americanexpress.io",
             "monthlyDonation": 500,
             "source": "github",
@@ -74,7 +74,7 @@
         },
         {
             "name": "Workleap",
-            "image": "https://private-avatars.githubusercontent.com/u/53535748?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3ODAsIm5iZiI6MTczNDY3NzU4MCwicGF0aCI6Ii91LzUzNTM1NzQ4In0.FNWML3BuWI9LivmpAgKPZHMjO95IeWW31ojh9gT8R4g&u=d1e55d7661d724bf2281c1bfd33cb8f99fe2465f&v=4",
+            "image": "https://avatars.githubusercontent.com/u/53535748",
             "url": "https://www.workleap.com",
             "monthlyDonation": 500,
             "source": "github",
@@ -86,26 +86,8 @@
             "name": "Cybozu",
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
-            "monthlyDonation": 350,
-            "totalDonations": 20664,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "Syntax",
-            "url": "https://syntax.fm",
-            "image": "https://github.com/syntaxfm.png",
-            "monthlyDonation": 316.66365564,
-            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090316.66365564",
-            "source": "thanks.dev",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "WordHint",
-            "url": "https://www.wordhint.net/",
-            "image": "https://images.opencollective.com/wordhint/be86813/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 600,
+            "monthlyDonation": 250,
+            "totalDonations": 20914,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -114,7 +96,7 @@
             "url": "https://www.crosswordsolver.org/anagram-solver/",
             "image": "https://images.opencollective.com/anagram-solver/2666271/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 11400,
+            "totalDonations": 11600,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -123,7 +105,7 @@
             "url": "https://icons8.com/",
             "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 13000,
+            "totalDonations": 13200,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -132,13 +114,13 @@
             "url": "https://discord.com",
             "image": "https://images.opencollective.com/discordapp/f9645d9/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 13600,
+            "totalDonations": 13800,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
         {
             "name": "GitBook",
-            "image": "https://private-avatars.githubusercontent.com/u/7111340?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzcxMTEzNDAifQ.wEbZfHyGDpk-fSQ4XCFJuz4RleWEu3XEIgY5E-bXuxE&v=4",
+            "image": "https://avatars.githubusercontent.com/u/7111340",
             "url": "https://www.gitbook.com",
             "monthlyDonation": 200,
             "source": "github",
@@ -146,7 +128,7 @@
         },
         {
             "name": "Nx",
-            "image": "https://private-avatars.githubusercontent.com/u/23692104?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg1NDAsIm5iZiI6MTczNDY3NzM0MCwicGF0aCI6Ii91LzIzNjkyMTA0In0.oygZ1VwxaKJeMOK9Og1FVUfpeBujPsgzzfqGpUAP2EE&v=4",
+            "image": "https://avatars.githubusercontent.com/u/23692104",
             "url": "https://nx.dev",
             "monthlyDonation": 200,
             "source": "github",
@@ -154,7 +136,7 @@
         },
         {
             "name": "Mercedes-Benz Group",
-            "image": "https://private-avatars.githubusercontent.com/u/34240465?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyMDAsIm5iZiI6MTczNDY3ODAwMCwicGF0aCI6Ii91LzM0MjQwNDY1In0.E_64rtm47fGV4ahDOHLj3IrvOrSI1eVe0GNn2qVWVnY&v=4",
+            "image": "https://avatars.githubusercontent.com/u/34240465",
             "url": "https://opensource.mercedes-benz.com/",
             "monthlyDonation": 200,
             "source": "github",
@@ -162,7 +144,7 @@
         },
         {
             "name": "HeroCoders",
-            "image": "https://private-avatars.githubusercontent.com/u/37549774?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5MDAsIm5iZiI6MTczNDY3NzcwMCwicGF0aCI6Ii91LzM3NTQ5Nzc0In0.9oh4kKxZZDZbHzvcacBk5sYIhO84Z_436lARXmfo_sk&v=4",
+            "image": "https://avatars.githubusercontent.com/u/37549774",
             "url": "https://herocoders.com",
             "monthlyDonation": 200,
             "source": "github",
@@ -175,17 +157,8 @@
             "url": "https://www.principal.com/about-us",
             "image": "https://images.opencollective.com/principal/431e690/logo.png",
             "monthlyDonation": 170,
-            "totalDonations": 3850,
+            "totalDonations": 4020,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Sentry",
-            "url": "https://sentry.io",
-            "image": "https://github.com/getsentry.png",
-            "monthlyDonation": 85.10147634,
-            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.1614372885.10147634",
-            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -193,23 +166,15 @@
             "url": "https://torutek.com",
             "image": "https://images.opencollective.com/torutek/logo.png",
             "monthlyDonation": 50,
-            "totalDonations": 250,
+            "totalDonations": 300,
             "source": "opencollective",
             "tier": "backer"
         },
         {
             "name": "Tailscale",
-            "image": "https://private-avatars.githubusercontent.com/u/48932923?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzQ4OTMyOTIzIn0.kL6j9x2AmGSC_Q_ZWd6dxZzMe51GPKazmEkUwz6DwCY&v=4",
+            "image": "https://avatars.githubusercontent.com/u/48932923",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alan",
-            "image": "https://private-avatars.githubusercontent.com/u/18175329?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91LzE4MTc1MzI5In0.pB6U0lGhWCLCDux2XfdPkxQQcOSuxrgeKnwD1VEuPr4&v=4",
-            "url": "https://alan.com",
-            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
@@ -218,17 +183,8 @@
             "url": "https://yannick.cr/",
             "image": "https://images.opencollective.com/yannickcr/765f06f/avatar.png",
             "monthlyDonation": 40,
-            "totalDonations": 6060,
+            "totalDonations": 6100,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Codecov",
-            "url": "https://codecov.io/",
-            "image": "https://github.com/codecov.png",
-            "monthlyDonation": 38.04672904,
-            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824138.04672904",
-            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -236,7 +192,7 @@
             "url": "https://www.storis.com/",
             "image": "https://images.opencollective.com/storis/dfb0e13/logo.png",
             "monthlyDonation": 35,
-            "totalDonations": 1125,
+            "totalDonations": 1160,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -245,13 +201,13 @@
             "url": "https://www.neovation.com",
             "image": "https://images.opencollective.com/neovationcorp/30d1cf7/logo.png",
             "monthlyDonation": 25,
-            "totalDonations": 1775,
+            "totalDonations": 1800,
             "source": "opencollective",
             "tier": "backer"
         },
         {
             "name": "Lex Machina",
-            "image": "https://private-avatars.githubusercontent.com/u/1168494?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0MjAsIm5iZiI6MTczNDY3NzIyMCwicGF0aCI6Ii91LzExNjg0OTQifQ.DEc4HhkE7_GT3ocemdzaCfMe3CoE8vYzf08lK37XAqk&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1168494",
             "url": "https://lexmachina.com",
             "monthlyDonation": 25,
             "source": "github",
@@ -259,7 +215,7 @@
         },
         {
             "name": "Sanofi-Public",
-            "image": "https://private-avatars.githubusercontent.com/u/94403953?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91Lzk0NDAzOTUzIn0.zGNbDlhX5p2ersBix7OyDb9MDKYIXOvxpWdX185HkUQ&v=4",
+            "image": "https://avatars.githubusercontent.com/u/94403953",
             "url": "https://www.sanofi.com/",
             "monthlyDonation": 25,
             "source": "github",
@@ -270,7 +226,7 @@
             "url": "https://webdriver.io/",
             "image": "https://images.opencollective.com/webdriverio/bbdd5c3/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 220,
+            "totalDonations": 240,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -279,17 +235,8 @@
             "url": "https://www.agendrix.com/",
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 675,
+            "totalDonations": 695,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "GitButler",
-            "url": "https://gitbutler.com",
-            "image": "https://github.com/gitbutlerapp.png",
-            "monthlyDonation": 14.70533258,
-            "totalDonations": "014.5787826214.5787826214.7660504714.70533258",
-            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -297,7 +244,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 180,
+            "totalDonations": 190,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -306,7 +253,7 @@
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/605818e/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 200,
+            "totalDonations": 210,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -315,7 +262,7 @@
             "url": null,
             "image": "https://images.opencollective.com/wwoof-open-source-fund/cb8119c/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 320,
+            "totalDonations": 330,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -324,7 +271,7 @@
             "url": "https://mfbtech.com",
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 330,
+            "totalDonations": 340,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -333,7 +280,7 @@
             "url": "https://raider.io",
             "image": "https://images.opencollective.com/raiderio_wow/7a380a3/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 470,
+            "totalDonations": 480,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -342,13 +289,13 @@
             "url": "https://www.simedia.com/",
             "image": "https://images.opencollective.com/simedia/848efc9/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 530,
+            "totalDonations": 540,
             "source": "opencollective",
             "tier": "backer"
         },
         {
             "name": "Bryan Mishkin",
-            "image": "https://private-avatars.githubusercontent.com/u/698306?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzY5ODMwNiJ9.T6OWju_TrA3rjVtoNPHk3JC0wc2yrxk8J_0OmOhiHqg&v=4",
+            "image": "https://avatars.githubusercontent.com/u/698306",
             "url": "http://www.linkedin.com/in/bmish",
             "monthlyDonation": 10,
             "source": "github",
@@ -356,7 +303,7 @@
         },
         {
             "name": "Extremely Heavy",
-            "image": "https://private-avatars.githubusercontent.com/u/850311?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3ODAsIm5iZiI6MTczNDY3NzU4MCwicGF0aCI6Ii91Lzg1MDMxMSJ9.DXDxqVToj16H8sPS02Y5sJ28Gu8v9-90WjWbxkTEMF8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/850311",
             "url": "https://xh.io",
             "monthlyDonation": 10,
             "source": "github",
@@ -364,7 +311,7 @@
         },
         {
             "name": "Hiroki Osame",
-            "image": "https://private-avatars.githubusercontent.com/u/1075694?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2NjAsIm5iZiI6MTczNDY3NzQ2MCwicGF0aCI6Ii91LzEwNzU2OTQifQ.Yk2TR5HWl65sbC3MDmHOoqQIjiqoeK3fx-n6jNkWvpc&u=7f766073ee609bfb8876e1ae2b55ace083c1c19c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1075694",
             "url": "https://hirok.io",
             "monthlyDonation": 10,
             "source": "github",
@@ -372,7 +319,7 @@
         },
         {
             "name": "ANDO Shohei",
-            "image": "https://private-avatars.githubusercontent.com/u/1482802?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzE0ODI4MDIifQ.axPHotzedQEo-Jt_xxPCvr_HbebEVzgsYfd2LIJNRlU&u=5ed9e9723f2adffe818e892ac8694e71ad37060e&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1482802",
             "url": "https://github.com/lyoz",
             "monthlyDonation": 10,
             "source": "github",
@@ -380,7 +327,7 @@
         },
         {
             "name": "Ryan Waskiewicz",
-            "image": "https://private-avatars.githubusercontent.com/u/1930213?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91LzE5MzAyMTMifQ.e1-LKacYOnVjdWf_PoX44sNQ7GTtHwBsHLRejY_SmY0&u=aac8c767b7a38900fafe0b7f92abb20b1be77d28&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1930213",
             "url": "https://ducktyped.dev",
             "monthlyDonation": 10,
             "source": "github",
@@ -388,7 +335,7 @@
         },
         {
             "name": "Alejandro Celaya",
-            "image": "https://private-avatars.githubusercontent.com/u/2719332?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzI3MTkzMzIifQ.QqXSBncyPDvbz1_hXiZDH2WxeBnPLrb7ID1OVMQT88g&u=5f95c85f625500a9cdafe0cd26fce1862d48d46d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2719332",
             "url": "https://alejandrocelaya.blog",
             "monthlyDonation": 10,
             "source": "github",
@@ -396,7 +343,7 @@
         },
         {
             "name": "Moxio",
-            "image": "https://private-avatars.githubusercontent.com/u/4497863?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyMDAsIm5iZiI6MTczNDY3ODAwMCwicGF0aCI6Ii91LzQ0OTc4NjMifQ.D6iT_C-v92vabZbDJBmDZ6GUe-a-2pqjbvm2r6GLEpQ&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4497863",
             "url": "https://moxio.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -404,7 +351,7 @@
         },
         {
             "name": "Avrios",
-            "image": "https://private-avatars.githubusercontent.com/u/9891362?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg1NDAsIm5iZiI6MTczNDY3NzM0MCwicGF0aCI6Ii91Lzk4OTEzNjIifQ.fcOWLF3-OyDvPeX3VTGV5KWODjOoOCB5yuD1GPAwIYQ&v=4",
+            "image": "https://avatars.githubusercontent.com/u/9891362",
             "url": "https://avrios.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -412,7 +359,7 @@
         },
         {
             "name": "Mention Me Ltd",
-            "image": "https://private-avatars.githubusercontent.com/u/10668008?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5MDAsIm5iZiI6MTczNDY3NzcwMCwicGF0aCI6Ii91LzEwNjY4MDA4In0.68dYYkEcWgcbWw9o-bSbfR-IpcaPVQ_MEithQvl_rI8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/10668008",
             "url": "https://eng.mention-me.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -420,7 +367,7 @@
         },
         {
             "name": "Connected Cars",
-            "image": "https://private-avatars.githubusercontent.com/u/23233019?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwODAsIm5iZiI6MTczNDY3Nzg4MCwicGF0aCI6Ii91LzIzMjMzMDE5In0.LK6uTZM175FewkL4mJbryE8bS_XPD8cccO8qBj4-8-0&v=4",
+            "image": "https://avatars.githubusercontent.com/u/23233019",
             "url": "https://connectedcars.io",
             "monthlyDonation": 10,
             "source": "github",
@@ -428,7 +375,7 @@
         },
         {
             "name": "hikae",
-            "image": "https://private-avatars.githubusercontent.com/u/39324739?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyMDAsIm5iZiI6MTczNDY3ODAwMCwicGF0aCI6Ii91LzM5MzI0NzM5In0.ZlAIkSmciHFJ7Fs_fFl_v6TviRevY20NWuOydLo9pa8&u=846fcaed774d2417d7f72875e0592af97cbc1a6b&v=4",
+            "image": "https://avatars.githubusercontent.com/u/39324739",
             "url": "https://github.com/HikaruEgashira",
             "monthlyDonation": 10,
             "source": "github",
@@ -436,7 +383,7 @@
         },
         {
             "name": "Erik Perri",
-            "image": "https://private-avatars.githubusercontent.com/u/46399654?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzQ2Mzk5NjU0In0.dCdlPbM93z4fgW2AKQvAzsow2IV5-ZWSFexbMEEqc8g&v=4",
+            "image": "https://avatars.githubusercontent.com/u/46399654",
             "url": "https://github.com/erik-perri",
             "monthlyDonation": 10,
             "source": "github",
@@ -444,7 +391,7 @@
         },
         {
             "name": "Simon Lammes",
-            "image": "https://private-avatars.githubusercontent.com/u/46446421?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5NjAsIm5iZiI6MTczNDY3Nzc2MCwicGF0aCI6Ii91LzQ2NDQ2NDIxIn0.CRowOitOLDZZnZfPgfRQ5OJ1wrvL6RCbTKjIiZUzVmA&u=1fb269e9d9e2a4364e8d3eadf67355fc42cc953a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/46446421",
             "url": "https://github.com/simon-lammes",
             "monthlyDonation": 10,
             "source": "github",
@@ -452,7 +399,7 @@
         },
         {
             "name": "Buttondown",
-            "image": "https://private-avatars.githubusercontent.com/u/48390753?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0MjAsIm5iZiI6MTczNDY3NzIyMCwicGF0aCI6Ii91LzQ4MzkwNzUzIn0.WgA5mRpdQiVkMtLeusvPerd4bhpifJAMS3YpZV0rl3M&v=4",
+            "image": "https://avatars.githubusercontent.com/u/48390753",
             "url": "https://buttondown.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -460,7 +407,7 @@
         },
         {
             "name": "takurinton",
-            "image": "https://private-avatars.githubusercontent.com/u/50351271?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzUwMzUxMjcxIn0.X1nVH-safR4ks8jefMIWz1Ql-EDD-t-TRS6_HkEder4&u=c6e1899a5362587840fa116dc3efa66f084090b8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/50351271",
             "url": "https://github.com/takurinton",
             "monthlyDonation": 10,
             "source": "github",
@@ -468,7 +415,7 @@
         },
         {
             "name": "ProjectDiscovery",
-            "image": "https://private-avatars.githubusercontent.com/u/50994705?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg1NDAsIm5iZiI6MTczNDY3NzM0MCwicGF0aCI6Ii91LzUwOTk0NzA1In0.p0-zl0Xa_OPSXZT8FCUjKTUhr46nRq56LiyhZB2a0nM&v=4",
+            "image": "https://avatars.githubusercontent.com/u/50994705",
             "url": "https://projectdiscovery.io/",
             "monthlyDonation": 10,
             "source": "github",
@@ -476,7 +423,7 @@
         },
         {
             "name": "PostHog",
-            "image": "https://private-avatars.githubusercontent.com/u/60330232?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzYwMzMwMjMyIn0.k9piPdpYM2wu-smCK2WuC0oyZW3cXbCSccsFieZVHb0&v=4",
+            "image": "https://avatars.githubusercontent.com/u/60330232",
             "url": "https://posthog.com",
             "monthlyDonation": 10,
             "source": "github",
@@ -484,10 +431,37 @@
         },
         {
             "name": "Measured",
-            "image": "https://private-avatars.githubusercontent.com/u/65702254?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzY1NzAyMjU0In0.8lg_wKckxsFqM4_RMLKxF7OFKSazSQ9N_qdyQennBn8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/65702254",
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Anu Alabi",
+            "url": null,
+            "image": "https://images.opencollective.com/anu-alabi/2804057/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 295,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Mercury Jets",
+            "url": "https://www.mercuryjets.com",
+            "image": "https://images.opencollective.com/private-flight/d5b295f/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Tiekunta",
+            "url": "https://tiehoitokunta.fi",
+            "image": "https://images.opencollective.com/tiekunta/3958004/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -495,7 +469,7 @@
             "url": "https://connectionshint.ai",
             "image": "https://images.opencollective.com/connectionshint/b2ab68b/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -503,6 +477,33 @@
             "name": "Automatio AI",
             "url": "https://automatio.ai/",
             "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 35,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "SidesMedia",
+            "url": "https://sidesmedia.com",
+            "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 70,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 31,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "David Passarelli",
+            "url": null,
+            "image": "https://images.opencollective.com/davidpassarelli/2734144/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 30,
             "source": "opencollective",
@@ -513,34 +514,7 @@
             "url": "https://sidesmedia.com",
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 60,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "IT Flashcards",
-            "url": "https://www.itflashcards.com",
-            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 26,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "David Passarelli",
-            "url": null,
-            "image": "https://images.opencollective.com/davidpassarelli/2734144/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 25,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "SidesMedia",
-            "url": "https://sidesmedia.com",
-            "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 60,
+            "totalDonations": 70,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -549,7 +523,7 @@
             "url": null,
             "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 220,
+            "totalDonations": 225,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -558,7 +532,7 @@
             "url": "https://marco.solazzi.me",
             "image": "https://images.opencollective.com/marco-solazzi/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 45,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -576,7 +550,7 @@
             "url": "https://celebian.com/",
             "image": "https://images.opencollective.com/celebian/0a4a5b7/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 60,
+            "totalDonations": 65,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -585,16 +559,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 120,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "LightCDN",
-            "url": "https://www.lightcdn.com",
-            "image": "https://images.opencollective.com/lightcdn/a8c8b6e/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 55,
+            "totalDonations": 125,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -603,7 +568,7 @@
             "url": null,
             "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 111,
+            "totalDonations": 116,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -612,7 +577,7 @@
             "url": "https://trevorburnham.com",
             "image": "https://images.opencollective.com/trevorburnham/016f6da/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 115,
+            "totalDonations": 120,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -621,7 +586,7 @@
             "url": "https://www.fuller-inc.com/",
             "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 125,
+            "totalDonations": 130,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -630,7 +595,7 @@
             "url": "https://taskratchet.com",
             "image": "https://images.opencollective.com/taskratchet/7996706/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 145,
+            "totalDonations": 150,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -639,7 +604,7 @@
             "url": "https://cryptotracker.com",
             "image": "https://images.opencollective.com/crypto-tracker/b258378/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 150,
+            "totalDonations": 155,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -648,7 +613,7 @@
             "url": "https://www.corellium.com",
             "image": "https://images.opencollective.com/corellium/aa8c228/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 185,
+            "totalDonations": 190,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -657,7 +622,7 @@
             "url": null,
             "image": "https://images.opencollective.com/nicoloribaudo/924f189/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 185,
+            "totalDonations": 190,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -666,7 +631,7 @@
             "url": "https://meshpayments.com/",
             "image": "https://images.opencollective.com/meshpayments/e216d5a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 205,
+            "totalDonations": 210,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -675,7 +640,7 @@
             "url": null,
             "image": "https://images.opencollective.com/arnaud-drain/d7165f2/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 225,
+            "totalDonations": 230,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -684,7 +649,7 @@
             "url": "https://batch.com",
             "image": "https://images.opencollective.com/batch/3ccdb8f/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 230,
+            "totalDonations": 235,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -693,7 +658,7 @@
             "url": "http://www.nfriedly.com",
             "image": "https://images.opencollective.com/nfriedly/c7be1d5/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 255,
+            "totalDonations": 260,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -702,7 +667,7 @@
             "url": "https://www.sayyup.nl",
             "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 260,
+            "totalDonations": 265,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -711,7 +676,7 @@
             "url": "https://about.me/peterdehaan",
             "image": "https://images.opencollective.com/pdehaan/1b46cd1/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 300,
+            "totalDonations": 305,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -720,7 +685,7 @@
             "url": "https://wwjcdo.com",
             "image": "https://images.opencollective.com/jmcombs/22a314a/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 305,
+            "totalDonations": 310,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -729,7 +694,7 @@
             "url": null,
             "image": "https://images.opencollective.com/james-sherwood-jones/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 330,
+            "totalDonations": 335,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -738,7 +703,7 @@
             "url": "https://thirdiron.com",
             "image": "https://images.opencollective.com/third_iron/862a5cf/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 355,
+            "totalDonations": 360,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -747,7 +712,7 @@
             "url": "https://cantremember.com",
             "image": "https://images.opencollective.com/cantremember/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 355,
+            "totalDonations": 360,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -756,7 +721,7 @@
             "url": "https://pymaster.tw",
             "image": "https://images.opencollective.com/pc035860/8fed8ae/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 355,
+            "totalDonations": 360,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -765,7 +730,7 @@
             "url": "https://www.gavinmogan.com",
             "image": "https://images.opencollective.com/gavinmogan/a52dc41/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 355,
+            "totalDonations": 360,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -774,7 +739,7 @@
             "url": "https://alexeyraspopov.com/",
             "image": "https://images.opencollective.com/alexeyraspopov/a2cfdf9/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 355,
+            "totalDonations": 360,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -783,13 +748,13 @@
             "url": "https://twitter.com/LJHarb",
             "image": "https://images.opencollective.com/ljharb/b75a3f8/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 355,
+            "totalDonations": 360,
             "source": "opencollective",
             "tier": "backer"
         },
         {
             "name": "Jordan Harband",
-            "image": "https://private-avatars.githubusercontent.com/u/45469?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzQ1NDY5In0.U4AISiP6XVsqarLUPkIAcTezAxglpReW3ciTLBGm-6k&u=6ab74b3b934f9659a90b588062c2c4328e40c6be&v=4",
+            "image": "https://avatars.githubusercontent.com/u/45469",
             "url": "https://linkedin.com/in/ljharb",
             "monthlyDonation": 5,
             "source": "github",
@@ -797,7 +762,7 @@
         },
         {
             "name": "Mariusz Nowak",
-            "image": "https://private-avatars.githubusercontent.com/u/122434?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2NjAsIm5iZiI6MTczNDY3NzQ2MCwicGF0aCI6Ii91LzEyMjQzNCJ9.rzRzIBjsVXz9XptCG7QNJ9MSa5MG0Nph4GgYC0kSM9E&u=6202deb7a394c25a15b19d420e5ea28914384ec4&v=4",
+            "image": "https://avatars.githubusercontent.com/u/122434",
             "url": "http://www.medikoo.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -805,7 +770,7 @@
         },
         {
             "name": "Martti Laine",
-            "image": "https://private-avatars.githubusercontent.com/u/211543?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0MjAsIm5iZiI6MTczNDY3NzIyMCwicGF0aCI6Ii91LzIxMTU0MyJ9.NTgTq_ZHdc99jvikkwVsjy13KSV6tUEoAugl9h1rMTg&v=4",
+            "image": "https://avatars.githubusercontent.com/u/211543",
             "url": "https://marttilaine.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -813,7 +778,7 @@
         },
         {
             "name": "Jarrod Davis",
-            "image": "https://private-avatars.githubusercontent.com/u/235875?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzIzNTg3NSJ9.vp5U3osCnLPHmJ6ZMPUKkPGBHaGzY-JQSeOD8KFTWuQ&u=0c5fb7e068f0f2c5a10ac505ca6492979097c92f&v=4",
+            "image": "https://avatars.githubusercontent.com/u/235875",
             "url": "https://jarrodldavis.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -821,7 +786,7 @@
         },
         {
             "name": "Kah Wai Liew",
-            "image": "https://private-avatars.githubusercontent.com/u/289419?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0ODAsIm5iZiI6MTczNDY3NzI4MCwicGF0aCI6Ii91LzI4OTQxOSJ9.9Bcbe5BLjhJuHTUU0xrhR8PyxgwnVpaQVLgtGjy_oS4&v=4",
+            "image": "https://avatars.githubusercontent.com/u/289419",
             "url": "https://github.com/tureki",
             "monthlyDonation": 5,
             "source": "github",
@@ -829,7 +794,7 @@
         },
         {
             "name": "Christophe Hurpeau",
-            "image": "https://private-avatars.githubusercontent.com/u/302891?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91LzMwMjg5MSJ9.gsoE8yUlhBvVvIicgm91EW74vBgGfAxJ90hnHBKoDcU&u=425d1bd46e8899798b80b2dbc5173fa0cf61f33a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/302891",
             "url": "https://christophe.hurpeau.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -837,7 +802,7 @@
         },
         {
             "name": "Enrise",
-            "image": "https://private-avatars.githubusercontent.com/u/417390?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3ODAsIm5iZiI6MTczNDY3NzU4MCwicGF0aCI6Ii91LzQxNzM5MCJ9.n13BO8ZtJ5HWmhh0HHKZe6Go13Zfr-xbiKd40TPXsBk&v=4",
+            "image": "https://avatars.githubusercontent.com/u/417390",
             "url": "https://enrise.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -845,7 +810,7 @@
         },
         {
             "name": "Forrest Desjardins",
-            "image": "https://private-avatars.githubusercontent.com/u/502491?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwODAsIm5iZiI6MTczNDY3Nzg4MCwicGF0aCI6Ii91LzUwMjQ5MSJ9.zgHf66Fp8fuBwQzpFDHAvCwO9o9h_9IyHg8gS0GHc74&u=1658efb692d4da77a8f68251b9dd8d7a3bdf7aab&v=4",
+            "image": "https://avatars.githubusercontent.com/u/502491",
             "url": "https://aeralta.tech/",
             "monthlyDonation": 5,
             "source": "github",
@@ -853,7 +818,7 @@
         },
         {
             "name": "Leesa Ward",
-            "image": "https://private-avatars.githubusercontent.com/u/563583?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5NjAsIm5iZiI6MTczNDY3Nzc2MCwicGF0aCI6Ii91LzU2MzU4MyJ9.eENhSj1GoDAm6ZzI63Pz1MDiCx5qzkRx1UjdTV-u8fI&u=b50d6c7220db7b037496600994b3e03569ac16a0&v=4",
+            "image": "https://avatars.githubusercontent.com/u/563583",
             "url": "https://leesaward.dev",
             "monthlyDonation": 5,
             "source": "github",
@@ -861,7 +826,7 @@
         },
         {
             "name": "JC Dang",
-            "image": "https://private-avatars.githubusercontent.com/u/721579?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5NjAsIm5iZiI6MTczNDY3Nzc2MCwicGF0aCI6Ii91LzcyMTU3OSJ9.nv-WOZYbv0g8uBoTipw1TbDcQ5lgZPo7PHfh5tarYhA&u=24f5ea15c1d19daae309349971bd6e874f52fa15&v=4",
+            "image": "https://avatars.githubusercontent.com/u/721579",
             "url": "https://github.com/jcdang",
             "monthlyDonation": 5,
             "source": "github",
@@ -869,7 +834,7 @@
         },
         {
             "name": "Gavin Lloyd",
-            "image": "https://private-avatars.githubusercontent.com/u/744538?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5NjAsIm5iZiI6MTczNDY3Nzc2MCwicGF0aCI6Ii91Lzc0NDUzOCJ9.F2DFy6LbLdqluBnIewEt8EJ-lE4WS0URQGCS_AcXPOU&u=0a08af9abb9fbf841382190be47f67a679bee4fa&v=4",
+            "image": "https://avatars.githubusercontent.com/u/744538",
             "url": "https://gavinhungry.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -877,7 +842,7 @@
         },
         {
             "name": "Miroslav Šustek",
-            "image": "https://private-avatars.githubusercontent.com/u/885946?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91Lzg4NTk0NiJ9.AsVVcNtAskdjKwGOklo0Smt32HOsbSBNu5_kk5Qk2cg&v=4",
+            "image": "https://avatars.githubusercontent.com/u/885946",
             "url": "https://github.com/sustmi",
             "monthlyDonation": 5,
             "source": "github",
@@ -885,7 +850,7 @@
         },
         {
             "name": "Owen Buckley",
-            "image": "https://private-avatars.githubusercontent.com/u/895923?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91Lzg5NTkyMyJ9.aTFLcNUQjiXgO9GhX2n1YMXhZVvSp-vdvtM3OLmuuqA&u=ee2417210461abea5b06cf6aea5492220ecdadf7&v=4",
+            "image": "https://avatars.githubusercontent.com/u/895923",
             "url": "https://www.thegreenhouse.io",
             "monthlyDonation": 5,
             "source": "github",
@@ -893,7 +858,7 @@
         },
         {
             "name": "Jimmy Bradshaw",
-            "image": "https://private-avatars.githubusercontent.com/u/916017?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkxNDAsIm5iZiI6MTczNDY3Nzk0MCwicGF0aCI6Ii91LzkxNjAxNyJ9.rgZb2sIpJM7Di2Ebu-jK6h-oEbepYzXZhPwkHD1_b4A&u=f9be66668f243eecd298b6eea9bb4410f9718b32&v=4",
+            "image": "https://avatars.githubusercontent.com/u/916017",
             "url": "https://github.com/bradshjg",
             "monthlyDonation": 5,
             "source": "github",
@@ -901,7 +866,7 @@
         },
         {
             "name": "Titus",
-            "image": "https://private-avatars.githubusercontent.com/u/944406?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkxNDAsIm5iZiI6MTczNDY3Nzk0MCwicGF0aCI6Ii91Lzk0NDQwNiJ9.ggIKedf_rLMjtNWv6D2RsJZk4xI2HvY9Chj7O1FmR2U&u=6e0f32d14d720c1b0785b91694428741f8cda89c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/944406",
             "url": "https://wooorm.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -909,7 +874,7 @@
         },
         {
             "name": "elan e.V.",
-            "image": "https://private-avatars.githubusercontent.com/u/1064602?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzEwNjQ2MDIifQ.cDV7kfFo1ocA6Jgz_U7aznljvigOGljMnnZXerF_T5o&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1064602",
             "url": "https://elan-ev.de",
             "monthlyDonation": 5,
             "source": "github",
@@ -917,7 +882,7 @@
         },
         {
             "name": "Michał Jastrzębowski",
-            "image": "https://private-avatars.githubusercontent.com/u/1092924?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2NjAsIm5iZiI6MTczNDY3NzQ2MCwicGF0aCI6Ii91LzEwOTI5MjQifQ.aNWT2nvuLyacislTBH7CNMtnpbDIWgugz09rDrLT7xo&u=d546335f03b66c4b40f2a1d1544b3d7d57d318cc&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1092924",
             "url": "http://jastrzebowski.pl",
             "monthlyDonation": 5,
             "source": "github",
@@ -925,7 +890,7 @@
         },
         {
             "name": "anatdagan",
-            "image": "https://private-avatars.githubusercontent.com/u/1194087?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyMDAsIm5iZiI6MTczNDY3ODAwMCwicGF0aCI6Ii91LzExOTQwODcifQ.AD4n-ifJe2SYP5RkkGk8nCysub_EuSuTllunYcONys4&u=8968347cc199b34c7e397f7cbe542e0882e7ef7c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1194087",
             "url": "https://github.com/anatdagan",
             "monthlyDonation": 5,
             "source": "github",
@@ -933,7 +898,7 @@
         },
         {
             "name": "Charles Severance",
-            "image": "https://private-avatars.githubusercontent.com/u/1197222?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyNjAsIm5iZiI6MTczNDY3ODA2MCwicGF0aCI6Ii91LzExOTcyMjIifQ.6N71psqXKPArm22VqN3fO9o6QJs6BrkP7zBvUJ9mVf4&u=d6dc85c064736ab851c6d9e3318dcdd1be00fb2c&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1197222",
             "url": "http://www.dr-chuck.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -941,7 +906,7 @@
         },
         {
             "name": "electrovir",
-            "image": "https://private-avatars.githubusercontent.com/u/1205860?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0ODAsIm5iZiI6MTczNDY3NzI4MCwicGF0aCI6Ii91LzEyMDU4NjAifQ.mmRLf-tfTwV1hGytLiymtk7FKconXSpJnS78xH-97JM&u=61c2513bc24ecc2a909817adc701746b94fed939&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1205860",
             "url": "https://electrovir.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -949,7 +914,7 @@
         },
         {
             "name": "Jonny Burger",
-            "image": "https://private-avatars.githubusercontent.com/u/1629785?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzE2Mjk3ODUifQ.Uz1iYNky_aUs8c5TuGbaNjNm-sPzZaCDzlgWMNO8bbk&u=f91613c118bb1fcf442a71008dff1cd5f9b30411&v=4",
+            "image": "https://avatars.githubusercontent.com/u/1629785",
             "url": "https://jonny.io",
             "monthlyDonation": 5,
             "source": "github",
@@ -957,7 +922,7 @@
         },
         {
             "name": "Mashmatrix, Inc.",
-            "image": "https://private-avatars.githubusercontent.com/u/2441953?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwODAsIm5iZiI6MTczNDY3Nzg4MCwicGF0aCI6Ii91LzI0NDE5NTMifQ.92r4P8pybKdgT9si3Vz5Dgh5WG0hTcfyoW8a3r417N0&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2441953",
             "url": "http://www.mashmatrix.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -965,7 +930,7 @@
         },
         {
             "name": "Maarten Van Hoof",
-            "image": "https://private-avatars.githubusercontent.com/u/2543633?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0MjAsIm5iZiI6MTczNDY3NzIyMCwicGF0aCI6Ii91LzI1NDM2MzMifQ.FVjtQkf1QEbhVctRnpBEm-xctqVE9FY9i0mPWiNP5Bs&u=ca4ab981a1547381b359f5e36380a50d9d41920d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2543633",
             "url": "https://mrtnvh.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -973,7 +938,7 @@
         },
         {
             "name": "Daniel Lindegren",
-            "image": "https://private-avatars.githubusercontent.com/u/2631623?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzI2MzE2MjMifQ.62XIM0TDAhSxkyV0sAN4te9D6Hn08Lhxm8wyLypzzyg&u=6e15a32c8bc8370d6fbdbbebda3563161e0eb20d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2631623",
             "url": "https://dlindegren.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -981,7 +946,7 @@
         },
         {
             "name": "Jared Collier",
-            "image": "https://private-avatars.githubusercontent.com/u/2757601?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzI3NTc2MDEifQ.DipAipJVra1353jWBdR50N7nfOq2OvFqrc9F4U5WdXY&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2757601",
             "url": "https://github.com/autoboxer",
             "monthlyDonation": 5,
             "source": "github",
@@ -989,7 +954,7 @@
         },
         {
             "name": "Matt Chestnut",
-            "image": "https://private-avatars.githubusercontent.com/u/3226829?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5MDAsIm5iZiI6MTczNDY3NzcwMCwicGF0aCI6Ii91LzMyMjY4MjkifQ.8EcYytjsn3XPNaEbCfLPlRfuiDba0EGaqXGrpfQty1Q&u=ebfd201b89f48a0cd14253d15f307e2cd8bad554&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3226829",
             "url": "https://www.mattchestnut.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -997,7 +962,7 @@
         },
         {
             "name": "lxmarinkovic",
-            "image": "https://private-avatars.githubusercontent.com/u/3509527?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0MjAsIm5iZiI6MTczNDY3NzIyMCwicGF0aCI6Ii91LzM1MDk1MjcifQ.-s86nqxv6O8Y0XRwh4ra6B-8BbLWPWhAM-uXyjqOB2U&u=6f7f7e2db1fa221d36752a92f247aa1325a55ba5&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3509527",
             "url": "https://lxmarinkovic.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -1005,7 +970,7 @@
         },
         {
             "name": "y.takahashi",
-            "image": "https://private-avatars.githubusercontent.com/u/3516343?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5NjAsIm5iZiI6MTczNDY3Nzc2MCwicGF0aCI6Ii91LzM1MTYzNDMifQ.LRL-bWcJ31R4scyrtPiEHkZL_jtExkQ80w5yafgh558&u=2043000e4b6c6247945d9c1d1a683c709c527448&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3516343",
             "url": "https://mizle.net",
             "monthlyDonation": 5,
             "source": "github",
@@ -1013,7 +978,7 @@
         },
         {
             "name": "Nick Oliver",
-            "image": "https://private-avatars.githubusercontent.com/u/3945917?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg1NDAsIm5iZiI6MTczNDY3NzM0MCwicGF0aCI6Ii91LzM5NDU5MTcifQ.y7ojAuO3E5LQpmvW4N-3bwp1OVnJ4crs9AvpUOOeMpk&u=75ac213afd2def70385395d15c58e888f3460867&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3945917",
             "url": "https://pixnbits.org",
             "monthlyDonation": 5,
             "source": "github",
@@ -1021,7 +986,7 @@
         },
         {
             "name": "Hayden Bleasel",
-            "image": "https://private-avatars.githubusercontent.com/u/4142719?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzQxNDI3MTkifQ.ohDINwySuydvFbR-GlvDRCRncuFkA04h5it1LWnuIoc&u=825af960ccb1f63c9f9a248999ef3f2e6a9f3ff8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4142719",
             "url": "https://haydenbleasel.com/",
             "monthlyDonation": 5,
             "source": "github",
@@ -1029,7 +994,7 @@
         },
         {
             "name": "Moinul Hossain",
-            "image": "https://private-avatars.githubusercontent.com/u/4328772?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91LzQzMjg3NzIifQ.eKFzLddP4nHEMNRqEE-O-9wqS2fQsHSE5KkboJLfd9I&u=c4e0fd72bd7cdb3751166c8ade8ef253e6f5ba67&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4328772",
             "url": "https://moinulhossain.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1037,7 +1002,7 @@
         },
         {
             "name": "Matan Kushner",
-            "image": "https://private-avatars.githubusercontent.com/u/4658208?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyNjAsIm5iZiI6MTczNDY3ODA2MCwicGF0aCI6Ii91LzQ2NTgyMDgifQ.d40EZ4u9RxDjU9jhjANr-bi1AF4L-Tf2aqYWCfXzvvg&u=887d888c45d991a2dbde8ca6f317bf22bc133468&v=4",
+            "image": "https://avatars.githubusercontent.com/u/4658208",
             "url": "https://matchai.dev",
             "monthlyDonation": 5,
             "source": "github",
@@ -1045,7 +1010,7 @@
         },
         {
             "name": "Mattia Richetto",
-            "image": "https://private-avatars.githubusercontent.com/u/6423261?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0ODAsIm5iZiI6MTczNDY3NzI4MCwicGF0aCI6Ii91LzY0MjMyNjEifQ.h3xrOCEpwVk9VYQFtBR7IgiRelkcZ0-g7buc3ftYyQg&u=2db1047889c8130effccc2366f55ec63e1124f94&v=4",
+            "image": "https://avatars.githubusercontent.com/u/6423261",
             "url": "https://medium.com/@mattiaerre",
             "monthlyDonation": 5,
             "source": "github",
@@ -1053,7 +1018,7 @@
         },
         {
             "name": "Raymond Luong",
-            "image": "https://private-avatars.githubusercontent.com/u/6905162?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzY5MDUxNjIifQ.aaVDZGHOVOyZFHeETtVQRamGfMnpfMAZBYi7rNFPJog&u=2d47a34b1c9034dc9bd31f997d5c482f170dc536&v=4",
+            "image": "https://avatars.githubusercontent.com/u/6905162",
             "url": "https://raymondluong.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1061,7 +1026,7 @@
         },
         {
             "name": "Nicolas Charpentier",
-            "image": "https://private-avatars.githubusercontent.com/u/7189823?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyNjAsIm5iZiI6MTczNDY3ODA2MCwicGF0aCI6Ii91LzcxODk4MjMifQ.ah898h75K0M8pv_5uuTGT_cmovw2Olz6T1LOg6_C4bI&u=f7558a0f6828f45f1082970880aefbeab9596d0b&v=4",
+            "image": "https://avatars.githubusercontent.com/u/7189823",
             "url": "https://charpeni.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1069,7 +1034,7 @@
         },
         {
             "name": "Dan Brown",
-            "image": "https://private-avatars.githubusercontent.com/u/8343178?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91LzgzNDMxNzgifQ.cSyjf0PYG0OwbFhOKtmZw3aCUn1krr6ln34jEypKjOc&u=0827017afd8f54d126d84a9dfea02e9f00d81934&v=4",
+            "image": "https://avatars.githubusercontent.com/u/8343178",
             "url": "https://danb.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1077,7 +1042,7 @@
         },
         {
             "name": "Per Tillisch",
-            "image": "https://private-avatars.githubusercontent.com/u/8572152?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91Lzg1NzIxNTIifQ.SWDpRpQJZpuMxRAuAgxRLKheeKlbvAyvJ6NQJcnvims&v=4",
+            "image": "https://avatars.githubusercontent.com/u/8572152",
             "url": "https://github.com/per1234",
             "monthlyDonation": 5,
             "source": "github",
@@ -1085,7 +1050,7 @@
         },
         {
             "name": "mizdra",
-            "image": "https://private-avatars.githubusercontent.com/u/9639995?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91Lzk2Mzk5OTUifQ.n6xsp5E_XopelHQ4jNqavhsfUZ5LfXmdlnJAqUUSVSQ&u=c89c30b17b1c1630fb400ca0ca7db881776db3fa&v=4",
+            "image": "https://avatars.githubusercontent.com/u/9639995",
             "url": "https://mizdra.net",
             "monthlyDonation": 5,
             "source": "github",
@@ -1093,7 +1058,7 @@
         },
         {
             "name": "Yuhei FUJITA",
-            "image": "https://private-avatars.githubusercontent.com/u/13161267?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0MjAsIm5iZiI6MTczNDY3NzIyMCwicGF0aCI6Ii91LzEzMTYxMjY3In0.W7-9JIDyfmXSnBQaBSKYCq39TZLP4Z4XGdAYarhXeAk&u=f45735a8978321dd7f4bffe0feb5bdde6ff3dd84&v=4",
+            "image": "https://avatars.githubusercontent.com/u/13161267",
             "url": "https://github.com/YuheiFUJITA",
             "monthlyDonation": 5,
             "source": "github",
@@ -1101,7 +1066,7 @@
         },
         {
             "name": "Johannes Konings",
-            "image": "https://private-avatars.githubusercontent.com/u/14806640?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5NjAsIm5iZiI6MTczNDY3Nzc2MCwicGF0aCI6Ii91LzE0ODA2NjQwIn0.QP-3ieUkFmMPO77zVcuL3W0MViUtKSL4iYD4sj0Clo0&u=3586bd6e631a350aec9ff1f2cc31615f72233244&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14806640",
             "url": "https://johanneskonings.dev/",
             "monthlyDonation": 5,
             "source": "github",
@@ -1109,7 +1074,7 @@
         },
         {
             "name": "Nazim Gafarov",
-            "image": "https://private-avatars.githubusercontent.com/u/15930575?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyNjAsIm5iZiI6MTczNDY3ODA2MCwicGF0aCI6Ii91LzE1OTMwNTc1In0.wJbJ3WzFEe86DEyiYDeO1smlq0_BiB_TbEjl4wOsn_A&u=610a01227a302084a6e7bf946954390ea482a349&v=4",
+            "image": "https://avatars.githubusercontent.com/u/15930575",
             "url": "https://github.com/zapolnoch",
             "monthlyDonation": 5,
             "source": "github",
@@ -1117,7 +1082,7 @@
         },
         {
             "name": "Jordan",
-            "image": "https://private-avatars.githubusercontent.com/u/17376090?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzE3Mzc2MDkwIn0.KDc_Gq6czRZKrTUC5o7YkqFBhy3PDt_shJqSIv4QtjE&u=ebb702d1a6ac346a9ca4c093bea1928e2f62b239&v=4",
+            "image": "https://avatars.githubusercontent.com/u/17376090",
             "url": "https://djmm.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1125,7 +1090,7 @@
         },
         {
             "name": "BrightCrowd",
-            "image": "https://private-avatars.githubusercontent.com/u/19253501?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzE5MjUzNTAxIn0.4ZHYDnivc6HSS_rCQIQGO9xSUvoUX3_Hgl_n457npws&v=4",
+            "image": "https://avatars.githubusercontent.com/u/19253501",
             "url": "https://brightcrowd.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1133,7 +1098,7 @@
         },
         {
             "name": "kagan",
-            "image": "https://private-avatars.githubusercontent.com/u/34136752?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91LzM0MTM2NzUyIn0.x_rT2-O2PSIHsvvFgbqRsQFqlzPuLRanOon1lMgmTyY&u=4d75e5b7a3bd567567c340b60cd68e5b0612dfd1&v=4",
+            "image": "https://avatars.githubusercontent.com/u/34136752",
             "url": "https://github.com/kagankan",
             "monthlyDonation": 5,
             "source": "github",
@@ -1141,7 +1106,7 @@
         },
         {
             "name": "Matthew Nanas",
-            "image": "https://private-avatars.githubusercontent.com/u/37747855?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkxNDAsIm5iZiI6MTczNDY3Nzk0MCwicGF0aCI6Ii91LzM3NzQ3ODU1In0.vxc6u0lzzY0UcPUZAOh_DBrPshF0oDOsoVsjO01apvo&u=ef6ab78c477a47149d30ba1ec4a0e2ef2859e260&v=4",
+            "image": "https://avatars.githubusercontent.com/u/37747855",
             "url": "https://mnanas.dev",
             "monthlyDonation": 5,
             "source": "github",
@@ -1149,7 +1114,7 @@
         },
         {
             "name": "Roboflow",
-            "image": "https://private-avatars.githubusercontent.com/u/53104118?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg1NDAsIm5iZiI6MTczNDY3NzM0MCwicGF0aCI6Ii91LzUzMTA0MTE4In0.zehOQhVp28GqshquiXkX1jmSfGfjP3nh41OZEOkmwbg&v=4",
+            "image": "https://avatars.githubusercontent.com/u/53104118",
             "url": "https://roboflow.com",
             "monthlyDonation": 5,
             "source": "github",
@@ -1157,7 +1122,7 @@
         },
         {
             "name": "xuantm",
-            "image": "https://private-avatars.githubusercontent.com/u/53134698?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91LzUzMTM0Njk4In0.SX_0mjmkoHLysrVURJ5E9a-Nt5VRGpoHsojJAagSgyE&u=ab243c45398eba42e40adf9987cb1f95d659d16e&v=4",
+            "image": "https://avatars.githubusercontent.com/u/53134698",
             "url": "https://github.com/ssnaruto",
             "monthlyDonation": 5,
             "source": "github",
@@ -1165,7 +1130,7 @@
         },
         {
             "name": "Yusuke Hakamaya",
-            "image": "https://private-avatars.githubusercontent.com/u/65002858?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg1NDAsIm5iZiI6MTczNDY3NzM0MCwicGF0aCI6Ii91LzY1MDAyODU4In0.fnUqiRqNzIbM2CDh2RRsaT5dTR1dhXJwhYbbWrXUu9w&u=53b598cdafe9b03086c4e143615cc2979ee9339f&v=4",
+            "image": "https://avatars.githubusercontent.com/u/65002858",
             "url": "https://www.yhakamay.me",
             "monthlyDonation": 5,
             "source": "github",
@@ -1173,7 +1138,7 @@
         },
         {
             "name": "Standard Resume Sponsors",
-            "image": "https://private-avatars.githubusercontent.com/u/65968828?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzY1OTY4ODI4In0.xQLXVZskHZChmT5tChYik8Gv9JzyjX_t_A3dl2B7EFA&u=059fb65476f5c27fc1a38cb2e6391ad05105fde5&v=4",
+            "image": "https://avatars.githubusercontent.com/u/65968828",
             "url": "https://standardresume.co/tech",
             "monthlyDonation": 5,
             "source": "github",
@@ -1181,19 +1146,10 @@
         },
         {
             "name": "Jupli",
-            "image": "https://private-avatars.githubusercontent.com/u/140319444?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyNjAsIm5iZiI6MTczNDY3ODA2MCwicGF0aCI6Ii91LzE0MDMxOTQ0NCJ9.-pM6iws4WEPdxOyu4ziaJUwDS3QVgDFvdcE8kBlGThA&v=4",
+            "image": "https://avatars.githubusercontent.com/u/140319444",
             "url": "https://jupli.com",
             "monthlyDonation": 5,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Konstantin Vinogradov",
-            "url": "https://kvinogradov.com/",
-            "image": "https://github.com/vinogradovkonst.png",
-            "monthlyDonation": 4.69123138,
-            "totalDonations": "04.714773010.005789764.69123138",
-            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1201,13 +1157,13 @@
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
-            "totalDonations": 48,
+            "totalDonations": 51,
             "source": "opencollective",
             "tier": "backer"
         },
         {
             "name": "Zwyx",
-            "image": "https://private-avatars.githubusercontent.com/u/29386932?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzI5Mzg2OTMyIn0.vGAj6usjz1_Jw_M5flv87sOFTNXYWlOXRi5YEjO54CM&u=1c535ee7444ba22d9d16547974378a0b5e5b3c19&v=4",
+            "image": "https://avatars.githubusercontent.com/u/29386932",
             "url": "https://zwyx.dev",
             "monthlyDonation": 3,
             "source": "github",
@@ -1223,20 +1179,11 @@
             "tier": "backer"
         },
         {
-            "name": "Shunfan Du",
-            "url": null,
-            "image": "https://images.opencollective.com/shunfan/ca1c537/avatar.png",
-            "monthlyDonation": 2,
-            "totalDonations": 96,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Kostas Bariotis",
             "url": "https://kostasbariotis.com",
             "image": "https://images.opencollective.com/konmpar/6f12288/avatar.png",
             "monthlyDonation": 2,
-            "totalDonations": 104,
+            "totalDonations": 106,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1251,7 +1198,7 @@
         },
         {
             "name": "Daniel O’Connor",
-            "image": "https://private-avatars.githubusercontent.com/u/916038?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91LzkxNjAzOCJ9.Lz-oHdyug_xZ_puMYoWtK0HqfSxHoGtrtaHNq2qNFF8&v=4",
+            "image": "https://avatars.githubusercontent.com/u/916038",
             "url": "https://danoc.me/",
             "monthlyDonation": 2,
             "source": "github",
@@ -1259,7 +1206,7 @@
         },
         {
             "name": "Kieran McGuire",
-            "image": "https://private-avatars.githubusercontent.com/u/2109807?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzIxMDk4MDcifQ.DP1N5UnNzYn3TpCTHRE5Pdiv4HWa8bPl78i90aJJLSo&u=ba55c676da7633c859f85f91e37595bacf72f8fd&v=4",
+            "image": "https://avatars.githubusercontent.com/u/2109807",
             "url": "https://kieranmcguire.uk/",
             "monthlyDonation": 2,
             "source": "github",
@@ -1288,13 +1235,13 @@
             "url": null,
             "image": "https://images.opencollective.com/guest-e7e936cc/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 40,
+            "totalDonations": 41,
             "source": "opencollective",
             "tier": "backer"
         },
         {
             "name": "Benjamin Reed",
-            "image": "https://private-avatars.githubusercontent.com/u/89252?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyNjAsIm5iZiI6MTczNDY3ODA2MCwicGF0aCI6Ii91Lzg5MjUyIn0.WHS--BTJOaEQW3u6kgUi-Ojs8QkCaW5k5qTryOOApNY&v=4",
+            "image": "https://avatars.githubusercontent.com/u/89252",
             "url": "https://music.raccoonfink.com/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1302,7 +1249,7 @@
         },
         {
             "name": "UKYO Kazuma",
-            "image": "https://private-avatars.githubusercontent.com/u/283562?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzI4MzU2MiJ9.2_pqTANl46KrMKn6BvJtN4eTUa0bZhPTZ5FXa0ObF-s&u=6d1e9d2061ebb92782f6dae7bf31d4eff60ca961&v=4",
+            "image": "https://avatars.githubusercontent.com/u/283562",
             "url": "https://yaakai.to",
             "monthlyDonation": 1,
             "source": "github",
@@ -1310,7 +1257,7 @@
         },
         {
             "name": "John Karahalis",
-            "image": "https://private-avatars.githubusercontent.com/u/933396?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkxNDAsIm5iZiI6MTczNDY3Nzk0MCwicGF0aCI6Ii91LzkzMzM5NiJ9.jlDV-71vqpoP4EcY_N1MM9oieQcoHFRjw_fNOtKOn7k&v=4",
+            "image": "https://avatars.githubusercontent.com/u/933396",
             "url": "https://www.johnkarahalis.com",
             "monthlyDonation": 1,
             "source": "github",
@@ -1318,7 +1265,7 @@
         },
         {
             "name": "Ethan Glover",
-            "image": "https://private-avatars.githubusercontent.com/u/3924176?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3ODAsIm5iZiI6MTczNDY3NzU4MCwicGF0aCI6Ii91LzM5MjQxNzYifQ.wLNOOukbvpb0AyES-t-WGiQU0KH6x4eCzFgL7QdSPUI&u=c00121ab8bd1d501799150db672276615e136415&v=4",
+            "image": "https://avatars.githubusercontent.com/u/3924176",
             "url": "https://www.ethang.dev/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1326,7 +1273,7 @@
         },
         {
             "name": "Oliver Radwell",
-            "image": "https://private-avatars.githubusercontent.com/u/5054896?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzUwNTQ4OTYifQ.a83gW9N-C5-w_8SYdm48cFa8uXe6eNSShjpvZqkhGys&u=49b4ab60d7caed33a655a7f921a5a130cf28388a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/5054896",
             "url": "https://www.radwell.codes",
             "monthlyDonation": 1,
             "source": "github",
@@ -1334,7 +1281,7 @@
         },
         {
             "name": "Valery Buchinsky",
-            "image": "https://private-avatars.githubusercontent.com/u/5102057?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2NjAsIm5iZiI6MTczNDY3NzQ2MCwicGF0aCI6Ii91LzUxMDIwNTcifQ.F7R2T-pdt3h2Nr7GNHq0RaSA0C5DpSb45bvnje0JHwg&u=705588d5282df4140c93a11bd51b276ed3286752&v=4",
+            "image": "https://avatars.githubusercontent.com/u/5102057",
             "url": "https://github.com/vbuch",
             "monthlyDonation": 1,
             "source": "github",
@@ -1342,7 +1289,7 @@
         },
         {
             "name": "Frontend Masters",
-            "image": "https://private-avatars.githubusercontent.com/u/5613852?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzU2MTM4NTIifQ.LCWfCaONuuA50aKyMCBECs90rLbrsiketgPMpCh7R0w&v=4",
+            "image": "https://avatars.githubusercontent.com/u/5613852",
             "url": "https://FrontendMasters.com",
             "monthlyDonation": 1,
             "source": "github",
@@ -1350,7 +1297,7 @@
         },
         {
             "name": "Ingo Steinke",
-            "image": "https://private-avatars.githubusercontent.com/u/6377941?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0ODAsIm5iZiI6MTczNDY3NzI4MCwicGF0aCI6Ii91LzYzNzc5NDEifQ.vkFf1wQVgL8Wi1mHjOPuQImYSW18odRPjhIOkhLsGAY&u=9adbd8fa9e3705bb9bd3410b9e3b71d2d256647a&v=4",
+            "image": "https://avatars.githubusercontent.com/u/6377941",
             "url": "https://www.ingo-steinke.com",
             "monthlyDonation": 1,
             "source": "github",
@@ -1358,7 +1305,7 @@
         },
         {
             "name": "Mikihiro SUDA",
-            "image": "https://private-avatars.githubusercontent.com/u/6907421?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg4NDAsIm5iZiI6MTczNDY3NzY0MCwicGF0aCI6Ii91LzY5MDc0MjEifQ.o0-AVD8pMN-NBpr8gghB2g9x-gyBWcjzXiTFGQeW_C4&u=c75ea52865a9d8c123be471553aa81c24380e89d&v=4",
+            "image": "https://avatars.githubusercontent.com/u/6907421",
             "url": "https://sudame.net",
             "monthlyDonation": 1,
             "source": "github",
@@ -1366,7 +1313,7 @@
         },
         {
             "name": "Mateus Etto",
-            "image": "https://private-avatars.githubusercontent.com/u/7322925?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwODAsIm5iZiI6MTczNDY3Nzg4MCwicGF0aCI6Ii91LzczMjI5MjUifQ.MfQFQ2ZrlU2v696PpV8z3we2gLQCaO6yafZuK-8W3ow&u=33db251d02b633150683f87dfe90fcd6621ab850&v=4",
+            "image": "https://avatars.githubusercontent.com/u/7322925",
             "url": "https://yutsuten.github.io/notes/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1374,7 +1321,7 @@
         },
         {
             "name": "Kirill Devope",
-            "image": "https://private-avatars.githubusercontent.com/u/8249408?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwODAsIm5iZiI6MTczNDY3Nzg4MCwicGF0aCI6Ii91LzgyNDk0MDgifQ.o3nmTn0D9hge8TfOwwn2wCjJl8XU1AMttM2AsPodhYw&u=c1818225ecdbe96d8e837747e0ee26ebe856a95b&v=4",
+            "image": "https://avatars.githubusercontent.com/u/8249408",
             "url": "https://github.com/devope",
             "monthlyDonation": 1,
             "source": "github",
@@ -1382,7 +1329,7 @@
         },
         {
             "name": "Schalk Venter",
-            "image": "https://private-avatars.githubusercontent.com/u/14258328?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzE0MjU4MzI4In0.3T1hrj0pJvNxGUYX0MdXYhUVVtb_ZPUiwMYshMQhlzc&u=889f25b21456dc7137f9fb9299fcf2c90b38fb05&v=4",
+            "image": "https://avatars.githubusercontent.com/u/14258328",
             "url": "https://schalkventer.me",
             "monthlyDonation": 1,
             "source": "github",
@@ -1390,7 +1337,7 @@
         },
         {
             "name": "Stephen Zhang",
-            "image": "https://private-avatars.githubusercontent.com/u/19246983?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkxNDAsIm5iZiI6MTczNDY3Nzk0MCwicGF0aCI6Ii91LzE5MjQ2OTgzIn0.LAXixkKT2gRU6DJJLpeGszuohiyqiVSBQCww3HX1Z5Q&u=69c6925f1e932a74d22710298fd6791fd126bce6&v=4",
+            "image": "https://avatars.githubusercontent.com/u/19246983",
             "url": "https://github.com/swinzy",
             "monthlyDonation": 1,
             "source": "github",
@@ -1398,7 +1345,7 @@
         },
         {
             "name": "Juhyeok Kang",
-            "image": "https://private-avatars.githubusercontent.com/u/23312485?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg5MDAsIm5iZiI6MTczNDY3NzcwMCwicGF0aCI6Ii91LzIzMzEyNDg1In0.wg5r8iirjlFVUslVhp2rx-8rJLG_4kU4oysoBWv2eZI&u=56d44be9f5705224b1914bf365a1d7c6f022e2bf&v=4",
+            "image": "https://avatars.githubusercontent.com/u/23312485",
             "url": "https://kangju.dev",
             "monthlyDonation": 1,
             "source": "github",
@@ -1406,7 +1353,7 @@
         },
         {
             "name": "su-",
-            "image": "https://private-avatars.githubusercontent.com/u/30166652?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwODAsIm5iZiI6MTczNDY3Nzg4MCwicGF0aCI6Ii91LzMwMTY2NjUyIn0.bAi64MqLJGUXCJl1I6w2EgdfbeNpX6X0C3d38hoNJcA&u=95465ea487c57300299dc3a9c708933ec91e9365&v=4",
+            "image": "https://avatars.githubusercontent.com/u/30166652",
             "url": "https://su-u.notion.site/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1414,7 +1361,7 @@
         },
         {
             "name": "Niklas Henning",
-            "image": "https://private-avatars.githubusercontent.com/u/58544929?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwODAsIm5iZiI6MTczNDY3Nzg4MCwicGF0aCI6Ii91LzU4NTQ0OTI5In0.5RDMo9oV8S7lSoT-TZKPTjyK7aYKP_I_gri73XCIVVA&u=fa4140692bf0990655a7e36a57a799111eadfedb&v=4",
+            "image": "https://avatars.githubusercontent.com/u/58544929",
             "url": "https://niklashenning.com",
             "monthlyDonation": 1,
             "source": "github",
@@ -1422,7 +1369,7 @@
         },
         {
             "name": "David Badasyan",
-            "image": "https://private-avatars.githubusercontent.com/u/59211418?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2NjAsIm5iZiI6MTczNDY3NzQ2MCwicGF0aCI6Ii91LzU5MjExNDE4In0.oKrP_HUfROMGZB6pvY548qHesPM77uD1TEfl7xxvs30&u=3ec40b6724f732cdf15f040d6a1a94675407102e&v=4",
+            "image": "https://avatars.githubusercontent.com/u/59211418",
             "url": "https://www.linkedin.com/in/david-badasyan-17b544199/",
             "monthlyDonation": 1,
             "source": "github",
@@ -1430,7 +1377,7 @@
         },
         {
             "name": "Vezel",
-            "image": "https://private-avatars.githubusercontent.com/u/87844133?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg0MjAsIm5iZiI6MTczNDY3NzIyMCwicGF0aCI6Ii91Lzg3ODQ0MTMzIn0.jZzmbCJbZlMxWLZW_U4wGJAl70RVT3MnmReuVskIoAU&v=4",
+            "image": "https://avatars.githubusercontent.com/u/87844133",
             "url": "https://vezel.dev",
             "monthlyDonation": 1,
             "source": "github",
@@ -1438,7 +1385,7 @@
         },
         {
             "name": "Bryan King Pecho",
-            "image": "https://private-avatars.githubusercontent.com/u/91954699?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg3MjAsIm5iZiI6MTczNDY3NzUyMCwicGF0aCI6Ii91LzkxOTU0Njk5In0.pPG55ug5BYrOgC3ArEgLmEx5Vinxlz_4OMNOFBEyGyE&u=707e67b3afac1d27f132696336bb01ec73916301&v=4",
+            "image": "https://avatars.githubusercontent.com/u/91954699",
             "url": "https://github.com/bkpecho",
             "monthlyDonation": 1,
             "source": "github",
@@ -1446,7 +1393,7 @@
         },
         {
             "name": "Ian Tapply",
-            "image": "https://private-avatars.githubusercontent.com/u/114881396?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzExNDg4MTM5NiJ9.mfst7t3JJfQZfJU9XMySDReXTPr4ZVH1XYrnVpyex-0&u=c8201f005eca8d1c1c4ece7188260f0e99d1227f&v=4",
+            "image": "https://avatars.githubusercontent.com/u/114881396",
             "url": "https://github.com/IanTapply22",
             "monthlyDonation": 1,
             "source": "github",
@@ -1454,163 +1401,10 @@
         },
         {
             "name": "Syntax",
-            "image": "https://private-avatars.githubusercontent.com/u/130389858?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2NjAsIm5iZiI6MTczNDY3NzQ2MCwicGF0aCI6Ii91LzEzMDM4OTg1OCJ9.SQBkxC7jeLVMJWkE4deEuC6xjh-fIxZuVzxSNk4U-Gg&v=4",
+            "image": "https://avatars.githubusercontent.com/u/130389858",
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "timhaynes",
-            "url": null,
-            "image": "https://github.com/timhaynes.png",
-            "monthlyDonation": 0.70672199,
-            "totalDonations": "00.115090580.225653430.249133320.240222300.70672199",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Jasara Technology Inc.",
-            "url": "https://jasaratech.com",
-            "image": "https://github.com/jasara.png",
-            "monthlyDonation": 0.70406493,
-            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.70406493",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Jos de Jong",
-            "url": "https://josdejong.com",
-            "image": "https://github.com/josdejong.png",
-            "monthlyDonation": 0.68186405,
-            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.68186405",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Sharp Hall",
-            "url": "http://sharphall.org",
-            "image": "https://github.com/sharph.png",
-            "monthlyDonation": 0.24973092,
-            "totalDonations": "00.256147130.252428730.24973092",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "jshttp",
-            "url": "https://jshttp.github.io/",
-            "image": "https://github.com/jshttp.png",
-            "monthlyDonation": 0.10353512,
-            "totalDonations": "00.122468210.103472600.10353512",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Pelle Wessman",
-            "url": "https://kodfabrik.se/",
-            "image": "https://github.com/voxpelli.png",
-            "monthlyDonation": 0.10227342,
-            "totalDonations": "00.069859840.011582310.013089270.103379050.098303480.103149680.10227342",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "pillarjs",
-            "url": "https://pillarjs.github.io",
-            "image": "https://github.com/pillarjs.png",
-            "monthlyDonation": 0.07040576,
-            "totalDonations": "00.089878450.079007620.069406200.07040576",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "expressjs",
-            "url": "https://expressjs.com/",
-            "image": "https://github.com/expressjs.png",
-            "monthlyDonation": 0.03116693,
-            "totalDonations": "00.036993410.031956500.03116693",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Borderless Labs",
-            "url": "http://borderlesslabs.com",
-            "image": "https://github.com/borderless.png",
-            "monthlyDonation": 0.02622323,
-            "totalDonations": "00.018086400.047381980.002942660.003561150.003287090.003555470.003953530.003895520.003687860.045300870.005236730.039536870.029764490.026221970.02622323",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "plurals",
-            "url": null,
-            "image": "https://github.com/plurals.png",
-            "monthlyDonation": 0.02525712,
-            "totalDonations": "00.038991720.028657820.025241780.02525712",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "ServieJS",
-            "url": null,
-            "image": "https://github.com/serviejs.png",
-            "monthlyDonation": 0.01224988,
-            "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.012250070.01224988",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Blake Embrey",
-            "url": "http://blakeembrey.me/",
-            "image": "https://github.com/blakeembrey.png",
-            "monthlyDonation": 0.01000813,
-            "totalDonations": "00.005415800.000533090.001606820.001553130.001647770.001866400.001845610.001738910.003049130.002179140.014938270.011472110.010012840.01000813",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Featuresmith",
-            "url": "https://featuresmith.com",
-            "image": "https://github.com/featuresmith.png",
-            "monthlyDonation": 0.00859926,
-            "totalDonations": "00.00859926",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "TypeStrong",
-            "url": null,
-            "image": "https://github.com/typestrong.png",
-            "monthlyDonation": 0.00788362,
-            "totalDonations": "00.003410240.015248400.001100760.001275070.001245090.001285740.001500770.001496250.001382360.001410270.001469810.012471970.009082980.007916030.00788362",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Adam Dąbrowski",
-            "url": "http://adamdabrowski.com",
-            "image": "https://github.com/dabrowski-adam.png",
-            "monthlyDonation": 0.00119848,
-            "totalDonations": "00.00119848",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "RegexHQ",
-            "url": "https://regexhq.tunnckocore.com",
-            "image": "https://github.com/regexhq.png",
-            "monthlyDonation": 0.00108238,
-            "totalDonations": "00.001081720.00108238",
-            "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "timely-deploy",
-            "url": null,
-            "image": "https://github.com/timely-deploy.png",
-            "monthlyDonation": 0.00095362,
-            "totalDonations": "00.007694850.004561920.003529240.004101030.003628910.004094640.004800190.004788970.004480280.004434840.006867220.000965030.001107280.000962010.00095362",
-            "source": "thanks.dev",
             "tier": "backer"
         },
         {

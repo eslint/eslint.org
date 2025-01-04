@@ -1,8 +1,35 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AExPl",
+        "name": "Charlie",
+        "image": "https://avatars.githubusercontent.com/u/38315638",
+        "url": "https://charlie.icu",
+        "amount": 1,
+        "date": "2024-12-30T11:40:47Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AEwvn",
+        "name": "Felipe OG",
+        "image": "https://avatars.githubusercontent.com/u/17603069",
+        "url": "https://blog.felipeog.com.br/en",
+        "amount": 5,
+        "date": "2024-12-25T08:17:17Z",
+        "source": "github"
+    },
+    {
+        "id": "v349mrwg-z75lpy5k-5rn6a08d-jeybknox",
+        "name": "SportEasy",
+        "url": null,
+        "image": "https://images.opencollective.com/sporteasy/avatar.png",
+        "amount": 101,
+        "date": "2024-12-20T14:24:13.950Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AEwMq",
         "name": "Mr. Henry",
-        "image": "https://private-avatars.githubusercontent.com/u/45111?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyNjAsIm5iZiI6MTczNDY3ODA2MCwicGF0aCI6Ii91LzQ1MTExIn0.3BN3mk97_tk9__7_CfeJooImsxI6F0PJe3KTDB1mHjc&v=4",
+        "image": "https://avatars.githubusercontent.com/u/45111",
         "url": "https://www.mrhenry.be",
         "amount": 1,
         "date": "2024-12-19T18:06:12Z",
@@ -11,7 +38,7 @@
     {
         "id": "SA_kwHOAFvahM4AEuzq",
         "name": "Gabriel",
-        "image": "https://private-avatars.githubusercontent.com/u/98218254?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2Nzg2MDAsIm5iZiI6MTczNDY3NzQwMCwicGF0aCI6Ii91Lzk4MjE4MjU0In0.cR48CQ4ShEOxC6Sduc-cImO7rDEyHUAN2dzUAXSjIHk&u=7e16ba1621968a4d9898939cde21853fa789f2a6&v=4",
+        "image": "https://avatars.githubusercontent.com/u/98218254",
         "url": "https://github.com/dkwcc",
         "amount": 1,
         "date": "2024-12-06T14:02:16Z",
@@ -20,37 +47,10 @@
     {
         "id": "SA_kwHOAFvahM4AEuzo",
         "name": "Lorenzo Coslado",
-        "image": "https://private-avatars.githubusercontent.com/u/93212434?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkyNjAsIm5iZiI6MTczNDY3ODA2MCwicGF0aCI6Ii91LzkzMjEyNDM0In0.ZQwfTrtHgesiNpmgv-OR_-KTFnHgmdvB6tf1-JLfXDc&u=3954d1d36848b3cf5e57e723efc3962ba7ec6d0e&v=4",
+        "image": "https://avatars.githubusercontent.com/u/93212434",
         "url": "https://github.com/Lorenzo-Coslado",
         "amount": 1,
         "date": "2024-12-06T14:00:28Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEudb",
-        "name": "Libardo",
-        "image": "https://private-avatars.githubusercontent.com/u/22780669?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzIyNzgwNjY5In0.dFHxKP-I-zshXHzmBC_NLjc-flEwopgpVWS7gc4mLPI&u=d6b3c4d998c07ab94b1133ac2e60f98e3540e410&v=4",
-        "url": "https://www.libardo.es/",
-        "amount": 1,
-        "date": "2024-12-03T16:30:42Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEtl1",
-        "name": "박동준",
-        "image": "https://private-avatars.githubusercontent.com/u/70469055?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzcwNDY5MDU1In0.AOcH7DEkK9QB5Ewp-UEX2vMV6aztTRvOxNlopTKkuzw&u=4b035424ff81049e874f422e9b46da0f58dad074&v=4",
-        "url": "https://github.com/DONG-8",
-        "amount": 20,
-        "date": "2024-11-26T10:04:06Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEtah",
-        "name": "Pupfelt",
-        "image": "https://private-avatars.githubusercontent.com/u/185438011?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzkwMjAsIm5iZiI6MTczNDY3NzgyMCwicGF0aCI6Ii91LzE4NTQzODAxMSJ9.XHiDKB2D7iB5pIYmpJtRlEK1zCLapqgWxQJ8qdxyTX8&v=4",
-        "url": "https://github.com/Pupfelt",
-        "amount": 5,
-        "date": "2024-11-24T17:31:47Z",
         "source": "github"
     },
     {
@@ -222,24 +222,6 @@
         "image": "https://images.opencollective.com/frontendmasters/0b9cda4/logo.png",
         "amount": 262.77,
         "date": "2024-01-16T19:44:38.365Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "a47byg9n-xozdp8x4-e8v6mjlv-03rek5w8",
-        "name": "Vite",
-        "url": "https://vitejs.dev",
-        "image": "https://images.opencollective.com/vite/e6d15e1/logo.png",
-        "amount": 300,
-        "date": "2023-12-01T09:31:37.971Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "e0adkjrv-8xwm69o5-g0o67z5n-4l93bgoy",
-        "name": "Guest",
-        "url": null,
-        "image": "https://images.opencollective.com/guest-acd08759/avatar.png",
-        "amount": 2.3,
-        "date": "2023-11-30T12:32:45.034Z",
         "source": "opencollective"
     }
 ]

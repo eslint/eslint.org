@@ -15,6 +15,19 @@
  */
 const upcomingVersionPrereleaseType = null;
 
+/**
+ * - Set to `null` if the next release date is per the regular schedule.
+ * - Set to the ISO 8601 string format of the next release date
+ *   if the next release date is not per the regular schedule.
+ *     Example: "2025-01-10"
+ *   This is typically used to skip a regularly scheduled release.
+ *   Note: Dates that are less than the date of the next regular release
+ *     are automatically ignored so that we don't need to update the stats manually.
+ * @type {null|string}
+ */
+const nextVersionDateOverride = "2025-01-10";
+
 module.exports = {
 	upcomingVersionPrereleaseType,
+	nextVersionDateOverride,
 };

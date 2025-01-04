@@ -70,6 +70,15 @@ function fixUrl(url) {
 }
 
 /**
+ * Returns the URL for the avatar of a given user.
+ * @param {Object} user The user object.
+ * @returns {string} The URL of the avatar.
+ */
+function getGitHubAvatarURL(user) {
+	return `https://avatars.githubusercontent.com/u/${user.id}`;
+}
+
+/**
  * Returns the tier ID for a given donation amount.
  * @param {int} monthlyDonation The monthly donation in dollars.
  * @returns {string} The ID of the tier the donation belongs to.
@@ -220,6 +229,7 @@ async function fetchGitHubSponsors() {
                         nodes {
                             sponsor: sponsorEntity {
                                 ...on User {
+                                    id: databaseId,
                                     name,
                                     login,
                                     avatarUrl,
@@ -227,6 +237,7 @@ async function fetchGitHubSponsors() {
                                     websiteUrl
                                 }
                                 ...on Organization {
+                                    id: databaseId,
                                     name,
                                     login,
                                     avatarUrl,
@@ -259,6 +270,7 @@ async function fetchGitHubSponsors() {
                         id
                         sponsor {
                             ...on User {
+                                id: databaseId,
                                 name,
                                 login,
                                 avatarUrl,
@@ -266,6 +278,7 @@ async function fetchGitHubSponsors() {
                                 websiteUrl
                             }
                             ...on Organization {
+                                id: databaseId,
                                 name,
                                 login,
                                 avatarUrl,
@@ -352,7 +365,7 @@ async function fetchGitHubSponsors() {
 		// return an array in the same format as Open Collective
 		.map(({ sponsor, tier }) => ({
 			name: sponsor.name || sponsor.login,
-			image: sponsor.avatarUrl,
+			image: getGitHubAvatarURL(sponsor),
 			url: fixUrl(sponsor.websiteUrl || sponsor.url),
 			monthlyDonation: tier.monthlyPriceInDollars,
 			source: "github",
@@ -365,7 +378,7 @@ async function fetchGitHubSponsors() {
 		.map(({ sponsor, timestamp, tier, id }) => ({
 			id,
 			name: sponsor.name || sponsor.login,
-			image: sponsor.avatarUrl,
+			image: getGitHubAvatarURL(sponsor),
 			url: fixUrl(sponsor.websiteUrl || sponsor.url),
 			amount: tier.monthlyPriceInDollars,
 			date: timestamp,
