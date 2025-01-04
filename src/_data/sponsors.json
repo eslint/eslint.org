@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 126660,
-        "monthlyDonations": 10555,
-        "sponsorCount": 169
+        "annualDonations": 123780,
+        "monthlyDonations": 10315,
+        "sponsorCount": 168
     },
     "diamond": [],
     "platinum": [
@@ -92,15 +92,6 @@
             "tier": "bronze-sponsor"
         },
         {
-            "name": "WordHint",
-            "url": "https://www.wordhint.net/",
-            "image": "https://images.opencollective.com/wordhint/be86813/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 800,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
             "name": "Anagram Solver",
             "url": "https://www.crosswordsolver.org/anagram-solver/",
             "image": "https://images.opencollective.com/anagram-solver/2666271/logo.png",
@@ -184,14 +175,6 @@
             "image": "https://avatars.githubusercontent.com/u/48932923",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alan",
-            "image": "https://avatars.githubusercontent.com/u/18175329",
-            "url": "https://alan.com",
-            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
@@ -505,6 +488,15 @@
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 70,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 31,
             "source": "opencollective",
             "tier": "backer"
         },
