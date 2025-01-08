@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 123780,
-        "monthlyDonations": 10315,
-        "sponsorCount": 168
+        "annualDonations": 123768,
+        "monthlyDonations": 10314,
+        "sponsorCount": 167
     },
     "diamond": [],
     "platinum": [
@@ -1379,14 +1379,6 @@
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133",
             "url": "https://vezel.dev",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Bryan King Pecho",
-            "image": "https://avatars.githubusercontent.com/u/91954699",
-            "url": "https://github.com/bkpecho",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
