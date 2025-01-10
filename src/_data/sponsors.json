@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 117768,
-        "monthlyDonations": 9814,
+        "annualDonations": 117408,
+        "monthlyDonations": 9784,
         "sponsorCount": 166
     },
     "diamond": [],
@@ -148,7 +148,7 @@
             "name": "Principal Financial Group",
             "url": "https://www.principal.com/about-us",
             "image": "https://images.opencollective.com/principal/431e690/logo.png",
-            "monthlyDonation": 170,
+            "monthlyDonation": 140,
             "totalDonations": 4020,
             "source": "opencollective",
             "tier": "backer"
