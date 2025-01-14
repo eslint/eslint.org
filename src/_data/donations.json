@@ -1,5 +1,14 @@
 [
     {
+        "id": "gnxdwzj3-le5mpwzk-85epy8rv-bko04a97",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 673.72,
+        "date": "2025-01-13T14:42:13.808Z",
+        "source": "opencollective"
+    },
+    {
         "id": "eng0kzdy-vor4pz8k-r00pbma8-37xlw95j",
         "name": "Fabian Fietze",
         "url": null,
@@ -204,15 +213,6 @@
         "image": "https://images.opencollective.com/afsprakenagenda-be/d26c3ed/logo.png",
         "amount": 50,
         "date": "2024-02-04T19:56:18.849Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "gm9bnk80-437xqrnj-5wk6vzeo-ljdayw5r",
-        "name": "Frontend Masters",
-        "url": "https://FrontendMasters.com",
-        "image": "https://images.opencollective.com/frontendmasters/0b9cda4/logo.png",
-        "amount": 262.77,
-        "date": "2024-01-16T19:44:38.365Z",
         "source": "opencollective"
     }
 ]
