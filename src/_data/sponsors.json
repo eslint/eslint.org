@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117408,
-        "monthlyDonations": 9784,
-        "sponsorCount": 166
+        "annualDonations": 117420,
+        "monthlyDonations": 9785,
+        "sponsorCount": 167
     },
     "diamond": [],
     "platinum": [
@@ -1363,6 +1363,14 @@
             "name": "David Badasyan",
             "image": "https://avatars.githubusercontent.com/u/59211418",
             "url": "https://www.linkedin.com/in/david-badasyan-17b544199/",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Osmar Balam",
+            "image": "https://avatars.githubusercontent.com/u/81031316",
+            "url": "https://osmarbalam.com/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
