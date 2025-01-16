@@ -37,25 +37,7 @@ We'll explore the different ways the two use information from analyzing your cod
 
 ## Digging deeper into linting vs. type checking
 
-Type checkers ensure that values are used only in ways that are allowed by the value's type. Compiled languages, like Java, perform type checking during the compilation phase. Because JavaScript has no way to indicate the intended type of a binding, it cannot perform type checking on its own. That's where TypeScript comes in.
-
-By allowing explicit type annotations (and the implicit detection of some types), TypeScript overlays type information on top of JavaScript code to perform type checking similar to what's found in compiled languages.
-For example, TypeScript reports a type error on the following `logUppercase(9001)` call, because `logUppercase` is declared to receive a `string` rather than a `number`:
-
-```ts
-function logUppercase(text: string) {
-    console.log(text.toUpperCase());
-}
-
-logUppercase(9001);
-//           ~~~~
-// Argument of type 'number' is not assignable to parameter of type 'string'.
-```
-
-
-TypeScript focuses on reporting known errors rather than potential problems; there is nothing subjective about the errors that TypeScript reports, nor is there a way to implement project-specific preferences.
-
-Linters, on the other hand, primarily report likely defects and can also be used to enforce subjective opinions.
+Linters primarily report likely defects and can also be used to enforce subjective opinions.
 ESLint and other linters catch issues that may or may not be type-safe but are potential sources of bugs.
 Many developers rely on linters to make sure their code follows framework and language best practices.
 
@@ -89,17 +71,30 @@ function logFruit(value: "apple" | "banana" | "cherry") {
 logFruit("banana");
 ```
 
+Type checkers, on the other hand, ensure that values are used only in ways that are allowed by the value's type. Compiled languages, like Java, perform type checking during the compilation phase. Because JavaScript has no way to indicate the intended type of a binding, it cannot perform type checking on its own. That's where TypeScript comes in.
+
+By allowing explicit type annotations (and the implicit detection of some types), TypeScript overlays type information on top of JavaScript code to perform type checking similar to what's found in compiled languages.
+For example, TypeScript reports a type error on the following `logUppercase(9001)` call, because `logUppercase` is declared to receive a `string` rather than a `number`:
+
+```ts
+function logUppercase(text: string) {
+    console.log(text.toUpperCase());
+}
+
+logUppercase(9001);
+//           ~~~~
+// Argument of type 'number' is not assignable to parameter of type 'string'.
+```
+
+TypeScript focuses on reporting known errors rather than potential problems; there is nothing subjective about the errors that TypeScript reports, nor is there a way to implement project-specific preferences.
+
 Another way of looking at the differences between ESLint and TypeScript is that TypeScript enforces what you *can* do, whereas ESLint enforces what you *should* do.
 
 ### Granular Extensibility
 
 Another difference between ESLint and TypeScript is in granularity of configuration.
 
-TypeScript is configured by a set list of compiler options on a project level.
-The [`tsconfig.json` file](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) allows you to set compiler options that change type checking for all files in the project.
-Those compiler options are set globally for TypeScript and generally change large swathes of type checking behavior.
-
-ESLint, on the other hand, runs with a set of individually configurable lint rules. If you don't like a particular lint rule, you can turn it off for a line, set of files, or your entire project.
+ESLint runs with a set of individually configurable lint rules. If you don't like a particular lint rule, you can turn it off for a line, set of files, or your entire project.
 ESLint can also be augmented by **plugins** that add new lint rules.
 Plugin-specific lint rules extend the breadth of code checks that ESLint configurations can pick and choose from.
 
@@ -127,6 +122,11 @@ const MyComponent = () => <img src="source.webp" />;
 ```
 
 By adding in rules from plugins, ESLint configurations can be tailored to the specific best practices and common issues to the frameworks a project is built with.
+
+TypeScript, on the other hand, is configured by a set list of compiler options on a project level.
+The [`tsconfig.json` file](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) allows you to set compiler options that change type checking for all files in the project.
+Those compiler options are set globally for TypeScript and generally change large swathes of type checking behavior.
+TypeScript does not allow compiler options to be different across different files in a single project.
 
 ### Areas of Overlap
 
