@@ -29,8 +29,7 @@ Because static analysis runs on source code, it can suggest improvements in edit
 
 In this blog post, we'll focus on ESLint and TypeScript, and the different ways in which they perform static analysis.
 
-* **ESLint**: executes individually configurable checks known as "lint rules"
-* **TypeScript**: collects all files into a full understanding of the project
+ESLint's static analysis is organized as a series of individually configured lint rules. Because no two rules interact with one another, you can safely turn each rule on and off depending on your preferences. While TypeScript has some individually configured options, the majority of the analysis is performed in the type checking functionality.
 
 ESLint and TypeScript use some of the same forms of analysis to detect defects in code.
 They both analyze how scopes and variables are created and used in code, and can catch issues such as referencing a variable that doesn't exist.
@@ -98,7 +97,7 @@ Another difference between ESLint and TypeScript is in granularity of configurat
 
 TypeScript is configured by a set list of compiler options on a project level.
 The [`tsconfig.json` file](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) allows you to set compiler options that change type checking for all files in the project.
-Those compiler options are set by TypeScript and generally change large swathes of type checking behavior.
+Those compiler options are set globally for TypeScript and generally change large swathes of type checking behavior.
 
 ESLint, on the other hand, runs with a set of individually configurable lint rules. If you don't like a particular lint rule, you can turn it off for a line, set of files, or your entire project.
 ESLint can also be augmented by **plugins** that add new lint rules.
@@ -168,9 +167,9 @@ registerCallback((_, message) => console.log(message));
 ```
 
 Unused variables in JavaScript can also be caught by ESLint's [`no-unused-vars`](https://eslint.org/docs/latest/rules/no-unused-vars) rule; when in TypeScript code, the [`@typescript-eslint/no-unused-vars`](https://typescript-eslint.io/rules/no-unused-vars) is preferable instead.
-The lint rules by default also ignore variables whose name begins with `_`.
-They additionally ignore parameters that come before any parameter that is itself used.
+The lint rules can be configured to ignore variables whose name begins with `_`.
 
+Additionally, the lint rules by default ignore parameters that come before any parameter that is itself used.
 Some projects prefer to never allow unused parameters regardless of name or position.
 These stricter preferences help prevent API designs that lead developers to create many unused parameters.
 
