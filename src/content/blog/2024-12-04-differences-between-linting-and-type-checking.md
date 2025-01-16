@@ -225,7 +225,7 @@ for (const name in getArrayOfNames()) {
 }
 ```
 
-Augmenting ESLint with information from TypeScript makes for a more powerful set of lint rules.
+Typed linting comes at the cost of slowing down linting to roughly the speed of type-checking, but makes available a more powerful set of lint rules.
 See [Typed Linting: The Most Powerful TypeScript Linting Ever](https://typescript-eslint.io/blog/typed-linting) for more details on typed linting with typescript-eslint.
 
 ### TypeScript with Linting
