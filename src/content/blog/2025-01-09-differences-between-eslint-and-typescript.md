@@ -8,6 +8,7 @@ categories:
   - Storytime
 tags:
   - Linting
+  - Type Checking
 ---
 
 If you're a JavaScript developer today, there's a good chance you're using a combination of ESLint and TypeScript to assist development.
