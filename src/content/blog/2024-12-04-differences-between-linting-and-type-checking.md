@@ -40,7 +40,7 @@ We'll explore the different ways the two use information from analyzing your cod
 
 Type checkers ensure that values are used only in ways that are allowed by the value's type. Compiled languages, like Java, perform type checking during the compilation phase. Because JavaScript has no way to indicate the intended type of a binding, it cannot perform type checking on its own. That's where TypeScript comes in.
 
-By allowing explicit type annotations (and the implicit detection of some types), TypeScript overlays type information on top of JavaScript code to perform type checking similar to what's found in compiled languages. 
+By allowing explicit type annotations (and the implicit detection of some types), TypeScript overlays type information on top of JavaScript code to perform type checking similar to what's found in compiled languages.
 For example, TypeScript reports a type error on the following `logUppercase(9001)` call, because `logUppercase` is declared to receive a `string` rather than a `number`:
 
 ```ts
@@ -136,9 +136,9 @@ While ESLint and TypeScript operate differently and specialize in different area
 We recommend using both ESLint and TypeScript in your TypeScript projects to ensure you're catching the widest number and types of defects. Here are a few steps to get you started:
 
 * In your ESLint configuration file, use:
-  - the [ESLint `js.configs.recommended` config](https://eslint.org/docs/latest/use/getting-started#configuration)
-  - the [`tseslint.configs.recommended` config from typescript-eslint](https://typescript-eslint.io/getting-started/typed-linting)
-  - any community plugins relevant to your project's libraries and frameworks
+  * the [ESLint `js.configs.recommended` config](https://eslint.org/docs/latest/use/getting-started#configuration)
+  * the [`tseslint.configs.recommended` config from typescript-eslint](https://typescript-eslint.io/getting-started/typed-linting)
+  * any community plugins relevant to your project's libraries and frameworks
 * In your TypeScript configuration file, enable [`strict` mode](https://www.typescriptlang.org/tsconfig/#strict) to catch as many type safety issues as possible
 
 **Note:** typescript-eslint's `tseslint.configs.recommended` disable core ESLint rules that are not helpful with TypeScript.
