@@ -13,7 +13,7 @@ tags:
 If you're a JavaScript developer today, there's a good chance you're using a combination of ESLint and TypeScript to assist development.
 These tools perform similar but different functions. ESLint is a *linter*, whereas TypeScript is a *type checker*.
 
-Linters and type checkers are two kinds of *static analysis* tool that analyze code and report on detected issues. While they may seem similar at first, the linters and type checkers detect different categories of issues and are useful in different ways.
+Linters and type checkers are two kinds of *static analysis* tooling that analyze code and report on detected issues. While they may seem similar at first, linters and type checkers detect different categories of issues and are useful in different ways.
 
 To understand these differences, it's first helpful to understand what static analysis is and why it's useful.
 
@@ -26,8 +26,6 @@ As such, dynamic analysis brings with it the inherent danger of executing malici
 Static analysis can be immensely helpful for improving code readability, reliability, and overall quality.
 Many developers rely on static analysis to enforce consistent code formatting and style, to ensure code is well-documented, and to catch likely bugs.
 Because static analysis runs on source code, it can suggest improvements in editors as code is written.
-
-In this blog post, we'll focus on ESLint and TypeScript, and the different ways in which they perform static analysis.
 
 ESLint's static analysis is organized as a series of individually configured lint rules. Because no two rules interact with one another, you can safely turn each rule on and off depending on your preferences. While TypeScript has some individually configured options, the majority of the analysis is performed in the type checking functionality.
 
@@ -154,7 +152,7 @@ These compiler options are useful when not using ESLint.
 However, they aren't configurable the way lint rules are, and so can't be configured to higher or lower strictness levels based on a project's preferences.
 For example, the compiler options are hardcoded to always ignore any variable whose name begins with `_` while ESLint's `no-unused-vars` doesn't treat these variables any differently until configured to do so.
 
-As an example, the following `registerCallback` function declares two parameters for its callbacks,`id` and `message`, but the developer using it only needed `message`.
+As an example, the following `registerCallback` function declares two parameters for its callbacks, `id`, and `message`, but the developer using it only needed `message`.
 TypeScript's `noUnusedParameters` compiler option would not flag the unused parameter `_`:
 
 ```ts
@@ -189,7 +187,7 @@ registerCallback((_, message) => console.log(message));
 // '_' is declared but never used.
 ```
 
-That extra level of configurability provided by the `no-unused-vars` rules can allow them to act as more granularly configurable versions of their equivalent TypeScript compiler options.
+That extra level of configurability provided by the `no-unused-vars` rules allows them to act as more granularly configurable versions of their equivalent TypeScript compiler options.
 
 > 💡 See [`no-unused-binary-expressions`: From code review nit to ecosystem improvements](/blog/2024/10/code-review-nit-to-ecosystem-improvements) for more areas of code checking with partial overlap between linting and type checking.
 
@@ -259,8 +257,8 @@ Enforcing language-specific best practices with ESLint helps developers learn ab
 Linters such as ESLint and type checkers such as TypeScript are both valuable assets for developers.
 The two catch different areas of code defects and come with different philosophies around configurability and extensibility.
 
-* TypeScripts checks that code is "type-safe", enforcing what you *can* write.
 * ESLint checks that code adheres to best practices and is consistent, enforcing what you *should* write.
+* TypeScripts checks that code is "type-safe", enforcing what you *can* write.
 
 Put together, the two tools help projects write code with fewer bugs and more consistency.
 We recommend that any project that uses TypeScript additionally uses ESLint.
