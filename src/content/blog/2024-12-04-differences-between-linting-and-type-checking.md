@@ -137,7 +137,7 @@ We recommend using both ESLint and TypeScript in your TypeScript projects to ens
 
 * In your ESLint configuration file, use:
   * the [ESLint `js.configs.recommended` config](https://eslint.org/docs/latest/use/getting-started#configuration)
-  * the [`tseslint.configs.recommended` config from typescript-eslint](https://typescript-eslint.io/getting-started/typed-linting)
+  * the [`tseslint.configs.recommended` config from typescript-eslint](https://typescript-eslint.io/getting-started)
   * any community plugins relevant to your project's libraries and frameworks
 * In your TypeScript configuration file, enable [`strict` mode](https://www.typescriptlang.org/tsconfig/#strict) to catch as many type safety issues as possible
 
