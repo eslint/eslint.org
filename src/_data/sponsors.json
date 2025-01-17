@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 117420,
-        "monthlyDonations": 9785,
-        "sponsorCount": 167
+        "annualDonations": 119832,
+        "monthlyDonations": 9986,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -114,6 +114,14 @@
             "name": "GitBook",
             "image": "https://avatars.githubusercontent.com/u/7111340",
             "url": "https://www.gitbook.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Neko",
+            "image": "https://avatars.githubusercontent.com/u/11081491",
+            "url": "https://nolebase.ayaka.io",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -1243,6 +1251,14 @@
             "name": "UKYO Kazuma",
             "image": "https://avatars.githubusercontent.com/u/283562",
             "url": "https://yaakai.to",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Josh Sullivan",
+            "image": "https://avatars.githubusercontent.com/u/570899",
+            "url": "https://github.com/jpsullivan",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
