@@ -89,7 +89,7 @@ TypeScript focuses on reporting known errors rather than potential problems; the
 
 Another way of looking at the differences between ESLint and TypeScript is that TypeScript enforces what you *can* do, whereas ESLint enforces what you *should* do.
 
-### Granular Extensibility
+### Granular extensibility
 
 Another difference between ESLint and TypeScript is in granularity of configuration.
 
@@ -127,7 +127,7 @@ The [`tsconfig.json` file](https://www.typescriptlang.org/docs/handbook/tsconfig
 Those compiler options are set globally for TypeScript and generally change large swathes of type checking behavior.
 TypeScript does not allow compiler options to be different across different files in a single project.
 
-### Areas of Overlap
+### Areas of overlap
 
 While ESLint and TypeScript operate differently and specialize in different areas of code defects, there is some overlap. Specific types of code defects straddle the line between "best practices" and "type safety," and so can be caught by both tools.
 
@@ -142,7 +142,7 @@ We recommend using both ESLint and TypeScript in your TypeScript projects to ens
 **Note:** typescript-eslint's `tseslint.configs.recommended` disable core ESLint rules that are not helpful with TypeScript.
 The config leaves on any core ESLint rules that are useful alongside type checking.
 
-#### Unused Locals and Parameters
+#### Unused locals and parameters
 
 The only TypeScript compiler options we recommend keeping off when using linting are those that enable checking for unused variables:
 
@@ -192,14 +192,14 @@ That extra level of configurability provided by the `no-unused-vars` rules allow
 
 > 💡 See [`no-unused-binary-expressions`: From code review nit to ecosystem improvements](/blog/2024/10/code-review-nit-to-ecosystem-improvements) for more areas of code checking with partial overlap between linting and type checking.
 
-## Is ESLint Useful With TypeScript?
+## Is ESLint useful with TypeScript?
 
 **Yes.**
 
 If you are using TypeScript, it is still very useful to use ESLint.
 In fact, ESLint and TypeScript are at their most powerful when used in conjunction with each other.
 
-### ESLint with Type Information
+### ESLint with type information
 
 Traditional ESLint rules run on a single file at a time and have no knowledge of other files in the project.
 They can't make decisions on files based on the contents of other files.
@@ -227,7 +227,7 @@ for (const name in getArrayOfNames()) {
 Typed linting comes at the cost of slowing down linting to roughly the speed of type-checking, but makes available a more powerful set of lint rules.
 See [Typed Linting: The Most Powerful TypeScript Linting Ever](https://typescript-eslint.io/blog/typed-linting) for more details on typed linting with typescript-eslint.
 
-### TypeScript with Linting
+### TypeScript with linting
 
 TypeScript adds extra complexity to JavaScript.
 That complexity is often worth it, but any added complexity brings with it the potential for misuse.
