@@ -1,5 +1,14 @@
 [
     {
+        "id": "8k03reyd-5agmq50w-v4eplbwo-z7j4nxv9",
+        "name": "Kaido Iwamoto",
+        "url": null,
+        "image": "https://images.opencollective.com/odiak/avatar.png",
+        "amount": 10,
+        "date": "2025-01-17T09:38:04.618Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AEzXL",
         "name": "Oちゃん",
         "image": "https://avatars.githubusercontent.com/u/71199274",
@@ -88,15 +97,6 @@
         "amount": 101,
         "date": "2024-12-20T14:24:13.950Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEwMq",
-        "name": "Mr. Henry",
-        "image": "https://avatars.githubusercontent.com/u/45111",
-        "url": "https://www.mrhenry.be",
-        "amount": 1,
-        "date": "2024-12-19T18:06:12Z",
-        "source": "github"
     },
     {
         "id": "eng0kzdy-vor4pz84-mnrpbma8-37xlw95j",
