@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119832,
-        "monthlyDonations": 9986,
-        "sponsorCount": 169
+        "annualDonations": 119974.00281395999,
+        "monthlyDonations": 9997.83356783,
+        "sponsorCount": 171
     },
     "diamond": [],
     "platinum": [
@@ -435,6 +435,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 8.4268173,
+            "totalDonations": "08.42681730",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1150,6 +1159,15 @@
             "url": "https://jupli.com",
             "monthlyDonation": 5,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "block",
+            "url": null,
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 3.40675053,
+            "totalDonations": "03.40675053",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
