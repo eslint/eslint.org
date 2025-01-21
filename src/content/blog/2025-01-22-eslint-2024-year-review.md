@@ -131,7 +131,7 @@ How were we able to make up the difference between income and expenses? The ESLi
 
 ### Supporting our dependencies and ecosystem
 
-ESLint is commited to the financial health of our dependencies and the ESLint ecosystem as a whole. As part of that commitment, we donate to projects that we depend on as well as important ESLint-related projects. (This is listed as "Ecosystem/Dependencies" in the previous table.) The following table shows the projects to which we donated in 2024.
+ESLint is committed to the financial health of our dependencies and the ESLint ecosystem as a whole. As part of that commitment, we donate to projects that we depend on as well as important ESLint-related projects. (This is listed as "Ecosystem/Dependencies" in the previous table.) The following table shows the projects to which we donated in 2024.
 
 | **Project**           | **Donations** |
 |-----------------------|---------------|
