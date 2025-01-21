@@ -79,8 +79,6 @@ In 2024, we received generous donations from many companies, led by Automattic (
 | Workleap                       | $6,000.00               |
 | American Express               | $6,000.00               |
 | JetBrains                      | $5,500.00               |
-| EthicalAds                     | $5,491.08               |
-| THANKS.DEV                     | $4,234.09               |
 | Cybozu                         | $4,200.00               |
 | Canva                          | $3,000.00               |
 | Sanity                         | $2,400.00               |
