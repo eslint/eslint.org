@@ -46,7 +46,7 @@ The next few sections dig into the project financials. All of this information i
 
 During 2024, ESLint received $187,964.30 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
 
-| **Source**         | **Amount**    | **2023 Amount** | **Gain/Loss %** |
+| **Source**         | **2024 Amount**    | **2023 Amount** | **Gain/Loss %** |
 |--------------------|---------------|-----------------|-----------------|
 | Open Collective    | $122,996.60   | $118,381.30     | +3.90%          |
 | GitHub Sponsors    | $35,928.93    | $25,190.89      | +42.63%         |
