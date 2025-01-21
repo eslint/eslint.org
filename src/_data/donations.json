@@ -1,14 +1,5 @@
 [
     {
-        "id": "e0adkjrv-8xwm69ow-84k67z5n-4l93bgoy",
-        "name": "Huntlocals",
-        "url": "https://huntlocals.com/",
-        "image": "https://images.opencollective.com/huntlocalscom/8f49205/logo.png",
-        "amount": 1,
-        "date": "2025-01-19T12:04:15.160Z",
-        "source": "opencollective"
-    },
-    {
         "id": "SA_kwHOAFvahM4AEzhT",
         "name": "Jesper van den Ende",
         "image": "https://avatars.githubusercontent.com/u/2737650",
@@ -267,6 +258,15 @@
         "image": "https://images.opencollective.com/greenpromocode-com/75cec3c/logo.png",
         "amount": 3.41,
         "date": "2024-03-03T10:14:08.192Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "gnxdwzj3-le5mpwz0-zmjpy8rv-bko04a97",
+        "name": "Afsprakenagenda.be",
+        "url": "https://www.afsprakenagenda.be",
+        "image": "https://images.opencollective.com/afsprakenagenda-be/d26c3ed/logo.png",
+        "amount": 50,
+        "date": "2024-02-04T19:56:18.849Z",
         "source": "opencollective"
     }
 ]

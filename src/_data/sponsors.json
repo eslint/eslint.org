@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119974.00281395999,
-        "monthlyDonations": 9997.83356783,
-        "sponsorCount": 171
+        "annualDonations": 119986.00281395999,
+        "monthlyDonations": 9998.83356783,
+        "sponsorCount": 172
     },
     "diamond": [],
     "platinum": [
@@ -1349,6 +1349,14 @@
             "name": "Kirill Devope",
             "image": "https://avatars.githubusercontent.com/u/8249408",
             "url": "https://github.com/devope",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Constantine Rafikov",
+            "image": "https://avatars.githubusercontent.com/u/8498865",
+            "url": "https://open-genes.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
