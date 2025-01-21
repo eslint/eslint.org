@@ -44,7 +44,7 @@ The next few sections dig into the project financials. All of this information i
 
 ![2024 Income Sources - Summarized in following table](/assets/images/blog/2025/2024-income-sources.svg)
 
-During 2023, ESLint received $187,964.30 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
+During 2024, ESLint received $187,964.30 USD from all of our income sources. You can see the breakdown of our income sources in the following table.
 
 | **Source**         | **Amount**    | **2023 Amount** | **Gain/Loss %** |
 |--------------------|---------------|-----------------|-----------------|
