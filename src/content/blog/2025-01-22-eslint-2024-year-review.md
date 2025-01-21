@@ -22,7 +22,7 @@ Towards the last quarter of 2024, things had started to settle and we went back 
 
 ## Release of the language plugins API
 
-Part of the move to the new configuration system was with an eye towards making ESLint language-agnostic through the creation of [language plugins](https://eslint.org/blog/2024/07/whats-coming-next-for-eslint/#language-plugins). This involved a lot of core work to move the JavaScript-specific functionality into its own classes, which in turn allowed us to swap in similar class for other languages.
+Part of the move to the new configuration system was with an eye towards making ESLint language-agnostic through the creation of [language plugins](https://eslint.org/blog/2024/07/whats-coming-next-for-eslint/#language-plugins). This involved a lot of core work to move the JavaScript-specific functionality into its own classes, which in turn allowed us to swap in similar classes for other languages.
 
 In the end, we released official language plugins for [Markdown](https://github.com/eslint/markdown) and [JSON](https://github.com/eslint/json), as well as a prototype for [CSS](https://github.com/eslint/css). All language plugins allow you to create and distribute your own rules that run against the language-specific ASTs. To facilitate the creation of these custom rules, we also introduced the [Code Explorer](https://explorer.eslint.org).
 
