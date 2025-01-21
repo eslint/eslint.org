@@ -38,7 +38,7 @@ These features involved changes not just to parsing but also to rules that work 
 
 ## Financials review
 
-The next few sections dig into the project financials. All of this information is gathered from the Open Collective transaction list with the exception of Tidelift payments (which are retrieved from Tidelift directly). Because transactions come in all throughout the course of a day, we decided to consider transactions beginning on January 1, 2024 at midnight UTC and ending on December 31, 2024 at 11:59 UTC as our fiscal 2024.
+The next few sections dig into the project financials. All of this information is gathered from the Open Collective transaction list with the exception of Tidelift payments (which are retrieved from Tidelift directly). Because transactions come in all throughout the course of a day, we decided to consider transactions beginning on January 1, 2024 at midnight UTC and ending on December 31, 2024 at 11:59 p.m. UTC as our fiscal 2024.
 
 ### Income review
 
