@@ -28,7 +28,7 @@ In the end, we released official language plugins for [Markdown](https://github.
 
 ## Updates to support the latest ECMAScript features
 
-As with most years, the team spends a lot of time monitoring the JavaScript standardization process to ensure ESLint is updated to support new syntax as quickly as possible. In 2024 we added support for the following new JavaScript features:
+As with most years, the team spent a lot of time monitoring the JavaScript standardization process to ensure ESLint is updated to support new syntax as quickly as possible. In 2024 we added support for the following new JavaScript features:
 
 * [ES2025 Regex duplicate named capture groups](https://github.com/tc39/proposal-duplicate-named-capturing-groups)
 * [ES2025 Regex modifiers](https://github.com/tc39/proposal-regexp-modifiers)
