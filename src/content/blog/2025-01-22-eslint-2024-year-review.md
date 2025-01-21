@@ -61,7 +61,7 @@ As usual, most of our donations came through Open Collective. We are grateful th
 
 An unwelcome surprise during the year was the steep dropoff in Tidelift payments. We were informed early in 2024 that Tidelift was recalculating payments we'd be receiving and so our monthly payment ended up cut in half for the remaining months.
 
-This highlights just how important sponsorships are for projects like ESLint, as a company like Tidelift can change their payout calculations and drammatically impact the health of projects.
+This highlights just how important sponsorships are for projects like ESLint, as a company like Tidelift can change their payout calculations and dramatically impact the health of projects.
 
 ### Top sponsors
 
