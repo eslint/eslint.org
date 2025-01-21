@@ -151,6 +151,6 @@ ESLint is committed to the financial health of our dependencies and the ESLint e
 
 Now that ESLint v9.0.0 and language plugins are released, we feel that ESLint is on a solid foundation for the foreseeable future. We'll continue iterating on the new configuration system, as we explore ways to make it more intuitive and easier to use. Our next big step is a [rewrite of the core](https://eslint.org/blog/2024/07/whats-coming-next-for-eslint/#core-rewrite), which aims to break apart our existing API into smaller pieces that are easier to mix and match. This will allow ESLint to be more flexible in terms of plugin capabilities as well as supporting multiple different runtimes.
 
-2024 was an exciting and challenging year for ESLint, with some the most dramatic changes in the project's history. We appreciate all of the feedback you shared with us over the year and your patience as we worked through the changes in this major release.
+2024 was an exciting and challenging year for ESLint, with some of the most dramatic changes in the project's history. We appreciate all of the feedback you shared with us over the year and your patience as we worked through the changes in this major release.
 
 We're also grateful to our sponsors not just in 2024, but also in the preceding years, which allowed us to absorb a nearly $60,000 deficit in our ongoing costs. We hope that all we've accomplished in 2024 shows that every dollar of sponsorship money is being spent to benefit ESLint, its users, and the entire ESLint ecosystem.
