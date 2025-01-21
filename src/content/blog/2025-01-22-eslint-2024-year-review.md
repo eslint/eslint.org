@@ -65,7 +65,7 @@ This highlights just how important sponsorships are for projects like ESLint, as
 
 ### Top sponsors
 
-In 2024, we received generous donations from many companies, led by Automattic ($24,000), Meta ($20,000), and Airbnb ($18,000). Those companies donating $1,000 or more totaled $149,027.59 USD, representing 79% of our total income.
+In 2024, we received generous donations from many companies, led by Automattic ($24,000), Meta ($20,000), and Airbnb ($18,000). Those companies donating $1,000 or more totaled $139,302.42 USD, representing 74% of our total income.
 
 | **Sponsor**                    | **2024 Donation Total** |
 |--------------------------------|-------------------------|
@@ -102,8 +102,7 @@ In 2024, we received generous donations from many companies, led by Automattic (
 
 ![2024 Expenses - Summarized in following table](/assets/images/blog/2025/2024-expenses.svg)
 
-In 2024, we spent $247,669.54 USD on the ESLint project as a whole. This includes regular maintenance and development as well as other costs related to the project. This is in comparison to the $187,964.30 of income for a **net loss of -$59,705.24**. See the table below for an overview.
-
+In 2024, we spent $247,669.54 USD on the ESLint project as a whole vs. $187,964.30 of income for a **net loss of -$59,705.24**. Expenses include regular maintenance and development as well as other costs related to the project. This is in comparison to the  See the table below for an overview.
 
 | **Category**                | **2024 Amount**  | **2023 Amount** | **Gain/Loss %** |
 |-----------------------------|------------------|-----------------|-----------------|
