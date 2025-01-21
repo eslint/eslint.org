@@ -49,7 +49,7 @@ During 2024, ESLint received $187,964.30 USD from all of our income sources. You
 | **Source**         | **Amount**    | **2023 Amount** | **Gain/Loss %** |
 |--------------------|---------------|-----------------|-----------------|
 | Open Collective    | $122,996.60   | $118,381.30     | +3.90%          |
-| GitHub Sponsors    | $35,928.93    | $25,190.89      | +42.61%         |
+| GitHub Sponsors    | $35,928.93    | $25,190.89      | +42.63%         |
 | Tidelift           | $18,449.16    | $30,077.84      | -38.68%         |
 | Website Ads        | $6,345.54     | $6,380.89       | -0.55%          |
 | Thanks.dev         | $4,234.09     | $524.61         | +707.18%        |
