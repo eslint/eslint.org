@@ -94,7 +94,7 @@ In 2024, we received generous donations from many companies, led by Automattic (
 | (redacted)                     | $1,741.94               |
 | Nextbase Starter Kit           | $1,612.48               |
 | Ignition                       | $1,600.00               |
-| notion                         | $1,400.00               |
+| Notion                         | $1,400.00               |
 | Bitwarden                      | $1,048.00               |
 | Siemens                        | $1,000.00               |
 
