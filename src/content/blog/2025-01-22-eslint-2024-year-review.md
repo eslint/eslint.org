@@ -119,7 +119,7 @@ In 2024, we spent $247,669.54 USD on the ESLint project as a whole vs. $187,964.
 | Google Workspace            | $182.06          | $187.35         | -2.82%          |
 | Code Explorer               | $7,200.00        | $0.00           | +100%           |
 | Config Inspector            | $2,350.00        | $0.00           | +100%           |
-| **Total**                   | **$247,669.54**  | **$185,646.98** | **+33.39%**     |
+| **Total**                   | **$247,669.54**  | **$185,646.98** | **+33.41%**     |
 
 
 2024 was a record year for ESLint in many ways. The amount of work completed was due to a large number of contributions not only from the team but also from outside contributors. Our maintenance and development costs soared this year as a result, as did our Contributor Pool costs, which is what we pay outside contributors for significant contributions to ESLint. We had additional help triaging issues and PRs, which also contributed to the increase in costs.
