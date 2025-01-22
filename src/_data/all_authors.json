@@ -202,15 +202,15 @@
         "location": "undefined"
     },
     "joshuakgoldberg": {
-        "username": "joshuakgoldberg",
-        "name": "Josh Goldberg",
-        "title": "Committer Team Member",
-        "website": "https://joshuakgoldberg.com",
-        "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
-        "bio": "An open source maintainer in the TypeScript ecosystem.",
+        "username": "JoshuaKGoldberg",
+        "name": "Josh Goldberg ✨",
+        "title": "Guest Author",
+        "website": "http://www.joshuakgoldberg.com",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3335181",
+        "bio": "Full time open source 💖✨ \r\n\r\n@typescript-eslint maintainer; \r\n@LearningTypeScript author;\r\nMicrosoft MVP 🌟",
+        "twitter_username": "JoshuaKGoldberg",
         "github_username": "JoshuaKGoldberg",
         "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
-        "twitter_username": "JoshuaKGoldberg",
-        "location": "undefined"
+        "location": "Wakefield, MA, USA"
     }
 }

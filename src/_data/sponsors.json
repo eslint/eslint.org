@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 119986.00281395999,
-        "monthlyDonations": 9998.83356783,
-        "sponsorCount": 172
+        "annualDonations": 120586.00281395999,
+        "monthlyDonations": 10048.83356783,
+        "sponsorCount": 174
     },
     "diamond": [],
     "platinum": [
@@ -175,6 +175,14 @@
             "image": "https://avatars.githubusercontent.com/u/48932923",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Alan",
+            "image": "https://avatars.githubusercontent.com/u/18175329",
+            "url": "https://alan.com",
+            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
@@ -444,6 +452,15 @@
             "monthlyDonation": 8.4268173,
             "totalDonations": "08.42681730",
             "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "casino city center online",
+            "url": "https://citycenteronline.bet/",
+            "image": "https://images.opencollective.com/casino-city-center-online/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
