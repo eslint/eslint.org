@@ -106,16 +106,16 @@ In 2024, we spent $247,669.54 USD on the ESLint project as a whole vs. $187,964.
 
 | **Category**                | **2024 Amount**  | **2023 Amount** | **Gain/Loss %** |
 |-----------------------------|------------------|-----------------|-----------------|
-| Maintenance and Development | $147,273.43      | $66,910.37      | +120.12%        |
-| TSC Stipend (Tidelift)      | $18,449.16       | $30,077.84      | -38.68%         |
-| Triage and Support          | $3,985.50        | $10,307.78      | -61.33%         |
+| Maintenance and Development | $147,273.43      | $66,910.37      | +120.11%        |
+| TSC Stipend (Tidelift)      | $18,449.16       | $30,077.84      | -38.66%         |
+| Triage and Support          | $3,985.50        | $10,307.78      | -61.34%         |
 | Technical Writing           | $0.00            | $8,155.00       | -100.00%        |
 | Contributor Pool            | $14,100.30       | $4,500.00       | +213.34%        |
-| Payment Processor Fees      | $3,808.97        | $2,854.51       | +33.45%         |
+| Payment Processor Fees      | $3,808.97        | $2,854.51       | +33.44%         |
 | Health Insurance            | $12,698.40       | $13,447.41      | -5.57%          |
 | Open Source Collective Fee  | $11,696.69       | $9,206.88       | +27.04%         |
-| Ecosystem/Dependencies      | $16,100.00       | $24,400.00      | -33.99%         |
-| Community Management        | $9,825.03        | $15,599.84      | -37.04%         |
+| Ecosystem/Dependencies      | $16,100.00       | $24,400.00      | -34.02%         |
+| Community Management        | $9,825.03        | $15,599.84      | -37.02%         |
 | Google Workspace            | $182.06          | $187.35         | -2.82%          |
 | Code Explorer               | $7,200.00        | $0.00           | +100%           |
 | Config Inspector            | $2,350.00        | $0.00           | +100%           |
