@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 120586.00281395999,
-        "monthlyDonations": 10048.83356783,
+        "annualDonations": 120538.00281395999,
+        "monthlyDonations": 10044.83356783,
         "sponsorCount": 174
     },
     "diamond": [],
@@ -455,11 +455,11 @@
             "tier": "backer"
         },
         {
-            "name": "casino city center online",
-            "url": "https://citycenteronline.bet/",
-            "image": "https://images.opencollective.com/casino-city-center-online/logo.png",
+            "name": "Matt Welke",
+            "url": "https://mattwelke.com",
+            "image": "https://images.opencollective.com/mattwelke/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 122.01,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1155,14 +1155,6 @@
             "tier": "backer"
         },
         {
-            "name": "Yusuke Hakamaya",
-            "image": "https://avatars.githubusercontent.com/u/65002858",
-            "url": "https://www.yhakamay.me",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828",
             "url": "https://standardresume.co/tech",
@@ -1438,6 +1430,14 @@
             "name": "Vezel",
             "image": "https://avatars.githubusercontent.com/u/87844133",
             "url": "https://vezel.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Takhir Kudusov",
+            "image": "https://avatars.githubusercontent.com/u/98131221",
+            "url": "https://github.com/TakhirKudusov",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
