@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 120538.00281395999,
-        "monthlyDonations": 10044.83356783,
-        "sponsorCount": 174
+        "annualDonations": 132538.00281396,
+        "monthlyDonations": 11044.83356783,
+        "sponsorCount": 175
     },
     "diamond": [],
     "platinum": [
@@ -26,6 +26,15 @@
         }
     ],
     "gold": [
+        {
+            "name": "Qlty Software",
+            "url": "https://qlty.sh/",
+            "image": "https://images.opencollective.com/qltysh/33d157d/logo.png",
+            "monthlyDonation": 1000,
+            "totalDonations": 1000,
+            "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
         {
             "name": "trunk.io",
             "url": "https://trunk.io/",
@@ -252,7 +261,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 190,
+            "totalDonations": 200,
             "source": "opencollective",
             "tier": "backer"
         },
