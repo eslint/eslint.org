@@ -115,7 +115,7 @@ In 2024, we spent $247,669.54 USD on the ESLint project as a whole vs. $187,964.
 | Health Insurance            | $12,698.40       | $13,447.41      | -5.57%          |
 | Open Source Collective Fee  | $11,696.69       | $9,206.88       | +27.04%         |
 | Ecosystem/Dependencies      | $16,100.00       | $24,400.00      | -34.02%         |
-| Community Management        | $9,825.03        | $15,599.84      | -37.02%         |
+| eslint-community Management | $9,825.03        | $15,599.84      | -37.02%         |
 | Google Workspace            | $182.06          | $187.35         | -2.82%          |
 | Code Explorer               | $7,200.00        | $0.00           | +100%           |
 | Config Inspector            | $2,350.00        | $0.00           | +100%           |
