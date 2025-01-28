@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 134338.00281396,
-        "monthlyDonations": 11194.83356783,
-        "sponsorCount": 176
+        "annualDonations": 134278.00281396,
+        "monthlyDonations": 11189.83356783,
+        "sponsorCount": 175
     },
     "diamond": [],
     "platinum": [
@@ -872,14 +872,6 @@
             "name": "JC Dang",
             "image": "https://avatars.githubusercontent.com/u/721579",
             "url": "https://github.com/jcdang",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Gavin Lloyd",
-            "image": "https://avatars.githubusercontent.com/u/744538",
-            "url": "https://gavinhungry.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
