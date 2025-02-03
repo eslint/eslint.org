@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133956,
-        "monthlyDonations": 11163,
-        "sponsorCount": 170
+        "annualDonations": 133896,
+        "monthlyDonations": 11158,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -477,7 +477,7 @@
             "url": null,
             "image": "https://images.opencollective.com/anu-alabi/2804057/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 295,
+            "totalDonations": 300,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -486,16 +486,7 @@
             "url": "https://www.mercuryjets.com",
             "image": "https://images.opencollective.com/private-flight/d5b295f/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Tiekunta",
-            "url": "https://tiehoitokunta.fi",
-            "image": "https://images.opencollective.com/tiekunta/3958004/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -504,7 +495,7 @@
             "url": "https://connectionshint.ai",
             "image": "https://images.opencollective.com/connectionshint/b2ab68b/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
