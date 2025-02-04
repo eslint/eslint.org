@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133896,
-        "monthlyDonations": 11158,
-        "sponsorCount": 169
+        "annualDonations": 133536,
+        "monthlyDonations": 11128,
+        "sponsorCount": 171
     },
     "diamond": [],
     "platinum": [
@@ -193,14 +193,6 @@
             "image": "https://avatars.githubusercontent.com/u/48932923",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alan",
-            "image": "https://avatars.githubusercontent.com/u/18175329",
-            "url": "https://alan.com",
-            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
@@ -491,6 +483,15 @@
             "tier": "backer"
         },
         {
+            "name": "Tiekunta",
+            "url": "https://tiehoitokunta.fi",
+            "image": "https://images.opencollective.com/tiekunta/3958004/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "ConnectionsHint",
             "url": "https://connectionshint.ai",
             "image": "https://images.opencollective.com/connectionshint/b2ab68b/logo.png",
@@ -500,11 +501,29 @@
             "tier": "backer"
         },
         {
+            "name": "Automatio AI",
+            "url": "https://automatio.ai/",
+            "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 40,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "SidesMedia",
             "url": "https://sidesmedia.com",
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 80,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 36,
             "source": "opencollective",
             "tier": "backer"
         },
