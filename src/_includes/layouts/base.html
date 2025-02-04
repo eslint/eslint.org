@@ -151,7 +151,8 @@
 </head>
 
 <body class="{{ hook | replace('_', '-') }}">
-    <div class="deprecation-notice">
+    <a href="#main" class="c-btn c-btn--primary" id="skip-link">{{ site.shared.skip_to_content }}</a>
+    <div class="deprecation-notice" role="alert">
         <svg class="hourglass-icon" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="796 796 200 200"
             enable-background="new 796 796 200 200" xml:space="preserve">
@@ -170,7 +171,6 @@
         </svg>
         ESLint v8.x reached end-of-life on 2024-10-05 and is no longer maintained. <a href="/docs/latest/use/migrate-to-9.0.0"> Upgrade </a>
         or consider <a href="/version-support/"> long-term support options </a> </div>
-    <a href="#main" class="c-btn c-btn--primary" id="skip-link">{{ site.shared.skip_to_content }}</a>
 
     {{ content | safe }}
 
