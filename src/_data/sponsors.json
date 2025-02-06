@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 133536,
-        "monthlyDonations": 11128,
+        "annualDonations": 139476,
+        "monthlyDonations": 11623,
         "sponsorCount": 171
     },
     "diamond": [],
@@ -46,6 +46,15 @@
         }
     ],
     "silver": [
+        {
+            "name": "Vite",
+            "url": "https://vite.dev/",
+            "image": "https://images.opencollective.com/vite/e6d15e1/logo.png",
+            "monthlyDonation": 500,
+            "totalDonations": 800,
+            "source": "opencollective",
+            "tier": "silver-sponsor"
+        },
         {
             "name": "SERP Triumph",
             "url": "https://www.serptriumph.com/",
@@ -870,14 +879,6 @@
             "name": "Jimmy Bradshaw",
             "image": "https://avatars.githubusercontent.com/u/916017",
             "url": "https://github.com/bradshjg",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Titus",
-            "image": "https://avatars.githubusercontent.com/u/944406",
-            "url": "https://wooorm.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
