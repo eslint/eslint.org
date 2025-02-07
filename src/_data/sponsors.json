@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139476,
-        "monthlyDonations": 11623,
-        "sponsorCount": 171
+        "annualDonations": 133476,
+        "monthlyDonations": 11123,
+        "sponsorCount": 170
     },
     "diamond": [],
     "platinum": [
@@ -52,15 +52,6 @@
             "image": "https://images.opencollective.com/vite/e6d15e1/logo.png",
             "monthlyDonation": 500,
             "totalDonations": 800,
-            "source": "opencollective",
-            "tier": "silver-sponsor"
-        },
-        {
-            "name": "SERP Triumph",
-            "url": "https://www.serptriumph.com/",
-            "image": "https://images.opencollective.com/serp-triumph5/fea3074/logo.png",
-            "monthlyDonation": 500,
-            "totalDonations": 2000,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
