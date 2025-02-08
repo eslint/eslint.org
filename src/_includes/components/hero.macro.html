@@ -17,6 +17,9 @@
         <div class="span-1-7 content-container">
             {%- if params.post -%}
                 <p class="post__meta">Published <time datetime="{{ params.post.date }}">{{ params.post.date }}</time> under <a href="/blog/category/{{ params.post.categoryURL }}">{{ params.post.category  }}</a></p>
+                {% if params.post.lastUpdated %}
+                    <p class="post__meta">Last updated <time datetime="{{ params.post.lastUpdated }}">{{ params.post.lastUpdated }}</time></p>
+                {% endif %}
             {%- endif -%}
             <h1 class="section-title">{{ params.title }}</h1>
             <p class="section-supporting-text">
