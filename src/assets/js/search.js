@@ -221,6 +221,7 @@ document.addEventListener("keydown", function (e) {
 	const searchResults = Array.from(
 		document.querySelectorAll(".search-results__item"),
 	);
+	const isArrowKey = e.key === "ArrowUp" || e.key === "ArrowDown";
 
 	if (e.key === "Escape") {
 		e.preventDefault();
@@ -238,30 +239,31 @@ document.addEventListener("keydown", function (e) {
 		searchInput.focus();
 		document
 			.querySelector(".search")
-			.scrollIntoView({ behaviour: "smooth", block: "start" });
+			.scrollIntoView({ behavior: "smooth", block: "start" });
 	}
 
 	if (!searchResults.length) return;
 
-	switch (e.key) {
-		case "ArrowUp":
-			e.preventDefault();
+	if (isArrowKey) {
+		e.preventDefault();
+
+		if (e.key === "ArrowUp") {
 			activeIndex =
 				activeIndex - 1 < 0
 					? searchResults.length - 1
 					: activeIndex - 1;
-			break;
-		case "ArrowDown":
-			e.preventDefault();
+		} else if (e.key === "ArrowDown") {
 			activeIndex =
 				activeIndex + 1 < searchResults.length ? activeIndex + 1 : 0;
-			break;
-	}
+		}
 
-	if (activeIndex === -1) return;
-	const activeSearchResult = searchResults[activeIndex];
-	activeSearchResult.querySelector("a").focus();
-	if (isScrollable(resultsElement)) {
-		maintainScrollVisibility(activeSearchResult, resultsElement);
+		if (activeIndex !== -1) {
+			const activeSearchResult = searchResults[activeIndex];
+			activeSearchResult.querySelector("a").focus();
+
+			if (isScrollable(resultsElement)) {
+				maintainScrollVisibility(activeSearchResult, resultsElement);
+			}
+		}
 	}
 });
