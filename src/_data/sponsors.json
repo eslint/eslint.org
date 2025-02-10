@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133476,
-        "monthlyDonations": 11123,
-        "sponsorCount": 170
+        "annualDonations": 133416,
+        "monthlyDonations": 11118,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -1014,14 +1014,6 @@
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261",
             "url": "https://medium.com/@mattiaerre",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Raymond Luong",
-            "image": "https://avatars.githubusercontent.com/u/6905162",
-            "url": "https://raymondluong.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
