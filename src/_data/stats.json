@@ -1,12 +1,12 @@
 {
-    "latestVersion": "v9.20.0",
-    "latestVersionDate": "2025-02-07T21:37:01Z",
-    "currentVersion": "v9.20.0",
-    "currentVersionDate": "2025-02-07T21:37:01Z",
+    "latestVersion": "v9.20.1",
+    "latestVersionDate": "2025-02-11T17:15:39Z",
+    "currentVersion": "v9.20.1",
+    "currentVersionDate": "2025-02-11T17:15:39Z",
     "currentVersionIsPrerelease": false,
     "stars": 25544,
-    "lastCommitDate": "2025-02-10T21:19:55Z",
-    "projectDependents": 24560947,
+    "lastCommitDate": "2025-02-11T17:15:36Z",
+    "projectDependents": 24572783,
     "weeklyDownloads": 48660912,
     "nextVersion": "v9.21.0",
     "nextVersionDate": "2025-02-21"

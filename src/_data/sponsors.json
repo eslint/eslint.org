@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133416,
-        "monthlyDonations": 11118,
-        "sponsorCount": 169
+        "annualDonations": 145476,
+        "monthlyDonations": 12123,
+        "sponsorCount": 171
     },
     "diamond": [],
     "platinum": [
@@ -42,6 +42,14 @@
             "monthlyDonation": 1000,
             "totalDonations": 9000,
             "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
+        {
+            "name": "Shopify",
+            "image": "https://avatars.githubusercontent.com/u/8085",
+            "url": "https://shopify.engineering/",
+            "monthlyDonation": 1000,
+            "source": "github",
             "tier": "gold-sponsor"
         }
     ],
@@ -453,6 +461,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "QuestionAI",
+            "url": "https://questionai.io",
+            "image": "https://images.opencollective.com/questionaiio/b5fd7b7/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
