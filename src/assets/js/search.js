@@ -217,6 +217,23 @@ searchClearBtn.addEventListener("click", function (e) {
 	searchClearBtn.setAttribute("hidden", "");
 });
 
+if (resultsElement) {
+	resultsElement.addEventListener("keydown", e => {
+		if (
+			e.key !== "ArrowUp" &&
+			e.key !== "ArrowDown" &&
+			e.key !== "Tab" &&
+			e.key !== "Shift"
+		) {
+			searchInput.focus();
+			searchInput.setSelectionRange(
+				searchInput.value.length,
+				searchInput.value.length,
+			);
+		}
+	});
+}
+
 document.addEventListener("keydown", function (e) {
 	const searchResults = Array.from(
 		document.querySelectorAll(".search-results__item"),
