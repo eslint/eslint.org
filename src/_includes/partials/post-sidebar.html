@@ -10,6 +10,14 @@
         {% endfor %}
     </div>
 
+    {% set git_last_updated = page.inputPath | gitLastUpdated %}
+    {% set last_updated = page.date if git_last_updated and git_last_updated < page.date else git_last_updated %}
+    {% if last_updated %}
+    <div class="post__sidebar-module">
+        <h2 class="post__sidebar-module__title">Last updated <time datetime="{{ last_updated | readableDate }}">{{ last_updated | readableDate }}</time></h2>
+    </div>
+    {% endif %}
+
     {% if tags %}
     <div class="post__sidebar-module">
         <h2 class="post__sidebar-module__title">Tags</h2>

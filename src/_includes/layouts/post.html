@@ -18,9 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     {% set hero_title = title %}
     {% set hero_supporting_text = teaser %}
     {% set hero_date = page.date | readableDate %}
-    {% set git_last_updated = page.inputPath | gitLastUpdated %}
-    {% set last_updated = page.date if git_last_updated and git_last_updated < page.date else git_last_updated %}
-    {% set hero_last_updated = last_updated | readableDate if last_updated %}
     {% set hero_category = categories[0] %}
     {% set hero_category_url = categories[0] | slugify %}
 
@@ -29,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         supporting_text: hero_supporting_text,
         post: {
             date: hero_date,
-            lastUpdated: hero_last_updated,
             category: hero_category,
             categoryURL: hero_category_url
         }
