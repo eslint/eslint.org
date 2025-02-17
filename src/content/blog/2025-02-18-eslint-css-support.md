@@ -67,7 +67,7 @@ For more information on configuring CSS linting, please check out the [README](h
 
 ## Tolerant parsing support
 
-By default, CSS linting parses the code as strictly as possible, highlighting all errors that it finds along the way. However, CSS parsing in the browser has built-in error recovery and is able to make sense out of CSS with some syntax errors. If you want to lint your CSS using the same error recovery algorithm as the browser, you can do so by enabling tolerant parsing:
+By default, CSS linting parses the code as strictly as possible, highlighting all errors that it finds along the way. However, CSS parsing in the browser has built-in error recovery and can make sense of CSS with some syntax errors. If you want to lint your CSS using the same error recovery algorithm as the browser, you can do so by enabling tolerant parsing:
 
 ```js
 import css from "@eslint/css";
