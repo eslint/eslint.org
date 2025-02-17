@@ -105,25 +105,25 @@ You can configure that syntax as follows:
 import css from "@eslint/css";
 
 export default [
- {
-  files: ["**/*.css"],
-  plugins: {
-   css,
-  },
-  language: "css/css",
-  languageOptions: {
-   customSyntax: {
-    atrules: {
-     "my-at-rule": {
-      prelude: "<string>",
-     },
+    {
+        files: ["**/*.css"],
+        plugins: {
+            css,
+        },
+        language: "css/css",
+        languageOptions: {
+            customSyntax: {
+                atrules: {
+                    "my-at-rule": {
+                        prelude: "<string>",
+                    },
+                },
+            },
+        },
+        rules: {
+            "css/no-empty-blocks": "error",
+        },
     },
-   },
-  },
-  rules: {
-   "css/no-empty-blocks": "error",
-  },
- },
 ];
 ```
 
