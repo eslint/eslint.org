@@ -73,19 +73,19 @@ By default, CSS linting parses the code as strictly as possible, highlighting al
 import css from "@eslint/css";
 
 export default [
- {
-  files: ["**/*.css"],
-  plugins: {
-   css,
-  },
-  language: "css/css",
-  languageOptions: {
-   tolerant: true,
-  },
-  rules: {
-   "css/no-empty-blocks": "error",
-  },
- },
+    {
+        files: ["**/*.css"],
+        plugins: {
+            css,
+        },
+        language: "css/css",
+        languageOptions: {
+            tolerant: true,
+        },
+        rules: {
+            "css/no-empty-blocks": "error",
+        },
+    },
 ];
 ```
 
