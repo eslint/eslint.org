@@ -134,19 +134,19 @@ import css from "@eslint/css";
 import { tailwindSyntax } from "@eslint/css/syntax";
 
 export default [
- {
-  files: ["**/*.css"],
-  plugins: {
-   css,
-  },
-  language: "css/css",
-  languageOptions: {
-   customSyntax: tailwindSyntax,
-  },
-  rules: {
-   "css/no-empty-blocks": "error",
-  },
- },
+    {
+        files: ["**/*.css"],
+        plugins: {
+            css,
+        },
+        language: "css/css",
+        languageOptions: {
+            customSyntax: tailwindSyntax,
+        },
+        rules: {
+            "css/no-empty-blocks": "error",
+        },
+    },
 ];
 ```
 
