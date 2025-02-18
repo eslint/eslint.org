@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139464,
-        "monthlyDonations": 11622,
-        "sponsorCount": 170
+        "annualDonations": 139404,
+        "monthlyDonations": 11617,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -924,14 +924,6 @@
             "tier": "backer"
         },
         {
-            "name": "electrovir",
-            "image": "https://avatars.githubusercontent.com/u/1205860",
-            "url": "https://electrovir.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Jonny Burger",
             "image": "https://avatars.githubusercontent.com/u/1629785",
             "url": "https://jonny.io",
@@ -1363,7 +1355,7 @@
             "tier": "backer"
         },
         {
-            "name": "Juhyeok Kang",
+            "name": "강주혁 | Juhyeok Kang",
             "image": "https://avatars.githubusercontent.com/u/23312485",
             "url": "https://kangju.dev",
             "monthlyDonation": 1,
