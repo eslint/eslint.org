@@ -27,6 +27,7 @@ const searchClearBtn = document.querySelector("#search__clear-btn");
 const poweredByLink = document.querySelector(".search_powered-by-wrapper");
 let activeIndex = -1;
 let searchQuery;
+let caretPosition = 0;
 
 if (poweredByLink) {
 	poweredByLink.addEventListener("focus", function () {
@@ -210,11 +211,21 @@ searchInput.addEventListener("keyup", function () {
 	searchQuery = query;
 });
 
-searchClearBtn.addEventListener("click", function (e) {
+searchClearBtn.addEventListener("click", function () {
 	searchInput.value = "";
 	searchInput.focus();
 	clearSearchResults(true);
 	searchClearBtn.setAttribute("hidden", "");
+});
+
+searchInput.addEventListener("blur", function () {
+	caretPosition = searchInput.selectionStart;
+});
+
+searchInput.addEventListener("focus", function () {
+	if (searchInput.selectionStart !== caretPosition) {
+		searchInput.setSelectionRange(caretPosition, caretPosition);
+	}
 });
 
 if (resultsElement) {
@@ -226,10 +237,6 @@ if (resultsElement) {
 			e.key !== "Shift"
 		) {
 			searchInput.focus();
-			searchInput.setSelectionRange(
-				searchInput.value.length,
-				searchInput.value.length,
-			);
 		}
 	});
 }
