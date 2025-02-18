@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ESLint now officially supports linting of JSON and Markdown
+title: ESLint now officially supports linting of CSS
 teaser: "Taking our next step towards providing a language-agnostic platform for source code linting."
 tags:
   - Open Source
