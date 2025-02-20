@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139404,
-        "monthlyDonations": 11617,
-        "sponsorCount": 169
+        "annualDonations": 139519.33938444,
+        "monthlyDonations": 11626.61161537,
+        "sponsorCount": 171
     },
     "diamond": [],
     "platinum": [
@@ -461,6 +461,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 7.03378017,
+            "totalDonations": "08.426817307.03378017",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1162,6 +1171,15 @@
             "url": "https://zwyx.dev",
             "monthlyDonation": 3,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "block",
+            "url": null,
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 2.5778352,
+            "totalDonations": "03.406750532.57783520",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
