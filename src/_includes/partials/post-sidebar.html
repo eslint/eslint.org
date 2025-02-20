@@ -10,8 +10,8 @@
         {% endfor %}
     </div>
 
-    {% set file_last_updated = page.inputPath | fileLastUpdated %}
-    {% set last_updated = page.date if file_last_updated and file_last_updated < page.date else file_last_updated %}
+    {% set git_last_updated = page.inputPath | gitLastUpdated %}
+    {% set last_updated = page.date if git_last_updated and git_last_updated < page.date else git_last_updated %}
     {% if last_updated %}
     <div class="post__sidebar-module">
         <h2 class="post__sidebar-module__title">Last Updated On</h2>    
