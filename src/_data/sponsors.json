@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139519.33938444,
-        "monthlyDonations": 11626.61161537,
-        "sponsorCount": 171
+        "annualDonations": 142039.33938444,
+        "monthlyDonations": 11836.61161537,
+        "sponsorCount": 173
     },
     "diamond": [],
     "platinum": [
@@ -163,6 +163,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "LambdaTest",
+            "image": "https://avatars.githubusercontent.com/u/171592363",
+            "url": "https://www.lambdatest.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
@@ -371,6 +379,14 @@
             "name": "Moxio",
             "image": "https://avatars.githubusercontent.com/u/4497863",
             "url": "https://moxio.com",
+            "monthlyDonation": 10,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Aviva Solutions B.V.",
+            "image": "https://avatars.githubusercontent.com/u/8927455",
+            "url": "https://www.avivasolutions.nl",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1373,7 +1389,7 @@
             "tier": "backer"
         },
         {
-            "name": "강주혁 | Juhyeok Kang",
+            "name": "강주혁",
             "image": "https://avatars.githubusercontent.com/u/23312485",
             "url": "https://kangju.dev",
             "monthlyDonation": 1,
