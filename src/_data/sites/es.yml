@@ -72,6 +72,9 @@ navigation:
 - text: Prueba ESLint
   link: playground
   target: _blank
+- text: Code Explorer
+  link: codeExplorer
+  target: _blank
 
 #------------------------------------------------------------------------------
 # Footer
