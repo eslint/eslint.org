@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142938.40696404007,
-        "monthlyDonations": 11911.533913669999,
-        "sponsorCount": 202
+        "annualDonations": 142998.40696404007,
+        "monthlyDonations": 11916.533913669999,
+        "sponsorCount": 203
     },
     "diamond": [],
     "platinum": [
@@ -503,6 +503,15 @@
             "monthlyDonation": 7.03378017,
             "totalDonations": "08.426817307.03378017",
             "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Chudovo",
+            "url": "https://chudovo.com/",
+            "image": "https://images.opencollective.com/chudovo/3c866f5/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
