@@ -36,24 +36,6 @@
         "source": "github"
     },
     {
-        "id": "SA_kwHOAFvahM4AE0pH",
-        "name": "rakaso598",
-        "image": "https://avatars.githubusercontent.com/u/112613372",
-        "url": "https://rexondex.tistory.com",
-        "amount": 1,
-        "date": "2025-01-29T05:13:20Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE0nx",
-        "name": "Gary Davison",
-        "image": "https://avatars.githubusercontent.com/u/3521929",
-        "url": "https://www.garydavison.com/",
-        "amount": 5,
-        "date": "2025-01-28T21:48:21Z",
-        "source": "github"
-    },
-    {
         "id": "ywz9j4av-god8pgw5-zg96mr35-nxklb0e7",
         "name": "Matt Welke",
         "url": "https://mattwelke.com",
@@ -249,15 +231,6 @@
         "image": "https://images.opencollective.com/longyc/8030865/avatar.png",
         "amount": 2,
         "date": "2024-04-02T01:35:31.486Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "rxg0j35l-zkwm6vva-0w06voe9-8n47daby",
-        "name": "GreenPromoCode.com",
-        "url": "https://www.greenpromocode.com",
-        "image": "https://images.opencollective.com/greenpromocode-com/75cec3c/logo.png",
-        "amount": 3.41,
-        "date": "2024-03-03T10:14:08.192Z",
         "source": "opencollective"
     }
 ]
