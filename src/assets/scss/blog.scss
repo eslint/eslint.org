@@ -56,8 +56,8 @@
 	grid-row: 1;
 
 	@media all and (max-width: 1023px) {
-		margin-top: 4rem;
-		margin-block-start: 4rem;
+		margin-top: 2rem;
+		margin-block-start: 2rem;
 	}
 }
 
@@ -124,6 +124,10 @@ ul.tag-list {
 	padding-block-start: var(--space-m);
 	margin-block-start: var(--space-m);
 	border-block-start: 1px solid var(--divider-color);
+
+	@media all and (max-width: 1023px) {
+		border-bottom: 1px solid var(--divider-color);
+	}
 }
 
 // https://github.com/eslint/eslint.org/issues/257
