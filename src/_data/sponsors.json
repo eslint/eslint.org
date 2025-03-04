@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 142404,
-        "monthlyDonations": 11867,
+        "annualDonations": 141924,
+        "monthlyDonations": 11827,
         "sponsorCount": 171
     },
     "diamond": [],
@@ -209,14 +209,6 @@
             "image": "https://avatars.githubusercontent.com/u/48932923",
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alan",
-            "image": "https://avatars.githubusercontent.com/u/18175329",
-            "url": "https://alan.com",
-            "monthlyDonation": 45,
             "source": "github",
             "tier": "backer"
         },
@@ -565,6 +557,15 @@
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 90,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 41,
             "source": "opencollective",
             "tier": "backer"
         },
