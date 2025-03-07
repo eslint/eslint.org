@@ -151,7 +151,7 @@ export default defineConfig(
 
     // apply an array config to a subset of files
     {
-        files: ["**/src/safe/*.js"]
+        files: ["**/src/safe/*.js"],
         extends: [exampleConfigs]
     },
 
