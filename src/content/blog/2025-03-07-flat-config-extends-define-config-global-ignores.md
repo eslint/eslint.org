@@ -166,6 +166,8 @@ export default defineConfig(
 
 This approach allows you to worry less about whether a configuration you want to extend is an object or an array, and also makes it clearer which configurations apply to which files.
 
+You can read more about the `defineConfig()` function and `extends` in the [configuration files documentation](https://eslint.org/docs/latest/use/configure/configuration-files).
+
 ## Introducing the `globalIgnores()` helper
 
 Another piece of feedback we received is that the behavior of the `ignores` key is confusing. In some cases it acts as a global ignores (like an ignore file -- completely ignoring everything it matches) while other times it acts like "excludes". Here are some examples:
@@ -208,10 +210,14 @@ export default defineConfig([
 ]);
 ```
 
+You can read more about the `globalIgnores()` function in the [ignoring files documentation](https://eslint.org/docs/latest/use/configure/ignore)
+
 ## Support for older ESLint versions
 
 We realize that there are a lot of users on older versions of ESLint who may not be able to upgrade immediately to get the benefits of `defineConfig()` and `globalIgnores()`, and that's why we've also published these helper functions in a separate [`@eslint/config-helpers`](https://npmjs.com/package/@eslint/config-helpers) package. This package can be used with any ESLint version that supports flat config. Just make sure to import `defineConfig()` and `globalIgnores()` from `@eslint/config-helpers` instead of `eslint/config` and you can enjoy the same functionality.
 
 ## Conclusion
 
-The evolution of ESLint's flat config system represents our commitment to continuously improving the developer experience based on real-world feedback. By introducing `defineConfig()`, we've made it easier to write type-safe configurations while also simplifying the way nested configurations are handled. The reintroduction of `extends` brings back a familiar and powerful way to compose configurations, addressing one of the most common pain points reported by our users. With the addition of the `globalIgnores()` helper, we've clarified one of the most confusing aspects of the configuration system by making global ignore patterns more explicit. Together, these changes create a more intuitive and user-friendly configuration experience that maintains the power and flexibility of the flat config system. For teams not yet ready to upgrade to the latest version of ESLint, we've ensured these improvements are available through the separate `@eslint/config-helpers` package. As we continue to evolve ESLint, we remain committed to balancing innovation with practicality, always keeping our users' needs at the forefront of our development decisions. We encourage you to try these new features and share your feedback with us through our [GitHub discussions](https://github.com/eslint/eslint/discussions) or [Discord server](https://eslint.org/chat).
+The evolution of ESLint's flat config system represents our commitment to continuously improving the developer experience based on real-world feedback. By introducing `defineConfig()`, we've made it easier to write type-safe configurations while also simplifying the way nested configurations are handled. The reintroduction of `extends` brings back a familiar and powerful way to compose configurations, addressing one of the most common pain points reported by our users. With the addition of the `globalIgnores()` helper, we've clarified one of the most confusing aspects of the configuration system by making global ignore patterns more explicit. Together, these changes create a more intuitive and user-friendly configuration experience that maintains the power and flexibility of the flat config system. For teams not yet ready to upgrade to the latest version of ESLint, we've ensured these improvements are available through the separate `@eslint/config-helpers` package.
+
+As we continue to evolve ESLint, we remain committed to balancing innovation with practicality, always keeping our users' needs at the forefront of our development decisions. We encourage you to try these new features and share your feedback with us through our [GitHub discussions](https://github.com/eslint/eslint/discussions) or [Discord server](https://eslint.org/chat).
