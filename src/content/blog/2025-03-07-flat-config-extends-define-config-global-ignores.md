@@ -24,9 +24,9 @@ With these three pieces of feedback in mind, we went back to the drawing board t
 
 ## Introducing `defineConfig()` for ESLint
 
-One of our recent projects was to bundle type definitions with the `eslint` package. We started with the types from `@types/eslint` for maximum compatibility and then evolved the types from there. We also enabled [`eslint.config.ts` files](https://eslint.org/docs/latest/use/configure/configuration-files#typescript-configuration-files) by default to allow type-safe configuration files. The question still remained: how can we easily allow users to apply the correct types to their configurations? The answer was to do what other tools like [Rollup](https://rollupjs.org/command-line-interface/#config-intellisense), [Astro](https://docs.astro.build/en/guides/configuring-astro/#the-astro-config-file), [Vite](https://vite.dev/config/#config-intellisense), [Nuxt](https://nuxt.com/docs/getting-started/configuration) did: create a `defineConfig()` function.
+One of our recent projects was to bundle type definitions with the `eslint` package. We started with the types from `@types/eslint` for maximum compatibility and then evolved the types from there. We also enabled [`eslint.config.ts` files](https://eslint.org/docs/latest/use/configure/configuration-files#typescript-configuration-files) by default to allow type-safe configuration files. The question still remained: how can we easily allow users to apply the correct types to their configurations? The answer was to do what other tools like [Rollup](https://rollupjs.org/command-line-interface/#config-intellisense), [Astro](https://docs.astro.build/en/guides/configuring-astro/#the-astro-config-file), [Vite](https://vite.dev/config/#config-intellisense), and [Nuxt](https://nuxt.com/docs/getting-started/configuration) did: create a `defineConfig()` function.
 
-The `defineConfig()` function is exported for the `eslint/config` entrypoint and can be used like this:
+The `defineConfig()` function is exported from the `eslint/config` entrypoint and can be used like this:
 
 ```js
 // eslint.config.js
@@ -81,7 +81,7 @@ This flattening behavior is designed to eliminate some of the confusion we heard
 
 ## Bringing back `extends`
 
-The original theory of flat config was that `extends` was just an abstraction over a one-dimensional array of configuration objects, and was therefore not needed if we gave people access to that one-dimensional array. While many enjoyed the freedom to mix and match configurations using JavaScript, it turned out to that a lot of users also found extending other configurations frustrating. One pointed criticism is that they never how to extend another configuration because some were objects, some were arrays, and not all plugins exposed their flat configs the same way. Here's an example:
+The original theory of flat config was that `extends` was just an abstraction over a one-dimensional array of configuration objects, and was therefore not needed if we gave people access to that one-dimensional array. While many enjoyed the freedom to mix and match configurations using JavaScript, it turned out that a lot of users also found extending other configurations frustrating. One pointed criticism is that they never knew how to extend another configuration because some were objects, some were arrays, and not all plugins exposed their flat configs the same way. Here's an example:
 
 ```js
 import js from "@eslint/js";
