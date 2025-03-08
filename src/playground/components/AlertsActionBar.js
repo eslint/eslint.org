@@ -15,9 +15,14 @@ export default function AlertsActionBar({
 				<span>Description</span>
 			</div>
 			<div className="alerts-action-bar__actions">
-				<button className="alerts-action-bar__btn" onClick={onFixAll}>
-					Fix All
-				</button>
+				{messages.some(message => message.fix) && (
+					<button
+						className="alerts-action-bar__btn"
+						onClick={onFixAll}
+					>
+						Fix All
+					</button>
+				)}
 				<button
 					className="alerts-action-bar__btn"
 					onClick={() => {
