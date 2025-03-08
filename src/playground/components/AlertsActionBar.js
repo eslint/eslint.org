@@ -10,10 +10,10 @@ export default function AlertsActionBar({
 }) {
 	return (
 		<div className="alerts-action-bar">
-			<div className="alerts-action-bar__content">
-				<span>Line No.</span>
-				<span>Description</span>
-			</div>
+			<span className="alerts-action-bar__description">
+				Resolve all fixable issues or disable their respective rules
+				from config
+			</span>
 			<div className="alerts-action-bar__actions">
 				{messages.some(message => message.fix) && (
 					<button
