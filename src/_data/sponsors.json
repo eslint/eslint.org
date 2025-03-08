@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147924,
-        "monthlyDonations": 12327,
-        "sponsorCount": 171
+        "annualDonations": 147937.7613348,
+        "monthlyDonations": 12328.1467779,
+        "sponsorCount": 172
     },
     "diamond": [],
     "platinum": [
@@ -1222,6 +1222,15 @@
             "url": "https://danoc.me/",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "The Teacher Fund",
+            "url": "https://theteacherfund.com",
+            "image": "https://github.com/teacherfund.png",
+            "monthlyDonation": 1.1467779,
+            "totalDonations": "03.444598820.761468630.758915560.757621171.330122255.523623911.398425541.392264561.215996731.215996731.14677790",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
