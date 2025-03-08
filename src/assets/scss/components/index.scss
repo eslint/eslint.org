@@ -111,17 +111,8 @@
 .no-js button {
 	display: none !important;
 }
-@media all and (min-width: 681px) {
+@media all and (min-width: 811px) {
 	.enhanced #nav-toggle {
-		display: none;
-	}
-}
-@media all and (max-width: 679px) {
-	.no-js #nav-list {
-		display: block !important;
-	}
-
-	.enhanced #nav-list {
 		display: none;
 	}
 }
