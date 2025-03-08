@@ -23,24 +23,26 @@ export default function AlertsActionBar({
 						Fix All
 					</button>
 				)}
-				<button
-					className="alerts-action-bar__btn"
-					onClick={() => {
-						messages.forEach(message => {
-							delete options.rules[message.ruleId];
-							setRulesWithInvalidConfigs(
-								new Set(
-									[...rulesWithInvalidConfigs].filter(
-										rule => rule !== message.ruleId,
+				{messages.some(message => options.rules[message.ruleId]) && (
+					<button
+						className="alerts-action-bar__btn"
+						onClick={() => {
+							messages.forEach(message => {
+								delete options.rules[message.ruleId];
+								setRulesWithInvalidConfigs(
+									new Set(
+										[...rulesWithInvalidConfigs].filter(
+											rule => rule !== message.ruleId,
+										),
 									),
-								),
-							);
-						});
-						onUpdate(Object.assign({}, options));
-					}}
-				>
-					Disable All
-				</button>
+								);
+							});
+							onUpdate(Object.assign({}, options));
+						}}
+					>
+						Disable All
+					</button>
+				)}
 			</div>
 		</div>
 	);

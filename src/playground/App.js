@@ -415,48 +415,46 @@ const App = () => {
 								text={validationError.message}
 							/>
 						)}
-						{messages.length > 0 && (
-							<React.Fragment>
-								{messages.some(
-									message => message.fix || message.ruleId,
-								) && (
-									<AlertsActionBar
-										messages={messages}
-										options={options}
-										rulesWithInvalidConfigs={
-											rulesWithInvalidConfigs
-										}
-										setRulesWithInvalidConfigs={
-											setRulesWithInvalidConfigs
-										}
-										onFixAll={onFixAll}
-										onUpdate={updateOptions}
-									/>
-								)}
-								{messages.map((message, index) => (
-									<Alert
-										key={`${lintTime}-${index}`}
-										type={
-											message.severity === 2
-												? "error"
-												: "warning"
-										}
-										message={message}
-										suggestions={message.suggestions}
-										options={options}
-										rulesWithInvalidConfigs={
-											rulesWithInvalidConfigs
-										}
-										setRulesWithInvalidConfigs={
-											setRulesWithInvalidConfigs
-										}
-										onFix={onFix}
-										onUpdate={updateOptions}
-										onPositionClick={onPositionClick}
-									/>
-								))}
-							</React.Fragment>
-						)}
+						{messages.length > 1 &&
+							messages.some(
+								message => message.fix || message.ruleId,
+							) && (
+								<AlertsActionBar
+									messages={messages}
+									options={options}
+									rulesWithInvalidConfigs={
+										rulesWithInvalidConfigs
+									}
+									setRulesWithInvalidConfigs={
+										setRulesWithInvalidConfigs
+									}
+									onFixAll={onFixAll}
+									onUpdate={updateOptions}
+								/>
+							)}
+						{messages.length > 0 &&
+							messages.map((message, index) => (
+								<Alert
+									key={`${lintTime}-${index}`}
+									type={
+										message.severity === 2
+											? "error"
+											: "warning"
+									}
+									message={message}
+									suggestions={message.suggestions}
+									options={options}
+									rulesWithInvalidConfigs={
+										rulesWithInvalidConfigs
+									}
+									setRulesWithInvalidConfigs={
+										setRulesWithInvalidConfigs
+									}
+									onFix={onFix}
+									onUpdate={updateOptions}
+									onPositionClick={onPositionClick}
+								/>
+							))}
 					</section>
 				</Split>
 			</div>
