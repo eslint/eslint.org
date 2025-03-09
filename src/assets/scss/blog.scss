@@ -155,17 +155,30 @@ ul.tag-list {
 }
 
 .code-wrapper {
-	position: relative;
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	margin: 1.5rem 0;
+	border-radius: var(--border-radius);
+	background-color: var(--lightest-background-color);
+
+	> pre {
+		margin: 0;
+	}
+}
+
+.copy-btn-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
 }
 
 .copy-btn {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	position: relative;
 	padding: 0.5rem;
 	border-radius: var(--border-radius);
 	color: var(--body-text-color);
-	transition: opacity 0.2s;
 
 	&:hover {
 		background: var(--color-neutral-100);
@@ -197,16 +210,6 @@ ul.tag-list {
 	}
 
 	&[data-copied="true"]::after {
-		opacity: 1;
-	}
-}
-
-@media (hover: hover) {
-	.copy-btn {
-		opacity: 0;
-	}
-
-	.code-wrapper:hover .copy-btn {
 		opacity: 1;
 	}
 }

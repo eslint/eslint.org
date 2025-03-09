@@ -67,9 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
     (function() {
         const copyBtns = document.querySelectorAll('#copyBtn');
+        const announcementRegion = document.getElementById('copy-announcement');
         for (const copyBtn of copyBtns) {
-            const copyText = copyBtn.nextElementSibling.cloneNode(true).textContent;
-            const announcementRegion = document.getElementById('copy-announcement');
+            const copyText = copyBtn.parentElement.previousElementSibling.cloneNode(true).textContent;
 
             copyBtn.onclick = () => {
                 navigator.clipboard.writeText(copyText);
