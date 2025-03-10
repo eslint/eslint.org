@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147937.7613348,
-        "monthlyDonations": 12328.1467779,
-        "sponsorCount": 172
+        "annualDonations": 153068.19399744,
+        "monthlyDonations": 12755.68283312,
+        "sponsorCount": 173
     },
     "diamond": [],
     "platinum": [
@@ -178,6 +178,24 @@
     ],
     "backers": [
         {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 183.53026766,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 173.74407714,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Vasilii Kovalev",
             "url": null,
             "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
@@ -193,6 +211,15 @@
             "monthlyDonation": 140,
             "totalDonations": 4300,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 80.26171042,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.26171042",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -741,15 +768,6 @@
             "tier": "backer"
         },
         {
-            "name": "Jeremy Combs",
-            "url": "https://wwjcdo.com",
-            "image": "https://images.opencollective.com/jmcombs/22a314a/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 320,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "James Sherwood-Jones",
             "url": null,
             "image": "https://images.opencollective.com/james-sherwood-jones/avatar.png",
@@ -968,14 +986,6 @@
             "name": "Daniel Lindegren",
             "image": "https://avatars.githubusercontent.com/u/2631623",
             "url": "https://dlindegren.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Jared Collier",
-            "image": "https://avatars.githubusercontent.com/u/2757601",
-            "url": "https://github.com/autoboxer",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
