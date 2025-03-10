@@ -5,7 +5,7 @@
 		open = false;
 
 	if (matchMedia) {
-		const mq = window.matchMedia("(max-width: 680px)");
+		const mq = window.matchMedia("(max-width: 1023px)");
 		mq.addEventListener("change", WidthChange);
 		WidthChange(mq);
 	}
