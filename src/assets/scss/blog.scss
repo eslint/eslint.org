@@ -157,3 +157,63 @@ ul.tag-list {
 .from-the-blog .blog-posts {
 	grid-column: 1 / -1;
 }
+
+.code-wrapper {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	margin: 1.5rem 0;
+	border-radius: var(--border-radius);
+	background-color: var(--lightest-background-color);
+
+	> pre {
+		margin: 0;
+	}
+}
+
+.copy-btn-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.copy-btn {
+	position: relative;
+	padding: 0.5rem;
+	border-radius: var(--border-radius);
+	color: var(--body-text-color);
+
+	&:hover {
+		background: var(--color-neutral-100);
+	}
+
+	[data-theme="dark"] &:hover {
+		background: var(--color-neutral-700);
+	}
+
+	&::after {
+		content: "Copied!";
+		padding: 0.5rem 0.75rem;
+		font-size: var(--step--1);
+		border-radius: var(--border-radius);
+		position: absolute;
+		top: 0;
+		right: 2.5rem;
+		height: 2.25rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--color-neutral-100);
+		opacity: 0;
+		pointer-events: none;
+
+		[data-theme="dark"] & {
+			background: var(--color-neutral-700);
+		}
+	}
+
+	&[data-copied="true"]::after {
+		opacity: 1;
+	}
+}
