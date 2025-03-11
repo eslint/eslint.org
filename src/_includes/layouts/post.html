@@ -66,18 +66,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script>
     (function() {
-        const copyBtns = document.querySelectorAll('#copyBtn');
-        const announcementRegion = document.getElementById('copy-announcement');
+        const copyBtns = document.querySelectorAll("#copyBtn");
+        const announcementRegion = document.getElementById("copy-announcement");
+        
         for (const copyBtn of copyBtns) {
-            const copyText = copyBtn.parentElement.previousElementSibling.cloneNode(true).textContent;
+            const copyText = copyBtn.previousElementSibling.cloneNode(true).textContent;
 
             copyBtn.onclick = () => {
                 navigator.clipboard.writeText(copyText);
                 announcementRegion.innerHTML = "Copied!";
-                copyBtn.setAttribute('data-copied', 'true');
+                copyBtn.setAttribute("data-copied", 'true');
 
                 setTimeout(() => {
-                    copyBtn.removeAttribute('data-copied');
+                    copyBtn.removeAttribute("data-copied");
                     announcementRegion.innerHTML = "";
                 }, 2000);
             }
