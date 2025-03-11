@@ -8,14 +8,30 @@ export default function AlertsActionBar({
 	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
 }) {
+	const hasFixableMessages = messages.some(message => message.fix);
+	const hasDisableableMessages = messages.some(
+		message => !message.suggestions && options.rules[message.ruleId],
+	);
+
+	let description = "";
+
+	if (hasFixableMessages && hasDisableableMessages) {
+		description =
+			"Resolve all fixable issues or disable their respective rules from config";
+	} else if (hasFixableMessages) {
+		description = "Resolve all fixable issues";
+	} else if (hasDisableableMessages) {
+		description =
+			"Disable all rules associated with these issues from config";
+	}
+
 	return (
 		<div className="alerts-action-bar">
 			<span className="alerts-action-bar__description">
-				Resolve all fixable issues or disable their respective rules
-				from config
+				{description}
 			</span>
 			<div className="alerts-action-bar__actions">
-				{messages.some(message => message.fix) && (
+				{hasFixableMessages && (
 					<button
 						className="alerts-action-bar__btn"
 						onClick={onFixAll}
@@ -23,19 +39,21 @@ export default function AlertsActionBar({
 						Fix All
 					</button>
 				)}
-				{messages.some(message => options.rules[message.ruleId]) && (
+				{hasDisableableMessages && (
 					<button
 						className="alerts-action-bar__btn"
 						onClick={() => {
 							messages.forEach(message => {
-								delete options.rules[message.ruleId];
-								setRulesWithInvalidConfigs(
-									new Set(
-										[...rulesWithInvalidConfigs].filter(
-											rule => rule !== message.ruleId,
+								if (!message.suggestions) {
+									delete options.rules[message.ruleId];
+									setRulesWithInvalidConfigs(
+										new Set(
+											[...rulesWithInvalidConfigs].filter(
+												rule => rule !== message.ruleId,
+											),
 										),
-									),
-								);
+									);
+								}
 							});
 							onUpdate(Object.assign({}, options));
 						}}

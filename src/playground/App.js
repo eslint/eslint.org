@@ -418,8 +418,9 @@ const App = () => {
 						{messages.length > 1 &&
 							messages.some(
 								message =>
-									message.fix ||
-									options.rules[message.ruleId],
+									!message.suggestions &&
+									(message.fix ||
+										options.rules[message.ruleId]),
 							) && (
 								<AlertsActionBar
 									messages={messages}
