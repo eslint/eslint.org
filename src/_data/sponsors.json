@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 153068.19399744,
-        "monthlyDonations": 12755.68283312,
-        "sponsorCount": 173
+        "annualDonations": 153121.42909032,
+        "monthlyDonations": 12760.11909086,
+        "sponsorCount": 175
     },
     "diamond": [],
     "platinum": [
@@ -1175,6 +1175,15 @@
             "tier": "backer"
         },
         {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 4.43590021,
+            "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.43590021",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Austin Akers",
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
@@ -1452,6 +1461,15 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Matias Ceau",
+            "url": "https://matias-ceau.link",
+            "image": "https://github.com/matias-ceau.png",
+            "monthlyDonation": 0.00035753,
+            "totalDonations": "00.00035753",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
