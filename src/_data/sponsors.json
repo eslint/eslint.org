@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 153121.42909032,
-        "monthlyDonations": 12760.11909086,
-        "sponsorCount": 175
+        "annualDonations": 153351.91266168,
+        "monthlyDonations": 12779.326055139998,
+        "sponsorCount": 176
     },
     "diamond": [],
     "platinum": [
@@ -298,6 +298,15 @@
             "monthlyDonation": 20,
             "totalDonations": 735,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "GitButler",
+            "url": "https://gitbutler.com",
+            "image": "https://github.com/gitbutlerapp.png",
+            "monthlyDonation": 19.20696428,
+            "totalDonations": "014.5787826214.5787826214.7660504714.7053325819.2069642819.2069642819.20696428",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
