@@ -234,7 +234,8 @@ if (resultsElement) {
 			e.key !== "ArrowUp" &&
 			e.key !== "ArrowDown" &&
 			e.key !== "Tab" &&
-			e.key !== "Shift"
+			e.key !== "Shift" &&
+			e.key !== "Enter"
 		) {
 			searchInput.focus();
 		}
