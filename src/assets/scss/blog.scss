@@ -170,6 +170,7 @@ ul.tag-list {
 	border-radius: var(--border-radius);
 	color: var(--body-text-color);
 	background-color: var(--color-neutral-100);
+	border: 1px solid var(--border-color);
 	transition: background-color 0.1s linear;
 
 	&:hover {
