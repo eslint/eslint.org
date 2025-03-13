@@ -61,3 +61,27 @@ document.addEventListener("DOMContentLoaded", () => {
 {% include "partials/from-the-blog.html" %}
 
 {% include "partials/footer.html" %}
+
+<div id="copy-announcement" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+<script>
+    (function() {
+        const copyBtns = document.querySelectorAll("#copyBtn");
+        const announcementRegion = document.getElementById("copy-announcement");
+        
+        for (const copyBtn of copyBtns) {
+            const copyText = copyBtn.previousElementSibling.cloneNode(true).textContent;
+
+            copyBtn.onclick = () => {
+                navigator.clipboard.writeText(copyText);
+                announcementRegion.innerHTML = "Copied!";
+                copyBtn.setAttribute("data-copied", 'true');
+
+                setTimeout(() => {
+                    copyBtn.removeAttribute("data-copied");
+                    announcementRegion.innerHTML = "";
+                }, 2000);
+            }
+        }
+    })();
+</script>
