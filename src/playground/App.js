@@ -415,26 +415,24 @@ const App = () => {
 								text={validationError.message}
 							/>
 						)}
-						{messages.length > 1 &&
-							messages.some(
-								message =>
-									!message.suggestions &&
-									(message.fix ||
-										options.rules[message.ruleId]),
-							) && (
-								<AlertsActionBar
-									messages={messages}
-									options={options}
-									rulesWithInvalidConfigs={
-										rulesWithInvalidConfigs
-									}
-									setRulesWithInvalidConfigs={
-										setRulesWithInvalidConfigs
-									}
-									onFixAll={onFixAll}
-									onUpdate={updateOptions}
-								/>
-							)}
+						{messages.filter(
+							message =>
+								!message.suggestions &&
+								(message.fix || options.rules[message.ruleId]),
+						).length > 1 && (
+							<AlertsActionBar
+								messages={messages}
+								options={options}
+								rulesWithInvalidConfigs={
+									rulesWithInvalidConfigs
+								}
+								setRulesWithInvalidConfigs={
+									setRulesWithInvalidConfigs
+								}
+								onFixAll={onFixAll}
+								onUpdate={updateOptions}
+							/>
+						)}
 						{messages.length > 0 &&
 							messages.map((message, index) => (
 								<Alert
