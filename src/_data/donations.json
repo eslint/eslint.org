@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AE5rD",
+        "name": "Anthony Pogliano",
+        "image": "https://avatars.githubusercontent.com/u/35123626",
+        "url": "https://anmpog.dev",
+        "amount": 5,
+        "date": "2025-03-13T18:50:51Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AE5lq",
         "name": "xuantm",
         "image": "https://avatars.githubusercontent.com/u/53134698",
@@ -15,15 +24,6 @@
         "url": "https://github.com/agilejson",
         "amount": 1,
         "date": "2025-03-06T18:56:43Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE2Nt",
-        "name": "Backend engineer",
-        "image": "https://avatars.githubusercontent.com/u/166552493",
-        "url": "https://github.com/xquery-go",
-        "amount": 2,
-        "date": "2025-02-12T09:00:41Z",
         "source": "github"
     },
     {
