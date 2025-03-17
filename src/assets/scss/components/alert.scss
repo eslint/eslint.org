@@ -9,23 +9,24 @@
 }
 
 .alert {
-	position: relative;
-	font-family: var(--text-font);
-	font-weight: 800;
+	& {
+		position: relative;
+		font-family: var(--text-font);
+		font-weight: 800;
+		letter-spacing: 0.02em;
+		display: grid;
+		gap: 0 2rem;
+		grid-template-columns: 1fr auto;
+		margin-bottom: 0.5rem;
+		margin-block-end: 0.5rem;
+		font-size: 0.875rem;
+		border: 1px solid currentColor;
+		border-radius: var(--border-radius);
 
-	@include firefox-only {
-		font-weight: 500;
+		@include firefox-only {
+			font-weight: 500;
+		}
 	}
-
-	letter-spacing: 0.02em;
-	display: grid;
-	gap: 0 2rem;
-	grid-template-columns: 1fr auto;
-	margin-bottom: 0.5rem;
-	margin-block-end: 0.5rem;
-	font-size: 0.875rem;
-	border: 1px solid currentColor;
-	border-radius: var(--border-radius);
 
 	&.alert--error {
 		background-color: var(--color-rose-25);
