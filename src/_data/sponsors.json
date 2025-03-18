@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 153355.15651775998,
-        "monthlyDonations": 12779.59637648,
-        "sponsorCount": 186
+        "annualDonations": 147371.5802856,
+        "monthlyDonations": 12280.9650238,
+        "sponsorCount": 189
     },
     "diamond": [],
     "platinum": [
@@ -60,15 +60,6 @@
             "image": "https://images.opencollective.com/vite/e6d15e1/logo.png",
             "monthlyDonation": 500,
             "totalDonations": 1300,
-            "source": "opencollective",
-            "tier": "silver-sponsor"
-        },
-        {
-            "name": "JetBrains",
-            "url": "https://www.jetbrains.com/",
-            "image": "https://images.opencollective.com/jetbrains/fe76f99/logo.png",
-            "monthlyDonation": 500,
-            "totalDonations": 7500,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
@@ -1473,11 +1464,47 @@
             "tier": "backer"
         },
         {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.60094244,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.60094244",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.40837397,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.40837397",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.26419685,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.26419685",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "jshttp",
             "url": "https://jshttp.github.io/",
             "image": "https://github.com/jshttp.png",
             "monthlyDonation": 0.09623593,
             "totalDonations": "00.122468210.103472600.103535120.096432590.096432590.09623593",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Pelle Wessman",
+            "url": "https://kodfabrik.se/",
+            "image": "https://github.com/voxpelli.png",
+            "monthlyDonation": 0.09513406,
+            "totalDonations": "00.069859840.011582310.013089270.103379050.098303480.103149680.102273420.094325420.094325420.09513406",
             "source": "thanks.dev",
             "tier": "backer"
         },
