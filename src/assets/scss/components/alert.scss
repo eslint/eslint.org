@@ -138,6 +138,7 @@
 	margin: 0;
 	font-weight: 500;
 	gap: 0.75rem;
+	min-width: 6rem;
 
 	&:last-child {
 		border-radius: 0 var(--border-radius) var(--border-radius) 0;
