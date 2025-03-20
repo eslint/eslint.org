@@ -1,5 +1,32 @@
 [
     {
+        "id": "mywxoz34-09rl6k3y-rzbqvenb-dj7gk85a",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 50,
+        "date": "2025-03-19T15:40:59.799Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "eng0kzdy-vor4pz8m-eerpbma8-37xlw95j",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 50,
+        "date": "2025-03-19T15:40:19.529Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AE6QK",
+        "name": "Magisc",
+        "image": "https://avatars.githubusercontent.com/u/180634546",
+        "url": "https://magisc.com",
+        "amount": 1,
+        "date": "2025-03-19T10:47:30Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AE5rD",
         "name": "Anthony Pogliano",
         "image": "https://avatars.githubusercontent.com/u/35123626",
