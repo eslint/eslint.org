@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147380.07739716003,
-        "monthlyDonations": 12281.67311643,
-        "sponsorCount": 192
+        "annualDonations": 147417.45137544003,
+        "monthlyDonations": 12284.78761462,
+        "sponsorCount": 194
     },
     "diamond": [],
     "platinum": [
@@ -1201,6 +1201,15 @@
             "tier": "backer"
         },
         {
+            "name": "peerdb",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 2.23074661,
+            "totalDonations": "00.761247260.761247260.999943772.396486702.452382202.452382202.23074661",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Jb Landry",
             "url": "https://jblandry.info",
             "image": "https://images.opencollective.com/jblandry/e7d47d8/avatar.png",
@@ -1461,6 +1470,15 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "charon",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 0.88375158,
+            "totalDonations": "00.783637540.783637541.029349280.949412590.971556630.971556630.88375158",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
