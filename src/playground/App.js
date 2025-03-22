@@ -247,16 +247,18 @@ const App = () => {
 	};
 
 	const onFixAll = () => {
-		const fixableMessages = messages.filter(message => message.fix);
-		if (fixableMessages.length > 0) {
-			const result = linter.verifyAndFix(text, optionsForLinter, {
-				fix: true,
-			});
-			setText(result.output);
-			storeState({
-				newText: result.output,
-			});
+		const hasFixableMessages = messages.filter(message => message.fix);
+		if (!hasFixableMessages) {
+			return;
 		}
+
+		const result = linter.verifyAndFix(text, optionsForLinter, {
+			fix: true,
+		});
+		setText(result.output);
+		storeState({
+			newText: result.output,
+		});
 	};
 
 	const onPositionClick = message => {
@@ -301,6 +303,12 @@ const App = () => {
 
 	const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(
 		new Set([]),
+	);
+
+	const filteredMessages = messages.filter(
+		message =>
+			!message.suggestions &&
+			(message.fix || options.rules[message.ruleId]),
 	);
 
 	return (
@@ -415,11 +423,7 @@ const App = () => {
 								text={validationError.message}
 							/>
 						)}
-						{messages.filter(
-							message =>
-								!message.suggestions &&
-								(message.fix || options.rules[message.ruleId]),
-						).length > 1 && (
+						{filteredMessages.length > 1 && (
 							<AlertsActionBar
 								messages={messages}
 								options={options}

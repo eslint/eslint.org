@@ -25,6 +25,24 @@ export default function AlertsActionBar({
 			"Disable all rules associated with these issues from config";
 	}
 
+	const handleDisableAll = () => {
+		const updatedOptions = { ...options };
+
+		messages.forEach(message => {
+			if (!message.suggestions) {
+				delete updatedOptions.rules[message.ruleId];
+				setRulesWithInvalidConfigs(
+					new Set(
+						[...rulesWithInvalidConfigs].filter(
+							rule => rule !== message.ruleId,
+						),
+					),
+				);
+			}
+		});
+		onUpdate(Object.assign({}, updatedOptions));
+	};
+
 	return (
 		<div className="alerts-action-bar">
 			<span className="alerts-action-bar__description">
@@ -42,21 +60,7 @@ export default function AlertsActionBar({
 				{hasDisableableMessages && (
 					<button
 						className="alerts-action-bar__btn"
-						onClick={() => {
-							messages.forEach(message => {
-								if (!message.suggestions) {
-									delete options.rules[message.ruleId];
-									setRulesWithInvalidConfigs(
-										new Set(
-											[...rulesWithInvalidConfigs].filter(
-												rule => rule !== message.ruleId,
-											),
-										),
-									);
-								}
-							});
-							onUpdate(Object.assign({}, options));
-						}}
+						onClick={handleDisableAll}
 					>
 						Disable All
 					</button>
