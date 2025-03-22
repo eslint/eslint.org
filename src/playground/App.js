@@ -16,6 +16,7 @@ import Unicode from "./utils/unicode";
 import Configuration from "./components/Configuration";
 import Split from "react-split";
 import debounce from "./utils/debounce";
+import AlertsActionBar from "./components/AlertsActionBar";
 import "./scss/split-pane.scss";
 
 const BOM = "\uFEFF";
@@ -245,6 +246,19 @@ const App = () => {
 		}
 	};
 
+	const onFixAll = () => {
+		const fixableMessages = messages.filter(message => message.fix);
+		if (fixableMessages.length > 0) {
+			const result = linter.verifyAndFix(text, optionsForLinter, {
+				fix: true,
+			});
+			setText(result.output);
+			storeState({
+				newText: result.output,
+			});
+		}
+	};
+
 	const onPositionClick = message => {
 		if (editorRef.current) {
 			editorRef.current.scrollToPosition(
@@ -399,6 +413,24 @@ const App = () => {
 							<Alert
 								type="error"
 								text={validationError.message}
+							/>
+						)}
+						{messages.filter(
+							message =>
+								!message.suggestions &&
+								(message.fix || options.rules[message.ruleId]),
+						).length > 1 && (
+							<AlertsActionBar
+								messages={messages}
+								options={options}
+								rulesWithInvalidConfigs={
+									rulesWithInvalidConfigs
+								}
+								setRulesWithInvalidConfigs={
+									setRulesWithInvalidConfigs
+								}
+								onFixAll={onFixAll}
+								onUpdate={updateOptions}
 							/>
 						)}
 						{messages.length > 0 &&
