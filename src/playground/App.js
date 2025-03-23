@@ -427,9 +427,6 @@ const App = () => {
 							<AlertsActionBar
 								messages={messages}
 								options={options}
-								rulesWithInvalidConfigs={
-									rulesWithInvalidConfigs
-								}
 								setRulesWithInvalidConfigs={
 									setRulesWithInvalidConfigs
 								}

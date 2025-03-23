@@ -5,7 +5,6 @@ export default function AlertsActionBar({
 	onFixAll,
 	options,
 	onUpdate,
-	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
 }) {
 	const hasFixableMessages = messages.some(message => message.fix);
@@ -31,16 +30,14 @@ export default function AlertsActionBar({
 		messages.forEach(message => {
 			if (!message.suggestions) {
 				delete updatedOptions.rules[message.ruleId];
-				setRulesWithInvalidConfigs(
-					new Set(
-						[...rulesWithInvalidConfigs].filter(
-							rule => rule !== message.ruleId,
-						),
-					),
-				);
+				setRulesWithInvalidConfigs(prev => {
+					const updatedSet = new Set(prev);
+					updatedSet.delete(message.ruleId);
+					return updatedSet;
+				});
 			}
 		});
-		onUpdate(Object.assign({}, updatedOptions));
+		onUpdate(updatedOptions);
 	};
 
 	return (
