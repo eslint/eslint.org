@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147522.88597896002,
-        "monthlyDonations": 12293.573831579997,
-        "sponsorCount": 196
+        "annualDonations": 147465.037992,
+        "monthlyDonations": 12288.753165999999,
+        "sponsorCount": 197
     },
     "diamond": [],
     "platinum": [
@@ -1160,14 +1160,6 @@
             "tier": "backer"
         },
         {
-            "name": "xuantm",
-            "image": "https://avatars.githubusercontent.com/u/53134698",
-            "url": "https://github.com/ssnaruto",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828",
             "url": "https://standardresume.co/tech",
@@ -1536,6 +1528,15 @@
             "tier": "backer"
         },
         {
+            "name": "Amuzil",
+            "url": "http://amuzil.com",
+            "image": "https://github.com/amuzil.png",
+            "monthlyDonation": 0.11924922,
+            "totalDonations": "00.104836190.121308070.120212680.120212680.11924922",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "jshttp",
             "url": "https://jshttp.github.io/",
             "image": "https://github.com/jshttp.png",
@@ -1559,6 +1560,15 @@
             "image": "https://github.com/pillarjs.png",
             "monthlyDonation": 0.06625013,
             "totalDonations": "00.089878450.079007620.069406200.070405760.065740560.065740560.06625013",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jongerenraad Zutphen",
+            "url": "https://jrzutphen.nl",
+            "image": "https://github.com/jrzutphen.png",
+            "monthlyDonation": 0.0600852,
+            "totalDonations": "00.052038360.060200120.059589040.059589040.06008520",
             "source": "thanks.dev",
             "tier": "backer"
         },
