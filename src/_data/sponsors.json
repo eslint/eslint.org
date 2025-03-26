@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147467.26036452,
-        "monthlyDonations": 12288.93836371,
-        "sponsorCount": 199
+        "annualDonations": 147474.19133484003,
+        "monthlyDonations": 12289.515944570001,
+        "sponsorCount": 200
     },
     "diamond": [],
     "platinum": [
@@ -1506,6 +1506,15 @@
             "image": "https://github.com/jasara.png",
             "monthlyDonation": 0.60094244,
             "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.60094244",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "CyleWaitForIt",
+            "url": null,
+            "image": "https://github.com/cylewaitforit.png",
+            "monthlyDonation": 0.57758086,
+            "totalDonations": "00.049901880.57758086",
             "source": "thanks.dev",
             "tier": "backer"
         },
