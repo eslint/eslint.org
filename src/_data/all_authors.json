@@ -212,5 +212,15 @@
         "github_username": "JoshuaKGoldberg",
         "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
         "location": "Wakefield, MA, USA"
+    },
+    "softius": {
+        "username": "softius",
+        "name": "Iacovos Constantinou",
+        "title": "Guest Author",
+        "avatar_url": "https://avatars.githubusercontent.com/u/586121",
+        "bio": null,
+        "twitter_username": "iacons",
+        "github_username": "softius",
+        "location": "Nicosia, Cyprus"
     }
 }
