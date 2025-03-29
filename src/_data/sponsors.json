@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147474.19133484003,
-        "monthlyDonations": 12289.515944570001,
-        "sponsorCount": 200
+        "annualDonations": 147342.19133484003,
+        "monthlyDonations": 12278.515944570001,
+        "sponsorCount": 198
     },
     "diamond": [],
     "platinum": [
@@ -438,14 +438,6 @@
             "name": "Connected Cars",
             "image": "https://avatars.githubusercontent.com/u/23233019",
             "url": "https://connectedcars.io",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "hikae",
-            "image": "https://avatars.githubusercontent.com/u/39324739",
-            "url": "https://github.com/HikaruEgashira",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1406,14 +1398,6 @@
             "name": "Schalk Venter",
             "image": "https://avatars.githubusercontent.com/u/14258328",
             "url": "https://schalkventer.me",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Stephen Zhang",
-            "image": "https://avatars.githubusercontent.com/u/19246983",
-            "url": "https://github.com/swinzy",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
