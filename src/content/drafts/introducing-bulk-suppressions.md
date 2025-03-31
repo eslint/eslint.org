@@ -76,7 +76,7 @@ eslint --suppressions-location suppressions.json
 
 After enabling suppressions, it is recommended to commit the suppressions file to your repository. This ensures all team members have the same suppressions active when running ESLint.
 
-As you fix suppressed violations over time, the suppressions file will become outdated. When this happens, ESLint will notify you:
+As you fix suppressed violations over time, the suppressions file will become outdated. ESLint outputs a warning when it finds suppressed warnings that no longer occur:
 
 > There are suppressions left that do not occur anymore. Consider re-running the command with `--prune-suppressions`.
 
