@@ -31,12 +31,19 @@ module.exports = (env, { mode }) => ({
 	resolve: {
 		extensions: [".js", ".jsx"],
 		mainFields: ["browser", "main", "module"],
+		fallback: {
+			fs: false,
+			process: require.resolve("process/browser"),
+		}
 	},
 	plugins: [
 		new webpack.NormalModuleReplacementPlugin(/^node:/u, resource => {
 			resource.request = resource.request.replace(/^node:/u, "");
 		}),
 		new NodePolyfillPlugin(),
+		new webpack.DefinePlugin({
+			"process.versions": JSON.stringify({ node: "16.0.0" }),
+		}),
 	],
 	...(mode === "development" ? { devtool: "source-map" } : {}),
 	module: {

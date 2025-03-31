@@ -7,6 +7,7 @@ import {
 	SOURCE_TYPES,
 	CONFIG_FORMATS,
 } from "../utils/constants";
+import * as typeScriptESLintParser from "@typescript-eslint/parser";
 
 const customStyles = {
 	singleValue: styles => ({
@@ -138,6 +139,10 @@ export default function Configuration({
 		value: configFormat,
 		label: configFormat,
 	}));
+	const ESLintParserOptions = [
+		defaultOption,
+		{ value: typeScriptESLintParser, label: "@typescript-eslint/parser" }
+	];
 
 	// filter rules which are already added to the configuration
 	const ruleNamesOptions = ruleNames
@@ -354,6 +359,30 @@ export default function Configuration({
 								}}
 							/>
 						</div>
+						<label className="c-field" htmlFor="parser">
+							<span className="label__text">Parser</span>
+							<Select
+								isSearchable={false}
+								styles={customStyles}
+								theme={theme => customTheme(theme)}
+								value={ESLintParserOptions.filter(
+									eslintParser =>	
+										eslintParser.value ===
+										(options.languageOptions?.parser || "default"),
+								)}
+								options={ESLintParserOptions}
+								onChange={selected => {
+									if (selected.value === "default") {
+										delete options.languageOptions.parser;
+									} else {
+										options.languageOptions.parser =
+											selected.value;
+									}
+
+									onUpdate(Object.assign({}, options));
+								}}
+							/>
+						</label>
 					</div>
 				)}
 			</div>
