@@ -19,11 +19,11 @@ Today, we're excited to introduce ESLint's new violation suppression system, des
 
 When enabling a rule in an established project, teams typically choose between fixing all violations upfront, using warnings instead of errors, disabling rules in specific files, or adding inline disable comments. Each approach has merit, but none provides an ideal balance between enforcing standards for new code while addressing existing violations over time.
 
-ESLint's new suppression system offers a more flexible approach by:
+ESLint's new suppression system offers a more flexible approach, allowing you to:
 
-1. Recording existing violations in a separate file
-2. Enforcing the rule as an error for all new code
-3. Suppressing recorded violations, allowing you to address existing violations at your own pace
+1. Record existing violations in a separate file that can be checked in to source control.
+2. Enable the rule as an error. This will now only apply to new code.
+3. Address existing violations recorded in the suppressions file at your own pace.
 
 This approach prioritizes preventing new violations while providing a clear path to incrementally improve existing code.
 
