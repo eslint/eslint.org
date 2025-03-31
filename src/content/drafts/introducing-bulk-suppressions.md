@@ -31,9 +31,14 @@ This approach prioritizes preventing new violations while providing a clear path
 
 Once you've configured a new rule as `"error"` in your ESLint configuration, you can bulk suppress existing violations using the command line. You can choose to suppress all violations or specific rules.
 
+Please note that it's recommended to run the suppression command with the `--fix` flag to automatically resolve any violations that can be fixed.
+
 ```
 # Suppress all violations
 eslint --suppress-all
+
+# Fix all violations and suppress them
+eslint --suppress-all --fix
 
 # Suppress specific rules
 eslint --suppress-rule <rule-name>
@@ -60,13 +65,17 @@ ESLint will suppress all `"error"` violations for the specified rules in subsequ
 
 This approach is intentional and helps avoid confusion. Because suppressions are tracked per file and rule—not per specific line or code change—there’s no reliable way to determine whether the new violations were introduced recently or already existed. Rather than trying to guess which violations to hide, ESLint chooses to show the full picture.
 
-Please note that it's recommended to combine the above commands with the `--fix` flag to fix any violations that can be automatically resolved.
-
 ### Changing the suppressions file location
 
-By default, ESLint creates the suppressions file as `eslint-suppressions.json` in the project root. You can use the `--suppressions-location` option to specify a different location for the suppressions file. This is useful if you want to store the suppressions in a specific directory.
+By default, ESLint creates the suppressions file as `eslint-suppressions.json` in the project root. You can use the `--suppressions-location` option to specify a different location for the suppressions file.
 
-Please note when using a custom suppressions location, you must provide the `--suppressions-location` option for every ESLint command, not just when creating the suppressions file.
+The `--suppressions-location` option accepts a path to the file, which can be either absolute or relative to the current working directory. For example, the following command stores the suppressions in a file called `suppressions.json` in the current working directory:
+
+```
+eslint --suppress-all --suppressions-location ./suppressions.json
+```
+
+Note that you must specify the `--suppressions-location` option when running ESLint commands that use the suppressions file. For example, to run ESLint with the suppressions file from the example above:
 
 ```
 eslint --suppressions-location suppressions.json
