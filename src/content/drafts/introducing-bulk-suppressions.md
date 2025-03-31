@@ -29,9 +29,9 @@ This approach prioritizes preventing new violations while providing a clear path
 
 ## Getting started
 
-Once you've configured a new rule as `"error"` in your ESLint configuration, you can bulk suppress existing violations using the command line. You can choose to suppress all violations or specific rules.
+Once you've configured a new rule as `"error"` in your ESLint configuration, you can bulk suppress existing violations using the command line. You can choose to suppress all violations or only those for specific rules.
 
-Please note that it's recommended to run the suppression command with the `--fix` flag to automatically resolve any violations that can be fixed.
+In either case, it's recommended to run the suppression command with the `--fix` flag to automatically resolve any violations that can be fixed.
 
 ```
 # Suppress all violations
