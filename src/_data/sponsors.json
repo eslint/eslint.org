@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147336.13819740003,
-        "monthlyDonations": 12278.011516449998,
-        "sponsorCount": 198
+        "annualDonations": 147287.73336504004,
+        "monthlyDonations": 12273.977780419998,
+        "sponsorCount": 199
     },
     "diamond": [],
     "platinum": [
@@ -558,15 +558,6 @@
             "image": "https://images.opencollective.com/private-flight/d5b295f/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 15,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "ConnectionsHint",
-            "url": "https://connectionshint.ai",
-            "image": "https://images.opencollective.com/connectionshint/b2ab68b/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1494,11 +1485,29 @@
             "tier": "backer"
         },
         {
+            "name": "svg",
+            "url": null,
+            "image": "https://github.com/svg.png",
+            "monthlyDonation": 0.51695824,
+            "totalDonations": "00.352650240.346185460.51695824",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Scienta",
             "url": "https://www.scienta.nl",
             "image": "https://github.com/scientanl.png",
             "monthlyDonation": 0.49557188,
             "totalDonations": "00.038842860.034193890.033182100.030406520.030375670.030949060.029162580.037892530.037574320.040268370.040065522.206205022.154429282.129015752.090163402.117845140.504358940.501490940.49557188",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Seth Falco",
+            "url": "https://falco.fun",
+            "image": "https://github.com/sethfalco.png",
+            "monthlyDonation": 0.44930573,
+            "totalDonations": "00.44930573",
             "source": "thanks.dev",
             "tier": "backer"
         },
