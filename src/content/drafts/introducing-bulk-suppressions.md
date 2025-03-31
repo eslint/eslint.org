@@ -56,7 +56,7 @@ When you execute any of the above commands, ESLint will create a file called `es
 }
 ```
 
-ESLint will suppress all `"error"` violations for the specified rules in subsequent runs and will not treat them as errors. However, if more violations are found for the same rule in the same file, ESLint will still report **all** of them in the output. For example, if a file originally had 2 suppressed errors but now has 5, ESLint will display all 5 errors.
+ESLint will suppress all `"error"` violations for the specified rules in subsequent runs and will not report them. However, if more violations are found for the same rule in the same file, ESLint will report **all** of them. For example, if a file originally had 2 suppressed `no-undef` errors but now has 5, ESLint will display all 5 `no-undef` errors.
 
 This approach is intentional and helps avoid confusion. Since suppressions are tracked per file and rule—not per specific line or code change—there’s no reliable way to determine whether the new violations were introduced recently or already existed. Rather than trying to guess which violations to hide, ESLint chooses to show the full picture.
 
