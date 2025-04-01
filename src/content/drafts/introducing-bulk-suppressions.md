@@ -71,7 +71,7 @@ By default, ESLint creates the suppressions file as `eslint-suppressions.json` i
 
 The `--suppressions-location` option accepts a path to the file, which can be either absolute or relative to the current working directory. For example, the following command stores the suppressions in a file called `suppressions.json` in the current working directory:
 
-```
+```shell
 eslint --suppress-all --suppressions-location ./suppressions.json
 ```
 
