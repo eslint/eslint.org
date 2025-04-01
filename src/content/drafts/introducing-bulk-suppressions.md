@@ -37,7 +37,7 @@ In either case, it's recommended to run the suppression command with the `--fix`
 # Suppress all violations
 eslint --suppress-all
 
-# Fix all violations and suppress them
+# Fix all autofixable violations and suppress the remaining ones
 eslint --suppress-all --fix
 
 # Suppress specific rules
