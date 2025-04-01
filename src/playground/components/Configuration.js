@@ -48,9 +48,6 @@ const customStyles = {
 			...styles[":active"],
 			backgroundColor: "var(--color-primary-700)",
 		},
-		":last-child": {
-			borderBottom: "1px solid var(--border-color)",
-		},
 	}),
 	input: styles => ({
 		...styles,
@@ -78,10 +75,12 @@ const customStyles = {
 		...styles,
 		backgroundColor: "var(--body-background-color)",
 		border: "1px solid var(--border-color)",
+		borderBottom: "none",
 	}),
 	menuList: styles => ({
 		...styles,
 		padding: 0,
+		borderBottom: "1px solid var(--border-color)",
 	}),
 };
 
