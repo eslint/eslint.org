@@ -77,7 +77,7 @@ eslint --suppress-all --suppressions-location ./suppressions.json
 
 Note that you must specify the `--suppressions-location` option when running ESLint commands that use the suppressions file. For example, to run ESLint with the suppressions file from the example above:
 
-```
+```shell
 eslint --suppressions-location suppressions.json
 ```
 
