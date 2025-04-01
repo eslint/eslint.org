@@ -54,6 +54,14 @@ const customStyles = {
 		color: "var(--body-text-color)",
 		caretShape: "underscore",
 	}),
+	indicatorsContainer: styles => ({
+		...styles,
+		cursor: "pointer",
+	}),
+	indicatorSeparator: styles => ({
+		...styles,
+		cursor: "auto",
+	}),
 	multiValue: styles => ({
 		...styles,
 		color: "var(--body-text-color)",
