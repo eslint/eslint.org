@@ -42,6 +42,9 @@ eslint --suppress-all --fix
 
 # Suppress specific rules
 eslint --suppress-rule <rule-name>
+
+# Fix all autofixable violations, but suppress only violations for <rule-name>
+eslint --suppress-rule <rule-name> --fix
 ```
 
 When you execute any of the above commands, ESLint will create a file called `eslint-suppressions.json` in the project root. This file contains the number of violations for each rule and file. The suppressions file is structured as follows:
