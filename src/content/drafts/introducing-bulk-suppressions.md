@@ -33,7 +33,7 @@ Once you've configured a new rule as `"error"` in your ESLint configuration, you
 
 In either case, it's recommended to run the suppression command with the `--fix` flag to automatically resolve any violations that can be fixed.
 
-```
+```shell
 # Suppress all violations
 eslint --suppress-all
 
