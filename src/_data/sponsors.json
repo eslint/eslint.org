@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129480,
-        "monthlyDonations": 10790,
-        "sponsorCount": 161
+        "annualDonations": 141480,
+        "monthlyDonations": 11790,
+        "sponsorCount": 162
     },
     "diamond": [],
     "platinum": [
@@ -42,6 +42,14 @@
             "monthlyDonation": 1000,
             "totalDonations": 11000,
             "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
+        {
+            "name": "Shopify",
+            "image": "https://avatars.githubusercontent.com/u/8085",
+            "url": "https://shopify.engineering/",
+            "monthlyDonation": 1000,
+            "source": "github",
             "tier": "gold-sponsor"
         }
     ],
