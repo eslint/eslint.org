@@ -33,14 +33,15 @@ module.exports = (env, { mode }) => ({
 		mainFields: ["browser", "main", "module"],
 		fallback: {
 			fs: false,
-			process: require.resolve("process/browser"),
-		}
+		},
 	},
 	plugins: [
 		new webpack.NormalModuleReplacementPlugin(/^node:/u, resource => {
 			resource.request = resource.request.replace(/^node:/u, "");
 		}),
-		new NodePolyfillPlugin(),
+		new NodePolyfillPlugin({
+			additionalAliases: ["process"],
+		}),
 		new webpack.DefinePlugin({
 			"process.versions": JSON.stringify({ node: "16.0.0" }),
 		}),
