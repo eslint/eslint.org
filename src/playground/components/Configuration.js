@@ -379,9 +379,16 @@ export default function Configuration({
 								onChange={selected => {
 									if (selected.value === "default") {
 										delete options.languageOptions.parser;
+										delete options.languageOptions
+											.sourceType;
+										options.languageOptions.parserOptions.ecmaFeatures =
+											{};
 									} else {
 										options.languageOptions.parser =
 											selected.value;
+										options.languageOptions.sourceType =
+											"module";
+										options.languageOptions.parserOptions.ecmaFeatures.jsx = true;
 									}
 
 									onUpdate(Object.assign({}, options));
