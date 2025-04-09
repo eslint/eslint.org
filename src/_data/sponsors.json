@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 141432,
-        "monthlyDonations": 11786,
-        "sponsorCount": 161
+        "annualDonations": 146259.62318352,
+        "monthlyDonations": 12188.30193196,
+        "sponsorCount": 164
     },
     "diamond": [],
     "platinum": [
@@ -169,6 +169,24 @@
     ],
     "backers": [
         {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 169.30954801,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714169.30954801",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 161.76391376,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766161.76391376",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Vasilii Kovalev",
             "url": null,
             "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
@@ -184,6 +202,15 @@
             "monthlyDonation": 140,
             "totalDonations": 4440,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 71.22847019,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.22847019",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
