@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 146259.62318352,
-        "monthlyDonations": 12188.30193196,
-        "sponsorCount": 164
+        "annualDonations": 146259.62762448,
+        "monthlyDonations": 12188.302302040001,
+        "sponsorCount": 165
     },
     "diamond": [],
     "platinum": [
@@ -1374,6 +1374,15 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Matias Ceau",
+            "url": "https://matias-ceau.link",
+            "image": "https://github.com/matias-ceau.png",
+            "monthlyDonation": 0.00037008,
+            "totalDonations": "00.000357530.00037008",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
