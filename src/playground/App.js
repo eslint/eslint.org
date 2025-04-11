@@ -18,6 +18,7 @@ import Split from "react-split";
 import debounce from "./utils/debounce";
 import AlertsActionBar from "./components/AlertsActionBar";
 import "./scss/split-pane.scss";
+import * as typeScriptESLintParser from "@typescript-eslint/parser";
 
 const BOM = "\uFEFF";
 
@@ -169,6 +170,9 @@ const App = () => {
 		...options,
 		languageOptions: {
 			...options.languageOptions,
+			...(options?.languageOptions.parser && {
+				parser: typeScriptESLintParser,
+			}),
 			parserOptions: {
 				...options.languageOptions.parserOptions,
 				ecmaFeatures: {
@@ -375,6 +379,7 @@ const App = () => {
 							setRulesWithInvalidConfigs={
 								setRulesWithInvalidConfigs
 							}
+							typeScriptESLintParser
 						/>
 						<Footer />
 					</div>

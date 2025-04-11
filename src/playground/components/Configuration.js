@@ -118,6 +118,7 @@ export default function Configuration({
 	validationError,
 	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
+	typeScriptESLintParser,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -145,6 +146,10 @@ export default function Configuration({
 		value: configFormat,
 		label: configFormat,
 	}));
+	const ESLintParserOptions = [
+		{ value: "default", label: "Espree (default)" },
+		{ value: typeScriptESLintParser, label: "@typescript-eslint/parser" },
+	];
 
 	// filter rules which are already added to the configuration
 	const ruleNamesOptions = ruleNames
@@ -361,6 +366,42 @@ export default function Configuration({
 								}}
 							/>
 						</div>
+						<label
+							className="c-field"
+							style={{ marginTop: "1rem", marginBottom: "0" }}
+							htmlFor="parser"
+						>
+							<span className="label__text">Parser</span>
+							<Select
+								isSearchable={false}
+								styles={customStyles}
+								theme={theme => customTheme(theme)}
+								value={ESLintParserOptions.filter(
+									eslintParser =>
+										eslintParser.value ===
+										(options.languageOptions?.parser ||
+											"default"),
+								)}
+								options={ESLintParserOptions}
+								onChange={selected => {
+									if (selected.value === "default") {
+										delete options.languageOptions.parser;
+										delete options.languageOptions
+											.sourceType;
+										options.languageOptions.parserOptions.ecmaFeatures =
+											{};
+									} else {
+										options.languageOptions.parser =
+											selected.value;
+										options.languageOptions.sourceType =
+											"module";
+										options.languageOptions.parserOptions.ecmaFeatures.jsx = true;
+									}
+
+									onUpdate(Object.assign({}, options));
+								}}
+							/>
+						</label>
 					</div>
 				)}
 			</div>
