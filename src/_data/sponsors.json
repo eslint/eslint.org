@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 146259.62762448,
-        "monthlyDonations": 12188.302302040001,
-        "sponsorCount": 165
+        "annualDonations": 147469.37912124,
+        "monthlyDonations": 12289.11492677,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -214,6 +214,15 @@
             "tier": "backer"
         },
         {
+            "name": "juju",
+            "url": null,
+            "image": "https://github.com/juju.png",
+            "monthlyDonation": 55.8400281,
+            "totalDonations": "055.84002810",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Torutek",
             "url": "https://torutek.com",
             "image": "https://images.opencollective.com/torutek/logo.png",
@@ -246,6 +255,15 @@
             "monthlyDonation": 35,
             "totalDonations": 1265,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "charmed-kubernetes",
+            "url": null,
+            "image": "https://github.com/charmed-kubernetes.png",
+            "monthlyDonation": 31.13067935,
+            "totalDonations": "031.13067935",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -289,6 +307,15 @@
             "monthlyDonation": 20,
             "totalDonations": 755,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 13.15231817,
+            "totalDonations": "013.15231817",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1374,6 +1401,15 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 0.68959911,
+            "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.68959911",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
