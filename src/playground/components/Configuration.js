@@ -140,7 +140,7 @@ export default function Configuration({
 		label: configFormat,
 	}));
 	const ESLintParserOptions = [
-		defaultOption,
+		{ value: "default", label: "Espree (default)" },
 		{ value: typeScriptESLintParser, label: "@typescript-eslint/parser" },
 	];
 
