@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AE822",
+        "name": "Rafael Vaz",
+        "image": "https://avatars.githubusercontent.com/u/71301073",
+        "url": "https://github.com/rafael-vaz",
+        "amount": 5,
+        "date": "2025-04-11T13:48:32Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AE8xa",
         "name": "Rafael Vaz",
         "image": "https://avatars.githubusercontent.com/u/71301073",
@@ -78,15 +87,6 @@
         "url": "https://magisc.com",
         "amount": 1,
         "date": "2025-03-19T10:47:30Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE5rD",
-        "name": "Anthony Pogliano",
-        "image": "https://avatars.githubusercontent.com/u/35123626",
-        "url": "https://anmpog.dev",
-        "amount": 5,
-        "date": "2025-03-13T18:50:51Z",
         "source": "github"
     },
     {

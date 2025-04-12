@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147469.37912124,
-        "monthlyDonations": 12289.11492677,
-        "sponsorCount": 169
+        "annualDonations": 147529.37912124,
+        "monthlyDonations": 12294.11492677,
+        "sponsorCount": 170
     },
     "diamond": [],
     "platinum": [
@@ -514,6 +514,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "svetlomir",
+            "url": null,
+            "image": "https://images.opencollective.com/svetlomir/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
