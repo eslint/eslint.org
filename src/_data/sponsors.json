@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 147532.537122,
-        "monthlyDonations": 12294.378093500001,
+        "annualDonations": 153412.537122,
+        "monthlyDonations": 12784.378093500001,
         "sponsorCount": 180
     },
     "diamond": [],
@@ -70,6 +70,14 @@
             "monthlyDonation": 500,
             "totalDonations": 29500,
             "source": "opencollective",
+            "tier": "silver-sponsor"
+        },
+        {
+            "name": "American Express",
+            "image": "https://avatars.githubusercontent.com/u/3853301",
+            "url": "https://americanexpress.io",
+            "monthlyDonation": 500,
+            "source": "github",
             "tier": "silver-sponsor"
         },
         {
@@ -461,14 +469,6 @@
             "tier": "backer"
         },
         {
-            "name": "Erik Perri",
-            "image": "https://avatars.githubusercontent.com/u/46399654",
-            "url": "https://github.com/erik-perri",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Simon Lammes",
             "image": "https://avatars.githubusercontent.com/u/46446421",
             "url": "https://github.com/simon-lammes",
@@ -621,15 +621,6 @@
             "image": "https://images.opencollective.com/sidesmedia/45fac3a/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 100,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Morgane Dubus",
-            "url": null,
-            "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 240,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1129,7 +1120,15 @@
         {
             "name": "Matthew Nanas",
             "image": "https://avatars.githubusercontent.com/u/37747855",
-            "url": "https://mnanas.dev",
+            "url": "https://github.com/matthewnanas",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Erik Perri",
+            "image": "https://avatars.githubusercontent.com/u/46399654",
+            "url": "https://github.com/erik-perri",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
