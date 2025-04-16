@@ -22,6 +22,7 @@ const path = require("node:path");
 const fs = require("node:fs");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
+const preWrapperPlugin = require("./src/_11ty/plugins/pre-wrapper.js");
 
 //-----------------------------------------------------------------------------
 // Eleventy Config
@@ -175,6 +176,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addPlugin(readingTime);
 	eleventyConfig.addPlugin(syntaxHighlight, {
 		alwaysWrapLineHighlights: true,
+		lineSeparator: "\n",
 	});
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginTOC, {
@@ -194,6 +196,7 @@ module.exports = eleventyConfig => {
 			typographer: true,
 		})
 			.use(markdownItAnchor, {})
+			.use(preWrapperPlugin, {})
 			.disable("code"),
 	);
 

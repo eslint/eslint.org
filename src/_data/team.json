@@ -276,7 +276,7 @@
             "title": "ESLint Alumnus",
             "website": "https://kaicataldo.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/7041728",
-            "bio": "Developer | Creative\r\n",
+            "bio": null,
             "twitter_username": null,
             "github_username": "kaicataldo",
             "location": "Brooklyn, NY"
@@ -356,7 +356,7 @@
             "title": "ESLint Reviewer",
             "website": "",
             "avatar_url": "https://avatars.githubusercontent.com/u/13050025",
-            "bio": "(he/him)",
+            "bio": "Available for hire/contract",
             "twitter_username": null,
             "github_username": "aladdin-add",
             "location": "China"
@@ -452,7 +452,7 @@
             "title": "ESLint Support Team",
             "website": "https://joelmathew.js.org",
             "avatar_url": "https://avatars.githubusercontent.com/u/56463684",
-            "bio": "SE @ Scelta | Team @eslint | UWindsor",
+            "bio": "SE @ Scelta | Team @eslint",
             "twitter_username": "Rec0iL99",
             "github_username": "Rec0iL99",
             "location": "Canada"

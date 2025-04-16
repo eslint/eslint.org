@@ -2,7 +2,7 @@
     "nzakas": {
         "username": "nzakas",
         "name": "Nicholas C. Zakas",
-        "title": "ESLint Technical Steering Committee",
+        "title": "Guest Author",
         "website": "https://humanwhocodes.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/38546",
         "bio": "Creator of ESLint, independent software developer, consultant, coach, and author.",
@@ -17,7 +17,7 @@
         "title": "Guest Author",
         "website": "https://www.okuryu.com/",
         "avatar_url": "https://avatars.githubusercontent.com/u/34588",
-        "bio": "Contributor @nodejs @progit @yahoo @formatjs @yui",
+        "bio": "JavaScript, TypeScript, Translating, i18n and l10n.\r\n\r\nContributor @nodejs @progit @yahoo @formatjs @yui",
         "twitter_username": null,
         "github_username": "okuryu",
         "location": "Tokyo"
@@ -39,7 +39,7 @@
         "title": "ESLint Alumnus",
         "website": "https://kaicataldo.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/7041728",
-        "bio": "Developer | Creative\r\n",
+        "bio": null,
         "twitter_username": null,
         "github_username": "kaicataldo",
         "location": "Brooklyn, NY"
@@ -197,7 +197,7 @@
         "website": "https://antfu.me",
         "avatar_url": "https://avatars.githubusercontent.com/u/11247099",
         "bio": "A ship in harbor is safe, but that is not what ships are built for.",
-        "twitter_username": "antfu7",
+        "twitter_username": null,
         "github_username": "antfu",
         "location": "undefined"
     },
@@ -212,5 +212,16 @@
         "github_username": "JoshuaKGoldberg",
         "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
         "location": "Wakefield, MA, USA"
+    },
+    "softius": {
+        "username": "softius",
+        "name": "Iacovos Constantinou",
+        "title": "Guest Author",
+        "website": "https://softius.net",
+        "avatar_url": "https://avatars.githubusercontent.com/u/586121",
+        "bio": null,
+        "twitter_username": "iacons",
+        "github_username": "softius",
+        "location": "Nicosia, Cyprus"
     }
 }

@@ -1,5 +1,6 @@
 "use strict";
 
+const { defineConfig } = require("eslint/config");
 const eslintConfigESLintBase = require("eslint-config-eslint/base");
 const eslintConfigESLintCJS = require("eslint-config-eslint/cjs");
 const globals = require("globals");
@@ -9,7 +10,7 @@ const reactHooksPlugin = require("eslint-plugin-react-hooks");
 
 const playgroundFiles = "src/playground/**/*.{js,jsx}";
 
-module.exports = [
+module.exports = defineConfig([
 	{
 		ignores: [
 			"_site/**",
@@ -19,11 +20,9 @@ module.exports = [
 		],
 	},
 
-	...eslintConfigESLintCJS.map(config => ({
-		...config,
-		ignores: [playgroundFiles],
-	})),
 	{
+		ignores: [playgroundFiles],
+		extends: [eslintConfigESLintCJS],
 		rules: {
 			"n/no-extraneous-require": [
 				"error",
@@ -32,7 +31,6 @@ module.exports = [
 				},
 			],
 		},
-		ignores: [playgroundFiles],
 	},
 
 	{
@@ -44,12 +42,9 @@ module.exports = [
 	},
 
 	// Playground
-	...eslintConfigESLintBase.map(config => ({
-		...config,
-		files: [playgroundFiles],
-	})),
 	{
 		files: [playgroundFiles],
+		extends: [eslintConfigESLintBase],
 		plugins: {
 			react: reactPlugin,
 			"jsx-a11y": jsxA11yPlugin,
@@ -111,4 +106,4 @@ module.exports = [
 			"no-console": "off",
 		},
 	},
-];
+]);

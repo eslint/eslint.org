@@ -27,6 +27,7 @@ const searchClearBtn = document.querySelector("#search__clear-btn");
 const poweredByLink = document.querySelector(".search_powered-by-wrapper");
 let activeIndex = -1;
 let searchQuery;
+let caretPosition = 0;
 
 if (poweredByLink) {
 	poweredByLink.addEventListener("focus", function () {
@@ -210,17 +211,42 @@ searchInput.addEventListener("keyup", function () {
 	searchQuery = query;
 });
 
-searchClearBtn.addEventListener("click", function (e) {
+searchClearBtn.addEventListener("click", function () {
 	searchInput.value = "";
 	searchInput.focus();
 	clearSearchResults(true);
 	searchClearBtn.setAttribute("hidden", "");
 });
 
+searchInput.addEventListener("blur", function () {
+	caretPosition = searchInput.selectionStart;
+});
+
+searchInput.addEventListener("focus", function () {
+	if (searchInput.selectionStart !== caretPosition) {
+		searchInput.setSelectionRange(caretPosition, caretPosition);
+	}
+});
+
+if (resultsElement) {
+	resultsElement.addEventListener("keydown", e => {
+		if (
+			e.key !== "ArrowUp" &&
+			e.key !== "ArrowDown" &&
+			e.key !== "Tab" &&
+			e.key !== "Shift" &&
+			e.key !== "Enter"
+		) {
+			searchInput.focus();
+		}
+	});
+}
+
 document.addEventListener("keydown", function (e) {
 	const searchResults = Array.from(
 		document.querySelectorAll(".search-results__item"),
 	);
+	const isArrowKey = e.key === "ArrowUp" || e.key === "ArrowDown";
 
 	if (e.key === "Escape") {
 		e.preventDefault();
@@ -238,30 +264,31 @@ document.addEventListener("keydown", function (e) {
 		searchInput.focus();
 		document
 			.querySelector(".search")
-			.scrollIntoView({ behaviour: "smooth", block: "start" });
+			.scrollIntoView({ behavior: "smooth", block: "start" });
 	}
 
 	if (!searchResults.length) return;
 
-	switch (e.key) {
-		case "ArrowUp":
-			e.preventDefault();
+	if (isArrowKey) {
+		e.preventDefault();
+
+		if (e.key === "ArrowUp") {
 			activeIndex =
 				activeIndex - 1 < 0
 					? searchResults.length - 1
 					: activeIndex - 1;
-			break;
-		case "ArrowDown":
-			e.preventDefault();
+		} else if (e.key === "ArrowDown") {
 			activeIndex =
 				activeIndex + 1 < searchResults.length ? activeIndex + 1 : 0;
-			break;
-	}
+		}
 
-	if (activeIndex === -1) return;
-	const activeSearchResult = searchResults[activeIndex];
-	activeSearchResult.querySelector("a").focus();
-	if (isScrollable(resultsElement)) {
-		maintainScrollVisibility(activeSearchResult, resultsElement);
+		if (activeIndex !== -1) {
+			const activeSearchResult = searchResults[activeIndex];
+			activeSearchResult.querySelector("a").focus();
+
+			if (isScrollable(resultsElement)) {
+				maintainScrollVisibility(activeSearchResult, resultsElement);
+			}
+		}
 	}
 });

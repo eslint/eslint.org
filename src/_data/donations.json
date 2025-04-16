@@ -1,56 +1,101 @@
 [
     {
-        "id": "SA_kwHOAFvahM4AE1kJ",
-        "name": "Oleksandr",
-        "image": "https://avatars.githubusercontent.com/u/165272195",
-        "url": "https://github.com/oleksandrditkovskyi",
-        "amount": 5,
-        "date": "2025-02-06T13:39:42Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE1IK",
-        "name": "Mykhailo Marynenko",
-        "image": "https://avatars.githubusercontent.com/u/46429701",
-        "url": "https://0x77.dev",
-        "amount": 15,
-        "date": "2025-02-02T18:02:19Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE04n",
-        "name": "Mark.Zhang",
-        "image": "https://avatars.githubusercontent.com/u/84564297",
-        "url": "https://mark-personal-protfolio-website.vercel.app/",
+        "id": "SA_kwHOAFvahM4AE9Tp",
+        "name": "Raul Silveira",
+        "image": "https://avatars.githubusercontent.com/u/130875965",
+        "url": "https://github.com/raul4nt",
         "amount": 1,
-        "date": "2025-01-31T13:27:02Z",
+        "date": "2025-04-15T19:53:31Z",
         "source": "github"
     },
     {
-        "id": "SA_kwHOAFvahM4AE0pH",
-        "name": "rakaso598",
-        "image": "https://avatars.githubusercontent.com/u/112613372",
-        "url": "https://rexondex.tistory.com",
+        "id": "SA_kwHOAFvahM4AE822",
+        "name": "Rafael Vaz",
+        "image": "https://avatars.githubusercontent.com/u/71301073",
+        "url": "https://github.com/rafael-vaz",
+        "amount": 5,
+        "date": "2025-04-11T13:48:32Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AE8xa",
+        "name": "Rafael Vaz",
+        "image": "https://avatars.githubusercontent.com/u/71301073",
+        "url": "https://github.com/rafael-vaz",
+        "amount": 5,
+        "date": "2025-04-10T18:47:56Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AE8iY",
+        "name": "HolyFata",
+        "image": "https://avatars.githubusercontent.com/u/206218794",
+        "url": "https://holyfata.me",
+        "amount": 5,
+        "date": "2025-04-08T16:47:36Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AE8cN",
+        "name": "heliosfr",
+        "image": "https://avatars.githubusercontent.com/u/186154690",
+        "url": "https://helios.ac",
+        "amount": 5,
+        "date": "2025-04-07T20:17:41Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AE7BA",
+        "name": "Peter Dave Hello",
+        "image": "https://avatars.githubusercontent.com/u/3691490",
+        "url": "https://www.peterdavehello.org/",
         "amount": 1,
-        "date": "2025-01-29T05:13:20Z",
+        "date": "2025-03-26T10:18:36Z",
         "source": "github"
     },
     {
-        "id": "SA_kwHOAFvahM4AE0nx",
-        "name": "Gary Davison",
-        "image": "https://avatars.githubusercontent.com/u/3521929",
-        "url": "https://www.garydavison.com/",
+        "id": "SA_kwHOAFvahM4AE6uj",
+        "name": "Vaq",
+        "image": "https://avatars.githubusercontent.com/u/111227553",
+        "url": "https://nxt-client.com/",
         "amount": 5,
-        "date": "2025-01-28T21:48:21Z",
+        "date": "2025-03-23T21:26:04Z",
         "source": "github"
     },
     {
-        "id": "SA_kwHOAFvahM4AE0bZ",
-        "name": "Mohammad Islam",
-        "image": "https://avatars.githubusercontent.com/u/508043",
-        "url": "https://mislam.dev/",
-        "amount": 5,
-        "date": "2025-01-27T06:59:50Z",
+        "id": "SA_kwHOAFvahM4AE6c6",
+        "name": "Oliver Storholt Zuffi",
+        "image": "https://avatars.githubusercontent.com/u/146973447",
+        "url": "https://github.com/OliOSZ",
+        "amount": 1,
+        "date": "2025-03-21T08:33:15Z",
+        "source": "github"
+    },
+    {
+        "id": "mywxoz34-09rl6k3y-rzbqvenb-dj7gk85a",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 50,
+        "date": "2025-03-19T15:40:59.799Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "eng0kzdy-vor4pz8m-eerpbma8-37xlw95j",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 50,
+        "date": "2025-03-19T15:40:19.529Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AE6QK",
+        "name": "Magisc",
+        "image": "https://avatars.githubusercontent.com/u/180634546",
+        "url": "https://magisc.com",
+        "amount": 1,
+        "date": "2025-03-19T10:47:30Z",
         "source": "github"
     },
     {
@@ -63,15 +108,6 @@
         "source": "opencollective"
     },
     {
-        "id": "SA_kwHOAFvahM4AEzhT",
-        "name": "Jesper van den Ende",
-        "image": "https://avatars.githubusercontent.com/u/2737650",
-        "url": "http://jespertheend.com",
-        "amount": 20,
-        "date": "2025-01-18T14:22:20Z",
-        "source": "github"
-    },
-    {
         "id": "8k03reyd-5agmq50w-v4eplbwo-z7j4nxv9",
         "name": "Kaido Iwamoto",
         "url": null,
@@ -79,42 +115,6 @@
         "amount": 10,
         "date": "2025-01-17T09:38:04.618Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEzXL",
-        "name": "Oちゃん",
-        "image": "https://avatars.githubusercontent.com/u/71199274",
-        "url": "https://github.com/OrkWard",
-        "amount": 5,
-        "date": "2025-01-17T05:51:50Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEzXK",
-        "name": "YeungKC",
-        "image": "https://avatars.githubusercontent.com/u/11473691",
-        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "amount": 5,
-        "date": "2025-01-17T05:43:02Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEzXD",
-        "name": "Clex1o1",
-        "image": "https://avatars.githubusercontent.com/u/15003466",
-        "url": "https://www.the-great.dev",
-        "amount": 5,
-        "date": "2025-01-17T05:10:26Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AEzWq",
-        "name": "Adams",
-        "image": "https://avatars.githubusercontent.com/u/29444228",
-        "url": "https://github.com/sajitron",
-        "amount": 5,
-        "date": "2025-01-17T02:14:14Z",
-        "source": "github"
     },
     {
         "id": "rxg0j35l-zkwm6vvk-oxr6voe9-8n47daby",
@@ -285,24 +285,6 @@
         "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
         "amount": 346.61,
         "date": "2024-05-17T11:20:41.437Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "vedj9wro-z3a56dga-b8567blg-8x4m0ykn",
-        "name": "LongYC",
-        "url": "https://longyc.com",
-        "image": "https://images.opencollective.com/longyc/8030865/avatar.png",
-        "amount": 2,
-        "date": "2024-04-02T01:35:31.486Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "rxg0j35l-zkwm6vva-0w06voe9-8n47daby",
-        "name": "GreenPromoCode.com",
-        "url": "https://www.greenpromocode.com",
-        "image": "https://images.opencollective.com/greenpromocode-com/75cec3c/logo.png",
-        "amount": 3.41,
-        "date": "2024-03-03T10:14:08.192Z",
         "source": "opencollective"
     }
 ]
