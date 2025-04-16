@@ -22,7 +22,6 @@ const path = require("node:path");
 const fs = require("node:fs");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const { execSync } = require("node:child_process");
 
 //-----------------------------------------------------------------------------
 // Eleventy Config
@@ -160,25 +159,11 @@ module.exports = eleventyConfig => {
 		value1.concat(value2),
 	);
 
-	eleventyConfig.addFilter("gitLastUpdated", filepath => {
-		// Only check git history in production
-		if (CONTEXT) {
-			try {
-				const date = execSync(`git log -1 --format=%cD ${filepath}`, {
-					encoding: "utf-8",
-				}).trim();
+	eleventyConfig.addFilter("lastUpdated", filepath => {
+		const relativePath = path.relative("src/content/blog", filepath);
+		const blogDates = require("./src/_data/blogDates.json");
 
-				if (!date) {
-					return null;
-				}
-
-				return new Date(date);
-			} catch {
-				return null;
-			}
-		}
-
-		return null;
+		return new Date(blogDates[relativePath]);
 	});
 
 	/**

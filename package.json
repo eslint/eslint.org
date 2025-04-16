@@ -40,7 +40,8 @@
     "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
-    "start": "npm-run-all build:sass --parallel *:*:watch"
+    "start": "npm-run-all build:sass --parallel *:*:watch",
+    "init-blog-dates": "node tools/update-blog-dates.js --init"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
@@ -53,6 +54,7 @@
     ],
     "*.json": "prettier --write",
     "*.md": "markdownlint --fix",
+    "src/content/blog/*.md": "node tools/update-blog-dates.js",
     "**/*.svg": "npx svgo -r --multipass"
   },
   "gitHooks": {
