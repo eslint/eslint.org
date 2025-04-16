@@ -1,10 +1,20 @@
 {
     "totals": {
-        "annualDonations": 153412.537122,
-        "monthlyDonations": 12784.378093500001,
-        "sponsorCount": 180
+        "annualDonations": 213412.537122,
+        "monthlyDonations": 17784.378093499992,
+        "sponsorCount": 181
     },
-    "diamond": [],
+    "diamond": [
+        {
+            "name": "AG Grid",
+            "url": "https://www.ag-grid.com/",
+            "image": "https://images.opencollective.com/ag-grid/2c8d545/logo.png",
+            "monthlyDonation": 5000,
+            "totalDonations": 5000,
+            "source": "opencollective",
+            "tier": "diamond-sponsor"
+        }
+    ],
     "platinum": [
         {
             "name": "Automattic",
@@ -1348,7 +1358,7 @@
             "tier": "backer"
         },
         {
-            "name": "Juhyeok Kang",
+            "name": "강주혁(Juhyeok Kang)",
             "image": "https://avatars.githubusercontent.com/u/23312485",
             "url": "https://kangju.dev",
             "monthlyDonation": 1,
