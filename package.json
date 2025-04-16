@@ -54,7 +54,10 @@
     ],
     "*.json": "prettier --write",
     "*.md": "markdownlint --fix",
-    "src/content/blog/*.md": "node tools/update-blog-dates.js",
+    "src/content/blog/*.md": [
+      "node tools/update-blog-dates.js",
+      "git add src/_data/blogDates.json"
+    ],
     "**/*.svg": "npx svgo -r --multipass"
   },
   "gitHooks": {
