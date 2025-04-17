@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213412.537122,
-        "monthlyDonations": 17784.378093499992,
-        "sponsorCount": 181
+        "annualDonations": 213484.46520624,
+        "monthlyDonations": 17790.37210051999,
+        "sponsorCount": 184
     },
     "diamond": [
         {
@@ -524,6 +524,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Blox Fruits Values",
+            "url": "https://www.bloxfruitsvalues.io",
+            "image": "https://images.opencollective.com/blox-fruits-values/4e2c21a/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1427,6 +1436,24 @@
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.68959911,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.68959911",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.60202872,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.60202872",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.3919783,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.39197830",
             "source": "thanks.dev",
             "tier": "backer"
         },
