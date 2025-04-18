@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213488.77395732002,
-        "monthlyDonations": 17790.73116310999,
-        "sponsorCount": 185
+        "annualDonations": 213497.05617852003,
+        "monthlyDonations": 17791.42134820999,
+        "sponsorCount": 186
     },
     "diamond": [
         {
@@ -1428,6 +1428,15 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "timhaynes",
+            "url": null,
+            "image": "https://github.com/timhaynes.png",
+            "monthlyDonation": 0.6901851,
+            "totalDonations": "00.115090580.225653430.249133320.240222300.706721990.690271970.690271970.690271970.69018510",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
