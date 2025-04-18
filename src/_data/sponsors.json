@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213484.46520624,
-        "monthlyDonations": 17790.37210051999,
-        "sponsorCount": 184
+        "annualDonations": 213488.77395732002,
+        "monthlyDonations": 17790.73116310999,
+        "sponsorCount": 185
     },
     "diamond": [
         {
@@ -1454,6 +1454,15 @@
             "image": "https://github.com/sharph.png",
             "monthlyDonation": 0.3919783,
             "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.39197830",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.35906259,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.35906259",
             "source": "thanks.dev",
             "tier": "backer"
         },
