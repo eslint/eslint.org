@@ -1,18 +1,18 @@
-"use strict";
-
 /**
  * @fileoverview
- * Updates blogDates.json with last modified dates for blog posts.
+ * Updates blog-dates.json with last modified dates for blog posts.
  * Processes staged blog files by default. Run with --init to process all files
  * and initialize the dates file.
  */
+
+"use strict";
 
 const fs = require("node:fs/promises");
 const path = require("node:path");
 const { execSync } = require("node:child_process");
 
 const BLOG_DIR = path.resolve(__dirname, "../src/content/blog");
-const DATES_FILE = path.resolve(__dirname, "../src/_data/blogDates.json");
+const DATES_FILE = path.resolve(__dirname, "../src/_data/blog-dates.json");
 
 /**
  * Checks if a file exists at the given path.
@@ -60,7 +60,7 @@ async function getStagedBlogFiles() {
 }
 
 /**
- * Loads and parses the existing blog dates from blogDates.json.
+ * Loads and parses the existing blog dates from blog-dates.json.
  * @returns {Promise<Object>} Object containing blog post dates.
  * @throws {Error} If the file cannot be parsed.
  */
@@ -98,7 +98,7 @@ function getGitLastUpdated(filePath) {
 		if (!(await fileExists(DATES_FILE))) {
 			if (!isInitialization) {
 				throw new Error(
-					`blogDates.json not found at ${DATES_FILE}\n` +
+					`blog-dates.json not found at ${DATES_FILE}\n` +
 						"Run with --init to initialize dates file.",
 				);
 			}

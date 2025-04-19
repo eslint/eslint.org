@@ -162,7 +162,7 @@ module.exports = eleventyConfig => {
 
 	eleventyConfig.addFilter("lastUpdated", filepath => {
 		const relativePath = path.relative("src/content/blog", filepath);
-		const blogDates = require("./src/_data/blogDates.json");
+		const blogDates = require("./src/_data/blog-dates.json");
 
 		return new Date(blogDates[relativePath]);
 	});
