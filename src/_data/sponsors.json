@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213412.537122,
-        "monthlyDonations": 17784.378093499992,
-        "sponsorCount": 181
+        "annualDonations": 213497.10095928004,
+        "monthlyDonations": 17791.425079939992,
+        "sponsorCount": 187
     },
     "diamond": [
         {
@@ -524,6 +524,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Blox Fruits Values",
+            "url": "https://www.bloxfruitsvalues.io",
+            "image": "https://images.opencollective.com/blox-fruits-values/4e2c21a/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1422,11 +1431,47 @@
             "tier": "backer"
         },
         {
+            "name": "timhaynes",
+            "url": null,
+            "image": "https://github.com/timhaynes.png",
+            "monthlyDonation": 0.6901851,
+            "totalDonations": "00.115090580.225653430.249133320.240222300.706721990.690271970.690271970.690271970.69018510",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Konstantin Vinogradov",
             "url": "https://kvinogradov.com/",
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.68959911,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.68959911",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.60202872,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.60202872",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.3919783,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.39197830",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.35906259,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.35906259",
             "source": "thanks.dev",
             "tier": "backer"
         },
@@ -1499,6 +1544,15 @@
             "image": "https://github.com/typestrong.png",
             "monthlyDonation": 0.00693293,
             "totalDonations": "00.003410240.015248400.001100760.001275070.001245090.001285740.001500770.001496250.001382360.001410270.001469810.012471970.009082980.007916030.007883620.007334610.007334610.007378550.00693293",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Adam Dąbrowski",
+            "url": "http://adamdabrowski.com",
+            "image": "https://github.com/dabrowski-adam.png",
+            "monthlyDonation": 0.00373173,
+            "totalDonations": "00.001198480.001253010.001253010.002023800.00373173",
             "source": "thanks.dev",
             "tier": "backer"
         },
