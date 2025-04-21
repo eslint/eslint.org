@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213497.10095928004,
-        "monthlyDonations": 17791.425079939992,
-        "sponsorCount": 187
+        "annualDonations": 213757.45863732006,
+        "monthlyDonations": 17813.121553109995,
+        "sponsorCount": 189
     },
     "diamond": [
         {
@@ -337,6 +337,15 @@
             "tier": "backer"
         },
         {
+            "name": "Cash App",
+            "url": "https://cash.app",
+            "image": "https://github.com/cashapp.png",
+            "monthlyDonation": 12.58833002,
+            "totalDonations": "012.58833002",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "odan",
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
@@ -524,6 +533,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 5.65598699,
+            "totalDonations": "08.426817307.033780176.496383325.65598699",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1177,6 +1195,15 @@
             "tier": "backer"
         },
         {
+            "name": "block",
+            "url": null,
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 4.45215616,
+            "totalDonations": "03.406750532.577835202.289833644.45215616",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Austin Akers",
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
@@ -1290,14 +1317,6 @@
             "name": "John Karahalis",
             "image": "https://avatars.githubusercontent.com/u/933396",
             "url": "https://www.johnkarahalis.com",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ethan Glover",
-            "image": "https://avatars.githubusercontent.com/u/3924176",
-            "url": "https://www.ethang.dev/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
