@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213759.58053216006,
-        "monthlyDonations": 17813.298377679996,
-        "sponsorCount": 191
+        "annualDonations": 213771.58053216006,
+        "monthlyDonations": 17814.298377679996,
+        "sponsorCount": 192
     },
     "diamond": [
         {
@@ -1269,6 +1269,15 @@
             "url": "https://github.com/vbuch",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "MyInstaFollow Buy Instagram Auto Likes",
+            "url": "https://myinstafollow.com/instagram-auto-continuous-like-package/",
+            "image": "https://images.opencollective.com/buy-instagram-auto-likes/d11d0b7/logo.png",
+            "monthlyDonation": 1,
+            "totalDonations": 1,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
