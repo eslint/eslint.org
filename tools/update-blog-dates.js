@@ -47,11 +47,9 @@ async function getStagedBlogFiles() {
 	const stagedFiles = process.argv.slice(2);
 
 	return stagedFiles.filter(file => {
-		const relativePath = path.relative(process.cwd(), file);
-		return (
-			relativePath.startsWith(path.normalize("src/content/blog/")) &&
-			relativePath.endsWith(".md")
-		);
+		const dirPath = path.normalize(path.dirname(file));
+
+		return dirPath.startsWith(BLOG_DIR) && file.endsWith(".md");
 	});
 }
 
