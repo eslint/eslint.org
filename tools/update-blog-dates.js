@@ -40,23 +40,19 @@ async function getAllBlogFiles() {
 }
 
 /**
- * Gets the list of staged blog post files from git.
+ * Gets the list of staged blog post files from command line arguments.
  * @returns {Promise<string[]>} Array of absolute paths to staged .md files in the blog directory.
  */
 async function getStagedBlogFiles() {
-	const stagedFiles = execSync(
-		"git diff --staged --name-only --diff-filter=ACMRT",
-	)
-		.toString()
-		.trim()
-		.split("\n");
+	const stagedFiles = process.argv.slice(2);
 
-	return stagedFiles
-		.filter(
-			file =>
-				file.startsWith("src/content/blog/") && file.endsWith(".md"),
-		)
-		.map(file => path.resolve(process.cwd(), file));
+	return stagedFiles.filter(file => {
+		const relativePath = path.relative(process.cwd(), file);
+		return (
+			relativePath.startsWith(path.normalize("src/content/blog/")) &&
+			relativePath.endsWith(".md")
+		);
+	});
 }
 
 /**
@@ -110,6 +106,7 @@ function getGitLastUpdated(filePath) {
 			: await getStagedBlogFiles();
 
 		if (filesToProcess.length === 0) {
+			console.log("No blog files to process");
 			return;
 		}
 
