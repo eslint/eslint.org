@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AE-AU",
+        "name": "Gabriel \"Snywy\" Furtado",
+        "image": "https://avatars.githubusercontent.com/u/126573238",
+        "url": "https://realsnywy.github.io/",
+        "amount": 1,
+        "date": "2025-04-22T10:52:47Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AE9Tp",
         "name": "Raul Silveira",
         "image": "https://avatars.githubusercontent.com/u/130875965",
@@ -39,7 +48,7 @@
         "id": "SA_kwHOAFvahM4AE8cN",
         "name": "heliosfr",
         "image": "https://avatars.githubusercontent.com/u/186154690",
-        "url": "https://helios.ac",
+        "url": "https://helios.ac/me",
         "amount": 5,
         "date": "2025-04-07T20:17:41Z",
         "source": "github"
@@ -51,24 +60,6 @@
         "url": "https://www.peterdavehello.org/",
         "amount": 1,
         "date": "2025-03-26T10:18:36Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE6uj",
-        "name": "Vaq",
-        "image": "https://avatars.githubusercontent.com/u/111227553",
-        "url": "https://nxt-client.com/",
-        "amount": 5,
-        "date": "2025-03-23T21:26:04Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE6c6",
-        "name": "Oliver Storholt Zuffi",
-        "image": "https://avatars.githubusercontent.com/u/146973447",
-        "url": "https://github.com/OliOSZ",
-        "amount": 1,
-        "date": "2025-03-21T08:33:15Z",
         "source": "github"
     },
     {
