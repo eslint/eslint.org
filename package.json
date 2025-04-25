@@ -15,6 +15,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "npm-run-all install:playground build:sass build:website build:playground build:minify-images",
+    "build:init-blog-dates": "node tools/update-blog-dates.js --init",
     "build:minify-images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
     "build:minify-svg": "svgo -r -f ./",
     "build:playground": "webpack --mode=production --progress",
@@ -40,8 +41,7 @@
     "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
-    "start": "npm-run-all build:sass --parallel *:*:watch",
-    "init-blog-dates": "node tools/update-blog-dates.js --init"
+    "start": "npm-run-all build:sass --parallel *:*:watch"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
