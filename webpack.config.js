@@ -47,7 +47,8 @@ module.exports = (env, { mode }) => ({
 				include: path.resolve(__dirname, "src/playground"),
 				exclude: /node_modules/u,
 				options: {
-					configFile: path.resolve(__dirname, ".babelrc"),
+					plugins: ["babel-plugin-react-compiler"],
+					presets: ["@babel/preset-env", "@babel/preset-react"],
 				},
 			},
 			{
