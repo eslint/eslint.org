@@ -85,6 +85,7 @@
     "eslint-config-eslint": "^11.0.0",
     "eslint-plugin-jsx-a11y": "^6.10.1",
     "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-compiler": "^19.1.0-rc.1",
     "eslint-plugin-react-hooks": "^5.0.0",
     "globals": "^15.1.0",
     "gray-matter": "^4.0.3",

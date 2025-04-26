@@ -7,6 +7,7 @@ const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
+const reactCompiler = require("eslint-plugin-react-compiler");
 
 const playgroundFiles = "src/playground/**/*.{js,jsx}";
 
@@ -49,6 +50,7 @@ module.exports = defineConfig([
 			react: reactPlugin,
 			"jsx-a11y": jsxA11yPlugin,
 			"react-hooks": reactHooksPlugin,
+			"react-compiler": reactCompiler,
 		},
 		settings: {
 			react: {
@@ -72,6 +74,7 @@ module.exports = defineConfig([
 			...jsxA11yPlugin.configs.recommended.rules,
 			"react/jsx-no-useless-fragment": "error",
 			"react/jsx-no-target-blank": "error",
+			"react-compiler/react-compiler": "error",
 
 			// Disable rules that the codebase doesn't currently follow.
 			// It might be a good idea to enable these in the future.

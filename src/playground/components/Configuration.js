@@ -164,13 +164,17 @@ export default function Configuration({
 	}, [options.rules]);
 
 	const handleRuleChange = () => {
-		const rules = { ...options.rules };
-
 		selectedRules.forEach(selectedRule => {
 			if (ruleNames.includes(selectedRule)) {
-				rules[selectedRule] = ["error"];
-				options.rules = rules;
-				onUpdate(Object.assign({}, options));
+				const newOptions = {
+					...options,
+					rules: {
+						...options.rules,
+						[selectedRule]: ["error"],
+					},
+				};
+
+				onUpdate(newOptions);
 				ruleInputRef.current.setValue("");
 			}
 		});
@@ -198,18 +202,28 @@ export default function Configuration({
 
 	const selectAll = () => {
 		if (allRulesSelected) {
-			options.rules = {};
+			const newOptions = {
+				...options,
+				rules: {},
+			};
+
 			setSelectedRules([]);
+			onUpdate(newOptions);
 		} else {
 			const rules = {};
 
 			ruleNames.forEach(ruleName => {
 				rules[ruleName] = ["error"];
-				options.rules = rules;
-				ruleInputRef.current.setValue("");
 			});
+
+			const newOptions = {
+				...options,
+				rules,
+			};
+
+			ruleInputRef.current.setValue("");
+			onUpdate(newOptions);
 		}
-		onUpdate(Object.assign({}, options));
 	};
 
 	const revertToDefault = () => {
@@ -288,15 +302,22 @@ export default function Configuration({
 									)}
 									options={ECMAVersionsOptions}
 									onChange={selected => {
+										const newOptions = {
+											...options,
+											languageOptions: {
+												...options.languageOptions,
+											},
+										};
+
 										if (selected.value === "default") {
-											delete options.languageOptions
+											delete newOptions.languageOptions
 												.ecmaVersion;
 										} else {
-											options.languageOptions.ecmaVersion =
+											newOptions.languageOptions.ecmaVersion =
 												selected.value;
 										}
 
-										onUpdate(Object.assign({}, options));
+										onUpdate(newOptions);
 									}}
 								/>
 							</label>
@@ -315,15 +336,22 @@ export default function Configuration({
 								)}
 								options={sourceTypeOptions}
 								onChange={selected => {
+									const newOptions = {
+										...options,
+										languageOptions: {
+											...options.languageOptions,
+										},
+									};
+
 									if (selected.value === "default") {
-										delete options.languageOptions
+										delete newOptions.languageOptions
 											.sourceType;
 									} else {
-										options.languageOptions.sourceType =
+										newOptions.languageOptions.sourceType =
 											selected.value;
 									}
 
-									onUpdate(Object.assign({}, options));
+									onUpdate(newOptions);
 								}}
 							/>
 						</label>
@@ -350,14 +378,24 @@ export default function Configuration({
 								theme={theme => customTheme(theme)}
 								options={ECMAFeaturesOptions}
 								onChange={selectedOptions => {
-									options.languageOptions.parserOptions.ecmaFeatures =
-										{};
+									const newOptions = {
+										...options,
+										languageOptions: {
+											...options.languageOptions,
+											parserOptions: {
+												...options.languageOptions
+													.parserOptions,
+												ecmaFeatures: {},
+											},
+										},
+									};
+
 									selectedOptions.forEach(selected => {
-										options.languageOptions.parserOptions.ecmaFeatures[
+										newOptions.languageOptions.parserOptions.ecmaFeatures[
 											selected.value
 										] = true;
 									});
-									onUpdate(Object.assign({}, options));
+									onUpdate(newOptions);
 								}}
 							/>
 						</div>
@@ -463,9 +501,17 @@ export default function Configuration({
 													aria-label={`Remove ${ruleName}`}
 													title={`Remove ${ruleName}`}
 													onClick={() => {
-														delete options.rules[
+														const newOptions = {
+															...options,
+															rules: {
+																...options.rules,
+															},
+														};
+
+														delete newOptions.rules[
 															ruleName
 														];
+
 														setRulesWithInvalidConfigs(
 															new Set(
 																[
@@ -477,12 +523,7 @@ export default function Configuration({
 																),
 															),
 														);
-														onUpdate(
-															Object.assign(
-																{},
-																options,
-															),
-														);
+														onUpdate(newOptions);
 													}}
 												>
 													<svg
@@ -524,11 +565,19 @@ export default function Configuration({
 												placeholder={'["error"]'}
 												onChange={event => {
 													try {
-														options.rules[
-															ruleName
-														] = JSON.parse(
-															event.target.value,
-														);
+														const newOptions = {
+															...options,
+															rules: {
+																...options.rules,
+																[ruleName]:
+																	JSON.parse(
+																		event
+																			.target
+																			.value,
+																	),
+															},
+														};
+
 														setRulesWithInvalidConfigs(
 															new Set(
 																[
@@ -540,12 +589,8 @@ export default function Configuration({
 																),
 															),
 														);
-														onUpdate(
-															Object.assign(
-																{},
-																options,
-															),
-														);
+
+														onUpdate(newOptions);
 													} catch {
 														setRulesWithInvalidConfigs(
 															new Set([
