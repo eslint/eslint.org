@@ -1,5 +1,14 @@
 [
     {
+        "id": "ywz9j4av-god8pgwa-5nj6mr35-nxklb0e7",
+        "name": "AgentDock",
+        "url": "https://agentdock.ai/",
+        "image": "https://images.opencollective.com/agentdock/0b744fa/logo.png",
+        "amount": 10,
+        "date": "2025-04-28T04:17:02.771Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AE-e_",
         "name": "Mateus Costa",
         "image": "https://avatars.githubusercontent.com/u/6730901",
@@ -267,15 +276,6 @@
         "image": "https://images.opencollective.com/canvaofficial/7217c4d/logo.png",
         "amount": 3000,
         "date": "2024-05-27T05:35:24.610Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "vedj9wro-z3a56dg7-3n567blg-8x4m0ykn",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
-        "amount": 346.61,
-        "date": "2024-05-17T11:20:41.437Z",
         "source": "opencollective"
     }
 ]

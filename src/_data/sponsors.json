@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213783.69025188006,
-        "monthlyDonations": 17815.307520989998,
-        "sponsorCount": 195
+        "annualDonations": 213855.69025188006,
+        "monthlyDonations": 17821.307520989998,
+        "sponsorCount": 196
     },
     "diamond": [
         {
@@ -533,6 +533,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "CrawlJobs",
+            "url": "https://www.crawljobs.com",
+            "image": "https://images.opencollective.com/crawljobs/ab4ce61/logo.png",
+            "monthlyDonation": 6,
+            "totalDonations": 6,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
