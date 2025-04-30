@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213862.17192204006,
-        "monthlyDonations": 17821.84766017,
-        "sponsorCount": 197
+        "annualDonations": 207862.17192204006,
+        "monthlyDonations": 17321.84766017,
+        "sponsorCount": 196
     },
     "diamond": [
         {
@@ -86,14 +86,6 @@
             "name": "American Express",
             "image": "https://avatars.githubusercontent.com/u/3853301",
             "url": "https://americanexpress.io",
-            "monthlyDonation": 500,
-            "source": "github",
-            "tier": "silver-sponsor"
-        },
-        {
-            "name": "StackBlitz",
-            "image": "https://avatars.githubusercontent.com/u/28635252",
-            "url": "https://stackblitz.com",
             "monthlyDonation": 500,
             "source": "github",
             "tier": "silver-sponsor"
