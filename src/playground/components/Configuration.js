@@ -134,13 +134,6 @@ export default function Configuration({
 		value: ecmaFeature,
 		label: ecmaFeature,
 	}));
-	const ECMAFeaturesOptionsForTypeScriptParser = ECMA_FEATURES.slice(
-		0,
-		-1,
-	).map(ecmaFeature => ({
-		value: ecmaFeature,
-		label: ecmaFeature,
-	}));
 	const ECMAVersionsOptions = [
 		defaultOption,
 		...ECMA_VERSIONS.map(ecmaVersion => ({
@@ -383,7 +376,7 @@ export default function Configuration({
 								theme={theme => customTheme(theme)}
 								options={
 									options.languageOptions.parser
-										? ECMAFeaturesOptionsForTypeScriptParser
+										? ECMAFeaturesOptions.slice(0, -1)
 										: ECMAFeaturesOptions
 								}
 								onChange={selectedOptions => {
