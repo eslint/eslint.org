@@ -7,7 +7,6 @@ const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
-const reactCompilerPlugin = require("eslint-plugin-react-compiler");
 
 const playgroundFiles = "src/playground/**/*.{js,jsx}";
 
@@ -50,11 +49,10 @@ module.exports = defineConfig([
 			react: reactPlugin,
 			"jsx-a11y": jsxA11yPlugin,
 			"react-hooks": reactHooksPlugin,
-			"react-compiler": reactCompilerPlugin,
 		},
 		settings: {
 			react: {
-				version: "16.8.6",
+				version: "19.1.0",
 			},
 		},
 		languageOptions: {
@@ -74,7 +72,6 @@ module.exports = defineConfig([
 			...jsxA11yPlugin.configs.recommended.rules,
 			"react/jsx-no-useless-fragment": "error",
 			"react/jsx-no-target-blank": "error",
-			"react-compiler/react-compiler": "error",
 
 			// Disable rules that the codebase doesn't currently follow.
 			// It might be a good idea to enable these in the future.
@@ -83,6 +80,7 @@ module.exports = defineConfig([
 			"jsdoc/require-jsdoc": "off",
 			"react-hooks/rules-of-hooks": "error",
 			"react-hooks/exhaustive-deps": "warn",
+			"react-hooks/react-compiler": "error",
 			"func-style": "off",
 		},
 	},
