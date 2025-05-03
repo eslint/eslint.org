@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 202284,
-        "monthlyDonations": 16857,
-        "sponsorCount": 162
+        "annualDonations": 207684,
+        "monthlyDonations": 17307,
+        "sponsorCount": 164
     },
     "diamond": [
         {
@@ -100,6 +100,24 @@
         }
     ],
     "bronze": [
+        {
+            "name": "Cybozu",
+            "url": "https://cybozu.co.jp/",
+            "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
+            "monthlyDonation": 250,
+            "totalDonations": 21914,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Anagram Solver",
+            "url": "https://www.crosswordsolver.org/anagram-solver/",
+            "image": "https://images.opencollective.com/anagram-solver/2666271/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 12400,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "Icons8",
             "url": "https://icons8.com/",
