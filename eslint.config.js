@@ -52,7 +52,7 @@ module.exports = defineConfig([
 		},
 		settings: {
 			react: {
-				version: "16.8.6",
+				version: "19.1.0",
 			},
 		},
 		languageOptions: {
@@ -80,6 +80,7 @@ module.exports = defineConfig([
 			"jsdoc/require-jsdoc": "off",
 			"react-hooks/rules-of-hooks": "error",
 			"react-hooks/exhaustive-deps": "warn",
+			"react-hooks/react-compiler": "error",
 			"func-style": "off",
 		},
 	},
