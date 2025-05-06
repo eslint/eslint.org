@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 207684,
-        "monthlyDonations": 17307,
-        "sponsorCount": 164
+        "annualDonations": 207624,
+        "monthlyDonations": 17302,
+        "sponsorCount": 163
     },
     "diamond": [
         {
@@ -639,15 +639,6 @@
             "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 150,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "TaskRatchet",
-            "url": "https://taskratchet.com",
-            "image": "https://images.opencollective.com/taskratchet/7996706/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 170,
             "source": "opencollective",
             "tier": "backer"
         },
