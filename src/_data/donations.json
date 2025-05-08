@@ -1,5 +1,41 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AE_Zs",
+        "name": "Connor Tumbleson",
+        "image": "https://avatars.githubusercontent.com/u/611784",
+        "url": "https://connortumbleson.com",
+        "amount": 2,
+        "date": "2025-05-04T18:20:57Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AE_EV",
+        "name": "StackBlitz",
+        "image": "https://avatars.githubusercontent.com/u/28635252",
+        "url": "https://stackblitz.com",
+        "amount": 200,
+        "date": "2025-05-01T18:50:28Z",
+        "source": "github"
+    },
+    {
+        "id": "ywz9j4av-god8pgwa-5nj6mr35-nxklb0e7",
+        "name": "AgentDock",
+        "url": "https://agentdock.ai/",
+        "image": "https://images.opencollective.com/agentdock/0b744fa/logo.png",
+        "amount": 10,
+        "date": "2025-04-28T04:17:02.771Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AE-e_",
+        "name": "Mateus Costa",
+        "image": "https://avatars.githubusercontent.com/u/6730901",
+        "url": "https://linkedin.com/in/mateusrocosta",
+        "amount": 1,
+        "date": "2025-04-27T03:09:28Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AE-AU",
         "name": "Gabriel \"Snywy\" Furtado",
         "image": "https://avatars.githubusercontent.com/u/126573238",
@@ -33,33 +69,6 @@
         "url": "https://github.com/rafael-vaz",
         "amount": 5,
         "date": "2025-04-10T18:47:56Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE8iY",
-        "name": "HolyFata",
-        "image": "https://avatars.githubusercontent.com/u/206218794",
-        "url": "https://holyfata.me",
-        "amount": 5,
-        "date": "2025-04-08T16:47:36Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE8cN",
-        "name": "heliosfr",
-        "image": "https://avatars.githubusercontent.com/u/186154690",
-        "url": "https://helios.ac/me",
-        "amount": 5,
-        "date": "2025-04-07T20:17:41Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE7BA",
-        "name": "Peter Dave Hello",
-        "image": "https://avatars.githubusercontent.com/u/3691490",
-        "url": "https://www.peterdavehello.org/",
-        "amount": 1,
-        "date": "2025-03-26T10:18:36Z",
         "source": "github"
     },
     {
@@ -258,15 +267,6 @@
         "image": "https://images.opencollective.com/canvaofficial/7217c4d/logo.png",
         "amount": 3000,
         "date": "2024-05-27T05:35:24.610Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "vedj9wro-z3a56dg7-3n567blg-8x4m0ykn",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
-        "amount": 346.61,
-        "date": "2024-05-17T11:20:41.437Z",
         "source": "opencollective"
     }
 ]
