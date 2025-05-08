@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 207624,
-        "monthlyDonations": 17302,
-        "sponsorCount": 163
+        "annualDonations": 207637.93999824,
+        "monthlyDonations": 17303.16166652,
+        "sponsorCount": 164
     },
     "diamond": [
         {
@@ -1178,6 +1178,15 @@
             "url": "https://github.com/vbuch",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "The Teacher Fund",
+            "url": "https://theteacherfund.com",
+            "image": "https://github.com/teacherfund.png",
+            "monthlyDonation": 1.16166652,
+            "totalDonations": "03.444598820.761468630.758915560.757621171.330122255.523623911.398425541.392264561.215996731.215996732.375366541.16166652",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
