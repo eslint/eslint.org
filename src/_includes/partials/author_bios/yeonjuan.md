@@ -1,0 +1,1 @@
+@eslint team alumnus. Passionate about JavaScript-based developer tools.
