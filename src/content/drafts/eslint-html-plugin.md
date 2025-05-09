@@ -18,7 +18,7 @@ Today, I'm excited to share that [html-eslint](https://html-eslint.org) now prov
 
 ## Linting HTML with `html-eslint`
 
-The [`@html-eslint/eslint-plugin`](https://www.npmjs.com/package/@html-eslint/eslint-plugin) plugin provides support for linting HTML code inside `.html` files. You can now configure HTML linting using ESLint's flat config and language plugin system. To get started, install it from npm:
+The [`@html-eslint/eslint-plugin`](https://www.npmjs.com/package/@html-eslint/eslint-plugin) package provides support for linting HTML code inside `.html` files. To get started, install it from npm:
 
 ```bash
 npm install -D @html-eslint/eslint-plugin
