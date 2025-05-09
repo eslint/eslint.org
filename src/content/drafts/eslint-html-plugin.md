@@ -50,7 +50,7 @@ The plugin includes a growing list of [rules](https://html-eslint.org/docs/rules
 
 Rather than using plain HTML, some projects use template engines like Handlebars, which introduce non-standard syntax such as {% raw %}`{{variable}}`{% endraw %}.
 
-`html-eslint` is designed to offer support for custom syntax patterns used in popular template engines. This will allow users to configure html-eslint to tolerate these syntaxes.
+`html-eslint` is designed to offer support for custom syntax patterns used in popular template engines. This allows users to configure html-eslint to tolerate these syntaxes. Here's an example:
 
 ```js
 import html from "@html-eslint/eslint-plugin";
