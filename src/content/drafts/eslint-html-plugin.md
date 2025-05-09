@@ -53,9 +53,10 @@ Rather than using plain HTML, some projects use template engines like [Handlebar
 `html-eslint` is designed to offer support for custom syntax patterns used in popular template engines. This allows users to configure `html-eslint` to tolerate these syntaxes. Here's an example:
 
 ```js
+import { defineConfig } from "eslint/config";
 import html from "@html-eslint/eslint-plugin";
 
-export default [
+export default defineConfig([
     // lint html files
     {
         files: ["**/*.html"],
@@ -74,7 +75,7 @@ export default [
             "html/require-img-alt": "error"
         }
     }
-]
+]);
 ```
 
 ## Linting HTML code inside JavaScript template literals
@@ -94,9 +95,10 @@ This is especially useful when working with libraries like [Lit](https://lit.dev
 To enable this, you don’t need to set a language. Just apply `html-eslint` rules to your JavaScript or TypeScript files, and the plugin will detect and lint HTML within template literals.
 
 ```js
+import { defineConfig } from "eslint/config";
 import html from "@html-eslint/eslint-plugin";
 
-export default [
+export default defineConfig([
     {
         files: ["**/*.js", "**/*.ts"],
         plugins: {
@@ -106,7 +108,7 @@ export default [
             "html/require-img-alt": "error",
         },
     },
-];
+]);
 ```
 
 ## Conclusion
