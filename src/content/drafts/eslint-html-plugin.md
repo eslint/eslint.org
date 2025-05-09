@@ -1,6 +1,6 @@
 ---
 layout: post
-title: html-eslint now supports ESLint language plugin
+title: ESLint can now lint HTML using the html-eslint language plugin
 teaser: "Bringing HTML linting to ESLint’s new language-agnostic system."
 tags:
   - Open Source
