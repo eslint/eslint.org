@@ -14,7 +14,7 @@ categories:
 
 In 2024, [ESLint announced](/blog/2024/07/whats-coming-next-for-eslint/) its plan to become a language-agnostic linter that is capable of linting languages other than JavaScript.
 Since then, we've seen official support added for [JSON and Markdown](https://eslint.org/blog/2024/10/eslint-json-markdown-support/), and most recently, [CSS](https://eslint.org/blog/2025/02/eslint-css-support/).
-Today, I'm excited to share that [html-eslint](https://html-eslint.org) now supports ESLint's language plugin for HTML.
+Today, I'm excited to share that [html-eslint](https://html-eslint.org) now provides an ESLint language plugin for linting HTML.
 
 ## HTML linting with `html-eslint`
 
