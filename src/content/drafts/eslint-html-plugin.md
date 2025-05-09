@@ -77,7 +77,7 @@ export default [
 ]
 ```
 
-## Linting HTML code inside JavaScript Template Literal
+## Linting HTML code inside JavaScript template literals
 
 In addition to standalone HTML files, `html-eslint` also supports linting HTML inside JavaScript and TypeScript template literals, such as:
 
