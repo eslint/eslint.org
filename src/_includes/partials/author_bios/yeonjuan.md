@@ -1,1 +1,1 @@
-@eslint team alumnus. Passionate about JavaScript-based developer tools.
+Yeon Juan is a software developer at [LINE Plus](https://www.linepluscorp.com/) and a @eslint team alumnus. I'm passionate about building JavaScript-based developer tools that improve code quality and the developer experience.
