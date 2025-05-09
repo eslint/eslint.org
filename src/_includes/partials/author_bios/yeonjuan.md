@@ -1,1 +1,1 @@
-Yeon Juan is a software developer at [LINE Plus](https://www.linepluscorp.com/) and a @eslint team alumnus. I'm passionate about building JavaScript-based developer tools that improve code quality and the developer experience.
+Yeon Juan is a software developer at [LINE Plus](https://www.linepluscorp.com/) and an ESLint team alumnus. He is passionate about building JavaScript-based developer tools that improve code quality and the developer experience.
