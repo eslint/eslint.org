@@ -44,9 +44,7 @@ export default [
 ]
 ```
 
-The plugin includes a growing list of rules covering best practices, code styles, SEO and accessibility in HTML. You can find the list of supported rules [here](https://html-eslint.org/docs/rules).
-
-Have an idea for a rule? [Open an issue](https://github.com/yeonjuan/html-eslint/issues).
+The plugin includes a growing list of [rules](https://html-eslint.org/docs/rules)) covering best practices, code style, search engine optimization (SEO), and accessibility. (Have an idea for a rule? [Open an issue](https://github.com/yeonjuan/html-eslint/issues).)
 
 ## Template engine syntax support
 
