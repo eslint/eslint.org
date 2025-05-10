@@ -15,6 +15,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "npm-run-all install:playground build:sass build:website build:playground build:minify-images",
+    "build:init-blog-dates": "node tools/update-blog-dates.js --init",
     "build:minify-images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
     "build:minify-svg": "svgo -r -f ./",
     "build:playground": "webpack --mode=production --progress",
@@ -53,6 +54,10 @@
     ],
     "*.json": "prettier --write",
     "*.md": "markdownlint --fix",
+    "src/content/blog/*.md": [
+      "node tools/update-blog-dates.js",
+      "git add src/_data/blog-dates.json"
+    ],
     "**/*.svg": "npx svgo -r --multipass"
   },
   "gitHooks": {

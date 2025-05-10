@@ -160,6 +160,13 @@ module.exports = eleventyConfig => {
 		value1.concat(value2),
 	);
 
+	eleventyConfig.addFilter("lastUpdated", filepath => {
+		const relativePath = path.relative("src/content/blog", filepath);
+		const blogDates = require("./src/_data/blog-dates.json");
+
+		return new Date(blogDates[relativePath]);
+	});
+
 	/**
 	 * ***************************************************************************************
 	 *  Plugins
