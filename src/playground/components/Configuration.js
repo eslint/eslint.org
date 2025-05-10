@@ -48,14 +48,19 @@ const customStyles = {
 			...styles[":active"],
 			backgroundColor: "var(--color-primary-700)",
 		},
-		":last-child": {
-			borderBottom: "1px solid var(--border-color)",
-		},
 	}),
 	input: styles => ({
 		...styles,
 		color: "var(--body-text-color)",
 		caretShape: "underscore",
+	}),
+	indicatorsContainer: styles => ({
+		...styles,
+		cursor: "pointer",
+	}),
+	indicatorSeparator: styles => ({
+		...styles,
+		cursor: "auto",
 	}),
 	multiValue: styles => ({
 		...styles,
@@ -78,10 +83,12 @@ const customStyles = {
 		...styles,
 		backgroundColor: "var(--body-background-color)",
 		border: "1px solid var(--border-color)",
+		borderBottom: "none",
 	}),
 	menuList: styles => ({
 		...styles,
 		padding: 0,
+		borderBottom: "1px solid var(--border-color)",
 	}),
 };
 
@@ -168,13 +175,17 @@ export default function Configuration({
 	}, [options.rules]);
 
 	const handleRuleChange = () => {
-		const rules = { ...options.rules };
-
 		selectedRules.forEach(selectedRule => {
 			if (ruleNames.includes(selectedRule)) {
-				rules[selectedRule] = ["error"];
-				options.rules = rules;
-				onUpdate(Object.assign({}, options));
+				const newOptions = {
+					...options,
+					rules: {
+						...options.rules,
+						[selectedRule]: ["error"],
+					},
+				};
+
+				onUpdate(newOptions);
 				ruleInputRef.current.setValue("");
 			}
 		});
@@ -202,18 +213,28 @@ export default function Configuration({
 
 	const selectAll = () => {
 		if (allRulesSelected) {
-			options.rules = {};
+			const newOptions = {
+				...options,
+				rules: {},
+			};
+
 			setSelectedRules([]);
+			onUpdate(newOptions);
 		} else {
 			const rules = {};
 
 			ruleNames.forEach(ruleName => {
 				rules[ruleName] = ["error"];
-				options.rules = rules;
-				ruleInputRef.current.setValue("");
 			});
+
+			const newOptions = {
+				...options,
+				rules,
+			};
+
+			ruleInputRef.current.setValue("");
+			onUpdate(newOptions);
 		}
-		onUpdate(Object.assign({}, options));
 	};
 
 	const revertToDefault = () => {
@@ -292,15 +313,22 @@ export default function Configuration({
 									)}
 									options={ECMAVersionsOptions}
 									onChange={selected => {
+										const newOptions = {
+											...options,
+											languageOptions: {
+												...options.languageOptions,
+											},
+										};
+
 										if (selected.value === "default") {
-											delete options.languageOptions
+											delete newOptions.languageOptions
 												.ecmaVersion;
 										} else {
-											options.languageOptions.ecmaVersion =
+											newOptions.languageOptions.ecmaVersion =
 												selected.value;
 										}
 
-										onUpdate(Object.assign({}, options));
+										onUpdate(newOptions);
 									}}
 								/>
 							</label>
@@ -349,7 +377,7 @@ export default function Configuration({
 										}
 									}
 
-									onUpdate(Object.assign({}, options));
+									onUpdate(newOptions);
 								}}
 							/>
 						</label>
@@ -380,14 +408,24 @@ export default function Configuration({
 										: ECMAFeaturesOptions
 								}
 								onChange={selectedOptions => {
-									options.languageOptions.parserOptions.ecmaFeatures =
-										{};
+									const newOptions = {
+										...options,
+										languageOptions: {
+											...options.languageOptions,
+											parserOptions: {
+												...options.languageOptions
+													.parserOptions,
+												ecmaFeatures: {},
+											},
+										},
+									};
+
 									selectedOptions.forEach(selected => {
-										options.languageOptions.parserOptions.ecmaFeatures[
+										newOptions.languageOptions.parserOptions.ecmaFeatures[
 											selected.value
 										] = true;
 									});
-									onUpdate(Object.assign({}, options));
+									onUpdate(newOptions);
 								}}
 							/>
 						</div>
@@ -529,9 +567,17 @@ export default function Configuration({
 													aria-label={`Remove ${ruleName}`}
 													title={`Remove ${ruleName}`}
 													onClick={() => {
-														delete options.rules[
+														const newOptions = {
+															...options,
+															rules: {
+																...options.rules,
+															},
+														};
+
+														delete newOptions.rules[
 															ruleName
 														];
+
 														setRulesWithInvalidConfigs(
 															new Set(
 																[
@@ -543,12 +589,7 @@ export default function Configuration({
 																),
 															),
 														);
-														onUpdate(
-															Object.assign(
-																{},
-																options,
-															),
-														);
+														onUpdate(newOptions);
 													}}
 												>
 													<svg
@@ -590,11 +631,19 @@ export default function Configuration({
 												placeholder={'["error"]'}
 												onChange={event => {
 													try {
-														options.rules[
-															ruleName
-														] = JSON.parse(
-															event.target.value,
-														);
+														const newOptions = {
+															...options,
+															rules: {
+																...options.rules,
+																[ruleName]:
+																	JSON.parse(
+																		event
+																			.target
+																			.value,
+																	),
+															},
+														};
+
 														setRulesWithInvalidConfigs(
 															new Set(
 																[
@@ -606,12 +655,8 @@ export default function Configuration({
 																),
 															),
 														);
-														onUpdate(
-															Object.assign(
-																{},
-																options,
-															),
-														);
+
+														onUpdate(newOptions);
 													} catch {
 														setRulesWithInvalidConfigs(
 															new Set([

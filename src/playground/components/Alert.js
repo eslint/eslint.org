@@ -166,7 +166,9 @@ export default function Alert({
 					{options.rules[ruleId] && (
 						<button
 							onClick={() => {
-								delete options.rules[ruleId];
+								const newRules = { ...options.rules };
+								delete newRules[ruleId];
+
 								setRulesWithInvalidConfigs(
 									new Set(
 										[...rulesWithInvalidConfigs].filter(
@@ -174,7 +176,10 @@ export default function Alert({
 										),
 									),
 								);
-								onUpdate(Object.assign({}, options));
+								onUpdate({
+									...options,
+									rules: newRules,
+								});
 							}}
 							className="alert__fix-btn"
 						>

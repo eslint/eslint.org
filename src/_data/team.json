@@ -153,7 +153,7 @@
             "title": "ESLint Alumnus",
             "website": "http://www.linkedin.com/in/bmish",
             "avatar_url": "https://avatars.githubusercontent.com/u/698306",
-            "bio": "Software Engineer. Passionate about open source and helping developers maximize their productivity. @eslint team.  Former @square.",
+            "bio": "Software Engineer. Passionate about the web, open source, and dev tools. @eslint team. Former @square. Maintainer of Ember.js linting.",
             "twitter_username": null,
             "github_username": "bmish",
             "location": "New York City and San Francisco"
@@ -276,7 +276,7 @@
             "title": "ESLint Alumnus",
             "website": "https://kaicataldo.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/7041728",
-            "bio": "Developer | Creative\r\n",
+            "bio": null,
             "twitter_username": null,
             "github_username": "kaicataldo",
             "location": "Brooklyn, NY"
@@ -310,7 +310,7 @@
             "title": "ESLint Alumnus",
             "website": "https://ota-meshi.github.io/",
             "avatar_url": "https://avatars.githubusercontent.com/u/16508807",
-            "bio": "Member of @vuejs, @sveltejs, @stylelint, @stylus, and @intlify. ex-@eslint. Owner of cheetah-grid.\r\nJava/JavaScript/TypeScript. I use broken English",
+            "bio": "Member of @vuejs, @sveltejs, @stylelint, @stylus, and @intlify. ex-@eslint. Owner of cheetah-grid.\r\nJava/JavaScript/TypeScript. I eat broken English",
             "twitter_username": "omoteota",
             "github_username": "ota-meshi",
             "location": "Kanagawa, Japan"
@@ -396,6 +396,17 @@
             "twitter_username": null,
             "github_username": "Tanujkanti4441",
             "location": "India"
+        },
+        {
+            "username": "lumirlumir",
+            "name": "루밀LuMir",
+            "title": "ESLint Committer",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119669540",
+            "bio": "PLAY KEYBOARD, STRIKE A CODE",
+            "twitter_username": null,
+            "github_username": "lumirlumir",
+            "location": "Pangyo, Korea"
         }
     ],
     "website": [
@@ -412,12 +423,12 @@
         },
         {
             "username": "harish-sethuraman",
-            "name": "Strek",
+            "name": "Harish",
             "title": "ESLint Website Team",
-            "website": "https://strek.in",
+            "website": "",
             "avatar_url": "https://avatars.githubusercontent.com/u/32865581",
             "bio": "I try to code",
-            "twitter_username": "harishkumar_s_s",
+            "twitter_username": null,
             "github_username": "harish-sethuraman",
             "location": "Bengaluru"
         },

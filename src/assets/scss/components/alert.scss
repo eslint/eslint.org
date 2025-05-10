@@ -12,11 +12,6 @@
 	position: relative;
 	font-family: var(--text-font);
 	font-weight: 800;
-
-	@include firefox-only {
-		font-weight: 500;
-	}
-
 	letter-spacing: 0.02em;
 	display: grid;
 	gap: 0 2rem;
@@ -26,6 +21,10 @@
 	font-size: 0.875rem;
 	border: 1px solid currentColor;
 	border-radius: var(--border-radius);
+
+	@include firefox-only {
+		font-weight: 500;
+	}
 
 	&.alert--error {
 		background-color: var(--color-rose-25);

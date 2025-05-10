@@ -39,7 +39,7 @@
         "title": "ESLint Alumnus",
         "website": "https://kaicataldo.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/7041728",
-        "bio": "Developer | Creative\r\n",
+        "bio": null,
         "twitter_username": null,
         "github_username": "kaicataldo",
         "location": "Brooklyn, NY"
@@ -212,5 +212,16 @@
         "github_username": "JoshuaKGoldberg",
         "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
         "location": "Wakefield, MA, USA"
+    },
+    "softius": {
+        "username": "softius",
+        "name": "Iacovos Constantinou",
+        "title": "Guest Author",
+        "website": "https://softius.net",
+        "avatar_url": "https://avatars.githubusercontent.com/u/586121",
+        "bio": null,
+        "twitter_username": "iacons",
+        "github_username": "softius",
+        "location": "Nicosia, Cyprus"
     }
 }
