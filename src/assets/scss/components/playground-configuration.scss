@@ -246,32 +246,6 @@
 	margin-top: 1rem;
 }
 
-.report-issue-btn {
-	display: inline-block;
-	background-color: var(--color-neutral-100);
-	border: 1px solid var(--border-color);
-	color: var(--body-text-color);
-	padding: 0.5rem 1rem;
-	border-radius: var(--border-radius);
-	font-size: 0.875rem;
-	cursor: pointer;
-	transition: all 0.2s ease;
-
-	&:hover {
-		background-color: var(--color-neutral-200);
-		color: var(--link-color);
-	}
-
-	[data-theme="dark"] & {
-		background-color: var(--color-neutral-700);
-		color: var(--color-neutral-100);
-
-		&:hover {
-			background-color: var(--color-neutral-600);
-		}
-	}
-}
-
 .playground__config-options__section--rules {
 	font-size: 0.875rem;
 }

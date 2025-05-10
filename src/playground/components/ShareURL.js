@@ -204,7 +204,7 @@ export default function ShareURL({ url, errors, config }) {
 					</div>
 					<div className="report-issue-wrapper">
 						<button
-							className="c-btn report-issue-btn"
+							className="c-btn c-btn--secondary"
 							onClick={handleReportIssue}
 						>
 							Report an issue
