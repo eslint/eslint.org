@@ -88,6 +88,7 @@ export default function ShareURL({ url, errors, config }) {
 			template: "bug-report.yml",
 			"repro-url": currentUrl,
 			environment: "ESLint Playground",
+			title: `Bug: [<rule name here>] <short description of the issue>`,
 		};
 
 		if (errorOutput) {
