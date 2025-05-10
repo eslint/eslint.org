@@ -1,14 +1,14 @@
 {
     "totals": {
-        "annualDonations": 207637.93999824,
-        "monthlyDonations": 17303.16166652,
-        "sponsorCount": 164
+        "annualDonations": 212284.68255372002,
+        "monthlyDonations": 17690.390212810005,
+        "sponsorCount": 167
     },
     "diamond": [
         {
             "name": "AG Grid",
             "url": "https://www.ag-grid.com/",
-            "image": "https://images.opencollective.com/ag-grid/2c8d545/logo.png",
+            "image": "https://images.opencollective.com/ag-grid/bec0580/logo.png",
             "monthlyDonation": 5000,
             "totalDonations": 10000,
             "source": "opencollective",
@@ -187,6 +187,24 @@
     ],
     "backers": [
         {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 167.73566339,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714169.30954801167.73566339",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 152.22369333,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766161.76391376152.22369333",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Vasilii Kovalev",
             "url": null,
             "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
@@ -202,6 +220,15 @@
             "monthlyDonation": 140,
             "totalDonations": 4580,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 67.26918957,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.2284701967.26918957",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
