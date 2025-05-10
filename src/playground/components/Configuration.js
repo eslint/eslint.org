@@ -362,17 +362,26 @@ export default function Configuration({
 										: sourceTypeOptions
 								}
 								onChange={selected => {
-									if (options.languageOptions.parser) {
-										delete options.languageOptions
-											.sourceType;
-										options.languageOptions.parserOptions.sourceType =
+									const newOptions = {
+										...options,
+										languageOptions: {
+											...options.languageOptions,
+											parserOptions: {
+												...options.languageOptions
+													.parserOptions,
+											},
+										},
+									};
+
+									if (newOptions.languageOptions.parser) {
+										newOptions.languageOptions.parserOptions.sourceType =
 											selected.value;
 									} else {
 										if (selected.value === "default") {
-											delete options.languageOptions
+											delete newOptions.languageOptions
 												.sourceType;
 										} else {
-											options.languageOptions.sourceType =
+											newOptions.languageOptions.sourceType =
 												selected.value;
 										}
 									}
@@ -447,21 +456,36 @@ export default function Configuration({
 								)}
 								options={ESLintParserOptions}
 								onChange={selected => {
+									const newOptions = {
+										...options,
+										languageOptions: {
+											...options.languageOptions,
+											parserOptions: {
+												...options.languageOptions
+													.parserOptions,
+												ecmaFeatures: {},
+											},
+										},
+									};
+
 									if (selected.value === "default") {
-										delete options.languageOptions.parser;
-										delete options.languageOptions
+										delete newOptions.languageOptions
+											.parser;
+										delete newOptions.languageOptions
 											.parserOptions.sourceType;
-										options.languageOptions.parserOptions.ecmaFeatures =
+										newOptions.languageOptions.parserOptions.ecmaFeatures =
 											{};
 									} else {
-										options.languageOptions.parser =
+										newOptions.languageOptions.parser =
 											selected.value;
-										options.languageOptions.parserOptions.sourceType =
+										delete newOptions.languageOptions
+											.sourceType;
+										newOptions.languageOptions.parserOptions.sourceType =
 											"module";
-										options.languageOptions.parserOptions.ecmaFeatures.jsx = true;
+										newOptions.languageOptions.parserOptions.ecmaFeatures.jsx = true;
 									}
 
-									onUpdate(Object.assign({}, options));
+									onUpdate(newOptions);
 								}}
 							/>
 						</label>
