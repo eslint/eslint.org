@@ -19,7 +19,9 @@ const buildGitHubIssueDescription = (code, config, errorOutput) => {
 	}
 
 	if (config) {
-		parts.push(`### ESLint Configuration\n${formatCodeBlock(config)}\n`);
+		parts.push(
+			`<details> \n <summary> ESLint Configuration </summary> \n\n${formatCodeBlock(config)}\n </details>\n`,
+		);
 	}
 
 	if (errorOutput) {
