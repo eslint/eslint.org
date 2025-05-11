@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 212284.68255372002,
-        "monthlyDonations": 17690.390212810005,
-        "sponsorCount": 167
+        "annualDonations": 212350.44196476002,
+        "monthlyDonations": 17695.870163730004,
+        "sponsorCount": 170
     },
     "diamond": [
         {
@@ -1124,6 +1124,14 @@
             "tier": "backer"
         },
         {
+            "name": "Austin W",
+            "image": "https://avatars.githubusercontent.com/u/54342928",
+            "url": "https://austinwdigital.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Standard Resume Sponsors",
             "image": "https://avatars.githubusercontent.com/u/65968828",
             "url": "https://standardresume.co/tech",
@@ -1400,6 +1408,24 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 0.47958127,
+            "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.47958127",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Matias Ceau",
+            "url": "https://matias-ceau.link",
+            "image": "https://github.com/matias-ceau.png",
+            "monthlyDonation": 0.00036965,
+            "totalDonations": "00.000357530.000370080.00036965",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
