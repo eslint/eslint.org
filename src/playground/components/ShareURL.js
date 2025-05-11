@@ -3,6 +3,8 @@ import {
 	GITHUB_ISSUE_URL,
 	MAX_URL_LENGTH,
 	CLIPBOARD_FALLBACK_MESSAGE,
+	LINT_OUTPUT_FALLBACK_MESSAGE,
+	REPRO_URL_FALLBACK_MESSAGE,
 } from "../utils/constants";
 
 // Helper function for code template formatting
@@ -20,7 +22,7 @@ const buildGitHubIssueDescription = (code, config, errorOutput) => {
 
 	if (config) {
 		parts.push(
-			`<details> \n <summary> ESLint Configuration </summary> \n\n${formatCodeBlock(config)}\n </details>\n`,
+			`### ESLint Configuration \n<details> \n <summary> Tap to see full config </summary> \n\n${formatCodeBlock(config)}\n </details>\n`,
 		);
 	}
 
@@ -76,7 +78,7 @@ export default function ShareURL({ url, errors, config }) {
 		const errorOutput = formatErrors(errors);
 
 		// Build description with available data
-		const description = buildGitHubIssueDescription(
+		let description = buildGitHubIssueDescription(
 			code,
 			config,
 			errorOutput,
@@ -111,6 +113,8 @@ export default function ShareURL({ url, errors, config }) {
 
 		// Handle large content with clipboard fallback
 		if (reportUrl.search.length > MAX_URL_LENGTH) {
+			description += `### Link to Minimal Reproducible Example\n[Repro URL](${currentUrl})`;
+
 			reportUrl.searchParams.set(
 				"description",
 				CLIPBOARD_FALLBACK_MESSAGE,
@@ -119,6 +123,11 @@ export default function ShareURL({ url, errors, config }) {
 			if (description) {
 				navigator?.clipboard.writeText(description);
 			}
+			reportUrl.searchParams.set(
+				"lint-output",
+				LINT_OUTPUT_FALLBACK_MESSAGE,
+			);
+			reportUrl.searchParams.set("repro-url", REPRO_URL_FALLBACK_MESSAGE);
 		}
 
 		window.open(reportUrl, "_blank");
