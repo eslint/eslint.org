@@ -27,9 +27,10 @@ npm install -D @html-eslint/eslint-plugin
 Then update your configuration file:
 
 ```js
+import { defineConfig } from "eslint/config";
 import html from "@html-eslint/eslint-plugin";
 
-export default [
+export default defineConfig([
     // lint html files
     {
         files: ["**/*.html"],
@@ -41,7 +42,7 @@ export default [
             "html/no-duplicate-class": "error",
         }
     }
-]
+]);
 ```
 
 The plugin includes a growing list of [rules](https://html-eslint.org/docs/rules) covering best practices, code style, search engine optimization (SEO), and accessibility. Have an idea for a rule? [Open an issue](https://github.com/yeonjuan/html-eslint/issues).
