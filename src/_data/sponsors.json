@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 212350.44196476002,
-        "monthlyDonations": 17695.870163730004,
-        "sponsorCount": 170
+        "annualDonations": 213556.04932547998,
+        "monthlyDonations": 17796.337443790006,
+        "sponsorCount": 173
     },
     "diamond": [
         {
@@ -232,6 +232,15 @@
             "tier": "backer"
         },
         {
+            "name": "juju",
+            "url": null,
+            "image": "https://github.com/juju.png",
+            "monthlyDonation": 56.03630215,
+            "totalDonations": "055.8400281056.03630215",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Torutek",
             "url": "https://torutek.com",
             "image": "https://images.opencollective.com/torutek/logo.png",
@@ -264,6 +273,15 @@
             "monthlyDonation": 35,
             "totalDonations": 1300,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "charmed-kubernetes",
+            "url": null,
+            "image": "https://github.com/charmed-kubernetes.png",
+            "monthlyDonation": 31.33606006,
+            "totalDonations": "031.1306793531.33606006",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -315,6 +333,15 @@
             "monthlyDonation": 20,
             "totalDonations": 775,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 13.09491785,
+            "totalDonations": "013.1523181713.09491785",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -638,7 +665,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 75,
+            "totalDonations": 80,
             "source": "opencollective",
             "tier": "backer"
         },
