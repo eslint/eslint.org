@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213559.19121408003,
-        "monthlyDonations": 17796.599267840007,
-        "sponsorCount": 183
+        "annualDonations": 213619.19121408003,
+        "monthlyDonations": 17801.599267840007,
+        "sponsorCount": 184
     },
     "diamond": [
         {
@@ -540,6 +540,15 @@
             "image": "https://images.opencollective.com/crawljobs/ab4ce61/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 6,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Time Card Calculator",
+            "url": "https://www.timecardcalculator.me/",
+            "image": "https://images.opencollective.com/time-card-calculator/3f29fd8/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
