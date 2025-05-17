@@ -119,6 +119,7 @@ export default function Configuration({
 	validationError,
 	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
+	typeScriptESLintParser,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -126,6 +127,12 @@ export default function Configuration({
 
 	const sourceTypeOptions = [
 		defaultOption,
+		...SOURCE_TYPES.map(sourceType => ({
+			value: sourceType,
+			label: sourceType,
+		})),
+	];
+	const sourceTypeOptionsForTypeScriptParser = [
 		...SOURCE_TYPES.map(sourceType => ({
 			value: sourceType,
 			label: sourceType,
@@ -146,6 +153,10 @@ export default function Configuration({
 		value: configFormat,
 		label: configFormat,
 	}));
+	const ESLintParserOptions = [
+		{ value: "default", label: "Espree (default)" },
+		{ value: typeScriptESLintParser, label: "@typescript-eslint/parser" },
+	];
 
 	// filter rules which are already added to the configuration
 	const ruleNamesOptions = ruleNames
@@ -333,27 +344,51 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								value={sourceTypeOptions.filter(
-									sourceTypeOption =>
-										sourceTypeOption.value ===
-										(options.languageOptions?.sourceType ||
-											"default"),
-								)}
-								options={sourceTypeOptions}
+								value={
+									options.languageOptions.parser
+										? sourceTypeOptionsForTypeScriptParser.filter(
+												sourceTypeOption =>
+													sourceTypeOption.value ===
+													options.languageOptions
+														.parserOptions
+														.sourceType,
+											)
+										: sourceTypeOptions.filter(
+												sourceTypeOption =>
+													sourceTypeOption.value ===
+													(options.languageOptions
+														?.sourceType ||
+														"default"),
+											)
+								}
+								options={
+									options.languageOptions.parser
+										? sourceTypeOptionsForTypeScriptParser
+										: sourceTypeOptions
+								}
 								onChange={selected => {
 									const newOptions = {
 										...options,
 										languageOptions: {
 											...options.languageOptions,
+											parserOptions: {
+												...options.languageOptions
+													.parserOptions,
+											},
 										},
 									};
 
-									if (selected.value === "default") {
-										delete newOptions.languageOptions
-											.sourceType;
-									} else {
-										newOptions.languageOptions.sourceType =
+									if (newOptions.languageOptions.parser) {
+										newOptions.languageOptions.parserOptions.sourceType =
 											selected.value;
+									} else {
+										if (selected.value === "default") {
+											delete newOptions.languageOptions
+												.sourceType;
+										} else {
+											newOptions.languageOptions.sourceType =
+												selected.value;
+										}
 									}
 
 									onUpdate(newOptions);
@@ -381,7 +416,11 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								options={ECMAFeaturesOptions}
+								options={
+									options.languageOptions.parser
+										? ECMAFeaturesOptions.slice(0, -1)
+										: ECMAFeaturesOptions
+								}
 								onChange={selectedOptions => {
 									const newOptions = {
 										...options,
@@ -404,6 +443,57 @@ export default function Configuration({
 								}}
 							/>
 						</div>
+						<label
+							className="c-field"
+							style={{ marginTop: "1rem", marginBottom: "0" }}
+							htmlFor="parser"
+						>
+							<span className="label__text">Parser</span>
+							<Select
+								isSearchable={false}
+								styles={customStyles}
+								theme={theme => customTheme(theme)}
+								value={ESLintParserOptions.filter(
+									eslintParser =>
+										eslintParser.value ===
+										(options.languageOptions?.parser ||
+											"default"),
+								)}
+								options={ESLintParserOptions}
+								onChange={selected => {
+									const newOptions = {
+										...options,
+										languageOptions: {
+											...options.languageOptions,
+											parserOptions: {
+												...options.languageOptions
+													.parserOptions,
+												ecmaFeatures: {},
+											},
+										},
+									};
+
+									if (selected.value === "default") {
+										delete newOptions.languageOptions
+											.parser;
+										delete newOptions.languageOptions
+											.parserOptions.sourceType;
+										newOptions.languageOptions.parserOptions.ecmaFeatures =
+											{};
+									} else {
+										newOptions.languageOptions.parser =
+											selected.value;
+										delete newOptions.languageOptions
+											.sourceType;
+										newOptions.languageOptions.parserOptions.sourceType =
+											"module";
+										newOptions.languageOptions.parserOptions.ecmaFeatures.jsx = true;
+									}
+
+									onUpdate(newOptions);
+								}}
+							/>
+						</label>
 					</div>
 				)}
 			</div>
