@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AE_9j",
+        "name": "0xPlayerOne",
+        "image": "https://avatars.githubusercontent.com/u/83057795",
+        "url": "https://niftyleague.com",
+        "amount": 1,
+        "date": "2025-05-09T16:23:26Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AE_Zs",
         "name": "Connor Tumbleson",
         "image": "https://avatars.githubusercontent.com/u/611784",
@@ -42,33 +51,6 @@
         "url": "https://realsnywy.github.io/",
         "amount": 1,
         "date": "2025-04-22T10:52:47Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE9Tp",
-        "name": "Raul Silveira",
-        "image": "https://avatars.githubusercontent.com/u/130875965",
-        "url": "https://github.com/raul4nt",
-        "amount": 1,
-        "date": "2025-04-15T19:53:31Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE822",
-        "name": "Rafael Vaz",
-        "image": "https://avatars.githubusercontent.com/u/71301073",
-        "url": "https://github.com/rafael-vaz",
-        "amount": 5,
-        "date": "2025-04-11T13:48:32Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE8xa",
-        "name": "Rafael Vaz",
-        "image": "https://avatars.githubusercontent.com/u/71301073",
-        "url": "https://github.com/rafael-vaz",
-        "amount": 5,
-        "date": "2025-04-10T18:47:56Z",
         "source": "github"
     },
     {
