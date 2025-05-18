@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213619.19121408003,
-        "monthlyDonations": 17801.599267840007,
-        "sponsorCount": 184
+        "annualDonations": 213690.80806872004,
+        "monthlyDonations": 17807.567339060006,
+        "sponsorCount": 187
     },
     "diamond": [
         {
@@ -540,6 +540,15 @@
             "image": "https://images.opencollective.com/crawljobs/ab4ce61/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 6,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "denis",
+            "url": "https://github.com/Jlio10",
+            "image": "https://images.opencollective.com/denis36/3d6b331/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1447,11 +1456,29 @@
             "tier": "backer"
         },
         {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.60986869,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.602028720.60986869",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Konstantin Vinogradov",
             "url": "https://kvinogradov.com/",
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.47958127,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.47958127",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.35820253,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.35820253",
             "source": "thanks.dev",
             "tier": "backer"
         },
