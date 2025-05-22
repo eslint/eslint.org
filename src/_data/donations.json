@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFBOP",
+        "name": "Mateus Volkart",
+        "image": "https://avatars.githubusercontent.com/u/100315327",
+        "url": "https://github.com/mateusvolkart",
+        "amount": 1,
+        "date": "2025-05-21T19:33:16Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AE_9j",
         "name": "0xPlayerOne",
         "image": "https://avatars.githubusercontent.com/u/83057795",
@@ -42,15 +51,6 @@
         "url": "https://linkedin.com/in/mateusrocosta",
         "amount": 1,
         "date": "2025-04-27T03:09:28Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AE-AU",
-        "name": "Gabriel \"Snywy\" Furtado",
-        "image": "https://avatars.githubusercontent.com/u/126573238",
-        "url": "https://realsnywy.github.io/",
-        "amount": 1,
-        "date": "2025-04-22T10:52:47Z",
         "source": "github"
     },
     {

@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213639.10482528005,
-        "monthlyDonations": 17803.258735440006,
-        "sponsorCount": 188
+        "annualDonations": 213913.94286456006,
+        "monthlyDonations": 17826.161905380006,
+        "sponsorCount": 191
     },
     "diamond": [
         {
@@ -345,6 +345,15 @@
             "tier": "backer"
         },
         {
+            "name": "Cash App",
+            "url": "https://cash.app",
+            "image": "https://github.com/cashapp.png",
+            "monthlyDonation": 13.06799522,
+            "totalDonations": "012.5883300213.06799522",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "odan",
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
@@ -541,6 +550,15 @@
             "monthlyDonation": 6,
             "totalDonations": 6,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 5.37902476,
+            "totalDonations": "08.426817307.033780176.496383325.655986995.37902476",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1181,6 +1199,15 @@
             "url": "https://jupli.com",
             "monthlyDonation": 5,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "block",
+            "url": null,
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 4.45614996,
+            "totalDonations": "03.406750532.577835202.289833644.452156164.45614996",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
