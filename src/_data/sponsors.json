@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213913.94286456006,
-        "monthlyDonations": 17826.161905380006,
-        "sponsorCount": 191
+        "annualDonations": 213916.47658740004,
+        "monthlyDonations": 17826.37304895001,
+        "sponsorCount": 195
     },
     "diamond": [
         {
@@ -1510,6 +1510,15 @@
             "tier": "backer"
         },
         {
+            "name": "Amuzil",
+            "url": "http://amuzil.com",
+            "image": "https://github.com/amuzil.png",
+            "monthlyDonation": 0.11868118,
+            "totalDonations": "00.104836190.121308070.120212680.120212680.119249220.117561820.11868118",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "jshttp",
             "url": "https://jshttp.github.io/",
             "image": "https://github.com/jshttp.png",
@@ -1524,6 +1533,15 @@
             "image": "https://github.com/pillarjs.png",
             "monthlyDonation": 0.06346901,
             "totalDonations": "00.089878450.079007620.069406200.070405760.065740560.065740560.066250130.063865390.06346901",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jongerenraad Zutphen",
+            "url": "https://jrzutphen.nl",
+            "image": "https://github.com/jrzutphen.png",
+            "monthlyDonation": 0.05981282,
+            "totalDonations": "00.052038360.060200120.059589040.059589040.060085200.059262750.05981282",
             "source": "thanks.dev",
             "tier": "backer"
         },
@@ -1551,6 +1569,24 @@
             "image": "https://github.com/plurals.png",
             "monthlyDonation": 0.02162976,
             "totalDonations": "00.038991720.028657820.025241780.025257120.023524640.023524640.023662280.021764800.02162976",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Robin Wong",
+            "url": "https://rwong.tech/",
+            "image": "https://github.com/robinwongm.png",
+            "monthlyDonation": 0.0173198,
+            "totalDonations": "00.001030800.018083190.017242150.017242150.01731980",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "robinWongM's Archived Projects",
+            "url": null,
+            "image": "https://github.com/robinwongm-archives.png",
+            "monthlyDonation": 0.01532977,
+            "totalDonations": "00.007977920.016141410.015290240.015290240.01532977",
             "source": "thanks.dev",
             "tier": "backer"
         },
