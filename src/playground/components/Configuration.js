@@ -253,13 +253,20 @@ export default function Configuration({
 				? void 0
 				: {
 						...options.languageOptions,
+						...(options?.languageOptions.parser && {
+							parser: "tsParser",
+						}),
 						parserOptions: !hasEcmaFeatures
 							? void 0
 							: options.languageOptions.parserOptions,
 					},
 	};
 
-	const configFileContent = `${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([optionsForConfigFile], null, 4)};`;
+	const configFileContent =
+		`${options.languageOptions.parser && 'import tsParser from "@typescript-eslint/parser;"'}\n${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([optionsForConfigFile], null, 4)};`.replace(
+			/"parser": "tsParser"/gu,
+			'"parser": tsParser',
+		);
 
 	return (
 		<div className="playground__config-options__sections">
