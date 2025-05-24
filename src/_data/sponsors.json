@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213916.47658740004,
-        "monthlyDonations": 17826.37304895001,
-        "sponsorCount": 195
+        "annualDonations": 213918.58788048004,
+        "monthlyDonations": 17826.54899004001,
+        "sponsorCount": 196
     },
     "diamond": [
         {
@@ -358,7 +358,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 230,
+            "totalDonations": 240,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1506,6 +1506,15 @@
             "image": "https://github.com/josdejong.png",
             "monthlyDonation": 0.35820253,
             "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.35820253",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Keith Bauson",
+            "url": null,
+            "image": "https://github.com/kwbauson.png",
+            "monthlyDonation": 0.17594109,
+            "totalDonations": "00.635652471.322767680.832633090.603044300.563307010.540283450.290172470.290045850.288562100.253337330.264087100.262133070.025115780.047545740.046925570.046790740.177256920.177256920.176157620.173488960.17594109",
             "source": "thanks.dev",
             "tier": "backer"
         },
