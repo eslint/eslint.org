@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213918.58788048004,
-        "monthlyDonations": 17826.54899004001,
-        "sponsorCount": 196
+        "annualDonations": 213918.68911572004,
+        "monthlyDonations": 17826.55742631001,
+        "sponsorCount": 197
     },
     "diamond": [
         {
@@ -1614,6 +1614,15 @@
             "image": "https://github.com/blakeembrey.png",
             "monthlyDonation": 0.00866478,
             "totalDonations": "00.005415800.000533090.001606820.001553130.001647770.001866400.001845610.001738910.003049130.002179140.014938270.011472110.010012840.010008130.009408140.009408140.009475110.008693480.00866478",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Nicco Kunzmann",
+            "url": "https://niccokunzmann.github.io",
+            "image": "https://github.com/niccokunzmann.png",
+            "monthlyDonation": 0.00843627,
+            "totalDonations": "00.001362730.001391190.000000310.000000310.000000310.011984230.011965540.010559730.009870050.009870050.009040090.008456740.00843627",
             "source": "thanks.dev",
             "tier": "backer"
         },
