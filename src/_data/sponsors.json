@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 213918.68911572004,
-        "monthlyDonations": 17826.55742631001,
+        "annualDonations": 213911.57298984003,
+        "monthlyDonations": 17825.96441582001,
         "sponsorCount": 197
     },
     "diamond": [
@@ -562,6 +562,15 @@
             "tier": "backer"
         },
         {
+            "name": "Playfortuneforfun.com",
+            "url": "https://playfortuneforfun.com/",
+            "image": "https://images.opencollective.com/playfortuneforfun-com/323be23/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "denis",
             "url": "https://github.com/Jlio10",
             "image": "https://images.opencollective.com/denis36/3d6b331/avatar.png",
@@ -585,15 +594,6 @@
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 145,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Blox Fruits Values",
-            "url": "https://www.bloxfruitsvalues.io",
-            "image": "https://images.opencollective.com/blox-fruits-values/4e2c21a/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1442,14 +1442,6 @@
             "tier": "backer"
         },
         {
-            "name": "Vezel",
-            "image": "https://avatars.githubusercontent.com/u/87844133",
-            "url": "https://vezel.dev",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Takhir Kudusov",
             "image": "https://avatars.githubusercontent.com/u/98131221",
             "url": "https://github.com/TakhirKudusov",
@@ -1497,6 +1489,15 @@
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.47958127,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.47958127",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "CyleWaitForIt",
+            "url": null,
+            "image": "https://github.com/cylewaitforit.png",
+            "monthlyDonation": 0.40698951,
+            "totalDonations": "00.049901880.577580860.827197610.40698951",
             "source": "thanks.dev",
             "tier": "backer"
         },
