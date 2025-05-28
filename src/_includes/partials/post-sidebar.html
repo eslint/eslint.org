@@ -11,7 +11,7 @@
     </div>
 
     {% set last_updated = page.inputPath | lastUpdated %}
-    {% set last_updated = page.date if last_updated and last_updated < page.date else last_updated %}
+    {% set last_updated = page.date if not last_updated or last_updated < page.date else last_updated %}
     {% set last_updated = last_updated | readableDate %}
     <div class="post__sidebar-module">
         <h2 class="post__sidebar-module__title">Last Updated On</h2>    
