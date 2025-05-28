@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213911.57298984003,
-        "monthlyDonations": 17825.96441582001,
-        "sponsorCount": 197
+        "annualDonations": 213915.98097816002,
+        "monthlyDonations": 17826.33174818001,
+        "sponsorCount": 198
     },
     "diamond": [
         {
@@ -1498,6 +1498,15 @@
             "image": "https://github.com/cylewaitforit.png",
             "monthlyDonation": 0.40698951,
             "totalDonations": "00.049901880.577580860.827197610.40698951",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.36733236,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.391978300.36733236",
             "source": "thanks.dev",
             "tier": "backer"
         },
