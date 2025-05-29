@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213915.98097816002,
-        "monthlyDonations": 17826.33174818001,
-        "sponsorCount": 198
+        "annualDonations": 213922.59847344,
+        "monthlyDonations": 17826.883206120012,
+        "sponsorCount": 200
     },
     "diamond": [
         {
@@ -1484,6 +1484,15 @@
             "tier": "backer"
         },
         {
+            "name": "Scienta",
+            "url": "https://www.scienta.nl",
+            "image": "https://github.com/scientanl.png",
+            "monthlyDonation": 0.55145794,
+            "totalDonations": "00.038842860.034193890.033182100.030406520.030375670.030949060.029162580.037892530.037574320.040268370.040065522.206205022.154429282.129015752.090163402.117845140.504358940.501490940.495571880.540139180.55145794",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Konstantin Vinogradov",
             "url": "https://kvinogradov.com/",
             "image": "https://github.com/vinogradovkonst.png",
@@ -1679,6 +1688,15 @@
             "monthlyDonation": 0.00036965,
             "totalDonations": "00.000357530.000370080.00036965",
             "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "MyInstaFollow",
+            "url": "https://myinstafollow.com/",
+            "image": "https://images.opencollective.com/myinstafollow-home/3586b74/logo.png",
+            "monthlyDonation": 0,
+            "totalDonations": 1,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
