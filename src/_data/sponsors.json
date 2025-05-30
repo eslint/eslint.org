@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 213922.59847344,
-        "monthlyDonations": 17826.883206120012,
-        "sponsorCount": 200
+        "annualDonations": 213862.59847344,
+        "monthlyDonations": 17821.883206120012,
+        "sponsorCount": 198
     },
     "diamond": [
         {
@@ -559,15 +559,6 @@
             "monthlyDonation": 5.37902476,
             "totalDonations": "08.426817307.033780176.496383325.655986995.37902476",
             "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "Playfortuneforfun.com",
-            "url": "https://playfortuneforfun.com/",
-            "image": "https://images.opencollective.com/playfortuneforfun-com/323be23/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -1688,15 +1679,6 @@
             "monthlyDonation": 0.00036965,
             "totalDonations": "00.000357530.000370080.00036965",
             "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "MyInstaFollow",
-            "url": "https://myinstafollow.com/",
-            "image": "https://images.opencollective.com/myinstafollow-home/3586b74/logo.png",
-            "monthlyDonation": 0,
-            "totalDonations": 1,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
