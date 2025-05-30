@@ -369,6 +369,7 @@ const App = () => {
 						data-open={isConfigHidden ? true : showConfigMenu}
 					>
 						<Configuration
+							errors={messages}
 							initialOptions={fillOptionsDefaults(
 								getDefaultOptions(),
 							)}

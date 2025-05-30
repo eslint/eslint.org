@@ -1,16 +1,153 @@
 import React, { useState } from "react";
+import {
+	GITHUB_ISSUE_URL,
+	MAX_URL_LENGTH,
+	CLIPBOARD_FALLBACK_MESSAGE,
+	LINT_OUTPUT_FALLBACK_MESSAGE,
+	REPRO_URL_FALLBACK_MESSAGE,
+} from "../utils/constants";
 
-export default function ShareURL({ url }) {
+// Helper function for code template formatting
+const formatCodeBlock = (code, lang = "js") => `\`\`\`${lang}
+${code}
+\`\`\``;
+
+// Helper to build GitHub issue description
+const buildGitHubIssueDescription = (code, config, errorOutput) => {
+	const parts = [];
+
+	if (code) {
+		parts.push(`### Playground Code\n${formatCodeBlock(code)}\n`);
+	}
+
+	if (config) {
+		parts.push(
+			`### ESLint Configuration \n<details> \n <summary> Tap to see full config </summary> \n\n${formatCodeBlock(config)}\n </details>\n`,
+		);
+	}
+
+	if (errorOutput) {
+		parts.push(`### ESLint Output\n\`\`\`\n${errorOutput}\n\`\`\`\n`);
+	}
+
+	return parts.join("\n");
+};
+
+export default function ShareURL({ url, errors, config }) {
 	const [isDataCopied, setIsDataCopied] = useState(false);
 	const [showShareURL, setShowShareURL] = useState(false);
+
+	// Extract code from editor or URL hash
+	const getEditorCode = () => {
+		try {
+			const editorContent = document.querySelector(
+				".playground__editor .cm-content",
+			);
+			if (editorContent) {
+				const lines = editorContent.querySelectorAll(".cm-line");
+				return Array.from(lines)
+					.map(line => line.textContent)
+					.join("\n");
+			}
+
+			if (window.location.hash) {
+				const decoded = JSON.parse(atob(window.location.hash.slice(1)));
+				return decoded?.text || "";
+			}
+		} catch {
+			// Silent catch
+		}
+		return "";
+	};
+
+	// Format errors for output
+	const formatErrors = errorList =>
+		errorList?.length
+			? errorList
+					.map(
+						({ line, column, message, ruleId }) =>
+							`${line}:${column} ${message} (${ruleId})`,
+					)
+					.join("\n")
+			: "";
+
+	const handleReportIssue = () => {
+		const reportUrl = new URL(GITHUB_ISSUE_URL);
+		const currentUrl = url || window.location.href;
+		const code = getEditorCode();
+		const errorOutput = formatErrors(errors);
+
+		// Build description with available data
+		let description = buildGitHubIssueDescription(
+			code,
+			config,
+			errorOutput,
+		);
+
+		// Set URL parameters
+		const params = {
+			labels: "bug,repro:yes",
+			template: "bug-report.yml",
+			"repro-url": currentUrl,
+			environment: "ESLint Playground",
+			title: `Bug: [<rule name here>] <short description of the issue>`,
+		};
+
+		if (errorOutput) {
+			params["lint-output"] = errorOutput;
+		}
+
+		if (code) {
+			params["what-did-you-do"] =
+				`I was using the ESLint Playground with this code:\n\n${formatCodeBlock(code)}`;
+		}
+
+		if (description) {
+			params.description = description;
+		}
+
+		// Add parameters to URL
+		Object.entries(params).forEach(([key, value]) => {
+			reportUrl.searchParams.append(key, value);
+		});
+
+		// Handle large content with clipboard fallback
+		if (reportUrl.search.length > MAX_URL_LENGTH) {
+			description += `### Link to Minimal Reproducible Example\n[Repro URL](${currentUrl})`;
+
+			reportUrl.searchParams.set(
+				"description",
+				CLIPBOARD_FALLBACK_MESSAGE,
+			);
+
+			if (description) {
+				navigator?.clipboard.writeText(description);
+			}
+			reportUrl.searchParams.set(
+				"lint-output",
+				LINT_OUTPUT_FALLBACK_MESSAGE,
+			);
+			reportUrl.searchParams.set("repro-url", REPRO_URL_FALLBACK_MESSAGE);
+		}
+
+		window.open(reportUrl, "_blank");
+	};
+
+	const handleCopyUrl = () => {
+		const copyText = document.getElementById("code-snippet");
+		copyText.select();
+		navigator.clipboard.writeText(copyText.value);
+		setIsDataCopied(true);
+		setTimeout(() => setIsDataCopied(false), 4000);
+	};
 
 	return (
 		<div>
 			<button
 				className="playground-toggle c-btn c-btn--ghost"
-				onClick={() => setShowShareURL(currentValue => !currentValue)}
+				onClick={() => setShowShareURL(prev => !prev)}
 			>
-				<h2 data-config-section-title>Share URL</h2>
+				<h2 data-config-section-title>Share and Report</h2>
 				<svg
 					height="20"
 					width="20"
@@ -41,19 +178,7 @@ export default function ShareURL({ url }) {
 								className="share-url__btn"
 								id="copyBtn"
 								aria-labelledby="copy-button-label"
-								onClick={() => {
-									const copyText =
-										document.getElementById("code-snippet");
-
-									copyText.select();
-									navigator.clipboard.writeText(
-										copyText.value,
-									);
-									setIsDataCopied(true);
-									setTimeout(() => {
-										setIsDataCopied(false);
-									}, 4000);
-								}}
+								onClick={handleCopyUrl}
 							>
 								<span hidden id="copy-button-label">
 									Copy URL to clipboard
@@ -88,6 +213,14 @@ export default function ShareURL({ url }) {
 								Copied to clipboard.
 							</span>
 						)}
+					</div>
+					<div className="report-issue-wrapper">
+						<button
+							className="c-btn c-btn--secondary"
+							onClick={handleReportIssue}
+						>
+							Report an issue
+						</button>
 					</div>
 				</div>
 			)}

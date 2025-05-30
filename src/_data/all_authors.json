@@ -223,5 +223,16 @@
         "twitter_username": "iacons",
         "github_username": "softius",
         "location": "Nicosia, Cyprus"
+    },
+    "yeonjuan": {
+        "username": "yeonjuan",
+        "name": "YeonJuan",
+        "title": "ESLint Alumnus",
+        "website": "",
+        "avatar_url": "https://avatars.githubusercontent.com/u/41323220",
+        "bio": "Developer",
+        "twitter_username": null,
+        "github_username": "yeonjuan",
+        "location": "South Korea"
     }
 }

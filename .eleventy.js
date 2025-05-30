@@ -23,6 +23,7 @@ const fs = require("node:fs");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const preWrapperPlugin = require("./src/_11ty/plugins/pre-wrapper.js");
+const blogDates = require("./src/_data/blog-dates.json");
 
 //-----------------------------------------------------------------------------
 // Eleventy Config
@@ -159,6 +160,20 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter("concat", (value1, value2) =>
 		value1.concat(value2),
 	);
+
+	eleventyConfig.addFilter("lastUpdated", filepath => {
+		const relativePath = path.relative("src/content/blog", filepath);
+		const isoDate = blogDates[relativePath];
+		const cutoffDate = new Date("2022-08-01");
+
+		if (!isoDate) {
+			return null;
+		}
+
+		const publishDate = new Date(relativePath.slice(0, 10));
+		const date = new Date(isoDate);
+		return publishDate > cutoffDate ? date : null;
+	});
 
 	/**
 	 * ***************************************************************************************
