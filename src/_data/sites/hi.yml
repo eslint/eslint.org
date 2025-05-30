@@ -331,33 +331,31 @@ sponsors_page:
     diamond:
       title: डायमंड प्रायोजक
       description: >
-        $5,000 USD के मासिक दान के साथ डायमंड प्रायोजक बनें (60-100 घंटे के रखरखाव और विकास की
-        सुविधा प्रदान करते हुए)। आपका Open Collective या GitHub अवतार चित्र हमारे GitHub के
+        $5,000 USD के मासिक दान के साथ डायमंड प्रायोजक बनें। आपका Open Collective या GitHub अवतार चित्र हमारे GitHub के
         README और eslint.org की होम पेज पर प्रदर्शित किया जाएगा। हम अपने ट्विटर खाते
         (38,000 से अधिक अनुयायियों) से भी धन्यवाद ट्वीट करेंगे।
     platinum:
       title: Platinum प्रायोजक
       description: >
-        मासिक $2,000 USD के दान के साथ प्लेटिनम प्रायोजक बनें (40 घंटे के रखरखाव और विकास की
-        सुविधा प्रदान करते हुए)। आपका Open Collective या GitHub अवतार चित्र हमारे GitHub के
+        मासिक $2,000 USD के दान के साथ प्लेटिनम प्रायोजक बनें। आपका Open Collective या GitHub अवतार चित्र हमारे GitHub के
         README और eslint.org की होम पेज पर प्रदर्शित किया जाएगा। हम अपने ट्विटर खाते
         (38,000 से अधिक अनुयायियों) से भी धन्यवाद ट्वीट करेंगे।
     gold:
       title: Gold प्रायोजक
       description: >
-        $1000 USD के मासिक दान के साथ Gold प्रायोजक बनें (20 घंटे के रखरखाव और विकास का समर्थन)।
+        $1000 USD के मासिक दान के साथ Gold प्रायोजक बनें।
         Gold प्रायोजक के logo को ESLint README और eslint.org के शीर्ष पृष्ठ पर पाया जा सकता है।
         हम 38,000 से अधिक फॉलोअर्स वाले ESLint के Twitter अकाउंट से भी आपको धन्यवाद देते हैं।
     silver:
       title: Silver प्रायोजक
       description: >
-        $500 USD के मासिक दान के साथ Silver प्रायोजक बनें (10 घंटे के रखरखाव और विकास का समर्थन)।
+        $500 USD के मासिक दान के साथ Silver प्रायोजक बनें।
         Gold प्रायोजक के logo को ESLint README और eslint.org के शीर्ष पृष्ठ पर पाया जा सकता है।
     bronze:
       title: Bronze प्रायोजक
       description: >
-        $200 USD के मासिक दान के साथ Silver प्रायोजक बनें (4 घंटे के रखरखाव और विकास का समर्थन)।
-        Gold प्रायोजक के logo को ESLint README और eslint.org के शीर्ष पृष्ठ पर पाया जा सकता है।
+        $200 USD के मासिक दान के साथ Bronze प्रायोजक बनें।
+        Bronze प्रायोजक के logo को ESLint README और eslint.org के शीर्ष पृष्ठ पर पाया जा सकता है।
     technology:
       title: Technology प्रायोजक
       description: >
