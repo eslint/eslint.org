@@ -154,7 +154,10 @@ export default function Configuration({
 	}));
 	const ESLintParserOptions = [
 		{ value: "default", label: "Espree (default)" },
-		{ value: "@typescript-eslint/parser", label: "@typescript-eslint/parser" },
+		{
+			value: "@typescript-eslint/parser",
+			label: "@typescript-eslint/parser",
+		},
 	];
 
 	// filter rules which are already added to the configuration

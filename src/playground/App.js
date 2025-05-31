@@ -170,7 +170,8 @@ const App = () => {
 		...options,
 		languageOptions: {
 			...options.languageOptions,
-			...(options?.languageOptions.parser === "@typescript-eslint/parser" && {
+			...(options?.languageOptions.parser ===
+				"@typescript-eslint/parser" && {
 				parser: typeScriptESLintParser,
 			}),
 			parserOptions: {
