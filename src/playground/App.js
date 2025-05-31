@@ -170,7 +170,7 @@ const App = () => {
 		...options,
 		languageOptions: {
 			...options.languageOptions,
-			...(options?.languageOptions.parser && {
+			...(options?.languageOptions.parser === "@typescript-eslint/parser" && {
 				parser: typeScriptESLintParser,
 			}),
 			parserOptions: {
@@ -383,7 +383,6 @@ const App = () => {
 							setRulesWithInvalidConfigs={
 								setRulesWithInvalidConfigs
 							}
-							typeScriptESLintParser
 						/>
 						<Footer />
 					</div>

@@ -119,7 +119,6 @@ export default function Configuration({
 	validationError,
 	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
-	typeScriptESLintParser,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -155,7 +154,7 @@ export default function Configuration({
 	}));
 	const ESLintParserOptions = [
 		{ value: "default", label: "Espree (default)" },
-		{ value: typeScriptESLintParser, label: "@typescript-eslint/parser" },
+		{ value: "@typescript-eslint/parser", label: "@typescript-eslint/parser" },
 	];
 
 	// filter rules which are already added to the configuration
@@ -254,9 +253,6 @@ export default function Configuration({
 				? void 0
 				: {
 						...options.languageOptions,
-						...(options?.languageOptions.parser && {
-							parser: "tsParser",
-						}),
 						parserOptions: !hasEcmaFeatures
 							? void 0
 							: options.languageOptions.parserOptions,
@@ -265,7 +261,7 @@ export default function Configuration({
 
 	const configFileContent =
 		`${options.languageOptions.parser && 'import tsParser from "@typescript-eslint/parser;"'}\n${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([optionsForConfigFile], null, 4)};`.replace(
-			/"parser": "tsParser"/gu,
+			'"parser": "@typescript-eslint/parser"',
 			'"parser": tsParser',
 		);
 
