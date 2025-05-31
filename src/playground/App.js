@@ -48,6 +48,10 @@ const fillOptionsDefaults = options => ({
 	...options,
 	languageOptions: {
 		...options.languageOptions,
+		...(options?.languageOptions?.parser ===
+			"@typescript-eslint/parser" && {
+			parser: typeScriptESLintParser,
+		}),
 		parserOptions: {
 			ecmaFeatures: {},
 			...options.languageOptions?.parserOptions,
