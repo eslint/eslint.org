@@ -376,39 +376,34 @@ sponsors_page:
     diamond:
       title: Diamant Sponsoren
       description: >
-        Werden Sie ein Diamant-Sponsor mit einer monatlichen Spende von 5.000 USD
-        (entspricht 60-100 Stunden Wartung und Entwicklung). Ihr Open Collective- oder
+        Werden Sie ein Diamant-Sponsor mit einer monatlichen Spende von 5.000 USD. Ihr Open Collective- oder
         GitHub-Avatarbild wird in unseren READMEs auf GitHub und auf der Startseite
         von eslint.org angezeigt. Außerdem werden wir uns mit einem Dankeschön von
         unserem Twitter-Account (über 38.000 Follower) bedanken.
     platinum:
       title: Platin Sponsoren
       description: >
-        Werden Sie ein Platin-Sponsor mit einer monatlichen Spende von 2.000 USD
-        (entspricht 40 Stunden Wartung und Entwicklung). Ihr Open Collective- oder
+        Werden Sie ein Platin-Sponsor mit einer monatlichen Spende von 2.000 USD. Ihr Open Collective- oder
         GitHub-Avatarbild wird in unseren READMEs auf GitHub und auf der Startseite
         von eslint.org angezeigt. Außerdem werden wir uns mit einem Dankeschön von
         unserem Twitter-Account (über 38.000 Follower) bedanken.
     gold:
       title: Gold Sponsoren
       description: >
-        Mit einer monatlichen Spende von $1000 USD (die für 20 Stunden Pflege und
-        Entwicklung verwendet wird) wirst Du Gold Sponsor. Wir fügen dein Open
+        Mit einer monatlichen Spende von $1000 USD wirst Du Gold Sponsor. Wir fügen dein Open
         Collective- or GitHub-Avatarbild in unser README auf GitHub ein und
         zeigen es auf unserer Homepage auf eslint.org. Wir twittern außerdem ein
         Dankeschön von unserem Twitter-Account (der mehr als 38.000 Follower hat).
     silver:
       title: Silber Sponsoren
       description: >
-        Mit einer monatlichen Spende von $500 USD (die für 10 Stunden Pflege und
-        Entwicklung verwendet wird) wirst Du Silber Sponsor. Wir fügen dein Open
+        Mit einer monatlichen Spende von $500 USD wirst Du Silber Sponsor. Wir fügen dein Open
         Collective- or GitHub-Avatarbild in unser README auf GitHub ein und
         zeigen es auf unserer Homepage auf eslint.org.
     bronze:
       title: Bronze Sponsoren
       description: >
-        Mit einer monatlichen Spende von $200 USD (die für vier Stunden Pflege und
-        Entwicklung verwendet wird) wirst Du Bronze Sponsor. Wir fügen dein Open
+        Mit einer monatlichen Spende von $200 USD wirst Du Bronze Sponsor. Wir fügen dein Open
         Collective- or GitHub-Avatarbild in unser README auf GitHub ein und
         zeigen es auf unserer Homepage auf eslint.org.
     technology:

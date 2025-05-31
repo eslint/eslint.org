@@ -350,37 +350,32 @@ sponsors_page:
     diamond:
       title: Patrocinadores Diamante
       description: >
-        Conviértase en un patrocinador diamante con una donación mensual de $5,000 USD (proporcionando
-        60-100 horas de mantenimiento y desarrollo) y obtenga su imagen de avatar de Open Collective o GitHub
+        Conviértase en un patrocinador diamante con una donación mensual de $5,000 USD y obtenga su imagen de avatar de Open Collective o GitHub
         en nuestros READMEs en GitHub y en la página principal de eslint.org. También publicaremos un
         agradecimiento desde nuestra cuenta de Twitter (más de 38,000 seguidores).
     platinum:
       title: Patrocinadores Platino
       description: >
-        Conviértete en un patrocinador platino con una donación mensual de 2.000 USD (proporcionando 40
-        horas de mantenimiento y desarrollo). Tu imagen de avatar de Open Collective o GitHub aparecerá
+        Conviértete en un patrocinador platino con una donación mensual de 2.000 USD. Tu imagen de avatar de Open Collective o GitHub aparecerá
         en nuestros READMEs en GitHub y en la página principal de eslint.org. También publicaremos un
         agradecimiento desde nuestra cuenta de Twitter (más de 38.000 seguidores).
     gold:
       title: Patrocinadores de oro
       description: >
-        Conviértase en un patrocinador de oro con una donación mensual de $ 1000 USD (proporcionando 20
-        horas de mantenimiento y desarrollo) y obtén tu Open Collective
+        Conviértase en un patrocinador de oro con una donación mensual de $ 1000 USD y obtén tu Open Collective
         o la imagen de avatar de GitHub en nuestro LÉAME en GitHub y la página principal de
         eslint.org. También twittearemos un agradecimiento desde nuestra cuenta de Twitter.
         (más de 38.000 seguidores).
     silver:
       title: Patrocinadores de plata
       description: >
-        Conviértase en un patrocinador de plata con una donación mensual de $ 500 USD (proporcionando 10
-        horas de mantenimiento y desarrollo) y obtén tu Open Collective
+        Conviértase en un patrocinador de plata con una donación mensual de $ 500 USD y obtén tu Open Collective
         o la imagen del avatar de GitHub en nuestro LÉAME en GitHub y en la página principal
         de eslint.org.
     bronze:
       title: Patrocinadores Bronce
       description: >
-        Conviértase en patrocinador bronce con una donación mensual de $200 USD (proporcionando cuatro
-        horas de mantenimiento y desarrollo) y obtén tu Open Collective
+        Conviértase en patrocinador bronce con una donación mensual de $200 USD y obtén tu Open Collective
         o la imagen de avatar de GitHub en nuestro README en GitHub y la página principal de
         eslint.org.
     technology:
