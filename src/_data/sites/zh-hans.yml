@@ -335,30 +335,30 @@ sponsors_page:
     diamond:
       title: 钻石赞助商
       description: >
-        通过每月捐赠 5,000 美元成为钻石赞助商（提供 60-100 小时的维护和开发）。
+        通过每月捐赠 5,000 美元成为钻石赞助商。
         您的 Open Collective 或 GitHub 头像将显示在我们 GitHub 的 README 文件和
         eslint.org 的首页上。我们还会在 Twitter 账户（超过 38,000 名关注者）上发推感谢。
     platinum:
       title: 白金赞助商
       description: >
-        通过每月捐赠 2,000 美元成为白金赞助商（提供 40 小时的维护和开发）。
+        通过每月捐赠 2,000 美元成为白金赞助商。
         您的 Open Collective 或 GitHub 头像将显示在我们 GitHub 的 README 文件和
         eslint.org 的首页上。我们还会在 Twitter 账户（超过 38,000 名关注者）上发推感谢
     gold:
       title: 金牌赞助商
       description: >
-        每月捐赠 1000 美元，即可成为金牌赞助商（支持二十个小时的维护和开发）。
+        每月捐赠 1000 美元，即可成为金牌赞助商。
         你的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
         我们也会通过我们的 Twitter 账户（两万多名关注者）向你表示感谢。
     silver:
       title: 银牌赞助商
       description: >
-        每月捐赠 500 美元，即可成为银牌赞助商（支持十个小时的维护和开发）。
+        每月捐赠 500 美元，即可成为银牌赞助商。
         你的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
     bronze:
       title: 青铜赞助商
       description: >
-        每月捐赠 200 美元，即可成为青铜赞助商（支持四小时的维护和开发）。
+        每月捐赠 200 美元，即可成为青铜赞助商。
         你的 Open Collective 或 GitHub 头像会出现在我们的 GitHub README 和 eslint.org 主页。
     technology:
       title: 技术赞助商

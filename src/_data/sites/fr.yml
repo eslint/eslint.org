@@ -359,23 +359,20 @@ sponsors_page:
     diamond:
       title: Sponsors Diamant
       description: >
-        Devenez un sponsor diamant avec un don mensuel de 5 000 USD (fournissant
-        60 à 100 heures de maintenance et de développement) et ajoutez votre image d'avatar Open Collective ou GitHub
+        Devenez un sponsor diamant avec un don mensuel de 5 000 USD et ajoutez votre image d'avatar Open Collective ou GitHub
         dans nos fichiers README sur GitHub et sur la page d'accueil de eslint.org. Nous publierons également
         un remerciement depuis notre compte Twitter (plus de 38 000 abonnés).
     platinum:
       title: Sponsors Platinum
       description: >
-        Devenez un sponsor platine avec un don mensuel de 2 000 USD (fournissant 40 heures de
-        maintenance et de développement). Votre image d'avatar Open Collective ou GitHub
+        Devenez un sponsor platine avec un don mensuel de 2 000 USD. Votre image d'avatar Open Collective ou GitHub
         apparaîtra dans nos fichiers README sur GitHub et sur la page d'accueil de eslint.org.
         Nous publierons également un remerciement depuis notre compte Twitter (plus de 38 000
         abonnés).
     gold:
       title: Sponsors Or
       description: >
-        Vous pouvez devenir sponsor Or avec un don mensuel de 1000$ (fournissant
-        un équivalent de 20 heures de maintenance et de développement) et ajouter
+        Vous pouvez devenir sponsor Or avec un don mensuel de 1000$ et ajouter
         votre photo de profil Open Collective ou GitHub sur le README de notre
         dépôt GitHub et sur la page d'accueil de eslint.org. Nous posterons
         également un tweet de remerciement depuis notre compte Twitter (plus de
@@ -383,15 +380,13 @@ sponsors_page:
     silver:
       title: Sponsors Argent
       description: >
-        Vous pouvez devenir sponsor Argent avec un don mensuel de 500$ (fournissant
-        un équivalent de 10 heures de maintenance et de développement) et ajouter
+        Vous pouvez devenir sponsor Argent avec un don mensuel de 500$ et ajouter
         votre photo de profil Open Collective ou GitHub sur le README de notre
         dépôt GitHub et sur la page d'accueil de eslint.org.
     bronze:
       title: Sponsors Bronze
       description: >
-        Vous pouvez devenir sponsor Bronze avec un don mensuel de 200$ (fournissant
-        un équivalent de 4 heures de maintenance et de développement) et ajouter
+        Vous pouvez devenir sponsor Bronze avec un don mensuel de 200$ et ajouter
         votre photo de profil Open Collective ou GitHub sur le README de notre
         dépôt GitHub et sur la page d'accueil de eslint.org.
     technology:
