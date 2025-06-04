@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 207612,
-        "monthlyDonations": 17301,
-        "sponsorCount": 162
+        "annualDonations": 207672,
+        "monthlyDonations": 17306,
+        "sponsorCount": 163
     },
     "diamond": [
         {
@@ -486,6 +486,15 @@
             "image": "https://images.opencollective.com/crawljobs/ab4ce61/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 12,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Morgane Dubus",
+            "url": null,
+            "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 245,
             "source": "opencollective",
             "tier": "backer"
         },
