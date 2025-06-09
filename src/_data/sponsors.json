@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 207672,
-        "monthlyDonations": 17306,
-        "sponsorCount": 163
+        "annualDonations": 214914.9958146,
+        "monthlyDonations": 17909.58298455,
+        "sponsorCount": 166
     },
     "diamond": [
         {
@@ -100,6 +100,24 @@
         }
     ],
     "bronze": [
+        {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 285.4877258,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.2284701967.26918957285.48772580",
+            "source": "thanks.dev",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 268.0318858,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766161.76391376152.22369333268.03188580",
+            "source": "thanks.dev",
+            "tier": "bronze-sponsor"
+        },
         {
             "name": "Cybozu",
             "url": "https://cybozu.co.jp/",
@@ -202,6 +220,15 @@
             "monthlyDonation": 140,
             "totalDonations": 4720,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 50.06337295,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714169.30954801167.7356633950.06337295",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
