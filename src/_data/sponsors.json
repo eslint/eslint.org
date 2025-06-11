@@ -535,9 +535,9 @@
             "tier": "backer"
         },
         {
-            "name": "Time Card Calculator",
-            "url": "https://www.timecardcalculator.me/",
-            "image": "https://images.opencollective.com/time-card-calculator/3f29fd8/logo.png",
+            "name": "Caricature Maker",
+            "url": "https://caricaturemaker.net/",
+            "image": "https://images.opencollective.com/caricature-maker/3f29fd8/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 5,
             "source": "opencollective",
