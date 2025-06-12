@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 214914.9958146,
-        "monthlyDonations": 17909.58298455,
-        "sponsorCount": 166
+        "annualDonations": 215619.52191252,
+        "monthlyDonations": 17968.29349271,
+        "sponsorCount": 169
     },
     "diamond": [
         {
@@ -258,6 +258,15 @@
             "tier": "backer"
         },
         {
+            "name": "juju",
+            "url": null,
+            "image": "https://github.com/juju.png",
+            "monthlyDonation": 39.29472555,
+            "totalDonations": "055.8400281056.0363021539.29472555",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "STORIS",
             "url": "https://www.storis.com/",
             "image": "https://images.opencollective.com/storis/dfb0e13/logo.png",
@@ -315,6 +324,15 @@
             "monthlyDonation": 20,
             "totalDonations": 795,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 12.49860239,
+            "totalDonations": "013.1523181713.0949178512.49860239",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -505,6 +523,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "charmed-kubernetes",
+            "url": null,
+            "image": "https://github.com/charmed-kubernetes.png",
+            "monthlyDonation": 6.91718022,
+            "totalDonations": "031.1306793531.336060066.91718022",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
