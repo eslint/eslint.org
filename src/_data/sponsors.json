@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 215619.52191252,
-        "monthlyDonations": 17968.29349271,
-        "sponsorCount": 169
+        "annualDonations": 215559.52191252,
+        "monthlyDonations": 17963.29349271,
+        "sponsorCount": 168
     },
     "diamond": [
         {
@@ -594,15 +594,6 @@
             "image": "https://images.opencollective.com/questionaiio/b5fd7b7/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 25,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Matt Welke",
-            "url": "https://mattwelke.com",
-            "image": "https://images.opencollective.com/mattwelke/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 142.01,
             "source": "opencollective",
             "tier": "backer"
         },
