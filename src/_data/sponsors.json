@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 215559.52191252,
-        "monthlyDonations": 17963.29349271,
-        "sponsorCount": 168
+        "annualDonations": 215482.91958156,
+        "monthlyDonations": 17956.909965130002,
+        "sponsorCount": 170
     },
     "diamond": [
         {
@@ -354,15 +354,6 @@
             "tier": "backer"
         },
         {
-            "name": "WWOOF's Open Source Fund",
-            "url": null,
-            "image": "https://images.opencollective.com/wwoof-open-source-fund/cb8119c/logo.png",
-            "monthlyDonation": 10,
-            "totalDonations": 380,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "MFB Technologies",
             "url": "https://mfbtech.com",
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
@@ -392,7 +383,7 @@
         {
             "name": "Bryan Mishkin",
             "image": "https://avatars.githubusercontent.com/u/698306",
-            "url": "http://www.linkedin.com/in/bmish",
+            "url": "https://www.linkedin.com/in/bmish/",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -1236,6 +1227,15 @@
             "tier": "backer"
         },
         {
+            "name": "Cash App",
+            "url": "https://cash.app",
+            "image": "https://github.com/cashapp.png",
+            "monthlyDonation": 1.7230357,
+            "totalDonations": "012.5883300213.067995221.72303570",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Theme Divi",
             "url": "https://wptheme.fr/theme-wordpress-divi/",
             "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
@@ -1411,6 +1411,24 @@
             "url": "https://syntax.fm",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "block",
+            "url": null,
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 0.97063548,
+            "totalDonations": "03.406750532.577835202.289833644.452156164.456149960.97063548",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 0.92280124,
+            "totalDonations": "08.426817307.033780176.496383325.655986995.379024760.92280124",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
