@@ -18,6 +18,7 @@ import Split from "react-split";
 import debounce from "./utils/debounce";
 import AlertsActionBar from "./components/AlertsActionBar";
 import "./scss/split-pane.scss";
+import * as typeScriptESLintParser from "@typescript-eslint/parser";
 
 const BOM = "\uFEFF";
 
@@ -47,6 +48,10 @@ const fillOptionsDefaults = options => ({
 	...options,
 	languageOptions: {
 		...options.languageOptions,
+		...(options?.languageOptions?.parser ===
+			"@typescript-eslint/parser" && {
+			parser: typeScriptESLintParser,
+		}),
 		parserOptions: {
 			ecmaFeatures: {},
 			...options.languageOptions?.parserOptions,
@@ -169,11 +174,18 @@ const App = () => {
 		...options,
 		languageOptions: {
 			...options.languageOptions,
+			...(options?.languageOptions.parser ===
+				"@typescript-eslint/parser" && {
+				parser: typeScriptESLintParser,
+			}),
 			parserOptions: {
 				...options.languageOptions.parserOptions,
 				ecmaFeatures: {
 					...options.languageOptions.parserOptions.ecmaFeatures,
 				},
+				...(options?.languageOptions.parser && {
+					sourceType: "module",
+				}),
 			},
 		},
 	};
