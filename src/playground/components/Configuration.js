@@ -108,6 +108,18 @@ const defaultOption = {
 
 const isEmpty = obj => Object.keys(obj).length === 0;
 
+const parserValue = parser => {
+	if (
+		(typeof parser === "object" &&
+			parser.meta.name === "typescript-eslint/parser") ||
+		parser === "@typescript-eslint/parser"
+	) {
+		return "@typescript-eslint/parser";
+	}
+
+	return null;
+};
+
 export default function Configuration({
 	initialOptions,
 	rulesMeta,
@@ -244,6 +256,22 @@ export default function Configuration({
 		onUpdate(Object.assign({}, initialOptions));
 	};
 
+	const normalizeParser = config => {
+		if (config.languageOptions && config.languageOptions.parser) {
+			const parser = config.languageOptions.parser;
+
+			if (
+				parser === "@typescript-eslint/parser" ||
+				(typeof parser === "object" &&
+					parser?.meta?.name === "typescript-eslint/parser")
+			) {
+				config.languageOptions.parser = "___TS_PARSER_PLACEHOLDER___";
+			}
+		}
+
+		return config;
+	};
+
 	// Remove empty objects from download configuration
 	const hasEcmaFeatures = !isEmpty(
 		options.languageOptions.parserOptions.ecmaFeatures,
@@ -262,10 +290,13 @@ export default function Configuration({
 					},
 	};
 
+	const configOptionsWithNormalizedParser =
+		normalizeParser(optionsForConfigFile);
+
 	const configFileContent =
-		`${options.languageOptions.parser && 'import tsParser from "@typescript-eslint/parser;"'}\n${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([optionsForConfigFile], null, 4)};`.replace(
-			'"parser": "@typescript-eslint/parser"',
-			'"parser": tsParser',
+		`${options.languageOptions.parser && 'import tsParser from "@typescript-eslint/parser";'}\n${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([configOptionsWithNormalizedParser], null, 4)};`.replace(
+			/"___TS_PARSER_PLACEHOLDER___"/gu,
+			"tsParser",
 		);
 
 	return (
@@ -462,8 +493,9 @@ export default function Configuration({
 								value={ESLintParserOptions.filter(
 									eslintParser =>
 										eslintParser.value ===
-										(options.languageOptions?.parser ||
-											"default"),
+										(parserValue(
+											options.languageOptions?.parser,
+										) || "default"),
 								)}
 								options={ESLintParserOptions}
 								onChange={selected => {
