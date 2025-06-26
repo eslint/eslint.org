@@ -1382,7 +1382,7 @@
             "tier": "backer"
         },
         {
-            "name": "SysWhite",
+            "name": "sys.white",
             "image": "https://avatars.githubusercontent.com/u/76256827",
             "url": "https://syswhite.dev",
             "monthlyDonation": 1,
