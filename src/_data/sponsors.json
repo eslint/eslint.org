@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 215482.91958156,
-        "monthlyDonations": 17956.909965130002,
-        "sponsorCount": 170
+        "annualDonations": 215422.91958156,
+        "monthlyDonations": 17951.909965130002,
+        "sponsorCount": 169
     },
     "diamond": [
         {
@@ -547,15 +547,6 @@
             "name": "denis",
             "url": "https://github.com/Jlio10",
             "image": "https://images.opencollective.com/denis36/3d6b331/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Caricature Maker",
-            "url": "https://caricaturemaker.net/",
-            "image": "https://images.opencollective.com/caricature-maker/3f29fd8/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 5,
             "source": "opencollective",
