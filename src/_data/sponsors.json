@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 202692,
-        "monthlyDonations": 16891,
-        "sponsorCount": 158
+        "annualDonations": 202740,
+        "monthlyDonations": 16895,
+        "sponsorCount": 157
     },
     "diamond": [
         {
@@ -105,7 +105,7 @@
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 250,
-            "totalDonations": 22164,
+            "totalDonations": 22414,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -260,7 +260,7 @@
             "url": "https://webdriver.io/",
             "image": "https://images.opencollective.com/webdriverio/bbdd5c3/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 340,
+            "totalDonations": 360,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -287,7 +287,7 @@
             "url": "https://nirvati.org/",
             "image": "https://images.opencollective.com/nirvati/605818e/logo.png",
             "monthlyDonation": 10,
-            "totalDonations": 260,
+            "totalDonations": 270,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -472,6 +472,24 @@
             "tier": "backer"
         },
         {
+            "name": "PodobneStrony.pl",
+            "url": "https://podobnestrony.pl",
+            "image": "https://images.opencollective.com/podobnestrony/d86d3dc/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Monarch Air Group",
+            "url": "https://monarchairgroup.com",
+            "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Morgane Dubus",
             "url": null,
             "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
@@ -598,20 +616,11 @@
             "tier": "backer"
         },
         {
-            "name": "Pink Fluffy Nico",
-            "url": null,
-            "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 141,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Trevor Burnham",
             "url": "https://trevorburnham.com",
             "image": "https://images.opencollective.com/trevorburnham/016f6da/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 145,
+            "totalDonations": 150,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -620,7 +629,7 @@
             "url": "https://www.fuller-inc.com/",
             "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 155,
+            "totalDonations": 160,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1083,7 +1092,7 @@
             "url": null,
             "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
             "monthlyDonation": 3,
-            "totalDonations": 66,
+            "totalDonations": 69,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1245,14 +1254,6 @@
             "tier": "backer"
         },
         {
-            "name": "Constantine Rafikov",
-            "image": "https://avatars.githubusercontent.com/u/8498865",
-            "url": "https://open-genes.com",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Schalk Venter",
             "image": "https://avatars.githubusercontent.com/u/14258328",
             "url": "https://schalkventer.me",
@@ -1330,15 +1331,6 @@
             "image": "https://images.opencollective.com/planfredapp/4ae56a1/logo.png",
             "monthlyDonation": 0,
             "totalDonations": 25,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Francesc Rosas",
-            "url": null,
-            "image": "https://images.opencollective.com/francescrosas/avatar.png",
-            "monthlyDonation": 0,
-            "totalDonations": 26,
             "source": "opencollective",
             "tier": "backer"
         }
