@@ -1,5 +1,14 @@
 [
     {
+        "id": "eng0kzdy-vor4pz8y-0jopbma8-37xlw95j",
+        "name": "OuestWare",
+        "url": null,
+        "image": "https://images.opencollective.com/ouestware/90c4ab8/avatar.png",
+        "amount": 117,
+        "date": "2025-06-30T09:56:29.735Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFEMa",
         "name": "GustavoAlmeida-cy",
         "image": "https://avatars.githubusercontent.com/u/84788576",
@@ -111,7 +120,7 @@
         "id": "ywz9j4av-god8pgw5-zg96mr35-nxklb0e7",
         "name": "Matt Welke",
         "url": "https://mattwelke.com",
-        "image": "https://images.opencollective.com/mattwelke/avatar.png",
+        "image": "https://images.opencollective.com/mattwelke/9f2282c/avatar.png",
         "amount": 100,
         "date": "2025-01-22T20:03:32.222Z",
         "source": "opencollective"
