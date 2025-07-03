@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 202740,
-        "monthlyDonations": 16895,
+        "annualDonations": 205080,
+        "monthlyDonations": 17090,
         "sponsorCount": 157
     },
     "diamond": [
@@ -10,7 +10,7 @@
             "url": "https://www.ag-grid.com/",
             "image": "https://images.opencollective.com/ag-grid/bec0580/logo.png",
             "monthlyDonation": 5000,
-            "totalDonations": 15000,
+            "totalDonations": 20000,
             "source": "opencollective",
             "tier": "diamond-sponsor"
         }
@@ -41,7 +41,7 @@
             "url": "https://qlty.sh/",
             "image": "https://images.opencollective.com/qltysh/33d157d/logo.png",
             "monthlyDonation": 1000,
-            "totalDonations": 5000,
+            "totalDonations": 6000,
             "source": "opencollective",
             "tier": "gold-sponsor"
         },
@@ -69,7 +69,7 @@
             "url": "https://vite.dev/",
             "image": "https://images.opencollective.com/vite/e6d15e1/logo.png",
             "monthlyDonation": 500,
-            "totalDonations": 2800,
+            "totalDonations": 3300,
             "source": "opencollective",
             "tier": "silver-sponsor"
         },
@@ -106,6 +106,15 @@
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 250,
             "totalDonations": 22414,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Anagram Solver",
+            "url": "https://www.crosswordsolver.org/anagram-solver/",
+            "image": "https://images.opencollective.com/anagram-solver/2666271/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 12800,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -174,7 +183,7 @@
             "url": null,
             "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
             "monthlyDonation": 150,
-            "totalDonations": 750,
+            "totalDonations": 900,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -467,7 +476,7 @@
             "url": "https://www.crawljobs.com",
             "image": "https://images.opencollective.com/crawljobs/ab4ce61/logo.png",
             "monthlyDonation": 6,
-            "totalDonations": 12,
+            "totalDonations": 18,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -494,16 +503,7 @@
             "url": null,
             "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 245,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "denis",
-            "url": "https://github.com/Jlio10",
-            "image": "https://images.opencollective.com/denis36/3d6b331/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 250,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -512,7 +512,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 150,
+            "totalDonations": 155,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -521,7 +521,7 @@
             "url": "https://chudovo.com/",
             "image": "https://images.opencollective.com/chudovo/3c866f5/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -530,7 +530,7 @@
             "url": "https://questionai.io",
             "image": "https://images.opencollective.com/questionaiio/b5fd7b7/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
