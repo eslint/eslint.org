@@ -11,6 +11,7 @@ import {
 import "../scss/editor.scss";
 
 const CodeEditor = forwardRef(
+	// Here
 	({ codeValue, onUpdate, eslintOptions, eslintInstance }, ref) => {
 		const editorRef = useRef(null);
 
