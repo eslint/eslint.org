@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 205140,
-        "monthlyDonations": 17095,
-        "sponsorCount": 158
+        "annualDonations": 205128,
+        "monthlyDonations": 17094,
+        "sponsorCount": 157
     },
     "diamond": [
         {
@@ -1218,14 +1218,6 @@
             "name": "Oliver Radwell",
             "image": "https://avatars.githubusercontent.com/u/5054896",
             "url": "https://www.radwell.codes",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Frontend Masters",
-            "image": "https://avatars.githubusercontent.com/u/5613852",
-            "url": "https://FrontendMasters.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
