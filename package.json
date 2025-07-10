@@ -126,12 +126,14 @@
     "@codemirror/state": "0.19.9",
     "@codemirror/tooltip": "0.19.16",
     "@codemirror/view": "0.19.47",
+    "@typescript-eslint/parser": "^8.28.0",
     "@uiw/react-codemirror": "4.5.1",
     "algoliasearch": "^4.12.1",
     "crelt": "^1.0.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-select": "^5.10.1",
-    "react-split": "^2.0.14"
+    "react-split": "^2.0.14",
+    "typescript": "^5.8.2"
   }
 }

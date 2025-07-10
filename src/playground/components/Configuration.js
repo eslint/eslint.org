@@ -108,6 +108,18 @@ const defaultOption = {
 
 const isEmpty = obj => Object.keys(obj).length === 0;
 
+const parserValue = parser => {
+	if (
+		(typeof parser === "object" &&
+			parser.meta.name === "typescript-eslint/parser") ||
+		parser === "@typescript-eslint/parser"
+	) {
+		return "@typescript-eslint/parser";
+	}
+
+	return null;
+};
+
 export default function Configuration({
 	initialOptions,
 	rulesMeta,
@@ -131,6 +143,12 @@ export default function Configuration({
 			label: sourceType,
 		})),
 	];
+	const sourceTypeOptionsForTypeScriptParser = [
+		...SOURCE_TYPES.map(sourceType => ({
+			value: sourceType,
+			label: sourceType,
+		})),
+	];
 	const ECMAFeaturesOptions = ECMA_FEATURES.map(ecmaFeature => ({
 		value: ecmaFeature,
 		label: ecmaFeature,
@@ -146,6 +164,13 @@ export default function Configuration({
 		value: configFormat,
 		label: configFormat,
 	}));
+	const ESLintParserOptions = [
+		{ value: "default", label: "Espree (default)" },
+		{
+			value: "@typescript-eslint/parser",
+			label: "@typescript-eslint/parser",
+		},
+	];
 
 	// filter rules which are already added to the configuration
 	const ruleNamesOptions = ruleNames
@@ -231,6 +256,22 @@ export default function Configuration({
 		onUpdate(Object.assign({}, initialOptions));
 	};
 
+	const normalizeParser = config => {
+		if (config.languageOptions && config.languageOptions.parser) {
+			const parser = config.languageOptions.parser;
+
+			if (
+				parser === "@typescript-eslint/parser" ||
+				(typeof parser === "object" &&
+					parser?.meta?.name === "typescript-eslint/parser")
+			) {
+				config.languageOptions.parser = "___TS_PARSER_PLACEHOLDER___";
+			}
+		}
+
+		return config;
+	};
+
 	// Remove empty objects from download configuration
 	const hasEcmaFeatures = !isEmpty(
 		options.languageOptions.parserOptions.ecmaFeatures,
@@ -249,7 +290,14 @@ export default function Configuration({
 					},
 	};
 
-	const configFileContent = `${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([optionsForConfigFile], null, 4)};`;
+	const configOptionsWithNormalizedParser =
+		normalizeParser(optionsForConfigFile);
+
+	const configFileContent =
+		`${options.languageOptions.parser && 'import tsParser from "@typescript-eslint/parser";'}\n${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([configOptionsWithNormalizedParser], null, 4)};`.replace(
+			/"___TS_PARSER_PLACEHOLDER___"/gu,
+			"tsParser",
+		);
 
 	return (
 		<div className="playground__config-options__sections">
@@ -333,27 +381,51 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								value={sourceTypeOptions.filter(
-									sourceTypeOption =>
-										sourceTypeOption.value ===
-										(options.languageOptions?.sourceType ||
-											"default"),
-								)}
-								options={sourceTypeOptions}
+								value={
+									options.languageOptions.parser
+										? sourceTypeOptionsForTypeScriptParser.filter(
+												sourceTypeOption =>
+													sourceTypeOption.value ===
+													options.languageOptions
+														.parserOptions
+														.sourceType,
+											)
+										: sourceTypeOptions.filter(
+												sourceTypeOption =>
+													sourceTypeOption.value ===
+													(options.languageOptions
+														?.sourceType ||
+														"default"),
+											)
+								}
+								options={
+									options.languageOptions.parser
+										? sourceTypeOptionsForTypeScriptParser
+										: sourceTypeOptions
+								}
 								onChange={selected => {
 									const newOptions = {
 										...options,
 										languageOptions: {
 											...options.languageOptions,
+											parserOptions: {
+												...options.languageOptions
+													.parserOptions,
+											},
 										},
 									};
 
-									if (selected.value === "default") {
-										delete newOptions.languageOptions
-											.sourceType;
-									} else {
-										newOptions.languageOptions.sourceType =
+									if (newOptions.languageOptions.parser) {
+										newOptions.languageOptions.parserOptions.sourceType =
 											selected.value;
+									} else {
+										if (selected.value === "default") {
+											delete newOptions.languageOptions
+												.sourceType;
+										} else {
+											newOptions.languageOptions.sourceType =
+												selected.value;
+										}
 									}
 
 									onUpdate(newOptions);
@@ -381,7 +453,11 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								options={ECMAFeaturesOptions}
+								options={
+									options.languageOptions.parser
+										? ECMAFeaturesOptions.slice(0, -1)
+										: ECMAFeaturesOptions
+								}
 								onChange={selectedOptions => {
 									const newOptions = {
 										...options,
@@ -404,6 +480,58 @@ export default function Configuration({
 								}}
 							/>
 						</div>
+						<label
+							className="c-field"
+							style={{ marginTop: "1rem", marginBottom: "0" }}
+							htmlFor="parser"
+						>
+							<span className="label__text">Parser</span>
+							<Select
+								isSearchable={false}
+								styles={customStyles}
+								theme={theme => customTheme(theme)}
+								value={ESLintParserOptions.filter(
+									eslintParser =>
+										eslintParser.value ===
+										(parserValue(
+											options.languageOptions?.parser,
+										) || "default"),
+								)}
+								options={ESLintParserOptions}
+								onChange={selected => {
+									const newOptions = {
+										...options,
+										languageOptions: {
+											...options.languageOptions,
+											parserOptions: {
+												...options.languageOptions
+													.parserOptions,
+												ecmaFeatures: {},
+											},
+										},
+									};
+
+									if (selected.value === "default") {
+										delete newOptions.languageOptions
+											.parser;
+										delete newOptions.languageOptions
+											.parserOptions.sourceType;
+										newOptions.languageOptions.parserOptions.ecmaFeatures =
+											{};
+									} else {
+										newOptions.languageOptions.parser =
+											selected.value;
+										delete newOptions.languageOptions
+											.sourceType;
+										newOptions.languageOptions.parserOptions.sourceType =
+											"module";
+										newOptions.languageOptions.parserOptions.ecmaFeatures.jsx = true;
+									}
+
+									onUpdate(newOptions);
+								}}
+							/>
+						</label>
 					</div>
 				)}
 			</div>
