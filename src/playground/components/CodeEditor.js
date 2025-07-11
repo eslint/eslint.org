@@ -10,13 +10,13 @@ import {
 } from "../utils/codemirror-theme";
 import "../scss/editor.scss";
 
-const CodeEditor = ({
+export default function CodeEditor({
 	codeValue,
 	onUpdate,
 	eslintOptions,
 	eslintInstance,
 	ref,
-}) => {
+}) {
 	const editorRef = useRef(null);
 
 	const extensions = useMemo(
@@ -69,8 +69,4 @@ const CodeEditor = ({
 			}}
 		/>
 	);
-};
-
-CodeEditor.displayName = "CodeEditor";
-
-export default CodeEditor;
+}
