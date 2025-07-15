@@ -1,6 +1,6 @@
 "use strict";
 
-const { defineConfig } = require("eslint/config");
+const { defineConfig, globalIgnores } = require("eslint/config");
 const eslintConfigESLintBase = require("eslint-config-eslint/base");
 const eslintConfigESLintCJS = require("eslint-config-eslint/cjs");
 const globals = require("globals");
@@ -11,14 +11,12 @@ const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const playgroundFiles = "src/playground/**/*.{js,jsx}";
 
 module.exports = defineConfig([
-	{
-		ignores: [
-			"_site/**",
-			"src/assets/js/**",
-			"src/_data/**",
-			"src/_11ty/**",
-		],
-	},
+	globalIgnores([
+		"_site/**",
+		"src/assets/js/**",
+		"src/_data/**",
+		"src/_11ty/**",
+	]),
 
 	{
 		ignores: [playgroundFiles],

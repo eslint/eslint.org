@@ -117,3 +117,9 @@ playground.js
 
 # debug files for fetch scripts
 debug*.json
+
+# Editor config files
+.vscode
+*.code-workspace
+.idea
+.cursor
