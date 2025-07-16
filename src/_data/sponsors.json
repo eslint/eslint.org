@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 209973.77356056002,
-        "monthlyDonations": 17497.814463380004,
-        "sponsorCount": 168
+        "annualDonations": 210214.63298664003,
+        "monthlyDonations": 17517.886082220004,
+        "sponsorCount": 170
     },
     "diamond": [
         {
@@ -307,6 +307,24 @@
             "monthlyDonation": 20,
             "totalDonations": 815,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 10.04411721,
+            "totalDonations": "013.1523181713.0949178512.4986023910.04411721",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "juju",
+            "url": null,
+            "image": "https://github.com/juju.png",
+            "monthlyDonation": 10.02750163,
+            "totalDonations": "055.8400281056.0363021539.2947255510.02750163",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
