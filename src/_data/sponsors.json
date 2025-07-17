@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 210214.63298664003,
-        "monthlyDonations": 17517.886082220004,
-        "sponsorCount": 170
+        "annualDonations": 210226.63298664003,
+        "monthlyDonations": 17518.886082220004,
+        "sponsorCount": 171
     },
     "diamond": [
         {
@@ -1367,6 +1367,14 @@
             "name": "Syntax",
             "image": "https://avatars.githubusercontent.com/u/130389858",
             "url": "https://syntax.fm",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Andreas B. Wandem",
+            "image": "https://avatars.githubusercontent.com/u/216286868",
+            "url": "https://github.com/wandemedu",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
