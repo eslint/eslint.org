@@ -1,20 +1,10 @@
 {
     "totals": {
-        "annualDonations": 210226.63298664003,
-        "monthlyDonations": 17518.886082220004,
-        "sponsorCount": 171
+        "annualDonations": 150226.84270344005,
+        "monthlyDonations": 12518.90355862,
+        "sponsorCount": 172
     },
-    "diamond": [
-        {
-            "name": "AG Grid",
-            "url": "https://www.ag-grid.com/",
-            "image": "https://images.opencollective.com/ag-grid/bec0580/logo.png",
-            "monthlyDonation": 5000,
-            "totalDonations": 20000,
-            "source": "opencollective",
-            "tier": "diamond-sponsor"
-        }
-    ],
+    "diamond": [],
     "platinum": [
         {
             "name": "Automattic",
@@ -1374,7 +1364,7 @@
         {
             "name": "Andreas B. Wandem",
             "image": "https://avatars.githubusercontent.com/u/216286868",
-            "url": "https://github.com/wandemedu",
+            "url": "https://github.com/andreaswandem",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
@@ -1403,6 +1393,24 @@
             "image": "https://github.com/expressjs.png",
             "monthlyDonation": 0.04005261,
             "totalDonations": "00.036993410.031956500.031166930.029207030.029207030.029375870.028498350.028321520.040052610.04005261",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.01115357,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.01115357",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.00632283,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.602028720.609868690.006322380.00632283",
             "source": "thanks.dev",
             "tier": "backer"
         },
