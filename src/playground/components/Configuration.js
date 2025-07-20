@@ -108,18 +108,6 @@ const defaultOption = {
 
 const isEmpty = obj => Object.keys(obj).length === 0;
 
-const parserValue = parser => {
-	if (
-		(typeof parser === "object" &&
-			parser.meta.name === "typescript-eslint/parser") ||
-		parser === "@typescript-eslint/parser"
-	) {
-		return "@typescript-eslint/parser";
-	}
-
-	return null;
-};
-
 export default function Configuration({
 	initialOptions,
 	rulesMeta,
@@ -131,6 +119,7 @@ export default function Configuration({
 	validationError,
 	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
+	typeScriptESLintParser,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -270,6 +259,19 @@ export default function Configuration({
 		}
 
 		return config;
+	};
+
+	const parserValue = parser => {
+		if (
+			(typeof parser === "object" &&
+				parser.meta.name === "typescript-eslint/parser") ||
+			parser === "@typescript-eslint/parser" ||
+			parser === typeScriptESLintParser
+		) {
+			return "@typescript-eslint/parser";
+		}
+
+		return null;
 	};
 
 	// Remove empty objects from download configuration

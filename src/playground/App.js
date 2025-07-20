@@ -388,6 +388,7 @@ const App = () => {
 							setRulesWithInvalidConfigs={
 								setRulesWithInvalidConfigs
 							}
+							typeScriptESLintParser
 						/>
 						<Footer />
 					</div>
