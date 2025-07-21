@@ -24,7 +24,7 @@ export default function CodeEditor({
 			history(),
 			bracketMatching(),
 			linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
-			javascript(),
+			javascript({ typescript: true }),
 			ESLintPlaygroundTheme,
 			ESLintPlaygroundHighlightStyle,
 		],

@@ -1,5 +1,59 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFHge",
+        "name": "Mahdi",
+        "image": "https://avatars.githubusercontent.com/u/67627",
+        "url": "https://mahdi.uk",
+        "amount": 5,
+        "date": "2025-07-18T19:26:17Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AFHZ6",
+        "name": "Buffalo Exchange, LTD.",
+        "image": "https://avatars.githubusercontent.com/u/27028541",
+        "url": "https://www.buffaloexchange.com",
+        "amount": 15,
+        "date": "2025-07-17T20:20:18Z",
+        "source": "github"
+    },
+    {
+        "id": "ejoxl3az-45w9pa5l-ev46y870-mgkbrvdn",
+        "name": "Link",
+        "url": "https://20050703.xyz/",
+        "image": "https://images.opencollective.com/link20050703/4351f7c/avatar.png",
+        "amount": 10,
+        "date": "2025-07-17T19:00:18.220Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "mvrwng4k-j03dpb9l-yll6z57o-yl9e8xba",
+        "name": "THANKS.DEV",
+        "url": "https://thanks.dev",
+        "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
+        "amount": 241.87,
+        "date": "2025-07-17T13:36:18.074Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "zaxon793-jy8gpl07-g59pbrkd-emwl5v04",
+        "name": "Alex Rønne Petersen",
+        "url": "https://alexrp.com/",
+        "image": "https://images.opencollective.com/alexrp/6cbfbe1/avatar.png",
+        "amount": 20,
+        "date": "2025-07-13T02:41:23.238Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AFG47",
+        "name": "Alex Rønne Petersen",
+        "image": "https://avatars.githubusercontent.com/u/44076",
+        "url": "https://alexrp.com",
+        "amount": 10,
+        "date": "2025-07-13T02:41:12Z",
+        "source": "github"
+    },
+    {
         "id": "eng0kzdy-vor4pz8y-0jopbma8-37xlw95j",
         "name": "OuestWare",
         "url": null,
@@ -9,15 +63,6 @@
         "source": "opencollective"
     },
     {
-        "id": "SA_kwHOAFvahM4AFEMa",
-        "name": "GustavoAlmeida-cy",
-        "image": "https://avatars.githubusercontent.com/u/84788576",
-        "url": "https://github.com/GustavoAlmeida-cy",
-        "amount": 1,
-        "date": "2025-06-18T15:32:09Z",
-        "source": "github"
-    },
-    {
         "id": "ejoxl3az-45w9pa5l-nkm6y870-mgkbrvdn",
         "name": "Wataru Nishimrua",
         "url": null,
@@ -25,42 +70,6 @@
         "amount": 5,
         "date": "2025-06-13T06:03:23.859Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFDiG",
-        "name": "0xhacker",
-        "image": "https://avatars.githubusercontent.com/u/170191990",
-        "url": "https://github.com/HappyFox001",
-        "amount": 5,
-        "date": "2025-06-11T18:25:53Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFDeh",
-        "name": "Mohamed Shiyam",
-        "image": "https://avatars.githubusercontent.com/u/6422042",
-        "url": "https://siyamex.com",
-        "amount": 1,
-        "date": "2025-06-11T06:38:22Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFDY7",
-        "name": "Thi",
-        "image": "https://avatars.githubusercontent.com/u/85778186",
-        "url": "https://thisorp",
-        "amount": 1,
-        "date": "2025-06-10T08:38:06Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFDVe",
-        "name": "Alexis Abril",
-        "image": "https://avatars.githubusercontent.com/u/84209",
-        "url": "https://alexisabril.com",
-        "amount": 5,
-        "date": "2025-06-09T17:15:57Z",
-        "source": "github"
     },
     {
         "id": "ax8emk7l-nw54q7z3-m8mpgyvj-0o93zdrb",
@@ -231,24 +240,6 @@
         "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
         "amount": 1,
         "date": "2024-07-21T09:30:46.604Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "gm9bnk80-437xqrnk-y4j6vzeo-ljdayw5r",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
-        "amount": 60.87,
-        "date": "2024-07-09T16:01:58.254Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "gnxdwzj3-le5mpwz3-9k0py8rv-bko04a97",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
-        "amount": 3640.87,
-        "date": "2024-07-01T11:16:34.553Z",
         "source": "opencollective"
     }
 ]
