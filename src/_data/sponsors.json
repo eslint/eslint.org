@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 150226.84503756007,
-        "monthlyDonations": 12518.90375313,
-        "sponsorCount": 173
+        "annualDonations": 150294.31500588005,
+        "monthlyDonations": 12524.52625049,
+        "sponsorCount": 178
     },
     "diamond": [],
     "platinum": [
@@ -1149,6 +1149,15 @@
             "tier": "backer"
         },
         {
+            "name": "peerdb",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 2.25314177,
+            "totalDonations": "00.761247260.761247260.999943772.396486702.452382202.452382202.230746612.472854322.472854322.253141772.25314177",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Jb Landry",
             "url": "https://jblandry.info",
             "image": "https://images.opencollective.com/jblandry/e7d47d8/avatar.png",
@@ -1197,6 +1206,15 @@
             "url": "https://github.com/vbuch",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Cash App",
+            "url": "https://cash.app",
+            "image": "https://github.com/cashapp.png",
+            "monthlyDonation": 1.00726983,
+            "totalDonations": "012.5883300213.067995221.723035701.00726983",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1367,6 +1385,33 @@
             "url": "https://github.com/andreaswandem",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 0.93132092,
+            "totalDonations": "08.426817307.033780176.496383325.655986995.379024760.922801240.93132092",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "charon",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 0.89262384,
+            "totalDonations": "00.783637540.783637541.029349280.949412590.971556630.971556630.883751580.979667040.979667040.892623840.89262384",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "block",
+            "url": null,
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 0.538141,
+            "totalDonations": "03.406750532.577835202.289833644.452156164.456149960.970635480.53814100",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
