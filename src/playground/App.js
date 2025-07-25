@@ -7,6 +7,7 @@ import React, {
 	useCallback,
 	useRef,
 } from "react";
+import { flushSync } from "react-dom";
 import Alert from "./components/Alert";
 import CrashAlert from "./components/CrashAlert";
 import Footer from "./components/Footer";
@@ -303,15 +304,20 @@ const App = () => {
 		return () => mq.removeEventListener("change", ConfigToggler);
 	}, []);
 
+	// Please do not remove `flushSync`: https://github.com/eslint/eslint.org/pull/745
 	const debouncedOnUpdate = useMemo(
 		() =>
-			debounce(value => {
-				setFix(false);
-				setText(value);
-				storeState({ newText: value });
-			}, 400),
+			debounce(
+				value =>
+					flushSync(() => {
+						setFix(false);
+						setText(value);
+						storeState({ newText: value });
+					}),
+				400,
+			),
 		[storeState],
-	); // Maybe?
+	);
 
 	const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(
 		new Set([]),
