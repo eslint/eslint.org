@@ -311,7 +311,7 @@ const App = () => {
 				storeState({ newText: value });
 			}, 400),
 		[storeState],
-	);
+	); // Maybe?
 
 	const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(
 		new Set([]),
