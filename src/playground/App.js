@@ -227,9 +227,18 @@ const App = () => {
 
 	const storeState = useCallback(
 		({ newText, newOptions }) => {
+			const opts = { ...options };
+
+			if (
+				opts.languageOptions &&
+				opts.languageOptions.parser === typeScriptESLintParser
+			) {
+				opts.languageOptions.parser = "@typescript-eslint/parser";
+			}
+
 			const serializedState = JSON.stringify({
 				text: newText,
-				options: newOptions || options,
+				options: newOptions || opts,
 			});
 
 			if (hasLocalStorage()) {
