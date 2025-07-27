@@ -48,10 +48,6 @@ const fillOptionsDefaults = options => ({
 	...options,
 	languageOptions: {
 		...options.languageOptions,
-		...(options?.languageOptions?.parser ===
-			"@typescript-eslint/parser" && {
-			parser: typeScriptESLintParser,
-		}),
 		parserOptions: {
 			ecmaFeatures: {},
 			...options.languageOptions?.parserOptions,
@@ -227,18 +223,9 @@ const App = () => {
 
 	const storeState = useCallback(
 		({ newText, newOptions }) => {
-			const opts = { ...options };
-
-			if (
-				opts.languageOptions &&
-				opts.languageOptions.parser === typeScriptESLintParser
-			) {
-				opts.languageOptions.parser = "@typescript-eslint/parser";
-			}
-
 			const serializedState = JSON.stringify({
 				text: newText,
-				options: newOptions || opts,
+				options: newOptions || options,
 			});
 
 			if (hasLocalStorage()) {
