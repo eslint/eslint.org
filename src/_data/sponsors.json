@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 150297.73195140006,
-        "monthlyDonations": 12524.81099595,
+        "annualDonations": 150273.79938360007,
+        "monthlyDonations": 12522.8166153,
         "sponsorCount": 179
     },
     "diamond": [],
@@ -1201,14 +1201,6 @@
             "tier": "backer"
         },
         {
-            "name": "Valery Buchinsky",
-            "image": "https://avatars.githubusercontent.com/u/5102057",
-            "url": "https://github.com/vbuch",
-            "monthlyDonation": 2,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Cash App",
             "url": "https://cash.app",
             "image": "https://github.com/cashapp.png",
@@ -1465,6 +1457,15 @@
             "image": "https://github.com/jasara.png",
             "monthlyDonation": 0.00632283,
             "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.602028720.609868690.006322380.00632283",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.00561935,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.391978300.367332360.004143800.00561935",
             "source": "thanks.dev",
             "tier": "backer"
         },
