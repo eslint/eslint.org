@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 150333.79938360007,
-        "monthlyDonations": 12527.8166153,
-        "sponsorCount": 180
+        "annualDonations": 150321.79938360007,
+        "monthlyDonations": 12526.8166153,
+        "sponsorCount": 179
     },
     "diamond": [],
     "platinum": [
@@ -1359,14 +1359,6 @@
             "name": "Takhir Kudusov",
             "image": "https://avatars.githubusercontent.com/u/98131221",
             "url": "https://github.com/TakhirKudusov",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ian Tapply",
-            "image": "https://avatars.githubusercontent.com/u/114881396",
-            "url": "https://github.com/IanTapply22",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
