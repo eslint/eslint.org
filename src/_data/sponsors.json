@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 140988,
-        "monthlyDonations": 11749,
+        "annualDonations": 142596,
+        "monthlyDonations": 11883,
         "sponsorCount": 153
     },
     "diamond": [],
@@ -165,6 +165,15 @@
             "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
             "monthlyDonation": 150,
             "totalDonations": 1050,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Principal Financial Group",
+            "url": "https://www.principal.com/about-us",
+            "image": "https://images.opencollective.com/principal/431e690/logo.png",
+            "monthlyDonation": 140,
+            "totalDonations": 5000,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -444,20 +453,11 @@
             "tier": "backer"
         },
         {
-            "name": "CrawlJobs",
-            "url": "https://www.crawljobs.com",
-            "image": "https://images.opencollective.com/crawljobs/ab4ce61/logo.png",
-            "monthlyDonation": 6,
-            "totalDonations": 18,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "PodobneStrony.pl",
             "url": "https://podobnestrony.pl",
             "image": "https://images.opencollective.com/podobnestrony/d86d3dc/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -466,7 +466,7 @@
             "url": "https://monarchairgroup.com",
             "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -475,7 +475,7 @@
             "url": null,
             "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 250,
+            "totalDonations": 255,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -484,7 +484,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 155,
+            "totalDonations": 160,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -493,7 +493,7 @@
             "url": "https://chudovo.com/",
             "image": "https://images.opencollective.com/chudovo/3c866f5/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
