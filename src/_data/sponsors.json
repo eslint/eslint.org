@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142596,
-        "monthlyDonations": 11883,
-        "sponsorCount": 153
+        "annualDonations": 142656,
+        "monthlyDonations": 11888,
+        "sponsorCount": 154
     },
     "diamond": [],
     "platinum": [
@@ -1000,6 +1000,14 @@
             "name": "Nazim Gafarov",
             "image": "https://avatars.githubusercontent.com/u/15930575",
             "url": "https://github.com/zapolnoch",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Denis Zaitsev",
+            "image": "https://avatars.githubusercontent.com/u/16611383",
+            "url": "https://miskamyasa.me",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
