@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142656,
-        "monthlyDonations": 11888,
-        "sponsorCount": 154
+        "annualDonations": 145056,
+        "monthlyDonations": 12088,
+        "sponsorCount": 155
     },
     "diamond": [],
     "platinum": [
@@ -96,6 +96,15 @@
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 250,
             "totalDonations": 22664,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Anagram Solver",
+            "url": "https://www.crosswordsolver.org/anagram-solver/",
+            "image": "https://images.opencollective.com/anagram-solver/2666271/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 13000,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
