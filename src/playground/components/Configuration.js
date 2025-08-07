@@ -108,18 +108,6 @@ const defaultOption = {
 
 const isEmpty = obj => Object.keys(obj).length === 0;
 
-const parserValue = parser => {
-	if (
-		(typeof parser === "object" &&
-			parser.meta.name === "typescript-eslint/parser") ||
-		parser === "@typescript-eslint/parser"
-	) {
-		return "@typescript-eslint/parser";
-	}
-
-	return null;
-};
-
 export default function Configuration({
 	initialOptions,
 	rulesMeta,
@@ -260,11 +248,7 @@ export default function Configuration({
 		if (config.languageOptions && config.languageOptions.parser) {
 			const parser = config.languageOptions.parser;
 
-			if (
-				parser === "@typescript-eslint/parser" ||
-				(typeof parser === "object" &&
-					parser?.meta?.name === "typescript-eslint/parser")
-			) {
+			if (parser === "@typescript-eslint/parser") {
 				config.languageOptions.parser = "___TS_PARSER_PLACEHOLDER___";
 			}
 		}
@@ -493,9 +477,8 @@ export default function Configuration({
 								value={ESLintParserOptions.filter(
 									eslintParser =>
 										eslintParser.value ===
-										(parserValue(
-											options.languageOptions?.parser,
-										) || "default"),
+										(options.languageOptions?.parser ||
+											"default"),
 								)}
 								options={ESLintParserOptions}
 								onChange={selected => {
