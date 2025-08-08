@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 145056,
-        "monthlyDonations": 12088,
-        "sponsorCount": 155
+        "annualDonations": 144996,
+        "monthlyDonations": 12083,
+        "sponsorCount": 154
     },
     "diamond": [],
     "platinum": [
@@ -683,15 +683,6 @@
             "image": "https://images.opencollective.com/pdehaan/1b46cd1/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 340,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "James Sherwood-Jones",
-            "url": "https://jsherz.com/",
-            "image": "https://images.opencollective.com/james-sherwood-jones/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 370,
             "source": "opencollective",
             "tier": "backer"
         },
