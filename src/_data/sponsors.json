@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 152572.06800708003,
-        "monthlyDonations": 12714.339000589998,
-        "sponsorCount": 170
+        "annualDonations": 152572.33321032,
+        "monthlyDonations": 12714.361100859998,
+        "sponsorCount": 172
     },
     "diamond": [],
     "platinum": [
@@ -1393,6 +1393,24 @@
             "image": "https://github.com/expressjs.png",
             "monthlyDonation": 0.04339736,
             "totalDonations": "00.036993410.031956500.031166930.029207030.029207030.029375870.028498350.028321520.040052610.040052610.04339736",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.01543387,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.01543387",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.0066664,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.602028720.609868690.006322380.006322830.00666640",
             "source": "thanks.dev",
             "tier": "backer"
         },
