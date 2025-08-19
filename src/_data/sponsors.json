@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 152572.33321032,
-        "monthlyDonations": 12714.361100859998,
-        "sponsorCount": 172
+        "annualDonations": 150160.33352244002,
+        "monthlyDonations": 12513.361126869999,
+        "sponsorCount": 171
     },
     "diamond": [],
     "platinum": [
@@ -106,15 +106,6 @@
             "monthlyDonation": 209.70414805,
             "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.2284701967.26918957285.48772580209.60328591209.70414805",
             "source": "thanks.dev",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "FORTUNE GAMES",
-            "url": "https://www.fortunegames.com",
-            "image": "https://images.opencollective.com/fortunegames/657063f/logo.png",
-            "monthlyDonation": 200,
-            "totalDonations": 400,
-            "source": "opencollective",
             "tier": "bronze-sponsor"
         },
         {
@@ -1362,14 +1353,6 @@
             "tier": "backer"
         },
         {
-            "name": "Andreas B. Wandem",
-            "image": "https://avatars.githubusercontent.com/u/216286868",
-            "url": "https://github.com/andreaswandem",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "jshttp",
             "url": "https://jshttp.github.io/",
             "image": "https://github.com/jshttp.png",
@@ -1456,6 +1439,15 @@
             "image": "https://github.com/borderless.png",
             "monthlyDonation": 0.00006774,
             "totalDonations": "00.018086400.047381980.002942660.003561150.003287090.003555470.003953530.003895520.003687860.045300870.005236730.039536870.029764490.026221970.026223230.024388920.024388920.024547280.022571300.022425540.000062110.000062110.00006774",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Adam Dąbrowski",
+            "url": "http://adamdabrowski.com",
+            "image": "https://github.com/dabrowski-adam.png",
+            "monthlyDonation": 0.00002601,
+            "totalDonations": "00.001198480.001253010.001253010.002023800.003731730.003721320.000194080.000194510.00002601",
             "source": "thanks.dev",
             "tier": "backer"
         },
