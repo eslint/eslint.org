@@ -23,9 +23,9 @@ On machines with multiple CPU cores and fast storage, this change can make a not
 
 Multithreading is enabled through the new `--concurrency` flag. You can set it in a few different ways:
 
-- **A positive integer** (e.g., `4`) tells ESLint the maximum number of threads to use. It will never spawn more threads than there are files to lint.  
-- **`auto`** lets ESLint decide the optimal number of threads based on your CPU and file count.  
-- **`off`** (the default) disables multithreading, equivalent to `--concurrency=1`.
+* **A positive integer** (e.g., `4`) tells ESLint the maximum number of threads to use. It will never spawn more threads than there are files to lint.  
+* **`auto`** lets ESLint decide the optimal number of threads based on your CPU and file count.  
+* **`off`** (the default) disables multithreading, equivalent to `--concurrency=1`.
 
 The biggest gains come when linting many files on a multi-core machine with fast I/O. That said, if your configuration or plugins take a long time to initialize, using too many threads can actually slow things down. In CI runners, performance can be biased by limits of the host environment.
 
@@ -111,6 +111,6 @@ We know that introducing multithread linting won't be without its hiccups. Some 
 
 ## Further Tips
 
-- Benchmark lint times before and after enabling concurrency to measure the impact.  
-- Try different `--concurrency` values on each machine to find the ideal setting.  
-- Combine `--cache` with multithreading for even faster incremental runs.
+* Benchmark lint times before and after enabling concurrency to measure the impact.  
+* Try different `--concurrency` values on each machine to find the ideal setting.  
+* Combine `--cache` with multithreading for even faster incremental runs.
