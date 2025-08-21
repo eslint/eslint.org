@@ -121,4 +121,4 @@ const eslint = await ESLint.fromOptionsModule(optionsURL);
 
 Bringing multithread linting to life was a collaborative effort, shaped by the ideas, feedback, and testing of both the ESLint team and the wider community. We are thankful to everyone involved in the process of making this concept become a reality.
 
-We know that introducing multithread linting won't be without its hiccups. Some tools and configurations may not play nicely at first. As users adopt the feature, we expect to hear about issues, and we're committed to fixing them quickly.
+We know that introducing multithread linting won't be without its hiccups. Some tools and configurations may not play nicely at first. As users adopt it in the feature, we expect to hear about issues, and we're committed to fixing them quickly.
