@@ -13,11 +13,37 @@ categories:
   - Announcements
 ---
 
-## Introduction
-
-With ESLint v9.34.0, linting can now happen in true parallel. By spawning worker threads, ESLint can process multiple files at the same time, dramatically reducing lint times for large projects.  
-
+ESLint v9.34.0 introduces multithread linting, concluding a feature that's been in the making over ten years.
+By spawning several worker threads, ESLint can now process multiple files at the same time, dramatically reducing lint times for large projects.  
 On machines with multiple CPU cores and fast storage, this change can make a noticeable difference — especially when you're linting hundreds or thousands of files.
+
+## History
+
+The idea of parallelizing the linting process has been around for well over a decade, long before Node.js offered built-in worker threads. Early discussions wrestled with fundamental questions: which tools should be used for parallelization, how far should the scope extend, and what architectural changes would be required to make it possible. There were also concerns about the potential downsides — the extra maintenance burden, the risk of slowing down projects with only a handful of files if parallelization were enabled by default, and the possibility of blocking other desirable features such as project-based linting, which would require ESLint to understand relationships between multiple files even when linting them individually.
+
+In the meantime, other tools forged ahead. Test runners like Ava, Mocha, and Jest began to ship with built-in parallel execution, and inventive developers found ways to run ESLint in parallel using wrappers and external scripts. These experiments proved that parallel linting could be valuable, but they also highlighted the limitations of bolting it on from the outside. Ultimately, the only way to make multithread linting truly seamless was to integrate it directly into ESLint's core.
+
+## Challenges
+
+Turning that long-standing idea into a practical, user-friendly feature was far from trivial. The first step was to gather the many threads of past conversations — most notably the proposals and debates in [issue #3565](https://github.com/eslint/eslint/issues/3565) — and weave them into a coherent design that could work equally well from the CLI and the Node.js API. The goal was to introduce multithreading with as little disruption as possible for existing consumers, so that the only change they would notice was faster builds and warmer processors. Alongside that, we wanted an automatic (`auto`) concurrency mode that could choose sensible defaults in most situations, as well as a way to warn users when their chosen settings might actually be slowing things down.
+
+### Overcoming Cloneability Constraints
+
+Technical hurdles soon followed. Chief among them was the requirement that all options passed to worker threads be cloneable, a restriction that ruled out certain common patterns such as passing functions or complex plugin objects directly. This limitation ultimately inspired the creation of options modules, which sidestep the cloneability problem entirely by letting each worker import the same module rather than receiving a cloned copy of the options.
+
+### Making `auto` Work Seamlessly
+
+The `auto` mode brought its own set of challenges. To pick the right number of threads, ESLint needed to know how many files it would be linting — information that only becomes available after file enumeration. This meant refactoring the code so that the thread count could be calculated between enumerating files and creating threads, something an external wrapper could never have done cleanly.
+
+### Detecting Suboptimal Concurrency
+
+Finally, there was the question of how to warn users when their concurrency setting was actually hurting performance. Our approach was to measure the duration of different operations across threads, compare the results, and look for patterns that suggested a slowdown. It's not perfect — and we may want to refine it over time — but it gives us a starting point for helping users get the best out of multithread linting.
+
+## How It Works
+
+In a sense, ESLint has been doing "parallel" linting for years, thanks to Node.js's event-loop architecture, which allows asynchronous tasks — like reading files from disk — to run concurrently. However, CPU-intensive work such as parsing files and applying rules has always been synchronous, meaning only one file could be processed at a time.
+
+In a typical run, file I/O is a small fraction of the total time; most of it is spent on parsing and rule execution. These tasks cannot be parallelized with a single thread. Multithread linting changes that. Each worker thread processes one file at a time, but multiple threads can work simultaneously. When all threads finish, their results are gathered in the controlling thread and returned together.
 
 ## CLI Multithreading Support
 
@@ -85,32 +111,14 @@ const eslint = await ESLint.fromOptionsModule(optionsURL);
 
 `ESLint.fromOptionsModule()` works with any URL type accessible to worker threads. While designed for multithread linting, options modules are a standalone feature you can use even without concurrency.
 
-## How It Works
-
-For years, ESLint has benefited from Node.js's event-loop architecture, which allows asynchronous tasks — like reading files from disk — to run in parallel. But CPU-intensive work, such as parsing files and applying rules, has always been synchronous, meaning only one file could be processed at a time.
-
-In a typical run, file I/O is a small fraction of the total time; most of it is spent on parsing and rule execution. These tasks cannot be parallelized with a single thread. Multithread linting changes that. Each worker thread processes one file at a time, but multiple threads can work simultaneously. When all threads finish, their results are gathered in the main thread and returned together.
-
-## History
-
-The idea of parallelizing the linting process has been around for well over a decade, long before Node.js offered built-in worker threads. Early discussions wrestled with fundamental questions: which tools should be used for parallelization, how far should the scope extend, and what architectural changes would be required to make it possible. There were also concerns about the potential downsides — the extra maintenance burden, the risk of slowing down projects with only a handful of files if parallelization were enabled by default, and the possibility of blocking other desirable features such as project-based linting, which would require ESLint to understand relationships between multiple files even when linting them individually.
-
-In the meantime, other tools forged ahead. Test runners like Ava, Mocha, and Jest began to ship with built-in parallel execution, and inventive developers found ways to run ESLint in parallel using wrappers and external scripts. These experiments proved that parallel linting could be valuable, but they also highlighted the limitations of bolting it on from the outside. Ultimately, the only way to make multithread linting truly seamless was to integrate it directly into ESLint's core.
-
-## Challenges
-
-Turning that long-standing idea into a practical, user-friendly feature was far from trivial. The first step was to gather the many threads of past conversations — most notably the proposals and debates in [issue #3565](https://github.com/eslint/eslint/issues/3565) — and weave them into a coherent design that could work equally well from the CLI and the Node.js API. The goal was to introduce multithreading with as little disruption as possible for existing consumers.
-
-Technical hurdles soon followed. Chief among them was the requirement that all options passed to worker threads be cloneable, a restriction that ruled out certain common patterns such as passing functions or complex plugin objects directly. This limitation ultimately inspired the creation of options modules, which sidestep the cloneability problem entirely by letting each worker import the same module rather than receiving a cloned copy of the options.
-
-Bringing multithread linting to life was a collaborative effort, shaped by the ideas, feedback, and testing of both the ESLint team and the wider community. We are thankful to everyone involved in the process of making this concept become a reality.
-
-## Way Forward
-
-We know that introducing multithread linting won't be without its hiccups. Some tools and configurations may not play nicely at first. As users adopt the feature, we expect to hear about issues, and we're committed to fixing them quickly.
-
 ## Further Tips
 
 * Benchmark lint times before and after enabling concurrency to measure the impact.  
 * Try different `--concurrency` values on each machine to find the ideal setting.  
 * Combine `--cache` with multithreading for even faster incremental runs.
+
+## Way Forward
+
+Bringing multithread linting to life was a collaborative effort, shaped by the ideas, feedback, and testing of both the ESLint team and the wider community. We are thankful to everyone involved in the process of making this concept become a reality.
+
+We know that introducing multithread linting won't be without its hiccups. Some tools and configurations may not play nicely at first. As users adopt the feature, we expect to hear about issues, and we're committed to fixing them quickly.
