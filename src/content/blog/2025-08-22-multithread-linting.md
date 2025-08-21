@@ -14,7 +14,8 @@ categories:
 ---
 
 ESLint v9.34.0 introduces multithread linting, concluding a feature that's been in the making over ten years.
-By spawning several worker threads, ESLint can now process multiple files at the same time, dramatically reducing lint times for large projects.  
+By spawning several worker threads, ESLint can now process multiple files at the same time, dramatically reducing lint times for large projects.
+
 On machines with multiple CPU cores and fast storage, this change can make a noticeable difference — especially when you're linting hundreds or thousands of files.
 
 ## History
@@ -49,11 +50,21 @@ In a typical run, file I/O is a small fraction of the total time; most of it is 
 
 Multithreading is enabled through the new `--concurrency` flag. You can set it in a few different ways:
 
-* **A positive integer** (e.g., `4`) tells ESLint the maximum number of threads to use. It will never spawn more threads than there are files to lint.  
-* **`auto`** lets ESLint decide the optimal number of threads based on your CPU and file count.  
+* **A positive integer** (e.g., `4`) tells ESLint the maximum number of threads to use. It will never spawn more threads than there are files to lint.
+* **`auto`** lets ESLint decide the number of threads based on your CPU and file count. For sufficiently large projects, this heuristic defaults to half the number of reported CPUs.
 * **`off`** (the default) disables multithreading, equivalent to `--concurrency=1`.
 
 The biggest gains come when linting many files on a multi-core machine with fast I/O. That said, if your configuration or plugins take a long time to initialize, using too many threads can actually slow things down. In CI runners, performance can be biased by limits of the host environment.
+
+### Limitations of `auto` Concurrency
+
+By design, for sufficiently large projects, `--concurrency=auto` calculates the thread count as half of the number of available CPU cores. In many cases, this setting hits the sweet spot.
+
+However, hardware varies. Node.js can't reliably tell physical from logical (hyperthreaded) cores or high-performance from efficiency-optimized cores, so the `auto` heuristic can sometimes under- or overshoot.
+
+If the target machine and project size are known in advance, it's better to try out different numeric `--concurrency` values (2, 3, 4, etc.) and choose the fastest.
+
+Looking forward, we may explore ways to improve the `auto` heuristic to better take into account the nuances of real-world hardware.
 
 ## Node.js API Support
 
@@ -113,8 +124,8 @@ const eslint = await ESLint.fromOptionsModule(optionsURL);
 
 ## Further Tips
 
-* Benchmark lint times before and after enabling concurrency to measure the impact.  
-* Try different `--concurrency` values on each machine to find the ideal setting.  
+* Benchmark lint times before and after enabling concurrency to measure the impact.
+* Try different `--concurrency` values on each machine to find the ideal setting—don't rely solely on `auto`.
 * Combine `--cache` with multithreading for even faster incremental runs.
 
 ## Way Forward
