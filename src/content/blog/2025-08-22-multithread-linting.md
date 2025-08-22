@@ -106,8 +106,9 @@ In multithread mode, each worker imports the same module rather than receiving a
 You can even inline your options module using a data URL:
 
 ```js
+const configURL = new URL("./my-eslint.config.js", import.meta.url).href;
 const optionsModuleText = `
-import config from "./my-eslint-config.js";
+import config from ${JSON.stringify(configURL)};
 
 export default {
     concurrency: "auto",
