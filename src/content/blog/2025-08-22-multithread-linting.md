@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New in ESLint v9.34.0: Multithread Linting"
-teaser: "Make use of your CPU: multithreaded linting in ESLint v9.34.0 speeds up linting large projects."
+teaser: "Make use of your CPU: multithread linting in ESLint v9.34.0 speeds up linting large projects."
 tags:
   - Concurrency
   - Multithreading
@@ -54,7 +54,7 @@ Multithreading is enabled through the new `--concurrency` flag. You can set it i
 * **`auto`** lets ESLint decide the number of threads based on your CPU and file count. For sufficiently large projects, this heuristic defaults to half the number of reported CPUs.
 * **`off`** (the default) disables multithreading, equivalent to `--concurrency=1`.
 
-The biggest gains come when linting many files on a multi-core machine with fast I/O. That said, if your configuration or plugins take a long time to initialize, using too many threads can actually slow things down. In CI runners, performance can be biased by limits of the host environment.
+The biggest gains come when linting many files on a multi-core machine with fast I/O. That said, if your configuration or plugins take a long time to initialize, using too many threads can actually slow things down.
 
 ### Limitations of `auto` Concurrency
 
@@ -124,9 +124,31 @@ const eslint = await ESLint.fromOptionsModule(optionsURL);
 
 ## Further Tips
 
-* Benchmark lint times before and after enabling concurrency to measure the impact.
-* Try different `--concurrency` values on each machine to find the ideal setting—don't rely solely on `auto`.
-* Combine `--cache` with multithreading for even faster incremental runs.
+Enhance linting performance by following these practical tips:
+
+### 1. Benchmark Your Setup
+
+Measure linting times with different `--concurrency` settings. For example, use [hyperfine](https://github.com/sharkdp/hyperfine) like this:
+
+```shell
+hyperfine --parameter-list concurrency off,2,3,4 "node node_modules/eslint/bin/eslint --concurrency {concurrency}"
+```
+
+This yields comparable results for various thread counts.
+
+### 2. Adjust Concurrency per Machine
+
+* If feasible, try different numeric `--concurrency` values on each machine instead of relying on `auto`. 
+* Start with half your machine's physical cores, then test higher or lower values.  
+* Include `--concurrency=off` to see how single-threaded runs perform.
+
+### 3. Leverage Cahing
+
+Use `--cache` alongside—or in place of—`--concurrency` to speed up incremental runs.
+
+### 4. CI and Container Environments
+
+Be aware that CI runners and containers may throttle resources or use virtualized CPU cores. Re-benchmark in those environments to verify whether multithread linting delivers a meaningful performance improvement.
 
 ## Conclusion
 
