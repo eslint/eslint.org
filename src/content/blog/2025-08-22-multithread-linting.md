@@ -94,7 +94,7 @@ export default {
 };
 ```
 
-Then create an instance with [`ESLint.fromOptionsModule()`](https://eslint.org/docs/head/integrate/nodejs-api#-eslintfromoptionsmoduleoptionsurl):
+Then create an instance with [`ESLint.fromOptionsModule()`](/docs/latest/integrate/nodejs-api#-eslintfromoptionsmoduleoptionsurl):
 
 ```js
 const optionsURL = new URL("./eslint-options.js", import.meta.url);
