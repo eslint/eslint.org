@@ -16,7 +16,7 @@ categories:
 ESLint v9.34.0 introduces multithread linting, concluding a feature that's been in the making for [over ten years](https://github.com/eslint/eslint/issues/3565).
 By spawning several worker threads, ESLint can now process multiple files at the same time, dramatically reducing lint times for large projects.
 
-On machines with multiple CPU cores and fast storage, this change can make a noticeable difference — especially when you're linting hundreds or thousands of files.
+On machines with multiple CPU cores and fast storage, this change can make a noticeable difference — especially when you're linting hundreds or thousands of files. Our early testers have seen a speedup of around [1.30x](https://github.com/eslint/eslint/pull/19794#issuecomment-2970812265) as a starting point, while one even reported a [3.01x improvement](https://github.com/eslint/eslint/pull/19794#issuecomment-2969486788).
 
 ## History
 
