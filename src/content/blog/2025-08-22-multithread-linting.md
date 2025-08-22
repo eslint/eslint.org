@@ -142,7 +142,7 @@ This yields comparable results for various thread counts.
 * Start with half your machine's physical cores, then test higher or lower values.  
 * Include `--concurrency=off` to see how single-threaded runs perform.
 
-### 3. Leverage Cahing
+### 3. Leverage Caching
 
 Use `--cache` alongside—or in place of—`--concurrency` to speed up incremental runs.
 
