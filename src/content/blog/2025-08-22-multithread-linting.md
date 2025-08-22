@@ -13,7 +13,7 @@ categories:
   - Announcements
 ---
 
-ESLint v9.34.0 introduces multithread linting, concluding a feature that's been in the making over ten years.
+ESLint v9.34.0 introduces multithread linting, concluding a feature that's been in the making for [over ten years](https://github.com/eslint/eslint/issues/3565).
 By spawning several worker threads, ESLint can now process multiple files at the same time, dramatically reducing lint times for large projects.
 
 On machines with multiple CPU cores and fast storage, this change can make a noticeable difference — especially when you're linting hundreds or thousands of files.
@@ -34,7 +34,7 @@ Technical hurdles soon followed. Chief among them was the requirement that all o
 
 ### Making `auto` Work Seamlessly
 
-The `auto` mode brought its own set of challenges. To pick the right number of threads, ESLint needed to know how many files it would be linting — information that only becomes available after file enumeration. This meant refactoring the code so that the thread count could be calculated between enumerating files and creating threads, something an external wrapper could never have done cleanly.
+The `auto` mode brought its own set of challenges. To pick the right number of threads, ESLint needed to know how many files it would be linting — information that only becomes available after file enumeration. This meant refactoring the code so that the thread count could be calculated after enumerating files and before creating threads, something an external wrapper can't accomplish cleanly.
 
 ### Detecting Suboptimal Concurrency
 
@@ -128,7 +128,7 @@ const eslint = await ESLint.fromOptionsModule(optionsURL);
 * Try different `--concurrency` values on each machine to find the ideal setting—don't rely solely on `auto`.
 * Combine `--cache` with multithreading for even faster incremental runs.
 
-## Way Forward
+## Conclusion
 
 Bringing multithread linting to life was a collaborative effort, shaped by the ideas, feedback, and testing of both the ESLint team and the wider community. We are thankful to everyone involved in the process of making this concept become a reality.
 
