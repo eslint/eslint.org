@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 150222.47286204,
-        "monthlyDonations": 12518.539405169997,
-        "sponsorCount": 175
+        "annualDonations": 150102.47286204,
+        "monthlyDonations": 12508.539405169997,
+        "sponsorCount": 174
     },
     "diamond": [],
     "platinum": [
@@ -322,16 +322,7 @@
             "url": null,
             "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
             "monthlyDonation": 10,
-            "totalDonations": 260,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Nirvati",
-            "url": "https://nirvati.org/",
-            "image": "https://images.opencollective.com/nirvati/605818e/logo.png",
-            "monthlyDonation": 10,
-            "totalDonations": 280,
+            "totalDonations": 270,
             "source": "opencollective",
             "tier": "backer"
         },
