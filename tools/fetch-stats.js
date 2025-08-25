@@ -137,9 +137,7 @@ async function fetchGitHubNetworkStats() {
 	).text();
 
 	return {
-		projectDependents: Number(
-			projectDependents.trim().replace(/[^\d]/gu, ""),
-		),
+		projectDependents: Number(projectDependents.trim().replace(/\D/gu, "")),
 	};
 }
 
