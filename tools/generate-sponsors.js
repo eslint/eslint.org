@@ -170,7 +170,7 @@ async function writeData(filePath, data) {
 async function updateReadme(sponsorsInfo) {
 	const readme = await readData(README_FILE_PATH);
 	let newReadme = readme.replace(
-		/<!--sponsorsstart-->[\w\W]*?<!--sponsorsend-->/u,
+		/<!--sponsorsstart-->[\s\S]*?<!--sponsorsend-->/u,
 		`<!--sponsorsstart-->\n\n${sponsorsInfo}\n<!--sponsorsend-->`,
 	);
 

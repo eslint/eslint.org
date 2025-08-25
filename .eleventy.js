@@ -88,7 +88,7 @@ module.exports = eleventyConfig => {
 		return slugify(str, {
 			lower: true,
 			strict: true,
-			remove: /["]/gu,
+			remove: /"/gu,
 		});
 	});
 
