@@ -250,14 +250,5 @@
         "amount": 100,
         "date": "2024-08-26T15:24:00.453Z",
         "source": "opencollective"
-    },
-    {
-        "id": "jrkx5lmn-v904qjlk-5rm68bwa-7zdygoe3",
-        "name": "Automatio AI",
-        "url": "https://automatio.ai/",
-        "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
-        "amount": 5,
-        "date": "2024-07-29T05:43:58.948Z",
-        "source": "opencollective"
     }
 ]
