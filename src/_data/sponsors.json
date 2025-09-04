@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 142548,
-        "monthlyDonations": 11879,
+        "annualDonations": 142440,
+        "monthlyDonations": 11870,
         "sponsorCount": 154
     },
     "diamond": [],
@@ -287,15 +287,6 @@
             "image": "https://images.opencollective.com/raiderio_wow/7a380a3/logo.png",
             "monthlyDonation": 10,
             "totalDonations": 560,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "SiMedia",
-            "url": "https://www.simedia.com/",
-            "image": "https://images.opencollective.com/simedia/848efc9/logo.png",
-            "monthlyDonation": 10,
-            "totalDonations": 610,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1293,6 +1284,14 @@
             "name": "Syntax",
             "image": "https://avatars.githubusercontent.com/u/130389858",
             "url": "https://syntax.fm",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Trash Nothing",
+            "image": "https://avatars.githubusercontent.com/u/230028908",
+            "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
