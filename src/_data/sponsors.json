@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 142440,
-        "monthlyDonations": 11870,
-        "sponsorCount": 154
+        "annualDonations": 142404,
+        "monthlyDonations": 11867,
+        "sponsorCount": 153
     },
     "diamond": [],
     "platinum": [
@@ -1056,15 +1056,6 @@
             "url": "https://jupli.com",
             "monthlyDonation": 5,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Austin Akers",
-            "url": null,
-            "image": "https://images.opencollective.com/austin-akers/3548ebd/avatar.png",
-            "monthlyDonation": 3,
-            "totalDonations": 75,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
