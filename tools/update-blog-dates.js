@@ -123,7 +123,7 @@ function getGitLastUpdated(filePath) {
 
 		console.log(`Updated ${filesToProcess.length} post dates`);
 	} catch (error) {
-		console.error("Error:", error.message);
+		console.error(error);
 		process.exit(1);
 	}
 })();
