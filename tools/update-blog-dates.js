@@ -62,7 +62,9 @@ async function loadExistingDates() {
 	try {
 		return JSON.parse(await fs.readFile(DATES_FILE, "utf8"));
 	} catch (error) {
-		throw new Error(`Failed to parse ${DATES_FILE}: ${error.message}`);
+		throw new Error(`Failed to parse ${DATES_FILE}`, {
+			cause: error,
+		});
 	}
 }
 
@@ -79,9 +81,9 @@ function getGitLastUpdated(filePath) {
 			.trim();
 		return date ? new Date(date) : new Date();
 	} catch (error) {
-		throw new Error(
-			`Could not get git date for ${filePath}: ${error.message}`,
-		);
+		throw new Error(`Could not get git date for ${filePath}`, {
+			cause: error,
+		});
 	}
 }
 
@@ -121,7 +123,7 @@ function getGitLastUpdated(filePath) {
 
 		console.log(`Updated ${filesToProcess.length} post dates`);
 	} catch (error) {
-		console.error("Error:", error.message);
+		console.error(error);
 		process.exit(1);
 	}
 })();
