@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 148695.92087856,
-        "monthlyDonations": 12391.326739879998,
-        "sponsorCount": 156
+        "annualDonations": 148936.39727352,
+        "monthlyDonations": 12411.366439459998,
+        "sponsorCount": 158
     },
     "diamond": [],
     "platinum": [
@@ -269,6 +269,15 @@
             "image": "https://github.com/codecov.png",
             "monthlyDonation": 20.248257,
             "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714169.30954801167.7356633950.0633729532.4919902832.5320847820.24825700",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 20.03907737,
+            "totalDonations": "013.1523181713.0949178512.4986023910.0441172110.0737259420.03907737",
             "source": "thanks.dev",
             "tier": "backer"
         },
@@ -1312,6 +1321,15 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 0.00062221,
+            "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.00062221",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {

@@ -375,6 +375,17 @@
     ],
     "committers": [
         {
+            "username": "DMartens",
+            "name": "fnx",
+            "title": "ESLint Committer",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/966276",
+            "bio": null,
+            "twitter_username": null,
+            "github_username": "DMartens",
+            "location": null
+        },
+        {
             "username": "JoshuaKGoldberg",
             "name": "Josh Goldberg ✨",
             "title": "ESLint Committer",
