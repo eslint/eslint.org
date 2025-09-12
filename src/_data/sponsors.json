@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 148936.39727352,
-        "monthlyDonations": 12411.366439459998,
-        "sponsorCount": 158
+        "annualDonations": 146536.39727352,
+        "monthlyDonations": 12211.366439459998,
+        "sponsorCount": 157
     },
     "diamond": [],
     "platinum": [
@@ -115,15 +115,6 @@
             "monthlyDonation": 211.72971887,
             "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.2284701967.26918957285.48772580209.60328591209.70414805211.72971887",
             "source": "thanks.dev",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "Icons8",
-            "url": "https://icons8.com/",
-            "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
-            "monthlyDonation": 200,
-            "totalDonations": 14800,
-            "source": "opencollective",
             "tier": "bronze-sponsor"
         },
         {
