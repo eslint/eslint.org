@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 146536.39727352,
-        "monthlyDonations": 12211.366439459998,
-        "sponsorCount": 157
+        "annualDonations": 146418.81810744,
+        "monthlyDonations": 12201.568175619997,
+        "sponsorCount": 160
     },
     "diamond": [],
     "platinum": [
@@ -300,15 +300,6 @@
             "tier": "backer"
         },
         {
-            "name": "odan",
-            "url": null,
-            "image": "https://images.opencollective.com/odan/3b99c72/avatar.png",
-            "monthlyDonation": 10,
-            "totalDonations": 270,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "MFB Technologies",
             "url": "https://mfbtech.com",
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
@@ -602,7 +593,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 95,
+            "totalDonations": 100,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1315,11 +1306,47 @@
             "tier": "backer"
         },
         {
+            "name": "jshttp",
+            "url": "https://jshttp.github.io/",
+            "image": "https://github.com/jshttp.png",
+            "monthlyDonation": 0.10207436,
+            "totalDonations": "00.122468210.103472600.103535120.096432590.096432590.096235930.098517180.097905920.098580590.098580590.108947270.10207436",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "pillarjs",
+            "url": "https://pillarjs.github.io",
+            "image": "https://github.com/pillarjs.png",
+            "monthlyDonation": 0.05880053,
+            "totalDonations": "00.089878450.079007620.069406200.070405760.065740560.065740560.066250130.063865390.063469010.057386560.057386560.067989580.05880053",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "expressjs",
+            "url": "https://expressjs.com/",
+            "image": "https://github.com/expressjs.png",
+            "monthlyDonation": 0.04083853,
+            "totalDonations": "00.036993410.031956500.031166930.029207030.029207030.029375870.028498350.028321520.040052610.040052610.043397360.04083853",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Konstantin Vinogradov",
             "url": "https://kvinogradov.com/",
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.00062221,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.00062221",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "ServieJS",
+            "url": null,
+            "image": "https://github.com/serviejs.png",
+            "monthlyDonation": 0.00002274,
+            "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.012250070.012249880.011406570.011406570.011500110.010583210.010509660.000085800.000085800.000094010.00002274",
             "source": "thanks.dev",
             "tier": "backer"
         },
