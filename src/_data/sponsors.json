@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 146418.81810744,
-        "monthlyDonations": 12201.568175619997,
+        "annualDonations": 145338.81810744,
+        "monthlyDonations": 12111.568175619997,
         "sponsorCount": 160
     },
     "diamond": [],
@@ -169,20 +169,20 @@
     ],
     "backers": [
         {
-            "name": "Vasilii Kovalev",
-            "url": null,
-            "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
-            "monthlyDonation": 150,
-            "totalDonations": 1200,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Principal Financial Group",
             "url": "https://www.principal.com/about-us",
             "image": "https://images.opencollective.com/principal/431e690/logo.png",
             "monthlyDonation": 140,
             "totalDonations": 5140,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Vasilii Kovalev",
+            "url": null,
+            "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
+            "monthlyDonation": 60,
+            "totalDonations": 1200,
             "source": "opencollective",
             "tier": "backer"
         },

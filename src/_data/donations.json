@@ -1,5 +1,23 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFOuV",
+        "name": "Shivam Gawali",
+        "image": "https://avatars.githubusercontent.com/u/142748461",
+        "url": "https://glorious-vulture.super.site",
+        "amount": 1,
+        "date": "2025-09-15T22:06:53Z",
+        "source": "github"
+    },
+    {
+        "id": "8rzownxl-9e50pxrl-0v3pymvb-dgk7j43a",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 50,
+        "date": "2025-09-15T12:01:04.561Z",
+        "source": "opencollective"
+    },
+    {
         "id": "ejoxl3az-45w9pa53-l8w6y870-mgkbrvdn",
         "name": "Kacper Ochmański",
         "url": null,
@@ -258,15 +276,6 @@
         "image": "https://images.opencollective.com/opensource/426badd/logo.png",
         "amount": 175.26,
         "date": "2024-09-27T14:22:45.108Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "n4gx0bro-v5m96nk5-mlg6d8lk-3ey7jzwa",
-        "name": "Anthony Fu Fund",
-        "url": "https://antfu.me/",
-        "image": "https://images.opencollective.com/antfu/9fd8171/logo.png",
-        "amount": 100,
-        "date": "2024-08-26T15:24:00.453Z",
         "source": "opencollective"
     }
 ]
