@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 145338.81810744,
-        "monthlyDonations": 12111.568175619997,
-        "sponsorCount": 160
+        "annualDonations": 145338.87939863998,
+        "monthlyDonations": 12111.573283219997,
+        "sponsorCount": 161
     },
     "diamond": [],
     "platinum": [
@@ -1329,6 +1329,15 @@
             "image": "https://github.com/expressjs.png",
             "monthlyDonation": 0.04083853,
             "totalDonations": "00.036993410.031956500.031166930.029207030.029207030.029375870.028498350.028321520.040052610.040052610.043397360.04083853",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.0051076,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.00510760",
             "source": "thanks.dev",
             "tier": "backer"
         },
