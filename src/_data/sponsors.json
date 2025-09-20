@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 145338.87972539998,
-        "monthlyDonations": 12111.573310449998,
-        "sponsorCount": 162
+        "annualDonations": 145338.88163112,
+        "monthlyDonations": 12111.573469259998,
+        "sponsorCount": 163
     },
     "diamond": [],
     "platinum": [
@@ -1347,6 +1347,15 @@
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.00062221,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.00062221",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "RagingEnby",
+            "url": "https://ragingenby.dev",
+            "image": "https://github.com/ragingenby.png",
+            "monthlyDonation": 0.00015881,
+            "totalDonations": "00.000158730.00015881",
             "source": "thanks.dev",
             "tier": "backer"
         },
