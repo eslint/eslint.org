@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 145338.88163112,
-        "monthlyDonations": 12111.573469259998,
-        "sponsorCount": 163
+        "annualDonations": 145356.9560376,
+        "monthlyDonations": 12113.079669799998,
+        "sponsorCount": 164
     },
     "diamond": [],
     "platinum": [
@@ -1133,6 +1133,15 @@
             "url": "https://mizle.net",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 1.50620054,
+            "totalDonations": "08.426817307.033780176.496383325.655986995.379024760.922801240.931320922.032353961.50620054",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
