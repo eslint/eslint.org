@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 145356.9560376,
-        "monthlyDonations": 12113.079669799998,
+        "annualDonations": 145345.0045278,
+        "monthlyDonations": 12112.083710649998,
         "sponsorCount": 164
     },
     "diamond": [],
@@ -1291,14 +1291,6 @@
             "tier": "backer"
         },
         {
-            "name": "Aymane Mehdi",
-            "image": "https://avatars.githubusercontent.com/u/119676798",
-            "url": "https://AymaneMehdi.com",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Syntax",
             "image": "https://avatars.githubusercontent.com/u/130389858",
             "url": "https://syntax.fm",
@@ -1347,6 +1339,15 @@
             "image": "https://github.com/josdejong.png",
             "monthlyDonation": 0.0051076,
             "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.00510760",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.00404085,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.391978300.367332360.004143800.005619350.003624580.00404085",
             "source": "thanks.dev",
             "tier": "backer"
         },
