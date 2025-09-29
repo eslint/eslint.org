@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 145345.0045278,
-        "monthlyDonations": 12112.083710649998,
-        "sponsorCount": 164
+        "annualDonations": 145405.0045278,
+        "monthlyDonations": 12117.083710649998,
+        "sponsorCount": 165
     },
     "diamond": [],
     "platinum": [
@@ -1072,6 +1072,14 @@
             "name": "Jupli",
             "image": "https://avatars.githubusercontent.com/u/140319444",
             "url": "https://jupli.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Yejeong, Ham",
+            "image": "https://avatars.githubusercontent.com/u/147745679",
+            "url": "https://github.com/thelightway24",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
