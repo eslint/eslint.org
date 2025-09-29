@@ -129,6 +129,7 @@ module.exports = eleventyConfig => {
 			notation: "compact",
 			maximumFractionDigits: 1,
 			minimumFractionDigits: 1,
+			roundingMode: "trunc",
 		};
 
 		const formatter = new Intl.NumberFormat(siteName, formatOptions);
