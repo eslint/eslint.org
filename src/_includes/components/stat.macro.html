@@ -1,0 +1,6 @@
+{% macro statItem(statValue, statLabel) %}
+<div class="metrics__item" aria-label="{{ (statValue | formatStatsNumber).full}} {{ statLabel }}">
+    <span class="metrics__value" aria-hidden="true">{{ (statValue | formatStatsNumber).short }}</span>
+    <span aria-hidden="true">{{ statLabel }}</span>
+</div>
+{% endmacro %}
