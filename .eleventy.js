@@ -128,7 +128,6 @@ module.exports = eleventyConfig => {
 		const formatOptions = {
 			notation: "compact",
 			maximumFractionDigits: 1,
-			minimumFractionDigits: 1,
 			roundingMode: "trunc",
 		};
 
