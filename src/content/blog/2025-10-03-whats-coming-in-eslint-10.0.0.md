@@ -11,7 +11,7 @@ categories:
   - API Changes
 ---
 
-The Technical Steering Committee (TSC) has finalized the features for ESLint v10.0.0. This post outlines our plans for v10.0.0. You can keep up to date with everything that is planned for v10.0.0 on our [project board](https://github.com/orgs/eslint/projects/6).
+The Technical Steering Committee (TSC) has finalized the features for ESLint v10.0.0. This post outlines our high-level plans for v10.0.0. For more details, and to keep up to date with everything that is planned for v10.0.0, visit our [project board](https://github.com/orgs/eslint/projects/6).
 
 ## Development plan
 
