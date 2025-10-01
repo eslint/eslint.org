@@ -36,9 +36,9 @@ Following our Node.js version support policy for major releases, ESLint v10.0.0 
 
 This change aligns with Node.js's release schedule as of 2025, where:
 
-* Node.js v18 reached end-of-life in March 2025
-* Node.js v20 is in Maintenance LTS until July 2025
-* Node.js v22 became Active LTS in July 2025
+* Node.js v18 reached end-of-life in April 2025
+* Node.js v20 is in Maintenance LTS until April 2026
+* Node.js v22 became Active LTS in October 2024
 
 The updated Node.js requirements will enable ESLint to leverage newer JavaScript features, including native support for `require(esm)` (available since Node.js v20.19.0), and improved performance characteristics of modern Node.js versions.
 
