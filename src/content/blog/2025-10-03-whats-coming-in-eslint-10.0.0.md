@@ -49,10 +49,9 @@ In ESLint v9.0.0, we deprecated the old eslintrc config system while leaving the
 1. The `ESLINT_USE_FLAT_CONFIG` environment variable is no longer honored.
 1. The CLI no longer supports eslintrc-specific arguments (`--no-eslintrc`, `--env`, `--resolve-plugins-relative-to`, `--rulesdir`, `--ignore-path`).
 1. `.eslintrc.*` and `.eslintignore` files will no longer be honored.
-1. The `ESLint` class' `configType` argument can only be `"flat"` and will throw an error if `"eslintrc"` is passed.
 1. The `shouldUseFlatConfig()` method will always return `true`.
 1. The `loadESLint()` function now always returns the `ESLint` class.
-1. The `Linter:verify()` method `configType` argument can only be `"flat"`.
+1. The `Linter` constructor `configType` argument can only be `"flat"` and will throw an error if `"eslintrc"` is passed.
 1. The following `Linter` eslintrc-specific methods are removed:
     * `defineParser()`
     * `defineRule()`
@@ -86,16 +85,19 @@ const x = 1;
 * **Current:** `Program` range covers only `const x = 1;` (excludes comments)
 * **New:** `Program` range covers the entire file from start to finish
 
-### Removing deprecated rule context methods
+### Removing deprecated rule context members
 
-ESLint v10.0.0 will [remove several deprecated methods from the rule context object](https://github.com/eslint/eslint/pull/20086) that have been deprecated since ESLint v9.0.0.
+ESLint v10.0.0 will [remove several deprecated members from the rule context object](https://github.com/eslint/eslint/pull/20086) that have been deprecated since ESLint v9.0.0.
 
-The following deprecated context methods will no longer be available:
+The following deprecated context members will no longer be available:
 
 * **`context.getCwd()`** - Use `context.cwd` instead
 * **`context.getFilename()`** - Use `context.filename` instead
 * **`context.getPhysicalFilename()`** - Use `context.physicalFilename` instead
 * **`context.getSourceCode()`** - Use `context.sourceCode` instead
+* **`context.parserOptions`** - Use `context.languageOptions` or `context.languageOptions.parserOptions` instead
+* **`context.parserPath`** - No replacement
+
 
 ### New configuration file lookup algorithm
 
@@ -123,11 +125,11 @@ export function createCard(name) {
 
 In this code, ESLint doesn't recognize that `<Card>` is a reference to the imported `Card` component. This change brings ESLint's JSX handling in line with developer expectations and improves the overall linting experience for modern JavaScript applications using JSX.
 
-### Removal of deprecated SourceCode methods
+### Removal of deprecated `SourceCode` methods
 
 ESLint v10.0.0 will [remove several deprecated SourceCode methods](https://github.com/eslint/eslint/issues/20113) that have been marked for removal since ESLint v5.10.0.
 
-The following deprecated SourceCode methods will be removed:
+The following deprecated `SourceCode` methods will be removed:
 
 * **`getTokenOrCommentBefore()`** - Replace with `getTokenBefore()` using the `{ includeComments: true }` option
 * **`getTokenOrCommentAfter()`** - Replace with `getTokenAfter()` using the `{ includeComments: true }` option
@@ -135,10 +137,6 @@ The following deprecated SourceCode methods will be removed:
 * **`getJSDocComment()`** - This functionality will be moved to AST utilities
 
 These methods have been deprecated for multiple major versions and are primarily used by deprecated formatting rules and internal ESLint utilities. Custom rules using these methods will need to be updated to use their modern replacements. The [`@eslint/compat`](https://npmjs.com/package/@eslint/compat) package will provide compatibility patches to help with the transition.
-
-### Continued migration of formatting rules
-
-The migration of formatting rules to `@stylistic/eslint-plugin` will continue, with additional deprecated formatting rules being marked for removal in future versions. Users should plan to migrate to the stylistic plugin for formatting-related rules.
 
 ## When to expect ESLint v10.0.0
 
