@@ -51,7 +51,7 @@ In ESLint v9.0.0, we deprecated the old eslintrc config system while leaving the
 1. `.eslintrc.*` and `.eslintignore` files will no longer be honored.
 1. The `ESLint` class' `configType` argument can only be `"flat"` and will throw an error if `"eslintrc"` is passed.
 1. The `shouldUseFlatConfig()` method will always return `true`.
-1. The `loadESLint()` function now always returns an instance of `ESLint`.
+1. The `loadESLint()` function now always returns the `ESLint` class.
 1. The `Linter:verify()` method `configType` argument can only be `"flat"`.
 1. The following `Linter` eslintrc-specific methods are removed:
     * `defineParser()`
