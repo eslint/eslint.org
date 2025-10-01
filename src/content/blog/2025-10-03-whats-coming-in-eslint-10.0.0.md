@@ -105,6 +105,10 @@ The `v10_config_lookup_from_file` flag, which changes configuration lookup to st
 
 This change ensures that ESLint configuration discovery works more intuitively, especially in monorepo setups or when linting files in different directories.
 
+### Removal of `parserOptions.globalReturn`
+
+ESLint v10.0.0 will [remove the `parserOptions.globalReturn` option](https://github.com/eslint/js/issues/525) from Espree, the default ESLint parser, which may affect some user config files. Because global `return` is supported primarily in CommonJS environments, you can instead set `languageOptions.sourceType` to `"commonjs"`.
+
 ## Significant changes in v10.0.0-beta
 
 The following changes are planned for the beta release.
