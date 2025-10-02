@@ -16,6 +16,4 @@ export default async function handler(req: Request, context: any) {
         });
     }
     
-    // For all other countries, serve the feed.xml content
-    return await context.next();
 }
