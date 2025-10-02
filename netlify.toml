@@ -11,6 +11,10 @@
   function = "og"
   path = "/og"
 
+[[edge_functions]]
+  function = "feed"
+  path = "/feed.xml"
+
 # fix avif loading in Firefox
 # Source: https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/
 [[headers]]
