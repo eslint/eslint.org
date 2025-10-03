@@ -40,7 +40,7 @@ This change aligns with Node.js's release schedule as of 2025, where:
 * Node.js v20 is in Maintenance LTS until April 2026
 * Node.js v22 became Active LTS in October 2024
 
-The updated Node.js requirements will enable ESLint to leverage newer JavaScript features, including native support for `require(esm)` (available since Node.js v20.19.0), and improved performance characteristics of modern Node.js versions.
+The updated Node.js requirements will enable ESLint to leverage newer JavaScript features, including native support for `require(esm)` (enabled by default since Node.js v20.19.0), and improved performance characteristics of modern Node.js versions.
 
 ### Removal of eslintrc functionality
 
