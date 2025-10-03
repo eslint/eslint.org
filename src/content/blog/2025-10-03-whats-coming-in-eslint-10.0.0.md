@@ -60,7 +60,7 @@ In ESLint v9.0.0, we deprecated the old eslintrc config system while leaving the
 1. The following changes to the `/use-at-your-own-risk` entrypoint:
     * `LegacyESLint` is removed
     * `FileEnumerator` is removed
-    * `shouldUseFlatConfig()` method will always return `true`
+    * `shouldUseFlatConfig()` function will always return `true`
 
 ### Updating `eslint:recommended` configuration
 
