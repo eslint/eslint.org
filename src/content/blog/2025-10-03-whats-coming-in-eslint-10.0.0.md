@@ -49,7 +49,6 @@ In ESLint v9.0.0, we deprecated the old eslintrc config system while leaving the
 1. The `ESLINT_USE_FLAT_CONFIG` environment variable is no longer honored.
 1. The CLI no longer supports eslintrc-specific arguments (`--no-eslintrc`, `--env`, `--resolve-plugins-relative-to`, `--rulesdir`, `--ignore-path`).
 1. `.eslintrc.*` and `.eslintignore` files will no longer be honored.
-1. The `shouldUseFlatConfig()` method will always return `true`.
 1. The `loadESLint()` function now always returns the `ESLint` class.
 1. The `Linter` constructor `configType` argument can only be `"flat"` and will throw an error if `"eslintrc"` is passed.
 1. The following `Linter` eslintrc-specific methods are removed:
@@ -108,6 +107,10 @@ This change ensures that ESLint configuration discovery works more intuitively, 
 ### Removal of `parserOptions.globalReturn`
 
 ESLint v10.0.0 will [remove the `parserOptions.globalReturn` option](https://github.com/eslint/js/issues/525) from Espree, the default ESLint parser, which may affect some user config files. Because global `return` is supported primarily in CommonJS environments, you can instead set `languageOptions.sourceType` to `"commonjs"`.
+
+### Removal of `type` property in errors of invalid `RuleTester` cases
+
+In ESLint v10.0.0, the deprecated `type` property in errors of invalid test cases for rules will be no longer supported. Using the `type` property in test cases [will throw an error](https://github.com/eslint/eslint/issues/19029).
 
 ## Significant changes in v10.0.0-beta
 
