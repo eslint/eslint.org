@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 138888,
-        "monthlyDonations": 11574,
-        "sponsorCount": 151
+        "annualDonations": 138768,
+        "monthlyDonations": 11564,
+        "sponsorCount": 150
     },
     "diamond": [],
     "platinum": [
@@ -255,15 +255,6 @@
             "tier": "backer"
         },
         {
-            "name": "Say Yup",
-            "url": "https://www.sayyup.nl",
-            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
-            "monthlyDonation": 10,
-            "totalDonations": 315,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "MFB Technologies",
             "url": "https://mfbtech.com",
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
@@ -422,7 +413,7 @@
             "url": "https://www.crawljobs.com",
             "image": "https://images.opencollective.com/crawljobs/ab4ce61/logo.png",
             "monthlyDonation": 6,
-            "totalDonations": 30,
+            "totalDonations": 36,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -431,7 +422,7 @@
             "url": "https://podobnestrony.pl",
             "image": "https://images.opencollective.com/podobnestrony/d86d3dc/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -440,7 +431,7 @@
             "url": "https://monarchairgroup.com",
             "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 15,
+            "totalDonations": 20,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -449,7 +440,7 @@
             "url": null,
             "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 260,
+            "totalDonations": 265,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -458,7 +449,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 165,
+            "totalDonations": 170,
             "source": "opencollective",
             "tier": "backer"
         },
