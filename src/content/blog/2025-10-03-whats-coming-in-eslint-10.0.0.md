@@ -68,7 +68,7 @@ The `eslint:recommended` configuration will be [updated for v10.0.0](https://git
 
 ### Removing support for jiti < 2.2.0
 
-ESLint v10.0.0 will [drop support for jiti versions prior to 2.2.0](https://github.com/eslint/eslint/issues/19765) when loading TypeScript configuration files due to known issues that can cause compatibility problems when configurations load certain plugins (as documented in [issue #19413](https://github.com/eslint/eslint/issues/19413))
+ESLint v10.0.0 will [drop support for jiti versions prior to 2.2.0](https://github.com/eslint/eslint/issues/19765) when loading TypeScript configuration files due to known issues that can cause compatibility problems when configurations load certain plugins (as documented in [issue #19413](https://github.com/eslint/eslint/issues/19413)).
 
 ### Updates to `Program` AST node range coverage
 
