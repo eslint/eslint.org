@@ -30,9 +30,9 @@ The following changes are planned for the alpha release and represent significan
 
 Following our Node.js version support policy for major releases, ESLint v10.0.0 will [require Node.js v20.19.0 or later](https://github.com/eslint/eslint/issues/19969). The new supported versions will be:
 
-* Node.js v20.19.0 and above (Maintenance LTS)
-* Node.js v22.13.0 and above (Active LTS)
-* Node.js v24 and above (Current)
+* Node.js v20.19.0 and above
+* Node.js v22.13.0 and above
+* Node.js v24 and above
 
 This change aligns with Node.js's release schedule as of 2025, where:
 
