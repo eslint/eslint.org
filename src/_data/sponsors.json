@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 138888,
-        "monthlyDonations": 11574,
-        "sponsorCount": 151
+        "annualDonations": 138996,
+        "monthlyDonations": 11583,
+        "sponsorCount": 152
     },
     "diamond": [],
     "platinum": [
@@ -423,6 +423,15 @@
             "image": "https://images.opencollective.com/crawljobs/ab4ce61/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 36,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Yutsuten",
+            "url": null,
+            "image": "https://images.opencollective.com/yutsuten/0cccb58/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -920,6 +929,14 @@
             "tier": "backer"
         },
         {
+            "name": "Mateus Etto",
+            "image": "https://avatars.githubusercontent.com/u/7322925",
+            "url": "https://yutsuten.github.io/notes/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Dan Brown",
             "image": "https://avatars.githubusercontent.com/u/8343178",
             "url": "https://danb.me",
@@ -1168,14 +1185,6 @@
             "name": "Mikihiro SUDA",
             "image": "https://avatars.githubusercontent.com/u/6907421",
             "url": "https://sudame.net",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Mateus Etto",
-            "image": "https://avatars.githubusercontent.com/u/7322925",
-            "url": "https://yutsuten.github.io/notes/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
