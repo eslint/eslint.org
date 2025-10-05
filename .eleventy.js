@@ -11,7 +11,6 @@
 
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require("eleventy-plugin-reading-time");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginTOC = require("eleventy-plugin-nesting-toc");
 const slugify = require("slugify");
@@ -23,6 +22,10 @@ const fs = require("node:fs");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const preWrapperPlugin = require("./src/_11ty/plugins/pre-wrapper.js");
+const {
+	highlighter,
+	lineNumberPlugin,
+} = require("./src/_11ty/plugins/md-syntax-highlighter.js");
 const blogDates = require("./src/_data/blog-dates.json");
 
 //-----------------------------------------------------------------------------
@@ -182,10 +185,6 @@ module.exports = eleventyConfig => {
 	 */
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(readingTime);
-	eleventyConfig.addPlugin(syntaxHighlight, {
-		alwaysWrapLineHighlights: true,
-		lineSeparator: "\n",
-	});
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginTOC, {
 		tags: ["h2", "h3", "h4"],
@@ -196,17 +195,18 @@ module.exports = eleventyConfig => {
 	});
 
 	// add IDs to the headers
-	eleventyConfig.setLibrary(
-		"md",
-		markdownIt({
-			html: true,
-			linkify: true,
-			typographer: true,
-		})
-			.use(markdownItAnchor, {})
-			.use(preWrapperPlugin, {})
-			.disable("code"),
-	);
+	const md = markdownIt({
+		html: true,
+		linkify: true,
+		typographer: true,
+		highlight: (str, lang) => highlighter(md, str, lang),
+	})
+		.use(markdownItAnchor, {})
+		.use(preWrapperPlugin, {})
+		.use(lineNumberPlugin)
+		.disable("code");
+
+	eleventyConfig.setLibrary("md", md);
 
 	eleventyConfig.addWatchTarget("./src/assets/");
 	eleventyConfig.addWatchTarget("./src/content/pages/");
