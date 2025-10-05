@@ -28,12 +28,17 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
+	position: relative;
 	padding: 1.5rem;
 	margin: 1.5rem 0;
 	overflow: auto;
 	border-radius: var(--border-radius);
 	background-color: var(--lightest-background-color);
 	color: var(--code-text-color);
+
+	&.line-numbers-mode {
+		padding-left: calc(1.5rem + 2.4em + 1.2rem);
+	}
 }
 
 :not(pre) > code[class*="language-"],
@@ -87,21 +92,25 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
-pre {
-	counter-reset: lineNumber;
-}
-
-code .highlight-line::before {
-	-webkit-user-select: none;
-	color: var(--icon-color);
-	content: counter(lineNumber);
-	counter-increment: lineNumber;
-	display: inline-block;
-	font-variant-numeric: tabular-nums;
-	margin-right: 1.2em;
-	padding-right: 1.2em;
-	margin-inline-end: 1.2em;
-	padding-inline-end: 1.2em;
+.line-numbers-wrapper {
+	position: absolute;
+	top: 0;
+	left: 1.5rem;
 	text-align: right;
-	width: 2.4em;
+	padding-top: 1.5rem;
+	font-size: 1em;
+	font-family: var(--mono-font), Consolas, Monaco, "Andale Mono",
+		"Ubuntu Mono", monospace;
+	line-height: 1.5;
+	color: var(--icon-color);
+	font-variant-ligatures: none;
+
+	.line-number {
+		user-select: none;
+		color: var(--icon-color);
+		display: inline-block;
+		font-variant-numeric: tabular-nums;
+		text-align: right;
+		width: 1.2em;
+	}
 }
