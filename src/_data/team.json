@@ -347,6 +347,17 @@
             "twitter_username": null,
             "github_username": "yeonjuan",
             "location": "South Korea"
+        },
+        {
+            "username": "Rec0iL99",
+            "name": "Joel Mathew Koshy",
+            "title": "ESLint Alumnus",
+            "website": "https://joelmathew.js.org",
+            "avatar_url": "https://avatars.githubusercontent.com/u/56463684",
+            "bio": null,
+            "twitter_username": "Rec0iL99",
+            "github_username": "Rec0iL99",
+            "location": "Canada"
         }
     ],
     "reviewers": [
@@ -398,6 +409,17 @@
             "location": "Wakefield, MA, USA"
         },
         {
+            "username": "SwetaTanwar",
+            "name": "Sweta Tanwar",
+            "title": "ESLint Committer",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19969451",
+            "bio": null,
+            "twitter_username": "SwetaTanwar",
+            "github_username": "SwetaTanwar",
+            "location": "Bangalore"
+        },
+        {
             "username": "Tanujkanti4441",
             "name": "Tanuj Kanti",
             "title": "ESLint Committer",
@@ -418,6 +440,17 @@
             "twitter_username": null,
             "github_username": "lumirlumir",
             "location": "Pangyo, Korea"
+        },
+        {
+            "username": "Pixel998",
+            "name": null,
+            "title": "ESLint Committer",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/195726568",
+            "bio": null,
+            "twitter_username": null,
+            "github_username": "Pixel998",
+            "location": null
         }
     ],
     "website": [
@@ -467,17 +500,6 @@
             "twitter_username": null,
             "github_username": "sam3k",
             "location": "New York City"
-        },
-        {
-            "username": "Rec0iL99",
-            "name": "Joel Mathew Koshy",
-            "title": "ESLint Support Team",
-            "website": "https://joelmathew.js.org",
-            "avatar_url": "https://avatars.githubusercontent.com/u/56463684",
-            "bio": null,
-            "twitter_username": "Rec0iL99",
-            "github_username": "Rec0iL99",
-            "location": "Canada"
         }
     ]
 }
