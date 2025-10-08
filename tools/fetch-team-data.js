@@ -74,41 +74,44 @@ const octokit = new Octokit({
 	auth: ESLINT_GITHUB_TOKEN,
 });
 
-async function fetchUserProfile(username) {
-	// check cache first
-	if (users.has(username)) {
-		return users.get(username);
+function fetchUserProfile(username) {
+	async function doFetch() {
+		const { data: profile } = await octokit.users.getByUsername({
+			username,
+		});
+		const { data: social } = await octokit.request(
+			"GET /users/{username}/social_accounts",
+			{ username },
+		);
+		const avatarURL = `https://avatars.githubusercontent.com/u/${profile.id}`;
+
+		return {
+			username: profile.login,
+			name: profile.name,
+			title: "Guest Author",
+			// eslint-disable-next-line no-nested-ternary -- add https if missing
+			website: profile.blog.match(/http(s)?:\/\//u)
+				? profile.blog
+				: profile.blog
+					? `https://${profile.blog}`
+					: profile.blog,
+			avatar_url: avatarURL,
+			bio: profile.bio,
+			twitter_username: profile.twitter_username,
+			github_username: profile.login,
+			mastodon_url: social.find(
+				account => account.provider === "mastodon",
+			)?.url,
+			location: profile.location,
+		};
 	}
 
-	const { data: profile } = await octokit.users.getByUsername({ username });
-	const { data: social } = await octokit.request(
-		"GET /users/{username}/social_accounts",
-		{ username },
-	);
-	const avatarURL = `https://avatars.githubusercontent.com/u/${profile.id}`;
+	// Immediately store Promise in the cache to avoid race conditions
+	if (!users.has(username)) {
+		users.set(username, doFetch());
+	}
 
-	const result = {
-		username: profile.login,
-		name: profile.name,
-		title: "Guest Author",
-		// eslint-disable-next-line no-nested-ternary -- add https if missing
-		website: profile.blog.match(/http(s)?:\/\//u)
-			? profile.blog
-			: profile.blog
-				? `https://${profile.blog}`
-				: profile.blog,
-		avatar_url: avatarURL,
-		bio: profile.bio,
-		twitter_username: profile.twitter_username,
-		github_username: profile.login,
-		mastodon_url: social.find(account => account.provider === "mastodon")
-			?.url,
-		location: profile.location,
-	};
-
-	// cache the result
-	users.set(username, result);
-	return result;
+	return users.get(username);
 }
 
 async function fetchTeamMembers() {
