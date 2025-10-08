@@ -26,7 +26,7 @@ hook: "team_page"
             <ul role="list" class="span-6-12 people-list">
                 {% for item in team.tsc %}
                     {% set itemPhoto = item.avatar_url %}
-                    {% set itemName = item.name %}
+                    {% set itemName = item.name or item.username %}
                     {% set itemHandle = item.username %}
 
                     {% set itemBio = item.bio | safe %}
@@ -68,7 +68,7 @@ hook: "team_page"
             <ul role="list" class="span-6-12 people-list">
                 {% for item in team.reviewers %}
                     {% set itemPhoto = item.avatar_url %}
-                    {% set itemName = item.name %}
+                    {% set itemName = item.name or item.username %}
                     {% set itemHandle = item.username %}
 
                     {% set itemBio = item.bio | safe %}
@@ -110,7 +110,7 @@ hook: "team_page"
             <ul role="list" class="span-6-12 people-list">
                 {% for item in team.committers %}
                     {% set itemPhoto = item.avatar_url %}
-                    {% set itemName = item.name %}
+                    {% set itemName = item.name or item.username %}
                     {% set itemHandle = item.username %}
 
                     {% set itemBio = item.bio | safe %}
@@ -152,7 +152,7 @@ hook: "team_page"
             <ul role="list" class="span-6-12 people-list">
                 {% for item in team.website %}
                 {% set itemPhoto = item.avatar_url %}
-                {% set itemName = item.name %}
+                {% set itemName = item.name or item.username %}
                 {% set itemHandle = item.username %}
 
                 {% set itemBio = item.bio | safe %}
@@ -194,7 +194,7 @@ hook: "team_page"
             <ul role="list" class="span-6-12 people-list">
                 {% for item in team.support %}
                 {% set itemPhoto = item.avatar_url %}
-                {% set itemName = item.name %}
+                {% set itemName = item.name or item.username %}
                 {% set itemHandle = item.username %}
 
                 {% set itemBio = item.bio | safe %}
@@ -236,7 +236,7 @@ hook: "team_page"
             <ul role="list" class="span-6-12 people-list">
                 {% for item in team.alumni %}
                     {% set itemPhoto = item.avatar_url %}
-                    {% set itemName = item.name %}
+                    {% set itemName = item.name or item.username %}
                     {% set itemHandle = item.username %}
 
                     <li>
