@@ -69,7 +69,6 @@ const lineNumberPlugin = md => {
 			rawCode.indexOf("</code>"),
 		);
 		const lines = code.split("\n");
-		console.log(lines.length);
 		const lineNumbersCode = [...Array(lines.length - 1)]
 			.map(
 				(line, index) =>
