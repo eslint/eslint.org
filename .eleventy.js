@@ -127,16 +127,23 @@ module.exports = eleventyConfig => {
 		DateTime.fromISO(isoDate).toFormat("d MMM"),
 	);
 
-	eleventyConfig.addFilter("shortNumber", number => {
-		if (number >= 1000000) {
-			return `${(number / 1000000).toFixed(1)}M`;
-		}
+	eleventyConfig.addFilter("formatStatsNumber", number => {
+		const formatOptions = {
+			notation: "compact",
+			maximumFractionDigits: 1,
+			roundingMode: "trunc",
+		};
 
-		if (number >= 1000) {
-			return `${(number / 1000).toFixed(1)}K`;
-		}
+		const formatter = new Intl.NumberFormat(siteName, formatOptions);
+		const formatterFull = new Intl.NumberFormat(siteName, {
+			...formatOptions,
+			compactDisplay: "long",
+		});
 
-		return number.toString();
+		return {
+			short: formatter.format(number),
+			full: formatterFull.format(number),
+		};
 	});
 
 	eleventyConfig.addFilter("readableDateFromISO", isoDate =>

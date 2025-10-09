@@ -11,6 +11,8 @@ eleventyExcludeFromCollections: true
 
 {%- from 'components/donation.macro.html' import donationItem %}
 {%- from 'components/card.macro.html' import card %}
+{%- from 'components/stat.macro.html' import statItem %}
+
 
 <section class="section hero hero--homepage">
     <div class="content-container grid">
@@ -206,25 +208,16 @@ eleventyExcludeFromCollections: true
     <div class="content-container divider community-section">
         <header class="section-head center-text">
             <h2 class="section-title h3">{{ site.homepage.stats.title }}</h2>
-            {% set download_count = stats.weeklyDownloads | shortNumber %}
+            {% set download_count = (stats.weeklyDownloads | formatStatsNumber).full %}
             {% set stats_desc = site.homepage.stats.description | replace("DOWNLOAD_COUNT", download_count) %}
             <p class="section-supporting-text fs-step-0">
                 {{ stats_desc }}
             </p>
         </header>
         <div class="metrics center-text">
-            <div class="metrics__item">
-                <span class="metrics__value">{{ stats.projectDependents | shortNumber }}</span>
-                <span>{{ site.homepage.stats.dependents }}</span>
-            </div>
-            <div class="metrics__item">
-                <span class="metrics__value">{{ stats.weeklyDownloads | shortNumber }}</span>
-                <span>{{ site.homepage.stats.weekly_downloads }}</span>
-            </div>
-            <div class="metrics__item">
-                <span class="metrics__value">{{ stats.stars | shortNumber }}</span>
-                <span>{{ site.homepage.stats.stars }}</span>
-            </div>
+            {{ statItem(stats.projectDependents, site.homepage.stats.dependents) }}
+            {{ statItem(stats.weeklyDownloads, site.homepage.stats.weekly_downloads) }}
+            {{ statItem(stats.stars, site.homepage.stats.stars) }}
         </div>
     </div>
 </section>
