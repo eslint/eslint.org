@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 139056,
-        "monthlyDonations": 11588,
-        "sponsorCount": 153
+        "annualDonations": 145299.92087856,
+        "monthlyDonations": 12108.326739879998,
+        "sponsorCount": 157
     },
     "diamond": [],
     "platinum": [
@@ -91,12 +91,30 @@
     ],
     "bronze": [
         {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 287.34876401,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766161.76391376152.22369333268.03188580161.52162337161.76465919287.34876401287.34876401",
+            "source": "thanks.dev",
+            "tier": "bronze-sponsor"
+        },
+        {
             "name": "Cybozu",
             "url": "https://cybozu.co.jp/",
             "image": "https://images.opencollective.com/cybozu/933e46d/logo.png",
             "monthlyDonation": 250,
             "totalDonations": 23164,
             "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 211.72971887,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.2284701967.26918957285.48772580209.60328591209.70414805211.72971887211.72971887",
+            "source": "thanks.dev",
             "tier": "bronze-sponsor"
         },
         {
@@ -234,6 +252,15 @@
             "url": "https://www.sanofi.com/",
             "monthlyDonation": 25,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 20.248257,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714169.30954801167.7356633950.0633729532.4919902832.5320847820.2482570020.24825700",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1193,6 +1220,14 @@
             "name": "Mikihiro SUDA",
             "image": "https://avatars.githubusercontent.com/u/6907421",
             "url": "https://sudame.net",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Frederik Bosch",
+            "image": "https://avatars.githubusercontent.com/u/6979916",
+            "url": "https://bosch.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
