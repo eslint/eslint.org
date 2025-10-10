@@ -27,7 +27,7 @@
 			color: var(--link-color);
 
 			&::after {
-				content: "✔️";
+				content: "✔️" / "check mark";
 			}
 		}
 
