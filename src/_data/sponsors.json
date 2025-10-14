@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 145540.40756075998,
-        "monthlyDonations": 12128.367296729999,
+        "annualDonations": 145480.40785487997,
+        "monthlyDonations": 12123.367321239999,
         "sponsorCount": 159
     },
     "diamond": [],
@@ -593,7 +593,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 100,
+            "totalDonations": 105,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -973,14 +973,6 @@
             "tier": "backer"
         },
         {
-            "name": "Mateus Etto",
-            "image": "https://avatars.githubusercontent.com/u/7322925",
-            "url": "https://yutsuten.github.io/notes/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Dan Brown",
             "image": "https://avatars.githubusercontent.com/u/8343178",
             "url": "https://danb.me",
@@ -1335,6 +1327,15 @@
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.00085534,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.000622210.00085534",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "ServieJS",
+            "url": null,
+            "image": "https://github.com/serviejs.png",
+            "monthlyDonation": 0.00002451,
+            "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.012250070.012249880.011406570.011406570.011500110.010583210.010509660.000085800.000085800.000094010.000022740.00002451",
             "source": "thanks.dev",
             "tier": "backer"
         },
