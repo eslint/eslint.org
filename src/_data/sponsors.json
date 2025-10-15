@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 145480.40785487997,
-        "monthlyDonations": 12123.367321239999,
-        "sponsorCount": 159
+        "annualDonations": 145540.40785487997,
+        "monthlyDonations": 12128.367321239999,
+        "sponsorCount": 160
     },
     "diamond": [],
     "platinum": [
@@ -741,6 +741,14 @@
             "tier": "backer"
         },
         {
+            "name": "Al Zimmerman",
+            "image": "https://avatars.githubusercontent.com/u/47005",
+            "url": "https://github.com/Auraelius",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Mariusz Nowak",
             "image": "https://avatars.githubusercontent.com/u/122434",
             "url": "http://www.medikoo.com/",
@@ -1045,7 +1053,7 @@
             "tier": "backer"
         },
         {
-            "name": "kagan",
+            "name": "Kishi Yoshimaru / kagan",
             "image": "https://avatars.githubusercontent.com/u/34136752",
             "url": "https://github.com/kagankan",
             "monthlyDonation": 5,
