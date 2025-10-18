@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 145540.40785487997,
-        "monthlyDonations": 12128.367321239999,
-        "sponsorCount": 160
+        "annualDonations": 145528.40785487997,
+        "monthlyDonations": 12127.367321239999,
+        "sponsorCount": 159
     },
     "diamond": [],
     "platinum": [
@@ -1253,14 +1253,6 @@
             "name": "Schalk Venter",
             "image": "https://avatars.githubusercontent.com/u/14258328",
             "url": "https://schalkventer.me",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "강주혁(Juhyeok Kang)",
-            "image": "https://avatars.githubusercontent.com/u/23312485",
-            "url": "https://kangju.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
