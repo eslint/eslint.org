@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 145528.40785487997,
-        "monthlyDonations": 12127.367321239999,
-        "sponsorCount": 159
+        "annualDonations": 145468.40785487997,
+        "monthlyDonations": 12122.367321239999,
+        "sponsorCount": 158
     },
     "diamond": [],
     "platinum": [
@@ -486,15 +486,6 @@
             "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 20,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Morgane Dubus",
-            "url": null,
-            "image": "https://images.opencollective.com/morgane-dubus/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 265,
             "source": "opencollective",
             "tier": "backer"
         },
