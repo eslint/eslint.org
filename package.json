@@ -10,7 +10,7 @@
   "funding": "https://opencollective.com/eslint",
   "bugs": "https://github.com/eslint/eslint.org/issues/",
   "engines": {
-    "node": ">= 20"
+    "node": ">= 20.19.5"
   },
   "license": "Apache-2.0",
   "scripts": {
