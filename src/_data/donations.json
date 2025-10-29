@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFTq3",
+        "name": "fr0gydev",
+        "image": "https://avatars.githubusercontent.com/u/173592143",
+        "url": "https://fl0gydev.tistory.com/",
+        "amount": 1,
+        "date": "2025-10-28T23:59:52Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFTCu",
         "name": "Buffalo Exchange, LTD.",
         "image": "https://avatars.githubusercontent.com/u/27028541",
@@ -34,15 +43,6 @@
         "amount": 5,
         "date": "2025-10-08T12:16:07.569Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFQIv",
-        "name": "Quales",
-        "image": "https://avatars.githubusercontent.com/u/27543795",
-        "url": "https://quales.me",
-        "amount": 5,
-        "date": "2025-09-29T20:51:07Z",
-        "source": "github"
     },
     {
         "id": "8rzownxl-9e50pxrl-0v3pymvb-dgk7j43a",
@@ -249,15 +249,6 @@
         "image": "https://images.opencollective.com/thanks-dev/ed78b39/logo.png",
         "amount": 121.87,
         "date": "2024-10-04T12:12:50.274Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "ywz9j4av-god8pgwk-5b36mr35-nxklb0e7",
-        "name": "Open Source Collective",
-        "url": "https://oscollective.org/",
-        "image": "https://images.opencollective.com/opensource/426badd/logo.png",
-        "amount": 175.26,
-        "date": "2024-09-27T14:22:45.108Z",
         "source": "opencollective"
     }
 ]

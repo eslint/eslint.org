@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147868.40785487997,
-        "monthlyDonations": 12322.367321239999,
-        "sponsorCount": 159
+        "annualDonations": 147808.40785487997,
+        "monthlyDonations": 12317.367321239999,
+        "sponsorCount": 158
     },
     "diamond": [],
     "platinum": [
@@ -491,7 +491,7 @@
         },
         {
             "name": "Monarch Air Group",
-            "url": "https://monarchairgroup.com",
+            "url": "https://monarchairgroup.com/",
             "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 20,
@@ -752,14 +752,6 @@
             "name": "Mariusz Nowak",
             "image": "https://avatars.githubusercontent.com/u/122434",
             "url": "http://www.medikoo.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Martti Laine",
-            "image": "https://avatars.githubusercontent.com/u/211543",
-            "url": "https://marttilaine.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
