@@ -127,7 +127,7 @@ export default [
 ];
 ```
 
-If you're using [Tailwind](https://tailwindcss.com), you can configure the custom syntax using [tailwind-csstree](https://www.npmjs.com/package/tailwind-csstree), like this:
+If you're using [Tailwind](https://tailwindcss.com), you can configure the custom syntax using [`tailwind-csstree`](https://www.npmjs.com/package/tailwind-csstree), like this:
 
 ```js
 import css from "@eslint/css";
