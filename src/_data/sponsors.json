@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 147808.40785487997,
-        "monthlyDonations": 12317.367321239999,
-        "sponsorCount": 158
+        "annualDonations": 147748.40785487997,
+        "monthlyDonations": 12312.367321239999,
+        "sponsorCount": 157
     },
     "diamond": [],
     "platinum": [
@@ -768,14 +768,6 @@
             "name": "Kah Wai Liew",
             "image": "https://avatars.githubusercontent.com/u/289419",
             "url": "https://github.com/tureki",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Enrise",
-            "image": "https://avatars.githubusercontent.com/u/417390",
-            "url": "https://enrise.com/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
