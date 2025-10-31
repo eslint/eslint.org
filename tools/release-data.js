@@ -13,7 +13,7 @@
  *   an alpha/beta/rc prerelease, regardless of the current version.
  * @type {null|string}
  */
-const upcomingVersionPrereleaseType = null;
+const upcomingVersionPrereleaseType = "alpha";
 
 /**
  * - Set to `null` if the next release date is per the regular schedule.
