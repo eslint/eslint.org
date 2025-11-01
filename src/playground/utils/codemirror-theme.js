@@ -22,7 +22,7 @@ export const ESLintPlaygroundTheme = EditorView.theme(
 			paddingRight: "1px",
 			backgroundColor: "var(--body-background-color)",
 		},
-		".cm-activeLine, .cm-activeLineGutter": {
+		".cm-activeLineGutter": {
 			backgroundColor: "var(--body-background-color)",
 		},
 		".cm-content": {
