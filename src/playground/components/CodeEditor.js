@@ -20,7 +20,13 @@ export default function CodeEditor({
 	const extensions = useMemo(
 		() => [
 			linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
-			javascript({ typescript: true }),
+			javascript({
+				typescript: true,
+				jsx: Boolean(
+					eslintOptions.languageOptions.parserOptions.ecmaFeatures
+						.jsx,
+				),
+			}),
 			ESLintPlaygroundTheme,
 			ESLintPlaygroundHighlightStyle,
 		],
