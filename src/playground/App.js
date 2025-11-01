@@ -243,7 +243,6 @@ const App = () => {
 
 	const { messages, output, fatalMessage, crashError, validationError } =
 		lint();
-	const lintTime = Date.now();
 	const isInvalidAutofix = fatalMessage && text !== output;
 
 	const onFix = message => {
@@ -450,9 +449,9 @@ const App = () => {
 							/>
 						)}
 						{messages.length > 0 &&
-							messages.map((message, index) => (
+							messages.map(message => (
 								<Alert
-									key={`${lintTime}-${index}`}
+									key={`${message.ruleId}:${message.line}:${message.column}`}
 									type={
 										message.severity === 2
 											? "error"
