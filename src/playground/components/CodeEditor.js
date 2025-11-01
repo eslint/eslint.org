@@ -1,7 +1,5 @@
 import React, { useImperativeHandle, useMemo, useRef } from "react";
 import CodeMirror from "@uiw/react-codemirror";
-import { history } from "@codemirror/commands";
-import { bracketMatching } from "@codemirror/language";
 import { javascript, esLint } from "@codemirror/lang-javascript";
 import { linter } from "../utils/codemirror-linter-extension";
 import {
@@ -21,8 +19,6 @@ export default function CodeEditor({
 
 	const extensions = useMemo(
 		() => [
-			history(),
-			bracketMatching(),
 			linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
 			javascript({ typescript: true }),
 			ESLintPlaygroundTheme,
