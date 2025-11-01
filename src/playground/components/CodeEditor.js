@@ -1,7 +1,7 @@
 import React, { useImperativeHandle, useMemo, useRef } from "react";
 import CodeMirror from "@uiw/react-codemirror";
-import { history } from "@codemirror/history";
-import { bracketMatching } from "@codemirror/matchbrackets";
+import { history } from "@codemirror/commands";
+import { bracketMatching } from "@codemirror/language";
 import { javascript, esLint } from "@codemirror/lang-javascript";
 import { linter } from "../utils/codemirror-linter-extension";
 import {

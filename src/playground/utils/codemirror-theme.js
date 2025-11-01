@@ -1,5 +1,6 @@
+import { HighlightStyle, syntaxHighlighting } from "@codemirror/language";
 import { EditorView } from "@codemirror/view";
-import { HighlightStyle, tags } from "@codemirror/highlight";
+import { tags } from "@lezer/highlight";
 
 export const ESLintPlaygroundTheme = EditorView.theme(
 	{
@@ -60,8 +61,7 @@ export const ESLintPlaygroundTheme = EditorView.theme(
 	{ dark: true },
 );
 
-// The highlighting style for code in the ESLint playground theme.
-export const ESLintPlaygroundHighlightStyle = HighlightStyle.define([
+const HighlightDefinition = HighlightStyle.define([
 	{
 		tag: tags.string,
 		color: "var(--editor-string-color)",
@@ -104,7 +104,5 @@ export const ESLintPlaygroundHighlightStyle = HighlightStyle.define([
 	},
 ]);
 
-export const ESLintPlayground = [
-	ESLintPlaygroundTheme,
-	ESLintPlaygroundHighlightStyle,
-];
+export const ESLintPlaygroundHighlightStyle =
+	syntaxHighlighting(HighlightDefinition);
