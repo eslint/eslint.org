@@ -9,13 +9,13 @@ import * as ReactDOM from "react-dom/client";
 import {
 	Decoration,
 	EditorView,
-	ViewPlugin,
+	hoverTooltip,
 	logException,
+	showPanel,
+	ViewPlugin,
 	WidgetType,
 } from "@codemirror/view";
 import { StateEffect, StateField, Facet } from "@codemirror/state";
-import { hoverTooltip } from "@codemirror/tooltip";
-import { showPanel } from "@codemirror/panel";
 import elt from "crelt";
 import Popup from "../components/Popup";
 
