@@ -278,7 +278,7 @@ export default function Configuration({
 		normalizeParser(optionsForConfigFile);
 
 	const configFileContent =
-		`${options.languageOptions.parser && 'import tsParser from "@typescript-eslint/parser";'}\n${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([configOptionsWithNormalizedParser], null, 4)};`.replace(
+		`${options.languageOptions.parser ? 'import tsParser from "@typescript-eslint/parser";\n' : ""}${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([configOptionsWithNormalizedParser], null, 4)};`.replace(
 			/"___TS_PARSER_PLACEHOLDER___"/gu,
 			"tsParser",
 		);
