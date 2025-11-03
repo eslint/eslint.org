@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 140544,
-        "monthlyDonations": 11712,
-        "sponsorCount": 144
+        "annualDonations": 128544,
+        "monthlyDonations": 10712,
+        "sponsorCount": 143
     },
     "diamond": [],
     "platinum": [
@@ -32,15 +32,6 @@
             "image": "https://images.opencollective.com/qltysh/33d157d/logo.png",
             "monthlyDonation": 1000,
             "totalDonations": 10000,
-            "source": "opencollective",
-            "tier": "gold-sponsor"
-        },
-        {
-            "name": "trunk.io",
-            "url": "https://trunk.io/",
-            "image": "https://images.opencollective.com/trunkio/fb92d60/avatar.png",
-            "monthlyDonation": 1000,
-            "totalDonations": 18000,
             "source": "opencollective",
             "tier": "gold-sponsor"
         },
