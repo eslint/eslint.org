@@ -148,3 +148,5 @@ We expect the first alpha release of ESLint v10.0.0 to be available in November 
 All releases will be announced on this blog, our [X account](https://twitter.com/geteslint), our [Bluesky account](https://bsky.app/profile/eslint.org) and our [Mastodon account](https://fosstodon.org/@eslint). We encourage users to test the alpha and beta releases to help ensure a smooth transition to v10.0.0.
 
 Stay tuned for more detailed information about specific changes as we approach each release milestone.
+
+**Update(2025-11-07)**: We previously planned on removing `parserOptions.globalReturn` but decided to hold off based on feedback from the community.
