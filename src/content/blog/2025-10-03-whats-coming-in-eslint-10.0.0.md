@@ -104,10 +104,6 @@ The `v10_config_lookup_from_file` flag, which changes configuration lookup to st
 
 This change ensures that ESLint configuration discovery works more intuitively, especially in monorepo setups or when linting files in different directories.
 
-### Removal of `parserOptions.globalReturn`
-
-ESLint v10.0.0 will [remove the `parserOptions.globalReturn` option](https://github.com/eslint/js/issues/525) from Espree, the default ESLint parser, which may affect some user config files. Because global `return` is supported primarily in CommonJS environments, you can instead set `languageOptions.sourceType` to `"commonjs"`.
-
 ### Removal of `type` property in errors of invalid `RuleTester` cases
 
 In ESLint v10.0.0, the deprecated `type` property in errors of invalid test cases for rules will be no longer supported. Using the `type` property in test cases [will throw an error](https://github.com/eslint/eslint/issues/19029).
@@ -152,3 +148,5 @@ We expect the first alpha release of ESLint v10.0.0 to be available in November 
 All releases will be announced on this blog, our [X account](https://twitter.com/geteslint), our [Bluesky account](https://bsky.app/profile/eslint.org) and our [Mastodon account](https://fosstodon.org/@eslint). We encourage users to test the alpha and beta releases to help ensure a smooth transition to v10.0.0.
 
 Stay tuned for more detailed information about specific changes as we approach each release milestone.
+
+**Update(2025-11-07)**: We previously planned on removing `parserOptions.globalReturn` but decided to hold off based on feedback from the community.
