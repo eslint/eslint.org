@@ -126,7 +126,7 @@
     "@codemirror/state": "0.19.9",
     "@codemirror/tooltip": "0.19.16",
     "@codemirror/view": "0.19.47",
-    "@typescript-eslint/parser": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.3",
     "@uiw/react-codemirror": "4.5.1",
     "algoliasearch": "^4.25.2",
     "crelt": "^1.0.6",
