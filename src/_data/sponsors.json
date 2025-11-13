@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 129084.48274152,
-        "monthlyDonations": 10757.04022846,
-        "sponsorCount": 145
+        "annualDonations": 133759.29938292003,
+        "monthlyDonations": 11146.60828191,
+        "sponsorCount": 149
     },
     "diamond": [],
     "platinum": [
@@ -91,6 +91,15 @@
             "tier": "bronze-sponsor"
         },
         {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 208.91288037,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766161.76391376152.22369333268.03188580161.52162337161.76465919287.34876401287.34876401208.91288037",
+            "source": "thanks.dev",
+            "tier": "bronze-sponsor"
+        },
+        {
             "name": "Icons8",
             "url": "https://icons8.com/",
             "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
@@ -151,6 +160,15 @@
     ],
     "backers": [
         {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 143.25614914,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.2284701967.26918957285.48772580209.60328591209.70414805211.72971887211.72971887143.25614914",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Principal Financial Group",
             "url": "https://www.principal.com/about-us",
             "image": "https://images.opencollective.com/principal/431e690/logo.png",
@@ -192,6 +210,15 @@
             "monthlyDonation": 40,
             "totalDonations": 6500,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 37.39821193,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714169.30954801167.7356633950.0633729532.4919902832.5320847820.2482570020.2482570037.39821193",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1217,6 +1244,15 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 0.00081201,
+            "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.000622210.000855340.00081201",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {

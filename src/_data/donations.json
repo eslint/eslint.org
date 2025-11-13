@@ -1,5 +1,14 @@
 [
     {
+        "id": "jrkx5lmn-v904qjl8-o7n68bwa-7zdygoe3",
+        "name": "OpenJS Foundation",
+        "url": null,
+        "image": "https://images.opencollective.com/openjs/f01254b/avatar.png",
+        "amount": 255.01,
+        "date": "2025-11-12T15:16:18.730Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFUlt",
         "name": "Tresster",
         "image": "https://avatars.githubusercontent.com/u/25589237",
@@ -267,15 +276,6 @@
         "image": "https://images.opencollective.com/cocopon/9d8fd1a/avatar.png",
         "amount": 181.42,
         "date": "2024-10-15T14:54:11.298Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "v349mrwg-z75lpy50-d9z6a08d-jeybknox",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
-        "amount": 121.87,
-        "date": "2024-10-04T12:12:50.274Z",
         "source": "opencollective"
     }
 ]
