@@ -1,5 +1,14 @@
 [
     {
+        "id": "3kzxy4v0-7wlr6mk0-r5yqmj9n-o8agdbe5",
+        "name": "THANKS.DEV",
+        "url": "https://thanks.dev",
+        "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
+        "amount": 999,
+        "date": "2025-11-13T22:04:38.841Z",
+        "source": "opencollective"
+    },
+    {
         "id": "jrkx5lmn-v904qjl8-o7n68bwa-7zdygoe3",
         "name": "OpenJS Foundation",
         "url": null,
@@ -267,15 +276,6 @@
         "image": "https://images.opencollective.com/b-yp/avatar.png",
         "amount": 1,
         "date": "2024-10-31T08:04:11.073Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "jrkx5lmn-v904qjlj-0gz68bwa-7zdygoe3",
-        "name": "cocopon",
-        "url": "https://cocopon.me",
-        "image": "https://images.opencollective.com/cocopon/9d8fd1a/avatar.png",
-        "amount": 181.42,
-        "date": "2024-10-15T14:54:11.298Z",
         "source": "opencollective"
     }
 ]
