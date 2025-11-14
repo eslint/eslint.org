@@ -127,11 +127,11 @@ export default [
 ];
 ```
 
-If you're using [Tailwind](https://tailwindcss.com), you can configure most of the custom syntax using the builtin `tailwindSyntax` object, like this:
+If you're using [Tailwind](https://tailwindcss.com), you can configure the custom syntax using [`tailwind-csstree`](https://www.npmjs.com/package/tailwind-csstree), like this:
 
 ```js
 import css from "@eslint/css";
-import { tailwindSyntax } from "@eslint/css/syntax";
+import { tailwind4 } from "tailwind-csstree";
 
 export default [
     {
@@ -141,7 +141,7 @@ export default [
         },
         language: "css/css",
         languageOptions: {
-            customSyntax: tailwindSyntax,
+            customSyntax: tailwind4,
         },
         rules: {
             "css/no-empty-blocks": "error",
@@ -149,8 +149,6 @@ export default [
     },
 ];
 ```
-
-**Note:** The Tailwind syntax doesn't currently provide for the `theme()` function. This is a limitation of CSSTree that we hope will be resolved soon.
 
 ## Creating custom rules and using Code Explorer
 

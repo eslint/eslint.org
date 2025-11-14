@@ -68,6 +68,7 @@ module.exports = defineConfig([
 		rules: {
 			...reactPlugin.configs.flat.recommended.rules,
 			...jsxA11yPlugin.configs.recommended.rules,
+			...reactHooksPlugin.configs.flat.recommended.rules,
 			"react/jsx-no-useless-fragment": "error",
 			"react/jsx-no-target-blank": "error",
 
@@ -76,9 +77,6 @@ module.exports = defineConfig([
 			"jsx-a11y/no-onchange": "off",
 			"react/prop-types": "off",
 			"jsdoc/require-jsdoc": "off",
-			"react-hooks/rules-of-hooks": "error",
-			"react-hooks/exhaustive-deps": "warn",
-			"react-hooks/react-compiler": "error",
 			"func-style": "off",
 		},
 	},
