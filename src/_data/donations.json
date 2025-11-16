@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFWFV",
+        "name": "Sammy Tourani",
+        "image": "https://avatars.githubusercontent.com/u/179739256",
+        "url": "https://www.linkedin.com/in/sammy-tourani-273b852b1/",
+        "amount": 1,
+        "date": "2025-11-15T22:35:43Z",
+        "source": "github"
+    },
+    {
         "id": "3kzxy4v0-7wlr6mk0-r5yqmj9n-o8agdbe5",
         "name": "THANKS.DEV",
         "url": "https://thanks.dev",
@@ -69,15 +78,6 @@
         "url": "https://github.com/lance116",
         "amount": 1,
         "date": "2025-10-19T23:37:31Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFSZj",
-        "name": "Siemens",
-        "image": "https://avatars.githubusercontent.com/u/624020",
-        "url": "https://opensource.siemens.com",
-        "amount": 1000,
-        "date": "2025-10-17T08:00:40Z",
         "source": "github"
     },
     {
