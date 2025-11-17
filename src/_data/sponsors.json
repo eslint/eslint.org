@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133759.29968652004,
-        "monthlyDonations": 11146.60830721,
-        "sponsorCount": 150
+        "annualDonations": 133759.36421016004,
+        "monthlyDonations": 11146.61368418,
+        "sponsorCount": 151
     },
     "diamond": [],
     "platinum": [
@@ -1244,6 +1244,15 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.00537697,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.005107600.005370460.00537697",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
