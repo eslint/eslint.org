@@ -128,7 +128,7 @@
     "@codemirror/view": "0.19.47",
     "@typescript-eslint/parser": "^8.46.3",
     "@uiw/react-codemirror": "4.5.1",
-    "algoliasearch": "^4.25.2",
+    "algoliasearch": "^4.25.3",
     "crelt": "^1.0.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
