@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133759.36421016004,
-        "monthlyDonations": 11146.61368418,
-        "sponsorCount": 151
+        "annualDonations": 133759.36438368005,
+        "monthlyDonations": 11146.61369864,
+        "sponsorCount": 152
     },
     "diamond": [],
     "platinum": [
@@ -1270,6 +1270,15 @@
             "image": "https://github.com/serviejs.png",
             "monthlyDonation": 0.0000253,
             "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.012250070.012249880.011406570.011406570.011500110.010583210.010509660.000085800.000085800.000094010.000022740.000024510.00002530",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Adam Dąbrowski",
+            "url": "http://adamdabrowski.com",
+            "image": "https://github.com/dabrowski-adam.png",
+            "monthlyDonation": 0.00001446,
+            "totalDonations": "00.001198480.001253010.001253010.002023800.003731730.003721320.000194080.000194510.000026010.000027230.000014460.00001446",
             "source": "thanks.dev",
             "tier": "backer"
         },
