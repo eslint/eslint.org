@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133759.36438368005,
-        "monthlyDonations": 11146.61369864,
-        "sponsorCount": 152
+        "annualDonations": 133771.36438368005,
+        "monthlyDonations": 11147.61369864,
+        "sponsorCount": 153
     },
     "diamond": [],
     "platinum": [
@@ -1170,6 +1170,14 @@
             "name": "Kirill Devope",
             "image": "https://avatars.githubusercontent.com/u/8249408",
             "url": "https://github.com/devope",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Eric",
+            "image": "https://avatars.githubusercontent.com/u/14062239",
+            "url": "https://dankcellar.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
