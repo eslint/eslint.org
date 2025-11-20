@@ -99,7 +99,7 @@
     "lint-staged": "^13.0.3",
     "markdown-it": "^12.2.0",
     "markdown-it-anchor": "^8.1.2",
-    "markdownlint-cli": "^0.45.0",
+    "markdownlint-cli": "^0.46.0",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "npm-run-all2": "^5.0.0",
     "prettier": "^3.3.2",
