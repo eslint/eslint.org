@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136171.36691748005,
-        "monthlyDonations": 11347.61390979,
-        "sponsorCount": 155
+        "annualDonations": 136212.79560468005,
+        "monthlyDonations": 11351.066300389999,
+        "sponsorCount": 157
     },
     "diamond": [],
     "platinum": [
@@ -1043,6 +1043,15 @@
             "tier": "backer"
         },
         {
+            "name": "peerdb",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 2.47276067,
+            "totalDonations": "00.761247260.761247260.999943772.396486702.452382202.452382202.230746612.472854322.472854322.253141772.253141772.253141772.472854322.472854322.47276067",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Jb Landry",
             "url": "https://jblandry.info",
             "image": "https://images.opencollective.com/jblandry/e7d47d8/avatar.png",
@@ -1261,6 +1270,15 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "charon",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 0.97962993,
+            "totalDonations": "00.783637540.783637541.029349280.949412590.971556630.971556630.883751580.979667040.979667040.892623840.892623840.892623840.979667040.979667040.97962993",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
