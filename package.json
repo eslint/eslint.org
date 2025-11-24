@@ -119,13 +119,13 @@
     "yorkie": "^2.0.0"
   },
   "dependencies": {
-    "@codemirror/highlight": "0.19.7",
+    "@codemirror/highlight": "0.19.8",
     "@codemirror/history": "0.19.2",
-    "@codemirror/lang-javascript": "0.19.7",
+    "@codemirror/lang-javascript": "0.20.1",
     "@codemirror/matchbrackets": "0.19.4",
-    "@codemirror/state": "0.19.9",
+    "@codemirror/state": "0.20.1",
     "@codemirror/tooltip": "0.19.16",
-    "@codemirror/view": "0.19.47",
+    "@codemirror/view": "0.20.7",
     "@typescript-eslint/parser": "^8.47.0",
     "@uiw/react-codemirror": "4.5.1",
     "algoliasearch": "^4.25.3",
