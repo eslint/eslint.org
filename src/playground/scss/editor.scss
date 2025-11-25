@@ -17,3 +17,11 @@
 .cm-tooltip.cm-tooltip-autocomplete > ul {
 	border-radius: 0.125rem;
 }
+
+.cm-editor:not(:has(.cm-selectionBackground)) .cm-activeLine {
+	background-color: var(--editor-active-line-background-color);
+}
+
+.cm-editor:has(.cm-selectionBackground) .cm-activeLine {
+	background-color: transparent;
+}

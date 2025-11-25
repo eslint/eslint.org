@@ -95,6 +95,7 @@
 	--editor-comment-color: var(--color-success-700);
 	--editor-keyword-color: var(--color-primary-900);
 	--editor-name-color: var(--color-primary-700);
+	--editor-active-line-background-color: var(--color-neutral-100);
 	--editor-bracket-match-outline-color: var(--color-neutral-200);
 	--editor-bracket-match-background-color: var(--color-neutral-100);
 	--editor-bracket-match-color: none;
@@ -134,6 +135,7 @@
 		--editor-comment-color: var(--color-success-500);
 		--editor-keyword-color: var(--color-primary-500);
 		--editor-name-color: var(--color-primary-300);
+		--editor-active-line-background-color: var(--color-neutral-800);
 		--editor-bracket-match-outline-color: var(--color-neutral-600);
 		--editor-bracket-match-background-color: var(--color-neutral-700);
 		--editor-bracket-match-color: var(--color-neutral-25);
@@ -172,6 +174,7 @@ html[data-theme="light"] {
 	--editor-comment-color: var(--color-success-700);
 	--editor-keyword-color: var(--color-primary-900);
 	--editor-name-color: var(--color-primary-700);
+	--editor-active-line-background-color: var(--color-neutral-100);
 	--editor-bracket-match-outline-color: var(--color-neutral-200);
 	--editor-bracket-match-background-color: var(--color-neutral-100);
 	--editor-bracket-match-color: none;
@@ -209,6 +212,7 @@ html[data-theme="dark"] {
 	--editor-comment-color: var(--color-success-500);
 	--editor-keyword-color: var(--color-primary-500);
 	--editor-name-color: var(--color-primary-300);
+	--editor-active-line-background-color: var(--color-neutral-800);
 	--editor-bracket-match-outline-color: var(--color-neutral-600);
 	--editor-bracket-match-background-color: var(--color-neutral-700);
 	--editor-bracket-match-color: var(--color-neutral-25);
