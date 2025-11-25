@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 133759.29938292003,
-        "monthlyDonations": 11146.60828191,
-        "sponsorCount": 149
+        "annualDonations": 136212.79560468005,
+        "monthlyDonations": 11351.066300389999,
+        "sponsorCount": 157
     },
     "diamond": [],
     "platinum": [
@@ -97,6 +97,15 @@
             "monthlyDonation": 208.91288037,
             "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766161.76391376152.22369333268.03188580161.52162337161.76465919287.34876401287.34876401208.91288037",
             "source": "thanks.dev",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "N-iX Ltd",
+            "url": "https://www.n-ix.com/",
+            "image": "https://images.opencollective.com/n-ix-ltd/575a7a5/logo.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
+            "source": "opencollective",
             "tier": "bronze-sponsor"
         },
         {
@@ -576,7 +585,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 105,
+            "totalDonations": 110,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1034,6 +1043,15 @@
             "tier": "backer"
         },
         {
+            "name": "peerdb",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 2.47276067,
+            "totalDonations": "00.761247260.761247260.999943772.396486702.452382202.452382202.230746612.472854322.472854322.253141772.253141772.253141772.472854322.472854322.47276067",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Jb Landry",
             "url": "https://jblandry.info",
             "image": "https://images.opencollective.com/jblandry/e7d47d8/avatar.png",
@@ -1175,6 +1193,14 @@
             "tier": "backer"
         },
         {
+            "name": "Eric",
+            "image": "https://avatars.githubusercontent.com/u/14062239",
+            "url": "https://dankcellar.dev",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Schalk Venter",
             "image": "https://avatars.githubusercontent.com/u/14258328",
             "url": "https://schalkventer.me",
@@ -1201,7 +1227,7 @@
         {
             "name": "Niklas Henning",
             "image": "https://avatars.githubusercontent.com/u/58544929",
-            "url": "https://niklashenning.com",
+            "url": "https://github.com/niklashenning",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
@@ -1247,11 +1273,56 @@
             "tier": "backer"
         },
         {
+            "name": "charon",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 0.97962993,
+            "totalDonations": "00.783637540.783637541.029349280.949412590.971556630.971556630.883751580.979667040.979667040.892623840.892623840.892623840.979667040.979667040.97962993",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.00537697,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.005107600.005370460.00537697",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Konstantin Vinogradov",
             "url": "https://kvinogradov.com/",
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.00081201,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.000622210.000855340.00081201",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "RagingEnby",
+            "url": "https://ragingenby.dev",
+            "image": "https://github.com/ragingenby.png",
+            "monthlyDonation": 0.00021115,
+            "totalDonations": "00.000158730.000158810.000212010.00021115",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "ServieJS",
+            "url": null,
+            "image": "https://github.com/serviejs.png",
+            "monthlyDonation": 0.0000253,
+            "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.012250070.012249880.011406570.011406570.011500110.010583210.010509660.000085800.000085800.000094010.000022740.000024510.00002530",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Adam Dąbrowski",
+            "url": "http://adamdabrowski.com",
+            "image": "https://github.com/dabrowski-adam.png",
+            "monthlyDonation": 0.00001446,
+            "totalDonations": "00.001198480.001253010.001253010.002023800.003731730.003721320.000194080.000194510.000026010.000027230.000014460.00001446",
             "source": "thanks.dev",
             "tier": "backer"
         },
