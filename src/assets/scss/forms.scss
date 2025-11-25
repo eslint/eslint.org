@@ -42,7 +42,8 @@ input::placeholder {
 	border-radius: var(--border-radius);
 	box-shadow: var(--shadow-xs);
 	background-color: var(--body-background-color);
-	background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.60938L10 12.6094L15 7.60938' stroke='%23667085' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"),
+	background-image:
+		url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.60938L10 12.6094L15 7.60938' stroke='%23667085' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"),
 		linear-gradient(
 			to bottom,
 			var(--body-background-color) 0%,
@@ -122,7 +123,8 @@ input {
 	-webkit-appearance: none;
 	appearance: none;
 	background-color: #fff;
-	background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.10001 0.299997L0.700012 1.7L6.70001 7.7L12.7 1.7L11.3 0.299996L6.70001 4.9L2.10001 0.299997Z' fill='%23444D56'/%3E%3C/svg%3E%0A"),
+	background-image:
+		url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.10001 0.299997L0.700012 1.7L6.70001 7.7L12.7 1.7L11.3 0.299996L6.70001 4.9L2.10001 0.299997Z' fill='%23444D56'/%3E%3C/svg%3E%0A"),
 		linear-gradient(
 			to bottom,
 			var(--body-background-color) 0%,
