@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136212.84064212005,
-        "monthlyDonations": 11351.070053509999,
-        "sponsorCount": 158
+        "annualDonations": 136272.84064212005,
+        "monthlyDonations": 11356.070053509999,
+        "sponsorCount": 159
     },
     "diamond": [],
     "platinum": [
@@ -461,6 +461,15 @@
             "url": "https://measured.co",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Mymoneycomparison.com",
+            "url": "https://www.mymoneycomparison.com",
+            "image": "https://images.opencollective.com/mymoneycomparison/93c0e0e/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
