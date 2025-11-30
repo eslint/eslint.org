@@ -27,7 +27,6 @@ const DEFAULT_TEXT =
 	'/* eslint quotes: ["error", "double"] */\nconst a = \'b\';';
 
 const linter = new Linter({ configType: "flat" });
-const legacyLinter = new Linter({ configType: "eslintrc" });
 const rules = legacyLinter.getRules();
 const ruleNames = Array.from(rules.keys());
 const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
