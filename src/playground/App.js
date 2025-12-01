@@ -23,8 +23,7 @@ import * as typeScriptESLintParser from "@typescript-eslint/parser";
 
 const BOM = "\uFEFF";
 
-const DEFAULT_TEXT =
-	'/* eslint quotes: ["error", "double"] */\nconst a = \'b\';';
+const DEFAULT_TEXT = '/* eslint prefer-const: "error" */\nlet a = "b";';
 
 const linter = new Linter({ configType: "flat" });
 const legacyLinter = new Linter({ configType: "eslintrc" });
