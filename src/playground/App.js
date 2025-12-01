@@ -403,7 +403,7 @@ const App = () => {
 				>
 					<main
 						className="playground__editor"
-						id="main"
+						id="playground-main"
 						aria-label="Editor"
 					>
 						<CodeEditor
