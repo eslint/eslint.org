@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Popup({ message, ruleName, onFix }) {
 	return (
 		<div className="popup">
