@@ -1,12 +1,6 @@
 import "regenerator-runtime/runtime";
 
-import React, {
-	useState,
-	useEffect,
-	useMemo,
-	useCallback,
-	useRef,
-} from "react";
+import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import { flushSync } from "react-dom";
 import Alert from "./components/Alert";
 import CrashAlert from "./components/CrashAlert";

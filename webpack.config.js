@@ -56,7 +56,15 @@ module.exports = (env, { mode }) => ({
 				exclude: /node_modules/u,
 				options: {
 					plugins: ["babel-plugin-react-compiler"],
-					presets: ["@babel/preset-env", "@babel/preset-react"],
+					presets: [
+						"@babel/preset-env",
+						[
+							"@babel/preset-react",
+							{
+								runtime: "automatic",
+							},
+						],
+					],
 				},
 			},
 			{

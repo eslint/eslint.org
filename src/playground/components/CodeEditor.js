@@ -1,4 +1,4 @@
-import React, { useImperativeHandle, useMemo, useRef } from "react";
+import { useImperativeHandle, useMemo, useRef } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { javascript, esLint } from "@codemirror/lang-javascript";
 import { linter } from "../utils/codemirror-linter-extension";

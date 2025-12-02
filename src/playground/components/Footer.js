@@ -1,4 +1,3 @@
-import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import SocialIcons from "./SocialIcons";
 

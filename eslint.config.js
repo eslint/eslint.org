@@ -69,6 +69,8 @@ module.exports = defineConfig([
 			...reactPlugin.configs.flat.recommended.rules,
 			...jsxA11yPlugin.configs.recommended.rules,
 			...reactHooksPlugin.configs.flat.recommended.rules,
+			"react/react-in-jsx-scope": "off",
+			"react/jsx-uses-react": "off",
 			"react/jsx-no-useless-fragment": "error",
 			"react/jsx-no-target-blank": "error",
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function SocialIcons() {
 	return (
 		<div className="social-icons">
