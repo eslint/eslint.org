@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 128748,
-        "monthlyDonations": 10729,
+        "annualDonations": 128688,
+        "monthlyDonations": 10724,
         "sponsorCount": 144
     },
     "diamond": [],
@@ -104,7 +104,7 @@
             "url": "https://icons8.com/",
             "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 15000,
+            "totalDonations": 15200,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -234,7 +234,7 @@
             "url": "https://www.simedia.com/",
             "image": "https://images.opencollective.com/simedia/18ec04a/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 630,
+            "totalDonations": 650,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -253,15 +253,6 @@
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
             "totalDonations": 915,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Say Yup",
-            "url": "https://www.sayyup.nl",
-            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
-            "monthlyDonation": 10,
-            "totalDonations": 335,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -434,7 +425,7 @@
             "url": null,
             "image": "https://images.opencollective.com/yutsuten/0cccb58/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -443,7 +434,7 @@
             "url": "https://podobnestrony.pl",
             "image": "https://images.opencollective.com/podobnestrony/d86d3dc/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -452,7 +443,7 @@
             "url": "https://monarchairgroup.com/",
             "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -461,7 +452,7 @@
             "url": null,
             "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 175,
+            "totalDonations": 180,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -658,6 +649,15 @@
             "name": "Oleksii Raspopov",
             "url": "https://alexeyraspopov.com/",
             "image": "https://images.opencollective.com/alexeyraspopov/a2cfdf9/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 415,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Jordan Harband",
+            "url": "https://twitter.com/LJHarb",
+            "image": "https://images.opencollective.com/ljharb/b75a3f8/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 415,
             "source": "opencollective",
