@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFYbv",
+        "name": "cl",
+        "image": "https://avatars.githubusercontent.com/u/25109183",
+        "url": "https://github.com/christlang",
+        "amount": 5,
+        "date": "2025-12-03T23:01:22Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFXEq",
         "name": "Buffalo Exchange, LTD.",
         "image": "https://avatars.githubusercontent.com/u/27028541",
@@ -34,15 +43,6 @@
         "amount": 255.01,
         "date": "2025-11-12T15:16:18.730Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFUlt",
-        "name": "Tresster",
-        "image": "https://avatars.githubusercontent.com/u/25589237",
-        "url": "https://github.com/Tresster",
-        "amount": 5,
-        "date": "2025-11-04T12:46:57Z",
-        "source": "github"
     },
     {
         "id": "a47byg9n-xozdp8x9-w9v6mjlv-03rek5w8",
