@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 128808,
-        "monthlyDonations": 10734,
-        "sponsorCount": 145
+        "annualDonations": 128868,
+        "monthlyDonations": 10739,
+        "sponsorCount": 146
     },
     "diamond": [],
     "platinum": [
@@ -417,6 +417,15 @@
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 6,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Privatejet.com",
+            "url": "https://privatejet.com",
+            "image": "https://images.opencollective.com/privatejetcom/4965318/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
