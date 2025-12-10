@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136097.11610256,
-        "monthlyDonations": 11341.42634188,
-        "sponsorCount": 150
+        "annualDonations": 136097.12571132,
+        "monthlyDonations": 11341.42714261,
+        "sponsorCount": 151
     },
     "diamond": [],
     "platinum": [
@@ -1264,6 +1264,15 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 0.00080073,
+            "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.000622210.000855340.000812010.00080073",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
