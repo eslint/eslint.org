@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 136097.12571132,
-        "monthlyDonations": 11341.42714261,
+        "annualDonations": 136313.60299044,
+        "monthlyDonations": 11359.46691587,
         "sponsorCount": 151
     },
     "diamond": [],
@@ -263,6 +263,15 @@
             "url": "https://www.clipboardhealth.com/",
             "monthlyDonation": 25,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 20.03977326,
+            "totalDonations": "013.1523181713.0949178512.4986023910.0441172110.0737259420.0390773720.0397015120.0402284620.03977326",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1060,15 +1069,6 @@
             "image": "https://images.opencollective.com/konmpar/6f12288/avatar.png",
             "monthlyDonation": 2,
             "totalDonations": 128,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Roman Nazarenko",
-            "url": null,
-            "image": "https://images.opencollective.com/roman-nazarenko/avatar.png",
-            "monthlyDonation": 2,
-            "totalDonations": 120,
             "source": "opencollective",
             "tier": "backer"
         },
