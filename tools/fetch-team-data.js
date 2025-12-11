@@ -34,7 +34,7 @@ if (!ESLINT_GITHUB_TOKEN) {
 	throw new Error("Missing ESLINT_GITHUB_TOKEN.");
 }
 
-// Github slugs for teams
+// GitHub slugs for teams
 const TSC_TEAM_SLUG = "eslint-tsc";
 const REVIEWERS_TEAM_SLUG = "eslint-reviewers";
 const COMMITTERS_TEAM_SLUG = "eslint-team";
@@ -42,7 +42,7 @@ const WEBSITE_TEAM_SLUG = "website-team";
 const SUPPORT_TEAM_SLUG = "support-team";
 const ALUMNI_TEAM_SLUG = "eslint-alumni";
 
-// lookup table mapping Github team IDs to JSON keys
+// lookup table mapping GitHub team IDs to JSON keys
 const teamIds = {
 	[TSC_TEAM_SLUG]: "tsc",
 	[COMMITTERS_TEAM_SLUG]: "committers",
@@ -52,7 +52,7 @@ const teamIds = {
 	[ALUMNI_TEAM_SLUG]: "alumni",
 };
 
-// lookup table mapping Github team IDs to member titles
+// lookup table mapping GitHub team IDs to member titles
 const teamMemberTitles = {
 	tsc: "ESLint Technical Steering Committee",
 	committers: "ESLint Committer",

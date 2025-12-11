@@ -21,7 +21,7 @@ export default function SocialIcons() {
 								viewBox="0 0 25 24"
 								className="c-icon"
 								role="img"
-								aria-label="Github"
+								aria-label="GitHub"
 							>
 								<path
 									fillRule="evenodd"
@@ -117,7 +117,7 @@ export default function SocialIcons() {
 					</li>
 					<li>
 						<a
-							href="https://twitter.com/geteslint"
+							href="https://x.com/geteslint"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -127,7 +127,7 @@ export default function SocialIcons() {
 								width="25"
 								className="c-icon"
 								role="img"
-								aria-label="Twitter"
+								aria-label="X (Twitter)"
 								fill="currentColor"
 							>
 								<path fill="none" d="M0 0h24v24H0z"></path>

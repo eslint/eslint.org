@@ -451,7 +451,6 @@ const App = () => {
 											: "warning"
 									}
 									message={message}
-									suggestions={message.suggestions}
 									options={options}
 									rulesWithInvalidConfigs={
 										rulesWithInvalidConfigs
