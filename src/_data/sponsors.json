@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136313.60299044,
-        "monthlyDonations": 11359.46691587,
-        "sponsorCount": 151
+        "annualDonations": 136373.60299044,
+        "monthlyDonations": 11364.46691587,
+        "sponsorCount": 152
     },
     "diamond": [],
     "platinum": [
@@ -462,6 +462,15 @@
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 221,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Gitea",
+            "url": "https://about.gitea.com/",
+            "image": "https://images.opencollective.com/gitea/bf35c2f/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
