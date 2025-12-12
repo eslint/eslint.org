@@ -13,7 +13,7 @@
  *   an alpha/beta/rc prerelease, regardless of the current version.
  * @type {null|string}
  */
-const upcomingVersionPrereleaseType = "alpha";
+const upcomingVersionPrereleaseType = "rc";
 
 /**
  * - Set to `null` if the next release date is per the regular schedule.
@@ -25,7 +25,7 @@ const upcomingVersionPrereleaseType = "alpha";
  *     are automatically ignored so that we don't need to update the stats manually.
  * @type {null|string}
  */
-const nextVersionDateOverride = "2025-01-10";
+const nextVersionDateOverride = "2026-01-09";
 
 module.exports = {
 	upcomingVersionPrereleaseType,
