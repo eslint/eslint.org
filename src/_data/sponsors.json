@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136373.60299044,
-        "monthlyDonations": 11364.46691587,
-        "sponsorCount": 152
+        "annualDonations": 136373.60329188002,
+        "monthlyDonations": 11364.46694099,
+        "sponsorCount": 153
     },
     "diamond": [],
     "platinum": [
@@ -614,7 +614,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 110,
+            "totalDonations": 115,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1281,6 +1281,15 @@
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.00080073,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.000622210.000855340.000812010.00080073",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "ServieJS",
+            "url": null,
+            "image": "https://github.com/serviejs.png",
+            "monthlyDonation": 0.00002512,
+            "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.012250070.012249880.011406570.011406570.011500110.010583210.010509660.000085800.000085800.000094010.000022740.000024510.000025300.00002512",
             "source": "thanks.dev",
             "tier": "backer"
         },
