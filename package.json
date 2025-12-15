@@ -103,7 +103,7 @@
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.7.4",
     "prismjs": "^1.30.0",
-    "sass": "^1.94.2",
+    "sass": "^1.95.0",
     "sass-loader": "^16.0.6",
     "semver": "^7.7.3",
     "slugify": "^1.6.6",
