@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Select, { components } from "react-select";
-import ShareURL from "./ShareURL";
+import ShareURL from "./share-url";
 import {
 	ECMA_FEATURES,
 	ECMA_VERSIONS,

@@ -13,7 +13,7 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
  */
 module.exports = (env, { mode }) => ({
 	entry: {
-		playground: path.resolve(__dirname, "src/playground/index.js"),
+		playground: path.resolve(__dirname, "src/playground/index.jsx"),
 	},
 	output: {
 		filename: "[name].js",

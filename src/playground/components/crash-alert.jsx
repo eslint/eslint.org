@@ -1,4 +1,4 @@
-import Alert from "./Alert";
+import Alert from "./alert";
 
 export default function CrashAlert({ error }) {
 	const AlertMessage = (
