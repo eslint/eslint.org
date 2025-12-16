@@ -17,7 +17,7 @@ import {
 } from "@codemirror/view";
 import { StateEffect, StateField, Facet } from "@codemirror/state";
 import elt from "crelt";
-import Popup from "../components/Popup";
+import Popup from "../components/popup";
 
 class SelectedDiagnostic {
 	constructor(from, to, diagnostic) {

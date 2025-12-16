@@ -2,16 +2,16 @@ import "regenerator-runtime/runtime";
 
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import { flushSync } from "react-dom";
-import Alert from "./components/Alert";
-import CrashAlert from "./components/CrashAlert";
-import Footer from "./components/Footer";
-import CodeEditor from "./components/CodeEditor";
+import Alert from "./components/alert";
+import CrashAlert from "./components/crash-alert";
+import Footer from "./components/footer";
+import CodeEditor from "./components/code-editor";
 import { Linter } from "eslint/universal";
 import Unicode from "./utils/unicode";
-import Configuration from "./components/Configuration";
+import Configuration from "./components/configuration";
 import Split from "react-split";
 import debounce from "./utils/debounce";
-import AlertsActionBar from "./components/AlertsActionBar";
+import AlertsActionBar from "./components/alerts-action-bar";
 import "./scss/split-pane.scss";
 import * as typeScriptESLintParser from "@typescript-eslint/parser";
 
