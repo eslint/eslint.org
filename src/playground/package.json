@@ -2,7 +2,7 @@
   "name": "eslint-playground",
   "private": true,
   "version": "1.0.0",
-  "description": "The codebase for the ESLint PLayground (play.eslint.org)",
+  "description": "The codebase for the ESLint Playground (eslint.org/play)",
   "license": "MIT",
   "type": "module",
   "dependencies": {
