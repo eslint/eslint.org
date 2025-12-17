@@ -66,6 +66,9 @@ module.exports = (env, { mode }) => ({
 						],
 					],
 				},
+				resolve: {
+					fullySpecified: false,
+				},
 			},
 			{
 				test: /\.scss$/u,
