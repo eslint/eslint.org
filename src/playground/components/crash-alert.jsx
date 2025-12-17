@@ -1,9 +1,8 @@
-import React from "react";
-import Alert from "./Alert";
+import Alert from "./alert";
 
 export default function CrashAlert({ error }) {
 	const AlertMessage = (
-		<React.Fragment>
+		<>
 			<p>
 				ESLint Crashed!
 				<br />
@@ -17,7 +16,7 @@ export default function CrashAlert({ error }) {
 				</a>
 			</p>
 			<p>Error: {error.message}</p>
-		</React.Fragment>
+		</>
 	);
 
 	return <Alert type="error" text={AlertMessage} />;

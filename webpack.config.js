@@ -13,7 +13,7 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
  */
 module.exports = (env, { mode }) => ({
 	entry: {
-		playground: path.resolve(__dirname, "src/playground/index.js"),
+		playground: path.resolve(__dirname, "src/playground/index.jsx"),
 	},
 	output: {
 		filename: "[name].js",
@@ -56,7 +56,18 @@ module.exports = (env, { mode }) => ({
 				exclude: /node_modules/u,
 				options: {
 					plugins: ["babel-plugin-react-compiler"],
-					presets: ["@babel/preset-env", "@babel/preset-react"],
+					presets: [
+						"@babel/preset-env",
+						[
+							"@babel/preset-react",
+							{
+								runtime: "automatic",
+							},
+						],
+					],
+				},
+				resolve: {
+					fullySpecified: false,
 				},
 			},
 			{

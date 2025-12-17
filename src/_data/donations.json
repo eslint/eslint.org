@@ -1,20 +1,20 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFYbv",
+        "name": "cl",
+        "image": "https://avatars.githubusercontent.com/u/25109183",
+        "url": "https://github.com/christlang",
+        "amount": 5,
+        "date": "2025-12-03T23:01:22Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFXEq",
         "name": "Buffalo Exchange, LTD.",
         "image": "https://avatars.githubusercontent.com/u/27028541",
         "url": "https://www.buffaloexchange.com",
         "amount": 15,
         "date": "2025-11-24T19:45:30Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFWFV",
-        "name": "Sammy Tourani",
-        "image": "https://avatars.githubusercontent.com/u/179739256",
-        "url": "https://www.linkedin.com/in/sammy-tourani-273b852b1/",
-        "amount": 1,
-        "date": "2025-11-15T22:35:43Z",
         "source": "github"
     },
     {
@@ -34,33 +34,6 @@
         "amount": 255.01,
         "date": "2025-11-12T15:16:18.730Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFUlt",
-        "name": "Tresster",
-        "image": "https://avatars.githubusercontent.com/u/25589237",
-        "url": "https://github.com/Tresster",
-        "amount": 5,
-        "date": "2025-11-04T12:46:57Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFUbr",
-        "name": "Yohan Sebastian George Mazo",
-        "image": "https://avatars.githubusercontent.com/u/115716245",
-        "url": "https://github.com/GoergeGod",
-        "amount": 1,
-        "date": "2025-11-02T22:06:09Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFUaO",
-        "name": "Mike DiDomizio",
-        "image": "https://avatars.githubusercontent.com/u/5728044",
-        "url": "https://mikedidomizio.com",
-        "amount": 10,
-        "date": "2025-11-02T18:09:45Z",
-        "source": "github"
     },
     {
         "id": "a47byg9n-xozdp8x9-w9v6mjlv-03rek5w8",
@@ -249,15 +222,6 @@
         "image": "https://images.opencollective.com/sanity_io/22d22f9/logo.png",
         "amount": 2400,
         "date": "2024-11-12T13:46:38.117Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "ejoxl3az-45w9pa5v-w8k6y870-mgkbrvdn",
-        "name": "b-yp",
-        "url": null,
-        "image": "https://images.opencollective.com/b-yp/avatar.png",
-        "amount": 1,
-        "date": "2024-10-31T08:04:11.073Z",
         "source": "opencollective"
     }
 ]

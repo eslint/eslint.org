@@ -1,6 +1,5 @@
-import React from "react";
-import ThemeSwitcher from "./ThemeSwitcher";
-import SocialIcons from "./SocialIcons";
+import ThemeSwitcher from "./theme-switcher";
+import SocialIcons from "./social-icons";
 
 export default function Footer() {
 	return (

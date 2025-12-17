@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
 	GITHUB_ISSUE_URL,
 	MAX_URL_LENGTH,

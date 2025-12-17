@@ -1,30 +1,23 @@
 import "regenerator-runtime/runtime";
 
-import React, {
-	useState,
-	useEffect,
-	useMemo,
-	useCallback,
-	useRef,
-} from "react";
+import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import { flushSync } from "react-dom";
-import Alert from "./components/Alert";
-import CrashAlert from "./components/CrashAlert";
-import Footer from "./components/Footer";
-import CodeEditor from "./components/CodeEditor";
+import Alert from "./components/alert";
+import CrashAlert from "./components/crash-alert";
+import Footer from "./components/footer";
+import CodeEditor from "./components/code-editor";
 import { Linter } from "eslint/universal";
 import Unicode from "./utils/unicode";
-import Configuration from "./components/Configuration";
+import Configuration from "./components/configuration";
 import Split from "react-split";
 import debounce from "./utils/debounce";
-import AlertsActionBar from "./components/AlertsActionBar";
+import AlertsActionBar from "./components/alerts-action-bar";
 import "./scss/split-pane.scss";
 import * as typeScriptESLintParser from "@typescript-eslint/parser";
 
 const BOM = "\uFEFF";
 
-const DEFAULT_TEXT =
-	'/* eslint quotes: ["error", "double"] */\nconst a = \'b\';';
+const DEFAULT_TEXT = '/* eslint prefer-const: "error" */\nlet a = "b";';
 
 const linter = new Linter({ configType: "flat" });
 const rules = legacyLinter.getRules();
@@ -403,7 +396,7 @@ const App = () => {
 				>
 					<main
 						className="playground__editor"
-						id="main"
+						id="playground-main"
 						aria-label="Editor"
 					>
 						<CodeEditor
@@ -457,7 +450,6 @@ const App = () => {
 											: "warning"
 									}
 									message={message}
-									suggestions={message.suggestions}
 									options={options}
 									rulesWithInvalidConfigs={
 										rulesWithInvalidConfigs
