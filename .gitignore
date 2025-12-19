@@ -123,3 +123,6 @@ debug*.json
 *.code-workspace
 .idea
 .cursor
+
+# Build
+src/playground/build
