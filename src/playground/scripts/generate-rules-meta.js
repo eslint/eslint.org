@@ -27,7 +27,7 @@ const OUT_PATH = path.resolve(BUILD_DIR, "rules_meta.json");
 
 try {
 	const rulesMeta = Object.fromEntries(
-		builtinRules.entries().map(([key, { meta }]) => [key, meta]),
+		Array.from(builtinRules, ([key, { meta }]) => [key, meta]),
 	);
 
 	mkdirSync(BUILD_DIR, { recursive: true });
