@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136415.03478204002,
-        "monthlyDonations": 11367.91956517,
-        "sponsorCount": 158
+        "annualDonations": 136415.03485212,
+        "monthlyDonations": 11367.91957101,
+        "sponsorCount": 159
     },
     "diamond": [],
     "platinum": [
@@ -1335,6 +1335,15 @@
             "image": "https://github.com/dabrowski-adam.png",
             "monthlyDonation": 0.00001416,
             "totalDonations": "00.001198480.001253010.001253010.002023800.003731730.003721320.000194080.000194510.000026010.000027230.000014460.000014460.00001416",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Robson Cassiano",
+            "url": "https://global.robsoncassiano.software/",
+            "image": "https://github.com/randintn.png",
+            "monthlyDonation": 0.00000584,
+            "totalDonations": "00.00000584",
             "source": "thanks.dev",
             "tier": "backer"
         },
