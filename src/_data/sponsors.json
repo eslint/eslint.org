@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136415.03485212,
-        "monthlyDonations": 11367.91957101,
-        "sponsorCount": 159
+        "annualDonations": 136427.03485212,
+        "monthlyDonations": 11368.91957101,
+        "sponsorCount": 160
     },
     "diamond": [],
     "platinum": [
@@ -1272,6 +1272,14 @@
             "name": "Syntax",
             "image": "https://avatars.githubusercontent.com/u/130389858",
             "url": "https://syntax.fm",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Aliza Ali",
+            "image": "https://avatars.githubusercontent.com/u/151018015",
+            "url": "https://alizaali.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
