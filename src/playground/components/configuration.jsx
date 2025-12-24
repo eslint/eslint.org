@@ -277,8 +277,18 @@ export default function Configuration({
 	const configOptionsWithNormalizedParser =
 		normalizeParser(optionsForConfigFile);
 
+	const isESM = configFileFormat === "ESM";
+	const exportStatement = isESM ? "export default" : "module.exports =";
+
+	let parserImport = "";
+	if (options.languageOptions.parser) {
+		parserImport = isESM
+			? 'import tsParser from "@typescript-eslint/parser";\n'
+			: 'const tsParser = require("@typescript-eslint/parser");\n';
+	}
+
 	const configFileContent =
-		`${options.languageOptions.parser ? 'import tsParser from "@typescript-eslint/parser";\n' : ""}${configFileFormat === "ESM" ? "export default" : "module.exports ="} ${JSON.stringify([configOptionsWithNormalizedParser], null, 4)};`.replace(
+		`${parserImport}${exportStatement} ${JSON.stringify([configOptionsWithNormalizedParser], null, 4)};`.replace(
 			/"___TS_PARSER_PLACEHOLDER___"/gu,
 			"tsParser",
 		);
