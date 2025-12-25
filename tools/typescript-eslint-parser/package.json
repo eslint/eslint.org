@@ -1,0 +1,8 @@
+{
+  "name": "@typescript-eslint/parser",
+  "private": true,
+  "description": "@typescript-eslint/parser patch for ESLint v10",
+  "dependencies": {
+    "@typescript-eslint/parser-original": "npm:@typescript-eslint/parser@^8.50.0"
+  }
+}

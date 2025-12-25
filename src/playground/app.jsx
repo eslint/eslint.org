@@ -14,23 +14,18 @@ import debounce from "./utils/debounce";
 import AlertsActionBar from "./components/alerts-action-bar";
 import "./scss/split-pane.scss";
 import * as typeScriptESLintParser from "@typescript-eslint/parser";
+import rulesMeta from "./build/rules_meta.json";
 
 const BOM = "\uFEFF";
 
 const DEFAULT_TEXT = '/* eslint prefer-const: "error" */\nlet a = "b";';
 
-const linter = new Linter({ configType: "flat" });
-const legacyLinter = new Linter({ configType: "eslintrc" });
-const rules = legacyLinter.getRules();
-const ruleNames = Array.from(rules.keys());
-const rulesMeta = Array.from(rules.entries()).reduce((result, [key, value]) => {
-	result[key] = value.meta;
-	return result;
-}, {});
+const linter = new Linter();
+const ruleNames = Object.keys(rulesMeta);
 
 const getDefaultOptions = () => ({
-	rules: [...rules.entries()].reduce((result, [ruleId, rule]) => {
-		if (rule.meta.docs.recommended) {
+	rules: Object.entries(rulesMeta).reduce((result, [ruleId, meta]) => {
+		if (meta.docs.recommended) {
 			result[ruleId] = ["error"];
 		}
 		return result;

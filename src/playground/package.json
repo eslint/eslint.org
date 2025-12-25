@@ -5,7 +5,11 @@
   "description": "The codebase for the ESLint Playground (eslint.org/play)",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "build:rules-meta": "node scripts/generate-rules-meta.js",
+    "postinstall": "npm run build:rules-meta"
+  },
   "dependencies": {
-    "eslint": "latest"
+    "eslint": "10.0.0-beta.0"
   }
 }
