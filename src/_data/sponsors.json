@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 136427.0840886,
-        "monthlyDonations": 11368.923674049998,
-        "sponsorCount": 162
+        "annualDonations": 136403.0840886,
+        "monthlyDonations": 11366.923674049998,
+        "sponsorCount": 160
     },
     "diamond": [],
     "platinum": [
@@ -1213,14 +1213,6 @@
             "tier": "backer"
         },
         {
-            "name": "Schalk Venter",
-            "image": "https://avatars.githubusercontent.com/u/14258328",
-            "url": "https://schalkventer.me",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Zwyx",
             "image": "https://avatars.githubusercontent.com/u/29386932",
             "url": "https://zwyx.dev",
@@ -1248,14 +1240,6 @@
             "name": "David Badasyan",
             "image": "https://avatars.githubusercontent.com/u/59211418",
             "url": "https://www.linkedin.com/in/david-badasyan-17b544199/",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "sys.white",
-            "image": "https://avatars.githubusercontent.com/u/76256827",
-            "url": "https://syswhite.dev",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
