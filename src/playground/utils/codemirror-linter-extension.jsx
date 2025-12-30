@@ -344,8 +344,8 @@ function renderDiagnostic(view, diagnostic) {
 	const root = ReactDOM.createRoot(element);
 
 	// clean up ruleName first
-	// see https://github.com/codemirror/lang-javascript/blob/749ed7d353caab74996f3ad98c9c963a0ac646a7/src/eslint.ts#L51
-	const ruleName = diagnostic.source.replace(/^jshint:?/u, "");
+	// see https://github.com/codemirror/lang-javascript/blob/2b48f4d00253f55ce059f49d4540e04bea087006/src/eslint.ts#L51
+	const ruleName = diagnostic.source.replace(/^eslint:/u, "");
 
 	root.render(
 		<React.StrictMode>

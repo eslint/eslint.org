@@ -87,7 +87,7 @@ export default function Alert({
 						<>
 							&nbsp; &#40;
 							<a
-								href={`https://eslint.org/docs/rules/${ruleId}`}
+								href={`https://eslint.org/docs/latest/rules/${ruleId}`}
 								target="_blank"
 								rel="noreferrer"
 							>
