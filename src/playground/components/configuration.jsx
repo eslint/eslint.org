@@ -277,41 +277,37 @@ export default function Configuration({
 	const configOptionsWithNormalizedParser =
 		normalizeParser(optionsForConfigFile);
 
-	const generateConfigFileContent = () => {
-		const configString = JSON.stringify(
-			[configOptionsWithNormalizedParser],
-			null,
-			4,
-		);
-		const isESM = configFileFormat === "ESM";
+	const configString = JSON.stringify(
+		[configOptionsWithNormalizedParser],
+		null,
+		4,
+	);
+	const isESM = configFileFormat === "ESM";
 
-		let imports = "";
+	let imports = "";
 
+	if (isESM) {
+		imports += 'import { defineConfig } from "eslint/config";\n';
+	} else {
+		imports += 'const { defineConfig } = require("eslint/config");\n';
+	}
+
+	if (options.languageOptions.parser) {
 		if (isESM) {
-			imports += 'import { defineConfig } from "eslint/config";\n';
+			imports += 'import tsParser from "@typescript-eslint/parser";\n';
 		} else {
-			imports += 'const { defineConfig } = require("eslint/config");\n';
+			imports +=
+				'const tsParser = require("@typescript-eslint/parser");\n';
 		}
+	}
 
-		if (options.languageOptions.parser) {
-			if (isESM) {
-				imports +=
-					'import tsParser from "@typescript-eslint/parser";\n';
-			} else {
-				imports +=
-					'const tsParser = require("@typescript-eslint/parser");\n';
-			}
-		}
+	const exportStatement = isESM ? "export default" : "module.exports =";
 
-		const exportStatement = isESM ? "export default" : "module.exports =";
-
-		return `${imports}\n${exportStatement} defineConfig(${configString});`.replace(
+	const configFileContent =
+		`${imports}\n${exportStatement} defineConfig(${configString});`.replace(
 			/"___TS_PARSER_PLACEHOLDER___"/gu,
 			"tsParser",
 		);
-	};
-
-	const configFileContent = generateConfigFileContent();
 
 	return (
 		<div className="playground__config-options__sections">
