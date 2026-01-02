@@ -45,15 +45,6 @@
         "source": "opencollective"
     },
     {
-        "id": "SA_kwHOAFvahM4AFYbv",
-        "name": "cl",
-        "image": "https://avatars.githubusercontent.com/u/25109183",
-        "url": "https://github.com/christlang",
-        "amount": 5,
-        "date": "2025-12-03T23:01:22Z",
-        "source": "github"
-    },
-    {
         "id": "3kzxy4v0-7wlr6mk0-r5yqmj9n-o8agdbe5",
         "name": "THANKS.DEV",
         "url": "https://thanks.dev",
@@ -240,15 +231,6 @@
         "image": "https://images.opencollective.com/sporteasy/avatar.png",
         "amount": 101,
         "date": "2024-12-20T14:24:13.950Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "eng0kzdy-vor4pz84-mnrpbma8-37xlw95j",
-        "name": "Meta Open Source",
-        "url": "https://opensource.facebook.com/",
-        "image": "https://images.opencollective.com/fbopensource/e10726f/logo.png",
-        "amount": 20000,
-        "date": "2024-11-22T20:30:34.882Z",
         "source": "opencollective"
     }
 ]
