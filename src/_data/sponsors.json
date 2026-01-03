@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 106992,
-        "monthlyDonations": 8916,
-        "sponsorCount": 141
+        "annualDonations": 106872,
+        "monthlyDonations": 8906,
+        "sponsorCount": 140
     },
     "diamond": [],
     "platinum": [
@@ -86,7 +86,7 @@
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 215,
-            "totalDonations": 221,
+            "totalDonations": 442,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -95,7 +95,7 @@
             "url": "https://www.n-ix.com/",
             "image": "https://images.opencollective.com/n-ix-ltd/575a7a5/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 200,
+            "totalDonations": 400,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -104,7 +104,7 @@
             "url": "https://icons8.com/",
             "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 15200,
+            "totalDonations": 15400,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -226,7 +226,7 @@
             "url": "https://www.simedia.com/",
             "image": "https://images.opencollective.com/simedia/18ec04a/logo.png",
             "monthlyDonation": 20,
-            "totalDonations": 650,
+            "totalDonations": 670,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -245,15 +245,6 @@
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
             "totalDonations": 935,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Say Yup",
-            "url": "https://www.sayyup.nl",
-            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
-            "monthlyDonation": 10,
-            "totalDonations": 345,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -408,7 +399,7 @@
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
-            "totalDonations": 221,
+            "totalDonations": 442,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -417,7 +408,7 @@
             "url": "https://about.gitea.com/",
             "image": "https://images.opencollective.com/gitea/bf35c2f/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -426,7 +417,7 @@
             "url": "https://privatejet.com",
             "image": "https://images.opencollective.com/privatejetcom/4965318/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -440,29 +431,11 @@
             "tier": "backer"
         },
         {
-            "name": "Yutsuten",
-            "url": null,
-            "image": "https://images.opencollective.com/yutsuten/0cccb58/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 15,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "PodobneStrony.pl",
-            "url": "https://podobnestrony.pl",
-            "image": "https://images.opencollective.com/podobnestrony/d86d3dc/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 30,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Monarch Air Group",
             "url": "https://monarchairgroup.com/",
             "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 30,
+            "totalDonations": 35,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -508,6 +481,15 @@
             "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 95,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 91,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -835,6 +817,14 @@
             "name": "Nick Oliver",
             "image": "https://avatars.githubusercontent.com/u/3945917",
             "url": "https://pixnbits.org",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Hayden Bleasel",
+            "image": "https://avatars.githubusercontent.com/u/4142719",
+            "url": "https://haydenbleasel.com/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
