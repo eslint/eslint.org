@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 106872,
-        "monthlyDonations": 8906,
-        "sponsorCount": 140
+        "annualDonations": 107052,
+        "monthlyDonations": 8921,
+        "sponsorCount": 142
     },
     "diamond": [],
     "platinum": [
@@ -249,6 +249,15 @@
             "tier": "backer"
         },
         {
+            "name": "Say Yup",
+            "url": "https://www.sayyup.nl",
+            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 355,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "MFB Technologies",
             "url": "https://mfbtech.com",
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
@@ -427,6 +436,15 @@
             "image": "https://images.opencollective.com/mymoneycomparison/93c0e0e/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 10,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "PodobneStrony.pl",
+            "url": "https://podobnestrony.pl",
+            "image": "https://images.opencollective.com/podobnestrony/d86d3dc/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 35,
             "source": "opencollective",
             "tier": "backer"
         },
