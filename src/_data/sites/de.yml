@@ -479,7 +479,7 @@ donate_page:
           TSC-Mitglieder und Reviewer und HOURLY_RATE_COMMITERS für Mitwirkende.
       - name: Mitwirkenden-Fonds
         text: >
-          Wir stellen jeden Monat CONTRIBUTOR_POOL_BUDGET USD zur Verfügung, um
+          Wir stellen CONTRIBUTOR_POOL_PERCENTAGE% unserer monatlichen Einnahmen zur Verfügung, um
           externe Mitwirkende zu bezahlen, die wichtige Beiträge zum Projekt
           geleistet haben. Als Beiträge zählen das Einreichen von Code, das
           Schreiben von Dokumentation, die Beantwortung von Fragen auf unserem
@@ -487,14 +487,14 @@ donate_page:
           zugewiesen.
       - name: Abhängigkeiten
         text: >
-          Wir stellen jeden Monat DEPENDENCIES_BUDGET USD zur Verfügung, um die
+          Wir stellen DEPENDENCIES_PERCENTAGE% unserer monatlichen Einnahmen zur Verfügung, um die
           Projekte zu unterstützen, von denen wir abhängig sind. Wir glauben,
           dass Open-Source-Projekte, die das Glück haben finanziert zu werden,
           die Verantwortung haben, die kleineren Projekt, auf die sie
           angewisen sind, zu unterstützen.
       - name: Community-Projekte
         text: >
-          Wir stellen jeden Monat DEPENDENCIES_BUDGET USD zur Verfügung, um
+          Wir stellen COMMUNITY_PERCENTAGE% unserer monatlichen Einnahmen zur Verfügung, um
           Plugins, Parser und andere Projekte zu unterstützen, die für das
           ESLint-Ökosystem als Ganzem von Nutzen sind. Wir glauben, dass die
           Stärke des Projekts in seinem Ökosystem liegt und wir wollen

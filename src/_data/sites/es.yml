@@ -448,17 +448,17 @@ donate_page:
           para miembros y revisores de CDT y HOURLY_RATE_COMMITERS USD/hora para comiteadores.
       - name: Grupo de colaboradores
         text: >
-          Reservamos CONTRIBUTOR_POOL_BUDGET USD cada mes para pagar a los contribuyentes externos que han hecho importantes
+          Reservamos el CONTRIBUTOR_POOL_PERCENTAGE% de nuestros ingresos mensuales cada mes para pagar a los contribuyentes externos que han hecho importantes
           aportes al proyecto. Las contribuciones incluyen enviar código, escribir documentación,
           respondiendo preguntas en nuestro servidor Discord, y más. Este dinero es asignado cada mes por el CDT.
       - name: Dependencias
         text: >
-          Reservamos DEPENDENCIES_BUDGET USD cada mes para ayudar a mantener nuestras dependencias.
+          Reservamos el DEPENDENCIES_PERCENTAGE% de nuestros ingresos mensuales cada mes para ayudar a mantener nuestras dependencias.
           Creemos que los proyectos de código abierto que tienen la suerte de recibir financiación
           tienen la responsabilidad de ayudar a respaldar los proyectos más pequeños de los que dependen.
       - name: Proyectos comunitarios
         text: >
-          Reservamos COMMUNITY_BUDGET USD cada mes para ayudar en soporte a plugins, parsers,
+          Reservamos el COMMUNITY_PERCENTAGE% de nuestros ingresos mensuales cada mes para ayudar en soporte a plugins, parsers,
           y otros proyectos que benefician al ecosistema ESLint en su conjunto.
           Creemos que la fuerza del proyecto está en su ecosistema y queremos
           para asegurar que los proyectos importantes permanezcan bien mantenidos.
