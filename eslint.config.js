@@ -44,6 +44,7 @@ module.exports = defineConfig([
 	// Playground
 	{
 		files: [playgroundFiles],
+		ignores: ["src/playground/scripts/**/*.js"],
 		extends: [eslintConfigESLintBase],
 		plugins: {
 			react: reactPlugin,
