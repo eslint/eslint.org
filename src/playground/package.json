@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "The codebase for the ESLint Playground (eslint.org/play)",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "scripts": {
     "build:rules-meta": "node scripts/generate-rules-meta.js",
