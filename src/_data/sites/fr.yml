@@ -461,17 +461,17 @@ donate_page:
           pour les membres du comité de pilotage technique et les relecteurs, et HOURLY_RATE_COMMITERS USD/heure pour les contributeurs.
       - name: Contributeurs
         text: >
-          Nous réservons CONTRIBUTOR_POOL_BUDGET USD chaque mois pour payer les contributeurs externes qui ont apporté des contributions
+          Nous réservons CONTRIBUTOR_POOL_PERCENTAGE% de nos revenus mensuels chaque mois pour payer les contributeurs externes qui ont apporté des contributions
           importantes au projet. Les contributions incluent la soumission de code, la rédaction de documentation, la réponse aux questions
           sur notre serveur Discord, et plus encore. Cet argent est attribué chaque mois par le comité de pilotage technique.
       - name: Dépendances
         text: >
-          Nous réservons DEPENDENCIES_BUDGET USD chaque mois pour aider à financer nos dépendances.
+          Nous réservons DEPENDENCIES_PERCENTAGE% de nos revenus mensuels chaque mois pour aider à financer nos dépendances.
           Nous pensons que les projets open source qui ont la chance d'être financés ont la responsabilité
           de soutenir les petits projets sur lesquels ils reposent.
       - name: Projets communautaires
         text: >
-          Nous réservons COMMUNITY_BUDGET USD chaque mois pour aider à financer les plugins, les parseurs,
+          Nous réservons COMMUNITY_PERCENTAGE% de nos revenus mensuels chaque mois pour aider à financer les plugins, les parseurs,
           et les autres projets qui profitent à l'écosystème ESLint dans son ensemble.
           Nous croyons que la force du projet réside dans son écosystème et nous voulons
           nous assurer que les projets importants restent bien maintenus.

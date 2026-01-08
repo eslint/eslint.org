@@ -462,17 +462,17 @@ donate_page:
           for TSC members and Reviewers and HOURLY_RATE_COMMITERS USD/hour for committers.
       - name: Contributor Pool
         text: >
-          We set aside CONTRIBUTOR_POOL_BUDGET USD each month to pay outside contributors who have made significant
+          We set aside CONTRIBUTOR_POOL_PERCENTAGE% of our monthly income to pay outside contributors who have made significant
           contributions to the project. Contributions include submitting code, writing documentation,
           answering questions in our Discord server, and more. This money is allocated each month by the TSC.
       - name: Dependencies
         text: >
-          We set aside DEPENDENCIES_BUDGET USD each month to help support our dependencies.
+          We set aside DEPENDENCIES_PERCENTAGE% of our monthly income to help support our dependencies.
           We believe that open source projects who are lucky enough to get funded
           have a responsibility to help support the smaller projects they rely on.
       - name: Community Projects
         text: >
-          We set aside COMMUNITY_BUDGET USD each month to help support plugins, parsers,
+          We set aside COMMUNITY_PERCENTAGE% of our monthly income to help support plugins, parsers,
           and other projects that are of benefit to the ESLint ecosystem as a whole.
           We believe the strength of the project is in its ecosystem and we want
           to ensure important projects remain well-maintained.

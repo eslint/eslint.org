@@ -2,7 +2,7 @@
     "hourlyRateTSC": 80,
     "hourlyRate": 50,
 
-    "contributorPool": 1000,
-    "dependencies": 1500,
-    "community": 1500
+    "contributorPoolPercentage": 10,
+    "dependenciesPercentage": 5,
+    "communityPercentage": 5
 }
