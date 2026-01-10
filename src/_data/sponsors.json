@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111738.05270891999,
-        "monthlyDonations": 9311.504392410001,
-        "sponsorCount": 146
+        "annualDonations": 111978.56157635999,
+        "monthlyDonations": 9331.546798030002,
+        "sponsorCount": 147
     },
     "diamond": [],
     "platinum": [
@@ -246,6 +246,15 @@
             "url": "https://www.clipboardhealth.com/",
             "monthlyDonation": 25,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 20.04240562,
+            "totalDonations": "013.1523181713.0949178512.4986023910.0441172110.0737259420.0390773720.0397015120.0402284620.0397732620.04240562",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
