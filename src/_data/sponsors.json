@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111978.56157635999,
-        "monthlyDonations": 9331.546798030002,
-        "sponsorCount": 147
+        "annualDonations": 111930.56190839999,
+        "monthlyDonations": 9327.546825700001,
+        "sponsorCount": 148
     },
     "diamond": [],
     "platinum": [
@@ -844,14 +844,6 @@
             "tier": "backer"
         },
         {
-            "name": "Daniel Lindegren",
-            "image": "https://avatars.githubusercontent.com/u/2631623",
-            "url": "https://dlindegren.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Matt Chestnut",
             "image": "https://avatars.githubusercontent.com/u/3226829",
             "url": "https://www.mattchestnut.com",
@@ -1120,6 +1112,14 @@
             "tier": "backer"
         },
         {
+            "name": "Daniel Lindegren",
+            "image": "https://avatars.githubusercontent.com/u/2631623",
+            "url": "https://dlindegren.com",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Oliver Radwell",
             "image": "https://avatars.githubusercontent.com/u/5054896",
             "url": "https://www.radwell.codes",
@@ -1237,6 +1237,15 @@
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.00080763,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.000622210.000855340.000812010.000800730.00080763",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "ServieJS",
+            "url": null,
+            "image": "https://github.com/serviejs.png",
+            "monthlyDonation": 0.00002767,
+            "totalDonations": "00.005115920.013698750.001641920.001951920.001995270.001948880.002332340.002230960.002177010.002087210.002296610.015117100.014149090.012250070.012249880.011406570.011406570.011500110.010583210.010509660.000085800.000085800.000094010.000022740.000024510.000025300.000025120.00002767",
             "source": "thanks.dev",
             "tier": "backer"
         },
