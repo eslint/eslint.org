@@ -39,7 +39,7 @@
         {
             "name": "Vite",
             "url": "https://vite.dev/",
-            "image": "https://images.opencollective.com/vite/e6d15e1/logo.png",
+            "image": "https://images.opencollective.com/vite/d472863/logo.png",
             "monthlyDonation": 500,
             "totalDonations": 6300,
             "source": "opencollective",
@@ -570,7 +570,7 @@
             "url": "https://arturkulig.pl",
             "image": "https://images.opencollective.com/arturkulig/e7b7754/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 115,
+            "totalDonations": 120,
             "source": "opencollective",
             "tier": "backer"
         },
