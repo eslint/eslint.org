@@ -50,7 +50,7 @@ We also introduced [bulk suppressions](https://eslint.org/blog/2025/04/introduci
 
 Keeping pace with the JavaScript language remains a core priority. In 2025, we added support for the following new JavaScript features:
 
-* [ES2026 Explicit Resource Management](https://eslint.org/blog/2025/06/13/eslint-v9.29.0-released/) (`using` declarations)
+* [ES2026 Explicit Resource Management](https://eslint.org/blog/2025/06/eslint-v9.29.0-released/) (`using` declarations)
 * [ES2025 Regex modifiers](https://github.com/tc39/proposal-regexp-modifiers) (completed rollout)
 * [ES2025 Global variables](https://eslint.org/blog/2025/06/13/eslint-v9.29.0-released/) (`Float16Array` and `Iterator`)
 
