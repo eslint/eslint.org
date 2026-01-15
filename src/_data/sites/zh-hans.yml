@@ -423,7 +423,7 @@ donate_page:
     items:
       - name: 团队开发
         text: >
-          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅者为 HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。
+          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅者为 HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。团队成员每月最多可获得 MAX_MONTHLY_HOURS 小时的报酬。
       - name: 贡献者
         text: >
           我们每月留出月收入的CONTRIBUTOR_POOL_PERCENTAGE%来支付对项目做出重大贡献的外部贡献者。
