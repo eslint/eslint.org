@@ -108,7 +108,6 @@ In 2025, we received generous donations from many companies, led by Automattic a
 | StackBlitz                     | $5,680.65               |
 | American Express               | $5,500.00               |
 | Vite                           | $5,500.00               |
-| EthicalAds                     | $3,718.35               |
 | Cybozu                         | $3,000.00               |
 | Nx                             | $2,400.00               |
 | HeroCoders                     | $2,400.00               |
