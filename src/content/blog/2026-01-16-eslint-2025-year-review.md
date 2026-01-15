@@ -52,7 +52,7 @@ Keeping pace with the JavaScript language remains a core priority. In 2025, we a
 
 * [ES2026 Explicit Resource Management](https://eslint.org/blog/2025/06/eslint-v9.29.0-released/) (`using` declarations)
 * [ES2025 Regex modifiers](https://github.com/tc39/proposal-regexp-modifiers) (completed rollout)
-* [ES2025 Global variables](https://eslint.org/blog/2025/06/13/eslint-v9.29.0-released/) (`Float16Array` and `Iterator`)
+* [ES2025 Global variables](https://eslint.org/blog/2025/06/eslint-v9.29.0-released/) (`Float16Array` and `Iterator`)
 
 These updates ensure that ESLint remains an up-to-date tool for modern JavaScript development.
 
