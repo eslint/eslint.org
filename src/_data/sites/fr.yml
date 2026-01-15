@@ -459,6 +459,7 @@ donate_page:
         text: >
           Nous payons les membres de notre équipe un taux horaire basé sur leur ancienneté, actuellement HOURLY_RATE_TSC USD/heure
           pour les membres du comité de pilotage technique et les relecteurs, et HOURLY_RATE_COMMITERS USD/heure pour les contributeurs.
+          Les membres de l'équipe sont payés pour un maximum de MAX_MONTHLY_HOURS heures par mois.
       - name: Contributeurs
         text: >
           Nous réservons CONTRIBUTOR_POOL_PERCENTAGE% de nos revenus mensuels chaque mois pour payer les contributeurs externes qui ont apporté des contributions

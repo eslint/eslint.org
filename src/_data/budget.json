@@ -1,6 +1,7 @@
 {
     "hourlyRateTSC": 80,
     "hourlyRate": 50,
+    "maxMonthlyHours": 40,
 
     "contributorPoolPercentage": 10,
     "dependenciesPercentage": 5,
