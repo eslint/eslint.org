@@ -22,7 +22,7 @@ Following the release of JSON and Markdown support in 2024, we continued our mis
 
 In May, we were excited to announce that `html-eslint` had [joined the ESLint ecosystem](https://eslint.org/blog/2025/05/eslint-html-plugin/) as a language plugin, bringing robust HTML linting to the project. These additions mean that ESLint can now officially be used to lint the "big three" of the web: JavaScript, CSS, and HTML.
 
-ESLint's new CSS and HTML support were highlighted in [three](https://www.youtube.com/live/GjvgtwSOCao?feature=shared&t=2319) [different](https://youtu.be/o2wkYzu5u50?feature=shared&t=545) [talks](https://youtu.be/beYbnNT_02U?feature=shared&t=1231) at Google I/O as well on the [Chrome blog](https://developer.chrome.com/blog/web-at-io25).
+ESLint's new CSS and HTML support were highlighted in [three](https://www.youtube.com/live/GjvgtwSOCao?feature=shared&t=2319) [different](https://youtu.be/o2wkYzu5u50?feature=shared&t=545) [talks](https://youtu.be/beYbnNT_02U?feature=shared&t=1231) at Google I/O as well as on the [Chrome blog](https://developer.chrome.com/blog/web-at-io25).
 
 ## ESLint continues to grow
 
