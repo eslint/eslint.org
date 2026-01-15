@@ -42,7 +42,7 @@ As AI became an integral part of the development workflow in 2025, we worked to 
 
 We also embraced the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) by releasing the [`@eslint/mcp`](https://www.npmjs.com/package/@eslint/mcp) package. This MCP server allows AI models, such as those used in VS Code's Copilot, to interact directly with ESLint. By providing the AI with direct access to linting results and the ability to run ESLint on demand, we're helping these tools provide more accurate and context-aware suggestions for your codebase.
 
-## Performance and Workflow Improvements
+## Performance and workflow improvements
 
 One of the most significant technical achievements of 2025 was the introduction of [multithreaded linting](https://eslint.org/blog/2025/08/multithread-linting/) in v9.34.0. This feature, which had been in discussion for over a decade, allows ESLint to utilize multiple CPU cores to lint files in parallel. Large projects have seen performance improvements ranging from 30% to over 300%, depending on the hardware and project structure.
 
@@ -58,7 +58,7 @@ Keeping pace with the JavaScript language remains a core priority. In 2025, we a
 
 These updates ensure that ESLint remains an up-to-date tool for modern JavaScript development.
 
-## The Road to ESLint v10.0.0
+## The road to ESLint v10.0.0
 
 The end of 2025 was focused on the next major milestone: [ESLint v10.0.0](https://eslint.org/blog/2025/10/whats-coming-in-eslint-10.0.0/). This release represents a significant cleanup of the project, including:
 
