@@ -170,6 +170,6 @@ With ESLint v10.0.0 just around the corner, 2026 is shaping up to be another lan
 1. **Completing the Core Rewrite:** Moving the remainder of the legacy core logic into the new language-agnostic architecture and making the core asynchronous.
 2. **Expanding Language Plugins:** Further improving CSS, JSON, and Markdown support, and exploring official plugins for other common web formats.
 3. **Performance Optimization:** Continuing to refine multithreaded linting and looking for further opportunities to reduce linting times.
-4. **Cross-file Linting:** Allow ESLint to follow dependencies through the files that its linting for more accurate results.
+4. **Cross-file Linting:** Allow ESLint to follow dependencies through the files that it's linting for more accurate results.
 
 We are incredibly grateful to our community and sponsors for their continued support. Your contributions allow us to maintain ESLint as a high-quality, free, and open-source tool for millions of developers. We look forward to another year of growing and improving together!
