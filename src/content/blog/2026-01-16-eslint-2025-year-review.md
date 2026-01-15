@@ -26,8 +26,7 @@ ESLint's new CSS and HTML support were highlighted in [three](https://www.youtub
 
 ## ESLint continues to grow
 
-[![2025 Downloads - Summarized below](/assets/images/blog/2026/2025-npm-downloads.svg)
-](https://www.npm-stat.com/charts.html?package=eslint&from=2025-01-01&to=2025-12-31)
+[![2025 Downloads - Summarized below](/assets/images/blog/2026/2025-npm-downloads.svg)](https://www.npm-stat.com/charts.html?package=eslint&from=2025-01-01&to=2025-12-31)
 
 ESLint's usage continued its relentless climb in 2025. We started the year with 42,717,190 weekly npm downloads and ended with a staggering 70,713,031 weekly downloads—a 65% increase in just twelve months. By the end of the year, ESLint had reached 2,964,923,725 total downloads for 2025 alone, a testament to the critical role it plays in the modern web development ecosystem.
 
