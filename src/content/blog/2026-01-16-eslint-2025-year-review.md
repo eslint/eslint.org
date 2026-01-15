@@ -34,6 +34,8 @@ ESLint's usage continued its relentless climb in 2025. We started the year with 
 
 Downloads for the v9.x release line continue to grow as the ecosystem upgrades from v8.x. By the end of 2025 and beginning of 2026, weekly downloads for the v9.x release line topped 36 million, more than half of our weekly downloads. The v8.x release line is still popular with over 26 million weekly downloads.
 
+**Note:** The dips downloads at the start and end of the year are regular seasonal declines that all packages see during the holidays.
+
 ## Integrating with AI
 
 As AI became an integral part of the development workflow in 2025, we worked to ensure that ESLint remains a key part of that experience. In November, GitHub announced that [ESLint is now integrated with Copilot code review](https://github.blog/changelog/2025-11-20-linter-integration-with-copilot-code-review-now-in-public-preview/) in public preview. This integration allows Copilot to surface ESLint violations directly during the code review process, helping developers catch issues before they are merged.
@@ -116,6 +118,12 @@ In 2025, we received generous donations from many companies, led by Automattic a
 | Mercedes-Benz Group            | $2,200.00               |
 | Icons8                         | $2,200.00               |
 | LambdaTest                     | $2,078.57               |
+| Principal Financial Group      | $1,710.00               |
+| Anagram Solver                 | $1,600.00               |
+| JetBrains                      | $1,500.00               |
+| Vasilii Kovalev                | $1,380.00               |
+| Neko                           | $1,250.00               |
+| Siemens                        | $1,000.00               |
 
 ### Expenses review
 
@@ -141,7 +149,7 @@ In 2025, we spent $262,150.09 USD on the ESLint project as a whole vs. $204,451.
 | Code Explorer               | $0.00            | $7,200.00       | -100.00%        |
 | **Total**                   | **$262,150.09**  | **$247,669.54** | **+5.85%**      |
 
-Our Maintenance and Development costs continued to rise as we welcome four new team members, tackled the core rewrite and the preparation for v10.0.0. We also significantly increased our investment in the Contributor Pool, which compensates outside contributors for high-impact work. We were able to offset some of these increases with lower costs for triage and community management compared to 2024.
+Our Maintenance and Development costs continued to rise as we welcome four new team members, maintained three language plugins, tackled the core rewrite and the preparation for v10.0.0. We also significantly increased our investment in the Contributor Pool, which compensates outside contributors for high-impact work. We were able to offset some of these increases with lower costs for triage and community management compared to 2024.
 
 ### Supporting our dependencies and ecosystem
 
