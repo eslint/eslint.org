@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111930.56190839999,
-        "monthlyDonations": 9327.546825700001,
-        "sponsorCount": 148
+        "annualDonations": 111990.62945099999,
+        "monthlyDonations": 9332.55245425,
+        "sponsorCount": 150
     },
     "diamond": [],
     "platinum": [
@@ -740,6 +740,14 @@
             "tier": "backer"
         },
         {
+            "name": "Jay Sitter",
+            "image": "https://avatars.githubusercontent.com/u/643417",
+            "url": "https://www.jaysitter.com/",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Bryan Mishkin",
             "image": "https://avatars.githubusercontent.com/u/698306",
             "url": "https://www.linkedin.com/in/bmish/",
@@ -1229,6 +1237,15 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.00562855,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.005107600.005370460.005376970.005220070.00562855",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {

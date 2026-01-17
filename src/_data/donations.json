@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFeQD",
+        "name": "Oğuzhan Çakıroğlu",
+        "image": "https://avatars.githubusercontent.com/u/194198777",
+        "url": "https://github.com/waznggo",
+        "amount": 1,
+        "date": "2026-01-17T02:06:49Z",
+        "source": "github"
+    },
+    {
         "id": "rxg0j35l-zkwm6vvz-g5m6voe9-8n47daby",
         "name": "THANKS.DEV",
         "url": "https://thanks.dev",
@@ -65,7 +74,7 @@
     {
         "id": "jrkx5lmn-v904qjl8-o7n68bwa-7zdygoe3",
         "name": "OpenJS Foundation",
-        "url": "https://indieweb.social/@booboobenny",
+        "url": "https://openjsf.org/",
         "image": "https://images.opencollective.com/openjs/f01254b/avatar.png",
         "amount": 255.01,
         "date": "2025-11-12T15:16:18.730Z",
