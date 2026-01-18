@@ -4,10 +4,10 @@
     "currentVersion": "v10.0.0-rc.0",
     "currentVersionDate": "2026-01-09T15:41:05Z",
     "currentVersionIsPrerelease": true,
-    "stars": 26798,
-    "lastCommitDate": "2026-01-15T22:54:25Z",
-    "projectDependents": 27381529,
-    "weeklyDownloads": 71843261,
+    "stars": 26802,
+    "lastCommitDate": "2026-01-18T06:56:40Z",
+    "projectDependents": 27382384,
+    "weeklyDownloads": 76118230,
     "nextVersion": "v10.0.0-rc.1",
     "nextVersionDate": "2026-01-23"
 }
