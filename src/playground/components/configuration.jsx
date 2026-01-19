@@ -426,7 +426,7 @@ export default function Configuration({
 									};
 
 									if (newOptions.languageOptions.parser) {
-										newOptions.languageOptions.parserOptions.sourceType =
+										newOptions.languageOptions.sourceType =
 											selected.value;
 									} else {
 										if (selected.value === "default") {
@@ -532,8 +532,6 @@ export default function Configuration({
 											selected.value;
 										delete newOptions.languageOptions
 											.sourceType;
-										newOptions.languageOptions.parserOptions.sourceType =
-											"module";
 										newOptions.languageOptions.parserOptions.ecmaFeatures.jsx = true;
 									}
 
