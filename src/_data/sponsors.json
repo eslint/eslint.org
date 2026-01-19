@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111990.62959763999,
-        "monthlyDonations": 9332.55246647,
-        "sponsorCount": 151
+        "annualDonations": 112050.62959763999,
+        "monthlyDonations": 9337.55246647,
+        "sponsorCount": 152
     },
     "diamond": [],
     "platinum": [
@@ -983,6 +983,14 @@
             "name": "Kishi Yoshimaru / kagan",
             "image": "https://avatars.githubusercontent.com/u/34136752",
             "url": "https://github.com/kagankan",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Stephen Zhou",
+            "image": "https://avatars.githubusercontent.com/u/38493346",
+            "url": "https://hyoban.cc",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
