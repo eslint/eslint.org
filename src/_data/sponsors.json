@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 112092.34516151999,
-        "monthlyDonations": 9341.02876346,
-        "sponsorCount": 155
+        "annualDonations": 112100.16312407999,
+        "monthlyDonations": 9341.68026034,
+        "sponsorCount": 160
     },
     "diamond": [],
     "platinum": [
@@ -1266,11 +1266,56 @@
             "tier": "backer"
         },
         {
+            "name": "Amuzil",
+            "url": "http://amuzil.com",
+            "image": "https://github.com/amuzil.png",
+            "monthlyDonation": 0.31452142,
+            "totalDonations": "00.104836190.121308070.120212680.120212680.119249220.117561820.118681180.31452142",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jongerenraad Zutphen",
+            "url": "https://jrzutphen.nl",
+            "image": "https://github.com/jrzutphen.png",
+            "monthlyDonation": 0.16591337,
+            "totalDonations": "00.052038360.060200120.059589040.059589040.060085200.059262750.059812820.16591337",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Tryquetra",
+            "url": "https://bta.robsoncassiano.software/",
+            "image": "https://github.com/tryquetra.png",
+            "monthlyDonation": 0.13233221,
+            "totalDonations": "00.13233221",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "RagingEnby",
             "url": "https://ragingenby.dev",
             "image": "https://github.com/ragingenby.png",
             "monthlyDonation": 0.02916514,
             "totalDonations": "00.000158730.000158810.000212010.000211150.000127720.02916514",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Robson Cassiano",
+            "url": "https://global.robsoncassiano.software/",
+            "image": "https://github.com/randintn.png",
+            "monthlyDonation": 0.02043151,
+            "totalDonations": "00.000005840.02043151",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Simple Software LTDA",
+            "url": "https://eu.robsoncassiano.software",
+            "image": "https://github.com/simplesoftwareltda.png",
+            "monthlyDonation": 0.01829837,
+            "totalDonations": "00.01829837",
             "source": "thanks.dev",
             "tier": "backer"
         },
