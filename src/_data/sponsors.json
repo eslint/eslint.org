@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 112100.16312407999,
-        "monthlyDonations": 9341.68026034,
-        "sponsorCount": 160
+        "annualDonations": 112103.35790111999,
+        "monthlyDonations": 9341.94649176,
+        "sponsorCount": 162
     },
     "diamond": [],
     "platinum": [
@@ -1275,6 +1275,15 @@
             "tier": "backer"
         },
         {
+            "name": "Robin Wong",
+            "url": "https://rwong.tech/",
+            "image": "https://github.com/robinwongm.png",
+            "monthlyDonation": 0.22178653,
+            "totalDonations": "00.001030800.018083190.017242150.017242150.017319800.000598710.22178653",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Jongerenraad Zutphen",
             "url": "https://jrzutphen.nl",
             "image": "https://github.com/jrzutphen.png",
@@ -1289,6 +1298,15 @@
             "image": "https://github.com/tryquetra.png",
             "monthlyDonation": 0.13233221,
             "totalDonations": "00.13233221",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "robinWongM's Archived Projects",
+            "url": null,
+            "image": "https://github.com/robinwongm-archives.png",
+            "monthlyDonation": 0.04444489,
+            "totalDonations": "00.007977920.016141410.015290240.015290240.015329770.04444489",
             "source": "thanks.dev",
             "tier": "backer"
         },
