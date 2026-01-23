@@ -397,7 +397,6 @@ export default function Configuration({
 												sourceTypeOption =>
 													sourceTypeOption.value ===
 													options.languageOptions
-														.parserOptions
 														.sourceType,
 											)
 										: sourceTypeOptions.filter(
@@ -524,7 +523,7 @@ export default function Configuration({
 										delete newOptions.languageOptions
 											.parser;
 										delete newOptions.languageOptions
-											.parserOptions.sourceType;
+											.sourceType;
 										newOptions.languageOptions.parserOptions.ecmaFeatures =
 											{};
 									} else {
