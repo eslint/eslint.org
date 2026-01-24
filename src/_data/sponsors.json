@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 112106.69019983998,
-        "monthlyDonations": 9342.22418332,
-        "sponsorCount": 164
+        "annualDonations": 112120.92153491998,
+        "monthlyDonations": 9343.410127910001,
+        "sponsorCount": 165
     },
     "diamond": [],
     "platinum": [
@@ -1092,6 +1092,15 @@
             "url": "https://mizle.net",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "CyleWaitForIt",
+            "url": null,
+            "image": "https://github.com/cylewaitforit.png",
+            "monthlyDonation": 1.18594459,
+            "totalDonations": "00.049901880.577580860.827197610.406989510.809057531.18594459",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
