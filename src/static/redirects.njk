@@ -111,12 +111,13 @@ eleventyExcludeFromCollections: true
 # Redirect to latest docs while v9.x is the latest release
 /docs/v9.x/*                        https://eslint.org/docs/latest/:splat 302!
 
+# Docs for the latest v10.x
+# Redirect to latest docs while v10.x is the latest release
+/docs/v10.x/*                        https://eslint.org/docs/latest/:splat 302!
+
 # Docs for the current prerelease
-{% if site.locals.docs_next %}
-/docs/next/*                        https://{{ site.locals.docs_next }}/:splat 200!
-{% else %}
-/docs/next/*                        https://eslint.org/docs/next/:splat 302!
-{% endif %}
+# As there is currently no active prerelease, redirect to latest docs
+/docs/next/*                        https://eslint.org/docs/latest/:splat 302!
 
 {% if site.locals.blog == false %}
 # Redirect blog back to English site
