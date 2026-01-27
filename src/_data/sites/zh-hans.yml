@@ -423,18 +423,18 @@ donate_page:
     items:
       - name: 团队开发
         text: >
-          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅者为 HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。
+          我们根据团队成员的资历按小时支付工资。目前 TSC 成员和审阅者为 HOURLY_RATE_TSC 美元/小时，提交者为 HOURLY_RATE_COMMITERS 美元/小时。团队成员每月最多可获得 MAX_MONTHLY_HOURS 小时的报酬。
       - name: 贡献者
         text: >
-          我们每月留出 CONTRIBUTOR_POOL_BUDGET 美元来支付对项目做出重大贡献的外部贡献者。
+          我们每月留出月收入的CONTRIBUTOR_POOL_PERCENTAGE%来支付对项目做出重大贡献的外部贡献者。
           贡献包括提交代码、编写文档、在我们的 Discord 服务器上回答问题等等。这笔钱由 TSC 每月分配。
       - name: 依赖
         text: >
-          我们每月留出 DEPENDENCIES_BUDGET 美元来帮助支持我们的依赖。
+          我们每月留出月收入的DEPENDENCIES_PERCENTAGE%来帮助支持我们的依赖。
           我们相信，有幸获得资金支持的开源项目有责任帮助支持他们所依赖的小型项目。
       - name: 社区项目
         text: >
-          我们每月留出 COMMUNITY_BUDGET 美元来帮助支持插件、解析器和其他对 ESLint 生态系统整体有利的项目。
+          我们每月留出月收入的COMMUNITY_PERCENTAGE%来帮助支持插件、解析器和其他对 ESLint 生态系统整体有利的项目。
           我们相信该项目在整个生态中的的价值，我们希望确保重要项目得到良好维护。
       - name: 支持系统
         text: >

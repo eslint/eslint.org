@@ -133,10 +133,7 @@ hook: "donate_page"
                 {%- for item in site.donate_page.budget.items -%}
                     {% set tsc_hourly_rate = budget.hourlyRateTSC | dollars %}
                     {% set commiters_hourly_rate = budget.hourlyRate |dollars %}
-                    {% set contributor_pool_budget = budget.contributorPool | dollars %}
-                    {% set dependencies_budget = budget.dependencies | dollars %}
-                    {% set community_budget = budget.community | dollars %}
-                    {% set feature_desc = item.text | replace("HOURLY_RATE_TSC", tsc_hourly_rate) | replace("HOURLY_RATE_COMMITERS", commiters_hourly_rate) | replace("CONTRIBUTOR_POOL_BUDGET", contributor_pool_budget) | replace("DEPENDENCIES_BUDGET", dependencies_budget) | replace("COMMUNITY_BUDGET", community_budget) %}
+                    {% set feature_desc = item.text | replace("HOURLY_RATE_TSC", tsc_hourly_rate) | replace("HOURLY_RATE_COMMITERS", commiters_hourly_rate) | replace("MAX_MONTHLY_HOURS", budget.maxMonthlyHours) | replace("CONTRIBUTOR_POOL_PERCENTAGE", budget.contributorPoolPercentage) | replace("DEPENDENCIES_PERCENTAGE", budget.dependenciesPercentage) | replace("COMMUNITY_PERCENTAGE", budget.communityPercentage) %}
                     <article class="feature">
                         <h3 class="feature__title"> {{item.name}} </h3>
                         <p class="feature__description"> {{feature_desc}} </p>
