@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 112124.97866183998,
-        "monthlyDonations": 9343.748221820002,
-        "sponsorCount": 167
+        "annualDonations": 115833.19209863998,
+        "monthlyDonations": 9652.766008220002,
+        "sponsorCount": 169
     },
     "diamond": [],
     "platinum": [
@@ -79,6 +79,14 @@
             "monthlyDonation": 250,
             "totalDonations": 23914,
             "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "SAP",
+            "image": "https://avatars.githubusercontent.com/u/2531208",
+            "url": "https://opensource.sap.com",
+            "monthlyDonation": 250,
+            "source": "github",
             "tier": "bronze-sponsor"
         },
         {
@@ -185,6 +193,15 @@
             "monthlyDonation": 60,
             "totalDonations": 1440,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Frontend Masters",
+            "url": "https://FrontendMasters.com",
+            "image": "https://github.com/frontendmasters.png",
+            "monthlyDonation": 59.0177864,
+            "totalDonations": "015.8755124116.5134570116.2135154615.9458794115.8539151315.8101133352.4053066815.7938353462.0867446158.6823441856.1351804555.6041253354.9398559947.1456875611.0450076411.0450076411.0450076411.0450076411.0450076411.0450076411.0522232711.1344221611.2132473611.4548048559.01778640",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
