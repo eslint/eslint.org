@@ -10,6 +10,6 @@
     "postinstall": "npm run build:rules-meta"
   },
   "dependencies": {
-    "eslint": "10.0.0-rc.2"
+    "eslint": "latest"
   }
 }
