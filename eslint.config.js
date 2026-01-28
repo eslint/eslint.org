@@ -1,6 +1,7 @@
 "use strict";
 
 const { defineConfig, globalIgnores } = require("eslint/config");
+const eslintConfigESLint = require("eslint-config-eslint");
 const eslintConfigESLintBase = require("eslint-config-eslint/base");
 const eslintConfigESLintCJS = require("eslint-config-eslint/cjs");
 const globals = require("globals");
@@ -16,6 +17,7 @@ module.exports = defineConfig([
 		"src/assets/js/**",
 		"src/_data/**",
 		"src/_11ty/**",
+		"src/playground/build/**",
 	]),
 
 	{
@@ -42,6 +44,7 @@ module.exports = defineConfig([
 	// Playground
 	{
 		files: [playgroundFiles],
+		ignores: ["src/playground/scripts/**/*.js"],
 		extends: [eslintConfigESLintBase],
 		plugins: {
 			react: reactPlugin,
@@ -80,6 +83,14 @@ module.exports = defineConfig([
 			"react/prop-types": "off",
 			"jsdoc/require-jsdoc": "off",
 			"func-style": "off",
+		},
+	},
+	{
+		files: ["src/playground/scripts/**/*.js"],
+		extends: [eslintConfigESLint],
+		rules: {
+			"no-console": "off",
+			"n/no-process-exit": "off",
 		},
 	},
 

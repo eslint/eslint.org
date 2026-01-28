@@ -122,7 +122,7 @@
     "@codemirror/language": "^6.12.1",
     "@codemirror/state": "^6.5.4",
     "@codemirror/view": "^6.39.11",
-    "@typescript-eslint/parser": "^8.53.0",
+    "@typescript-eslint/parser": "^8.54.0",
     "@uiw/react-codemirror": "^4.25.4",
     "algoliasearch": "^4.25.3",
     "crelt": "^1.0.6",

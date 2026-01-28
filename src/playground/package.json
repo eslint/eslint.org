@@ -5,6 +5,10 @@
   "description": "The codebase for the ESLint Playground (eslint.org/play)",
   "license": "Apache-2.0",
   "type": "module",
+  "scripts": {
+    "build:rules-meta": "node scripts/generate-rules-meta.js",
+    "postinstall": "npm run build:rules-meta"
+  },
   "dependencies": {
     "eslint": "latest"
   }
