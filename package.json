@@ -101,7 +101,7 @@
     "markdownlint-cli": "^0.47.0",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "npm-run-all2": "^8.0.4",
-    "prettier": "3.8.0",
+    "prettier": "3.8.1",
     "prismjs": "^1.30.0",
     "sass": "^1.97.2",
     "sass-loader": "^16.0.6",
