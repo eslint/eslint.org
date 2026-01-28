@@ -173,9 +173,6 @@ const App = () => {
 				ecmaFeatures: {
 					...options.languageOptions.parserOptions.ecmaFeatures,
 				},
-				...(options?.languageOptions.parser && {
-					sourceType: "module",
-				}),
 			},
 		},
 	};
