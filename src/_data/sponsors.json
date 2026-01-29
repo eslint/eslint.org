@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 115833.19209863998,
-        "monthlyDonations": 9652.766008220002,
-        "sponsorCount": 169
+        "annualDonations": 116006.73096767998,
+        "monthlyDonations": 9667.227580640003,
+        "sponsorCount": 171
     },
     "diamond": [],
     "platinum": [
@@ -302,6 +302,15 @@
             "tier": "backer"
         },
         {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 10.17428565,
+            "totalDonations": "08.426817307.033780176.496383325.655986995.379024760.922801240.931320922.032353961.5062005410.17428565",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Say Yup",
             "url": "https://www.sayyup.nl",
             "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
@@ -488,7 +497,7 @@
             "url": "https://www.mymoneycomparison.com",
             "image": "https://images.opencollective.com/mymoneycomparison/93c0e0e/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1050,6 +1059,15 @@
             "url": "https://github.com/thelightway24",
             "monthlyDonation": 5,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Block Open Source",
+            "url": "https://block.xyz/open-source",
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 4.28728677,
+            "totalDonations": "03.406750532.577835202.289833644.452156164.456149960.970635480.538141004.28728677",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {

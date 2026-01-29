@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFf7S",
+        "name": "charz",
+        "image": "https://avatars.githubusercontent.com/u/101020949",
+        "url": "https://www.charrz.com/",
+        "amount": 1,
+        "date": "2026-01-29T05:22:24Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFfqg",
         "name": "Choi A Ram",
         "image": "https://avatars.githubusercontent.com/u/83874298",
@@ -57,7 +66,7 @@
         "id": "SA_kwHOAFvahM4AFfYY",
         "name": "Haeun Kim",
         "image": "https://avatars.githubusercontent.com/u/52477327",
-        "url": "https://github.com/ckhe1215",
+        "url": "https://ckhe1215.github.io",
         "amount": 5,
         "date": "2026-01-25T05:09:11Z",
         "source": "github"
