@@ -48,12 +48,12 @@ export function setBlogActiveState(itemUrl: string, pageUrl: string): string {
 export function setActiveCategory(itemUrl: string, pageUrl: string): string {
 	let response = "";
 
-	if (itemUrl === pageUrl) {
+	// Check for exact match or if page URL starts with item URL (for nested pages)
+	if (
+		itemUrl === pageUrl ||
+		(itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0)
+	) {
 		response = ' aria-current="page" ';
-	}
-
-	if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-		response += ' aria-current="page" ';
 	}
 
 	return response;
