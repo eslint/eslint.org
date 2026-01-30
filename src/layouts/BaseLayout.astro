@@ -1,0 +1,301 @@
+---
+/**
+ * @fileoverview Base layout for all pages
+ * @author ESLint
+ */
+import type { Locale } from "../i18n";
+import { getSiteData } from "../i18n";
+import "../styles/styles.scss";
+
+interface Props {
+	title?: string;
+	description?: string;
+	locale: Locale;
+	hook?: string;
+	canonicalUrl?: string;
+}
+
+const {
+	title: pageTitle,
+	description: pageDescription,
+	locale,
+	hook = "page",
+	canonicalUrl,
+} = Astro.props;
+
+const site = getSiteData(locale);
+const language = site.language as { code: string; name: string };
+const shared = site.shared as {
+	title_format: string;
+	description: string;
+	eslint_logo_alt: string;
+	skip_to_content: string;
+};
+const hostname = site.hostname as string || "eslint.org";
+const googleAnalytics = site.google_analytics as { code: string };
+
+// Compute page title
+const formattedTitle = pageTitle
+	? (shared.title_format || "PAGE_TITLE - ESLint").replace(
+			"PAGE_TITLE",
+			pageTitle,
+		)
+	: "ESLint - Pluggable JavaScript Linter";
+
+const formattedDescription = pageDescription || shared.description;
+const coverImage = `https://${hostname}/icon-512.png`;
+const coverImageAlt = shared.eslint_logo_alt;
+const pageUrl = canonicalUrl || `https://${hostname}${Astro.url.pathname}`;
+
+// Check if animation should be enabled
+const homepage = site.homepage as { animation?: { enabled: boolean } };
+const isHomepageWithAnimation =
+	hook === "homepage" && homepage?.animation?.enabled;
+---
+
+<!doctype html>
+<html lang={language.code} class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-title" content="ESLint" />
+
+		<!-- SEO -->
+		<title>{formattedTitle}</title>
+		<meta name="description" content={formattedDescription} />
+		<link rel="canonical" href={pageUrl} />
+
+		<!-- Feed -->
+		<link
+			rel="alternate"
+			href="/feed.xml"
+			title="ESLint RSS"
+			type="application/atom+xml"
+		/>
+
+		<!-- Favicon -->
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+
+		<!-- Open Graph -->
+		<meta property="og:title" content={formattedTitle} />
+		<meta property="og:description" content={formattedDescription} />
+		<meta property="og:image" content={coverImage} />
+		<meta property="og:image:alt" content={coverImageAlt} />
+		<meta
+			property="og:locale"
+			content={(site.locale as string || "en-US").replace("-", "_")}
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={pageUrl} />
+
+		<!-- Twitter -->
+		<meta name="twitter:title" content={formattedTitle} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@geteslint" />
+		<meta name="twitter:description" content={formattedDescription} />
+		<meta name="twitter:image" content={coverImage} />
+		<meta name="twitter:creator" content="@geteslint" />
+
+		<script is:inline>
+			// This is a capable browser, let's improve the UI further!
+			document.documentElement.classList.add("enhanced");
+			document.documentElement.classList.remove("no-js");
+		</script>
+
+		<link
+			rel="preload"
+			href="/fonts/Consolas.woff"
+			as="font"
+			type="font/woff"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/SpaceGrotesk-Medium-subset.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/Inter-Regular-subset.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/SpaceMono-Regular-subset.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link rel="preconnect" href="https://www.googletagmanager.com/" />
+
+		<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+		<link rel="dns-prefetch" href="https://images.opencollective.com" />
+		<link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+		<link rel="dns-prefetch" href="https://unpkg.com" />
+
+		<script is:inline>
+			(function () {
+				var theme = window.localStorage.getItem("theme");
+				if (theme && theme !== "system")
+					document.documentElement.setAttribute("data-theme", theme);
+				else if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+					document.documentElement.setAttribute("data-theme", "dark");
+				else document.documentElement.setAttribute("data-theme", "light");
+			})();
+		</script>
+
+		<style is:inline>
+			/* Overrides for funky punctuators */
+			@font-face {
+				font-family: "Mono Punctuators";
+				src: url("/fonts/Consolas.woff") format("woff");
+				font-weight: 400;
+				unicode-range: U+40, U+7B, U+7D, U+28, U+29;
+				font-display: swap;
+			}
+
+			/* Space Grotesk for headings */
+			@font-face {
+				font-family: "Space Grotesk";
+				src:
+					url("/fonts/SpaceGrotesk-Medium-subset.woff2") format("woff2"),
+					url("/fonts/SpaceGrotesk-Medium-subset.zopfli.woff") format("woff");
+				font-weight: 500;
+				font-display: swap;
+			}
+
+			/* Inter for body text */
+			@font-face {
+				font-family: "Inter";
+				src:
+					url("/fonts/Inter-Regular-subset.woff2") format("woff2"),
+					url("/fonts/Inter-Regular-subset.zopfli.woff") format("woff");
+				font-weight: 400;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: Inter;
+				src:
+					url("/fonts/Inter-SemiBold-subset.woff2") format("woff2"),
+					url("/fonts/Inter-SemiBold-subset.zopfli.woff") format("woff");
+				font-weight: 500;
+				font-style: "normal";
+				font-display: "swap";
+			}
+
+			/* Space Mono for code snippets */
+			@font-face {
+				font-family: "Space Mono";
+				src:
+					url("/fonts/SpaceMono-Regular-subset.woff2") format("woff2"),
+					url("/fonts/SpaceMono-Regular-subset.zopfli.woff") format("woff");
+				font-weight: 400;
+				font-display: swap;
+			}
+
+			/* Country Flags for Windows*/
+			@font-face {
+				font-family: "Twemoji Country Flags";
+				unicode-range:
+					U+1F1E6-1F1FF,
+					U+1F3F4,
+					U+E0062-E0063,
+					U+E0065,
+					U+E0067,
+					U+E006C,
+					U+E006E,
+					U+E0073-E0074,
+					U+E0077,
+					U+E007F;
+				src: url("https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2")
+					format("woff2");
+			}
+		</style>
+
+		<script is:inline src="/js/themes.js"></script>
+	</head>
+
+	<body class={hook.replace("_", "-")}>
+		<a href="#main" class="c-btn c-btn--primary" id="skip-link">
+			{shared.skip_to_content}
+		</a>
+		<slot />
+
+		<script is:inline src="/js/css-vars-ponyfill@2.js"></script>
+		<script is:inline src="/js/focus-visible.js"></script>
+		<script is:inline src="/js/main.js"></script>
+
+		<!-- Google Analytics -->
+		{
+			googleAnalytics?.code && (
+				<>
+					<script
+						is:inline
+						async
+						src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalytics.code}`}
+					/>
+					<script
+						is:inline
+						define:vars={{ gaCode: googleAnalytics.code }}
+					>
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+							dataLayer.push(arguments);
+						}
+						gtag("js", new Date());
+						gtag("config", gaCode);
+					</script>
+				</>
+			)
+		}
+
+		{
+			isHomepageWithAnimation && (
+				<>
+					<script
+						is:inline
+						src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+					/>
+					<script
+						is:inline
+						src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Flip.min.js"
+					/>
+					<script is:inline src="/js/animation.js" />
+				</>
+			)
+		}
+
+		{
+			(hook === "homepage" || hook === "component_library") && (
+				<>
+					<script is:inline src="/js/hammer.min.js" />
+					<script is:inline src="/js/slider.js" />
+				</>
+			)
+		}
+
+		{
+			(hook === "donate_page" || hook === "component_library") && (
+				<script is:inline src="/js/accordion.js" />
+			)
+		}
+
+		{
+			hook === "component_library" && (
+				<>
+					<script is:inline src="/js/tabs.js" />
+					<script is:inline src="/js/components-index.js" />
+				</>
+			)
+		}
+	</body>
+</html>

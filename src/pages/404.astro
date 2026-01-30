@@ -1,0 +1,39 @@
+---
+/**
+ * @fileoverview 404 page
+ * @author ESLint
+ */
+import MainLayout from "../layouts/MainLayout.astro";
+import { defaultLocale, getSiteData } from "../i18n";
+
+const locale = defaultLocale;
+const site = getSiteData(locale);
+
+const notFoundPage = site["404_page"] as {
+	title: string;
+	subtitle: string;
+	description: string;
+	actions: {
+		back_to_home: string;
+		browse_docs: string;
+	};
+};
+---
+
+<MainLayout title={notFoundPage.title} locale={locale} hook="404_page">
+	<section class="section hero error-page">
+		<div class="content-container center-text">
+			<h1 class="error-code">{notFoundPage.title}</h1>
+			<h2 class="section-title">{notFoundPage.subtitle}</h2>
+			<p class="section-supporting-text">{notFoundPage.description}</p>
+			<div class="eslint-actions">
+				<a href={`/${locale}/`} class="c-btn c-btn--primary">
+					{notFoundPage.actions.back_to_home}
+				</a>
+				<a href={`/${locale}/docs/latest/`} class="c-btn c-btn--secondary">
+					{notFoundPage.actions.browse_docs}
+				</a>
+			</div>
+		</div>
+	</section>
+</MainLayout>

@@ -18,6 +18,13 @@ module.exports = defineConfig([
 		"src/_data/**",
 		"src/_11ty/**",
 		"src/playground/build/**",
+		"**/*.astro",
+		"src/components/**",
+		"src/layouts/**",
+		"src/pages/**",
+		"src/i18n/**",
+		"src/utils/**",
+		"src/styles/**",
 	]),
 
 	{

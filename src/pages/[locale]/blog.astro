@@ -1,0 +1,51 @@
+---
+/**
+ * @fileoverview Blog index page for each locale
+ * @author ESLint
+ */
+import MainLayout from "../../layouts/MainLayout.astro";
+import type { Locale } from "../../i18n";
+import { locales, getSiteData } from "../../i18n";
+
+export function getStaticPaths() {
+	return locales.map(locale => ({
+		params: { locale },
+	}));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+const site = getSiteData(locale);
+
+const blogPage = site.blog_page as {
+	title: string;
+	description: string;
+	search: { title: string; hint: string; clear: string };
+	categories: { title: string; everything: string };
+	pagination: {
+		title: string;
+		first_page: string;
+		next_page: string;
+		previous_page: string;
+		last_page: string;
+		status: string;
+	};
+	from_the_blog: string;
+};
+---
+
+<MainLayout title={blogPage.title} locale={locale} hook="blog_page">
+	<section class="section hero">
+		<div class="content-container">
+			<div class="section-head">
+				<h1 class="section-title">{blogPage.title}</h1>
+				<p class="section-supporting-text">{blogPage.description}</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="content-container">
+			<p>Blog posts will be migrated in a future update.</p>
+		</div>
+	</section>
+</MainLayout>

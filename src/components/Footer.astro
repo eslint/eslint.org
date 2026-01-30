@@ -1,0 +1,111 @@
+---
+/**
+ * @fileoverview Footer component
+ * @author ESLint
+ */
+import type { Locale } from "../i18n";
+import { getSiteData } from "../i18n";
+import { getLinks } from "../utils/data";
+import Logo from "./Logo.astro";
+import SocialIcons from "./SocialIcons.astro";
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+
+interface Props {
+	locale: Locale;
+}
+
+const { locale } = Astro.props;
+const site = getSiteData(locale);
+const links = getLinks();
+
+const shared = site.shared as { get_started: string; become_a_sponsor: string };
+const footer = site.footer as {
+	title: string;
+	description: string;
+	secondary: string;
+	copyright: string;
+	links: {
+		open_jsf: string;
+		terms: string;
+		privacy: string;
+		bylaws: string;
+		trademark: string;
+		trademark_list: string;
+		cookies: string;
+	};
+};
+const brandingPage = site.branding_page as { title: string };
+---
+
+<footer class="site-footer">
+	<div class="content-container divider">
+		<section class="footer-cta center-text">
+			<Logo />
+
+			<div class="section-head centered">
+				<h2 class="section-title h3">{footer.title}</h2>
+				<p class="section-supporting-text">
+					{footer.description}
+				</p>
+			</div>
+			<div class="eslint-actions">
+				<a
+					href={links.getStarted}
+					target="_blank"
+					class="c-btn c-btn--primary"
+				>
+					{shared.get_started}
+				</a>
+				<a href={`/${locale}${links.donate}`} class="c-btn c-btn--secondary donate-link">
+					{shared.become_a_sponsor}
+				</a>
+			</div>
+		</section>
+	</div>
+	<div class="content-container divider footer-middle">
+		<SocialIcons locale={locale} />
+		<ThemeSwitcher locale={locale} />
+		<LanguageSwitcher locale={locale} />
+	</div>
+	<div class="content-container footer-legal-section">
+		<div class="copyright">
+			<p set:html={footer.copyright} />
+		</div>
+		<nav aria-labelledby="footer-legal-links-label" class="footer-legal-links">
+			<h2 id="footer-legal-links-label" hidden>{footer.secondary}</h2>
+			<ul>
+				<li><a href={`/${locale}/branding/`}>{brandingPage.title}</a></li>
+				<li><a href="https://openjsf.org/">{footer.links.open_jsf}</a></li>
+				<li>
+					<a href="https://terms-of-use.openjsf.org/"
+						>{footer.links.terms}</a
+					>
+				</li>
+				<li>
+					<a href="https://privacy-policy.openjsf.org/"
+						>{footer.links.privacy}</a
+					>
+				</li>
+				<li>
+					<a href="https://bylaws.openjsf.org/">{footer.links.bylaws}</a>
+				</li>
+				<li>
+					<a href="https://trademark-policy.openjsf.org/"
+						>{footer.links.trademark}</a
+					>
+				</li>
+				<li>
+					<a href="https://trademark-list.openjsf.org/"
+						>{footer.links.trademark_list}</a
+					>
+				</li>
+				<li>
+					<a href="https://www.linuxfoundation.org/cookies/"
+						>{footer.links.cookies}</a
+					>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</footer>

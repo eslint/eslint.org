@@ -4,6 +4,8 @@
 !*.jsx
 !*.json
 !*.scss
+!*.ts
+!*.astro
 _site
 package-lock.json
 src/_data/*.json

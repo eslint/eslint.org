@@ -1,0 +1,103 @@
+---
+/**
+ * @fileoverview Language Switcher component
+ * @author ESLint
+ */
+import type { Locale } from "../i18n";
+import { getSiteData, locales, getLanguages } from "../i18n";
+
+interface Props {
+	locale: Locale;
+}
+
+const { locale } = Astro.props;
+const site = getSiteData(locale);
+const languages = getLanguages();
+const currentPath = Astro.url.pathname;
+
+// Remove locale prefix from current path to get the base path
+const pathWithoutLocale = currentPath.replace(new RegExp(`^/${locale}/?`), "/");
+
+const footer = site.footer as {
+	language_switcher: {
+		title: string;
+		description: string;
+		change_language: string;
+		language: string;
+	};
+};
+---
+
+<div class="language-switcher">
+	<a href={`/${locale}/languages/`} class="switcher-fallback">
+		{footer.language_switcher.change_language}
+	</a>
+	<div
+		hidden
+		role="region"
+		class="switcher switcher--language"
+		aria-labelledby="language-switcher-label"
+		id="language-switcher"
+	>
+		<span id="language-switcher-label" hidden>
+			{footer.language_switcher.title}
+		</span>
+		<div class="infobox visually-hidden" id="language-infobox">
+			{footer.language_switcher.description}
+		</div>
+		<label class="switcher__label" for="language-select">
+			<span class="label__text">
+				{footer.language_switcher.language}
+			</span>
+		</label>
+		<select
+			name="language selector"
+			id="language-select"
+			aria-describedby="language-infobox"
+			class="c-custom-select switcher__select"
+		>
+			{
+				languages.map(lang => {
+					const targetPath =
+						pathWithoutLocale === "/" || pathWithoutLocale === ""
+							? `/${lang.code}/`
+							: `/${lang.code}${pathWithoutLocale}`;
+					return (
+						<option
+							value={lang.code}
+							title={lang.name}
+							data-url={targetPath}
+							selected={locale === lang.code}
+						>
+							{lang.flag} {lang.name}
+						</option>
+					);
+				})
+			}
+		</select>
+	</div>
+</div>
+
+<script>
+	// Handle language selection
+	const languageSwitcher = document.getElementById("language-switcher");
+	const languageSelect = document.getElementById(
+		"language-select",
+	) as HTMLSelectElement | null;
+	const fallbackLink = document.querySelector(".switcher-fallback");
+
+	if (languageSwitcher && languageSelect && fallbackLink) {
+		// Show the select and hide the fallback link
+		languageSwitcher.removeAttribute("hidden");
+		fallbackLink.setAttribute("hidden", "");
+
+		languageSelect.addEventListener("change", e => {
+			const selectedOption =
+				languageSelect.options[languageSelect.selectedIndex];
+			const url = selectedOption.getAttribute("data-url");
+			if (url) {
+				window.location.href = url;
+			}
+		});
+	}
+</script>
