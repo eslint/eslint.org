@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 116006.73096767998,
-        "monthlyDonations": 9667.227580640003,
-        "sponsorCount": 171
+        "annualDonations": 115766.73096767998,
+        "monthlyDonations": 9647.227580640003,
+        "sponsorCount": 170
     },
     "diamond": [],
     "platinum": [
@@ -272,15 +272,6 @@
             "monthlyDonation": 20.04240562,
             "totalDonations": "013.1523181713.0949178512.4986023910.0441172110.0737259420.0390773720.0397015120.0402284620.0397732620.04240562",
             "source": "thanks.dev",
-            "tier": "backer"
-        },
-        {
-            "name": "SiMedia",
-            "url": "https://www.simedia.com/",
-            "image": "https://images.opencollective.com/simedia/18ec04a/logo.png",
-            "monthlyDonation": 20,
-            "totalDonations": 670,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
