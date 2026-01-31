@@ -1,4 +1,4 @@
-import React from "https://esm.sh/react@19.1.0"
+import React from "https://esm.sh/react@19.2.4"
 import { ImageResponse } from "https://deno.land/x/og_edge@0.0.6/mod.ts"
 
 const ESLintLogo = () => (

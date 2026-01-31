@@ -75,7 +75,7 @@
     "@octokit/graphql": "^4.8.0",
     "@octokit/rest": "^18.12.0",
     "babel-loader": "^8.4.1",
-    "babel-plugin-react-compiler": "^19.1.0-rc.3",
+    "babel-plugin-react-compiler": "^1.0.0",
     "cheerio": "*",
     "common-tags": "^1.8.2",
     "cross-env": "^7.0.3",
@@ -126,8 +126,8 @@
     "@uiw/react-codemirror": "^4.25.4",
     "algoliasearch": "^4.25.3",
     "crelt": "^1.0.6",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "react-select": "^5.10.2",
     "react-split": "^2.0.14"
   }
