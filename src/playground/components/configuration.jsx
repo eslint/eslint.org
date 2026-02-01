@@ -793,8 +793,9 @@ export default function Configuration({
 							isSearchable={false}
 							styles={customStyles}
 							theme={theme => customTheme(theme)}
-							defaultValue={configFileFormatOptions.filter(
-								formatOption => formatOption.value === "ESM",
+							value={configFileFormatOptions.find(
+								formatOption =>
+									formatOption.value === configFileFormat,
 							)}
 							options={configFileFormatOptions}
 							onChange={selected => {
