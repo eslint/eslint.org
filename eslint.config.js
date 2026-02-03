@@ -45,15 +45,16 @@ module.exports = defineConfig([
 	{
 		files: [playgroundFiles],
 		ignores: ["src/playground/scripts/**/*.js"],
-		extends: [eslintConfigESLintBase],
-		plugins: {
-			react: reactPlugin,
-			"jsx-a11y": jsxA11yPlugin,
-			"react-hooks": reactHooksPlugin,
-		},
+		extends: [
+			eslintConfigESLintBase,
+			reactPlugin.configs.flat.recommended,
+			reactPlugin.configs.flat["jsx-runtime"],
+			jsxA11yPlugin.flatConfigs.recommended,
+			reactHooksPlugin.configs.flat.recommended,
+		],
 		settings: {
 			react: {
-				version: "19.1.0",
+				version: "detect",
 			},
 		},
 		languageOptions: {
@@ -69,19 +70,11 @@ module.exports = defineConfig([
 			},
 		},
 		rules: {
-			...reactPlugin.configs.flat.recommended.rules,
-			...jsxA11yPlugin.configs.recommended.rules,
-			...reactHooksPlugin.configs.flat.recommended.rules,
-			"react/react-in-jsx-scope": "off",
-			"react/jsx-uses-react": "off",
 			"react/jsx-no-useless-fragment": "error",
-			"react/jsx-no-target-blank": "error",
 
 			// Disable rules that the codebase doesn't currently follow.
 			// It might be a good idea to enable these in the future.
-			"jsx-a11y/no-onchange": "off",
 			"react/prop-types": "off",
-			"jsdoc/require-jsdoc": "off",
 			"func-style": "off",
 		},
 	},
