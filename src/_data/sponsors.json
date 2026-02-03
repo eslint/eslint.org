@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 107364,
-        "monthlyDonations": 8947,
-        "sponsorCount": 140
+        "annualDonations": 109704,
+        "monthlyDonations": 9142,
+        "sponsorCount": 141
     },
     "diamond": [],
     "platinum": [
@@ -94,7 +94,16 @@
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 215,
-            "totalDonations": 442,
+            "totalDonations": 663,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Follower24",
+            "url": "https://www.follower24.de/",
+            "image": "https://images.opencollective.com/follower24/00297f8/avatar.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -103,7 +112,7 @@
             "url": "https://www.n-ix.com/",
             "image": "https://images.opencollective.com/n-ix-ltd/575a7a5/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 400,
+            "totalDonations": 600,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -112,7 +121,7 @@
             "url": "https://icons8.com/",
             "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 15400,
+            "totalDonations": 15600,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -142,7 +151,7 @@
             "tier": "bronze-sponsor"
         },
         {
-            "name": "LambdaTest",
+            "name": "TestMu AI Open Source Office (Formerly LambdaTest)",
             "image": "https://avatars.githubusercontent.com/u/171592363",
             "url": "https://www.lambdatest.com",
             "monthlyDonation": 200,
@@ -236,15 +245,6 @@
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
             "totalDonations": 955,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Say Yup",
-            "url": "https://www.sayyup.nl",
-            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
-            "monthlyDonation": 10,
-            "totalDonations": 355,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -399,7 +399,7 @@
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
-            "totalDonations": 442,
+            "totalDonations": 663,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -408,7 +408,7 @@
             "url": "https://about.gitea.com/",
             "image": "https://images.opencollective.com/gitea/bf35c2f/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -417,7 +417,7 @@
             "url": "https://privatejet.com",
             "image": "https://images.opencollective.com/privatejetcom/4965318/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 10,
+            "totalDonations": 15,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -481,6 +481,15 @@
             "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 100,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 96,
             "source": "opencollective",
             "tier": "backer"
         },
