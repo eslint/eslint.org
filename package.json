@@ -89,7 +89,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "globals": "^17.1.0",
+    "globals": "^17.2.0",
     "gray-matter": "^4.0.3",
     "hyperlink": "^5.0.4",
     "imagemin": "^8.0.1",
