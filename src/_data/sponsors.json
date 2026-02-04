@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109704,
-        "monthlyDonations": 9142,
-        "sponsorCount": 141
+        "annualDonations": 109824,
+        "monthlyDonations": 9152,
+        "sponsorCount": 142
     },
     "diamond": [],
     "platinum": [
@@ -99,9 +99,9 @@
             "tier": "bronze-sponsor"
         },
         {
-            "name": "Follower24",
-            "url": "https://www.follower24.de/",
-            "image": "https://images.opencollective.com/follower24/00297f8/avatar.png",
+            "name": "Depot",
+            "url": "https://depot.dev",
+            "image": "https://images.opencollective.com/depot/39125a1/logo.png",
             "monthlyDonation": 200,
             "totalDonations": 200,
             "source": "opencollective",
@@ -245,6 +245,15 @@
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
             "totalDonations": 955,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Say Yup",
+            "url": "https://www.sayyup.nl",
+            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 365,
             "source": "opencollective",
             "tier": "backer"
         },

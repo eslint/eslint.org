@@ -268,14 +268,5 @@
         "amount": 10,
         "date": "2025-01-17T09:38:04.618Z",
         "source": "opencollective"
-    },
-    {
-        "id": "rxg0j35l-zkwm6vvk-oxr6voe9-8n47daby",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
-        "amount": 220.87,
-        "date": "2025-01-16T13:15:49.276Z",
-        "source": "opencollective"
     }
 ]
