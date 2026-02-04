@@ -1,0 +1,294 @@
+---
+/**
+ * @fileoverview Team page for each locale
+ * @author ESLint
+ */
+import MainLayout from "../../layouts/MainLayout.astro";
+import type { Locale } from "../../i18n";
+import { locales, getSiteData } from "../../i18n";
+import { getTeam } from "../../utils/data";
+
+export function getStaticPaths() {
+	return locales.map(locale => ({
+		params: { locale },
+	}));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+const site = getSiteData(locale);
+const team = getTeam();
+
+const teamPage = site.team_page as {
+	title: string;
+	description: string;
+	tsc: { title: string; description: string };
+	reviewers: { title: string; description: string };
+	committers: { title: string; description: string };
+	website_team: { title: string; description: string };
+	support_team: { title: string; description: string };
+	alumni: { title: string; description: string };
+};
+---
+
+<MainLayout title={teamPage.title} locale={locale} hook="team_page">
+	<section class="section hero">
+		<div class="content-container">
+			<div class="section-head">
+				<h1 class="section-title">{teamPage.title}</h1>
+				<p class="section-supporting-text">{teamPage.description}</p>
+			</div>
+		</div>
+	</section>
+
+	{
+		team.tsc.length > 0 && (
+			<section class="section">
+				<div class="content-container grid">
+					<div class="span-1-4">
+						<h2 class="section-title">{teamPage.tsc.title}</h2>
+						<p class="section-supporting-text">{teamPage.tsc.description}</p>
+					</div>
+					<ul role="list" class="span-6-12 people-list">
+						{team.tsc.map(member => (
+							<li>
+								<div class="person">
+									<img
+										src={member.avatar_url}
+										alt=""
+										class="person__image"
+										loading="lazy"
+									/>
+									<div class="person__info">
+										<span class="person__name">
+											{member.name || member.username}
+										</span>
+										<span class="person__handle">@{member.username}</span>
+										{member.bio && (
+											<p class="person__bio" set:html={member.bio} />
+										)}
+										<div class="person__links">
+											{member.website && (
+												<a href={member.website} rel="noopener" target="_blank">
+													Website
+												</a>
+											)}
+											{member.github_username && (
+												<a
+													href={`https://github.com/${member.github_username}`}
+													rel="noopener"
+													target="_blank"
+												>
+													GitHub
+												</a>
+											)}
+											{member.twitter_username && (
+												<a
+													href={`https://twitter.com/${member.twitter_username}`}
+													rel="noopener"
+													target="_blank"
+												>
+													Twitter
+												</a>
+											)}
+											{member.mastodon_url && (
+												<a
+													href={member.mastodon_url}
+													rel="me noopener"
+													target="_blank"
+												>
+													Mastodon
+												</a>
+											)}
+											{member.bluesky_url && (
+												<a
+													href={member.bluesky_url}
+													rel="me noopener"
+													target="_blank"
+												>
+													Bluesky
+												</a>
+											)}
+										</div>
+									</div>
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		team.reviewers.length > 0 && (
+			<section class="section">
+				<div class="content-container grid">
+					<div class="span-1-4">
+						<h2 class="section-title">{teamPage.reviewers.title}</h2>
+						<p class="section-supporting-text">
+							{teamPage.reviewers.description}
+						</p>
+					</div>
+					<ul role="list" class="span-6-12 people-list">
+						{team.reviewers.map(member => (
+							<li>
+								<div class="person">
+									<img
+										src={member.avatar_url}
+										alt=""
+										class="person__image"
+										loading="lazy"
+									/>
+									<div class="person__info">
+										<span class="person__name">
+											{member.name || member.username}
+										</span>
+										<span class="person__handle">@{member.username}</span>
+									</div>
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		team.committers.length > 0 && (
+			<section class="section">
+				<div class="content-container grid">
+					<div class="span-1-4">
+						<h2 class="section-title">{teamPage.committers.title}</h2>
+						<p class="section-supporting-text">
+							{teamPage.committers.description}
+						</p>
+					</div>
+					<ul role="list" class="span-6-12 people-list">
+						{team.committers.map(member => (
+							<li>
+								<div class="person">
+									<img
+										src={member.avatar_url}
+										alt=""
+										class="person__image"
+										loading="lazy"
+									/>
+									<div class="person__info">
+										<span class="person__name">
+											{member.name || member.username}
+										</span>
+										<span class="person__handle">@{member.username}</span>
+									</div>
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		team.website.length > 0 && (
+			<section class="section">
+				<div class="content-container grid">
+					<div class="span-1-4">
+						<h2 class="section-title">{teamPage.website_team.title}</h2>
+						<p class="section-supporting-text">
+							{teamPage.website_team.description}
+						</p>
+					</div>
+					<ul role="list" class="span-6-12 people-list">
+						{team.website.map(member => (
+							<li>
+								<div class="person">
+									<img
+										src={member.avatar_url}
+										alt=""
+										class="person__image"
+										loading="lazy"
+									/>
+									<div class="person__info">
+										<span class="person__name">
+											{member.name || member.username}
+										</span>
+										<span class="person__handle">@{member.username}</span>
+									</div>
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		team.support.length > 0 && (
+			<section class="section">
+				<div class="content-container grid">
+					<div class="span-1-4">
+						<h2 class="section-title">{teamPage.support_team.title}</h2>
+						<p class="section-supporting-text">
+							{teamPage.support_team.description}
+						</p>
+					</div>
+					<ul role="list" class="span-6-12 people-list">
+						{team.support.map(member => (
+							<li>
+								<div class="person">
+									<img
+										src={member.avatar_url}
+										alt=""
+										class="person__image"
+										loading="lazy"
+									/>
+									<div class="person__info">
+										<span class="person__name">
+											{member.name || member.username}
+										</span>
+										<span class="person__handle">@{member.username}</span>
+									</div>
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		team.alumni.length > 0 && (
+			<section class="section">
+				<div class="content-container grid">
+					<div class="span-1-4">
+						<h2 class="section-title">{teamPage.alumni.title}</h2>
+						<p class="section-supporting-text">{teamPage.alumni.description}</p>
+					</div>
+					<ul role="list" class="span-6-12 people-list">
+						{team.alumni.map(member => (
+							<li>
+								<div class="person person--small">
+									<img
+										src={member.avatar_url}
+										alt=""
+										class="person__image"
+										loading="lazy"
+									/>
+									<div class="person__info">
+										<span class="person__name">
+											{member.name || member.username}
+										</span>
+										<span class="person__handle">@{member.username}</span>
+									</div>
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+</MainLayout>

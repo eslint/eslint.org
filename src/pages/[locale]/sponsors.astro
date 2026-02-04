@@ -1,0 +1,370 @@
+---
+/**
+ * @fileoverview Sponsors page for each locale
+ * @author ESLint
+ */
+import MainLayout from "../../layouts/MainLayout.astro";
+import type { Locale } from "../../i18n";
+import { locales, getSiteData } from "../../i18n";
+import {
+	getSponsors,
+	getDonations,
+	getTechSponsors,
+	formatDollars,
+} from "../../utils/data";
+import { readableDateFromISO } from "../../utils/dates";
+
+export function getStaticPaths() {
+	return locales.map(locale => ({
+		params: { locale },
+	}));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+const site = getSiteData(locale);
+const sponsors = getSponsors();
+const donations = getDonations();
+const techsponsors = getTechSponsors();
+
+const sponsorsPage = site.sponsors_page as {
+	title: string;
+	description: string;
+	hero: { cta: { text: string; url: string } };
+	tiers: {
+		diamond: { title: string; description: string };
+		platinum: { title: string; description: string };
+		gold: { title: string; description: string };
+		silver: { title: string; description: string };
+		bronze: { title: string; description: string };
+		technology: { title: string; description: string };
+		backers: { title: string; description: string };
+	};
+	recent_donations: { title: string; description: string };
+	sponsor_title: string;
+	tech_sponsor_title: string;
+};
+
+// Replace placeholders in description
+const pageDescription = sponsorsPage.description
+	.replace("BACKER_COUNT", String(sponsors.totals.sponsorCount))
+	.replace("MONTHLY_DONATIONS", formatDollars(sponsors.totals.monthlyDonations));
+---
+
+<MainLayout title={sponsorsPage.title} locale={locale} hook="sponsors_page">
+	<section class="section hero">
+		<div class="content-container">
+			<div class="section-head center-text">
+				<h1 class="section-title">{sponsorsPage.title}</h1>
+				<p class="section-supporting-text">{pageDescription}</p>
+				<a
+					href={`/${locale}${sponsorsPage.hero.cta.url}`}
+					class="c-btn c-btn--primary"
+				>
+					{sponsorsPage.hero.cta.text}
+				</a>
+			</div>
+		</div>
+	</section>
+
+	{
+		sponsors.diamond.length > 0 && (
+			<section class="section">
+				<div class="content-container">
+					<h2 class="section-title">{sponsorsPage.tiers.diamond.title}</h2>
+					<p class="section-supporting-text">
+						{sponsorsPage.tiers.diamond.description}
+					</p>
+					<ul role="list" class="sponsors-grid sponsors-grid--large">
+						{sponsors.diamond.map(sponsor => {
+							const title = sponsorsPage.sponsor_title
+								.replace("SPONSOR_NAME", sponsor.name)
+								.replace("AMOUNT", formatDollars(sponsor.monthlyDonation));
+							return (
+								<li>
+									{sponsor.url ? (
+										<a
+											href={sponsor.url}
+											rel="nofollow noopener sponsored"
+											target="_blank"
+										>
+											<img
+												src={sponsor.image}
+												alt={title}
+												title={title}
+												loading="lazy"
+											/>
+										</a>
+									) : (
+										<img
+											src={sponsor.image}
+											alt={title}
+											title={title}
+											loading="lazy"
+										/>
+									)}
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		sponsors.platinum.length > 0 && (
+			<section class="section">
+				<div class="content-container">
+					<h2 class="section-title">{sponsorsPage.tiers.platinum.title}</h2>
+					<p class="section-supporting-text">
+						{sponsorsPage.tiers.platinum.description}
+					</p>
+					<ul role="list" class="sponsors-grid sponsors-grid--large">
+						{sponsors.platinum.map(sponsor => {
+							const title = sponsorsPage.sponsor_title
+								.replace("SPONSOR_NAME", sponsor.name)
+								.replace("AMOUNT", formatDollars(sponsor.monthlyDonation));
+							return (
+								<li>
+									{sponsor.url ? (
+										<a
+											href={sponsor.url}
+											rel="nofollow noopener sponsored"
+											target="_blank"
+										>
+											<img
+												src={sponsor.image}
+												alt={title}
+												title={title}
+												loading="lazy"
+											/>
+										</a>
+									) : (
+										<img
+											src={sponsor.image}
+											alt={title}
+											title={title}
+											loading="lazy"
+										/>
+									)}
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		sponsors.gold.length > 0 && (
+			<section class="section">
+				<div class="content-container">
+					<h2 class="section-title">{sponsorsPage.tiers.gold.title}</h2>
+					<p class="section-supporting-text">
+						{sponsorsPage.tiers.gold.description}
+					</p>
+					<ul role="list" class="sponsors-grid">
+						{sponsors.gold.map(sponsor => {
+							const title = sponsorsPage.sponsor_title
+								.replace("SPONSOR_NAME", sponsor.name)
+								.replace("AMOUNT", formatDollars(sponsor.monthlyDonation));
+							return (
+								<li>
+									{sponsor.url ? (
+										<a
+											href={sponsor.url}
+											rel="nofollow noopener sponsored"
+											target="_blank"
+										>
+											<img
+												src={sponsor.image}
+												alt={title}
+												title={title}
+												loading="lazy"
+											/>
+										</a>
+									) : (
+										<img
+											src={sponsor.image}
+											alt={title}
+											title={title}
+											loading="lazy"
+										/>
+									)}
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		sponsors.silver.length > 0 && (
+			<section class="section">
+				<div class="content-container">
+					<h2 class="section-title">{sponsorsPage.tiers.silver.title}</h2>
+					<p class="section-supporting-text">
+						{sponsorsPage.tiers.silver.description}
+					</p>
+					<ul role="list" class="sponsors-grid">
+						{sponsors.silver.map(sponsor => {
+							const title = sponsorsPage.sponsor_title
+								.replace("SPONSOR_NAME", sponsor.name)
+								.replace("AMOUNT", formatDollars(sponsor.monthlyDonation));
+							return (
+								<li>
+									{sponsor.url ? (
+										<a
+											href={sponsor.url}
+											rel="nofollow noopener sponsored"
+											target="_blank"
+										>
+											<img
+												src={sponsor.image}
+												alt={title}
+												title={title}
+												loading="lazy"
+											/>
+										</a>
+									) : (
+										<img
+											src={sponsor.image}
+											alt={title}
+											title={title}
+											loading="lazy"
+										/>
+									)}
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		sponsors.bronze.length > 0 && (
+			<section class="section">
+				<div class="content-container">
+					<h2 class="section-title">{sponsorsPage.tiers.bronze.title}</h2>
+					<p class="section-supporting-text">
+						{sponsorsPage.tiers.bronze.description}
+					</p>
+					<ul role="list" class="sponsors-grid sponsors-grid--small">
+						{sponsors.bronze.map(sponsor => {
+							const title = sponsorsPage.sponsor_title
+								.replace("SPONSOR_NAME", sponsor.name)
+								.replace("AMOUNT", formatDollars(sponsor.monthlyDonation));
+							return (
+								<li>
+									{sponsor.url ? (
+										<a
+											href={sponsor.url}
+											rel="nofollow noopener sponsored"
+											target="_blank"
+										>
+											<img
+												src={sponsor.image}
+												alt={title}
+												title={title}
+												loading="lazy"
+											/>
+										</a>
+									) : (
+										<img
+											src={sponsor.image}
+											alt={title}
+											title={title}
+											loading="lazy"
+										/>
+									)}
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	{
+		techsponsors.length > 0 && (
+			<section class="section">
+				<div class="content-container">
+					<h2 class="section-title">{sponsorsPage.tiers.technology.title}</h2>
+					<p class="section-supporting-text">
+						{sponsorsPage.tiers.technology.description}
+					</p>
+					<ul role="list" class="sponsors-grid sponsors-grid--small">
+						{techsponsors.map(sponsor => {
+							const title = sponsorsPage.tech_sponsor_title
+								.replace("SPONSOR_NAME", sponsor.name)
+								.replace(
+									"TECH",
+									sponsor.donation.charAt(0).toUpperCase() +
+										sponsor.donation.slice(1),
+								);
+							return (
+								<li>
+									{sponsor.url ? (
+										<a href={sponsor.url} target="_blank">
+											<img
+												src={sponsor.image}
+												alt={title}
+												title={title}
+												loading="lazy"
+											/>
+										</a>
+									) : (
+										<img
+											src={sponsor.image}
+											alt={title}
+											title={title}
+											loading="lazy"
+										/>
+									)}
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	<section class="section" id="donations">
+		<div class="content-container">
+			<h2 class="section-title">{sponsorsPage.recent_donations.title}</h2>
+			<p class="section-supporting-text">
+				{sponsorsPage.recent_donations.description}
+			</p>
+			<ul role="list" class="donations-list">
+				{
+					donations.map(donation => (
+						<li class="donations-item">
+							<div class="donation">
+								<img
+									src={donation.image}
+									alt=""
+									class="donation__image"
+									loading="lazy"
+								/>
+								<div class="donation__content">
+									<span class="donation__name">{donation.name}</span>
+									<span class="donation__meta">
+										{formatDollars(donation.amount)} ·{" "}
+										{readableDateFromISO(donation.date)}
+									</span>
+								</div>
+							</div>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</section>
+</MainLayout>

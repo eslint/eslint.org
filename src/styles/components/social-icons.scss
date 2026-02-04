@@ -1,0 +1,29 @@
+.eslint-social-icons {
+	flex-grow: 1;
+	flex-basis: 0;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		gap: 2rem;
+
+		li {
+			margin: 0;
+			display: inline-flex;
+			align-items: center;
+
+			a {
+				display: flex;
+			}
+		}
+
+		@media screen and (min-width: 1022px) and (max-width: 1200px) {
+			gap: 1.5rem;
+		}
+
+		@media screen and (min-width: 800px) and (max-width: 880px) {
+			gap: 1.25rem;
+		}
+	}
+}

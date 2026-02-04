@@ -1,0 +1,282 @@
+---
+/**
+ * @fileoverview Donate page for each locale
+ * @author ESLint
+ */
+import MainLayout from "../../layouts/MainLayout.astro";
+import type { Locale } from "../../i18n";
+import { locales, getSiteData } from "../../i18n";
+import { getSponsors, getBudget, getLinks, formatDollars } from "../../utils/data";
+
+export function getStaticPaths() {
+	return locales.map(locale => ({
+		params: { locale },
+	}));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+const site = getSiteData(locale);
+const sponsors = getSponsors();
+const budget = getBudget();
+const links = getLinks();
+
+const donatePage = site.donate_page as {
+	title: string;
+	description: string;
+	hero: { cta: { text: string; url: string } };
+	donation_options: {
+		title: string;
+		subtitle: string;
+		open_collective: {
+			title: string;
+			subtitle: string;
+			cta: { text: string };
+			items: Array<{ text: string }>;
+		};
+		github_sponsors: {
+			title: string;
+			subtitle: string;
+			cta: { text: string };
+			items: Array<{ text: string }>;
+		};
+	};
+	budget: {
+		title: string;
+		subtitle: string;
+		items: Array<{ name: string; text: string }>;
+		footer: { text: string };
+	};
+	donation_tiers: {
+		title: string;
+		subtitle: string;
+		cta: { open_collective_text: string; github_sponsors_text: string };
+		items: Array<{
+			name: string;
+			amount: string;
+			frequency: string;
+			text: string;
+		}>;
+	};
+	testimonials: {
+		title: string;
+		items: Array<{ name: string; title: string; image: string; text: string }>;
+	};
+	faq: {
+		title: string;
+		description: string;
+		items: Array<{ q: string; a: string }>;
+	};
+};
+
+// Replace placeholders
+const pageDescription = donatePage.description
+	.replace("BACKER_COUNT", String(sponsors.totals.sponsorCount))
+	.replace("MONTHLY_DONATIONS", formatDollars(sponsors.totals.monthlyDonations));
+
+// Process budget items
+const budgetItems = donatePage.budget.items.map(item => ({
+	name: item.name,
+	text: item.text
+		.replace("HOURLY_RATE_TSC", String(budget.hourlyRateTSC))
+		.replace("HOURLY_RATE_COMMITERS", String(budget.hourlyRateCommitters))
+		.replace("MAX_MONTHLY_HOURS", String(budget.maxHours))
+		.replace("CONTRIBUTOR_POOL_PERCENTAGE", String(budget.contributorPoolPercentage))
+		.replace("DEPENDENCIES_PERCENTAGE", String(budget.dependenciesPercentage))
+		.replace("COMMUNITY_PERCENTAGE", String(budget.communityPercentage)),
+}));
+---
+
+<MainLayout title={donatePage.title} locale={locale} hook="donate_page">
+	<section class="section hero">
+		<div class="content-container">
+			<div class="section-head center-text">
+				<h1 class="section-title">{donatePage.title}</h1>
+				<p class="section-supporting-text">{pageDescription}</p>
+				<a
+					href={`/${locale}${donatePage.hero.cta.url}`}
+					class="c-btn c-btn--primary"
+				>
+					{donatePage.hero.cta.text}
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="content-container">
+			<h2 class="section-title center-text">
+				{donatePage.donation_options.title}
+			</h2>
+			<p class="section-supporting-text center-text">
+				{donatePage.donation_options.subtitle}
+			</p>
+			<div class="donation-options">
+				<div class="donation-option">
+					<h3>{donatePage.donation_options.open_collective.title}</h3>
+					<p>{donatePage.donation_options.open_collective.subtitle}</p>
+					<ul>
+						{
+							donatePage.donation_options.open_collective.items.map(item => (
+								<li>{item.text}</li>
+							))
+						}
+					</ul>
+					<a href={links.openCollective} class="c-btn c-btn--primary" target="_blank">
+						{donatePage.donation_options.open_collective.cta.text}
+					</a>
+				</div>
+				<div class="donation-option">
+					<h3>{donatePage.donation_options.github_sponsors.title}</h3>
+					<p>{donatePage.donation_options.github_sponsors.subtitle}</p>
+					<ul>
+						{
+							donatePage.donation_options.github_sponsors.items.map(item => (
+								<li>{item.text}</li>
+							))
+						}
+					</ul>
+					<a
+						href={links.githubSponsors}
+						class="c-btn c-btn--secondary"
+						target="_blank"
+					>
+						{donatePage.donation_options.github_sponsors.cta.text}
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="content-container">
+			<h2 class="section-title center-text">{donatePage.budget.title}</h2>
+			<p class="section-supporting-text center-text">
+				{donatePage.budget.subtitle}
+			</p>
+			<div class="budget-items">
+				{
+					budgetItems.map(item => (
+						<div class="budget-item">
+							<h3>{item.name}</h3>
+							<p>{item.text}</p>
+						</div>
+					))
+				}
+			</div>
+			<p class="budget-footer">{donatePage.budget.footer.text}</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="content-container">
+			<h2 class="section-title center-text">
+				{donatePage.donation_tiers.title}
+			</h2>
+			<p class="section-supporting-text center-text">
+				{donatePage.donation_tiers.subtitle}
+			</p>
+			<div class="donation-tiers">
+				{
+					donatePage.donation_tiers.items.map(tier => (
+						<div class="donation-tier">
+							<h3>{tier.name}</h3>
+							<div class="tier-amount">
+								<span class="amount">{tier.amount}</span>
+								<span class="frequency">{tier.frequency}</span>
+							</div>
+							<p>{tier.text}</p>
+							<div class="tier-actions">
+								<a
+									href={links.openCollective}
+									class="c-btn c-btn--primary"
+									target="_blank"
+								>
+									<span set:html={donatePage.donation_tiers.cta.open_collective_text} />
+								</a>
+								<a
+									href={links.githubSponsors}
+									class="c-btn c-btn--secondary"
+									target="_blank"
+								>
+									<span set:html={donatePage.donation_tiers.cta.github_sponsors_text} />
+								</a>
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<section class="section" aria-labelledby="testimonials-label">
+		<div class="content-container">
+			<h2 class="visually-hidden" id="testimonials-label">
+				{donatePage.testimonials.title}
+			</h2>
+			<div class="c-slider" role="region" aria-roledescription="carousel">
+				<div class="c-slider__wrapper">
+					{
+						donatePage.testimonials.items.map((testimonial, index) => (
+							<blockquote
+								class="testimonial c-slider__slide"
+								role="group"
+								aria-roledescription="slide"
+								aria-label={`${index + 1} of ${donatePage.testimonials.items.length}`}
+							>
+								<p class="testimonial__text">{testimonial.text}</p>
+								<footer class="testimonial__footer">
+									<img
+										src={`/images/testimonials/${testimonial.image}`}
+										alt=""
+										class="testimonial__image"
+										loading="lazy"
+									/>
+									<div>
+										<cite class="testimonial__name">{testimonial.name}</cite>
+										<span class="testimonial__title">{testimonial.title}</span>
+									</div>
+								</footer>
+							</blockquote>
+						))
+					}
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="content-container">
+			<h2 class="section-title center-text">{donatePage.faq.title}</h2>
+			<p class="section-supporting-text center-text">
+				{donatePage.faq.description}
+			</p>
+			<div class="faq-list c-accordion" data-accordion>
+				{
+					donatePage.faq.items.map((item, index) => (
+						<div class="faq-item c-accordion__item">
+							<h3>
+								<button
+									class="c-accordion__trigger"
+									aria-expanded="false"
+									aria-controls={`faq-${index}`}
+									id={`faq-trigger-${index}`}
+								>
+									{item.q}
+								</button>
+							</h3>
+							<div
+								class="c-accordion__panel"
+								id={`faq-${index}`}
+								role="region"
+								aria-labelledby={`faq-trigger-${index}`}
+								hidden
+							>
+								<p set:html={item.a} />
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</section>
+</MainLayout>

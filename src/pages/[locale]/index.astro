@@ -1,0 +1,640 @@
+---
+/**
+ * @fileoverview Homepage for each locale
+ * @author ESLint
+ */
+import MainLayout from "../../layouts/MainLayout.astro";
+import type { Locale } from "../../i18n";
+import { locales, getSiteData } from "../../i18n";
+import {
+	getSponsors,
+	getStats,
+	getDonations,
+	getTechSponsors,
+	getLinks,
+	getAllAuthors,
+	formatStatsNumber,
+	formatDollars,
+} from "../../utils/data";
+import { shortDateFromISO, readableDateFromISO, readableDate } from "../../utils/dates";
+
+// Generate static paths for all locales
+export function getStaticPaths() {
+	return locales.map(locale => ({
+		params: { locale },
+	}));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+const site = getSiteData(locale);
+const sponsors = getSponsors();
+const stats = getStats();
+const donations = getDonations();
+const techsponsors = getTechSponsors();
+const links = getLinks();
+const allAuthors = getAllAuthors();
+
+const homepage = site.homepage as {
+	title: string;
+	description: string;
+	animation?: { enabled: boolean; text: string; highlight_word: string; wrong_word: string };
+	install: { title: string; copy: string; copied: string };
+	sponsor: { text: string; more: string };
+	versions: {
+		title: string;
+		latest: string;
+		latest_prerelease: string;
+		upcoming: string;
+		development: string;
+		dateline: string;
+		version_support: string;
+	};
+	explainer: {
+		image: { src: string; alt: string };
+		title: string;
+		description: string;
+		features: Array<{
+			title: string;
+			description: string;
+			learn_more: { link: string; text: string };
+		}>;
+	};
+	blog: { view_all_posts: string };
+	stats: {
+		title: string;
+		description: string;
+		dependents: string;
+		weekly_downloads: string;
+		stars: string;
+	};
+	sponsors: { title: string; description: string; view_all_sponsors: string };
+	donations: { title: string; view_all_donations: string };
+};
+
+const blogPage = site.blog_page as { title: string; description: string };
+const donatePage = site.donate_page as { testimonials: { title: string; items: Array<{ name: string; title: string; image: string; text: string }> } };
+const sponsorsPage = site.sponsors_page as { sponsor_title: string; tech_sponsor_title: string };
+const shared = site.shared as { get_started: string; become_a_sponsor: string };
+
+// Combine top sponsors
+const topSponsors = [
+	...sponsors.diamond,
+	...sponsors.platinum,
+	...sponsors.gold,
+];
+
+// Format stats
+const downloadCount = formatStatsNumber(stats.weeklyDownloads, locale).full;
+const annualDonations = formatDollars(sponsors.totals.annualDonations);
+const statsDesc = homepage.stats.description.replace("DOWNLOAD_COUNT", downloadCount);
+const sponsorsDesc = homepage.sponsors.description
+	.replace("ANNUAL_DONATIONS", annualDonations)
+	.replace("SPONSOR_COUNT", String(sponsors.totals.sponsorCount));
+
+// Helper to get localized link
+function getLocalizedLink(linkKey: string): string {
+	const link = links[linkKey];
+	if (link && link.startsWith("/")) {
+		return `/${locale}${link}`;
+	}
+	return link || linkKey;
+}
+
+// Format version dateline
+function formatDateline(version: string, date: string, isLink: boolean = true): string {
+	const formattedDate = shortDateFromISO(date);
+	const versionHtml = isLink 
+		? `<a href="https://github.com/eslint/eslint/releases/tag/${version}" class="text-dark no-underline">${version}</a>`
+		: `<a class="text-dark">${version}</a>`;
+	return homepage.versions.dateline
+		.replace("VERSION", versionHtml)
+		.replace("DATE", formattedDate);
+}
+---
+
+<MainLayout title={homepage.title} locale={locale} hook="homepage">
+	<section class="section hero hero--homepage">
+		<div class="content-container grid">
+			<div class="span-1-7 content-container">
+				<div class="">
+					<div class="section-head">
+						{
+							homepage.animation?.enabled ? (
+								<>
+									<h1 class="visually-hidden">{homepage.title}</h1>
+									<div
+										class="homepage-animation"
+										aria-hidden="true"
+										data-text={homepage.animation.text}
+										data-highlight={homepage.animation.highlight_word}
+										data-wrong={homepage.animation.wrong_word}
+									>
+										<p class="section-title animation__text">
+											{homepage.animation.text.split(homepage.animation.highlight_word)[0]}
+											<span class="animation__highlight">{homepage.animation.highlight_word}</span>
+											{homepage.animation.text.split(homepage.animation.highlight_word)[1] || ""}
+										</p>
+									</div>
+								</>
+							) : (
+								<h1 class="section-title">{homepage.title}</h1>
+							)
+						}
+						<p class="section-supporting-text">
+							{homepage.description}
+						</p>
+					</div>
+					<div class="eslint-install-code-wrapper">
+						<div
+							class="eslint-install-code"
+							role="region"
+							aria-labelledby="eslint-installation"
+						>
+							<span hidden id="eslint-installation"
+								>{homepage.install.title}</span
+							>
+							<button
+								class="eslint-install-code__btn"
+								id="copyBtn"
+								aria-labelledby="copy-button-label"
+							>
+								<span hidden id="copy-button-label"
+									>{homepage.install.title}</span
+								>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									class="c-icon"
+									role="img"
+									aria-label="copy"
+									fill="none"
+									focusable="false"
+								>
+									<path
+										d="M4.16667 12.5H3.33333C2.89131 12.5 2.46738 12.3244 2.15482 12.0118C1.84226 11.6993 1.66667 11.2754 1.66667 10.8333V3.33332C1.66667 2.8913 1.84226 2.46737 2.15482 2.15481C2.46738 1.84225 2.89131 1.66666 3.33333 1.66666H10.8333C11.2754 1.66666 11.6993 1.84225 12.0118 2.15481C12.3244 2.46737 12.5 2.8913 12.5 3.33332V4.16666M9.16667 7.49999H16.6667C17.5871 7.49999 18.3333 8.24618 18.3333 9.16666V16.6667C18.3333 17.5871 17.5871 18.3333 16.6667 18.3333H9.16667C8.24619 18.3333 7.5 17.5871 7.5 16.6667V9.16666C7.5 8.24618 8.24619 7.49999 9.16667 7.49999Z"
+										stroke="currentColor"
+										stroke-width="1.66667"
+										stroke-linecap="round"
+										stroke-linejoin="round"></path>
+								</svg>
+							</button>
+							<input
+								type="text"
+								id="code-snippet"
+								value="npm init @eslint/config@latest"
+								aria-readonly="true"
+								readonly
+								tabindex="-1"
+								aria-labelledby="eslint-installation"
+							/>
+						</div>
+						<span
+							id="eslint-install-code__announcement"
+							class="eslint-install-code__announcement"
+							aria-live="polite"
+							aria-atomic="true"></span>
+					</div>
+					<div class="eslint-actions">
+						<a
+							href={getLocalizedLink("getStarted")}
+							target="_blank"
+							class="c-btn c-btn--primary c-btn--large"
+							>{shared.get_started}</a
+						>
+						<a
+							href={getLocalizedLink("donate")}
+							class="c-btn c-btn--secondary c-btn--large donate-link"
+							>{shared.become_a_sponsor}</a
+						>
+					</div>
+
+					<div class="eslint-top-sponsors">
+						<div class="sponsor-text">{homepage.sponsor.text}</div>
+						<div class="sponsors">
+							{
+								topSponsors.map(sponsor => (
+									<a
+										href={sponsor.url}
+										class="sponsor-link"
+										rel="nofollow noopener sponsored"
+										target="_blank"
+									>
+										<img
+											loading="lazy"
+											decoding="async"
+											src={sponsor.image}
+											height="128"
+											alt={sponsor.name}
+											title={sponsor.name}
+										/>
+									</a>
+								))
+							}
+							<a href={`/${locale}/sponsors/`}>{homepage.sponsor.more}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="span-10-12 eslint-versions-col">
+				<div class="carbon-wrapper">
+					<!-- Ad placeholder -->
+				</div>
+				<div class="eslint-versions-container">
+					<dl class="eslint-versions" aria-labelledby="eslint-versions-title">
+						<span id="eslint-versions-title" hidden
+							>{homepage.versions.title}</span
+						>
+						<dt>{homepage.versions.latest}</dt>
+						<dd>
+							<svg
+								width="16"
+								height="8"
+								viewBox="0 0 16 8"
+								class="c-icon"
+								role="img"
+								aria-label="npm"
+							>
+								<path
+									d="M0 0.888885H16V6.22222H8V7.11111H4.44444V6.22222H0V0.888885ZM0.888889 5.33333H2.66667V2.66666H3.55556V5.33333H4.44444V1.77777H0.888889V5.33333ZM5.33333 1.77777V6.22222H7.11111V5.33333H8.88889V1.77777H5.33333ZM7.11111 2.66666H8V4.44444H7.11111V2.66666ZM9.77778 1.77777V5.33333H11.5556V2.66666H12.4444V5.33333H13.3333V2.66666H14.2222V5.33333H15.1111V1.77777H9.77778Z"
+									fill="currentColor"></path>
+							</svg>
+							<span set:html={formatDateline(stats.latestVersion, stats.latestVersionDate)} />
+						</dd>
+						{
+							stats.currentVersionIsPrerelease && (
+								<>
+									<dt>{homepage.versions.latest_prerelease}</dt>
+									<dd>
+										<svg
+											width="16"
+											height="8"
+											viewBox="0 0 16 8"
+											class="c-icon"
+											role="img"
+											aria-label="npm"
+										>
+											<path
+												d="M0 0.888885H16V6.22222H8V7.11111H4.44444V6.22222H0V0.888885ZM0.888889 5.33333H2.66667V2.66666H3.55556V5.33333H4.44444V1.77777H0.888889V5.33333ZM5.33333 1.77777V6.22222H7.11111V5.33333H8.88889V1.77777H5.33333ZM7.11111 2.66666H8V4.44444H7.11111V2.66666ZM9.77778 1.77777V5.33333H11.5556V2.66666H12.4444V5.33333H13.3333V2.66666H14.2222V5.33333H15.1111V1.77777H9.77778Z"
+												fill="currentColor"
+											/>
+										</svg>
+										<span set:html={formatDateline(stats.currentVersion, stats.currentVersionDate)} />
+									</dd>
+								</>
+							)
+						}
+						<dt>{homepage.versions.upcoming}</dt>
+						<dd>
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								class="c-icon"
+								role="img"
+								aria-label="Github"
+							>
+								<path
+									d="M8 0.200012C3.6 0.200012 0 3.80001 0 8.20001C0 11.7333 2.26667 14.7333 5.46667 15.8C5.86667 15.8667 6 15.6 6 15.4C6 15.2 6 14.7333 6 14.0667C3.8 14.5333 3.33333 13 3.33333 13C3 12.0667 2.46667 11.8 2.46667 11.8C1.66667 11.3333 2.46667 11.3333 2.46667 11.3333C3.26667 11.4 3.66667 12.1333 3.66667 12.1333C4.4 13.3333 5.53333 13 6 12.8C6.06667 12.2667 6.26667 11.9333 6.53333 11.7333C4.73333 11.5333 2.86667 10.8667 2.86667 7.80001C2.86667 6.93335 3.2 6.20001 3.66667 5.66668C3.66667 5.40001 3.33333 4.60001 3.8 3.53335C3.8 3.53335 4.46667 3.33335 6 4.33335C6.66667 4.13335 7.33333 4.06668 8 4.06668C8.66667 4.06668 9.33333 4.13335 10 4.33335C11.5333 3.26668 12.2 3.53335 12.2 3.53335C12.6667 4.66668 12.3333 5.46668 12.2667 5.66668C12.8 6.20001 13.0667 6.93335 13.0667 7.80001C13.0667 10.8667 11.2 11.5333 9.4 11.7333C9.66667 12 9.93333 12.4667 9.93333 13.2C9.93333 14.2667 9.93333 15.1333 9.93333 15.4C9.93333 15.6 10.0667 15.8667 10.4667 15.8C13.6667 14.7333 15.9333 11.7333 15.9333 8.20001C16 3.80001 12.4 0.200012 8 0.200012Z"
+									fill="currentColor"></path>
+							</svg>
+							<span set:html={formatDateline(stats.nextVersion, stats.nextVersionDate, false)} />
+						</dd>
+						{
+							!stats.currentVersionIsPrerelease && (
+								<>
+									<dt>{homepage.versions.development}</dt>
+									<dd>
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											class="c-icon"
+											role="img"
+											aria-label="Github"
+										>
+											<path
+												d="M8 0.200012C3.6 0.200012 0 3.80001 0 8.20001C0 11.7333 2.26667 14.7333 5.46667 15.8C5.86667 15.8667 6 15.6 6 15.4C6 15.2 6 14.7333 6 14.0667C3.8 14.5333 3.33333 13 3.33333 13C3 12.0667 2.46667 11.8 2.46667 11.8C1.66667 11.3333 2.46667 11.3333 2.46667 11.3333C3.26667 11.4 3.66667 12.1333 3.66667 12.1333C4.4 13.3333 5.53333 13 6 12.8C6.06667 12.2667 6.26667 11.9333 6.53333 11.7333C4.73333 11.5333 2.86667 10.8667 2.86667 7.80001C2.86667 6.93335 3.2 6.20001 3.66667 5.66668C3.66667 5.40001 3.33333 4.60001 3.8 3.53335C3.8 3.53335 4.46667 3.33335 6 4.33335C6.66667 4.13335 7.33333 4.06668 8 4.06668C8.66667 4.06668 9.33333 4.13335 10 4.33335C11.5333 3.26668 12.2 3.53335 12.2 3.53335C12.6667 4.66668 12.3333 5.46668 12.2667 5.66668C12.8 6.20001 13.0667 6.93335 13.0667 7.80001C13.0667 10.8667 11.2 11.5333 9.4 11.7333C9.66667 12 9.93333 12.4667 9.93333 13.2C9.93333 14.2667 9.93333 15.1333 9.93333 15.4C9.93333 15.6 10.0667 15.8667 10.4667 15.8C13.6667 14.7333 15.9333 11.7333 15.9333 8.20001C16 3.80001 12.4 0.200012 8 0.200012Z"
+												fill="currentColor"
+											/>
+										</svg>
+										<span set:html={homepage.versions.dateline.replace("VERSION", '<a class="text-dark">HEAD</a>').replace("DATE", shortDateFromISO(stats.lastCommitDate))} />
+									</dd>
+								</>
+							)
+						}
+					</dl>
+					<a href={`/${locale}/version-support/`}
+						>{homepage.versions.version_support}</a
+					>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section features-section">
+		<div class="content-container">
+			<header class="section-head center-text">
+				<h2 class="section-title h3">{homepage.explainer.title}</h2>
+				<p class="section-supporting-text fs-step-0">
+					{homepage.explainer.description}
+				</p>
+			</header>
+			<div class="section-body features-wrapper grid">
+				<div class="features span-1-5">
+					{
+						homepage.explainer.features.map(feature => (
+							<article class="feature">
+								<h3 class="feature__title">{feature.title}</h3>
+								<p class="feature__description">{feature.description}</p>
+								<a
+									href={getLocalizedLink(feature.learn_more.link)}
+									class="feature__details-link"
+								>
+									<span set:html={feature.learn_more.text} />
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										aria-hidden="true"
+										focusable="false"
+									>
+										<path
+											d="M4.16667 9.99996H15.8333M15.8333 9.99996L10 4.16663M15.8333 9.99996L10 15.8333"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</a>
+							</article>
+						))
+					}
+				</div>
+
+				<div class="features-image span-7-12">
+					<img
+						src={`/images/${homepage.explainer.image.src}`}
+						alt={homepage.explainer.image.alt}
+						loading="lazy"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="content-container divider">
+			<header class="section-head center-text">
+				<h2 class="section-title h3" id="latest-posts-label"
+					>{blogPage.title}</h2
+				>
+				<p class="section-supporting-text fs-step-0">
+					{blogPage.description}
+				</p>
+			</header>
+			<!-- Blog posts will be added later -->
+			<div class="center-text">
+				<a href={`/${locale}/blog/`} class="c-btn c-btn--primary"
+					>{homepage.blog.view_all_posts}</a
+				>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="content-container divider community-section">
+			<header class="section-head center-text">
+				<h2 class="section-title h3">{homepage.stats.title}</h2>
+				<p class="section-supporting-text fs-step-0">
+					{statsDesc}
+				</p>
+			</header>
+			<div class="metrics center-text">
+				<div class="stat">
+					<dt class="stat__label">{homepage.stats.dependents}</dt>
+					<dd class="stat__value">{formatStatsNumber(stats.projectDependents, locale).short}</dd>
+				</div>
+				<div class="stat">
+					<dt class="stat__label">{homepage.stats.weekly_downloads}</dt>
+					<dd class="stat__value">{formatStatsNumber(stats.weeklyDownloads, locale).short}</dd>
+				</div>
+				<div class="stat">
+					<dt class="stat__label">{homepage.stats.stars}</dt>
+					<dd class="stat__value">{formatStatsNumber(stats.stars, locale).short}</dd>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="content-container divider">
+			<header class="section-head center-text">
+				<h2 class="section-title h3">{homepage.sponsors.title}</h2>
+				<p class="section-supporting-text fs-step-0">
+					{sponsorsDesc}
+				</p>
+			</header>
+			<div class="grid">
+				<ul role="list" class="sponsors span-4-9">
+					{
+						["diamond", "platinum", "gold", "silver", "bronze"].map(tier =>
+							sponsors[tier as keyof typeof sponsors].map((sponsor: any) => {
+								const sponsorTitle = sponsorsPage.sponsor_title
+									.replace("SPONSOR_NAME", sponsor.name)
+									.replace("AMOUNT", formatDollars(sponsor.monthlyDonation));
+								return (
+									<li>
+										{sponsor.url ? (
+											<a
+												href={sponsor.url}
+												class="sponsor-link"
+												rel="nofollow noopener sponsored"
+												target="_blank"
+											>
+												<img
+													src={sponsor.image}
+													alt={sponsorTitle}
+													title={sponsorTitle}
+													height="48"
+													loading="lazy"
+													decoding="async"
+												/>
+											</a>
+										) : (
+											<img
+												src={sponsor.image}
+												alt={sponsorTitle}
+												title={sponsorTitle}
+												height="48"
+												loading="lazy"
+												decoding="async"
+											/>
+										)}
+									</li>
+								);
+							}),
+						)
+					}
+					{
+						techsponsors.map(sponsor => {
+							const sponsorTitle = sponsorsPage.tech_sponsor_title
+								.replace("SPONSOR_NAME", sponsor.name)
+								.replace("TECH", sponsor.donation.charAt(0).toUpperCase() + sponsor.donation.slice(1));
+							return (
+								<li>
+									{sponsor.url ? (
+										<a href={sponsor.url}>
+											<img
+												src={sponsor.image}
+												alt={sponsorTitle}
+												title={sponsorTitle}
+												width="48"
+												height="48"
+												loading="lazy"
+												decoding="async"
+											/>
+										</a>
+									) : (
+										<img
+											src={sponsor.image}
+											alt={sponsorTitle}
+											title={sponsorTitle}
+											width="48"
+											height="48"
+											loading="lazy"
+											decoding="async"
+										/>
+									)}
+								</li>
+							);
+						})
+					}
+				</ul>
+				<div class="center-text">
+					<a href={`/${locale}/sponsors/`} class="c-btn c-btn--primary"
+						>{homepage.sponsors.view_all_sponsors}</a
+					>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="span-3-10">
+					<h3 class="donations-title span-5-8" id="donations-label"
+						>{homepage.donations.title}</h3
+					>
+					<ul
+						role="list"
+						class="donations-list"
+						tabindex="-1"
+						aria-labelledby="donations-label"
+					>
+						{
+							donations.slice(0, 6).map(donation => (
+								<li class="donations-item">
+									<div class="donation">
+										<img
+											src={donation.image}
+											alt=""
+											class="donation__image"
+											loading="lazy"
+										/>
+										<div class="donation__content">
+											<span class="donation__name">{donation.name}</span>
+											<span class="donation__meta">
+												{formatDollars(donation.amount)} · {readableDateFromISO(donation.date)}
+											</span>
+										</div>
+									</div>
+								</li>
+							))
+						}
+					</ul>
+				</div>
+				<div class="center-text">
+					<a
+						href={`/${locale}/sponsors/#donations`}
+						class="c-btn c-btn--secondary"
+						>{homepage.donations.view_all_donations}</a
+					>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section aria-labelledby="testimonials-section-label">
+		<h2 class="visually-hidden" id="testimonials-section-label"
+			>{donatePage.testimonials.title}</h2
+		>
+		<div class="content-container">
+			<div class="c-slider" role="region" aria-roledescription="carousel">
+				<div class="c-slider__wrapper">
+					{
+						donatePage.testimonials.items.map((testimonial, index) => (
+							<blockquote
+								class="testimonial c-slider__slide"
+								role="group"
+								aria-roledescription="slide"
+								aria-label={`${index + 1} of ${donatePage.testimonials.items.length}`}
+							>
+								<p class="testimonial__text">{testimonial.text}</p>
+								<footer class="testimonial__footer">
+									<img
+										src={`/images/testimonials/${testimonial.image}`}
+										alt=""
+										class="testimonial__image"
+										loading="lazy"
+									/>
+									<div>
+										<cite class="testimonial__name">{testimonial.name}</cite>
+										<span class="testimonial__title">{testimonial.title}</span>
+									</div>
+								</footer>
+							</blockquote>
+						))
+					}
+				</div>
+				<div class="c-slider__navigation">
+					<button class="c-slider__nav c-slider__nav--prev" aria-label="Previous"
+						>&larr;</button
+					>
+					<button class="c-slider__nav c-slider__nav--next" aria-label="Next"
+						>&rarr;</button
+					>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script define:vars={{ copiedText: homepage.install.copied }}>
+		(function () {
+			const copyBtn = document.getElementById("copyBtn");
+			const copyText = document.getElementById("code-snippet");
+			const announcement_region = document.getElementById(
+				"eslint-install-code__announcement",
+			);
+			if (copyBtn) {
+				copyBtn.removeAttribute("hidden");
+
+				copyBtn.onclick = () => {
+					if (copyText) {
+						copyText.select();
+						navigator.clipboard.writeText(copyText.value);
+					}
+					if (announcement_region) {
+						announcement_region.innerHTML = copiedText;
+					}
+					copyBtn.setAttribute("data-copied", "true");
+
+					setTimeout(() => {
+						copyBtn.removeAttribute("data-copied");
+						if (announcement_region) {
+							announcement_region.innerHTML = "";
+							announcement_region.removeAttribute("data-fades-out");
+						}
+					}, 4000);
+				};
+			}
+		})();
+	</script>
+</MainLayout>

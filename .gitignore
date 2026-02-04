@@ -126,3 +126,6 @@ debug*.json
 
 # Build
 src/playground/build
+
+# Astro
+.astro/
