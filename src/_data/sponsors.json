@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 109824,
-        "monthlyDonations": 9152,
-        "sponsorCount": 142
+        "annualDonations": 109764,
+        "monthlyDonations": 9147,
+        "sponsorCount": 141
     },
     "diamond": [],
     "platinum": [
@@ -738,14 +738,6 @@
             "name": "Owen Buckley",
             "image": "https://avatars.githubusercontent.com/u/895923",
             "url": "https://www.thegreenhouse.io",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "elan e.V.",
-            "image": "https://avatars.githubusercontent.com/u/1064602",
-            "url": "https://elan-ev.de",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
