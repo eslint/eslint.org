@@ -24,7 +24,7 @@
         {% elif categories and categories[0] %}
             {% set blog_img_file = [categories[0] | slugify, '.png'] | join %}
         {% else %}
-            {% set blog_img_file = 'sponsorships.png' %}
+            {% set blog_img_file = 'announcements.png' %}
         {% endif %}
         {% set cover_image = ["https://", site.hostname, "/assets/images/blog-covers/", blog_img_file] | join %}
         {% set cover_image_alt = title %}
