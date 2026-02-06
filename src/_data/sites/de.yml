@@ -21,6 +21,7 @@ locals:
   docs_head: false
   docs_next: false
   docs_v8: false
+  docs_v9: false
   blog: false
   version_support: false
 

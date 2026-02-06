@@ -108,8 +108,11 @@ eleventyExcludeFromCollections: true
 {% endif %}
 
 # Docs for the latest v9.x
-# Redirect to latest docs while v9.x is the latest release
-/docs/v9.x/*                        https://eslint.org/docs/latest/:splat 302!
+{% if site.locals.docs_v9 %}
+/docs/v9.x/*                        https://{{ site.locals.docs_v9 }}/:splat 200!
+{% else %}
+/docs/v9.x/*                        https://eslint.org/docs/v9.x/:splat 302!
+{% endif %}
 
 # Docs for the current prerelease
 {% if site.locals.docs_next %}

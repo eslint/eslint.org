@@ -21,6 +21,7 @@ locals:
   docs_head: docs-eslint.netlify.app
   docs_next: next--docs-eslint.netlify.app
   docs_v8: v8-x--docs-eslint.netlify.app
+  docs_v9: v9-x--docs-eslint.netlify.app
   blog: true
   version_support: true
 redirects:
