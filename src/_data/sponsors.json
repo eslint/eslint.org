@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 103764,
-        "monthlyDonations": 8647,
-        "sponsorCount": 140
+        "annualDonations": 104364,
+        "monthlyDonations": 8697,
+        "sponsorCount": 141
     },
     "diamond": [],
     "platinum": [
@@ -167,6 +167,15 @@
             "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
             "monthlyDonation": 60,
             "totalDonations": 1500,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Sourcegraph",
+            "url": "https://about.sourcegraph.com",
+            "image": "https://images.opencollective.com/sourcegraph/f67b621/logo.png",
+            "monthlyDonation": 50,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
