@@ -113,7 +113,7 @@
     "tap-spot": "^1.1.2",
     "typescript": "^5.9.3",
     "undici": "^5.29.0",
-    "webpack": "^5.105.0",
+    "webpack": "^5.105.1",
     "webpack-cli": "^4.10.0",
     "yorkie": "^2.0.0"
   },
