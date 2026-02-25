@@ -120,6 +120,7 @@ module.exports = defineConfig([
 		},
 		language: "html/html",
 		languageOptions: {
+			frontmatter: true,
 			templateEngineSyntax: [
 				{ open: "{{", close: "}}" },
 				{ open: "{%", close: "%}" },
