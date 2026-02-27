@@ -56,7 +56,7 @@ eleventyExcludeFromCollections: true
                         <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                             <img loading="lazy" decoding="async" src="{{sponsor.image}}" height="128"
                                 alt="{{sponsor.name}}"
-                                title="{{ sponsor.name }}" />
+                                title="{{ sponsor.name }}">
                         </a>
                         {% endfor %}
                         <a href="/sponsors">{{ site.homepage.sponsor.more }}</a>
@@ -242,7 +242,7 @@ eleventyExcludeFromCollections: true
                         {% if sponsor.url %}
                         <a href="{{ sponsor.url }}" class="sponsor-link" rel="nofollow noopen sponsored" target="_blank">
                         {% endif %}
-                            <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="48" loading="lazy" decoding="async" />
+                            <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="48" loading="lazy" decoding="async">
                         {% if sponsor.url %}
                         </a>
                         {% endif %}
@@ -255,7 +255,7 @@ eleventyExcludeFromCollections: true
                     {% if sponsor.url %}
                     <a href="{{ sponsor.url }}">
                     {% endif %}
-                        <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" width="48" height="48" loading="lazy" decoding="async" />
+                        <img src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" width="48" height="48" loading="lazy" decoding="async">
                     {% if sponsor.url %}
                     </a>
                     {% endif %}
