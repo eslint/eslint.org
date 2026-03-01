@@ -8,8 +8,10 @@ const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
+const html = require("@html-eslint/eslint-plugin");
 
 const playgroundFiles = "src/playground/**/*.{js,jsx}";
+const htmlFiles = "**/*.html";
 
 module.exports = defineConfig([
 	globalIgnores([
@@ -21,7 +23,7 @@ module.exports = defineConfig([
 	]),
 
 	{
-		ignores: [playgroundFiles],
+		ignores: [playgroundFiles, htmlFiles],
 		extends: [eslintConfigESLintCJS],
 		rules: {
 			"n/no-extraneous-require": [
@@ -44,7 +46,7 @@ module.exports = defineConfig([
 	// Playground
 	{
 		files: [playgroundFiles],
-		ignores: ["src/playground/scripts/**/*.js"],
+		ignores: ["src/playground/scripts/**/*.js", htmlFiles],
 		extends: [
 			eslintConfigESLintBase,
 			reactPlugin.configs.flat.recommended,
@@ -80,6 +82,7 @@ module.exports = defineConfig([
 	},
 	{
 		files: ["src/playground/scripts/**/*.js"],
+		ignores: [htmlFiles],
 		extends: [eslintConfigESLint],
 		rules: {
 			"no-console": "off",
@@ -90,6 +93,7 @@ module.exports = defineConfig([
 	// Disable rules that the codebase doesn't currently follow.
 	// It might be a good idea to enable these in the future.
 	{
+		ignores: [htmlFiles],
 		rules: {
 			"jsdoc/require-jsdoc": "off",
 			"jsdoc/require-returns": "off",
@@ -105,8 +109,29 @@ module.exports = defineConfig([
 	},
 	{
 		files: [".eleventy.js"],
+		ignores: [htmlFiles],
 		rules: {
 			"no-console": "off",
+		},
+	},
+	{
+		files: [htmlFiles],
+		plugins: {
+			html,
+		},
+		language: "html/html",
+		languageOptions: {
+			frontmatter: true,
+			templateEngineSyntax: [
+				{ open: "{{", close: "}}" },
+				{ open: "{%", close: "%}" },
+				{ open: "{#", close: "#}", isComment: true },
+			],
+		},
+		rules: {
+			"html/no-duplicate-class": "error",
+			"html/no-duplicate-attrs": "error",
+			"html/class-spacing": "error",
 		},
 	},
 ]);
