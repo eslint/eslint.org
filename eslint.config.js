@@ -9,6 +9,7 @@ const reactPlugin = require("eslint-plugin-react");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const html = require("@html-eslint/eslint-plugin");
+
 const playgroundFiles = "src/playground/**/*.{js,jsx}";
 const htmlFiles = "**/*.html";
 
@@ -114,7 +115,7 @@ module.exports = defineConfig([
 		},
 	},
 	{
-		files: ["**/*.html"],
+		files: [htmlFiles],
 		plugins: {
 			html,
 		},
