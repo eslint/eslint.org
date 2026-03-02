@@ -44,7 +44,7 @@ hook: "sponsors_page"
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor_title }}"
-                            title="{{ sponsor_title }}" />
+                            title="{{ sponsor_title }}">
                     </a>
                 </li>
                 {% endfor %}
@@ -71,7 +71,7 @@ hook: "sponsors_page"
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor_title }}"
-                            title="{{ sponsor_title }}" />
+                            title="{{ sponsor_title }}">
                     </a>
                 </li>
                 {% endfor %}
@@ -98,7 +98,7 @@ hook: "sponsors_page"
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor_title }}"
-                            title="{{ sponsor_title }}" />
+                            title="{{ sponsor_title }}">
                     </a>
                 </li>
                 {% endfor %}
@@ -125,7 +125,7 @@ hook: "sponsors_page"
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor_title }}"
-                            title="{{ sponsor_title }}" />
+                            title="{{ sponsor_title }}">
                     </a>
                 </li>
                 {% endfor %}
@@ -152,7 +152,7 @@ hook: "sponsors_page"
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
                         <img loading="lazy" decoding="async" src="{{ sponsor.image }}" height="128"
                             alt="{{ sponsor_title }}"
-                            title="{{ sponsor_title }}" />
+                            title="{{ sponsor_title }}">
                     </a>
                 </li>
                 {% endfor %}
@@ -174,7 +174,7 @@ hook: "sponsors_page"
                     {% set sponsor_title = site.sponsors_page.tech_sponsor_title | replace("SPONSOR_NAME", sponsor.name) | replace("TECH", sponsor.donation | capitalize) %}
                 <li>
                     <a href="{{ sponsor.url | url }}" class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="64"/>
+                        <img loading="lazy" decoding="async" src="{{ sponsor.image }}" alt="{{ sponsor_title }}" title="{{ sponsor_title }}" height="64">
                     </a>
                 </li>
                 {% endfor %}
@@ -229,7 +229,7 @@ hook: "sponsors_page"
                         <img loading="lazy" decoding="async" src="{{ sponsor.image if sponsor.image else fallback_image }}" height="48" width="48"
                             onerror="this.src = '{{fallback_image}}'"
                             alt="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month"
-                            title="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month" />
+                            title="{{ sponsor.name if sponsor.name else "Anonymous" }} is donating {{ sponsor.monthlyDonation | dollars }} each month">
                     </a>
                 </li>
                 {% endfor %}
