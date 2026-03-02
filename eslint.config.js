@@ -46,7 +46,7 @@ module.exports = defineConfig([
 	// Playground
 	{
 		files: [playgroundFiles],
-		ignores: ["src/playground/scripts/**/*.js", htmlFiles],
+		ignores: ["src/playground/scripts/**/*.js"],
 		extends: [
 			eslintConfigESLintBase,
 			reactPlugin.configs.flat.recommended,
@@ -82,7 +82,6 @@ module.exports = defineConfig([
 	},
 	{
 		files: ["src/playground/scripts/**/*.js"],
-		ignores: [htmlFiles],
 		extends: [eslintConfigESLint],
 		rules: {
 			"no-console": "off",
@@ -109,7 +108,6 @@ module.exports = defineConfig([
 	},
 	{
 		files: [".eleventy.js"],
-		ignores: [htmlFiles],
 		rules: {
 			"no-console": "off",
 		},
