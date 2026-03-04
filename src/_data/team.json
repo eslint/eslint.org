@@ -402,11 +402,11 @@
             "title": "ESLint Committer",
             "website": "http://www.joshuakgoldberg.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/3335181",
-            "bio": "@bingo-js @eslint @flint-fyi @mochajs @typescript-eslint @yeoman and an assortment of other fun web dev projects ✨ 💖",
+            "bio": "@bingo-js @eslint @flint-fyi @mochajs @typescript-eslint @yeoman and an assortment of other fun web dev projects ✨ 💖\r\ndev @getsentry",
             "twitter_username": "JoshuaKGoldberg",
             "github_username": "JoshuaKGoldberg",
             "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
-            "location": "Wakefield, MA, USA"
+            "location": "Somerville, MA, USA"
         },
         {
             "username": "SwetaTanwar",
@@ -460,7 +460,7 @@
             "title": "ESLint Website Team",
             "website": "https://amaresh-s-m.firebaseapp.com/",
             "avatar_url": "https://avatars.githubusercontent.com/u/30730124",
-            "bio": null,
+            "bio": "Frontend Dev / Maintainer @eslint Web / Kindcrastinator",
             "twitter_username": "Amareshsm13",
             "github_username": "amareshsm",
             "location": null

@@ -207,11 +207,11 @@
         "title": "Guest Author",
         "website": "http://www.joshuakgoldberg.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/3335181",
-        "bio": "@bingo-js @eslint @flint-fyi @mochajs @typescript-eslint @yeoman and an assortment of other fun web dev projects ✨ 💖",
+        "bio": "@bingo-js @eslint @flint-fyi @mochajs @typescript-eslint @yeoman and an assortment of other fun web dev projects ✨ 💖\r\ndev @getsentry",
         "twitter_username": "JoshuaKGoldberg",
         "github_username": "JoshuaKGoldberg",
         "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
-        "location": "Wakefield, MA, USA"
+        "location": "Somerville, MA, USA"
     },
     "softius": {
         "username": "softius",

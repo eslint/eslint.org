@@ -1,7 +1,70 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFkkZ",
+        "name": "kristenkozo",
+        "image": "https://avatars.githubusercontent.com/u/75461047",
+        "url": "https://github.com/kristenkozo",
+        "amount": 1,
+        "date": "2026-03-01T01:18:16Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AFjWe",
+        "name": "Lucian Ciolac",
+        "image": "https://avatars.githubusercontent.com/u/33394650",
+        "url": "https://github.com/lucianciolac",
+        "amount": 1,
+        "date": "2026-02-20T09:57:57Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AFjMD",
+        "name": "Yehor Niestierov",
+        "image": "https://avatars.githubusercontent.com/u/21140449",
+        "url": "https://github.com/hardsoncore",
+        "amount": 1,
+        "date": "2026-02-19T10:31:40Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AFinE",
+        "name": "Faiz Khairi",
+        "image": "https://avatars.githubusercontent.com/u/22365665",
+        "url": "https://faizkhairi.github.io",
+        "amount": 1,
+        "date": "2026-02-15T15:32:44Z",
+        "source": "github"
+    },
+    {
+        "id": "e0adkjrv-8xwm69or-yw467z5n-4l93bgoy",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 50,
+        "date": "2026-02-15T12:01:19.840Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "3kzxy4v0-7wlr6mko-r47qmj9n-o8agdbe5",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 228.53,
+        "date": "2026-02-15T12:01:15.893Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AFh4S",
+        "name": "Lucas Augusto Kepler",
+        "image": "https://avatars.githubusercontent.com/u/105681054",
+        "url": "https://lucaskepler",
+        "amount": 1,
+        "date": "2026-02-11T02:12:58Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFhKP",
-        "name": "Layan Yashoda",
+        "name": "Layan Yasoda",
         "image": "https://avatars.githubusercontent.com/u/44344499",
         "url": "https://github.com/layanyashoda",
         "amount": 1,
@@ -15,24 +78,6 @@
         "url": "https://github.com/FumiakiC",
         "amount": 5,
         "date": "2026-02-05T11:17:13Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFf7S",
-        "name": "charz",
-        "image": "https://avatars.githubusercontent.com/u/101020949",
-        "url": "https://www.charrz.com/",
-        "amount": 1,
-        "date": "2026-01-29T05:22:24Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFfqg",
-        "name": "Choi A Ram",
-        "image": "https://avatars.githubusercontent.com/u/83874298",
-        "url": "https://github.com/rami0617",
-        "amount": 5,
-        "date": "2026-01-27T06:10:39Z",
         "source": "github"
     },
     {
@@ -54,42 +99,6 @@
         "source": "opencollective"
     },
     {
-        "id": "SA_kwHOAFvahM4AFfhx",
-        "name": "경하",
-        "image": "https://avatars.githubusercontent.com/u/220545075",
-        "url": "https://github.com/k0nghaa",
-        "amount": 5,
-        "date": "2026-01-26T08:16:59Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFfby",
-        "name": "JEmilyKoo",
-        "image": "https://avatars.githubusercontent.com/u/66773321",
-        "url": "https://github.com/JEmilyKoo",
-        "amount": 5,
-        "date": "2026-01-25T14:32:34Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFfYo",
-        "name": "Youngjae Kim",
-        "image": "https://avatars.githubusercontent.com/u/81736873",
-        "url": "https://github.com/Yjason-K",
-        "amount": 5,
-        "date": "2026-01-25T06:14:05Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFfYY",
-        "name": "Haeun Kim",
-        "image": "https://avatars.githubusercontent.com/u/52477327",
-        "url": "https://ckhe1215.github.io",
-        "amount": 5,
-        "date": "2026-01-25T05:09:11Z",
-        "source": "github"
-    },
-    {
         "id": "8rzownxl-9e50pxro-vowpymvb-dgk7j43a",
         "name": "Chrome's Web Framework & Tools Performance Fund",
         "url": "https://google.com/chrome",
@@ -97,15 +106,6 @@
         "amount": 10000,
         "date": "2026-01-22T06:06:00.439Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFeQD",
-        "name": "Oğuzhan Çakıroğlu",
-        "image": "https://avatars.githubusercontent.com/u/194198777",
-        "url": "https://olui.studio",
-        "amount": 1,
-        "date": "2026-01-17T02:06:49Z",
-        "source": "github"
     },
     {
         "id": "rxg0j35l-zkwm6vvz-g5m6voe9-8n47daby",
@@ -267,24 +267,6 @@
         "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
         "amount": 50,
         "date": "2025-03-19T15:40:19.529Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "ywz9j4av-god8pgw5-zg96mr35-nxklb0e7",
-        "name": "Matt Welke",
-        "url": "https://mattwelke.com",
-        "image": "https://images.opencollective.com/mattwelke/9f2282c/avatar.png",
-        "amount": 100,
-        "date": "2025-01-22T20:03:32.222Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "8k03reyd-5agmq50w-v4eplbwo-z7j4nxv9",
-        "name": "Kaido Iwamoto",
-        "url": null,
-        "image": "https://images.opencollective.com/odiak/avatar.png",
-        "amount": 10,
-        "date": "2025-01-17T09:38:04.618Z",
         "source": "opencollective"
     }
 ]
