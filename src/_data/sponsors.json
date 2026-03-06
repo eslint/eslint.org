@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 92244,
-        "monthlyDonations": 7687,
-        "sponsorCount": 139
+        "annualDonations": 92124,
+        "monthlyDonations": 7677,
+        "sponsorCount": 137
     },
     "diamond": [],
     "platinum": [
@@ -394,15 +394,6 @@
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 884,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Buy TikTok Views",
-            "url": "https://buylikesservices.com/buy-tiktok-views/",
-            "image": "https://images.opencollective.com/buy-tiktok-views1/a7f052a/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -961,14 +952,6 @@
             "tier": "backer"
         },
         {
-            "name": "Yejeong, Ham",
-            "image": "https://avatars.githubusercontent.com/u/147745679",
-            "url": "https://github.com/thelightway24",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Jb Landry",
             "url": "https://jblandry.info",
             "image": "https://images.opencollective.com/jblandry/e7d47d8/avatar.png",
@@ -1032,7 +1015,7 @@
             "url": "https://wptheme.fr/theme-wordpress-divi/",
             "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 25,
+            "totalDonations": 26,
             "source": "opencollective",
             "tier": "backer"
         },
