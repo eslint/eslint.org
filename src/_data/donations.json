@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFloG",
+        "name": "maciejszeffer",
+        "image": "https://avatars.githubusercontent.com/u/253526609",
+        "url": "https://github.com/maciejszeffer",
+        "amount": 5,
+        "date": "2026-03-07T20:47:38Z",
+        "source": "github"
+    },
+    {
         "id": "ejoxl3az-45w9pa5g-lwe6y870-mgkbrvdn",
         "name": "Serkan Holat",
         "url": null,
@@ -69,15 +78,6 @@
         "url": "https://lucaskepler",
         "amount": 1,
         "date": "2026-02-11T02:12:58Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFhKP",
-        "name": "Layan Yasoda",
-        "image": "https://avatars.githubusercontent.com/u/44344499",
-        "url": "https://github.com/layanyashoda",
-        "amount": 1,
-        "date": "2026-02-06T05:41:15Z",
         "source": "github"
     },
     {
