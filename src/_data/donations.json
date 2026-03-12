@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFmWa",
+        "name": "Dmitry Mikhaylov",
+        "image": "https://avatars.githubusercontent.com/u/55336258",
+        "url": "https://github.com/charopevez",
+        "amount": 5,
+        "date": "2026-03-12T00:52:30Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFl58",
         "name": "Radu",
         "image": "https://avatars.githubusercontent.com/u/218564757",
@@ -79,15 +88,6 @@
         "amount": 228.53,
         "date": "2026-02-15T12:01:15.893Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFh4S",
-        "name": "Lucas Augusto Kepler",
-        "image": "https://avatars.githubusercontent.com/u/105681054",
-        "url": "https://lucaskepler",
-        "amount": 1,
-        "date": "2026-02-11T02:12:58Z",
-        "source": "github"
     },
     {
         "id": "mlo94zn7-x08dpo04-5awpewga-3vjbrky5",

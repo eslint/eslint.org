@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 96455.98970868,
-        "monthlyDonations": 8037.99914239,
-        "sponsorCount": 141
+        "annualDonations": 98511.12515064,
+        "monthlyDonations": 8209.26042922,
+        "sponsorCount": 145
     },
     "diamond": [],
     "platinum": [
@@ -163,6 +163,15 @@
             "tier": "backer"
         },
         {
+            "name": "juju",
+            "url": null,
+            "image": "https://github.com/juju.png",
+            "monthlyDonation": 99.47646014,
+            "totalDonations": "055.8400281056.0363021539.2947255510.0275016310.0424624185.5376718999.47646014",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Sentry",
             "url": "https://sentry.io",
             "image": "https://github.com/getsentry.png",
@@ -178,6 +187,15 @@
             "monthlyDonation": 60,
             "totalDonations": 1560,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "charmed-kubernetes",
+            "url": null,
+            "image": "https://github.com/charmed-kubernetes.png",
+            "monthlyDonation": 53.13446852,
+            "totalDonations": "031.1306793531.336060066.9171802245.3145889553.13446852",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -266,6 +284,15 @@
             "monthlyDonation": 20,
             "totalDonations": 975,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 18.30157447,
+            "totalDonations": "013.1523181713.0949178512.4986023910.0441172110.0737259420.0390773720.0397015120.0402284620.0397732620.0424056214.8715717018.30157447",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1190,6 +1217,15 @@
             "image": "https://github.com/beeequeue.png",
             "monthlyDonation": 0.84542587,
             "totalDonations": "00.975791150.84542587",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Konstantin Vinogradov",
+            "url": "https://kvinogradov.com/",
+            "image": "https://github.com/vinogradovkonst.png",
+            "monthlyDonation": 0.3487837,
+            "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.000622210.000855340.000812010.000800730.000807630.473389010.34878370",
             "source": "thanks.dev",
             "tier": "backer"
         },
