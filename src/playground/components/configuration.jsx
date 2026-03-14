@@ -131,12 +131,6 @@ export default function Configuration({
 			label: sourceType,
 		})),
 	];
-	const sourceTypeOptionsForTypeScriptParser = [
-		...SOURCE_TYPES.map(sourceType => ({
-			value: sourceType,
-			label: sourceType,
-		})),
-	];
 	const ECMAFeaturesOptions = ECMA_FEATURES.map(ecmaFeature => ({
 		value: ecmaFeature,
 		label: ecmaFeature,
@@ -393,27 +387,13 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								value={
-									options.languageOptions.parser
-										? sourceTypeOptionsForTypeScriptParser.filter(
-												sourceTypeOption =>
-													sourceTypeOption.value ===
-													options.languageOptions
-														.sourceType,
-											)
-										: sourceTypeOptions.filter(
-												sourceTypeOption =>
-													sourceTypeOption.value ===
-													(options.languageOptions
-														?.sourceType ||
-														"default"),
-											)
-								}
-								options={
-									options.languageOptions.parser
-										? sourceTypeOptionsForTypeScriptParser
-										: sourceTypeOptions
-								}
+								value={sourceTypeOptions.filter(
+									sourceTypeOption =>
+										sourceTypeOption.value ===
+										(options.languageOptions?.sourceType ||
+											"default"),
+								)}
+								options={sourceTypeOptions}
 								onChange={selected => {
 									const newOptions = {
 										...options,
