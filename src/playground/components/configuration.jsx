@@ -178,20 +178,22 @@ export default function Configuration({
 	}, [options.rules]);
 
 	const handleRuleChange = () => {
-		selectedRules.forEach(selectedRule => {
-			if (ruleNames.includes(selectedRule)) {
-				const newOptions = {
-					...options,
-					rules: {
-						...options.rules,
-						[selectedRule]: ["error"],
-					},
-				};
+		const rulesToAdd = Object.fromEntries(
+			selectedRules
+				.filter(selectedRule => ruleNames.includes(selectedRule))
+				.map(selectedRule => [selectedRule, ["error"]]),
+		);
 
-				onUpdate(newOptions);
-				ruleInputRef.current.setValue("");
-			}
-		});
+		const newOptions = {
+			...options,
+			rules: {
+				...options.rules,
+				...rulesToAdd,
+			},
+		};
+
+		onUpdate(newOptions);
+		ruleInputRef.current.setValue("");
 	};
 
 	const Input = props => {
