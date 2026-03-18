@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 98516.19605123998,
-        "monthlyDonations": 8209.683004270002,
-        "sponsorCount": 157
+        "annualDonations": 98527.58623199999,
+        "monthlyDonations": 8210.632186,
+        "sponsorCount": 159
     },
     "diamond": [],
     "platinum": [
@@ -1221,11 +1221,29 @@
             "tier": "backer"
         },
         {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.62134824,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.602028720.609868690.006322380.006322830.006666400.618682480.62134824",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Konstantin Vinogradov",
             "url": "https://kvinogradov.com/",
             "image": "https://github.com/vinogradovkonst.png",
             "monthlyDonation": 0.3487837,
             "totalDonations": "04.714773010.005789764.691231384.448470704.448470704.435900210.689599110.479581270.001178840.001178840.001182260.000622210.000855340.000812010.000800730.000807630.473389010.34878370",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.32783349,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.005107600.005370460.005376970.005220070.005628550.339412470.32783349",
             "source": "thanks.dev",
             "tier": "backer"
         },
