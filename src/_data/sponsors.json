@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 98527.58623199999,
-        "monthlyDonations": 8210.632186,
-        "sponsorCount": 159
+        "annualDonations": 98531.41001807999,
+        "monthlyDonations": 8210.950834840001,
+        "sponsorCount": 162
     },
     "diamond": [],
     "platinum": [
@@ -1142,7 +1142,7 @@
         {
             "name": "Frederik Bosch",
             "image": "https://avatars.githubusercontent.com/u/6979916",
-            "url": "https://bosch.dev",
+            "url": "https://fbb.sh",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
@@ -1248,6 +1248,15 @@
             "tier": "backer"
         },
         {
+            "name": "timhaynes",
+            "url": null,
+            "image": "https://github.com/timhaynes.png",
+            "monthlyDonation": 0.29908552,
+            "totalDonations": "00.115090580.225653430.249133320.240222300.706721990.690271970.690271970.690271970.690185100.687675060.116851650.29908552",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "jshttp",
             "url": "https://jshttp.github.io/",
             "image": "https://github.com/jshttp.png",
@@ -1289,6 +1298,15 @@
             "image": "https://github.com/plurals.png",
             "monthlyDonation": 0.02938532,
             "totalDonations": "00.038991720.028657820.025241780.025257120.023524640.023524640.023662280.021764800.021629760.028625540.02938532",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "featuresmith",
+            "url": "https://featuresmith.com",
+            "image": "https://github.com/featuresmith.png",
+            "monthlyDonation": 0.01868692,
+            "totalDonations": "00.008599260.008111170.008111170.015796860.017839900.01868692",
             "source": "thanks.dev",
             "tier": "backer"
         },
@@ -1352,6 +1370,15 @@
             "image": "https://github.com/regexhq.png",
             "monthlyDonation": 0.00125929,
             "totalDonations": "00.001081720.001082380.001008130.001008130.001014030.000932680.000926890.001226730.00125929",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Adam Dąbrowski",
+            "url": "http://adamdabrowski.com",
+            "image": "https://github.com/dabrowski-adam.png",
+            "monthlyDonation": 0.0008764,
+            "totalDonations": "00.001198480.001253010.001253010.002023800.003731730.003721320.000194080.000194510.000026010.000027230.000014460.000014460.000014160.000012220.000833920.00087640",
             "source": "thanks.dev",
             "tier": "backer"
         },
