@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 98533.25121191998,
-        "monthlyDonations": 8211.104267660001,
-        "sponsorCount": 163
+        "annualDonations": 98533.49898263998,
+        "monthlyDonations": 8211.124915220002,
+        "sponsorCount": 164
     },
     "diamond": [],
     "platinum": [
@@ -1307,6 +1307,15 @@
             "image": "https://github.com/plurals.png",
             "monthlyDonation": 0.02938532,
             "totalDonations": "00.038991720.028657820.025241780.025257120.023524640.023524640.023662280.021764800.021629760.028625540.02938532",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "RagingEnby",
+            "url": "https://ragingenby.dev",
+            "image": "https://github.com/ragingenby.png",
+            "monthlyDonation": 0.02064756,
+            "totalDonations": "00.000158730.000158810.000212010.000211150.000127720.029165140.020606050.02064756",
             "source": "thanks.dev",
             "tier": "backer"
         },
