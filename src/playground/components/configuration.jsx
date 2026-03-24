@@ -406,17 +406,12 @@ export default function Configuration({
 										},
 									};
 
-									if (newOptions.languageOptions.parser) {
+									if (selected.value === "default") {
+										delete newOptions.languageOptions
+											.sourceType;
+									} else {
 										newOptions.languageOptions.sourceType =
 											selected.value;
-									} else {
-										if (selected.value === "default") {
-											delete newOptions.languageOptions
-												.sourceType;
-										} else {
-											newOptions.languageOptions.sourceType =
-												selected.value;
-										}
 									}
 
 									onUpdate(newOptions);
