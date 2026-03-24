@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 98536.54369259998,
-        "monthlyDonations": 8211.378641050002,
-        "sponsorCount": 169
+        "annualDonations": 98536.87013015998,
+        "monthlyDonations": 8211.40584418,
+        "sponsorCount": 171
     },
     "diamond": [],
     "platinum": [
@@ -1338,6 +1338,15 @@
             "tier": "backer"
         },
         {
+            "name": "Robin Wong",
+            "url": "https://rwong.tech/",
+            "image": "https://github.com/robinwongm.png",
+            "monthlyDonation": 0.02258519,
+            "totalDonations": "00.001030800.018083190.017242150.017242150.017319800.000598710.221786530.027568500.02258519",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Robson Cassiano",
             "url": "https://global.robsoncassiano.software/",
             "image": "https://github.com/randintn.png",
@@ -1406,6 +1415,15 @@
             "image": "https://github.com/simplesoftwareltda.png",
             "monthlyDonation": 0.00558963,
             "totalDonations": "00.018298370.007912250.00558963",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "robinWongM's Archived Projects",
+            "url": null,
+            "image": "https://github.com/robinwongm-archives.png",
+            "monthlyDonation": 0.00461794,
+            "totalDonations": "00.007977920.016141410.015290240.015290240.015329770.044444890.004868510.00461794",
             "source": "thanks.dev",
             "tier": "backer"
         },
