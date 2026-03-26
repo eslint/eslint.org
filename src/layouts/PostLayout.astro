@@ -115,7 +115,8 @@ const heroCategoryUrl = heroCategory ? heroCategory.toLowerCase().replace(/[^\w]
             const announcementRegion = document.getElementById("copy-announcement");
 
             for (const copyBtn of copyBtns) {
-                const copyText = copyBtn.previousElementSibling.firstChild.textContent;
+                var prev = copyBtn.previousElementSibling;
+                var copyText = prev && prev.firstChild ? prev.firstChild.textContent : "";
 
                 copyBtn.onclick = function() {
                     navigator.clipboard
