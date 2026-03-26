@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 98537.60832347997,
-        "monthlyDonations": 8211.46736029,
-        "sponsorCount": 173
+        "annualDonations": 98615.83921787997,
+        "monthlyDonations": 8217.98660149,
+        "sponsorCount": 175
     },
     "diamond": [],
     "platinum": [
@@ -854,6 +854,14 @@
             "tier": "backer"
         },
         {
+            "name": "Jerred Shepherd",
+            "image": "https://avatars.githubusercontent.com/u/3904778",
+            "url": "https://sjer.red",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
             "name": "Nick Oliver",
             "image": "https://avatars.githubusercontent.com/u/3945917",
             "url": "https://pixnbits.org",
@@ -1062,6 +1070,15 @@
             "url": "https://mizle.net",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "CyleWaitForIt",
+            "url": null,
+            "image": "https://github.com/cylewaitforit.png",
+            "monthlyDonation": 1.5192412,
+            "totalDonations": "00.049901880.577580860.827197610.406989510.809057531.185944591.504313711.51924120",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
