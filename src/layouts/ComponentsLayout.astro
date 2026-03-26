@@ -1,0 +1,64 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+import { getCollection } from "astro:content";
+
+interface Props {
+    title?: string;
+}
+
+const { title } = Astro.props;
+const libraryItems = await getCollection("library");
+const currentPath = Astro.url.pathname;
+---
+
+<BaseLayout title={title} hook="component_library">
+    <Header />
+
+    <Hero
+        title="ESLint Components"
+        supporting_text="Components used across this site."
+    />
+
+    <div class="content-container grid">
+        <div class="span-1-3">
+            <nav class="index">
+                <button class="index__toggle" aria-label="Components" id="js-index-toggle" hidden>
+                    Components
+                    <svg width="20" height="20" viewBox="20 20 60 60">
+                        <path id="ham-top" d="M30,37 L70,37 Z" stroke="currentColor"></path>
+                        <path id="ham-middle" d="M30,50 L70,50 Z" stroke="currentColor"></path>
+                        <path id="ham-bottom" d="M30,63 L70,63 Z" stroke="currentColor"></path>
+                    </svg>
+                </button>
+                <ul class="index__list" id="js-index-list">
+                    {libraryItems.map((item) => {
+                        const itemUrl = `/library/${item.slug}/`;
+                        const isActive = itemUrl === currentPath;
+                        const isCurrent = itemUrl.length > 1 && currentPath.indexOf(itemUrl) === 0;
+                        return (
+                            <li class="index__item">
+                                <a
+                                    href={itemUrl}
+                                    aria-current={isActive ? "page" : undefined}
+                                    data-current={isCurrent ? "true" : undefined}
+                                >{item.data.title}</a>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </nav>
+        </div>
+
+        <div class="span-4-12">
+            <main id="main" tabindex="-1" class="post-main">
+                <h1>{title}</h1>
+                <slot />
+            </main>
+        </div>
+    </div>
+
+    <Footer />
+</BaseLayout>

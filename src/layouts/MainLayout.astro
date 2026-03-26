@@ -1,0 +1,22 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+    hook?: string;
+}
+
+const { hook } = Astro.props;
+const isPlayground = Astro.url.pathname === "/play/";
+---
+
+<BaseLayout hook={hook}>
+    <Header />
+
+    <main id="main" tabindex="-1">
+        <slot />
+    </main>
+
+    {!isPlayground && <Footer />}
+</BaseLayout>

@@ -1,0 +1,140 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+import PostAuthor from "../components/PostAuthor.astro";
+import PostSidebar from "../components/PostSidebar.astro";
+import FromTheBlog from "../components/FromTheBlog.astro";
+import { allAuthors, blogDates } from "../data/index.js";
+
+interface Props {
+    title: string;
+    teaser?: string;
+    authors?: string[];
+    categories?: string[];
+    tags?: string[];
+    image?: string;
+    date?: string;
+    original?: { url: string; site?: { name?: string }; date?: string };
+    inputPath?: string;
+}
+
+const {
+    title,
+    teaser,
+    authors = [],
+    categories = [],
+    tags = [],
+    image,
+    date,
+    original,
+    inputPath,
+} = Astro.props;
+
+// Format date using the same format as Eleventy's readableDate filter (dd MMM, yyyy)
+function readableDate(dateObj: string | Date | undefined): string {
+    if (!dateObj) return "";
+    const d = new Date(dateObj);
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const day = String(d.getDate()).padStart(2, "0");
+    const month = months[d.getMonth()];
+    const year = d.getFullYear();
+    return `${day} ${month}, ${year}`;
+}
+
+const heroDate = readableDate(date);
+const heroCategory = categories[0] ?? "";
+const heroCategoryUrl = heroCategory ? heroCategory.toLowerCase().replace(/[^\w]+/g, "-") : "";
+---
+
+<BaseLayout
+    title={title}
+    hook="post blog-post-page"
+    image={image}
+    categories={categories}
+    original={original}
+>
+    <Header />
+
+    <script is:inline src="https://unpkg.com/anchor-js@4.3.1/anchor.min.js"></script>
+    <script is:inline>
+        document.addEventListener("DOMContentLoaded", function() {
+            anchors.add(".post__blog-content h2, .post__blog-content h3, .post__blog-content h4");
+        });
+    </script>
+
+    <main id="main" class="post-main" tabindex="-1">
+        <Hero
+            title={title}
+            supporting_text={teaser}
+            post={{
+                date: heroDate,
+                category: heroCategory,
+                categoryURL: heroCategoryUrl,
+            }}
+        />
+
+        <div class="content-container grid">
+            <div class="post__blog-content span-5-12">
+                <slot />
+            </div>
+
+            <div class="post__author-bios span-5-12">
+                {authors.map((author) => {
+                    const authorData = allAuthors[author];
+                    return authorData && (
+                        <PostAuthor
+                            photo={authorData.avatar_url}
+                            name={authorData.name}
+                            title={authorData.title}
+                            handle={authorData.username}
+                            github={authorData.github_username}
+                            bluesky={authorData.bluesky_url}
+                            mastodon={authorData.mastodon_url}
+                            twitter={authorData.twitter_username}
+                            bio={authorData.bio}
+                        />
+                    );
+                })}
+            </div>
+
+            <PostSidebar />
+        </div>
+    </main>
+
+    <FromTheBlog />
+
+    <Footer />
+
+    <div id="copy-announcement" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+    <script is:inline>
+        (function () {
+            const copyBtns = document.querySelectorAll(".copy-btn");
+            const announcementRegion = document.getElementById("copy-announcement");
+
+            for (const copyBtn of copyBtns) {
+                const copyText = copyBtn.previousElementSibling.firstChild.textContent;
+
+                copyBtn.onclick = function() {
+                    navigator.clipboard
+                        .writeText(copyText)
+                        .then(function() {
+                            announcementRegion.innerHTML = "Copied!";
+                            copyBtn.setAttribute("data-copied", "true");
+
+                            setTimeout(function() {
+                                copyBtn.removeAttribute("data-copied");
+                                announcementRegion.innerHTML = "";
+                            }, 2000);
+                        })
+                        .catch(function(err) {
+                            announcementRegion.innerHTML = "Failed to copy!";
+                            console.error("Clipboard write failed: ", err);
+                        });
+                };
+            }
+        })();
+    </script>
+</BaseLayout>
