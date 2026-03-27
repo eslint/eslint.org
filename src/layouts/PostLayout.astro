@@ -99,7 +99,15 @@ const heroCategoryUrl = heroCategory ? heroCategory.toLowerCase().replace(/[^\w]
                 })}
             </div>
 
-            <PostSidebar />
+            <PostSidebar
+                authors={authors}
+                tags={tags}
+                date={date}
+                inputPath={inputPath}
+                original={original}
+                title={title}
+                pageUrl={Astro.url.pathname}
+            />
         </div>
     </main>
 
