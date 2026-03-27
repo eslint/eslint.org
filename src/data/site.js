@@ -1,16 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
-import { fileURLToPath } from "node:url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// Use process.cwd() as the base to avoid issues during Astro builds
+// where import.meta.url might point to a bundled location
+const rootDir = process.cwd();
 
 const siteName =
-	(typeof import.meta.env !== "undefined" && import.meta.env.ESLINT_SITE_NAME) ||
-	process.env.ESLINT_SITE_NAME ||
-	"en";
+	process.env.ESLINT_SITE_NAME || "en";
 
-const sitePath = path.resolve(__dirname, "..", "_data", "sites", `${siteName}.yml`);
+const sitePath = path.resolve(rootDir, "src", "_data", "sites", `${siteName}.yml`);
 const siteData = yaml.load(fs.readFileSync(sitePath, "utf8"));
 
 export default siteData;

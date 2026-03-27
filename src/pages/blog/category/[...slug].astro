@@ -1,0 +1,170 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import Hero from "../../../components/Hero.astro";
+import Card from "../../../components/Card.astro";
+import Search from "../../../components/Search.astro";
+import BlogCategories from "../../../components/BlogCategories.astro";
+import CategoriesPagination from "../../../components/CategoriesPagination.astro";
+import { getCollection } from "astro:content";
+import { site, allAuthors } from "../../../data/index.js";
+
+function slugify(str) {
+    if (!str) return "";
+    return str.toLowerCase().replace(/[^\w]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+function getPostDate(post) {
+    const match = post.id.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (match) return new Date(`${match[1]}-${match[2]}-${match[3]}T00:00:00Z`);
+    return new Date(0);
+}
+
+function getPostUrl(post) {
+    const match = post.id.match(/^(\d{4})-(\d{2})-\d{2}-(.+?)(?:\.md)?$/);
+    if (match) return `/blog/${match[1]}/${match[2]}/${match[3]}/`;
+    return `/blog/${post.id.replace(/\.md$/, "")}/`;
+}
+
+function readingTimeEstimate(body) {
+    if (!body) return "1 min";
+    const words = body.split(/\s+/).length;
+    const minutes = Math.max(1, Math.round(words / 250));
+    return `${minutes} min`;
+}
+
+export async function getStaticPaths() {
+    function slugifyStr(str) {
+        if (!str) return "";
+        return str.toLowerCase().replace(/[^\w]+/g, "-").replace(/^-+|-+$/g, "");
+    }
+
+    function getDate(post) {
+        const match = post.id.match(/^(\d{4})-(\d{2})-(\d{2})/);
+        if (match) return new Date(`${match[1]}-${match[2]}-${match[3]}T00:00:00Z`);
+        return new Date(0);
+    }
+
+    const allPosts = await getCollection("blog");
+    const itemsPerPage = 8;
+
+    // Compute all unique categories
+    const categoryMap = new Map();
+    allPosts.forEach(p => {
+        p.data.categories?.forEach(c => {
+            if (!categoryMap.has(c)) categoryMap.set(c, []);
+            categoryMap.get(c).push(p);
+        });
+    });
+
+    const paths = [];
+
+    for (const [categoryTitle, posts] of categoryMap) {
+        const categorySlug = slugifyStr(categoryTitle);
+
+        // Sort posts by date descending
+        const sorted = posts.sort((a, b) => getDate(b).getTime() - getDate(a).getTime());
+
+        // Chunk into pages
+        const totalPages = Math.ceil(sorted.length / itemsPerPage);
+
+        for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+            const start = (pageNum - 1) * itemsPerPage;
+            const pageItems = sorted.slice(start, start + itemsPerPage);
+
+            const slugSuffix = pageNum === 1 ? categorySlug : `${categorySlug}/${pageNum}`;
+
+            // Build href slugs for pagination
+            const slugs = [];
+            for (let i = 1; i <= totalPages; i++) {
+                slugs.push(i === 1 ? categorySlug : `${categorySlug}/${i}`);
+            }
+
+            paths.push({
+                params: { slug: slugSuffix },
+                props: {
+                    currentCategory: {
+                        title: categoryTitle,
+                        slug: slugSuffix,
+                        currentPage: pageNum,
+                        totalItems: sorted.length,
+                        totalPages,
+                        items: pageItems,
+                        hrefs: {
+                            all: slugs,
+                            first: slugs[0],
+                            last: slugs[slugs.length - 1],
+                            next: slugs[pageNum] ?? null,
+                            previous: slugs[pageNum - 2] ?? null,
+                        },
+                    },
+                },
+            });
+        }
+    }
+
+    return paths;
+}
+
+const { currentCategory } = Astro.props;
+const pageUrl = Astro.url.pathname;
+
+// Compute all categories for sidebar
+const allPosts = await getCollection("blog");
+const categorySet = new Set();
+allPosts.forEach(p => p.data.categories?.forEach(c => categorySet.add(c)));
+const categories = [...categorySet].sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" })).map(c => ({
+    title: c,
+    slug: slugify(c),
+}));
+---
+
+<BaseLayout hook="category_page" currentCategory={currentCategory}>
+    <Header />
+
+    <main id="main" tabindex="-1">
+        <Hero title={site.blog_page.title} supporting_text={site.blog_page.description} />
+
+        <div class="content-container grid">
+            <aside class="span-1-3">
+                <Search />
+                <BlogCategories categories={categories} pageUrl={pageUrl} />
+            </aside>
+
+            <div class="span-4-12">
+                <h2 hidden>{currentCategory.title}</h2>
+                <div class="blog-posts">
+                    {currentCategory.items.map((post) => {
+                        const author = post.data.author || (post.data.authors && post.data.authors[0]);
+                        const authorImage = allAuthors[author]?.avatar_url;
+                        const authorName = allAuthors[author]?.name || author || "ESLint";
+                        const postDate = getPostDate(post);
+                        const postUrl = getPostUrl(post);
+                        const readTime = readingTimeEstimate(post.body);
+
+                        return (
+                            <Card
+                                title={post.data.title}
+                                featured={post.data.featured}
+                                url={postUrl}
+                                image={post.data.image}
+                                category={post.data.categories?.[0]}
+                                readingTime={readTime}
+                                teaser={post.data.teaser || ""}
+                                authorImage={authorImage}
+                                authorName={authorName}
+                                date={postDate.toISOString()}
+                            />
+                        );
+                    })}
+                </div>
+            </div>
+            <div class="span-4-12">
+                <CategoriesPagination currentCategory={currentCategory} pageUrl={pageUrl} />
+            </div>
+        </div>
+    </main>
+
+    <Footer />
+</BaseLayout>

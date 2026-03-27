@@ -35,7 +35,8 @@ const currentPath = Astro.url.pathname;
                 </button>
                 <ul class="index__list" id="js-index-list">
                     {libraryItems.map((item) => {
-                        const itemUrl = `/library/${item.slug}/`;
+                        const itemSlug = item.id.replace(/\.md$/, "");
+                        const itemUrl = `/component-library/${itemSlug}/`;
                         const isActive = itemUrl === currentPath;
                         const isCurrent = itemUrl.length > 1 && currentPath.indexOf(itemUrl) === 0;
                         return (

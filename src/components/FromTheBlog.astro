@@ -3,19 +3,34 @@ import { site, links, allAuthors } from "../data/index.js";
 import { getCollection } from "astro:content";
 import Card from "./Card.astro";
 
+function getPostUrl(post) {
+    const match = post.id.match(/^(\d{4})-(\d{2})-\d{2}-(.+?)(?:\.md)?$/);
+    if (match) return `/blog/${match[1]}/${match[2]}/${match[3]}/`;
+    return `/blog/${post.id.replace(/\.md$/, "")}/`;
+}
+
+function getPostDate(post) {
+    const match = post.id.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (match) return new Date(`${match[1]}-${match[2]}-${match[3]}T00:00:00Z`);
+    return new Date(0);
+}
+
+function readingTimeEstimate(body) {
+    if (!body) return "1 min";
+    const words = body.split(/\s+/).length;
+    const minutes = Math.max(1, Math.round(words / 250));
+    return `${minutes} min`;
+}
+
 const allPosts = await getCollection('blog');
 const currentUrl = Astro.url.pathname;
 
 const sortedPosts = allPosts
     .filter(post => {
-        const postUrl = `/blog/${post.slug}/`;
+        const postUrl = getPostUrl(post);
         return postUrl !== currentUrl;
     })
-    .sort((a, b) => {
-        const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
-        const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
-        return dateB - dateA;
-    })
+    .sort((a, b) => getPostDate(b).getTime() - getPostDate(a).getTime())
     .slice(0, 3);
 ---
 <section aria-labelledby="more-posts-label" class="from-the-blog">
@@ -35,19 +50,22 @@ const sortedPosts = allPosts
                 const author = item.data.author || (item.data.authors && item.data.authors[0]);
                 const authorImage = allAuthors[author]?.avatar_url;
                 const authorName = allAuthors[author]?.name || author;
+                const postUrl = getPostUrl(item);
+                const postDate = getPostDate(item);
+                const readTime = readingTimeEstimate(item.body);
 
                 return (
                     <Card
                         title={item.data.title}
                         featured={item.data.featured}
-                        url={`/blog/${item.slug}/`}
+                        url={postUrl}
                         image={item.data.image}
                         category={item.data.categories?.[0]}
-                        readingTime={item.data.readingTime || ''}
+                        readingTime={readTime}
                         teaser={item.data.teaser || ''}
                         authorImage={authorImage}
                         authorName={authorName}
-                        date={item.data.date}
+                        date={postDate.toISOString()}
                     />
                 );
             })}

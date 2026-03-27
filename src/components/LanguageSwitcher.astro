@@ -2,11 +2,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
-import { fileURLToPath } from "node:url";
 import { site } from "../data/index.js";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const sitesDir = path.resolve(__dirname, "..", "_data", "sites");
+const rootDir = process.cwd();
+const sitesDir = path.resolve(rootDir, "src", "_data", "sites");
 const siteFiles = fs.readdirSync(sitesDir).filter(f => f.endsWith(".yml"));
 const sites = {};
 for (const f of siteFiles) {

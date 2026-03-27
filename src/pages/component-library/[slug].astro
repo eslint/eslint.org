@@ -1,0 +1,20 @@
+---
+import ComponentsLayout from "../../layouts/ComponentsLayout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+    const entries = await getCollection("library");
+
+    return entries.map((entry) => ({
+        params: { slug: entry.id.replace(/\.md$/, "") },
+        props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<ComponentsLayout title={entry.data.title}>
+    <Content />
+</ComponentsLayout>

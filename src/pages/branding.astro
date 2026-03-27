@@ -1,0 +1,48 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import BrandingLogo from "../components/BrandingLogo.astro";
+import BrandSwatches from "../components/BrandSwatches.astro";
+import { site } from "../data/index.js";
+---
+
+<MainLayout hook="branding_page">
+    <Hero title={site.branding_page.title} supporting_text={site.branding_page.description} />
+
+    <section class="section">
+        <div class="content-container grid">
+            <div class="span-1-6">
+                <h2 class="section-title h3">{site.branding_page.sections.name.title}</h2>
+                <p>{site.branding_page.sections.name.description}</p>
+            </div>
+        </div>
+        <div class="content-container grid">
+            <div class="span-1-6">
+                <h2 class="section-title h3">{site.branding_page.sections.logo.title}</h2>
+                {site.branding_page.sections.logo.description.map((paragraph) => (
+                    <p>{paragraph}</p>
+                ))}
+                <div class="eslint-actions">
+                    <a download href="/assets/images/logo/eslint-logo-color.svg" class="c-btn c-btn--secondary">{site.branding_page.sections.logo.download_svg}</a>
+                    <a download href="/assets/images/logo/eslint-logo-color.png" class="c-btn c-btn--secondary">{site.branding_page.sections.logo.download_png}</a>
+                </div>
+            </div>
+            <div class="span-8-12">
+                <BrandingLogo />
+            </div>
+        </div>
+        <div class="content-container grid">
+            <div class="span-1-6">
+                <h2 class="section-title h3">{site.branding_page.sections.color_palette.title}</h2>
+                {site.branding_page.sections.color_palette.description.map((paragraph) => (
+                    <p>{paragraph}</p>
+                ))}
+            </div>
+            <div class="span-8-12">
+                <div class="brand__palette">
+                    <BrandSwatches />
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>

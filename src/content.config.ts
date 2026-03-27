@@ -1,7 +1,8 @@
 import { defineCollection, z } from "astro:content";
-import { glob } from "astro:content";
+import { glob } from "astro/loaders";
 
 const blogSchema = z.object({
+	layout: z.string().optional(),
 	title: z.string(),
 	teaser: z.string().optional(),
 	tags: z.array(z.string()).optional(),
@@ -19,17 +20,17 @@ const blog = defineCollection({
 });
 
 const drafts = defineCollection({
-	loader: glob({ pattern: "**/*.md", base: "src/content/drafts" }),
+	loader: glob({ pattern: "**/[!README]*.md", base: "src/content/drafts" }),
 	schema: blogSchema,
 });
 
 const library = defineCollection({
 	loader: glob({ pattern: "**/*.md", base: "src/content/library" }),
 	schema: z.object({
+		layout: z.string().optional(),
 		title: z.string(),
 		description: z.string().optional(),
 		order: z.number().optional(),
-		layout: z.string().optional(),
 	}),
 });
 

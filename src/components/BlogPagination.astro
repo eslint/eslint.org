@@ -3,29 +3,23 @@ import { site } from "../data/index.js";
 
 interface Props {
     pagination: {
-        pages: any[];
-        hrefs: string[];
         href: {
             first: string;
             last: string;
-            next?: string;
-            previous?: string;
+            next?: string | null;
+            previous?: string | null;
         };
+        pageNumber: number;
+        totalPages: number;
     };
     pageUrl: string;
 }
 
 const { pagination, pageUrl } = Astro.props;
 
-let paginationStatus = '';
-for (let i = 0; i < pagination.pages.length; i++) {
-    if (pageUrl === pagination.hrefs[i]) {
-        paginationStatus = site.blog_page.pagination.status
-            .replace('PAGE_NUMBER', String(i + 1))
-            .replace('TOTAL_PAGE_COUNT', String(pagination.pages.length));
-        break;
-    }
-}
+const paginationStatus = site.blog_page.pagination.status
+    .replace('PAGE_NUMBER', String(pagination.pageNumber))
+    .replace('TOTAL_PAGE_COUNT', String(pagination.totalPages));
 ---
 <nav class="c-pagination" aria-labelledby="pagination-label">
     <h2 id="pagination-label" hidden>{site.blog_page.pagination.title}</h2>
