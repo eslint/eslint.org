@@ -40,16 +40,21 @@ function copyDir(src, dest) {
 }
 
 // Also copy algoliasearch to assets/js
-const algoliaSrc = path.resolve(
-	__dirname,
-	"../node_modules/algoliasearch/dist/algoliasearch-lite.esm.browser.js",
-);
+let algoliaSrc;
+
+try {
+	algoliaSrc = require.resolve(
+		"algoliasearch/dist/algoliasearch-lite.esm.browser.js",
+	);
+} catch {
+	algoliaSrc = null;
+}
 const algoliaDestDir = path.resolve(destDir, "js");
 
 console.log("Copying assets to public/assets...");
 copyDir(srcDir, destDir);
 
-if (fs.existsSync(algoliaSrc)) {
+if (algoliaSrc && fs.existsSync(algoliaSrc)) {
 	fs.mkdirSync(algoliaDestDir, { recursive: true });
 	fs.copyFileSync(algoliaSrc, path.join(algoliaDestDir, "algoliasearch.js"));
 	console.log("Copied algoliasearch to public/assets/js/");

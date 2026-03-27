@@ -26,7 +26,7 @@
     "build:sass:watch": "sass --watch src/assets/scss:src/assets/css",
     "build:sponsors": "node tools/generate-sponsors.js",
     "build:website": "astro build",
-    "build:website:watch": "astro dev --port 2022",
+    "build:website:watch": "astro dev",
     "fetch": "npm-run-all --parallel fetch:*",
     "fetch:stats": "node tools/fetch-stats.js",
     "fetch:sponsors": "node tools/fetch-sponsors.js",

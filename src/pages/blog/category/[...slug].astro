@@ -9,30 +9,7 @@ import BlogCategories from "../../../components/BlogCategories.astro";
 import CategoriesPagination from "../../../components/CategoriesPagination.astro";
 import { getCollection } from "astro:content";
 import { site, allAuthors } from "../../../data/index.js";
-
-function slugify(str) {
-    if (!str) return "";
-    return str.toLowerCase().replace(/[^\w]+/g, "-").replace(/^-+|-+$/g, "");
-}
-
-function getPostDate(post) {
-    const match = post.id.match(/^(\d{4})-(\d{2})-(\d{2})/);
-    if (match) return new Date(`${match[1]}-${match[2]}-${match[3]}T00:00:00Z`);
-    return new Date(0);
-}
-
-function getPostUrl(post) {
-    const match = post.id.match(/^(\d{4})-(\d{2})-\d{2}-(.+?)(?:\.md)?$/);
-    if (match) return `/blog/${match[1]}/${match[2]}/${match[3]}/`;
-    return `/blog/${post.id.replace(/\.md$/, "")}/`;
-}
-
-function readingTimeEstimate(body) {
-    if (!body) return "1 min";
-    const words = body.split(/\s+/).length;
-    const minutes = Math.max(1, Math.round(words / 250));
-    return `${minutes} min`;
-}
+import { slugify, getPostDate, getPostUrl, readingTimeEstimate } from "../../../data/utils.js";
 
 export async function getStaticPaths() {
     function slugifyStr(str) {

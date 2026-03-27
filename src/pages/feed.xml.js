@@ -20,7 +20,7 @@ export async function GET(context) {
 
     return rss({
         title: 'ESLint Blog',
-        description: 'feed description',
+        description: 'The latest news, updates, and release notes from the ESLint team.',
         site: context.site || 'https://eslint.org',
         items: latest.map((post) => ({
             title: post.data.title,
