@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 98618.05712207998,
-        "monthlyDonations": 8218.171426840001,
+        "annualDonations": 98560.93161191998,
+        "monthlyDonations": 8213.41096766,
         "sponsorCount": 176
     },
     "diamond": [],
@@ -493,15 +493,6 @@
             "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 45,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "kzhrk",
-            "url": null,
-            "image": "https://images.opencollective.com/kzhrk/e4448b3/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 195,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -1270,6 +1261,15 @@
             "image": "https://github.com/timhaynes.png",
             "monthlyDonation": 0.29908552,
             "totalDonations": "00.115090580.225653430.249133320.240222300.706721990.690271970.690271970.690271970.690185100.687675060.116851650.29908552",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.23954082,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.391978300.367332360.004143800.005619350.003624580.004040850.007930090.003753120.003757120.149154970.185997620.23954082",
             "source": "thanks.dev",
             "tier": "backer"
         },
