@@ -77,7 +77,7 @@ const convertLegacyOptionsToFlatConfig = options => {
 	}
 
 	// Move sourceType from languageOptions.parserOptions to parserOptions
-	if (options.languageOptions?.parserOptions?.sourceType !== undefined) {
+	if (options.languageOptions?.parserOptions?.sourceType !== void 0) {
 		flatConfigOptions.languageOptions ??= options.languageOptions;
 		flatConfigOptions.languageOptions.sourceType = options.languageOptions.parserOptions.sourceType;
 		delete flatConfigOptions.languageOptions.parserOptions.sourceType;
