@@ -131,12 +131,6 @@ export default function Configuration({
 			label: sourceType,
 		})),
 	];
-	const sourceTypeOptionsForTypeScriptParser = [
-		...SOURCE_TYPES.map(sourceType => ({
-			value: sourceType,
-			label: sourceType,
-		})),
-	];
 	const ECMAFeaturesOptions = ECMA_FEATURES.map(ecmaFeature => ({
 		value: ecmaFeature,
 		label: ecmaFeature,
@@ -393,28 +387,13 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								value={
-									options.languageOptions.parser
-										? sourceTypeOptionsForTypeScriptParser.filter(
-												sourceTypeOption =>
-													sourceTypeOption.value ===
-													options.languageOptions
-														.parserOptions
-														.sourceType,
-											)
-										: sourceTypeOptions.filter(
-												sourceTypeOption =>
-													sourceTypeOption.value ===
-													(options.languageOptions
-														?.sourceType ||
-														"default"),
-											)
-								}
-								options={
-									options.languageOptions.parser
-										? sourceTypeOptionsForTypeScriptParser
-										: sourceTypeOptions
-								}
+								value={sourceTypeOptions.filter(
+									sourceTypeOption =>
+										sourceTypeOption.value ===
+										(options.languageOptions?.sourceType ||
+											"default"),
+								)}
+								options={sourceTypeOptions}
 								onChange={selected => {
 									const newOptions = {
 										...options,
@@ -427,17 +406,12 @@ export default function Configuration({
 										},
 									};
 
-									if (newOptions.languageOptions.parser) {
-										newOptions.languageOptions.parserOptions.sourceType =
-											selected.value;
+									if (selected.value === "default") {
+										delete newOptions.languageOptions
+											.sourceType;
 									} else {
-										if (selected.value === "default") {
-											delete newOptions.languageOptions
-												.sourceType;
-										} else {
-											newOptions.languageOptions.sourceType =
-												selected.value;
-										}
+										newOptions.languageOptions.sourceType =
+											selected.value;
 									}
 
 									onUpdate(newOptions);
@@ -526,7 +500,7 @@ export default function Configuration({
 										delete newOptions.languageOptions
 											.parser;
 										delete newOptions.languageOptions
-											.parserOptions.sourceType;
+											.sourceType;
 										newOptions.languageOptions.parserOptions.ecmaFeatures =
 											{};
 									} else {
@@ -534,8 +508,6 @@ export default function Configuration({
 											selected.value;
 										delete newOptions.languageOptions
 											.sourceType;
-										newOptions.languageOptions.parserOptions.sourceType =
-											"module";
 										newOptions.languageOptions.parserOptions.ecmaFeatures.jsx = true;
 									}
 

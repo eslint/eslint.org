@@ -46,7 +46,7 @@ const fillOptionsDefaults = options => ({
 
 const convertLegacyOptionsToFlatConfig = options => {
 	// If there are no legacy properties, return it
-	if (!options.env && !options.parserOptions) {
+	if (!options.env && !options.parserOptions && !options.languageOptions) {
 		return options;
 	}
 
@@ -74,6 +74,14 @@ const convertLegacyOptionsToFlatConfig = options => {
 		if (ecmaFeatures) {
 			flatConfigOptions.languageOptions.parserOptions = { ecmaFeatures };
 		}
+	}
+
+	// Move sourceType from languageOptions.parserOptions to parserOptions
+	if (options.languageOptions?.parserOptions?.sourceType !== void 0) {
+		flatConfigOptions.languageOptions ??= options.languageOptions;
+		flatConfigOptions.languageOptions.sourceType =
+			options.languageOptions.parserOptions.sourceType;
+		delete flatConfigOptions.languageOptions.parserOptions.sourceType;
 	}
 
 	return flatConfigOptions;
@@ -168,9 +176,6 @@ const App = () => {
 				ecmaFeatures: {
 					...options.languageOptions.parserOptions.ecmaFeatures,
 				},
-				...(options?.languageOptions.parser && {
-					sourceType: "module",
-				}),
 			},
 		},
 	};
