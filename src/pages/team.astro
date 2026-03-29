@@ -1,0 +1,173 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import Member from "../components/Member.astro";
+import Contributor from "../components/Contributor.astro";
+import { site, team } from "../data/index.js";
+---
+
+<MainLayout hook="team_page">
+    <Hero title={site.team_page.title} supporting_text={site.team_page.description} />
+
+    {team.tsc && team.tsc.length > 0 && (
+        <section class="section">
+            <div class="content-container grid">
+                <div class="span-1-4">
+                    <h2 class="section-title">{site.team_page.tsc.title}</h2>
+                    <p class="section-supporting-text">{site.team_page.tsc.description}</p>
+                </div>
+                <ul role="list" class="span-6-12 people-list">
+                    {team.tsc.map((item) => (
+                        <li>
+                            <Member
+                                photo={item.avatar_url}
+                                name={item.name || item.username}
+                                handle={item.username}
+                                bio={item.bio}
+                                website={item.website}
+                                github={item.github_username}
+                                bluesky={item.bluesky_url}
+                                mastodon={item.mastodon_url}
+                                twitter={item.twitter_username}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
+    )}
+
+    {team.reviewers && team.reviewers.length > 0 && (
+        <section class="section">
+            <div class="content-container grid">
+                <div class="span-1-4">
+                    <h2 class="section-title">{site.team_page.reviewers.title}</h2>
+                    <p class="section-supporting-text">{site.team_page.reviewers.description}</p>
+                </div>
+                <ul role="list" class="span-6-12 people-list">
+                    {team.reviewers.map((item) => (
+                        <li>
+                            <Member
+                                photo={item.avatar_url}
+                                name={item.name || item.username}
+                                handle={item.username}
+                                bio={item.bio}
+                                website={item.website}
+                                github={item.github_username}
+                                bluesky={item.bluesky_url}
+                                mastodon={item.mastodon_url}
+                                twitter={item.twitter_username}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
+    )}
+
+    {team.committers && team.committers.length > 0 && (
+        <section class="section">
+            <div class="content-container grid">
+                <div class="span-1-4">
+                    <h2 class="section-title">{site.team_page.committers.title}</h2>
+                    <p class="section-supporting-text">{site.team_page.committers.description}</p>
+                </div>
+                <ul role="list" class="span-6-12 people-list">
+                    {team.committers.map((item) => (
+                        <li>
+                            <Member
+                                photo={item.avatar_url}
+                                name={item.name || item.username}
+                                handle={item.username}
+                                bio={item.bio}
+                                website={item.website}
+                                github={item.github_username}
+                                bluesky={item.bluesky_url}
+                                mastodon={item.mastodon_url}
+                                twitter={item.twitter_username}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
+    )}
+
+    {team.website && team.website.length > 0 && (
+        <section class="section">
+            <div class="content-container grid">
+                <div class="span-1-4">
+                    <h2 class="section-title">{site.team_page.website_team.title}</h2>
+                    <p class="section-supporting-text">{site.team_page.website_team.description}</p>
+                </div>
+                <ul role="list" class="span-6-12 people-list">
+                    {team.website.map((item) => (
+                        <li>
+                            <Member
+                                photo={item.avatar_url}
+                                name={item.name || item.username}
+                                handle={item.username}
+                                bio={item.bio}
+                                website={item.website}
+                                github={item.github_username}
+                                bluesky={item.bluesky_url}
+                                mastodon={item.mastodon_url}
+                                twitter={item.twitter_username}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
+    )}
+
+    {team.support && team.support.length > 0 && (
+        <section class="section">
+            <div class="content-container grid">
+                <div class="span-1-4">
+                    <h2 class="section-title">{site.team_page.support_team.title}</h2>
+                    <p class="section-supporting-text">{site.team_page.support_team.description}</p>
+                </div>
+                <ul role="list" class="span-6-12 people-list">
+                    {team.support.map((item) => (
+                        <li>
+                            <Member
+                                photo={item.avatar_url}
+                                name={item.name || item.username}
+                                handle={item.username}
+                                bio={item.bio}
+                                website={item.website}
+                                github={item.github_username}
+                                bluesky={item.bluesky_url}
+                                mastodon={item.mastodon_url}
+                                twitter={item.twitter_username}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
+    )}
+
+    {team.alumni && team.alumni.length > 0 && (
+        <section class="section">
+            <div class="content-container grid">
+                <div class="span-1-4">
+                    <h2 class="section-title">{site.team_page.alumni.title}</h2>
+                    <p class="section-supporting-text">{site.team_page.alumni.description}</p>
+                </div>
+                <ul role="list" class="span-6-12 people-list">
+                    {team.alumni.map((item) => (
+                        <li>
+                            <Contributor
+                                photo={item.avatar_url}
+                                name={item.name || item.username}
+                                handle={item.username}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
+    )}
+</MainLayout>

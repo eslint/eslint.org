@@ -1,0 +1,50 @@
+---
+import PostLayout from "../../../../layouts/PostLayout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+
+    return posts.map((post) => {
+        const match = post.id.match(/^(\d{4})-(\d{2})-\d{2}-(.+?)(?:\.md)?$/);
+        if (!match) return null;
+
+        return {
+            params: {
+                year: match[1],
+                month: match[2],
+                slug: match[3],
+            },
+            props: { post },
+        };
+    }).filter(Boolean);
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+// Extract date from post id
+const dateMatch = post.id.match(/^(\d{4})-(\d{2})-(\d{2})/);
+const postDate = dateMatch
+    ? new Date(`${dateMatch[1]}-${dateMatch[2]}-${dateMatch[3]}T00:00:00Z`).toISOString()
+    : new Date().toISOString();
+
+// Normalize authors
+const authors = post.data.authors || (post.data.author ? [post.data.author] : []);
+
+// Get input path relative to blog dir (for blogDates lookup)
+const inputPath = post.id.endsWith(".md") ? post.id : `${post.id}.md`;
+---
+
+<PostLayout
+    title={post.data.title}
+    teaser={post.data.teaser}
+    authors={authors}
+    categories={post.data.categories}
+    tags={post.data.tags}
+    image={post.data.image}
+    date={postDate}
+    inputPath={inputPath}
+>
+    <Content />
+</PostLayout>

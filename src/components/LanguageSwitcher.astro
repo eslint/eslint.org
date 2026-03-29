@@ -1,0 +1,44 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import yaml from "js-yaml";
+import { site } from "../data/index.js";
+
+const rootDir = process.cwd();
+const sitesDir = path.resolve(rootDir, "src", "_data", "sites");
+const siteFiles = fs.readdirSync(sitesDir).filter(f => f.endsWith(".yml"));
+const sites = {};
+for (const f of siteFiles) {
+    const key = f.replace(".yml", "");
+    sites[key] = yaml.load(fs.readFileSync(path.join(sitesDir, f), "utf8"));
+}
+
+const pageUrl = Astro.url.pathname;
+const multilingual = Object.keys(sites).length > 1;
+---
+<div class="language-switcher">
+    <a href="/languages/" class="switcher-fallback">{site.footer.language_switcher.change_language}</a>
+    <div hidden role="region" class="switcher switcher--language" aria-labelledby="language-switcher-label" id="language-switcher">
+        <span id="language-switcher-label" hidden>{site.footer.language_switcher.title}</span>
+        <div class="infobox visually-hidden" id="language-infobox">
+            {site.footer.language_switcher.description}
+        </div>
+        <label class="switcher__label" for="language-select">
+            <span class="label__text">
+                {site.footer.language_switcher.language}
+            </span>
+        </label>
+        <select name="language selector" id="language-select" aria-describedby="language-infobox" class="c-custom-select switcher__select">
+            {Object.entries(sites).map(([key, otherSite]) => (
+                <option
+                    value={otherSite.language.code}
+                    title={otherSite.language.title}
+                    data-url={`https://${otherSite.hostname}${multilingual ? pageUrl : ''}`}
+                    selected={site.language.code === otherSite.language.code}
+                >
+                    {otherSite.language.flag} {otherSite.language.name}
+                </option>
+            ))}
+        </select>
+    </div>
+</div>

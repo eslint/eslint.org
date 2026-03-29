@@ -1,0 +1,74 @@
+---
+interface Props {
+    title: string;
+    featured?: string;
+    teaser: string;
+    authorName: string;
+    authorImage?: string;
+    category?: string;
+    readingTime?: string;
+    date: string;
+    url: string;
+    image?: string;
+}
+
+const { title, featured, teaser, authorName, authorImage, category, readingTime, date, url, image } = Astro.props;
+
+const fallback_image = '/assets/images/people/_placeholder-avatar.svg';
+
+function slugify(text) {
+    return text.toString().toLowerCase().trim()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w-]+/g, '')
+        .replace(/--+/g, '-');
+}
+
+let imageName;
+if (image) {
+    imageName = image;
+} else if (category) {
+    imageName = slugify(category) + '.png';
+} else {
+    imageName = 'sponsorships.png';
+}
+const imgSrc = `/assets/images/blog-covers/${imageName}`;
+
+function readableDate(dateStr) {
+    const d = new Date(dateStr);
+    const day = String(d.getUTCDate()).padStart(2, '0');
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const month = months[d.getUTCMonth()];
+    const year = d.getUTCFullYear();
+    return `${day} ${month}, ${year}`;
+}
+---
+<article class:list={['card', { 'card--featured': featured === 'true' }]}>
+    <a href={url} class="card__cover" tabindex="-1">
+        <img src={imgSrc} alt={title} loading="lazy" />
+    </a>
+    <div class="card__content">
+        <div class="badge-group">
+            <span class="blog-post__category">
+                <span class="visually-hidden">Published under:</span> {category}
+            </span>
+            <span class="blog-post__reading-time">
+                {readingTime} read
+            </span>
+        </div>
+
+        <h3 class="card__title">
+            <a href={url}>
+                {title}</a>
+        </h3>
+        <p class="card__teaser">
+            {teaser}
+        </p>
+        <div class="card__footer">
+            <img class="blog-post__author-photo" src={authorImage || fallback_image} alt={authorName} width="40" height="40" loading="lazy" onerror={`this.src = '${fallback_image}'`} />
+            <div class="blog-post__author__details">
+                <div class="blog-post__author-name">{authorName}</div>
+                <time class="blog-post__publish-date" datetime={date}>{readableDate(date)}</time>
+            </div>
+        </div>
+    </div>
+</article>
