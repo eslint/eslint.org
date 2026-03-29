@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 98560.93161191998,
-        "monthlyDonations": 8213.41096766,
-        "sponsorCount": 176
+        "annualDonations": 99075.51654395998,
+        "monthlyDonations": 8256.293045330001,
+        "sponsorCount": 177
     },
     "diamond": [],
     "platinum": [
@@ -222,6 +222,15 @@
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Frontend Masters",
+            "url": "https://FrontendMasters.com",
+            "image": "https://github.com/frontendmasters.png",
+            "monthlyDonation": 42.88207767,
+            "totalDonations": "015.8755124116.5134570116.2135154615.9458794115.8539151315.8101133352.4053066815.7938353462.0867446158.6823441856.1351804555.6041253354.9398559947.1456875611.0450076411.0450076411.0450076411.0450076411.0450076411.0450076411.0522232711.1344221611.2132473611.4548048559.0177864044.9594486342.88207767",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -474,7 +483,7 @@
             "url": "https://www.mymoneycomparison.com",
             "image": "https://images.opencollective.com/mymoneycomparison/93c0e0e/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
