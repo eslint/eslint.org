@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 99075.51654395998,
-        "monthlyDonations": 8256.293045330001,
-        "sponsorCount": 177
+        "annualDonations": 98775.51654395998,
+        "monthlyDonations": 8231.293045330001,
+        "sponsorCount": 176
     },
     "diamond": [],
     "platinum": [
@@ -267,14 +267,6 @@
             "monthlyDonation": 25,
             "totalDonations": 2150,
             "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Clipboard",
-            "image": "https://avatars.githubusercontent.com/u/28880063",
-            "url": "https://www.clipboardhealth.com/",
-            "monthlyDonation": 25,
-            "source": "github",
             "tier": "backer"
         },
         {
