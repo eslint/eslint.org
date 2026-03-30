@@ -45,8 +45,19 @@ const fillOptionsDefaults = options => ({
 });
 
 const convertLegacyOptionsToFlatConfig = options => {
-	// If there are no legacy properties, return it
-	if (!options.env && !options.parserOptions && !options.languageOptions) {
+	const isFlatConfig = !options.env && !options.parserOptions;
+	if (isFlatConfig) {
+		/**
+		 * Move `sourceType` from `languageOptions.parserOptions` to `languageOptions`.
+		 * This is a fix for previous links using the `@typescript-eslint/parser`.
+		 * @see https://github.com/eslint/eslint.org/issues/891
+		 */
+		if (options.languageOptions?.parserOptions?.sourceType !== void 0) {
+			options.languageOptions.sourceType =
+				options.languageOptions.parserOptions.sourceType;
+			delete options.languageOptions.parserOptions.sourceType;
+		}
+
 		return options;
 	}
 
@@ -74,14 +85,6 @@ const convertLegacyOptionsToFlatConfig = options => {
 		if (ecmaFeatures) {
 			flatConfigOptions.languageOptions.parserOptions = { ecmaFeatures };
 		}
-	}
-
-	// Move sourceType from languageOptions.parserOptions to parserOptions
-	if (options.languageOptions?.parserOptions?.sourceType !== void 0) {
-		flatConfigOptions.languageOptions ??= options.languageOptions;
-		flatConfigOptions.languageOptions.sourceType =
-			options.languageOptions.parserOptions.sourceType;
-		delete flatConfigOptions.languageOptions.parserOptions.sourceType;
 	}
 
 	return flatConfigOptions;
