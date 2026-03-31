@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 98775.51654395998,
-        "monthlyDonations": 8231.293045330001,
-        "sponsorCount": 176
+        "annualDonations": 96540.62939627997,
+        "monthlyDonations": 8045.052449689999,
+        "sponsorCount": 177
     },
     "diamond": [],
     "platinum": [
@@ -97,15 +97,6 @@
             "image": "https://images.opencollective.com/depot/39125a1/logo.png",
             "monthlyDonation": 200,
             "totalDonations": 400,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "N-iX Ltd",
-            "url": "https://www.n-ix.com/",
-            "image": "https://images.opencollective.com/n-ix-ltd/575a7a5/logo.png",
-            "monthlyDonation": 200,
-            "totalDonations": 800,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -444,12 +435,30 @@
             "tier": "backer"
         },
         {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 8.59609794,
+            "totalDonations": "08.426817307.033780176.496383325.655986995.379024760.922801240.931320922.032353961.5062005410.174285658.446040648.59609794",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "CrawlJobs",
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 884,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Block Open Source",
+            "url": "https://block.xyz/open-source",
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 5.16330642,
+            "totalDonations": "03.406750532.577835202.289833644.452156164.456149960.970635480.538141004.287286775.342948075.16330642",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
