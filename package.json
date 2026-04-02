@@ -120,7 +120,7 @@
   },
   "dependencies": {
     "@codemirror/lang-javascript": "^6.2.5",
-    "@codemirror/language": "^6.12.2",
+    "@codemirror/language": "^6.12.3",
     "@codemirror/state": "^6.6.0",
     "@codemirror/view": "^6.40.0",
     "@typescript-eslint/parser": "^8.57.2",
