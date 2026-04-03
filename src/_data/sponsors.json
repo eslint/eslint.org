@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 89172,
-        "monthlyDonations": 7431,
+        "annualDonations": 91560,
+        "monthlyDonations": 7630,
         "sponsorCount": 131
     },
     "diamond": [],
@@ -78,7 +78,16 @@
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 215,
-            "totalDonations": 884,
+            "totalDonations": 1105,
+            "source": "opencollective",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "aeriusventilation's Org",
+            "url": null,
+            "image": "https://images.opencollective.com/aeriusventilations-org/avatar.png",
+            "monthlyDonation": 200,
+            "totalDonations": 200,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -87,7 +96,7 @@
             "url": "https://depot.dev",
             "image": "https://images.opencollective.com/depot/39125a1/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 400,
+            "totalDonations": 600,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -96,7 +105,7 @@
             "url": "https://icons8.com/",
             "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 15800,
+            "totalDonations": 16000,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -158,7 +167,7 @@
             "url": "https://about.sourcegraph.com",
             "image": "https://images.opencollective.com/sourcegraph/f67b621/logo.png",
             "monthlyDonation": 50,
-            "totalDonations": 100,
+            "totalDonations": 150,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -367,7 +376,7 @@
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
-            "totalDonations": 884,
+            "totalDonations": 1105,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -376,7 +385,7 @@
             "url": "https://about.gitea.com/",
             "image": "https://images.opencollective.com/gitea/bf35c2f/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -385,7 +394,7 @@
             "url": "https://privatejet.com",
             "image": "https://images.opencollective.com/privatejetcom/4965318/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 20,
+            "totalDonations": 25,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -449,6 +458,15 @@
             "image": "https://images.opencollective.com/kinder/cd0b9b4/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 110,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 106,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -582,14 +600,6 @@
             "name": "Jordan Harband",
             "image": "https://avatars.githubusercontent.com/u/45469",
             "url": "https://linkedin.com/in/ljharb",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Al Zimmerman",
-            "image": "https://avatars.githubusercontent.com/u/47005",
-            "url": "https://github.com/Auraelius",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
@@ -954,15 +964,6 @@
             "url": "https://mizle.net",
             "monthlyDonation": 2,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "FameViso | Instagram Growth Agency",
-            "url": "https://fameviso.com/",
-            "image": "https://images.opencollective.com/fameviso-home/ca47bb2/logo.png",
-            "monthlyDonation": 1,
-            "totalDonations": 1,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
