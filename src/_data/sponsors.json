@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 91560,
-        "monthlyDonations": 7630,
-        "sponsorCount": 131
+        "annualDonations": 91620,
+        "monthlyDonations": 7635,
+        "sponsorCount": 132
     },
     "diamond": [],
     "platinum": [
@@ -377,6 +377,15 @@
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
             "totalDonations": 1105,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Essay Grader",
+            "url": "https://essay-grader.ai",
+            "image": "https://images.opencollective.com/essay-grader/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 5,
             "source": "opencollective",
             "tier": "backer"
         },
