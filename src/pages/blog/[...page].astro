@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Hero from "../../components/Hero.astro";
+import Card from "../../components/Card.astro";
+import Search from "../../components/Search.astro";
+import BlogCategories from "../../components/BlogCategories.astro";
+import BlogPagination from "../../components/BlogPagination.astro";
+import { getCollection } from "astro:content";
+import { site, allAuthors } from "../../data/index.js";
+import { slugify, getPostDate, getPostUrl, readingTimeEstimate } from "../../data/utils.js";
+
+export async function getStaticPaths({ paginate }) {
+    const { getCollection: gc } = await import("astro:content");
+    const { getPostDate: gpd } = await import("../../data/utils.js");
+
+    const allPosts = await gc("blog");
+
+    const sorted = allPosts
+        .filter(p => !p.data.draft)
+        .sort((a, b) => gpd(b).getTime() - gpd(a).getTime());
+
+    return paginate(sorted, { pageSize: 9 });
+}
+
+const { page } = Astro.props;
+const pageUrl = Astro.url.pathname;
+
+// Compute categories
+const allPosts = await getCollection("blog");
+const categorySet = new Set();
+allPosts.forEach(p => p.data.categories?.forEach(c => categorySet.add(c)));
+const categories = [...categorySet].sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" })).map(c => ({
+    title: c,
+    slug: slugify(c),
+}));
+---
+
+<BaseLayout hook="blog_page">
+    <Header />
+
+    <main id="main" tabindex="-1">
+        <Hero title={site.blog_page.title} supporting_text={site.blog_page.description} />
+
+        <div class="content-container grid">
+            <aside class="span-1-3">
+                <Search />
+                <BlogCategories categories={categories} pageUrl={pageUrl} />
+            </aside>
+
+            <div class="span-4-12">
+                <div class="blog-posts">
+                    {page.data.map((item) => {
+                        const author = item.data.author || (item.data.authors && item.data.authors[0]);
+                        const authorImage = allAuthors[author]?.avatar_url;
+                        const authorName = allAuthors[author]?.name || author || "ESLint";
+                        const postDate = getPostDate(item);
+                        const postUrl = getPostUrl(item);
+                        const readTime = readingTimeEstimate(item.body);
+
+                        return (
+                            <Card
+                                title={item.data.title}
+                                featured={item.data.featured}
+                                url={postUrl}
+                                image={item.data.image}
+                                category={item.data.categories?.[0]}
+                                readingTime={readTime}
+                                teaser={item.data.teaser || ""}
+                                authorImage={authorImage}
+                                authorName={authorName}
+                                date={postDate.toISOString()}
+                            />
+                        );
+                    })}
+                </div>
+            </div>
+            <div class="span-4-12">
+                <BlogPagination
+                    pagination={{
+                        href: {
+                            first: "/blog/",
+                            last: page.lastPage > 1 ? `/blog/${page.lastPage}/` : "/blog/",
+                            next: page.url.next || null,
+                            previous: page.url.prev || null,
+                        },
+                        pageNumber: page.currentPage,
+                        totalPages: page.lastPage,
+                    }}
+                    pageUrl={pageUrl}
+                />
+            </div>
+        </div>
+    </main>
+
+    <Footer />
+</BaseLayout>

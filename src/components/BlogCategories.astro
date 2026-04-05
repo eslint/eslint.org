@@ -1,0 +1,28 @@
+---
+import { site } from "../data/index.js";
+import { setBlogActiveState, setActiveCategory } from "../data/helpers.js";
+
+interface Props {
+    categories: Array<{ title: string; slug: string; totalItems?: number }>;
+    pageUrl: string;
+}
+
+const { categories, pageUrl } = Astro.props;
+const blogURL = '/blog/';
+---
+<nav aria-labelledby="blog-categories-nav-label" class="categories">
+    <h2 class="categories__title" id="blog-categories-nav-label">{site.blog_page.categories.title}</h2>
+    <ul role="list" class="categories__list">
+        <li class="categories__list__item">
+            <Fragment set:html={`<a href="/blog/" ${setBlogActiveState(blogURL, pageUrl)}>${site.blog_page.categories.everything}</a>`} />
+        </li>
+        {categories.map((category) => {
+            const itemURL = `/blog/category/${category.slug}`;
+            return (
+                <li class="categories__list__item">
+                    <Fragment set:html={`<a href="/blog/category/${category.slug}" ${setActiveCategory(itemURL, pageUrl)}>${category.title}</a>`} />
+                </li>
+            );
+        })}
+    </ul>
+</nav>

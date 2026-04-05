@@ -1,0 +1,24 @@
+---
+import { site } from "../data/index.js";
+---
+{site.google_analytics?.code && (
+    <>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DGPHY308T" is:inline></script>
+        <script is:inline define:vars={{ gaCode: site.google_analytics.code }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', gaCode);
+
+            document.querySelectorAll("a.donate-link").forEach(
+                el => el.addEventListener("click",
+                    () => gtag("event", "donate_click"))
+            );
+
+            document.querySelectorAll("a.sponsor-link").forEach(
+                el => el.addEventListener("click",
+                    () => gtag("event", "sponsor_click", el.href || ""))
+            );
+        </script>
+    </>
+)}

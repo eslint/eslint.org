@@ -1,0 +1,15 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { isDev } from "../data/helpers.js";
+---
+
+<MainLayout hook="playground_page">
+    <div id="playground-app">
+        {isDev && (
+            <p style="text-align: center">
+                run <span>npm run install:playground</span> before running playground
+            </p>
+        )}
+    </div>
+    <script is:inline src="/assets/js/playground.js"></script>
+</MainLayout>

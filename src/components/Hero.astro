@@ -1,0 +1,45 @@
+---
+import Ad from "./Ad.astro";
+
+interface Props {
+    title: string;
+    supporting_text?: string;
+    buttons?: {
+        primary?: { primaryText: string; primaryURL: string };
+        secondary?: { secondaryText: string; secondaryURL: string };
+    };
+    post?: {
+        date: string;
+        category: string;
+        categoryURL: string;
+    };
+}
+
+const { title, supporting_text, buttons, post } = Astro.props;
+---
+<div class="section hero">
+    <div class="content-container grid">
+        <div class="span-1-7 content-container">
+            {post && (
+                <p class="post__meta">Published <time datetime={post.date}>{post.date}</time> under <a href={`/blog/category/${post.categoryURL}`}>{post.category}</a></p>
+            )}
+            <h1 class="section-title">{title}</h1>
+            <p class="section-supporting-text">
+                <Fragment set:html={supporting_text} />
+            </p>
+            {buttons && (
+                <div class="eslint-actions">
+                    {buttons.primary && (
+                        <a href={buttons.primary.primaryURL} class="c-btn c-btn--primary">{buttons.primary.primaryText}</a>
+                    )}
+                    {buttons.secondary && (
+                        <a href={buttons.secondary.secondaryURL} class="c-btn c-btn--secondary">{buttons.secondary.secondaryText}</a>
+                    )}
+                </div>
+            )}
+        </div>
+        <div class="span-10-12 hero-ad">
+            <Ad />
+        </div>
+    </div>
+</div>

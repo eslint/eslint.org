@@ -1,0 +1,28 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+
+interface Props {
+    title?: string;
+    description?: string;
+    hook?: string;
+}
+
+const { title, description, hook = "page" } = Astro.props;
+---
+
+<BaseLayout title={title} hook={hook}>
+    <Header />
+
+    <main id="main" class="post-main" tabindex="-1">
+        <Hero title={title} supporting_text={description} />
+
+        <div class="content-container content-container__no-sidebar">
+            <slot />
+        </div>
+    </main>
+
+    <Footer />
+</BaseLayout>

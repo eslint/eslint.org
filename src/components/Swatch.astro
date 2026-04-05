@@ -1,0 +1,17 @@
+---
+interface Props {
+    desc: string;
+    val: string;
+}
+
+const { desc, val } = Astro.props;
+---
+<figure class="swatch" role="figure" aria-label={desc}>
+    <figcaption>
+        <span class="swatch__description">{desc}</span>
+        <span class="swatch__value">{val}</span>
+    </figcaption>
+    <svg width="3em" height="3em" aria-label={val}>
+        <rect fill={val} width="100%" height="100%" />
+    </svg>
+</figure>
