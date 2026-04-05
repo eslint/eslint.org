@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 91740,
-        "monthlyDonations": 7645,
-        "sponsorCount": 133
+        "annualDonations": 91800,
+        "monthlyDonations": 7650,
+        "sponsorCount": 134
     },
     "diamond": [],
     "platinum": [
@@ -609,6 +609,15 @@
             "name": "Oleksii Raspopov",
             "url": "https://alexeyraspopov.com/",
             "image": "https://images.opencollective.com/alexeyraspopov/a2cfdf9/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 435,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Jordan Harband",
+            "url": "https://twitter.com/LJHarb",
+            "image": "https://images.opencollective.com/ljharb/b75a3f8/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 435,
             "source": "opencollective",
