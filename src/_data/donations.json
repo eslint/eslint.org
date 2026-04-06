@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFp1G",
+        "name": "Ufuktan Yildirim",
+        "image": "https://avatars.githubusercontent.com/u/13807261",
+        "url": "https://ufukty.com",
+        "amount": 5,
+        "date": "2026-04-06T06:33:28Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFpRn",
         "name": "DevLovers",
         "image": "https://avatars.githubusercontent.com/u/192441707",
@@ -69,15 +78,6 @@
         "url": "https://www.eyepaq.com",
         "amount": 5,
         "date": "2026-03-09T19:57:40Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFloG",
-        "name": "maciejszeffer",
-        "image": "https://avatars.githubusercontent.com/u/253526609",
-        "url": "https://github.com/maciejszeffer",
-        "amount": 5,
-        "date": "2026-03-07T20:47:38Z",
         "source": "github"
     },
     {
