@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 91800,
-        "monthlyDonations": 7650,
-        "sponsorCount": 134
+        "annualDonations": 91680,
+        "monthlyDonations": 7640,
+        "sponsorCount": 133
     },
     "diamond": [],
     "platinum": [
@@ -304,14 +304,6 @@
             "name": "Moxio",
             "image": "https://avatars.githubusercontent.com/u/4497863",
             "url": "https://moxio.com",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Aviva Solutions B.V.",
-            "image": "https://avatars.githubusercontent.com/u/8927455",
-            "url": "https://www.avivasolutions.nl",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
