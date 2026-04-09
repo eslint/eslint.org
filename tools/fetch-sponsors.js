@@ -475,9 +475,26 @@ async function fetchThanksDevData() {
 		{ sponsors: thanksDevSponsors },
 		blockedSponsors,
 	] = await Promise.all([
-		fetchOpenCollectiveData(),
-		fetchGitHubSponsors(),
-		fetchThanksDevData(),
+		fetchOpenCollectiveData().catch(error => {
+			console.error("Failed to fetch Open Collective data.", error);
+			return {
+				sponsors: [],
+				donations: [],
+			};
+		}),
+		fetchGitHubSponsors().catch(error => {
+			console.error("Failed to fetch GitHub Sponsors data.", error);
+			return {
+				sponsors: [],
+				donations: [],
+			};
+		}),
+		fetchThanksDevData().catch(error => {
+			console.error("Failed to fetch thanks.dev data.", error);
+			return {
+				sponsors: [],
+			};
+		}),
 		fs
 			.readFile(blockedSponsorsFilename, { encoding: "utf8" })
 			.then(data => JSON.parse(data)),
