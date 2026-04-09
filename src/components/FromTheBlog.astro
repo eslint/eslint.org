@@ -1,0 +1,56 @@
+---
+import { site, links, allAuthors } from "../data/index.js";
+import { getCollection } from "astro:content";
+import { getPostUrl, getPostDate, readingTimeEstimate } from "../data/utils.js";
+import Card from "./Card.astro";
+
+const allPosts = await getCollection('blog');
+const currentUrl = Astro.url.pathname;
+
+const sortedPosts = allPosts
+    .filter(post => {
+        const postUrl = getPostUrl(post);
+        return postUrl !== currentUrl;
+    })
+    .sort((a, b) => getPostDate(b).getTime() - getPostDate(a).getTime())
+    .slice(0, 3);
+---
+<section aria-labelledby="more-posts-label" class="from-the-blog">
+    <div class="content-container">
+        <div class="from-the-blog__top grid grid--center-items">
+            <header class="section-head span-1-7">
+                <h2 class="from-the-blog__title" id="more-posts-label">{site.blog_page.from_the_blog}</h2>
+                <p>
+                    {site.blog_page.description}
+                </p>
+            </header>
+            <div class="span-11-12"><a href={links.blog} class="c-btn c-btn--primary c-btn--block from-the-blog__more">{site.homepage.blog.view_all_posts}</a></div>
+        </div>
+
+        <div class="blog-posts">
+            {sortedPosts.map((item) => {
+                const author = item.data.author || (item.data.authors && item.data.authors[0]);
+                const authorImage = allAuthors[author]?.avatar_url;
+                const authorName = allAuthors[author]?.name || author;
+                const postUrl = getPostUrl(item);
+                const postDate = getPostDate(item);
+                const readTime = readingTimeEstimate(item.body);
+
+                return (
+                    <Card
+                        title={item.data.title}
+                        featured={item.data.featured}
+                        url={postUrl}
+                        image={item.data.image}
+                        category={item.data.categories?.[0]}
+                        readingTime={readTime}
+                        teaser={item.data.teaser || ''}
+                        authorImage={authorImage}
+                        authorName={authorName}
+                        date={postDate.toISOString()}
+                    />
+                );
+            })}
+        </div>
+    </div>
+</section>

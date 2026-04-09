@@ -1,0 +1,63 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+import { site } from "../data/index.js";
+---
+
+<MainLayout hook="version_support_page">
+    <Hero
+        title="Version Support"
+        supporting_text="The ESLint team provides ongoing support for the current version and six months of limited support for the previous version."
+    />
+
+    <div class="content-container content-container__no-sidebar">
+        <p>Major ESLint release lines move through a status of Current, to Maintenance, to End of Life (EOL). A release line is considered Current when prerelease work begins. At that point, the previous release line moves to Maintenance status and stays there until six months after the general availability of the Current release line. After that, the release line moves to EOL.</p>
+
+        <h2 id="release-statuses">Release Statuses</h2>
+
+        <p>ESLint major release lines are designated by the level of support they receive from the ESLint team. The release statuses are:</p>
+
+        <ul>
+            <li><strong>Current</strong> - Receives active maintenance and development from the ESLint team.</li>
+            <li><strong>Maintenance</strong> - Receives critical bug fixes, including security issues, and compatibility fixes to ensure interoperability between major release lines. There is no backporting of other fixes or features from the current release line.</li>
+            <li><strong>End of Life (EOL)</strong> - When a release line falls out of maintenance mode it receives no further updates from the ESLint team.</li>
+        </ul>
+
+        <h2 id="current-release-lines">Current Release Lines</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><strong>Release Line</strong></th>
+                    <th><strong>Status</strong></th>
+                    <th><strong>First Release</strong></th>
+                    <th><strong>Last Release</strong></th>
+                    <th><strong>EOL Start</strong></th>
+                    <th><strong>Commercial Support</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>v10.x</td><td>Current</td><td>2026-02-06</td><td>TBD</td><td>TBD</td><td><a href="https://tidelift.com/funding/github/npm/eslint">Tidelift</a></td></tr>
+                <tr><td>v9.x</td><td>Maintenance</td><td>2024-04-05</td><td>TBD</td><td>2026-08-06</td><td><a href="https://tidelift.com/funding/github/npm/eslint">Tidelift</a></td></tr>
+                <tr><td>v8.0.0-v8.57.1</td><td>EOL</td><td>2021-10-09</td><td>2024-09-16</td><td>2024-10-05</td><td><a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a></td></tr>
+                <tr><td>v7.0.0-v7.32.0</td><td>EOL</td><td>2020-05-08</td><td>2021-07-30</td><td>2022-04-09</td><td><a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a></td></tr>
+                <tr><td>v6.0.0-v6.8.0</td><td>EOL</td><td>2019-06-21</td><td>2019-12-20</td><td>2020-11-08</td><td><a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a></td></tr>
+                <tr><td>v5.0.0-v5.16.0</td><td>EOL</td><td>2018-06-22</td><td>2019-03-29</td><td>2019-12-21</td><td><a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a></td></tr>
+                <tr><td>v4.0.0-v4.19.1</td><td>EOL</td><td>2017-06-11</td><td>2018-03-21</td><td>2018-12-22</td><td><a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a></td></tr>
+                <tr><td>v3.0.0-v3.19.0</td><td>EOL</td><td>2016-07-01</td><td>2017-03-31</td><td>2017-12-11</td><td><a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a></td></tr>
+                <tr><td>v2.0.0-v2.13.1</td><td>EOL</td><td>2016-02-12</td><td>2016-06-20</td><td>2017-01-01</td><td><a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a></td></tr>
+                <tr><td>v1.0.0-v1.10.3</td><td>EOL</td><td>2015-07-31</td><td>2015-12-01</td><td>2016-08-12</td><td><a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a></td></tr>
+            </tbody>
+        </table>
+
+        <h2 id="commercial-support">Commercial Support</h2>
+
+        <p>ESLint offers commercial support through our partners, <a href="https://tidelift.com/funding/github/npm/eslint">Tidelift</a> and <a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a>.</p>
+
+        <p>For Current and Maintenance release lines, commercial support is provided by <a href="https://tidelift.com/funding/github/npm/eslint">Tidelift</a>. Tidelift validates that ESLint is up-to-date with the latest security best practices and can be a first point of contact for any problems that may arise. <a href="https://tidelift.com/funding/github/npm/eslint">Learn more</a></p>
+
+        <p>For EOL release lines, commercial support is provided by <a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">HeroDevs</a>. HeroDevs provides drop-in replacements for older versions of ESLint that are kept up-to-date for security and compliance issues. <a href="https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES">Learn more</a></p>
+    </div>
+</MainLayout>

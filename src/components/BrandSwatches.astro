@@ -1,0 +1,26 @@
+---
+import { site, palette } from "../data/index.js";
+import Swatch from "./Swatch.astro";
+---
+<h3 id="brand-colors-label" hidden>{site.branding_page.sections.color_palette.brand_palette}</h3>
+<ul class="swatches" aria-labelledby="brand-colors-label">
+    {palette.primary.map((color) => {
+        const colordesc = color.description
+            .replace('Primary', site.branding_page.sections.color_palette.colors.primary)
+            .replace('White', site.branding_page.sections.color_palette.colors.white);
+        return (
+            <li class="swatches__item">
+                <Swatch desc={colordesc} val={color.value} />
+            </li>
+        );
+    })}
+    {palette.neutral.map((color) => {
+        const colordesc = color.description
+            .replace('Neutral', site.branding_page.sections.color_palette.colors.neutral);
+        return (
+            <li class="swatches__item">
+                <Swatch desc={colordesc} val={color.value} />
+            </li>
+        );
+    })}
+</ul>

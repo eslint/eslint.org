@@ -1,0 +1,17 @@
+---
+interface Props {
+    photo?: string;
+    name: string;
+    handle: string;
+}
+
+const { photo, name, handle } = Astro.props;
+const fallback_image = '/assets/images/people/_placeholder-avatar.svg';
+---
+<div class="profile profile--contributor">
+    <img class="profile__photo profile__photo--medium" src={photo || fallback_image} width="56" height="56" alt={name} loading="lazy" onerror={`this.src = '${fallback_image}'`} />
+    <div class="profile__details">
+        <div class="profile__name">{name}</div>
+        <a href={`https://github.com/${handle}`} class="profile__handle">@{handle}</a>
+    </div>
+</div>

@@ -14,17 +14,19 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "build": "npm-run-all install:playground build:sass build:website build:playground build:minify-images",
+    "build": "npm-run-all install:playground build:sass build:copy-assets build:website build:redirects build:playground build:minify-images",
     "build:init-blog-dates": "node tools/update-blog-dates.js --init",
-    "build:minify-images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
+    "build:copy-assets": "node tools/copy-assets.js",
+    "build:minify-images": "imagemin 'dist/assets/images' --out-dir='dist/assets/images'",
     "build:minify-svg": "svgo -r -f ./",
     "build:playground": "webpack --mode=production --progress",
     "build:playground:watch": "webpack watch --mode=development",
+    "build:redirects": "node tools/generate-redirects.js",
     "build:sass": "sass --no-source-map --style=compressed src/assets/scss:src/assets/css",
     "build:sass:watch": "sass --watch src/assets/scss:src/assets/css",
     "build:sponsors": "node tools/generate-sponsors.js",
-    "build:website": "npx @11ty/eleventy",
-    "build:website:watch": "cross-env IS_DEV=true eleventy --serve --port=2022",
+    "build:website": "astro build",
+    "build:website:watch": "astro dev",
     "fetch": "npm-run-all --parallel fetch:*",
     "fetch:stats": "node tools/fetch-stats.js",
     "fetch:sponsors": "node tools/fetch-sponsors.js",
@@ -41,7 +43,7 @@
     "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
-    "start": "npm-run-all build:sass --parallel *:*:watch"
+    "start": "npm-run-all build:sass --parallel build:sass:watch build:website:watch"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
@@ -119,6 +121,9 @@
     "yorkie": "^2.0.0"
   },
   "dependencies": {
+    "@astrojs/react": "^5.0.2",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
     "@codemirror/lang-javascript": "^6.2.5",
     "@codemirror/language": "^6.12.3",
     "@codemirror/state": "^6.6.0",
@@ -126,10 +131,12 @@
     "@typescript-eslint/parser": "^8.58.0",
     "@uiw/react-codemirror": "^4.25.9",
     "algoliasearch": "^4.27.0",
+    "astro": "^6.1.1",
     "crelt": "^1.0.6",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-select": "^5.10.2",
-    "react-split": "^2.0.14"
+    "react-split": "^2.0.14",
+    "reading-time": "^1.5.0"
   }
 }

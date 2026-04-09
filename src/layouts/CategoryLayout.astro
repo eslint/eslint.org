@@ -1,0 +1,37 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+import Search from "../components/Search.astro";
+import BlogCategories from "../components/BlogCategories.astro";
+import CategoriesPagination from "../components/CategoriesPagination.astro";
+import { site } from "../data/index.js";
+---
+
+<BaseLayout hook="category_page">
+    <Header />
+
+    <main id="main" tabindex="-1">
+        <Hero
+            title={site.blog_page.title}
+            supporting_text={site.blog_page.description}
+        />
+
+        <div class="content-container grid">
+            <aside class="span-1-3">
+                <Search />
+                <BlogCategories />
+            </aside>
+
+            <div class="span-4-12">
+                <slot />
+            </div>
+            <div class="span-4-12">
+                <CategoriesPagination />
+            </div>
+        </div>
+    </main>
+
+    <Footer />
+</BaseLayout>

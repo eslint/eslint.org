@@ -1,0 +1,18 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import LanguagesList from "../components/LanguagesList.astro";
+import { site } from "../data/index.js";
+---
+
+<MainLayout hook="languages_page">
+    <Hero title={site.languages_page.title} supporting_text={site.languages_page.choose_language} />
+
+    <section class="languages-section section">
+        <div class="content-container">
+            <nav aria-labelledby="languages-label">
+                <LanguagesList />
+            </nav>
+        </div>
+    </section>
+</MainLayout>

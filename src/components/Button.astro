@@ -1,0 +1,23 @@
+---
+interface Props {
+    behavior?: string;
+    type?: string;
+    text?: string;
+    url?: string;
+}
+
+const { behavior = 'link', type, text, url } = Astro.props;
+
+const typeClass = type === 'primary' ? ' c-btn--primary' :
+                  type === 'secondary' ? ' c-btn--secondary' :
+                  type === 'ghost' ? ' c-btn--ghost' : '';
+---
+{behavior === 'action' ? (
+    <button type="button" class={`c-btn${typeClass}`}>
+        {text || 'This is a button button'}
+    </button>
+) : (
+    <a href={url} class={`c-btn${typeClass}`}>
+        {text || 'This is a link styled like a button'}
+    </a>
+)}

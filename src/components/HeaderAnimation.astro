@@ -1,0 +1,32 @@
+---
+import { site } from "../data/index.js";
+
+const words = site.homepage.animation.text.split(' ');
+const highlightWord = site.homepage.animation.highlight_word;
+const wrongWord = site.homepage.animation.wrong_word;
+---
+<div class="anim">
+    <script is:inline define:vars={{ ANIMATION_WRONG_WORD: wrongWord, ANIMATION_CORRECT_WORD: highlightWord }}>
+        window.ANIMATION_WRONG_WORD = ANIMATION_WRONG_WORD;
+        window.ANIMATION_CORRECT_WORD = ANIMATION_CORRECT_WORD;
+    </script>
+    <div class="anim__cursorCont" aria-hidden="true">
+        <div class="anim__cursor anim__cursor--start"></div>
+    </div>
+    <h1 class="section-title h0 anim__title" aria-hidden="true">
+        {words.map((word) => (
+            word === highlightWord ? (
+                <span class="anim__word anim__problems">
+                    <span class="anim__text">{word}</span>
+                    <div class="anim__dropdown">
+                        <img class="anim__dropdown-img anim__dropdown-img--dark" src="/assets/images/dropdown--dark.png" alt="" />
+                        <img class="anim__dropdown-img anim__dropdown-img--light" src="/assets/images/dropdown--light.png" alt="" />
+                        <div class="anim__cursor anim__cursor--end"></div>
+                    </div>
+                </span>
+            ) : (
+                <span class="anim__word">{word}</span>
+            )
+        ))}
+    </h1>
+</div>

@@ -1,0 +1,127 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import DonationItem from "../components/DonationItem.astro";
+import { site, links, sponsors, techsponsors, donations } from "../data/index.js";
+
+const dollars = (v) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(v);
+const readableDateFromISO = (iso) => {
+    if (!iso) return "";
+    return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+};
+
+const monthlyDonations = dollars(sponsors.totals.monthlyDonations);
+let supportingText = site.sponsors_page.description
+    .replace("BACKER_COUNT", sponsors.totals.sponsorCount)
+    .replace("MONTHLY_DONATIONS", monthlyDonations);
+
+const tiers = ["diamond", "platinum", "gold", "silver", "bronze"];
+const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
+---
+
+<MainLayout hook="sponsors_page">
+    <Hero
+        title={site.sponsors_page.title}
+        supporting_text={supportingText}
+        buttons={{
+            primary: {
+                primaryText: site.sponsors_page.hero.cta.text,
+                primaryURL: site.sponsors_page.hero.cta.url,
+            },
+        }}
+    />
+
+    <section class="section">
+        {tiers.map((tier) =>
+            sponsors[tier] && sponsors[tier].length > 0 && (
+                <div class="content-container grid grid--center-items">
+                    <div class="span-1-5">
+                        <h2 class="section-title h4" id={tier}>{site.sponsors_page.tiers[tier].title}</h2>
+                        <p>{site.sponsors_page.tiers[tier].description}</p>
+                    </div>
+                    <div class="span-7-12">
+                        <ul role="list" class={`sponsors sponsors--${tier}`}>
+                            {sponsors[tier].map((sponsor) => {
+                                const sponsorTitle = site.sponsors_page.sponsor_title
+                                    .replace("SPONSOR_NAME", sponsor.name)
+                                    .replace("AMOUNT", dollars(sponsor.monthlyDonation));
+                                return (
+                                    <li>
+                                        <a href={sponsor.url} class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                                            <img loading="lazy" decoding="async" src={sponsor.image} height="128" alt={sponsorTitle} title={sponsorTitle} />
+                                        </a>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                </div>
+            )
+        )}
+        <div class="content-container grid grid--center-items">
+            <div class="span-1-5">
+                <h2 class="section-title h4" id="technology">{site.sponsors_page.tiers.technology.title}</h2>
+                <p>{site.sponsors_page.tiers.technology.description}</p>
+            </div>
+            <div class="span-7-12">
+                <ul role="list" class="sponsors sponsors--technology">
+                    {techsponsors.map((sponsor) => {
+                        const sponsorTitle = site.sponsors_page.tech_sponsor_title
+                            .replace("SPONSOR_NAME", sponsor.name)
+                            .replace("TECH", sponsor.donation.charAt(0).toUpperCase() + sponsor.donation.slice(1));
+                        return (
+                            <li>
+                                <a href={sponsor.url} class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                                    <img loading="lazy" decoding="async" src={sponsor.image} alt={sponsorTitle} title={sponsorTitle} height="64" />
+                                </a>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="donations">
+        <div class="content-container divider">
+            <div class="section-head center-text">
+                <h2 class="section-title h3" id="donations-label">{site.sponsors_page.recent_donations.title}</h2>
+                <p class="section-supporting-text fs-step-0">{site.sponsors_page.recent_donations.description}</p>
+            </div>
+            <ul role="list" class="donations-list" tabindex="-1" aria-labelledby="donations-label">
+                {donations.slice(0, 50).map((donation) => (
+                    <li class="donations-item">
+                        <DonationItem
+                            image={donation.image}
+                            name={donation.name}
+                            amount={dollars(donation.amount)}
+                            date={readableDateFromISO(donation.date)}
+                        />
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="content-container divider">
+            <div class="section-head center-text">
+                <h2 class="section-title h3">{site.sponsors_page.tiers.backers.title}</h2>
+                <p class="section-supporting-text fs-step-0">{site.sponsors_page.tiers.backers.description}</p>
+            </div>
+            <div class="grid">
+                <ul role="list" class="sponsors span-1-12 sponsors--backers">
+                    {sponsors.backers.map((sponsor) => (
+                        <li>
+                            <a href={sponsor.url} class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                                <img loading="lazy" decoding="async" src={sponsor.image || fallbackImage} height="48" width="48"
+                                    alt={`${sponsor.name || "Anonymous"} is donating ${dollars(sponsor.monthlyDonation)} each month`}
+                                    title={`${sponsor.name || "Anonymous"} is donating ${dollars(sponsor.monthlyDonation)} each month`} />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    </section>
+</MainLayout>

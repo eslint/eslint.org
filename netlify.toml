@@ -1,9 +1,9 @@
 [dev]
   command = "npm run start"
-  targetPort = 2022
+  targetPort = 4321
 
 [build]
-  publish = "_site"
+  publish = "dist"
   command = "npm run build"
   edge_functions = "functions"
 
