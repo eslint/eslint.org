@@ -108,6 +108,28 @@ function getTierSlug(monthlyDonation) {
 }
 
 /**
+ * Gets the existing sponsors for a given source from the saved sponsors data.
+ * @param {Object} existingSponsorsData The saved sponsors data.
+ * @param {string} source The source to filter by.
+ * @returns {Array} The existing sponsors for the source.
+ */
+function getExistingSponsorsBySource(existingSponsorsData, source) {
+	return Object.values(existingSponsorsData)
+		.flatMap(value => (Array.isArray(value) ? value : []))
+		.filter(sponsor => sponsor.source === source);
+}
+
+/**
+ * Gets the existing donations for a given source from the saved donations data.
+ * @param {Array} existingDonationsData The saved donations data.
+ * @param {string} source The source to filter by.
+ * @returns {Array} The existing donations for the source.
+ */
+function getExistingDonationsBySource(existingDonationsData, source) {
+	return existingDonationsData.filter(donation => donation.source === source);
+}
+
+/**
  * Fetch order data from Open Collective using the GraphQL API.
  * @returns {Promise<{sponsors: Array, donations: Array}>} An promise that resolves to an object with two properties:
  *  - `sponsors` (Array): List of sponsors
@@ -466,6 +488,20 @@ async function fetchThanksDevData() {
 //-----------------------------------------------------------------------------
 
 (async () => {
+	const [existingSponsorsData, existingDonationsData, blockedSponsors] =
+		await Promise.all([
+			fs
+				.readFile(sponsorsFilename, { encoding: "utf8" })
+				.then(data => JSON.parse(data)),
+			fs
+				.readFile(donationsFilename, { encoding: "utf8" })
+				.then(data => JSON.parse(data)),
+			fs
+				.readFile(blockedSponsorsFilename, { encoding: "utf8" })
+				.then(data => JSON.parse(data)),
+		]);
+	let hadSourceFetchFailure = false;
+
 	const [
 		{
 			sponsors: openCollectiveSponsors,
@@ -473,14 +509,45 @@ async function fetchThanksDevData() {
 		},
 		{ sponsors: githubSponsors, donations: githubDonations },
 		{ sponsors: thanksDevSponsors },
-		blockedSponsors,
 	] = await Promise.all([
-		fetchOpenCollectiveData(),
-		fetchGitHubSponsors(),
-		fetchThanksDevData(),
-		fs
-			.readFile(blockedSponsorsFilename, { encoding: "utf8" })
-			.then(data => JSON.parse(data)),
+		fetchOpenCollectiveData().catch(error => {
+			hadSourceFetchFailure = true;
+			console.error("Failed to fetch Open Collective data.", error);
+			return {
+				sponsors: getExistingSponsorsBySource(
+					existingSponsorsData,
+					"opencollective",
+				),
+				donations: getExistingDonationsBySource(
+					existingDonationsData,
+					"opencollective",
+				),
+			};
+		}),
+		fetchGitHubSponsors().catch(error => {
+			hadSourceFetchFailure = true;
+			console.error("Failed to fetch GitHub Sponsors data.", error);
+			return {
+				sponsors: getExistingSponsorsBySource(
+					existingSponsorsData,
+					"github",
+				),
+				donations: getExistingDonationsBySource(
+					existingDonationsData,
+					"github",
+				),
+			};
+		}),
+		fetchThanksDevData().catch(error => {
+			hadSourceFetchFailure = true;
+			console.error("Failed to fetch thanks.dev data.", error);
+			return {
+				sponsors: getExistingSponsorsBySource(
+					existingSponsorsData,
+					"thanks.dev",
+				),
+			};
+		}),
 	]);
 
 	const sponsors = openCollectiveSponsors
@@ -572,4 +639,10 @@ async function fetchThanksDevData() {
 	await fs.writeFile(donationsFilename, JSON.stringify(donations, null, 4), {
 		encoding: "utf8",
 	});
+
+	if (hadSourceFetchFailure) {
+		throw new Error(
+			"Sponsor data fetch completed with one or more source failures.",
+		);
+	}
 })();
