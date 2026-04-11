@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 95965.4532924,
-        "monthlyDonations": 7997.121107700001,
-        "sponsorCount": 138
+        "annualDonations": 97541.13820008001,
+        "monthlyDonations": 8128.428183340001,
+        "sponsorCount": 141
     },
     "diamond": [],
     "platinum": [
@@ -172,6 +172,15 @@
             "tier": "backer"
         },
         {
+            "name": "juju",
+            "url": null,
+            "image": "https://github.com/juju.png",
+            "monthlyDonation": 72.46666159,
+            "totalDonations": "055.8400281056.0363021539.2947255510.0275016310.0424624185.5376718999.4764601472.46666159",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Sentry",
             "url": "https://sentry.io",
             "image": "https://github.com/getsentry.png",
@@ -225,6 +234,15 @@
             "tier": "backer"
         },
         {
+            "name": "charmed-kubernetes",
+            "url": null,
+            "image": "https://github.com/charmed-kubernetes.png",
+            "monthlyDonation": 38.76966961,
+            "totalDonations": "031.1306793531.336060066.9171802245.3145889553.1344685238.76966961",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "STORIS",
             "url": "https://www.storis.com/",
             "image": "https://images.opencollective.com/storis/d58857b/logo.png",
@@ -258,6 +276,15 @@
             "monthlyDonation": 20,
             "totalDonations": 995,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 13.91102544,
+            "totalDonations": "013.1523181713.0949178512.4986023910.0441172110.0737259420.0390773720.0397015120.0402284620.0397732620.0424056214.8715717018.3015744713.91102544",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -397,6 +424,15 @@
             "url": "https://posthog.com",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "canonical-launchpad",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 7.159719,
+            "totalDonations": "07.518717617.15971900",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -1090,14 +1126,6 @@
             "name": "Frederik Bosch",
             "image": "https://avatars.githubusercontent.com/u/6979916",
             "url": "https://fbb.sh",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Kirill Devope",
-            "image": "https://avatars.githubusercontent.com/u/8249408",
-            "url": "https://github.com/devope",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
