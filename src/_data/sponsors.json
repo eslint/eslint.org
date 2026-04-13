@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 97541.13820008001,
-        "monthlyDonations": 8128.428183340001,
-        "sponsorCount": 141
+        "annualDonations": 95081.13820008001,
+        "monthlyDonations": 7923.428183340001,
+        "sponsorCount": 139
     },
     "diamond": [],
     "platinum": [
@@ -79,15 +79,6 @@
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 215,
             "totalDonations": 1105,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "aeriusventilation's Org",
-            "url": null,
-            "image": "https://images.opencollective.com/aeriusventilations-org/1a55d71/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -890,14 +881,6 @@
             "name": "Mattia Richetto",
             "image": "https://avatars.githubusercontent.com/u/6423261",
             "url": "https://medium.com/@mattiaerre",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Nicolas Charpentier",
-            "image": "https://avatars.githubusercontent.com/u/7189823",
-            "url": "https://charpeni.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
