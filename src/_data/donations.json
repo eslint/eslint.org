@@ -1,5 +1,14 @@
 [
     {
+        "id": "or_I0aWeKf4pQpOD4DYHiPnT",
+        "name": "THANKS.DEV",
+        "url": "https://thanks.dev",
+        "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
+        "amount": 231.87,
+        "date": "2026-04-13T21:00:22.049Z",
+        "source": "opencollective"
+    },
+    {
         "id": "SA_kwHOAFvahM4AFp1G",
         "name": "Ufuktan Yildirim",
         "image": "https://avatars.githubusercontent.com/u/13807261",
@@ -249,15 +258,6 @@
         "image": "https://images.opencollective.com/rbt-practice-test/logo.png",
         "amount": 5,
         "date": "2025-05-25T08:19:40.924Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "ywz9j4av-god8pgwa-5nj6mr35-nxklb0e7",
-        "name": "AgentDock",
-        "url": "https://agentdock.ai/",
-        "image": "https://images.opencollective.com/agentdock/0b744fa/logo.png",
-        "amount": 10,
-        "date": "2025-04-28T04:17:02.771Z",
         "source": "opencollective"
     }
 ]
