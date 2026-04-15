@@ -1,5 +1,14 @@
 [
     {
+        "id": "or_izHVT77wC9XNmxfYDg4U9",
+        "name": "Guest",
+        "url": null,
+        "image": "https://images.opencollective.com/guest-72e427f3/avatar.png",
+        "amount": 5,
+        "date": "2026-04-14T10:45:05.715Z",
+        "source": "opencollective"
+    },
+    {
         "id": "or_I0aWeKf4pQpOD4DYHiPnT",
         "name": "THANKS.DEV",
         "url": "https://thanks.dev",
