@@ -10,19 +10,9 @@
 		margin: 0;
 	}
 
-	.js-focus-visible & *:focus:not(.focus-visible) {
-		outline: 1px solid transparent;
-		box-shadow: none;
-	}
-
 	& *:focus:not(:focus-visible) {
 		outline: 1px solid transparent;
 		box-shadow: none;
-	}
-
-	& *.focus-visible {
-		outline: 2px solid #fff;
-		outline-offset: 3px;
 	}
 
 	& *:focus-visible {
