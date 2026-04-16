@@ -127,8 +127,8 @@
     "@uiw/react-codemirror": "^4.25.9",
     "algoliasearch": "^4.27.0",
     "crelt": "^1.0.6",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "react-select": "^5.10.2",
     "react-split": "^2.0.14"
   }
