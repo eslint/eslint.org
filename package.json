@@ -24,7 +24,7 @@
     "build:sass:watch": "sass --watch src/assets/scss:src/assets/css",
     "build:sponsors": "node tools/generate-sponsors.js",
     "build:website": "npx @11ty/eleventy",
-    "build:website:watch": "cross-env IS_DEV=true eleventy --serve --port=2022",
+    "build:website:watch": "cross-env IS_DEV=true eleventy --serve --port=2022 --incremental",
     "fetch": "npm-run-all --parallel fetch:*",
     "fetch:stats": "node tools/fetch-stats.js",
     "fetch:sponsors": "node tools/fetch-sponsors.js",
