@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 95133.13084932002,
-        "monthlyDonations": 7927.760904110001,
-        "sponsorCount": 154
+        "annualDonations": 97533.13084932002,
+        "monthlyDonations": 8127.760904110001,
+        "sponsorCount": 155
     },
     "diamond": [],
     "platinum": [
@@ -121,6 +121,14 @@
             "name": "HeroCoders",
             "image": "https://avatars.githubusercontent.com/u/37549774",
             "url": "https://herocoders.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "Citadel AI",
+            "image": "https://avatars.githubusercontent.com/u/75781367",
+            "url": "https://citadel.co.jp",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
