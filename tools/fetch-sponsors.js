@@ -130,6 +130,24 @@ function getExistingDonationsBySource(existingDonationsData, source) {
 }
 
 /**
+ * Appends a GitHub Actions step output if `GITHUB_OUTPUT` is available.
+ * @param {string} name The output name.
+ * @param {string} value The output value.
+ * @returns {Promise<void>} A promise that resolves when the output has been handled.
+ */
+async function setGitHubActionOutput(name, value) {
+	const { GITHUB_OUTPUT } = process.env;
+
+	if (!GITHUB_OUTPUT) {
+		return;
+	}
+
+	await fs.appendFile(GITHUB_OUTPUT, `${name}=${value}\n`, {
+		encoding: "utf8",
+	});
+}
+
+/**
  * Fetch order data from Open Collective using the GraphQL API.
  * @returns {Promise<{sponsors: Array, donations: Array}>} An promise that resolves to an object with two properties:
  *  - `sponsors` (Array): List of sponsors
@@ -500,7 +518,7 @@ async function fetchThanksDevData() {
 				.readFile(blockedSponsorsFilename, { encoding: "utf8" })
 				.then(data => JSON.parse(data)),
 		]);
-	let hadSourceFetchFailure = false;
+	const failedSources = [];
 
 	const [
 		{
@@ -511,7 +529,7 @@ async function fetchThanksDevData() {
 		{ sponsors: thanksDevSponsors },
 	] = await Promise.all([
 		fetchOpenCollectiveData().catch(error => {
-			hadSourceFetchFailure = true;
+			failedSources.push("Open Collective");
 			console.error("Failed to fetch Open Collective data.", error);
 			return {
 				sponsors: getExistingSponsorsBySource(
@@ -525,7 +543,7 @@ async function fetchThanksDevData() {
 			};
 		}),
 		fetchGitHubSponsors().catch(error => {
-			hadSourceFetchFailure = true;
+			failedSources.push("GitHub Sponsors");
 			console.error("Failed to fetch GitHub Sponsors data.", error);
 			return {
 				sponsors: getExistingSponsorsBySource(
@@ -539,7 +557,7 @@ async function fetchThanksDevData() {
 			};
 		}),
 		fetchThanksDevData().catch(error => {
-			hadSourceFetchFailure = true;
+			failedSources.push("thanks.dev");
 			console.error("Failed to fetch thanks.dev data.", error);
 			return {
 				sponsors: getExistingSponsorsBySource(
@@ -549,6 +567,10 @@ async function fetchThanksDevData() {
 			};
 		}),
 	]);
+
+	const failedSourcesText = failedSources.join(", ");
+
+	await setGitHubActionOutput("failed_sources", failedSourcesText);
 
 	const sponsors = openCollectiveSponsors
 		.concat(githubSponsors)
@@ -640,9 +662,9 @@ async function fetchThanksDevData() {
 		encoding: "utf8",
 	});
 
-	if (hadSourceFetchFailure) {
+	if (failedSources.length > 0) {
 		throw new Error(
-			"Sponsor data fetch completed with one or more source failures.",
+			`Sponsor data fetch completed with source failures: ${failedSourcesText}.`,
 		);
 	}
 })();

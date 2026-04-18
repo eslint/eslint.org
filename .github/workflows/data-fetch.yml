@@ -58,5 +58,5 @@ jobs:
     - name: Fail if sponsor data fetch had source failures
       if: ${{ steps.fetch_sponsor_data.outcome == 'failure' }}
       run: |
-        echo "Sponsor data fetch completed with one or more source failures."
+        echo "Sponsor data fetch completed with source failures: ${{ steps.fetch_sponsor_data.outputs.failed_sources }}"
         exit 1
