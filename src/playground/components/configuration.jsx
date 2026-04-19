@@ -610,6 +610,8 @@ export default function Configuration({
 														rulesMeta[ruleName].docs
 															.url
 													}
+													target="_blank"
+													rel="noreferrer"
 												>
 													{`${ruleName} ${rulesMeta[ruleName].deprecated ? "(deprecated)" : ""}`}
 												</a>
