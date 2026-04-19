@@ -36,6 +36,8 @@ jobs:
         ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
 
     - name: Fetch sponsor data
+      id: fetch_sponsor_data
+      continue-on-error: true
       run: npm run fetch:sponsors
       env:
         ESLINT_GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN }}
@@ -52,3 +54,9 @@ jobs:
       run: |
         chmod +x ./tools/commit-data.sh
         ./tools/commit-data.sh
+
+    - name: Fail if sponsor data fetch had source failures
+      if: ${{ steps.fetch_sponsor_data.outcome == 'failure' }}
+      run: |
+        echo "Sponsor data fetch completed with source failures: ${{ steps.fetch_sponsor_data.outputs.failed_sources }}"
+        exit 1
