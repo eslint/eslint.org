@@ -252,7 +252,7 @@ const App = () => {
 
 	const onFixAll = () => {
 		const hasFixableMessages = messages.filter(message => message.fix);
-		if (!hasFixableMessages) {
+		if (!hasFixableMessages.length) {
 			return;
 		}
 
