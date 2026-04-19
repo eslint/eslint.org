@@ -305,23 +305,10 @@ ul.selected-options {
 	outline-offset: 3px;
 }
 
-.js-focus-visible
-	.c-checkbox
-	input[type="checkbox"]:focus:not(.focus-visible)
-	~ .c-checkbox__icon {
-	outline: 2px solid transparent;
-	outline-offset: 3px;
-}
-
 .c-checkbox
 	input[type="checkbox"]:focus:not(:focus-visible)
 	~ .c-checkbox__icon {
 	outline: 2px solid transparent;
-	outline-offset: 3px;
-}
-
-.c-checkbox input[type="checkbox"].focus-visible ~ .c-checkbox__icon {
-	outline: 2px solid var(--outline-color);
 	outline-offset: 3px;
 }
 
