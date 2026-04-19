@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 97533.13084932002,
-        "monthlyDonations": 8127.760904110001,
-        "sponsorCount": 155
+        "annualDonations": 97533.36268044001,
+        "monthlyDonations": 8127.780223370001,
+        "sponsorCount": 157
     },
     "diamond": [],
     "platinum": [
@@ -1258,6 +1258,15 @@
             "tier": "backer"
         },
         {
+            "name": "featuresmith",
+            "url": "https://featuresmith.com",
+            "image": "https://github.com/featuresmith.png",
+            "monthlyDonation": 0.01846082,
+            "totalDonations": "00.008599260.008111170.008111170.015796860.017839900.018686920.01846082",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "stream-utils",
             "url": null,
             "image": "https://github.com/stream-utils.png",
@@ -1317,6 +1326,15 @@
             "image": "https://github.com/timely-deploy.png",
             "monthlyDonation": 0.00138174,
             "totalDonations": "00.007694850.004561920.003529240.004101030.003628910.004094640.004800190.004788970.004480280.004434840.006867220.000965030.001107280.000962010.000953620.000869920.000869920.000882050.000807410.000801260.001410740.001453090.00138174",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Adam Dąbrowski",
+            "url": "http://adamdabrowski.com",
+            "image": "https://github.com/dabrowski-adam.png",
+            "monthlyDonation": 0.00085844,
+            "totalDonations": "00.001198480.001253010.001253010.002023800.003731730.003721320.000194080.000194510.000026010.000027230.000014460.000014460.000014160.000012220.000833920.000876400.00085844",
             "source": "thanks.dev",
             "tier": "backer"
         },
