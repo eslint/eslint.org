@@ -339,17 +339,21 @@ export default function Configuration({
 				{showVersion && (
 					<div data-config-section>
 						<div className="c-field-group">
-							<label className="c-field" htmlFor="eslint-version">
+							<div className="c-field">
 								<span className="label__text">
 									ESLint Version
 								</span>
 								<span className="label__text">{`v${eslintVersion}`}</span>
-							</label>
-							<label className="c-field" htmlFor="ecma-version">
-								<span className="label__text">
+							</div>
+							<div className="c-field">
+								<label
+									className="label__text"
+									htmlFor="ecma-version"
+								>
 									ECMA Version
-								</span>
+								</label>
 								<Select
+									inputId="ecma-version"
 									isSearchable={false}
 									styles={customStyles}
 									theme={theme => customTheme(theme)}
@@ -379,11 +383,17 @@ export default function Configuration({
 										onUpdate(newOptions);
 									}}
 								/>
-							</label>
+							</div>
 						</div>
-						<label className="c-field" htmlFor="source-type">
-							<span className="label__text">Source Type</span>
+						<div className="c-field">
+							<label
+								className="label__text"
+								htmlFor="source-type"
+							>
+								Source Type
+							</label>
 							<Select
+								inputId="source-type"
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
@@ -417,16 +427,16 @@ export default function Configuration({
 									onUpdate(newOptions);
 								}}
 							/>
-						</label>
+						</div>
 						<div className="combo">
 							<label
-								id="ecma-combo-label"
-								htmlFor="ECMA Feature"
 								className="label__text"
+								htmlFor="ecma-features"
 							>
 								ECMA Features
 							</label>
 							<Select
+								inputId="ecma-features"
 								isClearable
 								isMulti
 								value={ECMAFeaturesOptions.filter(
@@ -466,13 +476,15 @@ export default function Configuration({
 								}}
 							/>
 						</div>
-						<label
+						<div
 							className="c-field"
 							style={{ marginTop: "1rem", marginBottom: "0" }}
-							htmlFor="parser"
 						>
-							<span className="label__text">Parser</span>
+							<label className="label__text" htmlFor="parser">
+								Parser
+							</label>
 							<Select
+								inputId="parser"
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
@@ -514,7 +526,7 @@ export default function Configuration({
 									onUpdate(newOptions);
 								}}
 							/>
-						</label>
+						</div>
 					</div>
 				)}
 			</div>
@@ -542,14 +554,16 @@ export default function Configuration({
 					<div data-config-section>
 						{!allRulesSelected && (
 							<>
-								<label htmlFor="rules" className="combo-label">
-									<span className="label__text">
-										Choose a rule
-									</span>
+								<label
+									className="combo-label label__text"
+									htmlFor="rules"
+								>
+									Choose a rule
 								</label>
 								<Select
 									isMulti
 									components={{ Input }}
+									inputId="rules"
 									isClearable
 									isSearchable
 									styles={customStyles}
@@ -592,10 +606,7 @@ export default function Configuration({
 									: "Enable all rules"}
 							</button>
 						</div>
-						<ul
-							className="config__added-rules"
-							aria-labelledby="added-rules-label"
-						>
+						<ul className="config__added-rules">
 							{options.rules &&
 								Object.keys(options.rules)
 									.sort()
@@ -759,11 +770,12 @@ export default function Configuration({
 
 			<div className="playground__config-options__section">
 				<div data-config-section>
-					<label className="c-field" htmlFor="config-format">
-						<span className="label__text">
+					<div className="c-field">
+						<label className="label__text" htmlFor="config-format">
 							Configuration File Format
-						</span>
+						</label>
 						<Select
+							inputId="config-format"
 							isSearchable={false}
 							styles={customStyles}
 							theme={theme => customTheme(theme)}
@@ -776,7 +788,7 @@ export default function Configuration({
 								setConfigFileFormat(selected.value);
 							}}
 						/>
-					</label>
+					</div>
 					<a
 						href={`data:application/json;charset=utf-8,${encodeURIComponent(configFileContent)}`}
 						download="eslint.config.js"
