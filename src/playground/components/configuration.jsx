@@ -353,7 +353,7 @@ export default function Configuration({
 									isSearchable={false}
 									styles={customStyles}
 									theme={theme => customTheme(theme)}
-									value={ECMAVersionsOptions.filter(
+									value={ECMAVersionsOptions.find(
 										ecmaVersion =>
 											ecmaVersion.value ===
 											(options.languageOptions
@@ -387,7 +387,7 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								value={sourceTypeOptions.filter(
+								value={sourceTypeOptions.find(
 									sourceTypeOption =>
 										sourceTypeOption.value ===
 										(options.languageOptions?.sourceType ||
@@ -476,7 +476,7 @@ export default function Configuration({
 								isSearchable={false}
 								styles={customStyles}
 								theme={theme => customTheme(theme)}
-								value={ESLintParserOptions.filter(
+								value={ESLintParserOptions.find(
 									eslintParser =>
 										eslintParser.value ===
 										(options.languageOptions?.parser ||
