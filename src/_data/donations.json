@@ -1,5 +1,14 @@
 [
     {
+        "id": "or_UwydSoPcwtRdd0WUJNvWa",
+        "name": "Guest",
+        "url": null,
+        "image": "https://images.opencollective.com/guest-95c7f534/avatar.png",
+        "amount": 5,
+        "date": "2026-04-21T11:22:28.003Z",
+        "source": "opencollective"
+    },
+    {
         "id": "or_tMkJmOXDr6aszIwsUftOU",
         "name": "vasis351@hotmail.com",
         "url": null,
@@ -78,15 +87,6 @@
         "url": "https://linkedin.com/in/marcelogomes90",
         "amount": 3,
         "date": "2026-03-31T21:31:04Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AFoPQ",
-        "name": "Juan Pablo Pérez",
-        "image": "https://avatars.githubusercontent.com/u/110113738",
-        "url": "https://github.com/juapperez",
-        "amount": 1,
-        "date": "2026-03-25T00:03:20Z",
         "source": "github"
     },
     {
@@ -276,15 +276,6 @@
         "image": "https://images.opencollective.com/alexrp/6cbfbe1/avatar.png",
         "amount": 20,
         "date": "2025-07-13T02:41:23.238Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "eng0kzdy-vor4pz8y-0jopbma8-37xlw95j",
-        "name": "OuestWare",
-        "url": null,
-        "image": "https://images.opencollective.com/ouestware/90c4ab8/avatar.png",
-        "amount": 117,
-        "date": "2025-06-30T09:56:29.735Z",
         "source": "opencollective"
     }
 ]
