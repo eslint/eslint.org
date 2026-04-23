@@ -251,7 +251,7 @@ const App = () => {
 	};
 
 	const onFixAll = () => {
-		const hasFixableMessages = messages.filter(message => message.fix);
+		const hasFixableMessages = messages.some(message => message.fix);
 		if (!hasFixableMessages) {
 			return;
 		}
