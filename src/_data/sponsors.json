@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 97464.12845772001,
-        "monthlyDonations": 8122.010704810002,
-        "sponsorCount": 168
+        "annualDonations": 97452.12845772001,
+        "monthlyDonations": 8121.010704810002,
+        "sponsorCount": 167
     },
     "diamond": [],
     "platinum": [
@@ -1087,14 +1087,6 @@
             "name": "Benjamin Reed",
             "image": "https://avatars.githubusercontent.com/u/89252",
             "url": "https://music.raccoonfink.com/",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "John Karahalis",
-            "image": "https://avatars.githubusercontent.com/u/933396",
-            "url": "https://www.johnkarahalis.com",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
