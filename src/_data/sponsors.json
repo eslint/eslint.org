@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 91344,
-        "monthlyDonations": 7612,
-        "sponsorCount": 126
+        "annualDonations": 88692,
+        "monthlyDonations": 7391,
+        "sponsorCount": 124
     },
     "diamond": [],
     "platinum": [
@@ -74,20 +74,11 @@
             "tier": "bronze-sponsor"
         },
         {
-            "name": "CrawlJobs",
-            "url": "https://www.crawljobs.com/",
-            "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
-            "monthlyDonation": 215,
-            "totalDonations": 1105,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
             "name": "Depot",
             "url": "https://depot.dev",
             "image": "https://images.opencollective.com/depot/39125a1/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 600,
+            "totalDonations": 800,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -96,7 +87,7 @@
             "url": "https://icons8.com/",
             "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
             "monthlyDonation": 200,
-            "totalDonations": 16000,
+            "totalDonations": 16200,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -166,7 +157,7 @@
             "url": "https://about.sourcegraph.com",
             "image": "https://images.opencollective.com/sourcegraph/f67b621/logo.png",
             "monthlyDonation": 50,
-            "totalDonations": 150,
+            "totalDonations": 200,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -355,20 +346,11 @@
             "tier": "backer"
         },
         {
-            "name": "CrawlJobs",
-            "url": "https://www.crawljobs.com/",
-            "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
-            "monthlyDonation": 6,
-            "totalDonations": 1105,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Essay Grader",
             "url": "https://essay-grader.ai",
             "image": "https://images.opencollective.com/essay-grader/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 5,
+            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -377,7 +359,7 @@
             "url": "https://about.gitea.com/",
             "image": "https://images.opencollective.com/gitea/bf35c2f/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -386,7 +368,7 @@
             "url": "https://privatejet.com",
             "image": "https://images.opencollective.com/privatejetcom/4965318/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 25,
+            "totalDonations": 30,
             "source": "opencollective",
             "tier": "backer"
         },
