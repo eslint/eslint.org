@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 88692,
-        "monthlyDonations": 7391,
-        "sponsorCount": 124
+        "annualDonations": 88812,
+        "monthlyDonations": 7401,
+        "sponsorCount": 125
     },
     "diamond": [],
     "platinum": [
@@ -220,6 +220,15 @@
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
             "totalDonations": 1015,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Say Yup",
+            "url": "https://www.sayyup.nl",
+            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 395,
             "source": "opencollective",
             "tier": "backer"
         },
