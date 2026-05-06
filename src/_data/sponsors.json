@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 88812,
-        "monthlyDonations": 7401,
-        "sponsorCount": 125
+        "annualDonations": 91464,
+        "monthlyDonations": 7622,
+        "sponsorCount": 127
     },
     "diamond": [],
     "platinum": [
@@ -71,6 +71,15 @@
             "url": "https://opensource.sap.com",
             "monthlyDonation": 250,
             "source": "github",
+            "tier": "bronze-sponsor"
+        },
+        {
+            "name": "CrawlJobs",
+            "url": "https://www.crawljobs.com/",
+            "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
+            "monthlyDonation": 215,
+            "totalDonations": 1326,
+            "source": "opencollective",
             "tier": "bronze-sponsor"
         },
         {
@@ -352,6 +361,15 @@
             "url": "https://posthog.com",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "CrawlJobs",
+            "url": "https://www.crawljobs.com/",
+            "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
+            "monthlyDonation": 6,
+            "totalDonations": 1326,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
