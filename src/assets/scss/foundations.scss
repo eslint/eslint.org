@@ -178,10 +178,6 @@ p:empty {
 	flex: none;
 	transition: all 0.2s linear;
 
-	@media (-ms-high-contrast: active) {
-		color: windowText;
-	}
-
 	@media (forced-colors: active) {
 		color: canvasText;
 	}
