@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 91464,
-        "monthlyDonations": 7622,
-        "sponsorCount": 127
+        "annualDonations": 91510.38981372,
+        "monthlyDonations": 7625.86581781,
+        "sponsorCount": 128
     },
     "diamond": [],
     "platinum": [
@@ -915,6 +915,15 @@
             "url": "https://www.eyepaq.com",
             "monthlyDonation": 5,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "The Teacher Fund",
+            "url": "https://theteacherfund.com",
+            "image": "https://github.com/teacherfund.png",
+            "monthlyDonation": 3.86581781,
+            "totalDonations": "03.444598820.761468630.758915560.757621171.330122255.523623911.398425541.392264561.215996731.215996732.375366541.161666522.172077065.111600253.86581781",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
