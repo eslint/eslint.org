@@ -445,6 +445,15 @@
             "tier": "backer"
         },
         {
+            "name": "PodobneStrony.pl",
+            "url": "https://podobnestrony.pl",
+            "image": "https://images.opencollective.com/podobnestrony/d86d3dc/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 55,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Monarch Air Group",
             "url": "https://monarchairgroup.com/",
             "image": "https://images.opencollective.com/private-jet-charter/3baa6e9/avatar.png",
@@ -925,14 +934,6 @@
             "name": "Roboflow",
             "image": "https://avatars.githubusercontent.com/u/53104118",
             "url": "https://roboflow.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Standard Resume Sponsors",
-            "image": "https://avatars.githubusercontent.com/u/65968828",
-            "url": "https://standardresume.co/tech",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
