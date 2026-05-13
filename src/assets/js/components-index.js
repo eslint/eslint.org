@@ -1,7 +1,6 @@
 (function () {
 	var index_trigger = document.getElementById("js-index-toggle"),
 		index = document.getElementById("js-index-list"),
-		body = document.getElementsByTagName("body")[0],
 		open = false;
 
 	if (matchMedia) {
@@ -30,6 +29,8 @@
 		index_trigger.removeAttribute("hidden");
 		index_trigger.setAttribute("aria-expanded", "false");
 		index.setAttribute("data-open", "false");
+		open = false;
+		index_trigger.removeEventListener("click", toggleindex, false);
 		index_trigger.addEventListener("click", toggleindex, false);
 	}
 })();
