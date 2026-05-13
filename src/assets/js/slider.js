@@ -295,7 +295,6 @@ var util = {
 					"click",
 					e => {
 						e.preventDefault();
-						e.preventDefault();
 						selectedDot = index;
 						currentIndex = selectedDot;
 						focusCurrentDot();

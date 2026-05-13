@@ -1,7 +1,6 @@
 (function () {
 	var nav_trigger = document.getElementById("nav-toggle"),
 		nav = document.getElementById("nav-list"),
-		body = document.getElementsByTagName("body")[0],
 		open = false;
 
 	if (matchMedia) {
@@ -16,11 +15,15 @@
 			nav.setAttribute("data-open", "false");
 			nav_trigger.removeAttribute("hidden");
 			nav_trigger.setAttribute("aria-expanded", "false");
+			open = false;
+			nav_trigger.removeEventListener("click", togglenav, false);
 			nav_trigger.addEventListener("click", togglenav, false);
 		} else {
 			nav.setAttribute("data-open", "true");
 			nav_trigger.setAttribute("hidden", "");
 			nav_trigger.setAttribute("aria-expanded", "true");
+			open = true;
+			nav_trigger.removeEventListener("click", togglenav, false);
 		}
 	}
 
@@ -47,7 +50,7 @@
 		logo_theme_buttons.removeAttribute("hidden");
 		logo_theme_btn.forEach(button => {
 			button.addEventListener("click", function () {
-				btn_theme = button.getAttribute("data-brand-theme");
+				const btn_theme = button.getAttribute("data-brand-theme");
 				unsetOtherButtons();
 				button.setAttribute("aria-pressed", "true");
 				logo_container.setAttribute("data-brand-theme", btn_theme);
@@ -56,10 +59,12 @@
 	}
 
 	function unsetOtherButtons() {
-		currentButton = document.querySelector(
+		const currentButton = document.querySelector(
 			'.brand__logo__colors__btn[aria-pressed="true"]',
 		);
-		currentButton.setAttribute("aria-pressed", "false");
+		if (currentButton) {
+			currentButton.setAttribute("aria-pressed", "false");
+		}
 	}
 })();
 
@@ -82,7 +87,7 @@
 
 			select.addEventListener("change", function () {
 				var selected = this.options[this.selectedIndex];
-				url = selected.getAttribute("data-url");
+				const url = selected.getAttribute("data-url");
 
 				window.location.href = url;
 			});
