@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 96359.75824296002,
-        "monthlyDonations": 8029.97985358,
+        "annualDonations": 96299.75824296002,
+        "monthlyDonations": 8024.97985358,
         "sponsorCount": 145
     },
     "diamond": [],
@@ -323,14 +323,6 @@
             "name": "Ryan Waskiewicz",
             "image": "https://avatars.githubusercontent.com/u/1930213",
             "url": "https://ducktyped.dev",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alejandro Celaya",
-            "image": "https://avatars.githubusercontent.com/u/2719332",
-            "url": "https://alejandrocelaya.blog",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -782,6 +774,14 @@
             "name": "Maarten Van Hoof",
             "image": "https://avatars.githubusercontent.com/u/2543633",
             "url": "https://mrtnvh.com",
+            "monthlyDonation": 5,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Alejandro Celaya",
+            "image": "https://avatars.githubusercontent.com/u/2719332",
+            "url": "https://alejandrocelaya.blog",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
