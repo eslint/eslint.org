@@ -1,12 +1,22 @@
 import { useImperativeHandle, useMemo, useRef } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { javascript, esLint } from "@codemirror/lang-javascript";
+import { foldGutter } from "@codemirror/language";
 import { linter } from "../utils/codemirror-linter-extension";
 import {
 	ESLintPlaygroundTheme,
 	ESLintPlaygroundHighlightStyle,
 } from "../utils/codemirror-theme";
 import "../scss/editor.scss";
+
+const foldGutterExtension = foldGutter({
+	closedText: "▸",
+	openText: "▾",
+});
+
+const basicSetup = {
+	foldGutter: false,
+};
 
 export default function CodeEditor({
 	codeValue,
@@ -27,6 +37,7 @@ export default function CodeEditor({
 						.jsx,
 				),
 			}),
+			foldGutterExtension,
 			ESLintPlaygroundTheme,
 			ESLintPlaygroundHighlightStyle,
 		],
@@ -69,6 +80,7 @@ export default function CodeEditor({
 			onChange={value => {
 				onUpdate(value);
 			}}
+			basicSetup={basicSetup}
 		/>
 	);
 }
