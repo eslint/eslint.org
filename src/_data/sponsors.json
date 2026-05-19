@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 96315.29030856001,
-        "monthlyDonations": 8026.2741923799995,
-        "sponsorCount": 147
+        "annualDonations": 93915.29030856001,
+        "monthlyDonations": 7826.2741923799995,
+        "sponsorCount": 146
     },
     "diamond": [],
     "platinum": [
@@ -138,14 +138,6 @@
             "name": "Citadel AI",
             "image": "https://avatars.githubusercontent.com/u/75781367",
             "url": "https://citadel.co.jp",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "TestMu AI Open Source Office (Formerly LambdaTest)",
-            "image": "https://avatars.githubusercontent.com/u/171592363",
-            "url": "https://www.lambdatest.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
