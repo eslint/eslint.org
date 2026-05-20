@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93915.29030856001,
-        "monthlyDonations": 7826.2741923799995,
-        "sponsorCount": 146
+        "annualDonations": 93917.41783284002,
+        "monthlyDonations": 7826.45148607,
+        "sponsorCount": 149
     },
     "diamond": [],
     "platinum": [
@@ -1166,6 +1166,15 @@
             "tier": "backer"
         },
         {
+            "name": "Aliaksei Yaletski",
+            "url": "https://tiendil.org",
+            "image": "https://github.com/tiendil.png",
+            "monthlyDonation": 0.14590271,
+            "totalDonations": "00.154469060.153432820.153776360.14590271",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "expressjs",
             "url": "https://expressjs.com/",
             "image": "https://github.com/expressjs.png",
@@ -1189,6 +1198,15 @@
             "image": "https://github.com/plurals.png",
             "monthlyDonation": 0.03456574,
             "totalDonations": "00.038991720.028657820.025241780.025257120.023524640.023524640.023662280.021764800.021629760.028625540.029385320.037444000.03456574",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "featuresmith",
+            "url": "https://featuresmith.com",
+            "image": "https://github.com/featuresmith.png",
+            "monthlyDonation": 0.0302687,
+            "totalDonations": "00.008599260.008111170.008111170.015796860.017839900.018686920.018460820.03026870",
             "source": "thanks.dev",
             "tier": "backer"
         },
@@ -1234,6 +1252,15 @@
             "image": "https://github.com/regexhq.png",
             "monthlyDonation": 0.00155536,
             "totalDonations": "00.001081720.001082380.001008130.001008130.001014030.000932680.000926890.001226730.001259290.001684870.00155536",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Adam Dąbrowski",
+            "url": "http://adamdabrowski.com",
+            "image": "https://github.com/dabrowski-adam.png",
+            "monthlyDonation": 0.00112228,
+            "totalDonations": "00.001198480.001253010.001253010.002023800.003731730.003721320.000194080.000194510.000026010.000027230.000014460.000014460.000014160.000012220.000833920.000876400.000858440.00112228",
             "source": "thanks.dev",
             "tier": "backer"
         },
