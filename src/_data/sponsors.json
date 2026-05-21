@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93917.41783284002,
-        "monthlyDonations": 7826.45148607,
-        "sponsorCount": 149
+        "annualDonations": 93857.41783284002,
+        "monthlyDonations": 7821.45148607,
+        "sponsorCount": 148
     },
     "diamond": [],
     "platinum": [
@@ -488,15 +488,6 @@
             "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
             "monthlyDonation": 5,
             "totalDonations": 111,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "David Passarelli",
-            "url": null,
-            "image": "https://images.opencollective.com/davidpassarelli/2734144/avatar.png",
-            "monthlyDonation": 5,
-            "totalDonations": 110,
             "source": "opencollective",
             "tier": "backer"
         },
