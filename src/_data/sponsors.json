@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93857.41783284002,
-        "monthlyDonations": 7821.45148607,
-        "sponsorCount": 148
+        "annualDonations": 93804.84399408003,
+        "monthlyDonations": 7817.07033284,
+        "sponsorCount": 152
     },
     "diamond": [],
     "platinum": [
@@ -818,14 +818,6 @@
             "tier": "backer"
         },
         {
-            "name": "Matan Kushner",
-            "image": "https://avatars.githubusercontent.com/u/4658208",
-            "url": "https://matchai.dev",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Taylor Johnson",
             "image": "https://avatars.githubusercontent.com/u/6319532",
             "url": "https://github.com/Johnsoct",
@@ -1130,6 +1122,15 @@
             "tier": "backer"
         },
         {
+            "name": "Amuzil",
+            "url": "http://amuzil.com",
+            "image": "https://github.com/amuzil.png",
+            "monthlyDonation": 0.34163041,
+            "totalDonations": "00.104836190.121308070.120212680.120212680.119249220.117561820.118681180.314521420.125877560.124754530.138897180.34163041",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "changesets",
             "url": "https://changesets.dev/",
             "image": "https://github.com/changesets.png",
@@ -1157,6 +1158,15 @@
             "tier": "backer"
         },
         {
+            "name": "Jongerenraad Zutphen",
+            "url": "https://jrzutphen.nl",
+            "image": "https://github.com/jrzutphen.png",
+            "monthlyDonation": 0.17571241,
+            "totalDonations": "00.052038360.060200120.059589040.059589040.060085200.059262750.059812820.165913370.063973390.063394520.070609440.17571241",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Aliaksei Yaletski",
             "url": "https://tiendil.org",
             "image": "https://github.com/tiendil.png",
@@ -1175,6 +1185,15 @@
             "tier": "backer"
         },
         {
+            "name": "Tryquetra",
+            "url": "https://bta.robsoncassiano.software/",
+            "image": "https://github.com/tryquetra.png",
+            "monthlyDonation": 0.0598686,
+            "totalDonations": "00.132332210.038620690.038355740.036965010.05986860",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Borderless",
             "url": "http://borderless.pub",
             "image": "https://github.com/borderless.png",
@@ -1189,6 +1208,15 @@
             "image": "https://github.com/plurals.png",
             "monthlyDonation": 0.03456574,
             "totalDonations": "00.038991720.028657820.025241780.025257120.023524640.023524640.023662280.021764800.021629760.028625540.029385320.037444000.03456574",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Robson Cassiano",
+            "url": "https://global.robsoncassiano.software/",
+            "image": "https://github.com/randintn.png",
+            "monthlyDonation": 0.03394279,
+            "totalDonations": "00.000005840.020431510.021932810.021631410.019555940.03394279",
             "source": "thanks.dev",
             "tier": "backer"
         },
@@ -1234,6 +1262,15 @@
             "image": "https://github.com/typestrong.png",
             "monthlyDonation": 0.01027067,
             "totalDonations": "00.003410240.015248400.001100760.001275070.001245090.001285740.001500770.001496250.001382360.001410270.001469810.012471970.009082980.007916030.007883620.007334610.007334610.007378550.006932930.007169710.000157850.000157850.000173170.009204770.009800120.009443780.01027067",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Simple Software LTDA",
+            "url": "https://eu.robsoncassiano.software",
+            "image": "https://github.com/simplesoftwareltda.png",
+            "monthlyDonation": 0.00769256,
+            "totalDonations": "00.018298370.007912250.005589630.004739800.00769256",
             "source": "thanks.dev",
             "tier": "backer"
         },
