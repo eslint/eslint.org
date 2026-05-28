@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93804.96794472003,
-        "monthlyDonations": 7817.08066206,
-        "sponsorCount": 155
+        "annualDonations": 93808.73261964004,
+        "monthlyDonations": 7817.39438497,
+        "sponsorCount": 156
     },
     "diamond": [],
     "platinum": [
@@ -1120,6 +1120,15 @@
             "image": "https://github.com/amuzil.png",
             "monthlyDonation": 0.34163041,
             "totalDonations": "00.104836190.121308070.120212680.120212680.119249220.117561820.118681180.314521420.125877560.124754530.138897180.34163041",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.31372291,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.391978300.367332360.004143800.005619350.003624580.004040850.007930090.003753120.003757120.149154970.185997620.239540820.245238010.31372291",
             "source": "thanks.dev",
             "tier": "backer"
         },
