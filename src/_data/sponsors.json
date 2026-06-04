@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 88260,
-        "monthlyDonations": 7355,
+        "annualDonations": 88320,
+        "monthlyDonations": 7360,
         "sponsorCount": 121
     },
     "diamond": [],
@@ -221,6 +221,15 @@
             "image": "https://images.opencollective.com/guest-7089e641/avatar.png",
             "monthlyDonation": 10,
             "totalDonations": 10,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Say Yup",
+            "url": "https://www.sayyup.nl",
+            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 405,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -624,14 +633,6 @@
             "name": "Bryan Mishkin",
             "image": "https://avatars.githubusercontent.com/u/698306",
             "url": "https://www.linkedin.com/in/bmish/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Aki Rodić",
-            "image": "https://avatars.githubusercontent.com/u/708984",
-            "url": "http://akirodic.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
