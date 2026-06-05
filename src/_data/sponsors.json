@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 88320,
-        "monthlyDonations": 7360,
-        "sponsorCount": 121
+        "annualDonations": 87840,
+        "monthlyDonations": 7320,
+        "sponsorCount": 120
     },
     "diamond": [],
     "platinum": [
@@ -168,15 +168,6 @@
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
             "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Yannick Croissant",
-            "url": "https://yannick.cr/",
-            "image": "https://images.opencollective.com/yannickcr/765f06f/avatar.png",
-            "monthlyDonation": 40,
-            "totalDonations": 6780,
-            "source": "opencollective",
             "tier": "backer"
         },
         {
