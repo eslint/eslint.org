@@ -23,7 +23,7 @@ export default function AlertsActionBar({
 	}
 
 	const handleDisableAll = () => {
-		const updatedOptions = { ...options };
+		const updatedOptions = { ...options, rules: { ...options.rules } };
 
 		messages.forEach(message => {
 			delete updatedOptions.rules[message.ruleId];
