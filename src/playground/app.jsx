@@ -315,9 +315,7 @@ const App = () => {
 	);
 
 	const filteredMessages = messages.filter(
-		message =>
-			!message.suggestions &&
-			(message.fix || options.rules[message.ruleId]),
+		message => message.fix || options.rules[message.ruleId],
 	);
 
 	return (

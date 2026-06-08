@@ -50,6 +50,21 @@ export default function Alert({
 		suggestions,
 	} = message;
 
+	const handleDisableRule = () => {
+		const newRules = { ...options.rules };
+		delete newRules[ruleId];
+
+		setRulesWithInvalidConfigs(
+			new Set(
+				[...rulesWithInvalidConfigs].filter(rule => rule !== ruleId),
+			),
+		);
+		onUpdate({
+			...options,
+			rules: newRules,
+		});
+	};
+
 	return (
 		<article aria-roledescription={type} className={`alert alert--${type}`}>
 			<div className="alert__content">
@@ -130,6 +145,14 @@ export default function Alert({
 							</g>
 						</svg>
 					</button>
+					{options.rules[ruleId] && (
+						<button
+							onClick={handleDisableRule}
+							className="alert__fix-btn suggestion-disable-btn"
+						>
+							Disable
+						</button>
+					)}
 					<ul
 						className="alert__fix-options"
 						role="menu"
@@ -163,22 +186,7 @@ export default function Alert({
 					)}
 					{options.rules[ruleId] && (
 						<button
-							onClick={() => {
-								const newRules = { ...options.rules };
-								delete newRules[ruleId];
-
-								setRulesWithInvalidConfigs(
-									new Set(
-										[...rulesWithInvalidConfigs].filter(
-											rule => rule !== ruleId,
-										),
-									),
-								);
-								onUpdate({
-									...options,
-									rules: newRules,
-								});
-							}}
+							onClick={handleDisableRule}
 							className="alert__fix-btn"
 						>
 							Disable

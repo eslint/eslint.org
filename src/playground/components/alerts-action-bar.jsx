@@ -7,7 +7,7 @@ export default function AlertsActionBar({
 }) {
 	const hasFixableMessages = messages.some(message => message.fix);
 	const hasDisableableMessages = messages.some(
-		message => !message.suggestions && options.rules[message.ruleId],
+		message => options.rules[message.ruleId],
 	);
 
 	let description = "";
@@ -26,14 +26,12 @@ export default function AlertsActionBar({
 		const updatedOptions = { ...options };
 
 		messages.forEach(message => {
-			if (!message.suggestions) {
-				delete updatedOptions.rules[message.ruleId];
-				setRulesWithInvalidConfigs(prev => {
-					const updatedSet = new Set(prev);
-					updatedSet.delete(message.ruleId);
-					return updatedSet;
-				});
-			}
+			delete updatedOptions.rules[message.ruleId];
+			setRulesWithInvalidConfigs(prev => {
+				const updatedSet = new Set(prev);
+				updatedSet.delete(message.ruleId);
+				return updatedSet;
+			});
 		});
 		onUpdate(updatedOptions);
 	};
