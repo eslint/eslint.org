@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AFxtd",
+        "name": "Cezary Knapik",
+        "image": "https://avatars.githubusercontent.com/u/24892095",
+        "url": "https://knapik.it",
+        "amount": 1,
+        "date": "2026-06-09T19:25:45Z",
+        "source": "github"
+    },
+    {
         "id": "or_UwydSoPcwtRdd0WUJNvWa",
         "name": "Guest",
         "url": null,

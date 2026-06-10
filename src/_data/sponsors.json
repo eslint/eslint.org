@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 92568.95512788,
-        "monthlyDonations": 7714.07959399,
-        "sponsorCount": 125
+        "annualDonations": 92448.95512788,
+        "monthlyDonations": 7704.07959399,
+        "sponsorCount": 124
     },
     "diamond": [],
     "platinum": [
@@ -230,15 +230,6 @@
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
             "totalDonations": 1035,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Guest",
-            "url": null,
-            "image": "https://images.opencollective.com/guest-7089e641/avatar.png",
-            "monthlyDonation": 10,
-            "totalDonations": 10,
             "source": "opencollective",
             "tier": "backer"
         },
