@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 92448.95512788,
-        "monthlyDonations": 7704.07959399,
-        "sponsorCount": 124
+        "annualDonations": 92388.95512788,
+        "monthlyDonations": 7699.07959399,
+        "sponsorCount": 123
     },
     "diamond": [],
     "platinum": [
@@ -690,14 +690,6 @@
             "name": "Charles Severance",
             "image": "https://avatars.githubusercontent.com/u/1197222",
             "url": "http://www.dr-chuck.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Philippe Serhal",
-            "image": "https://avatars.githubusercontent.com/u/1377702",
-            "url": "https://philippeserhal.com/",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
