@@ -314,10 +314,10 @@ const App = () => {
 		new Set([]),
 	);
 
-	const hasMultipleFixMessages = messages.filter(message => message.fix).length > 1;
-	const hasMultipleDisableMessages = messages.filter(
-		message => options.rules[message.ruleId],
-	).length > 1;
+	const hasMultipleFixMessages =
+		messages.filter(message => message.fix).length > 1;
+	const hasMultipleDisableMessages =
+		messages.filter(message => options.rules[message.ruleId]).length > 1;
 
 	return (
 		<div className="playground-wrapper">
@@ -432,7 +432,8 @@ const App = () => {
 								text={validationError.message}
 							/>
 						)}
-						{(hasMultipleFixMessages || hasMultipleDisableMessages) && (
+						{(hasMultipleFixMessages ||
+							hasMultipleDisableMessages) && (
 							<AlertsActionBar
 								messages={messages}
 								options={options}
@@ -442,7 +443,9 @@ const App = () => {
 								onFixAll={onFixAll}
 								onUpdate={updateOptions}
 								hasMultipleFixMessages={hasMultipleFixMessages}
-								hasMultipleDisableMessages={hasMultipleDisableMessages}
+								hasMultipleDisableMessages={
+									hasMultipleDisableMessages
+								}
 							/>
 						)}
 						{messages.length > 0 &&
