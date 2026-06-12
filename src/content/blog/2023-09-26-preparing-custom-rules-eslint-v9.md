@@ -15,20 +15,58 @@ When ESLint v9.0.0 is released, it will ship with several breaking changes for r
 
 ## Automatically update your rules
 
-Before explaining all of the changes introduced in ESLint v9.0.0, it's helpful to know that most of the changes described in this post can be automatically made using the [`eslint-transforms`](https://www.npmjs.com/package/eslint-transforms) utility. To use the utility, first install it and then run the `v9-rule-migration` transform, like this:
+Before explaining all of the changes introduced in ESLint v9.0.0, it's helpful to know that most of the changes described in this post can be automated using the official [`@eslint/v8-to-v9-custom-rules`](https://app.codemod.com/registry/@eslint/v8-to-v9-custom-rules) codemod from the [eslint/codemods](https://github.com/eslint/codemods) repository.
+
+Run the codemod against your rule files or directories:
 
 ```shell
-# install the utility
-npm install eslint-transforms -g
-
-# apply the transform to one file
-eslint-transforms v9-rule-migration rule.js
-
-# apply the transform to all files in a directory
-eslint-transforms v9-rule-migration rules/
+npx codemod @eslint/v8-to-v9-custom-rules
 ```
 
-Not every change can be addressed with `eslint-tranforms`, though, so below is a complete list of the API changes and recommended ways to address them.
+**Important:** Run this codemod only in directories containing ESLint rule files. It may incorrectly transform other JavaScript files that export functions.
+
+The codemod supports both CommonJS (`module.exports = function (context) { ... }`) and ES Modules (`export default function (context) { ... }`) export styles.
+
+### What the codemod handles
+
+The codemod performs a comprehensive migration of custom ESLint rules from v8 to v9, including:
+
+* **Removed `context` methods** — migrates calls to `sourceCode` equivalents (for example, `context.getSource()` → `sourceCode.getText()`)
+* **Removed `sourceCode.getComments()`** — converts to a combination of `getCommentsBefore()`, `getCommentsInside()`, and `getCommentsAfter()`
+* **Removed `CodePath#currentSegments`** — adds code path tracking logic
+* **Function-style rules are no longer supported** — converts to the object format with `meta` and `create`
+
+The codemod also detects fixable rules and adds `fixable: "code"` to `meta`.
+
+Not every change can be fully automated, though. After running the codemod, review your migrated files and consult the sections below for anything that still needs manual attention. For a complete list of breaking changes, see the [ESLint v9 migration guide](/docs/latest/use/migrate-to-9.0.0).
+
+### Manual steps after running the codemod
+
+1. **Review TODO comments.** Search for `TODO` in your migrated files and address each one:
+
+    | TODO comment | Action required |
+    | --- | --- |
+    | `// TODO: Define schema - this rule uses context.options` | Define a proper JSON schema for your rule's options |
+    | `/* TODO: new node param */` | Add the `node` parameter to `getAncestors(node)` or `getScope(node)` |
+    | `/* TODO: new name, node params */` | Update `markVariableAsUsed(name, node)` with the correct parameters |
+
+2. **Fix schemas for rules using options.** If your rule uses `context.options`, you must define the schema manually. The codemod may leave a placeholder like `schema: [] // TODO: Define schema - this rule uses context.options` that you need to replace with a valid JSON schema.
+
+3. **Verify method signature changes.** The codemod replaces these methods automatically, but you need to confirm the `node` parameter is correct:
+
+    | Removed on `context` | Replacement on `SourceCode` |
+    | --- | --- |
+    | `context.getAncestors()` | `sourceCode.getAncestors(node)` |
+    | `context.getScope()` | `sourceCode.getScope(node)` |
+    | `context.markVariableAsUsed(name)` | `sourceCode.markVariableAsUsed(name, node)` |
+    | `context.getDeclaredVariables(node)` | `sourceCode.getDeclaredVariables(node)` |
+    | `context.getSource(node)` | `sourceCode.getText(node)` |
+    | `context.getSourceLines()` | `sourceCode.getLines()` |
+    | `context.getAllComments()` | `sourceCode.getCommentsBefore()`, `getCommentsInside()`, or `getCommentsAfter()` |
+
+4. **Test your custom rules** by running your rule test suite (for example, `npm test`).
+
+Below is a complete list of the API changes and recommended ways to address them manually if you prefer not to use the codemod.
 
 ## `context` methods becoming properties
 
@@ -41,7 +79,7 @@ As we look towards the API we'd like rules for other languages to have, we decid
 |`context.getPhysicalFilename()`|`context.physicalFilename`|
 |`context.getCwd()`|`context.cwd`|
 
-We are deprecating the methods in favor of the properties (added in v8.40.0). These methods will be removed in v10.0.0 (not v9.0.0) as they are not blocking language plugins work. Here's an example that ensures the correct value is used:
+We are deprecating the methods in favor of the properties (added in v8.40.0). These methods will be removed in v10.0.0 (not v9.0.0) as they are not blocking language plugins work. The `@eslint/v8-to-v9-custom-rules` codemod does not cover these changes because they are not removed until ESLint v10.0.0. Here's an example that ensures the correct value is used:
 
 ```js
 module.exports = {
@@ -93,7 +131,7 @@ All of this is to say that we are deprecating all of the code-related methods on
 |`context.getTokensBetween()`|`sourceCode.getTokensBetween()`|
 |`context.parserServices`|`sourceCode.parserServices`|
 
-All of the `context` methods listed in this table will be removed in ESLint v9.0.0, and the replacement methods on `SourceCode` have already been in place for six years, so you should have no problem switching to the new methods. (Yes, we deprecated these and then completely forgot to remove them.)
+All of the `context` methods listed in this table will be removed in ESLint v9.0.0, and the replacement methods on `SourceCode` have already been in place for six years, so you should have no problem switching to the new methods. (Yes, we deprecated these and then completely forgot to remove them.) The `@eslint/v8-to-v9-custom-rules` codemod migrates these method calls automatically.
 
 In addition to the methods in this table, there are several other methods that are also moving but required different method signatures.
 
@@ -101,7 +139,7 @@ In addition to the methods in this table, there are several other methods that a
 
 The `context.getScope()` method is used to retrieve a scope object for the currently-traversed node. This method was always a bit strange because it uses ESLint's internal traversal state to determine which node to use as a reference point to retrieve a scope object. That meant it was both limited, because you couldn't change the reference node, and confusing, because it wasn't always clear what node was being referenced. So, we are deprecating this method and will remove it in ESLint v9.0.0.
 
-We have introduced a new `SourceCode#getScope(node)` method that requires you to pass in the reference node. This method was added in ESLint v8.37.0 so it has already been in place for the last six months. For best compatibility, you can check for the presence of this new method to determine which one to use:
+We have introduced a new `SourceCode#getScope(node)` method that requires you to pass in the reference node. This method was added in ESLint v8.37.0 so it has already been in place for the last six months. The codemod migrates `context.getScope()` calls but leaves a TODO comment where you need to verify the `node` parameter. For best compatibility, you can check for the presence of this new method to determine which one to use:
 
 ```js
 module.exports = {
@@ -124,7 +162,7 @@ module.exports = {
 
 ### `context.getAncestors()`
 
-The `context.getAncestors()` method is another method on `context` that uses the internal traversal state to return the ancestors of the currently visited node. Also similar to `context.getScope()`, this meant the method was both limited and unclear. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#getAncestors(node)` (added in v8.38.0), which requires you to pass in the node whose ancestors you want to retrieve. Here is an example that checks for the correct method to use:
+The `context.getAncestors()` method is another method on `context` that uses the internal traversal state to return the ancestors of the currently visited node. Also similar to `context.getScope()`, this meant the method was both limited and unclear. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#getAncestors(node)` (added in v8.38.0), which requires you to pass in the node whose ancestors you want to retrieve. The codemod migrates `context.getAncestors()` calls but leaves a TODO comment where you need to verify the `node` parameter. Here is an example that checks for the correct method to use:
 
 ```js
 module.exports = {
@@ -147,7 +185,7 @@ module.exports = {
 
 ### `context.getDeclaredVariables(node)`
 
-The `context.getDeclaredVariables(node)` returns all variables declared by the given node (such as in a `let` statement). We are deprecating this method and will remove it in v9.0.0. We are replacing it with `SourceCode#getDeclaredVariables(node)` (added in v8.38.0), which works exactly the same way. Here is an example that checks for the correct method to use:
+The `context.getDeclaredVariables(node)` returns all variables declared by the given node (such as in a `let` statement). We are deprecating this method and will remove it in v9.0.0. We are replacing it with `SourceCode#getDeclaredVariables(node)` (added in v8.38.0), which works exactly the same way. The codemod migrates this call automatically. Here is an example that checks for the correct method to use:
 
 ```js
 module.exports = {
@@ -170,7 +208,7 @@ module.exports = {
 
 ### `context.markVariableAsUsed(name)`
 
-The `context.markVariableAsUsed(name)` method finds a variable with the given name in the current scope and marks it as used so it won't cause a violation in the `no-unused-vars` rule. This method has quite a bit of magic going on behind the scenes, as it uses the currently visited node in the traversal to retrieve a scope and then searches that scope for a variable with the given name. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#markVariableAsUsed(name, node)` (added in v8.39.0) and requires you to pass in the reference node for the scope to search. (The scope ends up being the same as calling `SourceCode#getScope(node)`.) Here is an example that checks for the correct method to use:
+The `context.markVariableAsUsed(name)` method finds a variable with the given name in the current scope and marks it as used so it won't cause a violation in the `no-unused-vars` rule. This method has quite a bit of magic going on behind the scenes, as it uses the currently visited node in the traversal to retrieve a scope and then searches that scope for a variable with the given name. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#markVariableAsUsed(name, node)` (added in v8.39.0) and requires you to pass in the reference node for the scope to search. (The scope ends up being the same as calling `SourceCode#getScope(node)`.) The codemod migrates `context.markVariableAsUsed()` calls but leaves a TODO comment where you need to verify the `name` and `node` parameters. Here is an example that checks for the correct method to use:
 
 ```js
 module.exports = {
@@ -197,7 +235,7 @@ module.exports = {
 
 A little-known ability of ESLint rules is [analyzing code paths](https://eslint.org/docs/latest/extend/code-path-analysis). ESLint core rules use code path analysis in multiple rules to validate not just what the code looks like but also how the logic flows. This is done through accessing `CodePath` and `CodePathSegment` objects. In doing our research for language plugins, we discovered that `CodePath#currentSegments` actually represents another traversal state that is exposed in rules. Specifically, `CodePath#currentSegments` is an array that grows and shrinks throughout traversal as you encounter different code path segments. Because code path analysis is unique to JavaScript, we can't have the core tracking this traversal state any longer. After evaluating several options, we decided that having an object that represented both code path data and traversal state was undesirable, so we are deprecating `CodePath#currentSegments` and will remove it in v9.0.0. We needed to add two new event handlers, `onUnreachableCodePathSegmentStart` and `onUnreachableCodePathSegmentEnd`, to allow access to the same data (these were added in v8.49.0).
 
-To recreate this data, you'll need to track the traversal state manually, which can be accomplished with the following code:
+To recreate this data, you'll need to track the traversal state manually, which can be accomplished with the following code. The `@eslint/v8-to-v9-custom-rules` codemod can add this tracking logic for you, but you should verify the result matches your rule's needs:
 
 ```js
 module.exports = {
@@ -253,12 +291,10 @@ We have already made this change in all of the ESLint core rules to validate tha
 
 ## `context` properties: `parserOptions` and `parserPath` being removed
 
-Additionally, the `context.parserOptions` and `context.parserPath` properties are deprecated and will be removed in v10.0.0 (not v9.0.0). There is a new `context.languageOptions` property that allows rules to access similar data as `context.parserOptions`. In general, though, rules should not depend on information either in `context.parserOptions` or `context.languageOptions` to determine how they should behave.
+Additionally, the `context.parserOptions` and `context.parserPath` properties are deprecated and will be removed in v10.0.0 (not v9.0.0). The `@eslint/v8-to-v9-custom-rules` codemod does not cover these changes because they are not removed until ESLint v10.0.0. There is a new `context.languageOptions` property that allows rules to access similar data as `context.parserOptions`. In general, though, rules should not depend on information either in `context.parserOptions` or `context.languageOptions` to determine how they should behave.
 
 The `context.parserPath` property was intended to allow rules to retrieve an instance of the parser that ESLint is using via `require()`. However, the new flat config system does not know the location of the parser module to load, so we are unable to provide this data. Further, because the JavaScript ecosystem is moving to ESM, any value returned from this property will not work with `import()`. This property was added early on in ESLint's life and we generally recommend that rules not try to further parse JavaScript code inside of them. If necessary, you can use `context.languageOptions.parser` to access the parser ESLint is using.
 
 ## Conclusion
 
 ESLint has been around for ten years, and in that time, we have collected some API cruft that we need to clean up in order to prepare ESLint for the next ten years. The API changes described in this post are a necessary step towards enabling ESLint to lint non-JavaScript languages and to better separate core functionality from language-specific functionality. The team spent a lot of time planning this transition point in ESLint's lifecycle and we hope that these changes are just a small inconvenience for the ecosystem. If you need help with, or have questions about, any of what was discussed in this post, please [start a discussion](https://github.com/eslint/eslint/discussions/new) or stop by [Discord](https://eslint.org/chat) to talk with the team.
-
-**Update (2024-06-06):** Added section on `eslint-tranforms`.

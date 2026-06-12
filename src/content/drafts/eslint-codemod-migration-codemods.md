@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ESLint partners with Codemod on official migration codemods
-teaser: "ESLint and Codemod are partnering to deliver official codemods for upgrading from ESLint v8 to v9 and v9 to v10."
+teaser: "ESLint and Codemod are partnering to deliver official codemods for ESLint migrations."
 tags:
   - Migration
   - Codemods
@@ -12,21 +12,25 @@ categories:
   - Announcements
 ---
 
-We are excited to announce a partnership between ESLint and [Codemod](https://codemod.com), an [OpenJS Foundation](https://openjsf.org) partner, to create a better migration experience for ESLint users, starting with the ESLint v8 to v9 and v9 to v10 migrations. All official ESLint codemods can be found in the [eslint/codemods](https://github.com/eslint/codemods) repo, and through the [Codemod Registry](https://codemod.com/registry).
+We are excited to announce a partnership between ESLint and [Codemod](https://codemod.com), an [OpenJS Foundation](https://openjsf.org) partner, to create a better migration experience for ESLint users, starting with the ESLint v8 to v9 and v9 to v10 migrations. All official ESLint codemods can be found in the [eslint/codemods](https://github.com/eslint/codemods) repo, and through the [Codemod Registry](https://codemod.link/eslint).
 
 ## ESLint v8 to v9 migration
 
-We've released two codemods: one to help upgrade ESLint v8 to v9, and another for ESLint custom rules:
+For v8 to v9 migration, we've released two codemods: one to help upgrade ESLint config, and another for the custom rules:
 
 ```shell
 npx codemod @eslint/v8-to-v9-config
 ```
 
+This codemod automatically migrates ESLint v8 configuration files to ESLint v9 flat config format, updating config structure, rule schemas, plugins, ignores, and deprecated JSDoc rules while preserving existing behavior as much as possible. learn more [here](https://app.codemod.com/registry/@eslint/v8-to-v9-config).
+
 ```shell
 npx codemod @eslint/v8-to-v9-custom-rules
 ```
 
-For more details about what's new in v9 and how to adopt the new features, refer to the [official ESLint upgrade guide](/docs/latest/use/migrate-to-9.0.0), and the [blog post for v9 custom rules](/blog/2023/09/preparing-custom-rules-eslint-v9).
+This codemod migrates custom ESLint rules from v8 to v9 by converting function-style rules to the new object format and updating deprecated rule APIs to their ESLint v9-compatible equivalents. Learn more [here](https://app.codemod.com/registry/@eslint/v8-to-v9-custom-rules).
+
+For more details about what's new in v9 and how to adopt the new features, refer to the [official ESLint upgrade guide](https://eslint.org/docs/latest/use/migrate-to-9.0.0), and the [blog post for v9 custom rules](https://eslint.org/blog/2023/09/preparing-custom-rules-eslint-v9/).
 
 ## ESLint v9 to v10 migration
 
@@ -43,7 +47,7 @@ This recipe includes four individual codemods, each of which can also be run ind
 * `@eslint/v9-to-v10-ruletester`: Cleanup RuleTester test cases
 * `@eslint/v9-to-v10-linter-api`: Fix Linter/ESLint API usage
 
-For more details about what's new in v10 and how to adopt the new features, refer to the [official ESLint upgrade guide](/docs/latest/use/migrate-to-10.0.0).
+Check out [Codemod Registry](https://codemod.link/eslint) to learn more about this recipe and its codemods. For more details about what's new in v10 and how to adopt the new features, refer to the [official ESLint upgrade guide](/docs/latest/use/migrate-to-10.0.0).
 
 ### About Codemod
 
