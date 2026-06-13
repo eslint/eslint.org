@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ESLint partners with Codemod on official migration codemods
+title: Automating ESLint migrations with Codemod
 teaser: "ESLint and Codemod are partnering to deliver official codemods for ESLint migrations."
 tags:
   - Migration
