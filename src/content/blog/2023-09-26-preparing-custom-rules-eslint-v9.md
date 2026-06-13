@@ -62,7 +62,7 @@ Not every change can be fully automated, though. After running the codemod, revi
     | `context.getDeclaredVariables(node)` | `sourceCode.getDeclaredVariables(node)` |
     | `context.getSource(node)` | `sourceCode.getText(node)` |
     | `context.getSourceLines()` | `sourceCode.getLines()` |
-    | `context.getAllComments()` | `sourceCode.getCommentsBefore()`, `getCommentsInside()`, or `getCommentsAfter()` |
+    | `context.getComments()` | `sourceCode.getCommentsBefore()`, `getCommentsInside()`, or `getCommentsAfter()` |
 
 4. **Test your custom rules** by running your rule test suite (for example, `npm test`).
 
