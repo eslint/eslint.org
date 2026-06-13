@@ -11,6 +11,14 @@ categories:
   - Announcements
 ---
 
+**Update:** ESLint has introduced a new codemod for migrating ESLint configuration. You can run it with:
+
+```shell
+npx codemod @eslint/v8-to-v9-config
+```
+
+The codemod automatically migrates ESLint v8 configuration files to ESLint v9 flat config format, updating config structure, rule schemas, plugins, ignores, and deprecated JSDoc rules while preserving existing behavior as much as possible. Learn more in the [eslint/codemods](https://github.com/eslint/codemods) repository and on the [Codemod Registry](https://app.codemod.com/registry/@eslint/v8-to-v9-config).
+
 We've heard you: One of the biggest reasons ESLint users haven't upgraded to ESLint v9.x is migrating a configuration file seems difficult and complicated. Some plugins support flat config and the ESLint v9.x rule APIs and some don't. Sometimes you need to use [`FlatCompat`](https://github.com/eslint/eslintrc?tab=readme-ov-file#usage-esm) and sometimes you need to use the [compatibility utilities](https://eslint.org/blog/2024/05/eslint-compatibility-utilities/). While we cover as much as we can in the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide), it can take time to walk through your configuration and make the necessary changes.
 
 That's why we're excited to announce the release of the [ESLint Configuration Migrator](https://npmjs.com/package/@eslint/migrate-config). This utility is designed to translate `.eslintrc.*` files into `eslint.config.js` files, including:
