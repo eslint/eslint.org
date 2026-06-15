@@ -25,18 +25,18 @@ npx codemod @eslint/v8-to-v9-custom-rules
 
 **Important:** Run this codemod only in directories containing ESLint rule files. It may incorrectly transform other JavaScript files that export functions.
 
-The codemod supports both CommonJS (`module.exports = function (context) { ... }`) and ES Modules (`export default function (context) { ... }`) export styles.
+The codemod supports CommonJS (`module.exports = function (context) { ... }`), ES Modules (`export default function (context) { ... }`), indirect exports (`function rule() {}` and `module.exports = rule`), higher-order wrappers such as `wrapRule(function (context) { ... })`, and rules created with `@typescript-eslint/utils` `RuleCreator`.
 
 ### What the codemod handles
 
 The codemod performs a comprehensive migration of custom ESLint rules from v8 to v9, including:
 
 * **Removed `context` methods** — migrates calls to `sourceCode` equivalents (for example, `context.getSource()` → `sourceCode.getText()`)
-* **Removed `sourceCode.getComments()`** — converts to a combination of `getCommentsBefore()`, `getCommentsInside()`, and `getCommentsAfter()`
+* **Removed `context.getComments()`** — converts node-specific calls to `getCommentsBefore/Inside/After(node)`
 * **Removed `CodePath#currentSegments`** — adds code path tracking logic
 * **Function-style rules are no longer supported** — converts to the object format with `meta` and `create`
 
-The codemod also detects fixable rules and adds `fixable: "code"` to `meta`.
+The codemod also moves `module.exports.schema` into `meta`, converts old-style `context.report(node, message)` calls to object format, detects fixable rules, and adds `fixable: "code"` to `meta`.
 
 Not every change can be fully automated, though. After running the codemod, review your migrated files and consult the sections below for anything that still needs manual attention. For a complete list of breaking changes, see the [ESLint v9 migration guide](/docs/latest/use/migrate-to-9.0.0).
 
@@ -47,24 +47,19 @@ Not every change can be fully automated, though. After running the codemod, revi
     | TODO comment | Action required |
     | --- | --- |
     | `// TODO: Define schema - this rule uses context.options` | Define a proper JSON schema for your rule's options |
-    | `/* TODO: new node param */` | Add the `node` parameter to `getAncestors(node)` or `getScope(node)` |
-    | `/* TODO: new name, node params */` | Update `markVariableAsUsed(name, node)` with the correct parameters |
 
 2. **Fix schemas for rules using options.** If your rule uses `context.options`, you must define the schema manually. The codemod may leave a placeholder like `schema: [] // TODO: Define schema - this rule uses context.options` that you need to replace with a valid JSON schema.
 
-3. **Verify method signature changes.** The codemod replaces these methods automatically, but you need to confirm the `node` parameter is correct:
+3. **Review comment method changes.** `getCommentsBefore()`, `getCommentsInside()`, and `getCommentsAfter()` require a `node` argument, and no-argument `context.getComments()` calls should use `sourceCode.getAllComments()`:
 
     | Removed on `context` | Replacement on `SourceCode` |
     | --- | --- |
-    | `context.getAncestors()` | `sourceCode.getAncestors(node)` |
-    | `context.getScope()` | `sourceCode.getScope(node)` |
-    | `context.markVariableAsUsed(name)` | `sourceCode.markVariableAsUsed(name, node)` |
-    | `context.getDeclaredVariables(node)` | `sourceCode.getDeclaredVariables(node)` |
-    | `context.getSource(node)` | `sourceCode.getText(node)` |
-    | `context.getSourceLines()` | `sourceCode.getLines()` |
-    | `context.getComments()` | `sourceCode.getCommentsBefore()`, `getCommentsInside()`, or `getCommentsAfter()` |
+    | `context.getAllComments()` | `sourceCode.getAllComments()` |
+    | `context.getComments(node)` | `sourceCode.getCommentsBefore/Inside/After(node)` |
 
-4. **Test your custom rules** by running your rule test suite (for example, `npm test`).
+4. **Review skipped higher-order wrappers.** If a wrapper passes configuration as the second argument (for example, `wrapRule(rule, config)`), confirm whether any manual migration is needed.
+
+5. **Test your custom rules** by running your rule test suite (for example, `npm test`).
 
 Below is a complete list of the API changes and recommended ways to address them manually if you prefer not to use the codemod.
 
@@ -79,7 +74,7 @@ As we look towards the API we'd like rules for other languages to have, we decid
 |`context.getPhysicalFilename()`|`context.physicalFilename`|
 |`context.getCwd()`|`context.cwd`|
 
-We are deprecating the methods in favor of the properties (added in v8.40.0). These methods will be removed in v10.0.0 (not v9.0.0) as they are not blocking language plugins work. The `@eslint/v8-to-v9-custom-rules` codemod does not cover these changes because they are not removed until ESLint v10.0.0. Here's an example that ensures the correct value is used:
+We are deprecating the methods in favor of the properties (added in v8.40.0). These methods will be removed in v10.0.0 (not v9.0.0) as they are not blocking language plugins work. The `@eslint/v8-to-v9-custom-rules` codemod handles these changes with fallbacks. Here's an example that ensures the correct value is used:
 
 ```js
 module.exports = {
@@ -113,7 +108,7 @@ All of this is to say that we are deprecating all of the code-related methods on
 |`context.getSourceLines()`|`sourceCode.getLines()`|
 |`context.getAllComments()`|`sourceCode.getAllComments()`|
 |`context.getNodeByRangeIndex()`|`sourceCode.getNodeByRangeIndex()`|
-|`context.getComments()`|`sourceCode.getCommentsBefore()`, `sourceCode.getCommentsAfter()`, `sourceCode.getCommentsInside()`|
+|`context.getComments(node)`|`sourceCode.getCommentsBefore(node)`, `sourceCode.getCommentsAfter(node)`, `sourceCode.getCommentsInside(node)`|
 |`context.getCommentsBefore()`|`sourceCode.getCommentsBefore()`|
 |`context.getCommentsAfter()`|`sourceCode.getCommentsAfter()`|
 |`context.getCommentsInside()`|`sourceCode.getCommentsInside()`|
@@ -139,7 +134,7 @@ In addition to the methods in this table, there are several other methods that a
 
 The `context.getScope()` method is used to retrieve a scope object for the currently-traversed node. This method was always a bit strange because it uses ESLint's internal traversal state to determine which node to use as a reference point to retrieve a scope object. That meant it was both limited, because you couldn't change the reference node, and confusing, because it wasn't always clear what node was being referenced. So, we are deprecating this method and will remove it in ESLint v9.0.0.
 
-We have introduced a new `SourceCode#getScope(node)` method that requires you to pass in the reference node. This method was added in ESLint v8.37.0 so it has already been in place for the last six months. The codemod migrates `context.getScope()` calls but leaves a TODO comment where you need to verify the `node` parameter. For best compatibility, you can check for the presence of this new method to determine which one to use:
+We have introduced a new `SourceCode#getScope(node)` method that requires you to pass in the reference node. This method was added in ESLint v8.37.0 so it has already been in place for the last six months. The codemod migrates `context.getScope()` calls directly to `sourceCode.getScope(node)`. For best compatibility, you can check for the presence of this new method to determine which one to use:
 
 ```js
 module.exports = {
@@ -162,7 +157,7 @@ module.exports = {
 
 ### `context.getAncestors()`
 
-The `context.getAncestors()` method is another method on `context` that uses the internal traversal state to return the ancestors of the currently visited node. Also similar to `context.getScope()`, this meant the method was both limited and unclear. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#getAncestors(node)` (added in v8.38.0), which requires you to pass in the node whose ancestors you want to retrieve. The codemod migrates `context.getAncestors()` calls but leaves a TODO comment where you need to verify the `node` parameter. Here is an example that checks for the correct method to use:
+The `context.getAncestors()` method is another method on `context` that uses the internal traversal state to return the ancestors of the currently visited node. Also similar to `context.getScope()`, this meant the method was both limited and unclear. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#getAncestors(node)` (added in v8.38.0), which requires you to pass in the node whose ancestors you want to retrieve. The codemod migrates `context.getAncestors()` calls with a compatibility fallback. Here is an example that checks for the correct method to use:
 
 ```js
 module.exports = {
@@ -208,7 +203,7 @@ module.exports = {
 
 ### `context.markVariableAsUsed(name)`
 
-The `context.markVariableAsUsed(name)` method finds a variable with the given name in the current scope and marks it as used so it won't cause a violation in the `no-unused-vars` rule. This method has quite a bit of magic going on behind the scenes, as it uses the currently visited node in the traversal to retrieve a scope and then searches that scope for a variable with the given name. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#markVariableAsUsed(name, node)` (added in v8.39.0) and requires you to pass in the reference node for the scope to search. (The scope ends up being the same as calling `SourceCode#getScope(node)`.) The codemod migrates `context.markVariableAsUsed()` calls but leaves a TODO comment where you need to verify the `name` and `node` parameters. Here is an example that checks for the correct method to use:
+The `context.markVariableAsUsed(name)` method finds a variable with the given name in the current scope and marks it as used so it won't cause a violation in the `no-unused-vars` rule. This method has quite a bit of magic going on behind the scenes, as it uses the currently visited node in the traversal to retrieve a scope and then searches that scope for a variable with the given name. We are deprecating this method and will remove it in v9.0.0. The replacement method is `SourceCode#markVariableAsUsed(name, node)` (added in v8.39.0) and requires you to pass in the reference node for the scope to search. (The scope ends up being the same as calling `SourceCode#getScope(node)`.) The codemod migrates `context.markVariableAsUsed()` calls automatically. Here is an example that checks for the correct method to use:
 
 ```js
 module.exports = {
@@ -245,10 +240,10 @@ module.exports = {
     create(context) {
 
         // tracks the code path we are currently in
-        let currentCodePath;
+        let newCurrentCodePath;
 
         // tracks the segments we've traversed in the current code path
-        let currentSegments;
+        let newCurrentSegments;
 
         // tracks all current segments for all open paths
         const allCurrentSegments = [];
@@ -256,30 +251,30 @@ module.exports = {
         return {
 
             onCodePathStart(codePath) {
-                currentCodePath = codePath;
-                allCurrentSegments.push(currentSegments);
-                currentSegments = new Set();
+                newCurrentCodePath = codePath;
+                allCurrentSegments.push(newCurrentSegments);
+                newCurrentSegments = new Set();
             },
 
             onCodePathEnd(codePath) {
-                currentCodePath = codePath.upper;
-                currentSegments = allCurrentSegments.pop();
+                newCurrentCodePath = codePath.upper;
+                newCurrentSegments = allCurrentSegments.pop();
             },
 
             onCodePathSegmentStart(segment) {
-                currentSegments.add(segment);
+                newCurrentSegments.add(segment);
             },
 
             onCodePathSegmentEnd(segment) {
-                currentSegments.delete(segment);
+                newCurrentSegments.delete(segment);
             },
 
             onUnreachableCodePathSegmentStart(segment) {
-                currentSegments.add(segment);
+                newCurrentSegments.add(segment);
             },
 
             onUnreachableCodePathSegmentEnd(segment) {
-                currentSegments.delete(segment);
+                newCurrentSegments.delete(segment);
             }
         };
 
