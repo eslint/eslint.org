@@ -241,14 +241,5 @@
         "amount": 20000,
         "date": "2025-08-25T21:41:17.033Z",
         "source": "opencollective"
-    },
-    {
-        "id": "ejoxl3az-45w9pa5l-ev46y870-mgkbrvdn",
-        "name": "Link",
-        "url": "https://20050703.xyz/",
-        "image": "https://images.opencollective.com/link20050703/4351f7c/avatar.png",
-        "amount": 10,
-        "date": "2025-07-17T19:00:18.220Z",
-        "source": "opencollective"
     }
 ]

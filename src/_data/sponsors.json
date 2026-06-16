@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 92274.97865700001,
-        "monthlyDonations": 7689.58155475,
-        "sponsorCount": 132
+        "annualDonations": 89874.97865700001,
+        "monthlyDonations": 7489.58155475,
+        "sponsorCount": 131
     },
     "diamond": [],
     "platinum": [
@@ -122,14 +122,6 @@
             "name": "GitBook",
             "image": "https://avatars.githubusercontent.com/u/7111340",
             "url": "https://www.gitbook.com",
-            "monthlyDonation": 200,
-            "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "HeroCoders",
-            "image": "https://avatars.githubusercontent.com/u/37549774",
-            "url": "https://herocoders.com",
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
