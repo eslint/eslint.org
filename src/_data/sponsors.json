@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 89874.97865700001,
-        "monthlyDonations": 7489.58155475,
+        "annualDonations": 101814.97865700001,
+        "monthlyDonations": 8484.581554749999,
         "sponsorCount": 131
     },
     "diamond": [],
@@ -24,6 +24,14 @@
             "monthlyDonation": 1000,
             "totalDonations": 17000,
             "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
+        {
+            "name": "Shopify",
+            "image": "https://avatars.githubusercontent.com/u/8085",
+            "url": "https://shopify.engineering/",
+            "monthlyDonation": 1000,
+            "source": "github",
             "tier": "gold-sponsor"
         }
     ],
@@ -688,14 +696,6 @@
             "name": "Maarten Van Hoof",
             "image": "https://avatars.githubusercontent.com/u/2543633",
             "url": "https://mrtnvh.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Alejandro Celaya",
-            "image": "https://avatars.githubusercontent.com/u/2719332",
-            "url": "https://alejandrocelaya.blog",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
