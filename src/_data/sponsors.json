@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 101814.97865700001,
-        "monthlyDonations": 8484.581554749999,
-        "sponsorCount": 131
+        "annualDonations": 101822.88372528001,
+        "monthlyDonations": 8485.240310439998,
+        "sponsorCount": 134
     },
     "diamond": [],
     "platinum": [
@@ -1010,6 +1010,15 @@
             "tier": "backer"
         },
         {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.56255082,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.005107600.005370460.005376970.005220070.005628550.339412470.327833490.324853960.647595740.56255082",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "changesets",
             "url": "https://changesets.dev/",
             "image": "https://github.com/changesets.png",
@@ -1042,6 +1051,24 @@
             "image": "https://github.com/expressjs.png",
             "monthlyDonation": 0.11199725,
             "totalDonations": "00.036993410.031956500.031166930.029207030.029207030.029375870.028498350.028321520.040052610.040052610.043397360.040838530.050023920.054032550.051786150.087580670.11199725",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Brittek.",
+            "url": "https://brittek.net",
+            "image": "https://github.com/brittek.png",
+            "monthlyDonation": 0.0578078,
+            "totalDonations": "00.05780780",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "featuresmith",
+            "url": "https://featuresmith.com",
+            "image": "https://github.com/featuresmith.png",
+            "monthlyDonation": 0.03839707,
+            "totalDonations": "00.008599260.008111170.008111170.015796860.017839900.018686920.018460820.030268700.03839707",
             "source": "thanks.dev",
             "tier": "backer"
         },
