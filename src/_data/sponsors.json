@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 101822.88372528001,
-        "monthlyDonations": 8485.240310439998,
-        "sponsorCount": 134
+        "annualDonations": 101824.96234680002,
+        "monthlyDonations": 8485.413528899999,
+        "sponsorCount": 135
     },
     "diamond": [],
     "platinum": [
@@ -1024,6 +1024,15 @@
             "image": "https://github.com/changesets.png",
             "monthlyDonation": 0.52005905,
             "totalDonations": "00.223895780.52005905",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Aliaksei Yaletski",
+            "url": "https://tiendil.org",
+            "image": "https://github.com/tiendil.png",
+            "monthlyDonation": 0.17321846,
+            "totalDonations": "00.154469060.153432820.153776360.145902710.17321846",
             "source": "thanks.dev",
             "tier": "backer"
         },
