@@ -293,3 +293,7 @@ The `context.parserPath` property was intended to allow rules to retrieve an ins
 ## Conclusion
 
 ESLint has been around for ten years, and in that time, we have collected some API cruft that we need to clean up in order to prepare ESLint for the next ten years. The API changes described in this post are a necessary step towards enabling ESLint to lint non-JavaScript languages and to better separate core functionality from language-specific functionality. The team spent a lot of time planning this transition point in ESLint's lifecycle and we hope that these changes are just a small inconvenience for the ecosystem. If you need help with, or have questions about, any of what was discussed in this post, please [start a discussion](https://github.com/eslint/eslint/discussions/new) or stop by [Discord](https://eslint.org/chat) to talk with the team.
+
+**Update (2024-06-06):** Added section on `eslint-tranforms`.
+
+**Update (2026-06-19):** Replaced the section on `eslint-transforms` with `@eslint/v8-to-v9-custom-rules`.
