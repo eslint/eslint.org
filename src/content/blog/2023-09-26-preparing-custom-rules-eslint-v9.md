@@ -108,7 +108,7 @@ All of this is to say that we are deprecating all of the code-related methods on
 |`context.getSourceLines()`|`sourceCode.getLines()`|
 |`context.getAllComments()`|`sourceCode.getAllComments()`|
 |`context.getNodeByRangeIndex()`|`sourceCode.getNodeByRangeIndex()`|
-|`context.getComments(node)`|`sourceCode.getCommentsBefore(node)`, `sourceCode.getCommentsAfter(node)`, `sourceCode.getCommentsInside(node)`|
+|`context.getComments()`|`sourceCode.getCommentsBefore()`, `sourceCode.getCommentsAfter()`, `sourceCode.getCommentsInside()`|
 |`context.getCommentsBefore()`|`sourceCode.getCommentsBefore()`|
 |`context.getCommentsAfter()`|`sourceCode.getCommentsAfter()`|
 |`context.getCommentsInside()`|`sourceCode.getCommentsInside()`|
@@ -240,10 +240,10 @@ module.exports = {
     create(context) {
 
         // tracks the code path we are currently in
-        let newCurrentCodePath;
+        let currentCodePath;
 
         // tracks the segments we've traversed in the current code path
-        let newCurrentSegments;
+        let currentSegments;
 
         // tracks all current segments for all open paths
         const allCurrentSegments = [];
@@ -251,30 +251,30 @@ module.exports = {
         return {
 
             onCodePathStart(codePath) {
-                newCurrentCodePath = codePath;
-                allCurrentSegments.push(newCurrentSegments);
-                newCurrentSegments = new Set();
+                currentCodePath = codePath;
+                allCurrentSegments.push(currentSegments);
+                currentSegments = new Set();
             },
 
             onCodePathEnd(codePath) {
-                newCurrentCodePath = codePath.upper;
-                newCurrentSegments = allCurrentSegments.pop();
+                currentCodePath = codePath.upper;
+                currentSegments = allCurrentSegments.pop();
             },
 
             onCodePathSegmentStart(segment) {
-                newCurrentSegments.add(segment);
+                currentSegments.add(segment);
             },
 
             onCodePathSegmentEnd(segment) {
-                newCurrentSegments.delete(segment);
+                currentSegments.delete(segment);
             },
 
             onUnreachableCodePathSegmentStart(segment) {
-                newCurrentSegments.add(segment);
+                currentSegments.add(segment);
             },
 
             onUnreachableCodePathSegmentEnd(segment) {
-                newCurrentSegments.delete(segment);
+                currentSegments.delete(segment);
             }
         };
 
