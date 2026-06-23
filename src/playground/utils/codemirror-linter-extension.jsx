@@ -203,7 +203,6 @@ function lintTooltip(view, pos, side) {
 function diagnosticsTooltip(view, diagnostics) {
 	return elt(
 		"div",
-		{ style: "opacity: hidden" },
 		diagnostics.map(d => renderDiagnostic(view, d, false)),
 	);
 }
