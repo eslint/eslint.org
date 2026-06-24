@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 101759.90991288002,
-        "monthlyDonations": 8479.99249274,
-        "sponsorCount": 138
+        "annualDonations": 113759.90991288002,
+        "monthlyDonations": 9479.99249274,
+        "sponsorCount": 139
     },
     "diamond": [],
     "platinum": [
@@ -30,6 +30,14 @@
             "name": "Shopify",
             "image": "https://avatars.githubusercontent.com/u/8085",
             "url": "https://shopify.engineering/",
+            "monthlyDonation": 1000,
+            "source": "github",
+            "tier": "gold-sponsor"
+        },
+        {
+            "name": "CodeRabbit",
+            "image": "https://avatars.githubusercontent.com/u/132028505",
+            "url": "https://www.coderabbit.ai/?utm_source=cr_org&utm_medium=github",
             "monthlyDonation": 1000,
             "source": "github",
             "tier": "gold-sponsor"
