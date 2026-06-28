@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113759.90991288002,
-        "monthlyDonations": 9479.99249274,
-        "sponsorCount": 139
+        "annualDonations": 114427.42981392003,
+        "monthlyDonations": 9535.61915116,
+        "sponsorCount": 143
     },
     "diamond": [],
     "platinum": [
@@ -186,6 +186,15 @@
             "monthlyDonation": 60,
             "totalDonations": 1740,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Frontend Masters",
+            "url": "https://FrontendMasters.com",
+            "image": "https://github.com/frontendmasters.png",
+            "monthlyDonation": 53.17713733,
+            "totalDonations": "015.8755124116.5134570116.2135154615.9458794115.8539151315.8101133352.4053066815.7938353462.0867446158.6823441856.1351804555.6041253354.9398559947.1456875611.0450076411.0450076411.0450076411.0450076411.0450076411.0450076411.0522232711.1344221611.2132473611.4548048559.0177864044.9594486342.8820776745.7864663243.7469113053.17713733",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -920,6 +929,15 @@
             "tier": "backer"
         },
         {
+            "name": "CyleWaitForIt",
+            "url": null,
+            "image": "https://github.com/cylewaitforit.png",
+            "monthlyDonation": 1.79206156,
+            "totalDonations": "00.049901880.577580860.827197610.406989510.809057531.185944591.504313711.519241201.577490021.424329991.79206156",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "charon",
             "url": null,
             "image": null,
@@ -1042,6 +1060,24 @@
             "image": "https://github.com/changesets.png",
             "monthlyDonation": 0.52005905,
             "totalDonations": "00.223895780.52005905",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "timhaynes",
+            "url": null,
+            "image": "https://github.com/timhaynes.png",
+            "monthlyDonation": 0.33508057,
+            "totalDonations": "00.115090580.225653430.249133320.240222300.706721990.690271970.690271970.690271970.690185100.687675060.116851650.299085520.281436370.281436370.33508057",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.32237896,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.391978300.367332360.004143800.005619350.003624580.004040850.007930090.003753120.003757120.149154970.185997620.239540820.245238010.313722910.32237896",
             "source": "thanks.dev",
             "tier": "backer"
         },
