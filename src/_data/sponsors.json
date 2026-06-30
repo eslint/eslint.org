@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 114427.42981392003,
-        "monthlyDonations": 9535.61915116,
-        "sponsorCount": 143
+        "annualDonations": 114415.42981392003,
+        "monthlyDonations": 9534.61915116,
+        "sponsorCount": 142
     },
     "diamond": [],
     "platinum": [
@@ -1008,14 +1008,6 @@
             "name": "su-",
             "image": "https://avatars.githubusercontent.com/u/30166652",
             "url": "https://su-u.notion.site/",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "David Badasyan",
-            "image": "https://avatars.githubusercontent.com/u/59211418",
-            "url": "https://www.linkedin.com/in/david-badasyan-17b544199/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
