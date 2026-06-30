@@ -2,13 +2,12 @@
 layout: post
 title: CodeRabbit becomes ESLint gold sponsor
 teaser: "We are happy to announce that CodeRabbit is a gold sponsor of ESLint. We are grateful to Santosh Yadav, Principal Developer Advocate, and the whole CodeRabbit team."
-image: sponsorships.png
+image: sponsorship-coderabbit.png
 tags:
   - Open Source
   - Funding
   - Open Collective
   - Sponsors
-  - Backers
 authors:
   - nzakas
 categories:
