@@ -20,7 +20,7 @@ We are happy to share that [CodeRabbit](https://coderabbit.ai) has become an ESL
 
 Here's what Santosh Yadav, Principal Developer Advocate at CodeRabbit, had to say about ESLint:
 
-> "We love Open Source and ESLint is critical for the ecosystem. We want to make Open Source more sustainable for maintainers. ESLint is shipped as part of the CodeRabbit tools, and we love to support our dependencies. "
+> "We love Open Source and ESLint is critical for the ecosystem. We want to make Open Source more sustainable for maintainers. ESLint is shipped as part of the CodeRabbit tools, and we love to support our dependencies."
 >
 > -- Santosh Yadav, Principal Developer Advocate, CodeRabbit
 
