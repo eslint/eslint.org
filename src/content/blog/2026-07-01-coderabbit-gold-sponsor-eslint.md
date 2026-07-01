@@ -14,7 +14,7 @@ categories:
   - Sponsorships
 ---
 
-![CodeRabbit Donates to ESLint](/assets/images/blog-covers/sponsorships.png)
+![CodeRabbit Donates to ESLint](/assets/images/blog-covers/sponsorship-coderabbit.png)
 
 We are happy to share that [CodeRabbit](https://coderabbit.ai) has become an ESLint gold sponsor, donating $1,000 each month for the ongoing maintenance and development of ESLint! CodeRabbit is an AI-powered code review platform that provides fast, context-aware feedback on pull requests. It helps development teams automate and accelerate the code review process, catch bugs and logic errors early, and improve code quality and velocity.
 
