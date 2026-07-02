@@ -12,6 +12,7 @@ import Configuration from "./components/configuration";
 import Split from "react-split";
 import debounce from "./utils/debounce";
 import AlertsActionBar from "./components/alerts-action-bar";
+import LanguageSwitcher from "./components/language-switcher";
 import "./scss/split-pane.scss";
 import * as typeScriptESLintParser from "@typescript-eslint/parser";
 import rulesMeta from "./build/rules_meta.json";
@@ -319,6 +320,8 @@ const App = () => {
 	const hasMultipleDisableMessages =
 		messages.filter(message => options.rules[message.ruleId]).length > 1;
 
+	const [selectedLanguage, setSelectedLanguage] = useState("javascript");
+
 	return (
 		<div className="playground-wrapper">
 			<div className="playground__config-and-footer">
@@ -326,6 +329,11 @@ const App = () => {
 					className="playground__config"
 					aria-labelledby="playground__config-toggle"
 				>
+					<LanguageSwitcher
+						className={"playground__language-switcher-small"}
+						selectedLanguage={selectedLanguage}
+						setSelectedLanguage={setSelectedLanguage}
+					/>
 					<button
 						className="playground__config-toggle"
 						id="playground__config-toggle"
@@ -384,6 +392,8 @@ const App = () => {
 							setRulesWithInvalidConfigs={
 								setRulesWithInvalidConfigs
 							}
+							selectedLanguage={selectedLanguage}
+							setSelectedLanguage={setSelectedLanguage}
 						/>
 						<Footer />
 					</div>
@@ -409,6 +419,7 @@ const App = () => {
 							eslintInstance={linter}
 							eslintOptions={optionsForLinter}
 							onUpdate={debouncedOnUpdate}
+							selectedLanguage={selectedLanguage}
 						/>
 					</main>
 					<section
