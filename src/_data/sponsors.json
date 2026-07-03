@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 108744,
-        "monthlyDonations": 9062,
-        "sponsorCount": 111
+        "annualDonations": 106344,
+        "monthlyDonations": 8862,
+        "sponsorCount": 110
     },
     "diamond": [],
     "platinum": [
@@ -94,16 +94,7 @@
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 215,
-            "totalDonations": 1547,
-            "source": "opencollective",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "Depot",
-            "url": "https://depot.dev",
-            "image": "https://images.opencollective.com/depot/39125a1/logo.png",
-            "monthlyDonation": 200,
-            "totalDonations": 1000,
+            "totalDonations": 1768,
             "source": "opencollective",
             "tier": "bronze-sponsor"
         },
@@ -325,7 +316,7 @@
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
             "monthlyDonation": 6,
-            "totalDonations": 1547,
+            "totalDonations": 1768,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -334,7 +325,7 @@
             "url": "https://about.gitea.com/",
             "image": "https://images.opencollective.com/gitea/bf35c2f/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 35,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -343,7 +334,7 @@
             "url": "https://privatejet.com",
             "image": "https://images.opencollective.com/privatejetcom/4965318/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 35,
+            "totalDonations": 40,
             "source": "opencollective",
             "tier": "backer"
         },
