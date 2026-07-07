@@ -102,7 +102,7 @@
     "markdownlint-cli": "^0.49.0",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "npm-run-all2": "^8.0.4",
-    "prettier": "3.9.1",
+    "prettier": "3.9.4",
     "prismjs": "^1.30.0",
     "sass": "^1.101.0",
     "sass-loader": "^16.0.8",
@@ -114,7 +114,7 @@
     "tap-spot": "^1.1.2",
     "typescript": "^5.9.3",
     "undici": "^6.27.0",
-    "webpack": "^5.108.1",
+    "webpack": "^5.108.3",
     "webpack-cli": "^4.10.0",
     "yorkie": "^2.0.0"
   },
