@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 106524,
-        "monthlyDonations": 8877,
-        "sponsorCount": 112
+        "annualDonations": 103944,
+        "monthlyDonations": 8662,
+        "sponsorCount": 111
     },
     "diamond": [],
     "platinum": [
@@ -87,15 +87,6 @@
             "url": "https://opensource.sap.com",
             "monthlyDonation": 250,
             "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "CrawlJobs",
-            "url": "https://www.crawljobs.com/",
-            "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
-            "monthlyDonation": 215,
-            "totalDonations": 1768,
-            "source": "opencollective",
             "tier": "bronze-sponsor"
         },
         {
