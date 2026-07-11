@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 103944,
-        "monthlyDonations": 8662,
-        "sponsorCount": 111
+        "annualDonations": 108658.54700916,
+        "monthlyDonations": 9054.87891743,
+        "sponsorCount": 115
     },
     "diamond": [],
     "platinum": [
@@ -90,6 +90,15 @@
             "tier": "bronze-sponsor"
         },
         {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 210.11429179,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766161.76391376152.22369333268.03188580161.52162337161.76465919287.34876401287.34876401208.91288037207.97782925465.14678637254.77350577185.94272289210.11429179210.11429179210.11429179",
+            "source": "thanks.dev",
+            "tier": "bronze-sponsor"
+        },
+        {
             "name": "Icons8",
             "url": "https://icons8.com/",
             "image": "https://images.opencollective.com/icons8/7fa1641/logo.png",
@@ -132,6 +141,24 @@
             "monthlyDonation": 140,
             "totalDonations": 6540,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 107.56308943,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714169.30954801167.7356633950.0633729532.4919902832.5320847820.2482570020.2482570037.3982119337.2574389372.2991461834.6066094798.34320849107.56308943107.56308943107.56308943",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 75.17775364,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.2284701967.26918957285.48772580209.60328591209.70414805211.72971887211.72971887143.25614914142.19107370211.7116023568.5504542167.0642759775.1777536475.1777536475.17775364",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -937,6 +964,15 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Jennifer",
+            "url": "https://gh.jenthedev.it.com",
+            "image": "https://github.com/jv-darkheartlabs.png",
+            "monthlyDonation": 0.02378257,
+            "totalDonations": "00.02378257",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
