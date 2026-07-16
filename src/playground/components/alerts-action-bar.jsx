@@ -4,20 +4,17 @@ export default function AlertsActionBar({
 	options,
 	onUpdate,
 	setRulesWithInvalidConfigs,
+	hasMultipleFixMessages,
+	hasMultipleDisableMessages,
 }) {
-	const hasFixableMessages = messages.some(message => message.fix);
-	const hasDisableableMessages = messages.some(
-		message => options.rules[message.ruleId],
-	);
-
 	let description = "";
 
-	if (hasFixableMessages && hasDisableableMessages) {
+	if (hasMultipleFixMessages && hasMultipleDisableMessages) {
 		description =
 			"Resolve all fixable issues or disable their respective rules from config";
-	} else if (hasFixableMessages) {
+	} else if (hasMultipleFixMessages) {
 		description = "Resolve all fixable issues";
-	} else if (hasDisableableMessages) {
+	} else if (hasMultipleDisableMessages) {
 		description =
 			"Disable all rules associated with these issues from config";
 	}
@@ -42,7 +39,7 @@ export default function AlertsActionBar({
 				{description}
 			</span>
 			<div className="alerts-action-bar__actions">
-				{hasFixableMessages && (
+				{hasMultipleFixMessages && (
 					<button
 						className="alerts-action-bar__btn"
 						onClick={onFixAll}
@@ -50,7 +47,7 @@ export default function AlertsActionBar({
 						Fix All
 					</button>
 				)}
-				{hasDisableableMessages && (
+				{hasMultipleDisableMessages && (
 					<button
 						className="alerts-action-bar__btn"
 						onClick={handleDisableAll}

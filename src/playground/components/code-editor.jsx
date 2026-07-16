@@ -2,6 +2,7 @@ import { useImperativeHandle, useMemo, useRef } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { javascript, esLint } from "@codemirror/lang-javascript";
 import { foldGutter } from "@codemirror/language";
+import { EditorView } from "@codemirror/view";
 import { linter } from "../utils/codemirror-linter-extension";
 import {
 	ESLintPlaygroundTheme,
@@ -50,21 +51,10 @@ export default function CodeEditor({
 			const { state } = editorView;
 			const pos = state.doc.line(line).from + col;
 
-			// Set the cursor selection to the position
 			editorView.dispatch({
 				selection: { anchor: pos },
-				scrollIntoView: true,
+				effects: EditorView.scrollIntoView(pos, { y: "center" }),
 			});
-
-			const linePos = editorView.coordsAtPos(state.doc.line(line).from);
-
-			// Calculate to try to center the line in the editor
-			if (linePos) {
-				const editorRect = editorView.dom.getBoundingClientRect();
-				const offset =
-					linePos.top - editorRect.top - editorRect.height / 2;
-				editorView.scrollDOM.scrollTop += offset;
-			}
 
 			editorView.focus();
 		},

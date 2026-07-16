@@ -1,11 +1,29 @@
 [
     {
-        "id": "SA_kwHOAFvahM4AFxtd",
-        "name": "Cezary Knapik",
-        "image": "https://avatars.githubusercontent.com/u/24892095",
-        "url": "https://knapik.it",
+        "id": "SA_kwHOAFvahM4AF1h4",
+        "name": "rox",
+        "image": "https://avatars.githubusercontent.com/u/6334979",
+        "url": "https://rxdt.github.io",
         "amount": 1,
-        "date": "2026-06-09T19:25:45Z",
+        "date": "2026-07-13T18:52:53Z",
+        "source": "github"
+    },
+    {
+        "id": "or_VF3Eq7ohn9c1cMRiNU2b1",
+        "name": "Iryna",
+        "url": null,
+        "image": "https://images.opencollective.com/guest-96fe1434/avatar.png",
+        "amount": 7,
+        "date": "2026-07-08T11:48:51.823Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AFywP",
+        "name": "Shopify",
+        "image": "https://avatars.githubusercontent.com/u/8085",
+        "url": "https://shopify.engineering/",
+        "amount": 3000,
+        "date": "2026-06-18T19:13:34Z",
         "source": "github"
     },
     {
@@ -222,24 +240,6 @@
         "image": "https://images.opencollective.com/kacper-ochmanski/avatar.png",
         "amount": 50,
         "date": "2025-08-27T17:54:30.961Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "zaxon793-jy8gpl0b-9r3pbrkd-emwl5v04",
-        "name": "Meta Open Source",
-        "url": "https://opensource.facebook.com/",
-        "image": "https://images.opencollective.com/fbopensource/e10726f/logo.png",
-        "amount": 20000,
-        "date": "2025-08-25T21:41:17.033Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "ejoxl3az-45w9pa5l-ev46y870-mgkbrvdn",
-        "name": "Link",
-        "url": "https://20050703.xyz/",
-        "image": "https://images.opencollective.com/link20050703/4351f7c/avatar.png",
-        "amount": 10,
-        "date": "2025-07-17T19:00:18.220Z",
         "source": "opencollective"
     }
 ]

@@ -89,11 +89,10 @@ export default function Alert({
 					<span className="visually-hidden">Error</span>
 					<button
 						className="alert__line-number"
+						aria-label={`Line ${line}, column ${column}`}
 						onClick={() => onPositionClick(message)}
 					>
-						<span className="line-number">{line}</span>
-						{line && column && <span aria-hidden="true">:</span>}
-						<span className="colun-number">{column}</span>
+						{line}:{column}
 					</button>
 				</div>
 				<div className="alert__text">
