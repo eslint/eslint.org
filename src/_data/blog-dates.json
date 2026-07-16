@@ -365,7 +365,7 @@
     "2023-08-25-eslint-v8.48.0-released.md": "2023-08-25T20:25:23.000Z",
     "2023-09-08-eslint-v8.49.0-released.md": "2023-09-08T20:45:03.000Z",
     "2023-09-22-eslint-v8.50.0-released.md": "2023-09-22T21:19:41.000Z",
-    "2023-09-26-preparing-custom-rules-eslint-v9.md": "2026-06-22T05:22:37.068Z",
+    "2023-09-26-preparing-custom-rules-eslint-v9.md": "2026-07-16T16:29:26.459Z",
     "2023-10-06-eslint-v8.51.0-released.md": "2023-10-06T20:34:34.000Z",
     "2023-10-10-flat-config-rollout-plans.md": "2023-10-25T19:41:37.000Z",
     "2023-10-20-eslint-v8.52.0-released.md": "2023-10-20T21:15:17.000Z",
@@ -391,7 +391,7 @@
     "2024-05-03-eslint-v9.2.0-released.md": "2024-05-03T20:16:51.000Z",
     "2024-05-09-eslint-compatibility-utilities.md": "2024-05-10T15:04:34.000Z",
     "2024-05-17-eslint-v9.3.0-released.md": "2024-05-17T21:21:38.000Z",
-    "2024-05-31-eslint-configuration-migrator.md": "2026-06-16T00:36:00.157Z",
+    "2024-05-31-eslint-configuration-migrator.md": "2026-07-16T16:29:26.468Z",
     "2024-05-31-eslint-v9.4.0-released.md": "2024-05-31T20:51:35.000Z",
     "2024-06-14-eslint-v9.5.0-released.md": "2024-06-14T19:57:29.000Z",
     "2024-06-28-eslint-v9.6.0-released.md": "2024-06-28T17:54:20.000Z",
@@ -468,5 +468,6 @@
     "2026-04-17-eslint-v10.2.1-released.md": "2026-04-17T20:34:24.857Z",
     "2026-05-01-eslint-v10.3.0-released.md": "2026-05-01T16:25:08.186Z",
     "2026-05-15-eslint-v10.4.0-released.md": "2026-05-15T14:36:41.726Z",
-    "2026-05-29-eslint-v10.4.1-released.md": "2026-05-29T20:42:31.541Z"
+    "2026-05-29-eslint-v10.4.1-released.md": "2026-05-29T20:42:31.541Z",
+    "2026-07-16-eslint-codemod-migrations.md": "2026-07-16T16:29:26.468Z"
 }

@@ -11,7 +11,7 @@ categories:
   - API Changes
 ---
 
-**Update:** We have partnered with Codemod to make migration easier. Read about the new approach in [this blog post](#TODO-final-url).
+**Update:** We have partnered with Codemod to make migration easier. Read about the [new approach](/blog/2026/07/eslint-codemod-migrations/).
 
 When ESLint v9.0.0 is released, it will ship with several breaking changes for rule authors. These changes are necessary as part of the work to implement [language plugins](https://github.com/eslint/rfcs/blob/main/designs/2022-languages/README.md), which gives ESLint first-class support for linting languages other than JavaScript. We've had to make these changes because ESLint has, from the start, assumed that it would only ever be used to lint JavaScript. As such, there wasn't a lot of thought put into where methods that rules used to interact with source code should live. When revisiting the API for the language plugins work we found that the inconsistencies we were able to live with in a JavaScript-only world will not work in a language-agnostic ESLint core.
 
