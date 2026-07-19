@@ -71,7 +71,7 @@
     "@babel/core": "^7.29.7",
     "@babel/preset-env": "^7.29.7",
     "@babel/preset-react": "^7.29.7",
-    "@html-eslint/eslint-plugin": "^0.63.0",
+    "@html-eslint/eslint-plugin": "^0.64.0",
     "@munter/tap-render": "^0.2.0",
     "@octokit/graphql": "^4.8.0",
     "@octokit/rest": "^18.12.0",
