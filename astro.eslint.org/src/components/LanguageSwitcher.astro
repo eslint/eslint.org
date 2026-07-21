@@ -1,0 +1,64 @@
+---
+import { getCollection } from "astro:content";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { DEFAULT_LANGUAGE, removeLanguageFromPath } from "~/utils/i18n";
+
+const { site: currentSite, multilingual = true } = Astro.props;
+const sites = (await getCollection("sites")).map((entry) => entry.data as any);
+const pageUrl = Astro.url.pathname;
+
+const basePath = removeLanguageFromPath(pageUrl);
+const getLanguageUrl = (languageCode: string) => {
+  if (!multilingual) {
+    return languageCode === DEFAULT_LANGUAGE ? "/" : `/${languageCode}/`;
+  }
+
+  return getRelativeLocaleUrl(languageCode, basePath);
+};
+---
+
+<div class="language-switcher">
+  <a
+    href={getRelativeLocaleUrl(currentSite.language.code, "/languages/")}
+    class="switcher-fallback"
+    >{currentSite.footer.language_switcher.change_language}</a
+  >
+  <div
+    hidden
+    role="region"
+    class="switcher switcher--language"
+    aria-labelledby="language-switcher-label"
+    id="language-switcher"
+  >
+    <span id="language-switcher-label" hidden
+      >{currentSite.footer.language_switcher.title}</span
+    >
+    <div class="infobox visually-hidden" id="language-infobox">
+      {currentSite.footer.language_switcher.description}
+    </div>
+    <label class="switcher__label" for="language-select">
+      <span class="label__text">
+        {currentSite.footer.language_switcher.language}
+      </span>
+    </label>
+    <select
+      name="language selector"
+      id="language-select"
+      aria-describedby="language-infobox"
+      class="c-custom-select switcher__select"
+    >
+      {
+        sites.map((site) => (
+          <option
+            value={site.language.code}
+            title={site.language.title}
+            data-url={getLanguageUrl(site.language.code)}
+            selected={currentSite.language.code === site.language.code}
+          >
+            {site.language.flag} {site.language.name}
+          </option>
+        ))
+      }
+    </select>
+  </div>
+</div>

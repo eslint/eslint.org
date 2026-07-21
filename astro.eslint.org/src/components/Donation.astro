@@ -1,0 +1,32 @@
+---
+interface Props {
+  image?: string;
+  name: string;
+  amount: string;
+  date: string;
+}
+
+const { image, name, amount, date } = Astro.props;
+const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
+---
+
+<div class="donation">
+  <img
+    class="donation__sponsor-logo"
+    src={image || fallbackImage}
+    width="40"
+    height="40"
+    alt={name}
+    onerror={`this.src = '${fallbackImage}'`}
+    loading="lazy"
+  />
+
+  <div class="donation__content">
+    <p class="donation__sponsor-name">{name}</p>
+    <p class="donation__date">{date}</p>
+  </div>
+
+  <div class="donation__amount">
+    + {amount}
+  </div>
+</div>

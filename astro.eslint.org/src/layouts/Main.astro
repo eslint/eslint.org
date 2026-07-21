@@ -1,0 +1,18 @@
+---
+import Layout from "./Layout.astro";
+import Header from "../partials/Header.astro";
+import Footer from "../partials/Footer.astro";
+
+const pageUrl = Astro.url.pathname;
+const { mainClass, multilingual } = Astro.props;
+---
+
+<Layout {...Astro.props}>
+  <Header />
+
+  <main id="main" class={mainClass} tabindex="-1">
+    <slot />
+  </main>
+
+  {pageUrl !== "/play/" && <Footer multilingual={multilingual} />}
+</Layout>

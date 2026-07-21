@@ -1,0 +1,63 @@
+---
+import { getAuthor } from "~/utils/authors";
+import { formatBlogDate, getPostDate, getPostSlug, type BlogPostEntry } from "~/utils/blog";
+
+const getPostUrl = (post: BlogPostEntry) => {
+  const date = getPostDate(post);
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+
+  return `/blog/${year}/${month}/${getPostSlug(post)}/`;
+};
+
+const { post } = Astro.props as { post: BlogPostEntry };
+const data = post.data;
+const primaryCategory = data.categories[0];
+const primaryAuthor = data.authors[0];
+const primaryAuthorData = getAuthor(primaryAuthor);
+const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
+const date = getPostDate(post);
+const postUrl = getPostUrl(post);
+const coverImage = `/assets/images/blog-covers/${data.image}`;
+const dateText = formatBlogDate(date);
+const wordCount =
+  post.body?.replace(/(<([^>]+)>)/gi, "").match(/[\u0400-\u04FF]+|\S+\s*/g)
+    ?.length ?? 0;
+const readingTime = `${Math.ceil(wordCount / 300)} min`;
+---
+
+<article class:list={["card", data.featured && "card--featured"]}>
+  <a href={postUrl} class="card__cover" tabindex="-1">
+    <img src={coverImage} alt={data.title} loading="lazy" />
+  </a>
+  <div class="card__content">
+    <div class="badge-group">
+      <span class="blog-post__category">
+        <span class="visually-hidden">Published under:</span> {primaryCategory}
+      </span>
+      <span class="blog-post__reading-time">{readingTime} read</span>
+    </div>
+
+    <h3 class="card__title">
+      <a href={postUrl}>{data.title}</a>
+    </h3>
+    {data.teaser && <p class="card__teaser">{data.teaser}</p>}
+    <div class="card__footer">
+      <img
+        class="blog-post__author-photo"
+        src={primaryAuthorData.avatar_url || fallbackImage}
+        alt={primaryAuthorData.name ?? primaryAuthor}
+        width="40"
+        height="40"
+        loading="lazy"
+        onerror={`this.src = '${fallbackImage}'`}
+      />
+      <div class="blog-post__author__details">
+        <div class="blog-post__author-name">{primaryAuthorData.name ?? primaryAuthor}</div>
+        <time class="blog-post__publish-date" datetime={date.toISOString().slice(0, 10)}>
+          {dateText}
+        </time>
+      </div>
+    </div>
+  </div>
+</article>

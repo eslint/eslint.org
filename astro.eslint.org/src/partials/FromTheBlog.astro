@@ -1,0 +1,35 @@
+---
+import { getEntry } from "astro:content";
+import BlogCard from "~/components/BlogCard.astro";
+import { type BlogPostEntry } from "~/utils/blog";
+import { DEFAULT_LANGUAGE } from "~/utils/i18n";
+import links from "~/data/links.json";
+
+const { morePosts } = Astro.props as { morePosts: BlogPostEntry[] };
+const site = (await getEntry("sites", DEFAULT_LANGUAGE))?.data as any;
+---
+
+<section aria-labelledby="more-posts-label" class="from-the-blog">
+  <div class="content-container">
+    <div class="from-the-blog__top grid grid--center-items">
+      <header class="section-head span-1-7">
+        <h2 class="from-the-blog__title" id="more-posts-label">
+          {site.blog_page.from_the_blog}
+        </h2>
+        <p>{site.blog_page.description}</p>
+      </header>
+      <div class="span-11-12">
+        <a
+          href={links.blog}
+          class="c-btn c-btn--primary c-btn--block from-the-blog__more"
+        >
+          {site.homepage.blog.view_all_posts}
+        </a>
+      </div>
+    </div>
+
+    <div class="blog-posts">
+      {morePosts.map((item) => <BlogCard post={item} />)}
+    </div>
+  </div>
+</section>

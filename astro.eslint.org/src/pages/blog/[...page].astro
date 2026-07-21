@@ -1,0 +1,69 @@
+---
+import BlogCard from "~/components/BlogCard.astro";
+import Hero from "~/components/Hero.astro";
+import Search from "~/components/Search.astro";
+import Layout from "~/layouts/Layout.astro";
+import BlogCategories from "~/partials/BlogCategories.astro";
+import BlogPagination from "~/partials/BlogPagination.astro";
+import Footer from "~/partials/Footer.astro";
+import Header from "~/partials/Header.astro";
+
+import { getCollection, getEntry } from "astro:content";
+import type { Page, GetStaticPathsOptions } from "astro";
+import { getBlogCategories, sortBlogPosts, type BlogPostEntry } from "~/utils/blog";
+import { DEFAULT_LANGUAGE } from "~/utils/i18n";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allPosts = sortBlogPosts(await getCollection("blog"));
+
+  return paginate(allPosts, {
+    pageSize: 9,
+    format: (url) => url.replace(/\/(\d+)\/?$/, "/page/$1/"),
+  }).map((path) => ({
+    ...path,
+    params: {
+      ...path.params,
+      page:
+        path.props.page.currentPage === 1
+          ? undefined
+          : `page/${path.props.page.currentPage}`,
+    },
+  }));
+}
+
+const site = (await getEntry("sites", DEFAULT_LANGUAGE))?.data;
+const allPosts = sortBlogPosts(await getCollection("blog"));
+const categories = getBlogCategories(allPosts);
+const page = Astro.props.page as Page<BlogPostEntry>;
+---
+
+<Layout
+  title={site.blog_page.title}
+  description={site.blog_page.description}
+  multilingual={false}
+>
+  <Header />
+
+  <main id="main" tabindex="-1">
+    <Hero title={site.blog_page.title} supportingText={site.blog_page.description} />
+
+    <div class="content-container grid">
+      <aside class="span-1-3">
+        <Search site={site} />
+
+        <BlogCategories site={site} categories={categories} locale={DEFAULT_LANGUAGE} />
+      </aside>
+
+      <div class="span-4-12">
+        <div class="blog-posts">
+          {page.data.map((post) => <BlogCard post={post} />)}
+        </div>
+      </div>
+      <div class="span-4-12">
+        <BlogPagination site={site} page={page} />
+      </div>
+    </div>
+  </main>
+
+  <Footer multilingual={false} />
+</Layout>

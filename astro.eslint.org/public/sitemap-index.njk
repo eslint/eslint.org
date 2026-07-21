@@ -1,0 +1,15 @@
+---
+permalink: /sitemap-index.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>{{ ["https://", site.hostname, "/sitemap.xml"] | join }}</loc>
+    </sitemap>
+    {% if site.locals.docs_latest %}
+    <sitemap>
+        <loc>{{ ["https://", site.hostname, "/docs/latest/sitemap.xml"] | join }}</loc>
+    </sitemap>
+    {% endif %}
+</sitemapindex>

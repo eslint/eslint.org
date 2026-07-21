@@ -1,0 +1,85 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import type { GetStaticPathsOptions, Page } from "astro";
+import type { CollectionEntry } from "astro:content";
+import BlogCard from "~/components/BlogCard.astro";
+import Hero from "~/components/Hero.astro";
+import Search from "~/components/Search.astro";
+import Layout from "~/layouts/Layout.astro";
+import BlogCategories from "~/partials/BlogCategories.astro";
+import BlogPagination from "~/partials/BlogPagination.astro";
+import Footer from "~/partials/Footer.astro";
+import Header from "~/partials/Header.astro";
+import {
+  type BlogPostEntry,
+  getBlogCategories,
+  sortBlogPosts,
+} from "~/utils/blog";
+import { DEFAULT_LANGUAGE } from "~/utils/i18n";
+
+type SiteData = CollectionEntry<"sites">["data"];
+type BlogCategory = ReturnType<typeof getBlogCategories>[number];
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allPosts = sortBlogPosts(await getCollection("blog"));
+  const categories = getBlogCategories(allPosts);
+
+  return categories.flatMap((category) => {
+    const posts = allPosts.filter((post) =>
+      post.data.categories?.some(
+        (postCategory) =>
+          categories.find((item) => item.title === postCategory)?.slug === category.slug,
+      ),
+    );
+
+    return paginate(posts, {
+      pageSize: 8,
+      params: { category: category.slug },
+      props: { currentCategory: category },
+    });
+  });
+}
+
+const site = (await getEntry("sites", DEFAULT_LANGUAGE))?.data;
+const allPosts = sortBlogPosts(await getCollection("blog"));
+const categories = getBlogCategories(allPosts);
+const page = Astro.props.page as Page<BlogPostEntry>;
+const currentCategory = Astro.props.currentCategory as BlogCategory;
+---
+
+<Layout
+  description={(site as SiteData).blog_page.description}
+  currentCategory={currentCategory}
+  bodyClass="category-page"
+  multilingual={false}
+>
+  <Header />
+
+  <main id="main" tabindex="-1">
+    <Hero title={(site as SiteData).blog_page.title} supportingText={(site as SiteData).blog_page.description} />
+
+    <div class="content-container grid">
+      <aside class="span-1-3">
+        <Search site={site as SiteData} />
+        <BlogCategories
+          site={site as SiteData}
+          categories={categories}
+          locale={DEFAULT_LANGUAGE}
+          currentCategory={currentCategory}
+        />
+      </aside>
+
+      <div class="span-4-12">
+        <h2 hidden>{currentCategory.title}</h2>
+        <div class="blog-posts">
+          {page.data.map((post) => <BlogCard post={post} />)}
+        </div>
+      </div>
+      <div class="span-4-12">
+        <BlogPagination site={site as SiteData} page={page} />
+      </div>
+    </div>
+  </main>
+
+  <Footer multilingual={false} />
+</Layout>

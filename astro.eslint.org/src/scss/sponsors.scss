@@ -1,0 +1,69 @@
+/* sponsors lists */
+.sponsors.sponsors {
+	text-align: center;
+	margin-bottom: var(--space-m-l);
+	margin-block-end: var(--space-m-l);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@media all and (max-width: 1023px) {
+		margin-top: 2.5rem;
+		margin-block-start: 2.5rem;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 0.75rem 1.5rem;
+
+		a {
+			display: block;
+		}
+	}
+
+	picture,
+	img {
+		display: block;
+		height: auto;
+		max-height: 3rem;
+		background-color: var(--sponsor-background-color);
+		border-radius: var(--sponsor-img-border-radius);
+	}
+}
+
+.sponsors.sponsors--backers {
+	picture,
+	img {
+		border-radius: var(--sponsor-backers-img-border-radius);
+	}
+}
+
+.sponsors.sponsors--platinum,
+.sponsors.sponsors--diamond {
+	picture,
+	img {
+		max-height: 8rem;
+	}
+}
+
+.sponsors.sponsors--gold {
+	picture,
+	img {
+		max-height: 6rem;
+	}
+}
+
+.sponsors.sponsors--silver {
+	picture,
+	img {
+		max-height: 4rem;
+	}
+}
+
+.sponsors.sponsors--bronze,
+.sponsors.sponsors--technology {
+	picture,
+	img {
+		max-height: 3rem;
+	}
+}
