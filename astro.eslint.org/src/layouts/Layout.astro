@@ -182,7 +182,7 @@ const isBlogPage = pageKey === "blog_page";
     <link rel="dns-prefetch" href="https://images.opencollective.com" />
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <link rel="dns-prefetch" href="https://unpkg.com" />
-    <script>
+    <script is:inline>
       (function () {
         var theme = window.localStorage.getItem("theme");
         if (theme && theme !== "system")

@@ -1,8 +1,5 @@
 ---
-import { getRelativeLocaleUrl } from "astro:i18n";
-
-const { site, categories, currentCategory, locale } = Astro.props;
-const isAllActive = !currentCategory;
+const { site, categories, currentCategory } = Astro.props;
 ---
 
 <nav aria-labelledby="blog-categories-nav-label" class="categories">
@@ -13,7 +10,7 @@ const isAllActive = !currentCategory;
     <li class="categories__list__item">
       <a
         href="/blog/"
-        aria-current={isAllActive ? "page" : undefined}
+        aria-current={!currentCategory ? "page" : undefined}
       >
         {site.blog_page.categories.everything}
       </a>
