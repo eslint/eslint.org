@@ -1,0 +1,44 @@
+---
+const { site } = Astro.props;
+const words = site.homepage.animation.text.split(" ");
+const animationGlobals = `
+    const ANIMATION_WRONG_WORD = ${JSON.stringify(site.homepage.animation.wrong_word)};
+    const ANIMATION_CORRECT_WORD = ${JSON.stringify(site.homepage.animation.highlight_word)};
+`;
+---
+
+<div class="anim">
+  <script is:inline set:html={animationGlobals} />
+  <div class="anim__cursorCont" aria-hidden="true">
+    <div class="anim__cursor anim__cursor--start"></div>
+  </div>
+  <h1 class="section-title h0 anim__title" aria-hidden="true">
+    {
+      words.map((word: string, index: number) => (
+        <>
+          {word === site.homepage.animation.highlight_word ? (
+            <span class="anim__word anim__problems">
+              <span class="anim__text">{word}</span>
+              <div class="anim__dropdown">
+                <img
+                  class="anim__dropdown-img anim__dropdown-img--dark"
+                  src="/assets/images/dropdown--dark.png"
+                  alt=""
+                />
+                <img
+                  class="anim__dropdown-img anim__dropdown-img--light"
+                  src="/assets/images/dropdown--light.png"
+                  alt=""
+                />
+                <div class="anim__cursor anim__cursor--end" />
+              </div>
+            </span>
+          ) : (
+            <span class="anim__word">{word}</span>
+          )}
+          {index < words.length - 1 && " "}
+        </>
+      ))
+    }
+  </h1>
+</div>

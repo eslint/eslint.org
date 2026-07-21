@@ -1,0 +1,222 @@
+.blog-sidebar {
+	grid-column: 1 / 4;
+}
+
+.blog-main {
+	grid-column: 4 / 13;
+}
+
+/* blog categories */
+.categories {
+	margin-bottom: 2rem;
+	margin-block-end: 2rem;
+}
+
+.categories__title {
+	font-size: var(--step--1);
+	font-family: var(--text-font);
+}
+
+.categories__list__item {
+	a {
+		display: block;
+		color: inherit;
+		text-decoration: none;
+		padding: 0.625rem 0.875rem;
+		font-size: var(--step-0);
+		border-radius: var(--border-radius);
+
+		&:hover {
+			color: var(--link-color);
+		}
+	}
+
+	a[aria-current="page"] {
+		color: var(--link-color);
+		background-color: var(--lightest-background-color);
+		font-weight: 500;
+	}
+}
+
+/* blog posts list */
+.blog-posts {
+	margin-bottom: var(--space-l-2xl);
+	margin-block-end: var(--space-l-2xl);
+	display: grid;
+	grid-gap: 3rem 2rem;
+
+	@media all and (min-width: 640px) {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+}
+
+/* individual post page */
+
+.post__sidebar {
+	grid-row: 1;
+
+	@media all and (max-width: 1023px) {
+		margin-top: 2rem;
+		margin-block-start: 2rem;
+	}
+}
+
+ul.tag-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.tag-list__item {
+	background-color: var(--lightest-background-color);
+	color: var(--link-color);
+	font-weight: 500;
+	border-radius: 1rem;
+	font-size: var(--step--1);
+	padding: 0.125rem 0.625rem;
+}
+
+.post__meta {
+	color: var(--link-color);
+	font-weight: 500;
+	margin-bottom: 1rem;
+	margin-block-end: 1rem;
+}
+
+.post__sidebar-module {
+	display: grid;
+	grid-gap: 1.5rem;
+	border-bottom: 1px solid var(--divider-color);
+	border-block-end: 1px solid var(--divider-color);
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+	padding-block-end: 2rem;
+	margin-block-end: 2rem;
+
+	&:last-of-type {
+		border-bottom: none;
+		border-block-end: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		padding-block-end: 0;
+		margin-block-end: 0;
+	}
+}
+
+.post__sidebar-module.post-contributors {
+	@media all and (max-width: 1023px) {
+		display: none;
+	}
+}
+
+.post__sidebar-module__title.post__sidebar-module__title {
+	margin: 0;
+	color: inherit;
+	font-family: inherit;
+	font-size: var(--step-0);
+}
+
+.post-last-updated {
+	display: flex;
+	gap: 0.5rem;
+}
+
+// author bios
+.post__author-bios {
+	padding-top: var(--space-m);
+	margin-top: var(--space-m);
+	border-top: 1px solid var(--divider-color);
+	padding-block-start: var(--space-m);
+	margin-block-start: var(--space-m);
+	border-block-start: 1px solid var(--divider-color);
+
+	@media all and (max-width: 1023px) {
+		border-bottom: 1px solid var(--divider-color);
+	}
+}
+
+// https://github.com/eslint/eslint.org/issues/257
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1778180
+.post__blog-content {
+	min-width: 0;
+}
+
+/* from the blog section */
+
+.from-the-blog__title {
+	margin-bottom: 1rem;
+	margin-block-end: 1rem;
+	font-family: var(--text-font);
+}
+
+.from-the-blog__more {
+	margin-bottom: 2rem;
+	margin-block-end: 2rem;
+}
+
+.from-the-blog__top {
+	margin-bottom: var(--space-l-2xl);
+	margin-block-end: var(--space-l-2xl);
+}
+
+.from-the-blog .blog-posts {
+	grid-column: 1 / -1;
+}
+
+.code-wrapper {
+	position: relative;
+
+	> pre {
+		padding-right: 3.5rem;
+	}
+}
+
+.copy-btn {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	padding: 0.5rem;
+	border-radius: var(--border-radius);
+	color: var(--body-text-color);
+	background-color: var(--color-neutral-100);
+	border: 1px solid var(--border-color);
+	transition: background-color 0.1s linear;
+
+	&:hover {
+		background-color: var(--color-neutral-200);
+	}
+
+	[data-theme="dark"] & {
+		background-color: var(--color-neutral-700);
+
+		&:hover {
+			background-color: var(--color-neutral-600);
+		}
+	}
+
+	&::after {
+		content: "Copied!";
+		padding: 0.5rem 0.75rem;
+		font-size: var(--step--1);
+		border-radius: var(--border-radius);
+		position: absolute;
+		top: 0;
+		right: 2.5rem;
+		height: 2.25rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--color-neutral-100);
+		border: 1px solid var(--border-color);
+		opacity: 0;
+		pointer-events: none;
+
+		[data-theme="dark"] & {
+			background-color: var(--color-neutral-700);
+		}
+	}
+
+	&[data-copied="true"]::after {
+		opacity: 1;
+	}
+}

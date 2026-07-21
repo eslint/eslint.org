@@ -1,0 +1,258 @@
+---
+import { getEntry } from "astro:content";
+import Main from "~/layouts/Main.astro";
+import Hero from "~/components/Hero.astro";
+import ProfileMember from "~/components/ProfileMember.astro";
+import ProfileContributor from "~/components/ProfileContributor.astro";
+import teamData from "~/data/team.json";
+import { getSiteStaticPaths } from "~/utils/i18n";
+
+export async function getStaticPaths() {
+  return getSiteStaticPaths();
+}
+
+const site = (await getEntry("sites", Astro.currentLocale!))?.data as any;
+---
+
+<Main>
+  <Hero
+    title={site.team_page.title}
+    supportingText={site.team_page.description}
+  />
+
+  {
+    teamData.tsc.length > 0 && (
+      <section class="section">
+        <div class="content-container grid">
+          <div class="span-1-4">
+            <h2 class="section-title">{site.team_page.tsc.title}</h2>
+            <p class="section-supporting-text">
+              {site.team_page.tsc.description}
+            </p>
+          </div>
+          <ul role="list" class="span-6-12 people-list">
+            {teamData.tsc.map((item) => {
+              const itemName = item.name || item.username;
+              const itemHandle = item.username;
+
+              return (
+                <li>
+                  <ProfileMember
+                    photo={item.avatar_url}
+                    name={itemName}
+                    handle={itemHandle}
+                    bio={item.bio}
+                    website={item.website}
+                    github={item.github_username}
+                    bluesky={
+                      (item as { bluesky_url?: string | null }).bluesky_url
+                    }
+                    mastodon={
+                      (item as { mastodon_url?: string | null }).mastodon_url
+                    }
+                    twitter={item.twitter_username}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    teamData.reviewers.length > 0 && (
+      <section class="section">
+        <div class="content-container grid">
+          <div class="span-1-4">
+            <h2 class="section-title">{site.team_page.reviewers.title}</h2>
+            <p class="section-supporting-text">
+              {site.team_page.reviewers.description}
+            </p>
+          </div>
+          <ul role="list" class="span-6-12 people-list">
+            {teamData.reviewers.map((item) => {
+              const itemName = item.name || item.username;
+              const itemHandle = item.username;
+
+              return (
+                <li>
+                  <ProfileMember
+                    photo={item.avatar_url}
+                    name={itemName}
+                    handle={itemHandle}
+                    bio={item.bio}
+                    website={item.website}
+                    github={item.github_username}
+                    bluesky={
+                      (item as { bluesky_url?: string | null }).bluesky_url
+                    }
+                    mastodon={
+                      (item as { mastodon_url?: string | null }).mastodon_url
+                    }
+                    twitter={item.twitter_username}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    teamData.committers.length > 0 && (
+      <section class="section">
+        <div class="content-container grid">
+          <div class="span-1-4">
+            <h2 class="section-title">{site.team_page.committers.title}</h2>
+            <p class="section-supporting-text">
+              {site.team_page.committers.description}
+            </p>
+          </div>
+          <ul role="list" class="span-6-12 people-list">
+            {teamData.committers.map((item) => {
+              const itemName = item.name || item.username;
+              const itemHandle = item.username;
+
+              return (
+                <li>
+                  <ProfileMember
+                    photo={item.avatar_url}
+                    name={itemName}
+                    handle={itemHandle}
+                    bio={item.bio}
+                    website={item.website}
+                    github={item.github_username}
+                    bluesky={
+                      (item as { bluesky_url?: string | null }).bluesky_url
+                    }
+                    mastodon={
+                      (item as { mastodon_url?: string | null }).mastodon_url
+                    }
+                    twitter={item.twitter_username}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    teamData.website.length > 0 && (
+      <section class="section">
+        <div class="content-container grid">
+          <div class="span-1-4">
+            <h2 class="section-title">{site.team_page.website_team.title}</h2>
+            <p class="section-supporting-text">
+              {site.team_page.website_team.description}
+            </p>
+          </div>
+          <ul role="list" class="span-6-12 people-list">
+            {teamData.website.map((item) => {
+              const itemName = item.name || item.username;
+              const itemHandle = item.username;
+
+              return (
+                <li>
+                  <ProfileMember
+                    photo={item.avatar_url}
+                    name={itemName}
+                    handle={itemHandle}
+                    bio={item.bio}
+                    website={item.website}
+                    github={item.github_username}
+                    bluesky={
+                      (item as { bluesky_url?: string | null }).bluesky_url
+                    }
+                    mastodon={
+                      (item as { mastodon_url?: string | null }).mastodon_url
+                    }
+                    twitter={item.twitter_username}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    teamData.support.length > 0 && (
+      <section class="section">
+        <div class="content-container grid">
+          <div class="span-1-4">
+            <h2 class="section-title">{site.team_page.support_team.title}</h2>
+            <p class="section-supporting-text">
+              {site.team_page.support_team.description}
+            </p>
+          </div>
+          <ul role="list" class="span-6-12 people-list">
+            {teamData.support.map((item) => {
+              const itemName = item.name || item.username;
+              const itemHandle = item.username;
+
+              return (
+                <li>
+                  <ProfileMember
+                    photo={item.avatar_url}
+                    name={itemName}
+                    handle={itemHandle}
+                    bio={item.bio}
+                    website={item.website}
+                    github={item.github_username}
+                    bluesky={
+                      (item as { bluesky_url?: string | null }).bluesky_url
+                    }
+                    mastodon={
+                      (item as { mastodon_url?: string | null }).mastodon_url
+                    }
+                    twitter={item.twitter_username}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    teamData.alumni.length > 0 && (
+      <section class="section">
+        <div class="content-container grid">
+          <div class="span-1-4">
+            <h2 class="section-title">{site.team_page.alumni.title}</h2>
+            <p class="section-supporting-text">
+              {site.team_page.alumni.description}
+            </p>
+          </div>
+          <ul role="list" class="span-6-12 people-list">
+            {teamData.alumni.map((item) => {
+              const itemName = item.name || item.username;
+              const itemHandle = item.username;
+
+              return (
+                <li>
+                  <ProfileContributor
+                    photo={item.avatar_url}
+                    name={itemName}
+                    handle={itemHandle}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+</Main>

@@ -1,0 +1,272 @@
+---
+import "../scss/styles.scss";
+
+import DeprecationNotice from "../partials/DeprecationNotice.astro";
+import Analytics from "../partials/Analytics.astro";
+import { removeLanguageFromPath } from "~/utils/i18n";
+import { getEntry } from "astro:content";
+import sponsors from "../data/sponsors.json";
+
+const {
+  title,
+  description,
+  currentCategory,
+  image,
+  categories = [],
+  original,
+} = Astro.props;
+
+const locale = Astro.currentLocale!;
+const site = (await getEntry("sites", locale))?.data as any;
+const pathname = removeLanguageFromPath(Astro.url.pathname);
+const pageSlug = pathname
+  .split("/")
+  .filter(Boolean)[0]
+  ?.replace(/\.html$/, "");
+const pageKey = pageSlug ? `${pageSlug.replaceAll("-", "_")}_page` : "homepage";
+const pageData = site[pageKey];
+
+const formatCurrency = (amount: number) =>
+  new Intl.NumberFormat(site.locale, {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(amount);
+
+const replaceSponsorPlaceholders = (value: string) =>
+  value
+    .replace("BACKER_COUNT", String(sponsors.totals.sponsorCount))
+    .replace(
+      "MONTHLY_DONATIONS",
+      formatCurrency(sponsors.totals.monthlyDonations),
+    );
+
+const getPageDescription = () => {
+  if (pageKey === "blog_page") {
+    return site.shared.description;
+  }
+
+  if (description) {
+    return description;
+  }
+
+  if (currentCategory?.description) {
+    return currentCategory.description;
+  }
+
+  if (pageKey === "sponsors_page" || pageKey === "donate_page") {
+    return replaceSponsorPlaceholders(pageData.description);
+  }
+
+  if (pageKey === "languages_page") {
+    return site.footer.language_switcher.description;
+  }
+
+  if (pageKey === "version_support_page") {
+    return "The ESLint team provides ongoing support for the current version and six months of limited support for the previous version.";
+  }
+
+  return pageData?.description || site.shared.description;
+};
+
+const titleText =
+  title || currentCategory?.title || pageData?.title || "ESLint";
+const pageTitle = site.shared.title_format.replace("PAGE_TITLE", titleText);
+const pageDescription = getPageDescription();
+const pageUrl = new URL(Astro.url.pathname, `https://${site.hostname}`).href;
+const canonicalUrl = original?.url || pageUrl;
+const isBlogPost = Boolean(image || categories[0]);
+const blogImageFile =
+  image ||
+  (categories[0]
+    ? `${String(categories[0])
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")}.png`
+    : "announcements.png");
+const coverImage = isBlogPost
+  ? `https://${site.hostname}/assets/images/blog-covers/${blogImageFile}`
+  : `https://${site.hostname}/icon-512.png`;
+const coverImageAlt = isBlogPost ? titleText : site.shared.eslint_logo_alt;
+const bodyClasses = Astro.props.bodyClass ?? pageKey.replaceAll("_", "-");
+const isPlayground =
+  Astro.url.pathname === "/play/" || Astro.url.pathname.endsWith("/play/");
+const isBlogPage = pageKey === "blog_page";
+---
+
+<!doctype html>
+<html lang={locale} class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-title" content="ESLint" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO -->
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Feed -->
+    <link
+      rel="alternate"
+      href="/feed.xml"
+      title="ESLint RSS"
+      type="application/atom+xml"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any" /><!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" /><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- social sharing previews. Make sure every page template has title, desc, and cover url -->
+    <!-- Open graph -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={coverImage} />
+    <meta property="og:image:alt" content={coverImageAlt} />
+    <meta property="og:locale" content={site.locale.replace("-", "_")} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={pageUrl} />
+    <!-- Twitter -->
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@geteslint" />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={coverImage} />
+    <meta name="twitter:creator" content="@geteslint" />
+
+    <script>
+      // This is a capable browser, let's improve the UI further!
+      document.documentElement.classList.add("enhanced");
+      document.documentElement.classList.remove("no-js");
+    </script>
+    {isBlogPage && <script type="module" src="/assets/js/search.js"></script>}
+
+    <link
+      rel="preload"
+      href="/assets/fonts/Consolas.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/SpaceGrotesk-Medium-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/Inter-Regular-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/SpaceMono-Regular-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preconnect" href="https://www.googletagmanager.com/" />
+
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://images.opencollective.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <script>
+      (function () {
+        var theme = window.localStorage.getItem("theme");
+        if (theme && theme !== "system")
+          document.documentElement.setAttribute("data-theme", theme);
+        else if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+          document.documentElement.setAttribute("data-theme", "dark");
+        else document.documentElement.setAttribute("data-theme", "light");
+      })();
+    </script>
+
+    <style>
+      /* Overrides for funky punctuators */
+      @font-face {
+        font-family: "Mono Punctuators";
+        src: url("/assets/fonts/Consolas.woff") format("woff");
+        font-weight: 400;
+        unicode-range: U+40, U+7B, U+7D, U+28, U+29;
+        font-display: swap;
+      }
+
+      /* Space Grotesk for headings */
+      @font-face {
+        font-family: "Space Grotesk";
+        src:
+          url("/assets/fonts/SpaceGrotesk-Medium-subset.woff2") format("woff2"),
+          url("/assets/fonts/SpaceGrotesk-Medium-subset.zopfli.woff")
+            format("woff");
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      /* Inter for body text */
+      @font-face {
+        font-family: "Inter";
+        src:
+          url("/assets/fonts/Inter-Regular-subset.woff2") format("woff2"),
+          url("/assets/fonts/Inter-Regular-subset.zopfli.woff") format("woff");
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: Inter;
+        src:
+          url("/assets/fonts/Inter-SemiBold-subset.woff2") format("woff2"),
+          url("/assets/fonts/Inter-SemiBold-subset.zopfli.woff") format("woff");
+        font-weight: 500;
+        font-style: "normal";
+        font-display: "swap";
+      }
+
+      /* Space Mono for code snippets */
+      @font-face {
+        font-family: "Space Mono";
+        src:
+          url("/assets/fonts/SpaceMono-Regular-subset.woff2") format("woff2"),
+          url("/assets/fonts/SpaceMono-Regular-subset.zopfli.woff")
+            format("woff");
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      /* Country Flags for Windows*/
+      @font-face {
+        font-family: "Twemoji Country Flags";
+        unicode-range:
+          U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067, U+E006C,
+          U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+        src: url("https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2")
+          format("woff2");
+      }
+    </style>
+    {!isPlayground && <script is:inline src="/assets/js/themes.js" />}
+  </head>
+  <body class={bodyClasses}>
+    <a href="#main" class="c-btn c-btn--primary" id="skip-link"
+      >{site.shared.skip_to_content}</a
+    >
+    <DeprecationNotice />
+    <slot />
+
+    <script is:inline src="/assets/js/css-vars-ponyfill@2.js"></script>
+    <script is:inline src="/assets/js/focus-visible.js"></script>
+    <script is:inline src="/assets/js/main.js"></script>
+    <Analytics />
+  </body>
+</html>
