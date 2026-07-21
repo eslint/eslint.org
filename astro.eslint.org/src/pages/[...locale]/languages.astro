@@ -10,7 +10,9 @@ export async function getStaticPaths() {
 }
 
 const site = (await getEntry("sites", Astro.currentLocale!))?.data as any;
-const sites = (await getCollection("sites")).map((entry) => entry.data as any);
+const sites = (await getCollection("sites")).map(({ data }) => ({
+  language: data.language,
+}));
 ---
 
 <Main>

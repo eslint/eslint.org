@@ -2,7 +2,6 @@
 import { DEFAULT_LANGUAGE } from "~/utils/i18n";
 
 interface LanguageSite {
-  hostname: string;
   language: {
     code: string;
     title?: string;
@@ -16,7 +15,7 @@ interface Props {
   sites: LanguageSite[];
 }
 
-const { site, sites } = Astro.props;
+const { site: currentSite, sites } = Astro.props;
 ---
 
 <ul class="languages-list">
@@ -30,7 +29,7 @@ const { site, sites } = Astro.props;
               : `/${site.language.code}/`
           }
           aria-current={
-            site.language.code === Astro.props.site.language.code
+            site.language.code === currentSite.language.code
               ? "true"
               : undefined
           }
