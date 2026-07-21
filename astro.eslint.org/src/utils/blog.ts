@@ -7,11 +7,11 @@ type BlogCategory = {
   slug: string;
 };
 
-export const formatBlogDate = (date: Date) =>
+export const formatDate = (date: Date) =>
   new Intl.DateTimeFormat("en-US", {
-    dateStyle: "long",
+    dateStyle: "medium",
     timeZone: "UTC",
-  }).format(date);
+  }).format(new Date(date));
 
 export const getPostDate = (post: BlogPostEntry) => {
   const [date = ""] = post.id.match(/\d{4}-\d{2}-\d{2}/) ?? [];

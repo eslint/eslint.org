@@ -1,6 +1,6 @@
 ---
 import { getAuthor } from "~/utils/authors";
-import { formatBlogDate, getPostDate, getPostSlug, type BlogPostEntry } from "~/utils/blog";
+import { formatDate, getPostDate, getPostSlug, type BlogPostEntry } from "~/utils/blog";
 
 const getPostUrl = (post: BlogPostEntry) => {
   const date = getPostDate(post);
@@ -19,7 +19,7 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 const date = getPostDate(post);
 const postUrl = getPostUrl(post);
 const coverImage = `/assets/images/blog-covers/${data.image}`;
-const dateText = formatBlogDate(date);
+const dateText = formatDate(date);
 const wordCount =
   post.body?.replace(/(<([^>]+)>)/gi, "").match(/[\u0400-\u04FF]+|\S+\s*/g)
     ?.length ?? 0;

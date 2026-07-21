@@ -7,6 +7,7 @@ import donations from "~/data/donations.json";
 import sponsors from "~/data/sponsors.json";
 import techsponsors from "~/data/techsponsors.json";
 import { getSiteStaticPaths } from "~/utils/i18n";
+import { formatDate } from "~/utils/blog";
 
 export async function getStaticPaths() {
   return getSiteStaticPaths();
@@ -18,11 +19,6 @@ const formatCurrency = (amount: number) =>
     style: "currency",
     currency: "USD",
   }).format(amount);
-const formatDate = (date: string) =>
-  new Intl.DateTimeFormat("en-US", {
-    dateStyle: "long",
-    timeZone: "UTC",
-  }).format(new Date(date));
 const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 ---
 <Main>

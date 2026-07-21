@@ -31,10 +31,11 @@ const formatCurrency = (amount: number) =>
     style: "currency",
     currency: "USD",
   }).format(amount);
-  
-const formatDate = (date: string) =>
+
+const formatVersionDate = (date: string) =>
   new Intl.DateTimeFormat("en-US", {
-    dateStyle: "long",
+    month: "short",
+    day: "numeric",
     timeZone: "UTC",
   }).format(new Date(date));
 
@@ -44,7 +45,7 @@ const versionLine = (version: string, date: string) =>
       "VERSION",
       `<a href="https://github.com/eslint/eslint/releases/tag/${version}" class="text-dark no-underline">${version}</a>`,
     )
-    .replace("DATE", formatDate(date));
+    .replace("DATE", formatVersionDate(date));
 ---
 
 <Main>
@@ -207,7 +208,7 @@ const versionLine = (version: string, date: string) =>
                     "VERSION",
                     `<a class="text-dark">${stats.nextVersion}</a>`,
                   )
-                  .replace("DATE", formatDate(stats.nextVersionDate))}
+                  .replace("DATE", formatVersionDate(stats.nextVersionDate))}
               />
             </dd>
             {
@@ -231,7 +232,7 @@ const versionLine = (version: string, date: string) =>
                     <span
                       set:html={site.homepage.versions.dateline
                         .replace("VERSION", '<a class="text-dark">HEAD</a>')
-                        .replace("DATE", formatDate(stats.lastCommitDate))}
+                        .replace("DATE", formatVersionDate(stats.lastCommitDate))}
                     />
                   </dd>
                 </>
@@ -455,7 +456,7 @@ const versionLine = (version: string, date: string) =>
                     image={donation.image}
                     name={donation.name}
                     amount={formatCurrency(donation.amount)}
-                    date={formatDate(donation.date)}
+                    date={donation.date}
                   />
                 </li>
               ))

@@ -8,7 +8,7 @@ import FromTheBlog from "~/partials/FromTheBlog.astro";
 import Header from "~/partials/Header.astro";
 import PostSidebar from "~/partials/PostSidebar.astro";
 import { getAuthorEntries } from "~/utils/authors";
-import { formatBlogDate, getPostDate, getPostSlug, sortBlogPosts } from "~/utils/blog";
+import { formatDate, getPostDate, getPostSlug, sortBlogPosts } from "~/utils/blog";
 import { slugify } from "~/utils/slugify";
 
 export async function getStaticPaths() {
@@ -35,7 +35,7 @@ const morePosts = sortBlogPosts(await getCollection("blog"))
 const { Content } = await render(entry);
 const data = entry.data;
 const date = getPostDate(entry);
-const dateText = formatBlogDate(date);
+const dateText = formatDate(date);
 const primaryCategory = data.categories[0];
 const categorySlug = slugify(primaryCategory);
 ---

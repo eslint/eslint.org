@@ -2,7 +2,7 @@
 import ProfileContributor from "~/components/ProfileContributor.astro";
 import blogDates from "~/data/blog-dates.json";
 import { getAuthorEntries } from "~/utils/authors";
-import { formatBlogDate, getPostDate, type BlogPostEntry } from "~/utils/blog";
+import { formatDate, getPostDate, type BlogPostEntry } from "~/utils/blog";
 
 const lastUpdatedDates = blogDates as Record<string, string>;
 
@@ -69,7 +69,7 @@ const encodedUrl = encodeURIComponent(new URL(Astro.url.pathname, Astro.site).hr
         ></path>
       </svg>
       <time datetime={lastUpdatedDate.toISOString().slice(0, 10)}>
-        {formatBlogDate(lastUpdatedDate)}
+        {formatDate(lastUpdatedDate)}
       </time>
     </div>
   </div>
@@ -130,7 +130,7 @@ const encodedUrl = encodeURIComponent(new URL(Astro.url.pathname, Astro.site).hr
         <h2 class="post__sidebar-module__title">Source</h2>
         <p class="text-dark">
           Originally Posted at <a href={data.original.url}>{data.original.site.name}</a> on {" "}
-          {formatBlogDate(new Date(data.original.date))}
+          {formatDate(data.original.date)}
         </p>
       </div>
     )

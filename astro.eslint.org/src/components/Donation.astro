@@ -8,6 +8,12 @@ interface Props {
 
 const { image, name, amount, date } = Astro.props;
 const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
+
+const formatDate = (date: string) =>
+  new Intl.DateTimeFormat("en-US", {
+    dateStyle: "long",
+    timeZone: "UTC",
+  }).format(new Date(date));
 ---
 
 <div class="donation">
@@ -23,7 +29,7 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 
   <div class="donation__content">
     <p class="donation__sponsor-name">{name}</p>
-    <p class="donation__date">{date}</p>
+    <p class="donation__date">{formatDate(date)}</p>
   </div>
 
   <div class="donation__amount">
