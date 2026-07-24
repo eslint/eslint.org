@@ -1,0 +1,45 @@
+---
+interface Props {
+  carbonAds?: {
+    serve?: string;
+    placement?: string;
+  };
+  ethicalAds?: boolean;
+}
+
+const { carbonAds, ethicalAds } = Astro.props;
+
+const carbonAdsScript = `
+  if (window.innerWidth > 800) {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '//cdn.carbonads.com/carbon.js?serve=${carbonAds?.serve}&placement=${carbonAds?.placement}';
+    script.id = '_carbonads_js';
+    document.getElementById('eslint-sponsor')?.after(script);
+    document.getElementById('eslint-sponsor')?.remove();
+  }
+`;
+
+const ethicalAdsScript = `
+  if (window.innerWidth > 800) {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '//media.ethicalads.io/media/client/ethicalads.min.js';
+    document.getElementById('eslint-sponsor')?.after(script);
+    document.getElementById('eslint-sponsor')?.remove();
+  }
+`;
+---
+{
+  carbonAds?.serve && (
+    <script id="eslint-sponsor" is:inline set:html={carbonAdsScript} />
+  )
+}
+{
+  ethicalAds && (
+    <>
+      <script id="eslint-sponsor" is:inline set:html={ethicalAdsScript} />
+      <div data-ea-publisher="eslint-org" data-ea-type="image" />
+    </>
+  )
+}

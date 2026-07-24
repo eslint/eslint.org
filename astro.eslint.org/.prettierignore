@@ -1,0 +1,5 @@
+public
+src/data/**/*.json
+src/data/**/*.yml
+src/assets
+src/scss

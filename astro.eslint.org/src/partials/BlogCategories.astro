@@ -1,0 +1,36 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const { site, categories, currentCategory, locale } = Astro.props;
+const isAllActive = !currentCategory;
+---
+
+<nav aria-labelledby="blog-categories-nav-label" class="categories">
+  <h2 class="categories__title" id="blog-categories-nav-label">
+    {site.blog_page.categories.title}
+  </h2>
+  <ul role="list" class="categories__list">
+    <li class="categories__list__item">
+      <a
+        href="/blog/"
+        aria-current={isAllActive ? "page" : undefined}
+      >
+        {site.blog_page.categories.everything}
+      </a>
+    </li>
+    {
+      categories.map((category: { title: string; slug: string }) => (
+        <li class="categories__list__item">
+          <a
+            href={`/blog/category/${category.slug}/`}
+            aria-current={currentCategory?.slug === category.slug
+              ? "page"
+              : undefined}
+          >
+            {category.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

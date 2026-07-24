@@ -1,0 +1,80 @@
+---
+import { getEntry } from "astro:content";
+import Ad from "../partials/Ad.astro"
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Button {
+  primaryText?: string;
+  primaryURL?: string;
+  secondaryText?: string;
+  secondaryURL?: string;
+}
+
+interface Post {
+  date: string;
+  category: string;
+  categoryURL: string;
+}
+
+interface Props {
+  title: string;
+  supportingText?: string;
+  buttons?: {
+    primary?: Button;
+    secondary?: Button;
+  };
+  post?: Post;
+}
+
+const { title, supportingText = "", buttons, post } = Astro.props;
+
+const site = (await getEntry("sites", Astro.currentLocale!))?.data as any;
+const carbonAds = site?.carbon_ads;
+const ethicalAds = site?.ethical_ads;
+
+const withLocale = (url: string) => getRelativeLocaleUrl(Astro.currentLocale!, url);
+---
+
+<div class="section hero">
+  <div class="content-container grid">
+    <div class="span-1-7 content-container">
+      {
+        post && (
+          <p class="post__meta">
+            Published <time datetime={post.date}>{post.date}</time> under{" "}
+            <a href={`/blog/category/${post.categoryURL}/`}>
+              {post.category}
+            </a>
+          </p>
+        )
+      }
+      <h1 class="section-title">{title}</h1>
+      <p class="section-supporting-text" set:html={supportingText} />
+      {
+        buttons && (
+          <div class="eslint-actions">
+            {buttons.primary && buttons.primary.primaryURL && (
+              <a
+                href={withLocale(buttons.primary.primaryURL)}
+                class="c-btn c-btn--primary"
+              >
+                {buttons.primary.primaryText}
+              </a>
+            )}
+            {buttons.secondary && buttons.secondary.secondaryURL && (
+              <a
+                href={withLocale(buttons.secondary.secondaryURL)}
+                class="c-btn c-btn--secondary"
+              >
+                {buttons.secondary.secondaryText}
+              </a>
+            )}
+          </div>
+        )
+      }
+    </div>
+    <div class="span-10-12 hero-ad">
+      <Ad carbonAds={carbonAds} ethicalAds={ethicalAds} />
+    </div>
+  </div>
+</div>

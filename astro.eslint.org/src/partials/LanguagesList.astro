@@ -1,0 +1,43 @@
+---
+import { DEFAULT_LANGUAGE } from "~/utils/i18n";
+
+interface LanguageSite {
+  hostname: string;
+  language: {
+    code: string;
+    title?: string;
+    flag: string;
+    name: string;
+  };
+}
+
+interface Props {
+  site: LanguageSite;
+  sites: LanguageSite[];
+}
+
+const { site, sites } = Astro.props;
+---
+
+<ul class="languages-list">
+  {
+    sites.map((site) => (
+      <li lang={site.language.code} title={site.language.title}>
+        <a
+          href={
+            site.language.code === DEFAULT_LANGUAGE
+              ? "/"
+              : `/${site.language.code}/`
+          }
+          aria-current={
+            site.language.code === Astro.props.site.language.code
+              ? "true"
+              : undefined
+          }
+        >
+          <span class="flag">{site.language.flag}</span> {site.language.name}
+        </a>
+      </li>
+    ))
+  }
+</ul>

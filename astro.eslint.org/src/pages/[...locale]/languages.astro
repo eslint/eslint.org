@@ -1,0 +1,28 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import Main from "~/layouts/Main.astro";
+import Hero from "~/components/Hero.astro";
+import LanguagesList from "~/partials/LanguagesList.astro";
+import { getSiteStaticPaths } from "~/utils/i18n";
+
+export async function getStaticPaths() {
+  return getSiteStaticPaths();
+}
+
+const site = (await getEntry("sites", Astro.currentLocale!))?.data as any;
+const sites = (await getCollection("sites")).map((entry) => entry.data as any);
+---
+
+<Main>
+  <Hero
+    title={site.languages_page.title}
+    supportingText={site.languages_page.choose_language}
+  />
+  <section class="languages-section section">
+    <div class="content-container">
+      <nav aria-labelledby="languages-label">
+        <LanguagesList site={site} sites={sites} />
+      </nav>
+    </div>
+  </section>
+</Main>
