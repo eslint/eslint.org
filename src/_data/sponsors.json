@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111346.06622076001,
-        "monthlyDonations": 9278.83885173,
-        "sponsorCount": 127
+        "annualDonations": 111368.21382732001,
+        "monthlyDonations": 9280.684485610002,
+        "sponsorCount": 128
     },
     "diamond": [],
     "platinum": [
@@ -927,6 +927,15 @@
             "url": "https://danoc.me/",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "CyleWaitForIt",
+            "url": null,
+            "image": "https://github.com/cylewaitforit.png",
+            "monthlyDonation": 1.84563388,
+            "totalDonations": "00.049901880.577580860.827197610.406989510.809057531.185944591.504313711.519241201.577490021.424329991.792061561.84563388",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
