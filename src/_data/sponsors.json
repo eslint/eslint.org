@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 111368.21382732001,
-        "monthlyDonations": 9280.684485610002,
-        "sponsorCount": 128
+        "annualDonations": 111370.90535784,
+        "monthlyDonations": 9280.908779820002,
+        "sponsorCount": 129
     },
     "diamond": [],
     "platinum": [
@@ -1044,6 +1044,15 @@
             "image": "https://github.com/changesets.png",
             "monthlyDonation": 0.39711302,
             "totalDonations": "00.223895780.520059050.39711302",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "DoubleGate",
+            "url": "https://about.me/parobek",
+            "image": "https://github.com/doublegate.png",
+            "monthlyDonation": 0.22429421,
+            "totalDonations": "00.000345920.188938940.188011740.184825350.248556080.248556080.227463510.22429421",
             "source": "thanks.dev",
             "tier": "backer"
         },
