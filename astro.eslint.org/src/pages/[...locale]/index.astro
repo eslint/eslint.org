@@ -6,7 +6,7 @@ import BlogCard from "~/components/BlogCard.astro";
 import Donation from "~/components/Donation.astro";
 import HeaderAnimation from "~/components/HeaderAnimation.astro";
 import StatItem from "~/components/StatItem.astro";
-import TestimonialsSlider from "~/components/TestimonialsSlider.astro";
+import TestimonialsSlider from "~/components/TestimonialsSlider.jsx";
 import { sortBlogPosts } from "~/utils/blog";
 import donations from "~/data/donations.json";
 import links from "~/data/links.json";
@@ -479,7 +479,7 @@ const versionLine = (version: string, date: string) =>
       {site.donate_page.testimonials.title}
     </h2>
     <div class="content-container">
-      <TestimonialsSlider site={site} />
+      <TestimonialsSlider client:load items={site.donate_page.testimonials.items} />
     </div>
   </section>
 
@@ -522,5 +522,3 @@ const versionLine = (version: string, date: string) =>
     </>
   )
 }
-<script is:inline src="/assets/js/hammer.min.js"></script>
-<script is:inline src="/assets/js/slider.js"></script>
