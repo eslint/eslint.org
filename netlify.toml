@@ -9,7 +9,7 @@
 
 [context.deploy-preview]
   publish = "astro.eslint.org/dist"
-  command = "cd astro.eslint.org && npm ci && npm run build"
+  command = "cd astro.eslint.org && npm i && npm run build"
 
 [[edge_functions]]
   function = "og"
