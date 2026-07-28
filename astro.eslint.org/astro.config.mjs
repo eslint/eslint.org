@@ -5,6 +5,12 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: "https://eslint.org",
   integrations: [react()],
+  vite: {
+    resolve: {
+      dedupe: ["eslint"],
+      mainFields: ["browser", "main", "module"],
+    },
+  },
 
   i18n: {
     defaultLocale: "en",

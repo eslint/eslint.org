@@ -2,8 +2,9 @@
 import Layout from "./Layout.astro";
 import Header from "../partials/Header.astro";
 import Footer from "../partials/Footer.astro";
+import { removeLanguageFromPath } from "~/utils/i18n";
 
-const pageUrl = Astro.url.pathname;
+const isPlayground = removeLanguageFromPath(Astro.url.pathname) === "/play";
 const { mainClass, multilingual } = Astro.props;
 ---
 
@@ -14,5 +15,5 @@ const { mainClass, multilingual } = Astro.props;
     <slot />
   </main>
 
-  {pageUrl !== "/play/" && <Footer multilingual={multilingual} />}
+    {!isPlayground && <Footer multilingual={multilingual} />}
 </Layout>

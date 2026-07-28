@@ -1,0 +1,8 @@
+---
+import Main from "~/layouts/Main.astro";
+import Playground from "~/playground/app.jsx";
+---
+
+<Main bodyClass="playground-page">
+    <Playground client:only="react" />
+</Main>

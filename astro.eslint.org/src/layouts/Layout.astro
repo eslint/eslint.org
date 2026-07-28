@@ -88,8 +88,7 @@ const coverImage = isBlogPost
   : `https://${site.hostname}/icon-512.png`;
 const coverImageAlt = isBlogPost ? titleText : site.shared.eslint_logo_alt;
 const bodyClasses = Astro.props.bodyClass ?? pageKey.replaceAll("_", "-");
-const isPlayground =
-  Astro.url.pathname === "/play/" || Astro.url.pathname.endsWith("/play/");
+const isPlayground = pathname.replace(/\/$/u, "") === "/play";
 const isBlogPage = pageKey === "blog_page";
 ---
 
