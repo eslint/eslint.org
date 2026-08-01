@@ -223,14 +223,5 @@
         "amount": 50,
         "date": "2025-09-15T12:01:04.561Z",
         "source": "opencollective"
-    },
-    {
-        "id": "ejoxl3az-45w9pa53-l8w6y870-mgkbrvdn",
-        "name": "Kacper Ochmański",
-        "url": null,
-        "image": "https://images.opencollective.com/kacper-ochmanski/avatar.png",
-        "amount": 50,
-        "date": "2025-08-27T17:54:30.961Z",
-        "source": "opencollective"
     }
 ]
