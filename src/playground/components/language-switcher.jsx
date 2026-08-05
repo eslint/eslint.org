@@ -9,16 +9,27 @@ const optionsForLanguage = [
 	{ value: "json", label: "JSON" },
 ];
 
-export default function LanguageSwitcher({ className, selectedLanguage, setSelectedLanguage }) {
+export default function LanguageSwitcher({
+	className,
+	selectedLanguage,
+	setSelectedLanguage,
+}) {
 	return (
-		<div className={`playground__config-options__section ${className || ""}`}>
-			<label className="label__text">Language</label>
+		<div
+			className={`playground__config-options__section ${className || ""}`}
+		>
+			<label className="label__text" htmlFor="playground-language">
+				Language
+			</label>
 			<div data-config-section>
 				<Select
+					inputId="playground-language"
 					isSearchable={false}
 					styles={customStyles}
 					theme={theme => customTheme(theme)}
-					value={optionsForLanguage.find(option => option.value === selectedLanguage)}
+					value={optionsForLanguage.find(
+						option => option.value === selectedLanguage,
+					)}
 					options={optionsForLanguage}
 					onChange={option => setSelectedLanguage(option.value)}
 				/>
