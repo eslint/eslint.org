@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105864,
-        "monthlyDonations": 8822,
-        "sponsorCount": 108
+        "annualDonations": 106224,
+        "monthlyDonations": 8852,
+        "sponsorCount": 110
     },
     "diamond": [],
     "platinum": [
@@ -175,6 +175,15 @@
             "image": "https://images.opencollective.com/storis/d58857b/logo.png",
             "monthlyDonation": 35,
             "totalDonations": 1825,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Neovation Learning Solutions",
+            "url": "https://www.neovation.com",
+            "image": "https://images.opencollective.com/neovationcorp/4bd9477/logo.png",
+            "monthlyDonation": 25,
+            "totalDonations": 2275,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -416,6 +425,15 @@
             "image": "https://images.opencollective.com/marco-solazzi/1a0bd80/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 145,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Pink Fluffy Nico",
+            "url": null,
+            "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 211,
             "source": "opencollective",
             "tier": "backer"
         },
