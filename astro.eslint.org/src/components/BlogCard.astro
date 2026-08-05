@@ -1,14 +1,6 @@
 ---
 import { getAuthor } from "~/utils/authors";
-import { formatDate, getPostDate, getPostSlug, type BlogPostEntry } from "~/utils/blog";
-
-const getPostUrl = (post: BlogPostEntry) => {
-  const date = getPostDate(post);
-  const year = date.getUTCFullYear();
-  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
-
-  return `/blog/${year}/${month}/${getPostSlug(post)}/`;
-};
+import { formatDate, getPostDate, getPostUrl, type BlogPostEntry } from "~/utils/blog";
 
 const { post } = Astro.props as { post: BlogPostEntry };
 const data = post.data;

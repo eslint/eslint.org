@@ -22,6 +22,14 @@ export const getPostDate = (post: BlogPostEntry) => {
 export const getPostSlug = (post: BlogPostEntry) =>
   post.id.replace(/^\d{4}-\d{2}-\d{2}-/, "");
 
+export const getPostUrl = (post: BlogPostEntry) => {
+  const date = getPostDate(post);
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+
+  return `/blog/${year}/${month}/${getPostSlug(post)}/`;
+};
+
 export const sortBlogPosts = (posts: BlogPostEntry[]) =>
   posts.toSorted(
     (a, b) =>
