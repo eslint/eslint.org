@@ -73,7 +73,6 @@
 /docs/latest/maintainer-guide/*                              /docs/latest/maintain/:splat 301!
 
 # Regular Docs
-/docs/latest/*                      https://{{ site.locals.docs_latest }}/:splat 200!
 /docs/                              /docs/latest/ 301!
 
 # Docs checked into main branch but not released
