@@ -1,15 +1,5 @@
----
-layout: false
-permalink: _redirects
-eleventyExcludeFromCollections: true
----
-
 # Netlify Redirect Rules
 # https://www.netlify.com/docs/redirects/
-
-{% for redirect in site.redirects %}
-{{ redirect.from }}                 {{ redirect.to }} {{ redirect.status }}
-{% endfor %}
 
 # External Redirects
 /cla                                https://cla.js.foundation/eslint/eslint 302!
@@ -23,8 +13,6 @@ eleventyExcludeFromCollections: true
 
 # Internal Redirects
 /demo/*                             /play/:splat 302!
-
-{% if site.locals.docs_latest %}
 
 # Old-Style Docs to New-Style Docs
 /docs/rules/*                       /docs/latest/rules/:splat 301!
@@ -87,32 +75,15 @@ eleventyExcludeFromCollections: true
 # Regular Docs
 /docs/latest/*                      https://{{ site.locals.docs_latest }}/:splat 200!
 /docs/                              /docs/latest/ 301!
-{% else %}
-
-# Redirect docs back to English site
-/docs/*                             https://eslint.org/docs/:splat 302!
-{% endif %}
 
 # Docs checked into main branch but not released
-{% if site.locals.docs_head %}
-/docs/head/*                        https://{{ site.locals.docs_head }}/:splat 200!
-{% else %}
-/docs/head/*                        https://eslint.org/docs/head/:splat 302!
-{% endif %}
+ /docs/head/*                        https://eslint.org/docs/head/:splat 302!
 
 # Docs for the latest v8.x
-{% if site.locals.docs_v8 %}
-/docs/v8.x/*                        https://{{ site.locals.docs_v8 }}/:splat 200!
-{% else %}
 /docs/v8.x/*                        https://eslint.org/docs/v8.x/:splat 302!
-{% endif %}
 
 # Docs for the latest v9.x
-{% if site.locals.docs_v9 %}
-/docs/v9.x/*                        https://{{ site.locals.docs_v9 }}/:splat 200!
-{% else %}
 /docs/v9.x/*                        https://eslint.org/docs/v9.x/:splat 302!
-{% endif %}
 
 # Docs for the latest v10.x
 # Redirect to latest docs while v10.x is the latest release
@@ -122,12 +93,8 @@ eleventyExcludeFromCollections: true
 # As there is currently no active prerelease, redirect to latest docs
 /docs/next/*                        https://eslint.org/docs/latest/:splat 302!
 
-{% if site.locals.blog == false %}
 # Redirect blog back to English site
 /blog/*                             https://eslint.org/blog/:splat 302!
-{% endif %}
 
-{% if site.locals.version_support == false %}
 # Redirect version support page back to English site
 /version-support/                 https://eslint.org/version-support/ 302!
-{% endif %}
