@@ -39,7 +39,7 @@
         "title": "ESLint Alumnus",
         "website": "https://kaicataldo.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/7041728",
-        "bio": "Currently working with The Metropolitan Museum of Art",
+        "bio": "Freelancer | currently working with The Metropolitan Museum of Art",
         "twitter_username": null,
         "github_username": "kaicataldo",
         "location": "Brooklyn, NY"
@@ -207,7 +207,7 @@
         "title": "Guest Author",
         "website": "http://www.joshuakgoldberg.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/3335181",
-        "bio": "@bingo-js @eslint @flint-fyi @mochajs @typescript-eslint and an assortment of other fun web dev projects ✨ 💖\r\n\r\ndev @getsentry",
+        "bio": null,
         "twitter_username": "JoshuaKGoldberg",
         "github_username": "JoshuaKGoldberg",
         "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
@@ -234,5 +234,16 @@
         "twitter_username": null,
         "github_username": "yeonjuan",
         "location": "South Korea"
+    },
+    "alexbit-codemod": {
+        "username": "alexbit-codemod",
+        "name": "Alex Bit",
+        "title": "Guest Author",
+        "website": "https://codemod.com",
+        "avatar_url": "https://avatars.githubusercontent.com/u/78109534",
+        "bio": "Building Codemod & codemods... Let's chat! I'd love to hear how we can make your code migration experience better.",
+        "twitter_username": "Alex__Bit",
+        "github_username": "alexbit-codemod",
+        "location": "Palo Alto, CA"
     }
 }

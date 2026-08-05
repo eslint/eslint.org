@@ -248,6 +248,18 @@
             "location": "NYC"
         },
         {
+            "username": "JoshuaKGoldberg",
+            "name": "Josh Goldberg ✨",
+            "title": "ESLint Alumnus",
+            "website": "http://www.joshuakgoldberg.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3335181",
+            "bio": null,
+            "twitter_username": "JoshuaKGoldberg",
+            "github_username": "JoshuaKGoldberg",
+            "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
+            "location": "Somerville, MA, USA"
+        },
+        {
             "username": "IanVS",
             "name": "Ian VanSchooten",
             "title": "ESLint Alumnus",
@@ -276,7 +288,7 @@
             "title": "ESLint Alumnus",
             "website": "https://kaicataldo.com",
             "avatar_url": "https://avatars.githubusercontent.com/u/7041728",
-            "bio": "Currently working with The Metropolitan Museum of Art",
+            "bio": "Freelancer | currently working with The Metropolitan Museum of Art",
             "twitter_username": null,
             "github_username": "kaicataldo",
             "location": "Brooklyn, NY"
@@ -319,7 +331,7 @@
             "username": "g-plane",
             "name": "Pig Fang",
             "title": "ESLint Alumnus",
-            "website": "",
+            "website": "https://blog.gplane.win",
             "avatar_url": "https://avatars.githubusercontent.com/u/17216317",
             "bio": null,
             "twitter_username": null,
@@ -395,18 +407,6 @@
             "twitter_username": null,
             "github_username": "DMartens",
             "location": null
-        },
-        {
-            "username": "JoshuaKGoldberg",
-            "name": "Josh Goldberg ✨",
-            "title": "ESLint Committer",
-            "website": "http://www.joshuakgoldberg.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3335181",
-            "bio": "@bingo-js @eslint @flint-fyi @mochajs @typescript-eslint and an assortment of other fun web dev projects ✨ 💖\r\n\r\ndev @getsentry",
-            "twitter_username": "JoshuaKGoldberg",
-            "github_username": "JoshuaKGoldberg",
-            "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",
-            "location": "Somerville, MA, USA"
         },
         {
             "username": "SwetaTanwar",
