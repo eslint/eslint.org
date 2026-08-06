@@ -14,6 +14,7 @@ const blog = defineCollection({
   loader: glob({
     pattern: "**/*.md",
     base: "./blog",
+    generateId: ({ entry }) => entry.replace(/\.md$/, ""),
   }),
   schema: z
     .object({
