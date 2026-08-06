@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 106224,
-        "monthlyDonations": 8852,
-        "sponsorCount": 110
+        "annualDonations": 106236,
+        "monthlyDonations": 8853,
+        "sponsorCount": 111
     },
     "diamond": [],
     "platinum": [
@@ -918,6 +918,14 @@
             "name": "Syntax",
             "image": "https://avatars.githubusercontent.com/u/130389858",
             "url": "https://syntax.fm",
+            "monthlyDonation": 1,
+            "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Ysr*",
+            "image": "https://avatars.githubusercontent.com/u/143439570",
+            "url": "https://github.com/Yasirdora",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
