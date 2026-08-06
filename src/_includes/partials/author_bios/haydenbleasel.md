@@ -1,1 +1,0 @@
-Hayden Bleasel is the Chief Product Officer at [Corellium](https://corellium.com/), where he leads the Product and Design teams in blurring the line between real and virtual. After hours, he repopulates forests with [Neutral](https://tryneutral.com/), writes a lot of [words](https://haydenbleasel.com/blog) and plays a lot of [games](https://haydenbleasel.com/games).

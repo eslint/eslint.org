@@ -1,1 +1,0 @@
-Contributor at @yahoo, @formatjs, @nodejs, and @yui.

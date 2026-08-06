@@ -1,5 +1,6 @@
 {
-	"useTabs": true,
+  "plugins": ["prettier-plugin-astro"],
+  	"useTabs": true,
 	"tabWidth": 4,
 	"arrowParens": "avoid",
 	"overrides": [
@@ -9,6 +10,12 @@
 				"tabWidth": 2,
 				"useTabs": false
 			}
-		}
+		},
+        {
+            "files": "*.astro",
+            "options": {
+              "parser": "astro"
+            }
+        }
 	]
 }

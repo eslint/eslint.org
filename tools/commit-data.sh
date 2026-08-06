@@ -10,7 +10,7 @@ else
 	echo "Data changed!"
 
 	# commit the result
-	git add src/_data/ includes/ README.md
+	git add src/data/team.json src/data/all_authors.json src/data/stats.json src/data/sponsors.json src/data/donations.json README.md
 	git commit -m "chore: Update remote data"
 
 	# push back to source control

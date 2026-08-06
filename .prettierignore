@@ -10,3 +10,8 @@ src/_data/*.json
 *-polyfill.js
 *-ponyfill*.js
 *.min.js
+public
+src/data/**/*.json
+src/data/**/*.yml
+src/assets
+src/scss

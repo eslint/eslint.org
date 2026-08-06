@@ -1,1 +1,0 @@
-Creator of ESLint, independent software developer, consultant, coach, and author.

@@ -1,4 +1,4 @@
-import "regenerator-runtime/runtime";
+import "./utils/process-shim";
 
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import { flushSync } from "react-dom";

@@ -1,1 +1,0 @@
-A member of ESLint, Babel, and Vue.js.

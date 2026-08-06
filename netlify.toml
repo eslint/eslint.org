@@ -1,15 +1,11 @@
 [dev]
-  command = "npm run start"
-  targetPort = 2022
+  command = "npm run dev"
+  targetPort = 4321
 
 [build]
-  publish = "_site"
+  publish = "dist"
   command = "npm run build"
   edge_functions = "functions"
-
-[context.deploy-preview]
-  publish = "astro.eslint.org/dist"
-  command = "cd astro.eslint.org && npm i && npm run build"
 
 [[edge_functions]]
   function = "og"

@@ -7,6 +7,7 @@ import {
 	SOURCE_TYPES,
 	CONFIG_FORMATS,
 } from "../utils/constants";
+import "../../scss/components/playground-configuration.scss";
 
 const customStyles = {
 	singleValue: styles => ({
