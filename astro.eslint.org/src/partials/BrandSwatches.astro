@@ -1,0 +1,32 @@
+---
+import Swatch from "../components/Swatch.astro";
+import palette from "../data/palette.json";
+
+const { site } = Astro.props;
+const colors = site.branding_page.sections.color_palette.colors;
+const translatePrimaryColor = (description: string) =>
+  description
+    .replace("Primary", colors.primary)
+    .replace("White", colors.white);
+const translateNeutralColor = (description: string) =>
+  description.replace("Neutral", colors.neutral);
+---
+<h3 id="brand-colors-label" hidden>
+  {site.branding_page.sections.color_palette.brand_palette}
+</h3>
+<ul class="swatches" aria-labelledby="brand-colors-label">
+  {
+    palette.primary.map((color: { description: string; value: string }) => (
+      <li class="swatches__item">
+        <Swatch desc={translatePrimaryColor(color.description)} val={color.value} />
+      </li>
+    ))
+  }
+  {
+    palette.neutral.map((color: { description: string; value: string }) => (
+      <li class="swatches__item">
+        <Swatch desc={translateNeutralColor(color.description)} val={color.value} />
+      </li>
+    ))
+  }
+</ul>

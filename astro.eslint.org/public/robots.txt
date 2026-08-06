@@ -1,0 +1,3 @@
+Sitemap: https://eslint.org/sitemap-index.xml
+
+User-agent: *

@@ -1,0 +1,118 @@
+code[class*="language-"],
+pre[class*="language-"] {
+	font-family:
+		var(--mono-font), Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+		monospace;
+	font-size: 1em;
+	font-variant-ligatures: none;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	position: relative;
+	padding: 1.5rem;
+	margin: 1.5rem 0;
+	overflow: auto;
+	border-radius: var(--border-radius);
+	background-color: var(--lightest-background-color);
+	color: var(--code-text-color);
+
+	&.line-numbers-mode {
+		padding-left: calc(1.5rem + 2.4em + 1.2rem);
+	}
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: var(--lightest-background-color);
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: 0.1em;
+	border-radius: 0.3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: var(--code-comments-color);
+}
+
+.token.namespace {
+	opacity: 0.7;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: var(--link-color);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: var(--link-color);
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.line-numbers-wrapper {
+	position: absolute;
+	top: 0;
+	left: 1.5rem;
+	text-align: right;
+	padding-top: 1.5rem;
+	font-size: 1em;
+	font-family:
+		var(--mono-font), Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+		monospace;
+	line-height: 1.5;
+	color: var(--icon-color);
+	font-variant-ligatures: none;
+
+	.line-number {
+		user-select: none;
+		color: var(--icon-color);
+		display: inline-block;
+		font-variant-numeric: tabular-nums;
+		text-align: right;
+		width: 1.2em;
+	}
+}

@@ -1,0 +1,14 @@
+---
+const { value, label } = Astro.props;
+const formatter = new Intl.NumberFormat("en-US", {
+  notation: "compact",
+  maximumFractionDigits: 1,
+});
+const fullValue = new Intl.NumberFormat("en-US").format(value);
+const shortValue = formatter.format(value);
+---
+
+<div class="metrics__item" aria-label={`${fullValue} ${label}`}>
+  <span class="metrics__value" aria-hidden="true">{shortValue}</span>
+  <span aria-hidden="true">{label}</span>
+</div>

@@ -1,0 +1,24 @@
+{
+    "github": "https://github.com/eslint/eslint",
+    "chat": "https://eslint.org/chat",
+    "bluesky": "https://bsky.app/profile/eslint.org",
+    "mastodon": "https://fosstodon.org/@eslint",
+    "twitter": "https://twitter.com/geteslint",
+
+    "blog": "/blog",
+    "docs": "/docs/latest/",
+    "playground": "/play",
+    "codeExplorer": "https://explorer.eslint.org/",
+    "getStarted": "/docs/latest/use/getting-started",
+    "sponsors": "/sponsors",
+    "branding": "/branding",
+    "store": "https://eslint.threadless.com",
+    "team": "/team",
+
+    "configuring": "/docs/latest/use/configure/",
+    "fixProblems": "/docs/latest/use/command-line-interface#fix-problems",
+
+    "donate": "/donate",
+    "openCollective": "https://opencollective.com/eslint",
+    "githubSponsors": "https://github.com/sponsors/eslint"
+}

@@ -1,0 +1,29 @@
+---
+const code = "G-7DGPHY308T";
+---
+
+<script
+	is:inline
+	async
+	src={`https://www.googletagmanager.com/gtag/js?id=${code}`}
+></script>
+<script is:inline define:vars={{ code }}>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		window.dataLayer.push(arguments);
+	}
+
+	gtag("js", new Date());
+	gtag("config", code);
+
+	document.querySelectorAll("a.donate-link").forEach((element) =>
+		element.addEventListener("click", () => gtag("event", "donate_click")),
+	);
+
+	document.querySelectorAll("a.sponsor-link").forEach((element) =>
+		element.addEventListener("click", () =>
+			gtag("event", "sponsor_click", element.href || ""),
+		),
+	);
+</script>

@@ -7,6 +7,10 @@
   command = "npm run build"
   edge_functions = "functions"
 
+[context.deploy-preview]
+  publish = "astro.eslint.org/dist"
+  command = "cd astro.eslint.org && npm i && npm run build"
+
 [[edge_functions]]
   function = "og"
   path = "/og"

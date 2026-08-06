@@ -1,0 +1,18 @@
+---
+import Main from "./Main.astro";
+import Hero from "../components/Hero.astro";
+
+const { title, description, multilingual } = Astro.props.frontmatter;
+---
+
+<Main
+  title={title}
+  description={description}
+  mainClass="post-main"
+  multilingual={multilingual}
+>
+  <Hero title={title} supportingText={description} />
+  <div class="content-container content-container__no-sidebar">
+    <slot />
+  </div>
+</Main>

@@ -1,0 +1,82 @@
+---
+import { getEntry } from "astro:content";
+import Main from "~/layouts/Main.astro";
+import Hero from "~/components/Hero.astro";
+import BrandingLogo from "~/partials/BrandingLogo.astro";
+import BrandSwatches from "~/partials/BrandSwatches.astro";
+import { getSiteStaticPaths } from "~/utils/i18n";
+
+export async function getStaticPaths() {
+  return getSiteStaticPaths();
+}
+
+const site = (await getEntry("sites", Astro.currentLocale!))?.data as any;
+---
+
+<Main>
+  <Hero
+    title={site.branding_page.title}
+    supportingText={site.branding_page.description}
+  />
+
+  <section class="section">
+    <div class="content-container grid">
+      <div class="span-1-6">
+        <h2 class="section-title h3">
+          {site.branding_page.sections.name.title}
+        </h2>
+        <p>
+          {site.branding_page.sections.name.description}
+        </p>
+      </div>
+    </div>
+    <div class="content-container grid">
+      <div class="span-1-6">
+        <h2 class="section-title h3">
+          {site.branding_page.sections.logo.title}
+        </h2>
+        {
+          site.branding_page.sections.logo.description.map(
+            (paragraph: string) => <p>{paragraph}</p>,
+          )
+        }
+        <div class="eslint-actions">
+          <a
+            download
+            href="/assets/images/logo/eslint-logo-color.svg"
+            class="c-btn c-btn--secondary"
+          >
+            {site.branding_page.sections.logo.download_svg}
+          </a>
+          <a
+            download
+            href="/assets/images/logo/eslint-logo-color.png"
+            class="c-btn c-btn--secondary"
+          >
+            {site.branding_page.sections.logo.download_png}
+          </a>
+        </div>
+      </div>
+      <div class="span-8-12">
+        <BrandingLogo site={site} />
+      </div>
+    </div>
+    <div class="content-container grid">
+      <div class="span-1-6">
+        <h2 class="section-title h3">
+          {site.branding_page.sections.color_palette.title}
+        </h2>
+        {
+          site.branding_page.sections.color_palette.description.map(
+            (paragraph: string) => <p>{paragraph}</p>,
+          )
+        }
+      </div>
+      <div class="span-8-12">
+        <div class="brand__palette">
+          <BrandSwatches site={site} />
+        </div>
+      </div>
+    </div>
+  </section>
+</Main>

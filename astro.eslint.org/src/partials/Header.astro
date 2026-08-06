@@ -1,0 +1,15 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import Logo from "../components/Logo.astro";
+import Navigation from "../components/Navigation.astro";
+
+const homeUrl = getRelativeLocaleUrl(Astro.currentLocale!, "/");
+---
+<header class="site-header">
+  <div class="content-container">
+    <a href={homeUrl} aria-label="Homepage" class="logo-link">
+      <Logo />
+    </a>
+    <Navigation />
+  </div>
+</header>
