@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 108624,
-        "monthlyDonations": 9052,
-        "sponsorCount": 111
+        "annualDonations": 106224,
+        "monthlyDonations": 8852,
+        "sponsorCount": 110
     },
     "diamond": [],
     "platinum": [
@@ -87,15 +87,6 @@
             "url": "https://opensource.sap.com",
             "monthlyDonation": 250,
             "source": "github",
-            "tier": "bronze-sponsor"
-        },
-        {
-            "name": "apuesdeportivas.es",
-            "url": "https://apuesdeportivas.es/",
-            "image": "https://images.opencollective.com/apuesdeportivas-es/6ecf644/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
-            "source": "opencollective",
             "tier": "bronze-sponsor"
         },
         {
