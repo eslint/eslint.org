@@ -1,105 +1,108 @@
 import { useState, useRef, useEffect } from "react";
 import Select, { components } from "react-select";
 import ShareURL from "./share-url";
+import LanguageSwitcher from "./language-switcher";
 import {
 	ECMA_FEATURES,
 	ECMA_VERSIONS,
 	SOURCE_TYPES,
 	CONFIG_FORMATS,
+	customStyles,
+	customTheme,
 } from "../utils/constants";
 
-const customStyles = {
-	singleValue: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-	}),
-	control: styles => ({
-		...styles,
-		backgroundColor: "var(--body-background-color)",
-		border: "1px solid var(--border-color)",
-		color: "var(--body-text-color)",
-		padding: 0,
-		":hover": {
-			...styles[":hover"],
-			borderColor: "var(--color-primary-700)",
-		},
-		":focus": {
-			borderColor: "var(--color-primary-700)",
-		},
-		":active": {
-			borderColor: "var(--color-primary-700)",
-		},
-	}),
-	option: (styles, state) => ({
-		...styles,
-		backgroundColor: state.isFocused
-			? "var(--color-primary-700)"
-			: "var(--body-background-color)",
-		color: state.isFocused ? "white" : "var(--body-text-color)",
-		cursor: "pointer",
-		border: "1px solid var(--border-color)",
-		borderBottom: "none",
-		":hover": {
-			...styles[":hover"],
-			backgroundColor: "var(--color-primary-700)",
-			color: "white",
-		},
-		":active": {
-			...styles[":active"],
-			backgroundColor: "var(--color-primary-700)",
-		},
-	}),
-	input: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-		caretShape: "underscore",
-	}),
-	indicatorsContainer: styles => ({
-		...styles,
-		cursor: "pointer",
-	}),
-	indicatorSeparator: styles => ({
-		...styles,
-		cursor: "auto",
-	}),
-	multiValue: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-		backgroundColor: "var(--lighter-background-color)",
-		border: "1px solid var(--border-color)",
-	}),
-	multiValueLabel: styles => ({
-		...styles,
-		color: "var(--headings-color)",
-		backgroundColor: "var(--lighter-background-color)",
-	}),
-	multiValueRemove: styles => ({
-		...styles,
-		color: "var(--headings-color)",
-		cursor: "pointer",
-		backgroundColor: "var(--lighter-background-color)",
-	}),
-	noOptionsMessage: styles => ({
-		...styles,
-		backgroundColor: "var(--body-background-color)",
-		border: "1px solid var(--border-color)",
-		borderBottom: "none",
-	}),
-	menuList: styles => ({
-		...styles,
-		padding: 0,
-		borderBottom: "1px solid var(--border-color)",
-	}),
-};
+// const customStyles = {
+// 	singleValue: styles => ({
+// 		...styles,
+// 		color: "var(--body-text-color)",
+// 	}),
+// 	control: styles => ({
+// 		...styles,
+// 		backgroundColor: "var(--body-background-color)",
+// 		border: "1px solid var(--border-color)",
+// 		color: "var(--body-text-color)",
+// 		padding: 0,
+// 		":hover": {
+// 			...styles[":hover"],
+// 			borderColor: "var(--color-primary-700)",
+// 		},
+// 		":focus": {
+// 			borderColor: "var(--color-primary-700)",
+// 		},
+// 		":active": {
+// 			borderColor: "var(--color-primary-700)",
+// 		},
+// 	}),
+// 	option: (styles, state) => ({
+// 		...styles,
+// 		backgroundColor: state.isFocused
+// 			? "var(--color-primary-700)"
+// 			: "var(--body-background-color)",
+// 		color: state.isFocused ? "white" : "var(--body-text-color)",
+// 		cursor: "pointer",
+// 		border: "1px solid var(--border-color)",
+// 		borderBottom: "none",
+// 		":hover": {
+// 			...styles[":hover"],
+// 			backgroundColor: "var(--color-primary-700)",
+// 			color: "white",
+// 		},
+// 		":active": {
+// 			...styles[":active"],
+// 			backgroundColor: "var(--color-primary-700)",
+// 		},
+// 	}),
+// 	input: styles => ({
+// 		...styles,
+// 		color: "var(--body-text-color)",
+// 		caretShape: "underscore",
+// 	}),
+// 	indicatorsContainer: styles => ({
+// 		...styles,
+// 		cursor: "pointer",
+// 	}),
+// 	indicatorSeparator: styles => ({
+// 		...styles,
+// 		cursor: "auto",
+// 	}),
+// 	multiValue: styles => ({
+// 		...styles,
+// 		color: "var(--body-text-color)",
+// 		backgroundColor: "var(--lighter-background-color)",
+// 		border: "1px solid var(--border-color)",
+// 	}),
+// 	multiValueLabel: styles => ({
+// 		...styles,
+// 		color: "var(--headings-color)",
+// 		backgroundColor: "var(--lighter-background-color)",
+// 	}),
+// 	multiValueRemove: styles => ({
+// 		...styles,
+// 		color: "var(--headings-color)",
+// 		cursor: "pointer",
+// 		backgroundColor: "var(--lighter-background-color)",
+// 	}),
+// 	noOptionsMessage: styles => ({
+// 		...styles,
+// 		backgroundColor: "var(--body-background-color)",
+// 		border: "1px solid var(--border-color)",
+// 		borderBottom: "none",
+// 	}),
+// 	menuList: styles => ({
+// 		...styles,
+// 		padding: 0,
+// 		borderBottom: "1px solid var(--border-color)",
+// 	}),
+// };
 
-const customTheme = theme => ({
-	...theme,
-	colors: {
-		...theme.colors,
-		primary25: "var(--color-primary-500)",
-		primary: "var(--color-primary-700)",
-	},
-});
+// const customTheme = theme => ({
+// 	...theme,
+// 	colors: {
+// 		...theme.colors,
+// 		primary25: "var(--color-primary-500)",
+// 		primary: "var(--color-primary-700)",
+// 	},
+// });
 
 const defaultOption = {
 	value: "default",
@@ -119,6 +122,8 @@ export default function Configuration({
 	validationError,
 	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
+	selectedLanguage,
+	setSelectedLanguage,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -307,6 +312,11 @@ export default function Configuration({
 
 	return (
 		<div className="playground__config-options__sections">
+			<LanguageSwitcher
+				className={"playground__language-switcher-large"}
+				selectedLanguage={selectedLanguage}
+				setSelectedLanguage={setSelectedLanguage}
+			/>
 			<div className="playground__config-options__section">
 				<ShareURL
 					errors={errors}
