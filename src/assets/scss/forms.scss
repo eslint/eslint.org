@@ -91,6 +91,12 @@ input {
 	margin-bottom: 1rem;
 	margin-block-end: 1rem;
 	flex: 1 1 130px;
+
+	&.toggle-field {
+		display: flex;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
 }
 
 .c-field-group {

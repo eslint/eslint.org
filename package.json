@@ -133,6 +133,7 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-select": "^5.10.2",
-    "react-split": "^2.0.14"
+    "react-split": "^2.0.14",
+    "react-toggle-component": "^4.0.1"
   }
 }

@@ -13,7 +13,14 @@ export default function LanguageSwitcher({
 	className,
 	selectedLanguage,
 	setSelectedLanguage,
+	setRuleMetaData,
+	changeRulesDataWithLanguage,
 }) {
+	const handleLanguageChange = (option) => {
+		setSelectedLanguage(option.value);
+		changeRulesDataWithLanguage(option.value);
+	};
+
 	return (
 		<div
 			className={`playground__config-options__section ${className || ""}`}
@@ -31,7 +38,7 @@ export default function LanguageSwitcher({
 						option => option.value === selectedLanguage,
 					)}
 					options={optionsForLanguage}
-					onChange={option => setSelectedLanguage(option.value)}
+					onChange={handleLanguageChange}
 				/>
 			</div>
 		</div>

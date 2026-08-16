@@ -22,6 +22,14 @@ export const SOURCE_TYPES = ["script", "module", "commonjs"];
 
 export const CONFIG_FORMATS = ["CommonJS", "ESM"];
 
+export const CSS_LANGUAGES_TYPES = ["css"];
+
+export const MARKDOWN_LANGUAGES_TYPES = ["gfm", "commonmark"];
+
+export const JSON_LANGUAGE_TYPE = ["json", "jsonc", "json5"];
+
+export const FRONTMATTER_TYPES = ["yaml", "toml", "json"];
+
 // GitHub Issue Reporting constants
 export const GITHUB_ISSUE_URL = "https://github.com/eslint/eslint/issues/new";
 

@@ -16,20 +16,31 @@ import LanguageSwitcher from "./components/language-switcher";
 import "./scss/split-pane.scss";
 import * as typeScriptESLintParser from "@typescript-eslint/parser";
 import rulesMeta from "./build/rules_meta.json";
+import cssRulesMeta from "./build/css_rules_meta.json";
+import jsonRulesMeta from "./build/json_rules_meta.json";
+import markdownRulesMeta from "./build/markdown_rules_meta.json";
+import css from "@eslint/css";
+import markdown from "@eslint/markdown";
+import json from "@eslint/json";
 
 const BOM = "\uFEFF";
 
 const DEFAULT_TEXT = '/* eslint prefer-const: "error" */\nlet a = "b";';
 
 const linter = new Linter();
-const ruleNames = Object.keys(rulesMeta);
 
-const getDefaultOptions = () => ({
-	rules: Object.entries(rulesMeta).reduce((result, [ruleId, meta]) => {
+// const ruleNames = Object.keys(ruleMetaData);
+
+const getDefaultOptions = (metaData, pluginName) => ({
+	rules: Object.entries(metaData).reduce((result, [ruleId, meta]) => {
 		if (meta.docs.recommended) {
-			result[ruleId] = ["error"];
-		}
-		return result;
+            const qualifiedRuleId = pluginName
+                ? `${pluginName}/${ruleId}`
+                : ruleId;
+
+            result[qualifiedRuleId] = ["error"];
+        }
+        return result;
 	}, {}),
 });
 
@@ -148,6 +159,16 @@ const App = () => {
 	let initialText, initialOptions;
 	const editorRef = useRef(null);
 
+	const [selectedLanguage, setSelectedLanguage] = useState("javascript");
+	const [ruleMetaData, setRuleMetaData] = useState(rulesMeta);
+	const pluginMap = { css, json, markdown };
+	const languagePlugin = pluginMap[selectedLanguage] ?? null;
+
+	const enabledPlugins = !(selectedLanguage === "javascript" || selectedLanguage === "typescript");
+
+	const ruleNames = Object.keys(ruleMetaData);
+	const ruleNamesWithPluginName = ruleNames.map(ruleName => enabledPlugins ? `${selectedLanguage}/${ruleName}` : ruleName);
+
 	const initialState = getUrlState() || getLocalStorageState();
 
 	if (initialState) {
@@ -157,7 +178,7 @@ const App = () => {
 			: {};
 	} else {
 		initialText = DEFAULT_TEXT;
-		initialOptions = getDefaultOptions();
+		initialOptions = getDefaultOptions(ruleMetaData);
 	}
 
 	initialOptions = fillOptionsDefaults(initialOptions);
@@ -166,15 +187,38 @@ const App = () => {
 	const [fix, setFix] = useState(false);
 	const [options, setOptions] = useState(initialOptions);
 
+	const defaultLanguageForPlugins = {
+		css: "css",
+		json: "json",
+		markdown: "gfm",
+	};
+
+	const changeRulesDataWithLanguage = (language) => {
+		if (language === "javascript" || language === "typescript") {
+			setRuleMetaData(rulesMeta);
+			setOptions(fillOptionsDefaults(getDefaultOptions(rulesMeta)));
+		} else if (language === "css") {
+			setRuleMetaData(cssRulesMeta);
+			setOptions(fillOptionsDefaults(getDefaultOptions(cssRulesMeta, language)));
+		} else if (language === "json") {
+			setRuleMetaData(jsonRulesMeta);
+			setOptions(fillOptionsDefaults(getDefaultOptions(jsonRulesMeta, language)));
+		} else if (language === "markdown") {
+			setRuleMetaData(markdownRulesMeta);
+			setOptions(fillOptionsDefaults(getDefaultOptions(markdownRulesMeta, language)));
+		}
+	}
+
 	// In some cases, Linter modifies `languageOptions`, so we'll deep-clone them
 	const optionsForLinter = {
 		...options,
 		languageOptions: {
 			...options.languageOptions,
-			...(options?.languageOptions.parser ===
-				"@typescript-eslint/parser" && {
-				parser: typeScriptESLintParser,
-			}),
+			// ...(options?.languageOptions.parser ===
+			// 	"@typescript-eslint/parser" && {
+			// 	parser: typeScriptESLintParser,
+			// }),
+			...(selectedLanguage === "typescript" && { parser: typeScriptESLintParser, }),
 			parserOptions: {
 				...options.languageOptions.parserOptions,
 				ecmaFeatures: {
@@ -182,6 +226,8 @@ const App = () => {
 				},
 			},
 		},
+		...(languagePlugin && { plugins: { [selectedLanguage]: languagePlugin } }),
+		...(enabledPlugins && { language: `${selectedLanguage}/${defaultLanguageForPlugins[selectedLanguage]}` }),
 	};
 
 	const lint = () => {
@@ -320,8 +366,6 @@ const App = () => {
 	const hasMultipleDisableMessages =
 		messages.filter(message => options.rules[message.ruleId]).length > 1;
 
-	const [selectedLanguage, setSelectedLanguage] = useState("javascript");
-
 	return (
 		<div className="playground-wrapper">
 			<div className="playground__config-and-footer">
@@ -333,6 +377,8 @@ const App = () => {
 						className={"playground__language-switcher-small"}
 						selectedLanguage={selectedLanguage}
 						setSelectedLanguage={setSelectedLanguage}
+						setRuleMetaData={setRuleMetaData}
+						changeRulesDataWithLanguage={changeRulesDataWithLanguage}
 					/>
 					<button
 						className="playground__config-toggle"
@@ -380,12 +426,13 @@ const App = () => {
 						<Configuration
 							errors={messages}
 							initialOptions={fillOptionsDefaults(
-								getDefaultOptions(),
+								getDefaultOptions(ruleMetaData),
 							)}
-							ruleNames={ruleNames}
+							// ruleNames={ruleNames}
+							ruleNames={ruleNamesWithPluginName}
 							options={options}
 							onUpdate={updateOptions}
-							rulesMeta={rulesMeta}
+							rulesMeta={ruleMetaData}
 							validationError={validationError}
 							eslintVersion={linter.version}
 							rulesWithInvalidConfigs={rulesWithInvalidConfigs}
@@ -394,6 +441,7 @@ const App = () => {
 							}
 							selectedLanguage={selectedLanguage}
 							setSelectedLanguage={setSelectedLanguage}
+							changeRulesDataWithLanguage={changeRulesDataWithLanguage}
 						/>
 						<Footer />
 					</div>
