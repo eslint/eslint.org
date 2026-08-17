@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113444.02794828001,
-        "monthlyDonations": 9453.66899569,
-        "sponsorCount": 117
+        "annualDonations": 113384.02794828001,
+        "monthlyDonations": 9448.66899569,
+        "sponsorCount": 116
     },
     "diamond": [],
     "platinum": [
@@ -848,14 +848,6 @@
             "name": "Jupli",
             "image": "https://avatars.githubusercontent.com/u/140319444",
             "url": "https://jupli.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Radu",
-            "image": "https://avatars.githubusercontent.com/u/218564757",
-            "url": "https://www.eyepaq.com",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
