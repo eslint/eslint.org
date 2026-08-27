@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113384.02794828001,
-        "monthlyDonations": 9448.66899569,
-        "sponsorCount": 116
+        "annualDonations": 113372.02794828001,
+        "monthlyDonations": 9447.66899569,
+        "sponsorCount": 115
     },
     "diamond": [],
     "platinum": [
@@ -948,14 +948,6 @@
             "name": "Zwyx",
             "image": "https://avatars.githubusercontent.com/u/29386932",
             "url": "https://zwyx.dev",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "su-",
-            "image": "https://avatars.githubusercontent.com/u/30166652",
-            "url": "https://su-u.notion.site/",
             "monthlyDonation": 1,
             "source": "github",
             "tier": "backer"
