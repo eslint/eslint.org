@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 106224,
-        "monthlyDonations": 8852,
-        "sponsorCount": 110
+        "annualDonations": 113372.02794828001,
+        "monthlyDonations": 9447.66899569,
+        "sponsorCount": 115
     },
     "diamond": [],
     "platinum": [
@@ -90,12 +90,12 @@
             "tier": "bronze-sponsor"
         },
         {
-            "name": "apuesdeportivas.es",
-            "url": "https://apuesdeportivas.es/",
-            "image": "https://images.opencollective.com/apuesdeportivas-es/6ecf644/avatar.png",
-            "monthlyDonation": 200,
-            "totalDonations": 200,
-            "source": "opencollective",
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "image": "https://github.com/syntaxfm.png",
+            "monthlyDonation": 210.11429179,
+            "totalDonations": "0676.68349452412.34151329213.78075056155.60782433319.21772090508.53108396188.66503242183.53026766161.76391376152.22369333268.03188580161.52162337161.76465919287.34876401287.34876401208.91288037207.97782925465.14678637254.77350577185.94272289210.11429179210.11429179210.11429179210.11429179",
+            "source": "thanks.dev",
             "tier": "bronze-sponsor"
         },
         {
@@ -131,6 +131,14 @@
             "monthlyDonation": 200,
             "source": "github",
             "tier": "bronze-sponsor"
+        },
+        {
+            "name": "TestMu AI Open Source Office (Formerly LambdaTest)",
+            "image": "https://avatars.githubusercontent.com/u/171592363",
+            "url": "https://www.testmuai.com",
+            "monthlyDonation": 200,
+            "source": "github",
+            "tier": "bronze-sponsor"
         }
     ],
     "backers": [
@@ -141,6 +149,42 @@
             "monthlyDonation": 140,
             "totalDonations": 6680,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "juju",
+            "url": null,
+            "image": "https://github.com/juju.png",
+            "monthlyDonation": 124.55208989,
+            "totalDonations": "055.8400281056.0363021539.2947255510.0275016310.0424624185.5376718999.4764601472.46666159124.55208989124.55208989",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Codecov",
+            "url": "https://codecov.io/",
+            "image": "https://github.com/codecov.png",
+            "monthlyDonation": 107.56308943,
+            "totalDonations": "0485.81999999469.89795918445.4081632660.2188476043.96200432476.15083939144.2911852638.4680824175.5449763636.96993650173.74407714169.30954801167.7356633950.0633729532.4919902832.5320847820.2482570020.2482570037.3982119337.2574389372.2991461834.6066094798.34320849107.56308943107.56308943107.56308943107.56308943",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sentry",
+            "url": "https://sentry.io",
+            "image": "https://github.com/getsentry.png",
+            "monthlyDonation": 75.17775364,
+            "totalDonations": "0445.40816326460.93340067460.91105300456.5440021861.4703811116.12558911426.30697155198.7050523186.16143728302.21612313220.0139270980.2617104271.2284701967.26918957285.48772580209.60328591209.70414805211.72971887211.72971887143.25614914142.19107370211.7116023568.5504542167.0642759775.1777536475.1777536475.1777536475.17775364",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "charmed-kubernetes",
+            "url": null,
+            "image": "https://github.com/charmed-kubernetes.png",
+            "monthlyDonation": 64.84523932,
+            "totalDonations": "031.1306793531.336060066.9171802245.3145889553.1344685238.7696696164.8452393264.84523932",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -206,6 +250,15 @@
             "tier": "backer"
         },
         {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 19.59019088,
+            "totalDonations": "013.1523181713.0949178512.4986023910.0441172110.0737259420.0390773720.0397015120.0402284620.0397732620.0424056214.8715717018.3015744713.9110254419.5901908819.59019088",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Say Yup",
             "url": "https://www.sayyup.nl",
             "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
@@ -244,14 +297,6 @@
             "name": "Hiroki Osame",
             "image": "https://avatars.githubusercontent.com/u/1075694",
             "url": "https://hirok.io",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "ANDO Shohei",
-            "image": "https://avatars.githubusercontent.com/u/1482802",
-            "url": "https://github.com/lyoz",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
@@ -321,6 +366,15 @@
             "tier": "backer"
         },
         {
+            "name": "canonical-launchpad",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 9.82289119,
+            "totalDonations": "07.518717617.159719009.822891199.82289119",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "CrawlJobs",
             "url": "https://www.crawljobs.com/",
             "image": "https://images.opencollective.com/crawljobs-poland/fa43a17/logo.png",
@@ -352,7 +406,7 @@
             "url": "https://www.mymoneycomparison.com",
             "image": "https://images.opencollective.com/mymoneycomparison/93c0e0e/avatar.png",
             "monthlyDonation": 5,
-            "totalDonations": 45,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -799,14 +853,6 @@
             "tier": "backer"
         },
         {
-            "name": "Radu",
-            "image": "https://avatars.githubusercontent.com/u/218564757",
-            "url": "https://www.eyepaq.com",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Nevacloud",
             "image": "https://avatars.githubusercontent.com/u/118523538",
             "url": "https://nevacloud.com",
@@ -853,7 +899,7 @@
             "url": "https://wptheme.fr/theme-wordpress-divi/",
             "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 30,
+            "totalDonations": 31,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -907,14 +953,6 @@
             "tier": "backer"
         },
         {
-            "name": "su-",
-            "image": "https://avatars.githubusercontent.com/u/30166652",
-            "url": "https://su-u.notion.site/",
-            "monthlyDonation": 1,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Syntax",
             "image": "https://avatars.githubusercontent.com/u/130389858",
             "url": "https://syntax.fm",
@@ -928,6 +966,15 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Jennifer",
+            "url": "https://gh.jenthedev.it.com",
+            "image": "https://github.com/jv-darkheartlabs.png",
+            "monthlyDonation": 0.00344955,
+            "totalDonations": "00.023782570.00344955",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
