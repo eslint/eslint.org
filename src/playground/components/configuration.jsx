@@ -124,6 +124,7 @@ export default function Configuration({
 	errors,
 	onUpdate,
 	options,
+	optionsInLanguage,
 	ruleNames,
 	validationError,
 	rulesWithInvalidConfigs,
@@ -177,13 +178,6 @@ export default function Configuration({
 			label: option,
 		}))
 	];
-	// const ESLintParserOptions = [
-	// 	{ value: "default", label: "Espree (default)" },
-	// 	{
-	// 		value: "@typescript-eslint/parser",
-	// 		label: "@typescript-eslint/parser",
-	// 	},
-	// ];
 
 	const optionsForLanguage = {
 		css: cssLanguageOptions,
@@ -207,11 +201,6 @@ export default function Configuration({
 
 	const selectedLanguageOption = languageOptions.find(option => option.value === selectedSubtype) ?? null;
 
-	// const selectedLanguageOption = languageOptions.find(option => {
-
-	// 	return options?.language?.split("/")?.[1] ? option.value === options?.language?.split("/")?.[1] : languageOptions[0].value;
-	// }) ?? null;
-
 	const getRuleNameOnly = (ruleName) => {
 		const parts = ruleName.split("/");
 		return parts[parts.length - 1];
@@ -223,10 +212,10 @@ export default function Configuration({
 		.map(ruleName => ({
 			value: ruleName,
 			label: rulesMeta[getRuleNameOnly(ruleName)].deprecated
-				// ? getRuleNameOnly(ruleName).concat(" (deprecated)")
-				// : getRuleNameOnly(ruleName),
-				? ruleName.concat(" (deprecated)")
-				: ruleName,
+				? getRuleNameOnly(ruleName).concat(" (deprecated)")
+				: getRuleNameOnly(ruleName),
+				// ? ruleName.concat(" (deprecated)")
+				// : ruleName,
 		}));
 	const [selectedRules, setSelectedRules] = useState([]);
 	const ruleInputRef = useRef(null);
@@ -559,12 +548,12 @@ export default function Configuration({
 							<div className="c-field">
 								<label
 									className="label__text"
-									htmlFor="language-options"
+									htmlFor="plugin-language-options"
 								>
-									Language
+									Plugin Language
 								</label>
 								<Select
-									inputId="language-options"
+									inputId="plugin-language-options"
 									value={selectedLanguageOption}
 									isSearchable={false}
 									styles={customStyles}
@@ -683,7 +672,7 @@ export default function Configuration({
 								<Toggle
 									name="tolerant-toggle"
 									{...toggleColors}
-									checked={options.languageOptions.tolerant ?? false}
+									checked={optionsInLanguage["css"].languageOptions.tolerant ?? false}
 									onCheckedChange={(checked) => {
 										const newOptions = {
 											...options,

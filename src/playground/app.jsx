@@ -25,7 +25,9 @@ import json from "@eslint/json";
 
 const BOM = "\uFEFF";
 
-const DEFAULT_TEXT = '/* eslint prefer-const: "error" */\nlet a = "b";';
+// const DEFAULT_TEXT = '/* eslint prefer-const: "error" */\nlet a = "b";';
+import { DEFAULT_TEXTS } from "./utils/constants";
+import { LANGUAGE_META } from "./utils/constants";
 
 const linter = new Linter();
 
@@ -108,11 +110,11 @@ const getUrlState = () => {
 			Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")),
 		);
 
-		if (typeof urlState.text === "undefined") {
+		if (typeof urlState.text[urlState.language] === "undefined") {
 			return null;
 		}
 
-		return { text: urlState.text, options: urlState.options };
+		return { text: urlState.text, options: urlState.options, language: urlState.language };
 	} catch {
 		return null;
 	}
@@ -124,13 +126,14 @@ const getLocalStorageState = () => {
 			window.localStorage.getItem("linterDemoState") || "{}",
 		);
 
-		if (typeof localStorageState.text === "undefined") {
+		if (typeof localStorageState.text[localStorageState.language] === "undefined") {
 			return null;
 		}
 
 		return {
 			text: localStorageState.text,
 			options: localStorageState.options,
+			language: localStorageState.language,
 		};
 	} catch {
 		return null;
@@ -155,12 +158,79 @@ const applyFix = (text, fix) => {
 	return `${text.slice(0, start)}${fix.text}${text.slice(end)}`;
 };
 
+const rulesMetaObj = {
+	javascript: rulesMeta,
+	typescript: rulesMeta,
+	css: cssRulesMeta,
+	json: jsonRulesMeta,
+	markdown: markdownRulesMeta,
+}
+
+
+const buildDefaultOptions = language => {
+    const { pluginName, plugin, parser, languageId } = LANGUAGE_META[language];
+    const options = fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName));
+
+    if (parser && parser === "@typescript-eslint/parser") {
+        options.languageOptions = { ...options.languageOptions, parser: typeScriptESLintParser };
+    }
+    if (plugin) {
+        // options.plugins = { [language]: plugin };
+        options.plugins = language;
+    }
+    if (languageId) {
+        options.language = languageId;
+    }
+
+    return options;
+};
+
+const defaultOptionsByLanguage = Object.fromEntries(
+    Object.keys(rulesMetaObj).map(language => [
+        language,
+        buildDefaultOptions(language),
+    ]),
+);
+
 const App = () => {
-	let initialText, initialOptions;
+	let initialText, initialOptions, initialLanguage = "javascript";
 	const editorRef = useRef(null);
 
-	const [selectedLanguage, setSelectedLanguage] = useState("javascript");
-	const [ruleMetaData, setRuleMetaData] = useState(rulesMeta);
+	// const [ruleMetaData, setRuleMetaData] = useState(rulesMeta);
+
+	const initialState = getUrlState() || getLocalStorageState();
+
+	if (initialState) {
+		const languageInState = initialState.language;
+
+		initialText = languageInState ? initialState.text[languageInState] : initialState.text["javascript"];
+		initialOptions = initialState.options
+			? convertLegacyOptionsToFlatConfig(initialState.options[languageInState] ?? initialState.options["javascript"])
+			: {};
+		initialLanguage = initialState.language || "javascript";
+	} else {
+		initialText = DEFAULT_TEXTS["javascript"];
+		initialOptions = getDefaultOptions(rulesMeta);
+	}
+
+	initialOptions = fillOptionsDefaults(initialOptions);
+
+	const [texts, setTexts] = useState({
+		...DEFAULT_TEXTS,
+		[initialLanguage]: initialText,
+	});
+	const [initialOptionsByLanguage, setInitialOptionsByLanguage] = useState({
+		...defaultOptionsByLanguage,
+		[initialLanguage]: initialOptions,
+	});
+	// const [text, setText] = useState(texts[initialLanguage]);
+	// const [text, setText] = useState(initialText);
+	const [fix, setFix] = useState(false);
+	// const [options, setOptions] = useState(initialOptions);
+	const [selectedLanguage, setSelectedLanguage] = useState(initialLanguage);
+	const text = texts[selectedLanguage];
+
+	const [ruleMetaData, setRuleMetaData] = useState(rulesMetaObj[selectedLanguage]);
 	const pluginMap = { css, json, markdown };
 	const languagePlugin = pluginMap[selectedLanguage] ?? null;
 
@@ -169,45 +239,13 @@ const App = () => {
 	const ruleNames = Object.keys(ruleMetaData);
 	const ruleNamesWithPluginName = ruleNames.map(ruleName => enabledPlugins ? `${selectedLanguage}/${ruleName}` : ruleName);
 
-	const initialState = getUrlState() || getLocalStorageState();
-
-	if (initialState) {
-		initialText = initialState.text;
-		initialOptions = initialState.options
-			? convertLegacyOptionsToFlatConfig(initialState.options)
-			: {};
-	} else {
-		initialText = DEFAULT_TEXT;
-		initialOptions = getDefaultOptions(ruleMetaData);
-	}
-
-	initialOptions = fillOptionsDefaults(initialOptions);
-
-	const [text, setText] = useState(initialText);
-	const [fix, setFix] = useState(false);
-	const [options, setOptions] = useState(initialOptions);
-
 	const defaultLanguageForPlugins = {
 		css: "css",
 		json: "json",
 		markdown: "gfm",
 	};
 
-	const changeRulesDataWithLanguage = (language) => {
-		if (language === "javascript" || language === "typescript") {
-			setRuleMetaData(rulesMeta);
-			setOptions(fillOptionsDefaults(getDefaultOptions(rulesMeta)));
-		} else if (language === "css") {
-			setRuleMetaData(cssRulesMeta);
-			setOptions(fillOptionsDefaults(getDefaultOptions(cssRulesMeta, language)));
-		} else if (language === "json") {
-			setRuleMetaData(jsonRulesMeta);
-			setOptions(fillOptionsDefaults(getDefaultOptions(jsonRulesMeta, language)));
-		} else if (language === "markdown") {
-			setRuleMetaData(markdownRulesMeta);
-			setOptions(fillOptionsDefaults(getDefaultOptions(markdownRulesMeta, language)));
-		}
-	}
+	const options = initialOptionsByLanguage[selectedLanguage];
 
 	// In some cases, Linter modifies `languageOptions`, so we'll deep-clone them
 	const optionsForLinter = {
@@ -266,10 +304,11 @@ const App = () => {
 	};
 
 	const storeState = useCallback(
-		({ newText, newOptions }) => {
+		({ newText, newOptions, newLanguage }) => {
 			const serializedState = JSON.stringify({
-				text: newText,
-				options: newOptions || options,
+				text: newText || texts,
+				options: newOptions || initialOptionsByLanguage,
+				language: newLanguage || selectedLanguage,
 			});
 
 			if (hasLocalStorage()) {
@@ -281,7 +320,7 @@ const App = () => {
 			url.hash = Unicode.encodeToBase64(serializedState);
 			history.replaceState(null, null, url);
 		},
-		[options],
+		[texts, initialOptionsByLanguage, selectedLanguage],
 	);
 
 	const { messages, output, fatalMessage, crashError, validationError } =
@@ -292,8 +331,9 @@ const App = () => {
 		if (message.fix) {
 			const fixedCode = applyFix(text, message.fix);
 
-			setText(fixedCode);
-			storeState({ newText: fixedCode });
+			setTexts(prev => ({ ...prev, [selectedLanguage]: fixedCode }));
+			// setText(fixedCode);
+			storeState({ newText: { ...texts, [selectedLanguage]: fixedCode } });
 		}
 	};
 
@@ -306,9 +346,11 @@ const App = () => {
 		const result = linter.verifyAndFix(text, optionsForLinter, {
 			fix: true,
 		});
-		setText(result.output);
+		// setText(result.output);
+		setTexts(prev => ({ ...prev, [selectedLanguage]: result.output }));
 		storeState({
-			newText: result.output,
+			newText: { ...texts, [selectedLanguage]: result.output },
+			// newText: result.output,
 		});
 	};
 
@@ -322,8 +364,9 @@ const App = () => {
 	};
 
 	const updateOptions = newOptions => {
-		setOptions(newOptions);
-		storeState({ newOptions, newText: text });
+		// setOptions(newOptions);
+		setInitialOptionsByLanguage(prev => ({ ...prev, [selectedLanguage]: newOptions }));
+		storeState({ newOptions: { ...initialOptionsByLanguage, [selectedLanguage]: newOptions }, newText: { ...texts } });
 	};
 	const [showConfigMenu, setShowConfigMenu] = useState(false);
 	const [isConfigHidden, setIsConfigHidden] = useState(
@@ -349,8 +392,10 @@ const App = () => {
 				value =>
 					flushSync(() => {
 						setFix(false);
-						setText(value);
-						storeState({ newText: value });
+						// setText(value);
+						setTexts(prev => ({ ...prev, [selectedLanguage]: value }));
+						storeState({ newText: { ...texts, [selectedLanguage]: value } });
+						// storeState({ newText: value });
 					}),
 				400,
 			),
@@ -365,6 +410,18 @@ const App = () => {
 		messages.filter(message => message.fix).length > 1;
 	const hasMultipleDisableMessages =
 		messages.filter(message => options.rules[message.ruleId]).length > 1;
+
+	const changeRulesDataWithLanguage = (language) => {
+		const pluginName = !(language === "javascript" || language === "typescript") ? language : null;
+
+		setRuleMetaData(rulesMetaObj[language]);
+		// setOptions(fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName)));
+		setInitialOptionsByLanguage(prev => ({ ...prev, [language]: fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName)) }));
+		// setText(DEFAULT_TEXTS[language] || "");
+		// storeState({ newLanguage: language });
+		// setText(texts[language]);
+		storeState({ newLanguage: language, newText: { ...texts }, newOptions: { ...initialOptionsByLanguage } });
+	}
 
 	return (
 		<div className="playground-wrapper">
@@ -432,6 +489,7 @@ const App = () => {
 							ruleNames={ruleNamesWithPluginName}
 							options={options}
 							onUpdate={updateOptions}
+							optionsInLanguage={initialOptionsByLanguage}
 							rulesMeta={ruleMetaData}
 							validationError={validationError}
 							eslintVersion={linter.version}
