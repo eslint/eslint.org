@@ -67,6 +67,12 @@ ul.tag-list {
 	gap: 0.5rem;
 }
 
+/* Keep the visual order while placing the title first in the DOM for search indexing. */
+.blog-post-page .hero .span-1-7 {
+	display: flex;
+	flex-direction: column;
+}
+
 .tag-list__item {
 	background-color: var(--lightest-background-color);
 	color: var(--link-color);
@@ -81,6 +87,10 @@ ul.tag-list {
 	font-weight: 500;
 	margin-bottom: 1rem;
 	margin-block-end: 1rem;
+
+	.blog-post-page & {
+		order: -1;
+	}
 }
 
 .post__sidebar-module {
