@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 113372.02794828001,
-        "monthlyDonations": 9447.66899569,
-        "sponsorCount": 115
+        "annualDonations": 113252.02794828001,
+        "monthlyDonations": 9437.66899569,
+        "sponsorCount": 114
     },
     "diamond": [],
     "platinum": [
@@ -297,14 +297,6 @@
             "name": "Hiroki Osame",
             "image": "https://avatars.githubusercontent.com/u/1075694",
             "url": "https://hirok.io",
-            "monthlyDonation": 10,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Ryan Waskiewicz",
-            "image": "https://avatars.githubusercontent.com/u/1930213",
-            "url": "https://ducktyped.dev",
             "monthlyDonation": 10,
             "source": "github",
             "tier": "backer"
