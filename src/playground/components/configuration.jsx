@@ -193,17 +193,19 @@ export default function Configuration({
 	}
 
 	const languageOptions = optionsForLanguage[selectedLanguage] ?? [];
-	const selectedSubtype = 
-		options?.language?.split("/")?.[1] ??
-		(selectedLanguage === "css" ? "css" :
-		selectedLanguage === "markdown" ? "gfm" :
-		selectedLanguage === "json" ? "json" : "");
+	const defaultSubtypes = {
+		css: "css",
+		markdown: "gfm",
+		json: "json",
+	};
+	const selectedSubtype =
+    	options?.language?.split("/")?.[1] ?? defaultSubtypes[selectedLanguage] ?? "";
 
 	const selectedLanguageOption = languageOptions.find(option => option.value === selectedSubtype) ?? null;
 
 	const getRuleNameOnly = (ruleName) => {
 		const parts = ruleName.split("/");
-		return parts[parts.length - 1];
+		return parts.at(-1);
 	};
 
 	// filter rules which are already added to the configuration
@@ -672,7 +674,7 @@ export default function Configuration({
 								<Toggle
 									name="tolerant-toggle"
 									{...toggleColors}
-									checked={optionsInLanguage["css"].languageOptions.tolerant ?? false}
+									checked={optionsInLanguage.css.languageOptions.tolerant ?? false}
 									onCheckedChange={(checked) => {
 										const newOptions = {
 											...options,

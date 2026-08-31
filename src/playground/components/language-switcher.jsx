@@ -13,7 +13,6 @@ export default function LanguageSwitcher({
 	className,
 	selectedLanguage,
 	setSelectedLanguage,
-	setRuleMetaData,
 	changeRulesDataWithLanguage,
 }) {
 	const handleLanguageChange = (option) => {
@@ -23,7 +22,7 @@ export default function LanguageSwitcher({
 
 	return (
 		<div
-			className={`playground__config-options__section ${className || ""}`}
+			className={`playground__config-options__section ${className}`}
 		>
 			<label className="label__text" htmlFor="playground-language">
 				Language

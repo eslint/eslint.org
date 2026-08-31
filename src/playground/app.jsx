@@ -203,13 +203,13 @@ const App = () => {
 	if (initialState) {
 		const languageInState = initialState.language;
 
-		initialText = languageInState ? initialState.text[languageInState] : initialState.text["javascript"];
+		initialText = languageInState ? initialState.text[languageInState] : initialState.text.javascript;
 		initialOptions = initialState.options
-			? convertLegacyOptionsToFlatConfig(initialState.options[languageInState] ?? initialState.options["javascript"])
+			? convertLegacyOptionsToFlatConfig(initialState.options[languageInState] ?? initialState.options.javascript)
 			: {};
 		initialLanguage = initialState.language || "javascript";
 	} else {
-		initialText = DEFAULT_TEXTS["javascript"];
+		initialText = DEFAULT_TEXTS.javascript;
 		initialOptions = getDefaultOptions(rulesMeta);
 	}
 
@@ -434,7 +434,6 @@ const App = () => {
 						className={"playground__language-switcher-small"}
 						selectedLanguage={selectedLanguage}
 						setSelectedLanguage={setSelectedLanguage}
-						setRuleMetaData={setRuleMetaData}
 						changeRulesDataWithLanguage={changeRulesDataWithLanguage}
 					/>
 					<button

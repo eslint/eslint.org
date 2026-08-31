@@ -22,7 +22,6 @@ import markdown from "@eslint/markdown";
 // eslint-disable-next-line no-underscore-dangle -- Conventional
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const BUILD_DIR = path.resolve(__dirname, "../build");
-const OUT_PATH = path.resolve(BUILD_DIR, "rules_meta.json");
 
 //-----------------------------------------------------------------------------
 // Main
