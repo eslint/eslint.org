@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105672,
-        "monthlyDonations": 8806,
-        "sponsorCount": 103
+        "annualDonations": 105792,
+        "monthlyDonations": 8816,
+        "sponsorCount": 105
     },
     "diamond": [],
     "platinum": [
@@ -308,7 +308,7 @@
             "url": "https://about.gitea.com/",
             "image": "https://images.opencollective.com/gitea/bf35c2f/logo.png",
             "monthlyDonation": 5,
-            "totalDonations": 45,
+            "totalDonations": 50,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -385,11 +385,29 @@
             "tier": "backer"
         },
         {
+            "name": "IT Flashcards",
+            "url": "https://www.itflashcards.com",
+            "image": "https://images.opencollective.com/it-flashcards/dc7aa6c/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 131,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "Marco Solazzi",
             "url": "https://marco.solazzi.me",
             "image": "https://images.opencollective.com/marco-solazzi/1a0bd80/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 150,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Pink Fluffy Nico",
+            "url": null,
+            "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 216,
             "source": "opencollective",
             "tier": "backer"
         },
