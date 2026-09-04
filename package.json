@@ -97,7 +97,7 @@
     "imagemin-cli": "^7.0.0",
     "js-yaml": "^5.4.1",
     "lint-staged": "^13.3.0",
-    "markdown-it": "^14.3.0",
+    "markdown-it": "^14.3.1",
     "markdown-it-anchor": "^9.2.1",
     "markdownlint-cli": "^0.49.1",
     "node-polyfill-webpack-plugin": "^1.1.4",
@@ -114,7 +114,7 @@
     "tap-spot": "^1.1.2",
     "typescript": "^5.9.3",
     "undici": "^6.28.0",
-    "webpack": "^5.109.2",
+    "webpack": "^5.110.1",
     "webpack-cli": "^4.10.0",
     "yorkie": "^2.0.0"
   },
