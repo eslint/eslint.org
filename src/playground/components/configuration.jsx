@@ -1,105 +1,114 @@
 import { useState, useRef, useEffect } from "react";
 import Select, { components } from "react-select";
+import { Toggle } from "react-toggle-component";
 import ShareURL from "./share-url";
+import LanguageSwitcher from "./language-switcher";
 import {
 	ECMA_FEATURES,
 	ECMA_VERSIONS,
 	SOURCE_TYPES,
 	CONFIG_FORMATS,
+	CSS_LANGUAGES_TYPES,
+	MARKDOWN_LANGUAGES_TYPES,
+	JSON_LANGUAGE_TYPE,
+	FRONTMATTER_TYPES,
+	customStyles,
+	customTheme,
 } from "../utils/constants";
+import "react-toggle-component/styles.css";
 
-const customStyles = {
-	singleValue: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-	}),
-	control: styles => ({
-		...styles,
-		backgroundColor: "var(--body-background-color)",
-		border: "1px solid var(--border-color)",
-		color: "var(--body-text-color)",
-		padding: 0,
-		":hover": {
-			...styles[":hover"],
-			borderColor: "var(--color-primary-700)",
-		},
-		":focus": {
-			borderColor: "var(--color-primary-700)",
-		},
-		":active": {
-			borderColor: "var(--color-primary-700)",
-		},
-	}),
-	option: (styles, state) => ({
-		...styles,
-		backgroundColor: state.isFocused
-			? "var(--color-primary-700)"
-			: "var(--body-background-color)",
-		color: state.isFocused ? "white" : "var(--body-text-color)",
-		cursor: "pointer",
-		border: "1px solid var(--border-color)",
-		borderBottom: "none",
-		":hover": {
-			...styles[":hover"],
-			backgroundColor: "var(--color-primary-700)",
-			color: "white",
-		},
-		":active": {
-			...styles[":active"],
-			backgroundColor: "var(--color-primary-700)",
-		},
-	}),
-	input: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-		caretShape: "underscore",
-	}),
-	indicatorsContainer: styles => ({
-		...styles,
-		cursor: "pointer",
-	}),
-	indicatorSeparator: styles => ({
-		...styles,
-		cursor: "auto",
-	}),
-	multiValue: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-		backgroundColor: "var(--lighter-background-color)",
-		border: "1px solid var(--border-color)",
-	}),
-	multiValueLabel: styles => ({
-		...styles,
-		color: "var(--headings-color)",
-		backgroundColor: "var(--lighter-background-color)",
-	}),
-	multiValueRemove: styles => ({
-		...styles,
-		color: "var(--headings-color)",
-		cursor: "pointer",
-		backgroundColor: "var(--lighter-background-color)",
-	}),
-	noOptionsMessage: styles => ({
-		...styles,
-		backgroundColor: "var(--body-background-color)",
-		border: "1px solid var(--border-color)",
-		borderBottom: "none",
-	}),
-	menuList: styles => ({
-		...styles,
-		padding: 0,
-		borderBottom: "1px solid var(--border-color)",
-	}),
-};
+// const customStyles = {
+// 	singleValue: styles => ({
+// 		...styles,
+// 		color: "var(--body-text-color)",
+// 	}),
+// 	control: styles => ({
+// 		...styles,
+// 		backgroundColor: "var(--body-background-color)",
+// 		border: "1px solid var(--border-color)",
+// 		color: "var(--body-text-color)",
+// 		padding: 0,
+// 		":hover": {
+// 			...styles[":hover"],
+// 			borderColor: "var(--color-primary-700)",
+// 		},
+// 		":focus": {
+// 			borderColor: "var(--color-primary-700)",
+// 		},
+// 		":active": {
+// 			borderColor: "var(--color-primary-700)",
+// 		},
+// 	}),
+// 	option: (styles, state) => ({
+// 		...styles,
+// 		backgroundColor: state.isFocused
+// 			? "var(--color-primary-700)"
+// 			: "var(--body-background-color)",
+// 		color: state.isFocused ? "white" : "var(--body-text-color)",
+// 		cursor: "pointer",
+// 		border: "1px solid var(--border-color)",
+// 		borderBottom: "none",
+// 		":hover": {
+// 			...styles[":hover"],
+// 			backgroundColor: "var(--color-primary-700)",
+// 			color: "white",
+// 		},
+// 		":active": {
+// 			...styles[":active"],
+// 			backgroundColor: "var(--color-primary-700)",
+// 		},
+// 	}),
+// 	input: styles => ({
+// 		...styles,
+// 		color: "var(--body-text-color)",
+// 		caretShape: "underscore",
+// 	}),
+// 	indicatorsContainer: styles => ({
+// 		...styles,
+// 		cursor: "pointer",
+// 	}),
+// 	indicatorSeparator: styles => ({
+// 		...styles,
+// 		cursor: "auto",
+// 	}),
+// 	multiValue: styles => ({
+// 		...styles,
+// 		color: "var(--body-text-color)",
+// 		backgroundColor: "var(--lighter-background-color)",
+// 		border: "1px solid var(--border-color)",
+// 	}),
+// 	multiValueLabel: styles => ({
+// 		...styles,
+// 		color: "var(--headings-color)",
+// 		backgroundColor: "var(--lighter-background-color)",
+// 	}),
+// 	multiValueRemove: styles => ({
+// 		...styles,
+// 		color: "var(--headings-color)",
+// 		cursor: "pointer",
+// 		backgroundColor: "var(--lighter-background-color)",
+// 	}),
+// 	noOptionsMessage: styles => ({
+// 		...styles,
+// 		backgroundColor: "var(--body-background-color)",
+// 		border: "1px solid var(--border-color)",
+// 		borderBottom: "none",
+// 	}),
+// 	menuList: styles => ({
+// 		...styles,
+// 		padding: 0,
+// 		borderBottom: "1px solid var(--border-color)",
+// 	}),
+// };
 
-const customTheme = theme => ({
-	...theme,
-	colors: {
-		...theme.colors,
-		primary25: "var(--color-primary-500)",
-		primary: "var(--color-primary-700)",
-	},
-});
+// const customTheme = theme => ({
+// 	...theme,
+// 	colors: {
+// 		...theme.colors,
+// 		primary25: "var(--color-primary-500)",
+// 		primary: "var(--color-primary-700)",
+// 	},
+// });
 
 const defaultOption = {
 	value: "default",
@@ -115,10 +124,14 @@ export default function Configuration({
 	errors,
 	onUpdate,
 	options,
+	optionsInLanguage,
 	ruleNames,
 	validationError,
 	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
+	selectedLanguage,
+	setSelectedLanguage,
+	changeRulesDataWithLanguage,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -146,22 +159,65 @@ export default function Configuration({
 		value: configFormat,
 		label: configFormat,
 	}));
-	const ESLintParserOptions = [
-		{ value: "default", label: "Espree (default)" },
-		{
-			value: "@typescript-eslint/parser",
-			label: "@typescript-eslint/parser",
-		},
+	const cssLanguageOptions = CSS_LANGUAGES_TYPES.map(option => ({
+		value: option,
+		label: option,
+	}));
+	const markdownLanguageOptions = MARKDOWN_LANGUAGES_TYPES.map(option => ({
+		value: option,
+		label: option,
+	}));
+	const jsonLanguageOptions = JSON_LANGUAGE_TYPE.map(option => ({
+		value: option,
+		label: option,
+	}));
+	const frontmatterOptions = [
+		defaultOption,
+		...FRONTMATTER_TYPES.map(option => ({
+			value: option,
+			label: option,
+		}))
 	];
+
+	const optionsForLanguage = {
+		css: cssLanguageOptions,
+		markdown: markdownLanguageOptions,
+		json: jsonLanguageOptions,
+	}
+
+	const toggleColors = {
+		borderColor: "none",
+		knobColor: "var(--body-background-color)",
+		leftBackgroundColor: "var(--icon-color)",
+		rightBackgroundColor: "var(--link-color)",
+	}
+
+	const languageOptions = optionsForLanguage[selectedLanguage] ?? [];
+	const defaultSubtypes = {
+		css: "css",
+		markdown: "gfm",
+		json: "json",
+	};
+	const selectedSubtype =
+    	options?.language?.split("/")?.[1] ?? defaultSubtypes[selectedLanguage] ?? "";
+
+	const selectedLanguageOption = languageOptions.find(option => option.value === selectedSubtype) ?? null;
+
+	const getRuleNameOnly = (ruleName) => {
+		const parts = ruleName.split("/");
+		return parts.at(-1);
+	};
 
 	// filter rules which are already added to the configuration
 	const ruleNamesOptions = ruleNames
 		.filter(ruleName => options.rules && !options.rules[ruleName])
 		.map(ruleName => ({
 			value: ruleName,
-			label: rulesMeta[ruleName].deprecated
-				? ruleName.concat(" (deprecated)")
-				: ruleName,
+			label: rulesMeta[getRuleNameOnly(ruleName)].deprecated
+				? getRuleNameOnly(ruleName).concat(" (deprecated)")
+				: getRuleNameOnly(ruleName),
+				// ? ruleName.concat(" (deprecated)")
+				// : ruleName,
 		}));
 	const [selectedRules, setSelectedRules] = useState([]);
 	const ruleInputRef = useRef(null);
@@ -305,8 +361,16 @@ export default function Configuration({
 			"tsParser",
 		);
 
+	const enableJsAndTsOptions = selectedLanguage === "javascript" || selectedLanguage === "typescript";
+
 	return (
 		<div className="playground__config-options__sections">
+			<LanguageSwitcher
+				className={"playground__language-switcher-large"}
+				selectedLanguage={selectedLanguage}
+				setSelectedLanguage={setSelectedLanguage}
+				changeRulesDataWithLanguage={changeRulesDataWithLanguage}
+			/>
 			<div className="playground__config-options__section">
 				<ShareURL
 					errors={errors}
@@ -345,38 +409,85 @@ export default function Configuration({
 								</span>
 								<span className="label__text">{`v${eslintVersion}`}</span>
 							</div>
+							{enableJsAndTsOptions && (
+								<div className="c-field">
+									<label
+										className="label__text"
+										htmlFor="ecma-version"
+									>
+										ECMA Version
+									</label>
+									<Select
+										inputId="ecma-version"
+										isSearchable={false}
+										styles={customStyles}
+										theme={theme => customTheme(theme)}
+										value={ECMAVersionsOptions.find(
+											ecmaVersion =>
+												ecmaVersion.value ===
+												(options.languageOptions
+													?.ecmaVersion || "default"),
+										)}
+										options={ECMAVersionsOptions}
+										onChange={selected => {
+											const newOptions = {
+												...options,
+												languageOptions: {
+													...options.languageOptions,
+												},
+											};
+
+											if (selected.value === "default") {
+												delete newOptions.languageOptions
+													.ecmaVersion;
+											} else {
+												newOptions.languageOptions.ecmaVersion =
+													selected.value;
+											}
+
+											onUpdate(newOptions);
+										}}
+									/>
+								</div>
+							)}
+						</div>
+						{enableJsAndTsOptions && (
 							<div className="c-field">
 								<label
 									className="label__text"
-									htmlFor="ecma-version"
+									htmlFor="source-type"
 								>
-									ECMA Version
+									Source Type
 								</label>
 								<Select
-									inputId="ecma-version"
+									inputId="source-type"
 									isSearchable={false}
 									styles={customStyles}
 									theme={theme => customTheme(theme)}
-									value={ECMAVersionsOptions.find(
-										ecmaVersion =>
-											ecmaVersion.value ===
-											(options.languageOptions
-												?.ecmaVersion || "default"),
+									value={sourceTypeOptions.find(
+										sourceTypeOption =>
+											sourceTypeOption.value ===
+											(options.languageOptions?.sourceType ||
+												"default"),
 									)}
-									options={ECMAVersionsOptions}
+									options={sourceTypeOptions}
 									onChange={selected => {
 										const newOptions = {
 											...options,
 											languageOptions: {
 												...options.languageOptions,
+												parserOptions: {
+													...options.languageOptions
+														.parserOptions,
+												},
 											},
 										};
 
 										if (selected.value === "default") {
 											delete newOptions.languageOptions
-												.ecmaVersion;
+												.sourceType;
 										} else {
-											newOptions.languageOptions.ecmaVersion =
+											newOptions.languageOptions.sourceType =
 												selected.value;
 										}
 
@@ -384,149 +495,245 @@ export default function Configuration({
 									}}
 								/>
 							</div>
-						</div>
-						<div className="c-field">
-							<label
-								className="label__text"
-								htmlFor="source-type"
-							>
-								Source Type
-							</label>
-							<Select
-								inputId="source-type"
-								isSearchable={false}
-								styles={customStyles}
-								theme={theme => customTheme(theme)}
-								value={sourceTypeOptions.find(
-									sourceTypeOption =>
-										sourceTypeOption.value ===
-										(options.languageOptions?.sourceType ||
-											"default"),
-								)}
-								options={sourceTypeOptions}
-								onChange={selected => {
-									const newOptions = {
-										...options,
-										languageOptions: {
-											...options.languageOptions,
-											parserOptions: {
-												...options.languageOptions
-													.parserOptions,
-											},
-										},
-									};
-
-									if (selected.value === "default") {
-										delete newOptions.languageOptions
-											.sourceType;
-									} else {
-										newOptions.languageOptions.sourceType =
-											selected.value;
+						)}
+						{enableJsAndTsOptions && (
+							<div className="combo">
+								<label
+									className="label__text"
+									htmlFor="ecma-features"
+								>
+									ECMA Features
+								</label>
+								<Select
+									inputId="ecma-features"
+									isClearable
+									isMulti
+									value={ECMAFeaturesOptions.filter(
+										ecmaFeatureName =>
+											options.languageOptions.parserOptions
+												.ecmaFeatures[
+												ecmaFeatureName.value
+											],
+									)}
+									isSearchable={false}
+									styles={customStyles}
+									theme={theme => customTheme(theme)}
+									options={
+										options.languageOptions.parser
+											? ECMAFeaturesOptions.slice(0, -1)
+											: ECMAFeaturesOptions
 									}
-
-									onUpdate(newOptions);
-								}}
-							/>
-						</div>
-						<div className="combo">
-							<label
-								className="label__text"
-								htmlFor="ecma-features"
-							>
-								ECMA Features
-							</label>
-							<Select
-								inputId="ecma-features"
-								isClearable
-								isMulti
-								value={ECMAFeaturesOptions.filter(
-									ecmaFeatureName =>
-										options.languageOptions.parserOptions
-											.ecmaFeatures[
-											ecmaFeatureName.value
-										],
-								)}
-								isSearchable={false}
-								styles={customStyles}
-								theme={theme => customTheme(theme)}
-								options={
-									options.languageOptions.parser
-										? ECMAFeaturesOptions.slice(0, -1)
-										: ECMAFeaturesOptions
-								}
-								onChange={selectedOptions => {
-									const newOptions = {
-										...options,
-										languageOptions: {
-											...options.languageOptions,
-											parserOptions: {
-												...options.languageOptions
-													.parserOptions,
-												ecmaFeatures: {},
+									onChange={selectedOptions => {
+										const newOptions = {
+											...options,
+											languageOptions: {
+												...options.languageOptions,
+												parserOptions: {
+													...options.languageOptions
+														.parserOptions,
+													ecmaFeatures: {},
+												},
 											},
-										},
-									};
+										};
 
-									selectedOptions.forEach(selected => {
-										newOptions.languageOptions.parserOptions.ecmaFeatures[
-											selected.value
-										] = true;
-									});
-									onUpdate(newOptions);
-								}}
-							/>
-						</div>
-						<div
-							className="c-field"
-							style={{ marginTop: "1rem", marginBottom: "0" }}
-						>
-							<label className="label__text" htmlFor="parser">
-								Parser
-							</label>
-							<Select
-								inputId="parser"
-								isSearchable={false}
-								styles={customStyles}
-								theme={theme => customTheme(theme)}
-								value={ESLintParserOptions.find(
-									eslintParser =>
-										eslintParser.value ===
-										(options.languageOptions?.parser ||
-											"default"),
-								)}
-								options={ESLintParserOptions}
-								onChange={selected => {
-									const newOptions = {
-										...options,
-										languageOptions: {
-											...options.languageOptions,
-											parserOptions: {
-												...options.languageOptions
-													.parserOptions,
-												ecmaFeatures: {},
+										selectedOptions.forEach(selected => {
+											newOptions.languageOptions.parserOptions.ecmaFeatures[
+												selected.value
+											] = true;
+										});
+										onUpdate(newOptions);
+									}}
+								/>
+							</div>
+						)}
+						{!enableJsAndTsOptions && (
+							<div className="c-field">
+								<label
+									className="label__text"
+									htmlFor="plugin-language-options"
+								>
+									Plugin Language
+								</label>
+								<Select
+									inputId="plugin-language-options"
+									value={selectedLanguageOption}
+									isSearchable={false}
+									styles={customStyles}
+									theme={theme => customTheme(theme)}
+									options={optionsForLanguage[selectedLanguage]}
+									onChange={selectedOption => {
+										const newOptions = {
+											...options,
+											languageOptions: {
+												...options.languageOptions,
+												parserOptions: {
+													...options.languageOptions
+														.parserOptions,
+												},
 											},
-										},
-									};
+										};
 
-									if (selected.value === "default") {
-										delete newOptions.languageOptions
-											.parser;
-										delete newOptions.languageOptions
-											.sourceType;
-										newOptions.languageOptions.parserOptions.ecmaFeatures =
-											{};
-									} else {
-										newOptions.languageOptions.parser =
-											selected.value;
-										delete newOptions.languageOptions
-											.sourceType;
-										newOptions.languageOptions.parserOptions.ecmaFeatures.jsx = true;
-									}
+										const subtype = selectedOption?.value;
 
-									onUpdate(newOptions);
-								}}
-							/>
-						</div>
+										if (subtype) {
+											newOptions.language = `${selectedLanguage}/${subtype}`;
+										} else {
+											delete newOptions.language;
+										}
+
+										onUpdate(newOptions);
+									}}
+								/>
+							</div>
+						)}
+						{selectedLanguage === "markdown" && (
+							<div className="c-field">
+								<label
+									className="label__text"
+									htmlFor="frontmatter"
+								>
+									Frontmatter
+								</label>
+								<Select
+									inputId="frontmatter"
+									value={frontmatterOptions.find(
+										frontmatterOption =>
+											frontmatterOption.value === 
+												(options.languageOptions?.frontmatter || "default"),
+									)}
+									isSearchable={false}
+									styles={customStyles}
+									theme={theme => customTheme(theme)}
+									options={frontmatterOptions}
+									onChange={selectedOption => {
+										const newOptions = {
+											...options,
+											languageOptions: {
+												...options.languageOptions,
+												parserOptions: {
+													...options.languageOptions
+														.parserOptions,
+												},
+											},
+										};
+
+										if (selectedOption.value === "default") {
+											newOptions.languageOptions.frontmatter = false;
+										} else {
+											newOptions.languageOptions.frontmatter = selectedOption.value;
+										}
+
+										onUpdate(newOptions);
+									}}
+								/>
+							</div>
+						)}
+						{selectedLanguage === "markdown" &&(
+							<div className="c-field toggle-field">
+								<label
+									className="label__text"
+									htmlFor="math-toggle"
+								>
+									Math
+								</label>
+								<Toggle
+									name="math-toggle"
+									{...toggleColors}
+									checked={options.languageOptions.math ?? false}
+									onCheckedChange={(checked) => {
+										const newOptions = {
+											...options,
+											languageOptions: {
+												...options.languageOptions,
+												parserOptions: {
+													...options.languageOptions
+														.parserOptions,
+												},
+											},
+										};
+
+										if (checked) {
+											newOptions.languageOptions.math = checked;
+										} else {
+											delete newOptions.languageOptions.math;
+										}
+
+										onUpdate(newOptions);
+									}}
+								/>
+							</div>
+						)}
+						{selectedLanguage === "css" &&(
+							<div className="c-field toggle-field">
+								<label
+									className="label__text"
+									htmlFor="tolerant-toggle"
+								>
+									Tolerant
+								</label>
+								<Toggle
+									name="tolerant-toggle"
+									{...toggleColors}
+									checked={optionsInLanguage.css.languageOptions.tolerant ?? false}
+									onCheckedChange={(checked) => {
+										const newOptions = {
+											...options,
+											languageOptions: {
+												...options.languageOptions,
+												parserOptions: {
+													...options.languageOptions
+														.parserOptions,
+												},
+											},
+										};
+
+										if (checked) {
+											newOptions.languageOptions.tolerant = checked;
+										} else {
+											delete newOptions.languageOptions.tolerant;
+										}
+
+										onUpdate(newOptions);
+									}}
+								/>
+							</div>
+						)}
+						{selectedLanguage === "json" &&(
+							<div className="c-field toggle-field">
+								<label
+									className="label__text"
+									htmlFor="allow-trailing-commas-toggle"
+								>
+									Allow Trailing Commas
+								</label>
+								<Toggle
+									name="allow-trailing-commas-toggle"
+									disabled={options.language !== "json/jsonc"}
+									{...toggleColors}
+									checked={options.languageOptions.allowTrailingCommas ?? false}
+									onCheckedChange={(checked) => {
+										const newOptions = {
+											...options,
+											languageOptions: {
+												...options.languageOptions,
+												parserOptions: {
+													...options.languageOptions
+														.parserOptions,
+												},
+											},
+										};
+
+										if (checked) {
+											newOptions.languageOptions.allowTrailingCommas = checked;
+										} else {
+											delete newOptions.languageOptions.allowTrailingCommas;
+										}
+
+										onUpdate(newOptions);
+									}}
+								/>
+							</div>
+						)}
 					</div>
 				)}
 			</div>
@@ -618,13 +825,13 @@ export default function Configuration({
 											<h4 className="config__added-rules__rule-name">
 												<a
 													href={
-														rulesMeta[ruleName].docs
+														rulesMeta[getRuleNameOnly(ruleName)].docs
 															.url
 													}
 													target="_blank"
 													rel="noreferrer"
 												>
-													{`${ruleName} ${rulesMeta[ruleName].deprecated ? "(deprecated)" : ""}`}
+													{`${getRuleNameOnly(ruleName)} ${rulesMeta[getRuleNameOnly(ruleName)].deprecated ? "(deprecated)" : ""}`}
 												</a>
 												<button
 													aria-label={`Remove ${ruleName}`}
