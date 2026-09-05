@@ -196,32 +196,29 @@ const App = () => {
 	let initialText, initialOptions, initialLanguage = "javascript";
 	const editorRef = useRef(null);
 
-	// const [ruleMetaData, setRuleMetaData] = useState(rulesMeta);
-
 	const initialState = getUrlState() || getLocalStorageState();
 
 	if (initialState) {
 		const languageInState = initialState.language;
 
-		initialText = languageInState ? initialState.text[languageInState] : initialState.text.javascript;
-		initialOptions = initialState.options
-			? convertLegacyOptionsToFlatConfig(initialState.options[languageInState] ?? initialState.options.javascript)
-			: {};
+		initialText = initialState.text;
+		initialOptions = initialState.options;
 		initialLanguage = initialState.language || "javascript";
 	} else {
 		initialText = DEFAULT_TEXTS.javascript;
 		initialOptions = getDefaultOptions(rulesMeta);
 	}
 
-	initialOptions = fillOptionsDefaults(initialOptions);
+	// initialOptions = fillOptionsDefaults(initialOptions);
 
 	const [texts, setTexts] = useState({
 		...DEFAULT_TEXTS,
-		[initialLanguage]: initialText,
+		...initialText,
 	});
 	const [initialOptionsByLanguage, setInitialOptionsByLanguage] = useState({
 		...defaultOptionsByLanguage,
-		[initialLanguage]: initialOptions,
+		// ...(initialState?.options ?? {}),
+		...initialOptions,
 	});
 	// const [text, setText] = useState(texts[initialLanguage]);
 	// const [text, setText] = useState(initialText);
@@ -416,11 +413,18 @@ const App = () => {
 
 		setRuleMetaData(rulesMetaObj[language]);
 		// setOptions(fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName)));
-		setInitialOptionsByLanguage(prev => ({ ...prev, [language]: fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName)) }));
+		// setInitialOptionsByLanguage(prev => ({ ...prev, [language]: initialState?.options?.[language] ?? fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName)) }));
 		// setText(DEFAULT_TEXTS[language] || "");
 		// storeState({ newLanguage: language });
 		// setText(texts[language]);
 		storeState({ newLanguage: language, newText: { ...texts }, newOptions: { ...initialOptionsByLanguage } });
+		// storeState({ newLanguage: language });
+		// setTexts(prev => ({ ...prev, [language]: initialState?.text?.[language] ?? DEFAULT_TEXTS[language] }));
+		// setTexts(prev => ({
+		// 	...prev,
+		// 	// ...DEFAULT_TEXTS,
+		// 	...(initialState?.text ?? {}),
+		// }));
 	}
 
 	return (
