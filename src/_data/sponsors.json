@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105912,
-        "monthlyDonations": 8826,
-        "sponsorCount": 106
+        "annualDonations": 105852,
+        "monthlyDonations": 8821,
+        "sponsorCount": 105
     },
     "diamond": [],
     "platinum": [
@@ -750,14 +750,6 @@
             "tier": "backer"
         },
         {
-            "name": "Stephen Zhou",
-            "image": "https://avatars.githubusercontent.com/u/38493346",
-            "url": "https://hyoban.cc",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Erik Perri",
             "image": "https://avatars.githubusercontent.com/u/46399654",
             "url": "https://github.com/erik-perri",
@@ -828,7 +820,7 @@
             "url": "https://wptheme.fr/theme-wordpress-divi/",
             "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
             "monthlyDonation": 1,
-            "totalDonations": 31,
+            "totalDonations": 32,
             "source": "opencollective",
             "tier": "backer"
         },
