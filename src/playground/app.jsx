@@ -171,12 +171,11 @@ const buildDefaultOptions = language => {
     const { pluginName, plugin, parser, languageId } = LANGUAGE_META[language];
     const options = fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName));
 
-    if (parser && parser === "@typescript-eslint/parser") {
-        options.languageOptions = { ...options.languageOptions, parser: typeScriptESLintParser };
+    if (parser) {
+        options.languageOptions = { ...options.languageOptions, parser: "@typescript-eslint/parser" };
     }
     if (plugin) {
-        // options.plugins = { [language]: plugin };
-        options.plugins = language;
+        options.plugins = pluginName;
     }
     if (languageId) {
         options.language = languageId;
@@ -205,8 +204,8 @@ const App = () => {
 		initialOptions = initialState.options;
 		initialLanguage = initialState.language || "javascript";
 	} else {
-		initialText = DEFAULT_TEXTS.javascript;
-		initialOptions = getDefaultOptions(rulesMeta);
+		initialText = { javascript: DEFAULT_TEXTS.javascript };
+		initialOptions = { javascript: fillOptionsDefaults(getDefaultOptions(rulesMeta)) };
 	}
 
 	// initialOptions = fillOptionsDefaults(initialOptions);
@@ -217,7 +216,6 @@ const App = () => {
 	});
 	const [initialOptionsByLanguage, setInitialOptionsByLanguage] = useState({
 		...defaultOptionsByLanguage,
-		// ...(initialState?.options ?? {}),
 		...initialOptions,
 	});
 	// const [text, setText] = useState(texts[initialLanguage]);
@@ -242,18 +240,18 @@ const App = () => {
 		markdown: "gfm",
 	};
 
-	const options = initialOptionsByLanguage[selectedLanguage];
+	// const options = initialOptionsByLanguage[selectedLanguage];
+	const options = convertLegacyOptionsToFlatConfig(initialOptionsByLanguage[selectedLanguage]);
 
 	// In some cases, Linter modifies `languageOptions`, so we'll deep-clone them
 	const optionsForLinter = {
 		...options,
 		languageOptions: {
 			...options.languageOptions,
-			// ...(options?.languageOptions.parser ===
-			// 	"@typescript-eslint/parser" && {
-			// 	parser: typeScriptESLintParser,
-			// }),
-			...(selectedLanguage === "typescript" && { parser: typeScriptESLintParser, }),
+			...(options?.languageOptions.parser ===
+				"@typescript-eslint/parser" && {
+				parser: typeScriptESLintParser,
+			}),
 			parserOptions: {
 				...options.languageOptions.parserOptions,
 				ecmaFeatures: {
@@ -261,8 +259,7 @@ const App = () => {
 				},
 			},
 		},
-		...(languagePlugin && { plugins: { [selectedLanguage]: languagePlugin } }),
-		...(enabledPlugins && { language: `${selectedLanguage}/${defaultLanguageForPlugins[selectedLanguage]}` }),
+		...(options.plugins && { plugins: { [selectedLanguage]: pluginMap[options.plugins] } }),
 	};
 
 	const lint = () => {
@@ -412,19 +409,7 @@ const App = () => {
 		const pluginName = !(language === "javascript" || language === "typescript") ? language : null;
 
 		setRuleMetaData(rulesMetaObj[language]);
-		// setOptions(fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName)));
-		// setInitialOptionsByLanguage(prev => ({ ...prev, [language]: initialState?.options?.[language] ?? fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName)) }));
-		// setText(DEFAULT_TEXTS[language] || "");
-		// storeState({ newLanguage: language });
-		// setText(texts[language]);
 		storeState({ newLanguage: language, newText: { ...texts }, newOptions: { ...initialOptionsByLanguage } });
-		// storeState({ newLanguage: language });
-		// setTexts(prev => ({ ...prev, [language]: initialState?.text?.[language] ?? DEFAULT_TEXTS[language] }));
-		// setTexts(prev => ({
-		// 	...prev,
-		// 	// ...DEFAULT_TEXTS,
-		// 	...(initialState?.text ?? {}),
-		// }));
 	}
 
 	return (
@@ -503,6 +488,7 @@ const App = () => {
 							selectedLanguage={selectedLanguage}
 							setSelectedLanguage={setSelectedLanguage}
 							changeRulesDataWithLanguage={changeRulesDataWithLanguage}
+							defaultOptionsByLanguage={defaultOptionsByLanguage}
 						/>
 						<Footer />
 					</div>

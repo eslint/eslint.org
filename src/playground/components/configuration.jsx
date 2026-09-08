@@ -118,7 +118,6 @@ const defaultOption = {
 const isEmpty = obj => Object.keys(obj).length === 0;
 
 export default function Configuration({
-	initialOptions,
 	rulesMeta,
 	eslintVersion,
 	errors,
@@ -132,6 +131,7 @@ export default function Configuration({
 	selectedLanguage,
 	setSelectedLanguage,
 	changeRulesDataWithLanguage,
+	defaultOptionsByLanguage,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -293,7 +293,14 @@ export default function Configuration({
 	};
 
 	const revertToDefault = () => {
-		onUpdate(Object.assign({}, initialOptions));
+		onUpdate(Object.assign({}, defaultOptionsByLanguage[selectedLanguage]));
+	};
+
+	const placeholders = {
+		css: "___CSS_PLUGIN_PLACEHOLDER___",
+		markdown: "___MARKDOWN_PLUGIN_PLACEHOLDER___",
+		json: "___JSON_PLUGIN_PLACEHOLDER___",
+		tsParser: "___TS_PARSER_PLACEHOLDER___",
 	};
 
 	const normalizeParser = config => {
@@ -305,6 +312,12 @@ export default function Configuration({
 			}
 		}
 
+		const languagePlugin = config.plugins;
+
+		if (languagePlugin) {
+			config.plugins = { [languagePlugin]: placeholders[languagePlugin] };
+		}
+
 		return config;
 	};
 
@@ -313,6 +326,7 @@ export default function Configuration({
 		options.languageOptions.parserOptions.ecmaFeatures,
 	);
 	const optionsForConfigFile = {
+		...options,
 		rules: isEmpty(options.rules) ? void 0 : options.rules,
 		languageOptions:
 			Object.keys(options.languageOptions).length === 1 &&
@@ -337,6 +351,7 @@ export default function Configuration({
 	const isESM = configFileFormat === "ESM";
 
 	let imports = "";
+	let importplugins = "";
 
 	if (isESM) {
 		imports += 'import { defineConfig } from "eslint/config";\n';
@@ -353,12 +368,29 @@ export default function Configuration({
 		}
 	}
 
+	if (options.plugins) {
+		if (isESM) {
+			importplugins += `import ${placeholders[options.plugins]} from "@eslint/${placeholders[options.plugins]}";\n`;
+		} else {
+			importplugins += `const ${placeholders[options.plugins]} = require("@eslint/${placeholders[options.plugins]}").default;\n`;
+		}
+	}
+
 	const exportStatement = isESM ? "export default" : "module.exports =";
 
+	const placeholderToPluginName = Object.fromEntries(
+		Object.entries(placeholders).map(([pluginName, placeholder]) => [placeholder, pluginName]),
+	);
+
+	const placeholderPattern = new RegExp(
+		`"?(${Object.values(placeholders).join("|")})"?`,
+		"gu",
+	);
+
 	const configFileContent =
-		`${imports}\n${exportStatement} defineConfig(${configString});`.replace(
-			/"___TS_PARSER_PLACEHOLDER___"/gu,
-			"tsParser",
+		`${imports}${importplugins}\n${exportStatement} defineConfig(${configString});`.replace(
+			placeholderPattern,
+			(_, placeholder) => placeholderToPluginName[placeholder],
 		);
 
 	const enableJsAndTsOptions = selectedLanguage === "javascript" || selectedLanguage === "typescript";
@@ -576,6 +608,9 @@ export default function Configuration({
 										const subtype = selectedOption?.value;
 
 										if (subtype) {
+											if (selectedLanguage === "json" && subtype !== "jsonc" && options.languageOptions?.allowTrailingCommas) {
+												delete newOptions.languageOptions.allowTrailingCommas;
+											}
 											newOptions.language = `${selectedLanguage}/${subtype}`;
 										} else {
 											delete newOptions.language;
@@ -710,7 +745,7 @@ export default function Configuration({
 									name="allow-trailing-commas-toggle"
 									disabled={options.language !== "json/jsonc"}
 									{...toggleColors}
-									checked={options.languageOptions.allowTrailingCommas ?? false}
+									checked={(options.language == "json/jsonc" && options.languageOptions.allowTrailingCommas) ?? false}
 									onCheckedChange={(checked) => {
 										const newOptions = {
 											...options,
