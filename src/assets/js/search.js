@@ -213,6 +213,7 @@ searchInput.addEventListener("input", function () {
 
 searchClearBtn.addEventListener("click", function () {
 	searchInput.value = "";
+	searchQuery = "";
 	searchInput.focus();
 	clearSearchResults(true);
 	searchClearBtn.setAttribute("hidden", "");
