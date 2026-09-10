@@ -190,7 +190,7 @@ const handleDocumentClick = e => {
 //-----------------------------------------------------------------------------
 
 // listen for input changes
-searchInput.addEventListener("keyup", function () {
+searchInput.addEventListener("input", function () {
 	const query = searchInput.value;
 
 	if (query === searchQuery) return;
