@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeSwitcher() {
-	const [theme, setTheme] = useState(window.localStorage.getItem("theme"));
+	const [theme, setTheme] = useState(
+		() => window.localStorage.getItem("theme") || "system",
+	);
 
 	const toggleTheme = newTheme => {
 		if (newTheme === "system") {
