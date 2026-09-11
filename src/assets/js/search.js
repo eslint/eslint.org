@@ -190,7 +190,7 @@ const handleDocumentClick = e => {
 //-----------------------------------------------------------------------------
 
 // listen for input changes
-searchInput.addEventListener("keyup", function () {
+searchInput.addEventListener("input", function () {
 	const query = searchInput.value;
 
 	if (query === searchQuery) return;
@@ -213,6 +213,7 @@ searchInput.addEventListener("keyup", function () {
 
 searchClearBtn.addEventListener("click", function () {
 	searchInput.value = "";
+	searchQuery = "";
 	searchInput.focus();
 	clearSearchResults(true);
 	searchClearBtn.setAttribute("hidden", "");
