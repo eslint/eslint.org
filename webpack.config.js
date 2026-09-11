@@ -84,6 +84,17 @@ module.exports = (env, { mode }) => ({
 					},
 				],
 			},
+			{
+				test: /\.css$/u,
+				use: [
+					{
+						loader: "style-loader",
+					},
+					{
+						loader: "css-loader",
+					},
+				],
+			},
 		],
 	},
 	stats: "normal",

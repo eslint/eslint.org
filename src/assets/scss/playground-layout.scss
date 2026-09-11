@@ -94,3 +94,15 @@ body.playground-page {
 		flex-direction: row;
 	}
 }
+
+.playground__language-switcher-small {
+	@media all and (min-width: 1023px) {
+		display: none;
+	}
+}
+
+.playground__language-switcher-large {
+	@media all and (max-width: 1022px) {
+		display: none;
+	}
+}
