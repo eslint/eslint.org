@@ -193,13 +193,16 @@ const handleDocumentClick = e => {
 searchInput.addEventListener("input", function () {
 	const query = searchInput.value;
 
-	if (query === searchQuery) return;
-
 	if (query.length) searchClearBtn.removeAttribute("hidden");
 	else searchClearBtn.setAttribute("hidden", "");
 
-	if (query.length > 2) {
-		debouncedFetchSearchResults(query);
+	// Trim so that whitespace-only input doesn't trigger a search.
+	const trimmedQuery = query.trim();
+
+	if (trimmedQuery === searchQuery) return;
+
+	if (trimmedQuery.length > 2) {
+		debouncedFetchSearchResults(trimmedQuery);
 		if (!document.clickEventAdded) {
 			document.addEventListener("click", handleDocumentClick);
 			document.clickEventAdded = true;
@@ -208,7 +211,7 @@ searchInput.addEventListener("input", function () {
 		clearSearchResults(true);
 	}
 
-	searchQuery = query;
+	searchQuery = trimmedQuery;
 });
 
 searchClearBtn.addEventListener("click", function () {
