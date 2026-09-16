@@ -23,3 +23,9 @@
 	flex-basis: 0;
 	justify-content: end;
 }
+
+.language-switcher-input {
+	& div {
+		z-index: 1000;
+	}
+}

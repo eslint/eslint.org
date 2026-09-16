@@ -7,6 +7,7 @@ import { json } from "@codemirror/lang-json";
 import { foldGutter } from "@codemirror/language";
 import { EditorView } from "@codemirror/view";
 import { linter } from "../utils/codemirror-linter-extension";
+import { eslintSource } from "../utils/eslint-source";
 import {
 	ESLintPlaygroundTheme,
 	ESLintPlaygroundHighlightStyle,
@@ -66,9 +67,15 @@ export default function CodeEditor({
 		}
 	}, [selectedLanguage, eslintOptions]);
 
+	const lintSource =
+    selectedLanguage === "javascript" ||
+    selectedLanguage === "typescript"
+        ? esLint(eslintInstance, eslintOptions)
+        : eslintSource(eslintInstance, eslintOptions);
+
 	const extensions = useMemo(
 		() => [
-			linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
+			linter(lintSource, { delay: 0 }),
 			languageExtension,
 			foldGutterExtension,
 			ESLintPlaygroundTheme,

@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from "react";
 import Select, { components } from "react-select";
 import { Toggle } from "react-toggle-component";
 import ShareURL from "./share-url";
-import LanguageSwitcher from "./language-switcher";
 import {
 	ECMA_FEATURES,
 	ECMA_VERSIONS,
@@ -12,103 +11,9 @@ import {
 	MARKDOWN_LANGUAGES_TYPES,
 	JSON_LANGUAGE_TYPE,
 	FRONTMATTER_TYPES,
-	customStyles,
-	customTheme,
 } from "../utils/constants";
+import { customStyles, customTheme } from "../utils/configuration-theme";
 import "react-toggle-component/styles.css";
-
-// const customStyles = {
-// 	singleValue: styles => ({
-// 		...styles,
-// 		color: "var(--body-text-color)",
-// 	}),
-// 	control: styles => ({
-// 		...styles,
-// 		backgroundColor: "var(--body-background-color)",
-// 		border: "1px solid var(--border-color)",
-// 		color: "var(--body-text-color)",
-// 		padding: 0,
-// 		":hover": {
-// 			...styles[":hover"],
-// 			borderColor: "var(--color-primary-700)",
-// 		},
-// 		":focus": {
-// 			borderColor: "var(--color-primary-700)",
-// 		},
-// 		":active": {
-// 			borderColor: "var(--color-primary-700)",
-// 		},
-// 	}),
-// 	option: (styles, state) => ({
-// 		...styles,
-// 		backgroundColor: state.isFocused
-// 			? "var(--color-primary-700)"
-// 			: "var(--body-background-color)",
-// 		color: state.isFocused ? "white" : "var(--body-text-color)",
-// 		cursor: "pointer",
-// 		border: "1px solid var(--border-color)",
-// 		borderBottom: "none",
-// 		":hover": {
-// 			...styles[":hover"],
-// 			backgroundColor: "var(--color-primary-700)",
-// 			color: "white",
-// 		},
-// 		":active": {
-// 			...styles[":active"],
-// 			backgroundColor: "var(--color-primary-700)",
-// 		},
-// 	}),
-// 	input: styles => ({
-// 		...styles,
-// 		color: "var(--body-text-color)",
-// 		caretShape: "underscore",
-// 	}),
-// 	indicatorsContainer: styles => ({
-// 		...styles,
-// 		cursor: "pointer",
-// 	}),
-// 	indicatorSeparator: styles => ({
-// 		...styles,
-// 		cursor: "auto",
-// 	}),
-// 	multiValue: styles => ({
-// 		...styles,
-// 		color: "var(--body-text-color)",
-// 		backgroundColor: "var(--lighter-background-color)",
-// 		border: "1px solid var(--border-color)",
-// 	}),
-// 	multiValueLabel: styles => ({
-// 		...styles,
-// 		color: "var(--headings-color)",
-// 		backgroundColor: "var(--lighter-background-color)",
-// 	}),
-// 	multiValueRemove: styles => ({
-// 		...styles,
-// 		color: "var(--headings-color)",
-// 		cursor: "pointer",
-// 		backgroundColor: "var(--lighter-background-color)",
-// 	}),
-// 	noOptionsMessage: styles => ({
-// 		...styles,
-// 		backgroundColor: "var(--body-background-color)",
-// 		border: "1px solid var(--border-color)",
-// 		borderBottom: "none",
-// 	}),
-// 	menuList: styles => ({
-// 		...styles,
-// 		padding: 0,
-// 		borderBottom: "1px solid var(--border-color)",
-// 	}),
-// };
-
-// const customTheme = theme => ({
-// 	...theme,
-// 	colors: {
-// 		...theme.colors,
-// 		primary25: "var(--color-primary-500)",
-// 		primary: "var(--color-primary-700)",
-// 	},
-// });
 
 const defaultOption = {
 	value: "default",
@@ -123,14 +28,11 @@ export default function Configuration({
 	errors,
 	onUpdate,
 	options,
-	optionsInLanguage,
 	ruleNames,
 	validationError,
 	rulesWithInvalidConfigs,
 	setRulesWithInvalidConfigs,
 	selectedLanguage,
-	setSelectedLanguage,
-	changeRulesDataWithLanguage,
 	defaultOptionsByLanguage,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
@@ -196,7 +98,7 @@ export default function Configuration({
 	const defaultSubtypes = {
 		css: "css",
 		markdown: "gfm",
-		json: "json",
+		json: "jsonc",
 	};
 	const selectedSubtype =
     	options?.language?.split("/")?.[1] ?? defaultSubtypes[selectedLanguage] ?? "";
@@ -216,8 +118,6 @@ export default function Configuration({
 			label: rulesMeta[getRuleNameOnly(ruleName)].deprecated
 				? getRuleNameOnly(ruleName).concat(" (deprecated)")
 				: getRuleNameOnly(ruleName),
-				// ? ruleName.concat(" (deprecated)")
-				// : ruleName,
 		}));
 	const [selectedRules, setSelectedRules] = useState([]);
 	const ruleInputRef = useRef(null);
@@ -397,17 +297,12 @@ export default function Configuration({
 
 	return (
 		<div className="playground__config-options__sections">
-			<LanguageSwitcher
-				className={"playground__language-switcher-large"}
-				selectedLanguage={selectedLanguage}
-				setSelectedLanguage={setSelectedLanguage}
-				changeRulesDataWithLanguage={changeRulesDataWithLanguage}
-			/>
 			<div className="playground__config-options__section">
 				<ShareURL
 					errors={errors}
 					url={window.location}
 					config={configFileContent}
+					selectedLanguage={selectedLanguage}
 				/>
 			</div>
 			<div className="playground__config-options__section">
@@ -709,7 +604,7 @@ export default function Configuration({
 								<Toggle
 									name="tolerant-toggle"
 									{...toggleColors}
-									checked={optionsInLanguage.css.languageOptions.tolerant ?? false}
+									checked={options.languageOptions.tolerant ?? false}
 									onCheckedChange={(checked) => {
 										const newOptions = {
 											...options,
@@ -745,7 +640,7 @@ export default function Configuration({
 									name="allow-trailing-commas-toggle"
 									disabled={options.language !== "json/jsonc"}
 									{...toggleColors}
-									checked={(options.language == "json/jsonc" && options.languageOptions.allowTrailingCommas) ?? false}
+									checked={(options.language === "json/jsonc" && options.languageOptions.allowTrailingCommas) ?? false}
 									onCheckedChange={(checked) => {
 										const newOptions = {
 											...options,
@@ -987,30 +882,6 @@ export default function Configuration({
 					</div>
 				)}
 			</div>
-			{/* TODO: Add Plugins */}
-			{/* <div className="playground__config-options__section">
-                <h2 data-config-section-title>Plugins</h2>
-                <div data-config-section>
-                     <!-- <label className="c-checkbox c-field" htmlFor="plugins-select-all">
-                                            <input type="checkbox" id="plugins-select-all">
-                                            <span class ="label__text">Install plugins</span>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" class ="c-checkbox__icon">
-                                            <rect x="0.5" y="0.5" width="15" height="15" rx="3.5" fill="var(--lightest-background-color)" />
-                                            <path class ="cm" d="M12 5L6.5 10.5L4 8" stroke="transparent" strokeWidth="1.6666" strokeLinecap="round" strokeLinejoin="round" />
-                                            <rect class ="border" x="0.5" y="0.5" width="15" height="15" rx="3.5" stroke="var(--border-color)" />
-                                            </svg>
-                                        </label> -->
-                    <div className="combo">
-                        <label id="plugins-combo-label" className="combo-label visually-hidden">Select plugins</label>
-                        <span id="combo-remove" hidden>remove</span>
-                        <ul role="list" className="selected-options pills" id="plugins-combo-selected"></ul>
-                        <div className="combo js-multiselect">
-                            <input aria-activedescendant="" autocomplete="off" aria-autocomplete="none" aria-controls="listbox3" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="plugins-combo-label combo-selected" id="plugins-combo" className="combo-input c-field__input custom-select" role="combobox" type="text" placeholder="Choose plugins" />
-                            <div className="combo-menu" role="listbox" id="listbox3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
 
 			<div className="playground__config-options__section">
 				<div data-config-section>

@@ -35,7 +35,7 @@ const linter = new Linter();
 
 const getDefaultOptions = (metaData, pluginName) => ({
 	rules: Object.entries(metaData).reduce((result, [ruleId, meta]) => {
-		if (meta.docs.recommended) {
+		if (meta.docs.recommended && ruleId !== "use-baseline") {
             const qualifiedRuleId = pluginName
                 ? `${pluginName}/${ruleId}`
                 : ruleId;
@@ -198,8 +198,6 @@ const App = () => {
 	const initialState = getUrlState() || getLocalStorageState();
 
 	if (initialState) {
-		const languageInState = initialState.language;
-
 		initialText = initialState.text;
 		initialOptions = initialState.options;
 		initialLanguage = initialState.language || "javascript";
@@ -218,27 +216,17 @@ const App = () => {
 		...defaultOptionsByLanguage,
 		...initialOptions,
 	});
-	// const [text, setText] = useState(texts[initialLanguage]);
-	// const [text, setText] = useState(initialText);
 	const [fix, setFix] = useState(false);
-	// const [options, setOptions] = useState(initialOptions);
 	const [selectedLanguage, setSelectedLanguage] = useState(initialLanguage);
 	const text = texts[selectedLanguage];
 
 	const [ruleMetaData, setRuleMetaData] = useState(rulesMetaObj[selectedLanguage]);
 	const pluginMap = { css, json, markdown };
-	const languagePlugin = pluginMap[selectedLanguage] ?? null;
 
 	const enabledPlugins = !(selectedLanguage === "javascript" || selectedLanguage === "typescript");
 
 	const ruleNames = Object.keys(ruleMetaData);
 	const ruleNamesWithPluginName = ruleNames.map(ruleName => enabledPlugins ? `${selectedLanguage}/${ruleName}` : ruleName);
-
-	const defaultLanguageForPlugins = {
-		css: "css",
-		json: "json",
-		markdown: "gfm",
-	};
 
 	// const options = initialOptionsByLanguage[selectedLanguage];
 	const options = convertLegacyOptionsToFlatConfig(initialOptionsByLanguage[selectedLanguage]);
@@ -406,10 +394,9 @@ const App = () => {
 		messages.filter(message => options.rules[message.ruleId]).length > 1;
 
 	const changeRulesDataWithLanguage = (language) => {
-		const pluginName = !(language === "javascript" || language === "typescript") ? language : null;
-
 		setRuleMetaData(rulesMetaObj[language]);
 		storeState({ newLanguage: language, newText: { ...texts }, newOptions: { ...initialOptionsByLanguage } });
+		// storeState({ newLanguage: language });
 	}
 
 	return (
@@ -420,7 +407,6 @@ const App = () => {
 					aria-labelledby="playground__config-toggle"
 				>
 					<LanguageSwitcher
-						className={"playground__language-switcher-small"}
 						selectedLanguage={selectedLanguage}
 						setSelectedLanguage={setSelectedLanguage}
 						changeRulesDataWithLanguage={changeRulesDataWithLanguage}
@@ -473,11 +459,9 @@ const App = () => {
 							initialOptions={fillOptionsDefaults(
 								getDefaultOptions(ruleMetaData),
 							)}
-							// ruleNames={ruleNames}
 							ruleNames={ruleNamesWithPluginName}
 							options={options}
 							onUpdate={updateOptions}
-							optionsInLanguage={initialOptionsByLanguage}
 							rulesMeta={ruleMetaData}
 							validationError={validationError}
 							eslintVersion={linter.version}
@@ -486,8 +470,6 @@ const App = () => {
 								setRulesWithInvalidConfigs
 							}
 							selectedLanguage={selectedLanguage}
-							setSelectedLanguage={setSelectedLanguage}
-							changeRulesDataWithLanguage={changeRulesDataWithLanguage}
 							defaultOptionsByLanguage={defaultOptionsByLanguage}
 						/>
 						<Footer />

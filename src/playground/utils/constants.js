@@ -35,15 +35,48 @@ export const DEFAULT_TEXTS = {
 	typescript: '/* eslint prefer-const: "error" */\nlet a:string = "b";',
 	css: '/* eslint css/no-empty-blocks: "error" */\na {}',
 	markdown: '<!-- eslint markdown/no-empty-links: "error" -->\n[ESLint]()',
-	json: '/* eslint json/no-empty-keys: "error" */\n{\n\t"": "value"\n}',
-}
+	json: '/* eslint json/no-empty-keys: "error" */\n{\n  "": "value"\n}',
+};
 
 export const LANGUAGE_META = {
-    javascript: { pluginName: null, plugin: false, parser: null, languageId: null },
-    typescript: { pluginName: null, plugin: false, parser: "@typescript-eslint/parser", languageId: null },
-    css: { pluginName: "css", plugin: true, parser: null, languageId: "css/css" },
-    json: { pluginName: "json", plugin: true, parser: null, languageId: "json/json" },
-    markdown: { pluginName: "markdown", plugin: true, parser: null, languageId: "markdown/gfm" },
+	javascript: {
+		pluginName: null,
+		plugin: false,
+		parser: null,
+		languageId: null,
+	},
+	typescript: {
+		pluginName: null,
+		plugin: false,
+		parser: "@typescript-eslint/parser",
+		languageId: null,
+	},
+	css: {
+		pluginName: "css",
+		plugin: true,
+		parser: null,
+		languageId: "css/css",
+	},
+	json: {
+		pluginName: "json",
+		plugin: true,
+		parser: null,
+		languageId: "json/jsonc",
+	},
+	markdown: {
+		pluginName: "markdown",
+		plugin: true,
+		parser: null,
+		languageId: "markdown/gfm",
+	},
+};
+
+export const CODE_FENCE_LANGUAGE_TAGS = {
+	javascript: "js",
+	typescript: "ts",
+	css: "css",
+	markdown: "md",
+	json: "jsonc",
 };
 
 // GitHub Issue Reporting constants
@@ -59,98 +92,3 @@ export const REPRO_URL_FALLBACK_MESSAGE =
 
 export const LINT_OUTPUT_FALLBACK_MESSAGE =
 	"<!-- The lint output for what actually happened has been copied in What did you do? field above. -->";
-
-// Constants for styles
-
-export const customStyles = {
-	singleValue: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-	}),
-	control: styles => ({
-		...styles,
-		backgroundColor: "var(--body-background-color)",
-		border: "1px solid var(--border-color)",
-		color: "var(--body-text-color)",
-		padding: 0,
-		":hover": {
-			...styles[":hover"],
-			borderColor: "var(--color-primary-700)",
-		},
-		":focus": {
-			borderColor: "var(--color-primary-700)",
-		},
-		":active": {
-			borderColor: "var(--color-primary-700)",
-		},
-	}),
-	option: (styles, state) => ({
-		...styles,
-		backgroundColor: state.isFocused
-			? "var(--color-primary-700)"
-			: "var(--body-background-color)",
-		color: state.isFocused ? "white" : "var(--body-text-color)",
-		cursor: "pointer",
-		border: "1px solid var(--border-color)",
-		borderBottom: "none",
-		":hover": {
-			...styles[":hover"],
-			backgroundColor: "var(--color-primary-700)",
-			color: "white",
-		},
-		":active": {
-			...styles[":active"],
-			backgroundColor: "var(--color-primary-700)",
-		},
-	}),
-	input: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-		caretShape: "underscore",
-	}),
-	indicatorsContainer: styles => ({
-		...styles,
-		cursor: "pointer",
-	}),
-	indicatorSeparator: styles => ({
-		...styles,
-		cursor: "auto",
-	}),
-	multiValue: styles => ({
-		...styles,
-		color: "var(--body-text-color)",
-		backgroundColor: "var(--lighter-background-color)",
-		border: "1px solid var(--border-color)",
-	}),
-	multiValueLabel: styles => ({
-		...styles,
-		color: "var(--headings-color)",
-		backgroundColor: "var(--lighter-background-color)",
-	}),
-	multiValueRemove: styles => ({
-		...styles,
-		color: "var(--headings-color)",
-		cursor: "pointer",
-		backgroundColor: "var(--lighter-background-color)",
-	}),
-	noOptionsMessage: styles => ({
-		...styles,
-		backgroundColor: "var(--body-background-color)",
-		border: "1px solid var(--border-color)",
-		borderBottom: "none",
-	}),
-	menuList: styles => ({
-		...styles,
-		padding: 0,
-		borderBottom: "1px solid var(--border-color)",
-	}),
-};
-
-export const customTheme = theme => ({
-	...theme,
-	colors: {
-		...theme.colors,
-		primary25: "var(--color-primary-500)",
-		primary: "var(--color-primary-700)",
-	},
-});

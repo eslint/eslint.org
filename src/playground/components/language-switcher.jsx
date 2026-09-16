@@ -1,5 +1,5 @@
 import Select from "react-select";
-import { customStyles, customTheme } from "../utils/constants";
+import { customStyles, customTheme } from "../utils/configuration-theme";
 
 const optionsForLanguage = [
 	{ value: "javascript", label: "JavaScript" },
@@ -10,7 +10,6 @@ const optionsForLanguage = [
 ];
 
 export default function LanguageSwitcher({
-	className,
 	selectedLanguage,
 	setSelectedLanguage,
 	changeRulesDataWithLanguage,
@@ -22,7 +21,7 @@ export default function LanguageSwitcher({
 
 	return (
 		<div
-			className={`playground__config-options__section ${className}`}
+			className="playground__config-options__section"
 		>
 			<label className="label__text" htmlFor="playground-language">
 				Language
@@ -30,6 +29,7 @@ export default function LanguageSwitcher({
 			<div data-config-section>
 				<Select
 					inputId="playground-language"
+					className="language-switcher-input"
 					isSearchable={false}
 					styles={customStyles}
 					theme={theme => customTheme(theme)}
