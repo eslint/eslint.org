@@ -1,20 +1,20 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AF8Zl",
+        "name": "Anatoli D.",
+        "image": "https://avatars.githubusercontent.com/u/92316030",
+        "url": "https://github.com/imurd",
+        "amount": 5,
+        "date": "2026-09-16T18:53:17Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AF5z1",
         "name": "Pedro Costa",
         "image": "https://avatars.githubusercontent.com/u/44654441",
         "url": "https://pvdcosta.work",
         "amount": 1,
         "date": "2026-08-23T11:19:25Z",
-        "source": "github"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AF5Wt",
-        "name": "IsisKHpri",
-        "image": "https://avatars.githubusercontent.com/u/194274021",
-        "url": "https://github.com/IsisKHpri",
-        "amount": 5,
-        "date": "2026-08-18T15:26:00Z",
         "source": "github"
     },
     {
