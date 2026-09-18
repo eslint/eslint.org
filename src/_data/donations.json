@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AF8nZ",
+        "name": "Pixelic",
+        "image": "https://avatars.githubusercontent.com/u/69585766",
+        "url": "https://pixelic.dev",
+        "amount": 1,
+        "date": "2026-09-18T19:29:55Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AF8Zl",
         "name": "Anatoli D.",
         "image": "https://avatars.githubusercontent.com/u/92316030",
@@ -228,7 +237,7 @@
         "id": "jrkx5lmn-v904qjl8-o7n68bwa-7zdygoe3",
         "name": "OpenJS Foundation",
         "url": "https://openjsf.org/",
-        "image": "https://images.opencollective.com/openjs/f01254b/avatar.png",
+        "image": "https://images.opencollective.com/openjs/f01254b/logo.png",
         "amount": 255.01,
         "date": "2025-11-12T15:16:18.730Z",
         "source": "opencollective"
