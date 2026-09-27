@@ -14,6 +14,7 @@ import {
 } from "../utils/constants";
 import { customStyles, customTheme } from "../utils/configuration-theme";
 import "react-toggle-component/styles.css";
+import { typescriptLanguage } from "@codemirror/lang-javascript";
 
 const defaultOption = {
 	value: "default",
@@ -270,9 +271,9 @@ export default function Configuration({
 
 	if (options.plugins) {
 		if (isESM) {
-			importplugins += `import ${placeholders[options.plugins]} from "@eslint/${placeholders[options.plugins]}";\n`;
+			importplugins += `import ${placeholders[options.plugins]} from "@eslint/${selectedLanguage}";\n`;
 		} else {
-			importplugins += `const ${placeholders[options.plugins]} = require("@eslint/${placeholders[options.plugins]}").default;\n`;
+			importplugins += `const ${placeholders[options.plugins]} = require("@eslint/${selectedLanguage}").default;\n`;
 		}
 	}
 
@@ -548,7 +549,7 @@ export default function Configuration({
 										};
 
 										if (selectedOption.value === "default") {
-											newOptions.languageOptions.frontmatter = false;
+											delete newOptions.languageOptions.frontmatter;
 										} else {
 											newOptions.languageOptions.frontmatter = selectedOption.value;
 										}

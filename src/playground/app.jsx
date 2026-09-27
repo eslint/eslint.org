@@ -109,12 +109,27 @@ const getUrlState = () => {
 		const urlState = JSON.parse(
 			Unicode.decodeFromBase64(window.location.hash.replace(/^#/u, "")),
 		);
+		let text = urlState.text;
+		let options = urlState.options;
+		let language = urlState.language;
 
-		if (typeof urlState.text[urlState.language] === "undefined") {
-			return null;
+		if (typeof language === "undefined") {
+			if (options.languageOptions?.parser === "@typescript-eslint/parser") {
+				language = "typescript";
+				typeof text !== "undefined" && (text = { typescript: text });
+				options = { typescript: options };
+			} else {
+				language = "javascript";
+				typeof text !== "undefined" && (text = { javascript: text });
+				options = { javascript: options };
+			}
 		}
 
-		return { text: urlState.text, options: urlState.options, language: urlState.language };
+		if (typeof text[language] === "undefined") {
+            return null;
+        }
+
+		return { text, options, language };
 	} catch {
 		return null;
 	}
@@ -174,12 +189,18 @@ const buildDefaultOptions = language => {
     if (parser) {
         options.languageOptions = { ...options.languageOptions, parser: "@typescript-eslint/parser" };
     }
+
     if (plugin) {
         options.plugins = pluginName;
     }
+
     if (languageId) {
         options.language = languageId;
     }
+
+	if (language === "typescript") {
+		options.languageOptions.parserOptions.ecmaFeatures = { jsx: true };
+	}
 
     return options;
 };
