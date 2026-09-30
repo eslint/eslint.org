@@ -1,4 +1,4 @@
-export const ECMA_FEATURES = ["jsx", "globalReturn", "impliedStrict"];
+export const ECMA_FEATURES = ["jsx", "impliedStrict"];
 
 export const ECMA_VERSIONS = [
 	"3",
