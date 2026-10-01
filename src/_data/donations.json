@@ -1,5 +1,23 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AF-Cg",
+        "name": "Manish Shrestha",
+        "image": "https://avatars.githubusercontent.com/u/38128351",
+        "url": "https://github.com/Manishshtestha",
+        "amount": 1,
+        "date": "2026-10-01T06:57:14Z",
+        "source": "github"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AF97q",
+        "name": "Dimitri Pletschette",
+        "image": "https://avatars.githubusercontent.com/u/61140913",
+        "url": "https://dimitripletschette.com",
+        "amount": 5,
+        "date": "2026-09-30T09:54:59Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AF9O3",
         "name": "Radu",
         "image": "https://avatars.githubusercontent.com/u/218564757",
