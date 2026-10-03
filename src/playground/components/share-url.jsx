@@ -5,6 +5,7 @@ import {
 	CLIPBOARD_FALLBACK_MESSAGE,
 	LINT_OUTPUT_FALLBACK_MESSAGE,
 	REPRO_URL_FALLBACK_MESSAGE,
+	CODE_FENCE_LANGUAGE_TAGS,
 } from "../utils/constants";
 
 // Helper function for code template formatting
@@ -13,11 +14,12 @@ ${code}
 \`\`\``;
 
 // Helper to build GitHub issue description
-const buildGitHubIssueDescription = (code, config, errorOutput) => {
+const buildGitHubIssueDescription = (code, config, errorOutput, language) => {
 	const parts = [];
+	const lang = CODE_FENCE_LANGUAGE_TAGS[language];
 
 	if (code) {
-		parts.push(`### Playground Code\n${formatCodeBlock(code)}\n`);
+		parts.push(`### Playground Code\n${formatCodeBlock(code, lang)}\n`);
 	}
 
 	if (config) {
@@ -33,7 +35,7 @@ const buildGitHubIssueDescription = (code, config, errorOutput) => {
 	return parts.join("\n");
 };
 
-export default function ShareURL({ url, errors, config }) {
+export default function ShareURL({ url, errors, config, selectedLanguage }) {
 	const [isDataCopied, setIsDataCopied] = useState(false);
 	const [showShareURL, setShowShareURL] = useState(false);
 
@@ -60,6 +62,14 @@ export default function ShareURL({ url, errors, config }) {
 		return "";
 	};
 
+	const getGitHubIssueUrl = (language) => {
+		if (language === "javascript" || language === "typescript") {
+			return GITHUB_ISSUE_URL;
+		}
+
+		return `https://github.com/eslint/${language}/issues/new`;
+	};
+
 	// Format errors for output
 	const formatErrors = errorList =>
 		errorList?.length
@@ -72,7 +82,7 @@ export default function ShareURL({ url, errors, config }) {
 			: "";
 
 	const handleReportIssue = () => {
-		const reportUrl = new URL(GITHUB_ISSUE_URL);
+		const reportUrl = new URL(getGitHubIssueUrl(selectedLanguage));
 		const currentUrl = url || window.location.href;
 		const code = getEditorCode();
 		const errorOutput = formatErrors(errors);
@@ -82,6 +92,7 @@ export default function ShareURL({ url, errors, config }) {
 			code,
 			config,
 			errorOutput,
+			selectedLanguage,
 		);
 
 		// Set URL parameters
@@ -99,7 +110,7 @@ export default function ShareURL({ url, errors, config }) {
 
 		if (code) {
 			params["what-did-you-do"] =
-				`I was using the ESLint Playground with this code:\n\n${formatCodeBlock(code)}`;
+				`I was using the ESLint Playground with this code:\n\n${formatCodeBlock(code, CODE_FENCE_LANGUAGE_TAGS[selectedLanguage])}`;
 		}
 
 		if (description) {

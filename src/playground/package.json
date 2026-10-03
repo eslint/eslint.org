@@ -10,6 +10,9 @@
     "postinstall": "npm run build:rules-meta"
   },
   "dependencies": {
+    "@eslint/css": "latest",
+    "@eslint/json": "latest",
+    "@eslint/markdown": "latest",
     "eslint": "latest"
   }
 }

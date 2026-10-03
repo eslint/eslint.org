@@ -1,9 +1,13 @@
 import { useImperativeHandle, useMemo, useRef } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { javascript, esLint } from "@codemirror/lang-javascript";
+import { css } from "@codemirror/lang-css";
+import { markdown } from "@codemirror/lang-markdown";
+import { json } from "@codemirror/lang-json";
 import { foldGutter } from "@codemirror/language";
 import { EditorView } from "@codemirror/view";
 import { linter } from "../utils/codemirror-linter-extension";
+import { eslintSource } from "../utils/eslint-source";
 import {
 	ESLintPlaygroundTheme,
 	ESLintPlaygroundHighlightStyle,
@@ -25,24 +29,59 @@ export default function CodeEditor({
 	eslintOptions,
 	eslintInstance,
 	ref,
+	selectedLanguage,
 }) {
 	const editorRef = useRef(null);
 
+	const languageExtension = useMemo(() => {
+		switch (selectedLanguage) {
+			case "javascript":
+				return javascript({
+					jsx: Boolean(
+						eslintOptions.languageOptions.parserOptions.ecmaFeatures
+							.jsx,
+					),
+				});
+			case "typescript":
+				return javascript({
+					typescript: true,
+					jsx: Boolean(
+						eslintOptions.languageOptions.parserOptions.ecmaFeatures
+							.jsx,
+					),
+				});
+			case "css":
+				return css();
+			case "markdown":
+				return markdown();
+			case "json":
+				return json();
+			default:
+				return javascript({
+					typescript: true,
+					jsx: Boolean(
+						eslintOptions.languageOptions.parserOptions.ecmaFeatures
+							.jsx,
+					),
+				});
+		}
+	}, [selectedLanguage, eslintOptions]);
+
+	const lintSource =
+    selectedLanguage === "javascript" ||
+    selectedLanguage === "typescript"
+        ? esLint(eslintInstance, eslintOptions)
+        : eslintSource(eslintInstance, eslintOptions);
+
 	const extensions = useMemo(
 		() => [
-			linter(esLint(eslintInstance, eslintOptions), { delay: 0 }),
-			javascript({
-				typescript: true,
-				jsx: Boolean(
-					eslintOptions.languageOptions.parserOptions.ecmaFeatures
-						.jsx,
-				),
-			}),
+			linter(lintSource, { delay: 0 }),
+			languageExtension,
 			foldGutterExtension,
 			ESLintPlaygroundTheme,
 			ESLintPlaygroundHighlightStyle,
 		],
-		[eslintOptions, eslintInstance],
+		[eslintOptions, eslintInstance, languageExtension],
 	);
 
 	useImperativeHandle(ref, () => ({
