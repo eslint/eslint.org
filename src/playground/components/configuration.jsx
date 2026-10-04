@@ -301,7 +301,6 @@ export default function Configuration({
 			<div className="playground__config-options__section">
 				<ShareURL
 					errors={errors}
-					url={window.location}
 					config={configFileContent}
 					selectedLanguage={selectedLanguage}
 				/>

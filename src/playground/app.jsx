@@ -116,12 +116,17 @@ const getUrlState = () => {
 		if (typeof language === "undefined") {
 			if (options.languageOptions?.parser === "@typescript-eslint/parser") {
 				language = "typescript";
-				typeof text !== "undefined" && (text = { typescript: text });
+				text = { typescript: text };
 				options = { typescript: options };
 			} else {
 				language = "javascript";
-				typeof text !== "undefined" && (text = { javascript: text });
+				text = { javascript: text };
 				options = { javascript: options };
+			}
+		} else {
+			if (typeof text !== "object") {
+				text = { [language]: text };
+				options = { [language]: options };
 			}
 		}
 

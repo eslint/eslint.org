@@ -7,6 +7,7 @@ import {
 	REPRO_URL_FALLBACK_MESSAGE,
 	CODE_FENCE_LANGUAGE_TAGS,
 } from "../utils/constants";
+import Unicode from "../utils/unicode";
 
 // Helper function for code template formatting
 const formatCodeBlock = (code, lang = "js") => `\`\`\`${lang}
@@ -35,9 +36,29 @@ const buildGitHubIssueDescription = (code, config, errorOutput, language) => {
 	return parts.join("\n");
 };
 
-export default function ShareURL({ url, errors, config, selectedLanguage }) {
+const getUrlForCurrentLanguageState = selectedLanguage => {
+	const urlObj = window.location;
+	const baseURL = urlObj.origin + urlObj.pathname;
+	const hash = urlObj.hash.slice(1);
+	const urlState = JSON.parse(Unicode.decodeFromBase64(hash));
+
+	const currentState = {
+		text: urlState?.text[selectedLanguage],
+		options: urlState?.options[selectedLanguage],
+		language: urlState?.language,
+	};
+
+	return `${baseURL}#${Unicode.encodeToBase64(JSON.stringify(currentState))}`;
+};
+
+export default function ShareURL({ errors, config, selectedLanguage }) {
 	const [isDataCopied, setIsDataCopied] = useState(false);
 	const [showShareURL, setShowShareURL] = useState(false);
+
+	const currentLanguageStateUrl =
+		window.location.hash === ""
+			? window.location
+			: getUrlForCurrentLanguageState(selectedLanguage);
 
 	// Extract code from editor or URL hash
 	const getEditorCode = () => {
@@ -62,7 +83,7 @@ export default function ShareURL({ url, errors, config, selectedLanguage }) {
 		return "";
 	};
 
-	const getGitHubIssueUrl = (language) => {
+	const getGitHubIssueUrl = language => {
 		if (language === "javascript" || language === "typescript") {
 			return GITHUB_ISSUE_URL;
 		}
@@ -83,7 +104,7 @@ export default function ShareURL({ url, errors, config, selectedLanguage }) {
 
 	const handleReportIssue = () => {
 		const reportUrl = new URL(getGitHubIssueUrl(selectedLanguage));
-		const currentUrl = url || window.location.href;
+		const currentUrl = currentLanguageStateUrl || window.location.href;
 		const code = getEditorCode();
 		const errorOutput = formatErrors(errors);
 
@@ -180,7 +201,9 @@ export default function ShareURL({ url, errors, config, selectedLanguage }) {
 							<input
 								type="text"
 								id="code-snippet"
-								value={url || window.location}
+								value={
+									currentLanguageStateUrl || window.location
+								}
 								aria-readonly="true"
 								readOnly
 								tabIndex="-1"
