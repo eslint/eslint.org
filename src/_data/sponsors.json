@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 79272,
-        "monthlyDonations": 6606,
-        "sponsorCount": 101
+        "annualDonations": 79452,
+        "monthlyDonations": 6621,
+        "sponsorCount": 103
     },
     "diamond": [],
     "platinum": [],
@@ -186,6 +186,15 @@
             "tier": "backer"
         },
         {
+            "name": "Say Yup",
+            "url": "https://www.sayyup.nl",
+            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 445,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
             "name": "MFB Technologies",
             "url": "https://mfbtech.com",
             "image": "https://images.opencollective.com/mfbtech/3c62a0c/logo.png",
@@ -308,6 +317,15 @@
             "image": "https://images.opencollective.com/mymoneycomparison/93c0e0e/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 55,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "PodobneStrony.pl",
+            "url": "https://podobnestrony.pl",
+            "image": "https://images.opencollective.com/podobnestrony/d86d3dc/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 80,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -498,7 +516,7 @@
         {
             "name": "Forrest Desjardins",
             "image": "https://avatars.githubusercontent.com/u/502491",
-            "url": "https://montiscorp.com",
+            "url": "https://aeralta.tech",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
