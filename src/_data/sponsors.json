@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 79512,
-        "monthlyDonations": 6626,
-        "sponsorCount": 104
+        "annualDonations": 79525.9001088,
+        "monthlyDonations": 6627.1583424,
+        "sponsorCount": 106
     },
     "diamond": [],
     "platinum": [],
@@ -876,6 +876,24 @@
             "url": "https://trashnothing.com",
             "monthlyDonation": 1,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "Adam Haglund",
+            "url": "https://yuna.moe",
+            "image": "https://github.com/beeequeue.png",
+            "monthlyDonation": 0.9405946,
+            "totalDonations": "00.975791150.845425870.770900350.384908350.704400081.246786321.074608000.94059460",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "changesets",
+            "url": "https://changesets.dev/",
+            "image": "https://github.com/changesets.png",
+            "monthlyDonation": 0.2177478,
+            "totalDonations": "00.223895780.520059050.397113020.223165370.21774780",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
