@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 79489.9001088,
-        "monthlyDonations": 6624.1583424,
-        "sponsorCount": 106
+        "annualDonations": 79501.9001088,
+        "monthlyDonations": 6625.1583424,
+        "sponsorCount": 107
     },
     "diamond": [],
     "platinum": [],
@@ -802,6 +802,15 @@
             "url": "https://danoc.me/",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "buongiorno immagini",
+            "url": "https://buongiornoimmagine.net/",
+            "image": "https://images.opencollective.com/buongiorno-immagini/1dd0232/logo.png",
+            "monthlyDonation": 1,
+            "totalDonations": 1,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
