@@ -325,11 +325,14 @@ module.exports = eleventyConfig => {
 
 		const imageAttributes = {
 			alt,
-			class: cls,
 			sizes,
 			loading: "lazy",
 			decoding: "async",
 		};
+
+		if (cls) {
+			imageAttributes.class = cls;
+		}
 
 		// get metadata
 		const metadata = Image.statsSync(fullSrc, options);
