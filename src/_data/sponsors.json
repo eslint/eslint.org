@@ -1,12 +1,21 @@
 {
     "totals": {
-        "annualDonations": 81227.48744376001,
-        "monthlyDonations": 6768.9572869799995,
-        "sponsorCount": 122
+        "annualDonations": 93227.48744376001,
+        "monthlyDonations": 7768.9572869799995,
+        "sponsorCount": 123
     },
     "diamond": [],
     "platinum": [],
     "gold": [
+        {
+            "name": "ForceIndexer",
+            "url": "https://forceindexer.com",
+            "image": "https://images.opencollective.com/forceindexer/588566e/logo.png",
+            "monthlyDonation": 1000,
+            "totalDonations": 1,
+            "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
         {
             "name": "Qlty Software",
             "url": "https://qlty.sh/",

@@ -54,15 +54,6 @@
         "source": "github"
     },
     {
-        "id": "SA_kwHOAFvahM4AF8Zl",
-        "name": "Anatoli D.",
-        "image": "https://avatars.githubusercontent.com/u/92316030",
-        "url": "https://github.com/imurd",
-        "amount": 5,
-        "date": "2026-09-16T18:53:17Z",
-        "source": "github"
-    },
-    {
         "id": "or_stdeb7E7447i7cdsROUPa",
         "name": "THANKS.DEV",
         "url": "https://thanks.dev",
@@ -267,15 +258,6 @@
         "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
         "amount": 999,
         "date": "2025-11-13T22:04:38.841Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "jrkx5lmn-v904qjl8-o7n68bwa-7zdygoe3",
-        "name": "OpenJS Foundation",
-        "url": "https://openjsf.org/",
-        "image": "https://images.opencollective.com/openjs/f01254b/logo.png",
-        "amount": 255.01,
-        "date": "2025-11-12T15:16:18.730Z",
         "source": "opencollective"
     }
 ]
