@@ -36,7 +36,7 @@ ESLint major release lines are designated by the level of support they receive f
 
 ## Commercial Support
 
-For EOL release lines, commercial support is provided by [HeroDevs][herodevs]. HeroDevs provides drop-in replacements for older versions of ESLint that are kept up-to-date for security and compliance issues. [Learn more][herodevs]
+For EOL release lines, commercial support is provided by our partner, [HeroDevs][herodevs]. HeroDevs provides drop-in replacements for older versions of ESLint that are kept up-to-date for security and compliance issues. [Learn more][herodevs]
 
 
 [herodevs]: https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES
