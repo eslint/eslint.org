@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93227.48744376001,
-        "monthlyDonations": 7768.9572869799995,
-        "sponsorCount": 123
+        "annualDonations": 93228.02398464,
+        "monthlyDonations": 7769.001998719999,
+        "sponsorCount": 124
     },
     "diamond": [],
     "platinum": [],
@@ -965,6 +965,15 @@
             "image": "https://github.com/expressjs.png",
             "monthlyDonation": 0.07737346,
             "totalDonations": "00.036993410.031956500.031166930.029207030.029207030.029375870.028498350.028321520.040052610.040052610.043397360.040838530.050023920.054032550.051786150.087580670.111997250.077763970.077763970.077763970.07737346",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jasara Technology Inc.",
+            "url": "https://jasaratech.com",
+            "image": "https://github.com/jasara.png",
+            "monthlyDonation": 0.04471174,
+            "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.602028720.609868690.006322380.006322830.006666400.618682480.621348240.593919230.646743060.057340100.045417730.045417730.04471174",
             "source": "thanks.dev",
             "tier": "backer"
         },
