@@ -1,3 +1,5 @@
+import { getRuleDocumentationUrl } from "../utils/helper";
+
 export default function Popup({ message, ruleName, onFix }) {
 	return (
 		<div className="popup">
@@ -6,7 +8,7 @@ export default function Popup({ message, ruleName, onFix }) {
 					<p className="popup__text">{message}</p>
 					<div className="popup__refs">
 						<a
-							href={`https://eslint.org/docs/latest/rules/${ruleName}`}
+							href={getRuleDocumentationUrl(ruleName)}
 							target="_blank"
 							rel="noreferrer"
 						>
