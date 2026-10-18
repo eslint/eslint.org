@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93228.02398464,
-        "monthlyDonations": 7769.001998719999,
-        "sponsorCount": 124
+        "annualDonations": 93233.33194524,
+        "monthlyDonations": 7769.44432877,
+        "sponsorCount": 125
     },
     "diamond": [],
     "platinum": [],
@@ -929,6 +929,15 @@
             "image": "https://github.com/beeequeue.png",
             "monthlyDonation": 0.9405946,
             "totalDonations": "00.975791150.845425870.770900350.384908350.704400081.246786321.074608000.94059460",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jos de Jong",
+            "url": "https://josdejong.com",
+            "image": "https://github.com/josdejong.png",
+            "monthlyDonation": 0.44233005,
+            "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.005107600.005370460.005376970.005220070.005628550.339412470.327833490.324853960.647595740.562550820.498355930.456198540.456198540.44233005",
             "source": "thanks.dev",
             "tier": "backer"
         },
