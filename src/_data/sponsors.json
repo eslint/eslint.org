@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93233.33194524,
-        "monthlyDonations": 7769.44432877,
-        "sponsorCount": 125
+        "annualDonations": 93245.33194524,
+        "monthlyDonations": 7770.44432877,
+        "sponsorCount": 126
     },
     "diamond": [],
     "platinum": [],
@@ -838,6 +838,15 @@
             "url": "https://danoc.me/",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "buonanotte immagini",
+            "url": "https://buonanotteimmagini.org/",
+            "image": "https://images.opencollective.com/buonanotte-immagini/5de82aa/logo.png",
+            "monthlyDonation": 1,
+            "totalDonations": 1,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
