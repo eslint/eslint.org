@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93246.56281416,
-        "monthlyDonations": 7770.54690118,
-        "sponsorCount": 127
+        "annualDonations": 93422.67686256001,
+        "monthlyDonations": 7785.22307188,
+        "sponsorCount": 129
     },
     "diamond": [],
     "platinum": [],
@@ -321,6 +321,15 @@
             "tier": "backer"
         },
         {
+            "name": "square",
+            "url": null,
+            "image": "https://github.com/square.png",
+            "monthlyDonation": 9.30228557,
+            "totalDonations": "08.426817307.033780176.496383325.655986995.379024760.922801240.931320922.032353961.5062005410.174285658.446040648.596097949.896723259.896723259.30228557",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "canonical-launchpad",
             "url": null,
             "image": null,
@@ -336,6 +345,15 @@
             "monthlyDonation": 6,
             "totalDonations": 1786,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Block Open Source",
+            "url": "https://block.xyz/open-source",
+            "image": "https://github.com/block.png",
+            "monthlyDonation": 5.37388513,
+            "totalDonations": "03.406750532.577835202.289833644.452156164.456149960.970635480.538141004.287286775.342948075.163306425.665920805.665920805.37388513",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
