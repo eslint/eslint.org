@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 93422.67686256001,
-        "monthlyDonations": 7785.22307188,
-        "sponsorCount": 129
+        "annualDonations": 93426.10130700002,
+        "monthlyDonations": 7785.5084422499995,
+        "sponsorCount": 131
     },
     "diamond": [],
     "platinum": [],
@@ -978,11 +978,29 @@
             "tier": "backer"
         },
         {
+            "name": "Amuzil",
+            "url": "http://amuzil.com",
+            "image": "https://github.com/amuzil.png",
+            "monthlyDonation": 0.18903782,
+            "totalDonations": "00.104836190.121308070.120212680.120212680.119249220.117561820.118681180.314521420.125877560.124754530.138897180.341630410.184456910.186183450.185816280.181921690.18903782",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Aliaksei Yaletski",
             "url": "https://tiendil.org",
             "image": "https://github.com/tiendil.png",
             "monthlyDonation": 0.10257241,
             "totalDonations": "00.154469060.153432820.153776360.145902710.173218460.168980290.163344920.163344920.10257241",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jongerenraad Zutphen",
+            "url": "https://jrzutphen.nl",
+            "image": "https://github.com/jrzutphen.png",
+            "monthlyDonation": 0.09633255,
+            "totalDonations": "00.052038360.060200120.059589040.059589040.060085200.059262750.059812820.165913370.063973390.063394520.070609440.175712410.093797350.094717090.094561760.092564720.09633255",
             "source": "thanks.dev",
             "tier": "backer"
         },
