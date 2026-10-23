@@ -23,7 +23,7 @@ ESLint major release lines are designated by the level of support they receive f
 
 | **Release Line** | **Status** | **First Release** | **Last Release** | **EOL Start** | **Commercial Support** |
 |-------------------|------------|-------------------|-----------------|---------------|------------------------|
-| v10.x            | Current    | 2026-02-06        | TBD              | TBD | [Tidelift][tidelift] |
+| v10.x            | Current    | 2026-02-06        | TBD              | TBD | |
 | v9.0.0-v9.39.5   | EOL        | 2024-04-05        | 2026-07-10       | 2026-08-06 | [HeroDevs][herodevs] |
 | v8.0.0-v8.57.1   | EOL        | 2021-10-09        | 2024-09-16       | 2024-10-05 | [HeroDevs][herodevs] |
 | v7.0.0-v7.32.0   | EOL        | 2020-05-08        | 2021-07-30       | 2022-04-09 | [HeroDevs][herodevs] |
@@ -36,12 +36,7 @@ ESLint major release lines are designated by the level of support they receive f
 
 ## Commercial Support
 
-ESLint offers commercial support through our partners, [Tidelift][tidelift] and [HeroDevs][herodevs].
-
-For Current and Maintenance release lines, commercial support is provided by [Tidelift][tidelift]. Tidelift validates that ESLint is up-to-date with the latest security best practices and can be a first point of contact for any problems that may arise. [Learn more][tidelift]
-
-For EOL release lines, commercial support is provided by [HeroDevs][herodevs]. HeroDevs provides drop-in replacements for older versions of ESLint that are kept up-to-date for security and compliance issues. [Learn more][herodevs]
+For EOL release lines, commercial support is provided by our partner, [HeroDevs][herodevs]. HeroDevs provides drop-in replacements for older versions of ESLint that are kept up-to-date for security and compliance issues. [Learn more][herodevs]
 
 
-[tidelift]: https://tidelift.com/funding/github/npm/eslint
 [herodevs]: https://www.herodevs.com/support/eslint-nes?utm_source=ESLintWebsite&utm_medium=ESLintWebsite&utm_campaign=ESLintNES&utm_id=ESLintNES
