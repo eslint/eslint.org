@@ -1,12 +1,21 @@
 {
     "totals": {
-        "annualDonations": 93426.10130700002,
-        "monthlyDonations": 7785.5084422499995,
-        "sponsorCount": 131
+        "annualDonations": 105426.10130700002,
+        "monthlyDonations": 8785.508442249999,
+        "sponsorCount": 132
     },
     "diamond": [],
     "platinum": [],
     "gold": [
+        {
+            "name": "Vite Ecosystem Fund",
+            "url": null,
+            "image": "https://images.opencollective.com/vite-ecosystem-fund/logo.png",
+            "monthlyDonation": 1000,
+            "totalDonations": 1000,
+            "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
         {
             "name": "ForceIndexer",
             "url": "https://forceindexer.com",
