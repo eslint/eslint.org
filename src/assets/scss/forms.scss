@@ -141,14 +141,6 @@ input {
 	padding-right: calc(0.875rem * 3);
 	padding-inline-end: calc(0.875rem * 3);
 	box-shadow: var(--shadow-xs);
-
-	&::-ms-expand {
-		display: none;
-
-		@media screen and (-ms-high-contrast: active) {
-			display: block;
-		}
-	}
 }
 
 .open .combo-input {
@@ -305,14 +297,6 @@ ul.selected-options {
 	outline-offset: 3px;
 }
 
-.js-focus-visible
-	.c-checkbox
-	input[type="checkbox"]:focus:not(.focus-visible)
-	~ .c-checkbox__icon {
-	outline: 2px solid transparent;
-	outline-offset: 3px;
-}
-
 .c-checkbox
 	input[type="checkbox"]:focus:not(:focus-visible)
 	~ .c-checkbox__icon {
@@ -320,37 +304,7 @@ ul.selected-options {
 	outline-offset: 3px;
 }
 
-.c-checkbox input[type="checkbox"].focus-visible ~ .c-checkbox__icon {
-	outline: 2px solid var(--outline-color);
-	outline-offset: 3px;
-}
-
 .c-checkbox input[type="checkbox"]:focus-visible ~ .c-checkbox__icon {
 	outline: 2px solid var(--outline-color);
 	outline-offset: 3px;
-}
-
-/* WHCM styles */
-.c-checkbox svg {
-	@media screen and (-ms-high-contrast: active) {
-		.cm {
-			stroke: transparent;
-		}
-
-		.border {
-			stroke: windowText;
-		}
-	}
-}
-
-@media screen and (-ms-high-contrast: active) {
-	.c-checkbox input[type="checkbox"]:checked ~ .c-checkbox__icon {
-		.cm {
-			stroke: highlight;
-		}
-
-		.border {
-			stroke: highlight;
-		}
-	}
 }

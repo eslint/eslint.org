@@ -64,10 +64,6 @@
 		&:focus:not(:focus-visible) {
 			border-color: transparent;
 		}
-
-		.js-focus-visible &:focus:not(.focus-visible) {
-			border-color: transparent;
-		}
 	}
 }
 
