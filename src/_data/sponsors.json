@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 105445.13165148003,
-        "monthlyDonations": 8787.094304289998,
+        "annualDonations": 105388.92480276003,
+        "monthlyDonations": 8782.410400229997,
         "sponsorCount": 134
     },
     "diamond": [],
@@ -706,14 +706,6 @@
             "tier": "backer"
         },
         {
-            "name": "Hayden Bleasel",
-            "image": "https://avatars.githubusercontent.com/u/4142719",
-            "url": "https://haydenbleasel.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
             "name": "Moinul Hossain",
             "image": "https://avatars.githubusercontent.com/u/4328772",
             "url": "https://moinulhossain.me",
@@ -983,6 +975,15 @@
             "image": "https://github.com/josdejong.png",
             "monthlyDonation": 0.44233005,
             "totalDonations": "00.205514810.162804730.781636100.620541660.719292870.681864050.438591590.438591590.408373970.359062590.358202530.011151730.011153570.015433870.005107600.005370460.005376970.005220070.005628550.339412470.327833490.324853960.647595740.562550820.498355930.456198540.456198540.44233005",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Sharp Hall",
+            "url": "http://sharphall.org",
+            "image": "https://github.com/sharph.png",
+            "monthlyDonation": 0.31609594,
+            "totalDonations": "00.256147130.252428730.249730920.263261750.263261750.264196850.391978300.367332360.004143800.005619350.003624580.004040850.007930090.003753120.003757120.149154970.185997620.239540820.245238010.313722910.322378960.497154100.500982190.513066730.31609594",
             "source": "thanks.dev",
             "tier": "backer"
         },
