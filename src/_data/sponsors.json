@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105388.92480276003,
-        "monthlyDonations": 8782.410400229997,
-        "sponsorCount": 134
+        "annualDonations": 105833.96975928002,
+        "monthlyDonations": 8819.497479939997,
+        "sponsorCount": 135
     },
     "diamond": [],
     "platinum": [],
@@ -182,6 +182,15 @@
             "image": "https://github.com/charmed-kubernetes.png",
             "monthlyDonation": 43.75516421,
             "totalDonations": "031.1306793531.336060066.9171802245.3145889553.1344685238.7696696164.8452393264.8452393254.4188382443.75516421",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Frontend Masters",
+            "url": "https://FrontendMasters.com",
+            "image": "https://github.com/frontendmasters.png",
+            "monthlyDonation": 37.08707971,
+            "totalDonations": "015.8755124116.5134570116.2135154615.9458794115.8539151315.8101133352.4053066815.7938353462.0867446158.6823441856.1351804555.6041253354.9398559947.1456875611.0450076411.0450076411.0450076411.0450076411.0450076411.0450076411.0522232711.1344221611.2132473611.4548048559.0177864044.9594486342.8820776745.7864663243.7469113053.1771373349.7139531839.0324811538.7123139637.08707971",
             "source": "thanks.dev",
             "tier": "backer"
         },
