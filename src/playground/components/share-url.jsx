@@ -13,7 +13,7 @@ ${code}
 \`\`\``;
 
 // Helper to build GitHub issue description
-const buildGitHubIssueDescription = (code, config, errorOutput) => {
+const buildGitHubIssueDescription = (code, config) => {
 	const parts = [];
 
 	if (code) {
@@ -24,10 +24,6 @@ const buildGitHubIssueDescription = (code, config, errorOutput) => {
 		parts.push(
 			`### ESLint Configuration \n<details> \n <summary> Tap to see full config </summary> \n\n${formatCodeBlock(config)}\n </details>\n`,
 		);
-	}
-
-	if (errorOutput) {
-		parts.push(`### ESLint Output\n\`\`\`\n${errorOutput}\n\`\`\`\n`);
 	}
 
 	return parts.join("\n");
@@ -76,13 +72,12 @@ export default function ShareURL({ url, errors, config }) {
 		const currentUrl = url || window.location.href;
 		const code = getEditorCode();
 		const errorOutput = formatErrors(errors);
+		const errorOutputInDescription = errorOutput
+			? `\n### ESLint Output\n\`\`\`\n${errorOutput}\n\`\`\`\n`
+			: "";
 
 		// Build description with available data
-		let description = buildGitHubIssueDescription(
-			code,
-			config,
-			errorOutput,
-		);
+		let description = buildGitHubIssueDescription(code, config);
 
 		// Set URL parameters
 		const params = {
@@ -113,7 +108,7 @@ export default function ShareURL({ url, errors, config }) {
 
 		// Handle large content with clipboard fallback
 		if (reportUrl.search.length > MAX_URL_LENGTH) {
-			description += `### Link to Minimal Reproducible Example\n[Repro URL](${currentUrl})`;
+			description += `${errorOutputInDescription}\n### Link to Minimal Reproducible Example\n[Repro URL](${currentUrl})`;
 
 			reportUrl.searchParams.set(
 				"description",
