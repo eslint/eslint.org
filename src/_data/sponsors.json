@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105833.96975928002,
-        "monthlyDonations": 8819.497479939997,
-        "sponsorCount": 135
+        "annualDonations": 105845.96975928002,
+        "monthlyDonations": 8820.497479939997,
+        "sponsorCount": 136
     },
     "diamond": [],
     "platinum": [],
@@ -13,15 +13,6 @@
             "image": "https://images.opencollective.com/vite-ecosystem-fund/logo.png",
             "monthlyDonation": 1000,
             "totalDonations": 1000,
-            "source": "opencollective",
-            "tier": "gold-sponsor"
-        },
-        {
-            "name": "ForceIndexer",
-            "url": "https://forceindexer.com",
-            "image": "https://images.opencollective.com/forceindexer/588566e/logo.png",
-            "monthlyDonation": 1000,
-            "totalDonations": 1,
             "source": "opencollective",
             "tier": "gold-sponsor"
         },
@@ -46,6 +37,14 @@
             "name": "CodeRabbit",
             "image": "https://avatars.githubusercontent.com/u/132028505",
             "url": "https://www.coderabbit.ai/?utm_source=cr_org&utm_medium=github",
+            "monthlyDonation": 1000,
+            "source": "github",
+            "tier": "gold-sponsor"
+        },
+        {
+            "name": "Automattic",
+            "image": "https://avatars.githubusercontent.com/u/887802",
+            "url": "https://automattic.com",
             "monthlyDonation": 1000,
             "source": "github",
             "tier": "gold-sponsor"
@@ -881,6 +880,15 @@
             "name": "buonanotte immagini",
             "url": "https://buonanotteimmagini.org/",
             "image": "https://images.opencollective.com/buonanotte-immagini/5de82aa/logo.png",
+            "monthlyDonation": 1,
+            "totalDonations": 1,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "ForceIndexer",
+            "url": "https://forceindexer.com",
+            "image": "https://images.opencollective.com/forceindexer/588566e/logo.png",
             "monthlyDonation": 1,
             "totalDonations": 1,
             "source": "opencollective",

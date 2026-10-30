@@ -36,15 +36,6 @@
         "source": "github"
     },
     {
-        "id": "SA_kwHOAFvahM4AF97q",
-        "name": "Dimitri Pletschette",
-        "image": "https://avatars.githubusercontent.com/u/61140913",
-        "url": "https://dimitripletschette.com",
-        "amount": 5,
-        "date": "2026-09-30T09:54:59Z",
-        "source": "github"
-    },
-    {
         "id": "or_stdeb7E7447i7cdsROUPa",
         "name": "THANKS.DEV",
         "url": "https://thanks.dev",
@@ -240,15 +231,6 @@
         "image": "https://images.opencollective.com/knpb/logo.png",
         "amount": 650,
         "date": "2025-12-23T09:22:23.598Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "3kzxy4v0-7wlr6mk0-r5yqmj9n-o8agdbe5",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
-        "amount": 999,
-        "date": "2025-11-13T22:04:38.841Z",
         "source": "opencollective"
     }
 ]
