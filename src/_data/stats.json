@@ -1,13 +1,13 @@
 {
-    "latestVersion": "v10.13.0",
-    "latestVersionDate": "2026-10-16T14:23:23Z",
-    "currentVersion": "v10.13.0",
-    "currentVersionDate": "2026-10-16T14:23:23Z",
+    "latestVersion": "v10.14.0",
+    "latestVersionDate": "2026-10-30T14:10:27Z",
+    "currentVersion": "v10.14.0",
+    "currentVersionDate": "2026-10-30T14:10:27Z",
     "currentVersionIsPrerelease": false,
     "stars": 27602,
-    "lastCommitDate": "2026-10-29T17:52:35Z",
-    "projectDependents": 27662527,
+    "lastCommitDate": "2026-10-30T14:10:24Z",
+    "projectDependents": 27662973,
     "weeklyDownloads": 203709783,
-    "nextVersion": "v10.14.0",
-    "nextVersionDate": "2026-10-30"
+    "nextVersion": "v10.15.0",
+    "nextVersionDate": "2026-11-13"
 }
