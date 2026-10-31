@@ -184,7 +184,11 @@ function lintTooltip(view, pos, side) {
 				(from === to ||
 					((pos > from || side > 0) && (pos < to || side < 0)))
 			) {
-				found.push(cursor.value.spec.diagnostic);
+				found.push({
+					diagnostic: cursor.value.spec.diagnostic,
+					from,
+					to,
+				});
 				rangeStart = Math.max(rangeStart, from);
 				rangeEnd = Math.min(rangeEnd, to);
 			} else if (to <= pos) {
@@ -210,7 +214,9 @@ function lintTooltip(view, pos, side) {
 function diagnosticsTooltip(view, diagnostics) {
 	return elt(
 		"div",
-		diagnostics.map(d => renderDiagnostic(view, d, false)),
+		diagnostics.map(({ diagnostic, from, to }) =>
+			renderDiagnostic(view, diagnostic, from, to),
+		),
 	);
 }
 
@@ -345,15 +351,15 @@ function assignKeys(actions) {
 	return assigned;
 }
 
-function renderDiagnostic(view, diagnostic) {
+function renderDiagnostic(view, diagnostic, from, to) {
 	const element = document.createElement("div");
 	const root = ReactDOM.createRoot(element);
 	const line =
-		diagnostic.from >= 0 && diagnostic.from <= view.state.doc.length
-			? view.state.doc.lineAt(diagnostic.from)
+		from >= 0 && from <= view.state.doc.length
+			? view.state.doc.lineAt(from)
 			: null;
 	const message = line
-		? `${diagnostic.severity === "warning" ? "Warning" : "Error"} ${line.number}:${diagnostic.from - line.from + 1}: ${diagnostic.message}`
+		? `${diagnostic.severity === "warning" ? "Warning" : "Error"} ${line.number}:${from - line.from + 1}: ${diagnostic.message}`
 		: diagnostic.message;
 
 	// clean up ruleName first
@@ -369,8 +375,8 @@ function renderDiagnostic(view, diagnostic) {
 					(() =>
 						diagnostic.actions[0].apply(
 							view,
-							diagnostic.from,
-							diagnostic.to,
+							from ?? diagnostic.from,
+							to ?? diagnostic.to,
 						))
 				}
 				ruleName={ruleName}
@@ -399,7 +405,7 @@ class PanelItem {
 	constructor(view, diagnostic) {
 		this.diagnostic = diagnostic;
 		this.id = `item_${Math.floor(Math.random() * 0xffffffff).toString(16)}`;
-		this.dom = renderDiagnostic(view, diagnostic, true);
+		this.dom = renderDiagnostic(view, diagnostic);
 		this.dom.id = this.id;
 		this.dom.setAttribute("role", "option");
 	}
