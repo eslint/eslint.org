@@ -1,4 +1,11 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["github>eslint/workflows//.github/renovate/eslint-app.json5"],
+  packageRules: [
+    {
+      description: "Disable automerge for all updates in this repo.",
+      matchPackageNames: ["*"],
+      automerge: false,
+    },
+  ],
 }
