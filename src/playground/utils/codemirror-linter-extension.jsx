@@ -168,33 +168,40 @@ const activeMark = /* @__PURE__*/ Decoration.mark({
 
 function lintTooltip(view, pos, side) {
 	const { diagnostics } = view.state.field(lintState);
+	const line = view.state.doc.lineAt(pos);
 	const found = [];
-	let stackStart = 2e8,
-		stackEnd = 0;
+	let rangeStart = line.from,
+		rangeEnd = line.to;
+	const cursor = diagnostics.iter(line.from);
 
-	diagnostics.between(
-		pos - (side < 0 ? 1 : 0),
-		pos + (side > 0 ? 1 : 0),
-		(from, to, { spec }) => {
+	while (cursor.value && cursor.from <= line.to) {
+		const { from, to } = cursor;
+
+		if (from >= line.from) {
 			if (
 				pos >= from &&
 				pos <= to &&
 				(from === to ||
 					((pos > from || side > 0) && (pos < to || side < 0)))
 			) {
-				found.push(spec.diagnostic);
-				stackStart = Math.min(from, stackStart);
-				stackEnd = Math.max(to, stackEnd);
+				found.push(cursor.value.spec.diagnostic);
+				rangeStart = Math.max(rangeStart, from);
+				rangeEnd = Math.min(rangeEnd, to);
+			} else if (to <= pos) {
+				rangeStart = Math.max(rangeStart, to);
+			} else if (from >= pos) {
+				rangeEnd = Math.min(rangeEnd, from);
 			}
-		},
-	);
+		}
+		cursor.next();
+	}
 	if (!found.length) {
 		return null;
 	}
+
 	return {
-		pos: stackStart,
-		end: stackEnd,
-		above: view.state.doc.lineAt(stackStart).to < stackEnd,
+		pos: rangeStart,
+		end: rangeEnd,
 		create() {
 			return { dom: diagnosticsTooltip(view, found) };
 		},
@@ -341,6 +348,13 @@ function assignKeys(actions) {
 function renderDiagnostic(view, diagnostic) {
 	const element = document.createElement("div");
 	const root = ReactDOM.createRoot(element);
+	const line =
+		diagnostic.from >= 0 && diagnostic.from <= view.state.doc.length
+			? view.state.doc.lineAt(diagnostic.from)
+			: null;
+	const message = line
+		? `${diagnostic.severity === "warning" ? "Warning" : "Error"} ${line.number}:${diagnostic.from - line.from + 1}: ${diagnostic.message}`
+		: diagnostic.message;
 
 	// clean up ruleName first
 	// see https://github.com/codemirror/lang-javascript/blob/2b48f4d00253f55ce059f49d4540e04bea087006/src/eslint.ts#L51
@@ -349,7 +363,7 @@ function renderDiagnostic(view, diagnostic) {
 	root.render(
 		<React.StrictMode>
 			<Popup
-				message={diagnostic.message}
+				message={message}
 				onFix={
 					diagnostic.actions &&
 					(() =>
