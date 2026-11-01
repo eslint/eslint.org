@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Select, { components } from "react-select";
 import ShareURL from "./share-url";
 import {
@@ -166,10 +166,6 @@ export default function Configuration({
 	const [selectedRules, setSelectedRules] = useState([]);
 	const ruleInputRef = useRef(null);
 	const firstRuleRef = useRef();
-
-	useEffect(() => {
-		firstRuleRef.current?.focus();
-	}, [options.rules]);
 
 	const handleRuleChange = () => {
 		const rulesToAdd = Object.fromEntries(
