@@ -164,6 +164,7 @@ export default function Configuration({
 				: ruleName,
 		}));
 	const [selectedRules, setSelectedRules] = useState([]);
+	const [ruleInputsKey, setRuleInputsKey] = useState(0);
 	const ruleInputRef = useRef(null);
 	const firstRuleRef = useRef();
 
@@ -206,7 +207,14 @@ export default function Configuration({
 	const allRulesSelected =
 		Object.keys(options.rules).length === ruleNames.length;
 
+	const resetRuleInputs = () => {
+		setRulesWithInvalidConfigs(new Set());
+		setRuleInputsKey(key => key + 1);
+	};
+
 	const selectAll = () => {
+		resetRuleInputs();
+
 		if (allRulesSelected) {
 			const newOptions = {
 				...options,
@@ -233,6 +241,7 @@ export default function Configuration({
 	};
 
 	const revertToDefault = () => {
+		resetRuleInputs();
 		onUpdate(Object.assign({}, initialOptions));
 	};
 
@@ -602,7 +611,7 @@ export default function Configuration({
 									: "Enable all rules"}
 							</button>
 						</div>
-						<ul className="config__added-rules">
+						<ul className="config__added-rules" key={ruleInputsKey}>
 							{options.rules &&
 								Object.keys(options.rules)
 									.sort()
