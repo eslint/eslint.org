@@ -35,10 +35,11 @@ class LintState {
 	}
 	static init(diagnostics, panel, state) {
 		const ranges = Decoration.set(
-			diagnostics.map(d =>
-				// For zero-length ranges or ranges covering only a line break, create a widget
-				d.from === d.to ||
-				(d.from === d.to - 1 && state.doc.lineAt(d.from).to === d.from)
+			diagnostics.map(d => {
+				// Mark only the line where this diagnostic starts.
+				const to = Math.min(d.to, state.doc.lineAt(d.from).to);
+
+				return d.from === to
 					? Decoration.widget({
 							widget: new DiagnosticWidget(d),
 							diagnostic: d,
@@ -48,8 +49,8 @@ class LintState {
 								class: `cm-lintRange cm-lintRange-${d.severity}`,
 							},
 							diagnostic: d,
-						}).range(d.from, d.to),
-			),
+						}).range(d.from, to);
+			}),
 			true,
 		);
 
