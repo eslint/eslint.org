@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 102972,
-        "monthlyDonations": 8581,
-        "sponsorCount": 105
+        "annualDonations": 102960,
+        "monthlyDonations": 8580,
+        "sponsorCount": 104
     },
     "diamond": [],
     "platinum": [],
@@ -799,15 +799,6 @@
             "name": "ForceIndexer",
             "url": "https://forceindexer.com",
             "image": "https://images.opencollective.com/forceindexer/588566e/logo.png",
-            "monthlyDonation": 1,
-            "totalDonations": 1,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "buongiorno immagini",
-            "url": "https://buongiornoimmagine.net/",
-            "image": "https://images.opencollective.com/buongiorno-immagini/1dd0232/logo.png",
             "monthlyDonation": 1,
             "totalDonations": 1,
             "source": "opencollective",
