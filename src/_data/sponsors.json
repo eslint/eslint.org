@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 102960,
-        "monthlyDonations": 8580,
-        "sponsorCount": 104
+        "annualDonations": 115068,
+        "monthlyDonations": 9589,
+        "sponsorCount": 105
     },
     "diamond": [],
     "platinum": [],
@@ -13,6 +13,15 @@
             "image": "https://images.opencollective.com/vite-ecosystem-fund/logo.png",
             "monthlyDonation": 1000,
             "totalDonations": 1000,
+            "source": "opencollective",
+            "tier": "gold-sponsor"
+        },
+        {
+            "name": "ForceIndexer",
+            "url": "https://forceindexer.com",
+            "image": "https://images.opencollective.com/forceindexer/588566e/logo.png",
+            "monthlyDonation": 1000,
+            "totalDonations": 1,
             "source": "opencollective",
             "tier": "gold-sponsor"
         },
@@ -190,6 +199,15 @@
             "image": "https://images.opencollective.com/agendrix/32bd295/logo.png",
             "monthlyDonation": 20,
             "totalDonations": 1135,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Say Yup",
+            "url": "https://www.sayyup.nl/",
+            "image": "https://images.opencollective.com/sayyup/1451ed5/avatar.png",
+            "monthlyDonation": 10,
+            "totalDonations": 455,
             "source": "opencollective",
             "tier": "backer"
         },
@@ -790,15 +808,6 @@
             "name": "buonanotte immagini",
             "url": "https://buonanotteimmagini.org/",
             "image": "https://images.opencollective.com/buonanotte-immagini/5de82aa/logo.png",
-            "monthlyDonation": 1,
-            "totalDonations": 1,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "ForceIndexer",
-            "url": "https://forceindexer.com",
-            "image": "https://images.opencollective.com/forceindexer/588566e/logo.png",
             "monthlyDonation": 1,
             "totalDonations": 1,
             "source": "opencollective",
