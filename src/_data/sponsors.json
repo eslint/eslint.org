@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 115082.81502863999,
-        "monthlyDonations": 9590.23458572,
-        "sponsorCount": 107
+        "annualDonations": 115022.81502863999,
+        "monthlyDonations": 9585.23458572,
+        "sponsorCount": 106
     },
     "diamond": [],
     "platinum": [],
@@ -415,15 +415,6 @@
             "image": "https://images.opencollective.com/pinkfluffynico/avatar.png",
             "monthlyDonation": 5,
             "totalDonations": 226,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
-            "name": "Fuller, Inc.",
-            "url": "https://www.fuller-inc.com/",
-            "image": "https://images.opencollective.com/fuller-inc/7b0f64a/logo.png",
-            "monthlyDonation": 5,
-            "totalDonations": 240,
             "source": "opencollective",
             "tier": "backer"
         },
