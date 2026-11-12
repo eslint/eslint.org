@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="602" height="678" viewBox="0 0 602 678" role="img" aria-labelledby="chart-title">
+    <title id="chart-title">How donation funds are used</title>
+    <path fill="#fff" d="M0 0h602v678H0z"/>
+    <path fill="#8080f2" d="M301 32A271 271 0 1 1 201.238 554.969L251.138 428.938A135.45 135.45 0 1 0 301 167.55Z"/>
+    <path fill="#a0a0f5" d="M201.238 554.969A271 271 0 0 1 30 303L165.55 303A135.45 135.45 0 0 0 251.138 428.938Z"/>
+    <path fill="#b7b6ff" d="M30 303A271 271 0 0 1 103.45 117.488L202.261 210.278A135.45 135.45 0 0 0 165.55 303Z"/>
+    <path fill="#dfdefe" d="M103.45 117.488A271 271 0 0 1 217.256 45.264L259.144 174.179A135.45 135.45 0 0 0 202.261 210.278Z"/>
+    <path fill="#6358d4" d="M217.256 45.264A271 271 0 0 1 225.393 42.76L263.211 172.928A135.45 135.45 0 0 0 259.144 174.179Z"/>
+    <path fill="#cdccfa" d="M225.393 42.76A271 271 0 0 1 301 32L301 167.55A135.45 135.45 0 0 0 263.211 172.928Z"/>
+    <g fill="#1a1a1a" font-family="Arial, sans-serif" font-size="12">
+        <circle cx="125" cy="605" r="6" fill="#8080f2"/>
+        <text x="139" y="609">TSC Members Pay</text>
+        <circle cx="263" cy="605" r="6" fill="#a0a0f5"/>
+        <text x="277" y="609">Reviewers Pay</text>
+        <circle cx="381" cy="605" r="6" fill="#b7b6ff"/>
+        <text x="395" y="609">Committers Pay</text>
+        <circle cx="61" cy="623" r="6" fill="#dfdefe"/>
+        <text x="75" y="627">Dependency Sponsorships</text>
+        <circle cx="247" cy="623" r="6" fill="#6358d4"/>
+        <text x="261" y="627">Google Workspace</text>
+        <circle cx="387" cy="623" r="6" fill="#cdccfa"/>
+        <text x="401" y="627">Community Sponsorships</text>
+    </g>
+</svg>

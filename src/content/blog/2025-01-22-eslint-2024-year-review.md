@@ -110,7 +110,7 @@ In 2024, we spent $247,669.54 USD on the ESLint project as a whole vs. $187,964.
 | TSC Stipend (Tidelift)      | $18,449.16       | $30,077.84      | -38.66%         |
 | Triage and Support          | $3,985.50        | $10,307.78      | -61.34%         |
 | Technical Writing           | $0.00            | $8,155.00       | -100.00%        |
-| Other Expenses              | $14,100.30       | $4,500.00       | +213.34%        |
+| Contributor Pool            | $14,100.30       | $4,500.00       | +213.34%        |
 | Payment Processor Fees      | $3,808.97        | $2,854.51       | +33.44%         |
 | Health Insurance            | $12,698.40       | $13,447.41      | -5.57%          |
 | Open Source Collective Fee  | $11,696.69       | $9,206.88       | +27.04%         |
@@ -122,7 +122,7 @@ In 2024, we spent $247,669.54 USD on the ESLint project as a whole vs. $187,964.
 | **Total**                   | **$247,669.54**  | **$185,646.98** | **+33.41%**     |
 
 
-2024 was a record year for ESLint in many ways. The amount of work completed was due to a large number of contributions not only from the team but also from outside contributors. Our maintenance and development costs soared this year as a result, along with several other categories of spending. We had additional help triaging issues and PRs, which also contributed to the increase in costs.
+2024 was a record year for ESLint in many ways. The amount of work completed was due to a large number of contributions not only from the team but also from outside contributors. Our maintenance and development costs soared this year as a result, as did our Contributor Pool costs, which is what we pay outside contributors for significant contributions to ESLint. We had additional help triaging issues and PRs, which also contributed to the increase in costs.
 
 How were we able to make up the difference between income and expenses? The ESLint team has long had a belief in building up at least a year of reserves so that any abrupt disruption of income wouldn't disrupt the project immediately. Prior to 2023, we were mostly focusing on bug fixes, stability, and keeping up with changes to the JavaScript language. During that time, costs were relatively low and so we spent less than we received in order to build up our reserves. Starting in 2023, we started significantly overhauling the ESLint project, and a result, that was the first year we spent slightly more than we took in. 2024 accelerated those changes as more contributions led to higher costs.
 

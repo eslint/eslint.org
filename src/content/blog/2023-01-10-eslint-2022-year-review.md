@@ -114,7 +114,7 @@ In 2022, we spent $157,270.48 USD on the ESLint project as a whole. This include
 | TSC Stipend (Tidelift) | -$29,047.86 |
 | Website Redesign | -$7,167.52 |
 | Technical Writing | -$4,147.50 |
-| Other Expenses | -$7,900.00 |
+| Contributor Pool | -$7,900.00 |
 | Payment Processor Fees | -$2,942.67 |
 | Health Insurance | -$1,847.86 |
 | Open Source Collective Fee | -$12,172.84 |
@@ -126,7 +126,7 @@ In 2022, we spent $157,270.48 USD on the ESLint project as a whole. This include
 | Guest Blog Posts | -$300.00 |
 | **Total** | **-$157,270.48** |
 
-Community Management refers to the ongoing work required to manage the ESLint Community.
+As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community.
 
 ## Supporting our dependencies and ecosystem
 
