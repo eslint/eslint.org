@@ -90,7 +90,7 @@ In 2023, we spent $185,646.98 USD on the ESLint project as a whole. This include
 | TSC Stipend (Tidelift) | -$30,077.84 |
 | Triage and Support | -$10,307.78 |
 | Technical Writing | -$8,155.00 |
-| Contributor Pool | -$4,500.00 |
+| Other Expenses | -$4,500.00 |
 | Health Insurance | -$13,447.41 |
 | Open Source Collective Fee | -$9,206.88 |
 | Ecosystem/Dependencies | -$24,400.00 |
@@ -99,7 +99,7 @@ In 2023, we spent $185,646.98 USD on the ESLint project as a whole. This include
 | Google Workspace | -$187.35 |
 | **Total** | **-$185,646.98** |
 
-As a reminder, the Contributor Pool is money we award for contributions to people who are not on the ESLint team as a way to thank them for making impactful contributions to the project. Community Management refers to the ongoing work required to manage the ESLint Community GitHub organization.
+Community Management refers to the ongoing work required to manage the ESLint Community GitHub organization.
 
 You may notice that our expenses exceeded our income in 2023. Thankfully, we keep a large reserve fund so we can handle any unexpected expenses and to hedge against loss of sponsorships.
 

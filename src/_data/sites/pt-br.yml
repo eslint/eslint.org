@@ -451,11 +451,6 @@ donate_page:
           Nós pagamos aos nossos membros de equipe por horas de desenvolvimento baseado na senioridade,
           atualmente HOURLY_RATE_TSC USD/hora para membros e revisores do CDT e HOURLY_RATE_COMMITERS USD/hora
           para committers. Os membros da equipe recebem pagamento por um máximo de MAX_MONTHLY_HOURS horas por mês.
-      - name: Grupo de contribuidores
-        text: >
-          Reservamos CONTRIBUTOR_POOL_PERCENTAGE% de nossa renda mensal a cada mês para apoiadores externos que fizeram contribuições
-          significativas ao projeto. Contribuições incluem submeter código, escrever documentação, responder perguntas
-          no nosso servidor Discord, e mais. Este dinheiro é alocado mensalmente pelo CDT.
       - name: Dependências
         text: >
           Reservamos DEPENDENCIES_PERCENTAGE% de nossa renda mensal mensalmente para ajudar a manter nossas dependências.

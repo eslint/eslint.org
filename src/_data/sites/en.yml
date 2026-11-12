@@ -462,11 +462,6 @@ donate_page:
           We pay our team members an hourly rate based on their seniority, currently HOURLY_RATE_TSC USD/hour
           for TSC members and Reviewers and HOURLY_RATE_COMMITERS USD/hour for committers. Team members are paid
           for a maximum of MAX_MONTHLY_HOURS hours per month.
-      - name: Contributor Pool
-        text: >
-          We set aside CONTRIBUTOR_POOL_PERCENTAGE% of our monthly income to pay outside contributors who have made significant
-          contributions to the project. Contributions include submitting code, writing documentation,
-          answering questions in our Discord server, and more. This money is allocated each month by the TSC.
       - name: Dependencies
         text: >
           We set aside DEPENDENCIES_PERCENTAGE% of our monthly income to help support our dependencies.

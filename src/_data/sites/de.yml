@@ -479,14 +479,6 @@ donate_page:
           Erfahrung basiert. Momentan zahlen wir HOURLY_RATE_TSC USD/Stunde für
           TSC-Mitglieder und Reviewer und HOURLY_RATE_COMMITERS für Mitwirkende. Teammitglieder werden für maximal
           MAX_MONTHLY_HOURS Stunden pro Monat bezahlt.
-      - name: Mitwirkenden-Fonds
-        text: >
-          Wir stellen CONTRIBUTOR_POOL_PERCENTAGE% unserer monatlichen Einnahmen zur Verfügung, um
-          externe Mitwirkende zu bezahlen, die wichtige Beiträge zum Projekt
-          geleistet haben. Als Beiträge zählen das Einreichen von Code, das
-          Schreiben von Dokumentation, die Beantwortung von Fragen auf unserem
-          Discord-Server und vieles mehr. Dieses Geld wird jeden Monat vom TSC
-          zugewiesen.
       - name: Abhängigkeiten
         text: >
           Wir stellen DEPENDENCIES_PERCENTAGE% unserer monatlichen Einnahmen zur Verfügung, um die

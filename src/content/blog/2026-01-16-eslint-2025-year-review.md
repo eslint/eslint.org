@@ -136,7 +136,7 @@ In 2025, we spent $262,150.09 USD on the ESLint project as a whole vs. $204,451.
 | Maintenance and Development | $170,966.29      | $147,273.43     | +16.09%         |
 | TSC Stipend (Tidelift)      | $15,500.00       | $18,449.16      | -15.99%         |
 | Triage and Support          | $450.00          | $3,985.50       | -88.71%         |
-| Contributor Pool            | $24,679.72       | $14,100.30      | +75.03%         |
+| Other Expenses              | $24,679.72       | $14,100.30      | +75.03%         |
 | Payment Processor Fees      | $4,540.18        | $3,808.97       | +19.20%         |
 | Health Insurance            | $13,642.32       | $12,698.40      | +7.43%          |
 | Open Source Collective Fee  | $13,824.32       | $11,696.69      | +18.19%         |
@@ -149,7 +149,7 @@ In 2025, we spent $262,150.09 USD on the ESLint project as a whole vs. $204,451.
 | Code Explorer               | $0.00            | $7,200.00       | -100.00%        |
 | **Total**                   | **$262,150.09**  | **$247,669.54** | **+5.85%**      |
 
-Our Maintenance and Development costs continued to rise as we welcome four new team members, maintained three language plugins, tackled the core rewrite and the preparation for v10.0.0. We also significantly increased our investment in the Contributor Pool, which compensates outside contributors for high-impact work. We were able to offset some of these increases with lower costs for triage and community management compared to 2024.
+Our Maintenance and Development costs continued to rise as we welcome four new team members, maintained three language plugins, tackled the core rewrite and the preparation for v10.0.0. We were able to offset some of these increases with lower costs for triage and community management compared to 2024.
 
 ### Supporting our dependencies and ecosystem
 

@@ -23,7 +23,7 @@ Before explaining how ESLint is using the money it collects now, it helps to tak
 
 On ESLint, we discovered that we didn't have any team members interested in working on the project full time. So we thought: what if we went in the complete opposite direction? Given that we know people will only work part time, and probably just in their spare time, how could we distribute the funds as widely as possible for the maximum positive impact?
 
-When we asked ourselves this question, we realized that we were circling around a common theme: anything that benefits the ESLint ecosystem is worth supporting financially. The first and most obvious thing that benefits the ecosystem is having people maintaining ESLint, so we clearly need to make sure people are paid fairly for spending their time working on the project. But what else benefits the ecosystem? Well, ESLint is built on top of a bunch of dependencies, and we'd like to support those projects, so what if we donated some of our funds to those projects? There's also a wide range of plugins, parsers, and extensions that help fuel use of ESLint, so what if we started sponsoring some of these projects as well? And we also get a bunch of contributions from outside contributors...what if we paid them?
+When we asked ourselves this question, we realized that we were circling around a common theme: anything that benefits the ESLint ecosystem is worth supporting financially. The first and most obvious thing that benefits the ecosystem is having people maintaining ESLint, so we clearly need to make sure people are paid fairly for spending their time working on the project. But what else benefits the ecosystem? Well, ESLint is built on top of a bunch of dependencies, and we'd like to support those projects, so what if we donated some of our funds to those projects? There's also a wide range of plugins, parsers, and extensions that help fuel use of ESLint, so what if we started sponsoring some of these projects as well?
 
 So by aligning around the idea that anything that benefits the ESLint ecosystem is worth funding, we were able to find ways to spread the money we collected more widely, and we're excited to share the results.
 
@@ -36,14 +36,6 @@ In general, we regularly spend money on the following things.
 Each month, all ESLint team members can submit an invoice for the number of hours they worked on the project. Anything they do on the project counts, whether that is writing code, writing documentation, triaging issues, participating in our Discord server, attending meetings on behalf of ESLint, contributing to our upstream dependencies, and so on. All contributions to an open source project are valuable, and we feel like compensating team members for any time they spend on the project is the right thing to do.
 
 Right now, the per-hour rate for Technical Steering Committee (TSC) members and Reviewers is $80/hour; the per-hour rate for Committers is $50/hour.
-
-### The contributor pool
-
-One of the things we struggled with was how to fairly pay outside contributors for working on ESLint. We didn't think a standard per-hour rate made much sense because 1) people might contribute without knowing to track their hours ahead of time and 2) trusting people you don't know to accurately report their hours spend is a system that is too easy to exploit. Still, we felt like it wasn't fair for us to pay for team member contributions but not for outside contributions, and so we created the contributor pool.
-
-Each month, we set aside $1,000 specifically to give to outside contributors for any contributions to ESLint. The TSC reviews outside contributions at the end of each month and awards at least $100 to every outside contributor who has made a non-trivial contribution to ESLint. Once again, these contributions are not limited to coding, but can be anything that positively impacts the project. The contributors don't need to apply ahead of time or ask for permission; if you make a significant contribution, you'll get an email from the TSC letting you know how to collect your payment.
-
-In 2021, we awarded over $6,000 to outside contributors, and we look forward to awarding more in 2022. The bottom line here: if you make any non-trivial contribution to ESLint, you will get paid for it.
 
 ### Supporting our dependencies
 
