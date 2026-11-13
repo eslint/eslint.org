@@ -19,15 +19,15 @@ Back in 2022, we [shared our plan](https://eslint.org/blog/2022/02/paying-contri
 
 The contributor pool was a pool of money set aside each month to pay outsider contributors for meaningful contributions to the project. Initially we started with a $1,000/month pool before moving to a 10% of monthly income pool. Eligible contributions could be pull requests (even documentation updates), helping answer questions in Discord, or anything else that was a net benefit to the project as a whole. We hoped that doing so would encourage more contributions and in many cases it did. While most first-time contributors had no prior knowledge of the contributor pool, it did attract repeat contributions and, eventually, new team members.
 
-Over the last couple of years, the number of contributions grew and so did the payouts. In 2025, we paid out USD $24,690 to outside contributors. We considered this a success.
+Over the last couple of years, the number of contributions grew and so did the payouts. In 2025, we paid out USD $24,680 to outside contributors. We considered this a success.
 
 |**Year**|**Amount**|
 |--------|----------|
 |2022    | $7,900   |
 |2023    | $4,500   |
 |2024    | $14,100  |
-|2025    | $24,690  |
-|**Total**|**$51,190**|
+|2025    | $24,680  |
+|**Total**|**$51,180**|
 
 You might think that we decided to retire the contributor pool due to the growing expense. That's not what happened.
 
