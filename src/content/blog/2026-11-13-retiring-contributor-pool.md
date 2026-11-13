@@ -39,7 +39,7 @@ More and more AI-generated pull requests started coming in so we asked people to
 
 "AI monitors" is a term I use to describe people who seem to go out of their way to call people out for using AI without attribution. We started getting people commenting on PRs insisting that it was written by AI and shouldn't be part of the contributor pool. There were people monitoring the contributor pool monthly report trying to sniff out who was using AI. I was personally receiving direct messages from people warning me that certain accounts were actually AI and I should look closely at those contributions before paying them. All of this took the joy out of the contributor pool.
 
-With AI-generated pull requests now dominating the project, we made the sad decision to retire the contributor pool. We were all tired of spending time trying to determine if a pull request was AI-generated or not. We have plenty of other things to spend time on.
+With AI-generated pull requests now dominating the project, we made the sad decision to retire the contributor pool effective immediately. We were all tired of spending time trying to determine if a pull request was AI-generated or not. We have plenty of other things to spend time on.
 
 ## Conclusion
 
