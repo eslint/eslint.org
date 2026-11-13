@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 115022.81502863999,
-        "monthlyDonations": 9585.23458572,
-        "sponsorCount": 106
+        "annualDonations": 116693.65777451999,
+        "monthlyDonations": 9724.47148121,
+        "sponsorCount": 110
     },
     "diamond": [],
     "platinum": [],
@@ -150,6 +150,15 @@
             "tier": "backer"
         },
         {
+            "name": "juju",
+            "url": null,
+            "image": "https://github.com/juju.png",
+            "monthlyDonation": 77.14776163,
+            "totalDonations": "055.8400281056.0363021539.2947255510.0275016310.0424624185.5376718999.4764601472.46666159124.55208989124.55208989103.9277956982.5811393777.14776163",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Vasilii Kovalev",
             "url": null,
             "image": "https://images.opencollective.com/vasilii-kovalev/avatar.png",
@@ -173,6 +182,15 @@
             "url": "https://tailscale.com",
             "monthlyDonation": 50,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "charmed-kubernetes",
+            "url": null,
+            "image": "https://github.com/charmed-kubernetes.png",
+            "monthlyDonation": 41.22460824,
+            "totalDonations": "031.1306793531.336060066.9171802245.3145889553.1344685238.7696696164.8452393264.8452393254.4188382443.7551642141.22460824",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -200,6 +218,15 @@
             "monthlyDonation": 20,
             "totalDonations": 1135,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Canonical",
+            "url": "https://canonical.com",
+            "image": "https://github.com/canonical.png",
+            "monthlyDonation": 14.47036161,
+            "totalDonations": "013.1523181713.0949178512.4986023910.0441172110.0737259420.0390773720.0397015120.0402284620.0397732620.0424056214.8715717018.3015744713.9110254419.5901908819.5901908817.0911417115.5288412514.47036161",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
@@ -299,6 +326,15 @@
             "url": "https://posthog.com",
             "monthlyDonation": 10,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "canonical-launchpad",
+            "url": null,
+            "image": null,
+            "monthlyDonation": 6.39416401,
+            "totalDonations": "07.518717617.159719009.822891199.822891197.670773776.557564266.39416401",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
