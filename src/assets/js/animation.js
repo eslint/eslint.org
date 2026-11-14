@@ -153,6 +153,61 @@
 			"+=0.25",
 		);
 
+	const language = document.querySelector(".anim__language");
+
+	if (language) {
+		const languageText = language.querySelector(".anim__language-text");
+		const start = tl.duration();
+
+		["CSS", "JSON", "Markdown", "HTML", "Bash", ""].forEach(
+			(nextLanguage, index) => {
+				const changeTime = start + (index + 1) * 1.5;
+
+				tl.to(
+					languageText,
+					{
+						opacity: 0,
+						yPercent: -25,
+						duration: 0.25,
+						onStart: () => {
+							gsap.set(language, { width: language.offsetWidth });
+						},
+					},
+					changeTime - 0.25,
+				).call(
+					() => {
+						languageText.textContent = nextLanguage;
+						gsap.to(language, {
+							width: languageText.offsetWidth,
+							duration: 0.3,
+							ease: "power2.inOut",
+							onComplete: () => {
+								if (!nextLanguage) {
+									gsap.set(language, { display: "none" });
+								}
+							},
+						});
+
+						if (nextLanguage) {
+							gsap.fromTo(
+								languageText,
+								{ opacity: 0, yPercent: 25 },
+								{
+									opacity: 1,
+									yPercent: 0,
+									duration: 0.3,
+									ease: "power2.out",
+								},
+							);
+						}
+					},
+					null,
+					changeTime,
+				);
+			},
+		);
+	}
+
 	document.addEventListener("DOMContentLoaded", function () {
 		const dropImg = document.querySelectorAll(".anim__dropdown-img");
 		const winWidth = window.innerWidth;

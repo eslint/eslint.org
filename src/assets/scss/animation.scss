@@ -32,6 +32,11 @@
 		position: relative;
 	}
 
+	&__language-text {
+		display: inline-block;
+		white-space: nowrap;
+	}
+
 	&__text {
 		position: relative;
 		display: inline-block;
