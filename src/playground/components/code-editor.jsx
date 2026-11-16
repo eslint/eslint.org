@@ -68,10 +68,9 @@ export default function CodeEditor({
 	}, [selectedLanguage, eslintOptions]);
 
 	const lintSource =
-    selectedLanguage === "javascript" ||
-    selectedLanguage === "typescript"
-        ? esLint(eslintInstance, eslintOptions)
-        : eslintSource(eslintInstance, eslintOptions);
+		selectedLanguage === "javascript" || selectedLanguage === "typescript"
+			? esLint(eslintInstance, eslintOptions)
+			: eslintSource(eslintInstance, eslintOptions);
 
 	const extensions = useMemo(
 		() => [
@@ -81,7 +80,7 @@ export default function CodeEditor({
 			ESLintPlaygroundTheme,
 			ESLintPlaygroundHighlightStyle,
 		],
-		[eslintOptions, eslintInstance, languageExtension],
+		[eslintOptions, eslintInstance, languageExtension, lintSource],
 	);
 
 	useImperativeHandle(ref, () => ({

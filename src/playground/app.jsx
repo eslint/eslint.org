@@ -25,24 +25,21 @@ import json from "@eslint/json";
 
 const BOM = "\uFEFF";
 
-// const DEFAULT_TEXT = '/* eslint prefer-const: "error" */\nlet a = "b";';
 import { DEFAULT_TEXTS } from "./utils/constants";
 import { LANGUAGE_META } from "./utils/constants";
 
 const linter = new Linter();
 
-// const ruleNames = Object.keys(ruleMetaData);
-
 const getDefaultOptions = (metaData, pluginName) => ({
 	rules: Object.entries(metaData).reduce((result, [ruleId, meta]) => {
 		if (meta.docs.recommended && ruleId !== "use-baseline") {
-            const qualifiedRuleId = pluginName
-                ? `${pluginName}/${ruleId}`
-                : ruleId;
+			const qualifiedRuleId = pluginName
+				? `${pluginName}/${ruleId}`
+				: ruleId;
 
-            result[qualifiedRuleId] = ["error"];
-        }
-        return result;
+			result[qualifiedRuleId] = ["error"];
+		}
+		return result;
 	}, {}),
 });
 
@@ -114,7 +111,9 @@ const getUrlState = () => {
 		let language = urlState.language;
 
 		if (typeof language === "undefined") {
-			if (options.languageOptions?.parser === "@typescript-eslint/parser") {
+			if (
+				options.languageOptions?.parser === "@typescript-eslint/parser"
+			) {
 				language = "typescript";
 				text = { typescript: text };
 				options = { typescript: options };
@@ -131,8 +130,8 @@ const getUrlState = () => {
 		}
 
 		if (typeof text[language] === "undefined") {
-            return null;
-        }
+			return null;
+		}
 
 		return { text, options, language };
 	} catch {
@@ -146,7 +145,10 @@ const getLocalStorageState = () => {
 			window.localStorage.getItem("linterDemoState") || "{}",
 		);
 
-		if (typeof localStorageState.text[localStorageState.language] === "undefined") {
+		if (
+			typeof localStorageState.text[localStorageState.language] ===
+			"undefined"
+		) {
 			return null;
 		}
 
@@ -184,41 +186,47 @@ const rulesMetaObj = {
 	css: cssRulesMeta,
 	json: jsonRulesMeta,
 	markdown: markdownRulesMeta,
-}
-
+};
 
 const buildDefaultOptions = language => {
-    const { pluginName, plugin, parser, languageId } = LANGUAGE_META[language];
-    const options = fillOptionsDefaults(getDefaultOptions(rulesMetaObj[language], pluginName));
+	const { pluginName, plugin, parser, languageId } = LANGUAGE_META[language];
+	const options = fillOptionsDefaults(
+		getDefaultOptions(rulesMetaObj[language], pluginName),
+	);
 
-    if (parser) {
-        options.languageOptions = { ...options.languageOptions, parser: "@typescript-eslint/parser" };
-    }
+	if (parser) {
+		options.languageOptions = {
+			...options.languageOptions,
+			parser: "@typescript-eslint/parser",
+		};
+	}
 
-    if (plugin) {
-        options.plugins = pluginName;
-    }
+	if (plugin) {
+		options.plugins = pluginName;
+	}
 
-    if (languageId) {
-        options.language = languageId;
-    }
+	if (languageId) {
+		options.language = languageId;
+	}
 
 	if (language === "typescript") {
 		options.languageOptions.parserOptions.ecmaFeatures = { jsx: true };
 	}
 
-    return options;
+	return options;
 };
 
 const defaultOptionsByLanguage = Object.fromEntries(
-    Object.keys(rulesMetaObj).map(language => [
-        language,
-        buildDefaultOptions(language),
-    ]),
+	Object.keys(rulesMetaObj).map(language => [
+		language,
+		buildDefaultOptions(language),
+	]),
 );
 
 const App = () => {
-	let initialText, initialOptions, initialLanguage = "javascript";
+	let initialText,
+		initialOptions,
+		initialLanguage = "javascript";
 	const editorRef = useRef(null);
 
 	const initialState = getUrlState() || getLocalStorageState();
@@ -229,10 +237,10 @@ const App = () => {
 		initialLanguage = initialState.language || "javascript";
 	} else {
 		initialText = { javascript: DEFAULT_TEXTS.javascript };
-		initialOptions = { javascript: fillOptionsDefaults(getDefaultOptions(rulesMeta)) };
+		initialOptions = {
+			javascript: fillOptionsDefaults(getDefaultOptions(rulesMeta)),
+		};
 	}
-
-	// initialOptions = fillOptionsDefaults(initialOptions);
 
 	const [texts, setTexts] = useState({
 		...DEFAULT_TEXTS,
@@ -246,16 +254,23 @@ const App = () => {
 	const [selectedLanguage, setSelectedLanguage] = useState(initialLanguage);
 	const text = texts[selectedLanguage];
 
-	const [ruleMetaData, setRuleMetaData] = useState(rulesMetaObj[selectedLanguage]);
+	const [ruleMetaData, setRuleMetaData] = useState(
+		rulesMetaObj[selectedLanguage],
+	);
 	const pluginMap = { css, json, markdown };
 
-	const enabledPlugins = !(selectedLanguage === "javascript" || selectedLanguage === "typescript");
+	const enabledPlugins = !(
+		selectedLanguage === "javascript" || selectedLanguage === "typescript"
+	);
 
 	const ruleNames = Object.keys(ruleMetaData);
-	const ruleNamesWithPluginName = ruleNames.map(ruleName => enabledPlugins ? `${selectedLanguage}/${ruleName}` : ruleName);
+	const ruleNamesWithPluginName = ruleNames.map(ruleName =>
+		enabledPlugins ? `${selectedLanguage}/${ruleName}` : ruleName,
+	);
 
-	// const options = initialOptionsByLanguage[selectedLanguage];
-	const options = convertLegacyOptionsToFlatConfig(initialOptionsByLanguage[selectedLanguage]);
+	const options = convertLegacyOptionsToFlatConfig(
+		initialOptionsByLanguage[selectedLanguage],
+	);
 
 	// In some cases, Linter modifies `languageOptions`, so we'll deep-clone them
 	const optionsForLinter = {
@@ -273,7 +288,9 @@ const App = () => {
 				},
 			},
 		},
-		...(options.plugins && { plugins: { [selectedLanguage]: pluginMap[options.plugins] } }),
+		...(options.plugins && {
+			plugins: { [selectedLanguage]: pluginMap[options.plugins] },
+		}),
 	};
 
 	const lint = () => {
@@ -340,8 +357,9 @@ const App = () => {
 			const fixedCode = applyFix(text, message.fix);
 
 			setTexts(prev => ({ ...prev, [selectedLanguage]: fixedCode }));
-			// setText(fixedCode);
-			storeState({ newText: { ...texts, [selectedLanguage]: fixedCode } });
+			storeState({
+				newText: { ...texts, [selectedLanguage]: fixedCode },
+			});
 		}
 	};
 
@@ -354,11 +372,9 @@ const App = () => {
 		const result = linter.verifyAndFix(text, optionsForLinter, {
 			fix: true,
 		});
-		// setText(result.output);
 		setTexts(prev => ({ ...prev, [selectedLanguage]: result.output }));
 		storeState({
 			newText: { ...texts, [selectedLanguage]: result.output },
-			// newText: result.output,
 		});
 	};
 
@@ -372,9 +388,17 @@ const App = () => {
 	};
 
 	const updateOptions = newOptions => {
-		// setOptions(newOptions);
-		setInitialOptionsByLanguage(prev => ({ ...prev, [selectedLanguage]: newOptions }));
-		storeState({ newOptions: { ...initialOptionsByLanguage, [selectedLanguage]: newOptions }, newText: { ...texts } });
+		setInitialOptionsByLanguage(prev => ({
+			...prev,
+			[selectedLanguage]: newOptions,
+		}));
+		storeState({
+			newOptions: {
+				...initialOptionsByLanguage,
+				[selectedLanguage]: newOptions,
+			},
+			newText: { ...texts },
+		});
 	};
 	const [showConfigMenu, setShowConfigMenu] = useState(false);
 	const [isConfigHidden, setIsConfigHidden] = useState(
@@ -400,14 +424,17 @@ const App = () => {
 				value =>
 					flushSync(() => {
 						setFix(false);
-						// setText(value);
-						setTexts(prev => ({ ...prev, [selectedLanguage]: value }));
-						storeState({ newText: { ...texts, [selectedLanguage]: value } });
-						// storeState({ newText: value });
+						setTexts(prev => ({
+							...prev,
+							[selectedLanguage]: value,
+						}));
+						storeState({
+							newText: { ...texts, [selectedLanguage]: value },
+						});
 					}),
 				400,
 			),
-		[storeState],
+		[storeState, selectedLanguage, texts],
 	);
 
 	const [rulesWithInvalidConfigs, setRulesWithInvalidConfigs] = useState(
@@ -419,11 +446,14 @@ const App = () => {
 	const hasMultipleDisableMessages =
 		messages.filter(message => options.rules[message.ruleId]).length > 1;
 
-	const changeRulesDataWithLanguage = (language) => {
+	const changeRulesDataWithLanguage = language => {
 		setRuleMetaData(rulesMetaObj[language]);
-		storeState({ newLanguage: language, newText: { ...texts }, newOptions: { ...initialOptionsByLanguage } });
-		// storeState({ newLanguage: language });
-	}
+		storeState({
+			newLanguage: language,
+			newText: { ...texts },
+			newOptions: { ...initialOptionsByLanguage },
+		});
+	};
 
 	return (
 		<div className="playground-wrapper">
@@ -435,7 +465,9 @@ const App = () => {
 					<LanguageSwitcher
 						selectedLanguage={selectedLanguage}
 						setSelectedLanguage={setSelectedLanguage}
-						changeRulesDataWithLanguage={changeRulesDataWithLanguage}
+						changeRulesDataWithLanguage={
+							changeRulesDataWithLanguage
+						}
 					/>
 					<button
 						className="playground__config-toggle"
