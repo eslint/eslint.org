@@ -436,10 +436,6 @@ donate_page:
         text: >
           チームメンバーには貢献期間の長さに応じて時給が支払われ、現在はTSCメンバーとレビュアーの時給はHOURLY_RATE_TSC USDとなっています。
           コミッターの時給はHOURLY_RATE_COMMITERS USDとなっています。チームメンバーは月に最大MAX_MONTHLY_HOURS時間まで報酬が支払われます。
-      - name: 貢献者プール
-        text: >
-          私たちは月収のCONTRIBUTOR_POOL_PERCENTAGE%を、プロジェクトに多大な貢献をした外部貢献者への支払いに充てています。
-          貢献には、コードの提出、ドキュメントの作成、Discordサーバでの質問への回答などが含まれます。このお金はTSCによって毎月配分されます。
       - name: 依存プロジェクト
         text: >
           私たちは月収のDEPENDENCIES_PERCENTAGE%を積み立て、ESLintが依存する他のプロジェクトをサポートするために役立てています。

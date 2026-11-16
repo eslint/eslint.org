@@ -1,20 +1,56 @@
 [
     {
-        "id": "SA_kwHOAFvahM4AF5z1",
-        "name": "Pedro Costa",
-        "image": "https://avatars.githubusercontent.com/u/44654441",
-        "url": "https://pvdcosta.work",
+        "id": "or_dhih849xKE3Dwz2kxpvxp",
+        "name": "OpenJS Foundation",
+        "url": "https://openjsf.org/",
+        "image": "https://images.opencollective.com/openjs/f01254b/logo.png",
+        "amount": 523.63,
+        "date": "2026-11-13T21:10:47.439Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "or_vaYOc4uCrpySNkGfFocqn",
+        "name": "Love My Puppy",
+        "url": "https://lovemypuppy.store/",
+        "image": "https://images.opencollective.com/lovemypuppy/avatar.png",
         "amount": 1,
-        "date": "2026-08-23T11:19:25Z",
+        "date": "2026-11-02T04:28:35.781Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "or_L7rWyMj0jtGyG42Tt4qDD",
+        "name": "Kredi",
+        "url": "https://kredibankare.al/",
+        "image": "https://images.opencollective.com/kredi/c0a3b1f/logo.png",
+        "amount": 1,
+        "date": "2026-11-01T23:27:48.460Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "or_ukH5XTVuyA54wY5YQxrRb",
+        "name": "Paw Pampering",
+        "url": "https://pawpampering.com/",
+        "image": "https://images.opencollective.com/paw-pampering/8005cc0/logo.png",
+        "amount": 1,
+        "date": "2026-10-31T02:47:00.476Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "SA_kwHOAFvahM4AGBDx",
+        "name": "Michael Lip",
+        "image": "https://avatars.githubusercontent.com/u/51033404",
+        "url": "https://www.axdale.com",
+        "amount": 1,
+        "date": "2026-10-25T13:33:02Z",
         "source": "github"
     },
     {
-        "id": "SA_kwHOAFvahM4AF5Wt",
-        "name": "IsisKHpri",
-        "image": "https://avatars.githubusercontent.com/u/194274021",
-        "url": "https://github.com/IsisKHpri",
-        "amount": 5,
-        "date": "2026-08-18T15:26:00Z",
+        "id": "SA_kwHOAFvahM4AGAt5",
+        "name": "Edson Henrique",
+        "image": "https://avatars.githubusercontent.com/u/3255344",
+        "url": "https://github.com/edsonsims/enterprise-ai-lab",
+        "amount": 1,
+        "date": "2026-10-22T14:58:51Z",
         "source": "github"
     },
     {
@@ -195,42 +231,6 @@
         "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
         "amount": 9875.87,
         "date": "2026-01-07T19:20:42.757Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "v349mrwg-z75lpy58-og56a08d-jeybknox",
-        "name": "SportEasy",
-        "url": null,
-        "image": "https://images.opencollective.com/sporteasy/avatar.png",
-        "amount": 80,
-        "date": "2025-12-23T16:10:20.284Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "3z8arxve-ymko60vo-erwqgl5n-bj9w704d",
-        "name": "knpb media",
-        "url": null,
-        "image": "https://images.opencollective.com/knpb/logo.png",
-        "amount": 650,
-        "date": "2025-12-23T09:22:23.598Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "3kzxy4v0-7wlr6mk0-r5yqmj9n-o8agdbe5",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
-        "amount": 999,
-        "date": "2025-11-13T22:04:38.841Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "jrkx5lmn-v904qjl8-o7n68bwa-7zdygoe3",
-        "name": "OpenJS Foundation",
-        "url": "https://openjsf.org/",
-        "image": "https://images.opencollective.com/openjs/f01254b/avatar.png",
-        "amount": 255.01,
-        "date": "2025-11-12T15:16:18.730Z",
         "source": "opencollective"
     }
 ]

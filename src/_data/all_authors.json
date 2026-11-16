@@ -39,7 +39,7 @@
         "title": "ESLint Alumnus",
         "website": "https://kaicataldo.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/7041728",
-        "bio": "Freelancer | Currently working with The Metropolitan Museum of Art",
+        "bio": null,
         "twitter_username": null,
         "github_username": "kaicataldo",
         "location": "Brooklyn, NY"
@@ -199,15 +199,15 @@
         "bio": "A ship in harbor is safe, but that is not what ships are built for.",
         "twitter_username": null,
         "github_username": "antfu",
-        "location": "undefined"
+        "location": "Gifu, Japan"
     },
     "joshuakgoldberg": {
         "username": "JoshuaKGoldberg",
-        "name": "Josh Goldberg ✨",
+        "name": "Josh Ghoulberg 👻",
         "title": "Guest Author",
         "website": "http://www.joshuakgoldberg.com",
         "avatar_url": "https://avatars.githubusercontent.com/u/3335181",
-        "bio": null,
+        "bio": "Long-time Typescript community & open source person. Occasional open source maintainer. Cranking away on @typescript-eslint.\r\n\r\nFrontend @sentry",
         "twitter_username": "JoshuaKGoldberg",
         "github_username": "JoshuaKGoldberg",
         "mastodon_url": "https://fosstodon.org/@JoshuaKGoldberg",

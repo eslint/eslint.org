@@ -29,10 +29,6 @@ const buildGitHubIssueDescription = (code, config, errorOutput, language) => {
 		);
 	}
 
-	if (errorOutput) {
-		parts.push(`### ESLint Output\n\`\`\`\n${errorOutput}\n\`\`\`\n`);
-	}
-
 	return parts.join("\n");
 };
 
@@ -107,6 +103,9 @@ export default function ShareURL({ errors, config, selectedLanguage }) {
 		const currentUrl = currentLanguageStateUrl || window.location.href;
 		const code = getEditorCode();
 		const errorOutput = formatErrors(errors);
+		const errorOutputInDescription = errorOutput
+			? `\n### ESLint Output\n\`\`\`\n${errorOutput}\n\`\`\`\n`
+			: "";
 
 		// Build description with available data
 		let description = buildGitHubIssueDescription(
@@ -145,7 +144,7 @@ export default function ShareURL({ errors, config, selectedLanguage }) {
 
 		// Handle large content with clipboard fallback
 		if (reportUrl.search.length > MAX_URL_LENGTH) {
-			description += `### Link to Minimal Reproducible Example\n[Repro URL](${currentUrl})`;
+			description += `${errorOutputInDescription}\n### Link to Minimal Reproducible Example\n[Repro URL](${currentUrl})`;
 
 			reportUrl.searchParams.set(
 				"description",

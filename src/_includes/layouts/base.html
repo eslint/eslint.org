@@ -167,7 +167,6 @@
 
 <body class="{{ hook | replace('_', '-') }}">
     <a href="#main" class="c-btn c-btn--primary" id="skip-link">{{ site.shared.skip_to_content }}</a>
-    {% include 'partials/deprecation-notice.html' %}
     {{ content | safe }}
 
     <script src="{{ '/assets/js/css-vars-ponyfill@2.js' | url }}"></script>

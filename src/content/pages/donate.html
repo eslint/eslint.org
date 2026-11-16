@@ -133,7 +133,7 @@ hook: "donate_page"
                 {%- for item in site.donate_page.budget.items -%}
                     {% set tsc_hourly_rate = budget.hourlyRateTSC | dollars %}
                     {% set commiters_hourly_rate = budget.hourlyRate |dollars %}
-                    {% set feature_desc = item.text | replace("HOURLY_RATE_TSC", tsc_hourly_rate) | replace("HOURLY_RATE_COMMITERS", commiters_hourly_rate) | replace("MAX_MONTHLY_HOURS", budget.maxMonthlyHours) | replace("CONTRIBUTOR_POOL_PERCENTAGE", budget.contributorPoolPercentage) | replace("DEPENDENCIES_PERCENTAGE", budget.dependenciesPercentage) | replace("COMMUNITY_PERCENTAGE", budget.communityPercentage) %}
+                    {% set feature_desc = item.text | replace("HOURLY_RATE_TSC", tsc_hourly_rate) | replace("HOURLY_RATE_COMMITERS", commiters_hourly_rate) | replace("MAX_MONTHLY_HOURS", budget.maxMonthlyHours) | replace("DEPENDENCIES_PERCENTAGE", budget.dependenciesPercentage) | replace("COMMUNITY_PERCENTAGE", budget.communityPercentage) %}
                     <article class="feature">
                         <h3 class="feature__title"> {{item.name}} </h3>
                         <p class="feature__description"> {{feature_desc}} </p>
@@ -141,7 +141,7 @@ hook: "donate_page"
                 {%- endfor -%}
             </div>
             <div class="features-image span-7-12">
-                <img src="/assets/images/chart.svg" alt="Graph visually representing approximate percentages of how the money is used and distributed between Team Development, Contributor Pool, Dependencies, Community Projects, and support systems." loading="lazy">
+                <img src="/assets/images/donation-budget.svg" alt="Graph visually representing approximate percentages of how the money is used and distributed between team development, dependency sponsorships, community sponsorships, and support systems." loading="lazy">
             </div>
         </div>
         <footer class="section-foot center-text">

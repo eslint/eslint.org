@@ -168,33 +168,44 @@ const activeMark = /* @__PURE__*/ Decoration.mark({
 
 function lintTooltip(view, pos, side) {
 	const { diagnostics } = view.state.field(lintState);
+	const line = view.state.doc.lineAt(pos);
 	const found = [];
-	let stackStart = 2e8,
-		stackEnd = 0;
+	let rangeStart = line.from,
+		rangeEnd = line.to;
+	const cursor = diagnostics.iter(line.from);
 
-	diagnostics.between(
-		pos - (side < 0 ? 1 : 0),
-		pos + (side > 0 ? 1 : 0),
-		(from, to, { spec }) => {
+	while (cursor.value && cursor.from <= line.to) {
+		const { from, to } = cursor;
+
+		if (from >= line.from) {
 			if (
 				pos >= from &&
 				pos <= to &&
 				(from === to ||
 					((pos > from || side > 0) && (pos < to || side < 0)))
 			) {
-				found.push(spec.diagnostic);
-				stackStart = Math.min(from, stackStart);
-				stackEnd = Math.max(to, stackEnd);
+				found.push({
+					diagnostic: cursor.value.spec.diagnostic,
+					from,
+					to,
+				});
+				rangeStart = Math.max(rangeStart, from);
+				rangeEnd = Math.min(rangeEnd, to);
+			} else if (to <= pos) {
+				rangeStart = Math.max(rangeStart, to);
+			} else if (from >= pos) {
+				rangeEnd = Math.min(rangeEnd, from);
 			}
-		},
-	);
+		}
+		cursor.next();
+	}
 	if (!found.length) {
 		return null;
 	}
+
 	return {
-		pos: stackStart,
-		end: stackEnd,
-		above: view.state.doc.lineAt(stackStart).to < stackEnd,
+		pos: rangeStart,
+		end: rangeEnd,
 		create() {
 			return { dom: diagnosticsTooltip(view, found) };
 		},
@@ -203,7 +214,9 @@ function lintTooltip(view, pos, side) {
 function diagnosticsTooltip(view, diagnostics) {
 	return elt(
 		"div",
-		diagnostics.map(d => renderDiagnostic(view, d, false)),
+		diagnostics.map(({ diagnostic, from, to }) =>
+			renderDiagnostic(view, diagnostic, from, to),
+		),
 	);
 }
 
@@ -338,9 +351,16 @@ function assignKeys(actions) {
 	return assigned;
 }
 
-function renderDiagnostic(view, diagnostic) {
+function renderDiagnostic(view, diagnostic, from, to) {
 	const element = document.createElement("div");
 	const root = ReactDOM.createRoot(element);
+	const line =
+		from >= 0 && from <= view.state.doc.length
+			? view.state.doc.lineAt(from)
+			: null;
+	const message = line
+		? `${diagnostic.severity === "warning" ? "Warning" : "Error"} ${line.number}:${from - line.from + 1}: ${diagnostic.message}`
+		: diagnostic.message;
 
 	// clean up ruleName first
 	// see https://github.com/codemirror/lang-javascript/blob/2b48f4d00253f55ce059f49d4540e04bea087006/src/eslint.ts#L51
@@ -349,14 +369,14 @@ function renderDiagnostic(view, diagnostic) {
 	root.render(
 		<React.StrictMode>
 			<Popup
-				message={diagnostic.message}
+				message={message}
 				onFix={
 					diagnostic.actions &&
 					(() =>
 						diagnostic.actions[0].apply(
 							view,
-							diagnostic.from,
-							diagnostic.to,
+							from ?? diagnostic.from,
+							to ?? diagnostic.to,
 						))
 				}
 				ruleName={ruleName}
@@ -385,7 +405,7 @@ class PanelItem {
 	constructor(view, diagnostic) {
 		this.diagnostic = diagnostic;
 		this.id = `item_${Math.floor(Math.random() * 0xffffffff).toString(16)}`;
-		this.dom = renderDiagnostic(view, diagnostic, true);
+		this.dom = renderDiagnostic(view, diagnostic);
 		this.dom.id = this.id;
 		this.dom.setAttribute("role", "option");
 	}
