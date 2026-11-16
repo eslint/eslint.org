@@ -1,5 +1,23 @@
 [
     {
+        "id": "or_9lwLhoKKsbyBHyFnIKwsW",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 151.12,
+        "date": "2026-11-15T12:03:39.397Z",
+        "source": "opencollective"
+    },
+    {
+        "id": "or_5VnBHnK7kalEBsnIGEGaK",
+        "name": "JavaScript Fund",
+        "url": "https://funds.ecosyste.ms/funds/javascript",
+        "image": "https://images.opencollective.com/oc-javascript-fund/4e5d7a5/logo.png",
+        "amount": 68.24,
+        "date": "2026-11-15T12:03:38.809Z",
+        "source": "opencollective"
+    },
+    {
         "id": "or_dhih849xKE3Dwz2kxpvxp",
         "name": "OpenJS Foundation",
         "url": "https://openjsf.org/",
@@ -222,15 +240,6 @@
         "image": "https://images.opencollective.com/chrome/8f4901f/logo.png",
         "amount": 10000,
         "date": "2026-01-22T06:06:00.439Z",
-        "source": "opencollective"
-    },
-    {
-        "id": "rxg0j35l-zkwm6vvz-g5m6voe9-8n47daby",
-        "name": "THANKS.DEV",
-        "url": "https://thanks.dev",
-        "image": "https://images.opencollective.com/thanks-dev/360b917/logo.png",
-        "amount": 9875.87,
-        "date": "2026-01-07T19:20:42.757Z",
         "source": "opencollective"
     }
 ]
