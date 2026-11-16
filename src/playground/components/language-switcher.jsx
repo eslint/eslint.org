@@ -14,15 +14,13 @@ export default function LanguageSwitcher({
 	setSelectedLanguage,
 	changeRulesDataWithLanguage,
 }) {
-	const handleLanguageChange = (option) => {
+	const handleLanguageChange = option => {
 		setSelectedLanguage(option.value);
 		changeRulesDataWithLanguage(option.value);
 	};
 
 	return (
-		<div
-			className="playground__config-options__section"
-		>
+		<div className="playground__config-options__section">
 			<label className="label__text" htmlFor="playground-language">
 				Language
 			</label>
