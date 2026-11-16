@@ -14,7 +14,6 @@ import {
 } from "../utils/constants";
 import { customStyles, customTheme } from "../utils/configuration-theme";
 import "react-toggle-component/styles.css";
-import { typescriptLanguage } from "@codemirror/lang-javascript";
 
 const defaultOption = {
 	value: "default",
@@ -79,21 +78,21 @@ export default function Configuration({
 		...FRONTMATTER_TYPES.map(option => ({
 			value: option,
 			label: option,
-		}))
+		})),
 	];
 
 	const optionsForLanguage = {
 		css: cssLanguageOptions,
 		markdown: markdownLanguageOptions,
 		json: jsonLanguageOptions,
-	}
+	};
 
 	const toggleColors = {
 		borderColor: "none",
 		knobColor: "var(--body-background-color)",
 		leftBackgroundColor: "var(--icon-color)",
 		rightBackgroundColor: "var(--link-color)",
-	}
+	};
 
 	const languageOptions = optionsForLanguage[selectedLanguage] ?? [];
 	const defaultSubtypes = {
@@ -102,18 +101,27 @@ export default function Configuration({
 		json: "jsonc",
 	};
 	const selectedSubtype =
-    	options?.language?.split("/")?.[1] ?? defaultSubtypes[selectedLanguage] ?? "";
+		options?.language?.split("/")?.[1] ??
+		defaultSubtypes[selectedLanguage] ??
+		"";
 
-	const selectedLanguageOption = languageOptions.find(option => option.value === selectedSubtype) ?? null;
+	const selectedLanguageOption =
+		languageOptions.find(option => option.value === selectedSubtype) ??
+		null;
 
-	const getRuleNameOnly = (ruleName) => {
+	const getRuleNameOnly = ruleName => {
 		const parts = ruleName.split("/");
 		return parts.at(-1);
 	};
 
 	// filter rules which are already added to the configuration
 	const ruleNamesOptions = ruleNames
-		.filter(ruleName => options.rules && !options.rules[ruleName])
+		.filter(
+			ruleName =>
+				options.rules &&
+				!options.rules[ruleName] &&
+				getRuleNameOnly(ruleName) !== "use-baseline",
+		)
 		.map(ruleName => ({
 			value: ruleName,
 			label: rulesMeta[getRuleNameOnly(ruleName)].deprecated
@@ -198,6 +206,7 @@ export default function Configuration({
 	};
 
 	const revertToDefault = () => {
+		resetRuleInputs();
 		onUpdate(Object.assign({}, defaultOptionsByLanguage[selectedLanguage]));
 	};
 
@@ -284,7 +293,10 @@ export default function Configuration({
 	const exportStatement = isESM ? "export default" : "module.exports =";
 
 	const placeholderToPluginName = Object.fromEntries(
-		Object.entries(placeholders).map(([pluginName, placeholder]) => [placeholder, pluginName]),
+		Object.entries(placeholders).map(([pluginName, placeholder]) => [
+			placeholder,
+			pluginName,
+		]),
 	);
 
 	const placeholderPattern = new RegExp(
@@ -298,7 +310,8 @@ export default function Configuration({
 			(_, placeholder) => placeholderToPluginName[placeholder],
 		);
 
-	const enableJsAndTsOptions = selectedLanguage === "javascript" || selectedLanguage === "typescript";
+	const enableJsAndTsOptions =
+		selectedLanguage === "javascript" || selectedLanguage === "typescript";
 
 	return (
 		<div className="playground__config-options__sections">
@@ -369,7 +382,8 @@ export default function Configuration({
 											};
 
 											if (selected.value === "default") {
-												delete newOptions.languageOptions
+												delete newOptions
+													.languageOptions
 													.ecmaVersion;
 											} else {
 												newOptions.languageOptions.ecmaVersion =
@@ -398,8 +412,8 @@ export default function Configuration({
 									value={sourceTypeOptions.find(
 										sourceTypeOption =>
 											sourceTypeOption.value ===
-											(options.languageOptions?.sourceType ||
-												"default"),
+											(options.languageOptions
+												?.sourceType || "default"),
 									)}
 									options={sourceTypeOptions}
 									onChange={selected => {
@@ -441,8 +455,8 @@ export default function Configuration({
 									isMulti
 									value={ECMAFeaturesOptions.filter(
 										ecmaFeatureName =>
-											options.languageOptions.parserOptions
-												.ecmaFeatures[
+											options.languageOptions
+												.parserOptions.ecmaFeatures[
 												ecmaFeatureName.value
 											],
 									)}
@@ -491,7 +505,9 @@ export default function Configuration({
 									isSearchable={false}
 									styles={customStyles}
 									theme={theme => customTheme(theme)}
-									options={optionsForLanguage[selectedLanguage]}
+									options={
+										optionsForLanguage[selectedLanguage]
+									}
 									onChange={selectedOption => {
 										const newOptions = {
 											...options,
@@ -507,8 +523,15 @@ export default function Configuration({
 										const subtype = selectedOption?.value;
 
 										if (subtype) {
-											if (selectedLanguage === "json" && subtype !== "jsonc" && options.languageOptions?.allowTrailingCommas) {
-												delete newOptions.languageOptions.allowTrailingCommas;
+											if (
+												selectedLanguage === "json" &&
+												subtype !== "jsonc" &&
+												options.languageOptions
+													?.allowTrailingCommas
+											) {
+												delete newOptions
+													.languageOptions
+													.allowTrailingCommas;
 											}
 											newOptions.language = `${selectedLanguage}/${subtype}`;
 										} else {
@@ -532,8 +555,9 @@ export default function Configuration({
 									inputId="frontmatter"
 									value={frontmatterOptions.find(
 										frontmatterOption =>
-											frontmatterOption.value === 
-												(options.languageOptions?.frontmatter || "default"),
+											frontmatterOption.value ===
+											(options.languageOptions
+												?.frontmatter || "default"),
 									)}
 									isSearchable={false}
 									styles={customStyles}
@@ -551,10 +575,14 @@ export default function Configuration({
 											},
 										};
 
-										if (selectedOption.value === "default") {
-											delete newOptions.languageOptions.frontmatter;
+										if (
+											selectedOption.value === "default"
+										) {
+											delete newOptions.languageOptions
+												.frontmatter;
 										} else {
-											newOptions.languageOptions.frontmatter = selectedOption.value;
+											newOptions.languageOptions.frontmatter =
+												selectedOption.value;
 										}
 
 										onUpdate(newOptions);
@@ -562,7 +590,7 @@ export default function Configuration({
 								/>
 							</div>
 						)}
-						{selectedLanguage === "markdown" &&(
+						{selectedLanguage === "markdown" && (
 							<div className="c-field toggle-field">
 								<label
 									className="label__text"
@@ -573,8 +601,10 @@ export default function Configuration({
 								<Toggle
 									name="math-toggle"
 									{...toggleColors}
-									checked={options.languageOptions.math ?? false}
-									onCheckedChange={(checked) => {
+									checked={
+										options.languageOptions.math ?? false
+									}
+									onCheckedChange={checked => {
 										const newOptions = {
 											...options,
 											languageOptions: {
@@ -587,9 +617,11 @@ export default function Configuration({
 										};
 
 										if (checked) {
-											newOptions.languageOptions.math = checked;
+											newOptions.languageOptions.math =
+												checked;
 										} else {
-											delete newOptions.languageOptions.math;
+											delete newOptions.languageOptions
+												.math;
 										}
 
 										onUpdate(newOptions);
@@ -597,7 +629,7 @@ export default function Configuration({
 								/>
 							</div>
 						)}
-						{selectedLanguage === "css" &&(
+						{selectedLanguage === "css" && (
 							<div className="c-field toggle-field">
 								<label
 									className="label__text"
@@ -608,8 +640,11 @@ export default function Configuration({
 								<Toggle
 									name="tolerant-toggle"
 									{...toggleColors}
-									checked={options.languageOptions.tolerant ?? false}
-									onCheckedChange={(checked) => {
+									checked={
+										options.languageOptions.tolerant ??
+										false
+									}
+									onCheckedChange={checked => {
 										const newOptions = {
 											...options,
 											languageOptions: {
@@ -622,9 +657,11 @@ export default function Configuration({
 										};
 
 										if (checked) {
-											newOptions.languageOptions.tolerant = checked;
+											newOptions.languageOptions.tolerant =
+												checked;
 										} else {
-											delete newOptions.languageOptions.tolerant;
+											delete newOptions.languageOptions
+												.tolerant;
 										}
 
 										onUpdate(newOptions);
@@ -632,7 +669,7 @@ export default function Configuration({
 								/>
 							</div>
 						)}
-						{selectedLanguage === "json" &&(
+						{selectedLanguage === "json" && (
 							<div className="c-field toggle-field">
 								<label
 									className="label__text"
@@ -644,8 +681,13 @@ export default function Configuration({
 									name="allow-trailing-commas-toggle"
 									disabled={options.language !== "json/jsonc"}
 									{...toggleColors}
-									checked={(options.language === "json/jsonc" && options.languageOptions.allowTrailingCommas) ?? false}
-									onCheckedChange={(checked) => {
+									checked={
+										(options.language === "json/jsonc" &&
+											options.languageOptions
+												.allowTrailingCommas) ??
+										false
+									}
+									onCheckedChange={checked => {
 										const newOptions = {
 											...options,
 											languageOptions: {
@@ -658,9 +700,11 @@ export default function Configuration({
 										};
 
 										if (checked) {
-											newOptions.languageOptions.allowTrailingCommas = checked;
+											newOptions.languageOptions.allowTrailingCommas =
+												checked;
 										} else {
-											delete newOptions.languageOptions.allowTrailingCommas;
+											delete newOptions.languageOptions
+												.allowTrailingCommas;
 										}
 
 										onUpdate(newOptions);
@@ -759,8 +803,11 @@ export default function Configuration({
 											<h4 className="config__added-rules__rule-name">
 												<a
 													href={
-														rulesMeta[getRuleNameOnly(ruleName)].docs
-															.url
+														rulesMeta[
+															getRuleNameOnly(
+																ruleName,
+															)
+														].docs.url
 													}
 													target="_blank"
 													rel="noreferrer"

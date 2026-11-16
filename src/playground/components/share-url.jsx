@@ -15,7 +15,7 @@ ${code}
 \`\`\``;
 
 // Helper to build GitHub issue description
-const buildGitHubIssueDescription = (code, config, errorOutput, language) => {
+const buildGitHubIssueDescription = (code, config, language) => {
 	const parts = [];
 	const lang = CODE_FENCE_LANGUAGE_TAGS[language];
 
@@ -111,7 +111,6 @@ export default function ShareURL({ errors, config, selectedLanguage }) {
 		let description = buildGitHubIssueDescription(
 			code,
 			config,
-			errorOutput,
 			selectedLanguage,
 		);
 
