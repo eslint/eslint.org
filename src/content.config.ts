@@ -77,7 +77,9 @@ const sites = defineCollection({
 			title: z.string(),
 		}),
 		locale: z.string(),
-		hostname: z.string(),
+
+		// required for English; for other languages, only the old domain to redirect
+		hostname: z.string().optional(),
 	}),
 });
 
