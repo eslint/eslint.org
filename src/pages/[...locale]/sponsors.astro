@@ -1,10 +1,12 @@
 ---
-import DonationItem from "../components/DonationItem.astro";
-import Hero from "../components/Hero.astro";
-import MainLayout from "../layouts/MainLayout.astro";
-import { getDonations, getSponsors, techsponsors } from "../lib/data";
-import { capitalize, dollars, readableDateFromISO } from "../lib/format";
-import { fill, getSite } from "../lib/site";
+import DonationItem from "../../components/DonationItem.astro";
+import Hero from "../../components/Hero.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getDonations, getSponsors, techsponsors } from "../../lib/data";
+import { capitalize, dollars, readableDateFromISO } from "../../lib/format";
+import { fill, getSite, localizeUrl, getLocalePaths } from "../../lib/site";
+
+export const getStaticPaths = getLocalePaths;
 
 const site = await getSite(Astro.currentLocale);
 const text = site.sponsors_page;
@@ -28,7 +30,7 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 	<Hero
 		title={text.title}
 		supportingText={supportingText}
-		primaryButton={{ text: text.hero.cta.text, url: text.hero.cta.url }}
+		primaryButton={{ text: text.hero.cta.text, url: localizeUrl(text.hero.cta.url, Astro.currentLocale) }}
 	/>
 
 	<section class="section">

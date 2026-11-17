@@ -3,19 +3,19 @@
  * @fileoverview The main site navigation.
  */
 import { getLinkActiveState } from "../lib/helpers";
-import { getSite, links } from "../lib/site";
+import { getSite, links, localizeUrl } from "../lib/site";
 
 const site = await getSite(Astro.currentLocale);
 const pageUrl = Astro.url.pathname;
 const items = site.navigation.map(item => ({
 	...item,
-	url: links[item.link],
+	url: localizeUrl(links[item.link], Astro.currentLocale),
 }));
 ---
 
 <nav class="site-nav" aria-label="Main">
 	<div class="flexer">
-		<a href={links.donate} class="c-btn c-btn--primary donate-link"
+		<a href={localizeUrl(links.donate, Astro.currentLocale)} class="c-btn c-btn--primary donate-link"
 			>{site.donate_page.title}</a
 		>
 		<button

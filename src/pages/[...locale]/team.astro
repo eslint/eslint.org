@@ -1,10 +1,12 @@
 ---
-import Hero from "../components/Hero.astro";
-import ProfileContributor from "../components/ProfileContributor.astro";
-import ProfileMember from "../components/ProfileMember.astro";
-import MainLayout from "../layouts/MainLayout.astro";
-import { getTeam } from "../lib/data";
-import { getSite } from "../lib/site";
+import Hero from "../../components/Hero.astro";
+import ProfileContributor from "../../components/ProfileContributor.astro";
+import ProfileMember from "../../components/ProfileMember.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getTeam } from "../../lib/data";
+import { getSite, getLocalePaths } from "../../lib/site";
+
+export const getStaticPaths = getLocalePaths;
 
 const site = await getSite(Astro.currentLocale);
 const text = site.team_page;

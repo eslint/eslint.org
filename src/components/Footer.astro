@@ -6,7 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher.astro";
 import Logo from "./Logo.astro";
 import SocialIcons from "./SocialIcons.astro";
 import ThemeSwitcher from "./ThemeSwitcher.astro";
-import { getSite, links } from "../lib/site";
+import { getSite, links, localizeUrl } from "../lib/site";
 
 interface Props {
 	/** Whether the current page exists on the sites for other languages. */
@@ -32,7 +32,7 @@ const { multilingual = false } = Astro.props;
 				<a href={links.getStarted} target="_blank" class="c-btn c-btn--primary"
 					>{site.shared.get_started}</a
 				>
-				<a href={links.donate} class="c-btn c-btn--secondary donate-link"
+				<a href={localizeUrl(links.donate, Astro.currentLocale)} class="c-btn c-btn--secondary donate-link"
 					>{site.shared.become_a_sponsor}</a
 				>
 			</div>
@@ -50,7 +50,7 @@ const { multilingual = false } = Astro.props;
 		<nav aria-labelledby="footer-legal-links-label" class="footer-legal-links">
 			<h2 id="footer-legal-links-label" hidden>{site.footer.secondary}</h2>
 			<ul>
-				<li><a href="/branding/">{site.branding_page.title}</a></li>
+				<li><a href={localizeUrl("/branding/", Astro.currentLocale)}>{site.branding_page.title}</a></li>
 				<li><a href="https://openjsf.org/">{site.footer.links.open_jsf}</a></li>
 				<li>
 					<a href="https://terms-of-use.openjsf.org/"

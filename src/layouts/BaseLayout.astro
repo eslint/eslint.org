@@ -4,7 +4,12 @@
  */
 import "../assets/scss/styles.scss";
 import Analytics from "../components/Analytics.astro";
-import { getSite } from "../lib/site";
+import {
+	getLanguages,
+	getSite,
+	localizeUrl,
+	unlocalizeUrl,
+} from "../lib/site";
 
 interface Props {
 	/** Identifies the type of page. Used for the body class and default title. */
@@ -12,6 +17,9 @@ interface Props {
 
 	/** The page title. Defaults to the translated title for the hook. */
 	title?: string;
+
+	/** Whether the page is translated into the other languages. */
+	multilingual?: boolean;
 
 	/** The canonical URL of the page when it isn't the page's own URL. */
 	canonical?: string;
@@ -24,7 +32,7 @@ interface Props {
 }
 
 const site = await getSite(Astro.currentLocale);
-const { hook, title, canonical } = Astro.props;
+const { hook, title, canonical, multilingual = false } = Astro.props;
 
 const pageTitle = site.shared.title_format.replace(
 	"PAGE_TITLE",
@@ -39,6 +47,15 @@ const coverImage =
 	Astro.props.coverImage ?? `https://${site.hostname}/icon-512.png`;
 const coverImageAlt = Astro.props.coverImageAlt ?? site.shared.eslint_logo_alt;
 const isPlayground = hook === "playground_page";
+
+// translated pages point search engines to the other languages
+const pathInDefaultLocale = unlocalizeUrl(pagePath, Astro.currentLocale);
+const alternates = multilingual
+	? (await getLanguages()).map(language => ({
+			code: language.code,
+			url: `https://${site.hostname}${localizeUrl(pathInDefaultLocale, language.locale)}`,
+		}))
+	: [];
 ---
 
 <!doctype html>
@@ -53,6 +70,11 @@ const isPlayground = hook === "playground_page";
 		<title>{pageTitle}</title>
 		<meta name="description" content={pageDesc} />
 		<link rel="canonical" href={canonical ?? pageUrl} />
+		{
+			alternates.map(alternate => (
+				<link rel="alternate" hreflang={alternate.code} href={alternate.url} />
+			))
+		}
 
 		<!-- Feed -->
 		<link

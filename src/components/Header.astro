@@ -4,11 +4,12 @@
  */
 import Logo from "./Logo.astro";
 import Navigation from "./Navigation.astro";
+import { localizeUrl } from "../lib/site";
 ---
 
 <header class="site-header">
 	<div class="content-container">
-		<a href="/" aria-label="Homepage" class="logo-link">
+		<a href={localizeUrl("/", Astro.currentLocale)} aria-label="Homepage" class="logo-link">
 			<Logo />
 		</a>
 		<Navigation />

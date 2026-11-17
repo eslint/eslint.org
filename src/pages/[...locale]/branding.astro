@@ -1,9 +1,11 @@
 ---
-import BrandingLogo from "../components/BrandingLogo.astro";
-import BrandSwatches from "../components/BrandSwatches.astro";
-import Hero from "../components/Hero.astro";
-import MainLayout from "../layouts/MainLayout.astro";
-import { getSite } from "../lib/site";
+import BrandingLogo from "../../components/BrandingLogo.astro";
+import BrandSwatches from "../../components/BrandSwatches.astro";
+import Hero from "../../components/Hero.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getSite, getLocalePaths } from "../../lib/site";
+
+export const getStaticPaths = getLocalePaths;
 
 const site = await getSite(Astro.currentLocale);
 const text = site.branding_page;

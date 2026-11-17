@@ -26,7 +26,7 @@ locals:
   version_support: true
 redirects:
   - from: https://cn.eslint.org/*
-    to: https://zh-hans.eslint.org
+    to: https://eslint.org/zh-hans/
     status: 301!
   - from: https://docs.eslint.org/*
     to: https://eslint.org/docs/latest/

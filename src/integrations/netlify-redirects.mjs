@@ -16,10 +16,12 @@ import fs from "node:fs/promises";
 
 /**
  * Creates the contents of the `_redirects` file.
- * @param {Object} site The site data from `src/i18n/<locale>.yml`.
+ * @param {Object} site The site data of the default locale.
+ * @param {Array<{locale: string, hostname: string}>} translations The
+ *      other locales and the domains they used to be hosted on.
  * @returns {string} The contents of the file.
  */
-function createRedirects(site) {
+function createRedirects(site, translations) {
 	const { locals } = site;
 	const lines = [
 		"# Netlify Redirect Rules",
@@ -31,6 +33,27 @@ function createRedirects(site) {
 		lines.push(
 			`${redirect.from}                 ${redirect.to} ${redirect.status}`,
 		);
+	}
+
+	lines.push(
+		"",
+		"# Translations used to be separate sites on their own domains",
+	);
+
+	for (const { locale, hostname } of translations) {
+		lines.push(
+			`https://${hostname}/*                 https://${site.hostname}/${locale}/:splat 301!`,
+		);
+	}
+
+	lines.push(
+		"",
+		"# Pages that aren't translated only exist in English",
+		"# (these only apply when the translated page doesn't exist)",
+	);
+
+	for (const { locale } of translations) {
+		lines.push(`/${locale}/*                 /:splat 302`);
 	}
 
 	lines.push(`
@@ -173,17 +196,19 @@ function createRedirects(site) {
 
 /**
  * Creates the integration.
- * @param {Object} site The site data from `src/i18n/<locale>.yml`.
+ * @param {Object} site The site data of the default locale.
+ * @param {Array<{locale: string, hostname: string}>} translations The
+ *      other locales and the domains they used to be hosted on.
  * @returns {import("astro").AstroIntegration} The integration.
  */
-export default function netlifyRedirects(site) {
+export default function netlifyRedirects(site, translations) {
 	return {
 		name: "eslint-netlify-redirects",
 		hooks: {
 			async "astro:build:done"({ dir, logger }) {
 				await fs.writeFile(
 					new URL("_redirects", dir),
-					createRedirects(site),
+					createRedirects(site, translations),
 					"utf8",
 				);
 				logger.info("Generated _redirects");

@@ -1,10 +1,12 @@
 ---
-import Faqs from "../components/Faqs.astro";
-import Hero from "../components/Hero.astro";
-import MainLayout from "../layouts/MainLayout.astro";
-import { budget, getSponsors } from "../lib/data";
-import { dollars } from "../lib/format";
-import { fill, getSite, links } from "../lib/site";
+import Faqs from "../../components/Faqs.astro";
+import Hero from "../../components/Hero.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { budget, getSponsors } from "../../lib/data";
+import { dollars } from "../../lib/format";
+import { fill, getSite, links, localizeUrl, getLocalePaths } from "../../lib/site";
+
+export const getStaticPaths = getLocalePaths;
 
 const site = await getSite(Astro.currentLocale);
 const text = site.donate_page;
@@ -52,7 +54,7 @@ function getBudgetText(description: string): string {
 <Hero
     title={text.title}
     supportingText={supportingText}
-    primaryButton={{ text: text.hero.cta.text, url: text.hero.cta.url }}
+    primaryButton={{ text: text.hero.cta.text, url: localizeUrl(text.hero.cta.url, Astro.currentLocale) }}
 />
 
 <section>

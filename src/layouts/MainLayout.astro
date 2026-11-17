@@ -23,7 +23,7 @@ interface Props {
 const { hook, title, multilingual = false, footer = true } = Astro.props;
 ---
 
-<BaseLayout hook={hook} title={title}>
+<BaseLayout hook={hook} title={title} multilingual={multilingual}>
 	<Header />
 
 	<main id="main" tabindex="-1">

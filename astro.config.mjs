@@ -22,17 +22,27 @@ import eslintRulesMeta from "./src/integrations/eslint-rules-meta.mjs";
 //-----------------------------------------------------------------------------
 
 /*
- * Each language is deployed as its own site on its own domain, so the locale
- * being built is always the default locale and is never prefixed in URLs.
- * The translated text for each locale lives in `src/i18n/<locale>.yml`.
+ * The text for each language lives in `src/i18n/<locale>.yml`. English is
+ * published at the root of the site and every other language is published
+ * under its language code, such as `/ja/`. The site file for English also
+ * contains the settings for the whole site.
+ * The default locale must match `DEFAULT_LOCALE` in `src/lib/site.ts`.
  */
-const locale = process.env.ESLINT_SITE_NAME || "en";
-const site = loadYaml(
-	fs.readFileSync(
-		new URL(`./src/i18n/${locale}.yml`, import.meta.url),
-		"utf8",
-	),
+const defaultLocale = "en";
+const i18nDir = new URL("./src/i18n/", import.meta.url);
+const sites = Object.fromEntries(
+	fs
+		.readdirSync(i18nDir)
+		.filter(filename => filename.endsWith(".yml"))
+		.map(filename => [
+			filename.slice(0, -4),
+			loadYaml(fs.readFileSync(new URL(filename, i18nDir), "utf8")),
+		]),
 );
+const site = sites[defaultLocale];
+const translations = Object.entries(sites)
+	.filter(([locale]) => locale !== defaultLocale)
+	.map(([locale, { hostname }]) => ({ locale, hostname }));
 
 //-----------------------------------------------------------------------------
 // Config
@@ -46,8 +56,8 @@ export default defineConfig({
 	compressHTML: false,
 
 	i18n: {
-		locales: [locale],
-		defaultLocale: locale,
+		locales: Object.keys(sites),
+		defaultLocale,
 		routing: {
 			prefixDefaultLocale: false,
 		},
@@ -61,7 +71,7 @@ export default defineConfig({
 		react({ compiler: true }),
 		mdx(),
 		staticImages(),
-		netlifyRedirects(site),
+		netlifyRedirects(site, translations),
 	],
 
 	markdown: {
