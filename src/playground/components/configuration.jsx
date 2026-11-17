@@ -34,6 +34,8 @@ export default function Configuration({
 	setRulesWithInvalidConfigs,
 	selectedLanguage,
 	defaultOptionsByLanguage,
+	selectedRules,
+	setSelectedRules,
 }) {
 	const [showVersion, setShowVersions] = useState(false);
 	const [showRules, setShowRules] = useState(true);
@@ -128,7 +130,6 @@ export default function Configuration({
 				? getRuleNameOnly(ruleName).concat(" (deprecated)")
 				: getRuleNameOnly(ruleName),
 		}));
-	const [selectedRules, setSelectedRules] = useState([]);
 	const [ruleInputsKey, setRuleInputsKey] = useState(0);
 	const ruleInputRef = useRef(null);
 	const firstRuleRef = useRef();
@@ -746,6 +747,7 @@ export default function Configuration({
 									Choose a rule
 								</label>
 								<Select
+									key={selectedLanguage}
 									isMulti
 									components={{ Input }}
 									inputId="rules"

@@ -446,6 +446,8 @@ const App = () => {
 	const hasMultipleDisableMessages =
 		messages.filter(message => options.rules[message.ruleId]).length > 1;
 
+	const [selectedRules, setSelectedRules] = useState([]);
+
 	const changeRulesDataWithLanguage = language => {
 		setRuleMetaData(rulesMetaObj[language]);
 		storeState({
@@ -453,6 +455,7 @@ const App = () => {
 			newText: { ...texts },
 			newOptions: { ...initialOptionsByLanguage },
 		});
+		setSelectedRules([]);
 	};
 
 	return (
@@ -529,6 +532,8 @@ const App = () => {
 							}
 							selectedLanguage={selectedLanguage}
 							defaultOptionsByLanguage={defaultOptionsByLanguage}
+							selectedRules={selectedRules}
+							setSelectedRules={setSelectedRules}
 						/>
 						<Footer />
 					</div>
