@@ -41,6 +41,12 @@ function createRedirects(site, translations) {
 	);
 
 	for (const { locale, hostname } of translations) {
+		// a translation without its own domain has nothing to redirect, and
+		// redirecting the main domain would add the language code forever
+		if (!hostname || hostname === site.hostname) {
+			continue;
+		}
+
 		lines.push(
 			`https://${hostname}/*                 https://${site.hostname}/${locale}/:splat 301!`,
 		);
