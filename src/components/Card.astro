@@ -1,0 +1,83 @@
+---
+/**
+ * @fileoverview A card for a blog post, used in blog post listings.
+ * Use `getCardProps()` from `src/lib/blog.ts` to create the properties
+ * from a blog post.
+ */
+import ResponsiveImage from "./ResponsiveImage.astro";
+import { readableDate, slugify } from "../lib/format";
+
+interface Props {
+	title: string;
+	url: string;
+	teaser?: string;
+	featured?: boolean | string;
+
+	/** The filename of the cover image in `src/assets/images/blog-covers`. */
+	image?: string;
+	authorName?: string | null;
+	authorImage?: string | null;
+	category?: string;
+	readingTime?: string;
+	date: Date | string;
+}
+
+const {
+	title,
+	url,
+	teaser,
+	featured,
+	image,
+	authorName,
+	authorImage,
+	category,
+	readingTime,
+	date,
+} = Astro.props;
+
+// posts without their own cover image use the one for their category
+const imageName =
+	image ?? (category ? `${slugify(category)}.png` : "sponsorships.png");
+const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
+---
+
+<article class:list={["card", String(featured) === "true" && "card--featured"]}>
+	<a href={url} class="card__cover" tabindex="-1">
+		<ResponsiveImage src={`blog-covers/${imageName}`} alt={title} />
+	</a>
+	<div class="card__content">
+		<div class="badge-group">
+			<span class="blog-post__category">
+				<span class="visually-hidden">Published under:</span>
+				{category}
+			</span>
+			<span class="blog-post__reading-time">
+				{readingTime} read
+			</span>
+		</div>
+
+		<h3 class="card__title">
+			<a href={url}> {title}</a>
+		</h3>
+		<p class="card__teaser">
+			{teaser}
+		</p>
+		<div class="card__footer">
+			<img
+				class="blog-post__author-photo"
+				src={authorImage || fallbackImage}
+				alt={authorName}
+				width="40"
+				height="40"
+				loading="lazy"
+				onerror={`this.src = '${fallbackImage}'`}
+			/>
+			<div class="blog-post__author__details">
+				<div class="blog-post__author-name">{authorName}</div>
+				<time class="blog-post__publish-date" datetime={date instanceof Date ? date.toISOString() : date}
+					>{readableDate(date)}</time
+				>
+			</div>
+		</div>
+	</div>
+</article>

@@ -1,0 +1,23 @@
+---
+import Hero from "../components/Hero.astro";
+import LanguagesList from "../components/LanguagesList.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import { getSite } from "../lib/site";
+
+const site = await getSite(Astro.currentLocale);
+---
+
+<MainLayout hook="languages_page" multilingual>
+	<Hero
+		title={site.languages_page.title}
+		supportingText={site.languages_page.choose_language}
+	/>
+
+	<section class="languages-section section">
+		<div class="content-container">
+			<nav aria-labelledby="languages-label">
+				<LanguagesList />
+			</nav>
+		</div>
+	</section>
+</MainLayout>

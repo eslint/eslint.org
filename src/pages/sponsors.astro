@@ -1,0 +1,194 @@
+---
+import DonationItem from "../components/DonationItem.astro";
+import Hero from "../components/Hero.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import { getDonations, getSponsors, techsponsors } from "../lib/data";
+import { capitalize, dollars, readableDateFromISO } from "../lib/format";
+import { fill, getSite } from "../lib/site";
+
+const site = await getSite(Astro.currentLocale);
+const text = site.sponsors_page;
+const sponsors = await getSponsors();
+const donations = (await getDonations()).slice(0, 50);
+
+const supportingText = fill(text.description, {
+	BACKER_COUNT: sponsors.totals.sponsorCount,
+	MONTHLY_DONATIONS: dollars(sponsors.totals.monthlyDonations),
+});
+
+// tiers without any sponsors aren't shown
+const tiers = (["diamond", "platinum", "gold", "silver", "bronze"] as const)
+	.map(id => ({ id, text: text.tiers[id], sponsors: sponsors[id] }))
+	.filter(tier => tier.sponsors.length);
+
+const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
+---
+
+<MainLayout hook="sponsors_page" multilingual>
+	<Hero
+		title={text.title}
+		supportingText={supportingText}
+		primaryButton={{ text: text.hero.cta.text, url: text.hero.cta.url }}
+	/>
+
+	<section class="section">
+		{
+			tiers.map(tier => (
+				<div class="content-container grid grid--center-items">
+					<div class="span-1-5">
+						<h2 class="section-title h4" id={tier.id}>
+							{tier.text.title}
+						</h2>
+						<p>{tier.text.description}</p>
+					</div>
+					<div class="span-7-12">
+						<ul role="list" class={`sponsors sponsors--${tier.id}`}>
+							{tier.sponsors.map(sponsor => {
+								const sponsorTitle = fill(text.sponsor_title, {
+									SPONSOR_NAME: sponsor.name ?? "",
+									AMOUNT: dollars(sponsor.monthlyDonation),
+								});
+
+								return (
+									<li>
+										<a
+											href={sponsor.url}
+											class="sponsor-link"
+											rel="nofollow noopener sponsored"
+											target="_blank"
+										>
+											<img
+												loading="lazy"
+												decoding="async"
+												src={sponsor.image}
+												height="128"
+												alt={sponsorTitle}
+												title={sponsorTitle}
+											/>
+										</a>
+									</li>
+								);
+							})}
+						</ul>
+					</div>
+				</div>
+			))
+		}
+		<div class="content-container grid grid--center-items">
+			<div class="span-1-5">
+				<h2 class="section-title h4" id="technology">
+					{text.tiers.technology.title}
+				</h2>
+				<p>
+					{text.tiers.technology.description}
+				</p>
+			</div>
+			<div class="span-7-12">
+				<ul role="list" class="sponsors sponsors--technology">
+					{
+						techsponsors.map(sponsor => {
+							const sponsorTitle = fill(text.tech_sponsor_title, {
+								SPONSOR_NAME: sponsor.name,
+								TECH: capitalize(sponsor.donation),
+							});
+
+							return (
+								<li>
+									<a
+										href={sponsor.url}
+										class="sponsor-link"
+										rel="nofollow noopener sponsored"
+										target="_blank"
+									>
+										<img
+											loading="lazy"
+											decoding="async"
+											src={sponsor.image}
+											alt={sponsorTitle}
+											title={sponsorTitle}
+											height="64"
+										/>
+									</a>
+								</li>
+							);
+						})
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="donations">
+		<div class="content-container divider">
+			<div class="section-head center-text">
+				<h2 class="section-title h3" id="donations-label">
+					{text.recent_donations.title}
+				</h2>
+				<p class="section-supporting-text fs-step-0">
+					{text.recent_donations.description}
+				</p>
+			</div>
+			<ul
+				role="list"
+				class="donations-list"
+				tabindex="-1"
+				aria-labelledby="donations-label"
+			>
+				{
+					donations.map(donation => (
+						<li class="donations-item">
+							<DonationItem
+								image={donation.image}
+								name={donation.name}
+								amount={dollars(donation.amount)}
+								date={readableDateFromISO(donation.date, site.locale)}
+							/>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</section>
+
+	<section>
+		<div class="content-container divider">
+			<div class="section-head center-text">
+				<h2 class="section-title h3">{text.tiers.backers.title}</h2>
+				<p class="section-supporting-text fs-step-0">
+					{text.tiers.backers.description}
+				</p>
+			</div>
+			<div class="grid">
+				<ul role="list" class="sponsors span-1-12 sponsors--backers">
+					{
+						sponsors.backers.map(sponsor => {
+							const sponsorTitle = `${sponsor.name || "Anonymous"} is donating ${dollars(sponsor.monthlyDonation)} each month`;
+
+							return (
+								<li>
+									<a
+										href={sponsor.url}
+										class="sponsor-link"
+										rel="nofollow noopener sponsored"
+										target="_blank"
+									>
+										<img
+											loading="lazy"
+											decoding="async"
+											src={sponsor.image || fallbackImage}
+											height="48"
+											width="48"
+											onerror={`this.src = '${fallbackImage}'`}
+											alt={sponsorTitle}
+											title={sponsorTitle}
+										/>
+									</a>
+								</li>
+							);
+						})
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
+</MainLayout>

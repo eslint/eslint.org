@@ -12,7 +12,7 @@ const path = require("node:path");
 const { execSync } = require("node:child_process");
 
 const BLOG_DIR = path.resolve(__dirname, "../src/content/blog");
-const DATES_FILE = path.resolve(__dirname, "../src/_data/blog-dates.json");
+const DATES_FILE = path.resolve(__dirname, "../src/data/blog-dates.json");
 
 /**
  * Checks if a file exists at the given path.

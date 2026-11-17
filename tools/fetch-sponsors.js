@@ -26,11 +26,11 @@ const { graphql: githubGraphQL } = require("@octokit/graphql");
 //-----------------------------------------------------------------------------
 
 // sponsors to block
-const blockedSponsorsFilename = "./src/_data/blocked-sponsors.json";
+const blockedSponsorsFilename = "./src/data/blocked-sponsors.json";
 
 // filename to output sponsors to
-const sponsorsFilename = "./src/_data/sponsors.json";
-const donationsFilename = "./src/_data/donations.json";
+const sponsorsFilename = "./src/data/sponsors.json";
+const donationsFilename = "./src/data/donations.json";
 
 // Contributions from other services that are not actually donations
 const knownOneTimers = new Set([

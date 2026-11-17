@@ -1,9 +1,9 @@
 playground:
 - any:
   - changed-files:
-    - any-glob-to-any-file: ['playground/**/*']
+    - any-glob-to-any-file: ['src/components/playground/**/*', 'src/pages/play.astro']
 
 translation:
 - any:
   - changed-files:
-    - any-glob-to-any-file: ['src/_data/sites/*']
+    - any-glob-to-any-file: ['src/i18n/*']

@@ -22,8 +22,8 @@ const path = require("node:path");
 //-----------------------------------------------------------------------------
 
 // filename to output to
-const teamFilename = "./src/_data/team.json";
-const authorsFilename = "./src/_data/all_authors.json";
+const teamFilename = "./src/data/team.json";
+const authorsFilename = "./src/data/all_authors.json";
 const blogPostsDirectory = "./src/content/blog";
 
 // retrieve token from environment

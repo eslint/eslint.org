@@ -1,0 +1,26 @@
+---
+/**
+ * @fileoverview A list of links to the sites for all languages.
+ */
+import { getAllSites, getSite } from "../lib/site";
+
+const site = await getSite(Astro.currentLocale);
+const sites = await getAllSites();
+---
+
+<ul class="languages-list">
+	{
+		sites.map(other => (
+			<li lang={other.language.code} title={other.language.title}>
+				<a
+					href={`https://${other.hostname}`}
+					aria-current={
+						site.language.code === other.language.code ? "true" : undefined
+					}
+				>
+					<span class="flag">{other.language.flag}</span> {other.language.name}
+				</a>
+			</li>
+		))
+	}
+</ul>

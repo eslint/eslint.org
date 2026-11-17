@@ -25,13 +25,10 @@ const { stripIndents } = require("common-tags");
 // Data
 //-----------------------------------------------------------------------------
 
-const SPONSORS_FILE_PATH = path.resolve(
-	__dirname,
-	"../src/_data/sponsors.json",
-);
+const SPONSORS_FILE_PATH = path.resolve(__dirname, "../src/data/sponsors.json");
 const TECH_SPONSORS_FILE_PATH = path.resolve(
 	__dirname,
-	"../src/_data/techsponsors.json",
+	"../src/data/techsponsors.json",
 );
 const NEW_FILE_PATH = path.resolve(__dirname, "../includes/sponsors.md");
 

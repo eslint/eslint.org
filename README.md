@@ -8,12 +8,17 @@ In order to run the website, you must have [Node.js](https://nodejs.org) install
 
 1. Create a fork of the repository
 2. Run `npm install`
-3. Run `npm run install:playground`
 
 To start a local copy of the website, run:
 
 ```shell
 npm start
+```
+
+The website is built with [Astro](https://astro.build) and is available at <http://localhost:2022> while the development server is running. To create a production build of the website in the `dist` directory, run:
+
+```shell
+npm run build
 ```
 
 To start a local copy of a foreign language website, specify the `ESLINT_SITE_NAME` environment variable equal to the name of the site, such as:
@@ -26,9 +31,11 @@ ESLINT_SITE_NAME=es npm start
 
 If you'd like to add a new translation of this website, please [open an issue](https://github.com/eslint/eslint.org/issues/new/choose) first.
 
+All of the text on the website lives in the site files in `src/i18n`, one for each language. The language to build is selected by `ESLINT_SITE_NAME` and is configured as the default locale of [Astro's internationalization support](https://docs.astro.build/en/guides/internationalization/). Pages and components retrieve the text for the current locale with `getSite(Astro.currentLocale)` from `src/lib/site.ts`.
+
 In order to create a new translation:
 
-1. Copy the `src/_data/sites/en.yml` file to a new site file in the same directory. The filename should be the language code of the language you want to translate into. For example, if you want to translate into Spanish, you should create the file `src/_data/sites/es.yml` because "es" in the Spanish language code.
+1. Copy the `src/i18n/en.yml` file to a new site file in the same directory. The filename should be the language code of the language you want to translate into. For example, if you want to translate into Spanish, you should create the file `src/i18n/es.yml` because "es" in the Spanish language code.
 2. Translate the text in the new site file to your chosen language.
 3. Test it locally to ensure that it works properly using the instructions in the previous section.
 4. Submit your pull request

@@ -21,8 +21,8 @@ const path = require("node:path");
 //-----------------------------------------------------------------------------
 
 // filename to output to
-const authorsFilename = "./src/_data/all_authors.json";
-const bioPath = "./src/_includes/partials/author_bios/";
+const authorsFilename = "./src/data/all_authors.json";
+const bioPath = "./src/content/author-bios/";
 const username = process.argv[2];
 
 if (!username) {

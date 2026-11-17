@@ -1,0 +1,130 @@
+---
+/**
+ * @fileoverview The layout for blog posts.
+ */
+import BaseLayout from "./BaseLayout.astro";
+import Footer from "../components/Footer.astro";
+import FromTheBlog from "../components/FromTheBlog.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import PostAuthor from "../components/PostAuthor.astro";
+import PostSidebar from "../components/PostSidebar.astro";
+import type { Post } from "../lib/blog";
+import { getAuthors } from "../lib/data";
+import { readableDate, slugify } from "../lib/format";
+import { getSite } from "../lib/site";
+
+interface Props {
+	post: Post;
+}
+
+const site = await getSite(Astro.currentLocale);
+const allAuthors = await getAuthors();
+const { post } = Astro.props;
+const { title, teaser, image, categories, authors, original } = post.data;
+
+// posts without their own cover image use the one for their category
+const coverImageFile =
+	image ??
+	(categories[0] ? `${slugify(categories[0])}.png` : "announcements.png");
+const coverImage = `https://${site.hostname}/assets/images/blog-covers/${coverImageFile}`;
+---
+
+<BaseLayout
+	hook="post blog-post-page"
+	title={title}
+	canonical={original?.url}
+	coverImage={coverImage}
+	coverImageAlt={title}
+>
+	<Header />
+
+	<script
+		is:inline
+		src="https://unpkg.com/anchor-js@4.3.1/anchor.min.js"
+		type="text/javascript"></script>
+	<script is:inline>
+		document.addEventListener("DOMContentLoaded", () => {
+			anchors.add(
+				".post__blog-content h2, .post__blog-content h3, .post__blog-content h4",
+			);
+		});
+	</script>
+	<main id="main" class="post-main" tabindex="-1">
+		<Hero
+			title={title}
+			supportingText={teaser}
+			post={{
+				date: readableDate(post.data.date),
+				category: categories[0],
+				categoryURL: slugify(categories[0]),
+			}}
+		/>
+
+		<div class="content-container grid">
+			<div class="post__blog-content span-5-12">
+				<slot />
+			</div>
+
+			<div class="post__author-bios span-5-12">
+				{
+					authors.map(author => (
+						<PostAuthor
+							photo={allAuthors[author]?.avatar_url}
+							name={allAuthors[author]?.name}
+							title={allAuthors[author]?.title}
+							handle={allAuthors[author]?.username}
+							github={allAuthors[author]?.github_username}
+							bluesky={allAuthors[author]?.bluesky_url}
+							mastodon={allAuthors[author]?.mastodon_url}
+							twitter={allAuthors[author]?.twitter_username}
+						/>
+					))
+				}
+			</div>
+
+			<PostSidebar post={post} />
+		</div>
+	</main>
+
+	<FromTheBlog />
+
+	<Footer />
+
+	<div
+		id="copy-announcement"
+		class="visually-hidden"
+		aria-live="polite"
+		aria-atomic="true"
+	>
+	</div>
+
+	<script is:inline>
+		(function () {
+			const copyBtns = document.querySelectorAll(".copy-btn");
+			const announcementRegion = document.getElementById("copy-announcement");
+
+			for (const copyBtn of copyBtns) {
+				const copyText = copyBtn.previousElementSibling.firstChild.textContent;
+
+				copyBtn.onclick = () => {
+					navigator.clipboard
+						.writeText(copyText)
+						.then(() => {
+							announcementRegion.innerHTML = "Copied!";
+							copyBtn.setAttribute("data-copied", "true");
+
+							setTimeout(() => {
+								copyBtn.removeAttribute("data-copied");
+								announcementRegion.innerHTML = "";
+							}, 2000);
+						})
+						.catch(err => {
+							announcementRegion.innerHTML = "Failed to copy!";
+							console.error("Clipboard write failed: ", err);
+						});
+				};
+			}
+		})();
+	</script>
+</BaseLayout>

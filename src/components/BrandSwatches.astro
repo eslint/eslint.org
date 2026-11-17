@@ -1,0 +1,36 @@
+---
+/**
+ * @fileoverview The swatches of the brand color palette.
+ */
+import Swatch from "./Swatch.astro";
+import { palette } from "../lib/data";
+import { getSite } from "../lib/site";
+
+const site = await getSite(Astro.currentLocale);
+const { colors } = site.branding_page.sections.color_palette;
+const swatches = [
+	...palette.primary.map(color => ({
+		desc: color.description
+			.replaceAll("Primary", colors.primary)
+			.replaceAll("White", colors.white),
+		val: color.value,
+	})),
+	...palette.neutral.map(color => ({
+		desc: color.description.replaceAll("Neutral", colors.neutral),
+		val: color.value,
+	})),
+];
+---
+
+<h3 id="brand-colors-label" hidden>
+	{site.branding_page.sections.color_palette.brand_palette}
+</h3>
+<ul class="swatches" aria-labelledby="brand-colors-label">
+	{
+		swatches.map(color => (
+			<li class="swatches__item">
+				<Swatch desc={color.desc} val={color.val} />
+			</li>
+		))
+	}
+</ul>

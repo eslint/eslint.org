@@ -1,0 +1,53 @@
+---
+/**
+ * @fileoverview The list of blog posts in a category. The first page is
+ * `/blog/category/<category>/` and the following pages are
+ * `/blog/category/<category>/2/`, and so on.
+ */
+import type { GetStaticPaths } from "astro";
+import Card from "../../../components/Card.astro";
+import Pagination from "../../../components/Pagination.astro";
+import BlogLayout from "../../../layouts/BlogLayout.astro";
+import {
+	getCardProps,
+	getPublishedPosts,
+	paginateByCategory,
+	type CategoryPage,
+} from "../../../lib/blog";
+import { getAuthors } from "../../../lib/data";
+
+interface Props {
+	category: CategoryPage;
+}
+
+export const getStaticPaths = (async () => {
+	const posts = await getPublishedPosts();
+
+	return paginateByCategory(posts).map(category => ({
+		params: { slug: category.slug },
+		props: { category },
+	}));
+}) satisfies GetStaticPaths;
+
+const { category } = Astro.props;
+const authors = await getAuthors();
+const getPageUrl = (slug: string | null) =>
+	slug ? `/blog/category/${slug}` : null;
+---
+
+<BlogLayout hook="category_page" title={category.title}>
+	<h2 hidden>{category.title}</h2>
+	<div class="blog-posts">
+		{category.items.map(post => <Card {...getCardProps(post, authors)} />)}
+	</div>
+
+	<Pagination
+		slot="pagination"
+		currentPage={category.currentPage}
+		totalPages={category.totalPages}
+		first={getPageUrl(category.hrefs.first)!}
+		last={getPageUrl(category.hrefs.last)!}
+		previous={getPageUrl(category.hrefs.previous)}
+		next={getPageUrl(category.hrefs.next)}
+	/>
+</BlogLayout>
