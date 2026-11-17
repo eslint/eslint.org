@@ -12,7 +12,11 @@ interface Props {
 
 	/** Details to show when the hero is for a blog post. */
 	post?: {
+		/** The formatted publication date. */
 		date: string;
+
+		/** The publication date in ISO 8601 format, such as "2026-01-05". */
+		datetime: string;
 		category: string;
 		categoryURL: string;
 	};
@@ -32,7 +36,7 @@ const { title, supportingText, post, primaryButton, secondaryButton } =
 			{
 				post && (
 					<p class="post__meta">
-						Published <time datetime={post.date}>{post.date}</time> under{" "}
+						Published <time datetime={post.datetime}>{post.date}</time> under{" "}
 						<a href={`/blog/category/${post.categoryURL}`}>{post.category}</a>
 					</p>
 				)

@@ -156,11 +156,19 @@ export function blogLoader(): Loader {
 
 			// keep posts up-to-date while the dev server is running
 			if (watcher) {
+				// changes to a file are applied in order so that a slow load
+				// can never overwrite the result of a later change or deletion
+				const pending = new Map<string, Promise<void>>();
 				const onChange = (filePath: string) => {
 					const dir = path.dirname(filePath);
 
 					if (dir === blogDir || dir === draftsDir) {
-						syncFile(filePath).catch(error => logger.error(String(error)));
+						pending.set(
+							filePath,
+							(pending.get(filePath) ?? Promise.resolve())
+								.then(() => syncFile(filePath))
+								.catch(error => logger.error(String(error))),
+						);
 					}
 				};
 

@@ -56,6 +56,7 @@ const coverImage = `https://${site.hostname}/assets/images/blog-covers/${coverIm
 			supportingText={teaser}
 			post={{
 				date: readableDate(post.data.date),
+				datetime: post.data.date.toISOString().slice(0, 10),
 				category: categories[0],
 				categoryURL: slugify(categories[0]),
 			}}

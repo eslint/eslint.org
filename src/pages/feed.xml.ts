@@ -46,13 +46,18 @@ function dateToRfc3339(date: Date): string {
  * Feed readers show posts outside of the site, so URLs in posts must be absolute.
  */
 function htmlToAbsoluteUrls(html: string, base: string): string {
-	return html.replace(/\b(href|src)="([^"]*)"/gu, (match, attribute, url) => {
-		try {
-			return `${attribute}="${new URL(url, base).href}"`;
-		} catch {
-			return match;
-		}
-	});
+	return html.replace(
+		/\b(href|src)=(?:"([^"]*)"|'([^']*)')/gu,
+		(match, attribute, doubleQuoted, singleQuoted) => {
+			try {
+				const url = new URL(doubleQuoted ?? singleQuoted, base).href;
+
+				return `${attribute}="${url}"`;
+			} catch {
+				return match;
+			}
+		},
+	);
 }
 
 //-----------------------------------------------------------------------------

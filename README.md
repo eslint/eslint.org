@@ -34,9 +34,10 @@ The homepage and the branding, donate, languages, sponsors, and team pages are t
 In order to create a new translation:
 
 1. Copy the `src/i18n/en.yml` file to a new site file in the same directory. The filename should be the language code of the language you want to translate into. For example, if you want to translate into Spanish, you should create the file `src/i18n/es.yml` because "es" in the Spanish language code.
-2. Translate the text in the new site file to your chosen language.
-3. Test it locally to ensure that it works properly using the instructions in the previous section.
-4. Submit your pull request
+2. Update the `language` section and the `locale` at the top of the new site file to describe your language. For Spanish, the `language.code` is `es` and the `locale` is `es-ES`. These values are used for the `lang` attribute and the language switcher, so the pages are labeled as English if you leave them unchanged.
+3. Translate the text in the new site file to your chosen language.
+4. Test it locally to ensure that it works properly using the instructions in the previous section.
+5. Submit your pull request
 
 The new translation is published under its language code as soon as the site file is merged. The settings for the whole website (such as the hostname, analytics, and ads) always come from `src/i18n/en.yml`.
 

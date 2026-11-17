@@ -13,7 +13,8 @@ const { value, label } = Astro.props;
 const formatted = formatStatsNumber(value, Astro.currentLocale);
 ---
 
-<div class="metrics__item" aria-label={`${formatted.full} ${label}`}>
+<div class="metrics__item">
+	<span class="visually-hidden">{formatted.full} {label}</span>
 	<span class="metrics__value" aria-hidden="true">{formatted.short}</span>
 	<span aria-hidden="true">{label}</span>
 </div>
