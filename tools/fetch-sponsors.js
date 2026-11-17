@@ -148,6 +148,30 @@ async function setGitHubActionOutput(name, value) {
 }
 
 /**
+ * Returns the amount actually being paid for a recurring Open Collective order.
+ * The order amount changes as soon as the contributor edits it, before anything
+ * is charged at the new amount, so it is capped by the latest successful charge.
+ * @param {Object} order The order from the Open Collective API.
+ * @returns {number} The amount paid per charge, or 0 if the order was never charged.
+ */
+function getPaidAmount(order) {
+	const charges = order.transactions.filter(
+		transaction =>
+			transaction.kind === "CONTRIBUTION" &&
+			transaction.type === "CREDIT" &&
+			!transaction.isRefund &&
+			!transaction.refundTransaction,
+	);
+
+	// transactions are sorted by creation date, oldest first
+	const lastCharge = charges.at(-1);
+
+	return lastCharge
+		? Math.min(order.amount.value, lastCharge.amount.value)
+		: 0;
+}
+
+/**
  * Fetch order data from Open Collective using the GraphQL API.
  * @returns {Promise<{sponsors: Array, donations: Array}>} An promise that resolves to an object with two properties:
  *  - `sponsors` (Array): List of sponsors
@@ -175,6 +199,17 @@ async function fetchOpenCollectiveData() {
               frequency
               totalDonations {
                 value
+              }
+              transactions {
+                kind
+                type
+                isRefund
+                refundTransaction {
+                  id
+                }
+                amount {
+                  value
+                }
               }
             }
           }
@@ -221,18 +256,22 @@ async function fetchOpenCollectiveData() {
 		);
 	}
 
-	const sponsors = payload.data.account.orders.nodes.map(order => ({
-		name: order.fromAccount.name,
-		url: fixUrl(order.fromAccount.website),
-		image: order.fromAccount.imageUrl,
-		monthlyDonation:
-			order.frequency === "YEARLY"
-				? Math.round(order.amount.value / 12)
-				: order.amount.value,
-		totalDonations: order.totalDonations.value,
-		source: "opencollective",
-		tier: order.tier ? order.tier.slug : getTierSlug(order.amount.value),
-	}));
+	const sponsors = payload.data.account.orders.nodes.map(order => {
+		const paidAmount = getPaidAmount(order);
+
+		return {
+			name: order.fromAccount.name,
+			url: fixUrl(order.fromAccount.website),
+			image: order.fromAccount.imageUrl,
+			monthlyDonation:
+				order.frequency === "YEARLY"
+					? Math.round(paidAmount / 12)
+					: paidAmount,
+			totalDonations: order.totalDonations.value,
+			source: "opencollective",
+			tier: order.tier ? order.tier.slug : getTierSlug(paidAmount),
+		};
+	});
 
 	const donations = payload.data.donations.nodes
 		.filter(
