@@ -504,6 +504,9 @@ donate_page:
         text: Quinta maior colocação de logotipo na página inicial e no readme.
   testimonials:
     title: Testemunhos
+    slider_label: Testemunhos
+    previous_slide: Slide anterior
+    next_slide: Próximo slide
     items:
     - name: Addy Osmani
       title: Senior Staff Eng. Manager, Chrome

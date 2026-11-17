@@ -474,6 +474,9 @@ donate_page:
 
   testimonials:
     title: प्रशंसापत्र
+    slider_label: प्रशंसापत्र
+    previous_slide: पिछली स्लाइड
+    next_slide: अगली स्लाइड
     items:
       - name: Addy Osmani
         title: Senior Staff Eng. Manager, Chrome

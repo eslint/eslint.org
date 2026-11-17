@@ -514,6 +514,9 @@ donate_page:
         text: Cinquième placement de logo le plus élevé sur la page d'accueil et le README.
   testimonials:
     title: Témoignages
+    slider_label: Témoignages
+    previous_slide: Diapositive précédente
+    next_slide: Diapositive suivante
     items:
     - name: Addy Osmani
       title: Senior Staff Engineering Manager, Chrome

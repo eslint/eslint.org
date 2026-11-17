@@ -471,6 +471,9 @@ donate_page:
         text: 主页和 README 文件中的第五高徽标位置。
   testimonials:
     title: 推荐书
+    slider_label: 推荐书
+    previous_slide: 上一张幻灯片
+    next_slide: 下一张幻灯片
     items:
     - name: Addy Osmani
       title: Chrome 高级职员、经理
