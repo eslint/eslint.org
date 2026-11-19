@@ -1,7 +1,7 @@
 {
     "totals": {
-        "annualDonations": 105418.19614919998,
-        "monthlyDonations": 8784.8496791,
+        "annualDonations": 105407.30803559998,
+        "monthlyDonations": 8783.9423363,
         "sponsorCount": 126
     },
     "diamond": [],
@@ -841,15 +841,6 @@
             "tier": "backer"
         },
         {
-            "name": "ForceIndexer",
-            "url": "https://forceindexer.com",
-            "image": "https://images.opencollective.com/forceindexer/588566e/logo.png",
-            "monthlyDonation": 1,
-            "totalDonations": 1,
-            "source": "opencollective",
-            "tier": "backer"
-        },
-        {
             "name": "Theme Divi",
             "url": "https://wptheme.fr/theme-wordpress-divi/",
             "image": "https://images.opencollective.com/divi/41b8904/avatar.png",
@@ -955,6 +946,15 @@
             "image": "https://github.com/changesets.png",
             "monthlyDonation": 0.2399402,
             "totalDonations": "00.223895780.520059050.397113020.223165370.217747800.23994020",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Aliaksei Yaletski",
+            "url": "https://tiendil.org",
+            "image": "https://github.com/tiendil.png",
+            "monthlyDonation": 0.0926572,
+            "totalDonations": "00.154469060.153432820.153776360.145902710.173218460.168980290.163344920.163344920.102572410.09265720",
             "source": "thanks.dev",
             "tier": "backer"
         },
