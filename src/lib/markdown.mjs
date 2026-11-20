@@ -52,6 +52,9 @@ import loadLanguages from "prismjs/components/index.js";
 // Helpers
 //-----------------------------------------------------------------------------
 
+// code blocks in these languages are plain text, so there's nothing to highlight
+const PLAIN_TEXT_LANGUAGES = new Set(["text", "txt", "plain", "plaintext"]);
+
 /**
  * Highlights the code in a code block.
  * @param {MarkdownIt} md markdown-it
@@ -62,7 +65,7 @@ import loadLanguages from "prismjs/components/index.js";
 function highlight(md, str, lang) {
 	let result;
 
-	if (lang) {
+	if (lang && !PLAIN_TEXT_LANGUAGES.has(lang)) {
 		try {
 			loadLanguages([lang]);
 			result = Prism.highlight(str, Prism.languages[lang], lang);

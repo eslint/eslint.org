@@ -9,6 +9,7 @@
 //-----------------------------------------------------------------------------
 
 import type { ImageMetadata } from "astro";
+import { inferRemoteSize } from "astro:assets";
 
 //-----------------------------------------------------------------------------
 // Data
@@ -26,6 +27,9 @@ const images = import.meta.glob<ImageMetadata>(
 	],
 	{ import: "default", eager: true },
 );
+
+// remote images are measured once per build, however many pages show them
+const remoteRatios = new Map<string, Promise<number | undefined>>();
 
 //-----------------------------------------------------------------------------
 // Exports
@@ -46,4 +50,35 @@ export function getLocalImage(path: string): ImageMetadata {
 	}
 
 	return image;
+}
+
+/**
+ * Calculates the width a remote image has when it is shown at a given height,
+ * so that lazy-loaded images can reserve their space before they load.
+ * @param url The URL of the image.
+ * @param height The height the image is shown at.
+ * @returns The width, or `undefined` if the image is local or couldn't be
+ *      measured (the image is then sized by the browser once it loads).
+ */
+export async function getRemoteImageWidth(
+	url: string | null | undefined,
+	height: number,
+): Promise<number | undefined> {
+	if (!url || !/^https?:/u.test(url)) {
+		return undefined;
+	}
+
+	if (!remoteRatios.has(url)) {
+		remoteRatios.set(
+			url,
+			inferRemoteSize(url).then(
+				size => size.width / size.height,
+				() => undefined,
+			),
+		);
+	}
+
+	const ratio = await remoteRatios.get(url);
+
+	return ratio ? Math.round(ratio * height) : undefined;
 }

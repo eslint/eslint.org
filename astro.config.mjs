@@ -54,6 +54,10 @@ export default defineConfig({
 
 	// keep the generated markup readable and whitespace-faithful
 	compressHTML: false,
+	image: {
+		// sponsor logos are measured at build time so their space can be reserved
+		domains: ["images.opencollective.com", "avatars.githubusercontent.com"],
+	},
 
 	i18n: {
 		locales: Object.keys(sites),

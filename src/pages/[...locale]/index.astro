@@ -22,6 +22,7 @@ import {
 	readableDateFromISO,
 	shortDateFromISO,
 } from "../../lib/format";
+import { getRemoteImageWidth } from "../../lib/images";
 import { fill, getSite, links, localizeUrl, getLocalePaths } from "../../lib/site";
 
 export const getStaticPaths = getLocalePaths;
@@ -79,25 +80,30 @@ const sponsors_desc = fill(site.homepage.sponsors.description, {
 	SPONSOR_COUNT: sponsors.totals.sponsorCount,
 });
 
-// the sponsors shown at the top of the page
-const top_sponsors = [
+// the height that the stylesheet shows sponsor logos at
+const SPONSOR_HEIGHT = 48;
+const topTierSponsors = [
 	...sponsors.diamond,
 	...sponsors.platinum,
 	...sponsors.gold,
 ];
 
 // the sponsors shown in the sponsors section
-const paidSponsors = [
-	...top_sponsors,
-	...sponsors.silver,
-	...sponsors.bronze,
-].map(sponsor => ({
-	...sponsor,
-	title: fill(site.sponsors_page.sponsor_title, {
-		SPONSOR_NAME: sponsor.name ?? "",
-		AMOUNT: dollars(sponsor.monthlyDonation),
-	}),
-}));
+const paidSponsors = await Promise.all(
+	[...topTierSponsors, ...sponsors.silver, ...sponsors.bronze].map(
+		async sponsor => ({
+			...sponsor,
+			width: await getRemoteImageWidth(sponsor.image, SPONSOR_HEIGHT),
+			title: fill(site.sponsors_page.sponsor_title, {
+				SPONSOR_NAME: sponsor.name ?? "",
+				AMOUNT: dollars(sponsor.monthlyDonation),
+			}),
+		}),
+	),
+);
+
+// the sponsors shown at the top of the page
+const top_sponsors = paidSponsors.slice(0, topTierSponsors.length);
 const techSponsors = techsponsors.map(sponsor => ({
 	...sponsor,
 	title: fill(site.sponsors_page.tech_sponsor_title, {
@@ -144,13 +150,19 @@ const techSponsors = techsponsors.map(sponsor => ({
                 <div class="eslint-top-sponsors">
                     <div class="sponsor-text">{site.homepage.sponsor.text}</div>
                     <div class="sponsors">
-                        {top_sponsors.map(sponsor => (<>
-                        <a href={sponsor.url} class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
-                            <img loading="lazy" decoding="async" src={sponsor.image} height="128"
-                                alt={sponsor.name}
-                                title={sponsor.name}>
-                        </a>
-                        </>))}
+                        {top_sponsors.map(sponsor => (
+                            sponsor.url ? (
+                                <a href={sponsor.url} class="sponsor-link" rel="nofollow noopener sponsored" target="_blank">
+                                    <img loading="lazy" decoding="async" src={sponsor.image} width={sponsor.width} height={SPONSOR_HEIGHT}
+                                        alt={sponsor.name}
+                                        title={sponsor.name}>
+                                </a>
+                            ) : (
+                                <img loading="lazy" decoding="async" src={sponsor.image} width={sponsor.width} height={SPONSOR_HEIGHT}
+                                    alt={sponsor.name}
+                                    title={sponsor.name}>
+                            )
+                        ))}
                         <a href={localize("/sponsors")}>{site.homepage.sponsor.more}</a>
                     </div>
                 </div>
@@ -284,10 +296,10 @@ const techSponsors = techsponsors.map(sponsor => ({
                         <li>
                             {sponsor.url ? (
                                 <a href={sponsor.url} class="sponsor-link" rel="nofollow noopen sponsored" target="_blank">
-                                    <img src={sponsor.image} alt={sponsor.title} title={sponsor.title} height="48" loading="lazy" decoding="async" />
+                                    <img src={sponsor.image} alt={sponsor.title} title={sponsor.title} width={sponsor.width} height={SPONSOR_HEIGHT} loading="lazy" decoding="async" />
                                 </a>
                             ) : (
-                                <img src={sponsor.image} alt={sponsor.title} title={sponsor.title} height="48" loading="lazy" decoding="async" />
+                                <img src={sponsor.image} alt={sponsor.title} title={sponsor.title} width={sponsor.width} height={SPONSOR_HEIGHT} loading="lazy" decoding="async" />
                             )}
                         </li>
                     ))

@@ -4,6 +4,7 @@ import Hero from "../../components/Hero.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import { getDonations, getSponsors, techsponsors } from "../../lib/data";
 import { capitalize, dollars, readableDateFromISO } from "../../lib/format";
+import { getRemoteImageWidth } from "../../lib/images";
 import { fill, getSite, localizeUrl, getLocalePaths } from "../../lib/site";
 
 export const getStaticPaths = getLocalePaths;
@@ -18,10 +19,34 @@ const supportingText = fill(text.description, {
 	MONTHLY_DONATIONS: dollars(sponsors.totals.monthlyDonations),
 });
 
+// the height that the stylesheet shows the logos of each tier at
+const tierHeights = {
+	diamond: 128,
+	platinum: 128,
+	gold: 96,
+	silver: 64,
+	bronze: 48,
+} as const;
+
 // tiers without any sponsors aren't shown
-const tiers = (["diamond", "platinum", "gold", "silver", "bronze"] as const)
-	.map(id => ({ id, text: text.tiers[id], sponsors: sponsors[id] }))
-	.filter(tier => tier.sponsors.length);
+const tiers = await Promise.all(
+	(["diamond", "platinum", "gold", "silver", "bronze"] as const)
+		.filter(id => sponsors[id].length)
+		.map(async id => ({
+			id,
+			text: text.tiers[id],
+			height: tierHeights[id],
+			sponsors: await Promise.all(
+				sponsors[id].map(async sponsor => ({
+					...sponsor,
+					width: await getRemoteImageWidth(
+						sponsor.image,
+						tierHeights[id],
+					),
+				})),
+			),
+		})),
+);
 
 const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 ---
@@ -51,23 +76,33 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 									AMOUNT: dollars(sponsor.monthlyDonation),
 								});
 
+								const logo = (
+									<img
+										loading="lazy"
+										decoding="async"
+										src={sponsor.image}
+										width={sponsor.width}
+										height={tier.height}
+										alt={sponsorTitle}
+										title={sponsorTitle}
+									/>
+								);
+
+								// not every sponsor has a website
 								return (
 									<li>
-										<a
-											href={sponsor.url}
-											class="sponsor-link"
-											rel="nofollow noopener sponsored"
-											target="_blank"
-										>
-											<img
-												loading="lazy"
-												decoding="async"
-												src={sponsor.image}
-												height="128"
-												alt={sponsorTitle}
-												title={sponsorTitle}
-											/>
-										</a>
+										{sponsor.url ? (
+											<a
+												href={sponsor.url}
+												class="sponsor-link"
+												rel="nofollow noopener sponsored"
+												target="_blank"
+											>
+												{logo}
+											</a>
+										) : (
+											logo
+										)}
 									</li>
 								);
 							})}
