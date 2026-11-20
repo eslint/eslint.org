@@ -1,0 +1,14 @@
+---
+/**
+ * @fileoverview The ESLint playground. The playground is a React application
+ * (see `src/components/playground`) that runs entirely in the browser.
+ */
+import Playground from "../components/playground/playground.jsx";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout hook="playground_page" title="ESLint Playground" footer={false}>
+	<div id="playground-app">
+		<Playground client:only="react" />
+	</div>
+</MainLayout>

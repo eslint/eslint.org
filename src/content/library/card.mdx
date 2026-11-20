@@ -1,0 +1,61 @@
+---
+title: Card
+---
+
+import Card from "../../components/Card.astro";
+
+The card component is used to create blog post listings. To use the component, render `<Card>` and provide the properties required:
+
+* title
+* teaser text
+* author name
+* category
+* reading time
+* date
+
+When rendering a card for a blog post, `getCardProps()` in `src/lib/blog.ts` creates these properties from the post.
+
+## Usage
+
+```astro
+---
+// import the component
+import Card from "../components/Card.astro";
+---
+
+<!-- use the component -->
+<Card
+    title="The post title"
+    teaser="This is a short description to demo what the card component will look like in the pattern library."
+    authorName="Happy McPerson"
+    category="Sponsorships"
+    readingTime="5 min"
+    date="02-03-2020"
+    url="/component-library/card"
+/>
+```
+
+## Example: Default card
+
+<Card
+    title="The post title"
+    teaser="This is a short description to demo what the card component will look like in the pattern library."
+    authorName="Happy McPerson"
+    category="Sponsorships"
+    readingTime="5 min"
+    date="02-03-2020"
+    url="/component-library/card"
+/>
+
+## Example: Featured (post) card
+
+<Card
+    title="This is a featured post"
+    featured="true"
+    teaser="This is a short description to demo what the card component will look like in the pattern library."
+    authorName="The Author Name"
+    category="Sponsorships"
+    readingTime="5 min"
+    date="02-03-2020"
+    url="/component-library/card"
+/>

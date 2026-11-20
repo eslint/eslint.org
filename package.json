@@ -14,22 +14,17 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "build": "npm-run-all install:playground build:sass build:website build:playground build:minify-images",
+    "build": "npm-run-all build:website build:minify-images",
     "build:init-blog-dates": "node tools/update-blog-dates.js --init",
-    "build:minify-images": "imagemin '_site/assets/images' --out-dir='_site/assets/images'",
+    "build:minify-images": "imagemin 'dist/assets/images' --out-dir='dist/assets/images'",
     "build:minify-svg": "svgo -r -f ./",
-    "build:playground": "webpack --mode=production --progress",
-    "build:playground:watch": "webpack watch --mode=development",
-    "build:sass": "sass --no-source-map --style=compressed src/assets/scss:src/assets/css",
-    "build:sass:watch": "sass --watch src/assets/scss:src/assets/css",
     "build:sponsors": "node tools/generate-sponsors.js",
-    "build:website": "npx @11ty/eleventy",
-    "build:website:watch": "cross-env IS_DEV=true eleventy --serve --port=2022 --incremental",
+    "build:website": "astro build",
+    "dev": "astro dev",
     "fetch": "npm-run-all --parallel fetch:*",
     "fetch:stats": "node tools/fetch-stats.js",
     "fetch:sponsors": "node tools/fetch-sponsors.js",
     "fetch:team": "node tools/fetch-team-data.js",
-    "install:playground": "cd src/playground && npm install --no-package-lock",
     "lint": "npm-run-all --parallel lint:js lint:md lint:scss",
     "lint:fix": "npm-run-all --parallel lint:fix:*",
     "lint:js": "eslint .",
@@ -41,7 +36,8 @@
     "lint:fix:scss": "stylelint \"**/*.scss\" --fix",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
-    "start": "npm-run-all build:sass --parallel *:*:watch"
+    "preview": "astro preview",
+    "start": "astro dev"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
@@ -56,7 +52,7 @@
     "*.md": "markdownlint --fix",
     "src/content/blog/*.md": [
       "node tools/update-blog-dates.js",
-      "git add src/_data/blog-dates.json"
+      "git add src/data/blog-dates.json"
     ],
     "**/*.svg": "npx svgo -r --multipass"
   },
@@ -64,29 +60,19 @@
     "pre-commit": "lint-staged"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.8",
-    "@11ty/eleventy-img": "^3.1.8",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@babel/core": "^7.29.13",
-    "@babel/preset-env": "^7.29.14",
-    "@babel/preset-react": "^7.29.7",
-    "@html-eslint/eslint-plugin": "^0.68.0",
+    "@astrojs/mdx": "^8.1.6",
+    "@astrojs/react": "^7.1.9",
     "@munter/tap-render": "^0.2.0",
     "@octokit/graphql": "^4.8.0",
     "@octokit/rest": "^18.12.0",
-    "babel-loader": "^8.4.1",
-    "babel-plugin-react-compiler": "^1.0.0",
+    "@types/node": "^24.19.2",
+    "astro": "^7.4.12",
     "cheerio": "*",
     "common-tags": "^1.8.2",
     "cross-env": "^7.0.3",
-    "css-loader": "^6.11.0",
     "download-stats": "^0.3.4",
-    "eleventy-plugin-nesting-toc": "^1.3.0",
-    "eleventy-plugin-page-assets": "^0.3.0",
-    "eleventy-plugin-reading-time": "^0.0.1",
-    "eslint": "^9.39.5",
-    "eslint-config-eslint": "^13.0.0",
+    "eslint": "^10.15.0",
+    "eslint-config-eslint": "^14.0.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
@@ -97,25 +83,23 @@
     "imagemin-cli": "^7.0.0",
     "js-yaml": "^5.5.0",
     "lint-staged": "^13.3.0",
+    "luxon": "^3.7.2",
     "markdown-it": "^14.3.3",
     "markdown-it-anchor": "^9.2.1",
     "markdownlint-cli": "^0.50.0",
-    "node-polyfill-webpack-plugin": "^1.1.4",
+    "node-stdlib-browser": "^1.3.1",
     "npm-run-all2": "^8.0.4",
+    "oxc-transform-react": "^0.156.0",
     "prettier": "3.10.1",
     "prismjs": "^1.30.0",
     "sass": "^1.108.2",
-    "sass-loader": "^16.0.8",
     "semver": "^7.8.6",
     "slugify": "^1.6.9",
-    "style-loader": "^3.3.4",
     "stylelint": "^14.16.1",
     "stylelint-config-standard-scss": "^5.0.0",
     "tap-spot": "^1.1.2",
     "typescript": "^5.9.3",
     "undici": "^6.29.1",
-    "webpack": "^5.112.2",
-    "webpack-cli": "^4.10.0",
     "yorkie": "^2.0.0"
   },
   "dependencies": {
@@ -131,5 +115,13 @@
     "react-dom": "^19.3.1",
     "react-select": "^5.10.2",
     "react-split": "^2.0.14"
+  },
+  "overrides": {
+    "eslint-plugin-react": {
+      "eslint": "$eslint"
+    },
+    "eslint-plugin-jsx-a11y": {
+      "eslint": "$eslint"
+    }
   }
 }

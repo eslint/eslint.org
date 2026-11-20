@@ -1,0 +1,33 @@
+---
+/**
+ * @fileoverview A blog post. Posts are published at `/blog/YYYY/MM/<slug>/`.
+ */
+import type { GetStaticPaths } from "astro";
+import { render } from "astro:content";
+import PostLayout from "../../../../layouts/PostLayout.astro";
+import { getPosts, getPostUrl, type Post } from "../../../../lib/blog";
+
+interface Props {
+	post: Post;
+}
+
+export const getStaticPaths = (async () => {
+	const posts = await getPosts();
+
+	return posts.map(post => {
+		const [, , year, month, slug] = getPostUrl(post).split("/");
+
+		return {
+			params: { year, month, slug },
+			props: { post },
+		};
+	});
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<PostLayout post={post}>
+	<Content />
+</PostLayout>

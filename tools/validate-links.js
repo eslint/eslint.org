@@ -12,7 +12,7 @@ tapRenderInstance.pipe(spot()).pipe(process.stdout);
 const skipPatterns = [
 	"https://",
 	"fragment-redirect",
-	path.normalize("_site/sponsors"),
+	path.normalize("dist/sponsors"),
 	"/docs",
 ];
 
@@ -26,8 +26,8 @@ function skipFilter(report) {
 	try {
 		await hyperlink(
 			{
-				inputUrls: ["../_site/index.html"],
-				root: path.resolve(__dirname, "../_site"),
+				inputUrls: ["../dist/index.html"],
+				root: path.resolve(__dirname, "../dist"),
 				canonicalRoot: "https://eslint.org/",
 				recursive: true,
 				internalOnly: true,

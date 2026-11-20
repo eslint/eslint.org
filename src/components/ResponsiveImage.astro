@@ -1,0 +1,34 @@
+---
+/**
+ * @fileoverview An optimized, responsive image from `src/assets/images`.
+ */
+import { Picture } from "astro:assets";
+import { getLocalImage } from "../lib/images";
+
+interface Props {
+	/** The path of the image relative to `src/assets/images`. */
+	src: string;
+	alt: string;
+	class?: string;
+	sizes?: string;
+}
+
+const {
+	src,
+	alt,
+	class: className,
+	sizes = "(max-width: 768px) 100vw, 50vw",
+} = Astro.props;
+---
+
+<Picture
+	src={getLocalImage(src)}
+	alt={alt}
+	class={className}
+	widths={[600, 900, 1500]}
+	sizes={sizes}
+	formats={["webp"]}
+	fallbackFormat="jpeg"
+	loading="lazy"
+	decoding="async"
+/>

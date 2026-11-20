@@ -1,0 +1,123 @@
+---
+/**
+ * @fileoverview Links to the other pages of a paginated list.
+ */
+import { fill, getSite } from "../lib/site";
+
+interface Props {
+	currentPage: number;
+	totalPages: number;
+
+	/** The URL of the first page. */
+	first: string;
+
+	/** The URL of the last page. */
+	last: string;
+
+	/** The URL of the previous page, if there is one. */
+	previous?: string | null;
+
+	/** The URL of the next page, if there is one. */
+	next?: string | null;
+
+	/** Whether to show the links when there is only one page. */
+	alwaysShowLinks?: boolean;
+}
+
+const site = await getSite(Astro.currentLocale);
+const text = site.blog_page.pagination;
+const {
+	currentPage,
+	totalPages,
+	first,
+	last,
+	previous,
+	next,
+	alwaysShowLinks = false,
+} = Astro.props;
+const status = fill(text.status, {
+	PAGE_NUMBER: currentPage,
+	TOTAL_PAGE_COUNT: totalPages,
+});
+---
+
+<nav class="c-pagination" aria-labelledby="pagination-label">
+	<h2 id="pagination-label" hidden>{text.title}</h2>
+
+	<span class="c-pagination__current c-pagination__item">{status}</span>
+
+	{
+		(alwaysShowLinks || totalPages > 1) && (
+			<>
+				<div class="c-pagination__prev">
+					{currentPage > 1 ? (
+						<a class="c-pagination__item" href={first}>
+							{text.first_page}
+						</a>
+					) : (
+						<a class="c-pagination__item" role="link" aria-disabled="true">
+							{text.first_page}
+						</a>
+					)}
+					<a
+						class="c-pagination__item"
+						{...(previous
+							? { href: previous }
+							: { role: "link", "aria-disabled": "true" })}
+					>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M19 12H5M5 12L12 19M5 12L12 5"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<span class="c-pagination__item__text">{text.previous_page}</span>
+					</a>
+				</div>
+				<div class="c-pagination__next">
+					<a
+						class="c-pagination__item"
+						{...(next
+							? { href: next }
+							: { role: "link", "aria-disabled": "true" })}
+					>
+						<span class="c-pagination__item__text">{text.next_page}</span>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5 12H19M19 12L12 5M19 12L12 19"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</a>
+					{currentPage < totalPages ? (
+						<a class="c-pagination__item" href={last}>
+							{text.last_page}
+						</a>
+					) : (
+						<a class="c-pagination__item" role="link" aria-disabled="true">
+							{text.last_page}
+						</a>
+					)}
+				</div>
+			</>
+		)
+	}
+</nav>

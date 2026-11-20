@@ -1,0 +1,72 @@
+---
+/**
+ * @fileoverview Lets the visitor switch to another language.
+ */
+import {
+	getLanguages,
+	getSite,
+	localizeUrl,
+	unlocalizeUrl,
+} from "../lib/site";
+
+interface Props {
+	/**
+	 * Whether the current page is translated. When it isn't, switching
+	 * languages goes to the homepage in the other language.
+	 */
+	multilingual?: boolean;
+}
+
+const site = await getSite(Astro.currentLocale);
+const languages = await getLanguages();
+const { multilingual = false } = Astro.props;
+const path = multilingual
+	? unlocalizeUrl(Astro.url.pathname, Astro.currentLocale)
+	: "/";
+---
+
+<div class="language-switcher">
+	<a
+		href={localizeUrl("/languages/", Astro.currentLocale)}
+		class="switcher-fallback"
+		>{site.footer.language_switcher.change_language}</a
+	>
+	<div
+		hidden
+		role="region"
+		class="switcher switcher--language"
+		aria-labelledby="language-switcher-label"
+		id="language-switcher"
+	>
+		<span id="language-switcher-label" hidden
+			>{site.footer.language_switcher.title}</span
+		>
+		<div class="infobox visually-hidden" id="language-infobox">
+			{site.footer.language_switcher.description}
+		</div>
+		<label class="switcher__label" for="language-select">
+			<span class="label__text">
+				{site.footer.language_switcher.language}
+			</span>
+		</label>
+		<select
+			name="language selector"
+			id="language-select"
+			aria-describedby="language-infobox"
+			class="c-custom-select switcher__select"
+		>
+			{
+				languages.map(language => (
+					<option
+						value={language.code}
+						title={language.title}
+						data-url={localizeUrl(path, language.locale)}
+						selected={site.language.code === language.code}
+					>
+						{language.flag} {language.name}
+					</option>
+				))
+			}
+		</select>
+	</div>
+</div>

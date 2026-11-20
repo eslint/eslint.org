@@ -26,7 +26,7 @@ Not sure if your idea is suitable for the ESLint blog? Stop by the [#blog](https
 1. Create a new file in the `src/content/drafts` folder. Please do not include a date in the filename. (`my-great-blog-post.md` not `2022-06-30-my-great-blog-post.md`) The ESLint team will publish your post at a later date. Please see the existing blog posts in `src/content/blog` to include the correct frontmatter in your post.
 1. If you have any images, add them to `src/assets/images/blog/XXXX` where `XXXX` is the current year.
 1. Run `node tools/add-author.js username`, where `username` is your GitHub username. This will put all of the information from your GitHub profile for use in the site.
-1. Edit your bio in `_includes/partials/author_bios/username.md` (where `username` is your GitHub username). This file can contain Markdown to embed in the blog post.
+1. Edit your bio in `src/content/author-bios/username.md` (where `username` is your GitHub username). This file can contain Markdown to embed in the blog post.
 1. Send a pull request to this repository.
     * The title of the pull request should be `"feat: blog: My great blog post"` (use your actual post title)
     * In the description, please include 2-4 sentences explaining the overall topic of the blog post.

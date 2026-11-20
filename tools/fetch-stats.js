@@ -26,7 +26,7 @@ const {
 // Data
 //-----------------------------------------------------------------------------
 
-const statsFilePath = "./src/_data/stats.json";
+const statsFilePath = "./src/data/stats.json";
 
 const { ESLINT_GITHUB_TOKEN } = process.env;
 

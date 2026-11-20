@@ -1,12 +1,14 @@
 *
 !*/
 !*.js
+!*.mjs
 !*.jsx
 !*.json
 !*.scss
-_site
+dist
+.astro
 package-lock.json
-src/_data/*.json
+src/data/*.json
 *-polyfill.js
 *-ponyfill*.js
 *.min.js

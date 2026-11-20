@@ -8,9 +8,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# Eleventy output (public site)
-_site/
-src/assets/css/**
+# Astro output (public site) and generated files
+dist/
+.astro/
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -109,9 +109,6 @@ dist
 # TernJS port file
 .tern-port
 
-# playground webpack outputs
-playground.js.map
-playground.js
 # Local Netlify folder
 .netlify
 
@@ -124,5 +121,3 @@ debug*.json
 .idea
 .cursor
 
-# Build
-src/playground/build

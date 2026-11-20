@@ -1,0 +1,66 @@
+---
+/**
+ * @fileoverview The hero section shown at the top of most pages.
+ */
+import Ad from "./Ad.astro";
+
+interface Props {
+	title: string;
+
+	/** Text shown under the title. May contain HTML. */
+	supportingText?: string;
+
+	/** Details to show when the hero is for a blog post. */
+	post?: {
+		/** The formatted publication date. */
+		date: string;
+
+		/** The publication date in ISO 8601 format, such as "2026-01-05". */
+		datetime: string;
+		category: string;
+		categoryURL: string;
+	};
+
+	primaryButton?: { text: string; url: string };
+	secondaryButton?: { text: string; url: string };
+}
+
+const { title, supportingText, post, primaryButton, secondaryButton } =
+	Astro.props;
+---
+
+<div class="section hero">
+	<div class="content-container grid">
+		<div class="span-1-7 content-container">
+			<h1 class="section-title">{title}</h1>
+			{
+				post && (
+					<p class="post__meta">
+						Published <time datetime={post.datetime}>{post.date}</time> under{" "}
+						<a href={`/blog/category/${post.categoryURL}`}>{post.category}</a>
+					</p>
+				)
+			}
+			<p class="section-supporting-text" set:html={supportingText} />
+			{
+				(primaryButton || secondaryButton) && (
+					<div class="eslint-actions">
+						{primaryButton && (
+							<a href={primaryButton.url} class="c-btn c-btn--primary">
+								{primaryButton.text}
+							</a>
+						)}
+						{secondaryButton && (
+							<a href={secondaryButton.url} class="c-btn c-btn--secondary">
+								{secondaryButton.text}
+							</a>
+						)}
+					</div>
+				)
+			}
+		</div>
+		<div class="span-10-12 hero-ad">
+			<Ad />
+		</div>
+	</div>
+</div>
