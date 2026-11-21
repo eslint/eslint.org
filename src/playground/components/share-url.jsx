@@ -5,7 +5,9 @@ import {
 	CLIPBOARD_FALLBACK_MESSAGE,
 	LINT_OUTPUT_FALLBACK_MESSAGE,
 	REPRO_URL_FALLBACK_MESSAGE,
+	CODE_FENCE_LANGUAGE_TAGS,
 } from "../utils/constants";
+import Unicode from "../utils/unicode";
 
 // Helper function for code template formatting
 const formatCodeBlock = (code, lang = "js") => `\`\`\`${lang}
@@ -13,11 +15,12 @@ ${code}
 \`\`\``;
 
 // Helper to build GitHub issue description
-const buildGitHubIssueDescription = (code, config) => {
+const buildGitHubIssueDescription = (code, config, language) => {
 	const parts = [];
+	const lang = CODE_FENCE_LANGUAGE_TAGS[language];
 
 	if (code) {
-		parts.push(`### Playground Code\n${formatCodeBlock(code)}\n`);
+		parts.push(`### Playground Code\n${formatCodeBlock(code, lang)}\n`);
 	}
 
 	if (config) {
@@ -29,9 +32,29 @@ const buildGitHubIssueDescription = (code, config) => {
 	return parts.join("\n");
 };
 
-export default function ShareURL({ url, errors, config }) {
+const getUrlForCurrentLanguageState = selectedLanguage => {
+	const urlObj = window.location;
+	const baseURL = urlObj.origin + urlObj.pathname;
+	const hash = urlObj.hash.slice(1);
+	const urlState = JSON.parse(Unicode.decodeFromBase64(hash));
+
+	const currentState = {
+		text: urlState?.text[selectedLanguage],
+		options: urlState?.options[selectedLanguage],
+		language: urlState?.language,
+	};
+
+	return `${baseURL}#${Unicode.encodeToBase64(JSON.stringify(currentState))}`;
+};
+
+export default function ShareURL({ errors, config, selectedLanguage }) {
 	const [isDataCopied, setIsDataCopied] = useState(false);
 	const [showShareURL, setShowShareURL] = useState(false);
+
+	const currentLanguageStateUrl =
+		window.location.hash === ""
+			? window.location
+			: getUrlForCurrentLanguageState(selectedLanguage);
 
 	// Extract code from editor or URL hash
 	const getEditorCode = () => {
@@ -56,6 +79,14 @@ export default function ShareURL({ url, errors, config }) {
 		return "";
 	};
 
+	const getGitHubIssueUrl = language => {
+		if (language === "javascript" || language === "typescript") {
+			return GITHUB_ISSUE_URL;
+		}
+
+		return `https://github.com/eslint/${language}/issues/new`;
+	};
+
 	// Format errors for output
 	const formatErrors = errorList =>
 		errorList?.length
@@ -68,8 +99,8 @@ export default function ShareURL({ url, errors, config }) {
 			: "";
 
 	const handleReportIssue = () => {
-		const reportUrl = new URL(GITHUB_ISSUE_URL);
-		const currentUrl = url || window.location.href;
+		const reportUrl = new URL(getGitHubIssueUrl(selectedLanguage));
+		const currentUrl = currentLanguageStateUrl || window.location.href;
 		const code = getEditorCode();
 		const errorOutput = formatErrors(errors);
 		const errorOutputInDescription = errorOutput
@@ -77,7 +108,11 @@ export default function ShareURL({ url, errors, config }) {
 			: "";
 
 		// Build description with available data
-		let description = buildGitHubIssueDescription(code, config);
+		let description = buildGitHubIssueDescription(
+			code,
+			config,
+			selectedLanguage,
+		);
 
 		// Set URL parameters
 		const params = {
@@ -94,7 +129,7 @@ export default function ShareURL({ url, errors, config }) {
 
 		if (code) {
 			params["what-did-you-do"] =
-				`I was using the ESLint Playground with this code:\n\n${formatCodeBlock(code)}`;
+				`I was using the ESLint Playground with this code:\n\n${formatCodeBlock(code, CODE_FENCE_LANGUAGE_TAGS[selectedLanguage])}`;
 		}
 
 		if (description) {
@@ -164,7 +199,9 @@ export default function ShareURL({ url, errors, config }) {
 							<input
 								type="text"
 								id="code-snippet"
-								value={url || window.location}
+								value={
+									currentLanguageStateUrl || window.location
+								}
 								aria-readonly="true"
 								readOnly
 								tabIndex="-1"
