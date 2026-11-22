@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105583.77343703998,
-        "monthlyDonations": 8798.64778642,
-        "sponsorCount": 128
+        "annualDonations": 105587.23518791999,
+        "monthlyDonations": 8798.93626566,
+        "sponsorCount": 130
     },
     "diamond": [],
     "platinum": [],
@@ -964,6 +964,24 @@
             "image": "https://github.com/changesets.png",
             "monthlyDonation": 0.2399402,
             "totalDonations": "00.223895780.520059050.397113020.223165370.217747800.23994020",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Amuzil",
+            "url": "http://amuzil.com",
+            "image": "https://github.com/amuzil.png",
+            "monthlyDonation": 0.19107603,
+            "totalDonations": "00.104836190.121308070.120212680.120212680.119249220.117561820.118681180.314521420.125877560.124754530.138897180.341630410.184456910.186183450.185816280.181921690.189037820.19107603",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Jongerenraad Zutphen",
+            "url": "https://jrzutphen.nl",
+            "image": "https://github.com/jrzutphen.png",
+            "monthlyDonation": 0.09740321,
+            "totalDonations": "00.052038360.060200120.059589040.059589040.060085200.059262750.059812820.165913370.063973390.063394520.070609440.175712410.093797350.094717090.094561760.092564720.096332550.09740321",
             "source": "thanks.dev",
             "tier": "backer"
         },
