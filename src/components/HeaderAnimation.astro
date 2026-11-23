@@ -40,6 +40,10 @@ const script = `
 							<div class="anim__cursor anim__cursor--end" />
 						</div>
 					</span>
+				) : word === animation.language_word ? (
+					<span class="anim__word anim__language">
+						<span class="anim__language-text">{word}</span>
+					</span>
 				) : (
 					<span class="anim__word">{word}</span>
 				)}{" "}

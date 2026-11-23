@@ -21,6 +21,21 @@
 }
 
 .anim {
+	&__title {
+		/*
+		 * The hero column stops growing at large viewports, but --step-6 keeps
+		 * scaling with the viewport width. Cap the size at the type scale's
+		 * maximum (61.04px) so the tagline doesn't wrap onto extra lines,
+		 * which breaks the language animation. The last cap only applies on
+		 * very narrow screens (<= ~320px), where --step-6 is too large.
+		 */
+		font-size: min(
+			var(--step-6),
+			calc(var(--f-6-max) / 16 * 1rem),
+			calc((100vw - 3.5rem) * 0.12)
+		);
+	}
+
 	&__word {
 		display: inline-block;
 		position: relative;
@@ -30,6 +45,11 @@
 	&__problems {
 		display: inline-block;
 		position: relative;
+	}
+
+	&__language-text {
+		display: inline-block;
+		white-space: nowrap;
 	}
 
 	&__text {
