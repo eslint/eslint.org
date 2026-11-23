@@ -35,18 +35,6 @@ const CONTEXT = process.env.CONTEXT;
 const showDrafts = !CONTEXT || CONTEXT === "deploy-preview";
 
 //-----------------------------------------------------------------------------
-// Helpers
-//-----------------------------------------------------------------------------
-
-/**
- * Nunjucks used to process posts before Markdown did, so some posts wrap
- * template-like text in raw tags. The tags are no longer necessary.
- */
-function stripRawTags(text: string): string {
-	return text.replace(/\{%-?\s*(?:end)?raw\s*-?%\}/gu, "");
-}
-
-//-----------------------------------------------------------------------------
 // Exports
 //-----------------------------------------------------------------------------
 
@@ -118,7 +106,7 @@ export function blogLoader(): Loader {
 					}
 				}
 
-				const html = blogMarkdown.render(stripRawTags(content));
+				const html = blogMarkdown.render(content);
 				const data = await parseData({
 					id,
 					data: {

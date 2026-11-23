@@ -53,7 +53,7 @@ We're also happy to share that [Code Explorer](https://explorer.eslint.org/#esli
 
 ## Template engine syntax support
 
-Rather than using plain HTML, some projects use template engines like [Handlebars](https://handlebarsjs.com/), which introduce non-standard syntax such as {% raw %}`{{variable}}`{% endraw %}.
+Rather than using plain HTML, some projects use template engines like [Handlebars](https://handlebarsjs.com/), which introduce non-standard syntax such as `{{variable}}`.
 
 `html-eslint` is designed to offer support for custom syntax patterns used in popular template engines. This allows users to configure `html-eslint` to tolerate these syntaxes. Here's an example:
 
@@ -70,10 +70,10 @@ export default defineConfig([
         },
         language: "html/html",
         languageOptions: {
-            // This tells the parser to treat {% raw %}{{ ... }}{% endraw %} as template syntax,
+            // This tells the parser to treat {{ ... }} as template syntax,
             // so it won’t try to parse contents inside as regular HTML
             templateEngineSyntax: {
-                {% raw %}"{{": "}}"{% endraw %},
+                "{{": "}}",
             },
         },
         rules: {
