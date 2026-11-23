@@ -19,6 +19,8 @@
             <div class="anim__cursor anim__cursor--end"></div>
           </div>
         </span>
+      {% elif word == site.homepage.animation.language_word %}
+        <span class="anim__word anim__language"><span class="anim__language-text">{{ word }}</span></span>
       {% else %}
         <span class="anim__word">{{ word }}</span>
       {% endif %}
