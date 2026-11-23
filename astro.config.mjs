@@ -12,6 +12,7 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 import { load as loadYaml } from "js-yaml";
+import devTrailingSlash from "./src/integrations/dev-trailing-slash.mjs";
 import netlifyRedirects from "./src/integrations/netlify-redirects.mjs";
 import staticImages from "./src/integrations/static-images.mjs";
 import eslintInBrowser from "./src/integrations/eslint-in-browser.mjs";
@@ -52,6 +53,9 @@ export default defineConfig({
 	site: `https://${site.hostname}`,
 	output: "static",
 
+	// every page is published as a directory, so its URL ends with a slash
+	trailingSlash: "always",
+
 	// keep the generated markup readable and whitespace-faithful
 	compressHTML: false,
 	image: {
@@ -84,7 +88,7 @@ export default defineConfig({
 	},
 
 	vite: {
-		plugins: [eslintRulesMeta(), eslintInBrowser()],
+		plugins: [eslintRulesMeta(), eslintInBrowser(), devTrailingSlash()],
 		css: {
 			preprocessorOptions: {
 				scss: {

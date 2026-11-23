@@ -35,7 +35,7 @@ const pageTitle = site.shared.title_format.replace(
 );
 const pageDesc = site.shared.description;
 
-// the 404 page is published as /404.html rather than /404/
+// the English 404 page is published as /404.html rather than /404/
 const pagePath =
 	Astro.url.pathname === "/404/" ? "/404.html" : Astro.url.pathname;
 const pageUrl = `https://${site.hostname}${pagePath}`;

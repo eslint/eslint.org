@@ -1,0 +1,15 @@
+---
+/**
+ * @fileoverview The 404 page of each translation, such as `/ja/404/`.
+ */
+import NotFound from "../../components/NotFound.astro";
+import { DEFAULT_LOCALE, getLanguages } from "../../lib/site";
+
+export async function getStaticPaths() {
+	return (await getLanguages())
+		.filter(language => language.locale !== DEFAULT_LOCALE)
+		.map(language => ({ params: { locale: language.locale } }));
+}
+---
+
+<NotFound />

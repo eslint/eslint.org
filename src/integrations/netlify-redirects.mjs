@@ -11,17 +11,42 @@
 import fs from "node:fs/promises";
 
 //-----------------------------------------------------------------------------
+// Data
+//-----------------------------------------------------------------------------
+
+// sections that aren't part of the build because they're redirects or proxies
+const REDIRECTED_SECTIONS = ["docs", "demo", "chat", "cla", "conduct"];
+
+// directories of the build that aren't sections of the site
+const NOT_SECTIONS = /^(?:_|assets$)/u;
+
+//-----------------------------------------------------------------------------
 // Helpers
 //-----------------------------------------------------------------------------
+
+/**
+ * Finds the sections of a site, which are the directories it's built into.
+ * @param {URL} url The directory the site was built into.
+ * @returns {Promise<string[]>} The names of the sections.
+ */
+async function getSections(url) {
+	const entries = await fs.readdir(url, { withFileTypes: true });
+
+	return entries
+		.filter(entry => entry.isDirectory())
+		.map(entry => entry.name);
+}
 
 /**
  * Creates the contents of the `_redirects` file.
  * @param {Object} site The site data of the default locale.
  * @param {Array<{locale: string, hostname: string}>} translations The
  *      other locales and the domains they used to be hosted on.
+ * @param {string[]} englishSections The sections of the site that only
+ *      exist in English, such as `blog`.
  * @returns {string} The contents of the file.
  */
-function createRedirects(site, translations) {
+function createRedirects(site, translations, englishSections) {
 	const { locals } = site;
 	const lines = [
 		"# Netlify Redirect Rules",
@@ -59,7 +84,16 @@ function createRedirects(site, translations) {
 	);
 
 	for (const { locale } of translations) {
-		lines.push(`/${locale}/*                 /:splat 302`);
+		for (const section of englishSections) {
+			lines.push(
+				`/${locale}/${section}/*                 /${section}/:splat 302`,
+			);
+		}
+
+		// anything else doesn't exist in English either
+		lines.push(
+			`/${locale}/*                 /${locale}/404/index.html 404`,
+		);
 	}
 
 	lines.push(`
@@ -212,9 +246,26 @@ export default function netlifyRedirects(site, translations) {
 		name: "eslint-netlify-redirects",
 		hooks: {
 			async "astro:build:done"({ dir, logger }) {
+				const locales = translations.map(({ locale }) => locale);
+				// every translation has the same pages, so any of them will do
+				const translated = new Set(
+					locales.length
+						? await getSections(new URL(`${locales[0]}/`, dir))
+						: [],
+				);
+				const englishSections = [
+					...(await getSections(dir)).filter(
+						name =>
+							!locales.includes(name) &&
+							!translated.has(name) &&
+							!NOT_SECTIONS.test(name),
+					),
+					...REDIRECTED_SECTIONS,
+				].sort();
+
 				await fs.writeFile(
 					new URL("_redirects", dir),
-					createRedirects(site, translations),
+					createRedirects(site, translations, englishSections),
 					"utf8",
 				);
 				logger.info("Generated _redirects");
