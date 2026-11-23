@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105587.23518791999,
-        "monthlyDonations": 8798.93626566,
-        "sponsorCount": 130
+        "annualDonations": 105527.23518791999,
+        "monthlyDonations": 8793.93626566,
+        "sponsorCount": 129
     },
     "diamond": [],
     "platinum": [],
@@ -675,14 +675,6 @@
             "name": "lxmarinkovic",
             "image": "https://avatars.githubusercontent.com/u/3509527",
             "url": "https://lxmarinkovic.com/",
-            "monthlyDonation": 5,
-            "source": "github",
-            "tier": "backer"
-        },
-        {
-            "name": "Jerred Shepherd",
-            "image": "https://avatars.githubusercontent.com/u/3904778",
-            "url": "https://sjer.red",
             "monthlyDonation": 5,
             "source": "github",
             "tier": "backer"
