@@ -35,17 +35,13 @@ const { versions = [], current } = Astro.props;
 			aria-describedby="version-infobox"
 			class="c-custom-select switcher__select auto-switcher"
 		>
-			{
-				versions.map(version => (
-					<option
-						value={version.number}
-						data-url={version.url}
-						selected={current === version.number}
-					>
-						v{version.number}
-					</option>
-				))
-			}
+			{versions.map(version => <option
+				value={version.number}
+				data-url={version.url}
+				selected={current === version.number}
+			>
+				v{version.number}
+			</option>)}
 		</select>
 	</div>
 </div>

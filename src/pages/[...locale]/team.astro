@@ -25,57 +25,45 @@ const groups = [
 <MainLayout hook="team_page" multilingual>
 	<Hero title={text.title} supportingText={text.description} />
 
-	{
-		groups.map(group => (
-			<section class="section">
-				<div class="content-container grid">
-					<div class="span-1-4">
-						<h2 class="section-title">{group.text.title}</h2>
-						<p class="section-supporting-text">{group.text.description}</p>
-					</div>
-					<ul role="list" class="span-6-12 people-list">
-						{group.members.map(member => (
-							<li>
-								<ProfileMember
-									photo={member.avatar_url}
-									name={member.name || member.username}
-									handle={member.username}
-									bio={member.bio}
-									website={member.website}
-									github={member.github_username}
-									bluesky={member.bluesky_url}
-									mastodon={member.mastodon_url}
-									twitter={member.twitter_username}
-								/>
-							</li>
-						))}
-					</ul>
-				</div>
-			</section>
-		))
-	}
+	{groups.map(group => <section class="section">
+		<div class="content-container grid">
+			<div class="span-1-4">
+				<h2 class="section-title">{group.text.title}</h2>
+				<p class="section-supporting-text">{group.text.description}</p>
+			</div>
+			<ul role="list" class="span-6-12 people-list">
+				{group.members.map(member => <li>
+					<ProfileMember
+						photo={member.avatar_url}
+						name={member.name || member.username}
+						handle={member.username}
+						bio={member.bio}
+						website={member.website}
+						github={member.github_username}
+						bluesky={member.bluesky_url}
+						mastodon={member.mastodon_url}
+						twitter={member.twitter_username}
+					/>
+				</li>)}
+			</ul>
+		</div>
+	</section>)}
 
-	{
-		team.alumni.length > 0 && (
-			<section class="section">
-				<div class="content-container grid">
-					<div class="span-1-4">
-						<h2 class="section-title">{text.alumni.title}</h2>
-						<p class="section-supporting-text">{text.alumni.description}</p>
-					</div>
-					<ul role="list" class="span-6-12 people-list">
-						{team.alumni.map(member => (
-							<li>
-								<ProfileContributor
-									photo={member.avatar_url}
-									name={member.name || member.username}
-									handle={member.username}
-								/>
-							</li>
-						))}
-					</ul>
-				</div>
-			</section>
-		)
-	}
+	{team.alumni.length > 0 && <section class="section">
+		<div class="content-container grid">
+			<div class="span-1-4">
+				<h2 class="section-title">{text.alumni.title}</h2>
+				<p class="section-supporting-text">{text.alumni.description}</p>
+			</div>
+			<ul role="list" class="span-6-12 people-list">
+				{team.alumni.map(member => <li>
+					<ProfileContributor
+						photo={member.avatar_url}
+						name={member.name || member.username}
+						handle={member.username}
+					/>
+				</li>)}
+			</ul>
+		</div>
+	</section>}
 </MainLayout>

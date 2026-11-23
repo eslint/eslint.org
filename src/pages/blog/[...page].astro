@@ -28,7 +28,10 @@ export const getStaticPaths = (async () => {
 	return Array.from({ length: totalPages }, (_, index) => ({
 		params: { page: index === 0 ? undefined : `page/${index + 1}` },
 		props: {
-			posts: posts.slice(index * POSTS_PER_PAGE, (index + 1) * POSTS_PER_PAGE),
+			posts: posts.slice(
+				index * POSTS_PER_PAGE,
+				(index + 1) * POSTS_PER_PAGE,
+			),
 			currentPage: index + 1,
 			totalPages,
 		},
@@ -43,7 +46,9 @@ const getPageUrl = (page: number) =>
 
 <BlogLayout hook="blog_page">
 	<div class="blog-posts">
-		{posts.map(post => <Card {...getCardProps(post, authors)} />)}
+		{posts.map(post => (
+			<Card {...getCardProps(post, authors)} />
+		))}
 	</div>
 
 	<Pagination

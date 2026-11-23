@@ -11,16 +11,12 @@ const { versions = [], current } = Astro.props;
 ---
 
 <ul class="versions-list">
-	{
-		versions.map(version => (
-			<li>
-				<a
-					href={version.url}
-					data-current={current === version.number ? "true" : undefined}
-				>
-					v{version.number}
-				</a>
-			</li>
-		))
-	}
+	{versions.map(version => <li>
+		<a
+			href={version.url}
+			data-current={current === version.number ? "true" : undefined}
+		>
+			v{version.number}
+		</a>
+	</li>)}
 </ul>

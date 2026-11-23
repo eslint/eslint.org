@@ -2,12 +2,7 @@
 /**
  * @fileoverview Lets the visitor switch to another language.
  */
-import {
-	getLanguages,
-	getSite,
-	localizeUrl,
-	unlocalizeUrl,
-} from "../lib/site";
+import { getLanguages, getSite, localizeUrl, unlocalizeUrl } from "../lib/site";
 
 interface Props {
 	/**
@@ -55,18 +50,14 @@ const path = multilingual
 			aria-describedby="language-infobox"
 			class="c-custom-select switcher__select"
 		>
-			{
-				languages.map(language => (
-					<option
-						value={language.code}
-						title={language.title}
-						data-url={localizeUrl(path, language.locale)}
-						selected={site.language.code === language.code}
-					>
-						{language.flag} {language.name}
-					</option>
-				))
-			}
+			{languages.map(language => <option
+				value={language.code}
+				title={language.title}
+				data-url={localizeUrl(path, language.locale)}
+				selected={site.language.code === language.code}
+			>
+				{language.flag} {language.name}
+			</option>)}
 		</select>
 	</div>
 </div>

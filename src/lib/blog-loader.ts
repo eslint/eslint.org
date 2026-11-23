@@ -55,8 +55,14 @@ export function blogLoader(): Loader {
 		name: "eslint-blog-loader",
 
 		async load(context: LoaderContext) {
-			const { config, store, parseData, generateDigest, logger, watcher } =
-				context;
+			const {
+				config,
+				store,
+				parseData,
+				generateDigest,
+				logger,
+				watcher,
+			} = context;
 			const root = fileURLToPath(config.root);
 			const blogDir = path.resolve(root, BLOG_DIR);
 			const draftsDir = path.resolve(root, DRAFTS_DIR);
@@ -68,7 +74,8 @@ export function blogLoader(): Loader {
 				const filename = path.basename(filePath);
 				const isDraft = path.dirname(filePath) === draftsDir;
 				const match = DATED_FILENAME.exec(filename);
-				const slug = match?.groups?.slug ?? path.basename(filename, ".md");
+				const slug =
+					match?.groups?.slug ?? path.basename(filename, ".md");
 				const id = isDraft ? `drafts/${slug}` : filename.slice(0, -3);
 
 				if (!filename.endsWith(".md") || filename === "README.md") {
@@ -101,7 +108,10 @@ export function blogLoader(): Loader {
 						return;
 					}
 
-					if (match?.groups && Date.parse(match.groups.date) > Date.now()) {
+					if (
+						match?.groups &&
+						Date.parse(match.groups.date) > Date.now()
+					) {
 						logger.info(`Ignoring future blog post ${filename}`);
 						store.delete(id);
 						return;
@@ -126,7 +136,9 @@ export function blogLoader(): Loader {
 					id,
 					data,
 					body: content,
-					filePath: path.relative(root, filePath).replaceAll("\\", "/"),
+					filePath: path
+						.relative(root, filePath)
+						.replaceAll("\\", "/"),
 					digest: generateDigest(source),
 					rendered: { html },
 				});

@@ -16,45 +16,48 @@ const text = site.donate_page.testimonials;
 >
 	<div class="c-slider__slides-container" data-slides>
 		<div class="c-slider__slides-wrapper" data-slides-wrapper>
-			{
-				site.donate_page.testimonials.items.map(item => (
-					<div class="c-slider__slide focusable" data-slide>
-						<blockquote class="c-slider__testimonial span-1-6">
-							<div class="c-slider__testimonial__content">
-								<p>{item.text}</p>
-							</div>
-							<footer class="c-slider__testimonial__footer">
-								<cite class="profile contributor">
-									<img
-										class="profile__photo profile__photo--small"
-										src={`/assets/images/people/testimonials/small/${item.image}`}
-										width="48"
-										height="48"
-										alt={item.name}
-										loading="lazy"
-									/>
-									<div class="profile__details">
-										<span class="c-slider__testimonial__author profile__name">
-											{item.name}
-										</span>
-										<span class="c-slider__testimonial__author-role profile__title">
-											{item.title}
-										</span>
-									</div>
-								</cite>
-							</footer>
-						</blockquote>
-						<div class="span-8-12">
-							<div class="c-slider__testimonial__img">
-								<ResponsiveImage
-									src={`people/testimonials/large/${item.image}`}
-									alt={item.name}
-								/>
-							</div>
-						</div>
+			{site.donate_page.testimonials.items.map(item => <div
+				class="c-slider__slide focusable"
+				data-slide
+			>
+				<blockquote class="c-slider__testimonial span-1-6">
+					<div class="c-slider__testimonial__content">
+						<p>{item.text}</p>
 					</div>
-				))
-			}
+					<footer class="c-slider__testimonial__footer">
+						<cite class="profile contributor">
+							<img
+								class="profile__photo profile__photo--small"
+								src={`/assets/images/people/testimonials/small/${item.image}`}
+								width="48"
+								height="48"
+								alt={item.name}
+								loading="lazy"
+							/>
+							<div class="profile__details">
+								<span
+									class="c-slider__testimonial__author profile__name"
+								>
+									{item.name}
+								</span>
+								<span
+									class="c-slider__testimonial__author-role profile__title"
+								>
+									{item.title}
+								</span>
+							</div>
+						</cite>
+					</footer>
+				</blockquote>
+				<div class="span-8-12">
+					<div class="c-slider__testimonial__img">
+						<ResponsiveImage
+							src={`people/testimonials/large/${item.image}`}
+							alt={item.name}
+						/>
+					</div>
+				</div>
+			</div>)}
 		</div>
 	</div>
 	<div class="c-slider__paddleNav" data-slider-paddlenav hidden>
@@ -75,10 +78,15 @@ const text = site.donate_page.testimonials;
 					stroke="currentColor"
 					stroke-width="2"
 					stroke-linecap="round"
-					stroke-linejoin="round"></path>
+					stroke-linejoin="round"
+				></path>
 			</svg>
 		</button>
-		<button class="c-slider__paddleNav__next" aria-label={text.next_slide} data-next>
+		<button
+			class="c-slider__paddleNav__next"
+			aria-label={text.next_slide}
+			data-next
+		>
 			<svg
 				width="24"
 				height="24"
@@ -91,7 +99,8 @@ const text = site.donate_page.testimonials;
 					stroke="currentColor"
 					stroke-width="2"
 					stroke-linecap="round"
-					stroke-linejoin="round"></path>
+					stroke-linejoin="round"
+				></path>
 			</svg>
 		</button>
 	</div>

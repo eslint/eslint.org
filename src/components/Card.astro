@@ -51,9 +51,7 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 				<span class="visually-hidden">Published under:</span>
 				{category}
 			</span>
-			<span class="blog-post__reading-time">
-				{readingTime} read
-			</span>
+			<span class="blog-post__reading-time"> {readingTime} read </span>
 		</div>
 
 		<h3 class="card__title">
@@ -74,7 +72,9 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 			/>
 			<div class="blog-post__author__details">
 				<div class="blog-post__author-name">{authorName}</div>
-				<time class="blog-post__publish-date" datetime={date instanceof Date ? date.toISOString() : date}
+				<time
+					class="blog-post__publish-date"
+					datetime={date instanceof Date ? date.toISOString() : date}
 					>{readableDate(date)}</time
 				>
 			</div>

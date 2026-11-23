@@ -26,11 +26,7 @@ const swatches = [
 	{site.branding_page.sections.color_palette.brand_palette}
 </h3>
 <ul class="swatches" aria-labelledby="brand-colors-label">
-	{
-		swatches.map(color => (
-			<li class="swatches__item">
-				<Swatch desc={color.desc} val={color.val} />
-			</li>
-		))
-	}
+	{swatches.map(color => <li class="swatches__item">
+		<Swatch desc={color.desc} val={color.val} />
+	</li>)}
 </ul>

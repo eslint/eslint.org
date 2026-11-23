@@ -9,7 +9,11 @@ import { localizeUrl } from "../lib/site";
 
 <header class="site-header">
 	<div class="content-container">
-		<a href={localizeUrl("/", Astro.currentLocale)} aria-label="Homepage" class="logo-link">
+		<a
+			href={localizeUrl("/", Astro.currentLocale)}
+			aria-label="Homepage"
+			class="logo-link"
+		>
 			<Logo />
 		</a>
 		<Navigation />

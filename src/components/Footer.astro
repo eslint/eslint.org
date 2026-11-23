@@ -29,10 +29,15 @@ const { multilingual = false } = Astro.props;
 				</p>
 			</div>
 			<div class="eslint-actions">
-				<a href={links.getStarted} target="_blank" class="c-btn c-btn--primary"
+				<a
+					href={links.getStarted}
+					target="_blank"
+					class="c-btn c-btn--primary"
 					>{site.shared.get_started}</a
 				>
-				<a href={localizeUrl(links.donate, Astro.currentLocale)} class="c-btn c-btn--secondary donate-link"
+				<a
+					href={localizeUrl(links.donate, Astro.currentLocale)}
+					class="c-btn c-btn--secondary donate-link"
 					>{site.shared.become_a_sponsor}</a
 				>
 			</div>
@@ -47,11 +52,24 @@ const { multilingual = false } = Astro.props;
 		<div class="copyright">
 			<p set:html={site.footer.copyright} />
 		</div>
-		<nav aria-labelledby="footer-legal-links-label" class="footer-legal-links">
-			<h2 id="footer-legal-links-label" hidden>{site.footer.secondary}</h2>
+		<nav
+			aria-labelledby="footer-legal-links-label"
+			class="footer-legal-links"
+		>
+			<h2 id="footer-legal-links-label" hidden>
+				{site.footer.secondary}
+			</h2>
 			<ul>
-				<li><a href={localizeUrl("/branding/", Astro.currentLocale)}>{site.branding_page.title}</a></li>
-				<li><a href="https://openjsf.org/">{site.footer.links.open_jsf}</a></li>
+				<li>
+					<a href={localizeUrl("/branding/", Astro.currentLocale)}
+						>{site.branding_page.title}</a
+					>
+				</li>
+				<li>
+					<a href="https://openjsf.org/"
+						>{site.footer.links.open_jsf}</a
+					>
+				</li>
 				<li>
 					<a href="https://terms-of-use.openjsf.org/"
 						>{site.footer.links.terms}</a
@@ -63,7 +81,9 @@ const { multilingual = false } = Astro.props;
 					>
 				</li>
 				<li>
-					<a href="https://bylaws.openjsf.org/">{site.footer.links.bylaws}</a>
+					<a href="https://bylaws.openjsf.org/"
+						>{site.footer.links.bylaws}</a
+					>
 				</li>
 				<li>
 					<a href="https://trademark-policy.openjsf.org/"

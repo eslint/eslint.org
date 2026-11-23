@@ -17,14 +17,12 @@ const { behavior = "link", url, type, text } = Astro.props;
 const classes = ["c-btn", type && `c-btn--${type}`];
 ---
 
-{
-	behavior === "action" ? (
-		<button type="button" class:list={classes}>
-			{text ?? "This is a button button"}
-		</button>
-	) : (
-		<a href={url} class:list={classes}>
-			{text ?? "This is a link styled like a button"}
-		</a>
-	)
-}
+{behavior === "action" ? (
+	<button type="button" class:list={classes}>
+		{text ?? "This is a button button"}
+	</button>
+) : (
+	<a href={url} class:list={classes}>
+		{text ?? "This is a link styled like a button"}
+	</a>
+)}

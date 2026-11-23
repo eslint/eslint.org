@@ -27,16 +27,13 @@ const script = `
 `;
 ---
 
-{
-	code && (
-		<>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script
-				is:inline
-				async
-				src={`https://www.googletagmanager.com/gtag/js?id=${code}`}
-			/>
-			<script is:inline set:html={script} />
-		</>
-	)
-}
+{code && (
+	<>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			is:inline
+			async
+			src={`https://www.googletagmanager.com/gtag/js?id=${code}`}
+		/>
+		<script is:inline set:html={script} /></>
+)}

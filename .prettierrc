@@ -4,11 +4,25 @@
 	"arrowParens": "avoid",
 	"overrides": [
 		{
-			"files": ["*.json"],
+			"files": [
+				"*.json"
+			],
 			"options": {
 				"tabWidth": 2,
 				"useTabs": false
 			}
+		},
+		{
+			"files": [
+				"*.astro"
+			],
+			"options": {
+				"parser": "astro",
+				"astroCompressHTML": false
+			}
 		}
+	],
+	"plugins": [
+		"prettier-plugin-astro"
 	]
 }

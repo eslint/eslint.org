@@ -55,62 +55,61 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 	<Hero
 		title={text.title}
 		supportingText={supportingText}
-		primaryButton={{ text: text.hero.cta.text, url: localizeUrl(text.hero.cta.url, Astro.currentLocale) }}
+		primaryButton={{
+			text: text.hero.cta.text,
+			url: localizeUrl(text.hero.cta.url, Astro.currentLocale),
+		}}
 	/>
 
 	<section class="section">
-		{
-			tiers.map(tier => (
-				<div class="content-container grid grid--center-items">
-					<div class="span-1-5">
-						<h2 class="section-title h4" id={tier.id}>
-							{tier.text.title}
-						</h2>
-						<p>{tier.text.description}</p>
-					</div>
-					<div class="span-7-12">
-						<ul role="list" class={`sponsors sponsors--${tier.id}`}>
-							{tier.sponsors.map(sponsor => {
-								const sponsorTitle = fill(text.sponsor_title, {
-									SPONSOR_NAME: sponsor.name ?? "",
-									AMOUNT: dollars(sponsor.monthlyDonation),
-								});
+		{tiers.map(tier => <div
+			class="content-container grid grid--center-items"
+		>
+			<div class="span-1-5">
+				<h2 class="section-title h4" id={tier.id}>
+					{tier.text.title}
+				</h2>
+				<p>{tier.text.description}</p>
+			</div>
+			<div class="span-7-12">
+				<ul role="list" class={`sponsors sponsors--${tier.id}`}>
+					{tier.sponsors.map(sponsor => {
+						const sponsorTitle = fill(text.sponsor_title, {
+							SPONSOR_NAME: sponsor.name ?? "",
+							AMOUNT: dollars(sponsor.monthlyDonation),
+						});
 
-								const logo = (
-									<img
-										loading="lazy"
-										decoding="async"
-										src={sponsor.image}
-										width={sponsor.width}
-										height={tier.height}
-										alt={sponsorTitle}
-										title={sponsorTitle}
-									/>
-								);
+						const logo = (
+							<img
+								loading="lazy"
+								decoding="async"
+								src={sponsor.image}
+								width={sponsor.width}
+								height={tier.height}
+								alt={sponsorTitle}
+								title={sponsorTitle}
+							/>
+						);
 
-								// not every sponsor has a website
-								return (
-									<li>
-										{sponsor.url ? (
-											<a
-												href={sponsor.url}
-												class="sponsor-link"
-												rel="nofollow noopener sponsored"
-												target="_blank"
-											>
-												{logo}
-											</a>
-										) : (
-											logo
-										)}
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				</div>
-			))
-		}
+						// not every sponsor has a website
+						return <li>
+							{sponsor.url ? (
+								<a
+									href={sponsor.url}
+									class="sponsor-link"
+									rel="nofollow noopener sponsored"
+									target="_blank"
+								>
+									{logo}
+								</a>
+							) : (
+								logo
+							)}
+						</li>;
+					})}
+				</ul>
+			</div>
+		</div>)}
 		<div class="content-container grid grid--center-items">
 			<div class="span-1-5">
 				<h2 class="section-title h4" id="technology">
@@ -122,34 +121,30 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 			</div>
 			<div class="span-7-12">
 				<ul role="list" class="sponsors sponsors--technology">
-					{
-						techsponsors.map(sponsor => {
-							const sponsorTitle = fill(text.tech_sponsor_title, {
-								SPONSOR_NAME: sponsor.name,
-								TECH: capitalize(sponsor.donation),
-							});
+					{techsponsors.map(sponsor => {
+						const sponsorTitle = fill(text.tech_sponsor_title, {
+							SPONSOR_NAME: sponsor.name,
+							TECH: capitalize(sponsor.donation),
+						});
 
-							return (
-								<li>
-									<a
-										href={sponsor.url}
-										class="sponsor-link"
-										rel="nofollow noopener sponsored"
-										target="_blank"
-									>
-										<img
-											loading="lazy"
-											decoding="async"
-											src={sponsor.image}
-											alt={sponsorTitle}
-											title={sponsorTitle}
-											height="64"
-										/>
-									</a>
-								</li>
-							);
-						})
-					}
+						return <li>
+							<a
+								href={sponsor.url}
+								class="sponsor-link"
+								rel="nofollow noopener sponsored"
+								target="_blank"
+							>
+								<img
+									loading="lazy"
+									decoding="async"
+									src={sponsor.image}
+									alt={sponsorTitle}
+									title={sponsorTitle}
+									height="64"
+								/>
+							</a>
+						</li>;
+					})}
 				</ul>
 			</div>
 		</div>
@@ -171,18 +166,14 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 				tabindex="-1"
 				aria-labelledby="donations-label"
 			>
-				{
-					donations.map(donation => (
-						<li class="donations-item">
-							<DonationItem
-								image={donation.image}
-								name={donation.name}
-								amount={dollars(donation.amount)}
-								date={readableDateFromISO(donation.date, site.locale)}
-							/>
-						</li>
-					))
-				}
+				{donations.map(donation => <li class="donations-item">
+					<DonationItem
+						image={donation.image}
+						name={donation.name}
+						amount={dollars(donation.amount)}
+						date={readableDateFromISO(donation.date, site.locale)}
+					/>
+				</li>)}
 			</ul>
 		</div>
 	</section>
@@ -197,33 +188,29 @@ const fallbackImage = "/assets/images/people/_placeholder-avatar.svg";
 			</div>
 			<div class="grid">
 				<ul role="list" class="sponsors span-1-12 sponsors--backers">
-					{
-						sponsors.backers.map(sponsor => {
-							const sponsorTitle = `${sponsor.name || "Anonymous"} is donating ${dollars(sponsor.monthlyDonation)} each month`;
+					{sponsors.backers.map(sponsor => {
+						const sponsorTitle = `${sponsor.name || "Anonymous"} is donating ${dollars(sponsor.monthlyDonation)} each month`;
 
-							return (
-								<li>
-									<a
-										href={sponsor.url}
-										class="sponsor-link"
-										rel="nofollow noopener sponsored"
-										target="_blank"
-									>
-										<img
-											loading="lazy"
-											decoding="async"
-											src={sponsor.image || fallbackImage}
-											height="48"
-											width="48"
-											onerror={`this.src = '${fallbackImage}'`}
-											alt={sponsorTitle}
-											title={sponsorTitle}
-										/>
-									</a>
-								</li>
-							);
-						})
-					}
+						return <li>
+							<a
+								href={sponsor.url}
+								class="sponsor-link"
+								rel="nofollow noopener sponsored"
+								target="_blank"
+							>
+								<img
+									loading="lazy"
+									decoding="async"
+									src={sponsor.image || fallbackImage}
+									height="48"
+									width="48"
+									onerror={`this.src = '${fallbackImage}'`}
+									alt={sponsorTitle}
+									title={sponsorTitle}
+								/>
+							</a>
+						</li>;
+					})}
 				</ul>
 			</div>
 		</div>

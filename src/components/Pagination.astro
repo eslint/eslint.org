@@ -46,78 +46,88 @@ const status = fill(text.status, {
 
 	<span class="c-pagination__current c-pagination__item">{status}</span>
 
-	{
-		(alwaysShowLinks || totalPages > 1) && (
-			<>
-				<div class="c-pagination__prev">
-					{currentPage > 1 ? (
-						<a class="c-pagination__item" href={first}>
-							{text.first_page}
-						</a>
-					) : (
-						<a class="c-pagination__item" role="link" aria-disabled="true">
-							{text.first_page}
-						</a>
-					)}
+	{(alwaysShowLinks || totalPages > 1) && (
+		<>
+			<div class="c-pagination__prev">
+				{currentPage > 1 ? (
+					<a class="c-pagination__item" href={first}>
+						{text.first_page}
+					</a>
+				) : (
 					<a
 						class="c-pagination__item"
-						{...(previous
-							? { href: previous }
-							: { role: "link", "aria-disabled": "true" })}
+						role="link"
+						aria-disabled="true"
 					>
-						<svg
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M19 12H5M5 12L12 19M5 12L12 5"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-						<span class="c-pagination__item__text">{text.previous_page}</span>
+						{text.first_page}
 					</a>
-				</div>
-				<div class="c-pagination__next">
+				)}
+				<a
+					class="c-pagination__item"
+					{...(previous
+						? { href: previous }
+						: { role: "link", "aria-disabled": "true" })}
+				>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M19 12H5M5 12L12 19M5 12L12 5"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+					<span class="c-pagination__item__text"
+						>{text.previous_page}</span
+					>
+				</a>
+			</div>
+			<div class="c-pagination__next">
+				<a
+					class="c-pagination__item"
+					{...(next
+						? { href: next }
+						: { role: "link", "aria-disabled": "true" })}
+				>
+					<span class="c-pagination__item__text"
+						>{text.next_page}</span
+					>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M5 12H19M19 12L12 5M19 12L12 19"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</a>
+				{currentPage < totalPages ? (
+					<a class="c-pagination__item" href={last}>
+						{text.last_page}
+					</a>
+				) : (
 					<a
 						class="c-pagination__item"
-						{...(next
-							? { href: next }
-							: { role: "link", "aria-disabled": "true" })}
+						role="link"
+						aria-disabled="true"
 					>
-						<span class="c-pagination__item__text">{text.next_page}</span>
-						<svg
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M5 12H19M19 12L12 5M19 12L12 19"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
+						{text.last_page}
 					</a>
-					{currentPage < totalPages ? (
-						<a class="c-pagination__item" href={last}>
-							{text.last_page}
-						</a>
-					) : (
-						<a class="c-pagination__item" role="link" aria-disabled="true">
-							{text.last_page}
-						</a>
-					)}
-				</div>
-			</>
-		)
-	}
+				)}
+			</div>
+		</>
+	)}
 </nav>

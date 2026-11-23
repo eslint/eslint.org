@@ -38,7 +38,9 @@ const getPageUrl = (slug: string | null) =>
 <BlogLayout hook="category_page" title={category.title}>
 	<h2 hidden>{category.title}</h2>
 	<div class="blog-posts">
-		{category.items.map(post => <Card {...getCardProps(post, authors)} />)}
+		{category.items.map(post => (
+			<Card {...getCardProps(post, authors)} />
+		))}
 	</div>
 
 	<Pagination

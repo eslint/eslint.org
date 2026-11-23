@@ -33,31 +33,28 @@ const { title, supportingText, post, primaryButton, secondaryButton } =
 	<div class="content-container grid">
 		<div class="span-1-7 content-container">
 			<h1 class="section-title">{title}</h1>
-			{
-				post && (
-					<p class="post__meta">
-						Published <time datetime={post.datetime}>{post.date}</time> under{" "}
-						<a href={`/blog/category/${post.categoryURL}`}>{post.category}</a>
-					</p>
-				)
-			}
+			{post && <p class="post__meta">
+				Published <time datetime={post.datetime}>{post.date}</time>
+				under{" "}
+				<a href={`/blog/category/${post.categoryURL}`}
+					>{post.category}</a
+				>
+			</p>}
 			<p class="section-supporting-text" set:html={supportingText} />
-			{
-				(primaryButton || secondaryButton) && (
-					<div class="eslint-actions">
-						{primaryButton && (
-							<a href={primaryButton.url} class="c-btn c-btn--primary">
-								{primaryButton.text}
-							</a>
-						)}
-						{secondaryButton && (
-							<a href={secondaryButton.url} class="c-btn c-btn--secondary">
-								{secondaryButton.text}
-							</a>
-						)}
-					</div>
-				)
-			}
+			{(primaryButton || secondaryButton) && <div class="eslint-actions">
+				{primaryButton && <a
+					href={primaryButton.url}
+					class="c-btn c-btn--primary"
+				>
+					{primaryButton.text}
+				</a>}
+				{secondaryButton && <a
+					href={secondaryButton.url}
+					class="c-btn c-btn--secondary"
+				>
+					{secondaryButton.text}
+				</a>}
+			</div>}
 		</div>
 		<div class="span-10-12 hero-ad">
 			<Ad />

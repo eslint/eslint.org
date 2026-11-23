@@ -35,7 +35,9 @@ const posts = (await getPosts())
 		</div>
 
 		<div class="blog-posts">
-			{posts.map(post => <Card {...getCardProps(post, authors)} />)}
+			{posts.map(post => (
+				<Card {...getCardProps(post, authors)} />
+			))}
 		</div>
 	</div>
 </section>

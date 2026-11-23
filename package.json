@@ -20,7 +20,6 @@
     "build:minify-svg": "svgo -r -f ./",
     "build:sponsors": "node tools/generate-sponsors.js",
     "build:website": "astro build",
-    "dev": "astro dev",
     "fetch": "npm-run-all --parallel fetch:*",
     "fetch:stats": "node tools/fetch-stats.js",
     "fetch:sponsors": "node tools/fetch-sponsors.js",
@@ -44,6 +43,7 @@
       "eslint --fix",
       "prettier --write"
     ],
+    "**/*.{ts,astro}": "prettier --write",
     "*.scss": [
       "stylelint \"**/*.scss\" --fix",
       "prettier --write"
@@ -91,6 +91,7 @@
     "npm-run-all2": "^8.0.4",
     "oxc-transform-react": "^0.156.0",
     "prettier": "3.10.1",
+    "prettier-plugin-astro": "^1.1.2",
     "prismjs": "^1.30.0",
     "sass": "^1.108.2",
     "semver": "^7.8.6",

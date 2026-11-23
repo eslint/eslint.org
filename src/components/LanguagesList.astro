@@ -9,18 +9,14 @@ const languages = await getLanguages();
 ---
 
 <ul class="languages-list">
-	{
-		languages.map(language => (
-			<li lang={language.code} title={language.title}>
-				<a
-					href={localizeUrl("/", language.locale)}
-					aria-current={
-						site.language.code === language.code ? "true" : undefined
-					}
-				>
-					<span class="flag">{language.flag}</span> {language.name}
-				</a>
-			</li>
-		))
-	}
+	{languages.map(language => <li lang={language.code} title={language.title}>
+		<a
+			href={localizeUrl("/", language.locale)}
+			aria-current={
+				site.language.code === language.code ? "true" : undefined
+			}
+		>
+			<span class="flag">{language.flag}</span> {language.name}
+		</a>
+	</li>)}
 </ul>

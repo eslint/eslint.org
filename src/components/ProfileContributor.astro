@@ -13,9 +13,19 @@ const fallback_image = "/assets/images/people/_placeholder-avatar.svg";
 ---
 
 <div class="profile profile--contributor">
-    <img class="profile__photo profile__photo--medium" src={params.photo || fallback_image} width="56" height="56" alt={params.name} loading="lazy" onerror={`this.src = '${fallback_image}'`}>
-    <div class="profile__details">
-        <div class="profile__name">{params.name}</div>
-      <a href={`https://github.com/${params.handle}`} class="profile__handle">@{params.handle}</a>
-    </div>
+	<img
+		class="profile__photo profile__photo--medium"
+		src={params.photo || fallback_image}
+		width="56"
+		height="56"
+		alt={params.name}
+		loading="lazy"
+		onerror={`this.src = '${fallback_image}'`}
+	/>
+	<div class="profile__details">
+		<div class="profile__name">{params.name}</div>
+		<a href={`https://github.com/${params.handle}`} class="profile__handle"
+			>@{params.handle}</a
+		>
+	</div>
 </div>

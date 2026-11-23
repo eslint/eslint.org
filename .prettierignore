@@ -3,6 +3,8 @@
 !*.js
 !*.mjs
 !*.jsx
+!*.ts
+!*.astro
 !*.json
 !*.scss
 dist

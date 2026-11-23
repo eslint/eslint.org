@@ -21,17 +21,16 @@ const pageUrl = Astro.url.pathname;
 				>{site.blog_page.categories.everything}</a
 			>
 		</li>
-		{
-			categories.map(category => (
-				<li class="categories__list__item">
-					<a
-						href={`/blog/category/${category.slug}`}
-						{...setActiveCategory(`/blog/category/${category.slug}`, pageUrl)}
-					>
-						{category.title}
-					</a>
-				</li>
-			))
-		}
+		{categories.map(category => <li class="categories__list__item">
+			<a
+				href={`/blog/category/${category.slug}`}
+				{...setActiveCategory(
+					`/blog/category/${category.slug}`,
+					pageUrl,
+				)}
+			>
+				{category.title}
+			</a>
+		</li>)}
 	</ul>
 </nav>

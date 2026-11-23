@@ -42,7 +42,8 @@ const coverImage = `https://${site.hostname}/assets/images/blog-covers/${coverIm
 	<script
 		is:inline
 		src="https://unpkg.com/anchor-js@4.3.1/anchor.min.js"
-		type="text/javascript"></script>
+		type="text/javascript"
+	></script>
 	<script is:inline>
 		document.addEventListener("DOMContentLoaded", () => {
 			anchors.add(
@@ -68,20 +69,18 @@ const coverImage = `https://${site.hostname}/assets/images/blog-covers/${coverIm
 			</div>
 
 			<div class="post__author-bios span-5-12">
-				{
-					authors.map(author => (
-						<PostAuthor
-							photo={allAuthors[author]?.avatar_url}
-							name={allAuthors[author]?.name}
-							title={allAuthors[author]?.title}
-							handle={allAuthors[author]?.username}
-							github={allAuthors[author]?.github_username}
-							bluesky={allAuthors[author]?.bluesky_url}
-							mastodon={allAuthors[author]?.mastodon_url}
-							twitter={allAuthors[author]?.twitter_username}
-						/>
-					))
-				}
+				{authors.map(author => (
+					<PostAuthor
+						photo={allAuthors[author]?.avatar_url}
+						name={allAuthors[author]?.name}
+						title={allAuthors[author]?.title}
+						handle={allAuthors[author]?.username}
+						github={allAuthors[author]?.github_username}
+						bluesky={allAuthors[author]?.bluesky_url}
+						mastodon={allAuthors[author]?.mastodon_url}
+						twitter={allAuthors[author]?.twitter_username}
+					/>
+				))}
 			</div>
 
 			<PostSidebar post={post} />
@@ -97,16 +96,17 @@ const coverImage = `https://${site.hostname}/assets/images/blog-covers/${coverIm
 		class="visually-hidden"
 		aria-live="polite"
 		aria-atomic="true"
-	>
-	</div>
+	></div>
 
 	<script is:inline>
 		(function () {
 			const copyBtns = document.querySelectorAll(".copy-btn");
-			const announcementRegion = document.getElementById("copy-announcement");
+			const announcementRegion =
+				document.getElementById("copy-announcement");
 
 			for (const copyBtn of copyBtns) {
-				const copyText = copyBtn.previousElementSibling.firstChild.textContent;
+				const copyText =
+					copyBtn.previousElementSibling.firstChild.textContent;
 
 				copyBtn.onclick = () => {
 					navigator.clipboard
