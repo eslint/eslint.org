@@ -109,6 +109,7 @@ function createRedirects(site, translations, englishSections) {
 
 # Internal Redirects
 /demo/*                             /play/:splat 302!
+/sitemap.xml                        /sitemap-0.xml 301!
 `);
 
 	if (locals.docs_latest) {

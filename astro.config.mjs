@@ -14,6 +14,7 @@ import react from "@astrojs/react";
 import { load as loadYaml } from "js-yaml";
 import devTrailingSlash from "./src/integrations/dev-trailing-slash.mjs";
 import netlifyRedirects from "./src/integrations/netlify-redirects.mjs";
+import sitemap from "./src/integrations/sitemap.mjs";
 import staticImages from "./src/integrations/static-images.mjs";
 import eslintInBrowser from "./src/integrations/eslint-in-browser.mjs";
 import eslintRulesMeta from "./src/integrations/eslint-rules-meta.mjs";
@@ -79,6 +80,7 @@ export default defineConfig({
 		react({ compiler: true }),
 		mdx(),
 		staticImages(),
+		sitemap(site),
 		netlifyRedirects(site, translations),
 	],
 

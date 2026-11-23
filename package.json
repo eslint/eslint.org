@@ -62,6 +62,7 @@
   "devDependencies": {
     "@astrojs/mdx": "^8.1.6",
     "@astrojs/react": "^7.1.9",
+    "@astrojs/sitemap": "^3.7.6",
     "@munter/tap-render": "^0.2.0",
     "@octokit/graphql": "^4.8.0",
     "@octokit/rest": "^18.12.0",
