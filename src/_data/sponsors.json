@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105527.23518791999,
-        "monthlyDonations": 8793.93626566,
-        "sponsorCount": 129
+        "annualDonations": 105664.60359191998,
+        "monthlyDonations": 8805.383632660001,
+        "sponsorCount": 132
     },
     "diamond": [],
     "platinum": [],
@@ -362,6 +362,24 @@
             "monthlyDonation": 5.35707154,
             "totalDonations": "03.406750532.577835202.289833644.452156164.456149960.970635480.538141004.287286775.342948075.163306425.665920805.665920805.373885135.35707154",
             "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "Paw Pampering",
+            "url": "https://pawspurrfection.com/",
+            "image": "https://images.opencollective.com/paw-pampering/8005cc0/logo.png",
+            "monthlyDonation": 5,
+            "totalDonations": 6,
+            "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Love My Puppy",
+            "url": "https://pawspurrfection.com/",
+            "image": "https://images.opencollective.com/lovemypuppy/avatar.png",
+            "monthlyDonation": 5,
+            "totalDonations": 6,
+            "source": "opencollective",
             "tier": "backer"
         },
         {
@@ -839,6 +857,15 @@
             "url": "https://danoc.me/",
             "monthlyDonation": 2,
             "source": "github",
+            "tier": "backer"
+        },
+        {
+            "name": "CyleWaitForIt",
+            "url": null,
+            "image": "https://github.com/cylewaitforit.png",
+            "monthlyDonation": 1.447367,
+            "totalDonations": "00.049901880.577580860.827197610.406989510.809057531.185944591.504313711.519241201.577490021.424329991.792061561.845633881.478682771.446777741.437047391.44736700",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
