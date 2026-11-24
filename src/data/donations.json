@@ -1,5 +1,14 @@
 [
     {
+        "id": "SA_kwHOAFvahM4AGEXJ",
+        "name": "André Bose do Amaral",
+        "image": "https://avatars.githubusercontent.com/u/5329822",
+        "url": "http://www.mecenato.holdings",
+        "amount": 5,
+        "date": "2026-11-23T18:41:48Z",
+        "source": "github"
+    },
+    {
         "id": "SA_kwHOAFvahM4AGD4v",
         "name": "Gabriel Rozendo",
         "image": "https://avatars.githubusercontent.com/u/79455923",
@@ -38,7 +47,7 @@
     {
         "id": "or_vaYOc4uCrpySNkGfFocqn",
         "name": "Love My Puppy",
-        "url": "https://lovemypuppy.store/",
+        "url": "https://pawspurrfection.com/",
         "image": "https://images.opencollective.com/lovemypuppy/avatar.png",
         "amount": 1,
         "date": "2026-11-02T04:28:35.781Z",
@@ -56,20 +65,11 @@
     {
         "id": "or_ukH5XTVuyA54wY5YQxrRb",
         "name": "Paw Pampering",
-        "url": "https://pawpampering.com/",
+        "url": "https://pawspurrfection.com/",
         "image": "https://images.opencollective.com/paw-pampering/8005cc0/logo.png",
         "amount": 1,
         "date": "2026-10-31T02:47:00.476Z",
         "source": "opencollective"
-    },
-    {
-        "id": "SA_kwHOAFvahM4AGBDx",
-        "name": "Michael Lip",
-        "image": "https://avatars.githubusercontent.com/u/51033404",
-        "url": "https://www.axdale.com",
-        "amount": 1,
-        "date": "2026-10-25T13:33:02Z",
-        "source": "github"
     },
     {
         "id": "or_stdeb7E7447i7cdsROUPa",

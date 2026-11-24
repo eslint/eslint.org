@@ -81,6 +81,17 @@
             "location": "Munich"
         },
         {
+            "username": "sam3k",
+            "name": "Samuel Roldan",
+            "title": "ESLint Alumnus",
+            "website": "https://www.sam3k.com",
+            "avatar_url": "https://avatars.githubusercontent.com/u/180152",
+            "bio": "I am a frontend lead engineer with over two decades of experience architecting\r\nfrontend web applications.",
+            "twitter_username": null,
+            "github_username": "sam3k",
+            "location": "New York City"
+        },
+        {
             "username": "michaelficarra",
             "name": "Michael Ficarra",
             "title": "ESLint Alumnus",
@@ -350,6 +361,17 @@
             "location": null
         },
         {
+            "username": "harish-sethuraman",
+            "name": "Harish",
+            "title": "ESLint Alumnus",
+            "website": "",
+            "avatar_url": "https://avatars.githubusercontent.com/u/32865581",
+            "bio": "I try to code",
+            "twitter_username": null,
+            "github_username": "harish-sethuraman",
+            "location": "Bengaluru"
+        },
+        {
             "username": "yeonjuan",
             "name": "YeonJuan",
             "title": "ESLint Alumnus",
@@ -466,17 +488,6 @@
             "location": null
         },
         {
-            "username": "harish-sethuraman",
-            "name": "Harish",
-            "title": "ESLint Website Team",
-            "website": "",
-            "avatar_url": "https://avatars.githubusercontent.com/u/32865581",
-            "bio": "I try to code",
-            "twitter_username": null,
-            "github_username": "harish-sethuraman",
-            "location": "Bengaluru"
-        },
-        {
             "username": "kecrily",
             "name": "Percy Ma",
             "title": "ESLint Website Team",
@@ -489,17 +500,5 @@
             "location": "Zhejiang, China"
         }
     ],
-    "support": [
-        {
-            "username": "sam3k",
-            "name": "Samuel Roldan",
-            "title": "ESLint Support Team",
-            "website": "https://www.sam3k.com",
-            "avatar_url": "https://avatars.githubusercontent.com/u/180152",
-            "bio": "I am a frontend lead engineer with over two decades of experience architecting\r\nfrontend web applications.",
-            "twitter_username": null,
-            "github_username": "sam3k",
-            "location": "New York City"
-        }
-    ]
+    "support": []
 }
