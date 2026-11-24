@@ -5,6 +5,7 @@
  */
 import type { GetStaticPaths } from "astro";
 import { getCollection, render, type CollectionEntry } from "astro:content";
+import CodeBlock from "../../components/CodeBlock.astro";
 import ComponentsLayout from "../../layouts/ComponentsLayout.astro";
 
 interface Props {
@@ -25,5 +26,5 @@ const { Content } = await render(entry);
 ---
 
 <ComponentsLayout title={entry.data.title}>
-	<Content />
+	<Content components={{ pre: CodeBlock }} />
 </ComponentsLayout>

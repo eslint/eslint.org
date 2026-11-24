@@ -4,6 +4,7 @@
  */
 import { getCollection } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
+import CodeCopy from "../components/CodeCopy.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
@@ -83,4 +84,6 @@ const items = (await getCollection("library"))
 	</div>
 
 	<Footer />
+
+	<CodeCopy />
 </BaseLayout>
