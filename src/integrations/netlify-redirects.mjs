@@ -9,6 +9,8 @@
 //-----------------------------------------------------------------------------
 
 import fs from "node:fs/promises";
+import path from "node:path";
+import { imageMetadata } from "astro/assets/utils";
 
 //-----------------------------------------------------------------------------
 // Data
@@ -19,6 +21,21 @@ const REDIRECTED_SECTIONS = ["docs", "demo", "chat", "cla", "conduct"];
 
 // directories of the build that aren't sections of the site
 const NOT_SECTIONS = /^(?:_|assets$)/u;
+
+/*
+ * The site used to publish resized WebP and JPEG copies of these images
+ * directly in /assets/images, named like `cover-600w.webp`. Pages now use
+ * images optimized by Astro instead, so the old URLs redirect to the
+ * original images, which `static-images.mjs` publishes.
+ */
+const IMAGES_DIR = "src/assets/images/";
+const RESIZED_IMAGES = [
+	"blog-covers/",
+	"people/testimonials/large/",
+	"eslint-features-img.png",
+];
+const RESIZED_WIDTHS = [600, 900, 1500];
+const RESIZED_FORMATS = ["webp", "jpeg"];
 
 //-----------------------------------------------------------------------------
 // Helpers
@@ -38,15 +55,63 @@ async function getSections(url) {
 }
 
 /**
+ * Creates the redirects for the resized images the site used to publish.
+ * @param {URL} root The root directory of the project.
+ * @returns {Promise<string[]>} The redirect rules.
+ */
+async function getResizedImageRedirects(root) {
+	const imagesDir = new URL(IMAGES_DIR, root);
+	const files = [];
+
+	for (const entry of RESIZED_IMAGES) {
+		if (entry.endsWith("/")) {
+			const filenames = await fs.readdir(new URL(entry, imagesDir));
+
+			files.push(...filenames.sort().map(name => entry + name));
+		} else {
+			files.push(entry);
+		}
+	}
+
+	const lines = [];
+
+	for (const file of files) {
+		const { width } = await imageMetadata(
+			await fs.readFile(new URL(file, imagesDir)),
+		);
+		const name = path.basename(file, path.extname(file));
+
+		// images were never enlarged: an image narrower than every size was
+		// only published at its original width
+		const smallerWidths = RESIZED_WIDTHS.filter(
+			resizedWidth => resizedWidth <= width,
+		);
+		const widths = smallerWidths.length ? smallerWidths : [width];
+
+		for (const resizedWidth of widths) {
+			for (const format of RESIZED_FORMATS) {
+				lines.push(
+					`/assets/images/${name}-${resizedWidth}w.${format}                 /assets/images/${file} 301`,
+				);
+			}
+		}
+	}
+
+	return lines;
+}
+
+/**
  * Creates the contents of the `_redirects` file.
  * @param {Object} site The site data of the default locale.
  * @param {Array<{locale: string, hostname: string}>} translations The
  *      other locales and the domains they used to be hosted on.
  * @param {string[]} englishSections The sections of the site that only
  *      exist in English, such as `blog`.
+ * @param {string[]} imageRedirects The redirects for the resized images
+ *      the site used to publish.
  * @returns {string} The contents of the file.
  */
-function createRedirects(site, translations, englishSections) {
+function createRedirects(site, translations, englishSections, imageRedirects) {
 	const { locals } = site;
 	const lines = [
 		"# Netlify Redirect Rules",
@@ -95,6 +160,12 @@ function createRedirects(site, translations, englishSections) {
 			`/${locale}/*                 /${locale}/404/index.html 404`,
 		);
 	}
+
+	lines.push(
+		"",
+		"# Resized images that used to be published in /assets/images",
+		...imageRedirects,
+	);
 
 	lines.push(`
 # External Redirects
@@ -243,9 +314,15 @@ function createRedirects(site, translations, englishSections) {
  * @returns {import("astro").AstroIntegration} The integration.
  */
 export default function netlifyRedirects(site, translations) {
+	let root;
+
 	return {
 		name: "eslint-netlify-redirects",
 		hooks: {
+			"astro:config:done"({ config }) {
+				root = config.root;
+			},
+
 			async "astro:build:done"({ dir, logger }) {
 				const locales = translations.map(({ locale }) => locale);
 				// every translation has the same pages, so any of them will do
@@ -266,7 +343,12 @@ export default function netlifyRedirects(site, translations) {
 
 				await fs.writeFile(
 					new URL("_redirects", dir),
-					createRedirects(site, translations, englishSections),
+					createRedirects(
+						site,
+						translations,
+						englishSections,
+						await getResizedImageRedirects(root),
+					),
 					"utf8",
 				);
 				logger.info("Generated _redirects");
