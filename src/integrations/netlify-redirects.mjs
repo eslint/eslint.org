@@ -155,6 +155,9 @@ function createRedirects(site, translations, englishSections, imageRedirects) {
 			);
 		}
 
+		// the blog is only in English, so there is one feed for every language
+		lines.push(`/${locale}/feed.xml                 /feed.xml 301`);
+
 		// anything else doesn't exist in English either
 		lines.push(
 			`/${locale}/*                 /${locale}/404/index.html 404`,

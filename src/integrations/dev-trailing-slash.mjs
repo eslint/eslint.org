@@ -23,7 +23,11 @@ const FILE_PATH = /\.\w+$/u;
  * @returns {void}
  */
 function redirectToTrailingSlash(req, res, next) {
-	const [path, query] = (req.url ?? "/").split("?");
+	// the base is only needed to parse the URL, which is relative
+	const { pathname: path, search } = new URL(
+		req.url ?? "/",
+		"http://localhost",
+	);
 
 	if (
 		path.endsWith("/") ||
@@ -35,7 +39,7 @@ function redirectToTrailingSlash(req, res, next) {
 	}
 
 	res.writeHead(302, {
-		Location: `${path}/${query ? `?${query}` : ""}`,
+		Location: `${path}/${search}`,
 	});
 	res.end();
 }
