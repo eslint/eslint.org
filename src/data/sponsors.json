@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105666.29156639997,
-        "monthlyDonations": 8805.524297200001,
-        "sponsorCount": 133
+        "annualDonations": 105671.86204247997,
+        "monthlyDonations": 8805.988503540002,
+        "sponsorCount": 135
     },
     "diamond": [],
     "platinum": [],
@@ -969,6 +969,15 @@
             "tier": "backer"
         },
         {
+            "name": "Jean-François VIAL",
+            "url": "https://modulaweb.fr",
+            "image": "https://github.com/j33f.png",
+            "monthlyDonation": 0.4250534,
+            "totalDonations": "00.42505340",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
             "name": "Jos de Jong",
             "url": "https://josdejong.com",
             "image": "https://github.com/josdejong.png",
@@ -1055,6 +1064,15 @@
             "image": "https://github.com/jasara.png",
             "monthlyDonation": 0.04496876,
             "totalDonations": "00.002268010.002268951.019500890.872472890.712082540.704064930.628425510.628425510.600942440.602028720.609868690.006322380.006322830.006666400.618682480.621348240.593919230.646743060.057340100.045417730.045417730.044711740.04496876",
+            "source": "thanks.dev",
+            "tier": "backer"
+        },
+        {
+            "name": "peopleofthebook",
+            "url": null,
+            "image": "https://github.com/peopleofthebook.png",
+            "monthlyDonation": 0.03915294,
+            "totalDonations": "00.03915294",
             "source": "thanks.dev",
             "tier": "backer"
         },
