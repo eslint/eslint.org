@@ -1,3 +1,5 @@
+import { getRuleDocumentationUrl } from "../utils/helper";
+
 export default function Alert({
 	type,
 	text,
@@ -101,7 +103,7 @@ export default function Alert({
 						<>
 							&nbsp; &#40;
 							<a
-								href={`https://eslint.org/docs/latest/rules/${ruleId}`}
+								href={getRuleDocumentationUrl(ruleId)}
 								target="_blank"
 								rel="noreferrer"
 							>
