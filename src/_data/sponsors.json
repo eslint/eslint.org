@@ -1,8 +1,8 @@
 {
     "totals": {
-        "annualDonations": 105675.70502747997,
-        "monthlyDonations": 8806.308752290002,
-        "sponsorCount": 136
+        "annualDonations": 106092.45897239997,
+        "monthlyDonations": 8841.038247700002,
+        "sponsorCount": 137
     },
     "diamond": [],
     "platinum": [],
@@ -200,6 +200,15 @@
             "monthlyDonation": 35,
             "totalDonations": 1930,
             "source": "opencollective",
+            "tier": "backer"
+        },
+        {
+            "name": "Frontend Masters",
+            "url": "https://FrontendMasters.com",
+            "image": "https://github.com/frontendmasters.png",
+            "monthlyDonation": 34.72949541,
+            "totalDonations": "015.8755124116.5134570116.2135154615.9458794115.8539151315.8101133352.4053066815.7938353462.0867446158.6823441856.1351804555.6041253354.9398559947.1456875611.0450076411.0450076411.0450076411.0450076411.0450076411.0450076411.0522232711.1344221611.2132473611.4548048559.0177864044.9594486342.8820776745.7864663243.7469113053.1771373349.7139531839.0324811538.7123139637.0870797134.72949541",
+            "source": "thanks.dev",
             "tier": "backer"
         },
         {
