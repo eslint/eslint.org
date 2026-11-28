@@ -26,6 +26,7 @@
 		display: block;
 		height: auto;
 		max-height: 3rem;
+		object-fit: contain;
 		background-color: var(--sponsor-background-color);
 		border-radius: var(--sponsor-img-border-radius);
 	}

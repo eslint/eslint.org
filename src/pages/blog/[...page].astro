@@ -1,0 +1,64 @@
+---
+/**
+ * @fileoverview The list of all blog posts. The first page is `/blog/` and
+ * the following pages are `/blog/page/2/`, `/blog/page/3/`, and so on.
+ */
+import type { GetStaticPaths } from "astro";
+import Card from "../../components/Card.astro";
+import Pagination from "../../components/Pagination.astro";
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import {
+	getCardProps,
+	getPosts,
+	POSTS_PER_PAGE,
+	type Post,
+} from "../../lib/blog";
+import { getAuthors } from "../../lib/data";
+
+interface Props {
+	posts: Post[];
+	currentPage: number;
+	totalPages: number;
+}
+
+export const getStaticPaths = (async () => {
+	const posts = await getPosts();
+	const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+
+	return Array.from({ length: totalPages }, (_, index) => ({
+		params: { page: index === 0 ? undefined : `page/${index + 1}` },
+		props: {
+			posts: posts.slice(
+				index * POSTS_PER_PAGE,
+				(index + 1) * POSTS_PER_PAGE,
+			),
+			currentPage: index + 1,
+			totalPages,
+		},
+	}));
+}) satisfies GetStaticPaths;
+
+const { posts, currentPage, totalPages } = Astro.props;
+const authors = await getAuthors();
+const getPageUrl = (page: number) =>
+	page === 1 ? "/blog/" : `/blog/page/${page}/`;
+---
+
+<BlogLayout hook="blog_page">
+	<div class="blog-posts">
+		{posts.map(post => (
+			<Card {...getCardProps(post, authors)} />
+		))}
+	</div>
+
+	<Pagination
+		slot="pagination"
+		currentPage={currentPage}
+		totalPages={totalPages}
+		first={getPageUrl(1)}
+		last={getPageUrl(totalPages)}
+		previous={currentPage > 1 ? getPageUrl(currentPage - 1) : null}
+		next={currentPage < totalPages ? getPageUrl(currentPage + 1) : null}
+		alwaysShowLinks
+	/>
+</BlogLayout>

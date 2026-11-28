@@ -1,0 +1,282 @@
+---
+/**
+ * @fileoverview The HTML document that every page is rendered into.
+ */
+import "../assets/scss/styles.scss";
+import Analytics from "../components/Analytics.astro";
+import { getLanguages, getSite, localizeUrl, unlocalizeUrl } from "../lib/site";
+
+interface Props {
+	/** Identifies the type of page. Used for the body class and default title. */
+	hook: string;
+
+	/** The page title. Defaults to the translated title for the hook. */
+	title?: string;
+
+	/** Whether the page is translated into the other languages. */
+	multilingual?: boolean;
+
+	/** The canonical URL of the page when it isn't the page's own URL. */
+	canonical?: string;
+
+	/** The absolute URL of the image to use for social sharing previews. */
+	coverImage?: string;
+
+	/** The alternative text for the cover image. */
+	coverImageAlt?: string;
+}
+
+const site = await getSite(Astro.currentLocale);
+const { hook, title, canonical, multilingual = false } = Astro.props;
+
+const pageTitle = site.shared.title_format.replace(
+	"PAGE_TITLE",
+	title ?? site[hook].title,
+);
+const pageDesc = site.shared.description;
+
+// the English 404 page is published as /404.html rather than /404/
+const pagePath =
+	Astro.url.pathname === "/404/" ? "/404.html" : Astro.url.pathname;
+const pageUrl = `https://${site.hostname}${pagePath}`;
+const coverImage =
+	Astro.props.coverImage ?? `https://${site.hostname}/icon-512.png`;
+const coverImageAlt = Astro.props.coverImageAlt ?? site.shared.eslint_logo_alt;
+const isPlayground = hook === "playground_page";
+
+// translated pages point search engines to the other languages
+const pathInDefaultLocale = unlocalizeUrl(pagePath, Astro.currentLocale);
+const alternates = multilingual
+	? (await getLanguages()).map(language => ({
+			code: language.code,
+			url: `https://${site.hostname}${localizeUrl(pathInDefaultLocale, language.locale)}`,
+		}))
+	: [];
+---
+
+<!doctype html>
+<html lang={site.language.code} class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-title" content="ESLint" />
+
+		<!-- SEO -->
+		<title>{pageTitle}</title>
+		<meta name="description" content={pageDesc} />
+		<link rel="canonical" href={canonical ?? pageUrl} />
+		{alternates.map(alternate => (
+			<link
+				rel="alternate"
+				hreflang={alternate.code}
+				href={alternate.url}
+			/>
+		))}
+
+		<!-- Feed -->
+		<link
+			rel="alternate"
+			href="/feed.xml"
+			title="ESLint RSS"
+			type="application/rss+xml"
+		/>
+
+		<!-- favicon -->
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<!-- 32×32 -->
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<!-- 180×180 -->
+		<link rel="manifest" href="/manifest.webmanifest" />
+
+		<!-- social sharing previews. Make sure every page template has title, desc, and cover url -->
+		<!-- Open graph -->
+
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDesc} />
+		<meta property="og:image" content={coverImage} />
+		<meta property="og:image:alt" content={coverImageAlt} />
+		<meta property="og:locale" content={site.locale.replaceAll("-", "_")} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={pageUrl} />
+		<!-- Twitter -->
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@geteslint" />
+		<meta name="twitter:description" content={pageDesc} />
+		<meta name="twitter:image" content={coverImage} />
+		<meta name="twitter:creator" content="@geteslint" />
+
+		<script is:inline>
+			// This is a capable browser, let's improve the UI further!
+			document.documentElement.classList.add("enhanced");
+			document.documentElement.classList.remove("no-js");
+		</script>
+
+		<link
+			rel="preload"
+			href="/assets/fonts/Consolas.woff"
+			as="font"
+			type="font/woff"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/assets/fonts/SpaceGrotesk-Medium-subset.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/assets/fonts/Inter-Regular-subset.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/assets/fonts/SpaceMono-Regular-subset.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link rel="preconnect" href="https://www.googletagmanager.com/" />
+
+		<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+		<link rel="dns-prefetch" href="https://images.opencollective.com" />
+		<link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+		<link rel="dns-prefetch" href="https://unpkg.com" />
+
+		<script is:inline>
+			(function () {
+				var theme = window.localStorage.getItem("theme");
+				if (theme && theme !== "system")
+					document.documentElement.setAttribute("data-theme", theme);
+				else if (
+					window.matchMedia("(prefers-color-scheme: dark)").matches
+				)
+					document.documentElement.setAttribute("data-theme", "dark");
+				else
+					document.documentElement.setAttribute(
+						"data-theme",
+						"light",
+					);
+			})();
+		</script>
+
+		<style is:inline>
+			/* Overrides for funky punctuators */
+			@font-face {
+				font-family: "Mono Punctuators";
+				src: url("/assets/fonts/Consolas.woff") format("woff");
+				font-weight: 400;
+				unicode-range: U+40, U+7B, U+7D, U+28, U+29;
+				font-display: swap;
+			}
+
+			/* Space Grotesk for headings */
+			@font-face {
+				font-family: "Space Grotesk";
+				src:
+					url("/assets/fonts/SpaceGrotesk-Medium-subset.woff2")
+						format("woff2"),
+					url("/assets/fonts/SpaceGrotesk-Medium-subset.zopfli.woff")
+						format("woff");
+				font-weight: 500;
+				font-display: swap;
+			}
+
+			/* Inter for body text */
+			@font-face {
+				font-family: "Inter";
+				src:
+					url("/assets/fonts/Inter-Regular-subset.woff2")
+						format("woff2"),
+					url("/assets/fonts/Inter-Regular-subset.zopfli.woff")
+						format("woff");
+				font-weight: 400;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: Inter;
+				src:
+					url("/assets/fonts/Inter-SemiBold-subset.woff2")
+						format("woff2"),
+					url("/assets/fonts/Inter-SemiBold-subset.zopfli.woff")
+						format("woff");
+				font-weight: 500;
+				font-style: "normal";
+				font-display: "swap";
+			}
+
+			/* Space Mono for code snippets */
+			@font-face {
+				font-family: "Space Mono";
+				src:
+					url("/assets/fonts/SpaceMono-Regular-subset.woff2")
+						format("woff2"),
+					url("/assets/fonts/SpaceMono-Regular-subset.zopfli.woff")
+						format("woff");
+				font-weight: 400;
+				font-display: swap;
+			}
+
+			/* Country Flags for Windows*/
+			@font-face {
+				font-family: "Twemoji Country Flags";
+				unicode-range:
+					U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067,
+					U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+				src: url("https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2")
+					format("woff2");
+			}
+		</style>
+		{
+			/* the playground has its own theme switcher */
+			!isPlayground && <script is:inline src="/assets/js/themes.js" />
+		}
+	</head>
+
+	<body class={hook.replaceAll("_", "-")}>
+		<a href="#main" class="c-btn c-btn--primary" id="skip-link"
+			>{site.shared.skip_to_content}</a
+		>
+		<slot />
+
+		<script is:inline src="/assets/js/css-vars-ponyfill@2.js"></script>
+		<script is:inline src="/assets/js/focus-visible.js"></script>
+		<script is:inline src="/assets/js/main.js"></script>
+		<Analytics />
+
+		{site.homepage.animation.enabled && hook === "homepage" && (
+			<>
+				<script
+					is:inline
+					src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+				/>
+				<script
+					is:inline
+					src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Flip.min.js"
+				/>
+				<script is:inline src="/assets/js/animation.js" /></>
+		)}
+
+		{(hook === "homepage" || hook === "component_library") && (
+			<>
+				<script is:inline src="/assets/js/hammer.min.js" />
+				<script is:inline src="/assets/js/slider.js" /></>
+		)}
+
+		{(hook === "donate_page" || hook === "component_library") && (
+			<script is:inline src="/assets/js/accordion.js" />
+		)}
+		{hook === "component_library" && (
+			<>
+				<script is:inline src="/assets/js/tabs.js" />
+				<script is:inline src="/assets/js/components-index.js" /></>
+		)}
+	</body>
+</html>

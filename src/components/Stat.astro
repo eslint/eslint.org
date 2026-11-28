@@ -1,0 +1,20 @@
+---
+/**
+ * @fileoverview A project statistic, such as the number of GitHub stars.
+ */
+import { formatStatsNumber } from "../lib/format";
+
+interface Props {
+	value: number;
+	label: string;
+}
+
+const { value, label } = Astro.props;
+const formatted = formatStatsNumber(value, Astro.currentLocale);
+---
+
+<div class="metrics__item">
+	<span class="visually-hidden">{formatted.full} {label}</span>
+	<span class="metrics__value" aria-hidden="true">{formatted.short}</span>
+	<span aria-hidden="true">{label}</span>
+</div>

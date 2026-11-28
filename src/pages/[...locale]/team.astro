@@ -1,0 +1,69 @@
+---
+import Hero from "../../components/Hero.astro";
+import ProfileContributor from "../../components/ProfileContributor.astro";
+import ProfileMember from "../../components/ProfileMember.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getTeam } from "../../lib/data";
+import { getSite, getLocalePaths } from "../../lib/site";
+
+export const getStaticPaths = getLocalePaths;
+
+const site = await getSite(Astro.currentLocale);
+const text = site.team_page;
+const team = await getTeam();
+
+// current team members, who are shown with their full profiles
+const groups = [
+	{ text: text.tsc, members: team.tsc },
+	{ text: text.reviewers, members: team.reviewers },
+	{ text: text.committers, members: team.committers },
+	{ text: text.website_team, members: team.website },
+	{ text: text.support_team, members: team.support },
+].filter(group => group.members.length > 0);
+---
+
+<MainLayout hook="team_page" multilingual>
+	<Hero title={text.title} supportingText={text.description} />
+
+	{groups.map(group => <section class="section">
+		<div class="content-container grid">
+			<div class="span-1-4">
+				<h2 class="section-title">{group.text.title}</h2>
+				<p class="section-supporting-text">{group.text.description}</p>
+			</div>
+			<ul role="list" class="span-6-12 people-list">
+				{group.members.map(member => <li>
+					<ProfileMember
+						photo={member.avatar_url}
+						name={member.name || member.username}
+						handle={member.username}
+						bio={member.bio}
+						website={member.website}
+						github={member.github_username}
+						bluesky={member.bluesky_url}
+						mastodon={member.mastodon_url}
+						twitter={member.twitter_username}
+					/>
+				</li>)}
+			</ul>
+		</div>
+	</section>)}
+
+	{team.alumni.length > 0 && <section class="section">
+		<div class="content-container grid">
+			<div class="span-1-4">
+				<h2 class="section-title">{text.alumni.title}</h2>
+				<p class="section-supporting-text">{text.alumni.description}</p>
+			</div>
+			<ul role="list" class="span-6-12 people-list">
+				{team.alumni.map(member => <li>
+					<ProfileContributor
+						photo={member.avatar_url}
+						name={member.name || member.username}
+						handle={member.username}
+					/>
+				</li>)}
+			</ul>
+		</div>
+	</section>}
+</MainLayout>

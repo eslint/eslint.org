@@ -1,0 +1,39 @@
+---
+/**
+ * @fileoverview Google Analytics tracking.
+ */
+import { getSite } from "../lib/site";
+
+const site = await getSite(Astro.currentLocale);
+const code = site.google_analytics?.code;
+const script = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', ${JSON.stringify(code)});
+
+    // track clicks to "Donate"
+    document.querySelectorAll("a.donate-link").forEach(
+        el => el.addEventListener("click",
+            () => gtag("event", "donate_click"))
+    );
+
+    // track clicks on sponsor logos
+    document.querySelectorAll("a.sponsor-link").forEach(
+        el => el.addEventListener("click",
+            () => gtag("event", "sponsor_click", el.href || ""))
+    );
+`;
+---
+
+{code && (
+	<>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			is:inline
+			async
+			src={`https://www.googletagmanager.com/gtag/js?id=${code}`}
+		/>
+		<script is:inline set:html={script} /></>
+)}

@@ -1,0 +1,47 @@
+---
+/**
+ * @fileoverview Lets the visitor switch to the documentation for another version.
+ */
+interface Props {
+	versions?: Array<{ number: string; url: string }>;
+	current?: string;
+}
+
+const { versions = [], current } = Astro.props;
+---
+
+<div class="version-switcher">
+	<a href="/versions/" class="switcher-fallback">Versions</a>
+
+	<div
+		hidden
+		role="region"
+		class="switcher switcher--version"
+		aria-labelledby="version-switcher-label"
+		id="version-switcher"
+	>
+		<span id="version-switcher-label" hidden>Language Switcher</span>
+		<div class="infobox visually-hidden" id="version-infobox">
+			Selecting a language will take you to the ESLint Web site in that
+			language.
+		</div>
+
+		<label class="switcher__label label--block" for="version-select">
+			Version
+		</label>
+		<select
+			name="version selector"
+			id="version-select"
+			aria-describedby="version-infobox"
+			class="c-custom-select switcher__select auto-switcher"
+		>
+			{versions.map(version => <option
+				value={version.number}
+				data-url={version.url}
+				selected={current === version.number}
+			>
+				v{version.number}
+			</option>)}
+		</select>
+	</div>
+</div>

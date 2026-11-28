@@ -1,0 +1,36 @@
+---
+/**
+ * @fileoverview Links to the blog categories.
+ */
+import { getCategories, getPublishedPosts } from "../lib/blog";
+import { setActiveCategory, setBlogActiveState } from "../lib/helpers";
+import { getSite } from "../lib/site";
+
+const site = await getSite(Astro.currentLocale);
+const categories = getCategories(await getPublishedPosts());
+const pageUrl = Astro.url.pathname;
+---
+
+<nav aria-labelledby="blog-categories-nav-label" class="categories">
+	<h2 class="categories__title" id="blog-categories-nav-label">
+		{site.blog_page.categories.title}
+	</h2>
+	<ul role="list" class="categories__list">
+		<li class="categories__list__item">
+			<a href="/blog/" {...setBlogActiveState("/blog/", pageUrl)}
+				>{site.blog_page.categories.everything}</a
+			>
+		</li>
+		{categories.map(category => <li class="categories__list__item">
+			<a
+				href={`/blog/category/${category.slug}`}
+				{...setActiveCategory(
+					`/blog/category/${category.slug}`,
+					pageUrl,
+				)}
+			>
+				{category.title}
+			</a>
+		</li>)}
+	</ul>
+</nav>

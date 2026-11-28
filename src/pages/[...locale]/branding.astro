@@ -1,0 +1,67 @@
+---
+import BrandingLogo from "../../components/BrandingLogo.astro";
+import BrandSwatches from "../../components/BrandSwatches.astro";
+import Hero from "../../components/Hero.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getSite, getLocalePaths } from "../../lib/site";
+
+export const getStaticPaths = getLocalePaths;
+
+const site = await getSite(Astro.currentLocale);
+const text = site.branding_page;
+---
+
+<MainLayout hook="branding_page" multilingual>
+	<Hero title={text.title} supportingText={text.description} />
+
+	<section class="section">
+		<div class="content-container grid">
+			<div class="span-1-6">
+				<h2 class="section-title h3">{text.sections.name.title}</h2>
+				<p class="">
+					{text.sections.name.description}
+				</p>
+			</div>
+		</div>
+		<div class="content-container grid">
+			<div class="span-1-6">
+				<h2 class="section-title h3">{text.sections.logo.title}</h2>
+				{text.sections.logo.description.map(paragraph => <p>
+					{paragraph}
+				</p>)}
+				<div class="eslint-actions">
+					<a
+						download
+						href="/assets/images/logo/eslint-logo-color.svg"
+						class="c-btn c-btn--secondary"
+						>{text.sections.logo.download_svg}</a
+					>
+					<a
+						download
+						href="/assets/images/logo/eslint-logo-color.png"
+						class="c-btn c-btn--secondary"
+						>{text.sections.logo.download_png}</a
+					>
+				</div>
+			</div>
+			<div class="span-8-12">
+				<BrandingLogo />
+			</div>
+		</div>
+		<div class="content-container grid">
+			<div class="span-1-6">
+				<h2 class="section-title h3">
+					{text.sections.color_palette.title}
+				</h2>
+				{text.sections.color_palette.description.map(paragraph => <p>
+					{paragraph}
+				</p>)}
+			</div>
+			<div class="span-8-12">
+				<div class="brand__palette">
+					<BrandSwatches />
+				</div>
+			</div>
+		</div>
+	</section>
+</MainLayout>

@@ -1,0 +1,43 @@
+---
+/**
+ * @fileoverview The most recent blog posts, shown at the bottom of a blog post.
+ */
+import Card from "./Card.astro";
+import { getCardProps, getPosts, getPostUrl } from "../lib/blog";
+import { getAuthors } from "../lib/data";
+import { getSite, links } from "../lib/site";
+
+const site = await getSite(Astro.currentLocale);
+const authors = await getAuthors();
+const posts = (await getPosts())
+	.filter(post => getPostUrl(post) !== Astro.url.pathname)
+	.slice(0, 3);
+---
+
+<section aria-labelledby="more-posts-label" class="from-the-blog">
+	<div class="content-container">
+		<div class="from-the-blog__top grid grid--center-items">
+			<header class="section-head span-1-7">
+				<h2 class="from-the-blog__title" id="more-posts-label">
+					{site.blog_page.from_the_blog}
+				</h2>
+				<p class="">
+					{site.blog_page.description}
+				</p>
+			</header>
+			<div class="span-11-12">
+				<a
+					href={links.blog}
+					class="c-btn c-btn--primary c-btn--block from-the-blog__more"
+					>{site.homepage.blog.view_all_posts}</a
+				>
+			</div>
+		</div>
+
+		<div class="blog-posts">
+			{posts.map(post => (
+				<Card {...getCardProps(post, authors)} />
+			))}
+		</div>
+	</div>
+</section>

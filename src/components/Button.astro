@@ -1,0 +1,28 @@
+---
+/**
+ * @fileoverview A button, or a link that looks like a button.
+ */
+interface Props {
+	/** "action" renders a `<button>`; "link" renders an `<a>`. */
+	behavior?: "link" | "action";
+
+	/** Where the link goes when the behavior is "link". */
+	url?: string;
+
+	type?: "primary" | "secondary" | "ghost";
+	text?: string;
+}
+
+const { behavior = "link", url, type, text } = Astro.props;
+const classes = ["c-btn", type && `c-btn--${type}`];
+---
+
+{behavior === "action" ? (
+	<button type="button" class:list={classes}>
+		{text ?? "This is a button button"}
+	</button>
+) : (
+	<a href={url} class:list={classes}>
+		{text ?? "This is a link styled like a button"}
+	</a>
+)}

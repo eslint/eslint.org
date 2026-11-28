@@ -1,0 +1,30 @@
+---
+/**
+ * @fileoverview A page of the component library. The pages are the MDX
+ * files in `src/content/library`.
+ */
+import type { GetStaticPaths } from "astro";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import CodeBlock from "../../components/CodeBlock.astro";
+import ComponentsLayout from "../../layouts/ComponentsLayout.astro";
+
+interface Props {
+	entry: CollectionEntry<"library">;
+}
+
+export const getStaticPaths = (async () => {
+	const entries = await getCollection("library");
+
+	return entries.map(entry => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<ComponentsLayout title={entry.data.title}>
+	<Content components={{ pre: CodeBlock }} />
+</ComponentsLayout>

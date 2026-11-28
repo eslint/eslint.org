@@ -1,0 +1,34 @@
+---
+/**
+ * @fileoverview The layout for most pages: header, main content, and footer.
+ */
+import BaseLayout from "./BaseLayout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+interface Props {
+	/** Identifies the type of page. Used for the body class and default title. */
+	hook: string;
+
+	/** The page title. Defaults to the translated title for the hook. */
+	title?: string;
+
+	/** Whether the page exists on the sites for other languages. */
+	multilingual?: boolean;
+
+	/** Whether to show the site footer. */
+	footer?: boolean;
+}
+
+const { hook, title, multilingual = false, footer = true } = Astro.props;
+---
+
+<BaseLayout hook={hook} title={title} multilingual={multilingual}>
+	<Header />
+
+	<main id="main" tabindex="-1">
+		<slot />
+	</main>
+
+	{footer && <Footer multilingual={multilingual} />}
+</BaseLayout>

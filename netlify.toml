@@ -3,7 +3,7 @@
   targetPort = 2022
 
 [build]
-  publish = "_site"
+  publish = "dist"
   command = "npm run build"
   edge_functions = "functions"
 

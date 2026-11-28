@@ -1,0 +1,22 @@
+---
+/**
+ * @fileoverview A list of links to the documentation for each version.
+ */
+interface Props {
+	versions?: Array<{ number: string; url: string }>;
+	current?: string;
+}
+
+const { versions = [], current } = Astro.props;
+---
+
+<ul class="versions-list">
+	{versions.map(version => <li>
+		<a
+			href={version.url}
+			data-current={current === version.number ? "true" : undefined}
+		>
+			v{version.number}
+		</a>
+	</li>)}
+</ul>

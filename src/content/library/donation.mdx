@@ -1,0 +1,40 @@
+---
+title: Donation
+---
+
+import DonationItem from "../../components/DonationItem.astro";
+
+A donation is rendered using the `<DonationItem>` component in `src/components/DonationItem.astro`. The component takes these properties:
+
+* image (of entity that donated)
+* name (of entity that donated)
+* donation amount
+* donation date
+
+Typically, the data for the donation is pulled from a data file and the values are formatted and passed to the component. You can find an example of that in the [Sponsors page](/sponsors/).
+
+## Usage
+
+```astro
+---
+// import the component
+import DonationItem from "../components/DonationItem.astro";
+---
+
+<!-- use the component -->
+<DonationItem
+    image="https://images.opencollective.com/chrome/dc55bd4/logo.png"
+    name="Google Chrome"
+    amount="100000"
+    date="2020-10-10"
+/>
+```
+
+## Example
+
+<DonationItem
+    image="https://images.opencollective.com/chrome/dc55bd4/logo.png"
+    name="Google Chrome"
+    amount="100000"
+    date="2020-10-10"
+/>

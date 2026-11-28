@@ -8,31 +8,23 @@ const globals = require("globals");
 const reactPlugin = require("eslint-plugin-react");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
-const html = require("@html-eslint/eslint-plugin");
+const { version: reactVersion } = require("react/package.json");
 
-const playgroundFiles = "src/playground/**/*.{js,jsx}";
-const htmlFiles = "**/*.html";
+const playgroundFiles = "src/components/playground/**/*.{js,jsx}";
+const esmFiles = "**/*.mjs";
 
 module.exports = defineConfig([
 	globalIgnores([
-		"_site/**",
-		"src/assets/js/**",
-		"src/_data/**",
-		"src/_11ty/**",
-		"src/playground/build/**",
+		"dist/**",
+		".astro/**",
+		"public/assets/js/**",
+		"src/scripts/**",
+		"src/data/**",
 	]),
 
 	{
-		ignores: [playgroundFiles, htmlFiles],
+		ignores: [playgroundFiles, esmFiles],
 		extends: [eslintConfigESLintCJS],
-		rules: {
-			"n/no-extraneous-require": [
-				"error",
-				{
-					allowModules: ["luxon"],
-				},
-			],
-		},
 	},
 
 	{
@@ -43,10 +35,18 @@ module.exports = defineConfig([
 		},
 	},
 
+	// Astro configuration and integrations
+	{
+		files: [esmFiles],
+		extends: [eslintConfigESLint],
+		languageOptions: {
+			globals: globals.node,
+		},
+	},
+
 	// Playground
 	{
 		files: [playgroundFiles],
-		ignores: ["src/playground/scripts/**/*.js"],
 		extends: [
 			eslintConfigESLintBase,
 			reactPlugin.configs.flat.recommended,
@@ -56,7 +56,8 @@ module.exports = defineConfig([
 		],
 		settings: {
 			react: {
-				version: "detect",
+				// "detect" uses an API that was removed in ESLint v10
+				version: reactVersion,
 			},
 		},
 		languageOptions: {
@@ -80,19 +81,10 @@ module.exports = defineConfig([
 			"func-style": "off",
 		},
 	},
-	{
-		files: ["src/playground/scripts/**/*.js"],
-		extends: [eslintConfigESLint],
-		rules: {
-			"no-console": "off",
-			"n/no-process-exit": "off",
-		},
-	},
 
 	// Disable rules that the codebase doesn't currently follow.
 	// It might be a good idea to enable these in the future.
 	{
-		ignores: [htmlFiles],
 		rules: {
 			"jsdoc/require-jsdoc": "off",
 			"jsdoc/require-returns": "off",
@@ -104,32 +96,6 @@ module.exports = defineConfig([
 					ignore: ["__PURE__"],
 				},
 			],
-		},
-	},
-	{
-		files: [".eleventy.js"],
-		rules: {
-			"no-console": "off",
-		},
-	},
-	{
-		files: [htmlFiles],
-		plugins: {
-			html,
-		},
-		language: "html/html",
-		languageOptions: {
-			frontmatter: true,
-			templateEngineSyntax: [
-				{ open: "{{", close: "}}" },
-				{ open: "{%", close: "%}" },
-				{ open: "{#", close: "#}", isComment: true },
-			],
-		},
-		rules: {
-			"html/no-duplicate-class": "error",
-			"html/no-duplicate-attrs": "error",
-			"html/class-spacing": "error",
 		},
 	},
 ]);
